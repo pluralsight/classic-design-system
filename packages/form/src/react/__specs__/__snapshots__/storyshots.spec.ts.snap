@@ -43,7 +43,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-a3dmt8=""
+              data-css-a5fyxr=""
               disabled={false}
               style={Object {}}
             >
@@ -58,7 +58,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-bu16i2=""
+              data-css-19py2wt=""
               disabled={false}
               style={Object {}}
             >
@@ -119,7 +119,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-a3dmt8=""
+              data-css-a5fyxr=""
               disabled={false}
               style={Object {}}
             >
@@ -134,7 +134,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-bu16i2=""
+              data-css-19py2wt=""
               disabled={false}
               style={Object {}}
             >
@@ -181,7 +181,7 @@ exports[`Storyshots Form.ButtonRow single form element with single button 1`] = 
             data-css-7d5932=""
           >
             <button
-              data-css-a3dmt8=""
+              data-css-a5fyxr=""
               disabled={false}
               style={Object {}}
             >
@@ -222,7 +222,7 @@ exports[`Storyshots Sample Form null children 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          data-css-pk5y9y=""
+          data-css-vetqvm=""
           style={
             Object {
               "maxWidth": "none",
@@ -246,7 +246,7 @@ exports[`Storyshots Sample Form null children 1`] = `
           }
         >
           <div
-            data-css-1jmxzqo=""
+            data-css-dysqqm=""
           >
             Name
           </div>
@@ -288,7 +288,7 @@ exports[`Storyshots Sample Form null children 1`] = `
           }
         >
           <div
-            data-css-1jmxzqo=""
+            data-css-dysqqm=""
           >
             Alias
           </div>
@@ -316,7 +316,7 @@ exports[`Storyshots Sample Form null children 1`] = `
             </div>
           </div>
           <div
-            data-css-6ga4kh=""
+            data-css-o89kbw=""
           >
             *Optional
           </div>
@@ -342,7 +342,7 @@ exports[`Storyshots Sample Form null children 1`] = `
           }
         >
           <div
-            data-css-k6qvfq=""
+            data-css-9kywkh=""
           >
             Comment
           </div>
@@ -376,7 +376,7 @@ exports[`Storyshots Sample Form null children 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-a3dmt8=""
+              data-css-a5fyxr=""
               disabled={false}
               style={Object {}}
             >
@@ -391,7 +391,7 @@ exports[`Storyshots Sample Form null children 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-bu16i2=""
+              data-css-19py2wt=""
               disabled={false}
               style={Object {}}
             >
@@ -432,7 +432,7 @@ exports[`Storyshots Sample Form sample 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          data-css-pk5y9y=""
+          data-css-vetqvm=""
           style={
             Object {
               "maxWidth": "none",
@@ -456,7 +456,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           }
         >
           <div
-            data-css-1jmxzqo=""
+            data-css-dysqqm=""
           >
             Name
           </div>
@@ -498,7 +498,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           }
         >
           <div
-            data-css-1jmxzqo=""
+            data-css-dysqqm=""
           >
             Alias
           </div>
@@ -526,7 +526,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             </div>
           </div>
           <div
-            data-css-6ga4kh=""
+            data-css-o89kbw=""
           >
             *Optional
           </div>
@@ -545,7 +545,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           }
         >
           <div
-            data-css-1jmxzqo=""
+            data-css-dysqqm=""
           >
             Email address
           </div>
@@ -592,7 +592,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             </div>
           </div>
           <div
-            data-css-6ga4kh=""
+            data-css-o89kbw=""
           >
             Not a valid email address
           </div>
@@ -703,7 +703,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              data-css-1r5esr3=""
+              data-css-1aye8gw=""
               href="http://google.com"
             >
               <span
@@ -724,7 +724,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              data-css-1r5esr3=""
+              data-css-1aye8gw=""
               href="http://google.com"
             >
               <span
@@ -745,7 +745,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              data-css-1r5esr3=""
+              data-css-1aye8gw=""
               href="http://google.com"
             >
               <span
@@ -761,107 +761,40 @@ exports[`Storyshots Sample Form sample 1`] = `
         data-css-4l6uky=""
       >
         <div
-          data-css-w0yocm=""
-          onKeyDown={[Function]}
           style={
             Object {
-              "maxWidth": "none",
-              "width": "100%",
+              "position": "relative",
             }
           }
         >
-          <div
-            data-css-1jmxzqo=""
-          >
-            Choose a Date
-          </div>
-          <div
-            data-css-ctre2o=""
+          <label
+            data-css-w0yocm=""
           >
             <div
-              data-css-1gfowhv=""
+              data-css-dysqqm=""
             >
-              <input
-                aria-label="month"
-                data-css-1549q07=""
-                name="mm"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="mm"
-                style={
-                  Object {
-                    "width": "32px",
-                  }
-                }
-                value=""
-              />
-              <span
-                data-css-14iu1jp=""
-              >
-                /
-              </span>
-              <input
-                aria-label="day"
-                data-css-1549q07=""
-                name="dd"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="dd"
-                style={
-                  Object {
-                    "width": "24px",
-                  }
-                }
-                value=""
-              />
-              <span
-                data-css-14iu1jp=""
-              >
-                /
-              </span>
-              <input
-                aria-label="year"
-                data-css-1549q07=""
-                name="yyyy"
-                onBlur={[Function]}
-                onChange={[Function]}
-                onFocus={[Function]}
-                placeholder="yyyy"
-                style={
-                  Object {
-                    "width": "48px",
-                  }
-                }
-                value=""
-              />
-              <input
-                data-css-gyrv08=""
-                readOnly={true}
-                tabIndex={-1}
-                value=""
-              />
-              <button
-                data-css-14ley1g=""
-                onClick={[Function]}
+              Choose a Date
+            </div>
+            <div
+              data-css-1r967oi=""
+            >
+              <div
+                data-css-ctre2o=""
               >
                 <div
-                  data-css-7dab2f=""
+                  data-css-1okk1dp=""
                 >
-                  <svg
-                    aria-label="calendar icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                    />
-                  </svg>
+                  <input
+                    data-css-1iyk6mt=""
+                    disabled={false}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    value=""
+                  />
                 </div>
-              </button>
+              </div>
             </div>
-          </div>
+          </label>
         </div>
       </div>
       <div
@@ -893,7 +826,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             >
               <svg
                 aria-label="Checkmark"
-                data-css-1m8h1an=""
+                data-css-ey6g07=""
                 role="img"
                 version="1.1"
                 viewBox="0 0 16 16"
@@ -906,7 +839,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             </div>
           </div>
           <div
-            data-css-55isdw=""
+            data-css-ybwuvp=""
           >
             Checkbox selected
           </div>
@@ -947,7 +880,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 >
                   <div
                     aria-checked={false}
-                    data-css-1wbxh41=""
+                    data-css-fdf00s=""
                     role="radio"
                     tabIndex={-1}
                   />
@@ -964,7 +897,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 value="full"
               />
               <div
-                data-css-18udfrp=""
+                data-css-nrxvu5=""
               >
                 Full-time employement
               </div>
@@ -981,7 +914,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 >
                   <div
                     aria-checked={false}
-                    data-css-1wbxh41=""
+                    data-css-fdf00s=""
                     role="radio"
                     tabIndex={-1}
                   />
@@ -998,7 +931,7 @@ exports[`Storyshots Sample Form sample 1`] = `
                 value="part"
               />
               <div
-                data-css-18udfrp=""
+                data-css-nrxvu5=""
               >
                 Part-time employement
               </div>
@@ -1049,7 +982,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             type="checkbox"
           />
           <span
-            data-css-k7ezbc=""
+            data-css-1oms9gl=""
           >
             toggle
           </span>
@@ -1075,7 +1008,7 @@ exports[`Storyshots Sample Form sample 1`] = `
           }
         >
           <div
-            data-css-k6qvfq=""
+            data-css-9kywkh=""
           >
             Comment
           </div>
@@ -1109,7 +1042,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-a3dmt8=""
+              data-css-a5fyxr=""
               disabled={false}
               style={Object {}}
             >
@@ -1124,7 +1057,7 @@ exports[`Storyshots Sample Form sample 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-bu16i2=""
+              data-css-19py2wt=""
               disabled={false}
               style={Object {}}
             >

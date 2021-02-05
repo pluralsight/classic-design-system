@@ -3,7 +3,7 @@
 exports[`Storyshots modal default 1`] = `
 <div>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -14,12 +14,12 @@ exports[`Storyshots modal default 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-a3dmt8=""
+    data-css-a5fyxr=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -31,7 +31,7 @@ exports[`Storyshots modal default 1`] = `
     </span>
   </button>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sweet soufflé 
     <a
@@ -57,7 +57,7 @@ exports[`Storyshots modal default 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-11c2ipp=""
+          data-css-3dsbll=""
           onClick={[Function]}
         >
           <svg
@@ -113,7 +113,7 @@ exports[`Storyshots modal default 1`] = `
           }
         >
           <button
-            data-css-11fj1h9=""
+            data-css-b8rwoi=""
             disabled={false}
             style={Object {}}
           >
@@ -131,7 +131,7 @@ exports[`Storyshots modal default 1`] = `
             }
           />
           <button
-            data-css-a3dmt8=""
+            data-css-1expafv=""
             disabled={false}
             style={Object {}}
           >
@@ -151,7 +151,7 @@ exports[`Storyshots modal default 1`] = `
 exports[`Storyshots modal no click overlay 1`] = `
 <div>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -162,12 +162,12 @@ exports[`Storyshots modal no click overlay 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-a3dmt8=""
+    data-css-a5fyxr=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -179,7 +179,7 @@ exports[`Storyshots modal no click overlay 1`] = `
     </span>
   </button>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sweet soufflé 
     <a
@@ -205,7 +205,7 @@ exports[`Storyshots modal no click overlay 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-11c2ipp=""
+          data-css-3dsbll=""
           onClick={[Function]}
         >
           <svg
@@ -261,7 +261,7 @@ exports[`Storyshots modal no click overlay 1`] = `
           }
         >
           <button
-            data-css-11fj1h9=""
+            data-css-b8rwoi=""
             disabled={false}
             style={Object {}}
           >
@@ -279,7 +279,7 @@ exports[`Storyshots modal no click overlay 1`] = `
             }
           />
           <button
-            data-css-a3dmt8=""
+            data-css-1expafv=""
             disabled={false}
             style={Object {}}
           >
@@ -299,7 +299,7 @@ exports[`Storyshots modal no click overlay 1`] = `
 exports[`Storyshots modal no close button 1`] = `
 <div>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -310,12 +310,12 @@ exports[`Storyshots modal no close button 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-a3dmt8=""
+    data-css-a5fyxr=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -327,7 +327,7 @@ exports[`Storyshots modal no close button 1`] = `
     </span>
   </button>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sweet soufflé 
     <a
@@ -393,7 +393,7 @@ exports[`Storyshots modal no close button 1`] = `
           }
         >
           <button
-            data-css-11fj1h9=""
+            data-css-b8rwoi=""
             disabled={false}
             style={Object {}}
           >
@@ -411,7 +411,7 @@ exports[`Storyshots modal no close button 1`] = `
             }
           />
           <button
-            data-css-a3dmt8=""
+            data-css-1expafv=""
             disabled={false}
             style={Object {}}
           >
@@ -431,7 +431,7 @@ exports[`Storyshots modal no close button 1`] = `
 exports[`Storyshots modal no escape key 1`] = `
 <div>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -442,12 +442,12 @@ exports[`Storyshots modal no escape key 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-a3dmt8=""
+    data-css-a5fyxr=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -459,7 +459,7 @@ exports[`Storyshots modal no escape key 1`] = `
     </span>
   </button>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sweet soufflé 
     <a
@@ -484,7 +484,7 @@ exports[`Storyshots modal no escape key 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-11c2ipp=""
+          data-css-3dsbll=""
           onClick={[Function]}
         >
           <svg
@@ -540,7 +540,7 @@ exports[`Storyshots modal no escape key 1`] = `
           }
         >
           <button
-            data-css-11fj1h9=""
+            data-css-b8rwoi=""
             disabled={false}
             style={Object {}}
           >
@@ -558,7 +558,7 @@ exports[`Storyshots modal no escape key 1`] = `
             }
           />
           <button
-            data-css-a3dmt8=""
+            data-css-1expafv=""
             disabled={false}
             style={Object {}}
           >
@@ -578,7 +578,7 @@ exports[`Storyshots modal no escape key 1`] = `
 exports[`Storyshots modal no focus on mount 1`] = `
 <div>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -589,12 +589,12 @@ exports[`Storyshots modal no focus on mount 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-a3dmt8=""
+    data-css-a5fyxr=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -606,7 +606,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
     </span>
   </button>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sweet soufflé 
     <a
@@ -632,7 +632,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-11c2ipp=""
+          data-css-3dsbll=""
           onClick={[Function]}
         >
           <svg
@@ -688,7 +688,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
           }
         >
           <button
-            data-css-11fj1h9=""
+            data-css-b8rwoi=""
             disabled={false}
             style={Object {}}
           >
@@ -706,7 +706,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
             }
           />
           <button
-            data-css-a3dmt8=""
+            data-css-1expafv=""
             disabled={false}
             style={Object {}}
           >
@@ -726,7 +726,7 @@ exports[`Storyshots modal no focus on mount 1`] = `
 exports[`Storyshots modal no focusable child elements 1`] = `
 <div>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -737,12 +737,12 @@ exports[`Storyshots modal no focusable child elements 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-a3dmt8=""
+    data-css-a5fyxr=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -754,7 +754,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
     </span>
   </button>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sweet soufflé 
     <a
@@ -780,7 +780,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-11c2ipp=""
+          data-css-3dsbll=""
           onClick={[Function]}
         >
           <svg
@@ -808,7 +808,7 @@ exports[`Storyshots modal no focusable child elements 1`] = `
 exports[`Storyshots modal overflow-y 1`] = `
 <div>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -819,12 +819,12 @@ exports[`Storyshots modal overflow-y 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-a3dmt8=""
+    data-css-a5fyxr=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -836,7 +836,7 @@ exports[`Storyshots modal overflow-y 1`] = `
     </span>
   </button>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sweet soufflé 
     <a
@@ -862,7 +862,7 @@ exports[`Storyshots modal overflow-y 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-11c2ipp=""
+          data-css-3dsbll=""
           onClick={[Function]}
         >
           <svg
@@ -1225,7 +1225,7 @@ exports[`Storyshots modal overflow-y 1`] = `
 exports[`Storyshots modal overflow-y with tail 1`] = `
 <div>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -1236,12 +1236,12 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-a3dmt8=""
+    data-css-a5fyxr=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -1253,7 +1253,7 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
     </span>
   </button>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sweet soufflé 
     <a
@@ -1279,7 +1279,7 @@ exports[`Storyshots modal overflow-y with tail 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-11c2ipp=""
+          data-css-3dsbll=""
           onClick={[Function]}
         >
           <svg
@@ -1665,7 +1665,7 @@ exports[`Storyshots onClose with onClose 1`] = `
   >
     <button
       aria-label="Close dialog"
-      data-css-11c2ipp=""
+      data-css-3dsbll=""
       onClick={[Function]}
     >
       <svg
@@ -1721,7 +1721,7 @@ exports[`Storyshots onClose with onClose 1`] = `
       }
     >
       <button
-        data-css-11fj1h9=""
+        data-css-b8rwoi=""
         disabled={false}
         style={Object {}}
       >
@@ -1739,7 +1739,7 @@ exports[`Storyshots onClose with onClose 1`] = `
         }
       />
       <button
-        data-css-a3dmt8=""
+        data-css-1expafv=""
         disabled={false}
         style={Object {}}
       >
@@ -1757,7 +1757,7 @@ exports[`Storyshots onClose with onClose 1`] = `
 exports[`Storyshots stylesFor dialog_content 1`] = `
 <div>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -1768,12 +1768,12 @@ exports[`Storyshots stylesFor dialog_content 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-a3dmt8=""
+    data-css-a5fyxr=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -1785,7 +1785,7 @@ exports[`Storyshots stylesFor dialog_content 1`] = `
     </span>
   </button>
   <p
-    data-css-xtc4oe=""
+    data-css-17nixd9=""
   >
     Sweet soufflé 
     <a
@@ -1811,7 +1811,7 @@ exports[`Storyshots stylesFor dialog_content 1`] = `
       >
         <button
           aria-label="Close dialog"
-          data-css-11c2ipp=""
+          data-css-3dsbll=""
           onClick={[Function]}
         >
           <svg
@@ -1867,7 +1867,7 @@ exports[`Storyshots stylesFor dialog_content 1`] = `
           }
         >
           <button
-            data-css-11fj1h9=""
+            data-css-b8rwoi=""
             disabled={false}
             style={Object {}}
           >
@@ -1885,7 +1885,7 @@ exports[`Storyshots stylesFor dialog_content 1`] = `
             }
           />
           <button
-            data-css-a3dmt8=""
+            data-css-1expafv=""
             disabled={false}
             style={Object {}}
           >
@@ -1951,7 +1951,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
       }
     >
       <button
-        data-css-11fj1h9=""
+        data-css-b8rwoi=""
         disabled={false}
         style={Object {}}
       >
@@ -1969,7 +1969,7 @@ exports[`Storyshots tailPosition bottomCenter 1`] = `
         }
       />
       <button
-        data-css-a3dmt8=""
+        data-css-1expafv=""
         disabled={false}
         style={Object {}}
       >
@@ -2033,7 +2033,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
       }
     >
       <button
-        data-css-11fj1h9=""
+        data-css-b8rwoi=""
         disabled={false}
         style={Object {}}
       >
@@ -2051,7 +2051,7 @@ exports[`Storyshots tailPosition bottomLeft 1`] = `
         }
       />
       <button
-        data-css-a3dmt8=""
+        data-css-1expafv=""
         disabled={false}
         style={Object {}}
       >
@@ -2115,7 +2115,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
       }
     >
       <button
-        data-css-11fj1h9=""
+        data-css-b8rwoi=""
         disabled={false}
         style={Object {}}
       >
@@ -2133,7 +2133,7 @@ exports[`Storyshots tailPosition bottomRight 1`] = `
         }
       />
       <button
-        data-css-a3dmt8=""
+        data-css-1expafv=""
         disabled={false}
         style={Object {}}
       >
@@ -2197,7 +2197,7 @@ exports[`Storyshots tailPosition none 1`] = `
       }
     >
       <button
-        data-css-11fj1h9=""
+        data-css-b8rwoi=""
         disabled={false}
         style={Object {}}
       >
@@ -2215,7 +2215,7 @@ exports[`Storyshots tailPosition none 1`] = `
         }
       />
       <button
-        data-css-a3dmt8=""
+        data-css-1expafv=""
         disabled={false}
         style={Object {}}
       >
@@ -2279,7 +2279,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
       }
     >
       <button
-        data-css-11fj1h9=""
+        data-css-b8rwoi=""
         disabled={false}
         style={Object {}}
       >
@@ -2297,7 +2297,7 @@ exports[`Storyshots tailPosition topCenter 1`] = `
         }
       />
       <button
-        data-css-a3dmt8=""
+        data-css-1expafv=""
         disabled={false}
         style={Object {}}
       >
@@ -2361,7 +2361,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
       }
     >
       <button
-        data-css-11fj1h9=""
+        data-css-b8rwoi=""
         disabled={false}
         style={Object {}}
       >
@@ -2379,7 +2379,7 @@ exports[`Storyshots tailPosition topLeft 1`] = `
         }
       />
       <button
-        data-css-a3dmt8=""
+        data-css-1expafv=""
         disabled={false}
         style={Object {}}
       >
@@ -2443,7 +2443,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
       }
     >
       <button
-        data-css-11fj1h9=""
+        data-css-b8rwoi=""
         disabled={false}
         style={Object {}}
       >
@@ -2461,7 +2461,7 @@ exports[`Storyshots tailPosition topRight 1`] = `
         }
       />
       <button
-        data-css-a3dmt8=""
+        data-css-1expafv=""
         disabled={false}
         style={Object {}}
       >

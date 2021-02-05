@@ -11,6 +11,7 @@ import React, {
   ForwardRefExoticComponent,
   MouseEventHandler,
   ReactNode,
+  RefAttributes,
   SyntheticEvent,
   forwardRef,
   useCallback,
@@ -38,6 +39,7 @@ const styles = {
       css(stylesheet['.psds-field']),
       css(stylesheet[`.psds-field--${opts.size}`])
     ),
+  halo: () => css(stylesheet['.psds-field__halo']),
   prefix: () => css(stylesheet['.psds-field__prefix']),
   suffix: () => css(stylesheet['.psds-field__suffix']),
   errorIcon: () => css(stylesheet['.psds-field__error-icon'])
@@ -51,7 +53,7 @@ interface FieldProps extends Omit<HTMLPropsFor<'div'>, 'prefix' | 'ref'> {
   label?: ReactNode
   onClick?: MouseEventHandler<HTMLDivElement>
   prefix?: ReactNode
-  renderContainer?: ForwardRefExoticComponent<unknown>
+  renderContainer?: ForwardRefExoticComponent<RefAttributes<any>>
   renderTag?: React.FC
   size?: ValueOf<typeof sizes>
   subLabel?: ReactNode
@@ -112,23 +114,21 @@ const Field: FieldComponent = props => {
       {label && label}
 
       <Theme name={themeNames.light}>
-        <div>
-          <Halo error={error} gapSize={Halo.gapSizes.small}>
-            <Tag {...styles.field({ size })} {...rest}>
-              {prefix && <div {...styles.prefix()}>{prefix}</div>}
+        <Halo error={error} gapSize={Halo.gapSizes.small} {...styles.halo()}>
+          <Tag {...styles.field({ size })} {...rest}>
+            {prefix && <div {...styles.prefix()}>{prefix}</div>}
 
-              {children}
+            {children}
 
-              {suffix && <div {...styles.suffix()}>{suffix}</div>}
+            {suffix && <div {...styles.suffix()}>{suffix}</div>}
 
-              {error && (
-                <div {...styles.errorIcon()}>
-                  <WarningIcon />
-                </div>
-              )}
-            </Tag>
-          </Halo>
-        </div>
+            {error && (
+              <div {...styles.errorIcon()}>
+                <WarningIcon />
+              </div>
+            )}
+          </Tag>
+        </Halo>
       </Theme>
 
       {subLabel && subLabel}

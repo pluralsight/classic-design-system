@@ -1,6 +1,6 @@
 import { Story } from '@storybook/react/types-6-0'
 
-import { layout } from '@pluralsight/ps-design-system-core'
+import { colorsPink, layout } from '@pluralsight/ps-design-system-core'
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
@@ -24,6 +24,22 @@ const variables = {
 export const ConstrainWidthDecorator = (Story: Story) => {
   return (
     <div {...css({ maxWidth: '400px' })}>
+      <Story />
+    </div>
+  )
+}
+
+export const OutlineDecorator = (Story: Story) => {
+  return (
+    <div {...css({ outline: `2px dashed ${colorsPink.base}` })}>
+      <Story />
+    </div>
+  )
+}
+
+export const SetWidthDecorator = (Story: Story) => {
+  return (
+    <div {...css({ width: '400px' })}>
       <Story />
     </div>
   )

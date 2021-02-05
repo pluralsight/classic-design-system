@@ -64,10 +64,10 @@ exports[`Storyshots Components | Typeahead / appearances subtle 1`] = `
         data-css-ctre2o=""
       >
         <div
-          data-css-x1cnlk=""
+          data-css-rltil5=""
         >
           <input
-            data-css-r9d4vy=""
+            data-css-7mw7i0=""
             disabled={false}
             onChange={[Function]}
             onFocus={[Function]}
@@ -76,7 +76,7 @@ exports[`Storyshots Components | Typeahead / appearances subtle 1`] = `
         </div>
       </div>
       <div
-        data-css-seje8w=""
+        data-css-1n6hr0x=""
       >
         <div
           data-css-7dab2f=""
@@ -162,7 +162,7 @@ exports[`Storyshots Components | Typeahead / form props all 1`] = `
     data-css-w0yocm=""
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       Some label
     </div>
@@ -204,7 +204,7 @@ exports[`Storyshots Components | Typeahead / form props all 1`] = `
       </div>
     </div>
     <div
-      data-css-6ga4kh=""
+      data-css-o89kbw=""
     >
       Some sublabel
     </div>
@@ -225,7 +225,7 @@ exports[`Storyshots Components | Typeahead / form props all w/error 1`] = `
     data-css-w0yocm=""
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       Some label
     </div>
@@ -286,7 +286,7 @@ exports[`Storyshots Components | Typeahead / form props all w/error 1`] = `
       </div>
     </div>
     <div
-      data-css-6ga4kh=""
+      data-css-o89kbw=""
     >
       Some sublabel
     </div>
@@ -307,7 +307,7 @@ exports[`Storyshots Components | Typeahead / form props label and subLabel 1`] =
     data-css-w0yocm=""
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       Some label
     </div>
@@ -348,7 +348,7 @@ exports[`Storyshots Components | Typeahead / form props label and subLabel 1`] =
       </div>
     </div>
     <div
-      data-css-6ga4kh=""
+      data-css-o89kbw=""
     >
       Some sublabel
     </div>

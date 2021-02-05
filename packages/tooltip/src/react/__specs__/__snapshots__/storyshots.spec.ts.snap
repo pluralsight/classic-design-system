@@ -9,7 +9,7 @@ exports[`Storyshots appearance accent 1`] = `
   }
 >
   <div
-    data-css-363ote=""
+    data-css-vuc25n=""
   >
     Some text
   </div>
@@ -41,11 +41,11 @@ exports[`Storyshots onClose accent 1`] = `
   }
 >
   <div
-    data-css-6sbzrz=""
+    data-css-3w2dnc=""
   >
     <button
       aria-label="Close tooltip"
-      data-css-1oqz9a6=""
+      data-css-a20bro=""
       onClick={[Function]}
     >
       <svg
@@ -173,12 +173,12 @@ exports[`Storyshots tailPosition accent bottomCenter 1`] = `
   }
 >
   <div
-    data-css-363ote=""
+    data-css-vuc25n=""
   >
     Some text
     <div
       aria-hidden={true}
-      data-css-1imdnud=""
+      data-css-nd5yk0=""
     />
   </div>
 </div>
@@ -193,12 +193,12 @@ exports[`Storyshots tailPosition accent bottomLeft 1`] = `
   }
 >
   <div
-    data-css-363ote=""
+    data-css-vuc25n=""
   >
     Some text
     <div
       aria-hidden={true}
-      data-css-vahegc=""
+      data-css-tyguzv=""
     />
   </div>
 </div>
@@ -213,12 +213,12 @@ exports[`Storyshots tailPosition accent bottomRight 1`] = `
   }
 >
   <div
-    data-css-363ote=""
+    data-css-vuc25n=""
   >
     Some text
     <div
       aria-hidden={true}
-      data-css-6srp9d=""
+      data-css-83qlyn=""
     />
   </div>
 </div>
@@ -233,12 +233,12 @@ exports[`Storyshots tailPosition accent leftCenter 1`] = `
   }
 >
   <div
-    data-css-363ote=""
+    data-css-vuc25n=""
   >
     Some text
     <div
       aria-hidden={true}
-      data-css-d2qnna=""
+      data-css-19dct80=""
     />
   </div>
 </div>
@@ -253,12 +253,12 @@ exports[`Storyshots tailPosition accent rightCenter 1`] = `
   }
 >
   <div
-    data-css-363ote=""
+    data-css-vuc25n=""
   >
     Some text
     <div
       aria-hidden={true}
-      data-css-1trbt5v=""
+      data-css-65ft98=""
     />
   </div>
 </div>
@@ -273,12 +273,12 @@ exports[`Storyshots tailPosition accent topCenter 1`] = `
   }
 >
   <div
-    data-css-363ote=""
+    data-css-vuc25n=""
   >
     Some text
     <div
       aria-hidden={true}
-      data-css-pssukq=""
+      data-css-1vyju2i=""
     />
   </div>
 </div>
@@ -293,12 +293,12 @@ exports[`Storyshots tailPosition accent topLeft 1`] = `
   }
 >
   <div
-    data-css-363ote=""
+    data-css-vuc25n=""
   >
     Some text
     <div
       aria-hidden={true}
-      data-css-1u7h16=""
+      data-css-q7mnkc=""
     />
   </div>
 </div>
@@ -313,12 +313,12 @@ exports[`Storyshots tailPosition accent topRight 1`] = `
   }
 >
   <div
-    data-css-363ote=""
+    data-css-vuc25n=""
   >
     Some text
     <div
       aria-hidden={true}
-      data-css-16npbbe=""
+      data-css-1to1u91=""
     />
   </div>
 </div>

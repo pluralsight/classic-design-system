@@ -1880,7 +1880,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 1 Star"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={0}
     onBlur={[Function]}
     onClick={[Function]}
@@ -1906,7 +1906,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 2 Stars"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={1}
     onBlur={[Function]}
     onClick={[Function]}
@@ -1932,7 +1932,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 3 Stars"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={2}
     onBlur={[Function]}
     onClick={[Function]}
@@ -1958,7 +1958,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 4 Stars"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={3}
     onBlur={[Function]}
     onClick={[Function]}
@@ -1984,7 +1984,7 @@ exports[`Storyshots StarRating / interactive null 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 5 Stars"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={4}
     onBlur={[Function]}
     onClick={[Function]}
@@ -2037,7 +2037,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 1 Star"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={0}
     onBlur={[Function]}
     onClick={[Function]}
@@ -2063,7 +2063,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 2 Stars"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={1}
     onBlur={[Function]}
     onClick={[Function]}
@@ -2089,7 +2089,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 3 Stars"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={2}
     onBlur={[Function]}
     onClick={[Function]}
@@ -2115,7 +2115,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 4 Stars"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={3}
     onBlur={[Function]}
     onClick={[Function]}
@@ -2141,7 +2141,7 @@ exports[`Storyshots StarRating / interactive undefined 1`] = `
   <button
     appearance="empty"
     aria-label="Rate 5 Stars"
-    data-css-1pdn2sl=""
+    data-css-rlg7p5=""
     index={4}
     onBlur={[Function]}
     onClick={[Function]}

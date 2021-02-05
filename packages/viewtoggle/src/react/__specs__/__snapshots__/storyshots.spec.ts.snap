@@ -26,7 +26,7 @@ exports[`Storyshots active default first 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -34,7 +34,7 @@ exports[`Storyshots active default first 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -69,7 +69,7 @@ exports[`Storyshots active explicit first 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -77,7 +77,7 @@ exports[`Storyshots active explicit first 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -104,7 +104,7 @@ exports[`Storyshots active explicit second 1`] = `
   </div>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -120,7 +120,7 @@ exports[`Storyshots active explicit second 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -147,7 +147,7 @@ exports[`Storyshots active explicit third 1`] = `
   </div>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -155,7 +155,7 @@ exports[`Storyshots active explicit third 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -190,7 +190,7 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
   </div>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -198,7 +198,7 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -241,7 +241,7 @@ exports[`Storyshots onSelect handles click 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -249,7 +249,7 @@ exports[`Storyshots onSelect handles click 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -287,7 +287,7 @@ Array [
     </button>
     <button
       aria-selected={false}
-      data-css-gogiqb=""
+      data-css-118ipcw=""
       onClick={[Function]}
       role="radio"
     >
@@ -340,7 +340,7 @@ exports[`Storyshots options count more than max 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -348,7 +348,7 @@ exports[`Storyshots options count more than max 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -410,7 +410,7 @@ exports[`Storyshots options count three 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -418,7 +418,7 @@ exports[`Storyshots options count three 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -453,7 +453,7 @@ exports[`Storyshots options count two 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -488,7 +488,7 @@ exports[`Storyshots text length all long 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -496,7 +496,7 @@ exports[`Storyshots text length all long 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -531,7 +531,7 @@ exports[`Storyshots text length differing lengths 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >
@@ -539,7 +539,7 @@ exports[`Storyshots text length differing lengths 1`] = `
   </button>
   <button
     aria-selected={false}
-    data-css-gogiqb=""
+    data-css-118ipcw=""
     onClick={[Function]}
     role="radio"
   >

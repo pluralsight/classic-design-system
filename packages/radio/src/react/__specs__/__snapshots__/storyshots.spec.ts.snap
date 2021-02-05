@@ -12,7 +12,7 @@ exports[`Storyshots Radio controlled 1`] = `
     <div
       style={
         Object {
-          "color": "rgba(255, 255, 255, 0.90)",
+          "color": "rgba(255, 255, 255, 0.95)",
         }
       }
     >
@@ -44,7 +44,7 @@ exports[`Storyshots Radio controlled 1`] = `
             >
               <div
                 aria-checked={true}
-                data-css-1olif27=""
+                data-css-1w8imqn=""
                 role="radio"
                 tabIndex={-1}
               >
@@ -65,7 +65,7 @@ exports[`Storyshots Radio controlled 1`] = `
             value="red"
           />
           <div
-            data-css-18udfrp=""
+            data-css-nrxvu5=""
           >
             Red
           </div>
@@ -82,7 +82,7 @@ exports[`Storyshots Radio controlled 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-1wbxh41=""
+                data-css-fdf00s=""
                 role="radio"
                 tabIndex={-1}
               />
@@ -99,7 +99,7 @@ exports[`Storyshots Radio controlled 1`] = `
             value="green"
           />
           <div
-            data-css-18udfrp=""
+            data-css-nrxvu5=""
           >
             Green
           </div>
@@ -116,7 +116,7 @@ exports[`Storyshots Radio controlled 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-1wbxh41=""
+                data-css-fdf00s=""
                 role="radio"
                 tabIndex={-1}
               />
@@ -133,7 +133,7 @@ exports[`Storyshots Radio controlled 1`] = `
             value="blue"
           />
           <div
-            data-css-18udfrp=""
+            data-css-nrxvu5=""
           >
             Blue
           </div>
@@ -171,7 +171,7 @@ exports[`Storyshots Radio default 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -188,7 +188,7 @@ exports[`Storyshots Radio default 1`] = `
           value="red"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -205,7 +205,7 @@ exports[`Storyshots Radio default 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -222,7 +222,7 @@ exports[`Storyshots Radio default 1`] = `
           value="green"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -239,7 +239,7 @@ exports[`Storyshots Radio default 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -256,7 +256,7 @@ exports[`Storyshots Radio default 1`] = `
           value="blue"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
@@ -293,7 +293,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -309,7 +309,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="red"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -326,7 +326,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1olif27=""
+              data-css-1w8imqn=""
               role="radio"
               tabIndex={-1}
             >
@@ -346,7 +346,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="green"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -363,7 +363,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -379,7 +379,7 @@ exports[`Storyshots Radio disabled & error 1`] = `
           value="blue"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
@@ -416,7 +416,7 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -432,7 +432,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="red"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -449,7 +449,7 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1olif27=""
+              data-css-1w8imqn=""
               role="radio"
               tabIndex={-1}
             >
@@ -469,7 +469,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="green"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -486,7 +486,7 @@ exports[`Storyshots Radio disabled 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -502,7 +502,7 @@ exports[`Storyshots Radio disabled 1`] = `
           value="blue"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
@@ -539,7 +539,7 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -556,7 +556,7 @@ exports[`Storyshots Radio error 1`] = `
           value="red"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -573,7 +573,7 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1olif27=""
+              data-css-1w8imqn=""
               role="radio"
               tabIndex={-1}
             >
@@ -594,7 +594,7 @@ exports[`Storyshots Radio error 1`] = `
           value="green"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -611,7 +611,7 @@ exports[`Storyshots Radio error 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -628,7 +628,7 @@ exports[`Storyshots Radio error 1`] = `
           value="blue"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
@@ -651,7 +651,7 @@ exports[`Storyshots Radio labels 1`] = `
     role="radiogroup"
   >
     <div
-      data-css-1jmxzqo=""
+      data-css-dysqqm=""
     >
       Colors
     </div>
@@ -670,7 +670,7 @@ exports[`Storyshots Radio labels 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -687,7 +687,7 @@ exports[`Storyshots Radio labels 1`] = `
           value="red"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -704,7 +704,7 @@ exports[`Storyshots Radio labels 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1olif27=""
+              data-css-1w8imqn=""
               role="radio"
               tabIndex={-1}
             >
@@ -725,7 +725,7 @@ exports[`Storyshots Radio labels 1`] = `
           value="green"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -742,7 +742,7 @@ exports[`Storyshots Radio labels 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -759,14 +759,14 @@ exports[`Storyshots Radio labels 1`] = `
           value="blue"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>
       </label>
     </div>
     <div
-      data-css-6ga4kh=""
+      data-css-o89kbw=""
     >
       These colors are very primary
     </div>
@@ -802,7 +802,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-1wbxh41=""
+                data-css-fdf00s=""
                 role="radio"
                 tabIndex={-1}
               />
@@ -819,7 +819,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="red"
           />
           <div
-            data-css-18udfrp=""
+            data-css-nrxvu5=""
           >
             Red
           </div>
@@ -836,7 +836,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-1wbxh41=""
+                data-css-fdf00s=""
                 role="radio"
                 tabIndex={-1}
               />
@@ -853,7 +853,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="green"
           />
           <div
-            data-css-18udfrp=""
+            data-css-nrxvu5=""
           >
             Green
           </div>
@@ -870,7 +870,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-1wbxh41=""
+                data-css-fdf00s=""
                 role="radio"
                 tabIndex={-1}
               />
@@ -887,7 +887,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="blue"
           />
           <div
-            data-css-18udfrp=""
+            data-css-nrxvu5=""
           >
             Blue
           </div>
@@ -913,7 +913,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-1wbxh41=""
+                data-css-fdf00s=""
                 role="radio"
                 tabIndex={-1}
               />
@@ -930,7 +930,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="red"
           />
           <div
-            data-css-18udfrp=""
+            data-css-nrxvu5=""
           >
             Red
           </div>
@@ -947,7 +947,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-1wbxh41=""
+                data-css-fdf00s=""
                 role="radio"
                 tabIndex={-1}
               />
@@ -964,7 +964,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="green"
           />
           <div
-            data-css-18udfrp=""
+            data-css-nrxvu5=""
           >
             Green
           </div>
@@ -981,7 +981,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             >
               <div
                 aria-checked={false}
-                data-css-1wbxh41=""
+                data-css-fdf00s=""
                 role="radio"
                 tabIndex={-1}
               />
@@ -998,7 +998,7 @@ exports[`Storyshots Radio multiple radio groups 1`] = `
             value="blue"
           />
           <div
-            data-css-18udfrp=""
+            data-css-nrxvu5=""
           >
             Blue
           </div>
@@ -1036,7 +1036,7 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -1053,7 +1053,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="red"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Red
         </div>
@@ -1070,7 +1070,7 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={true}
-              data-css-1olif27=""
+              data-css-1w8imqn=""
               role="radio"
               tabIndex={-1}
             >
@@ -1091,7 +1091,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="green"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Green
         </div>
@@ -1108,7 +1108,7 @@ exports[`Storyshots Radio one selected 1`] = `
           >
             <div
               aria-checked={false}
-              data-css-1wbxh41=""
+              data-css-fdf00s=""
               role="radio"
               tabIndex={-1}
             />
@@ -1125,7 +1125,7 @@ exports[`Storyshots Radio one selected 1`] = `
           value="blue"
         />
         <div
-          data-css-18udfrp=""
+          data-css-nrxvu5=""
         >
           Blue
         </div>

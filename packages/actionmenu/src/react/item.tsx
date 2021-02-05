@@ -153,6 +153,7 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
         <a
           onClick={handleClick as MouseEventHandler<HTMLAnchorElement>}
           role="menuitem"
+          aria-disabled={Boolean(disabled)}
           {...(rest as HTMLPropsFor<'a'>)}
           {...wrapperProps}
         />
