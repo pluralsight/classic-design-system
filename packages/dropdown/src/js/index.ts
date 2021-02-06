@@ -263,7 +263,8 @@ export const useDropdown = (
       inNode,
       isOpen,
       menuId,
-      menuPosition
+      menuPosition,
+      buttonRef
     },
     selected: {
       ...rest.selected,

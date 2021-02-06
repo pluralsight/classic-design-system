@@ -560,6 +560,36 @@ storiesOf('menu', module)
       }
     />
   ))
+  .add('bottom of view, pop above', () => (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        minHeight: '100vh',
+        border: '2px solid #00ff00',
+        paddingBottom: '40px'
+      }}
+    >
+      <div style={{
+        marginTop: 'auto',
+      }}>
+        <DefaultDropdown
+          label="Level"
+          menu={
+            <>
+              <Dropdown.Item>One item</Dropdown.Item>
+              <Dropdown.Item>Two item</Dropdown.Item>
+              <Dropdown.Item>Three item</Dropdown.Item>
+              <Dropdown.Item>Four item</Dropdown.Item>
+              <Dropdown.Item>Five item</Dropdown.Item>
+            </>
+          }
+        />
+      </div>
+    </div>
+  ))
+
 
 storiesOf('props whitelist', module).add('title', () => (
   <DefaultDropdown
