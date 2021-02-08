@@ -3,7 +3,7 @@ export default {
     '"PS TT Commons Roman", "Gotham SSm A", "Gotham SSm B", Arial, sans-serif',
   fontFamilyCode: '"DM Mono", "Source Code Pro", monospace',
 
-  /* font size */
+  /* font size (deprecated) */
   fontSizeGigantic: '60px',
   fontSizeJumbo: '48px',
   fontSizeXXLarge: '36px',
@@ -13,6 +13,7 @@ export default {
   fontSizeSmall: '14px',
   fontSizeXSmall: '12px',
 
+  /* font size */
   fontSizeBase: '16px',
   fontSize1200: '88px',
   fontSize1100: '72px',
@@ -27,7 +28,7 @@ export default {
   fontSize200: '14px',
   fontSize100: '12px',
 
-  /* letter spacing */
+  /* letter spacing (deprecated) */
   letterSpacingGigantic: '-1px',
   letterSpacingJumbo: '-0.72px',
   letterSpacingXXLarge: '-0.72px',
@@ -37,6 +38,7 @@ export default {
   letterSpacingSmall: 0,
   letterSpacingXSmall: 0,
 
+  /* letter spacing */
   letterSpacingTighter: '-0.025em',
   letterSpacingTight: '-0.01em',
   letterSpacingNone: 0,
@@ -44,7 +46,7 @@ export default {
   letterSpacingLooser: '0.025em',
   letterSpacingAllCaps: '0.08em',
 
-  /* font weight */
+  /* font weight (deprecated) */
   fontWeightBlack: 900,
   fontWeightXBold: 800,
   fontWeightBold: 700,
@@ -56,6 +58,7 @@ export default {
   fontWeightXLight: 200,
   fontWeightThin: 100,
 
+  /* font weight */
   fontWeightDefault: 400,
   fontWeightStrong: 600,
   fontWeight900: 900,
