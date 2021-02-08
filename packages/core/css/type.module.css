@@ -3,7 +3,7 @@
   --psTypeFontFamily: 'PS TT Commons Roman', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
   --psTypeFontFamilyCode: 'DM Mono', 'Source Code Pro', monospace;
 
-  /* font size */
+  /* font size (deprecated) */
   --psTypeFontSizeGigantic: 60px;
   --psTypeFontSizeJumbo: 48px;
   --psTypeFontSizeXXLarge: 36px;
@@ -13,6 +13,7 @@
   --psTypeFontSizeSmall: 14px;
   --psTypeFontSizeXSmall: 12px;
 
+  /* font size */
   --psTypeFontSizeBase: 16px;
   --psTypeFontSize1200: 88px;
   --psTypeFontSize1100: 72px;
@@ -27,7 +28,7 @@
   --psTypeFontSize200: 14px;
   --psTypeFontSize100: 12px;
 
-  /* letter spacing */
+  /* letter spacing (deprecated) */
   --psTypeLetterSpacingGigantic: -1px;
   --psTypeLetterSpacingJumbo: -0.72px;
   --psTypeLetterSpacingXXLarge: -0.54px;
@@ -37,6 +38,7 @@
   --psTypeLetterSpacingSmall: 0;
   --psTypeLetterSpacingXSmall: 0;
 
+  /* letter spacing */
   --psTypeLetterSpacingTighter: -0.025em;
   --psTypeLetterSpacingTight: -0.01em;
   --psTypeLetterSpacingNone: 0;
@@ -44,7 +46,7 @@
   --psTypeLetterSpacingLooser: 0.025em;
   --psTypeLetterSpacingAllCaps: 0.08em;
 
-  /* font weight */
+  /* font weight (deprecated) */
   --psTypeFontWeightBlack: 900;
   --psTypeFontWeightXBold: 800;
   --psTypeFontWeightBold: 700;
@@ -56,6 +58,7 @@
   --psTypeFontWeightXLight: 200;
   --psTypeFontWeightThin: 100;
 
+  /* font weight */
   --psTypeFontWeightDefault: 400;
   --psTypeFontWeightStrong: 600;
   --psTypeFontWeight900: 900;
