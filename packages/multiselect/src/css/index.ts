@@ -74,6 +74,10 @@ export default {
   },
   '.psds-multi-select__input': {
     minHeight: INPUT_MIN_HEIGHT,
-    minWidth: INPUT_MIN_WIDTH
+    minWidth: INPUT_MIN_WIDTH,
+
+    '&:disabled': {
+      background: 'transparent'
+    }
   }
 }
