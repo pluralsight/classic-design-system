@@ -221,25 +221,41 @@ interface PageProps extends HTMLPropsFor<'ul'> {
   paged?: boolean
   isActivePage?: boolean
 }
-const Page: React.FC<PageProps> = props => {
-  const ref = React.useRef<HTMLUListElement>(null)
 
+const Page: React.FC<PageProps> = props => {
   const { children, isActivePage, paged, ...rest } = props
   const { offset, transitioning, setTransitioning } = React.useContext(
     CarouselContext
   )
-  React.useEffect(() => {
-    if (paged && isActivePage) {
-      const page = ref.current
-      if (page) {
-        const focusFirstChild = (evt: TransitionEvent) => {
-          setTransitioning(false)
-          evt.target === page && (page.firstElementChild as HTMLElement).focus()
+
+  const ref = React.useRef<HTMLUListElement>(null)
+
+  React.useEffect(
+    function responseToTransitionEnd() {
+      const { current: page } = ref
+      if (!page || !paged || !isActivePage) return
+
+      const onTransitionEnd = (evt: TransitionEvent) => {
+        const isPageTransition =
+          evt.target === page && evt.propertyName === 'transform'
+
+        if (!isPageTransition) return
+        setTransitioning(false)
+
+        if (page && page.firstElementChild instanceof HTMLElement) {
+          page.firstElementChild.focus()
         }
-        page.addEventListener('transitionend', focusFirstChild)
       }
-    }
-  }, [isActivePage, paged])
+
+      page.addEventListener('transitionend', onTransitionEnd)
+
+      return () => {
+        page.removeEventListener('transitionend', onTransitionEnd)
+      }
+    },
+    [isActivePage, paged, setTransitioning]
+  )
+
   return (
     <ul
       ref={ref}
