@@ -30,8 +30,6 @@ describe('TagsInput', () => {
 
       expect(input).toHaveFocus()
     })
-
-    it.todo('test more interactions')
   })
 })
 
