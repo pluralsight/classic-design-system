@@ -1,9 +1,5 @@
 import { Option } from './types'
 
-export function arraysAreEqual<T>(a: T[] = [], b: T[] = []) {
-  return a.length === b.length && a.every(item => b.includes(item))
-}
-
 /* eslint-disable @typescript-eslint/no-empty-function */
 export function noop() {}
 /* eslint-enable @typescript-eslint/no-empty-function */
