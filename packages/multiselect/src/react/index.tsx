@@ -197,15 +197,13 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
   }, [subLabel])
 
-  const afterInputSentinel = useRef<HTMLDivElement>(null)
+  const afterInputMark = useRef<HTMLDivElement>(null)
   useLayoutEffect(
     function keepInputInView() {
-      if (!isOpen || !afterInputSentinel.current) return
+      if (!isOpen || !afterInputMark.current) return
+      if (!afterInputMark.current.scrollIntoView) return
 
-      const { scrollIntoView } = afterInputSentinel.current
-      if (!scrollIntoView) return
-
-      scrollIntoView()
+      afterInputMark.current.scrollIntoView()
     },
     [isOpen, selectedItems]
   )
@@ -249,7 +247,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
               placeholder={placeholder}
               value={searchTerm}
             />
-            <div ref={afterInputSentinel} />
+            <div ref={afterInputMark} />
           </Pills>
 
           <BelowLeft
