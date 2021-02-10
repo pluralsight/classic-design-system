@@ -112,15 +112,13 @@ const TagsInput: TagsInputComponent = props => {
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
   }, [subLabel])
 
-  const afterInputSentinel = useRef<HTMLDivElement>(null)
+  const afterInputMark = useRef<HTMLDivElement>(null)
   useLayoutEffect(
     function keepInputInView() {
-      if (!afterInputSentinel.current) return
+      if (!afterInputMark.current) return
+      if (!afterInputMark.current.scrollIntoView) return
 
-      const { scrollIntoView } = afterInputSentinel.current
-      if (!scrollIntoView) return
-
-      scrollIntoView()
+      afterInputMark.current.scrollIntoView()
     },
     [selectedItems]
   )
@@ -156,7 +154,7 @@ const TagsInput: TagsInputComponent = props => {
           {...getDropdownProps()}
         />
 
-        <div ref={afterInputSentinel} />
+        <div ref={afterInputMark} />
       </Pills>
     </Field>
   )
