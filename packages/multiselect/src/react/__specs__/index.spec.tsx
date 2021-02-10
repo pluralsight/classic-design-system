@@ -33,22 +33,6 @@ describe('MultiSelectField', () => {
       expect(results).toHaveNoViolations()
     })
   })
-
-  describe('Basic story', () => {
-    const { Basic } = stories
-
-    it.skip('should focus input when label clicked', () => {
-      render(<Basic {...(Basic.args as any)} />)
-      const label = screen.getByLabelText('The label')
-      const input = screen.getByRole('textbox')
-
-      userEvent.click(label)
-
-      expect(input).toHaveFocus()
-    })
-
-    it.todo('test more interactions')
-  })
 })
 
 function generateCasesFromStories(
