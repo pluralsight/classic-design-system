@@ -114,8 +114,8 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1mt6ivr=""
               data-css-1na6nif=""
+              data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
               onClick={[Function]}
@@ -683,8 +683,8 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1mt6ivr=""
               data-css-1na6nif=""
+              data-css-8z457z=""
               disabled={true}
               id="tagsinput__input-unique-id"
               onChange={[Function]}
@@ -1253,8 +1253,8 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1mt6ivr=""
               data-css-1na6nif=""
+              data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
               onClick={[Function]}
@@ -1862,8 +1862,8 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1mt6ivr=""
               data-css-1na6nif=""
+              data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
               onClick={[Function]}
@@ -2431,8 +2431,8 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1mt6ivr=""
               data-css-1na6nif=""
+              data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
               onClick={[Function]}
@@ -3019,8 +3019,8 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1mt6ivr=""
               data-css-1na6nif=""
+              data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
               onClick={[Function]}
@@ -3587,8 +3587,8 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1mt6ivr=""
               data-css-1na6nif=""
+              data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
               onClick={[Function]}

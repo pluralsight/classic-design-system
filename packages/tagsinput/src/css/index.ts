@@ -34,6 +34,9 @@ export default {
   '.psds-tagsinput__input-container': { margin: `calc(${GUTTER_SIZE}px / 2)` },
   '.psds-tagsinput__input': {
     minHeight: INPUT_MIN_HEIGHT,
-    minWidth: INPUT_MIN_WIDTH
+    minWidth: INPUT_MIN_WIDTH,
+    '&:disabled': {
+      background: 'transparent'
+    }
   }
 }
