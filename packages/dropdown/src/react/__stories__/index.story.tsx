@@ -16,6 +16,7 @@ import Dropdown from '../'
 import { DropdownContext, useDropdown } from '../../js'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
+// TODO: convert jest storybook format
 const stableId = (prefix = '') => prefix + 'unique-id'
 
 const DefaultDropdown = (props: React.ComponentProps<typeof Dropdown>) => (
@@ -222,6 +223,29 @@ storiesOf('layouts', module)
         />
       </div>
       <div style={{ border: '3px solid green', height: '50px' }} />
+    </div>
+  ))
+  .add('bottom of viewport', () => (
+    <div
+      style={{
+        display: 'flex',
+        minHeight: 'calc(100vh - 14px)',
+        width: '25vw',
+        alignItems: 'end',
+        outline: '1px solid red'
+      }}
+    >
+      <DefaultDropdown
+        placeholder="Menu appears above"
+        appearance={Dropdown.appearances.subtle}
+        menu={
+          <>
+            <Dropdown.Item value="one">One item</Dropdown.Item>
+            <Dropdown.Item value="two">Two item</Dropdown.Item>
+            <Dropdown.Item value="three">Three item</Dropdown.Item>
+          </>
+        }
+      />
     </div>
   ))
   .add('custom width', () => {
