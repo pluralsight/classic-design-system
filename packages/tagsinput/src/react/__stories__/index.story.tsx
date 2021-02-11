@@ -2,13 +2,11 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React, {
   ChangeEventHandler,
+  KeyboardEventHandler,
   ComponentProps,
-  SyntheticEvent,
-  useMemo,
   useState
 } from 'react'
 
-import { periodicElements } from '../__fixtures__/options'
 import TagsInput, { Option } from '..'
 
 const ConstrainWidthDecorator = (Story: Story) => {
@@ -18,6 +16,11 @@ const ConstrainWidthDecorator = (Story: Story) => {
     </div>
   )
 }
+
+const uniqBy = (arr: any[], key: string) =>
+  Array.from(new Set(arr.map(item => item[key]))).map(k =>
+    arr.find(i => i[key] === k)
+  )
 
 export default {
   title: 'Components/TagsInput',
@@ -31,55 +34,42 @@ const defaultArgs = {
 }
 
 const Template: Story<ComponentProps<typeof TagsInput>> = args => {
-  const options = useMemo(() => periodicElements, [])
-
   const [searchTerm, setSearchTerm] = useState('')
   const handleInputChange: ChangeEventHandler<HTMLInputElement> = evt => {
     setSearchTerm(evt.target.value)
   }
 
-  const [value, setValue] = useState(options.slice(0, 2))
+  const [value, setValue] = useState<Option[]>([
+    { label: 'first', value: 'first' },
+    { label: 'second', value: 'second' }
+  ])
 
-  const handleAddSelected = (_: SyntheticEvent, o: Option) => {
-    setValue([...value, o])
-    setSearchTerm('')
+  const handleOnKeyPress: KeyboardEventHandler = evt => {
+    if (evt.key !== 'Enter') return
+
+    if (evt.target instanceof HTMLInputElement) {
+      const { value: targetValue } = evt.target
+      if (targetValue.length < 1) return
+
+      const nextOption = { label: targetValue, value: targetValue }
+      const nextValue = uniqBy([...value, nextOption], 'value')
+
+      setSearchTerm('')
+      setValue(nextValue)
+    }
   }
 
-  const unselectedOptions = useMemo(() => {
-    return options.filter(option => value.indexOf(option) < 0)
-  }, [options, value])
-
   return (
-    <>
-      <TagsInput
-        {...args}
-        onChange={(_, nextValue) => {
-          setValue(nextValue)
-        }}
-        onSearchInputChange={handleInputChange}
-        searchInputValue={searchTerm}
-        value={value}
-      />
-
-      <div
-        style={{
-          border: '2px dashed pink',
-          margin: '20px 0',
-          maxHeight: 200,
-          overflow: 'scroll',
-          padding: 20
-        }}
-      >
-        <ul>
-          {unselectedOptions.map((option, index) => (
-            <li key={`filter-result-${index}`}>
-              <span>{option.label} </span>
-              <button onClick={e => handleAddSelected(e, option)}>add</button>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
+    <TagsInput
+      {...args}
+      onChange={(_, nextValue) => {
+        setValue(nextValue)
+      }}
+      onKeyPress={handleOnKeyPress}
+      onSearchInputChange={handleInputChange}
+      searchInputValue={searchTerm}
+      value={value}
+    />
   )
 }
 
