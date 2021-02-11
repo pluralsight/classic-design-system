@@ -2137,6 +2137,103 @@ exports[`Storyshots labels subLabel 1`] = `
 </div>
 `;
 
+exports[`Storyshots layouts bottom of viewport 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "end",
+      "display": "flex",
+      "minHeight": "calc(100vh - 14px)",
+      "outline": "1px solid red",
+      "width": "25vw",
+    }
+  }
+>
+  <div
+    data-css-1hniuff=""
+  >
+    <label
+      htmlFor="dropdown-input-unique-id"
+    >
+      <span
+        data-css-6wu9td=""
+      >
+        Dropdown
+      </span>
+    </label>
+    <div
+      data-css-6wu9td=""
+    >
+      <input
+        aria-activedescendant="dropdown-menu-unique-id-one"
+        aria-autocomplete="list"
+        aria-controls="dropdown-menu-unique-id"
+        aria-expanded={false}
+        defaultValue=""
+        disabled={false}
+        id="dropdown-input-unique-id"
+        onKeyDown={[Function]}
+        role="combobox"
+        tabIndex={-1}
+      />
+    </div>
+    <div
+      data-css-8befsb=""
+    >
+      <div
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            data-css-1c2g7cd=""
+            disabled={false}
+            onClick={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span
+              data-css-1m4meif=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Menu appears above
+              </span>
+              <span
+                data-css-12qzma8=""
+              >
+                Menu appears above
+              </span>
+            </span>
+            <div
+              data-css-cfp7r0=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots layouts custom width 1`] = `
 <div>
   <div
@@ -2797,6 +2894,108 @@ exports[`Storyshots layouts right-aligned 1`] = `
       }
     }
   />
+</div>
+`;
+
+exports[`Storyshots menu bottom of view, pop above 1`] = `
+<div
+  style={
+    Object {
+      "border": "2px solid #00ff00",
+      "display": "flex",
+      "flexDirection": "column",
+      "height": "100%",
+      "minHeight": "100vh",
+      "paddingBottom": "40px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "marginTop": "auto",
+      }
+    }
+  >
+    <div
+      data-css-1hniuff=""
+    >
+      <label
+        htmlFor="dropdown-input-unique-id"
+      >
+        <span>
+          Level
+        </span>
+      </label>
+      <div
+        data-css-6wu9td=""
+      >
+        <input
+          aria-activedescendant="dropdown-menu-unique-id-Oneitem"
+          aria-autocomplete="list"
+          aria-controls="dropdown-menu-unique-id"
+          aria-expanded={false}
+          defaultValue=""
+          disabled={false}
+          id="dropdown-input-unique-id"
+          onKeyDown={[Function]}
+          role="combobox"
+          tabIndex={-1}
+        />
+      </div>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              data-css-185vr3w=""
+              disabled={false}
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Three item
+                </span>
+                <span
+                  data-css-13czx1q=""
+                />
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 

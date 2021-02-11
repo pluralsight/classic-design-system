@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-docs",
-  "version": "0.19.1",
+  "version": "0.20.0",
   "description": "Reference site",
   "license": "Apache-2.0",
   "private": true,

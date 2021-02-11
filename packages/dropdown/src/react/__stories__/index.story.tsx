@@ -16,6 +16,7 @@ import Dropdown from '../'
 import { DropdownContext, useDropdown } from '../../js'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
+// TODO: convert jest storybook format
 const stableId = (prefix = '') => prefix + 'unique-id'
 
 const DefaultDropdown = (props: React.ComponentProps<typeof Dropdown>) => (
@@ -222,6 +223,29 @@ storiesOf('layouts', module)
         />
       </div>
       <div style={{ border: '3px solid green', height: '50px' }} />
+    </div>
+  ))
+  .add('bottom of viewport', () => (
+    <div
+      style={{
+        display: 'flex',
+        minHeight: 'calc(100vh - 14px)',
+        width: '25vw',
+        alignItems: 'end',
+        outline: '1px solid red'
+      }}
+    >
+      <DefaultDropdown
+        placeholder="Menu appears above"
+        appearance={Dropdown.appearances.subtle}
+        menu={
+          <>
+            <Dropdown.Item value="one">One item</Dropdown.Item>
+            <Dropdown.Item value="two">Two item</Dropdown.Item>
+            <Dropdown.Item value="three">Three item</Dropdown.Item>
+          </>
+        }
+      />
     </div>
   ))
   .add('custom width', () => {
@@ -559,6 +583,37 @@ storiesOf('menu', module)
         </>
       }
     />
+  ))
+  .add('bottom of view, pop above', () => (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        height: '100%',
+        minHeight: '100vh',
+        border: '2px solid #00ff00',
+        paddingBottom: '40px'
+      }}
+    >
+      <div
+        style={{
+          marginTop: 'auto'
+        }}
+      >
+        <DefaultDropdown
+          label="Level"
+          menu={
+            <>
+              <Dropdown.Item>One item</Dropdown.Item>
+              <Dropdown.Item>Two item</Dropdown.Item>
+              <Dropdown.Item>Three item</Dropdown.Item>
+              <Dropdown.Item>Four item</Dropdown.Item>
+              <Dropdown.Item>Five item</Dropdown.Item>
+            </>
+          }
+        />
+      </div>
+    </div>
   ))
 
 storiesOf('props whitelist', module).add('title', () => (
