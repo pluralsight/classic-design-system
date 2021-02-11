@@ -17,15 +17,15 @@ exports[`Storyshots actionBar locked visible 1`] = `
     data-css-7zyoug=""
   >
     <button
-      data-css-1b3czpf=""
+      data-css-1dnyz38=""
       disabled={false}
       style={Object {}}
     >
       <div
-        data-css-y80vay=""
+        data-css-4ducb0=""
       >
         <div
-          data-css-7dab2f=""
+          data-css-k31qw2=""
         >
           <svg
             aria-label="bookmark icon"
@@ -63,15 +63,15 @@ exports[`Storyshots actionBar long title 1`] = `
     data-css-1pe5xb7=""
   >
     <button
-      data-css-1b3czpf=""
+      data-css-1dnyz38=""
       disabled={false}
       style={Object {}}
     >
       <div
-        data-css-y80vay=""
+        data-css-4ducb0=""
       >
         <div
-          data-css-7dab2f=""
+          data-css-k31qw2=""
         >
           <svg
             aria-label="bookmark icon"
@@ -109,15 +109,15 @@ exports[`Storyshots actionBar long title with image 1`] = `
     data-css-1pe5xb7=""
   >
     <button
-      data-css-1b3czpf=""
+      data-css-1dnyz38=""
       disabled={false}
       style={Object {}}
     >
       <div
-        data-css-y80vay=""
+        data-css-4ducb0=""
       >
         <div
-          data-css-7dab2f=""
+          data-css-k31qw2=""
         >
           <svg
             aria-label="bookmark icon"
@@ -155,15 +155,15 @@ exports[`Storyshots actionBar one action 1`] = `
     data-css-1pe5xb7=""
   >
     <button
-      data-css-1b3czpf=""
+      data-css-1dnyz38=""
       disabled={false}
       style={Object {}}
     >
       <div
-        data-css-y80vay=""
+        data-css-4ducb0=""
       >
         <div
-          data-css-7dab2f=""
+          data-css-k31qw2=""
         >
           <svg
             aria-label="bookmark icon"
@@ -273,15 +273,15 @@ exports[`Storyshots combo everything 1`] = `
     data-css-7b22zo=""
   >
     <button
-      data-css-1b3czpf=""
+      data-css-1dnyz38=""
       disabled={false}
       style={Object {}}
     >
       <div
-        data-css-y80vay=""
+        data-css-4ducb0=""
       >
         <div
-          data-css-7dab2f=""
+          data-css-k31qw2=""
         >
           <svg
             aria-label="bookmark icon"
@@ -299,15 +299,15 @@ exports[`Storyshots combo everything 1`] = `
       />
     </button>
     <button
-      data-css-1b3czpf=""
+      data-css-1dnyz38=""
       disabled={false}
       style={Object {}}
     >
       <div
-        data-css-y80vay=""
+        data-css-4ducb0=""
       >
         <div
-          data-css-7dab2f=""
+          data-css-k31qw2=""
         >
           <svg
             aria-label="gear icon"
@@ -327,15 +327,15 @@ exports[`Storyshots combo everything 1`] = `
       />
     </button>
     <button
-      data-css-1b3czpf=""
+      data-css-1dnyz38=""
       disabled={false}
       style={Object {}}
     >
       <div
-        data-css-y80vay=""
+        data-css-4ducb0=""
       >
         <div
-          data-css-7dab2f=""
+          data-css-k31qw2=""
         >
           <svg
             aria-label="more icon"
@@ -647,15 +647,15 @@ Array [
       data-css-7zyoug=""
     >
       <button
-        data-css-1b3czpf=""
+        data-css-1dnyz38=""
         disabled={false}
         style={Object {}}
       >
         <div
-          data-css-y80vay=""
+          data-css-4ducb0=""
         >
           <div
-            data-css-7dab2f=""
+            data-css-k31qw2=""
           >
             <svg
               aria-label="more icon"
@@ -699,15 +699,15 @@ Array [
       data-css-7zyoug=""
     >
       <button
-        data-css-1b3czpf=""
+        data-css-1dnyz38=""
         disabled={false}
         style={Object {}}
       >
         <div
-          data-css-y80vay=""
+          data-css-4ducb0=""
         >
           <div
-            data-css-7dab2f=""
+            data-css-k31qw2=""
           >
             <svg
               aria-label="more icon"
