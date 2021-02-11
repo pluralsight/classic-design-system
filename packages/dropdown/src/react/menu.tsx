@@ -53,8 +53,8 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
     buttonRef,
     ...rest
   } = props
-  console.log(`menuPosition`, menuPosition)
 
+  /* eslint-disable-next-line react-hooks/rules-of-hooks */
   const [adjMenuPosition, setAdjMenuPosition] = useState<{
     left: number
     top: number
@@ -71,6 +71,7 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
   useCloseOnDocumentEvents<HTMLDivElement>(ref, context.onDocumentEvents)
 
+  /* eslint-disable-next-line react-hooks/rules-of-hooks */
   useLayoutEffect(() => {
     setAdjMenuPosition(menuPosition)
     if (!isOpen || !ref.current || !buttonRef.current) return
@@ -83,7 +84,7 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
         top: buttonRect.top - menuRect.height - 8
       })
     }
-  }, [ref, isOpen, menuPosition, setAdjMenuPosition])
+  }, [ref, buttonRef, isOpen, menuPosition, setAdjMenuPosition])
 
   return (
     menu &&
