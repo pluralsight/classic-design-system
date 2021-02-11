@@ -571,9 +571,11 @@ storiesOf('menu', module)
         paddingBottom: '40px'
       }}
     >
-      <div style={{
-        marginTop: 'auto',
-      }}>
+      <div
+        style={{
+          marginTop: 'auto'
+        }}
+      >
         <DefaultDropdown
           label="Level"
           menu={
@@ -589,7 +591,6 @@ storiesOf('menu', module)
       </div>
     </div>
   ))
-
 
 storiesOf('props whitelist', module).add('title', () => (
   <DefaultDropdown

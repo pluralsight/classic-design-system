@@ -36,7 +36,7 @@ interface DropdownMenuProps extends HTMLPropsFor<'div'> {
   isOpen: boolean
   menu: React.ReactNode
   menuId: string
-  menuPosition: { top: number; left: number; width: number },
+  menuPosition: { top: number; left: number; width: number }
   buttonRef: RefObject<HTMLButtonElement>
 }
 
@@ -44,9 +44,17 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
   props,
   forwardedRef
 ) => {
-  const { inNode, isOpen, menu, menuId, menuPosition, buttonRef, ...rest } = props
+  const {
+    inNode,
+    isOpen,
+    menu,
+    menuId,
+    menuPosition,
+    buttonRef,
+    ...rest
+  } = props
   console.log(`menuPosition`, menuPosition)
-  
+
   const [adjMenuPosition, setAdjMenuPosition] = useState<{
     left: number
     top: number
@@ -66,15 +74,15 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
   useLayoutEffect(() => {
     setAdjMenuPosition(menuPosition)
     if (!isOpen || !ref.current || !buttonRef.current) return
-   
+
     const menuRect = ref.current.getBoundingClientRect()
     const buttonRect = buttonRef.current.getBoundingClientRect()
-    if ((buttonRect.bottom + menuRect.height) > window.innerHeight) {
+    if (buttonRect.bottom + menuRect.height > window.innerHeight) {
       setAdjMenuPosition({
         ...menuPosition,
         top: buttonRect.top - menuRect.height - 8
       })
-    } 
+    }
   }, [ref, isOpen, menuPosition, setAdjMenuPosition])
 
   return (
