@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@11.0.2...@pluralsight/ps-design-system-carousel@11.1.0) (2021-02-11)
+
+
+### Bug Fixes
+
+* **carousel:** remove flash when used with cards ([f187dd0](https://github.com/pluralsight/design-system/commit/f187dd0a61c4add07484e59de7bdae5132fe2391))
+
+
+
+
+
 ## [11.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@11.0.1...@pluralsight/ps-design-system-carousel@11.0.2) (2021-02-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

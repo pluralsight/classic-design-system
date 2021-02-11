@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.0.2...@pluralsight/ps-design-system-dropdown@11.1.0) (2021-02-11)
+
+
+### Features
+
+* **dropdown:** optionally pop upwards ([daf2d9c](https://github.com/pluralsight/design-system/commit/daf2d9c7e788abfd7b6f718e9ab7311e135bc729))
+
+
+
+
+
 ## [11.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.0.1...@pluralsight/ps-design-system-dropdown@11.0.2) (2021-02-04)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
