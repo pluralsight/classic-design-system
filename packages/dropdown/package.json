@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dropdown",
-  "version": "11.0.2",
+  "version": "11.0.3",
   "description": "Design system components for dropdown",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -20,11 +20,11 @@
   },
   "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.8.0",
-    "@pluralsight/ps-design-system-halo": "^8.0.2",
-    "@pluralsight/ps-design-system-icon": "^20.0.2",
-    "@pluralsight/ps-design-system-screenreaderonly": "^3.0.2",
-    "@pluralsight/ps-design-system-util": "^7.0.1",
+    "@pluralsight/ps-design-system-core": "^6.8.1",
+    "@pluralsight/ps-design-system-halo": "^8.0.3",
+    "@pluralsight/ps-design-system-icon": "^20.0.3",
+    "@pluralsight/ps-design-system-screenreaderonly": "^3.0.3",
+    "@pluralsight/ps-design-system-util": "^7.0.2",
     "react-innertext": "^1.1.5"
   },
   "peerDependencies": {
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.3",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.3.1",
-    "@pluralsight/ps-design-system-theme": "^7.0.1"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.3.2",
+    "@pluralsight/ps-design-system-theme": "^7.0.2"
   }
 }

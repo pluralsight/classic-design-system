@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@7.0.1...@pluralsight/ps-design-system-util@7.0.2) (2021-02-11)
+
+
+### Bug Fixes
+
+* **util:** was losing ref on closest check ([#1604](https://github.com/pluralsight/design-system/issues/1604)) ([ac029c5](https://github.com/pluralsight/design-system/commit/ac029c52f861e52106a44f7e3177372b77e4df9d))
+
+
+
+
+
 ## [7.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@7.0.0...@pluralsight/ps-design-system-util@7.0.1) (2021-02-04)
 
 
