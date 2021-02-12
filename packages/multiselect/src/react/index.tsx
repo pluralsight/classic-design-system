@@ -261,6 +261,15 @@ const MultiSelect: MultiSelectFieldComponent = props => {
             show={
               <div>
                 <Menu {...getMenuProps()} open={isOpen}>
+                  {filteredOptions.length < 1 && (
+                    <Menu.Item
+                      highlighted={false}
+                      key={`menu-option-empty-label`}
+                    >
+                      No results found
+                    </Menu.Item>
+                  )}
+
                   {filteredOptions.map((option, index) => (
                     <Menu.Item
                       key={`menu-option-${index}`}
