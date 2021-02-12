@@ -8,10 +8,12 @@ import React from 'react'
 
 import Carousel, { Item } from '..'
 
+const uniqueId = (prefix = '') => `${prefix}mock_unique_id`
+
 interface MockCardProps
   extends Omit<
-    React.ComponentProps<typeof Card>,
-    'title' | 'actionBar' | 'image' | 'metadata1'
+  React.ComponentProps<typeof Card>,
+  'title' | 'actionBar' | 'image' | 'metadata1'
   > {
   titleText: string
 }
@@ -79,18 +81,18 @@ const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
 
 storiesOf('Carousel/items', module)
   .add('one item', () => (
-    <Carousel>
+    <Carousel uniqueId={uniqueId}>
       <MockItem>just one item</MockItem>
     </Carousel>
   ))
   .add('two items', () => (
-    <Carousel>
+    <Carousel uniqueId={uniqueId}>
       <MockItem>first item</MockItem>
       <MockItem>second item</MockItem>
     </Carousel>
   ))
   .add('many items', () => (
-    <Carousel>
+    <Carousel uniqueId={uniqueId}>
       {new Array(21).fill(null).map((_, index) => (
         <MockItem key={index}>item: {index + 1}</MockItem>
       ))}
@@ -105,7 +107,7 @@ storiesOf('Carousel/items', module)
 
       return (
         <>
-          <Carousel>
+          <Carousel uniqueId={uniqueId}>
             {new Array(count).fill(null).map((_, index) => (
               <MockItem key={index}>item: {index + 1}</MockItem>
             ))}
@@ -134,6 +136,7 @@ storiesOf('Carousel/items', module)
 
 storiesOf('Carousel/controls', module).add('custom alignment', () => (
   <Carousel
+    uniqueId={uniqueId}
     controlPrev={
       <Carousel.Control
         direction={Carousel.Control.directions.prev}
@@ -157,7 +160,7 @@ const sizeStories = storiesOf('Carousel/size', module)
 
 Object.values(Carousel.sizes).forEach(size => {
   sizeStories.add(size, () => (
-    <Carousel size={size}>
+    <Carousel uniqueId={uniqueId} size={size}>
       {new Array(13).fill(null).map((_, index) => (
         <MockItem key={index}>item: {index + 1}</MockItem>
       ))}
@@ -166,7 +169,7 @@ Object.values(Carousel.sizes).forEach(size => {
 })
 storiesOf('Carousel/Item', module)
   .add('with child nodes', () => (
-    <Carousel size={Carousel.sizes.wide}>
+    <Carousel uniqueId={uniqueId} size={Carousel.sizes.wide}>
       {new Array(9).fill(null).map((_, index) => (
         <Carousel.Item key={index}>
           <MockItem />
@@ -175,7 +178,7 @@ storiesOf('Carousel/Item', module)
     </Carousel>
   ))
   .add('with render props', () => (
-    <Carousel size={Carousel.sizes.wide}>
+    <Carousel uniqueId={uniqueId} size={Carousel.sizes.wide}>
       {new Array(9).fill(null).map((_, index) => (
         <Carousel.Item key={index}>
           {(data: React.ComponentProps<typeof Item>) => (
@@ -193,7 +196,7 @@ const cardStories = storiesOf('Carousel/with Card', module)
 Object.values(Carousel.sizes).forEach(size => {
   cardStories.add(size, () => (
     <>
-      <Carousel size={size}>
+      <Carousel uniqueId={uniqueId} size={size}>
         <MockCard metadata1={longStringsMetaData} titleText="Title Here" />
 
         {new Array(13).fill(null).map((_, index) => (
@@ -207,7 +210,7 @@ Object.values(Carousel.sizes).forEach(size => {
 storiesOf('Carousel/with ActionMenu', module)
   .add('positioned child', () => (
     <div style={{ border: '1px solid red', maxWidth: 400, padding: 10 }}>
-      <Carousel size={Carousel.sizes.wide}>
+      <Carousel uniqueId={uniqueId} size={Carousel.sizes.wide}>
         <MockItem>
           <ActionMenu style={{ left: 20, top: 20 }}>
             {new Array(8).fill(null).map((_, index) => (
@@ -228,6 +231,7 @@ storiesOf('Carousel/with ActionMenu', module)
       return (
         <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
           <Carousel
+            uniqueId={uniqueId}
             size={Carousel.sizes.wide}
             controlPrev={
               <Carousel.Control
@@ -306,6 +310,7 @@ storiesOf('Carousel/with ActionMenu', module)
       return (
         <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
           <Carousel
+            uniqueId={uniqueId}
             size={Carousel.sizes.wide}
             controlPrev={
               <Carousel.Control

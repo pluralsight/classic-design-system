@@ -2,19 +2,17 @@ import { renderHook } from '@testing-library/react-hooks'
 
 import useUniqueId from '../use-unique-id'
 
-jest.mock('../../js/utils', () => ({
-  uniqueId: jest.fn().mockImplementation(prefix => prefix + '12345')
-}))
+
+const uniqueId = jest.fn().mockImplementation(prefix => prefix + '12345')
 
 describe('useUniqueId', () => {
-  const { uniqueId } = require('../../js/utils')
 
   beforeEach(() => {
     uniqueId.mockClear()
   })
 
   it('should provide a stable id across renders', () => {
-    const { rerender, result } = renderHook(() => useUniqueId())
+    const { rerender, result } = renderHook(() => useUniqueId('', uniqueId))
 
     expect(result.current).toEqual('12345')
 
@@ -34,7 +32,7 @@ describe('useUniqueId', () => {
   })
 
   it('supports prefixing', () => {
-    const { rerender, result } = renderHook(() => useUniqueId('the_prefix_'))
+    const { rerender, result } = renderHook(() => useUniqueId('the_prefix_', uniqueId))
 
     expect(result.current).toEqual('the_prefix_12345')
 
