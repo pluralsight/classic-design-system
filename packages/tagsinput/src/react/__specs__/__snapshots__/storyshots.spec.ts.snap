@@ -28,7 +28,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
         onKeyPress={[Function]}
       >
         <div
-          data-css-10o1mze=""
+          data-css-meog7=""
         >
           <div
             data-css-12qnym0=""
@@ -125,7 +125,6 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
               value=""
             />
           </div>
-          <div />
         </div>
       </div>
     </div>
@@ -166,7 +165,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
         onKeyPress={[Function]}
       >
         <div
-          data-css-10o1mze=""
+          data-css-meog7=""
         >
           <div
             data-css-12qnym0=""
@@ -264,7 +263,6 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
               value=""
             />
           </div>
-          <div />
         </div>
       </div>
     </div>
@@ -305,7 +303,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
         onKeyPress={[Function]}
       >
         <div
-          data-css-10o1mze=""
+          data-css-meog7=""
         >
           <div
             data-css-12qnym0=""
@@ -402,7 +400,6 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
               value=""
             />
           </div>
-          <div />
         </div>
         <div
           data-css-qrpvsu=""
@@ -483,7 +480,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
           </div>
         </div>
         <div
-          data-css-10o1mze=""
+          data-css-meog7=""
         >
           <div
             data-css-12qnym0=""
@@ -580,7 +577,6 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
               value=""
             />
           </div>
-          <div />
         </div>
       </div>
     </div>
@@ -621,7 +617,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
         onKeyPress={[Function]}
       >
         <div
-          data-css-10o1mze=""
+          data-css-meog7=""
         >
           <div
             data-css-12qnym0=""
@@ -718,7 +714,6 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
               value=""
             />
           </div>
-          <div />
         </div>
         <div
           data-css-n5p4fh=""
@@ -778,7 +773,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
         onKeyPress={[Function]}
       >
         <div
-          data-css-10o1mze=""
+          data-css-meog7=""
         >
           <div
             data-css-12qnym0=""
@@ -876,7 +871,6 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
               value=""
             />
           </div>
-          <div />
         </div>
       </div>
     </div>
@@ -915,7 +909,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
         onKeyPress={[Function]}
       >
         <div
-          data-css-10o1mze=""
+          data-css-meog7=""
         >
           <div
             data-css-12qnym0=""
@@ -1012,7 +1006,6 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
               value=""
             />
           </div>
-          <div />
         </div>
       </div>
     </div>

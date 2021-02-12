@@ -13,13 +13,17 @@ import React, {
   isValidElement,
   useLayoutEffect,
   useMemo,
-  useRef
+  useState
 } from 'react'
 
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
 import Tag from '@pluralsight/ps-design-system-tag'
-import { HTMLPropsFor, useUniqueId } from '@pluralsight/ps-design-system-util'
+import {
+  HTMLPropsFor,
+  useUniqueId,
+  usePrevious
+} from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
@@ -81,6 +85,12 @@ const TagsInput: TagsInputComponent = props => {
 
   const inputId = useUniqueId('tagsinput__input-')
 
+  const [hasMounted, setHasMounted] = useState(false)
+  useLayoutEffect(() => {
+    setHasMounted(true)
+  }, [])
+  const prevWasMounted = usePrevious(hasMounted)
+
   const {
     getDropdownProps,
     getSelectedItemProps,
@@ -112,15 +122,23 @@ const TagsInput: TagsInputComponent = props => {
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
   }, [subLabel])
 
-  const afterInputMark = useRef<HTMLDivElement>(null)
+  const inputProps = getDropdownProps()
+
   useLayoutEffect(
     function keepInputInView() {
-      if (!afterInputMark.current) return
-      if (!afterInputMark.current.scrollIntoView) return
+      if (!hasMounted) return
+      if (hasMounted && !prevWasMounted) return
 
-      afterInputMark.current.scrollIntoView()
+      const el = document.getElementById(inputProps.id)
+      if (!el?.scrollIntoView) return
+
+      el.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'nearest'
+      })
     },
-    [selectedItems]
+    [hasMounted, inputProps.id, prevWasMounted, selectedItems]
   )
 
   return (
@@ -146,15 +164,13 @@ const TagsInput: TagsInputComponent = props => {
         ))}
 
         <PillAdjacentInput
+          {...inputProps}
           disabled={disabled}
           id={inputId}
           onChange={onSearchInputChange}
           placeholder={placeholder}
           value={searchInputValue}
-          {...getDropdownProps()}
         />
-
-        <div ref={afterInputMark} />
       </Pills>
     </Field>
   )
