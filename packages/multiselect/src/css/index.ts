@@ -60,7 +60,7 @@ export default {
     flex: 1,
     flexWrap: 'wrap',
     maxHeight: 75,
-    overflowY: 'scroll',
+    overflowY: 'auto',
     margin: `calc(${PILL_GUTTER_SIZE}px * -2)`,
     padding: `${layout.spacingXSmall}`,
     width: '100%'
@@ -76,8 +76,6 @@ export default {
     minHeight: INPUT_MIN_HEIGHT,
     minWidth: INPUT_MIN_WIDTH,
 
-    '&:disabled': {
-      background: 'transparent'
-    }
+    '&:disabled': { background: 'transparent' }
   }
 }

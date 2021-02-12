@@ -197,15 +197,29 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
   }, [subLabel])
 
-  const afterInputMark = useRef<HTMLDivElement>(null)
+  const inputProps = getInputProps(
+    getDropdownProps({
+      onFocus: () => {
+        if (!isOpen) openMenu()
+      },
+      preventKeyAction: isOpen
+    })
+  )
+
   useLayoutEffect(
     function keepInputInView() {
-      if (!isOpen || !afterInputMark.current) return
-      if (!afterInputMark.current.scrollIntoView) return
+      if (!isOpen) return
 
-      afterInputMark.current.scrollIntoView()
+      const el = document.getElementById(inputProps.id)
+      if (!el?.scrollIntoView) return
+
+      el.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'nearest'
+      })
     },
-    [isOpen, selectedItems]
+    [isOpen, inputProps.id, selectedItems]
   )
 
   return (
@@ -234,20 +248,12 @@ const MultiSelect: MultiSelectFieldComponent = props => {
             ))}
 
             <PillAdjacentInput
-              {...getInputProps({
-                ...getDropdownProps({
-                  onFocus: () => {
-                    if (!isOpen) openMenu()
-                  },
-                  preventKeyAction: isOpen
-                })
-              })}
+              {...inputProps}
               disabled={disabled}
               onChange={handleInputChange}
               placeholder={placeholder}
               value={searchTerm}
             />
-            <div ref={afterInputMark} />
           </Pills>
 
           <BelowLeft
