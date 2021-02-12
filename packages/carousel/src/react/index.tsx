@@ -162,12 +162,12 @@ export const Item: React.FC<ItemProps> = props => {
     <li {...styles.item()} {...rest}>
       {typeof children === 'function'
         ? children({
-          isActivePage,
-          itemIndex,
-          itemsPerPage,
-          pageCount,
-          pageIndex
-        })
+            isActivePage,
+            itemIndex,
+            itemsPerPage,
+            pageCount,
+            pageIndex
+          })
         : children}
     </li>
   )
@@ -192,7 +192,7 @@ const Instructions: React.FC<HTMLPropsFor<'div'>> = props => {
 
 interface PagesProps
   extends HTMLPropsFor<'div'>,
-  Required<Pick<UseSwipeOpts, 'onSwipeLeft' | 'onSwipeRight'>> {}
+    Required<Pick<UseSwipeOpts, 'onSwipeLeft' | 'onSwipeRight'>> {}
 interface PagesStatics {}
 interface PagesComponent
   extends RefForwardingComponent<PagesProps, HTMLDivElement, PagesStatics> {}

@@ -2,7 +2,10 @@ import { useLayoutEffect, useState } from 'react'
 
 import { uniqueId } from '../js/utils'
 
-export default function useUniqueId(prefix = '', customUniqueId?: (prefix: string) => string) {
+export default function useUniqueId(
+  prefix = '',
+  customUniqueId?: (prefix: string) => string
+) {
   const [id, setId] = useState('')
 
   useLayoutEffect(() => {

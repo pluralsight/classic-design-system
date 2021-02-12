@@ -12,8 +12,8 @@ const uniqueId = (prefix = '') => `${prefix}mock_unique_id`
 
 interface MockCardProps
   extends Omit<
-  React.ComponentProps<typeof Card>,
-  'title' | 'actionBar' | 'image' | 'metadata1'
+    React.ComponentProps<typeof Card>,
+    'title' | 'actionBar' | 'image' | 'metadata1'
   > {
   titleText: string
 }
