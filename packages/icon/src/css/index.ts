@@ -19,6 +19,10 @@ export default {
       flex: 1
     }
   },
+  [`.psds-icon--size-${vars.sizes.xSmall}`]: {
+    height: vars.widths.xSmall,
+    width: vars.widths.xSmall
+  },
   [`.psds-icon--size-${vars.sizes.small}`]: {
     height: vars.widths.small,
     width: vars.widths.small

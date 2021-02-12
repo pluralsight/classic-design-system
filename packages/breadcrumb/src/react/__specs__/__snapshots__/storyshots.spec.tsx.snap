@@ -5,15 +5,15 @@ exports[`Storyshots as link hrefs 1`] = `
   data-css-nipl9k=""
 >
   <a
-    data-css-n726ta=""
+    data-css-scrazl=""
     href="https://duckduckgo.com"
     style={Object {}}
   >
     <div
-      data-css-1mgd019=""
+      data-css-73kfkk=""
     >
       <div
-        data-css-7dab2f=""
+        data-css-k31qw2=""
       >
         <svg
           aria-label="caret left icon"
@@ -40,16 +40,16 @@ exports[`Storyshots disabled disabled 1`] = `
   data-css-nipl9k=""
 >
   <button
-    data-css-1nn4jjv=""
+    data-css-18r2msp=""
     disabled={true}
     onClick={[Function]}
     style={Object {}}
   >
     <div
-      data-css-1mgd019=""
+      data-css-73kfkk=""
     >
       <div
-        data-css-7dab2f=""
+        data-css-k31qw2=""
       >
         <svg
           aria-label="caret left icon"
@@ -76,15 +76,15 @@ exports[`Storyshots normal looks great 1`] = `
   data-css-nipl9k=""
 >
   <button
-    data-css-n726ta=""
+    data-css-scrazl=""
     disabled={false}
     style={Object {}}
   >
     <div
-      data-css-1mgd019=""
+      data-css-73kfkk=""
     >
       <div
-        data-css-7dab2f=""
+        data-css-k31qw2=""
       >
         <svg
           aria-label="caret left icon"
@@ -111,16 +111,16 @@ exports[`Storyshots with onClick clicks once 1`] = `
   data-css-nipl9k=""
 >
   <button
-    data-css-n726ta=""
+    data-css-scrazl=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
   >
     <div
-      data-css-1mgd019=""
+      data-css-73kfkk=""
     >
       <div
-        data-css-7dab2f=""
+        data-css-k31qw2=""
       >
         <svg
           aria-label="caret left icon"
