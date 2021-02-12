@@ -49,7 +49,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
                   Helium
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -89,7 +89,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
                   Lithium
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -140,7 +140,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
           >
             <button
               aria-label="toggle menu"
-              data-css-b5utls=""
+              data-css-1e2dh1g=""
               disabled={false}
               id="downshift-0-toggle-button"
               onClick={[Function]}
@@ -148,7 +148,7 @@ exports[`Storyshots Components/Field/MultiSelectField Basic 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-y80vay=""
+                data-css-4ducb0=""
               >
                 <div
                   data-css-1gzzcm2=""
@@ -1339,7 +1339,7 @@ exports[`Storyshots Components/Field/TagsField Basic 1`] = `
                   Helium
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -1870,7 +1870,7 @@ exports[`Storyshots Components/Field/TagsField With Suffix 1`] = `
                   Helium
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {

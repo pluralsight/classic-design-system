@@ -10,10 +10,11 @@ export const colors = keyMirror(
   'textIconLowOnLight',
   'yellow'
 )
-export const sizes = keyMirror('small', 'medium', 'large')
+export const sizes = keyMirror('xSmall', 'small', 'medium', 'large')
 
 export const widths = {
-  small: '16px',
+  xSmall: '16px',
+  small: '20px',
   medium: '24px',
   large: '48px'
 }

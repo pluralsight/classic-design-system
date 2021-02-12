@@ -10,7 +10,7 @@ exports[`Storyshots Button blue 1`] = `
     this is the text with a 
     <button
       data-css-1irnvz6=""
-      data-css-1kchwh3=""
+      data-css-1mpmjtf=""
       disabled={false}
       style={Object {}}
     >
@@ -34,7 +34,7 @@ exports[`Storyshots Button green 1`] = `
     this is the text with a 
     <button
       data-css-1irnvz6=""
-      data-css-1kchwh3=""
+      data-css-1mpmjtf=""
       disabled={false}
       style={Object {}}
     >
@@ -58,7 +58,7 @@ exports[`Storyshots Button red 1`] = `
     this is the text with a 
     <button
       data-css-1irnvz6=""
-      data-css-1kchwh3=""
+      data-css-1mpmjtf=""
       disabled={false}
       style={Object {}}
     >
@@ -81,7 +81,7 @@ exports[`Storyshots Button yellow 1`] = `
   >
     this is the text with a 
     <button
-      data-css-1kchwh3=""
+      data-css-1mpmjtf=""
       data-css-be14da=""
       disabled={false}
       style={Object {}}

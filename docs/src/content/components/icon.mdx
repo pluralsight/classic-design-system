@@ -14,7 +14,7 @@ import IconCommonSet from './icon-common-set'
 
 ### Size
 
-Icons can be used at 3 standard sizes: Small (16px), Medium (24px), Large (48px)
+Icons can be used at 4 sizes: xSmall (16px), Small (20px), Medium (24px), Large (48px)
 
 ```typescript
 import React from 'react'
@@ -22,6 +22,7 @@ import { CodeIcon } from '@pluralsight/ps-design-system-icon'
 
 const Comp = () => (
   <div className="example-flex-column">
+    <CodeIcon size={CodeIcon.sizes.xSmall} />
     <CodeIcon size={CodeIcon.sizes.small} />
     <CodeIcon size={CodeIcon.sizes.medium} />
     <CodeIcon size={CodeIcon.sizes.large} />

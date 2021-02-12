@@ -4,7 +4,6 @@ import {
   colorsBorder,
   colorsPrimaryAction,
   colorsTextIcon,
-  layout,
   motion,
   type
 } from '@pluralsight/ps-design-system-core'
@@ -35,7 +34,6 @@ export default {
     display: 'inline-flex',
     justifyContent: 'center',
     alignItems: 'stretch',
-    padding: `${layout.spacingSmall} ${layout.spacingMedium}`,
     border: 0,
     borderRadius: '3px',
     fontSize: type.fontSize300,
@@ -83,25 +81,25 @@ export default {
   [`.psds-button--size-${vars.sizes.xSmall}`]: {
     fontSize: type.fontSize100,
     letterSpacing: type.letterSpacingLooser,
-    padding: `0 ${layout.spacingXSmall}`,
+    padding: `4px 8px`,
     height: '24px'
   },
   [`.psds-button--size-${vars.sizes.small}`]: {
     fontSize: type.fontSize200,
     letterSpacing: type.letterSpacingLooser,
-    padding: `${layout.spacingXXSmall} ${layout.spacingSmall}`,
+    padding: `6px 12px`,
     height: '32px'
   },
   [`.psds-button--size-${vars.sizes.medium}`]: {
     fontSize: type.fontSize300,
     letterSpacing: type.letterSpacingLoose,
-    padding: `${layout.spacingXXSmall} ${layout.spacingMedium}`,
+    padding: `10px 16px`,
     height: '40px'
   },
   [`.psds-button--size-${vars.sizes.large}`]: {
     fontSize: type.fontSize400,
     letterSpacing: type.letterSpacingNone,
-    padding: `${layout.spacingXXSmall} ${layout.spacingLarge}`,
+    padding: `12px 20px`,
     height: '48px'
   },
   [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeDefaultName}`]: {
@@ -268,28 +266,28 @@ export default {
     flexDirection: 'row-reverse'
   },
   [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.xSmall}`]: {
-    paddingRight: layout.spacingXXSmall
+    paddingRight: '4px'
   },
   [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.xSmall}`]: {
-    paddingLeft: layout.spacingXXSmall
+    paddingLeft: '4px'
   },
   [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.small}`]: {
-    paddingRight: layout.spacingXXSmall
+    paddingRight: '8px'
   },
   [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.small}`]: {
-    paddingLeft: layout.spacingXXSmall
+    paddingLeft: '8px'
   },
   [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.medium}`]: {
-    paddingRight: layout.spacingXSmall
+    paddingRight: '12px'
   },
   [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.medium}`]: {
-    paddingLeft: layout.spacingXSmall
+    paddingLeft: '12px'
   },
   [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]: {
-    paddingRight: layout.spacingSmall
+    paddingRight: '16px'
   },
   [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]: {
-    paddingLeft: layout.spacingSmall
+    paddingLeft: '16px'
   },
   [`.psds-button--iconOnly`]: {
     padding: 0
@@ -312,12 +310,28 @@ export default {
     minHeight: '100%'
   },
   [`.psds-button__icon--iconAlign-${vars.iconAligns.right}`]: {
-    marginLeft: layout.spacingXSmall,
+    marginLeft: '8px',
     marginRight: 0
   },
   [`.psds-button__icon--iconAlign-${vars.iconAligns.left}`]: {
     marginLeft: 0,
-    marginRight: layout.spacingXSmall
+    marginRight: '8px'
+  },
+  [`.psds-button__icon--iconAlign-${vars.iconAligns.right}.psds-button--size-${vars.sizes.xSmall}`]: {
+    marginLeft: '4px',
+    marginRight: 0
+  },
+  [`.psds-button__icon--iconAlign-${vars.iconAligns.left}.psds-button--size-${vars.sizes.xSmall}`]: {
+    marginLeft: 0,
+    marginRight: '4px'
+  },
+  [`.psds-button__icon--iconAlign-${vars.iconAligns.right}.psds-button--size-${vars.sizes.small}`]: {
+    marginLeft: '4px',
+    marginRight: 0
+  },
+  [`.psds-button__icon--iconAlign-${vars.iconAligns.left}.psds-button--size-${vars.sizes.small}`]: {
+    marginLeft: 0,
+    marginRight: '4px'
   },
   [`.psds-button__icon--iconOnly`]: {
     justifyContent: 'center',
