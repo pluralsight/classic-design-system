@@ -136,17 +136,17 @@ exports[`Storyshots SearchInput with TextInput-type props 1`] = `
           type="search"
         />
         <button
-          data-css-1b3czpf=""
+          data-css-1dnyz38=""
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
         >
           <div
-            data-css-y80vay=""
+            data-css-4ducb0=""
           >
             <div
-              data-css-7dab2f=""
+              data-css-k31qw2=""
             >
               <svg
                 aria-label="close icon"
@@ -234,17 +234,17 @@ exports[`Storyshots SearchInput with onClear prop 1`] = `
           type="search"
         />
         <button
-          data-css-1b3czpf=""
+          data-css-1dnyz38=""
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
           style={Object {}}
         >
           <div
-            data-css-y80vay=""
+            data-css-4ducb0=""
           >
             <div
-              data-css-7dab2f=""
+              data-css-k31qw2=""
             >
               <svg
                 aria-label="close icon"

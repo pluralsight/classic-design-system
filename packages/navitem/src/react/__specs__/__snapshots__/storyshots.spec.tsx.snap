@@ -138,7 +138,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
             data-css-1cbyl54=""
           >
             <div
-              data-css-1gzzcm2=""
+              data-css-k31qw2=""
             >
               <svg
                 aria-label="caret down icon"
@@ -336,7 +336,7 @@ exports[`Storyshots NavItem horizontal 1`] = `
 exports[`Storyshots NavItem position 1`] = `
 <div>
   <button
-    data-css-1swwsjd=""
+    data-css-12bozst=""
     disabled={false}
     onClick={[Function]}
     style={Object {}}
@@ -416,7 +416,7 @@ exports[`Storyshots NavItem position 1`] = `
             data-css-1cbyl54=""
           >
             <div
-              data-css-1gzzcm2=""
+              data-css-k31qw2=""
             >
               <svg
                 aria-label="caret down icon"
@@ -754,7 +754,7 @@ exports[`Storyshots NavItem vertical 1`] = `
             data-css-mz08e=""
           >
             <div
-              data-css-1gzzcm2=""
+              data-css-k31qw2=""
             >
               <svg
                 aria-label="caret down icon"

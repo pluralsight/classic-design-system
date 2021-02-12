@@ -64,10 +64,13 @@ const styles = {
         `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
       ]
     ),
-  icon: ({ iconAlign, iconOnly, isLoadingWithNoText }) =>
+  icon: ({ iconAlign, iconOnly, isLoadingWithNoText, size }) =>
     css(
       stylesheet['.psds-button__icon'],
       stylesheet[`.psds-button__icon--iconAlign-${iconAlign}`],
+      stylesheet[
+        `.psds-button__icon--iconAlign-${iconAlign}.psds-button--size-${size}`
+      ],
       (iconOnly || isLoadingWithNoText) &&
         stylesheet['.psds-button__icon--iconOnly']
     ),
@@ -76,8 +79,8 @@ const styles = {
 
 const mapIconSize = (size: string) => {
   const btnToIconSizes = {
-    [vars.sizes.xSmall]: iconSizes.small,
-    [vars.sizes.small]: iconSizes.medium,
+    [vars.sizes.xSmall]: iconSizes.xSmall,
+    [vars.sizes.small]: iconSizes.small,
     [vars.sizes.medium]: iconSizes.medium,
     [vars.sizes.large]: iconSizes.medium
   }
@@ -101,7 +104,8 @@ const renderIcon: React.FC<RenderIconProps> = props =>
       {...styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
-        isLoadingWithNoText: props.isLoadingWithNoText
+        isLoadingWithNoText: props.isLoadingWithNoText,
+        size: props.size
       })}
     >
       <Icon size={mapIconSize(props.size)}>
@@ -118,7 +122,8 @@ const renderIcon: React.FC<RenderIconProps> = props =>
       {...styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
-        isLoadingWithNoText: props.isLoadingWithNoText
+        isLoadingWithNoText: props.isLoadingWithNoText,
+        size: props.size
       })}
     >
       {React.cloneElement(props.icon as React.ReactElement, {
