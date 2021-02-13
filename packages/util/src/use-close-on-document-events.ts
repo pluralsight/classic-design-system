@@ -7,12 +7,14 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
   el: El,
   callback: Callback
 ) => {
-  if (!canUseDOM()) return
+  if (!canUseDOM()) return noop
 
   const handleClickOutsideMenu = (evt: MouseEvent) => {
     if (evt.target instanceof HTMLElement) {
       if (el.contains(evt.target)) return
-      callback(evt)
+      ;(function cb(): void {
+        callback(evt)
+      })()
     }
   }
 
@@ -36,28 +38,30 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
   })
 
   return () => {
-    document.removeEventListener('click', handleClickOutsideMenu)
-    window.removeEventListener('resize', requestAnimationFrame)
-    window.removeEventListener('scroll', requestAnimationFrame)
+    document.removeEventListener('click', handleClickOutsideMenu, {
+      capture: true
+    })
+    window.removeEventListener('resize', requestAnimationFrame, {
+      capture: true
+    })
+    window.removeEventListener('scroll', requestAnimationFrame, {
+      capture: true
+    })
   }
 }
 
 export const useCloseOnDocumentEvents = <El extends HTMLElement>(
   ref: MutableRefObject<El | null>,
-  cb: Callback
-) => {
+  cb: Callback = noop
+) =>
   useEffect(() => {
-    if (!canUseDOM()) return
-
-    let removeListeners = noop
-
-    if (ref.current) {
-      removeListeners = <typeof noop>onGlobalEventsClose<El>(ref.current, cb)
+    if (!canUseDOM()) return noop
+    const el = ref.current
+    if (el) {
+      return onGlobalEventsClose<El>(el, cb)
     }
-
-    return removeListeners
-  }, [ref])
-}
+    return noop
+  }, [ref, cb])
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
 const noop = () => {}
