@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@10.1.0...@pluralsight/ps-design-system-errors@11.0.0) (2021-02-16)
+
+
+* new icon size and updated button (#1608) ([86a5acc](https://github.com/pluralsight/design-system/commit/86a5acc1be39c58dba78f3f563453b69ec851034)), closes [#1608](https://github.com/pluralsight/design-system/issues/1608)
+
+
+### BREAKING CHANGES
+
+* small is now xSmall please update your sizing
+
+* refactor(docs): document additional icon size
+
+* refactor(button): spacing tweaks to match designs
+
+* test(button): update snapshots
+
+Co-authored-by: Edward Irby <EdwardIrby@users.noreply.github.com>
+
+
+
+
+
 # [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@10.0.3...@pluralsight/ps-design-system-errors@10.1.0) (2021-02-11)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors
