@@ -1,5 +1,6 @@
 import {
   colorsBackgroundLight,
+  colorsTextIcon,
   layout,
   type
 } from '@pluralsight/ps-design-system-core'
@@ -31,6 +32,7 @@ export default {
     background: colorsBackgroundLight[3],
     borderRadius: '2px',
     boxShadow: `0 2px 4px rgba(0, 0, 0, 0.5)`,
+    color: colorsTextIcon.highOnLight,
     fontSize: type.fontSize200,
     listStyle: 'none',
     marginLeft: 0,

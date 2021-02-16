@@ -154,7 +154,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
             >
               <ul
                 aria-labelledby="downshift-0-label"
-                data-css-jwj1al=""
+                data-css-m4jq7w=""
                 id="downshift-0-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
@@ -730,7 +730,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
             >
               <ul
                 aria-labelledby="downshift-3-label"
-                data-css-jwj1al=""
+                data-css-m4jq7w=""
                 id="downshift-3-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
@@ -1305,7 +1305,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
             >
               <ul
                 aria-labelledby="downshift-4-label"
-                data-css-jwj1al=""
+                data-css-m4jq7w=""
                 id="downshift-4-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
@@ -1920,7 +1920,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
             >
               <ul
                 aria-labelledby="downshift-5-label"
-                data-css-jwj1al=""
+                data-css-m4jq7w=""
                 id="downshift-5-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
@@ -2494,7 +2494,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
             >
               <ul
                 aria-labelledby="downshift-2-label"
-                data-css-jwj1al=""
+                data-css-m4jq7w=""
                 id="downshift-2-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
@@ -3067,7 +3067,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
             >
               <ul
                 aria-labelledby="downshift-1-label"
-                data-css-jwj1al=""
+                data-css-m4jq7w=""
                 id="downshift-1-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
