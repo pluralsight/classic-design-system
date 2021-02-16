@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navitem",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "NavItem UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -34,11 +34,11 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^16.1.0",
+    "@pluralsight/ps-design-system-actionmenu": "^16.1.1",
     "@pluralsight/ps-design-system-build": "^2.0.3",
-    "@pluralsight/ps-design-system-button": "^20.1.0",
-    "@pluralsight/ps-design-system-icon": "^20.1.0",
-    "@pluralsight/ps-design-system-position": "^6.1.0",
+    "@pluralsight/ps-design-system-button": "^21.0.0",
+    "@pluralsight/ps-design-system-icon": "^21.0.0",
+    "@pluralsight/ps-design-system-position": "^6.1.1",
     "@pluralsight/ps-design-system-storybook-preset": "^0.4.0"
   }
 }
