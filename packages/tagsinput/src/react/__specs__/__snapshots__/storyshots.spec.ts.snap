@@ -49,7 +49,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
                   first
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -89,7 +89,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
                   second
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -186,7 +186,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
                   first
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -226,7 +226,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
                   second
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -324,7 +324,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
                   first
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -364,7 +364,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
                   second
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -501,7 +501,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
                   first
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -541,7 +541,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
                   second
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -638,7 +638,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
                   first
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -678,7 +678,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
                   second
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -794,7 +794,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
                   first
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -834,7 +834,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
                   second
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -930,7 +930,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
                   first
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
@@ -970,7 +970,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
                   second
                 </span>
                 <div
-                  data-css-1gzzcm2=""
+                  data-css-k31qw2=""
                   onClick={[Function]}
                   style={
                     Object {
