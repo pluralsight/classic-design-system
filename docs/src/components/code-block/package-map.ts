@@ -29,6 +29,7 @@ import Icon, * as Icons from '@pluralsight/ps-design-system-icon'
 import * as Layout from '@pluralsight/ps-design-system-layout'
 import LinearProgress from '@pluralsight/ps-design-system-linearprogress'
 import Link from '@pluralsight/ps-design-system-link'
+import MultiSelect from '@pluralsight/ps-design-system-multiselect'
 import NavBar from '@pluralsight/ps-design-system-navbar'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
@@ -47,6 +48,7 @@ import Switch from '@pluralsight/ps-design-system-switch'
 import Tab from '@pluralsight/ps-design-system-tab'
 import Table, { StickyContainer } from '@pluralsight/ps-design-system-table'
 import Tag from '@pluralsight/ps-design-system-tag'
+import TagsInput from '@pluralsight/ps-design-system-tagsinput'
 import * as Text from '@pluralsight/ps-design-system-text'
 import TextArea from '@pluralsight/ps-design-system-textarea'
 import TextInput from '@pluralsight/ps-design-system-textinput'
@@ -113,6 +115,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-layout': { ...omit(Layout, ['default']) },
   '@pluralsight/ps-design-system-linearprogress': { LinearProgress },
   '@pluralsight/ps-design-system-link': { Link },
+  '@pluralsight/ps-design-system-multiselect': { MultiSelect },
   '@pluralsight/ps-design-system-navbar': { NavBar },
   '@pluralsight/ps-design-system-navbrand': { NavBrand },
   '@pluralsight/ps-design-system-navcookiebanner': { NavCookieBanner },
@@ -131,6 +134,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-tab': { Tab },
   '@pluralsight/ps-design-system-table': { Table, StickyContainer },
   '@pluralsight/ps-design-system-tag': { Tag },
+  '@pluralsight/ps-design-system-tagsinput': { TagsInput },
   '@pluralsight/ps-design-system-text': { ...omit(Text, ['default']) },
   '@pluralsight/ps-design-system-textarea': { TextArea },
   '@pluralsight/ps-design-system-textinput': { TextInput },
@@ -140,9 +144,9 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-util': { ...util },
   '@pluralsight/ps-design-system-verticaltabs': { VerticalTabs },
   '@pluralsight/ps-design-system-viewtoggle': { ViewToggle },
+
   dayzed: { useDayzed },
   'date-fns': { format },
-
   downshift: { ...omit(downshift, ['default']) },
   glamor: { ...glamor },
   react: { React, ...React },

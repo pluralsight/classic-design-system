@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-field",
-  "version": "2.0.0",
+  "version": "2.0.2",
   "description": "Field UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,10 +22,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.9.0",
-    "@pluralsight/ps-design-system-halo": "^8.1.0",
-    "@pluralsight/ps-design-system-icon": "^21.0.0",
-    "@pluralsight/ps-design-system-util": "^7.1.0"
+    "@pluralsight/ps-design-system-core": "^6.9.2",
+    "@pluralsight/ps-design-system-halo": "^8.1.2",
+    "@pluralsight/ps-design-system-icon": "^21.0.2",
+    "@pluralsight/ps-design-system-util": "^7.1.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -34,10 +34,10 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "*",
-    "@pluralsight/ps-design-system-button": "^21.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.4.0",
-    "@pluralsight/ps-design-system-tag": "^9.0.0",
+    "@pluralsight/ps-design-system-build": "^2.0.4",
+    "@pluralsight/ps-design-system-button": "^21.0.2",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.4.2",
+    "@pluralsight/ps-design-system-tag": "^9.0.2",
     "downshift": "^6.1.0"
   }
 }

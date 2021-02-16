@@ -1,0 +1,199 @@
+---
+name: Multi Select
+route: /components/multiselect
+---
+
+import MultiSelect from '@pluralsight/ps-design-system-multiselect'
+
+# Multi Select
+
+<TableOfContents {...props} />
+
+<Intro>
+  The MultiSelect wrapper component can be used when an input supports combining
+  multiple values in a single form field with a dropdown list of options to
+  select from. The component is a complete form control supporting labels,
+  errors and disabled states.
+</Intro>
+
+## Examples
+
+```typescript
+import React from 'react'
+import MultiSelect, { Option } from '@pluralsight/ps-design-system-multiselect'
+
+const Comp = () => {
+  const options = useMemo(() => [
+    { label: 'Hydrogen', value: 'H' },
+    { label: 'Helium', value: 'He' },
+    { label: 'Lithium', value: 'Li' },
+    { label: 'Beryllium', value: 'Be' },
+    { label: 'Boron', value: 'B' },
+    { label: 'Carbon', value: 'C' },
+    { label: 'Nitrogren', value: 'N' },
+    { label: 'Oxygen', value: 'O' },
+    { label: 'Fluorine', value: 'F' },
+    { label: 'Neon', value: 'Ne' },
+    { label: 'Sodium', value: 'Na' },
+    { label: 'Magnesium', value: 'Mg' },
+    { label: 'Aluminum', value: 'Al' },
+    { label: 'Silicon', value: 'Si' },
+    { label: 'Phosphorus', value: 'P' },
+  ], [])
+  const [value, setValue] = useState<Option[]>(options.slice(0, 2))
+
+  return (
+    <MultiSelect
+      onChange={(_, nextValue) => {
+        setValue(nextValue)
+      }}
+      options={options}
+      value={value}
+    />
+  )
+}
+
+
+export default Comp
+```
+
+### Labels
+
+```typescript
+import React from 'react'
+import MultiSelect from '@pluralsight/ps-design-system-multiselect'
+
+const noop = () => {}
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <MultiSelect
+      onChange={noop}
+      options={[{ label: 'tag', value: 'tag'}]}
+      placeholder="Enter tags"
+      value={[]}
+    />
+
+    <MultiSelect
+      label="Label area"
+      onChange={noop}
+      options={[{ label: 'tag', value: 'tag'}]}
+      subLabel="Hint text displayed here"
+      value={[]}
+    />
+
+    <MultiSelect
+      label={<MultiSelect.Label>ReactNode label</MultiSelect.Label>}
+      onChange={noop}
+      options={[{ label: 'tag', value: 'tag'}]}
+      subLabel={<MultiSelect.SubLabel>ReactNode sublabel</MultiSelect.SubLabel>}
+      value={[]}
+    />
+  </div>
+)
+
+export default Comp
+```
+
+### Prefix
+
+```typescript
+import React from 'react'
+import { SearchIcon } from '@pluralsight/ps-design-system-icon'
+import MultiSelect from '@pluralsight/ps-design-system-multiselect'
+
+const noop = () => {}
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <MultiSelect
+      label="Input with prefix"
+      onChange={noop}
+      options={[{ label: 'tag', value: 'tag'}]}
+      prefix={<SearchIcon />}
+      value={[]}
+    />
+  </div>
+)
+
+export default Comp
+```
+
+### Disabled
+
+```typescript
+import React from 'react'
+import MultiSelect from '@pluralsight/ps-design-system-multiselect'
+
+const noop = () => {}
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <MultiSelect
+      disabled
+      label="Disabled input"
+      onChange={noop}
+      options={[{ label: 'tag', value: 'tag'}]}
+      value={[]}
+    />
+  </div>
+)
+
+export default Comp
+```
+
+### Error
+
+```typescript
+import React from 'react'
+import MultiSelect from '@pluralsight/ps-design-system-multiselect'
+
+const noop = () => {}
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <MultiSelect
+      error
+      label="Error input"
+      onChange={noop}
+      options={[{ label: 'tag', value: 'tag'}]}
+      value={[]}
+    />
+  </div>
+)
+
+export default Comp
+```
+
+## Advanced customization
+
+> The `MultiSelect` component is a convenience wrapper for common usecases. If you need advanced customization, please explore building your own wrapper using the `Field` and `Tag` components.
+
+## Usage & Types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-multiselect"
+  import="import MultiSelect from '@pluralsight/ps-design-system-multiselect'"
+  packageName="multiselect"
+  version={props.version}
+/>
+
+<TypesTable>
+  <TypesProp name="disabled" type="boolean" />
+  <TypesProp name="error" type="boolean"/>
+  <TypesProp
+    name="label"
+    type="string | ReactNode"
+  />
+  <TypesProp
+    name="filterFn"
+    type="(term: string, options: Option[]) => Option[]"
+    desc="custom filtering function"
+  />
+  <TypesProp name="onChange" required type="(evt, nexValue: Option[]) => void" />
+  <TypesProp name="options" required type="Option[]" />
+  <TypesProp name="placeholder" type="string" desc="in-field usage hint" />
+  <TypesProp name="subLabel" type="string | ReactNode" />
+  <TypesProp name="value" required type="Option[]" />
+</TypesTable>
+
