@@ -54,7 +54,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -94,7 +94,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -629,7 +629,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -669,7 +669,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -1205,7 +1205,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -1245,7 +1245,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -1820,7 +1820,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -1860,7 +1860,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -2393,7 +2393,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -2433,7 +2433,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -2967,7 +2967,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
@@ -3007,7 +3007,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-1gzzcm2=""
+                    data-css-k31qw2=""
                     onClick={[Function]}
                     style={
                       Object {
