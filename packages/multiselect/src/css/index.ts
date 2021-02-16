@@ -10,7 +10,11 @@ const INPUT_MIN_WIDTH = 50
 const PILL_GUTTER_SIZE = 4
 
 export default {
-  '.psds-multi-select': { label: 'multi-select' },
+  '.psds-multi-select': {
+    label: 'multi-select',
+
+    minHeight: 40
+  },
   '.psds-multi-select--disabled': { pointerEvents: 'none' },
 
   '.psds-multi-select__prefix': {
@@ -59,10 +63,10 @@ export default {
     display: 'flex',
     flex: 1,
     flexWrap: 'wrap',
+    margin: `calc(${PILL_GUTTER_SIZE}px * -2)`,
     maxHeight: 75,
     overflowY: 'auto',
-    margin: `calc(${PILL_GUTTER_SIZE}px * -2)`,
-    padding: `${layout.spacingXSmall}`,
+    padding: `${layout.spacingXXSmall} ${layout.spacingXSmall}`,
     width: '100%'
   },
   '.psds-multi-select__pill': {

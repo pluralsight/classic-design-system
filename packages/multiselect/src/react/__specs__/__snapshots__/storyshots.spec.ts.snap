@@ -24,7 +24,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1268me8=""
+        data-css-1ghsi1k=""
         data-css-1q3e54w=""
       >
         <div>
@@ -32,7 +32,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-0-menu"
-            data-css-meog7=""
+            data-css-dpj5et=""
             role="combobox"
           >
             <div
@@ -599,15 +599,15 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
       data-css-8qmpxt=""
     >
       <div
+        data-css-11s0ie3=""
         data-css-1q3e54w=""
-        data-css-8a9gku=""
       >
         <div>
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-3-menu"
-            data-css-meog7=""
+            data-css-dpj5et=""
             role="combobox"
           >
             <div
@@ -1175,7 +1175,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
       data-css-8ff2sc=""
     >
       <div
-        data-css-1268me8=""
+        data-css-1ghsi1k=""
         data-css-1q3e54w=""
       >
         <div>
@@ -1183,7 +1183,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-4-menu"
-            data-css-meog7=""
+            data-css-dpj5et=""
             role="combobox"
           >
             <div
@@ -1769,7 +1769,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1268me8=""
+        data-css-1ghsi1k=""
         data-css-1q3e54w=""
       >
         <div
@@ -1798,7 +1798,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-5-menu"
-            data-css-meog7=""
+            data-css-dpj5et=""
             role="combobox"
           >
             <div
@@ -2363,7 +2363,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1268me8=""
+        data-css-1ghsi1k=""
         data-css-1q3e54w=""
       >
         <div>
@@ -2371,7 +2371,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-2-menu"
-            data-css-meog7=""
+            data-css-dpj5et=""
             role="combobox"
           >
             <div
@@ -2937,7 +2937,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1268me8=""
+        data-css-1ghsi1k=""
         data-css-1q3e54w=""
       >
         <div>
@@ -2945,7 +2945,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-1-menu"
-            data-css-meog7=""
+            data-css-dpj5et=""
             role="combobox"
           >
             <div
