@@ -238,6 +238,34 @@ function Example() {
 export default Example
 ```
 
+
+To override and brand the `NavItem`, use the `UNSAFE_stylesFor` prop, like so:
+
+```typescript themeName=dark
+import { colorsGradient } from '@pluralsight/ps-design-system-core'
+import { HomeIcon } from '@pluralsight/ps-design-system-icon'
+import NavItem from '@pluralsight/ps-design-system-navitem'
+import React from 'react'
+
+function Example() {
+  return (
+    <NavItem
+      icon={<HomeIcon />}
+      selected
+      UNSAFE_stylesFor={{
+        'navitem__bar--selected': {
+          background: colorsGradient.flowBackground
+        }
+      }}
+    >
+      Flow Selected
+    </NavItem>
+  )
+}
+
+export default Example
+```
+
 ### Nav item guidelines
 
 - Be prudent with the nav items and the the number you use. Try to keep it to about about 2-5. Organize the items well, use short yet descriptive labels, and use grouping with dropdown menus if you need more items than will fit.
@@ -257,11 +285,6 @@ export default Example
     type={<TypesEnum enum={NavItem.alignments} />}
     desc="orientation of item elements"
     default="horizontal"
-  />
-  <TypesProp
-    name="bar"
-    type="React.ReactNode"
-    desc="active element indicator"
   />
   <TypesProp name="children" type="React.ReactNode" desc="label" />
   <TypesProp
