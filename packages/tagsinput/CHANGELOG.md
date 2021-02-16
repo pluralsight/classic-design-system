@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.1.1...@pluralsight/ps-design-system-tagsinput@1.1.2) (2021-02-16)
+
+
+### Bug Fixes
+
+* **tagsinput:** add missing util dep ([7422189](https://github.com/pluralsight/design-system/commit/74221898e2295152d9e62e153f8e4b90f1b8ec10))
+
+
+
+
+
 ## [1.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.1.0...@pluralsight/ps-design-system-tagsinput@1.1.1) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tagsinput

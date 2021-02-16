@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tagsinput",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "TagsInput UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
