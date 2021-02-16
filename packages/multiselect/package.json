@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-multiselect",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "MultiSelect UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -22,11 +22,11 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "*",
-    "@pluralsight/ps-design-system-core": "*",
-    "@pluralsight/ps-design-system-field": "*",
-    "@pluralsight/ps-design-system-icon": "*",
-    "@pluralsight/ps-design-system-tag": "*",
+    "@pluralsight/ps-design-system-actionmenu": "^16.1.2",
+    "@pluralsight/ps-design-system-core": "^6.9.1",
+    "@pluralsight/ps-design-system-field": "^2.0.1",
+    "@pluralsight/ps-design-system-icon": "^21.0.1",
+    "@pluralsight/ps-design-system-tag": "^9.0.1",
     "downshift": "^6.1.0"
   },
   "peerDependencies": {
@@ -37,6 +37,6 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
-    "@pluralsight/ps-design-system-storybook-preset": "*"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.4.1"
   }
 }
