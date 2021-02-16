@@ -20,27 +20,28 @@ export default {
     alignItems: 'flex-start',
     width: '100%',
     overflow: 'hidden',
-    fontSize: type.fontSize200,
+    fontSize: type.fontSize300,
+    letterspacing: type.letterSpacingLoose,
     lineHeight: type.lineHeightStandard,
-    fontWeight: type.fontWeight500,
+    fontWeight: type.fontWeightDefault,
     padding: `${layout.spacingXSmall} ${layout.spacingSmall}`
   },
 
   [`.psds-banner--color-${vars.colors.blue}`]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsBlue.base
+    backgroundColor: colorsBlue[7]
   },
   [`.psds-banner--color-${vars.colors.green}`]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsGreen.base
+    backgroundColor: colorsGreen[8]
   },
   [`.psds-banner--color-${vars.colors.yellow}`]: {
     color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsYellow.base
+    backgroundColor: colorsYellow[6]
   },
   [`.psds-banner--color-${vars.colors.red}`]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsRed.base
+    backgroundColor: colorsRed[7]
   },
 
   '.psds-banner__button': {
