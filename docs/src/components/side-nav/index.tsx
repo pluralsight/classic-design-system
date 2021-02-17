@@ -300,6 +300,14 @@ const groups = [
         title: 'Dropdown'
       },
       {
+        href: '/components/tagsinput',
+        title: 'Tags Input'
+      },
+      {
+        href: '/components/multiselect',
+        title: 'Multi Select'
+      },
+      {
         href: '/components/typeahead',
         title: 'Typeahead'
       },

@@ -40,6 +40,7 @@ interface CarouselProps extends HTMLPropsFor<'div'> {
   controlPrev?: React.ReactNode
   controlNext?: React.ReactNode
   size?: ValueOf<typeof vars.sizes>
+  uniqueId?: (prefix: string) => string
 }
 interface CarouselStatics {
   Control: typeof Control
@@ -53,9 +54,10 @@ const Carousel: CarouselComponent = ({
   controlPrev,
   controlNext,
   size,
+  uniqueId,
   ...rest
 }) => {
-  const id = useUniqueId('carousel-')
+  const id = useUniqueId('carousel-', uniqueId)
   const ref = React.useRef<HTMLDivElement>(null)
   const { width } = useResizeObserver(ref)
 

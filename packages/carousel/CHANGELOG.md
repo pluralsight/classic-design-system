@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@11.2.1...@pluralsight/ps-design-system-carousel@11.2.2) (2021-02-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
+## [11.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@11.2.0...@pluralsight/ps-design-system-carousel@11.2.1) (2021-02-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
+# [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@11.1.0...@pluralsight/ps-design-system-carousel@11.2.0) (2021-02-16)
+
+
+### Bug Fixes
+
+* **carousel:** fix lint ([14246f1](https://github.com/pluralsight/design-system/commit/14246f1c5638bfc315678514afb29e51bf2c3770))
+
+
+### Features
+
+* **carousel:** add custom uniqueId prop for testing ([0feeea4](https://github.com/pluralsight/design-system/commit/0feeea45efa1abae4ed772b23fd3b2da179bd9d8))
+
+
+
+
+
 # [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@11.0.2...@pluralsight/ps-design-system-carousel@11.1.0) (2021-02-11)
 
 

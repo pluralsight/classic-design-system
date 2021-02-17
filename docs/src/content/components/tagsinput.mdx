@@ -1,0 +1,235 @@
+---
+name: Tags Input
+route: /components/tagsinput
+---
+
+import TagsInput from '@pluralsight/ps-design-system-tagsinput'
+
+# Tags Input
+
+<TableOfContents {...props} />
+
+<Intro>
+  The TagsInput wrapper component can be used when an input supports combining
+  multiple values in a single form field. The component is a complete form
+  control supporting labels, errors and disabled states.
+</Intro>
+
+
+## Examples
+
+```typescript
+import React from 'react'
+import TagsInput, { Option } from '@pluralsight/ps-design-system-tagsinput'
+
+const Comp = () => {
+  const [searchTerm, setSearchTerm] = React.useState('')
+  const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    setSearchTerm(evt.target.value)
+  }
+
+  const [value, setValue] = React.useState<Option[]>([
+    { label: 'first', value: 'first' },
+    { label: 'second', value: 'second' }
+  ])
+
+  const handleOnKeyPress: React.KeyboardEventHandler = evt => {
+    if (evt.key !== 'Enter') return
+
+    if (evt.target instanceof HTMLInputElement) {
+      const { value: targetValue } = evt.target
+      if (targetValue.length < 1) return
+
+      const nextOption = { label: targetValue, value: targetValue }
+      const nextValue = uniqBy([...value, nextOption], 'value')
+
+      setSearchTerm('')
+      setValue(nextValue)
+    }
+  }
+
+  return (
+    <TagsInput
+      label="Label area"
+      onChange={(_, nextValue) => {
+        setValue(nextValue)
+      }}
+      onKeyPress={handleOnKeyPress}
+      onSearchInputChange={handleInputChange}
+      searchInputValue={searchTerm}
+      value={value}
+    />
+  )
+}
+
+const uniqBy = (arr: any[], key: string) =>
+  Array.from(new Set(arr.map(item => item[key]))).map(k =>
+    arr.find(i => i[key] === k)
+  )
+
+export default Comp
+```
+
+### Labels
+
+```typescript
+import React from 'react'
+import TagsInput from '@pluralsight/ps-design-system-tagsinput'
+
+const noop = () => {}
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <TagsInput
+      onChange={noop}
+      onKeyPress={noop}
+      onSearchInputChange={noop}
+      placeholder="Enter tags"
+      searchInputValue=""
+      value={[{ label: 'tag', value: 'tag'}]}
+    />
+
+    <TagsInput
+      label="Label area"
+      onChange={noop}
+      onKeyPress={noop}
+      onSearchInputChange={noop}
+      searchInputValue=""
+      subLabel="Hint text displayed here"
+      value={[{ label: 'tag', value: 'tag'}]}
+    />
+
+    <TagsInput
+      label={<TagsInput.Label>ReactNode label</TagsInput.Label>}
+      onChange={noop}
+      onKeyPress={noop}
+      onSearchInputChange={noop}
+      searchInputValue=""
+      subLabel={<TagsInput.SubLabel>ReactNode sublabel</TagsInput.SubLabel>}
+      value={[{ label: 'tag', value: 'tag'}]}
+    />
+  </div>
+)
+
+export default Comp
+```
+
+### Prefix/Suffix
+
+```typescript
+import React from 'react'
+import { SearchIcon } from '@pluralsight/ps-design-system-icon'
+import TagsInput from '@pluralsight/ps-design-system-tagsinput'
+
+const noop = () => {}
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <TagsInput
+      label="Input with prefix"
+      onChange={noop}
+      onKeyPress={noop}
+      onSearchInputChange={noop}
+      prefix={<SearchIcon />}
+      searchInputValue=""
+      value={[]}
+    />
+
+    <TagsInput
+      label="Input with suffix"
+      onChange={noop}
+      onKeyPress={noop}
+      onSearchInputChange={noop}
+      searchInputValue=""
+      suffix={<SearchIcon />}
+      value={[]}
+    />
+  </div>
+)
+
+export default Comp
+```
+
+### Disabled
+
+```typescript
+import React from 'react'
+import TagsInput from '@pluralsight/ps-design-system-tagsinput'
+
+const noop = () => {}
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <TagsInput
+      disabled
+      label="Disabled input"
+      onChange={noop}
+      onKeyPress={noop}
+      onSearchInputChange={noop}
+      searchInputValue=""
+      value={[{ label: 'tag', value: 'tag'}]}
+    />
+  </div>
+)
+
+export default Comp
+```
+
+### Error
+
+```typescript
+import React from 'react'
+import TagsInput from '@pluralsight/ps-design-system-tagsinput'
+
+const noop = () => {}
+
+const Comp = () => (
+  <div className="example-flex-column">
+    <TagsInput
+      error
+      label="Error input"
+      onChange={noop}
+      onKeyPress={noop}
+      onSearchInputChange={noop}
+      searchInputValue=""
+      value={[{ label: 'tag', value: 'tag'}]}
+    />
+  </div>
+)
+
+export default Comp
+```
+
+## Advanced customization
+
+> The `TagsInput` component is a convenience wrapper for common usecases. If you need advanced customization, please explore building your own wrapper using the `Field` and `Tag` components.
+
+## Usage & Types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-tagsinput"
+  import="import TagsInput from '@pluralsight/ps-design-system-tagsinput'"
+  packageName="tagsinput"
+  version={props.version}
+/>
+
+<TypesTable>
+  <TypesProp name="disabled" type="boolean" />
+  <TypesProp name="error" type="boolean"/>
+  <TypesProp
+    name="label"
+    type="string | ReactNode"
+    desc="identifying string for input"
+  />
+  <TypesProp
+    name="onChange"
+    required
+    type="(evt, nextValue: Option[]) => void"
+  />
+  <TypesProp name="onSearchInputChange" required type="ChangeEventHandler" />
+  <TypesProp name="searchInputValue" required type="string" />
+  <TypesProp name="placeholder" type="string" desc="in-field usage hint" />
+  <TypesProp name="subLabel" type="string | ReactNode" />
+  <TypesProp name="value" required type="Option[]" />
+</TypesTable>
+
