@@ -974,6 +974,54 @@ exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Field/TextInputField Custom Input Tag 1`] = `
+<div
+  data-css-z8g6as=""
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-5jjrbq=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Text input label area
+    </label>
+    <div
+      data-css-63oe3q=""
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1r5pcu2=""
+      >
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1na6nif=""
+            id="text-input__input-unique-id"
+            placeholder="tag from render prop"
+            style={
+              Object {
+                "outline": "1px dashed pink",
+              }
+            }
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-bv851e=""
+    >
+      Area for additional information
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
 <div
   data-css-z8g6as=""
