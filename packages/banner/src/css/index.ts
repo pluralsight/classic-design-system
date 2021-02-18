@@ -20,10 +20,6 @@ export default {
     alignItems: 'flex-start',
     width: '100%',
     overflow: 'hidden',
-    fontSize: type.fontSize300,
-    letterspacing: type.letterSpacingLoose,
-    lineHeight: type.lineHeightStandard,
-    fontWeight: type.fontWeightDefault,
     padding: `${layout.spacingXSmall} ${layout.spacingSmall}`
   },
 
@@ -67,8 +63,10 @@ export default {
   [`.psds-banner__button--color-${vars.colors.red}`]: {},
 
   '.psds-banner__text': {
+    margin: 0,
     flex: '1',
     textAlign: 'center',
+    color: 'currentColor',
 
     '& a': {
       color: 'inherit',
