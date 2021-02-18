@@ -109,6 +109,8 @@ const TagsInput: TagsInputComponent = props => {
   }
 
   const Label = useMemo(() => {
+    if (!label) return null
+
     if (isValidElement(label)) {
       return cloneElement<any>(label, { htmlFor: inputId })
     }
@@ -117,6 +119,8 @@ const TagsInput: TagsInputComponent = props => {
   }, [label, inputId])
 
   const SubLabel = useMemo(() => {
+    if (!subLabel) return null
+
     if (isValidElement(subLabel)) return subLabel
 
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
