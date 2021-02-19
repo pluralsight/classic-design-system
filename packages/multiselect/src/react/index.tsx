@@ -29,6 +29,7 @@ import stylesheet from '../css'
 import { Menu } from './menu'
 import { FilterFn, OnStateChangeFn, Option, StateReducer } from './types'
 import { noop, simpleTextFilter, switchcase } from './utils'
+import { useKeybinding } from './use-keybinding'
 
 export { Option }
 
@@ -122,6 +123,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
   }, [unselectedOptions, filterFn, searchTerm])
 
   const {
+    closeMenu,
     getComboboxProps,
     getInputProps,
     getItemProps,
@@ -140,6 +142,10 @@ const MultiSelect: MultiSelectFieldComponent = props => {
         setSearchTerm(inputValue)
       }
 
+      const resetSearch: OnStateChangeFn = () => {
+        setSearchTerm('')
+      }
+
       const selectItemAndResetSearch: OnStateChangeFn = ({ selectedItem }) => {
         setSearchTerm('')
         if (selectedItem) addSelectedItem(selectedItem)
@@ -147,7 +153,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
 
       const fn = switchcase<OnStateChangeFn>(
         {
-          [stateChangeTypes.InputBlur]: selectItemAndResetSearch,
+          [stateChangeTypes.InputBlur]: resetSearch,
           [stateChangeTypes.InputChange]: updateSearchTerm,
           [stateChangeTypes.InputKeyDownEnter]: selectItemAndResetSearch,
           [stateChangeTypes.ItemClick]: selectItemAndResetSearch
@@ -201,9 +207,18 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     getDropdownProps({
       onFocus: () => {
         if (!isOpen) openMenu()
-      },
-      preventKeyAction: isOpen
+      }
     })
+  )
+
+  useKeybinding(
+    ['alt', 'arrowdown'],
+    () => {
+      if (!isOpen) return
+
+      window.requestAnimationFrame(closeMenu)
+    },
+    inputProps.ref.current
   )
 
   useLayoutEffect(
