@@ -15,10 +15,11 @@
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm"
   },
   "sideEffects": false,
-  "style": "dist/index.css",
+  "style": "dist/css/index.css",
   "types": "dist/esm/index.d.ts",
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.4",
+    "globby": "^11.0.2",
     "postcss": "^7.0.26",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0"
