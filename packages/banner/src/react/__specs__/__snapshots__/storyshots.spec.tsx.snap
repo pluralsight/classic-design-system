@@ -2,10 +2,11 @@
 
 exports[`Storyshots Button blue 1`] = `
 <div
-  data-css-ue58aw=""
+  data-css-1bbe0j3=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text with a 
     <button
@@ -20,16 +21,17 @@ exports[`Storyshots Button blue 1`] = `
         button
       </span>
     </button>
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots Button green 1`] = `
 <div
-  data-css-q43imj=""
+  data-css-1obqs0o=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text with a 
     <button
@@ -44,16 +46,17 @@ exports[`Storyshots Button green 1`] = `
         button
       </span>
     </button>
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots Button red 1`] = `
 <div
-  data-css-1bpd8ni=""
+  data-css-k0cdxm=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text with a 
     <button
@@ -68,16 +71,17 @@ exports[`Storyshots Button red 1`] = `
         button
       </span>
     </button>
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots Button yellow 1`] = `
 <div
-  data-css-2xg5hc=""
+  data-css-mrqgze=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text with a 
     <button
@@ -92,67 +96,72 @@ exports[`Storyshots Button yellow 1`] = `
         button
       </span>
     </button>
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots color blue 1`] = `
 <div
-  data-css-ue58aw=""
+  data-css-1bbe0j3=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     blue
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots color green 1`] = `
 <div
-  data-css-q43imj=""
+  data-css-1obqs0o=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     green
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots color red 1`] = `
 <div
-  data-css-1bpd8ni=""
+  data-css-k0cdxm=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     red
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots color yellow 1`] = `
 <div
-  data-css-2xg5hc=""
+  data-css-mrqgze=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     yellow
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots onClick displays X 1`] = `
 <div
-  data-css-ue58aw=""
+  data-css-1bbe0j3=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text
-  </div>
+  </p>
   <button
     data-css-w2n93m=""
     onClick={[Function]}
@@ -177,13 +186,14 @@ exports[`Storyshots onClick displays X 1`] = `
 exports[`Storyshots onClick side by side 1`] = `
 <div>
   <div
-    data-css-ue58aw=""
+    data-css-1bbe0j3=""
   >
-    <div
-      data-css-ctomgo=""
+    <p
+      data-css-17nixd9=""
+      data-css-1ut1otc=""
     >
       this is the text
-    </div>
+    </p>
     <button
       data-css-w2n93m=""
       onClick={[Function]}
@@ -204,13 +214,14 @@ exports[`Storyshots onClick side by side 1`] = `
     </button>
   </div>
   <div
-    data-css-q43imj=""
+    data-css-1obqs0o=""
   >
-    <div
-      data-css-ctomgo=""
+    <p
+      data-css-17nixd9=""
+      data-css-1ut1otc=""
     >
       this is the text
-    </div>
+    </p>
     <button
       data-css-w2n93m=""
       onClick={[Function]}
@@ -231,13 +242,14 @@ exports[`Storyshots onClick side by side 1`] = `
     </button>
   </div>
   <div
-    data-css-2xg5hc=""
+    data-css-mrqgze=""
   >
-    <div
-      data-css-ctomgo=""
+    <p
+      data-css-17nixd9=""
+      data-css-1ut1otc=""
     >
       this is the text
-    </div>
+    </p>
     <button
       data-css-w2n93m=""
       onClick={[Function]}
@@ -258,13 +270,14 @@ exports[`Storyshots onClick side by side 1`] = `
     </button>
   </div>
   <div
-    data-css-1bpd8ni=""
+    data-css-k0cdxm=""
   >
-    <div
-      data-css-ctomgo=""
+    <p
+      data-css-17nixd9=""
+      data-css-1ut1otc=""
     >
       this is the text
-    </div>
+    </p>
     <button
       data-css-w2n93m=""
       onClick={[Function]}
@@ -289,14 +302,15 @@ exports[`Storyshots onClick side by side 1`] = `
 
 exports[`Storyshots onClick w/ long text 1`] = `
 <div
-  data-css-ue58aw=""
+  data-css-1bbe0j3=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text.
      
-  </div>
+  </p>
   <button
     data-css-w2n93m=""
     onClick={[Function]}
@@ -320,10 +334,11 @@ exports[`Storyshots onClick w/ long text 1`] = `
 
 exports[`Storyshots styling child Link component auto-styled 1`] = `
 <div
-  data-css-ue58aw=""
+  data-css-1bbe0j3=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text with an
      
@@ -334,16 +349,17 @@ exports[`Storyshots styling child Link component auto-styled 1`] = `
       Link component
     </a>
     .
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots styling child anchor tag auto-styled 1`] = `
 <div
-  data-css-ue58aw=""
+  data-css-1bbe0j3=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text with an 
     <a
@@ -352,16 +368,17 @@ exports[`Storyshots styling child anchor tag auto-styled 1`] = `
       anchor tag
     </a>
     .
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
 <div
-  data-css-2xg5hc=""
+  data-css-mrqgze=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text with an 
     <a
@@ -370,20 +387,21 @@ exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
       anchor tag
     </a>
     .
-  </div>
+  </p>
 </div>
 `;
 
 exports[`Storyshots styling className prop 1`] = `
 <div
   className="someClass"
-  data-css-ue58aw=""
+  data-css-1bbe0j3=""
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text
-  </div>
+  </p>
   <button
     data-css-w2n93m=""
     onClick={[Function]}
@@ -407,18 +425,19 @@ exports[`Storyshots styling className prop 1`] = `
 
 exports[`Storyshots styling style prop 1`] = `
 <div
-  data-css-ue58aw=""
+  data-css-1bbe0j3=""
   style={
     Object {
       "outline": "3px solid red",
     }
   }
 >
-  <div
-    data-css-ctomgo=""
+  <p
+    data-css-17nixd9=""
+    data-css-1ut1otc=""
   >
     this is the text
-  </div>
+  </p>
   <button
     data-css-w2n93m=""
     onClick={[Function]}

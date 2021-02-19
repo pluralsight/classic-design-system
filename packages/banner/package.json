@@ -24,6 +24,7 @@
     "@pluralsight/ps-design-system-core": "^6.9.2",
     "@pluralsight/ps-design-system-icon": "^21.0.2",
     "@pluralsight/ps-design-system-link": "^11.1.2",
+    "@pluralsight/ps-design-system-text": "^18.1.2",
     "@pluralsight/ps-design-system-util": "^7.1.2"
   },
   "peerDependencies": {
