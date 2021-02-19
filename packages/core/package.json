@@ -7,7 +7,7 @@
   "author": "jaketrent",
   "keywords": [],
   "main": "dist/index.js",
-  "module": "js/index.js",
+  "module": "js/index.ts",
   "scripts": {
     "build": "run-s build:js build:css",
     "build:css": "node ./build",
