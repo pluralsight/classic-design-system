@@ -15,7 +15,7 @@ async function main() {
 main()
 
 async function buildCssOutput() {
-  const input = path.join('css', 'index.css')
+  const input = path.join('src', 'css', 'index.css')
   const output = path.join('dist', 'index.css')
 
   const propNameTests = [
@@ -57,7 +57,7 @@ async function buildCssOutput() {
 }
 
 async function buildSassOutput() {
-  const input = path.join('css', 'index.css')
+  const input = path.join('src', 'css', 'index.css')
   const output = path.join('dist', 'index.module.scss')
 
   const transforms = [

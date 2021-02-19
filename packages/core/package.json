@@ -6,16 +6,17 @@
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
-  "main": "dist/index.js",
-  "module": "js/index.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "scripts": {
-    "build": "run-s build:js build:css",
+    "build": "run-s build:cjs build:esm build:css",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "node ./build",
-    "build:js": "tsc --project ./tsconfig.json"
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm"
   },
   "sideEffects": false,
-  "style": "css/index.css",
-  "types": "dist/index.d.ts",
+  "style": "dist/index.css",
+  "types": "dist/esm/index.d.ts",
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.0.4",
     "postcss": "^7.0.26",
