@@ -4,28 +4,11 @@ exports[`Storyshots appearance default w/ error 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Problem field
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -37,8 +20,11 @@ exports[`Storyshots appearance default w/ error 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -103,28 +89,11 @@ exports[`Storyshots appearance gaps 1`] = `
     <div
       data-css-1hniuff=""
     >
-      <label
-        htmlFor="dropdown-input-unique-id"
-      >
+      <label>
         <span>
           Problem field
         </span>
       </label>
-      <div
-        data-css-6wu9td=""
-      >
-        <input
-          aria-autocomplete="list"
-          aria-controls="dropdown-menu-unique-id"
-          aria-expanded={false}
-          defaultValue=""
-          disabled={false}
-          id="dropdown-input-unique-id"
-          onKeyDown={[Function]}
-          role="combobox"
-          tabIndex={-1}
-        />
-      </div>
       <div
         data-css-8befsb=""
       >
@@ -136,8 +105,11 @@ exports[`Storyshots appearance gaps 1`] = `
             data-css-ne3jjf=""
           >
             <button
+              aria-haspopup="listbox"
+              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
+              id="button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -180,28 +152,11 @@ exports[`Storyshots appearance gaps 1`] = `
     <div
       data-css-1hniuff=""
     >
-      <label
-        htmlFor="dropdown-input-unique-id"
-      >
+      <label>
         <span>
           Problem field
         </span>
       </label>
-      <div
-        data-css-6wu9td=""
-      >
-        <input
-          aria-autocomplete="list"
-          aria-controls="dropdown-menu-unique-id"
-          aria-expanded={false}
-          defaultValue=""
-          disabled={false}
-          id="dropdown-input-unique-id"
-          onKeyDown={[Function]}
-          role="combobox"
-          tabIndex={-1}
-        />
-      </div>
       <div
         data-css-8befsb=""
       >
@@ -213,8 +168,11 @@ exports[`Storyshots appearance gaps 1`] = `
             data-css-ne3jjf=""
           >
             <button
+              aria-haspopup="listbox"
+              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
+              id="button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -276,28 +234,11 @@ exports[`Storyshots appearance gaps 1`] = `
     <div
       data-css-1hniuff=""
     >
-      <label
-        htmlFor="dropdown-input-unique-id"
-      >
+      <label>
         <span>
           Problem field
         </span>
       </label>
-      <div
-        data-css-6wu9td=""
-      >
-        <input
-          aria-autocomplete="list"
-          aria-controls="dropdown-menu-unique-id"
-          aria-expanded={false}
-          defaultValue=""
-          disabled={false}
-          id="dropdown-input-unique-id"
-          onKeyDown={[Function]}
-          role="combobox"
-          tabIndex={-1}
-        />
-      </div>
       <div
         data-css-8befsb=""
       >
@@ -309,8 +250,11 @@ exports[`Storyshots appearance gaps 1`] = `
             data-css-ne3jjf=""
           >
             <button
+              aria-haspopup="listbox"
+              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
               data-css-1c2g7cd=""
               disabled={false}
+              id="button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -353,28 +297,11 @@ exports[`Storyshots appearance gaps 1`] = `
     <div
       data-css-1hniuff=""
     >
-      <label
-        htmlFor="dropdown-input-unique-id"
-      >
+      <label>
         <span>
           Problem field
         </span>
       </label>
-      <div
-        data-css-6wu9td=""
-      >
-        <input
-          aria-autocomplete="list"
-          aria-controls="dropdown-menu-unique-id"
-          aria-expanded={false}
-          defaultValue=""
-          disabled={false}
-          id="dropdown-input-unique-id"
-          onKeyDown={[Function]}
-          role="combobox"
-          tabIndex={-1}
-        />
-      </div>
       <div
         data-css-8befsb=""
       >
@@ -386,8 +313,11 @@ exports[`Storyshots appearance gaps 1`] = `
             data-css-ne3jjf=""
           >
             <button
+              aria-haspopup="listbox"
+              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
               data-css-1c2g7cd=""
               disabled={false}
+              id="button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -452,30 +382,13 @@ exports[`Storyshots appearance medium default 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -487,8 +400,11 @@ exports[`Storyshots appearance medium default 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -536,30 +452,13 @@ exports[`Storyshots appearance medium subtle 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -571,8 +470,11 @@ exports[`Storyshots appearance medium subtle 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-1c2g7cd=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -620,30 +522,13 @@ exports[`Storyshots appearance small default 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -655,8 +540,11 @@ exports[`Storyshots appearance small default 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-1tv1187=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -704,30 +592,13 @@ exports[`Storyshots appearance small subtle 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -739,8 +610,11 @@ exports[`Storyshots appearance small subtle 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-cdtd9o=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -788,28 +662,11 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Problem field
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -821,8 +678,11 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-1c2g7cd=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -885,9 +745,7 @@ exports[`Storyshots custom dynamic icon 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
@@ -905,7 +763,10 @@ exports[`Storyshots custom dynamic icon 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -970,9 +831,7 @@ exports[`Storyshots custom fixed icon 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
@@ -990,7 +849,10 @@ exports[`Storyshots custom fixed icon 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1065,28 +927,11 @@ exports[`Storyshots disabled compare dropdown 1`] = `
   <div
     data-css-1hniuff=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Normal
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -1098,8 +943,11 @@ exports[`Storyshots disabled compare dropdown 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1149,28 +997,11 @@ exports[`Storyshots disabled compare dropdown 1`] = `
   <div
     data-css-1h53i33=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         I'm not usable
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={true}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -1182,8 +1013,11 @@ exports[`Storyshots disabled compare dropdown 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={true}
+            id="button-4fzzzxjyl"
             onKeyDown={[Function]}
           >
             <span
@@ -1237,29 +1071,11 @@ exports[`Storyshots disabled compare items 1`] = `
   <div
     data-css-1hniuff=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Normal
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-activedescendant="dropdown-menu-unique-id-NormalLabel1"
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -1271,8 +1087,11 @@ exports[`Storyshots disabled compare items 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1321,30 +1140,13 @@ exports[`Storyshots focus autofocus with ref 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -1356,8 +1158,11 @@ exports[`Storyshots focus autofocus with ref 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1401,30 +1206,13 @@ exports[`Storyshots focus disabled 1`] = `
 <div
   data-css-1h53i33=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={true}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -1436,8 +1224,11 @@ exports[`Storyshots focus disabled 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={true}
+          id="button-4fzzzxjyl"
           onBlur={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1482,30 +1273,13 @@ exports[`Storyshots focus onBlur 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -1517,8 +1291,11 @@ exports[`Storyshots focus onBlur 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onBlur={[Function]}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1563,30 +1340,13 @@ exports[`Storyshots focus onFocus 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -1598,8 +1358,11 @@ exports[`Storyshots focus onFocus 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1644,28 +1407,11 @@ exports[`Storyshots labels all 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Some label
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -1677,8 +1423,11 @@ exports[`Storyshots labels all 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1731,28 +1480,11 @@ exports[`Storyshots labels label 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Some label
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -1764,8 +1496,11 @@ exports[`Storyshots labels label 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1809,28 +1544,11 @@ exports[`Storyshots labels label and subLabel 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Some label
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -1842,8 +1560,11 @@ exports[`Storyshots labels label and subLabel 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1892,30 +1613,13 @@ exports[`Storyshots labels none 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -1927,8 +1631,11 @@ exports[`Storyshots labels none 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1972,30 +1679,13 @@ exports[`Storyshots labels placeholder 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -2007,8 +1697,11 @@ exports[`Storyshots labels placeholder 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -2056,30 +1749,13 @@ exports[`Storyshots labels subLabel 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -2091,8 +1767,11 @@ exports[`Storyshots labels subLabel 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -2152,31 +1831,13 @@ exports[`Storyshots layouts bottom of viewport 1`] = `
   <div
     data-css-1hniuff=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span
         data-css-6wu9td=""
       >
         Dropdown
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-activedescendant="dropdown-menu-unique-id-one"
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -2188,8 +1849,11 @@ exports[`Storyshots layouts bottom of viewport 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-1c2g7cd=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2254,29 +1918,11 @@ exports[`Storyshots layouts custom width 1`] = `
       }
     }
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Width 150
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-activedescendant="dropdown-menu-unique-id-two"
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue="two"
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -2288,8 +1934,11 @@ exports[`Storyshots layouts custom width 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2334,29 +1983,11 @@ exports[`Storyshots layouts custom width 1`] = `
   <div
     data-css-1hniuff=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Width determined by longest item
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-activedescendant="dropdown-menu-unique-id-two"
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue="two"
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -2368,8 +1999,11 @@ exports[`Storyshots layouts custom width 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2432,28 +2066,11 @@ exports[`Storyshots layouts full width 1`] = `
       }
     }
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         First
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -2465,8 +2082,11 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2513,28 +2133,11 @@ exports[`Storyshots layouts full width 1`] = `
       }
     }
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Second
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -2546,8 +2149,11 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2613,28 +2219,11 @@ exports[`Storyshots layouts full width 1`] = `
       }
     }
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Third
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -2646,8 +2235,11 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-1c2g7cd=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2694,28 +2286,11 @@ exports[`Storyshots layouts full width 1`] = `
       }
     }
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Fourth
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -2727,8 +2302,11 @@ exports[`Storyshots layouts full width 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-1c2g7cd=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2807,30 +2385,13 @@ exports[`Storyshots layouts right-aligned 1`] = `
     <div
       data-css-1hniuff=""
     >
-      <label
-        htmlFor="dropdown-input-unique-id"
-      >
+      <label>
         <span
           data-css-6wu9td=""
         >
           Dropdown
         </span>
       </label>
-      <div
-        data-css-6wu9td=""
-      >
-        <input
-          aria-autocomplete="list"
-          aria-controls="dropdown-menu-unique-id"
-          aria-expanded={false}
-          defaultValue=""
-          disabled={false}
-          id="dropdown-input-unique-id"
-          onKeyDown={[Function]}
-          role="combobox"
-          tabIndex={-1}
-        />
-      </div>
       <div
         data-css-8befsb=""
       >
@@ -2842,8 +2403,11 @@ exports[`Storyshots layouts right-aligned 1`] = `
             data-css-ne3jjf=""
           >
             <button
+              aria-haspopup="listbox"
+              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
               data-css-1c2g7cd=""
               disabled={false}
+              id="button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -2920,29 +2484,11 @@ exports[`Storyshots menu bottom of view, pop above 1`] = `
     <div
       data-css-1hniuff=""
     >
-      <label
-        htmlFor="dropdown-input-unique-id"
-      >
+      <label>
         <span>
           Level
         </span>
       </label>
-      <div
-        data-css-6wu9td=""
-      >
-        <input
-          aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-          aria-autocomplete="list"
-          aria-controls="dropdown-menu-unique-id"
-          aria-expanded={false}
-          defaultValue=""
-          disabled={false}
-          id="dropdown-input-unique-id"
-          onKeyDown={[Function]}
-          role="combobox"
-          tabIndex={-1}
-        />
-      </div>
       <div
         data-css-8befsb=""
       >
@@ -2954,8 +2500,11 @@ exports[`Storyshots menu bottom of view, pop above 1`] = `
             data-css-ne3jjf=""
           >
             <button
+              aria-haspopup="listbox"
+              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
+              id="button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -3003,29 +2552,11 @@ exports[`Storyshots menu divider 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -3037,8 +2568,11 @@ exports[`Storyshots menu divider 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3086,29 +2620,11 @@ exports[`Storyshots menu in stack 1`] = `
     <div
       data-css-1hniuff=""
     >
-      <label
-        htmlFor="dropdown-input-unique-id"
-      >
+      <label>
         <span>
           Level
         </span>
       </label>
-      <div
-        data-css-6wu9td=""
-      >
-        <input
-          aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-          aria-autocomplete="list"
-          aria-controls="dropdown-menu-unique-id"
-          aria-expanded={false}
-          defaultValue=""
-          disabled={false}
-          id="dropdown-input-unique-id"
-          onKeyDown={[Function]}
-          role="combobox"
-          tabIndex={-1}
-        />
-      </div>
       <div
         data-css-8befsb=""
       >
@@ -3120,8 +2636,11 @@ exports[`Storyshots menu in stack 1`] = `
             data-css-ne3jjf=""
           >
             <button
+              aria-haspopup="listbox"
+              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
+              id="button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -3168,29 +2687,11 @@ exports[`Storyshots menu in stack 1`] = `
     <div
       data-css-1hniuff=""
     >
-      <label
-        htmlFor="dropdown-input-unique-id"
-      >
+      <label>
         <span>
           Level
         </span>
       </label>
-      <div
-        data-css-6wu9td=""
-      >
-        <input
-          aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-          aria-autocomplete="list"
-          aria-controls="dropdown-menu-unique-id"
-          aria-expanded={false}
-          defaultValue=""
-          disabled={false}
-          id="dropdown-input-unique-id"
-          onKeyDown={[Function]}
-          role="combobox"
-          tabIndex={-1}
-        />
-      </div>
       <div
         data-css-8befsb=""
       >
@@ -3202,8 +2703,11 @@ exports[`Storyshots menu in stack 1`] = `
             data-css-ne3jjf=""
           >
             <button
+              aria-haspopup="listbox"
+              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
+              id="button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -3253,29 +2757,11 @@ exports[`Storyshots menu max height 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -3287,8 +2773,11 @@ exports[`Storyshots menu max height 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3334,29 +2823,11 @@ exports[`Storyshots menu onClicks 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -3368,8 +2839,11 @@ exports[`Storyshots menu onClicks 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-1c2g7cd=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3436,29 +2910,11 @@ exports[`Storyshots menu single list 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -3470,8 +2926,11 @@ exports[`Storyshots menu single list 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3517,29 +2976,11 @@ exports[`Storyshots menu single list w/ icon 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -3551,8 +2992,11 @@ exports[`Storyshots menu single list w/ icon 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3600,29 +3044,11 @@ exports[`Storyshots menu super long 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Thislevelreallyisthelongestlevelthatanyonehaseverseen.Thereisnonelonger"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -3634,8 +3060,11 @@ exports[`Storyshots menu super long 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3681,29 +3110,11 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -3715,8 +3126,11 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3764,29 +3178,11 @@ exports[`Storyshots menu w/ subLabel 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -3798,8 +3194,11 @@ exports[`Storyshots menu w/ subLabel 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3850,29 +3249,11 @@ exports[`Storyshots menu w/ value 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-three-1"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue="three-1"
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -3884,8 +3265,11 @@ exports[`Storyshots menu w/ value 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3946,29 +3330,11 @@ exports[`Storyshots portal position 1`] = `
   <div
     data-css-1hniuff=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Level
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -3980,8 +3346,11 @@ exports[`Storyshots portal position 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -4029,29 +3398,11 @@ exports[`Storyshots props whitelist title 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span>
       Level
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -4063,8 +3414,11 @@ exports[`Storyshots props whitelist title 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
           title="This title should be present"
@@ -4111,31 +3465,13 @@ exports[`Storyshots value external state change 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-o"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue="o"
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -4147,8 +3483,11 @@ exports[`Storyshots value external state change 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -4200,31 +3539,13 @@ Array [
   <div
     data-css-1hniuff=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span
         data-css-6wu9td=""
       >
         Dropdown
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-activedescendant="dropdown-menu-unique-id-o"
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -4236,8 +3557,11 @@ Array [
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -4285,31 +3609,13 @@ Array [
   <div
     data-css-1hniuff=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span
         data-css-6wu9td=""
       >
         Dropdown
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-activedescendant="dropdown-menu-unique-id-Oneitem"
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue=""
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -4321,8 +3627,11 @@ Array [
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -4371,31 +3680,13 @@ exports[`Storyshots value shows pre-selected item by label 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-Preselectedthreeitem"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue="Preselected three item"
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -4407,8 +3698,11 @@ exports[`Storyshots value shows pre-selected item by label 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -4456,31 +3750,13 @@ exports[`Storyshots value shows pre-selected item by value 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-h"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue="h"
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -4492,8 +3768,11 @@ exports[`Storyshots value shows pre-selected item by value 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -4541,31 +3820,13 @@ exports[`Storyshots value test the spec 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-w"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue="w"
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -4577,8 +3838,11 @@ exports[`Storyshots value test the spec 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -4626,31 +3890,13 @@ exports[`Storyshots value value is not an item in the list 1`] = `
 <div
   data-css-1hniuff=""
 >
-  <label
-    htmlFor="dropdown-input-unique-id"
-  >
+  <label>
     <span
       data-css-6wu9td=""
     >
       Dropdown
     </span>
   </label>
-  <div
-    data-css-6wu9td=""
-  >
-    <input
-      aria-activedescendant="dropdown-menu-unique-id-o"
-      aria-autocomplete="list"
-      aria-controls="dropdown-menu-unique-id"
-      aria-expanded={false}
-      defaultValue=""
-      disabled={false}
-      id="dropdown-input-unique-id"
-      onKeyDown={[Function]}
-      role="combobox"
-      tabIndex={-1}
-    />
-  </div>
   <div
     data-css-8befsb=""
   >
@@ -4662,8 +3908,11 @@ exports[`Storyshots value value is not an item in the list 1`] = `
         data-css-ne3jjf=""
       >
         <button
+          aria-haspopup="listbox"
+          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
+          id="button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -4727,29 +3976,11 @@ exports[`Storyshots whitelist clear 1`] = `
   <div
     data-css-1hniuff=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Thing to change
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-activedescendant="dropdown-menu-unique-id-two"
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue="two"
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -4761,8 +3992,11 @@ exports[`Storyshots whitelist clear 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -4822,29 +4056,11 @@ exports[`Storyshots whitelist onChange 1`] = `
   <div
     data-css-1hniuff=""
   >
-    <label
-      htmlFor="dropdown-input-unique-id"
-    >
+    <label>
       <span>
         Thing to change
       </span>
     </label>
-    <div
-      data-css-6wu9td=""
-    >
-      <input
-        aria-activedescendant="dropdown-menu-unique-id-two"
-        aria-autocomplete="list"
-        aria-controls="dropdown-menu-unique-id"
-        aria-expanded={false}
-        defaultValue="two"
-        disabled={false}
-        id="dropdown-input-unique-id"
-        onKeyDown={[Function]}
-        role="combobox"
-        tabIndex={-1}
-      />
-    </div>
     <div
       data-css-8befsb=""
     >
@@ -4856,8 +4072,11 @@ exports[`Storyshots whitelist onChange 1`] = `
           data-css-ne3jjf=""
         >
           <button
+            aria-haspopup="listbox"
+            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
+            id="button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >

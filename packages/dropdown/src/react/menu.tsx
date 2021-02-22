@@ -6,9 +6,7 @@ import {
 import React, {
   ForwardRefRenderFunction,
   forwardRef,
-  useImperativeHandle,
   useContext,
-  useRef,
   useLayoutEffect,
   useState,
   RefObject
@@ -16,7 +14,7 @@ import React, {
 import { css, keyframes } from 'glamor'
 
 import stylesheet from '../css'
-import { DropdownContext } from '../js'
+import { DropdownContext, useMenuRef, handleMenuKeyDownEvents } from '../js'
 
 const slide = keyframes(
   stylesheet['@keyframes psds-dropdown__menu__keyframes__slide']
@@ -35,7 +33,6 @@ interface DropdownMenuProps extends HTMLPropsFor<'div'> {
   inNode?: HTMLElement
   isOpen: boolean
   menu: React.ReactNode
-  menuId: string
   menuPosition: { top: number; left: number; width: number }
   buttonRef: RefObject<HTMLButtonElement>
 }
@@ -44,15 +41,7 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
   props,
   forwardedRef
 ) => {
-  const {
-    inNode,
-    isOpen,
-    menu,
-    menuId,
-    menuPosition,
-    buttonRef,
-    ...rest
-  } = props
+  const { inNode, isOpen, menu, menuPosition, buttonRef, ...rest } = props
 
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
   const [adjMenuPosition, setAdjMenuPosition] = useState<{
@@ -64,12 +53,14 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
   const context = useContext(DropdownContext)
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
-  const ref = useRef<HTMLDivElement>(null)
-  /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion, react-hooks/rules-of-hooks */
-  useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
+  const ref = useMenuRef(forwardedRef)
 
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
   useCloseOnDocumentEvents<HTMLDivElement>(ref, context.onDocumentEvents)
+
+  const handleKeyDown: React.KeyboardEventHandler<HTMLDivElement> = evt => {
+    isOpen && handleMenuKeyDownEvents(evt)
+  }
 
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
   useLayoutEffect(() => {
@@ -84,6 +75,7 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
         top: buttonRect.top - menuRect.height - 8
       })
     }
+    isOpen && ref.current.focus()
   }, [ref, buttonRef, isOpen, menuPosition, setAdjMenuPosition])
 
   return (
@@ -91,7 +83,13 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
     isOpen &&
     createUniversalPortal(
       <div {...styles.menuWrapper()} style={adjMenuPosition}>
-        <div {...styles.menu()} ref={ref} role="listbox" id={menuId} {...rest}>
+        <div
+          {...styles.menu()}
+          ref={ref}
+          role="listbox"
+          {...rest}
+          onKeyDown={handleKeyDown}
+        >
           {menu}
         </div>
       </div>,

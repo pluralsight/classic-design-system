@@ -448,7 +448,10 @@ storiesOf('onClose', module)
             when={open}
             show={
               <div>
-                <ActionMenu onClose={hide} origin={ActionMenu.origins.topLeft}>
+                <ActionMenu
+                  onClose={hide as () => void}
+                  origin={ActionMenu.origins.topLeft}
+                >
                   <ActionMenu.Item>One item</ActionMenu.Item>
                   <ActionMenu.Item>Two item</ActionMenu.Item>
                   <ActionMenu.Item>Three item</ActionMenu.Item>
@@ -522,118 +525,37 @@ storiesOf('onClose', module)
       type Callback = (evt: Event | MouseEvent | UIEvent) => void
       const show = () => setOpen(true)
       const hide: React.MouseEventHandler = evt => {
-        console.log(evt.target)
         setOpen(false)
       }
       const handleClick: React.MouseEventHandler = evt => {
         setValue((evt.target as HTMLSpanElement).innerText)
       }
       return (
-        <div
-          style={{
-            width: '100%',
-            height: '100vh',
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            flexDirection: 'column'
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh
-          venenatis cras sed. Ornare lectus sit amet est placerat in egestas.
-          Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nisl
-          nisi scelerisque eu ultrices. Amet risus nullam eget felis. Arcu non
-          sodales neque sodales ut etiam. Tortor at auctor urna nunc. Faucibus
-          scelerisque eleifend donec pretium vulputate sapien nec sagittis
-          aliquam. Condimentum vitae sapien pellentesque habitant morbi
-          tristique. Egestas maecenas pharetra convallis posuere morbi leo urna
-          molestie. Et ultrices neque ornare aenean euismod elementum nisi quis
-          eleifend. Lobortis feugiat vivamus at augue eget arcu dictum. Fusce id
-          velit ut tortor pretium viverra suspendisse. Convallis tellus id
-          interdum velit. In tellus integer feugiat scelerisque varius morbi
-          enim nunc faucibus. Tempor orci dapibus ultrices in iaculis nunc. Elit
-          ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet massa
-          vitae tortor. Sollicitudin nibh sit amet commodo nulla facilisi nullam
-          vehicula ipsum. Ipsum dolor sit amet consectetur adipiscing. Sed felis
-          eget velit aliquet sagittis. Elit pellentesque habitant morbi
-          tristique. Sit amet consectetur adipiscing elit. Id volutpat lacus
-          laoreet non curabitur gravida arcu ac. Enim neque volutpat ac
-          tincidunt. Lorem ipsum dolor sit amet. Aliquam sem et tortor consequat
-          id. Vitae tempus quam pellentesque nec nam. Platea dictumst quisque
-          sagittis purus sit amet volutpat.
-          <BelowRight
-            when={open}
-            show={
-              <div>
-                <ActionMenu
-                  onClose={hide as () => void}
-                  origin={ActionMenu.origins.topLeft}
-                  onClick={handleClick}
-                >
-                  <ActionMenu.Item value="One item">One item</ActionMenu.Item>
-                  <ActionMenu.Item value="Two item">Two item</ActionMenu.Item>
-                  <ActionMenu.Item value="Three item">
-                    Three item
-                  </ActionMenu.Item>
-                </ActionMenu>
-              </div>
-            }
-          >
-            <div
-              onClick={show}
-              style={{
-                background: 'pink',
-                display: 'inline-block',
-                padding: core.layout.spacingXXSmall
-              }}
+        <BelowRight
+          when={open}
+          show={
+            <ActionMenu
+              onClose={hide as () => void}
+              origin={ActionMenu.origins.topLeft}
+              onClick={handleClick}
             >
-              {value}
-            </div>
-          </BelowRight>
-          Convallis tellus id interdum velit laoreet id. Convallis tellus id
-          interdum velit laoreet id donec ultrices. Metus vulputate eu
-          scelerisque felis imperdiet. Luctus venenatis lectus magna fringilla
-          urna porttitor. Pellentesque habitant morbi tristique senectus. Mi
-          bibendum neque egestas congue quisque egestas diam in. Faucibus
-          interdum posuere lorem ipsum dolor sit. Tortor vitae purus faucibus
-          ornare suspendisse sed nisi lacus sed. Ut tortor pretium viverra
-          suspendisse potenti. Lectus proin nibh nisl condimentum id venenatis a
-          condimentum. Consequat id porta nibh venenatis cras sed felis eget
-          velit. Placerat orci nulla pellentesque dignissim enim sit. Erat
-          imperdiet sed euismod nisi porta lorem mollis aliquam. Malesuada fames
-          ac turpis egestas integer. Consectetur purus ut faucibus pulvinar
-          elementum integer. Consectetur adipiscing elit pellentesque habitant
-          morbi. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Sed
-          tempus urna et pharetra pharetra massa massa ultricies mi. Dictumst
-          quisque sagittis purus sit. Sapien nec sagittis aliquam malesuada
-          bibendum arcu vitae elementum. Porttitor massa id neque aliquam
-          vestibulum. Viverra maecenas accumsan lacus vel facilisis volutpat
-          est. Ac orci phasellus egestas tellus. Dui vivamus arcu felis bibendum
-          ut tristique. Pharetra convallis posuere morbi leo urna molestie at.
-          Suscipit tellus mauris a diam maecenas. Cursus risus at ultrices mi
-          tempus imperdiet nulla. Turpis egestas pretium aenean pharetra magna
-          ac placerat vestibulum. In eu mi bibendum neque egestas congue
-          quisque. Augue mauris augue neque gravida in fermentum. Interdum
-          consectetur libero id faucibus nisl tincidunt eget. In metus vulputate
-          eu scelerisque felis imperdiet proin. Ut lectus arcu bibendum at
-          varius vel pharetra vel. Semper auctor neque vitae tempus quam
-          pellentesque nec nam aliquam. In dictum non consectetur a erat nam at
-          lectus urna. Sem fringilla ut morbi tincidunt. Porttitor massa id
-          neque aliquam vestibulum morbi. Ut placerat orci nulla pellentesque
-          dignissim enim sit amet. Sed augue lacus viverra vitae congue eu
-          consequat. Nibh cras pulvinar mattis nunc sed. Nec ultrices dui sapien
-          eget mi. Ut tellus elementum sagittis vitae. Diam sollicitudin tempor
-          id eu nisl nunc mi ipsum. Nisi vitae suscipit tellus mauris a diam.
-          Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc.
-          Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Amet
-          justo donec enim diam vulputate. Arcu vitae elementum curabitur vitae.
-          Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Vel
-          turpis nunc eget lorem dolor sed viverra. Orci eu lobortis elementum
-          nibh tellus molestie nunc non. Mi eget mauris pharetra et ultrices.
-          Pulvinar neque laoreet suspendisse interdum consectetur libero id.
-          Vestibulum lectus mauris ultrices eros in cursus turpis massa.
-        </div>
+              <ActionMenu.Item value="One item">One item</ActionMenu.Item>
+              <ActionMenu.Item value="Two item">Two item</ActionMenu.Item>
+              <ActionMenu.Item value="Three item">Three item</ActionMenu.Item>
+            </ActionMenu>
+          }
+        >
+          <div
+            onClick={show}
+            style={{
+              background: 'pink',
+              display: 'inline-block',
+              padding: core.layout.spacingXXSmall
+            }}
+          >
+            {value}
+          </div>
+        </BelowRight>
       )
     }
 

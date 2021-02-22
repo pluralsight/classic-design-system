@@ -1,10 +1,20 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
-import React, { ReactNode, ReactText, forwardRef, useContext } from 'react'
+import React, {
+  ReactNode,
+  ReactText,
+  forwardRef,
+  useContext,
+  useImperativeHandle,
+  useState,
+  useRef,
+  useEffect,
+  useCallback
+} from 'react'
 import { css } from 'glamor'
 
 import stylesheet from '../css'
-import { DropdownContext, formatItemId } from '../js'
+import { DropdownContext } from '../js'
 
 const styles = {
   item: (isActive: boolean, disabled: boolean) =>
@@ -18,8 +28,7 @@ const styles = {
   itemSelectedIcon: () => css(stylesheet['.psds-dropdown__item-selected-icon'])
 }
 
-interface DropdownItemProps
-  extends Omit<HTMLPropsFor<'button'>, 'ref' | 'onClick'> {
+interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'onClick'> {
   children: ReactText
   disabled?: boolean
   onClick?: (evt: React.MouseEvent, value: ReactText) => void
@@ -30,28 +39,44 @@ interface DropdownItemProps
 export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
   ({ disabled, onClick, value, icon, children, ...rest }, forwardedRef) => {
     const context = useContext(DropdownContext)
+    const ref = useRef<HTMLButtonElement>()
+    useImperativeHandle(
+      forwardedRef,
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      () => ref.current as HTMLButtonElement
+    )
+    const [active, setActive] = useState(false)
+    const isActive = useCallback(() => {
+      ref.current && setActive(document.activeElement === ref.current)
+    }, [ref, setActive])
+    useEffect(() => {
+      isActive()
+    }, [isActive])
     const valueExists = typeof value !== 'undefined'
-    const isActive =
-      (valueExists && context.activeItem?.value === value) ||
-      context.activeItem?.label === children
     const isSelected =
       (valueExists && context.selectedItem?.value === value) ||
       context.selectedItem?.label === children
 
-    const handleClick = (evt: React.MouseEvent) => {
+    const handleClick = (evt: React.SyntheticEvent) => {
       const valueToSend = typeof value !== 'undefined' ? value : children || ''
-      context.onMenuClick(evt, valueToSend)
-      if (typeof onClick === 'function') onClick(evt, valueToSend)
+      context.onMenuClick(evt as React.MouseEvent, valueToSend)
+      if (typeof onClick === 'function')
+        onClick(evt as React.MouseEvent, valueToSend)
     }
-
+    const handleKeyDown: React.KeyboardEventHandler = evt => {
+      evt.key === 'Enter' && handleClick(evt)
+    }
     return (
       <button
-        {...styles.item(isActive, !!disabled)}
+        {...styles.item(active, !!disabled)}
         disabled={disabled}
         onClick={handleClick}
+        onBlur={isActive as React.FocusEventHandler}
+        onFocus={isActive as React.FocusEventHandler}
+        onKeyDown={handleKeyDown}
         role="option"
-        ref={forwardedRef}
-        id={formatItemId(context.menuId, children as string, value)}
+        aria-selected={isSelected}
+        ref={ref as RefFor<'button'>}
         tabIndex={-1}
         {...rest}
       >

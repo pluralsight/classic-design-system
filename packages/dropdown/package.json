@@ -23,7 +23,6 @@
     "@pluralsight/ps-design-system-core": "^6.9.2",
     "@pluralsight/ps-design-system-halo": "^8.1.2",
     "@pluralsight/ps-design-system-icon": "^21.0.2",
-    "@pluralsight/ps-design-system-screenreaderonly": "^3.1.3",
     "@pluralsight/ps-design-system-util": "^7.1.2",
     "react-innertext": "^1.1.5"
   },

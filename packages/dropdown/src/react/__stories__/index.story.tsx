@@ -14,25 +14,20 @@ import React, {
 
 import Dropdown from '../'
 import { DropdownContext, useDropdown } from '../../js'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 // TODO: convert jest storybook format
 const stableId = (prefix = '') => prefix + 'unique-id'
 
-const DefaultDropdown = (props: React.ComponentProps<typeof Dropdown>) => (
-  <Dropdown uniqueId={stableId} {...props} />
-)
-
 storiesOf('labels', module)
-  .add('none', () => <DefaultDropdown />)
-  .add('placeholder', () => <DefaultDropdown placeholder="some placeholder" />)
-  .add('label', () => <DefaultDropdown label="Some label" />)
-  .add('subLabel', () => <DefaultDropdown subLabel="Some sublabel" />)
+  .add('none', () => <Dropdown />)
+  .add('placeholder', () => <Dropdown placeholder="some placeholder" />)
+  .add('label', () => <Dropdown label="Some label" />)
+  .add('subLabel', () => <Dropdown subLabel="Some sublabel" />)
   .add('label and subLabel', () => (
-    <DefaultDropdown label="Some label" subLabel="Some sublabel" />
+    <Dropdown label="Some label" subLabel="Some sublabel" />
   ))
   .add('all', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Some label"
       subLabel="Some sublabel"
       placeholder="Some placeholder"
@@ -44,7 +39,7 @@ const appearanceStory = storiesOf('appearance', module)
 Object.keys(Dropdown.sizes).forEach(size =>
   Object.keys(Dropdown.appearances).forEach(appearance =>
     appearanceStory.add(`${size} ${appearance}`, () => (
-      <DefaultDropdown
+      <Dropdown
         size={size as 'medium' | 'small'}
         appearance={appearance as 'default' | 'subtle'}
         placeholder="The placeholder "
@@ -54,7 +49,7 @@ Object.keys(Dropdown.sizes).forEach(size =>
 )
 Object.keys(Dropdown.appearances).forEach(appearance =>
   appearanceStory.add(`${appearance} w/ error`, () => (
-    <DefaultDropdown
+    <Dropdown
       appearance={appearance as 'default' | 'subtle'}
       error
       label="Problem field"
@@ -64,19 +59,19 @@ Object.keys(Dropdown.appearances).forEach(appearance =>
 appearanceStory.add('gaps', () => (
   <div>
     <div>
-      <DefaultDropdown label="Problem field" />
+      <Dropdown label="Problem field" />
     </div>
     <div>
-      <DefaultDropdown error label="Problem field" />
+      <Dropdown error label="Problem field" />
     </div>
     <div>
-      <DefaultDropdown
+      <Dropdown
         appearance={Dropdown.appearances.subtle}
         label="Problem field"
       />
     </div>
     <div>
-      <DefaultDropdown
+      <Dropdown
         appearance={Dropdown.appearances.subtle}
         error
         label="Problem field"
@@ -88,12 +83,12 @@ appearanceStory.add('gaps', () => (
 storiesOf('disabled', module)
   .add('compare dropdown', () => (
     <div>
-      <DefaultDropdown
+      <Dropdown
         label="Normal"
         subLabel="Still normal"
         placeholder="I'm normal, see"
       />
-      <DefaultDropdown
+      <Dropdown
         label="I'm not usable"
         subLabel="Neither am I"
         disabled
@@ -103,7 +98,7 @@ storiesOf('disabled', module)
   ))
   .add('compare items', () => (
     <div>
-      <DefaultDropdown
+      <Dropdown
         label="Normal"
         placeholder="Has mixed labels"
         menu={
@@ -132,7 +127,7 @@ storiesOf('whitelist', module)
       return (
         <div>
           <div style={{ color: '#ababab' }}>Value: {value}</div>
-          <DefaultDropdown
+          <Dropdown
             placeholder="Change me"
             label="Thing to change"
             menu={
@@ -169,7 +164,7 @@ storiesOf('whitelist', module)
         <div>
           <div style={{ color: '#ababab' }}>Value: {value}</div>
           <button onClick={handleClear}>Clear</button>
-          <DefaultDropdown
+          <Dropdown
             placeholder="Change me"
             label="Thing to change"
             menu={
@@ -192,21 +187,18 @@ storiesOf('whitelist', module)
 storiesOf('layouts', module)
   .add('full width', () => (
     <div style={{ border: '1px solid blue', width: '500px' }}>
-      <DefaultDropdown
-        label="First"
-        style={{ display: 'block', width: '100%' }}
-      />
-      <DefaultDropdown
+      <Dropdown label="First" style={{ display: 'block', width: '100%' }} />
+      <Dropdown
         error
         label="Second"
         style={{ display: 'block', width: '100%' }}
       />
-      <DefaultDropdown
+      <Dropdown
         appearance={Dropdown.appearances.subtle}
         label="Third"
         style={{ display: 'block', width: '100%' }}
       />
-      <DefaultDropdown
+      <Dropdown
         appearance={Dropdown.appearances.subtle}
         error
         label="Fourth"
@@ -217,7 +209,7 @@ storiesOf('layouts', module)
   .add('right-aligned', () => (
     <div style={{ border: '1px solid blue' }}>
       <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
-        <DefaultDropdown
+        <Dropdown
           placeholder="Filter"
           appearance={Dropdown.appearances.subtle}
         />
@@ -235,7 +227,7 @@ storiesOf('layouts', module)
         outline: '1px solid red'
       }}
     >
-      <DefaultDropdown
+      <Dropdown
         placeholder="Menu appears above"
         appearance={Dropdown.appearances.subtle}
         menu={
@@ -261,7 +253,7 @@ storiesOf('layouts', module)
       return (
         <div>
           <div style={{ color: '#ababab' }}>Value: {value}</div>
-          <DefaultDropdown
+          <Dropdown
             placeholder="Change me"
             label="Width 150"
             style={{ width: 150 }}
@@ -277,7 +269,7 @@ storiesOf('layouts', module)
             onChange={handleChange}
             value={value}
           />
-          <DefaultDropdown
+          <Dropdown
             placeholder="Change me"
             label="Width determined by longest item"
             menu={
@@ -302,7 +294,7 @@ storiesOf('value', module)
   .add('no preselection', () => (
     <>
       <h2>With values</h2>
-      <DefaultDropdown
+      <Dropdown
         placeholder="Shown until selection made"
         menu={
           <>
@@ -313,7 +305,7 @@ storiesOf('value', module)
         }
       />
       <h2>Just labels</h2>
-      <DefaultDropdown
+      <Dropdown
         placeholder="Shown until selection made"
         menu={
           <>
@@ -326,7 +318,7 @@ storiesOf('value', module)
     </>
   ))
   .add('shows pre-selected item by label', () => (
-    <DefaultDropdown
+    <Dropdown
       placeholder="Shown because can't find option"
       value="Preselected three item"
       menu={
@@ -339,7 +331,7 @@ storiesOf('value', module)
     />
   ))
   .add('shows pre-selected item by value', () => (
-    <DefaultDropdown
+    <Dropdown
       placeholder="Not shown until empty"
       value="h"
       menu={
@@ -352,7 +344,7 @@ storiesOf('value', module)
     />
   ))
   .add('value is not an item in the list', () => (
-    <DefaultDropdown
+    <Dropdown
       placeholder="Shown because can't find option"
       value="unknown"
       menu={
@@ -378,7 +370,7 @@ storiesOf('value', module)
       })
 
       return (
-        <DefaultDropdown
+        <Dropdown
           placeholder="Not shown until empty"
           value={value}
           menu={
@@ -395,7 +387,7 @@ storiesOf('value', module)
   })
 
   .add('test the spec', () => (
-    <DefaultDropdown
+    <Dropdown
       placeholder="Select"
       value="w"
       menu={[
@@ -414,7 +406,7 @@ storiesOf('value', module)
 
 storiesOf('menu', module)
   .add('single list', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       menu={
         <>
@@ -427,7 +419,7 @@ storiesOf('menu', module)
     />
   ))
   .add('max height', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       menu={
         <>
@@ -451,7 +443,7 @@ storiesOf('menu', module)
     />
   ))
   .add('w/ value', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       value="three-1"
       menu={
@@ -467,7 +459,7 @@ storiesOf('menu', module)
     />
   ))
   .add('w/ subLabel', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       subLabel="The course level"
       menu={
@@ -481,7 +473,7 @@ storiesOf('menu', module)
     />
   ))
   .add('single list w/ icon', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       placeholder="Select one"
       menu={
@@ -497,7 +489,7 @@ storiesOf('menu', module)
     />
   ))
   .add('divider', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       menu={
         <>
@@ -513,7 +505,7 @@ storiesOf('menu', module)
   .add('in stack', () => (
     <div>
       <div>
-        <DefaultDropdown
+        <Dropdown
           label="Level"
           placeholder="Select one"
           menu={
@@ -527,7 +519,7 @@ storiesOf('menu', module)
         />
       </div>
       <div>
-        <DefaultDropdown
+        <Dropdown
           label="Level"
           placeholder="Select another one"
           menu={
@@ -545,7 +537,7 @@ storiesOf('menu', module)
     </div>
   ))
   .add('super long', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       menu={
         <>
@@ -558,7 +550,7 @@ storiesOf('menu', module)
     />
   ))
   .add('onClicks', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       appearance={Dropdown.appearances.subtle}
       placeholder="Select another one"
@@ -573,7 +565,7 @@ storiesOf('menu', module)
     />
   ))
   .add('w/ longer placeholder', () => (
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       placeholder="This one is longer than any menu item"
       menu={
@@ -600,7 +592,7 @@ storiesOf('menu', module)
           marginTop: 'auto'
         }}
       >
-        <DefaultDropdown
+        <Dropdown
           label="Level"
           menu={
             <>
@@ -617,7 +609,7 @@ storiesOf('menu', module)
   ))
 
 storiesOf('props whitelist', module).add('title', () => (
-  <DefaultDropdown
+  <Dropdown
     title="This title should be present"
     label="Level"
     menu={
@@ -635,18 +627,14 @@ const AutofocusStory: React.FC = props => {
     ref.current?.focus()
   })
 
-  return <DefaultDropdown {...props} ref={ref} />
+  return <Dropdown {...props} ref={ref} />
 }
 
 storiesOf('focus', module)
-  .add('onFocus', () => <DefaultDropdown onFocus={action('focused')} />)
-  .add('onBlur', () => <DefaultDropdown onBlur={action('blurred')} />)
+  .add('onFocus', () => <Dropdown onFocus={action('focused')} />)
+  .add('onBlur', () => <Dropdown onBlur={action('blurred')} />)
   .add('disabled', () => (
-    <DefaultDropdown
-      disabled
-      onBlur={action('blurred')}
-      onFocus={action('focused')}
-    />
+    <Dropdown disabled onBlur={action('blurred')} onFocus={action('focused')} />
   ))
   .add('autofocus with ref', () => <AutofocusStory />)
 storiesOf('portal', module).add('position', () => (
@@ -679,7 +667,7 @@ storiesOf('portal', module).add('position', () => (
     aliquet sagittis. Elit pellentesque habitant morbi tristique. Sit amet
     consectetur adipiscing elit. Id volutpat lacus laoreet non curabitur gravida
     arcu ac. Enim neque volutpat ac tincidunt. Lorem ipsum dolor sit amet.
-    <DefaultDropdown
+    <Dropdown
       label="Level"
       menu={
         <>
@@ -740,7 +728,7 @@ interface DropdownWithIconProps extends React.ComponentProps<typeof Dropdown> {
 
 const DropdownWithIcon = forwardRef<HTMLButtonElement, DropdownWithIconProps>(
   ({ icon, ...props }, forwardedRef) => {
-    const allProps = useDropdown({ uniqueId: stableId, ...props }, forwardedRef)
+    const allProps = useDropdown(props, forwardedRef)
 
     return (
       <Dropdown.Layout
