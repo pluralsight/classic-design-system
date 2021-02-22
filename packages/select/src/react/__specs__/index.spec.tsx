@@ -1,0 +1,45 @@
+import { Story } from '@storybook/react/types-6-0'
+import { render } from '@testing-library/react'
+import { axe } from 'jest-axe'
+import React from 'react'
+
+import * as stories from '../__stories__/index.story'
+
+jest.mock('@pluralsight/ps-design-system-position', () => {
+  return {
+    esModule: true,
+    BelowLeft: jest.fn().mockImplementation(props => {
+      const { children, show, ...rest } = props
+      return (
+        <div {...rest}>
+          <div data-testid="position-show">{show}</div>
+          <div data-testid="position-children">{children}</div>
+        </div>
+      )
+    })
+  }
+})
+
+describe('Select', () => {
+  const cases = generateCasesFromStories(stories)
+
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('should pass an basic axe a11y audit', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+
+      expect(results).toHaveNoViolations()
+    })
+  })
+})
+
+function generateCasesFromStories(
+  obj: Record<string, unknown>
+): [string, Story][] {
+  const keys = Object.keys(obj)
+
+  return keys.reduce<any>((acc, key) => {
+    if (key === 'default') return acc
+    return [...acc, [key, obj[key]]]
+  }, [])
+}
