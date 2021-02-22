@@ -1,11 +1,28 @@
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
-import { getLongestMenuLabel, parseMenuChildren } from '..'
+import { getLongestMenuLabel, formatItemId, parseMenuChildren } from '..'
 import Dropdown from '../../react'
+
+describe('#formatItemId', () => {
+  it('is menuId-value by default', () => {
+    expect(formatItemId('aMenuId', 'aLabel', 'aValue')).toEqual(
+      'aMenuId-aValue'
+    )
+    expect(formatItemId('aMenuId', 'aLabel', 123)).toEqual('aMenuId-123')
+  })
+
+  it('is menuId-label as a secondary option', () => {
+    expect(formatItemId('aMenuId', 'aLabel')).toEqual('aMenuId-aLabel')
+    expect(formatItemId('aMenuId', 'a Fine Label')).toEqual(
+      'aMenuId-aFineLabel'
+    )
+  })
+})
 
 describe('#parseMenuChildren', () => {
   it('is empty array if no menu given', () => {
-    expect(parseMenuChildren()).toEqual([])
+    expect(parseMenuChildren('aMenuId')).toEqual([])
   })
 
   it('parses a fragment of children', () => {
@@ -16,10 +33,10 @@ describe('#parseMenuChildren', () => {
         <Dropdown.Item value="h">Three</Dropdown.Item>
       </>
     )
-    expect(parseMenuChildren(children)).toEqual([
-      { label: 'One', value: 'o' },
-      { label: 'Two', value: 'w' },
-      { label: 'Three', value: 'h' }
+    expect(parseMenuChildren('aMenuId', children)).toEqual([
+      { id: 'aMenuId-o', label: 'One', value: 'o' },
+      { id: 'aMenuId-w', label: 'Two', value: 'w' },
+      { id: 'aMenuId-h', label: 'Three', value: 'h' }
     ])
   })
 
@@ -36,10 +53,10 @@ describe('#parseMenuChildren', () => {
       </Dropdown.Item>
     ]
 
-    expect(parseMenuChildren(children)).toEqual([
-      { label: 'One', value: 'o' },
-      { label: 'Two', value: 'w' },
-      { label: 'Three', value: 'h' }
+    expect(parseMenuChildren('aMenuId', children)).toEqual([
+      { id: 'aMenuId-o', label: 'One', value: 'o' },
+      { id: 'aMenuId-w', label: 'Two', value: 'w' },
+      { id: 'aMenuId-h', label: 'Three', value: 'h' }
     ])
   })
 
@@ -53,10 +70,10 @@ describe('#parseMenuChildren', () => {
         <Dropdown.Item value="h">Three</Dropdown.Item>
       </>
     )
-    expect(parseMenuChildren(children)).toEqual([
-      { label: 'One', value: 'o' },
-      { label: 'Two', value: 'w' },
-      { label: 'Three', value: 'h' }
+    expect(parseMenuChildren('aMenuId', children)).toEqual([
+      { id: 'aMenuId-o', label: 'One', value: 'o' },
+      { id: 'aMenuId-w', label: 'Two', value: 'w' },
+      { id: 'aMenuId-h', label: 'Three', value: 'h' }
     ])
   })
 })

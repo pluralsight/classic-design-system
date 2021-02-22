@@ -75,7 +75,6 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
         top: buttonRect.top - menuRect.height - 8
       })
     }
-    isOpen && ref.current.focus()
   }, [ref, buttonRef, isOpen, menuPosition, setAdjMenuPosition])
 
   return (

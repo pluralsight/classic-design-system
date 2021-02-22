@@ -1,4 +1,4 @@
-import { KeyboardEventHandler, createRef, useCallback } from 'react'
+import { KeyboardEventHandler, useCallback } from 'react'
 import { useCombinedRefs } from '@pluralsight/ps-design-system-util'
 
 export const searchListItem = <E extends Element>(

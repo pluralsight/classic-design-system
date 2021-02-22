@@ -12,9 +12,7 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
   const handleClickOutsideMenu = (evt: MouseEvent) => {
     if (evt.target instanceof HTMLElement) {
       if (el.contains(evt.target)) return
-      ;(function cb(): void {
-        callback(evt)
-      })()
+      callback(evt)
     }
   }
 

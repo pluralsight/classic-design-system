@@ -13,7 +13,7 @@ import {
 } from 'react'
 import {
   canUseDOM,
-  uniqueId,
+  uniqueId as defaultUniqueId,
   ValueOf,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
@@ -48,6 +48,7 @@ interface UseDropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
   size?: ValueOf<typeof vars.sizes>
   style?: React.CSSProperties
   subLabel?: ReactNode
+  uniqueId?: (prefix: string) => string
   value?: number | string
 }
 
@@ -110,14 +111,14 @@ export const useDropdown = (
   props: UseDropdownProps,
   forwardedRef: Ref<HTMLButtonElement>
 ) => {
-  const id = uniqueId()
-  const buttonId = `button-${id}`
-  const labelId = `label-${id}`
-  const menuId = `menu-${id}`
+  const uid = props.uniqueId || defaultUniqueId
+  const buttonId = useMemo(() => uid('dropdown-button-'), [])
+  const labelId = useMemo(() => uid('dropdown-label-'), [])
+  const menuId = useMemo(() => uid('dropdown-menu-'), [])
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
 
-  const items = useMemo(() => parseMenuChildren(hook.menu), [hook.menu])
+  const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [hook.menu])
 
   const itemMatchingValueIndex = findIndexMatchingValueOrLabel(
     items,
@@ -260,11 +261,13 @@ function findItemMatchingValueOrLabel(
 }
 
 export interface ItemData {
+  id: string
   label: string
   value?: string | number
 }
 
 export const parseMenuChildren = (
+  menuId: string,
   menu?: ReactElement | ReactElement[]
 ): ItemData[] => {
   if (!menu) return []
@@ -272,6 +275,7 @@ export const parseMenuChildren = (
   function parseItem(item: ReactElement) {
     return innerText(item) !== ''
       ? {
+          id: formatItemId(menuId, item.props.children, item.props.value),
           label: item.props.children,
           value: item.props.value
         }
@@ -284,6 +288,14 @@ export const parseMenuChildren = (
     if (Children.count(menu.props.children) <= 0) return []
     else return Children.map(menu.props.children, parseItem)
   }
+}
+
+export const formatItemId = (
+  menuId: string,
+  label: string,
+  value?: ReactText
+): string => {
+  return `${menuId}-${value || label.toString().replace(/ /g, '')}`
 }
 
 export const getLongestMenuLabel = (

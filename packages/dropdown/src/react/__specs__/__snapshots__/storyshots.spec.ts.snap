@@ -2,7 +2,7 @@
 
 exports[`Storyshots appearance default w/ error 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -21,10 +21,10 @@ exports[`Storyshots appearance default w/ error 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -87,7 +87,7 @@ exports[`Storyshots appearance gaps 1`] = `
 <div>
   <div>
     <div
-      data-css-1hniuff=""
+      data-css-ottiud=""
     >
       <label>
         <span>
@@ -106,10 +106,10 @@ exports[`Storyshots appearance gaps 1`] = `
           >
             <button
               aria-haspopup="listbox"
-              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
-              id="button-4fzzzxjyl"
+              id="dropdown-button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -150,7 +150,7 @@ exports[`Storyshots appearance gaps 1`] = `
   </div>
   <div>
     <div
-      data-css-1hniuff=""
+      data-css-ottiud=""
     >
       <label>
         <span>
@@ -169,10 +169,10 @@ exports[`Storyshots appearance gaps 1`] = `
           >
             <button
               aria-haspopup="listbox"
-              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
-              id="button-4fzzzxjyl"
+              id="dropdown-button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -232,7 +232,7 @@ exports[`Storyshots appearance gaps 1`] = `
   </div>
   <div>
     <div
-      data-css-1hniuff=""
+      data-css-ottiud=""
     >
       <label>
         <span>
@@ -251,10 +251,10 @@ exports[`Storyshots appearance gaps 1`] = `
           >
             <button
               aria-haspopup="listbox"
-              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               data-css-1c2g7cd=""
               disabled={false}
-              id="button-4fzzzxjyl"
+              id="dropdown-button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -295,7 +295,7 @@ exports[`Storyshots appearance gaps 1`] = `
   </div>
   <div>
     <div
-      data-css-1hniuff=""
+      data-css-ottiud=""
     >
       <label>
         <span>
@@ -314,10 +314,10 @@ exports[`Storyshots appearance gaps 1`] = `
           >
             <button
               aria-haspopup="listbox"
-              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               data-css-1c2g7cd=""
               disabled={false}
-              id="button-4fzzzxjyl"
+              id="dropdown-button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -380,7 +380,7 @@ exports[`Storyshots appearance gaps 1`] = `
 
 exports[`Storyshots appearance medium default 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -401,10 +401,10 @@ exports[`Storyshots appearance medium default 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -450,7 +450,7 @@ exports[`Storyshots appearance medium default 1`] = `
 
 exports[`Storyshots appearance medium subtle 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -471,10 +471,10 @@ exports[`Storyshots appearance medium subtle 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-1c2g7cd=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -520,7 +520,7 @@ exports[`Storyshots appearance medium subtle 1`] = `
 
 exports[`Storyshots appearance small default 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -541,10 +541,10 @@ exports[`Storyshots appearance small default 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-1tv1187=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -590,7 +590,7 @@ exports[`Storyshots appearance small default 1`] = `
 
 exports[`Storyshots appearance small subtle 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -611,10 +611,10 @@ exports[`Storyshots appearance small subtle 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-cdtd9o=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -660,7 +660,7 @@ exports[`Storyshots appearance small subtle 1`] = `
 
 exports[`Storyshots appearance subtle w/ error 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -679,10 +679,10 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-1c2g7cd=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -743,7 +743,7 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
 
 exports[`Storyshots custom dynamic icon 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -764,9 +764,9 @@ exports[`Storyshots custom dynamic icon 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -829,7 +829,7 @@ exports[`Storyshots custom dynamic icon 1`] = `
 
 exports[`Storyshots custom fixed icon 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -850,9 +850,9 @@ exports[`Storyshots custom fixed icon 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -925,7 +925,7 @@ exports[`Storyshots custom fixed icon 1`] = `
 exports[`Storyshots disabled compare dropdown 1`] = `
 <div>
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
   >
     <label>
       <span>
@@ -944,10 +944,10 @@ exports[`Storyshots disabled compare dropdown 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -995,7 +995,7 @@ exports[`Storyshots disabled compare dropdown 1`] = `
     </div>
   </div>
   <div
-    data-css-1h53i33=""
+    data-css-xsf0go=""
   >
     <label>
       <span>
@@ -1014,10 +1014,10 @@ exports[`Storyshots disabled compare dropdown 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={true}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onKeyDown={[Function]}
           >
             <span
@@ -1069,7 +1069,7 @@ exports[`Storyshots disabled compare dropdown 1`] = `
 exports[`Storyshots disabled compare items 1`] = `
 <div>
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
   >
     <label>
       <span>
@@ -1088,10 +1088,10 @@ exports[`Storyshots disabled compare items 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1138,7 +1138,7 @@ exports[`Storyshots disabled compare items 1`] = `
 
 exports[`Storyshots focus autofocus with ref 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -1159,10 +1159,10 @@ exports[`Storyshots focus autofocus with ref 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1204,7 +1204,7 @@ exports[`Storyshots focus autofocus with ref 1`] = `
 
 exports[`Storyshots focus disabled 1`] = `
 <div
-  data-css-1h53i33=""
+  data-css-xsf0go=""
 >
   <label>
     <span
@@ -1225,10 +1225,10 @@ exports[`Storyshots focus disabled 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={true}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onBlur={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1271,7 +1271,7 @@ exports[`Storyshots focus disabled 1`] = `
 
 exports[`Storyshots focus onBlur 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -1292,10 +1292,10 @@ exports[`Storyshots focus onBlur 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onBlur={[Function]}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1338,7 +1338,7 @@ exports[`Storyshots focus onBlur 1`] = `
 
 exports[`Storyshots focus onFocus 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -1359,10 +1359,10 @@ exports[`Storyshots focus onFocus 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -1405,7 +1405,7 @@ exports[`Storyshots focus onFocus 1`] = `
 
 exports[`Storyshots labels all 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -1424,10 +1424,10 @@ exports[`Storyshots labels all 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1478,7 +1478,7 @@ exports[`Storyshots labels all 1`] = `
 
 exports[`Storyshots labels label 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -1497,10 +1497,10 @@ exports[`Storyshots labels label 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1542,7 +1542,7 @@ exports[`Storyshots labels label 1`] = `
 
 exports[`Storyshots labels label and subLabel 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -1561,10 +1561,10 @@ exports[`Storyshots labels label and subLabel 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1611,7 +1611,7 @@ exports[`Storyshots labels label and subLabel 1`] = `
 
 exports[`Storyshots labels none 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -1632,10 +1632,10 @@ exports[`Storyshots labels none 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1677,7 +1677,7 @@ exports[`Storyshots labels none 1`] = `
 
 exports[`Storyshots labels placeholder 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -1698,10 +1698,10 @@ exports[`Storyshots labels placeholder 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1747,7 +1747,7 @@ exports[`Storyshots labels placeholder 1`] = `
 
 exports[`Storyshots labels subLabel 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -1768,10 +1768,10 @@ exports[`Storyshots labels subLabel 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -1829,7 +1829,7 @@ exports[`Storyshots layouts bottom of viewport 1`] = `
   }
 >
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
   >
     <label>
       <span
@@ -1850,10 +1850,10 @@ exports[`Storyshots layouts bottom of viewport 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-1c2g7cd=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1911,7 +1911,7 @@ exports[`Storyshots layouts custom width 1`] = `
     two
   </div>
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
     style={
       Object {
         "width": 150,
@@ -1935,10 +1935,10 @@ exports[`Storyshots layouts custom width 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1981,7 +1981,7 @@ exports[`Storyshots layouts custom width 1`] = `
     </div>
   </div>
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
   >
     <label>
       <span>
@@ -2000,10 +2000,10 @@ exports[`Storyshots layouts custom width 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2058,7 +2058,7 @@ exports[`Storyshots layouts full width 1`] = `
   }
 >
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
     style={
       Object {
         "display": "block",
@@ -2083,10 +2083,10 @@ exports[`Storyshots layouts full width 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2125,7 +2125,7 @@ exports[`Storyshots layouts full width 1`] = `
     </div>
   </div>
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
     style={
       Object {
         "display": "block",
@@ -2150,10 +2150,10 @@ exports[`Storyshots layouts full width 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2211,7 +2211,7 @@ exports[`Storyshots layouts full width 1`] = `
     </div>
   </div>
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
     style={
       Object {
         "display": "block",
@@ -2236,10 +2236,10 @@ exports[`Storyshots layouts full width 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-1c2g7cd=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2278,7 +2278,7 @@ exports[`Storyshots layouts full width 1`] = `
     </div>
   </div>
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
     style={
       Object {
         "display": "block",
@@ -2303,10 +2303,10 @@ exports[`Storyshots layouts full width 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-1c2g7cd=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -2383,7 +2383,7 @@ exports[`Storyshots layouts right-aligned 1`] = `
     }
   >
     <div
-      data-css-1hniuff=""
+      data-css-ottiud=""
     >
       <label>
         <span
@@ -2404,10 +2404,10 @@ exports[`Storyshots layouts right-aligned 1`] = `
           >
             <button
               aria-haspopup="listbox"
-              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               data-css-1c2g7cd=""
               disabled={false}
-              id="button-4fzzzxjyl"
+              id="dropdown-button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -2482,7 +2482,7 @@ exports[`Storyshots menu bottom of view, pop above 1`] = `
     }
   >
     <div
-      data-css-1hniuff=""
+      data-css-ottiud=""
     >
       <label>
         <span>
@@ -2501,10 +2501,10 @@ exports[`Storyshots menu bottom of view, pop above 1`] = `
           >
             <button
               aria-haspopup="listbox"
-              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
-              id="button-4fzzzxjyl"
+              id="dropdown-button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -2550,7 +2550,7 @@ exports[`Storyshots menu bottom of view, pop above 1`] = `
 
 exports[`Storyshots menu divider 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -2569,10 +2569,10 @@ exports[`Storyshots menu divider 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -2618,7 +2618,7 @@ exports[`Storyshots menu in stack 1`] = `
 <div>
   <div>
     <div
-      data-css-1hniuff=""
+      data-css-ottiud=""
     >
       <label>
         <span>
@@ -2637,10 +2637,10 @@ exports[`Storyshots menu in stack 1`] = `
           >
             <button
               aria-haspopup="listbox"
-              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
-              id="button-4fzzzxjyl"
+              id="dropdown-button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -2685,7 +2685,7 @@ exports[`Storyshots menu in stack 1`] = `
   </div>
   <div>
     <div
-      data-css-1hniuff=""
+      data-css-ottiud=""
     >
       <label>
         <span>
@@ -2704,10 +2704,10 @@ exports[`Storyshots menu in stack 1`] = `
           >
             <button
               aria-haspopup="listbox"
-              aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               data-css-185vr3w=""
               disabled={false}
-              id="button-4fzzzxjyl"
+              id="dropdown-button-4fzzzxjyl"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -2755,7 +2755,7 @@ exports[`Storyshots menu in stack 1`] = `
 
 exports[`Storyshots menu max height 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -2774,10 +2774,10 @@ exports[`Storyshots menu max height 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -2821,7 +2821,7 @@ exports[`Storyshots menu max height 1`] = `
 
 exports[`Storyshots menu onClicks 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -2840,10 +2840,10 @@ exports[`Storyshots menu onClicks 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-1c2g7cd=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -2908,7 +2908,7 @@ exports[`Storyshots menu onClicks 1`] = `
 
 exports[`Storyshots menu single list 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -2927,10 +2927,10 @@ exports[`Storyshots menu single list 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -2974,7 +2974,7 @@ exports[`Storyshots menu single list 1`] = `
 
 exports[`Storyshots menu single list w/ icon 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -2993,10 +2993,10 @@ exports[`Storyshots menu single list w/ icon 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3042,7 +3042,7 @@ exports[`Storyshots menu single list w/ icon 1`] = `
 
 exports[`Storyshots menu super long 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -3061,10 +3061,10 @@ exports[`Storyshots menu super long 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3108,7 +3108,7 @@ exports[`Storyshots menu super long 1`] = `
 
 exports[`Storyshots menu w/ longer placeholder 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -3127,10 +3127,10 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3176,7 +3176,7 @@ exports[`Storyshots menu w/ longer placeholder 1`] = `
 
 exports[`Storyshots menu w/ subLabel 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -3195,10 +3195,10 @@ exports[`Storyshots menu w/ subLabel 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3247,7 +3247,7 @@ exports[`Storyshots menu w/ subLabel 1`] = `
 
 exports[`Storyshots menu w/ value 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -3266,10 +3266,10 @@ exports[`Storyshots menu w/ value 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3328,7 +3328,7 @@ exports[`Storyshots portal position 1`] = `
 >
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis cras sed. Ornare lectus sit amet est placerat in egestas. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nisl nisi scelerisque eu ultrices. Amet risus nullam eget felis. Arcu non sodales neque sodales ut etiam. Tortor at auctor urna nunc. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Condimentum vitae sapien pellentesque habitant morbi tristique. Egestas maecenas pharetra convallis posuere morbi leo urna molestie. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Lobortis feugiat vivamus at augue eget arcu dictum. Fusce id velit ut tortor pretium viverra suspendisse. Convallis tellus id interdum velit. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Tempor orci dapibus ultrices in iaculis nunc. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet massa vitae tortor. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Ipsum dolor sit amet consectetur adipiscing. Sed felis eget velit aliquet sagittis. Elit pellentesque habitant morbi tristique. Sit amet consectetur adipiscing elit. Id volutpat lacus laoreet non curabitur gravida arcu ac. Enim neque volutpat ac tincidunt. Lorem ipsum dolor sit amet.
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
   >
     <label>
       <span>
@@ -3347,10 +3347,10 @@ exports[`Storyshots portal position 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -3396,7 +3396,7 @@ exports[`Storyshots portal position 1`] = `
 
 exports[`Storyshots props whitelist title 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span>
@@ -3415,10 +3415,10 @@ exports[`Storyshots props whitelist title 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
           title="This title should be present"
@@ -3463,7 +3463,7 @@ exports[`Storyshots props whitelist title 1`] = `
 
 exports[`Storyshots value external state change 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -3484,10 +3484,10 @@ exports[`Storyshots value external state change 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3537,7 +3537,7 @@ Array [
     With values
   </h2>,
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
   >
     <label>
       <span
@@ -3558,10 +3558,10 @@ Array [
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -3607,7 +3607,7 @@ Array [
     Just labels
   </h2>,
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
   >
     <label>
       <span
@@ -3628,10 +3628,10 @@ Array [
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -3678,7 +3678,7 @@ Array [
 
 exports[`Storyshots value shows pre-selected item by label 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -3699,10 +3699,10 @@ exports[`Storyshots value shows pre-selected item by label 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3748,7 +3748,7 @@ exports[`Storyshots value shows pre-selected item by label 1`] = `
 
 exports[`Storyshots value shows pre-selected item by value 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -3769,10 +3769,10 @@ exports[`Storyshots value shows pre-selected item by value 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3818,7 +3818,7 @@ exports[`Storyshots value shows pre-selected item by value 1`] = `
 
 exports[`Storyshots value test the spec 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -3839,10 +3839,10 @@ exports[`Storyshots value test the spec 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3888,7 +3888,7 @@ exports[`Storyshots value test the spec 1`] = `
 
 exports[`Storyshots value value is not an item in the list 1`] = `
 <div
-  data-css-1hniuff=""
+  data-css-ottiud=""
 >
   <label>
     <span
@@ -3909,10 +3909,10 @@ exports[`Storyshots value value is not an item in the list 1`] = `
       >
         <button
           aria-haspopup="listbox"
-          aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
           data-css-185vr3w=""
           disabled={false}
-          id="button-4fzzzxjyl"
+          id="dropdown-button-4fzzzxjyl"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -3974,7 +3974,7 @@ exports[`Storyshots whitelist clear 1`] = `
     Clear
   </button>
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
   >
     <label>
       <span>
@@ -3993,10 +3993,10 @@ exports[`Storyshots whitelist clear 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -4054,7 +4054,7 @@ exports[`Storyshots whitelist onChange 1`] = `
     two
   </div>
   <div
-    data-css-1hniuff=""
+    data-css-ottiud=""
   >
     <label>
       <span>
@@ -4073,10 +4073,10 @@ exports[`Storyshots whitelist onChange 1`] = `
         >
           <button
             aria-haspopup="listbox"
-            aria-labelledby="button-4fzzzxjyl label-4fzzzxjyl"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             data-css-185vr3w=""
             disabled={false}
-            id="button-4fzzzxjyl"
+            id="dropdown-button-4fzzzxjyl"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
