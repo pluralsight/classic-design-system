@@ -5,7 +5,7 @@
   "license": "Apache-2.0",
   "private": true,
   "engines": {
-    "node": "^11.4.0"
+    "node": "^15.5.0"
   },
   "scripts": {
     "build": "npm-run-all -s build:gatsby build:server build:assets",

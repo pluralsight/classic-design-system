@@ -28,6 +28,7 @@ Dockerfile*
 docker-compose*
 .dockerignore
 
+.cache
 dist
 
 public

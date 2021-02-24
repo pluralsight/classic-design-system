@@ -22,9 +22,9 @@ import React from 'react'
 function Example() {
   return (
     <div className="example-grid--col-2">
-      <Badge color={Badge.colors.gray}>Gray Badge</Badge>
-      <Badge color={Badge.colors.gray} appearance={Badge.appearances.subtle}>
-        Gray Badge (Subtle)
+      <Badge color={Badge.colors.neutral}>Neutral Badge</Badge>
+      <Badge color={Badge.colors.neutral} appearance={Badge.appearances.subtle}>
+        Neutral Badge (Subtle)
       </Badge>
       <Badge color={Badge.colors.green}>Green Badge</Badge>
       <Badge color={Badge.colors.green} appearance={Badge.appearances.subtle}>
@@ -63,12 +63,12 @@ export default Example
     name="appearance"
     type={<TypesEnum enum={Badge.appearances} />}
     desc="badge appearance (from Badge.appearances)"
-    default="blue"
+    default="default"
   />
   <TypesProp
     name="color"
     type={<TypesEnum enum={Badge.colors} />}
     desc="badge color (from Badge.colors)"
-    default="blue"
+    default="neutral"
   />
 </TypesTable>

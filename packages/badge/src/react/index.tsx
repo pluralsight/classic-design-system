@@ -43,7 +43,7 @@ const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
   (
     {
       appearance = vars.appearances.default,
-      color = vars.colors.gray,
+      color = vars.colors.neutral,
       ...rest
     },
     forwardedRef
