@@ -118,7 +118,10 @@ export const useDropdown = (
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
 
-  const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [hook.menu])
+  const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [
+    menuId,
+    hook.menu
+  ])
 
   const itemMatchingValueIndex = findIndexMatchingValueOrLabel(
     items,
