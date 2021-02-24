@@ -3,6 +3,7 @@ import { compose, css } from 'glamor'
 import React, {
   ChangeEventHandler,
   ComponentProps,
+  KeyboardEvent,
   MouseEvent,
   MouseEventHandler,
   ReactElement,
@@ -22,14 +23,13 @@ import { CaretDownIcon, CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import Tag from '@pluralsight/ps-design-system-tag'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, canUseDOM } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
 import { Menu } from './menu'
 import { FilterFn, OnStateChangeFn, Option, StateReducer } from './types'
 import { noop, simpleTextFilter, switchcase } from './utils'
-import { useKeybinding } from './use-keybinding'
 
 export { Option }
 
@@ -205,20 +205,22 @@ const MultiSelect: MultiSelectFieldComponent = props => {
 
   const inputProps = getInputProps(
     getDropdownProps({
+      onKeyDown: (evt: KeyboardEvent<HTMLInputElement>) => {
+        if (!canUseDOM()) return
+
+        const { altKey } = evt
+        const key = evt.key.toLowerCase()
+
+        const shouldClose = isOpen && altKey && key === 'arrowup'
+        const shouldOpen = !isOpen && altKey && key === 'arrowdown'
+
+        if (shouldClose) setTimeout(closeMenu, 0)
+        else if (shouldOpen) setTimeout(openMenu, 0)
+      },
       onFocus: () => {
         if (!isOpen) openMenu()
       }
     })
-  )
-
-  useKeybinding(
-    ['alt', 'arrowdown'],
-    () => {
-      if (!isOpen) return
-
-      window.requestAnimationFrame(closeMenu)
-    },
-    inputProps.ref.current
   )
 
   useLayoutEffect(
