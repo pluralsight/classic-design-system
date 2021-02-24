@@ -8,7 +8,7 @@ import {
   colorsYellow,
   colorsBlue,
   colorsRed,
-  colorsBorder
+  colorsWhite
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
@@ -17,112 +17,98 @@ import { select } from '../js'
 
 export default {
   '.psds-badge': {
-    border: `1px solid transparent`,
     borderRadius: '2px',
     display: 'inline-block',
     fontSize: type.fontSize100,
-    fontWeight: type.fontWeight500,
+    letterSpacing: type.letterSpacingAllCaps,
+    fontWeight: type.fontWeightStrong,
     lineHeight: type.lineHeightStandard,
     padding: `0 ${layout.spacingXSmall}`,
     textTransform: 'uppercase'
   },
 
-  [select(themeNames.dark, appearances.default, colors.gray)]: {
-    color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsBackgroundUtility[25]
+  [select(themeNames.dark, appearances.default, colors.neutral)]: {
+    color: colorsTextIcon.highOnLight,
+    backgroundColor: colorsWhite
   },
   [select(themeNames.dark, appearances.default, colors.green)]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsGreen.base,
-    borderColor: colorsGreen.base
+    backgroundColor: colorsGreen[8]
   },
   [select(themeNames.dark, appearances.default, colors.yellow)]: {
     color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsYellow.base,
-    borderColor: colorsYellow.base
+    backgroundColor: colorsYellow[6]
   },
   [select(themeNames.dark, appearances.default, colors.red)]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsRed.base,
-    borderColor: colorsRed.base
+    backgroundColor: colorsRed[7]
   },
   [select(themeNames.dark, appearances.default, colors.blue)]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsBlue.base,
-    borderColor: colorsBlue.base
+    backgroundColor: colorsBlue[7]
   },
 
-  [select(themeNames.light, appearances.default, colors.gray)]: {
+  [select(themeNames.light, appearances.default, colors.neutral)]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsBackgroundDark[3],
-    borderColor: colorsBackgroundDark[3]
+    backgroundColor: colorsBackgroundDark[3]
   },
   [select(themeNames.light, appearances.default, colors.green)]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsGreen.base,
-    borderColor: colorsGreen.base
+    backgroundColor: colorsGreen[8]
   },
   [select(themeNames.light, appearances.default, colors.yellow)]: {
     color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsYellow.base,
-    borderColor: colorsYellow.base
+    backgroundColor: colorsYellow[6]
   },
   [select(themeNames.light, appearances.default, colors.red)]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsRed.base,
-    borderColor: colorsRed.base
+    backgroundColor: colorsRed[7]
   },
   [select(themeNames.light, appearances.default, colors.blue)]: {
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsBlue.base,
-    borderColor: colorsBlue.base
+    backgroundColor: colorsBlue[7]
   },
 
-  [select(themeNames.dark, appearances.subtle, colors.gray)]: {
+  [select(themeNames.dark, appearances.subtle, colors.neutral)]: {
     color: colorsTextIcon.lowOnDark,
-    borderColor: colorsBorder.highOnDark
+    backgroundColor: colorsBackgroundUtility[40]
   },
   [select(themeNames.dark, appearances.subtle, colors.green)]: {
-    color: colorsGreen.base,
-    borderColor: colorsGreen.base
+    color: colorsGreen[1],
+    backgroundColor: 'rgba(0,143,70,0.5)'
   },
   [select(themeNames.dark, appearances.subtle, colors.yellow)]: {
-    color: colorsYellow.base,
-    borderColor: colorsYellow.base
+    color: colorsYellow[1],
+    backgroundColor: 'rgba(226,181,0,0.5)'
   },
   [select(themeNames.dark, appearances.subtle, colors.red)]: {
-    color: colorsRed[5],
-    borderColor: colorsRed.base
+    color: colorsRed[1],
+    backgroundColor: 'rgba(192,15,0,0.5)'
   },
 
   [select(themeNames.dark, appearances.subtle, colors.blue)]: {
-    color: colorsBlue[5],
-    borderColor: colorsBlue.base
+    color: colorsBlue[1],
+    backgroundColor: 'rgba(0,116,171,0.5)'
   },
 
-  [select(themeNames.light, appearances.subtle, colors.gray)]: {
-    color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsBackgroundUtility[25],
-    borderColor: 'transparent'
+  [select(themeNames.light, appearances.subtle, colors.neutral)]: {
+    color: colorsTextIcon.lowOnLight,
+    backgroundColor: colorsBackgroundUtility[20]
   },
   [select(themeNames.light, appearances.subtle, colors.green)]: {
-    color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsGreen[1],
-    borderColor: colorsGreen[1]
+    color: colorsGreen[10],
+    backgroundColor: colorsGreen[1]
   },
   [select(themeNames.light, appearances.subtle, colors.yellow)]: {
-    color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsYellow[1],
-    borderColor: colorsYellow[1]
+    color: colorsYellow[10],
+    backgroundColor: colorsYellow[1]
   },
   [select(themeNames.light, appearances.subtle, colors.red)]: {
-    color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsRed[1],
-    borderColor: colorsRed[1]
+    color: colorsRed[10],
+    backgroundColor: colorsRed[1]
   },
   [select(themeNames.light, appearances.subtle, colors.blue)]: {
-    color: colorsTextIcon.highOnLight,
-    backgroundColor: colorsBlue[1],
-    borderColor: colorsBlue[1]
+    color: colorsBlue[10],
+    backgroundColor: colorsBlue[1]
   }
 }
