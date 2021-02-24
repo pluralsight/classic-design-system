@@ -65,3 +65,15 @@ Error.args = { ...defaultArgs, error: true }
 
 export const IconPrefix = Template.bind({})
 IconPrefix.args = { ...defaultArgs, prefix: <PlaceholderIcon /> }
+
+export const CustomInputTag = Template.bind({})
+CustomInputTag.args = {
+  renderInputTag: React.forwardRef((props, ref) => (
+    <input
+      {...props}
+      ref={ref}
+      placeholder="tag from render prop"
+      style={{ outline: '1px dashed pink' }}
+    />
+  ))
+}

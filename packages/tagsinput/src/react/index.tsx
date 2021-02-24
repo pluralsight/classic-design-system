@@ -56,6 +56,7 @@ interface TagsInputProps
   onChange: (evt: SyntheticEvent | null, nextValue: Option[]) => void
   onSearchInputChange: ChangeEventHandler<HTMLInputElement>
   placeholder?: string
+  renderInputTag?: ComponentProps<typeof Field.Input>['renderTag']
   searchInputValue: string
   subLabel?: string | ReactNode
   value: Option[]
@@ -76,6 +77,7 @@ const TagsInput: TagsInputComponent = props => {
     onSearchInputChange,
     placeholder,
     prefix,
+    renderInputTag,
     searchInputValue,
     subLabel,
     suffix,
@@ -173,6 +175,7 @@ const TagsInput: TagsInputComponent = props => {
           id={inputId}
           onChange={onSearchInputChange}
           placeholder={placeholder}
+          renderTag={renderInputTag}
           value={searchInputValue}
         />
       </Pills>
