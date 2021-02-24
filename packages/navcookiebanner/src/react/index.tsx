@@ -88,11 +88,7 @@ const NavCookieBanner = React.forwardRef<HTMLDivElement, NavCookieBannerProps>(
           )}
         </p>
 
-        <button
-          {...styles.dismiss()}
-          aria-label="Accept privacy policy"
-          onClick={dismiss}
-        >
+        <button {...styles.dismiss()} aria-label="close" onClick={dismiss}>
           <CloseIcon />
         </button>
       </div>
