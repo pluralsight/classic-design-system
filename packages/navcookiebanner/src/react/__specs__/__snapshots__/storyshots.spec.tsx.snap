@@ -18,7 +18,7 @@ exports[`Storyshots NavCookieBanner Basic 1`] = `
     </a>
   </p>
   <button
-    aria-label="Accept privacy policy"
+    aria-label="close"
     data-css-1et1j4i=""
     onClick={[Function]}
   >
@@ -51,7 +51,7 @@ exports[`Storyshots NavCookieBanner Custom message 1`] = `
     </label>
   </p>
   <button
-    aria-label="Accept privacy policy"
+    aria-label="close"
     data-css-1et1j4i=""
     onClick={[Function]}
   >
