@@ -137,6 +137,145 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
+<div
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-5jjrbq=""
+      htmlFor="tagsinput__input-unique-id"
+    />
+    <div
+      data-css-63oe3q=""
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1ghsi1k=""
+        data-css-1q3e54w=""
+        onKeyPress={[Function]}
+      >
+        <div
+          data-css-dpj5et=""
+        >
+          <div
+            data-css-12qnym0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={-1}
+          >
+            <div
+              data-css-1djcb20=""
+            >
+              <div
+                aria-pressed={true}
+                data-css-8a12hv=""
+              >
+                <span
+                  data-css-13bnfv4=""
+                >
+                  first
+                </span>
+                <div
+                  data-css-k31qw2=""
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
+                    }
+                  }
+                >
+                  <svg
+                    aria-label="close icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-css-12qnym0=""
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            tabIndex={-1}
+          >
+            <div
+              data-css-1djcb20=""
+            >
+              <div
+                aria-pressed={true}
+                data-css-8a12hv=""
+              >
+                <span
+                  data-css-13bnfv4=""
+                >
+                  second
+                </span>
+                <div
+                  data-css-k31qw2=""
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "cursor": "pointer",
+                    }
+                  }
+                >
+                  <svg
+                    aria-label="close icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            data-css-12qnym0=""
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-1na6nif=""
+              data-css-8z457z=""
+              id="tagsinput__input-unique-id"
+              onChange={[Function]}
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              placeholder="tag from render prop"
+              style={
+                Object {
+                  "outline": "1px dashed pink",
+                }
+              }
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-bv851e=""
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/TagsInput Disabled 1`] = `
 <div
   style={

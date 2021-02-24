@@ -63,6 +63,7 @@ interface MultiSelectFieldProps
   onChange: (evt: SyntheticEvent | null, nextValue: Option[]) => void
   options: Option[]
   placeholder?: string
+  renderInputTag?: ComponentProps<typeof Field.Input>['renderTag']
   subLabel?: string | ReactNode
   value: Option[]
 }
@@ -84,6 +85,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     options,
     placeholder,
     prefix,
+    renderInputTag,
     subLabel,
     value = [],
     ...rest
@@ -252,6 +254,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
               disabled={disabled}
               onChange={handleInputChange}
               placeholder={placeholder}
+              renderTag={renderInputTag}
               value={searchTerm}
             />
           </Pills>
