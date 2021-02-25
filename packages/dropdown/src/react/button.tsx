@@ -55,6 +55,7 @@ interface DropdownButtonProps extends HTMLPropsFor<'button'> {
   disabled?: boolean
   error?: boolean
   isOpen?: boolean
+  'aria-haspopup': 'listbox'
   onClick: (evt: React.MouseEvent | React.KeyboardEvent) => void
   onKeyDown: (evt: React.MouseEvent | React.KeyboardEvent) => void
   // TODO: see if we can make more of these non-null

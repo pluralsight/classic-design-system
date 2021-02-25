@@ -5006,6 +5006,127 @@ exports[`Storyshots onClick nested 1`] = `
 </ul>
 `;
 
+exports[`Storyshots onClose dropdown 1`] = `
+Array [
+  <div
+    onClick={[Function]}
+    style={
+      Object {
+        "background": "pink",
+        "display": "inline-block",
+        "padding": "4px",
+      }
+    }
+  >
+    click to show
+  </div>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <ul
+      data-css-rls1dj=""
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      role="menu"
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      <li
+        data-css-1vqdttp=""
+        onKeyDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        role="none"
+        tabIndex={-1}
+      >
+        <a
+          aria-disabled={false}
+          aria-haspopup={false}
+          data-css-1v7ok0h=""
+          onClick={[Function]}
+          role="menuitem"
+        >
+          <span
+            data-css-fxdh11=""
+          >
+            One item
+          </span>
+        </a>
+        <ul
+          aria-expanded={false}
+          data-css-kfdt74=""
+          onKeyDown={[Function]}
+          role="menu"
+        />
+      </li>
+      <li
+        data-css-1vqdttp=""
+        onKeyDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        role="none"
+        tabIndex={-1}
+      >
+        <a
+          aria-disabled={false}
+          aria-haspopup={false}
+          data-css-1v7ok0h=""
+          onClick={[Function]}
+          role="menuitem"
+        >
+          <span
+            data-css-fxdh11=""
+          >
+            Two item
+          </span>
+        </a>
+        <ul
+          aria-expanded={false}
+          data-css-kfdt74=""
+          onKeyDown={[Function]}
+          role="menu"
+        />
+      </li>
+      <li
+        data-css-1vqdttp=""
+        onKeyDown={[Function]}
+        onMouseOut={[Function]}
+        onMouseOver={[Function]}
+        role="none"
+        tabIndex={-1}
+      >
+        <a
+          aria-disabled={false}
+          aria-haspopup={false}
+          data-css-1v7ok0h=""
+          onClick={[Function]}
+          role="menuitem"
+        >
+          <span
+            data-css-fxdh11=""
+          >
+            Three item
+          </span>
+        </a>
+        <ul
+          aria-expanded={false}
+          data-css-kfdt74=""
+          onKeyDown={[Function]}
+          role="menu"
+        />
+      </li>
+    </ul>
+  </div>,
+]
+`;
+
 exports[`Storyshots onClose toggle show/hide 1`] = `
 <div
   style={

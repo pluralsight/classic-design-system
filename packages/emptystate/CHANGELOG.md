@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@12.0.2...@pluralsight/ps-design-system-emptystate@12.0.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **emptystate:** update peerDep version ([44b8eab](https://github.com/pluralsight/design-system/commit/44b8eab0a4e6efa43a365b9ae07417cd0758e555))
+
+
+
+
+
 ## [12.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@12.0.1...@pluralsight/ps-design-system-emptystate@12.0.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-emptystate

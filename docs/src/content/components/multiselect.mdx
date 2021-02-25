@@ -193,6 +193,12 @@ export default Comp
   <TypesProp name="onChange" required type="(evt, nexValue: Option[]) => void" />
   <TypesProp name="options" required type="Option[]" />
   <TypesProp name="placeholder" type="string" desc="in-field usage hint" />
+  <TypesProp
+    name="renderInputTag"
+    type="(props, ref) => ReactNode"
+    desc="render prop used to replace the default input"
+    default="(props, ref) => <input ref={ref} {...props} />"
+  />
   <TypesProp name="subLabel" type="string | ReactNode" />
   <TypesProp name="value" required type="Option[]" />
 </TypesTable>

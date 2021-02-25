@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@5.1.2...@pluralsight/ps-design-system-datawell@5.1.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **datawell:** update peerDep version ([5874fa3](https://github.com/pluralsight/design-system/commit/5874fa3a49ca887eeb9d1aed0cdcd0b0a6f13538))
+
+
+
+
+
 ## [5.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@5.1.1...@pluralsight/ps-design-system-datawell@5.1.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datawell

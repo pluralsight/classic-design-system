@@ -6,29 +6,6 @@ import React from 'react'
 
 import Dropdown from '..'
 
-it('has an input queryable by label', () => {
-  render(
-    <Dropdown
-      label="Level"
-      placeholder="Select"
-      menu={[
-        <Dropdown.Item key="1" value="o">
-          One
-        </Dropdown.Item>,
-        <Dropdown.Item key="2" value="w">
-          Two
-        </Dropdown.Item>,
-        <Dropdown.Item key="3" value="h">
-          Three
-        </Dropdown.Item>
-      ]}
-      value="w"
-    />
-  )
-  const input = screen.getByLabelText('Level')
-  expect(input).toHaveValue('w')
-})
-
 it('button click opens the menu', () => {
   render(
     <Dropdown
@@ -235,8 +212,7 @@ it('selects by click', () => {
   const item = screen.getByRole('option', { name: /Three/ })
   userEvent.click(item)
 
-  const input = screen.getByRole('combobox')
-  expect(input).toHaveValue('h')
+  expect(button).toHaveTextContent('Three')
 })
 
 it('selects a value of 0', () => {
@@ -263,8 +239,7 @@ it('selects a value of 0', () => {
   const item = screen.getByRole('option', { name: /Zero/ })
   userEvent.click(item)
 
-  const input = screen.getByRole('combobox')
-  expect(input).toHaveValue('0')
+  expect(button).toHaveTextContent('Zero')
 })
 
 it('navigates by arrows, selects by enter', () => {
@@ -294,8 +269,7 @@ it('navigates by arrows, selects by enter', () => {
   arrowUpKey()
   enterKey()
 
-  const input = screen.getByRole('combobox')
-  expect(input).toHaveValue('o')
+  expect(button).toHaveTextContent('One')
 })
 
 it('navigates value-less items by arrows/enter', () => {
@@ -316,8 +290,7 @@ it('navigates value-less items by arrows/enter', () => {
   arrowDownKey()
   enterKey()
 
-  const input = screen.getByRole('combobox')
-  expect(input).toHaveValue('Two')
+  expect(button).toHaveTextContent('Two')
 })
 
 it('re-navigates, active index is maintained on selection', () => {
@@ -346,15 +319,13 @@ it('re-navigates, active index is maintained on selection', () => {
   arrowUpKey()
   enterKey()
 
-  let input = screen.getByRole('combobox')
-  expect(input).toHaveValue('o')
+  expect(button).toHaveTextContent('One')
 
   enterKey()
   arrowDownKey()
   enterKey()
 
-  input = screen.getByRole('combobox')
-  expect(input).toHaveValue('w')
+  expect(button).toHaveTextContent('Two')
 })
 
 it('label set as value if option has no value', () => {
@@ -375,8 +346,7 @@ it('label set as value if option has no value', () => {
   const item = screen.getByRole('option', { name: /Three/ })
   userEvent.click(item)
 
-  const input = screen.getByRole('combobox')
-  expect(input).toHaveValue('Three')
+  expect(button).toHaveTextContent('Three')
 })
 
 it('item onClick is triggered', () => {

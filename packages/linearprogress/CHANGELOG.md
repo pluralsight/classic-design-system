@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@6.1.4...@pluralsight/ps-design-system-linearprogress@6.1.5) (2021-02-25)
+
+
+### Bug Fixes
+
+* **linearprogress:** update peerDep version ([47f900c](https://github.com/pluralsight/design-system/commit/47f900c84448b5113e4f2ebe83ee92bbed669b11))
+
+
+
+
+
 ## [6.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@6.1.3...@pluralsight/ps-design-system-linearprogress@6.1.4) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-linearprogress

@@ -495,6 +495,12 @@ An unstyled `input` element that can be used inside the Field.
     desc="render prop used to replace container with custom element"
     default="(props, ref) => <div ref={ref} {...props} />"
   />
+  <TypesProp
+    name="renderTag"
+    type="(props, ref) => ReactNode"
+    desc="render prop used to replace the default input"
+    default="(props, ref) => <input ref={ref} {...props} />"
+  />
 </TypesTable>
 
 ### Field.TextArea

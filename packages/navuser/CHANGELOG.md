@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@2.1.2...@pluralsight/ps-design-system-navuser@2.1.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **navuser:** update peerDep version ([ad94b6a](https://github.com/pluralsight/design-system/commit/ad94b6a37fb3aa2e3ceb9b19146816f6a7bef18d))
+
+
+
+
+
 ## [2.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@2.1.1...@pluralsight/ps-design-system-navuser@2.1.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navuser

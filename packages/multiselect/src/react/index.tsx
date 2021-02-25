@@ -3,6 +3,7 @@ import { compose, css } from 'glamor'
 import React, {
   ChangeEventHandler,
   ComponentProps,
+  KeyboardEvent,
   MouseEvent,
   MouseEventHandler,
   ReactElement,
@@ -22,7 +23,7 @@ import { CaretDownIcon, CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import Tag from '@pluralsight/ps-design-system-tag'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor, canUseDOM } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
 
@@ -63,6 +64,7 @@ interface MultiSelectFieldProps
   onChange: (evt: SyntheticEvent | null, nextValue: Option[]) => void
   options: Option[]
   placeholder?: string
+  renderInputTag?: ComponentProps<typeof Field.Input>['renderTag']
   subLabel?: string | ReactNode
   value: Option[]
 }
@@ -84,6 +86,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     options,
     placeholder,
     prefix,
+    renderInputTag,
     subLabel,
     value = [],
     ...rest
@@ -122,6 +125,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
   }, [unselectedOptions, filterFn, searchTerm])
 
   const {
+    closeMenu,
     getComboboxProps,
     getInputProps,
     getItemProps,
@@ -140,6 +144,10 @@ const MultiSelect: MultiSelectFieldComponent = props => {
         setSearchTerm(inputValue)
       }
 
+      const resetSearch: OnStateChangeFn = () => {
+        setSearchTerm('')
+      }
+
       const selectItemAndResetSearch: OnStateChangeFn = ({ selectedItem }) => {
         setSearchTerm('')
         if (selectedItem) addSelectedItem(selectedItem)
@@ -147,7 +155,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
 
       const fn = switchcase<OnStateChangeFn>(
         {
-          [stateChangeTypes.InputBlur]: selectItemAndResetSearch,
+          [stateChangeTypes.InputBlur]: resetSearch,
           [stateChangeTypes.InputChange]: updateSearchTerm,
           [stateChangeTypes.InputKeyDownEnter]: selectItemAndResetSearch,
           [stateChangeTypes.ItemClick]: selectItemAndResetSearch
@@ -199,10 +207,21 @@ const MultiSelect: MultiSelectFieldComponent = props => {
 
   const inputProps = getInputProps(
     getDropdownProps({
+      onKeyDown: (evt: KeyboardEvent<HTMLInputElement>) => {
+        if (!canUseDOM()) return
+
+        const { altKey } = evt
+        const key = evt.key.toLowerCase()
+
+        const shouldClose = isOpen && altKey && key === 'arrowup'
+        const shouldOpen = !isOpen && altKey && key === 'arrowdown'
+
+        if (shouldClose) setTimeout(closeMenu, 0)
+        else if (shouldOpen) setTimeout(openMenu, 0)
+      },
       onFocus: () => {
         if (!isOpen) openMenu()
-      },
-      preventKeyAction: isOpen
+      }
     })
   )
 
@@ -252,6 +271,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
               disabled={disabled}
               onChange={handleInputChange}
               placeholder={placeholder}
+              renderTag={renderInputTag}
               value={searchTerm}
             />
           </Pills>

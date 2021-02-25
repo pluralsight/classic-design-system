@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.1.3...@pluralsight/ps-design-system-tagsinput@1.2.0) (2021-02-25)
+
+
+### Bug Fixes
+
+* **tagsinput:** remove unintended empty dom for missing labels ([8efcf88](https://github.com/pluralsight/design-system/commit/8efcf88273cfed9714a3baac683acf260bd9feb3))
+
+
+### Features
+
+* use onGlobalEventsClose instead of hook ([#1611](https://github.com/pluralsight/design-system/issues/1611)) ([44b4782](https://github.com/pluralsight/design-system/commit/44b4782947544eedf1a47e3615b01eed2a712393))
+* **tagsinput:** render prop to replace input ([43742e8](https://github.com/pluralsight/design-system/commit/43742e8665afe77aeefc050eb922fcda592855fc))
+
+
+
+
+
 ## [1.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.1.2...@pluralsight/ps-design-system-tagsinput@1.1.3) (2021-02-16)
 
 

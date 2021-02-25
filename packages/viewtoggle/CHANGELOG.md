@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@7.1.3...@pluralsight/ps-design-system-viewtoggle@7.1.4) (2021-02-25)
+
+
+### Bug Fixes
+
+* **viewtoggle:** update peerDep version ([06b4412](https://github.com/pluralsight/design-system/commit/06b441249cb02132e3d7023f63ab56a2187df778))
+
+
+
+
+
 ## [7.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@7.1.2...@pluralsight/ps-design-system-viewtoggle@7.1.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle

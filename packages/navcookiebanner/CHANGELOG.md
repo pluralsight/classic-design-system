@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@2.1.3...@pluralsight/ps-design-system-navcookiebanner@2.1.4) (2021-02-25)
+
+
+### Bug Fixes
+
+* **navcookiebanner:** change aria-label on close icon ([34ade39](https://github.com/pluralsight/design-system/commit/34ade394a5e898b4945879853dad4c715f632f9c))
+* **navcookiebanner:** update peerDep version ([a009428](https://github.com/pluralsight/design-system/commit/a00942809f3a01851f6090fc796b917b15f1e49c))
+
+
+
+
+
 ## [2.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@2.1.2...@pluralsight/ps-design-system-navcookiebanner@2.1.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner

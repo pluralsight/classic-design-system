@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.1.3...@pluralsight/ps-design-system-multiselect@1.2.0) (2021-02-25)
+
+
+### Bug Fixes
+
+* **multiselect:** update peerDep version ([5977e98](https://github.com/pluralsight/design-system/commit/5977e98062e0f009c828be19cd75afa2399ca532))
+
+
+### Features
+
+* **multiselect:** render prop to replace input ([53c9b5b](https://github.com/pluralsight/design-system/commit/53c9b5b5c8f2d2f07268796464f8d109037c655d))
+
+
+
+
+
 ## [1.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.1.2...@pluralsight/ps-design-system-multiselect@1.1.3) (2021-02-16)
 
 

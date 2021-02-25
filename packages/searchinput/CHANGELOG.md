@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@8.0.3...@pluralsight/ps-design-system-searchinput@8.0.4) (2021-02-25)
+
+
+### Bug Fixes
+
+* **searchinput:** update peerDep version ([5f15693](https://github.com/pluralsight/design-system/commit/5f156935ac1705bfe6aede3a7a322bb8dac6ab54))
+
+
+
+
+
 ## [8.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@8.0.2...@pluralsight/ps-design-system-searchinput@8.0.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-searchinput

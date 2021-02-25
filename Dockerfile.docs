@@ -1,26 +1,26 @@
-# DOCKER STAGE: BUILD
-FROM node:11.4-alpine as builder
+FROM node:15.5.0-alpine as build
 
 ENV NODE_ENV=production
 
 ## Install build toolchain, install node deps and compile native add-ons
 RUN apk add --no-cache python make g++
 
-## Use /usr/src/app subdir so root tsconfig can be extended
 RUN mkdir -p /usr/src/app
-
-COPY docs/. /usr/src/app
-COPY tsconfig.json /usr/src
+RUN mkdir -p /usr/src/app/packages
 
 WORKDIR /usr/src/app
 
-RUN yarn config set ignore-engines true
-RUN yarn --no-lockfile --production=false
+COPY package.json .
+COPY yarn.lock .
+COPY tsconfig.json .
 
+COPY docs ./docs
+WORKDIR /usr/src/app/docs
+
+RUN yarn install --production=false --pure-lockfile --non-interactive --network-timeout 100000
 RUN yarn build
 
-# DOCKER STAGE: APP
-FROM node:11.4-alpine as app
+FROM node:15.5.0-alpine as app
 
 ARG NEW_RELIC_APP_NAME=DesignSystemDocs::Production
 ENV NEW_RELIC_APP_NAME $NEW_RELIC_APP_NAME
@@ -44,20 +44,31 @@ ARG LOG_LEVEL=info
 ENV LOG_LEVEL $LOG_LEVEL
 
 RUN mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app/packages
+
 WORKDIR /usr/src/app
 
-COPY --from=builder /usr/src/app/dist /usr/src/app/dist
-COPY --from=builder /usr/src/app/public /usr/src/app/public
-COPY --from=builder /usr/src/app/node_modules /usr/src/app/node_modules
-COPY --from=builder /usr/src/app/package.json /usr/src/app/package.json
-COPY --from=builder /usr/src/app/newrelic.js /usr/src/app/newrelic.js
-COPY --from=builder /usr/src/app/health-check.js /usr/src/app/health-check.js
+COPY package.json .
+COPY yarn.lock .
+COPY tsconfig.json .
+
+COPY --from=build /usr/src/app/package.json /usr/src/app/package.json
+COPY --from=build /usr/src/app/yarn.lock /usr/src/app/yarn.lock
+
+COPY --from=build /usr/src/app/docs/package.json /usr/src/app/docs/package.json
+COPY --from=build /usr/src/app/docs/health-check.js /usr/src/app/docs/health-check.js
+COPY --from=build /usr/src/app/docs/newrelic.js /usr/src/app/docs/newrelic.js
+COPY --from=build /usr/src/app/docs/dist /usr/src/app/docs/dist
+COPY --from=build /usr/src/app/docs/public /usr/src/app/docs/public
+
+WORKDIR /usr/src/app/docs
+RUN yarn install --pure-lockfile --non-interactive --production
 
 # the official node image provides an unprivileged user as a security best practice
 # https://github.com/nodejs/docker-node/blob/master/docs/BestPractices.md#non-root-user
 USER node
 
 HEALTHCHECK --interval=5s --timeout=30s --retries=3 \
-  CMD node /usr/src/app/health-check.js
+  CMD node /usr/src/app/docs/health-check.js
 
 CMD ["node", "./dist/server/main.js"]

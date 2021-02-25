@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@8.1.3...@pluralsight/ps-design-system-circularprogress@8.1.4) (2021-02-25)
+
+
+### Bug Fixes
+
+* **circularprogress:** update peerDep version ([f875f3d](https://github.com/pluralsight/design-system/commit/f875f3d5aea6e9821e28fa29195e5187a8bc487d))
+
+
+
+
+
 ## [8.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@8.1.2...@pluralsight/ps-design-system-circularprogress@8.1.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@8.1.2...@pluralsight/ps-design-system-halo@8.1.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **halo:** update peerDep version ([beb4cb5](https://github.com/pluralsight/design-system/commit/beb4cb5cf288f2fad4447872e3cf431ecae65298))
+
+
+
+
+
 ## [8.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@8.1.1...@pluralsight/ps-design-system-halo@8.1.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-halo

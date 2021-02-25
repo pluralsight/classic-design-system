@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@3.0.2...@pluralsight/ps-design-system-appframe@3.0.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **appframe:** update peerDep version ([d93f087](https://github.com/pluralsight/design-system/commit/d93f087f558c1b30b716c360d69d8b2d3a77fa11))
+
+
+
+
+
 ## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@3.0.1...@pluralsight/ps-design-system-appframe@3.0.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-appframe

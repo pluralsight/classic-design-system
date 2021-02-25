@@ -14,11 +14,12 @@ import Field from '..'
 
 interface TextInputFieldProps extends ComponentProps<typeof Field> {
   placeholder?: string
+  renderInputTag?: ComponentProps<typeof Field.Input>['renderTag']
   type?: 'text' | 'search' | 'password'
 }
 
 const TextInputField: React.FC<TextInputFieldProps> = props => {
-  const { disabled, placeholder, type, ...rest } = props
+  const { disabled, placeholder, renderInputTag, type, ...rest } = props
 
   const labelId = useUniqueId('text-input__label-')
   const inputId = useUniqueId('text-input__input-')
@@ -40,6 +41,7 @@ const TextInputField: React.FC<TextInputFieldProps> = props => {
         disabled={disabled}
         id={inputId}
         placeholder={placeholder}
+        renderTag={renderInputTag}
         type={type}
       />
     </Field>
@@ -85,5 +87,17 @@ StyleOverrideDisplayBlock.decorators = [SetWidthDecorator, OutlineDecorator]
 StyleOverrideDisplayBlock.args = {
   renderContainer: forwardRef((props, ref) => (
     <div ref={ref} {...props} style={{ display: 'block' }} />
+  ))
+}
+
+export const CustomInputTag = Template.bind({})
+CustomInputTag.args = {
+  renderInputTag: forwardRef((props, ref) => (
+    <input
+      {...props}
+      ref={ref}
+      placeholder="tag from render prop"
+      style={{ outline: '1px dashed pink' }}
+    />
   ))
 }
