@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.0.2...@pluralsight/ps-design-system-datepicker@14.0.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **datepicker:** update peerDep version ([f2f6a99](https://github.com/pluralsight/design-system/commit/f2f6a99768e5e582eb5b815cbe4f5cc7e94a5c04))
+
+
+
+
+
 ## [14.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.0.1...@pluralsight/ps-design-system-datepicker@14.0.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

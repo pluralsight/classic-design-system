@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@8.1.3...@pluralsight/ps-design-system-textarea@8.1.4) (2021-02-25)
+
+
+### Bug Fixes
+
+* **textarea:** update peerDep version ([9cbe27e](https://github.com/pluralsight/design-system/commit/9cbe27ed4636eb0c3ae2511c9b0da965a6efc4cb))
+
+
+
+
+
 ## [8.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@8.1.2...@pluralsight/ps-design-system-textarea@8.1.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textarea

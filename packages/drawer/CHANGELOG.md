@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@10.0.3...@pluralsight/ps-design-system-drawer@10.0.4) (2021-02-25)
+
+
+### Bug Fixes
+
+* **drawer:** update peerDep version ([ca5ccba](https://github.com/pluralsight/design-system/commit/ca5ccba0af8e08773b9d90e0499d6d6943e1744b))
+
+
+
+
+
 ## [10.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@10.0.2...@pluralsight/ps-design-system-drawer@10.0.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

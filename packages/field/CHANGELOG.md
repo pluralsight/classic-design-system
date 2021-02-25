@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@2.0.2...@pluralsight/ps-design-system-field@2.1.0) (2021-02-25)
+
+
+### Bug Fixes
+
+* **field:** update peerDep version ([0db7f10](https://github.com/pluralsight/design-system/commit/0db7f1003c8444cb6eff88c4f468cdfc4d72a2b7))
+
+
+### Features
+
+* **field:** render prop to replace input with custom element ([6dffb22](https://github.com/pluralsight/design-system/commit/6dffb222eebd2b6e72de314a1b55bce41ef76686))
+
+
+
+
+
 ## [2.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@2.0.1...@pluralsight/ps-design-system-field@2.0.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-field

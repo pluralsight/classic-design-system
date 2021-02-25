@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@7.1.2...@pluralsight/ps-design-system-util@7.2.0) (2021-02-25)
+
+
+### Features
+
+* use onGlobalEventsClose instead of hook ([#1611](https://github.com/pluralsight/design-system/issues/1611)) ([44b4782](https://github.com/pluralsight/design-system/commit/44b4782947544eedf1a47e3615b01eed2a712393))
+
+
+
+
+
 ## [7.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@7.1.1...@pluralsight/ps-design-system-util@7.1.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util

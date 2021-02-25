@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@11.0.3...@pluralsight/ps-design-system-form@11.1.0) (2021-02-25)
+
+
+### Bug Fixes
+
+* **form:** update peerDep version ([3a91ab2](https://github.com/pluralsight/design-system/commit/3a91ab20b44227e3156c2b0ae96949f9f83b6d5e))
+
+
+### Features
+
+* use onGlobalEventsClose instead of hook ([#1611](https://github.com/pluralsight/design-system/issues/1611)) ([44b4782](https://github.com/pluralsight/design-system/commit/44b4782947544eedf1a47e3615b01eed2a712393))
+
+
+
+
+
 ## [11.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@11.0.2...@pluralsight/ps-design-system-form@11.0.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form
