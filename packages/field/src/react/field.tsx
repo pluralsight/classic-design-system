@@ -19,13 +19,13 @@ import React, {
   useRef
 } from 'react'
 
-import { appearances, sizes } from '../vars'
+import { FieldContext } from './context'
 import stylesheet from '../css/field'
-
 import Input from './input'
 import Label from './label'
 import SubLabel from './sub-label'
 import TextArea from './text-area'
+import { appearances, sizes } from '../vars'
 
 const styles = {
   container: (opts: { disabled?: boolean; error?: boolean }) =>
@@ -34,10 +34,12 @@ const styles = {
       opts.disabled && css(stylesheet['.psds-field__container--disabled']),
       opts.error && css(stylesheet['.psds-field__container--error'])
     ),
-  field: (opts: { size?: string }) =>
+  field: (opts: { hasPrefix: boolean; hasSuffix: boolean; size?: string }) =>
     compose(
       css(stylesheet['.psds-field']),
-      css(stylesheet[`.psds-field--${opts.size}`])
+      css(stylesheet[`.psds-field--${opts.size}`]),
+      opts.hasPrefix && css(stylesheet['.psds-field--prefix']),
+      opts.hasSuffix && css(stylesheet['.psds-field--suffix'])
     ),
   halo: () => css(stylesheet['.psds-field__halo']),
   prefix: () => css(stylesheet['.psds-field__prefix']),
@@ -106,33 +108,46 @@ const Field: FieldComponent = props => {
   const handleClick = combineFns(onClick, focusOnClick)
 
   return (
-    <Container
-      {...styles.container({ disabled, error })}
-      onClick={handleClick}
-      ref={containerRef}
+    <FieldContext.Provider
+      value={{
+        size
+      }}
     >
-      {label && label}
+      <Container
+        {...styles.container({ disabled, error })}
+        onClick={handleClick}
+        ref={containerRef}
+      >
+        {label && label}
 
-      <Theme name={themeNames.light}>
-        <Halo error={error} gapSize={Halo.gapSizes.small} {...styles.halo()}>
-          <Tag {...styles.field({ size })} {...rest}>
-            {prefix && <div {...styles.prefix()}>{prefix}</div>}
+        <Theme name={themeNames.light}>
+          <Halo error={error} gapSize={Halo.gapSizes.small} {...styles.halo()}>
+            <Tag
+              {...styles.field({
+                hasPrefix: !!prefix,
+                hasSuffix: !!suffix,
+                size
+              })}
+              {...rest}
+            >
+              {prefix && <div {...styles.prefix()}>{prefix}</div>}
 
-            {children}
+              {children}
 
-            {suffix && <div {...styles.suffix()}>{suffix}</div>}
+              {suffix && <div {...styles.suffix()}>{suffix}</div>}
 
-            {error && (
-              <div {...styles.errorIcon()}>
-                <WarningIcon />
-              </div>
-            )}
-          </Tag>
-        </Halo>
-      </Theme>
+              {error && (
+                <div {...styles.errorIcon()}>
+                  <WarningIcon />
+                </div>
+              )}
+            </Tag>
+          </Halo>
+        </Theme>
 
-      {subLabel && subLabel}
-    </Container>
+        {subLabel && subLabel}
+      </Container>
+    </FieldContext.Provider>
   )
 }
 
