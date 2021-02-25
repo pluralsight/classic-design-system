@@ -149,10 +149,6 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
     data-css-w0yocm=""
     onClick={[Function]}
   >
-    <label
-      data-css-5jjrbq=""
-      htmlFor="tagsinput__input-unique-id"
-    />
     <div
       data-css-63oe3q=""
       data-css-8qmpxt=""
@@ -269,9 +265,6 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
         </div>
       </div>
     </div>
-    <div
-      data-css-bv851e=""
-    />
   </div>
 </div>
 `;

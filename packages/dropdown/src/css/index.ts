@@ -23,7 +23,8 @@ export default {
   },
 
   '.psds-dropdown': {
-    display: 'inline-block',
+    display: 'inline-flex',
+    flexDirection: 'column',
     position: 'relative'
   },
   '.psds-dropdown--disabled': {
@@ -230,7 +231,9 @@ export default {
     paddingLeft: layout.spacingMedium,
     paddingRight: layout.spacingMedium,
     background: 'none',
-
+    '&:focus': {
+      outline: 'none'
+    },
     '&:hover': {
       outline: 'none'
     },
