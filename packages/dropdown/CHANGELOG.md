@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.1.4...@pluralsight/ps-design-system-dropdown@11.2.0) (2021-02-25)
+
+
+### Bug Fixes
+
+* **dropdown:** update peerDep version ([a827f7b](https://github.com/pluralsight/design-system/commit/a827f7bb0848fd25e73a8f752193e4d12ad94213))
+
+
+### Features
+
+* use onGlobalEventsClose instead of hook ([#1611](https://github.com/pluralsight/design-system/issues/1611)) ([44b4782](https://github.com/pluralsight/design-system/commit/44b4782947544eedf1a47e3615b01eed2a712393))
+
+
+
+
+
 ## [11.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.1.3...@pluralsight/ps-design-system-dropdown@11.1.4) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

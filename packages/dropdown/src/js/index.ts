@@ -25,11 +25,9 @@ interface DropdownContextValue {
   activeItem?: ItemData
   onDocumentEvents: (evt: Event) => void
   onMenuClick: (evt: React.MouseEvent, value?: number | string) => void
-  menuId: string
   selectedItem?: ItemData
 }
 export const DropdownContext = createContext<DropdownContextValue>({
-  menuId: 'placeholder',
   onDocumentEvents: _evt => {},
   onMenuClick: (_evt, _value) => {}
 })
@@ -67,7 +65,6 @@ const sortDropdownProps = ({
   size,
   subLabel,
   style,
-  uniqueId,
   value,
   ...rest
 }: UseDropdownProps) => ({
@@ -114,11 +111,12 @@ export const useDropdown = (
   props: UseDropdownProps,
   forwardedRef: Ref<HTMLButtonElement>
 ) => {
+  const uid = props.uniqueId || defaultUniqueId
+  const buttonId = useMemo(() => uid('dropdown-button-'), [])
+  const labelId = useMemo(() => uid('dropdown-label-'), [])
+  const menuId = useMemo(() => uid('dropdown-menu-'), [])
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = useState(false)
-  const uniqueId = props.uniqueId || defaultUniqueId
-  const inputId = useMemo(() => uniqueId('dropdown-input-'), [])
-  const menuId = useMemo(() => uniqueId('dropdown-menu-'), [])
 
   const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [
     menuId,
@@ -131,9 +129,6 @@ export const useDropdown = (
     hook.value
   )
   const itemMatchingValue = items[itemMatchingValueIndex]
-  const [activeIndex, setActiveIndex] = useState(
-    itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0
-  )
 
   const [selectedItem, setSelectedItem] = useState(itemMatchingValue)
 
@@ -145,7 +140,6 @@ export const useDropdown = (
     function handleEscape(evt: KeyboardEvent) {
       if (evt.key === 'Escape') {
         setOpen(false)
-        setActiveIndex(itemMatchingValueIndex > -1 ? itemMatchingValueIndex : 0)
         buttonRef.current?.focus()
       }
     }
@@ -164,43 +158,14 @@ export const useDropdown = (
       evt.type === 'click' ||
       (evt.type === 'keydown' &&
         'key' in evt &&
-        (evt.key === ' ' || evt.key === 'Enter' || evt.key === 'ArrowDown'))
+        (evt.key === 'Enter' || 'ArrowDown' || 'ArrowUp'))
     ) {
       evt.preventDefault()
       evt.stopPropagation()
 
       const newOpen = !isOpen
       setOpen(newOpen)
-      if (newOpen && inputRef.current) {
-        inputRef.current.focus()
-      }
       if (typeof hook.onClick === 'function') hook.onClick(evt)
-    }
-  }
-
-  function handleInputKeyDown(evt: React.KeyboardEvent) {
-    evt.preventDefault()
-    evt.stopPropagation()
-
-    if (isOpen) {
-      if (evt.key === 'ArrowDown') {
-        const newActiveIndex =
-          activeIndex < items.length - 1 ? activeIndex + 1 : 0
-        setActiveIndex(newActiveIndex)
-      } else if (evt.key === 'ArrowUp') {
-        setActiveIndex(activeIndex > 0 ? activeIndex - 1 : 0)
-      } else if (evt.key === 'Enter' || evt.key === ' ') {
-        setSelectedItem(items[activeIndex])
-        setOpen(false)
-        if (typeof hook.onChange === 'function') {
-          hook.onChange(evt, items[activeIndex].value)
-        }
-        buttonRef.current?.focus()
-      }
-    } else {
-      if (evt.key === 'ArrowDown' || evt.key === ' ') {
-        setOpen(true)
-      }
     }
   }
 
@@ -224,8 +189,6 @@ export const useDropdown = (
     () => (buttonRef.current as unknown) as HTMLButtonElement
   )
 
-  const inputRef = useRef<HTMLInputElement>(null)
-
   const inNode = canUseDOM() ? document.body : undefined
   const [menuPosition, setMenuPosition] = useState({
     left: 0,
@@ -236,35 +199,30 @@ export const useDropdown = (
   return {
     button: {
       ...rest.button,
+      id: buttonId,
+      // eslint-disable-next-line @typescript-eslint/prefer-as-const
+      'aria-haspopup': 'listbox' as 'listbox',
+      'aria-labelledby': `${buttonId} ${labelId}`,
       ref: buttonRef,
       isOpen,
       onClick: handleButtonEvent,
       onKeyDown: handleButtonEvent,
       setMenuPosition
     },
-    input: {
-      ...rest.input,
-      // TODO: replace with activeItem
-      activeItemId: items[activeIndex]?.id,
-      isOpen,
-      inputId,
-      onKeyDown: handleInputKeyDown,
-      menuId,
-      ref: inputRef,
-      selectedItem
-    },
     label: {
       ...rest.label,
-      inputId
+      id: labelId
     },
     layout: rest.layout,
     menu: {
       ...rest.menu,
       inNode,
       isOpen,
-      menuId,
       menuPosition,
-      buttonRef
+      buttonRef,
+      id: menuId,
+      role: 'listbox',
+      'aria-labelledby': buttonId
     },
     selected: {
       ...rest.selected,
@@ -274,12 +232,10 @@ export const useDropdown = (
     subLabel: rest.subLabel,
     value: {
       value: {
-        activeItem: items[activeIndex],
         onDocumentEvents: (_evt: Event) => {
           setOpen(false)
         },
         onMenuClick: handleMenuItemClick,
-        menuId,
         selectedItem
       }
     }
@@ -355,3 +311,5 @@ export const getLongestMenuLabel = (
       : currentLongest
   }, placeholder || '')
 }
+
+export { useMenuRef, handleMenuKeyDownEvents } from './menuKeyEvents'

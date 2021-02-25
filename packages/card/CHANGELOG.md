@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@16.0.2...@pluralsight/ps-design-system-card@16.0.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **card:** update peerDep version ([b5e3d22](https://github.com/pluralsight/design-system/commit/b5e3d227ac985e2a78959a115ba6f4094fa74020))
+
+
+
+
+
 ## [16.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@16.0.1...@pluralsight/ps-design-system-card@16.0.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-card

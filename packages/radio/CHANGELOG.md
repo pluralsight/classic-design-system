@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@8.1.3...@pluralsight/ps-design-system-radio@8.1.4) (2021-02-25)
+
+
+### Bug Fixes
+
+* **radio:** update peerDep version ([fd5380f](https://github.com/pluralsight/design-system/commit/fd5380ff2c85794d5e55fef27459a0662fc74178))
+
+
+
+
+
 ## [8.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@8.1.2...@pluralsight/ps-design-system-radio@8.1.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio

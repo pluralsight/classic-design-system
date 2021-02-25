@@ -602,7 +602,7 @@ exports[`Storyshots Sample Form sample 1`] = `
         data-css-4l6uky=""
       >
         <div
-          data-css-1hniuff=""
+          data-css-ottiud=""
           style={
             Object {
               "maxWidth": "none",
@@ -610,29 +610,11 @@ exports[`Storyshots Sample Form sample 1`] = `
             }
           }
         >
-          <label
-            htmlFor="dropdown-input-unique-id"
-          >
+          <label>
             <span>
               Occupation
             </span>
           </label>
-          <div
-            data-css-6wu9td=""
-          >
-            <input
-              aria-activedescendant="dropdown-menu-unique-id-Engineer"
-              aria-autocomplete="list"
-              aria-controls="dropdown-menu-unique-id"
-              aria-expanded={false}
-              defaultValue=""
-              disabled={false}
-              id="dropdown-input-unique-id"
-              onKeyDown={[Function]}
-              role="combobox"
-              tabIndex={-1}
-            />
-          </div>
           <div
             data-css-8befsb=""
           >
@@ -644,8 +626,11 @@ exports[`Storyshots Sample Form sample 1`] = `
                 data-css-ne3jjf=""
               >
                 <button
+                  aria-haspopup="listbox"
+                  aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
                   data-css-185vr3w=""
                   disabled={false}
+                  id="dropdown-button-4fzzzxjyl"
                   onClick={[Function]}
                   onKeyDown={[Function]}
                 >

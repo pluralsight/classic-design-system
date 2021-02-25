@@ -83,13 +83,15 @@ function chooseTemplate(slug) {
 function searchNpm() {
   return new Promise((resolve, reject) => {
     childProcess.exec(
-      'npm search ps-design-system --json --parseable',
+      'npm search ps-design-system --parseable',
       {
         cwd: __dirname,
         encoding: 'utf8',
-        timeout: 5000
+        timeout: 10000
       },
       (err, stdout, stderr) => {
+        console.log('HERE', stdout)
+
         if (err) {
           console.log('Error searching packages', err)
           return reject(err)
@@ -100,10 +102,9 @@ function searchNpm() {
           return reject(new Error(stderr))
         }
 
-        let json
         try {
           if (typeof stdout === 'string') {
-            json = JSON.parse(stdout)
+            const json = parseNpmSearchOutput(stdout)
             return resolve(json)
           } else {
             return reject(new Error('Child process output must be a string'))
@@ -127,4 +128,17 @@ async function findAllNpmPackages() {
     console.log('packages-api#findAll error', err)
     return {}
   }
+}
+
+function parseNpmSearchOutput(tsv) {
+  const headers = ['name', 'description', 'authors', 'publishedAt', 'version']
+  const lines = tsv.split('\n')
+
+  return lines.map(line => {
+    const data = line.split('\t')
+    return headers.reduce((obj, nextKey, index) => {
+      obj[nextKey] = data[index]
+      return obj
+    }, {})
+  })
 }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@10.1.3...@pluralsight/ps-design-system-textinput@10.1.4) (2021-02-25)
+
+
+### Bug Fixes
+
+* **textinput:** update peerDep version ([6941b1f](https://github.com/pluralsight/design-system/commit/6941b1f78bef3ef24560c457c57984b765d68fff))
+
+
+
+
+
 ## [10.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@10.1.2...@pluralsight/ps-design-system-textinput@10.1.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput

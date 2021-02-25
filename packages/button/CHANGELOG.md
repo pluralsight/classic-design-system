@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [21.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@21.0.2...@pluralsight/ps-design-system-button@21.0.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **button:** update peerDep version ([0cc7d2d](https://github.com/pluralsight/design-system/commit/0cc7d2dd2becab2ae6d93e68a8f50a3bab07f91f))
+
+
+
+
+
 ## [21.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@21.0.1...@pluralsight/ps-design-system-button@21.0.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

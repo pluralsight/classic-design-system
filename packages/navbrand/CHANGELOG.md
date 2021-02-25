@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@2.1.2...@pluralsight/ps-design-system-navbrand@2.1.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **navbrand:** update peerDep version ([9431753](https://github.com/pluralsight/design-system/commit/9431753f51f6673fa8c176a3e65556b63bacabbf))
+
+
+
+
+
 ## [2.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@2.1.1...@pluralsight/ps-design-system-navbrand@2.1.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navbrand

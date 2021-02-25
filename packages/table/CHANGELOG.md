@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@13.0.3...@pluralsight/ps-design-system-table@13.1.0) (2021-02-25)
+
+
+### Bug Fixes
+
+* **table:** update peerDep version ([d603422](https://github.com/pluralsight/design-system/commit/d603422e2f92ca5da3cd2c082349ee4648bfce96))
+
+
+### Features
+
+* use onGlobalEventsClose instead of hook ([#1611](https://github.com/pluralsight/design-system/issues/1611)) ([44b4782](https://github.com/pluralsight/design-system/commit/44b4782947544eedf1a47e3615b01eed2a712393))
+
+
+
+
+
 ## [13.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@13.0.2...@pluralsight/ps-design-system-table@13.0.3) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

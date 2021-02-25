@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@11.2.2...@pluralsight/ps-design-system-carousel@11.2.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **carousel:** update peerDep version ([fc6a547](https://github.com/pluralsight/design-system/commit/fc6a5473272ffdeea485e304d06fd46a256a930b))
+
+
+
+
+
 ## [11.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@11.2.1...@pluralsight/ps-design-system-carousel@11.2.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

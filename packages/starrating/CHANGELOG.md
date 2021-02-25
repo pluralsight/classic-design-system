@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@8.0.2...@pluralsight/ps-design-system-starrating@8.0.3) (2021-02-25)
+
+
+### Bug Fixes
+
+* **starrating:** update peerDep version ([3dcca0e](https://github.com/pluralsight/design-system/commit/3dcca0e6fd4ae3b960a2a20c8320fc2576fda81f))
+
+
+
+
+
 ## [8.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@8.0.1...@pluralsight/ps-design-system-starrating@8.0.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-starrating

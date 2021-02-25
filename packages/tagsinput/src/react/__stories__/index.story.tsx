@@ -101,3 +101,15 @@ IconPrefix.args = { ...defaultArgs, prefix: <PlaceholderIcon /> }
 
 export const IconSuffix = Template.bind({})
 IconSuffix.args = { ...defaultArgs, suffix: <PlaceholderIcon /> }
+
+export const CustomInputTag = Template.bind({})
+CustomInputTag.args = {
+  renderInputTag: React.forwardRef((props, ref) => (
+    <input
+      {...props}
+      ref={ref}
+      placeholder="tag from render prop"
+      style={{ outline: '1px dashed pink' }}
+    />
+  ))
+}

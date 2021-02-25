@@ -3,7 +3,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, { FC, ReactNode } from 'react'
 
@@ -17,15 +17,14 @@ const styles = {
     )
 }
 
-interface LabelProps {
+interface LabelProps extends HTMLPropsFor<'label'> {
   label?: ReactNode
-  inputId: string
 }
 
 export const Label: FC<LabelProps> = props => {
   const themeName = useTheme()
   return (
-    <label htmlFor={props.inputId}>
+    <label>
       {props.label ? (
         <span {...styles.label(themeName)}>{props.label}</span>
       ) : (
