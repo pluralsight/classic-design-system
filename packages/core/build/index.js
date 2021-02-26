@@ -1,21 +1,31 @@
+const { fs, postcss } = require('@pluralsight/ps-design-system-build')
+const globby = require('globby')
 const path = require('path')
-
 const presetEnv = require('postcss-preset-env')
 const atImport = require('postcss-import')
-
-const { fs, postcss } = require('@pluralsight/ps-design-system-build')
 
 async function main() {
   await fs.mkdir('dist')
 
-  await buildCssOutput()
+  await copyCssModuleSrc()
+  await buildCssUtilityOutput()
   await buildSassOutput()
 }
 
 main()
 
-async function buildCssOutput() {
-  const input = path.join('css', 'index.css')
+async function copyCssModuleSrc() {
+  await fs.mkdir(path.join('dist', 'css'))
+  const paths = await globby(path.join('src', 'css', '**', '*.css'))
+
+  for (const path of paths) {
+    const destPath = path.replace('src', 'dist')
+    await fs.copyFile(path, destPath)
+  }
+}
+
+async function buildCssUtilityOutput() {
+  const input = path.join('src', 'css', 'index.css')
   const output = path.join('dist', 'index.css')
 
   const propNameTests = [
@@ -57,7 +67,7 @@ async function buildCssOutput() {
 }
 
 async function buildSassOutput() {
-  const input = path.join('css', 'index.css')
+  const input = path.join('src', 'css', 'index.css')
   const output = path.join('dist', 'index.module.scss')
 
   const transforms = [
