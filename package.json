@@ -29,7 +29,7 @@
     "clean": "del '{,!(node_modules)/}**/dist'",
     "danger:ci": "danger ci --failOnErrors",
     "deps:check:circular": "madge --exclude '^dist.*' --circular packages",
-    "docs": "yarn workspace @pluralsight/ps-design-system-docs start:dev",
+    "docs": "cd docs/ && yarn start:dev",
     "generate": "plop",
     "generate:component": "plop component",
     "lint": "eslint . --cache --quiet --ext .js,.jsx,.ts,.tsx",
