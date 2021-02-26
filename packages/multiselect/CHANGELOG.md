@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.2.0...@pluralsight/ps-design-system-multiselect@1.2.1) (2021-02-26)
+
+
+### Bug Fixes
+
+* **multiselect:** keybindings ([0ee96d9](https://github.com/pluralsight/design-system/commit/0ee96d92fcf73215c913c38fcb4c8dcc3de7c515))
+
+
+
+
+
 # [1.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.1.3...@pluralsight/ps-design-system-multiselect@1.2.0) (2021-02-25)
 
 
