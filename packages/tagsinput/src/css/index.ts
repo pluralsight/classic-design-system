@@ -9,9 +9,7 @@ export default {
   '.psds-tagsinput': {
     label: 'tagsinput',
 
-    minHeight: 40,
-    paddingTop: '10px !important',
-    paddingBottom: '10px !important'
+    minHeight: 40
   },
   '.psds-tagsinput--disabled': { pointerEvents: 'none' },
 
@@ -24,6 +22,10 @@ export default {
     display: 'flex'
   },
 
+  '.psds-tagsinput__pills-container': {
+    paddingTop: '10px',
+    paddingBottom: '10px'
+  },
   '.psds-tagsinput__pills': {
     alignItems: 'center',
     display: 'flex',
