@@ -23,8 +23,8 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-2ahmur=""
+        data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
@@ -115,7 +115,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1na6nif=""
+              data-css-10qtdsp=""
               data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
@@ -154,8 +154,8 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-2ahmur=""
+        data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
@@ -246,7 +246,7 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1na6nif=""
+              data-css-10qtdsp=""
               data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
@@ -292,8 +292,8 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-11s0ie3=""
-        data-css-1q3e54w=""
+        data-css-1d7bm46=""
+        data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
@@ -384,7 +384,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1na6nif=""
+              data-css-10qtdsp=""
               data-css-8z457z=""
               disabled={true}
               id="tagsinput__input-unique-id"
@@ -430,8 +430,8 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
       data-css-8ff2sc=""
     >
       <div
-        data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-2ahmur=""
+        data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
@@ -522,7 +522,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1na6nif=""
+              data-css-10qtdsp=""
               data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
@@ -586,12 +586,12 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-28vuio=""
+        data-css-2ahmur=""
         onKeyPress={[Function]}
       >
         <div
-          data-css-1tx8me8=""
+          data-css-16bnq5b=""
         >
           <div
             data-css-bjcvj0=""
@@ -699,7 +699,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1na6nif=""
+              data-css-10qtdsp=""
               data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
@@ -744,8 +744,8 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-2ahmur=""
+        data-css-zhibkn=""
         onKeyPress={[Function]}
       >
         <div
@@ -836,7 +836,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1na6nif=""
+              data-css-10qtdsp=""
               data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
@@ -848,7 +848,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
           </div>
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-bjcvj0=""
@@ -896,8 +896,8 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-2ahmur=""
+        data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
@@ -988,7 +988,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1na6nif=""
+              data-css-10qtdsp=""
               data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}
@@ -1029,8 +1029,8 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-2ahmur=""
+        data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
@@ -1121,7 +1121,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
             data-css-n9fe5c=""
           >
             <input
-              data-css-1na6nif=""
+              data-css-10qtdsp=""
               data-css-8z457z=""
               id="tagsinput__input-unique-id"
               onChange={[Function]}

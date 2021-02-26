@@ -9,7 +9,9 @@ export default {
   '.psds-tagsinput': {
     label: 'tagsinput',
 
-    minHeight: 40
+    minHeight: 40,
+    paddingTop: '10px',
+    paddingBottom: '10px'
   },
   '.psds-tagsinput--disabled': { pointerEvents: 'none' },
 
