@@ -14,7 +14,9 @@ export default {
   '.psds-multi-select': {
     label: 'multi-select',
 
-    minHeight: 40
+    minHeight: 40,
+    paddingTop: '10px',
+    paddingBottom: '10px'
   },
   '.psds-multi-select--disabled': { pointerEvents: 'none' },
 
