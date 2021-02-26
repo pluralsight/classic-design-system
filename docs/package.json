@@ -100,7 +100,7 @@
     "helmet": "^4.4.1",
     "http-errors": "^1.8.0",
     "iframe-resizer-react": "^1.1.0",
-    "newrelic": "^7.1.2",
+    "newrelic": "^6.13.0",
     "react": "^17.0.1",
     "react-beautiful-dnd": "^13.0.0",
     "react-codesandboxer": "^3.1.5",
