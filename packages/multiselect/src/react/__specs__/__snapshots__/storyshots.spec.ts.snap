@@ -24,10 +24,12 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -597,10 +599,12 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -1176,10 +1180,12 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1odja3h=""
+        data-css-11s0ie3=""
         data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -1752,10 +1758,12 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
       data-css-8ff2sc=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -2347,7 +2355,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
     >
       <div
         data-css-18bafyq=""
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
       >
         <div
           data-css-16bnq5b=""
@@ -2370,7 +2378,9 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
             </div>
           </div>
         </div>
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -2940,10 +2950,12 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -3514,10 +3526,12 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"

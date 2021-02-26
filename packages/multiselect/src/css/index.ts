@@ -14,9 +14,7 @@ export default {
   '.psds-multi-select': {
     label: 'multi-select',
 
-    minHeight: 40,
-    paddingTop: '10px !important',
-    paddingBottom: '10px !important'
+    minHeight: 40
   },
   '.psds-multi-select--disabled': { pointerEvents: 'none' },
 
@@ -62,6 +60,13 @@ export default {
     background: colorsBackgroundLight[1]
   },
 
+  '.psds-multi-select__pills-container': {
+    label: 'pills-container',
+
+    paddingTop: '6px',
+    paddingBottom: '6px',
+    overflow: 'hidden'
+  },
   '.psds-multi-select__pills': {
     alignItems: 'center',
     display: 'flex',
