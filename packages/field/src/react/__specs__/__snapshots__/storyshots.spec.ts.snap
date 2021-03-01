@@ -18,7 +18,7 @@ Array [
       data-css-8qmpxt=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-b5kzar=""
       >
         <button
           aria-expanded={false}
@@ -33,7 +33,7 @@ Array [
             Do something
           </span>
           <div
-            data-css-n5p4fh=""
+            data-css-ugy1u5=""
           >
             <div
               data-css-7dab2f=""
@@ -621,13 +621,13 @@ exports[`Storyshots Components/Field/TextAreaField Basic 1`] = `
     data-css-8qmpxt=""
   >
     <div
-      data-css-1r5pcu2=""
+      data-css-rdms3z=""
     >
       <div
-        data-css-n9fe5c=""
+        data-css-1swu3ew=""
       >
         <textarea
-          data-css-1mpu7ok=""
+          data-css-lmn5gg=""
           id="text-area__area-unique-id"
           onChange={[Function]}
           value=""
@@ -660,13 +660,13 @@ exports[`Storyshots Components/Field/TextAreaField Disabled 1`] = `
     data-css-8qmpxt=""
   >
     <div
-      data-css-1r5pcu2=""
+      data-css-rdms3z=""
     >
       <div
-        data-css-n9fe5c=""
+        data-css-1swu3ew=""
       >
         <textarea
-          data-css-1mpu7ok=""
+          data-css-lmn5gg=""
           disabled={true}
           id="text-area__area-unique-id"
           onChange={[Function]}
@@ -700,13 +700,13 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
     data-css-8ff2sc=""
   >
     <div
-      data-css-1r5pcu2=""
+      data-css-rdms3z=""
     >
       <div
-        data-css-n9fe5c=""
+        data-css-1swu3ew=""
       >
         <textarea
-          data-css-1mpu7ok=""
+          data-css-lmn5gg=""
           id="text-area__area-unique-id"
           onChange={[Function]}
           value=""
@@ -741,157 +741,6 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Field/TextAreaField Icon Prefix 1`] = `
-<div
-  data-css-w0yocm=""
-  onClick={[Function]}
->
-  <label
-    data-css-5jjrbq=""
-    htmlFor="text-area__area-unique-id"
-    id="text-area__label-unique-id"
-  >
-    Text area label area
-  </label>
-  <div
-    data-css-63oe3q=""
-    data-css-8qmpxt=""
-  >
-    <div
-      data-css-1r5pcu2=""
-    >
-      <div
-        data-css-1tx8me8=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="placeholder icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        data-css-n9fe5c=""
-      >
-        <textarea
-          data-css-1mpu7ok=""
-          id="text-area__area-unique-id"
-          onChange={[Function]}
-          value=""
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-bv851e=""
-  >
-    Area for additional information
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Field/TextAreaField Icon Suffix 1`] = `
-<div
-  data-css-w0yocm=""
-  onClick={[Function]}
->
-  <label
-    data-css-5jjrbq=""
-    htmlFor="text-area__area-unique-id"
-    id="text-area__label-unique-id"
-  >
-    Text area label area
-  </label>
-  <div
-    data-css-63oe3q=""
-    data-css-8qmpxt=""
-  >
-    <div
-      data-css-1r5pcu2=""
-    >
-      <div
-        data-css-n9fe5c=""
-      >
-        <textarea
-          data-css-1mpu7ok=""
-          id="text-area__area-unique-id"
-          onChange={[Function]}
-          value=""
-        />
-      </div>
-      <div
-        data-css-n5p4fh=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="placeholder icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-bv851e=""
-  >
-    Area for additional information
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Field/TextAreaField Size Small 1`] = `
-<div
-  data-css-w0yocm=""
-  onClick={[Function]}
->
-  <label
-    data-css-5jjrbq=""
-    htmlFor="text-area__area-unique-id"
-    id="text-area__label-unique-id"
-  >
-    Text area label area
-  </label>
-  <div
-    data-css-63oe3q=""
-    data-css-8qmpxt=""
-  >
-    <div
-      data-css-1q3e54w=""
-    >
-      <div
-        data-css-n9fe5c=""
-      >
-        <textarea
-          data-css-1mpu7ok=""
-          id="text-area__area-unique-id"
-          onChange={[Function]}
-          value=""
-        />
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-bv851e=""
-  >
-    Area for additional information
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
 <div
   data-css-w0yocm=""
@@ -909,13 +758,13 @@ exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
     data-css-8qmpxt=""
   >
     <div
-      data-css-1r5pcu2=""
+      data-css-rdms3z=""
     >
       <div
-        data-css-n9fe5c=""
+        data-css-1swu3ew=""
       >
         <textarea
-          data-css-1mpu7ok=""
+          data-css-lmn5gg=""
           id="text-area__area-unique-id"
           onChange={[Function]}
           placeholder="Enter some text here"
@@ -952,13 +801,13 @@ exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-rdms3z=""
       >
         <div
           data-css-n9fe5c=""
         >
           <input
-            data-css-1na6nif=""
+            data-css-qbiz7v=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -994,13 +843,13 @@ exports[`Storyshots Components/Field/TextInputField Custom Input Tag 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-rdms3z=""
       >
         <div
           data-css-n9fe5c=""
         >
           <input
-            data-css-1na6nif=""
+            data-css-qbiz7v=""
             id="text-input__input-unique-id"
             placeholder="tag from render prop"
             style={
@@ -1042,13 +891,13 @@ exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-rdms3z=""
       >
         <div
           data-css-n9fe5c=""
         >
           <input
-            data-css-1na6nif=""
+            data-css-qbiz7v=""
             disabled={true}
             id="text-input__input-unique-id"
             type="text"
@@ -1085,13 +934,13 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
       data-css-8ff2sc=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-rdms3z=""
       >
         <div
           data-css-n9fe5c=""
         >
           <input
-            data-css-1na6nif=""
+            data-css-qbiz7v=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1146,10 +995,10 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-u3gl1=""
       >
         <div
-          data-css-1tx8me8=""
+          data-css-16bnq5b=""
         >
           <div
             data-css-7dab2f=""
@@ -1169,7 +1018,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-1na6nif=""
+            data-css-qbiz7v=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1205,19 +1054,19 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-b5kzar=""
       >
         <div
           data-css-n9fe5c=""
         >
           <input
-            data-css-1na6nif=""
+            data-css-qbiz7v=""
             id="text-input__input-unique-id"
             type="text"
           />
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-7dab2f=""
@@ -1264,19 +1113,19 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-b5kzar=""
       >
         <div
           data-css-n9fe5c=""
         >
           <input
-            data-css-1na6nif=""
+            data-css-qbiz7v=""
             id="text-input__input-unique-id"
             type="password"
           />
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-7dab2f=""
@@ -1323,13 +1172,13 @@ exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1q3e54w=""
+        data-css-gz81g2=""
       >
         <div
           data-css-n9fe5c=""
         >
           <input
-            data-css-1na6nif=""
+            data-css-10qtdsp=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1376,13 +1225,13 @@ exports[`Storyshots Components/Field/TextInputField Style Override Display Block
           data-css-8qmpxt=""
         >
           <div
-            data-css-1r5pcu2=""
+            data-css-rdms3z=""
           >
             <div
               data-css-n9fe5c=""
             >
               <input
-                data-css-1na6nif=""
+                data-css-qbiz7v=""
                 id="text-input__input-unique-id"
                 type="text"
               />
@@ -1420,13 +1269,13 @@ exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1r5pcu2=""
+        data-css-rdms3z=""
       >
         <div
           data-css-n9fe5c=""
         >
           <input
-            data-css-1na6nif=""
+            data-css-qbiz7v=""
             id="text-input__input-unique-id"
             placeholder="Enter some text here"
             type="text"

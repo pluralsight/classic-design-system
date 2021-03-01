@@ -22,6 +22,10 @@ export default {
     display: 'flex'
   },
 
+  '.psds-tagsinput__pills-container': {
+    paddingTop: '10px',
+    paddingBottom: '10px'
+  },
   '.psds-tagsinput__pills': {
     alignItems: 'center',
     display: 'flex',

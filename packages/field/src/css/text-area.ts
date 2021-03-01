@@ -1,8 +1,12 @@
+import { type } from '@pluralsight/ps-design-system-core'
+
 export default {
   '.psds-field__text-area__container': {
     label: 'field__text-area__container',
 
-    flex: '1'
+    flex: '1',
+    paddingTop: '10px',
+    paddingBottom: '10px'
   },
 
   '.psds-field__text-area': {
@@ -11,6 +15,7 @@ export default {
     border: 'none',
     outline: 'none',
     padding: 0,
-    width: '100%'
+    width: '100%',
+    lineHeight: type.lineHeightStandard
   }
 }

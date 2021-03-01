@@ -87,9 +87,6 @@ const Template: Story<ComponentProps<typeof TextAreaField>> = args => {
 
 export const Basic = Template.bind({})
 
-export const SizeSmall = Template.bind({})
-SizeSmall.args = { size: sizes.small }
-
 export const Disabled = Template.bind({})
 Disabled.args = { disabled: true }
 
@@ -98,9 +95,3 @@ Error.args = { error: true }
 
 export const WithPlaceholder = Template.bind({})
 WithPlaceholder.args = { placeholder: 'Enter some text here' }
-
-export const IconPrefix = Template.bind({})
-IconPrefix.args = { prefix: <PlaceholderIcon /> }
-
-export const IconSuffix = Template.bind({})
-IconSuffix.args = { suffix: <PlaceholderIcon /> }

@@ -43,6 +43,7 @@ const styles = {
   inputContainer: () => css(stylesheet['.psds-tagsinput__input-container']),
   input: () => css(stylesheet['.psds-tagsinput__input']),
 
+  pillsContainer: () => css(stylesheet['.psds-tagsinput__pills-container']),
   pills: () => css(stylesheet['.psds-tagsinput__pills']),
   pill: () => css(stylesheet['.psds-tagsinput__pill'])
 }
@@ -158,27 +159,29 @@ const TagsInput: TagsInputComponent = props => {
       {...styles.tagsInput({ disabled })}
       {...rest}
     >
-      <Pills>
-        {selectedItems.map((option, index) => (
-          <Pill
-            key={`selected-item-${index}`}
-            onRequestRemove={e => handleRemoveSelected(e, option)}
-            {...getSelectedItemProps({ selectedItem: option, index })}
-          >
-            {option.label}
-          </Pill>
-        ))}
+      <div {...styles.pillsContainer()}>
+        <Pills>
+          {selectedItems.map((option, index) => (
+            <Pill
+              key={`selected-item-${index}`}
+              onRequestRemove={e => handleRemoveSelected(e, option)}
+              {...getSelectedItemProps({ selectedItem: option, index })}
+            >
+              {option.label}
+            </Pill>
+          ))}
 
-        <PillAdjacentInput
-          {...inputProps}
-          disabled={disabled}
-          id={inputId}
-          onChange={onSearchInputChange}
-          placeholder={placeholder}
-          renderTag={renderInputTag}
-          value={searchInputValue}
-        />
-      </Pills>
+          <PillAdjacentInput
+            {...inputProps}
+            disabled={disabled}
+            id={inputId}
+            onChange={onSearchInputChange}
+            placeholder={placeholder}
+            renderTag={renderInputTag}
+            value={searchInputValue}
+          />
+        </Pills>
+      </div>
     </Field>
   )
 }

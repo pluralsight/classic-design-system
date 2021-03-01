@@ -32,12 +32,19 @@ export default {
     color: colorsTextIcon.highOnLight,
     display: 'flex',
     fontWeight: type.fontWeightDefault,
-    padding: layout.spacingSmall,
+    padding: `0 ${layout.spacingMedium}`,
+    lineHeight: '20px',
     position: 'relative',
     width: '100%'
   },
   [`.psds-field--${sizes.small}`]: {
-    padding: layout.spacingXSmall
+    padding: `0 ${layout.spacingXSmall}`
+  },
+  '.psds-field--prefix': {
+    paddingLeft: '11px'
+  },
+  '.psds-field--suffix': {
+    paddingRight: '11px'
   },
 
   '.psds-field__halo': { width: '100%' },
@@ -48,6 +55,7 @@ export default {
     alignSelf: 'stretch',
     color: colorsTextIcon.lowOnLight,
     display: 'flex',
+    alignItems: 'center',
     flex: '0 0 auto',
     height: 'auto',
     marginRight: layout.spacingXSmall
@@ -59,6 +67,7 @@ export default {
     alignSelf: 'stretch',
     color: colorsTextIcon.lowOnLight,
     display: 'flex',
+    alignItems: 'center',
     flex: '0 0 auto',
     height: 'auto',
     marginLeft: layout.spacingXSmall,
