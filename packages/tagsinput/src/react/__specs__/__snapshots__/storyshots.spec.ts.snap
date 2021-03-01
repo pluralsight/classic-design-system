@@ -23,107 +23,111 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
-          data-css-dpj5et=""
+          data-css-r9wiij=""
         >
           <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
+            data-css-dpj5et=""
           >
             <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  first
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
-          >
-            <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  second
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            data-css-n9fe5c=""
-          >
-            <input
-              data-css-10qtdsp=""
-              data-css-8z457z=""
-              id="tagsinput__input-unique-id"
-              onChange={[Function]}
+              data-css-12qnym0=""
               onClick={[Function]}
               onKeyDown={[Function]}
-              type="text"
-              value=""
-            />
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    first
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    second
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-10qtdsp=""
+                data-css-8z457z=""
+                id="tagsinput__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -154,113 +158,117 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
-          data-css-dpj5et=""
+          data-css-r9wiij=""
         >
           <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
+            data-css-dpj5et=""
           >
             <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  first
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
-          >
-            <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  second
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            data-css-n9fe5c=""
-          >
-            <input
-              data-css-10qtdsp=""
-              data-css-8z457z=""
-              id="tagsinput__input-unique-id"
-              onChange={[Function]}
+              data-css-12qnym0=""
               onClick={[Function]}
               onKeyDown={[Function]}
-              placeholder="tag from render prop"
-              style={
-                Object {
-                  "outline": "1px dashed pink",
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    first
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    second
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-10qtdsp=""
+                data-css-8z457z=""
+                id="tagsinput__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                placeholder="tag from render prop"
+                style={
+                  Object {
+                    "outline": "1px dashed pink",
+                  }
                 }
-              }
-              type="text"
-              value=""
-            />
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -292,108 +300,112 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1odja3h=""
+        data-css-11s0ie3=""
         data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
-          data-css-dpj5et=""
+          data-css-r9wiij=""
         >
           <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
+            data-css-dpj5et=""
           >
             <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  first
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
-          >
-            <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  second
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            data-css-n9fe5c=""
-          >
-            <input
-              data-css-10qtdsp=""
-              data-css-8z457z=""
-              disabled={true}
-              id="tagsinput__input-unique-id"
-              onChange={[Function]}
+              data-css-12qnym0=""
               onClick={[Function]}
               onKeyDown={[Function]}
-              type="text"
-              value=""
-            />
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    first
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    second
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-10qtdsp=""
+                data-css-8z457z=""
+                disabled={true}
+                id="tagsinput__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -430,107 +442,111 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
       data-css-8ff2sc=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
-          data-css-dpj5et=""
+          data-css-r9wiij=""
         >
           <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
+            data-css-dpj5et=""
           >
             <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  first
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
-          >
-            <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  second
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            data-css-n9fe5c=""
-          >
-            <input
-              data-css-10qtdsp=""
-              data-css-8z457z=""
-              id="tagsinput__input-unique-id"
-              onChange={[Function]}
+              data-css-12qnym0=""
               onClick={[Function]}
               onKeyDown={[Function]}
-              type="text"
-              value=""
-            />
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    first
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    second
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-10qtdsp=""
+                data-css-8z457z=""
+                id="tagsinput__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
         <div
@@ -586,8 +602,8 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
       data-css-8qmpxt=""
     >
       <div
+        data-css-1ghsi1k=""
         data-css-28vuio=""
-        data-css-4rwjp4=""
         onKeyPress={[Function]}
       >
         <div
@@ -612,102 +628,106 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
           </div>
         </div>
         <div
-          data-css-dpj5et=""
+          data-css-r9wiij=""
         >
           <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
+            data-css-dpj5et=""
           >
             <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  first
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
-          >
-            <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  second
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            data-css-n9fe5c=""
-          >
-            <input
-              data-css-10qtdsp=""
-              data-css-8z457z=""
-              id="tagsinput__input-unique-id"
-              onChange={[Function]}
+              data-css-12qnym0=""
               onClick={[Function]}
               onKeyDown={[Function]}
-              type="text"
-              value=""
-            />
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    first
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    second
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-10qtdsp=""
+                data-css-8z457z=""
+                id="tagsinput__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -744,107 +764,111 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-zhibkn=""
         onKeyPress={[Function]}
       >
         <div
-          data-css-dpj5et=""
+          data-css-r9wiij=""
         >
           <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
+            data-css-dpj5et=""
           >
             <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  first
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
-          >
-            <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  second
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            data-css-n9fe5c=""
-          >
-            <input
-              data-css-10qtdsp=""
-              data-css-8z457z=""
-              id="tagsinput__input-unique-id"
-              onChange={[Function]}
+              data-css-12qnym0=""
               onClick={[Function]}
               onKeyDown={[Function]}
-              type="text"
-              value=""
-            />
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    first
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    second
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-10qtdsp=""
+                data-css-8z457z=""
+                id="tagsinput__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
         <div
@@ -896,108 +920,112 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
-          data-css-dpj5et=""
+          data-css-r9wiij=""
         >
           <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
+            data-css-dpj5et=""
           >
             <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  first
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
-          >
-            <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  second
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            data-css-n9fe5c=""
-          >
-            <input
-              data-css-10qtdsp=""
-              data-css-8z457z=""
-              id="tagsinput__input-unique-id"
-              onChange={[Function]}
+              data-css-12qnym0=""
               onClick={[Function]}
               onKeyDown={[Function]}
-              placeholder="Placeholder..."
-              type="text"
-              value=""
-            />
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    first
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    second
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-10qtdsp=""
+                data-css-8z457z=""
+                id="tagsinput__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                placeholder="Placeholder..."
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -1029,107 +1057,111 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-4rwjp4=""
+        data-css-1ghsi1k=""
         data-css-gz81g2=""
         onKeyPress={[Function]}
       >
         <div
-          data-css-dpj5et=""
+          data-css-r9wiij=""
         >
           <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
+            data-css-dpj5et=""
           >
             <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  first
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            onClick={[Function]}
-            onKeyDown={[Function]}
-            tabIndex={-1}
-          >
-            <div
-              data-css-1djcb20=""
-            >
-              <div
-                aria-pressed={true}
-                data-css-8a12hv=""
-              >
-                <span
-                  data-css-13bnfv4=""
-                >
-                  second
-                </span>
-                <div
-                  data-css-k31qw2=""
-                  onClick={[Function]}
-                  style={
-                    Object {
-                      "cursor": "pointer",
-                    }
-                  }
-                >
-                  <svg
-                    aria-label="close icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-12qnym0=""
-            data-css-n9fe5c=""
-          >
-            <input
-              data-css-10qtdsp=""
-              data-css-8z457z=""
-              id="tagsinput__input-unique-id"
-              onChange={[Function]}
+              data-css-12qnym0=""
               onClick={[Function]}
               onKeyDown={[Function]}
-              type="text"
-              value=""
-            />
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    first
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              onClick={[Function]}
+              onKeyDown={[Function]}
+              tabIndex={-1}
+            >
+              <div
+                data-css-1djcb20=""
+              >
+                <div
+                  aria-pressed={true}
+                  data-css-8a12hv=""
+                >
+                  <span
+                    data-css-13bnfv4=""
+                  >
+                    second
+                  </span>
+                  <div
+                    data-css-k31qw2=""
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="close icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              data-css-12qnym0=""
+              data-css-n9fe5c=""
+            >
+              <input
+                data-css-10qtdsp=""
+                data-css-8z457z=""
+                id="tagsinput__input-unique-id"
+                onChange={[Function]}
+                onClick={[Function]}
+                onKeyDown={[Function]}
+                type="text"
+                value=""
+              />
+            </div>
           </div>
         </div>
       </div>
