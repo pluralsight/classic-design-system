@@ -3,7 +3,8 @@ import {
   colorsBlue,
   colorsTextIcon,
   layout,
-  type
+  type,
+  layers
 } from '@pluralsight/ps-design-system-core'
 
 export default {
@@ -21,7 +22,8 @@ export default {
     maxWidth: '320px',
     minWidth: '160px',
     overflowY: 'auto',
-    padding: `${layout.spacingXXSmall} 0`
+    padding: `${layout.spacingXXSmall} 0`,
+    zIndex: layers.globalDropdown
   },
   '.psds-typeahead__menu__item': {
     alignItems: 'center',
