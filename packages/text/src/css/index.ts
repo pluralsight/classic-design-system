@@ -94,6 +94,9 @@ export default {
     textTransform: 'uppercase',
     letterSpacing: type.letterSpacingAllCaps
   },
+  [`.psds-text__label--mono`]: {
+    fontFamily: type.fontFamilyCode
+  },
   [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },

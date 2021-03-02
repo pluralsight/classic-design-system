@@ -398,6 +398,40 @@ exports[`Storyshots Label color: secondary 1`] = `
 </div>
 `;
 
+exports[`Storyshots Label mono: true 1`] = `
+<div
+  style={
+    Object {
+      "padding": "48px",
+    }
+  }
+>
+  <div>
+    <div>
+      <span
+        data-css-1wfmv5x=""
+      >
+        Monospace font
+      </span>
+    </div>
+    <div>
+      <span
+        data-css-1i41i8b=""
+      >
+        Monospace strong
+      </span>
+    </div>
+    <div>
+      <span
+        data-css-vdksvn=""
+      >
+        Monospace caps
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Label size: large 1`] = `
 <div
   style={
