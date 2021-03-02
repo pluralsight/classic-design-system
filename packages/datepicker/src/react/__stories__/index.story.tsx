@@ -284,10 +284,16 @@ storiesOf('RangeDate', module)
   })
 
 storiesOf('MultiDate', module).add('Calendar', () => {
-  const [selected, setSelected] = React.useState<Date[]>([])
+  const initialDate = new Date(2021, 0, 1)
+  const initialDate2 = new Date(2021, 0, 5)
+  const [selected, setSelected] = React.useState<Date[]>([
+    initialDate,
+    initialDate2
+  ])
   const { getDateProps, ...dayzedData } = useDayzed({
     selected,
-    onDateSelected: onMultiDateSelected({ selected, setSelected })
+    onDateSelected: onMultiDateSelected({ selected, setSelected }),
+    date: initialDate
   })
   return (
     <Calendar {...dayzedData}>
