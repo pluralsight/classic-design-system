@@ -109,6 +109,30 @@ const Example: React.FC = props => {
 export default Example
 ```
 
+### Monospace font
+
+The `mono` prop will render the label in a monospace font.
+
+```typescript
+import { Label } from '@pluralsight/ps-design-system-text'
+import React from 'react'
+
+const Example: React.FC = props => {
+  return (
+    <React.Fragment>
+      <div>
+        <Label mono>Label - mono</Label>
+      </div>
+      <div>
+        <Label mono strong>Label - strong! mono</Label>
+      </div>
+    </React.Fragment>
+  )
+}
+
+export default Example
+```
+
 ## Usage & types
 
 <Usage
@@ -123,7 +147,7 @@ export default Example
     name="size"
     type={<TypesEnum enum={Label.sizes} />}
     desc="Text size (from Label.sizes)"
-    default={Label.sizes.normal}
+    default={Label.sizes.medium}
   />
   <TypesProp
     name="color"
@@ -141,6 +165,12 @@ export default Example
     name="caps"
     type="boolean"
     desc="Uppercase text style"
+    default="false"
+  />
+  <TypesProp
+    name="mono"
+    type="boolean"
+    desc="Use monospace font"
     default="false"
   />
 </TypesTable>
