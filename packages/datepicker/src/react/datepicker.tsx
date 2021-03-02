@@ -1,12 +1,18 @@
-import React from 'react'
+import Field from '@pluralsight/ps-design-system-field'
+import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
+import {
+  ValueOf,
+  HTMLPropsFor,
+  useUniqueId
+} from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
-import { useDateSelectChange } from './utils'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { slides } from '../vars'
+import React, { ComponentProps } from 'react'
+
 import { Calendar } from './calendar'
 import { CalendarDates } from './calendar-dates'
-import TextInput from '@pluralsight/ps-design-system-textinput'
-import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
+import { TextInputField } from './text-input-field'
+import { useDateSelectChange } from './utils'
+import { slides } from '../vars'
 
 interface DatePickerProps extends Omit<HTMLPropsFor<'div'>, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
@@ -39,16 +45,11 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   })
   return (
     <div style={{ display: 'inline-block', position: 'relative' }} {...props}>
-      <TextInput
+      <TextInputField
         onChange={onChange}
         value={value}
         placeholder="mm/dd/yyyy"
-        icon={
-          <CalendarIcon
-            onClick={handleIconClick}
-            style={{ cursor: 'pointer' }}
-          />
-        }
+        onClick={handleIconClick}
       />
       <br />
       {open && (
