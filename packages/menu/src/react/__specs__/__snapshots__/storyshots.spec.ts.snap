@@ -6,15 +6,17 @@ exports[`Storyshots customized styles item style 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
       style={
         Object {
           "outline": "1px solid red",
@@ -29,15 +31,17 @@ exports[`Storyshots customized styles item style 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
       style={
         Object {
           "outline": "1px solid blue",
@@ -52,15 +56,17 @@ exports[`Storyshots customized styles item style 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
       style={
         Object {
           "outline": "1px solid green",
@@ -83,15 +89,17 @@ exports[`Storyshots disabled item 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -101,16 +109,18 @@ exports[`Storyshots disabled item 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-1gzxx54=""
     data-disabled={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
   >
     <button
       data-css-1bp56bi=""
       disabled={true}
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -120,15 +130,17 @@ exports[`Storyshots disabled item 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -138,16 +150,18 @@ exports[`Storyshots disabled item 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-1gzxx54=""
     data-disabled={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
   >
     <button
       data-css-1bp56bi=""
       disabled={true}
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -165,16 +179,18 @@ exports[`Storyshots disabled links 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
       data-css-1bp56bi=""
       href="https://duck.com"
-      role="menuitem"
       target="_blank"
     >
       <div
@@ -185,17 +201,19 @@ exports[`Storyshots disabled links 1`] = `
     </a>
   </li>
   <li
+    aria-selected={false}
     data-css-1gzxx54=""
     data-disabled={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
   >
     <a
       data-css-1bp56bi=""
       disabled={true}
       href="https://duck.com"
-      role="menuitem"
       target="_blank"
     >
       <div
@@ -206,16 +224,18 @@ exports[`Storyshots disabled links 1`] = `
     </a>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
       data-css-1bp56bi=""
       href="https://duck.com"
-      role="menuitem"
       target="_blank"
     >
       <div
@@ -226,17 +246,19 @@ exports[`Storyshots disabled links 1`] = `
     </a>
   </li>
   <li
+    aria-selected={false}
     data-css-1gzxx54=""
     data-disabled={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
   >
     <a
       data-css-1bp56bi=""
       disabled={true}
       href="https://duck.com"
-      role="menuitem"
       target="_blank"
     >
       <div
@@ -255,16 +277,18 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-1gzxx54=""
     data-disabled={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
   >
     <button
       data-css-1bp56bi=""
       disabled={true}
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -274,16 +298,18 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-1gzxx54=""
     data-disabled={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
   >
     <button
       data-css-1bp56bi=""
       disabled={true}
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -301,16 +327,18 @@ exports[`Storyshots disabled single, disabled 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-1gzxx54=""
     data-disabled={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
   >
     <button
       data-css-1bp56bi=""
       disabled={true}
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -328,15 +356,17 @@ exports[`Storyshots dividers edge 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -357,15 +387,17 @@ exports[`Storyshots dividers sandwich 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -378,15 +410,17 @@ exports[`Storyshots dividers sandwich 1`] = `
     data-css-shsjok=""
   />
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -396,15 +430,17 @@ exports[`Storyshots dividers sandwich 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -422,16 +458,18 @@ exports[`Storyshots link a w/ href 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
       data-css-1bp56bi=""
       href="https://duckduckgo.com"
-      role="menuitem"
       target="_blank"
     >
       <div
@@ -450,17 +488,17 @@ exports[`Storyshots menu items active & selected item 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      useActive={[Function]}
     >
       <div
         data-css-fxdh11=""
@@ -470,18 +508,17 @@ exports[`Storyshots menu items active & selected item 1`] = `
     </button>
   </li>
   <li
-    data-css-xc6vje=""
+    aria-selected={true}
+    data-css-1813eq8=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
-      active={true}
       data-css-1bp56bi=""
-      useActive={[Function]}
     >
       <div
         data-css-fxdh11=""
@@ -509,19 +546,18 @@ exports[`Storyshots menu items active & selected item 1`] = `
     </button>
   </li>
   <li
-    data-css-1gzxx54=""
+    aria-selected={false}
+    data-css-h4obbt=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
   >
     <button
-      active={true}
       data-css-1bp56bi=""
       disabled={true}
-      useActive={[Function]}
     >
       <div
         data-css-fxdh11=""
@@ -539,15 +575,17 @@ exports[`Storyshots menu items active item 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -557,16 +595,17 @@ exports[`Storyshots menu items active item 1`] = `
     </button>
   </li>
   <li
-    data-css-xc6vje=""
+    aria-selected={true}
+    data-css-1813eq8=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
-      active={true}
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -576,17 +615,18 @@ exports[`Storyshots menu items active item 1`] = `
     </button>
   </li>
   <li
-    data-css-1gzxx54=""
+    aria-selected={false}
+    data-css-h4obbt=""
     data-disabled={true}
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
   >
     <button
-      active={true}
       data-css-1bp56bi=""
       disabled={true}
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -604,15 +644,17 @@ exports[`Storyshots menu items ellipsis 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -634,15 +676,17 @@ exports[`Storyshots menu items long text 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -656,15 +700,17 @@ exports[`Storyshots menu items long text 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -686,15 +732,17 @@ exports[`Storyshots menu items lots 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -705,15 +753,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -724,15 +774,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -743,15 +795,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -762,15 +816,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -781,15 +837,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -800,15 +858,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -819,15 +879,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -838,15 +900,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -857,15 +921,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -876,15 +942,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -895,15 +963,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -914,15 +984,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -933,15 +1005,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -952,15 +1026,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -971,15 +1047,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -990,15 +1068,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1009,15 +1089,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1028,15 +1110,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1047,15 +1131,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1066,15 +1152,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1085,15 +1173,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1104,15 +1194,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1123,15 +1215,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1142,15 +1236,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1161,15 +1257,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1180,15 +1278,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1199,15 +1299,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1218,15 +1320,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1237,15 +1341,17 @@ exports[`Storyshots menu items lots 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1264,15 +1370,17 @@ exports[`Storyshots menu items multiple 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1282,15 +1390,17 @@ exports[`Storyshots menu items multiple 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1300,15 +1410,17 @@ exports[`Storyshots menu items multiple 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1326,15 +1438,17 @@ exports[`Storyshots menu items null item 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1344,15 +1458,17 @@ exports[`Storyshots menu items null item 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1370,15 +1486,17 @@ exports[`Storyshots menu items one 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1396,15 +1514,17 @@ exports[`Storyshots onClick flat 1`] = `
   role="menu"
 >
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1414,15 +1534,17 @@ exports[`Storyshots onClick flat 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1432,15 +1554,17 @@ exports[`Storyshots onClick flat 1`] = `
     </button>
   </li>
   <li
+    aria-selected={false}
     data-css-xc6vje=""
+    onBlur={[Function]}
     onClick={[Function]}
+    onFocus={[Function]}
     onKeyDown={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <button
       data-css-1bp56bi=""
-      role="menuitem"
     >
       <div
         data-css-fxdh11=""
@@ -1453,13 +1577,7 @@ exports[`Storyshots onClick flat 1`] = `
 `;
 
 exports[`Storyshots with Position BelowLeft 1`] = `
-<div
-  style={
-    Object {
-      "margin": "16px",
-    }
-  }
->
+Array [
   <div
     style={
       Object {
@@ -1470,7 +1588,7 @@ exports[`Storyshots with Position BelowLeft 1`] = `
     }
   >
     anchor
-  </div>
+  </div>,
   <div
     style={
       Object {
@@ -1490,15 +1608,17 @@ exports[`Storyshots with Position BelowLeft 1`] = `
         role="menu"
       >
         <li
+          aria-selected={false}
           data-css-xc6vje=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onKeyDown={[Function]}
-          role="none"
+          role="menuitem"
           tabIndex={-1}
         >
           <button
             data-css-1bp56bi=""
-            role="menuitem"
           >
             <div
               data-css-fxdh11=""
@@ -1508,15 +1628,17 @@ exports[`Storyshots with Position BelowLeft 1`] = `
           </button>
         </li>
         <li
+          aria-selected={false}
           data-css-xc6vje=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onKeyDown={[Function]}
-          role="none"
+          role="menuitem"
           tabIndex={-1}
         >
           <button
             data-css-1bp56bi=""
-            role="menuitem"
           >
             <div
               data-css-fxdh11=""
@@ -1526,15 +1648,17 @@ exports[`Storyshots with Position BelowLeft 1`] = `
           </button>
         </li>
         <li
+          aria-selected={false}
           data-css-xc6vje=""
+          onBlur={[Function]}
           onClick={[Function]}
+          onFocus={[Function]}
           onKeyDown={[Function]}
-          role="none"
+          role="menuitem"
           tabIndex={-1}
         >
           <button
             data-css-1bp56bi=""
-            role="menuitem"
           >
             <div
               data-css-fxdh11=""
@@ -1545,19 +1669,12 @@ exports[`Storyshots with Position BelowLeft 1`] = `
         </li>
       </ul>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Storyshots with Position BelowRight 1`] = `
-<div
-  style={
-    Object {
-      "float": "right",
-      "margin": "16px",
-    }
-  }
->
+Array [
   <div
     style={
       Object {
@@ -1568,7 +1685,7 @@ exports[`Storyshots with Position BelowRight 1`] = `
     }
   >
     anchor
-  </div>
+  </div>,
   <div
     style={
       Object {
@@ -1586,15 +1703,17 @@ exports[`Storyshots with Position BelowRight 1`] = `
       }
     >
       <li
+        aria-selected={false}
         data-css-xc6vje=""
+        onBlur={[Function]}
         onClick={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <button
           data-css-1bp56bi=""
-          role="menuitem"
         >
           <div
             data-css-fxdh11=""
@@ -1604,15 +1723,17 @@ exports[`Storyshots with Position BelowRight 1`] = `
         </button>
       </li>
       <li
+        aria-selected={false}
         data-css-xc6vje=""
+        onBlur={[Function]}
         onClick={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <button
           data-css-1bp56bi=""
-          role="menuitem"
         >
           <div
             data-css-fxdh11=""
@@ -1622,15 +1743,17 @@ exports[`Storyshots with Position BelowRight 1`] = `
         </button>
       </li>
       <li
+        aria-selected={false}
         data-css-xc6vje=""
+        onBlur={[Function]}
         onClick={[Function]}
+        onFocus={[Function]}
         onKeyDown={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <button
           data-css-1bp56bi=""
-          role="menuitem"
         >
           <div
             data-css-fxdh11=""
@@ -1640,6 +1763,6 @@ exports[`Storyshots with Position BelowRight 1`] = `
         </button>
       </li>
     </ul>
-  </div>
-</div>
+  </div>,
+]
 `;

@@ -3,7 +3,7 @@ import React, { ReactText, forwardRef, useContext, useRef } from 'react'
 import { css, compose } from 'glamor'
 
 import stylesheet from '../css'
-import { MenuContext, ItemContext } from './context'
+import { MenuContext, ItemContext, SelectedItem } from './context'
 
 const styles = {
   listItem: (isActive: boolean, disabled: boolean) =>
@@ -19,9 +19,9 @@ const styles = {
 interface MenuItemProps {
   active?: boolean
   disabled?: boolean
-  onClick?: (evt: React.MouseEvent, value: ReactText) => void
+  onClick?: (evt: React.MouseEvent, selectedItem: SelectedItem) => void
   isSelected?: boolean
-  value?: ReactText
+  value?: SelectedItem
   onItemBlur?: React.FocusEventHandler
   onItemFocus?: React.FocusEventHandler
   as?: string
@@ -31,15 +31,21 @@ interface MenuItemProps {
 export const Item = forwardRef((props, ref) => {
   const {
     as: Comp = 'button',
+    active,
     disabled,
     onClick,
-    value = '',
+    value = {
+      value: '',
+      option: ''
+    },
     children,
     onKeyDown,
     role,
     ...rest
   } = props
-  const { onMenuClick, selectedItem, option } = useContext(MenuContext)
+  const { onMenuClick, selectedItem, optionRole, useActive } = useContext(
+    MenuContext
+  )
   const handleClick = (evt: React.MouseEvent | React.KeyboardEvent) => {
     onMenuClick && onMenuClick(evt as React.MouseEvent, value)
     onClick && onClick(evt as React.MouseEvent, value)
@@ -48,32 +54,25 @@ export const Item = forwardRef((props, ref) => {
     evt.key === 'Enter' && handleClick(evt)
     onKeyDown && onKeyDown(evt)
   }
-  const valueExists = typeof value !== 'undefined'
-  const selected = valueExists && selectedItem?.value === value
+  const selected = selectedItem?.value === value.value
   const listItem = useRef<HTMLLIElement | undefined>()
-  let active
-  let handleActiveState
-  if (option?.useActive) {
-    ;({ active, handleActiveState } = option.useActive(listItem))
-  }
-  console.log
+  const { active: hookActive, handleActiveState } = useActive(listItem)
   return (
     <li
-      {...styles.listItem(active || false, disabled || false)}
+      {...styles.listItem(active || hookActive, disabled || false)}
       data-disabled={disabled}
-      role="none"
       tabIndex={!disabled ? -1 : undefined}
       onKeyDown={handleKeyDown}
       onClick={handleClick}
       ref={listItem as RefFor<'li'>}
       onBlur={handleActiveState}
       onFocus={handleActiveState}
+      role={role || optionRole}
+      aria-selected={selected}
     >
       <Comp
         {...styles.option()}
         disabled={disabled}
-        {...option}
-        role={role || option?.role}
         ref={ref as RefFor<typeof Comp>}
         {...rest}
       >

@@ -89,7 +89,7 @@ storiesOf('menu items', module)
     return (
       <Menu selectedItem={selectedItem} ref={ref as RefFor<'ul'>}>
         <Menu.Item>Not active</Menu.Item>
-        <Menu.Item active value="active">
+        <Menu.Item active value={{ value: 'active', option: 'active' }}>
           Active
         </Menu.Item>
         <Menu.Item active disabled>
@@ -100,9 +100,6 @@ storiesOf('menu items', module)
   })
   .add('active & selected item', () => {
     const ref = useRef<HTMLUListElement>()
-    const option = {
-      useActive
-    }
     const selectedItem = {
       option: 'Active',
       value: 'active'
@@ -116,11 +113,11 @@ storiesOf('menu items', module)
     return (
       <Menu
         selectedItem={selectedItem}
-        option={option}
+        useActive={useActive}
         ref={ref as RefFor<'ul'>}
       >
         <Menu.Item>Not active</Menu.Item>
-        <Menu.Item active value="active">
+        <Menu.Item active value={{ value: 'active', option: 'active' }}>
           Selected
           <Menu.Check style={{ marginLeft: 'auto' }} />
         </Menu.Item>
@@ -153,9 +150,11 @@ const handleClick = (_e: unknown, value: unknown) => {
 
 storiesOf('onClick', module).add('flat', () => (
   <Menu onClick={handleClick}>
-    <Menu.Item value="one">One item</Menu.Item>
-    <Menu.Item value="two">Two item</Menu.Item>
-    <Menu.Item value="three">Three item</Menu.Item>
+    <Menu.Item value={{ option: 'one', value: 'one' }}>One item</Menu.Item>
+    <Menu.Item value={{ option: 'two', value: 'two' }}>Two item</Menu.Item>
+    <Menu.Item value={{ option: 'three', value: 'three' }}>
+      Three item
+    </Menu.Item>
   </Menu>
 ))
 
@@ -214,52 +213,48 @@ storiesOf('disabled', module)
 
 storiesOf('with Position', module)
   .add('BelowLeft', () => (
-    <div style={{ margin: core.layout.spacingMedium }}>
-      <BelowLeft
-        when
-        show={
-          <div>
-            <Menu>
-              <Menu.Item>One item</Menu.Item>
-              <Menu.Item>Two item</Menu.Item>
-              <Menu.Item>Three item</Menu.Item>
-            </Menu>
-          </div>
-        }
-      >
-        <div
-          style={{
-            background: 'pink',
-            display: 'inline-block',
-            padding: core.layout.spacingXXSmall
-          }}
-        >
-          anchor
-        </div>
-      </BelowLeft>
-    </div>
-  ))
-  .add('BelowRight', () => (
-    <div style={{ margin: core.layout.spacingMedium, float: 'right' }}>
-      <BelowRight
-        when
-        show={
+    <BelowLeft
+      when
+      show={
+        <div>
           <Menu>
             <Menu.Item>One item</Menu.Item>
             <Menu.Item>Two item</Menu.Item>
             <Menu.Item>Three item</Menu.Item>
           </Menu>
-        }
-      >
-        <div
-          style={{
-            background: 'pink',
-            display: 'inline-block',
-            padding: core.layout.spacingXXSmall
-          }}
-        >
-          anchor
         </div>
-      </BelowRight>
-    </div>
+      }
+    >
+      <div
+        style={{
+          background: 'pink',
+          display: 'inline-block',
+          padding: core.layout.spacingXXSmall
+        }}
+      >
+        anchor
+      </div>
+    </BelowLeft>
+  ))
+  .add('BelowRight', () => (
+    <BelowRight
+      when
+      show={
+        <Menu>
+          <Menu.Item>One item</Menu.Item>
+          <Menu.Item>Two item</Menu.Item>
+          <Menu.Item>Three item</Menu.Item>
+        </Menu>
+      }
+    >
+      <div
+        style={{
+          background: 'pink',
+          display: 'inline-block',
+          padding: core.layout.spacingXXSmall
+        }}
+      >
+        anchor
+      </div>
+    </BelowRight>
   ))

@@ -22,20 +22,28 @@ describe('Menu', () => {
 
     render(
       <Menu onClick={handleClick}>
-        <Menu.Item value="one">One item</Menu.Item>
+        <Menu.Item value={{ value: 'one', option: 'One item' }}>
+          One item
+        </Menu.Item>
 
-        <Menu.Item value="two" data-testid="undertest">
+        <Menu.Item
+          value={{ value: 'two', option: 'Two item' }}
+          data-testid="undertest"
+        >
           Two item
         </Menu.Item>
 
-        <Menu.Item value="three">Three item</Menu.Item>
+        <Menu.Item value={{ value: 'three', option: 'Three item' }}></Menu.Item>
       </Menu>
     )
 
     const opt = screen.getByTestId('undertest')
     fireEvent.click(opt)
 
-    expect(handleClick).toHaveBeenCalledWith(expect.anything(), 'two')
+    expect(handleClick).toHaveBeenCalledWith(expect.anything(), {
+      value: 'two',
+      option: 'Two item'
+    })
   })
 
   it('fires onClick on option keyDown', () => {
@@ -43,20 +51,30 @@ describe('Menu', () => {
 
     render(
       <Menu onClick={handleClick}>
-        <Menu.Item value="one">One item</Menu.Item>
+        <Menu.Item value={{ value: 'one', option: 'One item' }}>
+          One item
+        </Menu.Item>
 
-        <Menu.Item value="two" data-testid="undertest">
+        <Menu.Item
+          value={{ value: 'one', option: 'Two item' }}
+          data-testid="undertest"
+        >
           Two item
         </Menu.Item>
 
-        <Menu.Item value="three">Three item</Menu.Item>
+        <Menu.Item value={{ value: 'one', option: 'Three item' }}>
+          Three item
+        </Menu.Item>
       </Menu>
     )
 
     const opt = screen.getByTestId('undertest')
     fireEvent.keyDown(opt, { key: 'Enter', code: 13 })
 
-    expect(handleClick).toHaveBeenCalledWith(expect.anything(), 'two')
+    expect(handleClick).toHaveBeenCalledWith(expect.anything(), {
+      option: 'Two item',
+      value: 'one'
+    })
   })
 
   describe('Menu.Item', () => {
@@ -85,6 +103,7 @@ describe('Menu', () => {
         </Menu>
       )
       const el = screen.getByRole('menuitem')
+        .firstElementChild as HTMLAnchorElement
 
       expect(el.tagName.toLowerCase()).toEqual('a')
       expect(ref.current).not.toBeNull()
@@ -101,6 +120,7 @@ describe('Menu', () => {
         </Menu>
       )
       const el = screen.getByRole('menuitem')
+        .firstElementChild as HTMLButtonElement
 
       expect(el.getAttribute('disabled')).toEqual('')
       expect(ref.current).not.toBeNull()
@@ -116,6 +136,7 @@ describe('Menu', () => {
         </Menu>
       )
       const el = screen.getByRole('menuitem')
+        .firstElementChild as HTMLAnchorElement
 
       expect(el.getAttribute('disabled')).toEqual('')
       expect(ref.current).not.toBeNull()
@@ -131,6 +152,7 @@ describe('Menu', () => {
         </Menu>
       )
       const el = screen.getByRole('menuitem')
+        .firstElementChild as HTMLAnchorElement
 
       expect(el.tagName.toLowerCase()).toEqual('a')
       expect(ref.current).not.toBeNull()

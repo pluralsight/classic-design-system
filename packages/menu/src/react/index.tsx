@@ -10,7 +10,7 @@ import {
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
 
-import { MenuContext } from './context'
+import { MenuContext, SelectedItem, defaultUseActive } from './context'
 import { Check } from './check'
 import { Divider } from './divider'
 import { Ellipsis } from './ellipsis'
@@ -34,16 +34,20 @@ interface MenuStatics {
   tagName: typeof vars.tagName
   useMenuRef: typeof useMenuRef
 }
+
 interface MenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
   selectedItem?: {
     option: string
     value: number | string
   }
-  option?: {
-    role?: string
-    [x: string]: unknown
+  optionRole?: string
+  useActive?: (
+    ref: React.MutableRefObject<HTMLLIElement | undefined>
+  ) => {
+    active: boolean
+    handleActiveState: (event: React.FocusEvent<Element>) => void
   }
-  onClick?: (evt: MouseEvent, value?: ReactText) => void
+  onClick?: (evt: MouseEvent, selectedItem: SelectedItem) => void
   origin?: ValueOf<typeof vars.origins>
 }
 type MenuComponent = RefForwardingComponent<
@@ -59,7 +63,8 @@ const Menu = React.forwardRef<HTMLUListElement, MenuProps>(
       onClick,
       children,
       role = 'menu',
-      option = { role: 'menuitem' },
+      optionRole = 'menuitem',
+      useActive = defaultUseActive,
       ...rest
     },
     ref
@@ -67,7 +72,12 @@ const Menu = React.forwardRef<HTMLUListElement, MenuProps>(
     return (
       <ul {...styles({ origin })} ref={ref} {...rest} role={role}>
         <MenuContext.Provider
-          value={{ onMenuClick: onClick, selectedItem, option }}
+          value={{
+            onMenuClick: onClick,
+            selectedItem,
+            optionRole,
+            useActive
+          }}
         >
           {children}
         </MenuContext.Provider>
