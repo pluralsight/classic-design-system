@@ -1,0 +1,200 @@
+---
+name: Menu
+route: /components/menu
+---
+
+import Menu from '@pluralsight/ps-design-system-menu'
+
+# Action Menu
+
+<Intro>Stateless Menu component</Intro>
+
+<TableOfContents {...props} />
+
+## Examples
+
+### Ellipsis
+
+Use `Menu.Ellipsis` to add ellipsis to action menu items.
+
+```typescript
+import React from 'react'
+import Menu from '@pluralsight/ps-design-system-menu'
+function Example() {
+  return (
+    <Menu>
+      <Menu.Item>
+        <Menu.Ellipsis>
+          One item that has text that goes on forever and onward into the
+          universes yet to be
+        </Menu.Ellipsis>
+      </Menu.Item>
+      <Menu.Item>
+        <Menu.Ellipsis>
+          Another item that takes a long time to explain in the context of
+          everything that is in a line.
+        </Menu.Ellipsis>
+      </Menu.Item>
+    </Menu>
+  )
+}
+export default Example
+```
+
+### Dividers
+
+Dividers can be useful to separate similar actions. Dividers are applied
+at the list level, below the assigned list item.
+
+```typescript
+import React from 'react'
+import Menu from '@pluralsight/ps-design-system-menu'
+function Example() {
+  return (
+    <Menu>
+      <Menu.Item>One item</Menu.Item>
+      <Menu.Divider />
+      <Menu.Item>Two item</Menu.Item>
+      <Menu.Item>Three item</Menu.Item>
+      <Menu.Divider />
+      <Menu.Item>Four item</Menu.Item>
+    </Menu>
+  )
+}
+export default Example
+```
+
+### Disabled Items
+
+To keep items in the menu but make them disabled, mark with a `disabled` prop.
+
+```typescript
+import React from 'react'
+import Menu from '@pluralsight/ps-design-system-menu'
+function Example() {
+  return (
+    <Menu>
+      <Menu.Item>Normal, enabled</Menu.Item>
+      <Menu.Item disabled>Present, but disabled</Menu.Item>
+      <Menu.Item>Normal, enabled</Menu.Item>
+    </Menu>
+  )
+}
+export default Example
+```
+
+### Origin
+
+The optional origin prop determines the starting position and direction of menu animation when mounting.
+
+```typescript
+import React from 'react'
+import Menu from '@pluralsight/ps-design-system-menu'
+function Example() {
+  return (
+    <div
+      style={{
+        height: 300,
+        width: 300,
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end',
+        alignItems: 'flex-start'
+      }}
+    >
+      <Menu origin={Menu.origins.bottomLeft}>
+        <Menu.Item>
+          One
+        </Menu.Item>
+        <Menu.Item>Two</Menu.Item>
+      </Menu>
+    </div>
+  )
+}
+export default Example
+```
+
+## Usage & Types
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-menu"
+  import="import Menu from '@pluralsight/ps-design-system-menu'"
+  packageName="menu"
+  version={props.version}
+/>
+
+### Menu
+
+<TypesTable>
+  <TypesProp
+    name="onClick"
+    type="(Event, value) => void"
+    desc="triggered when an item selected via click, enter or space"
+  />
+  <TypesProp
+    name="origin"
+    type={<TypesEnum enum={Menu.origins} />}
+    desc="orientation Menu.origins of nested menus"
+    default="topLeft"
+  />
+   <TypesProp
+    name="role"
+    type="string"
+    desc="Useful when you want to change accessibility props to, listbox, for example"
+    default="menu"
+  />
+</TypesTable>
+
+### Menu.Item
+
+<TypesTable>
+  <TypesProp
+    name="active"
+    type="boolean"
+    desc="Toggles active feedback styles"
+    default={false}
+  />
+  <TypesProp
+    name="as"
+    type="string"
+    desc="Menu item default tag"
+    default="button"
+  />
+  <TypesProp
+    name="disabled"
+    type="boolean"
+    desc="visually disabled, non-interactive"
+  />
+  <TypesProp
+    name="onClick"
+    type="(Event, value) => void"
+    desc="override default onClick behavior passed to Menu.props.onClick"
+  />
+  <TypesProp
+    name="onKeyDown"
+    type="React.KeyboardEventHandler"
+    desc="Useful for when you want custom behavior such as e.stopPropagation() to prevent bubbling "
+  />
+  <TypesProp
+    name="onItemBlur"
+    type="React.FocusEventHandler"
+    desc="Called when the ListItem is blurred"
+  />
+  <TypesProp
+    name="onItemFocus"
+    type="React.FocusEventHandler"
+    desc="Called when the ListItem is focused"
+  />
+  <TypesProp
+    name="role"
+    type="string"
+    desc="Useful when you want to change accessibility props to option for example"
+    default="menuitem"
+  />
+  <TypesProp
+    name="value"
+    type="string | number"
+    desc="value sent to Menu#onClick"
+    default="''"
+  />
+</TypesTable>

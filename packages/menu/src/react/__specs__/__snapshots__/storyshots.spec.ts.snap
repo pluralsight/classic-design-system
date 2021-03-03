@@ -1,0 +1,1645 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots customized styles item style 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+      style={
+        Object {
+          "outline": "1px solid red",
+        }
+      }
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        One item
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+      style={
+        Object {
+          "outline": "1px solid blue",
+        }
+      }
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Two item
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+      style={
+        Object {
+          "outline": "1px solid green",
+        }
+      }
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Three item
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots disabled item 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Enabled
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-1gzxx54=""
+    data-disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+  >
+    <button
+      data-css-1bp56bi=""
+      disabled={true}
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Disabled
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Enabled
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-1gzxx54=""
+    data-disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+  >
+    <button
+      data-css-1bp56bi=""
+      disabled={true}
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Disabled
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots disabled links 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <a
+      data-css-1bp56bi=""
+      href="https://duck.com"
+      role="menuitem"
+      target="_blank"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Enabled
+      </div>
+    </a>
+  </li>
+  <li
+    data-css-1gzxx54=""
+    data-disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+  >
+    <a
+      data-css-1bp56bi=""
+      disabled={true}
+      href="https://duck.com"
+      role="menuitem"
+      target="_blank"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Disabled
+      </div>
+    </a>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <a
+      data-css-1bp56bi=""
+      href="https://duck.com"
+      role="menuitem"
+      target="_blank"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Enabled
+      </div>
+    </a>
+  </li>
+  <li
+    data-css-1gzxx54=""
+    data-disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+  >
+    <a
+      data-css-1bp56bi=""
+      disabled={true}
+      href="https://duck.com"
+      role="menuitem"
+      target="_blank"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Disabled
+      </div>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots disabled multiple, all disabled 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-1gzxx54=""
+    data-disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+  >
+    <button
+      data-css-1bp56bi=""
+      disabled={true}
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Mult 1, disabled
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-1gzxx54=""
+    data-disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+  >
+    <button
+      data-css-1bp56bi=""
+      disabled={true}
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Mult 2, disabled
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots disabled single, disabled 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-1gzxx54=""
+    data-disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+  >
+    <button
+      data-css-1bp56bi=""
+      disabled={true}
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Single, disabled
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots dividers edge 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        One item
+      </div>
+    </button>
+  </li>
+  <div
+    data-css-shsjok=""
+  />
+</ul>
+`;
+
+exports[`Storyshots dividers sandwich 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        One item
+      </div>
+    </button>
+  </li>
+  <div
+    data-css-shsjok=""
+  />
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Two item
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Three item
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots link a w/ href 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <a
+      data-css-1bp56bi=""
+      href="https://duckduckgo.com"
+      role="menuitem"
+      target="_blank"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Links to web
+      </div>
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots menu items active & selected item 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      useActive={[Function]}
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Not active
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      active={true}
+      data-css-1bp56bi=""
+      useActive={[Function]}
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Selected
+        <div
+          data-css-7dab2f=""
+          style={
+            Object {
+              "marginLeft": "auto",
+            }
+          }
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-1gzxx54=""
+    data-disabled={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+  >
+    <button
+      active={true}
+      data-css-1bp56bi=""
+      disabled={true}
+      useActive={[Function]}
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Active disabled
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots menu items active item 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Not active
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      active={true}
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Active
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-1gzxx54=""
+    data-disabled={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+  >
+    <button
+      active={true}
+      data-css-1bp56bi=""
+      disabled={true}
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Active disabled
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots menu items ellipsis 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        <span
+          data-css-kfg7gj=""
+        >
+          One item that has text that goes on forever and onward into the universes yet to be
+        </span>
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots menu items long text 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        <span
+          data-css-kfg7gj=""
+        >
+          One item that has text that goes on forever and onward into the universes yet to be
+        </span>
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        <span
+          data-css-kfg7gj=""
+        >
+          Another item that takes a long time to explain in the context of everything that is in a line.
+        </span>
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots menu items lots 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        0
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        1
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        2
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        3
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        4
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        5
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        6
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        7
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        8
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        9
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        10
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        11
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        12
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        13
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        14
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        15
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        16
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        17
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        18
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        19
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        20
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        21
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        22
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        23
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        24
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        25
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        26
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        27
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        28
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        index: 
+        29
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots menu items multiple 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        One item
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Two item
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Three item
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots menu items null item 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        One item
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Skip to three item
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots menu items one 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        One item
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots onClick flat 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        One item
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Two item
+      </div>
+    </button>
+  </li>
+  <li
+    data-css-xc6vje=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="none"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+      role="menuitem"
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Three item
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots with Position BelowLeft 1`] = `
+<div
+  style={
+    Object {
+      "margin": "16px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "background": "pink",
+        "display": "inline-block",
+        "padding": "4px",
+      }
+    }
+  >
+    anchor
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      <ul
+        data-css-rls1dj=""
+        role="menu"
+      >
+        <li
+          data-css-xc6vje=""
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="none"
+          tabIndex={-1}
+        >
+          <button
+            data-css-1bp56bi=""
+            role="menuitem"
+          >
+            <div
+              data-css-fxdh11=""
+            >
+              One item
+            </div>
+          </button>
+        </li>
+        <li
+          data-css-xc6vje=""
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="none"
+          tabIndex={-1}
+        >
+          <button
+            data-css-1bp56bi=""
+            role="menuitem"
+          >
+            <div
+              data-css-fxdh11=""
+            >
+              Two item
+            </div>
+          </button>
+        </li>
+        <li
+          data-css-xc6vje=""
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="none"
+          tabIndex={-1}
+        >
+          <button
+            data-css-1bp56bi=""
+            role="menuitem"
+          >
+            <div
+              data-css-fxdh11=""
+            >
+              Three item
+            </div>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots with Position BelowRight 1`] = `
+<div
+  style={
+    Object {
+      "float": "right",
+      "margin": "16px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "background": "pink",
+        "display": "inline-block",
+        "padding": "4px",
+      }
+    }
+  >
+    anchor
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  >
+    <ul
+      data-css-rls1dj=""
+      role="menu"
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      <li
+        data-css-xc6vje=""
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="none"
+        tabIndex={-1}
+      >
+        <button
+          data-css-1bp56bi=""
+          role="menuitem"
+        >
+          <div
+            data-css-fxdh11=""
+          >
+            One item
+          </div>
+        </button>
+      </li>
+      <li
+        data-css-xc6vje=""
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="none"
+        tabIndex={-1}
+      >
+        <button
+          data-css-1bp56bi=""
+          role="menuitem"
+        >
+          <div
+            data-css-fxdh11=""
+          >
+            Two item
+          </div>
+        </button>
+      </li>
+      <li
+        data-css-xc6vje=""
+        onClick={[Function]}
+        onKeyDown={[Function]}
+        role="none"
+        tabIndex={-1}
+      >
+        <button
+          data-css-1bp56bi=""
+          role="menuitem"
+        >
+          <div
+            data-css-fxdh11=""
+          >
+            Three item
+          </div>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
