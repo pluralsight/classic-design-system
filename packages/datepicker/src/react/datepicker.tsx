@@ -1,12 +1,9 @@
-import { sizes } from '@pluralsight/ps-design-system-field'
+import Field from '@pluralsight/ps-design-system-field'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
-import {
-  ValueOf,
-  HTMLPropsFor,
-  useUniqueId
-} from '@pluralsight/ps-design-system-util'
+import { ValueOf, useUniqueId } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
 import React, {
+  FC,
   RefAttributes,
   ForwardRefExoticComponent,
   ReactNode,
@@ -19,18 +16,9 @@ import { TextInputField } from './text-input-field'
 import { useDateSelectChange } from './utils'
 import { slides } from '../vars'
 
-// TODO: extend FieldProps?
-interface DatePickerProps extends Omit<HTMLPropsFor<'div'>, 'onSelect'> {
-  disabled?: boolean
-  error?: boolean
-  label?: ReactNode
+interface DatePickerProps
+  extends Omit<ComponentProps<typeof Field>, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
-  prefix?: ReactNode
-  renderContainer?: ForwardRefExoticComponent<RefAttributes<any>>
-  renderTag?: FC
-  size?: ValueOf<typeof sizes>
-  subLabel?: ReactNode
-  suffix?: ReactNode
 }
 
 export const DatePicker: FC<DatePickerProps> = ({
