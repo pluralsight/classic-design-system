@@ -21,6 +21,8 @@ export const TextInputField: FC<TextInputFieldProps> = props => {
     value,
     ...rest
   } = props
+  const labelId = useUniqueId('text-input__label-')
+  const inputId = useUniqueId('text-input__input-')
 
   if (!prefix) {
     prefix = <CalendarIcon onClick={onClick} style={{ cursor: 'pointer' }} />
@@ -35,9 +37,6 @@ export const TextInputField: FC<TextInputFieldProps> = props => {
   if (typeof subLabel === 'string') {
     subLabel = <Field.SubLabel>{subLabel}</Field.SubLabel>
   }
-
-  const labelId = useUniqueId('text-input__label-')
-  const inputId = useUniqueId('text-input__input-')
 
   return (
     <Field

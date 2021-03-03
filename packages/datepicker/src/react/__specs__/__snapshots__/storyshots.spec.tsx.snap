@@ -3017,60 +3017,762 @@ exports[`Storyshots SingleDate DatePicker 1`] = `
 <div
   style={
     Object {
-      "display": "inline-block",
-      "position": "relative",
+      "display": "grid",
+      "gridGap": "48px",
+      "gridTemplateColumns": "repeat(3, 1fr)",
     }
   }
 >
   <div
-    data-css-w0yocm=""
-    onClick={[Function]}
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
   >
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      data-css-h2yjsn=""
+      onClick={[Function]}
     >
+      <label
+        data-css-5jjrbq=""
+        htmlFor="text-input__input-11w1lusvg"
+        id="text-input__label-f80gxdxlo"
+      >
+        Disabled
+      </label>
       <div
-        data-css-u3gl1=""
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
       >
         <div
-          data-css-16bnq5b=""
+          data-css-u3gl1=""
         >
           <div
-            data-css-7dab2f=""
-            onClick={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
-              }
-            }
+            data-css-16bnq5b=""
           >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
             >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
           </div>
-        </div>
-        <div
-          data-css-n9fe5c=""
-        >
-          <input
-            data-css-qbiz7v=""
-            id="text-input__input-m1tpyk8q1"
-            onChange={[Function]}
-            placeholder="mm/dd/yyyy"
-            value=""
-          />
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              disabled={true}
+              id="text-input__input-11w1lusvg"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
         </div>
       </div>
     </div>
+    <br />
   </div>
-  <br />
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <label
+        data-css-5jjrbq=""
+        htmlFor="text-input__input-sats7tbws"
+        id="text-input__label-3j399edrj"
+      >
+        Errored
+      </label>
+      <div
+        data-css-63oe3q=""
+        data-css-8ff2sc=""
+      >
+        <div
+          data-css-u3gl1=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              id="text-input__input-sats7tbws"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+          <div
+            data-css-qrpvsu=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="warning icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <label
+        data-css-5jjrbq=""
+        htmlFor="text-input__input-i3torbl7e"
+        id="text-input__label-mamphmm2a"
+      >
+        String label
+      </label>
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-u3gl1=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              id="text-input__input-i3torbl7e"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <label
+        data-css-5jjrbq=""
+      >
+        Field.Label label
+      </label>
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-u3gl1=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              id="text-input__input-egsjgima5"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <label
+        data-css-5jjrbq=""
+        htmlFor="text-input__input-wg3y5knhh"
+        id="text-input__label-za593s1jh"
+      >
+        Prefix
+      </label>
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-u3gl1=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              id="text-input__input-wg3y5knhh"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+      style={
+        Object {
+          "outline": "2px dashed orange",
+        }
+      }
+    >
+      <label
+        data-css-5jjrbq=""
+        htmlFor="text-input__input-3nw2oggoc"
+        id="text-input__label-k5h4d2of4"
+      >
+        renderContainer
+      </label>
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-u3gl1=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              id="text-input__input-3nw2oggoc"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <label
+        data-css-5jjrbq=""
+        htmlFor="text-input__input-vkoi0gke4"
+        id="text-input__label-ichansvbk"
+      >
+        renderTag
+      </label>
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-u3gl1=""
+          style={
+            Object {
+              "outline": "2px dashed orange",
+            }
+          }
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              id="text-input__input-vkoi0gke4"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <label
+        data-css-5jjrbq=""
+        htmlFor="text-input__input-wul1ue2rf"
+        id="text-input__label-5rgupx13q"
+      >
+        Small size
+      </label>
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-28vuio=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-10qtdsp=""
+              id="text-input__input-wul1ue2rf"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-u3gl1=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              id="text-input__input-hmz77n8sd"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-bv851e=""
+      >
+        String subLabel
+      </div>
+    </div>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-u3gl1=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              id="text-input__input-ah7gu7f24"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-bv851e=""
+      >
+        Field.SubLabel subLabel
+      </div>
+    </div>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <label
+        data-css-5jjrbq=""
+        htmlFor="text-input__input-1eds5kcb8"
+        id="text-input__label-lzjgyh3w1"
+      >
+        Suffix
+      </label>
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-1goiqvn=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-qbiz7v=""
+              id="text-input__input-1eds5kcb8"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value=""
+            />
+          </div>
+          <div
+            data-css-ugy1u5=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
 </div>
 `;
 
