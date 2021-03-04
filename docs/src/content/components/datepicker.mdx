@@ -15,8 +15,9 @@ import { layout } from '@pluralsight/ps-design-system-core'
 
 ## Components
 
-## Datepicker
-A drop in replacement for the the preivous DatePicker. It takes an `onSelect` prop that returns a [`dayzed.DateObj`](https://github.com/deseretdigital/dayzed/blob/ebf1de1ceb9695738895f8b08bf45ad9a894fe00/typings/dayzed.d.ts#L9-L16) each time a valid date is selected.
+## DatePicker
+This is a very similar descendant of the prevous DatePicker. It is a convenience wrapper around the common case. The API is familiar but has some differences. It is a controlled component with `value`. It takes an `onSelect` prop that returns a [`dayzed.DateObj`](https://github.com/deseretdigital/dayzed/blob/ebf1de1ceb9695738895f8b08bf45ad9a894fe00/typings/dayzed.d.ts#L9-L16) each time a valid date is selected.
+
 ```typescript noRender startExpanded
 import { DatePicker } from '@pluralsight/ps-design-system-datepicker'
 
@@ -31,6 +32,7 @@ import { DatePicker } from '@pluralsight/ps-design-system-datepicker'
     desc="callback that return DateObj"
   />
 </TypesTable>
+
 ### Calendar
 
 Calendar is a top-level component for creating a calendar. When used in concert with the [`useDayzed`](https://github.com/deseretdigital/dayzed) hook, it takes all returned props except `getDateProps`
