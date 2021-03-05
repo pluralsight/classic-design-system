@@ -2,13 +2,7 @@ import Field from '@pluralsight/ps-design-system-field'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 import { ValueOf, useUniqueId } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
-import React, {
-  FC,
-  RefAttributes,
-  ForwardRefExoticComponent,
-  ReactNode,
-  ComponentProps
-} from 'react'
+import React, { FC, ComponentProps } from 'react'
 
 import { Calendar } from './calendar'
 import { CalendarDates } from './calendar-dates'
