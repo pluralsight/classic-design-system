@@ -1,6 +1,5 @@
 import Field from '@pluralsight/ps-design-system-field'
-import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
-import { ValueOf, useUniqueId } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
 import React, { FC, ComponentProps } from 'react'
 
@@ -13,6 +12,7 @@ import { slides } from '../vars'
 interface DatePickerProps
   extends Omit<ComponentProps<typeof Field>, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
+  _uniqueId?: (prefix: string) => string
 }
 
 export const DatePicker: FC<DatePickerProps> = ({
@@ -26,6 +26,7 @@ export const DatePicker: FC<DatePickerProps> = ({
   subLabel,
   suffix,
   onSelect,
+  _uniqueId,
   ...props
 }) => {
   const [selected, setSelected] = React.useState<Date | undefined>()
@@ -65,6 +66,7 @@ export const DatePicker: FC<DatePickerProps> = ({
         subLabel={subLabel}
         suffix={suffix}
         value={value}
+        _uniqueId={_uniqueId}
       />
       <br />
       {open && (

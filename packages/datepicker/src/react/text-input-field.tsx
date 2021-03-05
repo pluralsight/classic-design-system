@@ -1,12 +1,13 @@
 import Field from '@pluralsight/ps-design-system-field'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
-import { useUniqueId } from '@pluralsight/ps-design-system-util'
+import { uniqueId as defaultUniqueId } from '@pluralsight/ps-design-system-util'
 import React, { ComponentProps, FC, isValidElement, useMemo } from 'react'
 
 interface TextInputFieldProps extends ComponentProps<typeof Field> {
   onChange?: React.ChangeEventHandler<HTMLInputElement>
   placeholder?: string
   value?: React.ReactText
+  _uniqueId?: (prefix: string) => string
 }
 
 export const TextInputField: FC<TextInputFieldProps> = props => {
@@ -19,10 +20,11 @@ export const TextInputField: FC<TextInputFieldProps> = props => {
     prefix,
     subLabel,
     value,
+    _uniqueId: uniqueId = defaultUniqueId,
     ...rest
   } = props
-  const labelId = useUniqueId('text-input__label-')
-  const inputId = useUniqueId('text-input__input-')
+  const labelId = uniqueId('text-input__label-')
+  const inputId = uniqueId('text-input__input-')
 
   const Prefix = useMemo(() => {
     if (isValidElement(prefix)) return prefix
