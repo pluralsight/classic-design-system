@@ -142,40 +142,40 @@ storiesOf('SingleDate', module)
       </div>
     )
   })
-  .add('DatePicker', () => (
-    <div
-      style={{
-        display: 'grid',
-        gridTemplateColumns: 'repeat(3, 1fr)',
-        gridGap: '48px'
-      }}
-    >
-      <DatePicker disabled label="Disabled" />
-      <DatePicker error label="Errored" />
-      <DatePicker label="String label" />
-      <DatePicker label={<Field.Label>Field.Label label</Field.Label>} />
-      <DatePicker prefix={<HomeIcon />} label="Prefix" />
-      <DatePicker
-        label="renderContainer"
-        renderContainer={forwardRef((props, ref) => (
-          <div ref={ref} {...props} style={{ outline: '2px dashed orange' }} />
-        ))}
-      />
-      <DatePicker
-        prefix={<HomeIcon />}
-        label="renderTag"
-        renderTag={props => (
-          <div {...props} style={{ outline: '2px dashed orange' }} />
-        )}
-      />
-      <DatePicker label="Small size" size="small" />
-      <DatePicker subLabel="String subLabel" />
-      <DatePicker
-        subLabel={<Field.SubLabel>Field.SubLabel subLabel</Field.SubLabel>}
-      />
-      <DatePicker suffix={<HomeIcon />} label="Suffix" />
-    </div>
+storiesOf('DatePicker', module)
+  .add('disabled', () => <DatePicker disabled label="Disabled" />)
+  .add('errore', () => <DatePicker error label="Errored" />)
+  .add('string label', () => <DatePicker label="String label" />)
+  .add('field.label', () => (
+    <DatePicker label={<Field.Label>Field.Label label</Field.Label>} />
   ))
+  .add('prefix', () => <DatePicker prefix={<HomeIcon />} label="Prefix" />)
+  .add('renderContainer', () => (
+    <DatePicker
+      label="renderContainer"
+      renderContainer={forwardRef((props, ref) => (
+        <div ref={ref} {...props} style={{ outline: '2px dashed orange' }} />
+      ))}
+    />
+  ))
+  .add('renderTag', () => (
+    <DatePicker
+      prefix={<HomeIcon />}
+      label="renderTag"
+      renderTag={props => (
+        <div {...props} style={{ outline: '2px dashed orange' }} />
+      )}
+    />
+  ))
+  .add('small size', () => <DatePicker label="Small size" size="small" />)
+  .add('subLabel string', () => <DatePicker subLabel="String subLabel" />)
+  .add('field.subLabel', () => (
+    <DatePicker
+      subLabel={<Field.SubLabel>Field.SubLabel subLabel</Field.SubLabel>}
+    />
+  ))
+  .add('suffix', () => <DatePicker suffix={<HomeIcon />} label="Suffix" />)
+
 storiesOf('RangeDate', module)
   .add('Calendar', () => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
