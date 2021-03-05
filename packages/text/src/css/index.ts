@@ -95,7 +95,8 @@ export default {
     letterSpacing: type.letterSpacingAllCaps
   },
   [`.psds-text__label--mono`]: {
-    fontFamily: type.fontFamilyCode
+    fontFamily: type.fontFamilyCode,
+    fontFeatureSettings: '"ss05" on'
   },
   [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
