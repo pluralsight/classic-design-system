@@ -30,7 +30,7 @@ exports[`Storyshots Code ends single line 1`] = `
   >
     This is where we see 
     <code
-      data-css-hvsxkc=""
+      data-css-j5f8mi=""
     >
       inline code
     </code>
@@ -50,7 +50,7 @@ exports[`Storyshots Code lead single line 1`] = `
     data-css-17nixd9=""
   >
     <code
-      data-css-hvsxkc=""
+      data-css-j5f8mi=""
     >
       inline code
     </code>
@@ -72,7 +72,7 @@ exports[`Storyshots Code line wrap 1`] = `
   >
     text at the start
     <code
-      data-css-hvsxkc=""
+      data-css-j5f8mi=""
     >
       buy-in programmatically, or out of the loop. I'll book a meeting so we can solution this before the sprint is over get buy-in, and closing these latest prospects is like putting socks on an octopus. Knowledge is power
     </code>
@@ -90,7 +90,7 @@ exports[`Storyshots Code maintains whitespace 1`] = `
   }
 >
   <code
-    data-css-hvsxkc=""
+    data-css-j5f8mi=""
   >
      in the middle 
   </code>
@@ -110,7 +110,7 @@ exports[`Storyshots Code middle of paragraph 1`] = `
   >
     Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables 
     <code
-      data-css-hvsxkc=""
+      data-css-j5f8mi=""
     >
       inline code
     </code>
@@ -128,7 +128,7 @@ exports[`Storyshots Code standalone 1`] = `
   }
 >
   <code
-    data-css-hvsxkc=""
+    data-css-j5f8mi=""
   >
     inline code
   </code>
@@ -409,21 +409,21 @@ exports[`Storyshots Label mono: true 1`] = `
   <div>
     <div>
       <span
-        data-css-1wfmv5x=""
+        data-css-yo70u2=""
       >
         Monospace font
       </span>
     </div>
     <div>
       <span
-        data-css-1i41i8b=""
+        data-css-1lv2so3=""
       >
         Monospace strong
       </span>
     </div>
     <div>
       <span
-        data-css-vdksvn=""
+        data-css-1mowjt4=""
       >
         Monospace caps
       </span>
