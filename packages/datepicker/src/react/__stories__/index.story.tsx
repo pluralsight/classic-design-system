@@ -142,20 +142,39 @@ storiesOf('SingleDate', module)
       </div>
     )
   })
+
+const stableUniqueId = (prefix: string) => prefix + 'unique-id'
+
 storiesOf('DatePicker', module)
-  .add('disabled', () => <DatePicker disabled label="Disabled" />)
-  .add('errore', () => <DatePicker error label="Errored" />)
-  .add('string label', () => <DatePicker label="String label" />)
-  .add('field.label', () => (
-    <DatePicker label={<Field.Label>Field.Label label</Field.Label>} />
+  .add('disabled', () => (
+    <DatePicker disabled label="Disabled" _uniqueId={stableUniqueId} />
   ))
-  .add('prefix', () => <DatePicker prefix={<HomeIcon />} label="Prefix" />)
+  .add('errore', () => (
+    <DatePicker error label="Errored" _uniqueId={stableUniqueId} />
+  ))
+  .add('string label', () => (
+    <DatePicker label="String label" _uniqueId={stableUniqueId} />
+  ))
+  .add('field.label', () => (
+    <DatePicker
+      label={<Field.Label>Field.Label label</Field.Label>}
+      _uniqueId={stableUniqueId}
+    />
+  ))
+  .add('prefix', () => (
+    <DatePicker
+      prefix={<HomeIcon />}
+      label="Prefix"
+      _uniqueId={stableUniqueId}
+    />
+  ))
   .add('renderContainer', () => (
     <DatePicker
       label="renderContainer"
       renderContainer={forwardRef((props, ref) => (
         <div ref={ref} {...props} style={{ outline: '2px dashed orange' }} />
       ))}
+      _uniqueId={stableUniqueId}
     />
   ))
   .add('renderTag', () => (
@@ -165,16 +184,28 @@ storiesOf('DatePicker', module)
       renderTag={props => (
         <div {...props} style={{ outline: '2px dashed orange' }} />
       )}
+      _uniqueId={stableUniqueId}
     />
   ))
-  .add('small size', () => <DatePicker label="Small size" size="small" />)
-  .add('subLabel string', () => <DatePicker subLabel="String subLabel" />)
+  .add('small size', () => (
+    <DatePicker label="Small size" size="small" _uniqueId={stableUniqueId} />
+  ))
+  .add('subLabel string', () => (
+    <DatePicker subLabel="String subLabel" _uniqueId={stableUniqueId} />
+  ))
   .add('field.subLabel', () => (
     <DatePicker
       subLabel={<Field.SubLabel>Field.SubLabel subLabel</Field.SubLabel>}
+      _uniqueId={stableUniqueId}
     />
   ))
-  .add('suffix', () => <DatePicker suffix={<HomeIcon />} label="Suffix" />)
+  .add('suffix', () => (
+    <DatePicker
+      suffix={<HomeIcon />}
+      label="Suffix"
+      _uniqueId={stableUniqueId}
+    />
+  ))
 
 storiesOf('RangeDate', module)
   .add('Calendar', () => {

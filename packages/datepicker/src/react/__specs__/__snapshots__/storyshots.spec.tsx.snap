@@ -15,8 +15,8 @@ exports[`Storyshots DatePicker disabled 1`] = `
   >
     <label
       data-css-5jjrbq=""
-      htmlFor="text-input__input-mfgcqzroc"
-      id="text-input__label-0qoaeyrw2"
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
     >
       Disabled
     </label>
@@ -56,7 +56,7 @@ exports[`Storyshots DatePicker disabled 1`] = `
           <input
             data-css-1nm5z1g=""
             disabled={true}
-            id="text-input__input-mfgcqzroc"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -84,8 +84,8 @@ exports[`Storyshots DatePicker errore 1`] = `
   >
     <label
       data-css-5jjrbq=""
-      htmlFor="text-input__input-iq1pikw9h"
-      id="text-input__label-6qa9wb8lt"
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
     >
       Errored
     </label>
@@ -124,7 +124,7 @@ exports[`Storyshots DatePicker errore 1`] = `
         >
           <input
             data-css-1nm5z1g=""
-            id="text-input__input-iq1pikw9h"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -209,7 +209,7 @@ exports[`Storyshots DatePicker field.label 1`] = `
         >
           <input
             data-css-1nm5z1g=""
-            id="text-input__input-eljvwnory"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -270,7 +270,7 @@ exports[`Storyshots DatePicker field.subLabel 1`] = `
         >
           <input
             data-css-1nm5z1g=""
-            id="text-input__input-hisps0q7i"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -303,8 +303,8 @@ exports[`Storyshots DatePicker prefix 1`] = `
   >
     <label
       data-css-5jjrbq=""
-      htmlFor="text-input__input-cl5mnsqkm"
-      id="text-input__label-eftw6jkr6"
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
     >
       Prefix
     </label>
@@ -339,7 +339,7 @@ exports[`Storyshots DatePicker prefix 1`] = `
         >
           <input
             data-css-1nm5z1g=""
-            id="text-input__input-cl5mnsqkm"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -372,8 +372,8 @@ exports[`Storyshots DatePicker renderContainer 1`] = `
   >
     <label
       data-css-5jjrbq=""
-      htmlFor="text-input__input-ctxlajmyq"
-      id="text-input__label-dc0l4ohyr"
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
     >
       renderContainer
     </label>
@@ -412,7 +412,7 @@ exports[`Storyshots DatePicker renderContainer 1`] = `
         >
           <input
             data-css-1nm5z1g=""
-            id="text-input__input-ctxlajmyq"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -440,8 +440,8 @@ exports[`Storyshots DatePicker renderTag 1`] = `
   >
     <label
       data-css-5jjrbq=""
-      htmlFor="text-input__input-q7a9ktsod"
-      id="text-input__label-4y8mrnzyk"
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
     >
       renderTag
     </label>
@@ -481,7 +481,7 @@ exports[`Storyshots DatePicker renderTag 1`] = `
         >
           <input
             data-css-1nm5z1g=""
-            id="text-input__input-q7a9ktsod"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -509,8 +509,8 @@ exports[`Storyshots DatePicker small size 1`] = `
   >
     <label
       data-css-5jjrbq=""
-      htmlFor="text-input__input-nz2d17e9l"
-      id="text-input__label-9m0djntbs"
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
     >
       Small size
     </label>
@@ -549,7 +549,7 @@ exports[`Storyshots DatePicker small size 1`] = `
         >
           <input
             data-css-1f28mdy=""
-            id="text-input__input-nz2d17e9l"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -577,8 +577,8 @@ exports[`Storyshots DatePicker string label 1`] = `
   >
     <label
       data-css-5jjrbq=""
-      htmlFor="text-input__input-pqr54jh89"
-      id="text-input__label-dzayngz86"
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
     >
       String label
     </label>
@@ -617,7 +617,7 @@ exports[`Storyshots DatePicker string label 1`] = `
         >
           <input
             data-css-1nm5z1g=""
-            id="text-input__input-pqr54jh89"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -678,7 +678,7 @@ exports[`Storyshots DatePicker subLabel string 1`] = `
         >
           <input
             data-css-1nm5z1g=""
-            id="text-input__input-9fcagmcec"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
@@ -711,8 +711,8 @@ exports[`Storyshots DatePicker suffix 1`] = `
   >
     <label
       data-css-5jjrbq=""
-      htmlFor="text-input__input-a00pqvv5g"
-      id="text-input__label-9929rq8m6"
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
     >
       Suffix
     </label>
@@ -751,7 +751,7 @@ exports[`Storyshots DatePicker suffix 1`] = `
         >
           <input
             data-css-1nm5z1g=""
-            id="text-input__input-a00pqvv5g"
+            id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
             value=""
