@@ -17,6 +17,55 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-light.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-light-italic.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-regular.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-italic.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-medium.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-medium-italic.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 500;
+  font-style: italic;
+}
+
 html {
   box-sizing: border-box;
   text-size-adjust: 100%;

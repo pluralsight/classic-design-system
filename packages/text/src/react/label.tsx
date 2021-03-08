@@ -10,12 +10,14 @@ const style = ({
   themeName,
   size,
   color,
+  mono,
   strong,
   caps
 }: {
   themeName: ValueOf<typeof names>
   size: ValueOf<typeof vars.labelSizes>
   color: ValueOf<typeof vars.textColors>
+  mono: boolean
   strong: boolean
   caps: boolean
 }) =>
@@ -26,7 +28,8 @@ const style = ({
       stylesheet[`.psds-text__label--color-${color}.psds-theme--${themeName}`]
     ),
     strong && css(stylesheet[`.psds-text__label--strong`]),
-    caps && css(stylesheet[`.psds-text__label--caps`])
+    caps && css(stylesheet[`.psds-text__label--caps`]),
+    mono && css(stylesheet[`.psds-text__label--mono`])
   )
 
 interface LabelStatics {
@@ -37,6 +40,7 @@ interface LabelStatics {
 interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
   size?: ValueOf<typeof vars.labelSizes>
   color?: ValueOf<typeof vars.textColors>
+  mono?: boolean
   strong?: boolean
   caps?: boolean
 }
@@ -44,13 +48,19 @@ interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
 const Label: React.FC<LabelProps> & LabelStatics = ({
   size = vars.labelSizes.medium,
   color = vars.textColors.primary,
+  mono = false,
   strong = false,
   caps = false,
   ...rest
 }) => {
   const themeName = useTheme()
 
-  return <span {...rest} {...style({ themeName, size, color, strong, caps })} />
+  return (
+    <span
+      {...rest}
+      {...style({ themeName, mono, size, color, strong, caps })}
+    />
+  )
 }
 
 Label.sizes = vars.labelSizes

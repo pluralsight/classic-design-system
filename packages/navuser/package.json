@@ -34,7 +34,9 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
+    "@pluralsight/ps-design-system-actionmenu": "*",
     "@pluralsight/ps-design-system-build": "^2.0.4",
+    "@pluralsight/ps-design-system-button": "*",
     "@pluralsight/ps-design-system-storybook-preset": "^0.4.3"
   }
 }
