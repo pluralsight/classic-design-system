@@ -1,0 +1,25 @@
+.chrome {
+  background-color: var(--psColorsBackgroundDark1);
+  color: var(--psColorsTextIconHighOnDark);
+  min-height: 100vh;
+}
+
+.navItem {
+  margin-right: var(--psLayoutSpacingXXSmall);
+  display: inline-block;
+}
+
+.sectionDivider {
+  height: 1;
+  border-bottom: 1px solid var(--colorsBorderLowOnDark);
+}
+
+.sectionHeader {
+  display: block;
+  margin: var(--psLayoutSpacingLarge) 0 0;
+  padding: 0 var(--psLayoutSpacingLarge);
+}
+
+.sectionHeaderCollapsed {
+  opacity: 0;
+}

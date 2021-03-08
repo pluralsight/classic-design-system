@@ -11,3 +11,4 @@ coverage/*
 docs/public/*
 examples/*
 scripts/*
+testbed-a11y/*
