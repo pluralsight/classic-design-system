@@ -1,31 +1,39 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import React from 'react'
+import React, { useState } from 'react'
 
-import { fireEvent, render } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import SearchInput from '..'
 
 describe('SearchInput', () => {
   it('focuses input when clear button clicked', () => {
     const noop = () => {}
-    const { container } = render(<SearchInput onClear={noop} />)
-    const input = container.querySelector('input')
-    const clearBtn = container.querySelector('button') as HTMLButtonElement
+    render(<SearchInput onClear={noop} />)
+    const input = screen.getByRole('searchbox')
+    const clearBtn = screen.getByRole('button') as HTMLButtonElement
 
     fireEvent.click(clearBtn)
     expect(input).toHaveFocus()
   })
 
   it('clears input when clear button clicked', () => {
-    const noop = () => {}
+    const SearchInputWithState = () => {
+      const [value, setValue] = useState('')
+      const onChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
+        setValue(evt.target.value)
+      }
+      const onClear = () => {
+        setValue('')
+      }
+      return <SearchInput onChange={onChange} onClear={onClear} value={value} />
+    }
 
-    const { container } = render(<SearchInput onClear={noop} />)
-    const input = container.querySelector('input') as HTMLInputElement
-
-    input.value = 'Kindergarten'
-    const clearBtn = container.querySelector('button') as HTMLButtonElement
+    render(<SearchInputWithState />)
+    const input = screen.getByRole('searchbox') as HTMLInputElement
+    fireEvent.change(input, { target: { value: 'Kindergarten' } })
+    const clearBtn = screen.getByRole('button') as HTMLButtonElement
 
     fireEvent.click(clearBtn)
 
-    expect(input.value).toEqual('')
+    expect(input).toHaveValue('')
   })
 })

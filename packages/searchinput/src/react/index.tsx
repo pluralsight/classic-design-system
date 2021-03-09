@@ -1,5 +1,5 @@
 import { css } from 'glamor'
-import React, { useRef, useState } from 'react'
+import React, { useRef } from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
@@ -10,10 +10,10 @@ import { callAll, RefFor } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css'
 
 const styles = {
-  clear: (clearVisible: boolean) =>
+  clear: (isClearBtnVisible: boolean) =>
     css(
       stylesheet['.psds-searchinput-clear'],
-      clearVisible && stylesheet['.psds-searchinput-clear__visible']
+      isClearBtnVisible && stylesheet['.psds-searchinput-clear--visible']
     ),
   field: () => css(stylesheet['.psds-searchinput-field'])
 }
@@ -26,13 +26,11 @@ export interface SearchInputProps
 }
 
 const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
-  ({ loading = false, onClear, onChange, ...rest }, forwardedRef) => {
-    const [clearVisible, toggleClear] = useState(false)
-    const handleChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
-      ;(evt.currentTarget as HTMLInputElement).value.length > 0
-        ? toggleClear(true)
-        : toggleClear(false)
-    }
+  ({ loading = false, onClear, ...rest }, forwardedRef) => {
+    const isClearable = typeof onClear === 'function'
+    const hasVisibleValue = !!rest.value && String(rest.value).length > 0
+    const isClearBtnVisible = isClearable && hasVisibleValue
+
     const ref = useRef<HTMLInputElement | null>(null)
     React.useImperativeHandle(
       forwardedRef,
@@ -40,18 +38,14 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
     )
 
     const handleClear = (evt: React.MouseEvent) => {
-      if (ref.current) {
-        ref.current.value = ''
-        ref.current.focus()
-      }
-
-      onClear && onClear(evt)
+      ref.current?.focus()
+      typeof onClear === 'function' && onClear(evt)
     }
 
-    const clearBtn = onClear && (
+    const clearBtn = isClearable && (
       <Button
         onClick={handleClear}
-        {...styles.clear(clearVisible)}
+        {...styles.clear(isClearBtnVisible)}
         appearance={Button.appearances.flat}
         icon={<CloseIcon />}
         size={Button.sizes.small}
@@ -71,7 +65,6 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
         fieldAfter={clearBtn}
         icon={icon}
         ref={ref as RefFor<'input'>}
-        onChange={callAll(handleChange, onChange)}
         {...rest}
         type="search"
       />
