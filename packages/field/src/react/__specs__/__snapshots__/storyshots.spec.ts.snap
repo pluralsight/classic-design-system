@@ -807,7 +807,7 @@ exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-qbiz7v=""
+            data-css-1nm5z1g=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -849,7 +849,7 @@ exports[`Storyshots Components/Field/TextInputField Custom Input Tag 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-qbiz7v=""
+            data-css-1nm5z1g=""
             id="text-input__input-unique-id"
             placeholder="tag from render prop"
             style={
@@ -897,7 +897,7 @@ exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-qbiz7v=""
+            data-css-1nm5z1g=""
             disabled={true}
             id="text-input__input-unique-id"
             type="text"
@@ -940,7 +940,7 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-qbiz7v=""
+            data-css-1nm5z1g=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1018,7 +1018,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-qbiz7v=""
+            data-css-1nm5z1g=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1060,7 +1060,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-qbiz7v=""
+            data-css-1nm5z1g=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1119,7 +1119,7 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-qbiz7v=""
+            data-css-1nm5z1g=""
             id="text-input__input-unique-id"
             type="password"
           />
@@ -1178,7 +1178,7 @@ exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-10qtdsp=""
+            data-css-1f28mdy=""
             id="text-input__input-unique-id"
             type="text"
           />
@@ -1231,7 +1231,7 @@ exports[`Storyshots Components/Field/TextInputField Style Override Display Block
               data-css-n9fe5c=""
             >
               <input
-                data-css-qbiz7v=""
+                data-css-1nm5z1g=""
                 id="text-input__input-unique-id"
                 type="text"
               />
@@ -1275,7 +1275,7 @@ exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
           data-css-n9fe5c=""
         >
           <input
-            data-css-qbiz7v=""
+            data-css-1nm5z1g=""
             id="text-input__input-unique-id"
             placeholder="Enter some text here"
             type="text"
