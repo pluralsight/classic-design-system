@@ -1,19 +1,32 @@
-import React from 'react'
+import Field from '@pluralsight/ps-design-system-field'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
-import { useDateSelectChange } from './utils'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { slides } from '../vars'
+import React, { FC, ComponentProps } from 'react'
+
 import { Calendar } from './calendar'
 import { CalendarDates } from './calendar-dates'
-import TextInput from '@pluralsight/ps-design-system-textinput'
-import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
+import { TextInputField } from './text-input-field'
+import { useDateSelectChange } from './utils'
+import { slides } from '../vars'
 
-interface DatePickerProps extends Omit<HTMLPropsFor<'div'>, 'onSelect'> {
+interface DatePickerProps
+  extends Omit<ComponentProps<typeof Field>, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
+  _uniqueId?: (prefix: string) => string
 }
 
-export const DatePicker: React.FC<DatePickerProps> = ({
+export const DatePicker: FC<DatePickerProps> = ({
+  disabled,
+  error,
+  label,
+  prefix,
+  renderContainer,
+  renderTag,
+  size,
+  subLabel,
+  suffix,
   onSelect,
+  _uniqueId,
   ...props
 }) => {
   const [selected, setSelected] = React.useState<Date | undefined>()
@@ -39,16 +52,21 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   })
   return (
     <div style={{ display: 'inline-block', position: 'relative' }} {...props}>
-      <TextInput
+      <TextInputField
+        disabled={disabled}
+        error={error}
+        label={label}
         onChange={onChange}
-        value={value}
+        onClick={handleIconClick}
         placeholder="mm/dd/yyyy"
-        icon={
-          <CalendarIcon
-            onClick={handleIconClick}
-            style={{ cursor: 'pointer' }}
-          />
-        }
+        prefix={prefix}
+        renderContainer={renderContainer}
+        renderTag={renderTag}
+        size={size}
+        subLabel={subLabel}
+        suffix={suffix}
+        value={value}
+        _uniqueId={_uniqueId}
       />
       <br />
       {open && (

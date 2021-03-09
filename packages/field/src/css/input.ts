@@ -10,6 +10,7 @@ export default {
   '.psds-field__input': {
     label: 'field__input',
 
+    background: 'transparent',
     border: 'none',
     outline: 'none',
     padding: 0,
