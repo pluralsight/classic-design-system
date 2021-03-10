@@ -101,10 +101,7 @@ export default {
     fontWeight: type.fontWeight500,
     cursor: 'pointer',
     border: 'none',
-    paddingTop: '0',
-    paddingBottom: '0',
-    paddingLeft: layout.spacingMedium,
-    paddingRight: layout.spacingMedium,
+    padding: `${layout.spacingXXSmall} ${layout.spacingMedium}`,
     background: 'none',
     textDecoration: 'none',
     outline: 'none',
@@ -137,6 +134,11 @@ export default {
     color: colorsBlue[7]
   },
 
+  '.psds-menu__item-icon-filler': {
+    width: '24px',
+    height: '24px'
+  },
+
   '.psds-menu__item__arrow': {
     color: colorsTextIcon.lowOnLight,
     marginLeft: 'auto',
@@ -146,6 +148,9 @@ export default {
     fill: 'currentColor'
   },
   '.psds-menu__item-with-description': {
+    padding: `10px ${layout.spacingMedium}`
+  },
+  '.psds-menu__item-with-description__wrapper': {
     display: 'inline-flex',
     flexDirection: 'column',
     maxWidth: 248

@@ -1,7 +1,12 @@
 import { storiesOf } from '@storybook/react'
 import React, { useRef } from 'react'
+import { action } from '@storybook/addon-actions'
 
 import Select from '..'
+import Menu, {
+  MenuItemWithDescription
+} from '@pluralsight/ps-design-system-menu'
+import { colorsStatus } from '@pluralsight/ps-design-system-core'
 import { RefFor } from '@pluralsight/ps-design-system-util'
 
 storiesOf('button', module)
@@ -40,7 +45,70 @@ const items = [
   { id: 'Two item', name: 'Two item' },
   { id: 'Three item', name: 'Three item' }
 ]
+const itemsWithDescription = [
+  {
+    id: 'Can view',
+    name: 'Can view',
+    description: 'View details, content and other members in the channel.'
+  },
+  {
+    id: 'Can edit',
+    name: 'Can edit',
+    description:
+      'Edit details, add or remove content and invite or remove members'
+  },
+  {
+    id: 'Make Owner',
+    name: 'Make Owner',
+    description:
+      'Edit details, add or remove content, invite or remove members and delete Channel'
+  }
+]
+
+const handleClick = (_e: unknown, value: unknown) => {
+  action('remove click')(value)
+}
+
 storiesOf('dropdown', module)
+  .add('custom item: static manual', () => {
+    return (
+      <Select
+        position={Select.positions.belowRight}
+        value={{
+          name: itemsWithDescription[0].name,
+          id: itemsWithDescription[0].id
+        }}
+      >
+        {itemsWithDescription.map(i => (
+          <MenuItemWithDescription {...i} key={i.id} />
+        ))}
+        <Menu.Divider />
+        <Menu.Item
+          onClick={handleClick}
+          style={{ color: colorsStatus.error }}
+          value={{
+            name: itemsWithDescription[0].name,
+            id: itemsWithDescription[0].id
+          }}
+        >
+          Remove Member
+        </Menu.Item>
+      </Select>
+    )
+  })
+  .add('custom item: dynamic', () => {
+    return (
+      <Select
+        items={itemsWithDescription}
+        position={Select.positions.belowRight}
+        renderOption={(MenuItemWithDescription as unknown) as React.FC}
+        value={{
+          name: itemsWithDescription[0].name,
+          id: itemsWithDescription[0].id
+        }}
+      />
+    )
+  })
   .add('BelowLeft: placholder', () => (
     <Select
       position={Select.positions.belowLeft}

@@ -261,6 +261,94 @@ Array [
 ]
 `;
 
+exports[`Storyshots dropdown custom item: dynamic 1`] = `
+Array [
+  <button
+    aria-haspopup="listbox"
+    aria-labelledby="select-button-4fzzzxjyl"
+    data-css-vqbjxt=""
+    id="select-button-4fzzzxjyl"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1nr9efp=""
+    >
+      <span
+        data-css-wvjvpq=""
+      >
+        Can view
+      </span>
+      <div
+        data-css-7dab2f=""
+        data-css-vgdpow=""
+      >
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
+      </div>
+    </div>
+  </button>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />,
+]
+`;
+
+exports[`Storyshots dropdown custom item: static manual 1`] = `
+Array [
+  <button
+    aria-haspopup="listbox"
+    aria-labelledby="select-button-4fzzzxjyl"
+    data-css-vqbjxt=""
+    id="select-button-4fzzzxjyl"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1nr9efp=""
+    >
+      <span
+        data-css-wvjvpq=""
+      >
+        Can view
+      </span>
+      <div
+        data-css-7dab2f=""
+        data-css-vgdpow=""
+      >
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
+      </div>
+    </div>
+  </button>,
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />,
+]
+`;
+
 exports[`Storyshots selected Select.Selected: placeholder 1`] = `
 <span
   data-css-1p9e07r=""

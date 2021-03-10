@@ -33,7 +33,7 @@ const defaultRenderOption = forwardRef((props, ref) => {
 interface SelectProps extends UseListboxProps {
   items?: Array<{ id: React.ReactText; name: React.ReactText }>
   position?: ValueOf<typeof positions>
-  renderOption?: typeof defaultRenderOption
+  renderOption?: React.FC
 }
 
 const Select = forwardRef((props, ref) => {

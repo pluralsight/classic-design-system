@@ -6,6 +6,7 @@ import stylesheet from '../css'
 
 const styles = {
   item: () => css(stylesheet['.psds-menu__item-with-description']),
+  wrapper: () => css(stylesheet['.psds-menu__item-with-description__wrapper']),
   name: () => css(stylesheet['.psds-menu__item-with-description__name']),
   description: () =>
     css(stylesheet[`.psds-menu__item-with-description__description`])
@@ -20,8 +21,8 @@ interface MenuItemWithDescriptionProps extends MenuItemProps {
 export const MenuItemWithDescription = forwardRef((props, ref) => {
   const { id, name, description, ...rest } = props
   return (
-    <Menu.Item {...rest} ref={ref} value={{ id, name }}>
-      <div {...styles.item()}>
+    <Menu.Item {...rest} ref={ref} value={{ id, name }} {...styles.item()}>
+      <div {...styles.wrapper()}>
         <span {...styles.name()}>{name}</span>
         <span {...styles.description()}>{description}</span>
       </div>
