@@ -25,6 +25,7 @@ const defaultRenderOption = forwardRef((props, ref) => {
   return (
     <Menu.Item value={{ id, name }} ref={ref}>
       {name}
+      <Menu.Check />
     </Menu.Item>
   )
 }) as ForwardRefComponent<'button', DefaultRenderOptionProps>

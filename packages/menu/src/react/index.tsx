@@ -96,6 +96,5 @@ Menu.origins = vars.origins
 Menu.tagName = vars.tagName
 
 Menu.useMenuRef = useMenuRef
-export const origins = vars.origins
-
+export type { MenuItemProps } from './item'
 export default Menu

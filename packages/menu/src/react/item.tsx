@@ -1,5 +1,5 @@
 import { RefFor, ForwardRefComponent } from '@pluralsight/ps-design-system-util'
-import React, { ReactText, forwardRef, useContext, useRef } from 'react'
+import React, { forwardRef, useContext, useRef } from 'react'
 import { css, compose } from 'glamor'
 
 import stylesheet from '../css'
@@ -16,7 +16,7 @@ const styles = {
   optionInner: () => css(stylesheet[`.psds-menu__option-inner`])
 }
 
-interface MenuItemProps {
+export interface MenuItemProps {
   active?: boolean
   disabled?: boolean
   onClick?: (evt: React.MouseEvent, selectedItem: SelectedItem) => void

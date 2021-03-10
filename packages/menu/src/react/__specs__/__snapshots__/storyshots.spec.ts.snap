@@ -452,6 +452,107 @@ exports[`Storyshots dividers sandwich 1`] = `
 </ul>
 `;
 
+exports[`Storyshots item with description default 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    aria-selected={false}
+    data-css-xc6vje=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        <div
+          data-css-1v08evy=""
+        >
+          <span
+            data-css-xpk9xc=""
+          >
+            item
+          </span>
+          <span
+            data-css-15cv973=""
+          >
+            some words that describe a thing that really should wrap you known
+          </span>
+        </div>
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots item with description selected 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    aria-selected={true}
+    data-css-1813eq8=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <button
+      data-css-1bp56bi=""
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        <div
+          data-css-1v08evy=""
+        >
+          <span
+            data-css-xpk9xc=""
+          >
+            item active
+          </span>
+          <span
+            data-css-15cv973=""
+          >
+            some words that describe a thing that really should wrap you known
+          </span>
+        </div>
+        <div
+          data-css-150r72w=""
+          data-css-7dab2f=""
+          style={
+            Object {
+              "marginLeft": "auto",
+            }
+          }
+        >
+          <svg
+            aria-label="check icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
 exports[`Storyshots link a w/ href 1`] = `
 <ul
   data-css-rls1dj=""
@@ -525,6 +626,7 @@ exports[`Storyshots menu items active & selected item 1`] = `
       >
         Selected
         <div
+          data-css-150r72w=""
           data-css-7dab2f=""
           style={
             Object {

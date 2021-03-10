@@ -6,6 +6,7 @@ import { action } from '@storybook/addon-actions'
 import React, { useState, useCallback, useEffect, useRef } from 'react'
 
 import Menu from '..'
+import { MenuItemWithDescription } from '../ItemWithDescription'
 
 const useActive = (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
   const [active, setActive] = useState(false)
@@ -124,6 +125,33 @@ storiesOf('menu items', module)
         <Menu.Item active disabled>
           Active disabled
         </Menu.Item>
+      </Menu>
+    )
+  })
+
+storiesOf('item with description', module)
+  .add('default', () => (
+    <Menu>
+      <MenuItemWithDescription
+        id="1"
+        name="item"
+        description="some words that describe a thing that really should wrap you known"
+      />
+    </Menu>
+  ))
+  .add('selected', () => {
+    const selectedItem = {
+      name: 'item active',
+      id: '1'
+    }
+    return (
+      <Menu selectedItem={selectedItem}>
+        <MenuItemWithDescription
+          active
+          id="1"
+          name="item active"
+          description="some words that describe a thing that really should wrap you known"
+        />
       </Menu>
     )
   })

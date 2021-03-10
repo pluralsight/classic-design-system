@@ -3,6 +3,7 @@ import {
   colorsBorder,
   colorsBackgroundUtility,
   colorsTextIcon,
+  colorsBlue,
   layout,
   motion,
   type
@@ -130,10 +131,10 @@ export default {
     margin: `${layout.spacingXXSmall} 0`
   },
 
-  '.psds-menu__item__icon': {
+  '.psds-menu__item-icon': {
     display: 'inline-flex',
     alignItems: 'center',
-    marginRight: layout.spacingXSmall
+    color: colorsBlue[7]
   },
 
   '.psds-menu__item__arrow': {
@@ -143,5 +144,24 @@ export default {
   },
   '.psds-menu__item__arrow__svg': {
     fill: 'currentColor'
+  },
+  '.psds-menu__item-with-description': {
+    display: 'inline-flex',
+    flexDirection: 'column',
+    maxWidth: 248
+  },
+  '.psds-menu__item-with-description__name': {
+    display: 'inline-block',
+    color: colorsTextIcon.highOnLight,
+    fontSize: type.fontSize100,
+    lineHeight: type.lineHeightTight,
+    fontWeight: type.fontWeight600
+  },
+  '.psds-menu__item-with-description__description': {
+    display: 'inline-block',
+    color: colorsTextIcon.lowOnLight,
+    fontSize: type.fontSize200,
+    lineHeight: '16px',
+    fontWeight: type.fontWeightRegular
   }
 }
