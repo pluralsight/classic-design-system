@@ -1,3 +1,5 @@
+import { sizes } from '../vars'
+
 export default {
   '.psds-field__input__container': {
     label: 'field__input__container',
@@ -8,10 +10,12 @@ export default {
   '.psds-field__input': {
     label: 'field__input',
 
+    background: 'transparent',
     border: 'none',
     outline: 'none',
     padding: 0,
     width: '100%',
+    height: '38px',
 
     '&:focus': { outline: 'none' },
 
@@ -19,5 +23,9 @@ export default {
     '&[type=search]::-webkit-search-cancel-button': { appearance: 'none' },
     '&[type=search]::-webkit-search-results-button': { appearance: 'none' },
     '&[type=search]::-webkit-search-results-decoration': { appearance: 'none' }
+  },
+
+  [`.psds-field__input--${sizes.small}`]: {
+    height: '30px'
   }
 }

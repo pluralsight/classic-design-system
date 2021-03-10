@@ -25,13 +25,13 @@
     "@pluralsight/ps-design-system-collapsible": "^4.0.1",
     "@pluralsight/ps-design-system-core": "^6.9.2",
     "@pluralsight/ps-design-system-icon": "^21.0.3",
-    "@pluralsight/ps-design-system-util": "^7.2.0"
+    "@pluralsight/ps-design-system-util": "^7.2.0",
+    "invariant": "^2.2.4"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
     "@pluralsight/ps-design-system-theme": "^7.0.0",
     "glamor": "^2.x.x",
-    "invariant": "^2.2.4",
     "react": "^17.0.1"
   },
   "devDependencies": {

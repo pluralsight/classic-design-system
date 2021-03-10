@@ -50,6 +50,7 @@ const styles = {
   inputContainer: () => css(stylesheet['.psds-multi-select__input-container']),
   input: () => css(stylesheet['.psds-multi-select__input']),
 
+  pillsContainer: () => css(stylesheet['.psds-multi-select__pills-container']),
   pills: () => css(stylesheet['.psds-multi-select__pills']),
   pill: () => css(stylesheet['.psds-multi-select__pill'])
 }
@@ -254,7 +255,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
         {...styles.multiSelect({ disabled })}
         {...rest}
       >
-        <div>
+        <div {...styles.pillsContainer()}>
           <Pills {...getComboboxProps()}>
             {selectedItems.map((option, index) => (
               <Pill

@@ -60,6 +60,13 @@ export default {
     background: colorsBackgroundLight[1]
   },
 
+  '.psds-multi-select__pills-container': {
+    label: 'pills-container',
+
+    paddingTop: '6px',
+    paddingBottom: '6px',
+    overflow: 'hidden'
+  },
   '.psds-multi-select__pills': {
     alignItems: 'center',
     display: 'flex',

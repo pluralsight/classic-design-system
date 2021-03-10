@@ -25,9 +25,11 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
     >
       <div
         data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -124,7 +126,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 aria-controls="downshift-0-menu"
                 aria-labelledby="downshift-0-label"
                 autoComplete="off"
-                data-css-1na6nif=""
+                data-css-1f28mdy=""
                 data-css-8z457z=""
                 id="downshift-0-input"
                 onBlur={[Function]}
@@ -544,7 +546,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
           </div>
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-3sokjq=""
@@ -598,9 +600,11 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
     >
       <div
         data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -697,7 +701,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 aria-controls="downshift-6-menu"
                 aria-labelledby="downshift-6-label"
                 autoComplete="off"
-                data-css-1na6nif=""
+                data-css-1f28mdy=""
                 data-css-8z457z=""
                 id="downshift-6-input"
                 onBlur={[Function]}
@@ -1123,7 +1127,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
           </div>
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-3sokjq=""
@@ -1177,9 +1181,11 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
     >
       <div
         data-css-11s0ie3=""
-        data-css-1q3e54w=""
+        data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -1276,7 +1282,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 aria-controls="downshift-3-menu"
                 aria-labelledby="downshift-3-label"
                 autoComplete="off"
-                data-css-1na6nif=""
+                data-css-1f28mdy=""
                 data-css-8z457z=""
                 disabled={true}
                 id="downshift-3-input"
@@ -1697,7 +1703,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
           </div>
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-3sokjq=""
@@ -1753,9 +1759,11 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
     >
       <div
         data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -1852,7 +1860,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 aria-controls="downshift-4-menu"
                 aria-labelledby="downshift-4-label"
                 autoComplete="off"
-                data-css-1na6nif=""
+                data-css-1f28mdy=""
                 data-css-8z457z=""
                 id="downshift-4-input"
                 onBlur={[Function]}
@@ -2272,7 +2280,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
           </div>
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-3sokjq=""
@@ -2346,11 +2354,11 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
       data-css-8qmpxt=""
     >
       <div
+        data-css-18bafyq=""
         data-css-1ghsi1k=""
-        data-css-1q3e54w=""
       >
         <div
-          data-css-1tx8me8=""
+          data-css-16bnq5b=""
         >
           <div
             data-css-bjcvj0=""
@@ -2370,7 +2378,9 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
             </div>
           </div>
         </div>
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -2467,7 +2477,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 aria-controls="downshift-5-menu"
                 aria-labelledby="downshift-5-label"
                 autoComplete="off"
-                data-css-1na6nif=""
+                data-css-1f28mdy=""
                 data-css-8z457z=""
                 id="downshift-5-input"
                 onBlur={[Function]}
@@ -2887,7 +2897,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
           </div>
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-3sokjq=""
@@ -2941,9 +2951,11 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
     >
       <div
         data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -3040,7 +3052,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 aria-controls="downshift-2-menu"
                 aria-labelledby="downshift-2-label"
                 autoComplete="off"
-                data-css-1na6nif=""
+                data-css-1f28mdy=""
                 data-css-8z457z=""
                 id="downshift-2-input"
                 onBlur={[Function]}
@@ -3461,7 +3473,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
           </div>
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-3sokjq=""
@@ -3515,9 +3527,11 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
     >
       <div
         data-css-1ghsi1k=""
-        data-css-1q3e54w=""
+        data-css-zhibkn=""
       >
-        <div>
+        <div
+          data-css-tgxt0u=""
+        >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
@@ -3614,7 +3628,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 aria-controls="downshift-1-menu"
                 aria-labelledby="downshift-1-label"
                 autoComplete="off"
-                data-css-1na6nif=""
+                data-css-1f28mdy=""
                 data-css-8z457z=""
                 id="downshift-1-input"
                 onBlur={[Function]}
@@ -4034,7 +4048,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
           </div>
         </div>
         <div
-          data-css-n5p4fh=""
+          data-css-ugy1u5=""
         >
           <div
             data-css-3sokjq=""

@@ -58,36 +58,32 @@ const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
 
     const isAnchor = 'href' in props
     const isButton = !isAnchor && 'onClick' in props
-
-    const Wrapper: React.FC = wrapperProps =>
-      isAnchor ? (
-        <a
-          ref={ref as RefFor<'a'>}
-          {...(rest as HTMLPropsFor<'a'>)}
-          {...wrapperProps}
-        />
-      ) : isButton ? (
-        <button
-          ref={ref as RefFor<'button'>}
-          {...wrapperProps}
-          {...(rest as HTMLPropsFor<'button'>)}
-        />
-      ) : (
-        <div
-          ref={ref as RefFor<'div'>}
-          {...wrapperProps}
-          {...(rest as HTMLPropsFor<'div'>)}
-        />
-      )
+    const tagName = isAnchor ? 'a' : isButton ? 'button' : 'div'
+    const wrapperRef = isAnchor
+      ? (ref as RefFor<'a'>)
+      : isButton
+      ? (ref as RefFor<'button'>)
+      : (ref as RefFor<'div'>)
+    const wrapperRest = isAnchor
+      ? (rest as HTMLPropsFor<'a'>)
+      : isButton
+      ? (rest as HTMLPropsFor<'button'>)
+      : (rest as HTMLPropsFor<'div'>)
 
     return (
       <Halo inline gapSize={Halo.gapSizes.small}>
-        <Wrapper {...styles.navUser(props)}>
+        {React.createElement(
+          tagName,
+          {
+            ref: wrapperRef,
+            ...styles.navUser(props),
+            ...wrapperRest
+          },
           <>
             <Avatar src={src} size={Avatar.sizes.xSmall} name={name} />
             <Words name={name} meta={meta} />
           </>
-        </Wrapper>
+        )}
       </Halo>
     )
   }

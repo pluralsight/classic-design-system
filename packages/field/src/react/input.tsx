@@ -1,12 +1,18 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
-import React, { forwardRef, useMemo } from 'react'
+import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
+import React, { forwardRef, useContext, useMemo } from 'react'
 
+import { FieldContext } from './context'
 import stylesheet from '../css/input'
+import { sizes } from '../vars'
 
 const styles = {
   container: () => css(stylesheet['.psds-field__input__container']),
-  input: () => css(stylesheet['.psds-field__input'])
+  input: (size: ValueOf<typeof sizes>) =>
+    compose(
+      css(stylesheet['.psds-field__input']),
+      css(stylesheet[`.psds-field__input--${size}`])
+    )
 }
 
 interface InputProps extends Omit<HTMLPropsFor<'input'>, 'ref'> {
@@ -15,6 +21,7 @@ interface InputProps extends Omit<HTMLPropsFor<'input'>, 'ref'> {
 }
 
 const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+  const { size } = useContext(FieldContext)
   const {
     renderContainer = defaultRenderContainer,
     renderTag = defaultRenderTag,
@@ -28,7 +35,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 
   return (
     <Container {...styles.container()} ref={containerRef}>
-      <Tag ref={ref} {...styles.input()} {...rest} />
+      <Tag ref={ref} {...styles.input(size)} {...rest} />
     </Container>
   )
 })
