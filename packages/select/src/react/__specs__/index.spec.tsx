@@ -4,10 +4,14 @@ import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import { DrodpdownLeft, items } from '../__stories__/index.story'
-
+import Select from '..'
+const items = [
+  { id: 'One item', name: 'One item' },
+  { id: 'Two item', name: 'Two item' },
+  { id: 'Three item', name: 'Three item' }
+]
 it('button click opens the menu', async () => {
-  render(<DrodpdownLeft options={items} placeholder={'Select'} />)
+  render(<Select items={items} placeholder={'Select'} />)
   const button = screen.getByRole('button', { name: /Select/ })
   userEvent.click(button)
   const menu = await screen.findByRole('listbox')
@@ -15,7 +19,7 @@ it('button click opens the menu', async () => {
 })
 
 it('disabled click doesnt open menu', () => {
-  render(<DrodpdownLeft options={items} placeholder={'Select'} disabled />)
+  render(<Select items={items} placeholder={'Select'} disabled />)
   const button = screen.getByRole('button', { name: /Select/ })
   userEvent.click(button)
   const menu = screen.queryByRole('listbox')
@@ -23,7 +27,7 @@ it('disabled click doesnt open menu', () => {
 })
 
 it('opens the menu with space key', async () => {
-  render(<DrodpdownLeft options={items} placeholder={'Select'} />)
+  render(<Select items={items} placeholder={'Select'} />)
 
   const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
@@ -34,7 +38,7 @@ it('opens the menu with space key', async () => {
 })
 
 it('opens the menu with enter key', async () => {
-  render(<DrodpdownLeft options={items} placeholder={'Select'} />)
+  render(<Select items={items} placeholder={'Select'} />)
 
   const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
@@ -45,7 +49,7 @@ it('opens the menu with enter key', async () => {
 })
 
 it('opens the menu with down arrow', async () => {
-  render(<DrodpdownLeft options={items} placeholder={'Select'} />)
+  render(<Select items={items} placeholder={'Select'} />)
 
   const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
@@ -56,7 +60,7 @@ it('opens the menu with down arrow', async () => {
 })
 
 it('closes the menu with escape', async () => {
-  render(<DrodpdownLeft options={items} placeholder={'Select'} />)
+  render(<Select items={items} placeholder={'Select'} />)
 
   const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
@@ -72,7 +76,7 @@ it('closes the menu with escape', async () => {
 })
 
 it('selects by click', async () => {
-  render(<DrodpdownLeft options={items} placeholder={'Select'} />)
+  render(<Select items={items} placeholder={'Select'} />)
   const button = screen.getByRole('button', { name: /Select/ })
   userEvent.click(button)
 
@@ -83,7 +87,7 @@ it('selects by click', async () => {
 })
 
 it('navigates by arrows, selects by enter', async () => {
-  render(<DrodpdownLeft options={items} placeholder={'Select'} />)
+  render(<Select items={items} placeholder={'Select'} />)
   const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
   enterKey()
@@ -97,7 +101,7 @@ it('navigates by arrows, selects by enter', async () => {
 })
 
 it('re-navigates, active index is maintained on selection', async () => {
-  render(<DrodpdownLeft options={items} placeholder={'Select'} />)
+  render(<Select items={items} placeholder={'Select'} />)
   const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
   enterKey()
@@ -109,7 +113,7 @@ it('re-navigates, active index is maintained on selection', async () => {
 
   expect(button).toHaveTextContent('Three item')
 
-  enterKey()
+  arrowDownKey()
   await screen.findByRole('listbox')
   arrowDownKey()
   enterKey()
@@ -119,9 +123,7 @@ it('re-navigates, active index is maintained on selection', async () => {
 
 it('select button onClick is triggered', async () => {
   const onClick = jest.fn()
-  render(
-    <DrodpdownLeft options={items} placeholder={'Select'} onClick={onClick} />
-  )
+  render(<Select items={items} placeholder={'Select'} onClick={onClick} />)
   const button = screen.getByRole('button', { name: /Select/ })
   userEvent.click(button)
 
@@ -135,9 +137,7 @@ it('select button onClick is triggered', async () => {
 
 it('calls on change with click on label text', async () => {
   const onChange = jest.fn()
-  render(
-    <DrodpdownLeft options={items} placeholder={'Select'} onChange={onChange} />
-  )
+  render(<Select items={items} placeholder={'Select'} onChange={onChange} />)
   const button = screen.getByRole('button', { name: /Select/ })
   userEvent.click(button)
 
@@ -145,16 +145,14 @@ it('calls on change with click on label text', async () => {
   userEvent.click(item)
 
   expect(onChange).toHaveBeenCalledWith(expect.any(Object), {
-    value: 'Three item',
-    option: 'Three item'
+    id: 'Three item',
+    name: 'Three item'
   })
 })
 
 it('calls on change with keydown on value', async () => {
   const onChange = jest.fn()
-  render(
-    <DrodpdownLeft options={items} placeholder={'Select'} onChange={onChange} />
-  )
+  render(<Select items={items} placeholder={'Select'} onChange={onChange} />)
   const button = screen.getByRole('button', { name: /Select/ })
   button.focus()
   enterKey()
@@ -163,18 +161,18 @@ it('calls on change with keydown on value', async () => {
   enterKey()
 
   expect(onChange).toHaveBeenCalledWith(expect.any(Object), {
-    value: 'Two item',
-    option: 'Two item'
+    id: 'Two item',
+    name: 'Two item'
   })
 })
 
 it('should have a pre-selected value', async () => {
   render(
-    <DrodpdownLeft
-      options={items}
+    <Select
+      items={items}
       value={{
-        value: 'Two item',
-        option: 'Two item'
+        id: 'Two item',
+        name: 'Two item'
       }}
     />
   )

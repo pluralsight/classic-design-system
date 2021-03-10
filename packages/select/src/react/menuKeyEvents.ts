@@ -117,17 +117,20 @@ export const handleMenuKeyDownEvents: KeyboardEventHandler = synthetic => {
 
 export const useMenuRef = () => {
   const [, setFocus] = useState<boolean | undefined>()
-  const inner = useCallback(node => {
-    if (node) {
-      const firstMenuItem =
-        node.querySelector('[aria-selected="true"]') ||
-        searchListItem(node.firstElementChild)
-      const requestId = requestAnimationFrame(() => {
-        firstMenuItem.focus()
-        setFocus(true)
-      })
-      return () => cancelAnimationFrame(requestId)
-    }
-  }, [])
+  const inner = useCallback(
+    node => {
+      if (node) {
+        const firstMenuItem =
+          node.querySelector('[aria-selected="true"]') ||
+          searchListItem(node.firstElementChild)
+        const requestId = requestAnimationFrame(() => {
+          firstMenuItem.focus()
+          setFocus(true)
+        })
+        return () => cancelAnimationFrame(requestId)
+      }
+    },
+    [setFocus]
+  )
   return useCombinedRefs(inner)
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactText } from 'react'
 import { compose, css } from 'glamor'
 import {
   names as themeNames,
@@ -18,8 +18,8 @@ interface SelectSelectedProps extends HTMLPropsFor<'label'> {
   label?: string
   placeholder: string
   selectedItem?: {
-    option: string | undefined
-    value: string | number | undefined
+    id?: ReactText
+    name?: ReactText
   }
 }
 
@@ -30,8 +30,8 @@ export const Selected: React.FC<SelectSelectedProps> = ({
   const themeName = useTheme()
   return (
     <>
-      <span {...styles(placeholder === selectedItem?.option, themeName)}>
-        {selectedItem?.option}
+      <span {...styles(placeholder === selectedItem?.name, themeName)}>
+        {selectedItem?.name}
       </span>
     </>
   )

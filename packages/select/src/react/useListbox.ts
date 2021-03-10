@@ -1,20 +1,24 @@
-import {
+import React, {
   Ref,
   useCallback,
   useEffect,
   useImperativeHandle,
   useRef,
   useState,
-  FocusEventHandler
+  FocusEventHandler,
+  ReactText
 } from 'react'
 import {
-  canUseDOM,
   useUniqueId,
   ValueOf,
-  HTMLPropsFor
+  HTMLPropsFor,
+  useCloseOnDocumentEvents,
+  canUseDOM
 } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
+
+import { useMenuRef, handleMenuKeyDownEvents } from './menuKeyEvents'
 
 export const useActive = (
   ref: React.MutableRefObject<HTMLLIElement | undefined>
@@ -33,11 +37,11 @@ export const useActive = (
 }
 
 interface SelectedItem {
-  option: string
-  value: number | string
+  id: ReactText
+  name: ReactText
 }
 
-export interface UseSelectProps
+export interface UseListboxProps
   extends Omit<HTMLPropsFor<'button'>, 'onChange' | 'value'> {
   disabled?: boolean
   error?: boolean
@@ -54,7 +58,7 @@ export interface UseSelectProps
   mountOpen?: boolean
 }
 
-const sortSelectProps = ({
+const sortListboxProps = ({
   disabled,
   error,
   onChange,
@@ -62,14 +66,14 @@ const sortSelectProps = ({
   placeholder = '',
   size,
   value = {
-    option: placeholder,
-    value: ''
+    name: placeholder,
+    id: ''
   },
   labelId,
   'data-testid': dataTestId,
   mountOpen = false,
   ...rest
-}: UseSelectProps) => ({
+}: UseListboxProps) => ({
   button: {
     disabled,
     error,
@@ -90,34 +94,17 @@ const sortSelectProps = ({
   }
 })
 
-export const useSelect = (
-  props: UseSelectProps,
+export const useListbox = (
+  props: UseListboxProps,
   forwardedRef?: Ref<HTMLButtonElement>
 ) => {
-  const { hook, ...rest } = sortSelectProps(props)
+  const { hook, ...rest } = sortListboxProps(props)
   const uid = useUniqueId()
   const buttonId = `select-button-${hook.dataTestId || uid}`
   const menuId = `select-menu-${hook.dataTestId || uid}`
   const [isOpen, setOpen] = useState<boolean>(hook.mountOpen)
 
   const [selectedItem, setSelectedItem] = useState<SelectedItem>(hook.value)
-
-  useEffect(() => {
-    function handleEscape(evt: KeyboardEvent) {
-      if (evt.key === 'Escape') {
-        setOpen(false)
-        buttonRef.current?.focus()
-      }
-    }
-
-    if (canUseDOM() && isOpen) {
-      document.addEventListener('keydown', handleEscape, false)
-
-      return () => {
-        document.removeEventListener('keydown', handleEscape, false)
-      }
-    }
-  }, [isOpen])
 
   function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
     if (
@@ -153,14 +140,33 @@ export const useSelect = (
     forwardedRef,
     () => (buttonRef.current as unknown) as HTMLButtonElement
   )
+  const menuRef = useMenuRef()
   const closeMenu = () => {
     setOpen(false)
     if (buttonRef.current) {
       buttonRef.current.focus()
     }
   }
+  useEffect(() => {
+    function handleEscape(evt: KeyboardEvent) {
+      if (evt.key === 'Escape') {
+        setOpen(false)
+        buttonRef.current?.focus()
+      }
+    }
+
+    if (canUseDOM() && isOpen) {
+      document.addEventListener('keydown', handleEscape, false)
+
+      return () => {
+        document.removeEventListener('keydown', handleEscape, false)
+      }
+    }
+  }, [isOpen])
+
+  useCloseOnDocumentEvents(menuRef, closeMenu)
   return {
-    button: {
+    buttonProps: {
       ...rest.button,
       id: buttonId,
       // eslint-disable-next-line @typescript-eslint/prefer-as-const
@@ -171,23 +177,24 @@ export const useSelect = (
       onClick: handleButtonEvent,
       onKeyDown: handleButtonEvent
     },
-    menu: {
+    menuProps: {
       role: 'listbox',
       useActive,
       optionRole: 'option',
       'aria-labelledby': buttonId,
       id: menuId,
       onClick: handleMenuItemClick,
-      selectedItem
+      selectedItem,
+      ref: menuRef,
+      onKeyDown: handleMenuKeyDownEvents
     },
-    selected: {
+    selectedProps: {
       ...rest.selected,
       selectedItem
     },
     isOpen,
     dataOptionLabel: {
       'data-option-label': ''
-    },
-    closeMenu
+    }
   }
 }
