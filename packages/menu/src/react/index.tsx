@@ -37,8 +37,8 @@ interface MenuStatics {
 
 interface MenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
   selectedItem?: {
-    option: string
-    value: number | string
+    id: ReactText
+    name: ReactText
   }
   optionRole?: string
   useActive?: (

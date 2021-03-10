@@ -77,8 +77,8 @@ storiesOf('menu items', module)
   .add('active item', () => {
     const ref = useRef<HTMLUListElement>()
     const selectedItem = {
-      option: 'Active',
-      value: 'active'
+      name: 'Active',
+      id: 'active'
     }
     useEffect(() => {
       if (ref?.current) {
@@ -89,7 +89,7 @@ storiesOf('menu items', module)
     return (
       <Menu selectedItem={selectedItem} ref={ref as RefFor<'ul'>}>
         <Menu.Item>Not active</Menu.Item>
-        <Menu.Item active value={{ value: 'active', option: 'active' }}>
+        <Menu.Item active value={{ id: 'active', name: 'active' }}>
           Active
         </Menu.Item>
         <Menu.Item active disabled>
@@ -101,8 +101,8 @@ storiesOf('menu items', module)
   .add('active & selected item', () => {
     const ref = useRef<HTMLUListElement>()
     const selectedItem = {
-      option: 'Active',
-      value: 'active'
+      name: 'Active',
+      id: 'active'
     }
     useEffect(() => {
       if (ref?.current) {
@@ -117,7 +117,7 @@ storiesOf('menu items', module)
         ref={ref as RefFor<'ul'>}
       >
         <Menu.Item>Not active</Menu.Item>
-        <Menu.Item active value={{ value: 'active', option: 'active' }}>
+        <Menu.Item active value={{ id: 'active', name: 'active' }}>
           Selected
           <Menu.Check style={{ marginLeft: 'auto' }} />
         </Menu.Item>
@@ -150,11 +150,9 @@ const handleClick = (_e: unknown, value: unknown) => {
 
 storiesOf('onClick', module).add('flat', () => (
   <Menu onClick={handleClick}>
-    <Menu.Item value={{ option: 'one', value: 'one' }}>One item</Menu.Item>
-    <Menu.Item value={{ option: 'two', value: 'two' }}>Two item</Menu.Item>
-    <Menu.Item value={{ option: 'three', value: 'three' }}>
-      Three item
-    </Menu.Item>
+    <Menu.Item value={{ name: 'One item', id: 'one' }}>One item</Menu.Item>
+    <Menu.Item value={{ name: 'Two item', id: 'two' }}>Two item</Menu.Item>
+    <Menu.Item value={{ name: 'Two item', id: 'three' }}>TTwo item</Menu.Item>
   </Menu>
 ))
 

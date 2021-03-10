@@ -24,7 +24,6 @@ interface MenuItemProps {
   value?: SelectedItem
   onItemBlur?: React.FocusEventHandler
   onItemFocus?: React.FocusEventHandler
-  as?: string
   onKeyDown?: React.KeyboardEventHandler
 }
 
@@ -35,8 +34,8 @@ export const Item = forwardRef((props, ref) => {
     disabled,
     onClick,
     value = {
-      value: '',
-      option: ''
+      id: '',
+      name: ''
     },
     children,
     onKeyDown,
@@ -54,7 +53,7 @@ export const Item = forwardRef((props, ref) => {
     evt.key === 'Enter' && handleClick(evt)
     onKeyDown && onKeyDown(evt)
   }
-  const selected = selectedItem?.value === value.value
+  const selected = selectedItem?.id === value.id
   const listItem = useRef<HTMLLIElement | undefined>()
   const { active: hookActive, handleActiveState } = useActive(listItem)
   return (
