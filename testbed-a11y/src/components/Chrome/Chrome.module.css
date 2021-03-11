@@ -1,7 +1,6 @@
 .chrome {
   background-color: var(--psColorsBackgroundDark1);
   color: var(--psColorsTextIconHighOnDark);
-  min-height: 100vh;
 }
 
 .navItem {

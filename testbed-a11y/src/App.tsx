@@ -6,6 +6,7 @@ import { Chrome } from './components/Chrome'
 
 import { NotFoundPage } from './pages/NotFoundPage'
 import { SearchPage } from './pages/SearchPage'
+import { UsersPage } from './pages/UsersPage'
 
 function App() {
   const [theme] = useState(themes.dark)
@@ -15,6 +16,10 @@ function App() {
       <Router>
         <Chrome>
           <Switch>
+            <Route path="/users">
+              <UsersPage />
+            </Route>
+
             <Route path="/search">
               <SearchPage />
             </Route>

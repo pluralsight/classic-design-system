@@ -1447,6 +1447,15 @@
     "@pluralsight/ps-design-system-util" "^7.2.0"
     tiny-hashes "^1.0.1"
 
+"@pluralsight/ps-design-system-breadcrumb@^10.0.3":
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-breadcrumb/-/ps-design-system-breadcrumb-10.0.3.tgz#542395605cb8c9ab8f588c66adea117a2787d838"
+  integrity sha512-MJELI5TAvPzZY5mmFRaF9oVGBy5KLWpyJRrydl0fj5AYksiHdP1dV4vEn8dpFIZTtNW5ttfz6nBUOJTvx/Yp6w==
+  dependencies:
+    "@pluralsight/ps-design-system-button" "^21.0.3"
+    "@pluralsight/ps-design-system-core" "^6.9.2"
+    "@pluralsight/ps-design-system-icon" "^21.0.3"
+
 "@pluralsight/ps-design-system-button@^21.0.3":
   version "21.0.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-button/-/ps-design-system-button-21.0.3.tgz#ea9a18ae73a399b6b03c9de974b79a7894d7c1c1"
@@ -1454,6 +1463,15 @@
   dependencies:
     "@pluralsight/ps-design-system-core" "^6.9.2"
     "@pluralsight/ps-design-system-icon" "^21.0.3"
+    "@pluralsight/ps-design-system-util" "^7.2.0"
+
+"@pluralsight/ps-design-system-checkbox@^7.1.3":
+  version "7.1.3"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-checkbox/-/ps-design-system-checkbox-7.1.3.tgz#3547861a4bb0bb1f1dc6d6fb537a00f1bf9b4fe4"
+  integrity sha512-49MhkTzKUlM6roMTsAFMv7hd+Xw8qEW4FUbBZ4hh/m31cFR0jDYqLpYgb3u3yKuUeXvqBHFKPMXUGWTKrlAR1Q==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.2"
+    "@pluralsight/ps-design-system-halo" "^8.1.3"
     "@pluralsight/ps-design-system-util" "^7.2.0"
 
 "@pluralsight/ps-design-system-collapsible@^4.0.1":
@@ -1565,12 +1583,39 @@
     "@pluralsight/ps-design-system-core" "^6.9.2"
     normalize.css "^8.0.1"
 
+"@pluralsight/ps-design-system-screenreaderonly@^3.1.4":
+  version "3.1.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-screenreaderonly/-/ps-design-system-screenreaderonly-3.1.4.tgz#56f7c79212bf360948b8fca362f900b7c0c59568"
+  integrity sha512-/QgykNQdwqh5QxDW9WxsZmPzMOamA13850ZGQNGiDtbYbbYq5tmYpTaQLjCiWDI17gXfKgO7inIaOZEnh4Aljw==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.2"
+    "@pluralsight/ps-design-system-util" "^7.2.0"
+
 "@pluralsight/ps-design-system-scrollable@^4.1.3":
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-scrollable/-/ps-design-system-scrollable-4.1.3.tgz#b2227ce3f73a4a5aca59a27ddf21fe36ede4f2b1"
   integrity sha512-XzoBCWC9tN05DpOysDMNx68NEaKIixOVa9Y+mUt6bh65hucVhEMMKeEKgoac16BnCVDrhiHhLcoifR4uBEZ5zg==
   dependencies:
     "@pluralsight/ps-design-system-core" "^6.9.2"
+    "@pluralsight/ps-design-system-util" "^7.2.0"
+
+"@pluralsight/ps-design-system-tab@^17.1.4":
+  version "17.1.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-tab/-/ps-design-system-tab-17.1.4.tgz#190c1b2dc9ee207dd32f7430cd7160064cbc9587"
+  integrity sha512-FtkqtYOCiosomr5tkaPQjgiobwOwKndzexYWPXUtZm3c7NTCSO8hkTIEvgE2JgH/OUVsBm468miaEP2Se0sKaA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.2"
+    "@pluralsight/ps-design-system-icon" "^21.0.3"
+    "@pluralsight/ps-design-system-util" "^7.2.0"
+
+"@pluralsight/ps-design-system-table@^13.1.0":
+  version "13.1.0"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-table/-/ps-design-system-table-13.1.0.tgz#a29b2edcf98d771fef6112c0a6dfb96f1ad43ab1"
+  integrity sha512-TgJXwT0yxUvw16XzB2+0QF/67Ch2Q8v4DuVF1dnAiHhdoiw+Ag5dE1yK743QemPP+mW/+IEischWVN7eLViU+A==
+  dependencies:
+    "@pluralsight/ps-design-system-collapsible" "^4.0.1"
+    "@pluralsight/ps-design-system-core" "^6.9.2"
+    "@pluralsight/ps-design-system-icon" "^21.0.3"
     "@pluralsight/ps-design-system-util" "^7.2.0"
 
 "@pluralsight/ps-design-system-text@^18.1.3":
@@ -1881,6 +1926,11 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
 
+"@types/faker@^5.1.7":
+  version "5.1.7"
+  resolved "https://registry.yarnpkg.com/@types/faker/-/faker-5.1.7.tgz#1c3f0655f6e912f5578ce40baa941ab8705fc0ef"
+  integrity sha512-ByseCEyhb+64fapaFR/yASUfAU+Ia4LpCnHhoNMQJFSIBvbtFoEZQB0elwrSF/idpKL5OZvmZhCCukGV8Zi22w==
+
 "@types/glob@^7.1.1":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@types/glob/-/glob-7.1.3.tgz#e6ba80f36b7daad2c685acd9266382e68985c183"
@@ -2013,6 +2063,13 @@
   integrity sha512-0bhXQwHYfMeJlCh7mGhc0VJTRm0Gk+Z8T00aiP4702mDUuLs9SMhnd2DitpjWFjdOecx2UXtICK14H9iMnziGA==
   dependencies:
     "@types/history" "*"
+    "@types/react" "*"
+
+"@types/react-table@^7.0.29":
+  version "7.0.29"
+  resolved "https://registry.yarnpkg.com/@types/react-table/-/react-table-7.0.29.tgz#af2c82f2d6a39be5bc0f191b30501309a8db0949"
+  integrity sha512-RCGVKGlTDv3jbj37WJ5HhN3sPb0W/2rqlvyGUtvawnnyrxgI2BGgASvU93rq2jwanVp5J9l1NYAeiGlNhdaBGw==
+  dependencies:
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^17.0.0":
@@ -5119,6 +5176,11 @@ extsprintf@^1.2.0:
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
   integrity sha1-4mifjzVvrWLMplo6kcXfX5VRaS8=
 
+faker@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/faker/-/faker-5.4.0.tgz#f18e55993c6887918182b003d163df14daeb3011"
+  integrity sha512-Y9n/Ky/xZx/Bj8DePvXspUYRtHl/rGQytoIT5LaxmNwSe3wWyOeOXb3lT6Dpipq240PVpeFaGKzScz/5fvff2g==
+
 fast-deep-equal@^3.1.1:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz#3a7d56b559d6cbc3eb512325244e619a65c6c525"
@@ -6108,6 +6170,13 @@ internal-slot@^1.0.3:
     get-intrinsic "^1.1.0"
     has "^1.0.3"
     side-channel "^1.0.4"
+
+invariant@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
+  integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
+  dependencies:
+    loose-envify "^1.0.0"
 
 ip-regex@^2.1.0:
   version "2.1.0"
@@ -9502,6 +9571,11 @@ react-scripts@4.0.3:
     workbox-webpack-plugin "5.1.4"
   optionalDependencies:
     fsevents "^2.1.3"
+
+react-table@^7.6.3:
+  version "7.6.3"
+  resolved "https://registry.yarnpkg.com/react-table/-/react-table-7.6.3.tgz#76434392b3f62344bdb704f5b227c2f29c1ffb14"
+  integrity sha512-hfPF13zDLxPMpLKzIKCE8RZud9T/XrRTsaCIf8zXpWZIZ2juCl7qrGpo3AQw9eAetXV5DP7s2GDm+hht7qq5Dw==
 
 react@^17.0.1:
   version "17.0.1"

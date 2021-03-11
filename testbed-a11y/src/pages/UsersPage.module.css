@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.headerTitle {
+  margin-bottom: var(--psLayoutSpacingLarge);
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+
+  .headerActions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .headerActions > div:first-child {
+    text-align: right;
+    margin-right: var(--psLayoutSpacingSmall);
+  }
+}
