@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@2.1.3...@pluralsight/ps-design-system-navuser@2.1.4) (2021-03-11)
+
+
+### Bug Fixes
+
+* **navuser:** avoid swallowing click ([5a47133](https://github.com/pluralsight/design-system/commit/5a47133fd7546900a805411f3e1efbb66227617a)), closes [#1656](https://github.com/pluralsight/design-system/issues/1656)
+
+
+
+
+
 ## [2.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@2.1.2...@pluralsight/ps-design-system-navuser@2.1.3) (2021-02-25)
 
 

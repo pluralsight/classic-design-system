@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [18.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@18.1.3...@pluralsight/ps-design-system-text@18.2.0) (2021-03-11)
+
+
+### Features
+
+* **text:** add mono prop to Label ([3374f19](https://github.com/pluralsight/design-system/commit/3374f194b84930b9c3a6d65d2e38e0ab29bb7f26))
+
+
+
+
+
 ## [18.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@18.1.2...@pluralsight/ps-design-system-text@18.1.3) (2021-02-25)
 
 

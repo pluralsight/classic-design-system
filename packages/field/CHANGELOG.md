@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@2.1.0...@pluralsight/ps-design-system-field@2.1.1) (2021-03-11)
+
+
+### Bug Fixes
+
+* **field:** adjust css for disabled input in firefox ([9b7a3d7](https://github.com/pluralsight/design-system/commit/9b7a3d7ba6455fbdf1033590979964f8d79c523c))
+* **field:** maintain input height with prefix; other design tweaks ([c37bb72](https://github.com/pluralsight/design-system/commit/c37bb72ebaa0f2b3e86811e83dd2b90d7eec2579))
+
+
+
+
+
 # [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@2.0.2...@pluralsight/ps-design-system-field@2.1.0) (2021-02-25)
 
 
