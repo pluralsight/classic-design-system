@@ -2,7 +2,7 @@ import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, { forwardRef } from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index.js'
 
 const styles = () => css(stylesheet[`.psds-actionmenu__ellipsis`])
 

@@ -1,7 +1,7 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { MouseEvent, ReactText, createContext } from 'react'
 
-import { origins } from '../vars'
+import { origins } from '../vars/index.js'
 
 interface ContextValue {
   onClickContext?: (evt: MouseEvent, value?: ReactText) => void
