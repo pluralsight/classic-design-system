@@ -18,11 +18,11 @@ import React, {
   useState
 } from 'react'
 
-import stylesheet from '../css'
-import { origins, tagName as tagNames } from '../vars'
+import stylesheet from '../css/index.js'
+import { origins, tagName as tagNames } from '../vars/index.js'
 
-import { ActionMenuContext } from './context'
-import { Arrow } from './arrow'
+import { ActionMenuContext } from './context.js'
+import { Arrow } from './arrow.js'
 
 const styles = {
   itemContainer: ({

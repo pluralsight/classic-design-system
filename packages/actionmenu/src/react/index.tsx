@@ -15,14 +15,14 @@ import {
   useMenuRef
 } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css/index'
-import * as vars from '../vars/index'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
-import { ActionMenuContext } from './context'
-import { Divider } from './divider'
-import { Item } from './item'
-import { Ellipsis } from './ellipsis'
-import { Icon } from './icon'
+import { ActionMenuContext } from './context.js'
+import { Divider } from './divider.js'
+import { Item } from './item.js'
+import { Ellipsis } from './ellipsis.js'
+import { Icon } from './icon.js'
 
 const slide = keyframes(
   stylesheet['@keyframes psds-actionmenu__keyframes__slide']
