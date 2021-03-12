@@ -7,7 +7,7 @@
   "author": "jaketrent",
   "keywords": [],
   "bin": {
-    "build-css": "./bin/build-css.js"
+    "build-css": "./bin/build-css.mjs"
   },
   "main": "index.js",
   "scripts": {
