@@ -39,9 +39,10 @@ Providing a `onClear` prop will display a close icon.
 import React from 'react'
 import SearchInput from '@pluralsight/ps-design-system-searchinput'
 
-const Comp = () => (
-  <SearchInput onClear={() => null} placeholder="Searching for?" />
-)
+const Comp = () => { 
+  const [value, setValue] = React.useState('')
+  return <SearchInput onClear={() => setValue('')} placeholder="Searching for?" />
+}
 
 export default Comp
 ```
