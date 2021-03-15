@@ -1,0 +1,20 @@
+.page {
+  padding-bottom: var(--psLayoutSpacingLarge);
+  padding-top: var(--psLayoutSpacingSmall);
+}
+
+.card {
+  background-color: var(--psColorsBackgroundDark2);
+  border-radius: 5px;
+  margin-bottom: var(--psLayoutSpacingLarge);
+  padding: var(--psLayoutSpacingSmall);
+  text-align: center;
+}
+
+.cardTitle {
+  border-bottom: 1px solid var(--psColorsBorderLowOnDark);
+  font-size: var(--psTypeFontSize400);
+  margin: 0;
+  padding: 0 var(--psLayoutSpacingXSmall) var(--psLayoutSpacingSmall);
+  margin-bottom: var(--psLayoutSpacingSmall);
+}

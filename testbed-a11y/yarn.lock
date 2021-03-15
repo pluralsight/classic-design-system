@@ -1425,6 +1425,15 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
+"@pluralsight/ps-design-system-actionmenu@^16.2.1":
+  version "16.2.1"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-actionmenu/-/ps-design-system-actionmenu-16.2.1.tgz#b0e1da99d0749cd6ef15ef0db349c8837404cdb1"
+  integrity sha512-/aF0lkWqx/U9fUuaIYn3CmJsMJhhlNLGJPzJAVWSR1qXmv37wE+8WIVZzfKp+a6cArmFfW1B6tWIngmKwaf4qA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
 "@pluralsight/ps-design-system-appframe@^3.0.3":
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-appframe/-/ps-design-system-appframe-3.0.3.tgz#c08d6ee76424808bcfb9ca7df101ec00122acdb8"
@@ -1465,6 +1474,28 @@
     "@pluralsight/ps-design-system-icon" "^21.0.3"
     "@pluralsight/ps-design-system-util" "^7.2.0"
 
+"@pluralsight/ps-design-system-card@^16.0.4":
+  version "16.0.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-card/-/ps-design-system-card-16.0.4.tgz#0eb0e149bf569624088532e8b67ed9917b7b44c6"
+  integrity sha512-xxb0LkHtd6vhuu6KmOL1mJUujbUZ5vr9wMzHJawy57i8R8JHVC1OF2wMt81QGtWMyc+lnhbWL+9ImjRe2m/pYQ==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+    focus-within "^3.0.2"
+    shiitake "^3.0.2"
+
+"@pluralsight/ps-design-system-carousel@^11.2.4":
+  version "11.2.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-carousel/-/ps-design-system-carousel-11.2.4.tgz#6fad2bb7b9623aa60968893d9fc5793e95ac46a1"
+  integrity sha512-TgnLp8Dy/AbqLZYyln/sxnR5PKNokA8ld6x45AVY2hTRLVpt3QZTwxnHr1cBqFrys7VQbfP29sEIYXItHRxdeA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-halo" "^8.1.4"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+    resize-observer-polyfill "^1.5.1"
+
 "@pluralsight/ps-design-system-checkbox@^7.1.3":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-checkbox/-/ps-design-system-checkbox-7.1.3.tgz#3547861a4bb0bb1f1dc6d6fb537a00f1bf9b4fe4"
@@ -1483,6 +1514,11 @@
   version "6.9.2"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-core/-/ps-design-system-core-6.9.2.tgz#c6171c4f1c2822ef95aaee7ae3a8fd87a340b660"
   integrity sha512-Dec6z961APPM04vHGWvrv9u1A/POt2dRArlYD60/seBr4nxrKX0q9j/IxmgHBKD7l8DWuVUHvjb32HSoX/pl6A==
+
+"@pluralsight/ps-design-system-core@^6.9.3":
+  version "6.9.3"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-core/-/ps-design-system-core-6.9.3.tgz#b2d7dca17e684441c57f11b02b94de7401dde01c"
+  integrity sha512-tIf3PD9nTu4rI4A2sRGT66Lz3w6cD93IAQzRaThoWTbmpIqmWTh7JszjJCLPeK3U/WpT7fXTkAteU+A/B6bQ5A==
 
 "@pluralsight/ps-design-system-errors@^11.0.3":
   version "11.0.3"
@@ -1506,6 +1542,16 @@
     focus-within "^3.0.2"
     hoist-non-react-statics "^3.3.0"
 
+"@pluralsight/ps-design-system-halo@^8.1.4":
+  version "8.1.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-halo/-/ps-design-system-halo-8.1.4.tgz#29c8f983324eb67102e0f371ae4c0b640b40d82e"
+  integrity sha512-0nVQ2Z69CL5YXQqEJW4cSWU2tRINqqwUEB6Jii9WRCXTxlVoj8EINLH7Ozv1eAnT8O8sJwyjEAFaXQ7d4aAagg==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+    focus-within "^3.0.2"
+    hoist-non-react-statics "^3.3.0"
+
 "@pluralsight/ps-design-system-icon@^21.0.3":
   version "21.0.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-icon/-/ps-design-system-icon-21.0.3.tgz#7167c64ec35ae9c504b9009b3f8606e2f1b9f61e"
@@ -1513,6 +1559,17 @@
   dependencies:
     "@pluralsight/ps-design-system-core" "^6.9.2"
     "@pluralsight/ps-design-system-util" "^7.2.0"
+    arg "^4.1.1"
+    fast-glob "^3.1.0"
+    svgo "^1.3.2"
+
+"@pluralsight/ps-design-system-icon@^21.0.4":
+  version "21.0.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-icon/-/ps-design-system-icon-21.0.4.tgz#cbebb65df2012e58026f9d9ef3e080614bcae074"
+  integrity sha512-OjphuMzK7ezNKmpJY43Y4cgl9oSN+ntLt0lsRGkilIrGxnpc4ZYDxtEvprQ6TYssWD8cQysuZ9DpQf63xIXCSw==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
     arg "^4.1.1"
     fast-glob "^3.1.0"
     svgo "^1.3.2"
@@ -1583,6 +1640,22 @@
     "@pluralsight/ps-design-system-core" "^6.9.2"
     normalize.css "^8.0.1"
 
+"@pluralsight/ps-design-system-position@^6.1.5":
+  version "6.1.5"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-position/-/ps-design-system-position-6.1.5.tgz#b2fd4a49bba089a77b420c1245d7b48085e0e51b"
+  integrity sha512-sO+v7iDiX7oYER7OFRMQ8IWgv+2HJyPAxECUPOBcJc3C4kZx9b6PkSr+stOU1SoAQCoYfXWuxp7dPBonwpl5Fg==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
+"@pluralsight/ps-design-system-row@^13.0.4":
+  version "13.0.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-row/-/ps-design-system-row-13.0.4.tgz#6b12833fbb312066f2f5c735e7d00e06105fb2d2"
+  integrity sha512-AmF3lIb+uVwtPWP1alr/p/dMy1F06WS5Tmmn9zl8KM7owBejSqGhoz6vkQX3i1pCH5XJ2+djXO3+gYHpuDDI8A==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    shave "^2.5.6"
+
 "@pluralsight/ps-design-system-screenreaderonly@^3.1.4":
   version "3.1.4"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-screenreaderonly/-/ps-design-system-screenreaderonly-3.1.4.tgz#56f7c79212bf360948b8fca362f900b7c0c59568"
@@ -1638,6 +1711,14 @@
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-7.2.0.tgz#11bfed182f97c2782404d3e682c19272beefd76f"
   integrity sha512-dffsxC6HK9cVskoSrHX1AgTuE4aFKlZvau2j64yzdLevvbCUG1rcb69GztwxC81h/C9AvE1wGJ2K/XTvb4DKiw==
+  dependencies:
+    exenv "^1.2.2"
+    resize-observer-polyfill "^1.5.1"
+
+"@pluralsight/ps-design-system-util@^7.2.1":
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-7.2.1.tgz#e636ca71febba5a800de01482e1bdddbd8c41070"
+  integrity sha512-MmXc1p9f08O5o9v5AYF1/o8bb/IDq7VZXu8pXjPcTSv8l9WKBav3LT05eANihwUCIdnmQYGphBPt1BXLYQehEw==
   dependencies:
     exenv "^1.2.2"
     resize-observer-polyfill "^1.5.1"
@@ -9233,7 +9314,7 @@ prompts@2.4.0, prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.5"
 
-prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.5.10, prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10269,6 +10350,11 @@ sha.js@^2.4.0, sha.js@^2.4.8:
     inherits "^2.0.1"
     safe-buffer "^5.0.1"
 
+shave@^2.5.6:
+  version "2.5.10"
+  resolved "https://registry.yarnpkg.com/shave/-/shave-2.5.10.tgz#0dd80c4c5ef5a8ff055cf580e3a76148fd0eedb4"
+  integrity sha512-D35tlzDWSCdgBBNzuV3R72SkxIpCupB4WIpJBzbZ1lQYwGsJQP51uG39Xr7S1ISZKh890X10zLWOPwjyf3iQUw==
+
 shebang-command@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-1.2.0.tgz#44aac65b695b03398968c39f363fee5deafdf1ea"
@@ -10302,6 +10388,13 @@ shellwords@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/shellwords/-/shellwords-0.1.1.tgz#d6b9181c1a48d397324c84871efbcfc73fc0654b"
   integrity sha512-vFwSUfQvqybiICwZY5+DAWIPLKsWO31Q91JSKl3UYv+K5c2QRPzn0qzec6QPu1Qc9eHYItiP3NdJqNVqetYAww==
+
+shiitake@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/shiitake/-/shiitake-3.0.2.tgz#4524dfbf55f0e55090f0adc939a8346e4662a214"
+  integrity sha512-vEeFbMk37VHy6hl/GgOoVMZVdsObyFqxggV2wWJxVm8mZDz2Jcev66d5rmRskzBkBiHEc/VwYBJQLLB9efRwwg==
+  dependencies:
+    prop-types "^15.5.8"
 
 side-channel@^1.0.4:
   version "1.0.4"
