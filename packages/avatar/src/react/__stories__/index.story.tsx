@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Avatar from '..'
+import Avatar from '../index.js'
 
 const storySizes = storiesOf('Default', module)
 

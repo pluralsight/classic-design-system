@@ -1,9 +1,9 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import * as vars from '../../vars'
+import * as vars from '../../vars/index.js'
 
-import Avatar from '..'
+import Avatar from '../index.js'
 
 describe('Avatar', () => {
   describe('.sizes', () => {

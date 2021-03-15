@@ -6,9 +6,9 @@ import {
 import { StyleAttribute, compose, css } from 'glamor'
 import React, { ReactEventHandler, forwardRef, useState } from 'react'
 
-import stylesheet from '../css'
-import { sizes, widths } from '../vars'
-import { getColorByName, getInitials, transformSrc } from '../js'
+import stylesheet from '../css/index.js'
+import { sizes, widths } from '../vars/index.js'
+import { getColorByName, getInitials, transformSrc } from '../js/index.js'
 
 interface AvatarProps extends HTMLPropsFor<'div'> {
   alt?: string
