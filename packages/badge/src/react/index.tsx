@@ -7,9 +7,9 @@ import {
 import { css, StyleAttribute } from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
-import { select } from '../js'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import { select } from '../js/index.js'
+import * as vars from '../vars/index.js'
 
 type StyleFn = (
   props: InternalBadgeProps,

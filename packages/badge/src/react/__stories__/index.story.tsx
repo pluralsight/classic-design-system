@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react'
 
 import React from 'react'
 
-import Badge from '..'
-import * as vars from '../../vars'
+import Badge from '../index.js'
+import * as vars from '../../vars/index.js'
 
 const BadgeStory = ({
   appearance
