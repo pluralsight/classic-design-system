@@ -2,7 +2,7 @@ import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Breadcrumb from '..'
+import Breadcrumb from '../index.js'
 
 storiesOf('normal', module).add('looks great', () => (
   <Breadcrumb>All the things</Breadcrumb>

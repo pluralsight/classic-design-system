@@ -1,7 +1,7 @@
 import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
-import Breadcrumb from '..'
+import Breadcrumb from '../index.js'
 
 describe('Breadcrumb', () => {
   it('forwards refs', () => {

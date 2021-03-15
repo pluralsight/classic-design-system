@@ -4,7 +4,7 @@ import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index.js'
 
 const styles = {
   breadcrumb: () => css(stylesheet['.psds-breadcrumb'])
