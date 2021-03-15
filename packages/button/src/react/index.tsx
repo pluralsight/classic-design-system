@@ -8,8 +8,8 @@ import {
 import { css, keyframes } from 'glamor'
 import React, { Children } from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const spin = keyframes(stylesheet['@keyframes psds-button__keyframes__spin'])
 

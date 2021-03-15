@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react'
 import * as glamor from 'glamor'
 import React, { useEffect, useState, ComponentProps } from 'react'
 
-import Button from '..'
+import Button from '../index.js'
 
 const appearanceStory = storiesOf('Button / appearance', module)
 Object.keys(Button.appearances).forEach(app =>
