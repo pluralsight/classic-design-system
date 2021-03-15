@@ -16,9 +16,9 @@ import { compose, css, StyleAttribute } from 'glamor'
 import * as React from 'react'
 import Shiitake from 'shiitake'
 
-import stylesheet from '../css'
-import { toPercentageString } from '../js'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import { toPercentageString } from '../js/index.js'
+import * as vars from '../vars/index.js'
 
 if (canUseDOM()) polyfillFocusWithin(document)
 
