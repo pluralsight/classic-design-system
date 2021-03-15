@@ -1,27 +1,41 @@
 import { storiesOf } from '@storybook/react'
-import React from 'react'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import React, { ComponentProps, useState } from 'react'
 
-import SearchInput, { SearchInputProps } from '..'
+import SearchInput from '..'
 
-const noop = () => {}
+export default {
+  title: 'SearchInput',
+  component: SearchInput,
+  args: {
+    placeholder: 'Search'
+  }
+} as Meta
 
-const SearchInputWithDefaults: React.FC<SearchInputProps> = props => (
-  <SearchInput {...props} />
-)
-SearchInputWithDefaults.defaultProps = {
-  placeholder: 'Search'
+const Template: Story<ComponentProps<typeof SearchInput>> = args => {
+  const [value, setValue] = useState('')
+  return (
+    <SearchInput
+      value={value}
+      onChange={(evt: React.ChangeEvent<HTMLInputElement>) => {
+        setValue(evt.target.value)
+      }}
+      onClear={() => setValue('')}
+      {...args}
+    />
+  )
 }
 
-storiesOf('SearchInput', module)
-  .add('default', () => <SearchInputWithDefaults />)
-  .add('when loading', () => <SearchInputWithDefaults loading />)
-  .add('with onClear prop', () => <SearchInputWithDefaults onClear={noop} />)
-  .add('with TextInput-type props', () => (
-    <SearchInputWithDefaults
-      onClear={noop}
-      error
-      label="Label"
-      placeholder="Le placeholder"
-      subLabel="Sub label"
-    />
-  ))
+export const Onclear = Template.bind({})
+
+export const NoOnclear = Template.bind({})
+NoOnclear.args = { onClear: undefined }
+
+export const StaticValue = Template.bind({})
+StaticValue.args = { value: 'Set, not updated with state' }
+
+export const Loading = Template.bind({})
+Loading.args = { loading: true }
+
+export const FieldProps = Template.bind({})
+FieldProps.args = { error: true, label: 'Label', subLabel: 'Sub Label' }
