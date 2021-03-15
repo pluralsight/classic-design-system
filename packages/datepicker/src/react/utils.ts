@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import React, { useState, useEffect, SyntheticEvent } from 'react'
-import { DateObj } from 'dayzed'
-import { parse, format, differenceInCalendarMonths } from 'date-fns'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { slides } from '../vars'
+import { parse, format, differenceInCalendarMonths } from 'date-fns'
+import { DateObj } from 'dayzed'
 import { css } from 'glamor'
-import stylesheet from '../css'
+import React, { useState, useEffect, SyntheticEvent } from 'react'
+
+import { slides } from '../vars/index.js'
+import stylesheet from '../css/index.js'
 
 const style = {
   start: () => css(stylesheet['.psds-calendar__date--selected-start']),

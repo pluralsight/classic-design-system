@@ -15,7 +15,7 @@ import {
   useDateSelectChange,
   useRangeSelectChange
 } from '..'
-import { slides } from '../../vars'
+import { slides } from '../../vars/index.js'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 storiesOf('SingleDate', module)

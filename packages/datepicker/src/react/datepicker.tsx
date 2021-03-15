@@ -3,11 +3,11 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
 import React, { FC, ComponentProps } from 'react'
 
-import { Calendar } from './calendar'
-import { CalendarDates } from './calendar-dates'
-import { TextInputField } from './text-input-field'
-import { useDateSelectChange } from './utils'
-import { slides } from '../vars'
+import { Calendar } from './calendar.js'
+import { CalendarDates } from './calendar-dates.js'
+import { TextInputField } from './text-input-field.js'
+import { useDateSelectChange } from './utils.js'
+import { slides } from '../vars/index.js'
 
 interface DatePickerProps
   extends Omit<ComponentProps<typeof Field>, 'onSelect'> {

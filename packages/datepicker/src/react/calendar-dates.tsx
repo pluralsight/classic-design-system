@@ -2,8 +2,9 @@ import React, { useContext } from 'react'
 import { css } from 'glamor'
 import { DateObj, RenderProps } from 'dayzed'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { DateContext } from './context'
-import stylesheet from '../css'
+
+import { DateContext } from './context.js'
+import stylesheet from '../css/index.js'
 
 const styles = {
   calendarDate: (selected: boolean, today: boolean) =>
