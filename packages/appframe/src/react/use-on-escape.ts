@@ -1,5 +1,5 @@
-import { useCallback, useEffect } from 'react'
 import { canUseEventListeners } from 'exenv'
+import { useCallback, useEffect } from 'react'
 
 const ESCAPE_KEY = 27
 

@@ -1,6 +1,3 @@
-import { storiesOf } from '@storybook/react'
-import React, { useMemo } from 'react'
-
 import { breakpoints } from '@pluralsight/ps-design-system-core'
 import {
   HomeIcon,
@@ -8,9 +5,11 @@ import {
   PlaceholderIcon
 } from '@pluralsight/ps-design-system-icon'
 import { useMatchMedia } from '@pluralsight/ps-design-system-util'
+import { storiesOf } from '@storybook/react'
+import React, { useMemo } from 'react'
 
-import AppFrame from '..'
-import { MockContent, SideNav, TopNav } from './shared'
+import AppFrame from '../index.js'
+import { MockContent, SideNav, TopNav } from './shared.js'
 
 storiesOf('AppFrame|Examples', module).add('Skills', () => {
   function Story() {

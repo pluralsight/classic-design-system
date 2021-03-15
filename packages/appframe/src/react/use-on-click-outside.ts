@@ -1,5 +1,6 @@
 import { RefObject, useCallback } from 'react'
-import useOnDocumentClick, { Callback } from './use-on-document-click'
+
+import useOnDocumentClick, { Callback } from './use-on-document-click.js'
 
 export default function useOnClickOutside<El extends HTMLElement>(
   ref: RefObject<El>,
