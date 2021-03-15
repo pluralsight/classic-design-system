@@ -1,3 +1,3 @@
-export { default, useDrawerContext } from './react'
-export * from './vars'
-export { default as css } from './css'
+export { default, useDrawerContext } from './react/index.js'
+export * from './vars/index.js'
+export { default as css } from './css/index.js'

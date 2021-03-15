@@ -1,11 +1,4 @@
-import { css } from 'glamor'
-import React, {
-  createContext,
-  useContext,
-  useImperativeHandle,
-  forwardRef
-} from 'react'
-
+import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import {
@@ -18,9 +11,15 @@ import {
   HTMLPropsFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
+import React, {
+  createContext,
+  useContext,
+  useImperativeHandle,
+  forwardRef
+} from 'react'
 
-import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
-import stylesheet from '../css'
+import stylesheet from '../css/index.js'
 
 const styles = {
   head: (themeName: ValueOf<typeof themeNames>, isOpen: boolean) =>

@@ -1,13 +1,12 @@
-import React, { useState } from 'react'
-
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Button from '@pluralsight/ps-design-system-button'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
 import Row from '@pluralsight/ps-design-system-row'
+import React, { useState } from 'react'
 
-import Drawer from '..'
+import Drawer from '../index.js'
 
 const DrawerSummaryContent: React.FC = props => (
   <Text.P {...props} style={{ padding: '10px 0', margin: 0 }} />

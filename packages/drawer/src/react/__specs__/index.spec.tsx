@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
 import { fireEvent, render } from '@testing-library/react'
+import React, { useState } from 'react'
 
-import Drawer from '..'
+import Drawer from '../index.js'
 
 describe('Drawer', () => {
   describe('when uncontrolled', () => {
