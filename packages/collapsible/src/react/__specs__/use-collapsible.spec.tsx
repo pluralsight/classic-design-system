@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import { useCollapsible } from '..'
+import { useCollapsible } from '../index.js'
 
 const Collapsible: React.FC<{ open: boolean }> = ({ open }) => (
   <div {...useCollapsible(open)}>

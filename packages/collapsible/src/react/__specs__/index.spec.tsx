@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Collapsible from '..'
+import Collapsible from '../index.js'
 
 describe('Collapsible', () => {
   it('isOpen toggles open/closed', () => {

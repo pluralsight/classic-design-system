@@ -1,6 +1,6 @@
 import React, { HTMLAttributes } from 'react'
 
-import { useCollapsible } from './use-collapsible'
+import { useCollapsible } from './use-collapsible.js'
 
 interface CollapsibleProps extends HTMLAttributes<HTMLElement> {
   isOpen?: boolean
