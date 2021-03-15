@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Banner from '..'
+import Banner from '../index.js'
 
 describe('Banner', () => {
   it('renders', () => {

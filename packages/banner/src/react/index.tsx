@@ -10,8 +10,8 @@ import {
 import { compose, css, StyleAttribute } from 'glamor'
 import React, { createContext, useContext } from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const ColorContext = createContext<ValueOf<typeof vars.colors>>(
   vars.colors.blue

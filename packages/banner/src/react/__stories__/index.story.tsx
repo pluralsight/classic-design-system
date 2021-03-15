@@ -1,11 +1,9 @@
+import Link from '@pluralsight/ps-design-system-link'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
-
 import React from 'react'
 
-import Link from '@pluralsight/ps-design-system-link'
-
-import Banner from '..'
+import Banner from '../index.js'
 
 const colorStory = storiesOf('color', module)
 Object.values(Banner.colors).forEach(color =>
