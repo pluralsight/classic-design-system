@@ -16,9 +16,9 @@ import {
 import { compose, css } from 'glamor'
 import React from 'react'
 
-import CarouselContext from './context'
-import stylesheet from '../css'
-import * as vars from '../vars/index'
+import CarouselContext from './context.js'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 const styles = {
   control: (direction: ValueOf<typeof vars.controlDirections>) =>

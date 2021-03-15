@@ -1,6 +1,6 @@
 import { renderHook } from '@testing-library/react-hooks'
 
-import useUniqueId from '../use-unique-id'
+import useUniqueId from '../use-unique-id.js'
 
 const uniqueId = jest
   .fn()

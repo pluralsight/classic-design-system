@@ -8,16 +8,14 @@ import {
 import { compose, css } from 'glamor'
 import React, { cloneElement } from 'react'
 
-import stylesheet from '../css'
-import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js'
-import { chunk, pick } from '../js/utils'
-import * as vars from '../vars'
-
-import CarouselContext from './context'
-import { Control } from './control'
-
-import useSwipe, { UseSwipeOpts } from './use-swipe'
+import stylesheet from '../css/index.js'
+import CarouselContext from './context.js'
+import { Control } from './control.js'
+import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js/index.js'
+import { chunk, pick } from '../js/utils.js'
+import useSwipe, { UseSwipeOpts } from './use-swipe.js'
 import useUniqueId from './use-unique-id'
+import * as vars from '../vars/index.js'
 
 const styles = {
   carousel: (ready: boolean) =>

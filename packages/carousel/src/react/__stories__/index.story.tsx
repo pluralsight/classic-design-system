@@ -6,7 +6,7 @@ import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
 
-import Carousel, { Item } from '..'
+import Carousel, { Item } from '../index.js'
 
 const uniqueId = (prefix = '') => `${prefix}mock_unique_id`
 

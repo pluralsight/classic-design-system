@@ -6,7 +6,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import { controlDirections as directions } from '../vars'
+import { controlDirections as directions } from '../vars/index.js'
 
 const resetButton = {
   background: 'transparent',
