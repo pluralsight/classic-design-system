@@ -47,6 +47,25 @@ const Comp = () => {
 export default Comp
 ```
 
+### enterKeyHint
+
+Virtual keyboards can change the label of the enter key. That label should match the functionality intended when the Enter key is pressed. Most of the time, the Enter key just means "enter". Sometimes it can mean "done" or "go" or one of the other [enumerated values](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/enterkeyhint#values).
+
+If the `enterKeyHint` prop is not specified, the browser will try to make its best guess. This is one reason that SearchInput doesn't specify a default. The other is that the Design System tries to avoid determining semantics.
+
+Some users have gotten TypeScript errors related to `enterKeyHint`. If you do, specify the prop based on the context of your application. You should not see an error since the [changes to the @types/react@17](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/48971/files#diff-32cfd8cb197872bcba371f5018185d2e75fa540b52cda2dd7d8ac12dcc021299R2095).
+
+```typescript
+import React from 'react'
+import SearchInput from '@pluralsight/ps-design-system-searchinput'
+
+const Comp = () => (
+  <SearchInput enterKeyHint="search" placeholder="Search and press enter to be taken to the search results" />
+)
+
+export default Comp
+```
+
 ### Guidelines
 
 Exercise consistency and clarity with explicit placeholder text.
