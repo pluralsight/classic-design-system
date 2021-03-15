@@ -1,11 +1,10 @@
+import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
+import * as Text from '@pluralsight/ps-design-system-text'
 import { storiesOf } from '@storybook/react'
 import React, { useState } from 'react'
 
-import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
-import * as Text from '@pluralsight/ps-design-system-text'
-
-import AppFrame from '..'
-import { MockContent, SideNav, TopNav } from './shared'
+import AppFrame from '../index.js'
+import { MockContent, SideNav, TopNav } from './shared.js'
 
 storiesOf('AppFrame', module)
   .add('scrollable sidenav', () => (

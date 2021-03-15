@@ -26,14 +26,14 @@ import {
   usePrevious
 } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css'
-import polyfillElementClosest from '../js/polyfill-element-closest'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import polyfillElementClosest from '../js/polyfill-element-closest.js'
+import * as vars from '../vars/index.js'
 
-import useBodyScrollLock from './use-body-scroll-lock'
-import useOnClickOutside from './use-on-click-outside'
-import useOnEscape from './use-on-escape'
-import useOnInnerFocus from './use-on-inner-focus'
+import useBodyScrollLock from './use-body-scroll-lock.js'
+import useOnClickOutside from './use-on-click-outside.js'
+import useOnEscape from './use-on-escape.js'
+import useOnInnerFocus from './use-on-inner-focus.js'
 
 if (canUseDOM()) {
   polyfillElementClosest()

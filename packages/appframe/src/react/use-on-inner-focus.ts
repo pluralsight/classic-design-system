@@ -1,7 +1,6 @@
+import { usePrevious } from '@pluralsight/ps-design-system-util'
 import { RefObject, useCallback, useEffect, useState } from 'react'
 import { canUseEventListeners, canUseDOM } from 'exenv'
-
-import { usePrevious } from '@pluralsight/ps-design-system-util'
 
 interface EventHandlers {
   onEnter: () => void

@@ -1,24 +1,20 @@
-import React, { Fragment, HTMLAttributes } from 'react'
-
 import {
   colorsBorder,
   colorsPink,
   layout
 } from '@pluralsight/ps-design-system-core'
-
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import {
   PageHeadingLayout,
   PageWidthLayout
 } from '@pluralsight/ps-design-system-layout'
-
-import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
-
 import NavBar from '@pluralsight/ps-design-system-navbar'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import NavUser from '@pluralsight/ps-design-system-navuser'
 import * as Text from '@pluralsight/ps-design-system-text'
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
+import React, { Fragment, HTMLAttributes } from 'react'
 
 export const MockContent: React.FC = () => {
   return (
