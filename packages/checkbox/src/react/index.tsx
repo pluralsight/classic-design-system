@@ -10,7 +10,7 @@ import {
 import { compose, css } from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index.js'
 
 const styles = {
   checkbox: (props: { disabled?: boolean }) =>
