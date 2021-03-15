@@ -9,7 +9,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { transparentize } from '@pluralsight/ps-design-system-util'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 const tailDimension = '14px'
 

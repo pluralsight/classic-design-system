@@ -1,13 +1,11 @@
-import React from 'react'
-
-import { action } from '@storybook/addon-actions'
-import { storiesOf } from '@storybook/react'
-
 import Button from '@pluralsight/ps-design-system-button'
 import * as Text from '@pluralsight/ps-design-system-text'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { action } from '@storybook/addon-actions'
+import { storiesOf } from '@storybook/react'
+import React from 'react'
 
-import Dialog from '..'
+import Dialog from '../index.js'
 
 const closeAction = action('close')
 const openAction = action('open')

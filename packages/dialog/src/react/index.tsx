@@ -12,8 +12,8 @@ import {
 import { StyleAttribute, compose, css, keyframes } from 'glamor'
 import React, { MutableRefObject } from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 /* eslint-disable-next-line camelcase */
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
