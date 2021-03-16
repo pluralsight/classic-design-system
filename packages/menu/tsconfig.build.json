@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src"],
+  "exclude": [
+    ".storybook",
+    "node_modules",
+    "dist",
+    "**/*.spec.*",
+    "**/*.story.*"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src"
+  }
+}
