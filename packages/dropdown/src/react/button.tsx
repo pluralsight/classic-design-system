@@ -1,5 +1,3 @@
-import React, { forwardRef, useLayoutEffect, useRef } from 'react'
-import { compose, css } from 'glamor'
 import {
   names as themeNames,
   useTheme
@@ -8,9 +6,12 @@ import stylesheet from '../css'
 import Icon from '@pluralsight/ps-design-system-icon'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { CaretDown } from './caret-down'
-import { ErrorIcon } from './error-icon'
-import * as vars from '../vars'
+import { compose, css } from 'glamor'
+import React, { forwardRef, useLayoutEffect, useRef } from 'react'
+
+import { CaretDown } from './caret-down.js'
+import { ErrorIcon } from './error-icon.js'
+import * as vars from '../vars/index.js'
 
 const styles = {
   field: (

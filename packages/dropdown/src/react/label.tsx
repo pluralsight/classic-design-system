@@ -7,7 +7,7 @@ import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React, { FC, ReactNode } from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index.js'
 
 const styles = {
   label: (themeName: ValueOf<typeof themeNames>) =>

@@ -1,5 +1,6 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
 import React, {
   ReactNode,
   ReactText,
@@ -11,10 +12,9 @@ import React, {
   useEffect,
   useCallback
 } from 'react'
-import { css } from 'glamor'
 
-import stylesheet from '../css'
-import { DropdownContext } from '../js'
+import stylesheet from '../css/index.js'
+import { DropdownContext } from '../js/index.js'
 
 const styles = {
   item: (isActive: boolean, disabled: boolean) =>

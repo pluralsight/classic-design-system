@@ -12,8 +12,8 @@ import React, {
   useState
 } from 'react'
 
-import Dropdown from '../'
-import { DropdownContext, useDropdown } from '../../js'
+import Dropdown from '../index.js'
+import { DropdownContext, useDropdown } from '../../js/index.js'
 
 // TODO: convert jest storybook format
 const stableId = (prefix = '') => prefix + 'unique-id'

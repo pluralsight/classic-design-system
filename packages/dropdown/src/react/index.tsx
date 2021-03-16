@@ -4,16 +4,17 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { Divider } from './divider'
-import { Item } from './item'
-import { useDropdown, DropdownContext } from '../js'
-import { Label } from './label'
-import { Layout } from './layout'
-import { Menu } from './menu'
-import { SubLabel } from './sub-label'
-import { Button } from './button'
-import { Selected } from './selected'
-import * as vars from '../vars'
+
+import { Divider } from './divider.js'
+import { Item } from './item.js'
+import { useDropdown, DropdownContext } from '../js/index.js'
+import { Label } from './label.js'
+import { Layout } from './layout.js'
+import { Menu } from './menu.js'
+import { SubLabel } from './sub-label.js'
+import { Button } from './button.js'
+import { Selected } from './selected.js'
+import * as vars from '../vars/index.js'
 
 interface DropdownStatics {
   context: typeof DropdownContext

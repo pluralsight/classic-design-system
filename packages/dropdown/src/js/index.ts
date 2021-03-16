@@ -19,7 +19,7 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import innerText from 'react-innertext'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index.js'
 
 interface DropdownContextValue {
   activeItem?: ItemData

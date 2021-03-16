@@ -13,8 +13,12 @@ import React, {
 } from 'react'
 import { css, keyframes } from 'glamor'
 
-import stylesheet from '../css'
-import { DropdownContext, useMenuRef, handleMenuKeyDownEvents } from '../js'
+import stylesheet from '../css/index.js'
+import {
+  DropdownContext,
+  useMenuRef,
+  handleMenuKeyDownEvents
+} from '../js/index.js'
 
 const slide = keyframes(
   stylesheet['@keyframes psds-dropdown__menu__keyframes__slide']
