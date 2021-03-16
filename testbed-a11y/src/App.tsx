@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Chrome } from './components/Chrome'
 
 import { NotFoundPage } from './pages/NotFoundPage'
+import { ProfilePage } from './pages/ProfilePage'
 import { SearchPage } from './pages/SearchPage'
 import { UsersPage } from './pages/UsersPage'
 
@@ -18,6 +19,10 @@ function App() {
           <Switch>
             <Route path="/users">
               <UsersPage />
+            </Route>
+
+            <Route path="/profile">
+              <ProfilePage />
             </Route>
 
             <Route path="/search">

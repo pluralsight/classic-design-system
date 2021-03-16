@@ -1105,6 +1105,13 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
+"@babel/runtime@^7.6.2":
+  version "7.13.10"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
+  integrity sha512-4QPkjJq6Ns3V/RgpEahRk+AGfL0eO6RHHtTWoNNr5mO49G6B5+X6d6THgWEAvTrznU5xYpbAlVKRYcsCgh/Akw==
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
 "@babel/template@^7.10.4", "@babel/template@^7.12.13", "@babel/template@^7.3.3":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.12.13.tgz#530265be8a2589dbb37523844c5bcb55947fb327"
@@ -1456,6 +1463,26 @@
     "@pluralsight/ps-design-system-util" "^7.2.0"
     tiny-hashes "^1.0.1"
 
+"@pluralsight/ps-design-system-avatar@^7.1.4":
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-avatar/-/ps-design-system-avatar-7.1.4.tgz#167034b60ae2b0b02310e7a73fe85c8e2a32ccc7"
+  integrity sha512-PJ9p+iTDBlUZ9wMTcMwaGr1I5dOyuhqCO3eIbk2rlCD+ELDTWfvq2YlK3Ii49ra0c2dzZEs60BYFFAIGqPiIbA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+    tiny-hashes "^1.0.1"
+
+"@pluralsight/ps-design-system-banner@^9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-banner/-/ps-design-system-banner-9.0.4.tgz#1110016bfe151348ecb0e62335ab789a4dd69a06"
+  integrity sha512-rO+FS9NFweCY9I+umd3kel0yWQZ8fwHPhaYvaFnYr0NQCVa2/MtJdN1bZhV9Gs/HbxquiiYR02tTcYgwadW83Q==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-link" "^11.1.4"
+    "@pluralsight/ps-design-system-text" "^18.2.0"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
 "@pluralsight/ps-design-system-breadcrumb@^10.0.3":
   version "10.0.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-breadcrumb/-/ps-design-system-breadcrumb-10.0.3.tgz#542395605cb8c9ab8f588c66adea117a2787d838"
@@ -1473,6 +1500,15 @@
     "@pluralsight/ps-design-system-core" "^6.9.2"
     "@pluralsight/ps-design-system-icon" "^21.0.3"
     "@pluralsight/ps-design-system-util" "^7.2.0"
+
+"@pluralsight/ps-design-system-button@^21.0.4":
+  version "21.0.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-button/-/ps-design-system-button-21.0.4.tgz#e9d2a6350ed888c14cf6d112f136becfa96774fa"
+  integrity sha512-HbHfRi+sTqb+z0FOhtiD/H8+IzcOvRu/3+JVh3DYef3/68oNa594hkThF3qInUqz02j9x75/4obVY+ilaRB9Iw==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
 
 "@pluralsight/ps-design-system-card@^16.0.4":
   version "16.0.4"
@@ -1496,14 +1532,14 @@
     "@pluralsight/ps-design-system-util" "^7.2.1"
     resize-observer-polyfill "^1.5.1"
 
-"@pluralsight/ps-design-system-checkbox@^7.1.3":
-  version "7.1.3"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-checkbox/-/ps-design-system-checkbox-7.1.3.tgz#3547861a4bb0bb1f1dc6d6fb537a00f1bf9b4fe4"
-  integrity sha512-49MhkTzKUlM6roMTsAFMv7hd+Xw8qEW4FUbBZ4hh/m31cFR0jDYqLpYgb3u3yKuUeXvqBHFKPMXUGWTKrlAR1Q==
+"@pluralsight/ps-design-system-checkbox@^7.1.4":
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-checkbox/-/ps-design-system-checkbox-7.1.4.tgz#bfe80e5c93e878f83f874a6e65870d5183e62d2d"
+  integrity sha512-I4XMXRpZZzzHDtkfD6jIcfWdg78EvT1pXhWX/xbjPj+3zY1oi8TiuihxG/OlglrF4+MFRvp8V27eZpACwmJ2RQ==
   dependencies:
-    "@pluralsight/ps-design-system-core" "^6.9.2"
-    "@pluralsight/ps-design-system-halo" "^8.1.3"
-    "@pluralsight/ps-design-system-util" "^7.2.0"
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-halo" "^8.1.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
 
 "@pluralsight/ps-design-system-collapsible@^4.0.1":
   version "4.0.1"
@@ -1520,6 +1556,30 @@
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-core/-/ps-design-system-core-6.9.3.tgz#b2d7dca17e684441c57f11b02b94de7401dde01c"
   integrity sha512-tIf3PD9nTu4rI4A2sRGT66Lz3w6cD93IAQzRaThoWTbmpIqmWTh7JszjJCLPeK3U/WpT7fXTkAteU+A/B6bQ5A==
 
+"@pluralsight/ps-design-system-datepicker@^14.1.0":
+  version "14.1.0"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-datepicker/-/ps-design-system-datepicker-14.1.0.tgz#a490aa3026f56caff74cafa550d0d88d179d06b2"
+  integrity sha512-pgZ+jRG/d9cynqV4+hfUm471US3rOKslAuOe3RhUqYHHFcqucBun3iVs3l1fRO+CBxm5lrnxkNvDsQh0Xmmudg==
+  dependencies:
+    "@pluralsight/ps-design-system-button" "^21.0.4"
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-field" "^2.1.1"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-textinput" "^10.1.5"
+    "@pluralsight/ps-design-system-theme" "^7.1.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+    arrow-keys-react "^1.0.6"
+    date-fns "^2.16.1"
+    dayzed "^3.2.1"
+
+"@pluralsight/ps-design-system-emptystate@^12.0.4":
+  version "12.0.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-emptystate/-/ps-design-system-emptystate-12.0.4.tgz#6ae47836c3ccef5b0b4ce3191f0eebe1bce87cd5"
+  integrity sha512-2jNWIXUYWsDYOAMudFUuIGH/BmJwqAaaq/Kn4v/wrV4HMjPO4WflrjmSWw/aV4wr67icUW0x8GRDxIbUQydlBw==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
 "@pluralsight/ps-design-system-errors@^11.0.3":
   version "11.0.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-errors/-/ps-design-system-errors-11.0.3.tgz#97b306cf7e46ed965bd877cf94639f6f4326e040"
@@ -1531,6 +1591,16 @@
     "@pluralsight/ps-design-system-text" "^18.1.3"
     "@pluralsight/ps-design-system-util" "^7.2.0"
     camelize "^1.0.0"
+
+"@pluralsight/ps-design-system-field@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-field/-/ps-design-system-field-2.1.1.tgz#9c1c10a89aab28f31912cb1fe391d6f76831daa0"
+  integrity sha512-+5Xr/NocL4R5tB/v2mERClU7Xuun8GWy/RCB60r1JmOa2M4fsXY3j3W9/05TQr4GEXjj4GlEHX1lVlmTkEWn2w==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-halo" "^8.1.4"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
 
 "@pluralsight/ps-design-system-halo@^8.1.3":
   version "8.1.3"
@@ -1582,6 +1652,27 @@
     "@pluralsight/ps-design-system-core" "^6.9.2"
     "@pluralsight/ps-design-system-text" "^18.1.3"
     "@pluralsight/ps-design-system-util" "^7.2.0"
+
+"@pluralsight/ps-design-system-link@^11.1.4":
+  version "11.1.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-link/-/ps-design-system-link-11.1.4.tgz#aaa7f87acab46c2e77004ce285fa42bdedf84fb6"
+  integrity sha512-n+EKiCgdRa0LC75+nlHm5cErmfi2PiVr4+teDHiNzPTaXPPJYmoU4saKbO4Qa0/2hDPCo2iq/cc/95m6yR31Xw==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
+"@pluralsight/ps-design-system-multiselect@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-multiselect/-/ps-design-system-multiselect-1.2.2.tgz#efb0e6536aa9d5f3d2eaf16c454cfcd3fa1a02ef"
+  integrity sha512-hCo0q9bzXi3mgcesGFzIjqmrSObgBFgVNX3geUiFl1KqwaCrSf1CI+2ENvS6C2KFw/3n/y9A695lc+NWo5rmzQ==
+  dependencies:
+    "@pluralsight/ps-design-system-actionmenu" "^16.2.1"
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-field" "^2.1.1"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-tag" "^9.0.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+    downshift "^6.1.0"
 
 "@pluralsight/ps-design-system-navbar@^3.0.3":
   version "3.0.3"
@@ -1648,6 +1739,15 @@
     "@pluralsight/ps-design-system-core" "^6.9.3"
     "@pluralsight/ps-design-system-util" "^7.2.1"
 
+"@pluralsight/ps-design-system-radio@^8.1.5":
+  version "8.1.5"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-radio/-/ps-design-system-radio-8.1.5.tgz#da5e2ad93cc7958367194d30d9c693aa608731ba"
+  integrity sha512-Sj6z5kkwwHOQr9hjMSVAt02cRa+A/yBs0U8QgBCtk3fBHiutTcKawTXasJpmxNj29sCC5Syp0JKIQnOlzrkgbg==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-halo" "^8.1.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
 "@pluralsight/ps-design-system-row@^13.0.4":
   version "13.0.4"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-row/-/ps-design-system-row-13.0.4.tgz#6b12833fbb312066f2f5c735e7d00e06105fb2d2"
@@ -1672,6 +1772,14 @@
     "@pluralsight/ps-design-system-core" "^6.9.2"
     "@pluralsight/ps-design-system-util" "^7.2.0"
 
+"@pluralsight/ps-design-system-steps@^2.1.5":
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-steps/-/ps-design-system-steps-2.1.5.tgz#dd61da1296b3a542eae2b014f23ce236862fa557"
+  integrity sha512-g5sCJG3F4x5VBDt3YkutHxHd7rjhijDRY8xUcYNCq3Uo8sFrj5mMS1/1+NTVRoX2GUaMz4bRJc8KL5Li2+YNMg==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
 "@pluralsight/ps-design-system-tab@^17.1.4":
   version "17.1.4"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-tab/-/ps-design-system-tab-17.1.4.tgz#190c1b2dc9ee207dd32f7430cd7160064cbc9587"
@@ -1691,6 +1799,16 @@
     "@pluralsight/ps-design-system-icon" "^21.0.3"
     "@pluralsight/ps-design-system-util" "^7.2.0"
 
+"@pluralsight/ps-design-system-tag@^9.0.4":
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-tag/-/ps-design-system-tag-9.0.4.tgz#acb35d45398976140923ba4ae6d18dd718a0a132"
+  integrity sha512-FOQyWmhwjARo0yoX2n9Y1WealB+g3lO7wNUmR3N/lm8YKoE+658GU8172AM8n2fQZNx5eizFJkmf1xx6nFHFuA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-halo" "^8.1.4"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
 "@pluralsight/ps-design-system-text@^18.1.3":
   version "18.1.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-text/-/ps-design-system-text-18.1.3.tgz#1d2110500eac15bd17a20670b404dabe1b99be81"
@@ -1699,12 +1817,49 @@
     "@pluralsight/ps-design-system-core" "^6.9.2"
     "@pluralsight/ps-design-system-util" "^7.2.0"
 
+"@pluralsight/ps-design-system-text@^18.2.0":
+  version "18.2.0"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-text/-/ps-design-system-text-18.2.0.tgz#6f7d87c3e76c1fb9cc665cfc15d56cc736b41c83"
+  integrity sha512-1rceDVSyms0GA1QI4AYqbx1UPzzKqT5gyJtWwmY/5b94tZWAsKarcUvvDPKfOVJsIBSqOupA7DjSADWhW3jLFA==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
+"@pluralsight/ps-design-system-textarea@^8.1.5":
+  version "8.1.5"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-textarea/-/ps-design-system-textarea-8.1.5.tgz#0c4a9a4ba6b53d9a9235280e21f8e9ace7405cb9"
+  integrity sha512-p61NhxS4hC/MftGCug40GCQT3+BI1qQmkRO+C+Ho2F8HXsI3ozk04eLyi0x0vKTzf3h+tW1jLNOqmJjTGHBakQ==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-halo" "^8.1.4"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
+"@pluralsight/ps-design-system-textinput@^10.1.5":
+  version "10.1.5"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-textinput/-/ps-design-system-textinput-10.1.5.tgz#b6d7ffb922a8b4a354e34c2ea28c781b5bc3ecea"
+  integrity sha512-zom/47hVQjiNewY51GRtYhAxQO4DT7WARA2PC+7UHH8afbaFA+V5zVMPQWCIpFjXpZDI1o1tPxguSdPQBkPpcw==
+  dependencies:
+    "@pluralsight/ps-design-system-button" "^21.0.4"
+    "@pluralsight/ps-design-system-core" "^6.9.3"
+    "@pluralsight/ps-design-system-halo" "^8.1.4"
+    "@pluralsight/ps-design-system-icon" "^21.0.4"
+    "@pluralsight/ps-design-system-util" "^7.2.1"
+
 "@pluralsight/ps-design-system-theme@^7.1.3":
   version "7.1.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-theme/-/ps-design-system-theme-7.1.3.tgz#397ad10033dc8de8b571a73d0642c866aa673d6e"
   integrity sha512-KKAIcT5jNzLgC1aBvSMluMI3sIxkgbmo8SyZ6QU17SYg4dyZ/VBKNBL1A5yxwwlMtkhayLNyrTnMyLr4Ygep9g==
   dependencies:
     "@pluralsight/ps-design-system-util" "^7.2.0"
+    hoist-non-react-statics "^3.3.0"
+
+"@pluralsight/ps-design-system-theme@^7.1.4":
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-theme/-/ps-design-system-theme-7.1.4.tgz#04ff44ee7c249ba78c5fcd55912f2d43ec88b783"
+  integrity sha512-cReIkWH8lRy5z1fz4PEJL3u0X9zFmRcJWkaG3TYyyxQZjEjFWFsT208WxvFKelFSE4Oqakv0/ROG97QiWru9og==
+  dependencies:
+    "@pluralsight/ps-design-system-util" "^7.2.1"
     hoist-non-react-statics "^3.3.0"
 
 "@pluralsight/ps-design-system-util@^7.2.0":
@@ -2774,6 +2929,11 @@ arrify@^2.0.1:
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-2.0.1.tgz#c9655e9331e0abcd588d2a7cad7e9956f66701fa"
   integrity sha512-3duEwti880xqi4eAMN8AyR4a0ByT90zoYdLlevfrvU43vb0YZwZVfxOgxWrLXXXpyugL0hNZc9G6BiB5B3nUug==
 
+arrow-keys-react@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/arrow-keys-react/-/arrow-keys-react-1.0.6.tgz#85d5a6b7a8c5ab29d1e3c326a0fb888f17c11e22"
+  integrity sha512-WoFOU/4kTGGFOELMsMUi3zjTz8pk21zdc76tOHBZtPgEwac4+4fFatEoyM5oozqpZ59xP7Mj/ltI+l0QMLzbDQ==
+
 asap@~2.0.3, asap@~2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
@@ -3778,6 +3938,11 @@ compression@^1.7.4:
     safe-buffer "5.1.2"
     vary "~1.1.2"
 
+compute-scroll-into-view@^1.0.16:
+  version "1.0.17"
+  resolved "https://registry.yarnpkg.com/compute-scroll-into-view/-/compute-scroll-into-view-1.0.17.tgz#6a88f18acd9d42e9cf4baa6bec7e0522607ab7ab"
+  integrity sha512-j4dx+Fb0URmzbwwMUrhqWM2BEWHdFGx+qZ9qqASHRPqvTYdqvWnHg0H1hIbcyLnvgnoNAVMlwkepyqM3DaIFUg==
+
 concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
@@ -4279,6 +4444,19 @@ data-urls@^2.0.0:
     whatwg-mimetype "^2.3.0"
     whatwg-url "^8.0.0"
 
+date-fns@^2.0.0, date-fns@^2.16.1:
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.19.0.tgz#65193348635a28d5d916c43ec7ce6fbd145059e1"
+  integrity sha512-X3bf2iTPgCAQp9wvjOQytnf5vO5rESYRXlPIVcgSbtT5OTScPcsf9eZU+B/YIkKAtYr5WeCii58BgATrNitlWg==
+
+dayzed@^3.2.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/dayzed/-/dayzed-3.2.2.tgz#2b78858d86987ee14fd03fcb187d2d17638d0cdd"
+  integrity sha512-BzNoj+6+er5DPQ0F82Yh1U8MU/jyOo7R+jIlK9FsSjfk4ZIISalygzMcsXTGTFedm5UfTddQnELMVBQUXZDv9Q==
+  dependencies:
+    "@babel/runtime" "^7.6.2"
+    date-fns "^2.0.0"
+
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
@@ -4577,6 +4755,16 @@ dotenv@8.2.0:
   version "8.2.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
   integrity sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
+
+downshift@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/downshift/-/downshift-6.1.0.tgz#f008063d9b63935910d9db12ead07979ab51ce66"
+  integrity sha512-MnEJERij+1pTVAsOPsH3q9MJGNIZuu2sT90uxOCEOZYH6sEzkVGtUcTBVDRQkE8y96zpB7uEbRn24aE9VpHnZg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    compute-scroll-into-view "^1.0.16"
+    prop-types "^15.7.2"
+    react-is "^17.0.1"
 
 duplexer@^0.1.1:
   version "0.1.2"

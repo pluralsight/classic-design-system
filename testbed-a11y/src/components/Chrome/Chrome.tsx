@@ -14,11 +14,7 @@ import {
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import cx from 'classnames'
 import { MouseEventHandler, FC, Fragment, useMemo } from 'react'
-import {
-  RouteComponentProps,
-  useRouteMatch,
-  withRouter
-} from 'react-router-dom'
+import { useHistory, useRouteMatch } from 'react-router-dom'
 
 import styles from './Chrome.module.css'
 
@@ -190,20 +186,20 @@ const Tier1: FC<{ item: Item }> = props => {
   )
 }
 
-interface Tier1HeaderProps extends RouteComponentProps {
+const Tier1Header: React.FC<{
   onClick?: MouseEventHandler<HTMLAnchorElement>
   icon?: any
   to: string
-}
+}> = props => {
+  const { onClick, to, ...rest } = props
 
-const Tier1Header = withRouter((props: Tier1HeaderProps) => {
-  const { history, onClick, to, staticContext, ...rest } = props
+  const history = useHistory()
 
   const handleClick: MouseEventHandler<HTMLAnchorElement> = evt => {
     evt.preventDefault()
 
     if (onClick) onClick(evt)
-    props.history.push(to)
+    history.push(to)
   }
 
   return (
@@ -213,7 +209,7 @@ const Tier1Header = withRouter((props: Tier1HeaderProps) => {
       {...rest}
     />
   )
-})
+}
 
 interface TopNavProps {
   onMobileMenuClick: any
@@ -221,6 +217,12 @@ interface TopNavProps {
 }
 const TopNav: FC<TopNavProps> = props => {
   const { children, onMobileMenuClick, items = [] } = props
+  const history = useHistory()
+
+  const handleUserClick: MouseEventHandler = evt => {
+    evt.preventDefault()
+    history.push('/profile')
+  }
 
   return (
     <div>
@@ -238,7 +240,7 @@ const TopNav: FC<TopNavProps> = props => {
           </Fragment>
         }
         onMobileMenuClick={onMobileMenuClick}
-        user={<NavUser name="Jake" />}
+        user={<NavUser name="Jake" onClick={handleUserClick} />}
       />
     </div>
   )
