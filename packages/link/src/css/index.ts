@@ -1,10 +1,11 @@
-import { colorsPrimaryAction } from '@pluralsight/ps-design-system-core'
+// import { colorsPrimaryAction } from '@pluralsight/ps-design-system-core'
+import { tokens } from '@pluralsight/ps-design-system-core/dist/tokens'
 import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 import * as vars from '../vars'
-
+const { colorsPrimaryAction } = tokens
 export default {
   [`.psds-link--appearance-${vars.appearances.default}.psds-theme--${themeNames.light}`]: {
     color: colorsPrimaryAction.textLightTheme,

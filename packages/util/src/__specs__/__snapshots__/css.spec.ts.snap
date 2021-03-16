@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`css() 1`] = `
+":host(:not(:last-child)) {
+display: none;
+}
+.ExampleOuter {
+grid-template-columns: 1fr 60px;
+}.ExampleOuter {
+color: white;
+}
+.ExampleInner {
+background-color: blue;
+padding: 0;
+}
+[data-active='true'] {
+color: red;
+margin-left: auto;
+}"
+`;

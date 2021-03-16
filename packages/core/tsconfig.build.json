@@ -1,12 +1,15 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src", "typings"],
+  "include": [
+    "src"
+  ],
   "exclude": [
     ".storybook",
     "node_modules",
     "dist",
     "**/*.spec.*",
-    "**/*.story.*"
+    "**/*.story.*",
+    "**/tokens/*.ts"
   ],
   "compilerOptions": {
     "declaration": true,
