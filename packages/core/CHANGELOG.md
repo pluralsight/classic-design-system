@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.9.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.9.2...@pluralsight/ps-design-system-core@6.9.3) (2021-03-11)
+
+
+### Bug Fixes
+
+* **core:** export full core css module for the style export ([5f37a64](https://github.com/pluralsight/design-system/commit/5f37a64b882a372e7fc83a5a395cd07c1909813b))
+* **core:** generate proper esm ([b5fc44e](https://github.com/pluralsight/design-system/commit/b5fc44e28d7704f0023278fbb95c688d172788d6))
+* **core:** put types export in the same place as other packages ([f91444e](https://github.com/pluralsight/design-system/commit/f91444e41e8dcb6c19096f961e8beb7c6723dee9))
+
+
+
+
+
 ## [6.9.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.9.1...@pluralsight/ps-design-system-core@6.9.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core

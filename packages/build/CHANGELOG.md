@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@2.0.4...@pluralsight/ps-design-system-build@2.1.0) (2021-03-11)
+
+
+### Features
+
+* **build:** add fs.copyFile function ([115a15f](https://github.com/pluralsight/design-system/commit/115a15f6b870c0a3b882f737568313105725052d))
+
+
+
+
+
 ## [2.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@2.0.3...@pluralsight/ps-design-system-build@2.0.4) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-build

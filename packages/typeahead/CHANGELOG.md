@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@7.1.4...@pluralsight/ps-design-system-typeahead@7.1.5) (2021-03-11)
+
+
+### Bug Fixes
+
+* **typeahead:** add z-index to typeahead dropdown and update dropdown ([#1640](https://github.com/pluralsight/design-system/issues/1640)) ([a15b9d4](https://github.com/pluralsight/design-system/commit/a15b9d4db93cf17baa23f46732165dae42567d89))
+
+
+
+
+
 ## [7.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@7.1.3...@pluralsight/ps-design-system-typeahead@7.1.4) (2021-02-25)
 
 

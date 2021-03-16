@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.2.0...@pluralsight/ps-design-system-dropdown@11.2.1) (2021-03-11)
+
+
+### Bug Fixes
+
+* **typeahead:** add z-index to typeahead dropdown and update dropdown ([#1640](https://github.com/pluralsight/design-system/issues/1640)) ([a15b9d4](https://github.com/pluralsight/design-system/commit/a15b9d4db93cf17baa23f46732165dae42567d89))
+
+
+
+
+
 # [11.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.1.4...@pluralsight/ps-design-system-dropdown@11.2.0) (2021-02-25)
 
 

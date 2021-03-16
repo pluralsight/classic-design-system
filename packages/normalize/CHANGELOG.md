@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.3.2...@pluralsight/ps-design-system-normalize@4.4.0) (2021-03-11)
+
+
+### Features
+
+* **normalize:** add DM Mono font-face declarations ([56811d3](https://github.com/pluralsight/design-system/commit/56811d31958060315e91a529c582a9bac7886afa))
+
+
+
+
+
 ## [4.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.3.1...@pluralsight/ps-design-system-normalize@4.3.2) (2021-02-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-normalize
