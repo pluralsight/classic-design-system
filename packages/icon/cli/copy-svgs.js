@@ -1,8 +1,12 @@
-const ncp = require('ncp').ncp
-const path = require('path')
+import ncpModule from 'ncp'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-const src = path.resolve(__dirname, '../src/svg')
-const dest = path.resolve(__dirname, '../dist/svg')
+const ncp = ncpModule.ncp
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+const src = path.resolve(__dirname, path.join('..', 'src', 'svg'))
+const dest = path.resolve(__dirname, path.join('..', 'dist', 'svg'))
 
 ncp.limit = 16
 

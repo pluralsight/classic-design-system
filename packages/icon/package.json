@@ -7,14 +7,13 @@
   "author": "jaketrent",
   "keywords": [],
   "bin": {
-    "psds-icon": "bin/icon"
+    "psds-icon": "bin/icon.js"
   },
-  "main": "dist/cjs/index.js",
+  "main": "dist/esm/index.js",
   "module": "dist/esm/index.js",
   "scripts": {
-    "build": "run-s build:svg build:cjs build:esm build:css copy:svg",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
-    "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
+    "build": "run-s build:svg build:esm build:css copy:svg",
+    "build:css": "build-css --useGlamor -i dist/esm/css/index.js",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "prebuild:svg": "yarn clean:svg",
     "build:svg": "node bin/icon -s src/svg -d src/react/icons core",
@@ -27,6 +26,7 @@
   },
   "sideEffects": false,
   "style": "dist/index.css",
+  "type": "module",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.9.3",

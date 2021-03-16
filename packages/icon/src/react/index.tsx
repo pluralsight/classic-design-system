@@ -6,8 +6,8 @@ import {
 import { StyleAttribute, css } from 'glamor'
 import React, { forwardRef } from 'react'
 
-import stylesheet from '../css'
-import { colors, sizes } from '../vars'
+import stylesheet from '../css/index.js'
+import { colors, sizes } from '../vars/index.js'
 
 type StyleFn = (props: IconProps) => StyleAttribute
 
