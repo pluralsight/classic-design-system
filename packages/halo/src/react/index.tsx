@@ -12,8 +12,8 @@ import { StyleAttribute, compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
 import React, { forwardRef } from 'react'
 
-import stylesheet, { BASE_CLASSNAME, themeClasses } from '../css'
-import * as vars from '../vars'
+import stylesheet, { BASE_CLASSNAME, themeClasses } from '../css/index.js'
+import * as vars from '../vars/index.js'
 
 if (canUseDOM()) polyfillFocusWithin(document)
 

@@ -4,8 +4,8 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React from 'react'
 
-import { StyleFn } from '..'
-import * as vars from '../../vars'
+import { StyleFn } from '../index.js'
+import * as vars from '../../vars/index.js'
 
 const stylesheet: { [selector: string]: Record<string, unknown> } = {
   '.focusable': {
