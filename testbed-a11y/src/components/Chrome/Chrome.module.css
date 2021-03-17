@@ -3,9 +3,14 @@
   color: var(--psColorsTextIconHighOnDark);
 }
 
+.navItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .navItem {
   margin-right: var(--psLayoutSpacingXXSmall);
-  display: inline-block;
 }
 
 .sectionDivider {

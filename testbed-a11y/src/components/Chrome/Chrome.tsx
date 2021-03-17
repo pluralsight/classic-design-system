@@ -25,6 +25,7 @@ interface Header {
 }
 
 interface Item {
+  alignment?: string
   href: string
   icon: any
   id: string
@@ -216,8 +217,13 @@ interface TopNavProps {
   items: any[]
 }
 const TopNav: FC<TopNavProps> = props => {
-  const { children, onMobileMenuClick, items = [] } = props
+  const { onMobileMenuClick, items = [] } = props
   const history = useHistory()
+
+  const handleItemClick = (evt: MouseEvent, item: Item) => {
+    evt.preventDefault()
+    history.push(item.href)
+  }
 
   const handleUserClick: MouseEventHandler = evt => {
     evt.preventDefault()
@@ -229,15 +235,21 @@ const TopNav: FC<TopNavProps> = props => {
       <NavBar
         brand={<Branding />}
         items={
-          <Fragment>
+          <div className={styles.navItems}>
             {items.map(item => (
-              <div className={styles.navItem} key={item.id}>
-                <NavItem icon={item.icon}>{item.title}</NavItem>
-              </div>
+              <NavItem
+                alignment={item.alignment}
+                className={styles.navItem}
+                key={item.id}
+                icon={item.icon}
+                onClick={(evt: MouseEvent) => {
+                  handleItemClick(evt, item)
+                }}
+              >
+                {item.title}
+              </NavItem>
             ))}
-
-            {children}
-          </Fragment>
+          </div>
         }
         onMobileMenuClick={onMobileMenuClick}
         user={<NavUser name="Jake" onClick={handleUserClick} />}
@@ -246,7 +258,21 @@ const TopNav: FC<TopNavProps> = props => {
   )
 }
 
-const MAIN_NAV_ITEMS: Item[] = []
+const MAIN_NAV_ITEMS: Item[] = [
+  {
+    href: '/search',
+    icon: <PlaceholderIcon />,
+    id: 'main__header__search',
+    title: 'Search'
+  },
+  {
+    alignment: NavItem.alignments.vertical,
+    href: '/users',
+    icon: <PlaceholderIcon />,
+    id: 'main__header__users',
+    title: 'Users'
+  }
+]
 
 const SIDE_NAV_SECTIONS: Section[] = [
   {
@@ -267,6 +293,12 @@ const SIDE_NAV_SECTIONS: Section[] = [
         icon: <PlaceholderIcon />,
         id: 'section-1__header__users',
         title: 'Users'
+      },
+      {
+        href: '/widgets',
+        icon: <PlaceholderIcon />,
+        id: 'section-1__header__widgets',
+        title: 'Widgets'
       }
     ]
   }

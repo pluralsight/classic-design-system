@@ -32,7 +32,7 @@
     "@pluralsight/ps-design-system-checkbox": "^7.1.4",
     "@pluralsight/ps-design-system-core": "^6.9.2",
     "@pluralsight/ps-design-system-datepicker": "^14.1.0",
-    "@pluralsight/ps-design-system-emptystate": "^12.0.4",
+    "@pluralsight/ps-design-system-emptystate": "^12.0.5",
     "@pluralsight/ps-design-system-errors": "^11.0.3",
     "@pluralsight/ps-design-system-icon": "^21.0.3",
     "@pluralsight/ps-design-system-layout": "^9.0.3",

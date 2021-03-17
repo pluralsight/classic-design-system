@@ -1572,13 +1572,13 @@
     date-fns "^2.16.1"
     dayzed "^3.2.1"
 
-"@pluralsight/ps-design-system-emptystate@^12.0.4":
-  version "12.0.4"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-emptystate/-/ps-design-system-emptystate-12.0.4.tgz#6ae47836c3ccef5b0b4ce3191f0eebe1bce87cd5"
-  integrity sha512-2jNWIXUYWsDYOAMudFUuIGH/BmJwqAaaq/Kn4v/wrV4HMjPO4WflrjmSWw/aV4wr67icUW0x8GRDxIbUQydlBw==
+"@pluralsight/ps-design-system-emptystate@^12.0.5":
+  version "12.0.5"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-emptystate/-/ps-design-system-emptystate-12.0.5.tgz#28a10afd969731d1ff30ba27f6efffde07d146d2"
+  integrity sha512-cZR/J4dF872CJ1uzfw+zeLfcUNghNas1AuL9utKb3+jaanLR2mV1debkHAJIvudwOHTCrzYD+Oc37QsvbZHGCA==
   dependencies:
     "@pluralsight/ps-design-system-core" "^6.9.3"
-    "@pluralsight/ps-design-system-util" "^7.2.1"
+    "@pluralsight/ps-design-system-util" "^7.2.2"
 
 "@pluralsight/ps-design-system-errors@^11.0.3":
   version "11.0.3"
@@ -1874,6 +1874,14 @@
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-7.2.1.tgz#e636ca71febba5a800de01482e1bdddbd8c41070"
   integrity sha512-MmXc1p9f08O5o9v5AYF1/o8bb/IDq7VZXu8pXjPcTSv8l9WKBav3LT05eANihwUCIdnmQYGphBPt1BXLYQehEw==
+  dependencies:
+    exenv "^1.2.2"
+    resize-observer-polyfill "^1.5.1"
+
+"@pluralsight/ps-design-system-util@^7.2.2":
+  version "7.2.2"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-7.2.2.tgz#67d5071d31bf6ad723ce94a933c4bd8e6983d438"
+  integrity sha512-jjWGpvMFSxsqXp/xK0HgDmKtn+6gPU8xUKILQd0brpf/bDF8UgrLm+b00y/IDOdd1brTx3Pbg/XEUiJ3aww0Eg==
   dependencies:
     exenv "^1.2.2"
     resize-observer-polyfill "^1.5.1"

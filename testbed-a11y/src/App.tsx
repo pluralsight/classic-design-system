@@ -8,6 +8,8 @@ import { NotFoundPage } from './pages/NotFoundPage'
 import { ProfilePage } from './pages/ProfilePage'
 import { SearchPage } from './pages/SearchPage'
 import { UsersPage } from './pages/UsersPage'
+import { WidgetCreatePage } from './pages/WidgetCreatePage'
+import { WidgetsPage } from './pages/WidgetsPage'
 
 function App() {
   const [theme] = useState(themes.dark)
@@ -27,6 +29,14 @@ function App() {
 
             <Route path="/search">
               <SearchPage />
+            </Route>
+
+            <Route path="/widgets/create">
+              <WidgetCreatePage />
+            </Route>
+
+            <Route path="/widgets">
+              <WidgetsPage />
             </Route>
 
             <Route path="*">
