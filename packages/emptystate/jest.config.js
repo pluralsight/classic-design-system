@@ -1,11 +1,15 @@
-const path = require('path')
+import * as path from 'path'
+import readPkgUp from 'read-pkg-up'
+import { fileURLToPath } from 'url'
 
-const baseConfig = require('../../jest/base.config.js')
-const { name } = require('./package.json')
+import baseConfig from '../../jest/base.config.js'
 
-module.exports = {
+const { name } = readPkgUp.sync()
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+export default {
   ...baseConfig,
   displayName: name,
-  name: name,
+  name,
   testMatch: [path.join(__dirname, '/**/*/?(*.)+(spec|test).(js|ts|tsx)')]
 }

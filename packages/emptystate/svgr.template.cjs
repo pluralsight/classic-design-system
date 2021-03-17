@@ -12,7 +12,7 @@ function template(api, _opts, values) {
 
   return tmpl.ast`
     ${imports}
-    import { Props } from './types'
+    import { Props } from './types.js'
 
     ${interfaces}
 

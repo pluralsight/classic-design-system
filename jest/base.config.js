@@ -8,6 +8,7 @@ module.exports = {
     '\\.(css)$': 'identity-obj-proxy'
   },
   modulePathIgnorePatterns: ['<rootDir>/scripts/', '<rootDir>/.*/__mocks__'],
+  resolver: '<rootDir>/jest/ts-es-compat-resolver.js',
   rootDir: path.resolve(__dirname, '..'),
   setupFilesAfterEnv: [
     '@testing-library/jest-dom/extend-expect',
@@ -16,8 +17,8 @@ module.exports = {
   ],
   testEnvironment: 'jest-environment-jsdom-sixteen',
   transform: {
-    '^.+\\.js$': '<rootDir>/jest/babel-transformer.js',
-    '^.+\\.tsx?$': '<rootDir>/jest/babel-transformer.js'
+    // '^.+\\.js$': '<rootDir>/jest/babel-transformer.js',
+    // '^.+\\.tsx?$': '<rootDir>/jest/babel-transformer.js'
   },
   transformIgnorePatterns: ['<rootDir>/node_modules', '<rootDir>/.*/dist'],
   watchPlugins: [

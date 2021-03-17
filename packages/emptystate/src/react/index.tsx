@@ -19,10 +19,10 @@ import React, {
   useState
 } from 'react'
 
-import Context, { ContextValue } from './context'
-import stylesheet, { sizeClasses, themeClasses } from '../css'
-import * as illustrations from './illustrations'
-import { illustrationNames, sizes } from '../vars'
+import Context, { ContextValue } from './context.js'
+import stylesheet, { sizeClasses, themeClasses } from '../css/index.js'
+import * as illustrations from './illustrations/index.js'
+import { illustrationNames, sizes } from '../vars/index.js'
 
 export interface EmptyStateProps extends HTMLPropsFor<'div'> {
   size?: ValueOf<typeof sizes>
