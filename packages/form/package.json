@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "11.1.1",
+  "version": "11.1.2",
   "description": "Design system components for form layout",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -26,7 +26,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.9.3",
-    "@pluralsight/ps-design-system-util": "^7.2.1"
+    "@pluralsight/ps-design-system-util": "^7.2.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -35,19 +35,19 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^16.2.1",
+    "@pluralsight/ps-design-system-actionmenu": "^16.2.2",
     "@pluralsight/ps-design-system-build": "^2.1.0",
-    "@pluralsight/ps-design-system-button": "^21.0.4",
-    "@pluralsight/ps-design-system-checkbox": "^7.1.4",
-    "@pluralsight/ps-design-system-datepicker": "^14.1.0",
-    "@pluralsight/ps-design-system-dropdown": "^11.2.1",
-    "@pluralsight/ps-design-system-radio": "^8.1.5",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.4.4",
-    "@pluralsight/ps-design-system-switch": "^7.1.4",
-    "@pluralsight/ps-design-system-tag": "^9.0.4",
-    "@pluralsight/ps-design-system-text": "^18.2.0",
-    "@pluralsight/ps-design-system-textarea": "^8.1.5",
-    "@pluralsight/ps-design-system-textinput": "^10.1.5",
-    "@pluralsight/ps-design-system-theme": "^7.1.4"
+    "@pluralsight/ps-design-system-button": "^21.0.5",
+    "@pluralsight/ps-design-system-checkbox": "^7.1.5",
+    "@pluralsight/ps-design-system-datepicker": "^14.1.1",
+    "@pluralsight/ps-design-system-dropdown": "^11.2.2",
+    "@pluralsight/ps-design-system-radio": "^8.1.6",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.4.5",
+    "@pluralsight/ps-design-system-switch": "^7.1.5",
+    "@pluralsight/ps-design-system-tag": "^9.0.5",
+    "@pluralsight/ps-design-system-text": "^18.2.1",
+    "@pluralsight/ps-design-system-textarea": "^8.1.6",
+    "@pluralsight/ps-design-system-textinput": "^10.1.6",
+    "@pluralsight/ps-design-system-theme": "^7.1.5"
   }
 }
