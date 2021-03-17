@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@5.1.3...@pluralsight/ps-design-system-datawell@5.1.4) (2021-03-11)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
 ## [5.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@5.1.2...@pluralsight/ps-design-system-datawell@5.1.3) (2021-02-25)
 
 

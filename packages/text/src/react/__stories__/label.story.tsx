@@ -31,6 +31,24 @@ stories.add('strong: true', () => <Label strong>Strong</Label>)
 
 stories.add('caps: true', () => <Label caps>Caps</Label>)
 
+stories.add('mono: true', () => (
+  <div>
+    <div>
+      <Label mono>Monospace font</Label>
+    </div>
+    <div>
+      <Label mono strong>
+        Monospace strong
+      </Label>
+    </div>
+    <div>
+      <Label mono caps>
+        Monospace caps
+      </Label>
+    </div>
+  </div>
+))
+
 stories.add('caps & strong: true', () => (
   <Label caps strong>
     Caps

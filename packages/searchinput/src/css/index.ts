@@ -7,7 +7,7 @@ export default {
     opacity: 0,
     transition: `opacity ${motion.speedNormal}`
   },
-  '.psds-searchinput-clear__visible': {
+  '.psds-searchinput-clear--visible': {
     opacity: 1
   },
   '.psds-searchinput-field': {

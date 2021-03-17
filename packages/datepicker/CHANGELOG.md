@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.0.3...@pluralsight/ps-design-system-datepicker@14.1.0) (2021-03-11)
+
+
+### Features
+
+* **datepicker:** pass all Field-support props to Datepicker ([774b7d2](https://github.com/pluralsight/design-system/commit/774b7d29beee0b5c754d7e27053ab1f7bf752ea8))
+
+
+
+
+
 ## [14.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.0.2...@pluralsight/ps-design-system-datepicker@14.0.3) (2021-02-25)
 
 

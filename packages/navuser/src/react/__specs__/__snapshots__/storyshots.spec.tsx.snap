@@ -1,5 +1,100 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots NavUser clicks 1`] = `
+<div>
+  <button
+    data-css-y5dqt5=""
+    disabled={false}
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      Click me first
+    </span>
+  </button>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+  <button
+    data-css-y5dqt5=""
+    disabled={false}
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      Then click me, first menu closes, mine opens
+    </span>
+  </button>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+  <div
+    data-css-1ij5lym=""
+  >
+    <button
+      data-css-6uwj3a=""
+      onClick={[Function]}
+    >
+      <div
+        aria-hidden={true}
+        data-css-79vgce=""
+      >
+        <img
+          data-css-d7y6x2=""
+          onError={[Function]}
+          onLoad={[Function]}
+          src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
+        />
+        <div
+          aria-label="Then click me, same as 2nd button"
+          data-css-1h1qs66=""
+          style={
+            Object {
+              "backgroundColor": "#B28300",
+            }
+          }
+        >
+          T
+        </div>
+      </div>
+      <div
+        data-css-1mmc9g1=""
+      >
+        <div
+          data-css-6flzpu=""
+        >
+          Then click me, same as 2nd button
+        </div>
+        <div
+          data-css-60db85=""
+        >
+          Menu 2 close, Menu 3 open
+        </div>
+      </div>
+    </button>
+  </div>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots NavUser states 1`] = `
 <div
   style={

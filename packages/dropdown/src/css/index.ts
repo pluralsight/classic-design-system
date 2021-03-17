@@ -6,6 +6,7 @@ import {
   colorsStatus,
   colorsTextIcon,
   layout,
+  layers,
   motion,
   type
 } from '@pluralsight/ps-design-system-core'
@@ -184,8 +185,7 @@ export default {
   // __menu
   '.psds-dropdown__menu-wrapper': {
     position: 'fixed',
-    // TODO: use layers when in core
-    zIndex: 980,
+    zIndex: layers.globalDropdown,
     marginTop: layout.spacingXXSmall
   },
   '.psds-dropdown__menu': {
