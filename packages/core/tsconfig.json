@@ -1,9 +1,15 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "allowJs": true,
+    "declaration": true,
+    "outDir": "dist",
     "rootDir": null,
-    "jsx": "react",
     "strict": true
-  }
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "js/*.ts"
+  ]
 }

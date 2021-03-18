@@ -10,7 +10,7 @@ import {
   colorsYellow,
   colorsRed
 } from '@pluralsight/ps-design-system-core'
-import { transparentize } from '@pluralsight/ps-design-system-util'
+import { parseToRgb } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
@@ -47,9 +47,11 @@ export default {
       color: 'currentColor',
 
       '&:hover, &:active, &:focus': {
-        backgroundColor: transparentize(0.9, colorsBlack)
+        backgroundColor: `rgba(${parseToRgb(colorsBlack)}, 0.1}`
       },
-      '&:focus': { boxShadow: `0 0 0 3px ${transparentize(0.5, colorsWhite)}` }
+      '&:focus': {
+        boxShadow: `0 0 0 3px rgba(${parseToRgb(colorsWhite)}, 0.5)`
+      }
     }
   },
 
@@ -57,7 +59,9 @@ export default {
   [`.psds-banner__button--color-${vars.colors.green}`]: {},
   [`.psds-banner__button--color-${vars.colors.yellow}`]: {
     ':not(#fake-id-to-force-higher-specificity)': {
-      '&:focus': { boxShadow: `0 0 0 3px ${transparentize(0.5, colorsBlack)}` }
+      '&:focus': {
+        boxShadow: `0 0 0 3px rgba(${parseToRgb(colorsBlack)}, 0.5`
+      }
     }
   },
   [`.psds-banner__button--color-${vars.colors.red}`]: {},

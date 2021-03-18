@@ -1,4 +1,3 @@
-import { promises as fs } from 'fs'
 import breakpoints from '../js/breakpoints'
 import layers from '../js/layers'
 import layout from '../js/layout'
@@ -9,6 +8,14 @@ import * as colors from '../js/colors'
 const capitalizeFirstLetter = (str: string) => {
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
+
+type Tokens = {
+  breakpoints: typeof breakpoints
+  layers: typeof layers
+  layout: typeof layout
+  type: typeof type
+  motion: typeof motion
+} & typeof colors
 
 export const tokens = Object.entries({
   breakpoints,
@@ -25,14 +32,4 @@ export const tokens = Object.entries({
     )})`
   })
   return { ...acc, [group]: { ...keys } }
-}, {})
-
-const dest = './dist'
-const generateTokens = async () => {
-  await fs.mkdir('./dist', { recursive: true })
-  await fs.writeFile(
-    `${dest}/tokens.js`,
-    `module.exports = ${JSON.stringify(tokens, null, 2)}`
-  )
-}
-generateTokens()
+}, {}) as Tokens

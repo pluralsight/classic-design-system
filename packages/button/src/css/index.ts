@@ -11,7 +11,7 @@ import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { transparentize } from '@pluralsight/ps-design-system-util'
+import { parseToRgb } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
@@ -171,17 +171,21 @@ export default {
 
     '&:not([disabled]):hover': {
       border: `2px solid ${colorsBlue[5]}`,
-      background: transparentize(0.85, colorsPrimaryAction.textDarkTheme),
+      background: `rgba(${parseToRgb(
+        colorsPrimaryAction.textDarkTheme
+      )}, 0.85)`,
       color: colorsBlue[4]
     },
     '&:not([disabled]):focus': {
       border: `2px solid ${colorsBlue[5]}`,
-      background: transparentize(0.85, colorsPrimaryAction.textDarkTheme),
+      background: `rgba(${parseToRgb(
+        colorsPrimaryAction.textDarkTheme
+      )}, 0.85)`,
       color: colorsBlue[4]
     },
     '&:not([disabled]):active': {
       border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.8, colorsPrimaryAction.textDarkTheme)
+      background: `rgba(${parseToRgb(colorsPrimaryAction.textDarkTheme)}, 0.2)`
     }
   },
   [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeNames.light}`]: {
@@ -191,17 +195,21 @@ export default {
 
     '&:not([disabled]):hover': {
       border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.95, colorsPrimaryAction.textLightTheme),
+      background: `rgba(${parseToRgb(
+        colorsPrimaryAction.textLightTheme
+      )}, 0.95)`,
       color: colorsBlue[8]
     },
     '&:not([disabled]):focus': {
       border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.95, colorsPrimaryAction.textLightTheme),
+      background: `rgba(${parseToRgb(
+        colorsPrimaryAction.textLightTheme
+      )}, 0.95)`,
       color: colorsBlue[8]
     },
     '&:not([disabled]):active': {
       border: `2px solid ${colorsBlue[8]}`,
-      background: transparentize(0.9, colorsPrimaryAction.textLightTheme)
+      background: `rgba(${parseToRgb(colorsPrimaryAction.textLightTheme)}, 0.1)`
     }
   },
   [`.psds-button--appearance-${vars.appearances.flat}`]: {

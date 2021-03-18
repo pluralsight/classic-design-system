@@ -7,7 +7,6 @@ import {
   motion,
   type
 } from '@pluralsight/ps-design-system-core'
-import { transparentize } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
@@ -134,16 +133,13 @@ export default {
     color: colorsTextIcon.lowOnLight,
     '&:not([disabled]):hover, &:not([disabled]):focus': {
       outline: 'none',
-      boxShadow: `0 0 0 3px ${transparentize(
-        0.5,
-        colorsPrimaryAction.background
-      )}`,
+      boxShadow: `0 0 0 3px rgba(${colorsPrimaryAction.background}, 0.5)`,
       cursor: 'pointer',
-      background: transparentize(0.55, colorsBackgroundUtility.base),
+      background: `rgba(${colorsBackgroundUtility.base}, 0.45)`,
       color: colorsTextIcon.highOnLight
     },
     '&:not([disabled]):active': {
-      background: transparentize(0.35, colorsBackgroundUtility.base),
+      background: `rgba(${colorsBackgroundUtility.base}, 0.65)`,
       color: colorsTextIcon.highOnLight,
       transform: 'scale(0.98)'
     },

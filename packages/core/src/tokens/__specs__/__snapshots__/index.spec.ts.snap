@@ -3,780 +3,296 @@
 exports[`tokens 1`] = `
 Object {
   "breakpoints": Object {
-    "0": Object {
-      "xSmall": "var(--psBreakpointsXSmall)",
-    },
-    "1": Object {
-      "small": "var(--psBreakpointsSmall)",
-    },
-    "2": Object {
-      "medium": "var(--psBreakpointsMedium)",
-    },
-    "3": Object {
-      "large": "var(--psBreakpointsLarge)",
-    },
-    "4": Object {
-      "xLarge": "var(--psBreakpointsXLarge)",
-    },
+    "large": "var(--psBreakpointsLarge)",
+    "medium": "var(--psBreakpointsMedium)",
+    "small": "var(--psBreakpointsSmall)",
+    "xLarge": "var(--psBreakpointsXLarge)",
+    "xSmall": "var(--psBreakpointsXSmall)",
   },
   "colorsBackgroundDark": Object {
-    "0": Object {
-      "1": "var(--psColorsBackgroundDark1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsBackgroundDark2)",
-    },
-    "2": Object {
-      "3": "var(--psColorsBackgroundDark3)",
-    },
+    "1": "var(--psColorsBackgroundDark1)",
+    "2": "var(--psColorsBackgroundDark2)",
+    "3": "var(--psColorsBackgroundDark3)",
   },
   "colorsBackgroundLight": Object {
-    "0": Object {
-      "1": "var(--psColorsBackgroundLight1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsBackgroundLight2)",
-    },
-    "2": Object {
-      "3": "var(--psColorsBackgroundLight3)",
-    },
+    "1": "var(--psColorsBackgroundLight1)",
+    "2": "var(--psColorsBackgroundLight2)",
+    "3": "var(--psColorsBackgroundLight3)",
   },
   "colorsBackgroundUtility": Object {
-    "0": Object {
-      "10": "var(--psColorsBackgroundUtility10)",
-    },
-    "1": Object {
-      "15": "var(--psColorsBackgroundUtility15)",
-    },
-    "2": Object {
-      "20": "var(--psColorsBackgroundUtility20)",
-    },
-    "3": Object {
-      "25": "var(--psColorsBackgroundUtility25)",
-    },
-    "4": Object {
-      "30": "var(--psColorsBackgroundUtility30)",
-    },
-    "5": Object {
-      "40": "var(--psColorsBackgroundUtility40)",
-    },
-    "6": Object {
-      "60": "var(--psColorsBackgroundUtility60)",
-    },
-    "7": Object {
-      "base": "var(--psColorsBackgroundUtilityBase)",
-    },
+    "10": "var(--psColorsBackgroundUtility10)",
+    "15": "var(--psColorsBackgroundUtility15)",
+    "20": "var(--psColorsBackgroundUtility20)",
+    "25": "var(--psColorsBackgroundUtility25)",
+    "30": "var(--psColorsBackgroundUtility30)",
+    "40": "var(--psColorsBackgroundUtility40)",
+    "60": "var(--psColorsBackgroundUtility60)",
+    "base": "var(--psColorsBackgroundUtilityBase)",
   },
   "colorsBlack": Object {
-    "0": Object {
-      "0": "var(--psColorsBlack0)",
-    },
-    "1": Object {
-      "1": "var(--psColorsBlack1)",
-    },
-    "2": Object {
-      "2": "var(--psColorsBlack2)",
-    },
-    "3": Object {
-      "3": "var(--psColorsBlack3)",
-    },
-    "4": Object {
-      "4": "var(--psColorsBlack4)",
-    },
-    "5": Object {
-      "5": "var(--psColorsBlack5)",
-    },
-    "6": Object {
-      "6": "var(--psColorsBlack6)",
-    },
+    "0": "var(--psColorsBlack0)",
+    "1": "var(--psColorsBlack1)",
+    "2": "var(--psColorsBlack2)",
+    "3": "var(--psColorsBlack3)",
+    "4": "var(--psColorsBlack4)",
+    "5": "var(--psColorsBlack5)",
+    "6": "var(--psColorsBlack6)",
   },
   "colorsBlue": Object {
-    "0": Object {
-      "1": "var(--psColorsBlue1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsBlue2)",
-    },
-    "10": Object {
-      "base": "var(--psColorsBlueBase)",
-    },
-    "2": Object {
-      "3": "var(--psColorsBlue3)",
-    },
-    "3": Object {
-      "4": "var(--psColorsBlue4)",
-    },
-    "4": Object {
-      "5": "var(--psColorsBlue5)",
-    },
-    "5": Object {
-      "6": "var(--psColorsBlue6)",
-    },
-    "6": Object {
-      "7": "var(--psColorsBlue7)",
-    },
-    "7": Object {
-      "8": "var(--psColorsBlue8)",
-    },
-    "8": Object {
-      "9": "var(--psColorsBlue9)",
-    },
-    "9": Object {
-      "10": "var(--psColorsBlue10)",
-    },
+    "1": "var(--psColorsBlue1)",
+    "10": "var(--psColorsBlue10)",
+    "2": "var(--psColorsBlue2)",
+    "3": "var(--psColorsBlue3)",
+    "4": "var(--psColorsBlue4)",
+    "5": "var(--psColorsBlue5)",
+    "6": "var(--psColorsBlue6)",
+    "7": "var(--psColorsBlue7)",
+    "8": "var(--psColorsBlue8)",
+    "9": "var(--psColorsBlue9)",
+    "base": "var(--psColorsBlueBase)",
   },
   "colorsBorder": Object {
-    "0": Object {
-      "highOnDark": "var(--psColorsBorderHighOnDark)",
-    },
-    "1": Object {
-      "highOnLight": "var(--psColorsBorderHighOnLight)",
-    },
-    "2": Object {
-      "lowOnDark": "var(--psColorsBorderLowOnDark)",
-    },
-    "3": Object {
-      "lowOnLight": "var(--psColorsBorderLowOnLight)",
-    },
+    "highOnDark": "var(--psColorsBorderHighOnDark)",
+    "highOnLight": "var(--psColorsBorderHighOnLight)",
+    "lowOnDark": "var(--psColorsBorderLowOnDark)",
+    "lowOnLight": "var(--psColorsBorderLowOnLight)",
   },
   "colorsCode": Object {
-    "0": Object {
-      "white": "var(--psColorsCodeWhite)",
-    },
-    "1": Object {
-      "gray": "var(--psColorsCodeGray)",
-    },
-    "2": Object {
-      "red": "var(--psColorsCodeRed)",
-    },
-    "3": Object {
-      "orange": "var(--psColorsCodeOrange)",
-    },
-    "4": Object {
-      "yellow": "var(--psColorsCodeYellow)",
-    },
-    "5": Object {
-      "green": "var(--psColorsCodeGreen)",
-    },
-    "6": Object {
-      "turquoise": "var(--psColorsCodeTurquoise)",
-    },
-    "7": Object {
-      "blue": "var(--psColorsCodeBlue)",
-    },
-    "8": Object {
-      "purple": "var(--psColorsCodePurple)",
-    },
-    "9": Object {
-      "sand": "var(--psColorsCodeSand)",
-    },
+    "blue": "var(--psColorsCodeBlue)",
+    "gray": "var(--psColorsCodeGray)",
+    "green": "var(--psColorsCodeGreen)",
+    "orange": "var(--psColorsCodeOrange)",
+    "purple": "var(--psColorsCodePurple)",
+    "red": "var(--psColorsCodeRed)",
+    "sand": "var(--psColorsCodeSand)",
+    "turquoise": "var(--psColorsCodeTurquoise)",
+    "white": "var(--psColorsCodeWhite)",
+    "yellow": "var(--psColorsCodeYellow)",
   },
   "colorsGradient": Object {
-    "0": Object {
-      "skillsBackground": "var(--psColorsGradientSkillsBackground)",
-    },
-    "1": Object {
-      "skillsStop0": "var(--psColorsGradientSkillsStop0)",
-    },
-    "2": Object {
-      "skillsStop100": "var(--psColorsGradientSkillsStop100)",
-    },
-    "3": Object {
-      "flowBackground": "var(--psColorsGradientFlowBackground)",
-    },
-    "4": Object {
-      "flowStop0": "var(--psColorsGradientFlowStop0)",
-    },
-    "5": Object {
-      "flowStop100": "var(--psColorsGradientFlowStop100)",
-    },
+    "flowBackground": "var(--psColorsGradientFlowBackground)",
+    "flowStop0": "var(--psColorsGradientFlowStop0)",
+    "flowStop100": "var(--psColorsGradientFlowStop100)",
+    "skillsBackground": "var(--psColorsGradientSkillsBackground)",
+    "skillsStop0": "var(--psColorsGradientSkillsStop0)",
+    "skillsStop100": "var(--psColorsGradientSkillsStop100)",
   },
   "colorsGreen": Object {
-    "0": Object {
-      "1": "var(--psColorsGreen1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsGreen2)",
-    },
-    "10": Object {
-      "base": "var(--psColorsGreenBase)",
-    },
-    "2": Object {
-      "3": "var(--psColorsGreen3)",
-    },
-    "3": Object {
-      "4": "var(--psColorsGreen4)",
-    },
-    "4": Object {
-      "5": "var(--psColorsGreen5)",
-    },
-    "5": Object {
-      "6": "var(--psColorsGreen6)",
-    },
-    "6": Object {
-      "7": "var(--psColorsGreen7)",
-    },
-    "7": Object {
-      "8": "var(--psColorsGreen8)",
-    },
-    "8": Object {
-      "9": "var(--psColorsGreen9)",
-    },
-    "9": Object {
-      "10": "var(--psColorsGreen10)",
-    },
+    "1": "var(--psColorsGreen1)",
+    "10": "var(--psColorsGreen10)",
+    "2": "var(--psColorsGreen2)",
+    "3": "var(--psColorsGreen3)",
+    "4": "var(--psColorsGreen4)",
+    "5": "var(--psColorsGreen5)",
+    "6": "var(--psColorsGreen6)",
+    "7": "var(--psColorsGreen7)",
+    "8": "var(--psColorsGreen8)",
+    "9": "var(--psColorsGreen9)",
+    "base": "var(--psColorsGreenBase)",
   },
   "colorsLime": Object {
-    "0": Object {
-      "1": "var(--psColorsLime1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsLime2)",
-    },
-    "10": Object {
-      "base": "var(--psColorsLimeBase)",
-    },
-    "2": Object {
-      "3": "var(--psColorsLime3)",
-    },
-    "3": Object {
-      "4": "var(--psColorsLime4)",
-    },
-    "4": Object {
-      "5": "var(--psColorsLime5)",
-    },
-    "5": Object {
-      "6": "var(--psColorsLime6)",
-    },
-    "6": Object {
-      "7": "var(--psColorsLime7)",
-    },
-    "7": Object {
-      "8": "var(--psColorsLime8)",
-    },
-    "8": Object {
-      "9": "var(--psColorsLime9)",
-    },
-    "9": Object {
-      "10": "var(--psColorsLime10)",
-    },
+    "1": "var(--psColorsLime1)",
+    "10": "var(--psColorsLime10)",
+    "2": "var(--psColorsLime2)",
+    "3": "var(--psColorsLime3)",
+    "4": "var(--psColorsLime4)",
+    "5": "var(--psColorsLime5)",
+    "6": "var(--psColorsLime6)",
+    "7": "var(--psColorsLime7)",
+    "8": "var(--psColorsLime8)",
+    "9": "var(--psColorsLime9)",
+    "base": "var(--psColorsLimeBase)",
   },
   "colorsOrange": Object {
-    "0": Object {
-      "1": "var(--psColorsOrange1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsOrange2)",
-    },
-    "10": Object {
-      "base": "var(--psColorsOrangeBase)",
-    },
-    "2": Object {
-      "3": "var(--psColorsOrange3)",
-    },
-    "3": Object {
-      "4": "var(--psColorsOrange4)",
-    },
-    "4": Object {
-      "5": "var(--psColorsOrange5)",
-    },
-    "5": Object {
-      "6": "var(--psColorsOrange6)",
-    },
-    "6": Object {
-      "7": "var(--psColorsOrange7)",
-    },
-    "7": Object {
-      "8": "var(--psColorsOrange8)",
-    },
-    "8": Object {
-      "9": "var(--psColorsOrange9)",
-    },
-    "9": Object {
-      "10": "var(--psColorsOrange10)",
-    },
+    "1": "var(--psColorsOrange1)",
+    "10": "var(--psColorsOrange10)",
+    "2": "var(--psColorsOrange2)",
+    "3": "var(--psColorsOrange3)",
+    "4": "var(--psColorsOrange4)",
+    "5": "var(--psColorsOrange5)",
+    "6": "var(--psColorsOrange6)",
+    "7": "var(--psColorsOrange7)",
+    "8": "var(--psColorsOrange8)",
+    "9": "var(--psColorsOrange9)",
+    "base": "var(--psColorsOrangeBase)",
   },
   "colorsPink": Object {
-    "0": Object {
-      "1": "var(--psColorsPink1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsPink2)",
-    },
-    "10": Object {
-      "base": "var(--psColorsPinkBase)",
-    },
-    "2": Object {
-      "3": "var(--psColorsPink3)",
-    },
-    "3": Object {
-      "4": "var(--psColorsPink4)",
-    },
-    "4": Object {
-      "5": "var(--psColorsPink5)",
-    },
-    "5": Object {
-      "6": "var(--psColorsPink6)",
-    },
-    "6": Object {
-      "7": "var(--psColorsPink7)",
-    },
-    "7": Object {
-      "8": "var(--psColorsPink8)",
-    },
-    "8": Object {
-      "9": "var(--psColorsPink9)",
-    },
-    "9": Object {
-      "10": "var(--psColorsPink10)",
-    },
+    "1": "var(--psColorsPink1)",
+    "10": "var(--psColorsPink10)",
+    "2": "var(--psColorsPink2)",
+    "3": "var(--psColorsPink3)",
+    "4": "var(--psColorsPink4)",
+    "5": "var(--psColorsPink5)",
+    "6": "var(--psColorsPink6)",
+    "7": "var(--psColorsPink7)",
+    "8": "var(--psColorsPink8)",
+    "9": "var(--psColorsPink9)",
+    "base": "var(--psColorsPinkBase)",
   },
   "colorsPrimaryAction": Object {
-    "0": Object {
-      "background": "var(--psColorsPrimaryActionBackground)",
-    },
-    "1": Object {
-      "textDarkTheme": "var(--psColorsPrimaryActionTextDarkTheme)",
-    },
-    "2": Object {
-      "textLightTheme": "var(--psColorsPrimaryActionTextLightTheme)",
-    },
+    "background": "var(--psColorsPrimaryActionBackground)",
+    "textDarkTheme": "var(--psColorsPrimaryActionTextDarkTheme)",
+    "textLightTheme": "var(--psColorsPrimaryActionTextLightTheme)",
   },
   "colorsPurple": Object {
-    "0": Object {
-      "1": "var(--psColorsPurple1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsPurple2)",
-    },
-    "10": Object {
-      "base": "var(--psColorsPurpleBase)",
-    },
-    "2": Object {
-      "3": "var(--psColorsPurple3)",
-    },
-    "3": Object {
-      "4": "var(--psColorsPurple4)",
-    },
-    "4": Object {
-      "5": "var(--psColorsPurple5)",
-    },
-    "5": Object {
-      "6": "var(--psColorsPurple6)",
-    },
-    "6": Object {
-      "7": "var(--psColorsPurple7)",
-    },
-    "7": Object {
-      "8": "var(--psColorsPurple8)",
-    },
-    "8": Object {
-      "9": "var(--psColorsPurple9)",
-    },
-    "9": Object {
-      "10": "var(--psColorsPurple10)",
-    },
+    "1": "var(--psColorsPurple1)",
+    "10": "var(--psColorsPurple10)",
+    "2": "var(--psColorsPurple2)",
+    "3": "var(--psColorsPurple3)",
+    "4": "var(--psColorsPurple4)",
+    "5": "var(--psColorsPurple5)",
+    "6": "var(--psColorsPurple6)",
+    "7": "var(--psColorsPurple7)",
+    "8": "var(--psColorsPurple8)",
+    "9": "var(--psColorsPurple9)",
+    "base": "var(--psColorsPurpleBase)",
   },
   "colorsRed": Object {
-    "0": Object {
-      "1": "var(--psColorsRed1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsRed2)",
-    },
-    "10": Object {
-      "base": "var(--psColorsRedBase)",
-    },
-    "2": Object {
-      "3": "var(--psColorsRed3)",
-    },
-    "3": Object {
-      "4": "var(--psColorsRed4)",
-    },
-    "4": Object {
-      "5": "var(--psColorsRed5)",
-    },
-    "5": Object {
-      "6": "var(--psColorsRed6)",
-    },
-    "6": Object {
-      "7": "var(--psColorsRed7)",
-    },
-    "7": Object {
-      "8": "var(--psColorsRed8)",
-    },
-    "8": Object {
-      "9": "var(--psColorsRed9)",
-    },
-    "9": Object {
-      "10": "var(--psColorsRed10)",
-    },
+    "1": "var(--psColorsRed1)",
+    "10": "var(--psColorsRed10)",
+    "2": "var(--psColorsRed2)",
+    "3": "var(--psColorsRed3)",
+    "4": "var(--psColorsRed4)",
+    "5": "var(--psColorsRed5)",
+    "6": "var(--psColorsRed6)",
+    "7": "var(--psColorsRed7)",
+    "8": "var(--psColorsRed8)",
+    "9": "var(--psColorsRed9)",
+    "base": "var(--psColorsRedBase)",
   },
   "colorsStatus": Object {
-    "0": Object {
-      "error": "var(--psColorsStatusError)",
-    },
-    "1": Object {
-      "info": "var(--psColorsStatusInfo)",
-    },
-    "2": Object {
-      "success": "var(--psColorsStatusSuccess)",
-    },
-    "3": Object {
-      "warning": "var(--psColorsStatusWarning)",
-    },
+    "error": "var(--psColorsStatusError)",
+    "info": "var(--psColorsStatusInfo)",
+    "success": "var(--psColorsStatusSuccess)",
+    "warning": "var(--psColorsStatusWarning)",
   },
   "colorsTeal": Object {
-    "0": Object {
-      "1": "var(--psColorsTeal1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsTeal2)",
-    },
-    "10": Object {
-      "base": "var(--psColorsTealBase)",
-    },
-    "2": Object {
-      "3": "var(--psColorsTeal3)",
-    },
-    "3": Object {
-      "4": "var(--psColorsTeal4)",
-    },
-    "4": Object {
-      "5": "var(--psColorsTeal5)",
-    },
-    "5": Object {
-      "6": "var(--psColorsTeal6)",
-    },
-    "6": Object {
-      "7": "var(--psColorsTeal7)",
-    },
-    "7": Object {
-      "8": "var(--psColorsTeal8)",
-    },
-    "8": Object {
-      "9": "var(--psColorsTeal9)",
-    },
-    "9": Object {
-      "10": "var(--psColorsTeal10)",
-    },
+    "1": "var(--psColorsTeal1)",
+    "10": "var(--psColorsTeal10)",
+    "2": "var(--psColorsTeal2)",
+    "3": "var(--psColorsTeal3)",
+    "4": "var(--psColorsTeal4)",
+    "5": "var(--psColorsTeal5)",
+    "6": "var(--psColorsTeal6)",
+    "7": "var(--psColorsTeal7)",
+    "8": "var(--psColorsTeal8)",
+    "9": "var(--psColorsTeal9)",
+    "base": "var(--psColorsTealBase)",
   },
   "colorsTextIcon": Object {
-    "0": Object {
-      "highOnDark": "var(--psColorsTextIconHighOnDark)",
-    },
-    "1": Object {
-      "highOnLight": "var(--psColorsTextIconHighOnLight)",
-    },
-    "2": Object {
-      "lowOnDark": "var(--psColorsTextIconLowOnDark)",
-    },
-    "3": Object {
-      "lowOnLight": "var(--psColorsTextIconLowOnLight)",
-    },
+    "highOnDark": "var(--psColorsTextIconHighOnDark)",
+    "highOnLight": "var(--psColorsTextIconHighOnLight)",
+    "lowOnDark": "var(--psColorsTextIconLowOnDark)",
+    "lowOnLight": "var(--psColorsTextIconLowOnLight)",
   },
   "colorsWhite": Object {
-    "0": Object {
-      "0": "var(--psColorsWhite0)",
-    },
-    "1": Object {
-      "1": "var(--psColorsWhite1)",
-    },
-    "2": Object {
-      "2": "var(--psColorsWhite2)",
-    },
-    "3": Object {
-      "3": "var(--psColorsWhite3)",
-    },
-    "4": Object {
-      "4": "var(--psColorsWhite4)",
-    },
-    "5": Object {
-      "5": "var(--psColorsWhite5)",
-    },
-    "6": Object {
-      "6": "var(--psColorsWhite6)",
-    },
+    "0": "var(--psColorsWhite0)",
+    "1": "var(--psColorsWhite1)",
+    "2": "var(--psColorsWhite2)",
+    "3": "var(--psColorsWhite3)",
+    "4": "var(--psColorsWhite4)",
+    "5": "var(--psColorsWhite5)",
+    "6": "var(--psColorsWhite6)",
   },
   "colorsYellow": Object {
-    "0": Object {
-      "1": "var(--psColorsYellow1)",
-    },
-    "1": Object {
-      "2": "var(--psColorsYellow2)",
-    },
-    "10": Object {
-      "base": "var(--psColorsYellowBase)",
-    },
-    "2": Object {
-      "3": "var(--psColorsYellow3)",
-    },
-    "3": Object {
-      "4": "var(--psColorsYellow4)",
-    },
-    "4": Object {
-      "5": "var(--psColorsYellow5)",
-    },
-    "5": Object {
-      "6": "var(--psColorsYellow6)",
-    },
-    "6": Object {
-      "7": "var(--psColorsYellow7)",
-    },
-    "7": Object {
-      "8": "var(--psColorsYellow8)",
-    },
-    "8": Object {
-      "9": "var(--psColorsYellow9)",
-    },
-    "9": Object {
-      "10": "var(--psColorsYellow10)",
-    },
+    "1": "var(--psColorsYellow1)",
+    "10": "var(--psColorsYellow10)",
+    "2": "var(--psColorsYellow2)",
+    "3": "var(--psColorsYellow3)",
+    "4": "var(--psColorsYellow4)",
+    "5": "var(--psColorsYellow5)",
+    "6": "var(--psColorsYellow6)",
+    "7": "var(--psColorsYellow7)",
+    "8": "var(--psColorsYellow8)",
+    "9": "var(--psColorsYellow9)",
+    "base": "var(--psColorsYellowBase)",
   },
   "layers": Object {
-    "0": Object {
-      "main": "var(--psLayersMain)",
-    },
-    "1": Object {
-      "globalSidenav": "var(--psLayersGlobalSidenav)",
-    },
-    "2": Object {
-      "globalTopnav": "var(--psLayersGlobalTopnav)",
-    },
-    "3": Object {
-      "globalDropdown": "var(--psLayersGlobalDropdown)",
-    },
-    "4": Object {
-      "globalSkipToContentBanner": "var(--psLayersGlobalSkipToContentBanner)",
-    },
+    "globalDropdown": "var(--psLayersGlobalDropdown)",
+    "globalSidenav": "var(--psLayersGlobalSidenav)",
+    "globalSkipToContentBanner": "var(--psLayersGlobalSkipToContentBanner)",
+    "globalTopnav": "var(--psLayersGlobalTopnav)",
+    "main": "var(--psLayersMain)",
   },
   "layout": Object {
-    "0": Object {
-      "spacingXXSmall": "var(--psLayoutSpacingXXSmall)",
-    },
-    "1": Object {
-      "spacingXSmall": "var(--psLayoutSpacingXSmall)",
-    },
-    "2": Object {
-      "spacingSmall": "var(--psLayoutSpacingSmall)",
-    },
-    "3": Object {
-      "spacingMedium": "var(--psLayoutSpacingMedium)",
-    },
-    "4": Object {
-      "spacingLarge": "var(--psLayoutSpacingLarge)",
-    },
-    "5": Object {
-      "spacingXLarge": "var(--psLayoutSpacingXLarge)",
-    },
-    "6": Object {
-      "spacingXXLarge": "var(--psLayoutSpacingXXLarge)",
-    },
+    "spacingLarge": "var(--psLayoutSpacingLarge)",
+    "spacingMedium": "var(--psLayoutSpacingMedium)",
+    "spacingSmall": "var(--psLayoutSpacingSmall)",
+    "spacingXLarge": "var(--psLayoutSpacingXLarge)",
+    "spacingXSmall": "var(--psLayoutSpacingXSmall)",
+    "spacingXXLarge": "var(--psLayoutSpacingXXLarge)",
+    "spacingXXSmall": "var(--psLayoutSpacingXXSmall)",
   },
   "motion": Object {
-    "0": Object {
-      "speedXFast": "var(--psMotionSpeedXFast)",
-    },
-    "1": Object {
-      "speedFast": "var(--psMotionSpeedFast)",
-    },
-    "2": Object {
-      "speedNormal": "var(--psMotionSpeedNormal)",
-    },
-    "3": Object {
-      "speedSlow": "var(--psMotionSpeedSlow)",
-    },
-    "4": Object {
-      "speedXSlow": "var(--psMotionSpeedXSlow)",
-    },
+    "speedFast": "var(--psMotionSpeedFast)",
+    "speedNormal": "var(--psMotionSpeedNormal)",
+    "speedSlow": "var(--psMotionSpeedSlow)",
+    "speedXFast": "var(--psMotionSpeedXFast)",
+    "speedXSlow": "var(--psMotionSpeedXSlow)",
   },
   "type": Object {
-    "0": Object {
-      "fontFamily": "var(--psTypeFontFamily)",
-    },
-    "1": Object {
-      "fontFamilyCode": "var(--psTypeFontFamilyCode)",
-    },
-    "10": Object {
-      "fontSizeBase": "var(--psTypeFontSizeBase)",
-    },
-    "11": Object {
-      "fontSize1200": "var(--psTypeFontSize1200)",
-    },
-    "12": Object {
-      "fontSize1100": "var(--psTypeFontSize1100)",
-    },
-    "13": Object {
-      "fontSize1000": "var(--psTypeFontSize1000)",
-    },
-    "14": Object {
-      "fontSize900": "var(--psTypeFontSize900)",
-    },
-    "15": Object {
-      "fontSize800": "var(--psTypeFontSize800)",
-    },
-    "16": Object {
-      "fontSize700": "var(--psTypeFontSize700)",
-    },
-    "17": Object {
-      "fontSize600": "var(--psTypeFontSize600)",
-    },
-    "18": Object {
-      "fontSize500": "var(--psTypeFontSize500)",
-    },
-    "19": Object {
-      "fontSize400": "var(--psTypeFontSize400)",
-    },
-    "2": Object {
-      "fontSizeGigantic": "var(--psTypeFontSizeGigantic)",
-    },
-    "20": Object {
-      "fontSize300": "var(--psTypeFontSize300)",
-    },
-    "21": Object {
-      "fontSize200": "var(--psTypeFontSize200)",
-    },
-    "22": Object {
-      "fontSize100": "var(--psTypeFontSize100)",
-    },
-    "23": Object {
-      "letterSpacingGigantic": "var(--psTypeLetterSpacingGigantic)",
-    },
-    "24": Object {
-      "letterSpacingJumbo": "var(--psTypeLetterSpacingJumbo)",
-    },
-    "25": Object {
-      "letterSpacingXXLarge": "var(--psTypeLetterSpacingXXLarge)",
-    },
-    "26": Object {
-      "letterSpacingXLarge": "var(--psTypeLetterSpacingXLarge)",
-    },
-    "27": Object {
-      "letterSpacingLarge": "var(--psTypeLetterSpacingLarge)",
-    },
-    "28": Object {
-      "letterSpacingMedium": "var(--psTypeLetterSpacingMedium)",
-    },
-    "29": Object {
-      "letterSpacingSmall": "var(--psTypeLetterSpacingSmall)",
-    },
-    "3": Object {
-      "fontSizeJumbo": "var(--psTypeFontSizeJumbo)",
-    },
-    "30": Object {
-      "letterSpacingXSmall": "var(--psTypeLetterSpacingXSmall)",
-    },
-    "31": Object {
-      "letterSpacingTighter": "var(--psTypeLetterSpacingTighter)",
-    },
-    "32": Object {
-      "letterSpacingTight": "var(--psTypeLetterSpacingTight)",
-    },
-    "33": Object {
-      "letterSpacingNone": "var(--psTypeLetterSpacingNone)",
-    },
-    "34": Object {
-      "letterSpacingLoose": "var(--psTypeLetterSpacingLoose)",
-    },
-    "35": Object {
-      "letterSpacingLooser": "var(--psTypeLetterSpacingLooser)",
-    },
-    "36": Object {
-      "letterSpacingAllCaps": "var(--psTypeLetterSpacingAllCaps)",
-    },
-    "37": Object {
-      "fontWeightBlack": "var(--psTypeFontWeightBlack)",
-    },
-    "38": Object {
-      "fontWeightXBold": "var(--psTypeFontWeightXBold)",
-    },
-    "39": Object {
-      "fontWeightBold": "var(--psTypeFontWeightBold)",
-    },
-    "4": Object {
-      "fontSizeXXLarge": "var(--psTypeFontSizeXXLarge)",
-    },
-    "40": Object {
-      "fontWeightDemiBold": "var(--psTypeFontWeightDemiBold)",
-    },
-    "41": Object {
-      "fontWeightMedium": "var(--psTypeFontWeightMedium)",
-    },
-    "42": Object {
-      "fontWeightRegular": "var(--psTypeFontWeightRegular)",
-    },
-    "43": Object {
-      "fontWeightBook": "var(--psTypeFontWeightBook)",
-    },
-    "44": Object {
-      "fontWeightLight": "var(--psTypeFontWeightLight)",
-    },
-    "45": Object {
-      "fontWeightXLight": "var(--psTypeFontWeightXLight)",
-    },
-    "46": Object {
-      "fontWeightThin": "var(--psTypeFontWeightThin)",
-    },
-    "47": Object {
-      "fontWeightDefault": "var(--psTypeFontWeightDefault)",
-    },
-    "48": Object {
-      "fontWeightStrong": "var(--psTypeFontWeightStrong)",
-    },
-    "49": Object {
-      "fontWeight900": "var(--psTypeFontWeight900)",
-    },
-    "5": Object {
-      "fontSizeXLarge": "var(--psTypeFontSizeXLarge)",
-    },
-    "50": Object {
-      "fontWeight800": "var(--psTypeFontWeight800)",
-    },
-    "51": Object {
-      "fontWeight700": "var(--psTypeFontWeight700)",
-    },
-    "52": Object {
-      "fontWeight600": "var(--psTypeFontWeight600)",
-    },
-    "53": Object {
-      "fontWeight500": "var(--psTypeFontWeight500)",
-    },
-    "54": Object {
-      "fontWeight400": "var(--psTypeFontWeight400)",
-    },
-    "55": Object {
-      "fontWeight300": "var(--psTypeFontWeight300)",
-    },
-    "56": Object {
-      "fontWeight200": "var(--psTypeFontWeight200)",
-    },
-    "57": Object {
-      "fontWeight100": "var(--psTypeFontWeight100)",
-    },
-    "58": Object {
-      "lineHeightTight": "var(--psTypeLineHeightTight)",
-    },
-    "59": Object {
-      "lineHeightStandard": "var(--psTypeLineHeightStandard)",
-    },
-    "6": Object {
-      "fontSizeLarge": "var(--psTypeFontSizeLarge)",
-    },
-    "60": Object {
-      "lineHeightExtra": "var(--psTypeLineHeightExtra)",
-    },
-    "61": Object {
-      "lineHeightHuge": "var(--psTypeLineHeightHuge)",
-    },
-    "7": Object {
-      "fontSizeMedium": "var(--psTypeFontSizeMedium)",
-    },
-    "8": Object {
-      "fontSizeSmall": "var(--psTypeFontSizeSmall)",
-    },
-    "9": Object {
-      "fontSizeXSmall": "var(--psTypeFontSizeXSmall)",
-    },
+    "fontFamily": "var(--psTypeFontFamily)",
+    "fontFamilyCode": "var(--psTypeFontFamilyCode)",
+    "fontSize100": "var(--psTypeFontSize100)",
+    "fontSize1000": "var(--psTypeFontSize1000)",
+    "fontSize1100": "var(--psTypeFontSize1100)",
+    "fontSize1200": "var(--psTypeFontSize1200)",
+    "fontSize200": "var(--psTypeFontSize200)",
+    "fontSize300": "var(--psTypeFontSize300)",
+    "fontSize400": "var(--psTypeFontSize400)",
+    "fontSize500": "var(--psTypeFontSize500)",
+    "fontSize600": "var(--psTypeFontSize600)",
+    "fontSize700": "var(--psTypeFontSize700)",
+    "fontSize800": "var(--psTypeFontSize800)",
+    "fontSize900": "var(--psTypeFontSize900)",
+    "fontSizeBase": "var(--psTypeFontSizeBase)",
+    "fontSizeGigantic": "var(--psTypeFontSizeGigantic)",
+    "fontSizeJumbo": "var(--psTypeFontSizeJumbo)",
+    "fontSizeLarge": "var(--psTypeFontSizeLarge)",
+    "fontSizeMedium": "var(--psTypeFontSizeMedium)",
+    "fontSizeSmall": "var(--psTypeFontSizeSmall)",
+    "fontSizeXLarge": "var(--psTypeFontSizeXLarge)",
+    "fontSizeXSmall": "var(--psTypeFontSizeXSmall)",
+    "fontSizeXXLarge": "var(--psTypeFontSizeXXLarge)",
+    "fontWeight100": "var(--psTypeFontWeight100)",
+    "fontWeight200": "var(--psTypeFontWeight200)",
+    "fontWeight300": "var(--psTypeFontWeight300)",
+    "fontWeight400": "var(--psTypeFontWeight400)",
+    "fontWeight500": "var(--psTypeFontWeight500)",
+    "fontWeight600": "var(--psTypeFontWeight600)",
+    "fontWeight700": "var(--psTypeFontWeight700)",
+    "fontWeight800": "var(--psTypeFontWeight800)",
+    "fontWeight900": "var(--psTypeFontWeight900)",
+    "fontWeightBlack": "var(--psTypeFontWeightBlack)",
+    "fontWeightBold": "var(--psTypeFontWeightBold)",
+    "fontWeightBook": "var(--psTypeFontWeightBook)",
+    "fontWeightDefault": "var(--psTypeFontWeightDefault)",
+    "fontWeightDemiBold": "var(--psTypeFontWeightDemiBold)",
+    "fontWeightLight": "var(--psTypeFontWeightLight)",
+    "fontWeightMedium": "var(--psTypeFontWeightMedium)",
+    "fontWeightRegular": "var(--psTypeFontWeightRegular)",
+    "fontWeightStrong": "var(--psTypeFontWeightStrong)",
+    "fontWeightThin": "var(--psTypeFontWeightThin)",
+    "fontWeightXBold": "var(--psTypeFontWeightXBold)",
+    "fontWeightXLight": "var(--psTypeFontWeightXLight)",
+    "letterSpacingAllCaps": "var(--psTypeLetterSpacingAllCaps)",
+    "letterSpacingGigantic": "var(--psTypeLetterSpacingGigantic)",
+    "letterSpacingJumbo": "var(--psTypeLetterSpacingJumbo)",
+    "letterSpacingLarge": "var(--psTypeLetterSpacingLarge)",
+    "letterSpacingLoose": "var(--psTypeLetterSpacingLoose)",
+    "letterSpacingLooser": "var(--psTypeLetterSpacingLooser)",
+    "letterSpacingMedium": "var(--psTypeLetterSpacingMedium)",
+    "letterSpacingNone": "var(--psTypeLetterSpacingNone)",
+    "letterSpacingSmall": "var(--psTypeLetterSpacingSmall)",
+    "letterSpacingTight": "var(--psTypeLetterSpacingTight)",
+    "letterSpacingTighter": "var(--psTypeLetterSpacingTighter)",
+    "letterSpacingXLarge": "var(--psTypeLetterSpacingXLarge)",
+    "letterSpacingXSmall": "var(--psTypeLetterSpacingXSmall)",
+    "letterSpacingXXLarge": "var(--psTypeLetterSpacingXXLarge)",
+    "lineHeightExtra": "var(--psTypeLineHeightExtra)",
+    "lineHeightHuge": "var(--psTypeLineHeightHuge)",
+    "lineHeightStandard": "var(--psTypeLineHeightStandard)",
+    "lineHeightTight": "var(--psTypeLineHeightTight)",
   },
 }
 `;

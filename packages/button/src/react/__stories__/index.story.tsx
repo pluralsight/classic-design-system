@@ -239,7 +239,7 @@ storiesOf('Button / theme', module).add('nested', _ => (
 ))
 
 storiesOf('Button / layout', module).add('fullWidth', _ => (
-  <div style={{ outline: `3px dashed ${colorsPink.base}`, width: '400px' }}>
+  <div style={{ outline: `3px dashed ${colorsPink[6]}`, width: '400px' }}>
     <div>
       <Button>Normal</Button>
     </div>

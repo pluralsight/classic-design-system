@@ -3,7 +3,6 @@ export const colorsWhite = '#FFFFFF'
 export const colorsBlack = '#000000'
 
 export const colorsBlue = {
-  base: '#0084BD',
   1: '#D9F1FF',
   2: '#B9E4FD',
   3: '#8ED1F6',
@@ -16,7 +15,6 @@ export const colorsBlue = {
   10: '#00446B'
 }
 export const colorsTeal = {
-  base: '#00BAA5',
   1: '#D5FAF5',
   2: '#AFFAEF',
   3: '#84F0E1',
@@ -29,7 +27,6 @@ export const colorsTeal = {
   10: '#006658'
 }
 export const colorsGreen = {
-  base: '#009E52',
   1: '#D9FAE5',
   2: '#ADF0C8',
   3: '#82E2AB',
@@ -42,7 +39,6 @@ export const colorsGreen = {
   10: '#005724'
 }
 export const colorsLime = {
-  base: '#8CCA08',
   1: '#ECFFC7',
   2: '#DEFFA3',
   3: '#CCFC7A',
@@ -55,7 +51,6 @@ export const colorsLime = {
   10: '#4C7700'
 }
 export const colorsYellow = {
-  base: '#FAD000',
   1: '#FFFBCC',
   2: '#FFF7A8',
   3: '#FFF380',
@@ -68,7 +63,6 @@ export const colorsYellow = {
   10: '#946500'
 }
 export const colorsOrange = {
-  base: '#F59127',
   1: '#FFECD1',
   2: '#FFDCAD',
   3: '#FFCD8A',
@@ -81,7 +75,6 @@ export const colorsOrange = {
   10: '#9E4100'
 }
 export const colorsRed = {
-  base: '#D21C09',
   1: '#FFD6D6',
   2: '#FFB3B3',
   3: '#FF8A8A',
@@ -94,7 +87,6 @@ export const colorsRed = {
   10: '#750000'
 }
 export const colorsPink = {
-  base: '#E7558B',
   1: '#FFDDEB',
   2: '#FFC2DB',
   3: '#FFA3C8',
@@ -107,7 +99,6 @@ export const colorsPink = {
   10: '#8A1A45'
 }
 export const colorsPurple = {
-  base: '#8359DF',
   1: '#E9DEFF',
   2: '#D6C2FF',
   3: '#C0A3FF',
@@ -147,7 +138,7 @@ export const colorsBackgroundLight = {
 }
 
 export const colorsBackgroundUtility = {
-  base: '#8A99A8',
+  base: '138,153,168',
   10: 'rgba(138,153,168, 0.10)',
   15: 'rgba(138,153,168, 0.15)',
   20: 'rgba(138,153,168, 0.20)',
@@ -173,10 +164,10 @@ export const colorsPrimaryAction = {
 }
 
 export const colorsStatus = {
-  error: colorsRed.base,
-  info: colorsBlue.base,
-  success: colorsGreen.base,
-  warning: colorsYellow.base
+  error: colorsRed[6],
+  info: colorsBlue[6],
+  success: colorsGreen[6],
+  warning: colorsYellow[6]
 }
 
 export const colorsCode = {

@@ -9,7 +9,7 @@ import {
   colorsBackgroundUtility
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
-import { transparentize } from '@pluralsight/ps-design-system-util'
+import { parseToRgb } from '@pluralsight/ps-design-system-util'
 
 import * as vars from '../vars'
 
@@ -140,10 +140,9 @@ export default {
     right: 0,
     width: '100%',
     padding: `${layout.spacingSmall} ${layout.spacingSmall} 0 ${layout.spacingSmall}`,
-    background: `linear-gradient(to bottom, ${transparentize(
-      0.25,
+    background: `linear-gradient(to bottom, rgba(${parseToRgb(
       '#000000'
-    )}, transparent)`,
+    )}, 0.75), transparent)`,
     transition: `opacity ${motion.speedNormal}`,
     pointerEvents: 'none',
     opacity: 0,
@@ -251,7 +250,7 @@ export default {
     backgroundColor: '#ffffff'
   },
   '.psds-card__progress__bar--complete': {
-    backgroundColor: colorsGreen.base
+    backgroundColor: colorsGreen[6]
   },
 
   // __title-container
