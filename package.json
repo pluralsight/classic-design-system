@@ -1,178 +1,180 @@
 {
-    "name": "design-system",
-    "version": "1.0.0",
-    "description": "Pluralsight design system",
-    "license": "Apache-2.0",
-    "private": true,
-    "engines": {
-        "node": "^15.9.0"
-    },
-    "author": "jaketrent",
-    "keywords": [
-        "pluralsight",
-        "design system",
-        "pattern library"
-    ],
-    "workspaces": {
-        "nohoist": [],
-        "packages": [
-            "packages/**"
-        ]
-    },
-    "config": {
-        "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog"
-        }
-    },
-    "scripts": {
-        "build": "lerna run build --ignore @pluralsight/ps-design-system-docs",
-        "clean": "del '{,!(node_modules)/}**/dist'",
-        "danger:ci": "danger ci --failOnErrors",
-        "deps:check:circular": "madge --exclude '^dist.*' --circular packages",
-        "docs": "cd docs/ && yarn start:dev",
-        "generate": "plop",
-        "generate:component": "plop component",
-        "lint": "eslint . --cache --quiet --ext .js,.jsx,.ts,.tsx",
-        "lint:ci": "eslint . --quiet --ext .js,.jsx,.ts,.tsx",
-        "lint:fix": "yarn lint --fix",
-        "octopus:deploy": "octopus-deploy-create-release-and-deploy",
-        "octopus:publish": "gulp octopus-publish",
-        "postinstall": "link-parent-bin",
-        "publish:all": "yarn build && lerna publish --ignore-scripts --ignore-prepublish",
-        "publish:all:beta": "yarn publish:all --npm-tag=beta",
-        "start": "yarn docs",
-        "test": "jest",
-        "test:ci": "jest --ci"
-    },
-    "husky": {
-        "hooks": {
-            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "*.(js|tsx?)": [
-            "eslint --fix"
-        ],
-        "package.json": [
-            "format-package -w"
-        ]
-    },
-    "madge": {
-        "fileExtensions": [
-            "js",
-            "ts",
-            "tsx"
-        ],
-        "includeNpm": true,
-        "tsConfig": "tsconfig.json"
-    },
-    "resolutions": {
-        "node-fetch": "^2.6.1",
-        "prismjs": "^1.21.0"
-    },
-    "dependencies": {
-        "@types/invariant": "^2.2.34",
-        "glamor": "^2.20.40",
-        "react": "^17.0.1",
-        "react-dom": "^17.0.1",
-        "react-transition-group": "^4.4.1"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.11.6",
-        "@babel/core": "^7.11.6",
-        "@babel/plugin-proposal-class-properties": "^7.10.4",
-        "@babel/plugin-proposal-export-default-from": "^7.10.4",
-        "@babel/plugin-proposal-export-namespace-from": "^7.10.4",
-        "@babel/plugin-proposal-json-strings": "^7.10.4",
-        "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
-        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-        "@babel/plugin-syntax-import-meta": "^7.10.4",
-        "@babel/preset-env": "^7.11.5",
-        "@babel/preset-react": "^7.10.4",
-        "@babel/preset-typescript": "^7.10.4",
-        "@commitlint/cli": "^11.0.0",
-        "@commitlint/config-conventional": "^11.0.0",
-        "@commitlint/config-lerna-scopes": "^11.0.0",
-        "@storybook/addon-actions": "^6.1.10",
-        "@storybook/addon-links": "^6.1.10",
-        "@storybook/addon-storyshots": "^6.1.10",
-        "@storybook/addons": "^6.1.10",
-        "@storybook/preset-typescript": "^3.0.0",
-        "@storybook/react": "^6.1.10",
-        "@svgr/cli": "^4.3.3",
-        "@testing-library/jest-dom": "^5.9.0",
-        "@testing-library/react": "^11.0.4",
-        "@testing-library/react-hooks": "^3.2.1",
-        "@testing-library/user-event": "^12.5.0",
-        "@types/classnames": "^2.2.10",
-        "@types/exenv": "^1.2.0",
-        "@types/jest-axe": "^3.5.1",
-        "@types/mdx-js__react": "^1.5.2",
-        "@types/react": "^17.0.0",
-        "@types/react-dom": "^17.0.0",
-        "@types/react-helmet": "^6.1.0",
-        "@types/storybook__addon-storyshots": "^5.3.1",
-        "@types/testing-library__jest-dom": "^5.9.4",
-        "@types/vfile-message": "^2.0.0",
-        "@typescript-eslint/eslint-plugin": "^4.9.0",
-        "@typescript-eslint/parser": "^4.9.0",
-        "babel-eslint": "^10.0.3",
-        "babel-loader": "^8.1.0",
-        "babel-plugin-macros": "^2.6.1",
-        "core-js": "^3.6.5",
-        "cross-env": "^6.0.3",
-        "cz-conventional-changelog": "^3.3.0",
-        "danger": "^10.4.0",
-        "danger-plugin-conventional-commitlint": "^1.0.4",
-        "del": "^5.1.0",
-        "del-cli": "^3.0.1",
-        "enzyme": "^3.10.0",
-        "eslint": "^7.14.0",
-        "eslint-config-prettier": "^6.11.0",
-        "eslint-config-standard": "^16.0.2",
-        "eslint-config-standard-react": "^11.0.1",
-        "eslint-plugin-import": "^2.22.1",
-        "eslint-plugin-jest": "^24.1.3",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-prettier": "^3.2.0",
-        "eslint-plugin-promise": "^4.2.1",
-        "eslint-plugin-react": "^7.20.0",
-        "eslint-plugin-react-hooks": "^4.2.0",
-        "eslint-plugin-standard": "^5.0.0",
-        "fork-ts-checker-webpack-plugin": "^6.0.5",
-        "format-package": "^6.1.0",
-        "husky": "^4.2.5",
-        "identity-obj-proxy": "^3.0.0",
-        "import-all.macro": "^2.0.3",
-        "jest": "^26.5.2",
-        "jest-axe": "^4.1.0",
-        "jest-environment-jsdom-sixteen": "^1.0.3",
-        "jest-prop-type-error": "^1.1.0",
-        "jest-watch-typeahead": "^0.6.1",
-        "lerna": "^3.22.0",
-        "link-parent-bin": "^1.0.2",
-        "lint-staged": "^10.5.3",
-        "madge": "^3.11.0",
-        "mutation-observer": "^1.0.3",
-        "npm-run-all": "^4.1.5",
-        "octopus-deploy": "^6.0.0",
-        "plop": "^2.7.1",
-        "prettier": "^2.1.2",
-        "prettier-eslint-cli": "^5.0.0",
-        "raf": "^3.4.1",
-        "react-test-renderer": "^17.0.1",
-        "require-context.macro": "^1.2.2",
-        "ts-loader": "^6.2.2",
-        "typescript": "^3.9.3",
-        "webpack": "^5.9.0",
-        "wsrun": "^5.2.1",
-        "yargs": "^14.2.3",
-        "autoprefixer": "^9.8.6",
-        "postcss-loader": "^3.0.0",
-        "postcss-nesting": "^7.0.1",
-        "css-loader": "^3.5.3",
-        "style-loader": "^1.2.1",
-        "postcss-custom-properties": "^10.0.0"
+  "name": "design-system",
+  "version": "1.0.0",
+  "description": "Pluralsight design system",
+  "license": "Apache-2.0",
+  "private": true,
+  "engines": {
+    "node": "^15.9.0"
+  },
+  "author": "jaketrent",
+  "keywords": [
+    "pluralsight",
+    "design system",
+    "pattern library"
+  ],
+  "workspaces": {
+    "nohoist": [],
+    "packages": [
+      "packages/**",
+      "docs"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "scripts": {
+    "build": "lerna run build --ignore @pluralsight/ps-design-system-docs",
+    "clean": "del '{,!(node_modules)/}**/dist'",
+    "danger:ci": "danger ci --failOnErrors",
+    "deps:check:circular": "madge --exclude '^dist.*' --circular packages",
+    "docs": "cd docs/ && yarn start:dev",
+    "generate": "plop",
+    "generate:component": "plop component",
+    "lint": "eslint . --cache --quiet --ext .js,.jsx,.ts,.tsx",
+    "lint:ci": "eslint . --quiet --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "yarn lint --fix",
+    "octopus:deploy": "octopus-deploy-create-release-and-deploy",
+    "octopus:publish": "gulp octopus-publish",
+    "postinstall": "link-parent-bin",
+    "publish:all": "yarn build && lerna publish --ignore-scripts --ignore-prepublish",
+    "publish:all:beta": "yarn publish:all --npm-tag=beta",
+    "start": "yarn docs",
+    "test": "jest",
+    "test:ci": "jest --ci"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(js|tsx?)": [
+      "eslint --fix"
+    ],
+    "package.json": [
+      "format-package -w"
+    ]
+  },
+  "madge": {
+    "fileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "includeNpm": true,
+    "tsConfig": "tsconfig.json"
+  },
+  "resolutions": {
+    "node-fetch": "^2.6.1",
+    "prismjs": "^1.21.0",
+    "semver": "^7.3.4"
+  },
+  "dependencies": {
+    "@types/invariant": "^2.2.34",
+    "glamor": "^2.20.40",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-transition-group": "^4.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.10.4",
+    "@babel/plugin-proposal-json-strings": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-import-meta": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@commitlint/config-lerna-scopes": "^11.0.0",
+    "@storybook/addon-actions": "^6.1.10",
+    "@storybook/addon-links": "^6.1.10",
+    "@storybook/addon-storyshots": "^6.1.10",
+    "@storybook/addons": "^6.1.10",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^6.1.10",
+    "@svgr/cli": "^4.3.3",
+    "@testing-library/jest-dom": "^5.9.0",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@testing-library/user-event": "^12.5.0",
+    "@types/classnames": "^2.2.10",
+    "@types/exenv": "^1.2.0",
+    "@types/jest-axe": "^3.5.1",
+    "@types/mdx-js__react": "^1.5.2",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-helmet": "^6.1.0",
+    "@types/storybook__addon-storyshots": "^5.3.1",
+    "@types/testing-library__jest-dom": "^5.9.4",
+    "@types/vfile-message": "^2.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "autoprefixer": "^9.8.6",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-macros": "^2.6.1",
+    "core-js": "^3.6.5",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.5.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "danger": "^10.4.0",
+    "danger-plugin-conventional-commitlint": "^1.0.4",
+    "del": "^5.1.0",
+    "del-cli": "^3.0.1",
+    "enzyme": "^3.10.0",
+    "eslint": "^7.14.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-config-standard-react": "^11.0.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.1.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.2.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "fork-ts-checker-webpack-plugin": "^6.0.5",
+    "format-package": "^6.1.0",
+    "husky": "^4.2.5",
+    "identity-obj-proxy": "^3.0.0",
+    "import-all.macro": "^2.0.3",
+    "jest": "^26.5.2",
+    "jest-axe": "^4.1.0",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "jest-prop-type-error": "^1.1.0",
+    "jest-watch-typeahead": "^0.6.1",
+    "lerna": "^3.22.0",
+    "link-parent-bin": "^1.0.2",
+    "lint-staged": "^10.5.3",
+    "madge": "^4.0.1",
+    "mutation-observer": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "octopus-deploy": "^6.0.0",
+    "plop": "^2.7.1",
+    "postcss-custom-properties": "^10.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-nesting": "^7.0.1",
+    "prettier": "^2.1.2",
+    "prettier-eslint-cli": "^5.0.0",
+    "raf": "^3.4.1",
+    "react-test-renderer": "^17.0.1",
+    "require-context.macro": "^1.2.2",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.9.3",
+    "webpack": "^5.9.0",
+    "wsrun": "^5.2.1",
+    "yargs": "^14.2.3"
+  }
 }

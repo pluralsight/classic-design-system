@@ -373,6 +373,10 @@ const groups = [
       {
         href: '/components/icon',
         title: 'Icon'
+      },
+      {
+        href: '/components/menu',
+        title: 'Menu'
       }
     ]
   },
@@ -454,6 +458,10 @@ const groups = [
       {
         href: '/patterns/page-headers',
         title: 'Page headers'
+      },
+      {
+        href: '/patterns/polymorphic',
+        title: 'Polymorphic'
       }
     ]
   }

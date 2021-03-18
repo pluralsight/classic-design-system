@@ -31,7 +31,7 @@ interface Props extends HTMLAttributes<HTMLAnchorElement> {
   appearance?: string
 }
 interface LinkComponent
-  extends RefForwardingComponent<Props, HTMLAnchorElement, LinkStatics> { }
+  extends RefForwardingComponent<Props, HTMLAnchorElement, LinkStatics> {}
 
 const Link = React.forwardRef<HTMLAnchorElement, Props>(
   ({ className, ...props }, forwardedRef) => {

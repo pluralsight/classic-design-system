@@ -45,8 +45,7 @@ module.exports = {
         'jest',
         'react',
         'react-hooks',
-        'prettier',
-        'css-modules'
+        'prettier'
     ],
     rules: {
         'import/extensions': [WARNING, 'always', { ignorePackages: true }],

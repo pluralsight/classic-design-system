@@ -1,0 +1,27 @@
+---
+name: Polymorphic example
+route: /patterns/polymorphic'
+---
+
+To create a polymorphic component in react use the following setup:
+ 
+```typescript noRender startExpanded
+import React, { forwardRef } from 'react'
+import { ForwardRefComponent, RefFor } from './types'
+
+type PolyButtonProps = {}
+
+const PolyButton = forwardRef((props, forwardedRef) => {
+  const { as: Comp = DEFAULT_TAG, ...primitiveProps } = props
+  return <Comp {...primitiveProps} ref={forwardedRef as RefFor<typeof Comp>} />
+}) as ForwardRefComponent<'button', PolyButtonProps>
+
+
+const Comp = () => {
+  <PolyButton>button</PolyButton>
+  <br/>
+  <PolyButton  href="https://duckduckgo.com" as="a" target="_blank">llink</PolyButton>
+} 
+
+export default Comp
+```
