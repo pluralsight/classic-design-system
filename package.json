@@ -16,7 +16,8 @@
   "workspaces": {
     "nohoist": [],
     "packages": [
-      "packages/**"
+      "packages/**",
+      "docs"
     ]
   },
   "config": {
@@ -69,7 +70,8 @@
   },
   "resolutions": {
     "node-fetch": "^2.6.1",
-    "prismjs": "^1.21.0"
+    "prismjs": "^1.21.0",
+    "semver": "^7.3.4"
   },
   "dependencies": {
     "@types/invariant": "^2.2.34",

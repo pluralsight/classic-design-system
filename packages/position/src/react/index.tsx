@@ -85,7 +85,7 @@ interface PositionProps {
   target?: HTMLElement | React.RefObject<HTMLElement>
   when?: boolean
 }
-const Position = React.forwardRef<HTMLElement, PositionProps>(
+export const Position = React.forwardRef<HTMLElement, PositionProps>(
   (props, forwardedRef) => {
     const { target, position: positionFn } = props
     const inNode = props.inNode || (canUseDOM() ? document.body : undefined)

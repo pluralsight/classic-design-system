@@ -7,7 +7,7 @@ export const searchListItem = <E extends Element>(
 ): E | undefined => {
   if (!el) return
 
-  const isDisabled = el.hasAttribute('disabled')
+  const isDisabled = el.hasAttribute('[data-disabled]')
   const isListItem = el.tagName === 'LI'
   if (isListItem && !isDisabled) return el
 
