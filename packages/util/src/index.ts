@@ -1,5 +1,6 @@
 export * from './jest'
 export * from './menu-keys'
+export * from './polymorphism'
 export * from './types'
 
 export { callAll } from './call-all'
