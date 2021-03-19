@@ -49,11 +49,12 @@ export const WithLoading = Template.bind({})
 WithLoading.args = { ...defaultArgs, loading: true }
 
 export const AsLink = Template.bind({})
-AsLink.args = { ...defaultArgs, href: 'https://duckduckgo.com' }
+AsLink.args = { ...defaultArgs, as: 'a', href: 'https://duckduckgo.com' }
 
 export const AsLinkWithIcon = Template.bind({})
 AsLinkWithIcon.args = {
   ...defaultArgs,
+  as: 'a',
   href: 'https://duckduckgo.com',
   icon: <PlaceholderIcon />
 }
