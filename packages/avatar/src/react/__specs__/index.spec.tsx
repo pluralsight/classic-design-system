@@ -1,11 +1,16 @@
-import { render } from '@testing-library/react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { screen, render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
+import Avatar from '..'
 import * as vars from '../../vars'
 
-import Avatar from '..'
+import * as stories from '../__stories__/index.story'
 
 describe('Avatar', () => {
+  const cases = convertStoriesToJestCases(stories)
+
   describe('.sizes', () => {
     it('exists', () => {
       expect(Avatar.sizes).toEqual(vars.sizes)
@@ -18,7 +23,7 @@ describe('Avatar', () => {
     })
   })
 
-  it('should forward className', () => {
+  it('forwards className', () => {
     const { getByTestId } = render(
       <Avatar data-testid="under-test" className="testclass" />
     )
@@ -27,67 +32,65 @@ describe('Avatar', () => {
     expect(el).toHaveClass('testclass')
   })
 
-  it('should forward ref', () => {
+  it('forwards ref', () => {
     const ref = React.createRef<HTMLDivElement>()
-
     render(<Avatar ref={ref} />)
-
     expect(ref).not.toBeNull()
   })
 
-  describe('with an image src and an alt attr', () => {
-    let container
-    let el: HTMLDivElement
-    let image: HTMLImageElement
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    beforeEach(() => {
-      ;({ container } = render(<Avatar alt="alt text" src="//something.png" />))
-
-      el = container.querySelector('div')!
-      image = container.querySelector('img')!
-    })
-
-    it('should passes the alt attr to the image', () => {
-      expect(image).toHaveAttribute('alt', 'alt text')
-    })
-
-    it('should be visible to screen readers', () => {
-      expect(el).not.toHaveAttribute('aria-hidden')
+      expect(results).toHaveNoViolations()
     })
   })
 
-  describe('with an image src and NO alt attr', () => {
-    it('should be hidden from screen readers', () => {
-      const { container } = render(<Avatar src="//something.png" />)
-      const el = container.querySelector('div')
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-      expect(el).toHaveAttribute('aria-hidden')
-    })
-  })
+    describe('with an alt attr', () => {
+      it('passes the alt attr to the image', () => {
+        render(<Basic alt="alt text" src="//something.png" />)
+        const img = screen.getByRole('img')
+        expect(img).toHaveAttribute('alt', 'alt text')
+      })
 
-  describe('WITHOUT an image src', () => {
-    const name = 'Benedict Cumberbatch'
-    let container
-    let el: HTMLDivElement
-    let initials: HTMLDivElement
+      it('is visible to screen readers', () => {
+        render(
+          <Basic data-testid="undertest" alt="alt text" src="//something.png" />
+        )
+        const el = screen.getByTestId('undertest')
 
-    beforeEach(() => {
-      ;({ container } = render(<Avatar name={name} />))
-
-      el = container.querySelector('div')!
-      initials = el.querySelector<HTMLDivElement>('div:last-child')!
-    })
-
-    it('displays initial', () => {
-      expect(initials).toHaveTextContent('B')
+        expect(el).not.toHaveAttribute('aria-hidden')
+        expect(el).not.toHaveAttribute('role', 'presentation')
+      })
     })
 
-    it('add the name as an aria-label', () => {
-      expect(initials).toHaveAttribute('aria-label', name)
+    describe('with NO alt attr', () => {
+      it('is hidden from screen readers', () => {
+        render(<Basic data-testid="undertest" src="//something.png" />)
+        const el = screen.getByTestId('undertest')
+
+        expect(el).toHaveAttribute('aria-hidden')
+      })
     })
 
-    it('should NOT be hidden from screen readers', () => {
-      expect(el).not.toHaveAttribute('aria-hidden')
+    describe('with NO image src', () => {
+      const name = 'Benedict Cumberbatch'
+
+      it('displays initials', () => {
+        render(<Basic data-testid="undertest" name={name} src={undefined} />)
+        const initials = screen.getByTestId('undertest')
+        expect(initials).toHaveTextContent('B')
+      })
+
+      it('adds the name as an aria-label', () => {
+        render(<Basic data-testid="undertest" name={name} src={undefined} />)
+        const initials = screen.getByLabelText(name)
+        expect(initials).toBeInTheDocument()
+      })
     })
   })
 })

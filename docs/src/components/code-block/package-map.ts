@@ -29,6 +29,7 @@ import Icon, * as Icons from '@pluralsight/ps-design-system-icon'
 import * as Layout from '@pluralsight/ps-design-system-layout'
 import LinearProgress from '@pluralsight/ps-design-system-linearprogress'
 import Link from '@pluralsight/ps-design-system-link'
+import Menu from '@pluralsight/ps-design-system-menu'
 import MultiSelect from '@pluralsight/ps-design-system-multiselect'
 import NavBar from '@pluralsight/ps-design-system-navbar'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
@@ -115,6 +116,7 @@ export const PACKAGE_MAP: PackageMap = {
   '@pluralsight/ps-design-system-layout': { ...omit(Layout, ['default']) },
   '@pluralsight/ps-design-system-linearprogress': { LinearProgress },
   '@pluralsight/ps-design-system-link': { Link },
+  '@pluralsight/ps-design-system-menu': { Menu },
   '@pluralsight/ps-design-system-multiselect': { MultiSelect },
   '@pluralsight/ps-design-system-navbar': { NavBar },
   '@pluralsight/ps-design-system-navbrand': { NavBrand },

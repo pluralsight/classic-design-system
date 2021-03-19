@@ -1,80 +1,107 @@
-import { fireEvent, render } from '@testing-library/react'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { fireEvent, screen, render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
-import { CheckIcon } from '@pluralsight/ps-design-system-icon'
-
 import Button from '..'
+import * as vars from '../../vars'
+
+import * as stories from '../__stories__/index.story'
 
 describe('Button', () => {
-  it('should render a button', () => {
-    const { getByTestId } = render(
-      <Button data-testid="undertest" type="submit">
-        test
-      </Button>
-    )
-    const el = getByTestId('undertest')
+  const cases = convertStoriesToJestCases(stories)
 
-    expect(el.tagName.toLowerCase()).toEqual('button')
+  describe('.sizes', () => {
+    it('exists', () => {
+      expect(Button.sizes).toEqual(vars.sizes)
+    })
   })
 
-  it('should render a hyperlink when an `href` is present', () => {
-    const { getByTestId } = render(
-      <Button data-testid="undertest" href="/">
-        test
-      </Button>
-    )
-    const el = getByTestId('undertest')
-
-    expect(el.tagName.toLowerCase()).toEqual('a')
-  })
-
-  it('renders a name attribute onto button', () => {
-    const { getByTestId } = render(
-      <Button data-testid="undertest" name="someVal">
-        test
-      </Button>
-    )
-    const el = getByTestId('undertest')
-
-    expect(el.getAttribute('name')).toEqual('someVal')
-  })
-
-  it('forwards refs', () => {
+  it('forwards ref', () => {
     const ref = React.createRef<HTMLButtonElement>()
-    render(<Button ref={ref}>with ref</Button>)
-    expect(ref.current).not.toBeNull()
+    render(<Button ref={ref} />)
+    expect(ref).not.toBeNull()
   })
 
-  describe('when disabled', () => {
-    const handleClick = jest.fn()
-    let container: HTMLElement
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    beforeEach(() => {
-      const { container: _container } = render(
-        <Button
-          disabled
-          onClick={handleClick}
-          icon={<CheckIcon data-testid="icon" />}
-        >
-          Can't Be Clicked
-        </Button>
+      expect(results).toHaveNoViolations()
+    })
+  })
+
+  describe('Basic story', () => {
+    const { Basic } = stories
+
+    it('renders a button el', () => {
+      render(<Basic {...Basic.args} />)
+      const el = screen.getByRole('button')
+
+      expect(el).toBeInTheDocument()
+      expect(el.tagName.toLowerCase()).toEqual('button')
+    })
+
+    it('forwards className', () => {
+      const { getByTestId } = render(
+        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
       )
-      container = _container
+
+      const el = getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
     })
 
-    afterEach(() => {
-      handleClick.mockClear()
+    it('renders a name attribute onto button', () => {
+      const name = 'some-value'
+
+      render(<Basic {...Basic.args} name={name} />)
+
+      const el = screen.getByRole('button')
+      expect(el).toHaveAttribute('name', name)
     })
+  })
+
+  describe('AsLink story', () => {
+    const { AsLink } = stories
+
+    it('renders a anchor el', () => {
+      render(<AsLink {...AsLink.args} />)
+      const el = screen.getByRole('link')
+
+      expect(el).toBeInTheDocument()
+      expect(el.tagName.toLowerCase()).toEqual('a')
+    })
+  })
+
+  describe('Disabled story', () => {
+    const { Disabled } = stories
 
     it('does not allow clicks on the button', () => {
-      const button = container.querySelector('button')
+      const handleClick = jest.fn()
+
+      render(<Disabled {...Disabled.args} />)
+
+      const button = screen.getByRole('button')
       fireEvent.click(button)
+
       expect(handleClick).not.toHaveBeenCalled()
     })
 
     it('does not allow clicks on the icon', () => {
-      const icon = container.querySelector('[data-testid="icon"]')
-      fireEvent.click(icon)
+      const handleClick = jest.fn()
+
+      render(
+        <Disabled
+          {...Disabled.args}
+          icon={<PlaceholderIcon data-testid="icon-undertest" />}
+        />
+      )
+
+      const el = screen.getByTestId('icon-undertest')
+      fireEvent.click(el)
+
       expect(handleClick).not.toHaveBeenCalled()
     })
   })
