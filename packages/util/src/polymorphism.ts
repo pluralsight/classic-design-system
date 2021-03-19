@@ -167,6 +167,18 @@ export function forwardRefWithAs<
   >
 }
 
+export function forwardRefWithAsAndStatics<
+  Props,
+  DefaultComponentType extends As = 'div',
+  Statics = unknown
+>(render: ForwardRefWithAsRenderFunction<DefaultComponentType, Props>) {
+  return forwardRef(render) as ForwardRefExoticComponentWithAs<
+    DefaultComponentType,
+    Props
+  > &
+    Statics
+}
+
 export function memoWithAs<Props, DefaultComponentType extends As = 'div'>(
   Component: FunctionComponentWithAs<DefaultComponentType, Props>,
   propsAreEqual?: (

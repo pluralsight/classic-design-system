@@ -3,7 +3,7 @@
 import { render } from '@testing-library/react'
 import React, { MouseEvent } from 'react'
 
-import { forwardRefWithAs } from '..'
+import { forwardRefWithAs, forwardRefWithAsAndStatics } from '..'
 
 interface Props {
   optional?: boolean
@@ -17,6 +17,21 @@ const Anchor = forwardRefWithAs<Props, 'a'>((props, ref) => {
   const { as: Comp = 'a', optional, ...rest } = props
   return <Comp data-optional={optional} ref={ref} {...rest} />
 })
+
+interface Statics {
+  Anchor: typeof Anchor
+  Button: typeof Button
+}
+
+const CompoundComp = forwardRefWithAsAndStatics<Props, 'div', Statics>(
+  (props, ref) => {
+    const { as: Comp = 'div', optional, ...rest } = props
+
+    return <Comp data-optional={optional} ref={ref} {...rest} />
+  }
+)
+CompoundComp.Anchor = Anchor
+CompoundComp.Button = Button
 
 describe('polymorphism', () => {
   describe('#forwardRefWithAs', () => {
@@ -69,6 +84,22 @@ describe('polymorphism', () => {
               evt.currentTarget.href
             }
           />
+        </>
+      )
+    })
+  })
+
+  describe('#forwardRefWithAsAndStatics', () => {
+    it('renders without type errors', () => {
+      expect.assertions(0)
+
+      render(
+        <>
+          {/* accepts optional prop */}
+          <CompoundComp optional>
+            <CompoundComp.Anchor />
+            <CompoundComp.Button />
+          </CompoundComp>
         </>
       )
     })
