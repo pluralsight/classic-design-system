@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots NavCookieBanner Basic 1`] = `
+exports[`Storyshots Components/NavCookieBanner Basic 1`] = `
 <div
   data-css-17e1gtc=""
 >
@@ -39,7 +39,7 @@ exports[`Storyshots NavCookieBanner Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots NavCookieBanner Custom message 1`] = `
+exports[`Storyshots Components/NavCookieBanner Custom Message 1`] = `
 <div
   data-css-17e1gtc=""
 >
