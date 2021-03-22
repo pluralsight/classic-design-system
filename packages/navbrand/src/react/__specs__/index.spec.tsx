@@ -1,51 +1,72 @@
-import { render } from '@testing-library/react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { screen, render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import NavBrand from '..'
 
+import * as stories from '../__stories__/index.story'
+
 describe('NavBrand', () => {
-  it('should render a div by default', () => {
+  const cases = convertStoriesToJestCases(stories)
+
+  it('forwards ref', () => {
     const ref = React.createRef<HTMLDivElement>()
-    const { getByTestId } = render(
-      <NavBrand data-testid="undertest" ref={ref}>
-        test
-      </NavBrand>
-    )
-    const el = getByTestId('undertest')
-
-    expect(el.tagName.toLowerCase()).toEqual('div')
-    expect(ref.current).not.toBeNull()
+    render(<NavBrand ref={ref} />)
+    expect(ref).not.toBeNull()
   })
 
-  it('should render a hyperlink when an `href` is present', () => {
-    const ref = React.createRef<HTMLAnchorElement>()
-    const { getByTestId } = render(
-      <NavBrand data-testid="undertest" href="/" ref={ref}>
-        test
-      </NavBrand>
-    )
-    const el = getByTestId('undertest')
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    expect(el.tagName.toLowerCase()).toEqual('a')
-    expect(ref.current).not.toBeNull()
+      expect(results).toHaveNoViolations()
+    })
   })
 
-  it('should render a button when an `onClick` is present', () => {
-    const ref = React.createRef<HTMLButtonElement>()
-    const onClick = jest.fn()
-    const { getByTestId } = render(
-      <NavBrand
-        data-testid="undertest"
-        onClick={onClick}
-        name="someVal"
-        ref={ref}
-      >
-        test
-      </NavBrand>
-    )
-    const el = getByTestId('undertest')
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-    expect(el.tagName.toLowerCase()).toEqual('button')
-    expect(ref.current).not.toBeNull()
+    it('renders a div el', () => {
+      render(<Basic data-testid="undertest" {...Basic.args} />)
+      const el = screen.getByTestId('undertest')
+
+      expect(el).toBeInTheDocument()
+      expect(el.tagName.toLowerCase()).toEqual('div')
+    })
+
+    it('forwards className', () => {
+      render(
+        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
+      )
+
+      const el = screen.getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
+    })
+  })
+
+  describe('AsButton story', () => {
+    const { AsButton } = stories
+
+    it('renders a anchor el', () => {
+      render(<AsButton {...AsButton.args} />)
+      const el = screen.getByRole('button')
+
+      expect(el).toBeInTheDocument()
+      expect(el.tagName.toLowerCase()).toEqual('button')
+    })
+  })
+
+  describe('AsLink story', () => {
+    const { AsLink } = stories
+
+    it('renders a anchor el', () => {
+      render(<AsLink {...AsLink.args} />)
+      const el = screen.getByRole('link')
+
+      expect(el).toBeInTheDocument()
+      expect(el.tagName.toLowerCase()).toEqual('a')
+    })
   })
 })
