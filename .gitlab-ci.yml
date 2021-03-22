@@ -27,6 +27,9 @@ default:
 
 
 before_script:
+  - rm -rf examples
+  - rm -rf testbed-a11y
+
   - yarn config set ignore-engines true
   - yarn config set workspaces-experimental true
   - yarn install --cache-folder .yarn
