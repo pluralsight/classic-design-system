@@ -32,6 +32,7 @@ const defaults: Partial<Cache> = {
 
   const parsedEnsuredDefaulted = {
     appName: process.env.APP_NAME || defaults.appName,
+    // eslint-disable-next-line
     env: (process.env.NODE_ENV || defaults.env) as NodeEnvOptions,
     host: process.env.HOST || defaults.host,
     logLevel: (process.env.LOG_LEVEL || defaults.logLevel) as LogLevel,
