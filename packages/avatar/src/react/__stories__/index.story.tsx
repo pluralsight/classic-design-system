@@ -1,107 +1,110 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import React, { ComponentProps } from 'react'
 
 import Avatar from '..'
 
-const storySizes = storiesOf('Default', module)
+const defaultArgs = {
+  alt: 'Jake Trent',
+  size: Avatar.sizes.medium,
+  name: 'Jake Trent'
+}
 
-Object.values(Avatar.sizes).forEach(size =>
-  storySizes.add(size, () => (
-    <Avatar
-      alt={`${size} avatar`}
-      size={size}
-      src="https://secure.gravatar.com/avatar/0f792a763ebf08411c7f566079e4adc7?s=400"
-    />
-  ))
+export default {
+  title: 'Components/Avatar',
+  component: Avatar
+} as Meta
+
+const Template: Story<ComponentProps<typeof Avatar>> = args => (
+  <Avatar {...args} />
 )
-storySizes.add('light image', () => (
-  <Avatar
-    alt="light image avatar"
-    src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
-    name="Jake Trent"
-  />
-))
-storySizes.add('style override', () => (
-  <Avatar
-    style={{ border: '3px solid red' }}
-    src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
-    name="Jake Trent"
-  />
-))
-storySizes.add('className override', () => (
-  <Avatar
-    className="fakeClassName"
-    src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg"
-    name="Jake Trent"
-  />
-))
 
-const names = [
-  '% Special Characters',
-  'Anakin Skywalker',
-  'Budapest Skywalker',
-  'Carlos Organa',
-  'Dennis Pimenta',
-  'Peia Organa',
-  'Obi-Wan Kenobi',
-  'Uy Marley',
-  'Harry Potter',
-  'Diz Blau',
-  'Single'
-]
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
 
-const storyInitials = storiesOf('Using Initials', module)
-  .add('empty name, no src', () => <Avatar name="" />)
-  .add('undefined name, no src', () => <Avatar name={undefined} />)
-  .add('single string name, no src', () => <Avatar name="x" />)
-  .add('error-out image src, with name', () => (
-    <Avatar name="Bill Dill" src="https://jaketrent.com/fake.jpg" />
-  ))
-  .add('with invalid gravatar image', () => (
-    <Avatar
-      name="Alan Turing"
-      src="https://secure.gravatar.com/avatar/invalidhash?d=tmp"
-    />
-  ))
-  .add('with invalid gravatar image, no name', () => (
-    <Avatar src="https://secure.gravatar.com/avatar/invalidhash?d=tmp" />
-  ))
+export const NameEmpty = Template.bind({})
+NameEmpty.args = { ...defaultArgs, name: '' }
 
-names.forEach(name => {
-  storyInitials.add(name, () => <Avatar name={name} />)
-})
+export const NameUndefined = Template.bind({})
+NameUndefined.args = { ...defaultArgs, name: undefined }
 
-storyInitials.add('alpha-order names w/ varied colors', () => (
-  <div>
-    <Avatar name="Alan Turing" src="https://example.com/image.jpg" />
-    <Avatar name="Alan Sleuse" src="https://example.com/image.jpg" />
-    <Avatar name="Alan Alanosphere" src="https://example.com/image.jpg" />
-    <Avatar name="Allen Alarm" src="https://example.com/image.jpg" />
-    <Avatar name="Allen Allen" src="https://example.com/image.jpg" />
-    <Avatar name="Allen Stewart" src="https://example.com/image.jpg" />
-    <Avatar name="Brian Can Stand Here" src="https://example.com/image.jpg" />
-    <Avatar name="Brian Can't Stand Here" src="https://example.com/image.jpg" />
-    <Avatar name="Brian Life Of" src="https://example.com/image.jpg" />
-    <Avatar name="Brian O'Mally" src="https://example.com/image.jpg" />
-  </div>
-))
+export const NameSingleChar = Template.bind({})
+NameSingleChar.args = { ...defaultArgs, name: 'x' }
 
-storiesOf('Image cases', module)
-  .add('tall, thin', () => (
-    <Avatar
-      name="Will Ferrill"
-      src="https://akns-images.eonline.com/eol_images/Entire_Site/2010330/293.WillFerrell.tg.043010.jpg"
-    />
-  ))
-  .add('flat, long', () => (
-    <Avatar
-      name="Chris Rock"
-      src="https://cdn1.thr.com/sites/default/files/2019/03/chrisrocknaacp.jpg"
-    />
-  ))
-  .add('square', () => (
-    <Avatar
-      name="Jake Trentsky"
-      src="https://gravatar.com/avatar/63a1fa126f541c0f0ecf1d74f7a40640?s=320&r=g"
-    />
-  ))
+export const NameSpecialChar = Template.bind({})
+NameSpecialChar.args = { ...defaultArgs, name: '% Special Char' }
+
+export const VariousNames: Story = () => {
+  const names = [
+    'Anakin Skywalker',
+    'Budapest Skywalker',
+    'Carlos Organa',
+    'Dennis Pimenta',
+    'Peia Organa',
+    'Obi-Wan Kenobi',
+    'Uy Marley',
+    'Harry Potter',
+    'Diz Blau',
+    'Single'
+  ]
+
+  return (
+    <div>
+      {names.map((name, index) => (
+        <Avatar name={name} key={index} />
+      ))}
+    </div>
+  )
+}
+
+export const ImageError = Template.bind({})
+ImageError.args = {
+  ...defaultArgs,
+  name: 'Bill Dill',
+  src: 'https://jaketrent.com/fake.jpg'
+}
+
+export const GravatarInvalid = Template.bind({})
+GravatarInvalid.args = {
+  ...defaultArgs,
+  src: 'https://secure.gravatar.com/avatar/invalidhash?d=tmp'
+}
+
+export const ImageValid = Template.bind({})
+ImageValid.args = {
+  ...defaultArgs,
+  src:
+    'https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg'
+}
+
+export const ImageTallAndThin = Template.bind({})
+ImageTallAndThin.args = {
+  ...defaultArgs,
+  src:
+    'https://akns-images.eonline.com/eol_images/Entire_Site/2010330/293.WillFerrell.tg.043010.jpg'
+}
+
+export const ImageFlatAndLong = Template.bind({})
+ImageFlatAndLong.args = {
+  ...defaultArgs,
+  src: 'https://cdn1.thr.com/sites/default/files/2019/03/chrisrocknaacp.jpg'
+}
+
+export const ImageSquare = Template.bind({})
+ImageSquare.args = {
+  ...defaultArgs,
+  src: 'https://gravatar.com/avatar/63a1fa126f541c0f0ecf1d74f7a40640?s=320&r=g'
+}
+
+export const Sizes: Story = () => (
+  <>
+    {Object.values(Avatar.sizes).map((size, i) => (
+      <Avatar key={i} size={size} />
+    ))}
+  </>
+)
+
+export const StyleOverride = Template.bind({})
+StyleOverride.args = { ...defaultArgs, style: { border: '3px solid red' } }
+
+export const ClassNameOverride = Template.bind({})
+ClassNameOverride.args = { ...defaultArgs, className: 'fakeClassName' }

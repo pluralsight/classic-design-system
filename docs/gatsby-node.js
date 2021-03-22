@@ -90,8 +90,6 @@ function searchNpm() {
         timeout: 10000
       },
       (err, stdout, stderr) => {
-        console.log('HERE', stdout)
-
         if (err) {
           console.log('Error searching packages', err)
           return reject(err)

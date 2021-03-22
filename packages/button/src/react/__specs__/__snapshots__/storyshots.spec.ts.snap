@@ -1,115 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Button / appearance flat 1`] = `
-<button
-  data-css-1uk30vr=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Click me
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / appearance primary 1`] = `
-<button
-  data-css-y5dqt5=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Click me
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / appearance secondary 1`] = `
-<button
-  data-css-1x5ax2g=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Click me
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / appearance stroke 1`] = `
-<button
-  data-css-1cb2wrf=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Click me
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / as link default 1`] = `
-<a
-  data-css-y5dqt5=""
-  href="https://duckduckgo.com"
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Click as link
-  </span>
-</a>
-`;
-
-exports[`Storyshots Button / as link with icon 1`] = `
-<a
-  data-css-12bozst=""
-  href="https://duckduckgo.com"
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="pencil icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M5.276 15.862L5 19l3.14-.275 8.085-8.086-2.863-2.863-8.086 8.086zM17.64 9.225l.767-.767a2 2 0 00.592-1.431 2 2 0 00-.593-1.433 1.996 1.996 0 00-1.43-.591c-.545 0-1.048.208-1.433.593l-.766.766 2.863 2.863zm-.665-6.222c1.076 0 2.086.418 2.845 1.177A3.997 3.997 0 0121 7.027a4 4 0 01-1.179 2.846L9.411 20.282a.995.995 0 01-.464.263l-4.705.427a1.002 1.002 0 01-1.213-1.213l.427-4.704a.998.998 0 01.263-.464L14.13 4.18a3.997 3.997 0 012.845-1.179z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Click as link
-  </span>
-</a>
-`;
-
-exports[`Storyshots Button / disabled all 1`] = `
+exports[`Storyshots Components/Button Appearances 1`] = `
 <div
-  style={
-    Object {
-      "display": "grid",
-      "gap": "20px",
-      "gridTemplateColumns": "1fr 1fr",
-    }
-  }
+  data-css-1gfhbu8=""
 >
   <button
     data-css-y5dqt5=""
@@ -120,18 +13,6 @@ exports[`Storyshots Button / disabled all 1`] = `
       data-css-15b13by=""
     >
       primary
-    </span>
-  </button>
-  <button
-    data-css-1283ymw=""
-    disabled={true}
-    onClick={[Function]}
-    style={Object {}}
-  >
-    <span
-      data-css-15b13by=""
-    >
-      primary disabled
     </span>
   </button>
   <button
@@ -146,18 +27,6 @@ exports[`Storyshots Button / disabled all 1`] = `
     </span>
   </button>
   <button
-    data-css-1ukz2bh=""
-    disabled={true}
-    onClick={[Function]}
-    style={Object {}}
-  >
-    <span
-      data-css-15b13by=""
-    >
-      secondary disabled
-    </span>
-  </button>
-  <button
     data-css-1cb2wrf=""
     disabled={false}
     style={Object {}}
@@ -166,18 +35,6 @@ exports[`Storyshots Button / disabled all 1`] = `
       data-css-15b13by=""
     >
       stroke
-    </span>
-  </button>
-  <button
-    data-css-1fra720=""
-    disabled={true}
-    onClick={[Function]}
-    style={Object {}}
-  >
-    <span
-      data-css-15b13by=""
-    >
-      stroke disabled
     </span>
   </button>
   <button
@@ -191,797 +48,64 @@ exports[`Storyshots Button / disabled all 1`] = `
       flat
     </span>
   </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Appearances Disabled 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
   <button
-    data-css-1jpg809=""
+    data-css-1283ymw=""
     disabled={true}
-    onClick={[Function]}
     style={Object {}}
   >
     <span
       data-css-15b13by=""
     >
-      flat disabled
+      primary
+    </span>
+  </button>
+  <button
+    data-css-1ukz2bh=""
+    disabled={true}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1fra720=""
+    disabled={true}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1jpg809=""
+    disabled={true}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
     </span>
   </button>
 </div>
 `;
 
-exports[`Storyshots Button / disabled with icon 1`] = `
-<button
-  data-css-105jfs7=""
-  disabled={true}
-  style={Object {}}
+exports[`Storyshots Components/Button Appearances With Icon 1`] = `
+<div
+  data-css-1gfhbu8=""
 >
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="pencil icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M5.276 15.862L5 19l3.14-.275 8.085-8.086-2.863-2.863-8.086 8.086zM17.64 9.225l.767-.767a2 2 0 00.592-1.431 2 2 0 00-.593-1.433 1.996 1.996 0 00-1.43-.591c-.545 0-1.048.208-1.433.593l-.766.766 2.863 2.863zm-.665-6.222c1.076 0 2.086.418 2.845 1.177A3.997 3.997 0 0121 7.027a4 4 0 01-1.179 2.846L9.411 20.282a.995.995 0 01-.464.263l-4.705.427a1.002 1.002 0 01-1.213-1.213l.427-4.704a.998.998 0 01.263-.464L14.13 4.18a3.997 3.997 0 012.845-1.179z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Disabled
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon flat 1`] = `
-<button
-  data-css-68fqys=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon large 1`] = `
-<button
-  data-css-k62s0p=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon left 1`] = `
-<button
-  data-css-12bozst=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon lone flat large 1`] = `
-<button
-  data-css-3a6elv=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-y80vay=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone flat medium 1`] = `
-<button
-  data-css-1rm98rp=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-y80vay=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone flat small 1`] = `
-<button
-  data-css-1dnyz38=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-4ducb0=""
-  >
-    <div
-      data-css-k31qw2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone flat xSmall 1`] = `
-<button
-  data-css-66vnlm=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-4ducb0=""
-  >
-    <div
-      data-css-1gzzcm2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone primary large 1`] = `
-<button
-  data-css-nj4lft=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-y80vay=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone primary medium 1`] = `
-<button
-  data-css-j12pym=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-y80vay=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone primary small 1`] = `
-<button
-  data-css-1ee651c=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-4ducb0=""
-  >
-    <div
-      data-css-k31qw2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone primary xSmall 1`] = `
-<button
-  data-css-1edxsdy=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-4ducb0=""
-  >
-    <div
-      data-css-1gzzcm2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone secondary large 1`] = `
-<button
-  data-css-bwueoe=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-y80vay=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone secondary medium 1`] = `
-<button
-  data-css-1vkl5eq=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-y80vay=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone secondary small 1`] = `
-<button
-  data-css-1986b55=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-4ducb0=""
-  >
-    <div
-      data-css-k31qw2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone secondary xSmall 1`] = `
-<button
-  data-css-1tkyqnp=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-4ducb0=""
-  >
-    <div
-      data-css-1gzzcm2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone stroke large 1`] = `
-<button
-  data-css-1t5d9do=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-y80vay=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone stroke medium 1`] = `
-<button
-  data-css-8gm7lp=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-y80vay=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone stroke small 1`] = `
-<button
-  data-css-1ouk2am=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-4ducb0=""
-  >
-    <div
-      data-css-k31qw2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon lone stroke xSmall 1`] = `
-<button
-  data-css-1nhxa7z=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-4ducb0=""
-  >
-    <div
-      data-css-1gzzcm2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / icon medium 1`] = `
-<button
-  data-css-12bozst=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon primary 1`] = `
-<button
-  data-css-12bozst=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon right 1`] = `
-<button
-  data-css-dx671n=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-8b1vtw=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon secondary 1`] = `
-<button
-  data-css-168olz2=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon small 1`] = `
-<button
-  data-css-1ep5uzm=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-73kfkk=""
-  >
-    <div
-      data-css-k31qw2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon stroke 1`] = `
-<button
-  data-css-t8b8by=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / icon vertically aligned rows 1`] = `
-<div>
   <button
     data-css-12bozst=""
     disabled={false}
@@ -994,12 +118,12 @@ exports[`Storyshots Button / icon vertically aligned rows 1`] = `
         data-css-7dab2f=""
       >
         <svg
-          aria-label="check icon"
+          aria-label="placeholder icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
           />
         </svg>
       </div>
@@ -1007,7 +131,432 @@ exports[`Storyshots Button / icon vertically aligned rows 1`] = `
     <span
       data-css-15b13by=""
     >
-      With icon
+      primary
+    </span>
+  </button>
+  <button
+    data-css-168olz2=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-t8b8by=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-68fqys=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button As Link 1`] = `
+<a
+  data-css-y5dqt5=""
+  href="https://duckduckgo.com"
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</a>
+`;
+
+exports[`Storyshots Components/Button As Link With Icon 1`] = `
+<a
+  data-css-12bozst=""
+  href="https://duckduckgo.com"
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-1mgd019=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <svg
+        aria-label="placeholder icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</a>
+`;
+
+exports[`Storyshots Components/Button Basic 1`] = `
+<button
+  data-css-y5dqt5=""
+  disabled={false}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Class Name Override 1`] = `
+<button
+  className={
+    Object {
+      "data-css-1wsp713": "",
+    }
+  }
+  data-css-y5dqt5=""
+  disabled={false}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Disabled 1`] = `
+<button
+  data-css-1283ymw=""
+  disabled={true}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Disabled With Icon 1`] = `
+<button
+  data-css-105jfs7=""
+  disabled={true}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-1mgd019=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <svg
+        aria-label="placeholder icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Example Autofocus 1`] = `
+<button
+  data-css-y5dqt5=""
+  disabled={false}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    Should be focused
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Example Loading Transition 1`] = `
+<button
+  data-css-y5dqt5=""
+  disabled={false}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    Wait for it
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Icon Alignments 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <button
+    data-css-12bozst=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      left
+    </span>
+  </button>
+  <button
+    data-css-dx671n=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-8b1vtw=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      right
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Icon Only 1`] = `
+<button
+  data-css-j12pym=""
+  disabled={false}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-y80vay=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <svg
+        aria-label="placeholder icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  />
+</button>
+`;
+
+exports[`Storyshots Components/Button Layouts 1`] = `
+Array [
+  <div
+    data-css-eska86=""
+  >
+    <button
+      data-css-vm007=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        fullWidth
+      </span>
+    </button>
+  </div>,
+  <div
+    data-css-eska86=""
+  >
+    <button
+      data-css-y5dqt5=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        inline
+      </span>
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Button Loading Only 1`] = `
+<button
+  aria-label="loading"
+  data-css-y5dqt5=""
+  disabled={true}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-1mgd019=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <span
+        data-css-15l7w9e=""
+      />
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Sizes 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <button
+    data-css-v92x0z=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      xSmall
+    </span>
+  </button>
+  <button
+    data-css-b1m7w4=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      small
     </span>
   </button>
   <button
@@ -1018,775 +567,162 @@ exports[`Storyshots Button / icon vertically aligned rows 1`] = `
     <span
       data-css-15b13by=""
     >
-      Without icon
+      medium
+    </span>
+  </button>
+  <button
+    data-css-1p8sqig=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      large
     </span>
   </button>
 </div>
 `;
 
-exports[`Storyshots Button / icon xSmall 1`] = `
-<button
-  data-css-11py1ib=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-73kfkk=""
-  >
-    <div
-      data-css-1gzzcm2=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    With Icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / in row same vertical height 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "display": "grid",
-        "gap": "8px",
-        "gridTemplateColumns": "auto auto auto auto",
-        "marginBottom": "8px",
-      }
-    }
-  >
-    <button
-      data-css-v92x0z=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-uv8iir=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1char72=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-10fisbo=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-  </div>
-  <div
-    style={
-      Object {
-        "display": "grid",
-        "gap": "8px",
-        "gridTemplateColumns": "auto auto auto auto",
-        "marginBottom": "8px",
-      }
-    }
-  >
-    <button
-      data-css-b1m7w4=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-c3sd2l=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1mpmjtf=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1d3b8qh=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-  </div>
-  <div
-    style={
-      Object {
-        "display": "grid",
-        "gap": "8px",
-        "gridTemplateColumns": "auto auto auto auto",
-        "marginBottom": "8px",
-      }
-    }
-  >
-    <button
-      data-css-y5dqt5=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1x5ax2g=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1cb2wrf=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1uk30vr=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-  </div>
-  <div
-    style={
-      Object {
-        "display": "grid",
-        "gap": "8px",
-        "gridTemplateColumns": "auto auto auto auto",
-        "marginBottom": "8px",
-      }
-    }
-  >
-    <button
-      data-css-1p8sqig=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-g84eh2=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-iilb0c=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-    <button
-      data-css-1b5o285=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Button / layout fullWidth 1`] = `
+exports[`Storyshots Components/Button Sizes With Icon 1`] = `
 <div
-  style={
-    Object {
-      "outline": "3px dashed #E7558B",
-      "width": "400px",
-    }
-  }
+  data-css-1gfhbu8=""
 >
-  <div>
-    <button
-      data-css-y5dqt5=""
-      disabled={false}
-      style={Object {}}
+  <button
+    data-css-11py1ib=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-73kfkk=""
     >
-      <span
-        data-css-15b13by=""
+      <div
+        data-css-1gzzcm2=""
       >
-        Normal
-      </span>
-    </button>
-  </div>
-  <div>
-    <button
-      data-css-vm007=""
-      disabled={false}
-      style={Object {}}
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
     >
-      <span
-        data-css-15b13by=""
+      xSmall
+    </span>
+  </button>
+  <button
+    data-css-1ep5uzm=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-73kfkk=""
+    >
+      <div
+        data-css-k31qw2=""
       >
-        Full width
-      </span>
-    </button>
-  </div>
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      small
+    </span>
+  </button>
+  <button
+    data-css-12bozst=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      medium
+    </span>
+  </button>
+  <button
+    data-css-k62s0p=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      large
+    </span>
+  </button>
 </div>
 `;
 
-exports[`Storyshots Button / loading flat 1`] = `
-<button
-  data-css-1b5o285=""
-  disabled={true}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <span
-        data-css-15l7w9e=""
-      />
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Loading...
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / loading large 1`] = `
-<button
-  data-css-1p8sqig=""
-  disabled={true}
-  onClick={[Function]}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <span
-        data-css-15l7w9e=""
-      />
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Loading...
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / loading lone icon 1`] = `
-<button
-  data-css-nj4lft=""
-  disabled={true}
-  style={Object {}}
->
-  <div
-    data-css-y80vay=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <span
-        data-css-15l7w9e=""
-      />
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  />
-</button>
-`;
-
-exports[`Storyshots Button / loading medium 1`] = `
+exports[`Storyshots Components/Button Style Override 1`] = `
 <button
   data-css-y5dqt5=""
-  disabled={true}
-  onClick={[Function]}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <span
-        data-css-15l7w9e=""
-      />
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Loading...
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / loading no icon, hidden text 1`] = `
-<button
-  data-css-1p8sqig=""
   disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Text doesnt show when loading if no icon
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / loading primary 1`] = `
-<button
-  data-css-1p8sqig=""
-  disabled={true}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <span
-        data-css-15l7w9e=""
-      />
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Loading...
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / loading secondary 1`] = `
-<button
-  data-css-g84eh2=""
-  disabled={true}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <span
-        data-css-15l7w9e=""
-      />
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Loading...
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / loading small 1`] = `
-<button
-  data-css-b1m7w4=""
-  disabled={true}
   onClick={[Function]}
-  style={Object {}}
->
-  <div
-    data-css-73kfkk=""
-  >
-    <div
-      data-css-k31qw2=""
-    >
-      <span
-        data-css-15l7w9e=""
-      />
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Loading...
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / loading stroke 1`] = `
-<button
-  data-css-iilb0c=""
-  disabled={true}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <span
-        data-css-18shb8=""
-      />
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Loading...
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / loading xSmall 1`] = `
-<button
-  data-css-v92x0z=""
-  disabled={true}
-  onClick={[Function]}
-  style={Object {}}
->
-  <div
-    data-css-73kfkk=""
-  >
-    <div
-      data-css-1gzzcm2=""
-    >
-      <span
-        data-css-15l7w9e=""
-      />
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Loading...
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / override styles with className 1`] = `
-<button
-  data-css-12bozst=""
-  data-css-jxpnuu=""
-  disabled={false}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-  <span
-    data-css-15b13by=""
-  >
-    Green Button
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / override styles with style 1`] = `
-<button
-  data-css-12bozst=""
-  disabled={false}
   style={
     Object {
       "background": "red",
     }
   }
 >
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
   <span
     data-css-15b13by=""
   >
-    Red Button
+    click me
   </span>
 </button>
 `;
 
-exports[`Storyshots Button / props pass through anchor supports download 1`] = `
-<a
-  data-css-y5dqt5=""
-  download={true}
-  href="/somewhere"
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Link with download
-  </span>
-</a>
-`;
-
-exports[`Storyshots Button / props pass through aria-expanded 1`] = `
-<button
-  aria-expanded={true}
-  data-css-y5dqt5=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    aria-expanded
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / props pass through button doesnt support download 1`] = `
-<button
-  data-css-y5dqt5=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Button with download
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / props pass through data-something 1`] = `
-<button
-  data-css-y5dqt5=""
-  data-something="wow"
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Custom data attributes
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / props pass through not supported 1`] = `
-<button
-  data-css-y5dqt5=""
-  disabled={false}
-  onMouseOver={[Function]}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Should not mouseover
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / props pass through role 1`] = `
-<button
-  data-css-y5dqt5=""
-  disabled={false}
-  role="link"
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Role Link
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / props pass through title 1`] = `
-<button
-  data-css-y5dqt5=""
-  disabled={false}
-  style={Object {}}
-  title="My caption"
->
-  <span
-    data-css-15b13by=""
-  >
-    With title
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / size large 1`] = `
-<button
-  data-css-1p8sqig=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Click me
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / size medium 1`] = `
-<button
-  data-css-y5dqt5=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Click me
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / size small 1`] = `
-<button
-  data-css-b1m7w4=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Click me
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / size xSmall 1`] = `
-<button
-  data-css-v92x0z=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Click me
-  </span>
-</button>
-`;
-
-exports[`Storyshots Button / theme nested 1`] = `
+exports[`Storyshots Components/Button Theme Nesting 1`] = `
 Array [
   <button
     data-css-1uk30vr=""
@@ -1824,7 +760,373 @@ Array [
 ]
 `;
 
-exports[`Storyshots Button / with onClick clicks once 1`] = `
+exports[`Storyshots Components/Button Variations 1`] = `
+<div
+  data-css-1fb0si4=""
+>
+  <button
+    data-css-v92x0z=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-b1m7w4=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-y5dqt5=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-1p8sqig=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-uv8iir=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-c3sd2l=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1x5ax2g=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-g84eh2=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1char72=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1mpmjtf=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1cb2wrf=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-iilb0c=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-10fisbo=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1d3b8qh=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1uk30vr=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1b5o285=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Vert Alignment 1`] = `
+<div
+  data-css-1fb0si4=""
+>
+  <button
+    data-css-v92x0z=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-b1m7w4=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-y5dqt5=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-1p8sqig=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-uv8iir=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-c3sd2l=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1x5ax2g=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-g84eh2=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1char72=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1mpmjtf=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1cb2wrf=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-iilb0c=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-10fisbo=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1d3b8qh=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1uk30vr=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1b5o285=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button With Icon 1`] = `
 <button
   data-css-12bozst=""
   disabled={false}
@@ -1838,12 +1140,12 @@ exports[`Storyshots Button / with onClick clicks once 1`] = `
       data-css-7dab2f=""
     >
       <svg
-        aria-label="check icon"
+        aria-label="placeholder icon"
         role="img"
         viewBox="0 0 24 24"
       >
         <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
         />
       </svg>
     </div>
@@ -1851,21 +1153,33 @@ exports[`Storyshots Button / with onClick clicks once 1`] = `
   <span
     data-css-15b13by=""
   >
-    Clicks once
+    click me
   </span>
 </button>
 `;
 
-exports[`Storyshots Button / with ref ref to handle focus 1`] = `
+exports[`Storyshots Components/Button With Loading 1`] = `
 <button
   data-css-y5dqt5=""
-  disabled={false}
+  disabled={true}
+  onClick={[Function]}
   style={Object {}}
 >
+  <div
+    data-css-1mgd019=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <span
+        data-css-15l7w9e=""
+      />
+    </div>
+  </div>
   <span
     data-css-15b13by=""
   >
-    Should be focused
+    click me
   </span>
 </button>
 `;
