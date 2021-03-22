@@ -42,13 +42,18 @@ const Template: Story = args => <NavBrand {...args} />
 export const Basic = Template.bind({})
 Basic.args = { ...defaultArgs }
 
-export const AsLink = Template.bind({})
-AsLink.args = { ...defaultArgs, href: 'https://duckduckgo.com' }
-
 export const AsButton = Template.bind({})
 AsButton.args = {
   ...defaultArgs,
+  'aria-label': 'Placeholder Brand Text',
   onClick: action('on click')
+}
+
+export const AsLink = Template.bind({})
+AsLink.args = {
+  ...defaultArgs,
+  'aria-label': 'Placeholder Brand Text',
+  href: 'https://duckduckgo.com'
 }
 
 export const Flow = Template.bind({})
@@ -96,6 +101,20 @@ Flow.args = {
   )
 }
 
+export const FlowAsButton = Template.bind({})
+FlowAsButton.args = {
+  ...Flow.args,
+  'aria-label': 'Pluralsight Flow',
+  onClick: action('on click')
+}
+
+export const FlowAsLink = Template.bind({})
+FlowAsLink.args = {
+  ...Flow.args,
+  'aria-label': 'Pluralsight Flow',
+  href: 'https://duckduckgo.com'
+}
+
 export const Skills = Template.bind({})
 Skills.args = {
   ...defaultArgs,
@@ -121,4 +140,18 @@ Skills.args = {
     </svg>
   ),
   wordmark: 'SKILLS'
+}
+
+export const SkillsAsButton = Template.bind({})
+SkillsAsButton.args = {
+  ...Skills.args,
+  'aria-label': 'Pluralsight Skills',
+  onClick: action('on click')
+}
+
+export const SkillsAsLink = Template.bind({})
+SkillsAsLink.args = {
+  ...Skills.args,
+  'aria-label': 'Pluralsight Skills',
+  href: 'https://duckduckgo.com'
 }
