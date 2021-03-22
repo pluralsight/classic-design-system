@@ -1,20 +1,40 @@
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import NavBar from '..'
 
-describe('Navbar', () => {
-  it('renders', () => {
-    const { getByTestId } = render(<NavBar data-testid="undertest" />)
+import * as stories from '../__stories__/index.story'
 
-    expect(getByTestId('undertest')).toBeInTheDocument()
+describe('NavBar', () => {
+  const cases = convertStoriesToJestCases(stories)
+
+  it('forwards ref', () => {
+    const ref = React.createRef<HTMLDivElement>()
+    render(<NavBar ref={ref} />)
+    expect(ref).not.toBeNull()
   })
 
-  it('forwards refs', () => {
-    const ref = React.createRef<HTMLDivElement>()
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    render(<NavBar ref={ref} />)
+      expect(results).toHaveNoViolations()
+    })
+  })
 
-    expect(ref.current).not.toBeNull()
+  describe('Basic story', () => {
+    const { Basic } = stories
+
+    it('forwards className', () => {
+      const { getByTestId } = render(
+        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
+      )
+
+      const el = getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
+    })
   })
 })
