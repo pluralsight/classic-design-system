@@ -9,7 +9,7 @@ import {
 } from '@pluralsight/ps-design-system-icon'
 import { useMatchMedia } from '@pluralsight/ps-design-system-util'
 
-import AppFrame from '..'
+import AppFrame from '../index'
 import { MockContent, SideNav, TopNav } from './shared'
 
 storiesOf('AppFrame|Examples', module).add('Skills', () => {

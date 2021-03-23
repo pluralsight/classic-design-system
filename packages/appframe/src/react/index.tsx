@@ -26,9 +26,9 @@ import {
   usePrevious
 } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 import polyfillElementClosest from '../js/polyfill-element-closest'
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 import useBodyScrollLock from './use-body-scroll-lock'
 import useOnClickOutside from './use-on-click-outside'

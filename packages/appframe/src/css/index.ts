@@ -8,7 +8,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import { sidenavVariants } from '../vars'
+import { sidenavVariants } from '../vars/index'
 
 const layers = {
   content: 0,

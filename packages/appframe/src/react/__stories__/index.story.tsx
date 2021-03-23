@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import AppFrame from '..'
+import AppFrame from '../index'
 import { MockContent, SideNav, TopNav } from './shared'
 
 storiesOf('AppFrame', module)
