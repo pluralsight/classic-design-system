@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import NavBrand from '..'
+import NavBrand from '../index'
 
 describe('NavBrand', () => {
   it('should render a div by default', () => {

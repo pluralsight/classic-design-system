@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import NavBrand from '..'
+import NavBrand from '../index'
 
 storiesOf('NavBrand', module).add('states', () => (
   <Grid>

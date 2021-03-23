@@ -3,7 +3,7 @@ import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
 import { css, media } from 'glamor'
 import React, { MouseEventHandler, ReactNode } from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = {
   logo: (props: { children?: unknown }) =>
