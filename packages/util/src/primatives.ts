@@ -8,12 +8,16 @@
  */
 
 import type {
-  ComponentType,
   ComponentPropsWithRef,
+  ComponentType,
   ElementType,
-  PropsWithChildren,
-  ReactElement,
+  ForwardRefExoticComponent,
+  ForwardRefRenderFunction,
   MutableRefObject,
+  PropsWithChildren,
+  PropsWithoutRef,
+  ReactElement,
+  RefAttributes,
   ValidationMap,
   WeakValidationMap
 } from 'react'
@@ -175,6 +179,17 @@ export function forwardRefWithAsAndStatics<
   return forwardRef(render) as ForwardRefExoticComponentWithAs<
     DefaultComponentType,
     Props
+  > &
+    Statics
+}
+
+export function forwardRefWithStatics<
+  Props,
+  TagName = 'div',
+  Statics = unknown
+>(render: ForwardRefRenderFunction<HTMLDivElement, Props>) {
+  return forwardRef(render) as ForwardRefExoticComponent<
+    PropsWithoutRef<Props> & RefAttributes<TagName>
   > &
     Statics
 }
