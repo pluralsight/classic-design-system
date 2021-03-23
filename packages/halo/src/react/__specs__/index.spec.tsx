@@ -1,11 +1,16 @@
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
+import Halo from '..'
 import * as vars from '../../vars'
 
-import Halo from '..'
+import * as stories from '../__stories__/index.story'
 
 describe('Halo', () => {
+  const cases = convertStoriesToJestCases(stories)
+
   describe('.gapSizes', () => {
     it('exists', () => {
       expect(Halo.gapSizes).toEqual(vars.gapSizes)
@@ -18,8 +23,18 @@ describe('Halo', () => {
     })
   })
 
-  it('renders children', () => {
-    const { container } = render(<Halo>child</Halo>)
-    expect(container).toHaveTextContent('child')
+  it('forwards ref', () => {
+    const ref = React.createRef<HTMLDivElement>()
+    render(<Halo ref={ref} />)
+    expect(ref).not.toBeNull()
+  })
+
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+
+      expect(results).toHaveNoViolations()
+    })
   })
 })
