@@ -47,7 +47,7 @@ export default {
       color: 'currentColor',
 
       '&:hover, &:active, &:focus': {
-        backgroundColor: `rgba(${parseToRgb(colorsBlack)}, 0.1}`
+        backgroundColor: `rgba(${parseToRgb(colorsBlack)}, 0.1)`
       },
       '&:focus': {
         boxShadow: `0 0 0 3px rgba(${parseToRgb(colorsWhite)}, 0.5)`
