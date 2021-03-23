@@ -61,7 +61,7 @@ describe('NavBrand', () => {
   describe('AsLink story', () => {
     const { AsLink } = stories
 
-    it('renders a anchor el', () => {
+    it('renders an anchor el', () => {
       render(<AsLink {...AsLink.args} />)
       const el = screen.getByRole('link')
 
