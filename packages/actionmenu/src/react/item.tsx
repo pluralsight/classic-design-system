@@ -18,8 +18,8 @@ import React, {
   useState
 } from 'react'
 
-import stylesheet from '../css'
-import { origins, tagName as tagNames } from '../vars'
+import stylesheet from '../css/index'
+import { origins, tagName as tagNames } from '../vars/index'
 
 import { ActionMenuContext } from './context'
 import { Arrow } from './arrow'
