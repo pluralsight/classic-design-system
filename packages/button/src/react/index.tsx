@@ -87,7 +87,7 @@ const mapIconSize = (size: string) => {
   return btnToIconSizes[size] ? btnToIconSizes[size] : iconSizes.medium
 }
 
-interface ButtonProps {
+export interface ButtonProps {
   appearance?: ValueOf<typeof vars.appearances>
   layout?: ValueOf<typeof vars.layouts>
   icon?: React.ReactNode
