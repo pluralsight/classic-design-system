@@ -1,183 +1,157 @@
-import { action } from '@storybook/addon-actions'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import Button from '@pluralsight/ps-design-system-button'
 import { colorsGradient } from '@pluralsight/ps-design-system-core'
-import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { storiesOf } from '@storybook/react'
-import React from 'react'
+import { HomeIcon, PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+
+import { action } from '@storybook/addon-actions'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import React, { useState } from 'react'
 
 import NavItem from '..'
 
-const stories = storiesOf('NavItem', module)
+const defaultArgs = {
+  children: 'Item Text',
+  onClick: action('on click')
+}
 
-Object.values(NavItem.alignments).forEach(alignment => {
-  stories.add(alignment, () => {
-    const Story = () => {
-      const isVertical = alignment === NavItem.alignments.vertical
+export default {
+  title: 'Components/NavItem',
+  component: NavItem
+} as Meta
 
-      return (
-        <Grid>
-          {isVertical && <NavItem alignment={alignment}>Text only</NavItem>}
+const Template: Story = args => <NavItem {...args} />
 
-          <NavItem alignment={alignment} icon={<HomeIcon />}>
-            With icon
-          </NavItem>
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
 
-          {isVertical && <NavItem alignment={alignment} icon={<HomeIcon />} />}
+export const AsLink = Template.bind({})
+AsLink.args = {
+  ...defaultArgs,
+  href: 'https://duckduckgo.com',
+  renderContainer: (injected: any) => <a {...injected} />
+}
 
-          <NavItem
-            alignment={alignment}
-            renderContainer={(injected: HTMLPropsFor<'a'>) => (
-              <a {...injected} href="https://jaketrent.com" />
-            )}
-            icon={<HomeIcon />}
-          >
-            Link to web
-          </NavItem>
+export const Horizontal = Template.bind({})
+Horizontal.args = {
+  ...defaultArgs,
+  alignment: NavItem.alignments.horizontal
+}
 
-          <NavItem alignment={alignment} menu icon={<HomeIcon />}>
-            With menu
-          </NavItem>
+export const HorizontalWithIcon = Template.bind({})
+HorizontalWithIcon.args = { ...Horizontal.args, icon: <PlaceholderIcon /> }
 
-          <NavItem alignment={alignment} selected icon={<HomeIcon />}>
-            Selected
-          </NavItem>
+export const HorizontalSelected = Template.bind({})
+HorizontalSelected.args = {
+  ...Horizontal.args,
+  icon: <PlaceholderIcon />,
+  selected: true
+}
 
-          <NavItem
-            alignment={alignment}
-            icon={<HomeIcon />}
-            selected
-            UNSAFE_stylesFor={{
-              'navitem__bar--selected': {
-                background: colorsGradient.skillsBackground
-              }
-            }}
-          >
-            Skills Selected
-          </NavItem>
+export const HorizontalWithMenu = Template.bind({})
+HorizontalWithMenu.args = {
+  ...Horizontal.args,
+  icon: <PlaceholderIcon />,
+  menu: true
+}
 
-          <NavItem
-            alignment={alignment}
-            icon={<HomeIcon />}
-            selected
-            UNSAFE_stylesFor={{
-              'navitem__bar--selected': {
-                background: colorsGradient.flowBackground
-              }
-            }}
-          >
-            Flow Selected
-          </NavItem>
+export const HorizontalAsLink = Template.bind({})
+HorizontalAsLink.args = {
+  ...Horizontal.args,
+  href: 'https://duckduckgo.com',
+  renderContainer: (injected: any) => <a {...injected} />
+}
 
-          <NavItem
-            alignment={alignment}
-            icon={<HomeIcon />}
-            UNSAFE_stylesFor={{
-              'navitem__bar--selected': {
-                background: colorsGradient.flowBackground
-              }
-            }}
-          >
-            Flow
-          </NavItem>
-        </Grid>
-      )
+export const HorizontalAsLinkWithIcon = Template.bind({})
+HorizontalAsLinkWithIcon.args = {
+  ...Horizontal.args,
+  href: 'https://duckduckgo.com',
+  icon: <PlaceholderIcon />,
+  renderContainer: (injected: any) => <a {...injected} />
+}
+
+export const Vertical = Template.bind({})
+Vertical.args = {
+  ...defaultArgs,
+  alignment: NavItem.alignments.vertical
+}
+
+export const VerticalWithIcon = Template.bind({})
+VerticalWithIcon.args = { ...Vertical.args, icon: <PlaceholderIcon /> }
+
+export const VerticalSelected = Template.bind({})
+VerticalSelected.args = {
+  ...Vertical.args,
+  icon: <PlaceholderIcon />,
+  selected: true
+}
+
+export const VerticalWithMenu = Template.bind({})
+VerticalWithMenu.args = {
+  ...Vertical.args,
+  icon: <PlaceholderIcon />,
+  menu: true
+}
+
+export const VerticalAsLink = Template.bind({})
+VerticalAsLink.args = {
+  ...Vertical.args,
+  href: 'https://duckduckgo.com',
+  renderContainer: (injected: any) => <a {...injected} />
+}
+
+export const VerticalAsLinkWithIcon = Template.bind({})
+VerticalAsLinkWithIcon.args = {
+  ...Vertical.args,
+  href: 'https://duckduckgo.com',
+  icon: <PlaceholderIcon />,
+  renderContainer: (injected: any) => <a {...injected} />
+}
+
+export const SelectedFlowItem = Template.bind({})
+SelectedFlowItem.args = {
+  ...defaultArgs,
+  icon: <PlaceholderIcon />,
+  selected: true,
+  UNSAFE_stylesFor: {
+    'navitem__bar--selected': {
+      background: colorsGradient.flowBackground
     }
-
-    return <Story />
-  })
-})
-
-stories.add('rest props', () => (
-  <>
-    <NavItem href="https://jaketrent.com">Link</NavItem>
-    <NavItem selected onClick={action('clicked')}>
-      Action
-    </NavItem>
-  </>
-))
-
-stories.add('styleFor', () => (
-  <>
-    <NavItem
-      UNSAFE_stylesFor={{
-        navitem__bar: { color: 'red' },
-        'navitem__bar--selected': { background: 'blue' }
-      }}
-    >
-      test
-    </NavItem>
-
-    <NavItem
-      selected
-      UNSAFE_stylesFor={{
-        navitem__bar: { color: 'red' },
-        'navitem__bar--selected': { background: 'blue' }
-      }}
-    >
-      test
-    </NavItem>
-  </>
-))
-
-stories.add('position', () => {
-  function Example() {
-    const [open2, setOpen2] = React.useState(false)
-    const [open, setOpen] = React.useState(false)
-    return (
-      <div>
-        <BelowRight
-          show={
-            <ActionMenu>
-              <ActionMenu.Item>
-                <ActionMenu.Icon marginLeft>
-                  <HomeIcon />
-                </ActionMenu.Icon>
-                Button menu
-              </ActionMenu.Item>
-            </ActionMenu>
-          }
-          when={open2}
-        >
-          <Button icon={<HomeIcon />} onClick={() => setOpen2(!open2)}>
-            Button {open2.toString()}
-          </Button>
-        </BelowRight>
-
-        <BelowRight
-          show={
-            <ActionMenu>
-              <ActionMenu.Item>
-                <ActionMenu.Icon marginLeft>
-                  <HomeIcon />
-                </ActionMenu.Icon>
-                Nav item menu
-              </ActionMenu.Item>
-            </ActionMenu>
-          }
-          when={open}
-        >
-          <NavItem icon={<HomeIcon />} menu onClick={() => setOpen(!open)}>
-            NavItem {open.toString()}
-          </NavItem>
-        </BelowRight>
-      </div>
-    )
   }
+}
 
-  return <Example />
-})
+export const SelectedSkillsItem = Template.bind({})
+SelectedSkillsItem.args = {
+  ...defaultArgs,
+  icon: <PlaceholderIcon />,
+  selected: true,
+  UNSAFE_stylesFor: {
+    'navitem__bar--selected': {
+      background: colorsGradient.skillsBackground
+    }
+  }
+}
 
-const Grid: React.FC = props => (
-  <div
-    style={{
-      display: 'grid',
-      gridTemplateColumns: 'repeat(3, auto)',
-      gap: '32px',
-      justifyItems: 'center'
-    }}
-    {...props}
-  />
-)
+export const WithActionMenu: Story = () => {
+  const [open, setOpen] = useState(false)
+
+  return (
+    <div>
+      <BelowRight
+        show={
+          <ActionMenu>
+            {Array(5)
+              .fill(null)
+              .map((_, index) => (
+                <ActionMenu.Item key={index}>Item {index + 1}</ActionMenu.Item>
+              ))}
+          </ActionMenu>
+        }
+        when={open}
+      >
+        <NavItem icon={<HomeIcon />} menu onClick={() => setOpen(!open)}>
+          menu open {open.toString()}
+        </NavItem>
+      </BelowRight>
+    </div>
+  )
+}

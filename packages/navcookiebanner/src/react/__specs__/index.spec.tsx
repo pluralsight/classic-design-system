@@ -1,20 +1,39 @@
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import NavCookieBanner from '..'
 
-describe('NavCookieBanner', () => {
-  it('renders', () => {
-    const { getByTestId } = render(<NavCookieBanner data-testid="undertest" />)
+import * as stories from '../__stories__/index.story'
 
-    expect(getByTestId('undertest')).toBeInTheDocument()
+describe('NavCookieBanner', () => {
+  const cases = convertStoriesToJestCases(stories)
+
+  it('forwards ref', () => {
+    const ref = React.createRef<HTMLDivElement>()
+    render(<NavCookieBanner ref={ref} />)
+    expect(ref).not.toBeNull()
   })
 
-  it('forwards refs', () => {
-    const ref = React.createRef<HTMLDivElement>()
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    render(<NavCookieBanner ref={ref} />)
+      expect(results).toHaveNoViolations()
+    })
+  })
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-    expect(ref.current).not.toBeNull()
+    it('forwards className', () => {
+      const { getByTestId } = render(
+        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
+      )
+
+      const el = getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
+    })
   })
 })
