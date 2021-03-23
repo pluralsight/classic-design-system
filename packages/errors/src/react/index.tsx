@@ -7,7 +7,11 @@ import { sizes } from '../vars'
 
 const Action: React.FC<HTMLPropsFor<'a'>> = ({
   href = 'https://help.pluralsight.com/help/contact-us'
-}) => <Button href={href}>Contact support</Button>
+}) => (
+  <Button as="a" href={href}>
+    Contact support
+  </Button>
+)
 
 export default ErrorPage
 
