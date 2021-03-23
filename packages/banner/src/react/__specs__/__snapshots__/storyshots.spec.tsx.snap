@@ -1,198 +1,94 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Button blue 1`] = `
+exports[`Storyshots Components/Banner Basic 1`] = `
 <div
   data-css-1bbe0j3=""
 >
   <p
     data-css-17nixd9=""
-    data-css-1ut1otc=""
+    data-css-sdl038=""
   >
-    this is the text with a 
-    <button
-      data-css-1irnvz6=""
-      data-css-1mpmjtf=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
+    Banner text
   </p>
 </div>
 `;
 
-exports[`Storyshots Button green 1`] = `
+exports[`Storyshots Components/Banner Child Anchor 1`] = `
 <div
-  data-css-1obqs0o=""
+  data-css-1bbe0j3=""
 >
   <p
     data-css-17nixd9=""
-    data-css-1ut1otc=""
+    data-css-sdl038=""
   >
-    this is the text with a 
-    <button
-      data-css-1irnvz6=""
-      data-css-1mpmjtf=""
-      disabled={false}
-      style={Object {}}
+    this is the text with an 
+    <a
+      href="https://duckduckgo.com"
     >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
+      anchor tag
+    </a>
+    .
   </p>
 </div>
 `;
 
-exports[`Storyshots Button red 1`] = `
-<div
-  data-css-k0cdxm=""
->
-  <p
-    data-css-17nixd9=""
-    data-css-1ut1otc=""
-  >
-    this is the text with a 
-    <button
-      data-css-1irnvz6=""
-      data-css-1mpmjtf=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
-  </p>
-</div>
-`;
-
-exports[`Storyshots Button yellow 1`] = `
+exports[`Storyshots Components/Banner Child Anchor Yellow 1`] = `
 <div
   data-css-mrqgze=""
 >
   <p
     data-css-17nixd9=""
-    data-css-1ut1otc=""
+    data-css-sdl038=""
   >
-    this is the text with a 
-    <button
-      data-css-1mpmjtf=""
-      data-css-be14da=""
-      disabled={false}
-      style={Object {}}
+    this is the text with an 
+    <a
+      href="https://duckduckgo.com"
     >
-      <span
-        data-css-15b13by=""
-      >
-        button
-      </span>
-    </button>
+      anchor tag
+    </a>
+    .
   </p>
 </div>
 `;
 
-exports[`Storyshots color blue 1`] = `
+exports[`Storyshots Components/Banner Child Link 1`] = `
 <div
   data-css-1bbe0j3=""
 >
   <p
     data-css-17nixd9=""
-    data-css-1ut1otc=""
+    data-css-sdl038=""
   >
-    blue
-  </p>
-</div>
-`;
-
-exports[`Storyshots color green 1`] = `
-<div
-  data-css-1obqs0o=""
->
-  <p
-    data-css-17nixd9=""
-    data-css-1ut1otc=""
-  >
-    green
-  </p>
-</div>
-`;
-
-exports[`Storyshots color red 1`] = `
-<div
-  data-css-k0cdxm=""
->
-  <p
-    data-css-17nixd9=""
-    data-css-1ut1otc=""
-  >
-    red
-  </p>
-</div>
-`;
-
-exports[`Storyshots color yellow 1`] = `
-<div
-  data-css-mrqgze=""
->
-  <p
-    data-css-17nixd9=""
-    data-css-1ut1otc=""
-  >
-    yellow
-  </p>
-</div>
-`;
-
-exports[`Storyshots onClick displays X 1`] = `
-<div
-  data-css-1bbe0j3=""
->
-  <p
-    data-css-17nixd9=""
-    data-css-1ut1otc=""
-  >
-    this is the text
-  </p>
-  <button
-    data-css-w2n93m=""
-    onClick={[Function]}
-  >
-    <div
-      data-css-7dab2f=""
+    this is the text with an
+     
+    <a
+      data-css-1o01808=""
+      href="https://duckduckgo.com"
     >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-        />
-      </svg>
-    </div>
-  </button>
+      Link component
+    </a>
+  </p>
 </div>
 `;
 
-exports[`Storyshots onClick side by side 1`] = `
-<div>
+exports[`Storyshots Components/Banner Colors 1`] = `
+<div
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
+>
   <div
     data-css-1bbe0j3=""
   >
     <p
       data-css-17nixd9=""
-      data-css-1ut1otc=""
+      data-css-sdl038=""
     >
-      this is the text
+      blue
     </p>
     <button
       data-css-w2n93m=""
@@ -218,9 +114,9 @@ exports[`Storyshots onClick side by side 1`] = `
   >
     <p
       data-css-17nixd9=""
-      data-css-1ut1otc=""
+      data-css-sdl038=""
     >
-      this is the text
+      green
     </p>
     <button
       data-css-w2n93m=""
@@ -246,9 +142,9 @@ exports[`Storyshots onClick side by side 1`] = `
   >
     <p
       data-css-17nixd9=""
-      data-css-1ut1otc=""
+      data-css-sdl038=""
     >
-      this is the text
+      yellow
     </p>
     <button
       data-css-w2n93m=""
@@ -274,9 +170,9 @@ exports[`Storyshots onClick side by side 1`] = `
   >
     <p
       data-css-17nixd9=""
-      data-css-1ut1otc=""
+      data-css-sdl038=""
     >
-      this is the text
+      red
     </p>
     <button
       data-css-w2n93m=""
@@ -300,16 +196,15 @@ exports[`Storyshots onClick side by side 1`] = `
 </div>
 `;
 
-exports[`Storyshots onClick w/ long text 1`] = `
+exports[`Storyshots Components/Banner On Click 1`] = `
 <div
   data-css-1bbe0j3=""
 >
   <p
     data-css-17nixd9=""
-    data-css-1ut1otc=""
+    data-css-sdl038=""
   >
-    this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text. this is the long text.
-     
+    Banner text
   </p>
   <button
     data-css-w2n93m=""
@@ -332,98 +227,55 @@ exports[`Storyshots onClick w/ long text 1`] = `
 </div>
 `;
 
-exports[`Storyshots styling child Link component auto-styled 1`] = `
+exports[`Storyshots Components/Banner On Click Long Text 1`] = `
 <div
   data-css-1bbe0j3=""
 >
   <p
     data-css-17nixd9=""
-    data-css-1ut1otc=""
+    data-css-sdl038=""
   >
-    this is the text with an
-     
-    <a
-      data-css-1o01808=""
-      href="https://duckduckgo.com"
-    >
-      Link component
-    </a>
-    .
+    this is the long text. this is the long text. this is the long text. this
+  is the long text. this is the long text. this is the long text. this is
+  the long text. this is the long text. this is the long text. this is the
+  long text. this is the long text. this is the long text.{' '} 
   </p>
+  <button
+    data-css-w2n93m=""
+    onClick={[Function]}
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <svg
+        aria-label="close icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+        />
+      </svg>
+    </div>
+  </button>
 </div>
 `;
 
-exports[`Storyshots styling child anchor tag auto-styled 1`] = `
-<div
-  data-css-1bbe0j3=""
->
-  <p
-    data-css-17nixd9=""
-    data-css-1ut1otc=""
-  >
-    this is the text with an 
-    <a
-      href="https://duckduckgo.com"
-    >
-      anchor tag
-    </a>
-    .
-  </p>
-</div>
-`;
-
-exports[`Storyshots styling child anchor tag auto-styled in yellow 1`] = `
-<div
-  data-css-mrqgze=""
->
-  <p
-    data-css-17nixd9=""
-    data-css-1ut1otc=""
-  >
-    this is the text with an 
-    <a
-      href="https://duckduckgo.com"
-    >
-      anchor tag
-    </a>
-    .
-  </p>
-</div>
-`;
-
-exports[`Storyshots styling className prop 1`] = `
+exports[`Storyshots Components/Banner Style Class Name 1`] = `
 <div
   className="someClass"
   data-css-1bbe0j3=""
 >
   <p
     data-css-17nixd9=""
-    data-css-1ut1otc=""
+    data-css-sdl038=""
   >
-    this is the text
+    Banner text
   </p>
-  <button
-    data-css-w2n93m=""
-    onClick={[Function]}
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-        />
-      </svg>
-    </div>
-  </button>
 </div>
 `;
 
-exports[`Storyshots styling style prop 1`] = `
+exports[`Storyshots Components/Banner Style Prop 1`] = `
 <div
   data-css-1bbe0j3=""
   style={
@@ -434,27 +286,9 @@ exports[`Storyshots styling style prop 1`] = `
 >
   <p
     data-css-17nixd9=""
-    data-css-1ut1otc=""
+    data-css-sdl038=""
   >
-    this is the text
+    Banner text
   </p>
-  <button
-    data-css-w2n93m=""
-    onClick={[Function]}
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-        />
-      </svg>
-    </div>
-  </button>
 </div>
 `;

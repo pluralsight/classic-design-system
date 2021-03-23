@@ -1,75 +1,102 @@
-import { action } from '@storybook/addon-actions'
-import { storiesOf } from '@storybook/react'
-
-import React from 'react'
-
 import Link from '@pluralsight/ps-design-system-link'
+import { action } from '@storybook/addon-actions'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import * as React from 'react'
 
-import Banner from '..'
+import Banner from '../index'
 
-const colorStory = storiesOf('color', module)
-Object.values(Banner.colors).forEach(color =>
-  colorStory.add(color, () => <Banner color={color}>{color}</Banner>)
+export default {
+  title: 'Components/Banner',
+  component: Banner
+} as Meta
+
+const Template: Story = args => <Banner {...args} />
+
+const defaultArgs = { children: 'Banner text' }
+
+export const Basic = Template.bind({})
+Basic.args = defaultArgs
+
+export const Colors: Story = () => (
+  <StoryGrid>
+    {Object.values(Banner.colors).map((color, i) => (
+      <Banner key={i} color={color} onClick={action('click')}>
+        {color}
+      </Banner>
+    ))}
+  </StoryGrid>
 )
 
-storiesOf('onClick', module)
-  .add('displays X', () => (
-    <Banner onClick={action('click X')}>this is the text</Banner>
-  ))
-  .add('w/ long text', () => (
-    <Banner onClick={action('click X')}>
-      this is the long text. this is the long text. this is the long text. this
-      is the long text. this is the long text. this is the long text. this is
-      the long text. this is the long text. this is the long text. this is the
-      long text. this is the long text. this is the long text.{' '}
-    </Banner>
-  ))
-  .add('side by side', () => (
-    <div>
-      {Object.values(Banner.colors).map(color => (
-        <Banner key={color} color={color} onClick={action('click X')}>
-          this is the text
-        </Banner>
-      ))}
-    </div>
-  ))
+export const OnClick = Template.bind({})
+OnClick.args = { ...defaultArgs, onClick: action('click X') }
 
-const buttonStory = storiesOf('Button', module)
-Object.values(Banner.colors).forEach(color =>
-  buttonStory.add(color, () => (
-    <Banner color={color}>
-      this is the text with a <Banner.Button>button</Banner.Button>
-    </Banner>
-  ))
-)
+export const OnClickLongText = Template.bind({})
+OnClickLongText.args = {
+  ...defaultArgs,
+  children: `this is the long text. this is the long text. this is the long text. this
+  is the long text. this is the long text. this is the long text. this is
+  the long text. this is the long text. this is the long text. this is the
+  long text. this is the long text. this is the long text.{' '} `,
+  onClick: action('click X')
+}
 
-storiesOf('styling', module)
-  .add('style prop', () => (
-    <Banner style={{ outline: '3px solid red' }} onClick={action('click X')}>
-      this is the text
-    </Banner>
-  ))
-  .add('className prop', () => (
-    <Banner className="someClass" onClick={action('click X')}>
-      this is the text
-    </Banner>
-  ))
-  .add('child anchor tag auto-styled', () => (
-    <Banner>
+export const ChildAnchor = Template.bind({})
+ChildAnchor.args = {
+  ...defaultArgs,
+  children: (
+    <>
       this is the text with an <a href="https://duckduckgo.com">anchor tag</a>.
-    </Banner>
-  ))
-  .add('child anchor tag auto-styled in yellow', () => (
-    <Banner color={Banner.colors.yellow}>
+    </>
+  )
+}
+
+export const ChildAnchorYellow = Template.bind({})
+ChildAnchorYellow.args = {
+  ...defaultArgs,
+  color: Banner.colors.yellow,
+  children: (
+    <>
       this is the text with an <a href="https://duckduckgo.com">anchor tag</a>.
-    </Banner>
-  ))
-  .add('child Link component auto-styled', () => (
-    <Banner>
+    </>
+  )
+}
+
+export const ChildLink = Template.bind({})
+ChildLink.args = {
+  ...defaultArgs,
+  children: (
+    <>
       this is the text with an{' '}
       <Link>
         <a href="https://duckduckgo.com">Link component</a>
       </Link>
-      .
-    </Banner>
-  ))
+    </>
+  )
+}
+
+export const StyleProp = Template.bind({})
+StyleProp.args = {
+  ...defaultArgs,
+  style: { outline: '3px solid red' }
+}
+
+export const StyleClassName = Template.bind({})
+StyleClassName.args = {
+  ...defaultArgs,
+  className: 'someClass'
+}
+
+const StoryGrid: React.FC<{ cols?: number }> = props => {
+  const { cols = 2, ...rest } = props
+
+  return (
+    <div
+      style={{
+        display: 'grid',
+        gap: '20px',
+        gridTemplateColumns: Array(cols).fill('1fr').join(' ')
+      }}
+      {...rest}
+    />
+  )
+}
