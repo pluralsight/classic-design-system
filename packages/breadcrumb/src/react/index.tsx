@@ -1,8 +1,11 @@
 import Button from '@pluralsight/ps-design-system-button'
 import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
-import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import {
+  HTMLPropsFor,
+  forwardRefWithAs
+} from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 
 import stylesheet from '../css'
 
@@ -10,49 +13,41 @@ const styles = {
   breadcrumb: () => css(stylesheet['.psds-breadcrumb'])
 }
 
-interface BreadcrumbProps
-  extends Omit<
-    React.HTMLAttributes<HTMLDivElement>,
-    'disabled' | 'href' | 'onClick'
-  > {
+interface BreadcrumbProps extends Omit<HTMLPropsFor<'div'>, 'onClick'> {
   disabled?: boolean
   href?: string
   loading?: boolean
-  onClick?: (
-    evt: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement, MouseEvent>
-  ) => void
+  onClick: MouseEventHandler
 }
 
-interface BreadcrumbStatics {}
+const Breadcrumb = forwardRefWithAs<BreadcrumbProps, 'div'>((props, ref) => {
+  const {
+    as: Comp = 'div',
+    children,
+    disabled,
+    href,
+    loading,
+    onClick,
+    ...rest
+  } = props
 
-interface BreadcrumbComponent
-  extends RefForwardingComponent<
-    BreadcrumbProps,
-    HTMLAnchorElement | HTMLButtonElement,
-    BreadcrumbStatics
-  > {}
+  const buttonTag = href ? 'a' : 'button'
 
-const Breadcrumb = React.forwardRef<
-  HTMLAnchorElement | HTMLButtonElement,
-  BreadcrumbProps
->((props, ref) => {
-  const { disabled, href, loading, onClick, ...rest } = props
   return (
-    <div {...rest} {...styles.breadcrumb()}>
+    <Comp ref={ref} {...styles.breadcrumb()} {...rest}>
       <Button
         appearance={Button.appearances.flat}
-        href={href}
-        disabled={disabled}
+        as={buttonTag}
         icon={<CaretLeftIcon />}
         loading={loading}
         onClick={onClick}
-        ref={ref as any}
         size={Button.sizes.small}
+        {...(buttonTag === 'a' ? { href } : { disabled })}
       >
-        {props.children}
+        {children}
       </Button>
-    </div>
+    </Comp>
   )
-}) as BreadcrumbComponent
+})
 
 export default Breadcrumb

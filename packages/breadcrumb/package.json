@@ -23,7 +23,8 @@
   "dependencies": {
     "@pluralsight/ps-design-system-button": "^21.0.5",
     "@pluralsight/ps-design-system-core": "^6.9.3",
-    "@pluralsight/ps-design-system-icon": "^21.0.5"
+    "@pluralsight/ps-design-system-icon": "^21.0.5",
+    "@pluralsight/ps-design-system-util": "*"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
