@@ -1,6 +1,6 @@
 export * from './jest'
-export * from './menu-keys'
-export * from './types'
+export * from './menu-keys/index'
+export * from './types/index'
 
 export { callAll } from './call-all'
 export { canUseDOM } from './can-use-dom'

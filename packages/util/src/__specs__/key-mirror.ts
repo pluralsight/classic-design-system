@@ -1,4 +1,4 @@
-import { keyMirror } from '..'
+import { keyMirror } from '../index'
 
 describe('#keyMirror', () => {
   it('return a object of mirrored string values', () => {

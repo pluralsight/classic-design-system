@@ -1,4 +1,4 @@
-import { transparentize } from '..'
+import { transparentize } from '../index'
 
 describe('#transparentize', () => {
   test('happy path', () => {

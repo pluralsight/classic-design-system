@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks'
 import { useRef, useImperativeHandle, useCallback, useState } from 'react'
 
-import { useCombinedRefs } from '..'
+import { useCombinedRefs } from '../index'
 
 describe('useCombinedRefs', () => {
   test('multiple refs', () => {

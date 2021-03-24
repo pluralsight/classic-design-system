@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useState } from 'react'
-import { canUseEventListeners } from 'exenv'
+import exenv from 'exenv'
 
 import { canUseDOM } from './can-use-dom'
 import { useHasMounted } from './use-has-mounted'
+
+const { canUseEventListeners } = exenv
 
 const noopQueryList = {
   matches: false,
