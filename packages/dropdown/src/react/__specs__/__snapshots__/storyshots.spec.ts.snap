@@ -1,97 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots appearance default w/ error 1`] = `
+exports[`Storyshots Components/Dropdown Appearances 1`] = `
 <div
-  data-css-ottiud=""
+  data-css-424rvd=""
 >
-  <label>
-    <span>
-      Problem field
-    </span>
-  </label>
   <div
-    data-css-8befsb=""
+    data-css-1cpmtjf=""
   >
-    <div
-      data-css-3ah8pf=""
-      data-css-in6gqi=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-vaotfo=""
-    >
-      <div
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="warning icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            clipRule="evenodd"
-            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-            fillRule="evenodd"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance gaps 1`] = `
-<div>
-  <div>
     <div
       data-css-ottiud=""
     >
       <label>
         <span>
-          Problem field
+          medium default
         </span>
       </label>
       <div
@@ -119,10 +40,14 @@ exports[`Storyshots appearance gaps 1`] = `
                 <span
                   aria-hidden={true}
                   data-css-mlkf0z=""
-                />
+                >
+                  Some placeholder
+                </span>
                 <span
                   data-css-13czx1q=""
-                />
+                >
+                  Some placeholder
+                </span>
               </span>
               <div
                 data-css-19x2evt=""
@@ -147,14 +72,218 @@ exports[`Storyshots appearance gaps 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  <div>
     <div
       data-css-ottiud=""
     >
       <label>
         <span>
-          Problem field
+          medium subtle
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-1c2g7cd=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-12qzma8=""
+                >
+                  Some placeholder
+                </span>
+              </span>
+              <div
+                data-css-cfp7r0=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          small default
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-1tv1187=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-1tbr04a=""
+                >
+                  Some placeholder
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          small subtle
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-cdtd9o=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-1wx2y9r=""
+                >
+                  Some placeholder
+                </span>
+              </span>
+              <div
+                data-css-cfp7r0=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    data-css-1cpmtjf=""
+  >
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          medium default
         </span>
       </label>
       <div
@@ -182,10 +311,14 @@ exports[`Storyshots appearance gaps 1`] = `
                 <span
                   aria-hidden={true}
                   data-css-mlkf0z=""
-                />
+                >
+                  Some placeholder
+                </span>
                 <span
                   data-css-13czx1q=""
-                />
+                >
+                  Some placeholder
+                </span>
               </span>
               <div
                 data-css-19x2evt=""
@@ -229,77 +362,12 @@ exports[`Storyshots appearance gaps 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  <div>
     <div
       data-css-ottiud=""
     >
       <label>
         <span>
-          Problem field
-        </span>
-      </label>
-      <div
-        data-css-8befsb=""
-      >
-        <div
-          data-css-3ah8pf=""
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-ne3jjf=""
-          >
-            <button
-              aria-haspopup="listbox"
-              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-              data-css-1c2g7cd=""
-              disabled={false}
-              id="dropdown-button-4fzzzxjyl"
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <span
-                data-css-1m4meif=""
-              >
-                <span
-                  aria-hidden={true}
-                  data-css-mlkf0z=""
-                />
-                <span
-                  data-css-12qzma8=""
-                />
-              </span>
-              <div
-                data-css-cfp7r0=""
-              >
-                <div
-                  data-css-7dab2f=""
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div
-      data-css-ottiud=""
-    >
-      <label>
-        <span>
-          Problem field
+          medium subtle
         </span>
       </label>
       <div
@@ -327,10 +395,182 @@ exports[`Storyshots appearance gaps 1`] = `
                 <span
                   aria-hidden={true}
                   data-css-mlkf0z=""
-                />
+                >
+                  Some placeholder
+                </span>
                 <span
                   data-css-12qzma8=""
-                />
+                >
+                  Some placeholder
+                </span>
+              </span>
+              <div
+                data-css-cfp7r0=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          data-css-vaotfo=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          small default
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-in6gqi=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-1tv1187=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-1tbr04a=""
+                >
+                  Some placeholder
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          data-css-vaotfo=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          small subtle
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-in6gqi=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-cdtd9o=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-1wx2y9r=""
+                >
+                  Some placeholder
+                </span>
               </span>
               <div
                 data-css-cfp7r0=""
@@ -378,558 +618,16 @@ exports[`Storyshots appearance gaps 1`] = `
 </div>
 `;
 
-exports[`Storyshots appearance medium default 1`] = `
+exports[`Storyshots Components/Dropdown Basic 1`] = `
 <div
-  data-css-ottiud=""
+  data-css-424rvd=""
 >
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              The placeholder 
-            </span>
-            <span
-              data-css-13czx1q=""
-            >
-              The placeholder 
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance medium subtle 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-1c2g7cd=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              The placeholder 
-            </span>
-            <span
-              data-css-12qzma8=""
-            >
-              The placeholder 
-            </span>
-          </span>
-          <div
-            data-css-cfp7r0=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance small default 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-1tv1187=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              The placeholder 
-            </span>
-            <span
-              data-css-1tbr04a=""
-            >
-              The placeholder 
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance small subtle 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-cdtd9o=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              The placeholder 
-            </span>
-            <span
-              data-css-1wx2y9r=""
-            >
-              The placeholder 
-            </span>
-          </span>
-          <div
-            data-css-cfp7r0=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance subtle w/ error 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Problem field
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-in6gqi=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-1c2g7cd=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-12qzma8=""
-            />
-          </span>
-          <div
-            data-css-cfp7r0=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-vaotfo=""
-    >
-      <div
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="warning icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            clipRule="evenodd"
-            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-            fillRule="evenodd"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots custom dynamic icon 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <div
-              style={
-                Object {
-                  "height": "24px",
-                  "marginRight": "8px",
-                  "width": "24px",
-                }
-              }
-            />
-            <div
-              style={
-                Object {
-                  "flex": 1,
-                  "height": "100%",
-                  "position": "relative",
-                }
-              }
-            >
-              <span
-                aria-hidden={true}
-                data-css-mlkf0z=""
-              >
-                Author Kit
-              </span>
-              <span
-                data-css-13czx1q=""
-              />
-            </div>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots custom fixed icon 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <div
-              data-css-7dab2f=""
-              style={
-                Object {
-                  "marginRight": 8,
-                }
-              }
-            >
-              <svg
-                aria-label="calendar icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-                />
-              </svg>
-            </div>
-            <div
-              style={
-                Object {
-                  "flex": 1,
-                  "height": "100%",
-                  "position": "relative",
-                }
-              }
-            >
-              <span
-                aria-hidden={true}
-                data-css-mlkf0z=""
-              >
-                Trailing 14 Days
-              </span>
-              <span
-                data-css-13czx1q=""
-              />
-            </div>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots disabled compare dropdown 1`] = `
-<div>
   <div
     data-css-ottiud=""
   >
     <label>
       <span>
-        Normal
+        The label
       </span>
     </label>
     <div
@@ -948,7 +646,9 @@ exports[`Storyshots disabled compare dropdown 1`] = `
             data-css-185vr3w=""
             disabled={false}
             id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
           >
             <span
@@ -958,12 +658,12 @@ exports[`Storyshots disabled compare dropdown 1`] = `
                 aria-hidden={true}
                 data-css-mlkf0z=""
               >
-                I'm normal, see
+                Some placeholder
               </span>
               <span
                 data-css-13czx1q=""
               >
-                I'm normal, see
+                Some placeholder
               </span>
             </span>
             <div
@@ -991,15 +691,481 @@ exports[`Storyshots disabled compare dropdown 1`] = `
     <div
       data-css-o89kbw=""
     >
-      Still normal
+      The sub label
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Compare Disabled 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    data-css-1cpmtjf=""
+  >
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          Normal
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  I'm normal, see
+                </span>
+                <span
+                  data-css-13czx1q=""
+                >
+                  I'm normal, see
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-o89kbw=""
+      >
+        Still normal
+      </div>
+    </div>
+    <div
+      data-css-xsf0go=""
+    >
+      <label>
+        <span>
+          I'm not usable
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={true}
+              id="dropdown-button-4fzzzxjyl"
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  I'm untouchable
+                </span>
+                <span
+                  data-css-13czx1q=""
+                >
+                  I'm untouchable
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-o89kbw=""
+      >
+        Neither am I
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    data-css-1cpmtjf=""
+  >
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          Problem field
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-13czx1q=""
+                >
+                  Some placeholder
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          Problem field
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-in6gqi=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-13czx1q=""
+                >
+                  Some placeholder
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          data-css-vaotfo=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          Problem field
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-1c2g7cd=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-12qzma8=""
+                >
+                  Some placeholder
+                </span>
+              </span>
+              <div
+                data-css-cfp7r0=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          Problem field
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-in6gqi=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-1c2g7cd=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-12qzma8=""
+                >
+                  Some placeholder
+                </span>
+              </span>
+              <div
+                data-css-cfp7r0=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          data-css-vaotfo=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Disabled 1`] = `
+<div
+  data-css-424rvd=""
+>
   <div
     data-css-xsf0go=""
   >
     <label>
       <span>
-        I'm not usable
+        The label
       </span>
     </label>
     <div
@@ -1018,6 +1184,8 @@ exports[`Storyshots disabled compare dropdown 1`] = `
             data-css-185vr3w=""
             disabled={true}
             id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
           >
             <span
@@ -1027,12 +1195,12 @@ exports[`Storyshots disabled compare dropdown 1`] = `
                 aria-hidden={true}
                 data-css-mlkf0z=""
               >
-                I'm untouchable
+                Some placeholder
               </span>
               <span
                 data-css-13czx1q=""
               >
-                I'm untouchable
+                Some placeholder
               </span>
             </span>
             <div
@@ -1060,20 +1228,22 @@ exports[`Storyshots disabled compare dropdown 1`] = `
     <div
       data-css-o89kbw=""
     >
-      Neither am I
+      The sub label
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots disabled compare items 1`] = `
-<div>
+exports[`Storyshots Components/Dropdown Disabled Items 1`] = `
+<div
+  data-css-424rvd=""
+>
   <div
     data-css-ottiud=""
   >
     <label>
       <span>
-        Normal
+        The label
       </span>
     </label>
     <div
@@ -1092,7 +1262,9 @@ exports[`Storyshots disabled compare items 1`] = `
             data-css-185vr3w=""
             disabled={false}
             id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
           >
             <span
@@ -1102,12 +1274,189 @@ exports[`Storyshots disabled compare items 1`] = `
                 aria-hidden={true}
                 data-css-mlkf0z=""
               >
-                Has mixed labels
+                Some placeholder
               </span>
               <span
                 data-css-13czx1q=""
               >
-                Has mixed labels
+                Some placeholder
+              </span>
+            </span>
+            <div
+              data-css-19x2evt=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Error 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    data-css-ottiud=""
+  >
+    <label>
+      <span>
+        The label
+      </span>
+    </label>
+    <div
+      data-css-8befsb=""
+    >
+      <div
+        data-css-3ah8pf=""
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            aria-haspopup="listbox"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            disabled={false}
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span
+              data-css-1m4meif=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Some placeholder
+              </span>
+              <span
+                data-css-13czx1q=""
+              >
+                Some placeholder
+              </span>
+            </span>
+            <div
+              data-css-19x2evt=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-vaotfo=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Label Only 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    data-css-ottiud=""
+  >
+    <label>
+      <span>
+        The label
+      </span>
+    </label>
+    <div
+      data-css-8befsb=""
+    >
+      <div
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            aria-haspopup="listbox"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            disabled={false}
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span
+              data-css-1m4meif=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Some placeholder
+              </span>
+              <span
+                data-css-13czx1q=""
+              >
+                Some placeholder
               </span>
             </span>
             <div
@@ -1136,697 +1485,325 @@ exports[`Storyshots disabled compare items 1`] = `
 </div>
 `;
 
-exports[`Storyshots focus autofocus with ref 1`] = `
+exports[`Storyshots Components/Dropdown List With Divider 1`] = `
 <div
-  data-css-ottiud=""
+  data-css-424rvd=""
 >
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
   <div
-    data-css-8befsb=""
+    data-css-ottiud=""
   >
+    <label>
+      <span>
+        The label
+      </span>
+    </label>
     <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
+      data-css-8befsb=""
     >
       <div
-        data-css-ne3jjf=""
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
       >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
+        <div
+          data-css-ne3jjf=""
         >
-          <span
-            data-css-1m4meif=""
+          <button
+            aria-haspopup="listbox"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            disabled={false}
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
+              data-css-1m4meif=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
               >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots focus disabled 1`] = `
-<div
-  data-css-xsf0go=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={true}
-          id="dropdown-button-4fzzzxjyl"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+                Some placeholder
+              </span>
+              <span
+                data-css-13czx1q=""
               >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots focus onBlur 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onBlur={[Function]}
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots focus onFocus 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels all 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Some label
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Some placeholder
+                Some placeholder
+              </span>
             </span>
-            <span
-              data-css-13czx1q=""
+            <div
+              data-css-19x2evt=""
             >
-              Some placeholder
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown List With Icons 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    data-css-ottiud=""
+  >
+    <label>
+      <span>
+        The label
+      </span>
+    </label>
+    <div
+      data-css-8befsb=""
+    >
+      <div
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            aria-haspopup="listbox"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            disabled={false}
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span
+              data-css-1m4meif=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                Some placeholder
+              </span>
+              <span
+                data-css-13czx1q=""
+              >
+                Some placeholder
+              </span>
             </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
             <div
-              data-css-7dab2f=""
+              data-css-19x2evt=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                data-css-7dab2f=""
               >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    data-css-o89kbw=""
-  >
-    Some sublabel
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels label 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Some label
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
     <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
+      data-css-o89kbw=""
     >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
+      The sub label
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots labels label and subLabel 1`] = `
+exports[`Storyshots Components/Dropdown Long Placeholder 1`] = `
 <div
-  data-css-ottiud=""
+  data-css-424rvd=""
 >
-  <label>
-    <span>
-      Some label
-    </span>
-  </label>
   <div
-    data-css-8befsb=""
+    data-css-ottiud=""
   >
+    <label>
+      <span>
+        The label
+      </span>
+    </label>
     <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
+      data-css-8befsb=""
     >
       <div
-        data-css-ne3jjf=""
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
       >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
+        <div
+          data-css-ne3jjf=""
         >
-          <span
-            data-css-1m4meif=""
+          <button
+            aria-haspopup="listbox"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            disabled={false}
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
+              data-css-1m4meif=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
               >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-o89kbw=""
-  >
-    Some sublabel
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels none 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+                This one is longer than any menu item
+              </span>
+              <span
+                data-css-13czx1q=""
               >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots labels placeholder 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              some placeholder
+                This one is longer than any menu item
+              </span>
             </span>
-            <span
-              data-css-13czx1q=""
-            >
-              some placeholder
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
             <div
-              data-css-7dab2f=""
+              data-css-19x2evt=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <div
+                data-css-7dab2f=""
               >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots labels subLabel 1`] = `
+exports[`Storyshots Components/Dropdown Max Height 1`] = `
 <div
-  data-css-ottiud=""
+  data-css-424rvd=""
 >
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
   <div
-    data-css-8befsb=""
+    data-css-ottiud=""
   >
+    <label>
+      <span>
+        The label
+      </span>
+    </label>
     <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
+      data-css-8befsb=""
     >
       <div
-        data-css-ne3jjf=""
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
       >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
+        <div
+          data-css-ne3jjf=""
         >
-          <span
-            data-css-1m4meif=""
+          <button
+            aria-haspopup="listbox"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            disabled={false}
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            />
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
+              data-css-1m4meif=""
             >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
               >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
+                Some placeholder
+              </span>
+              <span
+                data-css-13czx1q=""
+              >
+                Some placeholder
+              </span>
+            </span>
+            <div
+              data-css-19x2evt=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-  <div
-    data-css-o89kbw=""
-  >
-    Some sublabel
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots layouts bottom of viewport 1`] = `
+exports[`Storyshots Components/Dropdown No Labels 1`] = `
 <div
-  style={
-    Object {
-      "alignItems": "end",
-      "display": "flex",
-      "minHeight": "calc(100vh - 14px)",
-      "outline": "1px solid red",
-      "width": "25vw",
-    }
-  }
+  data-css-424rvd=""
 >
   <div
     data-css-ottiud=""
@@ -1850,11 +1827,14 @@ exports[`Storyshots layouts bottom of viewport 1`] = `
         >
           <button
             aria-haspopup="listbox"
+            aria-label="You need an a11y label"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-            data-css-1c2g7cd=""
+            data-css-185vr3w=""
             disabled={false}
             id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
           >
             <span
@@ -1864,16 +1844,16 @@ exports[`Storyshots layouts bottom of viewport 1`] = `
                 aria-hidden={true}
                 data-css-mlkf0z=""
               >
-                Menu appears above
+                Some placeholder
               </span>
               <span
-                data-css-12qzma8=""
+                data-css-13czx1q=""
               >
-                Menu appears above
+                Some placeholder
               </span>
             </span>
             <div
-              data-css-cfp7r0=""
+              data-css-19x2evt=""
             >
               <div
                 data-css-7dab2f=""
@@ -1898,29 +1878,16 @@ exports[`Storyshots layouts bottom of viewport 1`] = `
 </div>
 `;
 
-exports[`Storyshots layouts custom width 1`] = `
-<div>
-  <div
-    style={
-      Object {
-        "color": "#ababab",
-      }
-    }
-  >
-    Value: 
-    two
-  </div>
+exports[`Storyshots Components/Dropdown Preselected By Label 1`] = `
+<div
+  data-css-424rvd=""
+>
   <div
     data-css-ottiud=""
-    style={
-      Object {
-        "width": 150,
-      }
-    }
   >
     <label>
       <span>
-        Width 150
+        The label
       </span>
     </label>
     <div
@@ -1939,7 +1906,9 @@ exports[`Storyshots layouts custom width 1`] = `
             data-css-185vr3w=""
             disabled={false}
             id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
           >
             <span
@@ -1949,12 +1918,12 @@ exports[`Storyshots layouts custom width 1`] = `
                 aria-hidden={true}
                 data-css-mlkf0z=""
               >
-                One item One item One item One item One item One item
+                Some placeholder
               </span>
               <span
                 data-css-phnd7x=""
               >
-                Two item
+                Item 3
               </span>
             </span>
             <div
@@ -1979,13 +1948,25 @@ exports[`Storyshots layouts custom width 1`] = `
         </div>
       </div>
     </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Preselected Value 1`] = `
+<div
+  data-css-424rvd=""
+>
   <div
     data-css-ottiud=""
   >
     <label>
       <span>
-        Width determined by longest item
+        The label
       </span>
     </label>
     <div
@@ -2004,7 +1985,9 @@ exports[`Storyshots layouts custom width 1`] = `
             data-css-185vr3w=""
             disabled={false}
             id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
           >
             <span
@@ -2014,12 +1997,12 @@ exports[`Storyshots layouts custom width 1`] = `
                 aria-hidden={true}
                 data-css-mlkf0z=""
               >
-                One item One item One item One item One item One item
+                Some placeholder
               </span>
               <span
                 data-css-phnd7x=""
               >
-                Two item
+                Item 2
               </span>
             </span>
             <div
@@ -2044,31 +2027,25 @@ exports[`Storyshots layouts custom width 1`] = `
         </div>
       </div>
     </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots layouts full width 1`] = `
+exports[`Storyshots Components/Dropdown Preselected Value Unknown 1`] = `
 <div
-  style={
-    Object {
-      "border": "1px solid blue",
-      "width": "500px",
-    }
-  }
+  data-css-424rvd=""
 >
   <div
     data-css-ottiud=""
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
   >
     <label>
       <span>
-        First
+        The label
       </span>
     </label>
     <div
@@ -2087,7 +2064,9 @@ exports[`Storyshots layouts full width 1`] = `
             data-css-185vr3w=""
             disabled={false}
             id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
             onClick={[Function]}
+            onFocus={[Function]}
             onKeyDown={[Function]}
           >
             <span
@@ -2096,10 +2075,14 @@ exports[`Storyshots layouts full width 1`] = `
               <span
                 aria-hidden={true}
                 data-css-mlkf0z=""
-              />
+              >
+                Can't find item
+              </span>
               <span
                 data-css-13czx1q=""
-              />
+              >
+                Can't find item
+              </span>
             </span>
             <div
               data-css-19x2evt=""
@@ -2123,499 +2106,19 @@ exports[`Storyshots layouts full width 1`] = `
         </div>
       </div>
     </div>
-  </div>
-  <div
-    data-css-ottiud=""
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <label>
-      <span>
-        Second
-      </span>
-    </label>
     <div
-      data-css-8befsb=""
+      data-css-o89kbw=""
     >
-      <div
-        data-css-3ah8pf=""
-        data-css-in6gqi=""
-      >
-        <div
-          data-css-ne3jjf=""
-        >
-          <button
-            aria-haspopup="listbox"
-            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-            data-css-185vr3w=""
-            disabled={false}
-            id="dropdown-button-4fzzzxjyl"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <span
-              data-css-1m4meif=""
-            >
-              <span
-                aria-hidden={true}
-                data-css-mlkf0z=""
-              />
-              <span
-                data-css-13czx1q=""
-              />
-            </span>
-            <div
-              data-css-19x2evt=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-      </div>
-      <div
-        data-css-vaotfo=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="warning icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-ottiud=""
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <label>
-      <span>
-        Third
-      </span>
-    </label>
-    <div
-      data-css-8befsb=""
-    >
-      <div
-        data-css-3ah8pf=""
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-ne3jjf=""
-        >
-          <button
-            aria-haspopup="listbox"
-            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-            data-css-1c2g7cd=""
-            disabled={false}
-            id="dropdown-button-4fzzzxjyl"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <span
-              data-css-1m4meif=""
-            >
-              <span
-                aria-hidden={true}
-                data-css-mlkf0z=""
-              />
-              <span
-                data-css-12qzma8=""
-              />
-            </span>
-            <div
-              data-css-cfp7r0=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-ottiud=""
-    style={
-      Object {
-        "display": "block",
-        "width": "100%",
-      }
-    }
-  >
-    <label>
-      <span>
-        Fourth
-      </span>
-    </label>
-    <div
-      data-css-8befsb=""
-    >
-      <div
-        data-css-3ah8pf=""
-        data-css-in6gqi=""
-      >
-        <div
-          data-css-ne3jjf=""
-        >
-          <button
-            aria-haspopup="listbox"
-            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-            data-css-1c2g7cd=""
-            disabled={false}
-            id="dropdown-button-4fzzzxjyl"
-            onClick={[Function]}
-            onKeyDown={[Function]}
-          >
-            <span
-              data-css-1m4meif=""
-            >
-              <span
-                aria-hidden={true}
-                data-css-mlkf0z=""
-              />
-              <span
-                data-css-12qzma8=""
-              />
-            </span>
-            <div
-              data-css-cfp7r0=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
-        </div>
-      </div>
-      <div
-        data-css-vaotfo=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="warning icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
+      The sub label
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots layouts right-aligned 1`] = `
+exports[`Storyshots Components/Dropdown Stacked 1`] = `
 <div
-  style={
-    Object {
-      "border": "1px solid blue",
-    }
-  }
+  data-css-424rvd=""
 >
-  <div
-    style={
-      Object {
-        "display": "flex",
-        "justifyContent": "flex-end",
-      }
-    }
-  >
-    <div
-      data-css-ottiud=""
-    >
-      <label>
-        <span
-          data-css-6wu9td=""
-        >
-          Dropdown
-        </span>
-      </label>
-      <div
-        data-css-8befsb=""
-      >
-        <div
-          data-css-3ah8pf=""
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-ne3jjf=""
-          >
-            <button
-              aria-haspopup="listbox"
-              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-              data-css-1c2g7cd=""
-              disabled={false}
-              id="dropdown-button-4fzzzxjyl"
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <span
-                data-css-1m4meif=""
-              >
-                <span
-                  aria-hidden={true}
-                  data-css-mlkf0z=""
-                >
-                  Filter
-                </span>
-                <span
-                  data-css-12qzma8=""
-                >
-                  Filter
-                </span>
-              </span>
-              <div
-                data-css-cfp7r0=""
-              >
-                <div
-                  data-css-7dab2f=""
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    style={
-      Object {
-        "border": "3px solid green",
-        "height": "50px",
-      }
-    }
-  />
-</div>
-`;
-
-exports[`Storyshots menu bottom of view, pop above 1`] = `
-<div
-  style={
-    Object {
-      "border": "2px solid #00ff00",
-      "display": "flex",
-      "flexDirection": "column",
-      "height": "100%",
-      "minHeight": "100vh",
-      "paddingBottom": "40px",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "marginTop": "auto",
-      }
-    }
-  >
-    <div
-      data-css-ottiud=""
-    >
-      <label>
-        <span>
-          Level
-        </span>
-      </label>
-      <div
-        data-css-8befsb=""
-      >
-        <div
-          data-css-3ah8pf=""
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-ne3jjf=""
-          >
-            <button
-              aria-haspopup="listbox"
-              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-              data-css-185vr3w=""
-              disabled={false}
-              id="dropdown-button-4fzzzxjyl"
-              onClick={[Function]}
-              onKeyDown={[Function]}
-            >
-              <span
-                data-css-1m4meif=""
-              >
-                <span
-                  aria-hidden={true}
-                  data-css-mlkf0z=""
-                >
-                  Three item
-                </span>
-                <span
-                  data-css-13czx1q=""
-                />
-              </span>
-              <div
-                data-css-19x2evt=""
-              >
-                <div
-                  data-css-7dab2f=""
-                >
-                  <svg
-                    aria-label="caret down icon"
-                    role="img"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu divider 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Three and the amazing item
-            </span>
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu in stack 1`] = `
-<div>
   <div>
     <div
       data-css-ottiud=""
@@ -2753,586 +2256,377 @@ exports[`Storyshots menu in stack 1`] = `
 </div>
 `;
 
-exports[`Storyshots menu max height 1`] = `
+exports[`Storyshots Components/Dropdown Sub Label Only 1`] = `
 <div
-  data-css-ottiud=""
+  data-css-424rvd=""
 >
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
   <div
-    data-css-8befsb=""
+    data-css-ottiud=""
   >
+    <label>
+      <span
+        data-css-6wu9td=""
+      >
+        Dropdown
+      </span>
+    </label>
     <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
+      data-css-8befsb=""
     >
       <div
-        data-css-ne3jjf=""
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
       >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
+        <div
+          data-css-ne3jjf=""
         >
-          <span
-            data-css-1m4meif=""
+          <button
+            aria-haspopup="listbox"
+            aria-label="You need an a11y label"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            disabled={false}
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
           >
             <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
+              data-css-1m4meif=""
             >
-              Thirteen item
-            </span>
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
               >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
+                Some placeholder
+              </span>
+              <span
+                data-css-13czx1q=""
+              >
+                Some placeholder
+              </span>
+            </span>
+            <div
+              data-css-19x2evt=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots menu onClicks 1`] = `
+exports[`Storyshots Components/Dropdown Super Long Item Label 1`] = `
 <div
-  data-css-ottiud=""
+  data-css-424rvd=""
 >
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-in6gqi=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-1c2g7cd=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Select another one
-            </span>
-            <span
-              data-css-12qzma8=""
-            >
-              Select another one
-            </span>
-          </span>
-          <div
-            data-css-cfp7r0=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-vaotfo=""
-    >
-      <div
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="warning icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            clipRule="evenodd"
-            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-            fillRule="evenodd"
-          />
-        </svg>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu single list 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Three and the amazing item
-            </span>
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu single list w/ icon 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Three and the amazing item
-            </span>
-            <span
-              data-css-13czx1q=""
-            >
-              Select one
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu super long 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              This level really is the longest level that anyone has ever seen. There is none longer
-            </span>
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu w/ longer placeholder 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              This one is longer than any menu item
-            </span>
-            <span
-              data-css-13czx1q=""
-            >
-              This one is longer than any menu item
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu w/ subLabel 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Three and the amazing item
-            </span>
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div
-    data-css-o89kbw=""
-  >
-    The course level
-  </div>
-</div>
-`;
-
-exports[`Storyshots menu w/ value 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Three and the amazing item
-            </span>
-            <span
-              data-css-phnd7x=""
-            >
-              Three and the amazing item
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots portal position 1`] = `
-<div
-  style={
-    Object {
-      "alignItems": "center",
-      "display": "flex",
-      "flexDirection": "column",
-      "height": "100vh",
-      "justifyContent": "center",
-      "width": "100%",
-    }
-  }
->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Porta nibh venenatis cras sed. Ornare lectus sit amet est placerat in egestas. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper. Nisl nisi scelerisque eu ultrices. Amet risus nullam eget felis. Arcu non sodales neque sodales ut etiam. Tortor at auctor urna nunc. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Condimentum vitae sapien pellentesque habitant morbi tristique. Egestas maecenas pharetra convallis posuere morbi leo urna molestie. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Lobortis feugiat vivamus at augue eget arcu dictum. Fusce id velit ut tortor pretium viverra suspendisse. Convallis tellus id interdum velit. In tellus integer feugiat scelerisque varius morbi enim nunc faucibus. Tempor orci dapibus ultrices in iaculis nunc. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet massa vitae tortor. Sollicitudin nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Ipsum dolor sit amet consectetur adipiscing. Sed felis eget velit aliquet sagittis. Elit pellentesque habitant morbi tristique. Sit amet consectetur adipiscing elit. Id volutpat lacus laoreet non curabitur gravida arcu ac. Enim neque volutpat ac tincidunt. Lorem ipsum dolor sit amet.
   <div
     data-css-ottiud=""
   >
     <label>
       <span>
-        Level
+        The label
+      </span>
+    </label>
+    <div
+      data-css-8befsb=""
+    >
+      <div
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            aria-haspopup="listbox"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            disabled={false}
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span
+              data-css-1m4meif=""
+            >
+              <span
+                aria-hidden={true}
+                data-css-mlkf0z=""
+              >
+                This level really is the longest level that anyone has ever seen. There is none longer
+              </span>
+              <span
+                data-css-13czx1q=""
+              >
+                Some placeholder
+              </span>
+            </span>
+            <div
+              data-css-19x2evt=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown/advanced Custom Icon 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    data-css-ottiud=""
+  >
+    <label>
+      <span>
+        The label
+      </span>
+    </label>
+    <div
+      data-css-8befsb=""
+    >
+      <div
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            aria-haspopup="listbox"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span
+              data-css-1m4meif=""
+            >
+              <div
+                data-css-1ehc3sz=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="placeholder icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-css-1evu87j=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-13czx1q=""
+                >
+                  Some placeholder
+                </span>
+              </div>
+            </span>
+            <div
+              data-css-19x2evt=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown/advanced Dynamic Custom Icon 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    data-css-ottiud=""
+  >
+    <label>
+      <span>
+        The label
+      </span>
+    </label>
+    <div
+      data-css-8befsb=""
+    >
+      <div
+        data-css-3ah8pf=""
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ne3jjf=""
+        >
+          <button
+            aria-haspopup="listbox"
+            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+            data-css-185vr3w=""
+            id="dropdown-button-4fzzzxjyl"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+          >
+            <span
+              data-css-1m4meif=""
+            >
+              <div
+                data-css-1ehc3sz=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="author kit icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      clipRule="evenodd"
+                      d="M14.99 11c0 1.66-1.33 3-2.99 3-1.66 0-3-1.34-3-3V5c0-1.66 1.34-3 3-3s3 1.34 3 3l-.01 6zM12 3.7c-.66 0-1.2.54-1.2 1.2v6.2c0 .66.54 1.2 1.2 1.2.66 0 1.19-.54 1.19-1.2l.01-6.2c0-.66-.54-1.2-1.2-1.2zm5.269 7.757a5.153 5.153 0 01-.08.611c-.52 2.419-2.77 4.032-5.189 4.032s-4.668-1.613-5.188-4.03a5.15 5.15 0 01-.081-.613.5.5 0 00-.498-.457H5.53a.5.5 0 00-.498.54c.02.261.046.47.075.628.535 2.869 2.995 5.12 5.892 5.552V20H9.5a.5.5 0 00-.5.5v1a.5.5 0 00.5.5h5a.5.5 0 00.5-.5v-1a.5.5 0 00-.5-.5H13v-2.28c2.927-.428 5.409-2.72 5.908-5.64.024-.137.044-.318.061-.542a.5.5 0 00-.498-.538h-.704a.5.5 0 00-.498.457z"
+                      fillRule="evenodd"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                data-css-1evu87j=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-phnd7x=""
+                >
+                  Author Kit
+                </span>
+              </div>
+            </span>
+            <div
+              data-css-19x2evt=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown/examples Autofocused 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    data-css-ottiud=""
+  >
+    <label>
+      <span>
+        The label
       </span>
     </label>
     <div
@@ -3361,759 +2655,784 @@ exports[`Storyshots portal position 1`] = `
                 aria-hidden={true}
                 data-css-mlkf0z=""
               >
-                Three and the amazing item
+                Some placeholder
               </span>
               <span
                 data-css-13czx1q=""
+              >
+                Some placeholder
+              </span>
+            </span>
+            <div
+              data-css-19x2evt=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret down icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown/examples Controlled 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div>
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          The label
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  Some placeholder
+                </span>
+                <span
+                  data-css-phnd7x=""
+                >
+                  Item: two
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-o89kbw=""
+      >
+        The sub label
+      </div>
+    </div>
+    <br />
+    <br />
+    <div
+      data-css-c8tnxo=""
+    >
+      <span>
+        Current value: 
+        two
+      </span>
+      <br />
+      <button
+        onClick={[Function]}
+      >
+        Clear value
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown/examples Style Fixed Width 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div>
+    <div
+      data-css-ottiud=""
+      style={
+        Object {
+          "width": 150,
+        }
+      }
+    >
+      <label>
+        <span>
+          Fixed Width
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  One item One item One item One item One item One item
+                </span>
+                <span
+                  data-css-13czx1q=""
+                >
+                  Change me
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div
+      data-css-ottiud=""
+    >
+      <label>
+        <span>
+          Width determined by longest item
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                >
+                  One item One item One item One item One item One item
+                </span>
+                <span
+                  data-css-13czx1q=""
+                >
+                  Change me
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    style={
+      Object {
+        "border": "1px solid blue",
+        "width": "500px",
+      }
+    }
+  >
+    <div
+      data-css-ottiud=""
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
+    >
+      <label>
+        <span>
+          First
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                />
+                <span
+                  data-css-13czx1q=""
+                />
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-ottiud=""
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
+    >
+      <label>
+        <span>
+          Second
+        </span>
+      </label>
+      <div
+        data-css-8befsb=""
+      >
+        <div
+          data-css-3ah8pf=""
+          data-css-in6gqi=""
+        >
+          <div
+            data-css-ne3jjf=""
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                data-css-1m4meif=""
+              >
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                />
+                <span
+                  data-css-13czx1q=""
+                />
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          data-css-vaotfo=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
               />
-            </span>
-            <div
-              data-css-19x2evt=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                  />
-                </svg>
-              </div>
-            </div>
-          </button>
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  Aliquam sem et tortor consequat id. Vitae tempus quam pellentesque nec nam. Platea dictumst quisque sagittis purus sit amet volutpat. Convallis tellus id interdum velit laoreet id. Convallis tellus id interdum velit laoreet id donec ultrices. Metus vulputate eu scelerisque felis imperdiet. Luctus venenatis lectus magna fringilla urna porttitor. Pellentesque habitant morbi tristique senectus. Mi bibendum neque egestas congue quisque egestas diam in. Faucibus interdum posuere lorem ipsum dolor sit. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Ut tortor pretium viverra suspendisse potenti. Lectus proin nibh nisl condimentum id venenatis a condimentum. Consequat id porta nibh venenatis cras sed felis eget velit. Placerat orci nulla pellentesque dignissim enim sit. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Malesuada fames ac turpis egestas integer. Consectetur purus ut faucibus pulvinar elementum integer. Consectetur adipiscing elit pellentesque habitant morbi. Lorem ipsum dolor sit amet consectetur adipiscing elit ut. Sed tempus urna et pharetra pharetra massa massa ultricies mi. Dictumst quisque sagittis purus sit. Sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum. Porttitor massa id neque aliquam vestibulum. Viverra maecenas accumsan lacus vel facilisis volutpat est. Ac orci phasellus egestas tellus. Dui vivamus arcu felis bibendum ut tristique. Pharetra convallis posuere morbi leo urna molestie at. Suscipit tellus mauris a diam maecenas. Cursus risus at ultrices mi tempus imperdiet nulla. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum. In eu mi bibendum neque egestas congue quisque. Augue mauris augue neque gravida in fermentum. Interdum consectetur libero id faucibus nisl tincidunt eget. In metus vulputate eu scelerisque felis imperdiet proin. Ut lectus arcu bibendum at varius vel pharetra vel. Semper auctor neque vitae tempus quam pellentesque nec nam aliquam. In dictum non consectetur a erat nam at lectus urna. Sem fringilla ut morbi tincidunt. Porttitor massa id neque aliquam vestibulum morbi. Ut placerat orci nulla pellentesque dignissim enim sit amet. Sed augue lacus viverra vitae congue eu consequat. Nibh cras pulvinar mattis nunc sed. Nec ultrices dui sapien eget mi. Ut tellus elementum sagittis vitae. Diam sollicitudin tempor id eu nisl nunc mi ipsum. Nisi vitae suscipit tellus mauris a diam. Pellentesque dignissim enim sit amet venenatis urna cursus eget nunc. Feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Amet justo donec enim diam vulputate. Arcu vitae elementum curabitur vitae. Urna cursus eget nunc scelerisque viverra mauris in aliquam sem. Vel turpis nunc eget lorem dolor sed viverra. Orci eu lobortis elementum nibh tellus molestie nunc non. Mi eget mauris pharetra et ultrices. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Vestibulum lectus mauris ultrices eros in cursus turpis massa.
-</div>
-`;
-
-exports[`Storyshots props whitelist title 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span>
-      Level
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
     <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
+      data-css-ottiud=""
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
     >
+      <label>
+        <span>
+          Third
+        </span>
+      </label>
       <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-          title="This title should be present"
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              One item
-            </span>
-            <span
-              data-css-13czx1q=""
-            />
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots value external state change 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Preselected three item
-            </span>
-            <span
-              data-css-phnd7x=""
-            >
-              One item
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots value no preselection 1`] = `
-Array [
-  <h2>
-    With values
-  </h2>,
-  <div
-    data-css-ottiud=""
-  >
-    <label>
-      <span
-        data-css-6wu9td=""
-      >
-        Dropdown
-      </span>
-    </label>
-    <div
-      data-css-8befsb=""
-    >
-      <div
-        data-css-3ah8pf=""
-        data-css-ctre2o=""
+        data-css-8befsb=""
       >
         <div
-          data-css-ne3jjf=""
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
         >
-          <button
-            aria-haspopup="listbox"
-            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-            data-css-185vr3w=""
-            disabled={false}
-            id="dropdown-button-4fzzzxjyl"
-            onClick={[Function]}
-            onKeyDown={[Function]}
+          <div
+            data-css-ne3jjf=""
           >
-            <span
-              data-css-1m4meif=""
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-1c2g7cd=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
             >
               <span
-                aria-hidden={true}
-                data-css-mlkf0z=""
+                data-css-1m4meif=""
               >
-                Shown until selection made
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                />
+                <span
+                  data-css-12qzma8=""
+                />
               </span>
-              <span
-                data-css-13czx1q=""
-              >
-                Shown until selection made
-              </span>
-            </span>
-            <div
-              data-css-19x2evt=""
-            >
               <div
-                data-css-7dab2f=""
+                data-css-cfp7r0=""
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  data-css-7dab2f=""
                 >
-                  <path
-                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                  />
-                </svg>
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </div>,
-  <h2>
-    Just labels
-  </h2>,
-  <div
-    data-css-ottiud=""
-  >
-    <label>
-      <span
-        data-css-6wu9td=""
-      >
-        Dropdown
-      </span>
-    </label>
     <div
-      data-css-8befsb=""
+      data-css-ottiud=""
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
     >
+      <label>
+        <span>
+          Fourth
+        </span>
+      </label>
       <div
-        data-css-3ah8pf=""
-        data-css-ctre2o=""
+        data-css-8befsb=""
       >
         <div
-          data-css-ne3jjf=""
+          data-css-3ah8pf=""
+          data-css-in6gqi=""
         >
-          <button
-            aria-haspopup="listbox"
-            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-            data-css-185vr3w=""
-            disabled={false}
-            id="dropdown-button-4fzzzxjyl"
-            onClick={[Function]}
-            onKeyDown={[Function]}
+          <div
+            data-css-ne3jjf=""
           >
-            <span
-              data-css-1m4meif=""
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-1c2g7cd=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
             >
               <span
-                aria-hidden={true}
-                data-css-mlkf0z=""
+                data-css-1m4meif=""
               >
-                Shown until selection made
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
+                />
+                <span
+                  data-css-12qzma8=""
+                />
               </span>
-              <span
-                data-css-13czx1q=""
-              >
-                Shown until selection made
-              </span>
-            </span>
-            <div
-              data-css-19x2evt=""
-            >
               <div
-                data-css-7dab2f=""
+                data-css-cfp7r0=""
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div
+                  data-css-7dab2f=""
                 >
-                  <path
-                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                  />
-                </svg>
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-          </button>
+            </button>
+          </div>
+        </div>
+        <div
+          data-css-vaotfo=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
-  </div>,
-]
-`;
-
-exports[`Storyshots value shows pre-selected item by label 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Shown because can't find option
-            </span>
-            <span
-              data-css-phnd7x=""
-            >
-              Preselected three item
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots value shows pre-selected item by value 1`] = `
+exports[`Storyshots Components/Dropdown/examples Style Right Aligned 1`] = `
 <div
-  data-css-ottiud=""
+  data-css-424rvd=""
 >
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Preselected three item
-            </span>
-            <span
-              data-css-phnd7x=""
-            >
-              Preselected three item
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots value test the spec 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Select
-            </span>
-            <span
-              data-css-phnd7x=""
-            >
-              Two
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots value value is not an item in the list 1`] = `
-<div
-  data-css-ottiud=""
->
-  <label>
-    <span
-      data-css-6wu9td=""
-    >
-      Dropdown
-    </span>
-  </label>
-  <div
-    data-css-8befsb=""
-  >
-    <div
-      data-css-3ah8pf=""
-      data-css-ctre2o=""
-    >
-      <div
-        data-css-ne3jjf=""
-      >
-        <button
-          aria-haspopup="listbox"
-          aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-          data-css-185vr3w=""
-          disabled={false}
-          id="dropdown-button-4fzzzxjyl"
-          onClick={[Function]}
-          onKeyDown={[Function]}
-        >
-          <span
-            data-css-1m4meif=""
-          >
-            <span
-              aria-hidden={true}
-              data-css-mlkf0z=""
-            >
-              Shown because can't find option
-            </span>
-            <span
-              data-css-13czx1q=""
-            >
-              Shown because can't find option
-            </span>
-          </span>
-          <div
-            data-css-19x2evt=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="caret down icon"
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                />
-              </svg>
-            </div>
-          </div>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots whitelist clear 1`] = `
-<div>
   <div
     style={
       Object {
-        "color": "#ababab",
+        "border": "1px solid blue",
       }
     }
   >
-    Value: 
-    two
-  </div>
-  <button
-    onClick={[Function]}
-  >
-    Clear
-  </button>
-  <div
-    data-css-ottiud=""
-  >
-    <label>
-      <span>
-        Thing to change
-      </span>
-    </label>
     <div
-      data-css-8befsb=""
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "flex-end",
+        }
+      }
     >
       <div
-        data-css-3ah8pf=""
-        data-css-ctre2o=""
+        data-css-ottiud=""
       >
-        <div
-          data-css-ne3jjf=""
-        >
-          <button
-            aria-haspopup="listbox"
-            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-            data-css-185vr3w=""
-            disabled={false}
-            id="dropdown-button-4fzzzxjyl"
-            onClick={[Function]}
-            onKeyDown={[Function]}
+        <label>
+          <span
+            data-css-6wu9td=""
           >
-            <span
-              data-css-1m4meif=""
-            >
-              <span
-                aria-hidden={true}
-                data-css-mlkf0z=""
-              >
-                Three item
-              </span>
-              <span
-                data-css-phnd7x=""
-              >
-                Two item
-              </span>
-            </span>
+            Dropdown
+          </span>
+        </label>
+        <div
+          data-css-8befsb=""
+        >
+          <div
+            data-css-3ah8pf=""
+            data-css-ctre2o=""
+          >
             <div
-              data-css-19x2evt=""
+              data-css-ne3jjf=""
             >
-              <div
-                data-css-7dab2f=""
+              <button
+                aria-haspopup="listbox"
+                aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+                data-css-185vr3w=""
+                disabled={false}
+                id="dropdown-button-4fzzzxjyl"
+                onClick={[Function]}
+                onKeyDown={[Function]}
               >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <span
+                  data-css-1m4meif=""
                 >
-                  <path
-                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                  />
-                </svg>
-              </div>
+                  <span
+                    aria-hidden={true}
+                    data-css-mlkf0z=""
+                  >
+                    Filter
+                  </span>
+                  <span
+                    data-css-13czx1q=""
+                  >
+                    Filter
+                  </span>
+                </span>
+                <div
+                  data-css-19x2evt=""
+                >
+                  <div
+                    data-css-7dab2f=""
+                  >
+                    <svg
+                      aria-label="caret down icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </button>
             </div>
-          </button>
+          </div>
         </div>
       </div>
     </div>
+    <div
+      style={
+        Object {
+          "border": "2px dashed green",
+          "height": "50px",
+        }
+      }
+    />
   </div>
 </div>
 `;
 
-exports[`Storyshots whitelist onChange 1`] = `
-<div>
+exports[`Storyshots Components/Dropdown/examples Style Viewport Bottom 1`] = `
+<div
+  data-css-424rvd=""
+>
   <div
     style={
       Object {
-        "color": "#ababab",
+        "alignItems": "flex-end",
+        "display": "flex",
+        "height": "100%",
       }
     }
   >
-    Value: 
-    two
-  </div>
-  <div
-    data-css-ottiud=""
-  >
-    <label>
-      <span>
-        Thing to change
-      </span>
-    </label>
     <div
-      data-css-8befsb=""
+      data-css-ottiud=""
     >
+      <label>
+        <span
+          data-css-6wu9td=""
+        >
+          Dropdown
+        </span>
+      </label>
       <div
-        data-css-3ah8pf=""
-        data-css-ctre2o=""
+        data-css-8befsb=""
       >
         <div
-          data-css-ne3jjf=""
+          data-css-3ah8pf=""
+          data-css-ctre2o=""
         >
-          <button
-            aria-haspopup="listbox"
-            aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-            data-css-185vr3w=""
-            disabled={false}
-            id="dropdown-button-4fzzzxjyl"
-            onClick={[Function]}
-            onKeyDown={[Function]}
+          <div
+            data-css-ne3jjf=""
           >
-            <span
-              data-css-1m4meif=""
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              data-css-185vr3w=""
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
             >
               <span
-                aria-hidden={true}
-                data-css-mlkf0z=""
+                data-css-1m4meif=""
               >
-                Three item
-              </span>
-              <span
-                data-css-phnd7x=""
-              >
-                Two item
-              </span>
-            </span>
-            <div
-              data-css-19x2evt=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret down icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
+                <span
+                  aria-hidden={true}
+                  data-css-mlkf0z=""
                 >
-                  <path
-                    d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
-                  />
-                </svg>
+                  Menu appears above
+                </span>
+                <span
+                  data-css-13czx1q=""
+                >
+                  Menu appears above
+                </span>
+              </span>
+              <div
+                data-css-19x2evt=""
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-          </button>
+            </button>
+          </div>
         </div>
       </div>
     </div>
