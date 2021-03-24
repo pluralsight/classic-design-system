@@ -1,101 +1,108 @@
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { fireEvent, screen, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
-import { fireEvent, render } from '@testing-library/react'
 
 import Checkbox from '..'
 
+import * as stories from '../__stories__/index.story'
+
 describe('Checkbox', () => {
-  it('renders', () => {
-    const { getByTestId } = render(
-      <Checkbox
-        label="test label"
-        value="test value"
-        data-testid="mock-component"
-      />
-    )
+  const cases = convertStoriesToJestCases(stories)
 
-    expect(getByTestId('mock-component')).toBeInTheDocument()
-  })
-
-  it('forwards refs', () => {
+  it('forwards ref', () => {
     const ref = React.createRef<HTMLInputElement>()
-
-    render(<Checkbox label="test label" value="test value" ref={ref} />)
-
-    expect(ref.current).not.toBeNull()
+    render(<Checkbox ref={ref} />)
+    expect(ref).not.toBeNull()
   })
 
-  it('passes a basic a11y audit', async () => {
-    const { container } = render(<Checkbox label="test-label" />)
-    const results = await axe(container)
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    expect(results).toHaveNoViolations()
+      expect(results).toHaveNoViolations()
+    })
   })
 
-  it('is accessible by role', () => {
-    const { getAllByRole, getByRole } = render(
-      <>
-        <Checkbox label="First" name="first" value="first" />
-        <Checkbox label="Second" name="second" value="second" />
-      </>
-    )
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-    expect(getByRole('checkbox', { name: /first/i })).toBeInTheDocument()
-    expect(getByRole('checkbox', { name: /second/i })).toBeInTheDocument()
+    it('forwards className', () => {
+      const { getByTestId } = render(
+        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
+      )
 
-    expect(getAllByRole('checkbox')).toHaveLength(2)
-  })
-
-  it('should render an unchecked checkbox by default', () => {
-    const { getByRole } = render(<Checkbox />)
-
-    expect(getByRole('checkbox')).toHaveProperty('checked', false)
-  })
-
-  it('should render a checked checkbox when prop `checked={true}`', () => {
-    const { getByRole } = render(<Checkbox checked />)
-    expect(getByRole('checkbox')).toHaveProperty('checked', true)
-  })
-
-  it('should render a indeterminate checkbox when prop `indeterminate={true}`', () => {
-    const { getByRole } = render(<Checkbox indeterminate />)
-    const input = getByRole('checkbox') as HTMLInputElement
-
-    expect(input.indeterminate).toBeTruthy()
-  })
-
-  it('should call `onCheck` with new `checked` state when clicked', () => {
-    const checked = true
-    const name = 'the-name'
-    const onCheck = jest.fn()
-    const value = 'the-value'
-
-    const { getByRole } = render(
-      <Checkbox checked={checked} name={name} onCheck={onCheck} value={value} />
-    )
-    const input = getByRole('checkbox')
-    fireEvent.click(input, { button: 1 })
-
-    expect(onCheck).toHaveBeenCalledWith(
-      expect.anything(),
-      !checked,
-      value,
-      name
-    )
-  })
-
-  describe('when props `disabled={true}`', () => {
-    it('should be disabled', () => {
-      const { getByRole } = render(<Checkbox disabled />)
-      expect(getByRole('checkbox')).toHaveProperty('disabled', true)
+      const el = getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
     })
 
-    it('should NOT call `onCheck` when clicked', () => {
+    it('is unchecked', () => {
+      render(<Basic {...Basic.args} />)
+
+      expect(screen.getByRole('checkbox')).toHaveProperty('checked', false)
+    })
+
+    it('calls onCheck when clicked', () => {
       const onCheck = jest.fn()
 
-      const { getByRole } = render(<Checkbox disabled onCheck={onCheck} />)
-      const input = getByRole('checkbox')
-      fireEvent.click(input, { button: 1 })
+      render(
+        <Basic
+          {...Basic.args}
+          checked
+          name="input-name"
+          onCheck={onCheck}
+          value="input-value"
+        />
+      )
+
+      const input = screen.getByRole('checkbox')
+      fireEvent.click(input)
+
+      expect(onCheck).toHaveBeenCalledWith(
+        expect.anything(),
+        false,
+        'input-value',
+        'input-name'
+      )
+    })
+  })
+
+  describe('Checked story', () => {
+    const { Checked } = stories
+
+    it('is checked', () => {
+      render(<Checked {...Checked.args} />)
+
+      expect(screen.getByRole('checkbox')).toHaveProperty('checked', true)
+    })
+  })
+
+  describe('Indeterminate story', () => {
+    const { Indeterminate } = stories
+
+    it('is indeterminate', () => {
+      render(<Indeterminate {...Indeterminate.args} />)
+
+      const input = screen.getByRole('checkbox') as HTMLInputElement
+      expect(input.indeterminate).toBeTruthy()
+    })
+  })
+
+  describe('Disabled story', () => {
+    const { Disabled } = stories
+
+    it('is disabled', () => {
+      render(<Disabled {...Disabled.args} />)
+      expect(screen.getByRole('checkbox')).toHaveProperty('disabled', true)
+    })
+
+    it('does not call onCheck when clicked', () => {
+      const onCheck = jest.fn()
+
+      render(<Disabled {...Disabled.args} onCheck={onCheck} />)
+      const input = screen.getByRole('checkbox')
+      fireEvent.click(input)
 
       expect(onCheck).not.toHaveBeenCalled()
     })
