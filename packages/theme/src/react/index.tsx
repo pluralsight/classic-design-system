@@ -7,7 +7,7 @@ import React, {
   useContext
 } from 'react'
 
-import { defaultName, names } from '../vars'
+import { defaultName, names } from '../vars/index'
 export { defaultName, names }
 
 type Names = typeof names

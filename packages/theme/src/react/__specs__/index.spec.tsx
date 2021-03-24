@@ -4,7 +4,7 @@ import { renderHook } from '@testing-library/react-hooks'
 
 import React, { HTMLAttributes } from 'react'
 
-import Theme, { defaultName, useTheme, withTheme } from '..'
+import Theme, { defaultName, useTheme, withTheme } from '../index'
 
 describe('Theme', () => {
   const MockComponent: React.FC<HTMLAttributes<HTMLDivElement>> = props => {
