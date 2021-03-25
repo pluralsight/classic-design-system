@@ -73,17 +73,17 @@ export default {
       outline: 'none'
     },
     '&:focus': {
-      background: colorsBackgroundUtility[25],
+      background: colorsBackgroundUtility[15],
       color: colorsTextIcon.highOnLight
     },
     '&:hover:not([data-disabled])': {
-      background: colorsBackgroundUtility[25],
+      background: colorsBackgroundUtility[15],
       color: colorsTextIcon.highOnLight
     }
   },
   '.psds-menu__list-item--active': {
     '&:not([data-disabled])': {
-      background: colorsBackgroundUtility[25],
+      background: colorsBackgroundUtility[15],
       color: colorsTextIcon.highOnLight
     }
   },
