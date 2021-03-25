@@ -1,17 +1,10 @@
-import {
-  ForwardRefExoticComponent,
-  RefAttributes,
-  RefObject,
-  ElementType,
-  ComponentPropsWithRef,
-  ReactElement
-} from 'react'
+import React from 'react'
 
 export type HTMLPropsFor<
   Tag extends keyof JSX.IntrinsicElements
 > = JSX.IntrinsicElements[Tag]
 
-export type RefFor<K extends keyof HTMLElementTagNameMap> = RefObject<
+export type RefFor<K extends keyof HTMLElementTagNameMap> = React.RefObject<
   HTMLElementTagNameMap[K]
 >
 
@@ -19,7 +12,7 @@ export type RefForwardingComponent<
   P = Record<string, unknown>,
   E = Element,
   S = Record<string, unknown>
-> = ForwardRefExoticComponent<P & RefAttributes<E>> & S
+> = React.ForwardRefExoticComponent<P & React.RefAttributes<E>> & S
 
 export type ValueOf<T> = T[keyof T]
 
@@ -33,7 +26,7 @@ type Merge<P1 = Record<string, unknown>, P2 = Record<string, unknown>> = Omit<
   P2
 
 type MergeProps<E, P = Record<string, unknown>> = P &
-  Merge<E extends ElementType ? ComponentPropsWithRef<E> : never, P>
+  Merge<E extends React.ElementType ? React.ComponentPropsWithRef<E> : never, P>
 
 type NarrowIntrinsic<E> = E extends keyof JSX.IntrinsicElements ? E : never
 
@@ -48,7 +41,7 @@ export interface ForwardRefComponent<
    * Extends original type to ensure built in React types play nice
    * with polymorphic components still e.g. `React.ElementRef` etc.
    */
-> extends ForwardRefExoticComponent<
+> extends React.ForwardRefExoticComponent<
     MergeProps<
       IntrinsicElementString,
       OwnProps & { as?: IntrinsicElementString }
@@ -66,7 +59,7 @@ export interface ForwardRefComponent<
     As extends keyof JSX.IntrinsicElements = NarrowIntrinsic<IntrinsicElementString>
   >(
     props: MergeProps<As, OwnProps & { as: As }>
-  ): ReactElement | null
+  ): React.ReactElement | null
 
   /**
    * When passing an `as` prop as a component, use this overload.
@@ -76,7 +69,7 @@ export interface ForwardRefComponent<
    * We don't use `React.ComponentType` here as we get type errors
    * when consumers try to do inline `as` components.
    */
-  <As extends ElementType>(
+  <As extends React.ElementType>(
     props: MergeProps<As, OwnProps & { as: As }>
-  ): ReactElement | null
+  ): React.ReactElement | null
 }

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react'
+import React from 'react'
 import exenv from 'exenv'
 
 import { canUseDOM } from './can-use-dom'
@@ -14,15 +14,15 @@ const noopQueryList = {
 export function useMatchMedia(query: string): boolean {
   const hasMounted = useHasMounted()
 
-  const matcher = useCallback(
+  const matcher = React.useCallback(
     () => (canUseDOM() ? window.matchMedia(query) : noopQueryList),
     [query]
   )
-  const [queryList, setQueryList] = useState(matcher)
+  const [queryList, setQueryList] = React.useState(matcher)
 
   const matches = useMatches(queryList)
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!hasMounted) return
 
     const nextQueryList = matcher()
@@ -34,9 +34,9 @@ export function useMatchMedia(query: string): boolean {
 }
 
 export function useMatches(queryList: MediaQueryList) {
-  const [matches, setMatches] = useState(queryList.matches)
+  const [matches, setMatches] = React.useState(queryList.matches)
 
-  useEffect(() => {
+  React.useEffect(() => {
     const updateMatches = () => {
       setMatches(queryList.matches)
     }
