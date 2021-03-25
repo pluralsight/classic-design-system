@@ -1,39 +1,66 @@
-/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import React, { useState } from 'react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { fireEvent, screen, render } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { axe } from 'jest-axe'
+import React from 'react'
 
-import { fireEvent, render, screen } from '@testing-library/react'
 import SearchInput from '..'
 
-describe('SearchInput', () => {
-  it('focuses input when clear button clicked', () => {
-    const noop = () => {}
-    render(<SearchInput onClear={noop} />)
-    const input = screen.getByRole('searchbox')
-    const clearBtn = screen.getByRole('button') as HTMLButtonElement
+import * as stories from '../__stories__/index.story'
 
-    fireEvent.click(clearBtn)
-    expect(input).toHaveFocus()
+describe('SearchInput', () => {
+  const cases = convertStoriesToJestCases(stories)
+
+  it('forwards the ref', () => {
+    const ref = React.createRef<HTMLInputElement>()
+    render(<SearchInput ref={ref} />)
+    expect(ref).not.toBeNull()
   })
 
-  it('clears input when clear button clicked', () => {
-    const SearchInputWithState = () => {
-      const [value, setValue] = useState('')
-      const onChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
-        setValue(evt.target.value)
-      }
-      const onClear = () => {
-        setValue('')
-      }
-      return <SearchInput onChange={onChange} onClear={onClear} value={value} />
-    }
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    render(<SearchInputWithState />)
-    const input = screen.getByRole('searchbox') as HTMLInputElement
-    fireEvent.change(input, { target: { value: 'Kindergarten' } })
-    const clearBtn = screen.getByRole('button') as HTMLButtonElement
+      expect(results).toHaveNoViolations()
+    })
+  })
 
-    fireEvent.click(clearBtn)
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-    expect(input).toHaveValue('')
+    it('forwards className', () => {
+      render(
+        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
+      )
+
+      const el = screen.getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
+    })
+
+    it('focuses the input when clear button clicked', () => {
+      render(<Basic {...Basic.args} />)
+
+      const input = screen.getByRole('searchbox')
+      const clearBtn = screen.getByRole('button')
+
+      fireEvent.click(clearBtn)
+
+      expect(input).toHaveFocus()
+    })
+
+    it('clears input when clear button clicked', () => {
+      render(<Basic {...Basic.args} />)
+
+      const input = screen.getByRole('searchbox')
+      const clearBtn = screen.getByRole('button')
+
+      userEvent.type(input, 'Hello World!')
+      expect(input).toHaveValue('Hello World!')
+
+      fireEvent.click(clearBtn)
+
+      expect(input).toHaveValue('')
+    })
   })
 })
