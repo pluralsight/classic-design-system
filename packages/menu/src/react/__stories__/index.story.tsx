@@ -173,7 +173,9 @@ storiesOf('item with description', module)
         description="Edit details, add or remove content, invite or remove members and delete Channel"
       />
       <Menu.Item>Remove member</Menu.Item>
-      <Menu.Item>Remove member with so many lines that it goes to a second line</Menu.Item>
+      <Menu.Item>
+        Remove member with so many lines that it goes to a second line
+      </Menu.Item>
     </Menu>
   ))
 
