@@ -478,12 +478,12 @@ exports[`Storyshots item with description default 1`] = `
           data-css-1v08evy=""
         >
           <span
-            data-css-xpk9xc=""
+            data-css-1333iu1=""
           >
             item
           </span>
           <span
-            data-css-15cv973=""
+            data-css-1wzmi8j=""
           >
             some words that describe a thing that really should wrap you known
           </span>
@@ -528,12 +528,12 @@ exports[`Storyshots item with description selected 1`] = `
           data-css-1v08evy=""
         >
           <span
-            data-css-xpk9xc=""
+            data-css-1333iu1=""
           >
             item active
           </span>
           <span
-            data-css-15cv973=""
+            data-css-1wzmi8j=""
           >
             some words that describe a thing that really should wrap you known
           </span>

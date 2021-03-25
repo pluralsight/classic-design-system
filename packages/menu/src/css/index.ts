@@ -158,15 +158,15 @@ export default {
   '.psds-menu__item-with-description__name': {
     display: 'inline-block',
     color: colorsTextIcon.highOnLight,
-    fontSize: type.fontSize100,
+    fontSize: type.fontSize200,
     lineHeight: type.lineHeightTight,
     fontWeight: type.fontWeight600
   },
   '.psds-menu__item-with-description__description': {
     display: 'inline-block',
-    color: colorsTextIcon.lowOnLight,
-    fontSize: type.fontSize200,
     lineHeight: '16px',
+    fontSize: type.fontSize100,
+    color: colorsTextIcon.lowOnLight,
     fontWeight: type.fontWeightRegular
   }
 }
