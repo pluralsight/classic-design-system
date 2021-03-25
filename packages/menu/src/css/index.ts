@@ -97,11 +97,11 @@ export default {
     display: 'inline-block',
     width: '100%',
     color: 'inherit',
-    lineHeight: type.lineHeightExtra,
+    lineHeight: type.lineHeightTight,
     fontWeight: type.fontWeight500,
     cursor: 'pointer',
     border: 'none',
-    padding: `${layout.spacingXXSmall} ${layout.spacingMedium}`,
+    padding: `10px ${layout.spacingMedium}`,
     background: 'none',
     textDecoration: 'none',
     outline: 'none',
@@ -155,18 +155,12 @@ export default {
     flexDirection: 'column',
     maxWidth: 248
   },
-  '.psds-menu__item-with-description__name': {
-    display: 'inline-block',
-    color: colorsTextIcon.highOnLight,
-    fontSize: type.fontSize200,
-    lineHeight: type.lineHeightTight,
-    fontWeight: type.fontWeight600
-  },
+  '.psds-menu__item-with-description__name': {},
   '.psds-menu__item-with-description__description': {
-    display: 'inline-block',
     lineHeight: '16px',
     fontSize: type.fontSize100,
     color: colorsTextIcon.lowOnLight,
-    fontWeight: type.fontWeightRegular
+    fontWeight: type.fontWeightRegular,
+    paddingTop: layout.spacingXXSmall
   }
 }
