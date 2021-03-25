@@ -1,17 +1,12 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import hoistNonReactStatics from 'hoist-non-react-statics'
-import React, {
-  ComponentType,
-  createContext,
-  forwardRef,
-  useContext
-} from 'react'
+import React from 'react'
 
 import { defaultName, names } from '../vars/index'
 export { defaultName, names }
 
 type Names = typeof names
-export const ThemeContext = createContext<ValueOf<Names>>(defaultName)
+export const ThemeContext = React.createContext<ValueOf<Names>>(defaultName)
 
 type ThemeProps = { name?: ValueOf<Names> }
 type ThemeStatics = { defaultName: typeof defaultName; names: Names }
@@ -31,11 +26,11 @@ Theme.defaultName = defaultName
 export default Theme
 
 export function useTheme() {
-  const themeName = useContext(ThemeContext)
+  const themeName = React.useContext(ThemeContext)
   return themeName
 }
 
-function getDisplayName<T>(Component: ComponentType<T>) {
+function getDisplayName<T>(Component: React.ComponentType<T>) {
   if (typeof Component === 'string') return Component
   if (!Component) return
 
@@ -46,11 +41,11 @@ function getDisplayName<T>(Component: ComponentType<T>) {
  * @deprecated please use the useTheme hook to get theme information
  */
 export function withTheme<T, P extends Record<string, unknown>>(
-  BaseComponent: ComponentType<P>
+  BaseComponent: React.ComponentType<P>
 ) {
   const name = getDisplayName(BaseComponent)
 
-  const Forwarded = forwardRef<T, P>((props, ref) => {
+  const Forwarded = React.forwardRef<T, P>((props, ref) => {
     const themeName = useTheme()
 
     return <BaseComponent ref={ref} themeName={themeName} {...(props as P)} />
