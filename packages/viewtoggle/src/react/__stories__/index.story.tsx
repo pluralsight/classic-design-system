@@ -1,154 +1,183 @@
 import { action } from '@storybook/addon-actions'
-import { storiesOf } from '@storybook/react'
-
+import { Meta, Story } from '@storybook/react/types-6-0'
 import { css } from 'glamor'
-import React from 'react'
+import React, { MouseEvent, useState } from 'react'
 
 import ViewToggle from '..'
 
-storiesOf('options count', module)
-  .add('one', () => (
-    <ViewToggle>
-      <ViewToggle.Option>The Only Option</ViewToggle.Option>
-    </ViewToggle>
-  ))
-  .add('two', () => (
-    <ViewToggle>
-      <ViewToggle.Option>Option 1</ViewToggle.Option>
-      <ViewToggle.Option>Option 2</ViewToggle.Option>
-    </ViewToggle>
-  ))
-  .add('three', () => (
-    <ViewToggle>
-      <ViewToggle.Option>Option 1</ViewToggle.Option>
-      <ViewToggle.Option>Option 2</ViewToggle.Option>
-      <ViewToggle.Option>Option 3</ViewToggle.Option>
-    </ViewToggle>
-  ))
-  .add('more than max', () => (
-    <ViewToggle>
-      <ViewToggle.Option>Option 1</ViewToggle.Option>
-      <ViewToggle.Option>Option 2</ViewToggle.Option>
-      <ViewToggle.Option>Option 3</ViewToggle.Option>
-      <ViewToggle.Option>Should not show up</ViewToggle.Option>
-      <ViewToggle.Option>Should not show up</ViewToggle.Option>
-      <ViewToggle.Option>Should not show up</ViewToggle.Option>
-    </ViewToggle>
-  ))
-  .add('dynamic', () => {
-    function DynamicOptions() {
-      const [count, updateCount] = React.useState(2)
+const defaultArgs = {
+  onSelect: action('on select')
+}
 
-      const add = () => updateCount(count + 1)
-      const remove = () => updateCount(count - 1)
+export default {
+  title: 'Components/ViewToggle',
+  component: ViewToggle
+} as Meta
 
-      return (
-        <>
-          <ViewToggle>
-            {new Array(count).fill(null).map((_, index) => (
-              <ViewToggle.Option key={index}>
-                item: {index + 1}
-              </ViewToggle.Option>
-            ))}
-          </ViewToggle>
+const Template: Story = args => {
+  return <ViewToggle {...args} />
+}
 
-          <div
-            {...css({
-              alignItems: 'center',
-              display: 'flex',
-              justifyContent: 'center',
-              margin: '10px auto'
-            })}
-          >
-            <button disabled={count <= 1} onClick={remove}>
-              remove
-            </button>
+export const OneOption = Template.bind({})
+OneOption.args = {
+  ...defaultArgs,
+  children: <ViewToggle.Option>Option 1</ViewToggle.Option>
+}
 
-            <button disabled={count >= 3} onClick={add}>
-              add
-            </button>
-          </div>
-        </>
-      )
-    }
+export const TwoOptions = Template.bind({})
+TwoOptions.args = {
+  ...defaultArgs,
+  children: [
+    <ViewToggle.Option key="opt-1">Option 1</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-2">Option 2</ViewToggle.Option>
+  ]
+}
 
-    return <DynamicOptions />
-  })
+export const ThreeOptions = Template.bind({})
+ThreeOptions.args = {
+  ...defaultArgs,
+  children: [
+    <ViewToggle.Option key="opt-1">Option 1</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-2">Option 2</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-3">Option 3</ViewToggle.Option>
+  ]
+}
 
-storiesOf('active', module)
-  .add('default first', () => (
-    <ViewToggle>
-      <ViewToggle.Option>I'm active</ViewToggle.Option>
-      <ViewToggle.Option>Option 2</ViewToggle.Option>
-      <ViewToggle.Option>Option 3</ViewToggle.Option>
-    </ViewToggle>
-  ))
-  .add('explicit first', () => (
-    <ViewToggle>
-      <ViewToggle.Option active>I'm active</ViewToggle.Option>
-      <ViewToggle.Option>Option 2</ViewToggle.Option>
-      <ViewToggle.Option>Option 3</ViewToggle.Option>
-    </ViewToggle>
-  ))
-  .add('explicit second', () => (
-    <ViewToggle>
-      <ViewToggle.Option>Option 1</ViewToggle.Option>
-      <ViewToggle.Option active>I'm active</ViewToggle.Option>
-      <ViewToggle.Option>Option 3</ViewToggle.Option>
-    </ViewToggle>
-  ))
-  .add('explicit third', () => (
-    <ViewToggle>
-      <ViewToggle.Option>Option 1</ViewToggle.Option>
-      <ViewToggle.Option>Option 2</ViewToggle.Option>
-      <ViewToggle.Option active>I'm active</ViewToggle.Option>
-    </ViewToggle>
-  ))
+export const MaxOptions = Template.bind({})
+MaxOptions.args = {
+  ...defaultArgs,
+  children: [
+    <ViewToggle.Option key="opt-1">Option 1</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-2">Option 2</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-3">Option 3</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-4">Should Not Be Visible</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-5">Should Not Be Visible</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-6">Should Not Be Visible</ViewToggle.Option>
+  ]
+}
 
-storiesOf('onSelect', module).add('handles click', () => (
-  <ViewToggle onSelect={action('selected')}>
-    <ViewToggle.Option>Option 1</ViewToggle.Option>
-    <ViewToggle.Option>Option 2</ViewToggle.Option>
-    <ViewToggle.Option>Option 3</ViewToggle.Option>
-  </ViewToggle>
-))
+export const DefaultFirstOption = Template.bind({})
+DefaultFirstOption.args = {
+  ...defaultArgs,
+  children: [
+    <ViewToggle.Option key="opt-1">I'm active</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-2">Option 2</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-3">Option 3</ViewToggle.Option>
+  ]
+}
 
-storiesOf('text length', module)
-  .add('differing lengths', () => (
-    <ViewToggle>
-      <ViewToggle.Option>
-        This one is really long because everyone likes those
-      </ViewToggle.Option>
-      <ViewToggle.Option>This is medium</ViewToggle.Option>
-      <ViewToggle.Option>Short</ViewToggle.Option>
-    </ViewToggle>
-  ))
-  .add('all long', () => (
-    <ViewToggle>
-      <ViewToggle.Option>
-        This one is really long because everyone likes those
-      </ViewToggle.Option>
-      <ViewToggle.Option>
-        This one is really long because everyone likes those
-      </ViewToggle.Option>
-      <ViewToggle.Option>
-        This one is really long because everyone likes those
-      </ViewToggle.Option>
-    </ViewToggle>
-  ))
+export const ExplicitActiveFirst = Template.bind({})
+ExplicitActiveFirst.args = {
+  ...defaultArgs,
+  children: [
+    <ViewToggle.Option key="opt-1" active>
+      I'm active
+    </ViewToggle.Option>,
+    <ViewToggle.Option key="opt-2">Option 2</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-3">Option 3</ViewToggle.Option>
+  ]
+}
 
-storiesOf('dynamic options', module).add('sizes correctly', () => {
-  const options = ['Apple', 'Banana', 'Orange']
+export const ExplicitActiveSecond = Template.bind({})
+ExplicitActiveSecond.args = {
+  ...defaultArgs,
+  children: [
+    <ViewToggle.Option key="opt-1">I'm active</ViewToggle.Option>,
+    <ViewToggle.Option active key="opt-2">
+      Option 2
+    </ViewToggle.Option>,
+    <ViewToggle.Option key="opt-3">Option 3</ViewToggle.Option>
+  ]
+}
+
+export const ExplicitActiveThird = Template.bind({})
+ExplicitActiveThird.args = {
+  ...defaultArgs,
+  children: [
+    <ViewToggle.Option key="opt-1">I'm active</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-2">Option 2</ViewToggle.Option>,
+    <ViewToggle.Option active key="opt-3">
+      Option 3
+    </ViewToggle.Option>
+  ]
+}
+
+export const DifferingTextLengths = Template.bind({})
+DifferingTextLengths.args = {
+  ...defaultArgs,
+  children: [
+    <ViewToggle.Option key="opt-1">
+      This one is really long because everyone likes those
+    </ViewToggle.Option>,
+    <ViewToggle.Option key="opt-2">This is medium</ViewToggle.Option>,
+    <ViewToggle.Option key="opt-3">Short</ViewToggle.Option>
+  ]
+}
+export const AllLongTextLengths = Template.bind({})
+AllLongTextLengths.args = {
+  ...defaultArgs,
+  children: [
+    <ViewToggle.Option key="opt-1">
+      This one is really long because everyone likes those
+    </ViewToggle.Option>,
+    <ViewToggle.Option key="opt-2">
+      This one is really long because everyone likes those
+    </ViewToggle.Option>,
+    <ViewToggle.Option key="opt-3">
+      This one is really long because everyone likes those
+    </ViewToggle.Option>
+  ]
+}
+
+export const ExampleDynamicOptions: Story = () => {
+  const [count, updateCount] = useState(2)
+
+  const add = () => updateCount(count + 1)
+  const remove = () => updateCount(count - 1)
+
   return (
-    <ViewToggle>
-      {options.map(option => {
-        const active = option === 'Orange'
-        return (
-          <ViewToggle.Option key={option} active={active}>
-            {option}
-          </ViewToggle.Option>
-        )
-      })}
+    <>
+      <ViewToggle>
+        {new Array(count).fill(null).map((_, index) => (
+          <ViewToggle.Option key={index}>Item: {index + 1}</ViewToggle.Option>
+        ))}
+      </ViewToggle>
+
+      <div
+        {...css({
+          alignItems: 'center',
+          display: 'flex',
+          justifyContent: 'center',
+          margin: '10px auto'
+        })}
+      >
+        <button disabled={count <= 1} onClick={remove}>
+          remove
+        </button>
+
+        <button disabled={count >= 3} onClick={add}>
+          add
+        </button>
+      </div>
+    </>
+  )
+}
+
+export const ExampleControlled: Story = () => {
+  const options = ['Apple', 'Banana', 'Orange']
+  const [selected, setSelected] = useState(options[2])
+
+  const handleSelect = (_evt: MouseEvent<HTMLButtonElement>, i: number) => {
+    setSelected(options[i])
+  }
+
+  return (
+    <ViewToggle onSelect={handleSelect}>
+      {options.map(option => (
+        <ViewToggle.Option active={option === selected} key={option}>
+          {option}
+        </ViewToggle.Option>
+      ))}
     </ViewToggle>
   )
-})
+}
