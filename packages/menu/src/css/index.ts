@@ -155,7 +155,6 @@ export default {
     flexDirection: 'column',
     maxWidth: 248
   },
-  '.psds-menu__item-with-description__name': {},
   '.psds-menu__item-with-description__description': {
     lineHeight: '16px',
     fontSize: type.fontSize100,
