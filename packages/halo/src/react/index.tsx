@@ -10,7 +10,7 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
 import polyfillFocusWithin from 'focus-within'
-import React, { forwardRef } from 'react'
+import React from 'react'
 
 import stylesheet, { BASE_CLASSNAME, themeClasses } from '../css/index'
 import * as vars from '../vars/index'
@@ -71,7 +71,7 @@ type HaloComponent = RefForwardingComponent<
   HaloStatics
 >
 
-const Halo = forwardRef((props, ref) => {
+const Halo = React.forwardRef((props, ref) => {
   const themeName = useTheme()
 
   const {
