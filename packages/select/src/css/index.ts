@@ -4,6 +4,7 @@ import {
   colorsBorder,
   colorsStatus,
   colorsTextIcon,
+  layers,
   layout,
   type
 } from '@pluralsight/ps-design-system-core'
@@ -104,5 +105,9 @@ export default {
   },
   [`.psds-select__icon.psds-theme--${themeNames.dark}`]: {
     color: colorsTextIcon.lowOnDark
+  },
+  // menu
+  '.psds-select__menu': {
+    zIndex: layers.globalDropdown
   }
 }

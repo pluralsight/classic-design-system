@@ -3,6 +3,7 @@ import { Selected } from './selected'
 import * as vars from '../vars'
 
 import React, { forwardRef, useMemo } from 'react'
+import { css } from 'glamor'
 import * as PositionComponents from '@pluralsight/ps-design-system-position'
 import {
   ValueOf,
@@ -12,8 +13,10 @@ import Menu from '@pluralsight/ps-design-system-menu'
 import { useListbox, UseListboxProps } from './useListbox'
 
 import { positions } from '../vars'
-export { useListbox } from './useListbox'
-export type { UseListboxProps } from './useListbox'
+
+import stylesheet from '../css'
+
+const styles = css(stylesheet['.psds-select__menu'])
 
 interface DefaultRenderOptionProps {
   id: React.ReactText
@@ -55,7 +58,7 @@ const Select = forwardRef((props, ref) => {
       position={PositionComponents[position]}
       when={isOpen}
       show={
-        <Menu origin={Menu.origins.topLeft} {...menuProps}>
+        <Menu origin={Menu.origins.topLeft} {...menuProps} {...styles}>
           {children || items.map(i => <RenderOption key={i.id} {...i} />)}
         </Menu>
       }
@@ -73,6 +76,8 @@ interface SelectStatics {
   sizes: typeof vars.sizes
 }
 
+export { useListbox } from './useListbox'
+export type { UseListboxProps } from './useListbox'
 export { useMenuRef } from './menuKeyEvents'
 
 Select.Button = Button
