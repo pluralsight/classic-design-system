@@ -6,7 +6,7 @@ import {
   setTransitionEnabled,
   updateOverflowStyle,
   waitForHeightTransitionToEnd
-} from '../js'
+} from '../js/index'
 
 export const useCollapsible = (isOpen: boolean) => {
   const [mounted, setMount] = React.useState(false)
