@@ -10,10 +10,10 @@ import {
   usePortal
 } from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css, keyframes } from 'glamor'
-import React, { MutableRefObject } from 'react'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
 /* eslint-disable-next-line camelcase */
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
@@ -121,7 +121,7 @@ const Dialog = React.forwardRef((props, ref) => {
   const trapped = !!modal || !!onClose
   const closeOnEscape = isFunction(onClose) && !disableCloseOnEscape
 
-  const portal = usePortal() as MutableRefObject<HTMLDivElement>
+  const portal = usePortal() as React.MutableRefObject<HTMLDivElement>
 
   // TODO: combine fns
   function handleKeyUp(evt: React.KeyboardEvent) {
