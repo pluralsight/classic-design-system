@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import React, { useMemo } from 'react'
-
+import React from 'react'
 import { breakpoints } from '@pluralsight/ps-design-system-core'
 import {
   HomeIcon,
@@ -16,7 +15,7 @@ storiesOf('AppFrame|Examples', module).add('Skills', () => {
   function Story() {
     const mobile = !useMatchMedia(`(min-width: ${breakpoints.xSmall})`)
 
-    const sidenavSections = useMemo(
+    const sidenavSections = React.useMemo(
       () =>
         mobile
           ? [{ items: MAIN_NAV_ITEMS }, ...SIDE_NAV_SECTIONS]
@@ -24,7 +23,9 @@ storiesOf('AppFrame|Examples', module).add('Skills', () => {
       [mobile]
     )
 
-    const topnavItems = useMemo(() => (mobile ? [] : MAIN_NAV_ITEMS), [mobile])
+    const topnavItems = React.useMemo(() => (mobile ? [] : MAIN_NAV_ITEMS), [
+      mobile
+    ])
 
     return (
       <AppFrame

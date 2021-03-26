@@ -1,8 +1,7 @@
 import { storiesOf } from '@storybook/react'
-import React, { useState } from 'react'
-
 import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
+import React from 'react'
 
 import AppFrame from '../index'
 import { MockContent, SideNav, TopNav } from './shared'
@@ -23,7 +22,7 @@ storiesOf('AppFrame', module)
   ))
   .add('sidenav controlled', () => {
     function Story() {
-      const [sidenavOpen, setOpen] = useState(false)
+      const [sidenavOpen, setOpen] = React.useState(false)
 
       const close = () => setOpen(false)
       const open = () => setOpen(true)
