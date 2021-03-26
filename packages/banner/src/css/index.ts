@@ -63,10 +63,10 @@ export default {
   [`.psds-banner__button--color-${vars.colors.red}`]: {},
 
   '.psds-banner__text': {
-    margin: 0,
+    margin: '0 !important',
     flex: '1',
     textAlign: 'center',
-    color: 'currentColor',
+    color: 'currentColor !important',
 
     '& a': {
       color: 'inherit',

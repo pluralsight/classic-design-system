@@ -1,6 +1,49 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots active default first 1`] = `
+exports[`Storyshots Components/ViewToggle All Long Text Lengths 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      This one is really long because everyone likes those
+    </div>
+  </div>
+  <button
+    aria-selected={true}
+    data-css-kcifgk=""
+    onClick={[Function]}
+    role="radio"
+  >
+    This one is really long because everyone likes those
+  </button>
+  <button
+    aria-selected={false}
+    data-css-118ipcw=""
+    onClick={[Function]}
+    role="radio"
+  >
+    This one is really long because everyone likes those
+  </button>
+  <button
+    aria-selected={false}
+    data-css-118ipcw=""
+    onClick={[Function]}
+    role="radio"
+  >
+    This one is really long because everyone likes those
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/ViewToggle Default First Option 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
@@ -43,7 +86,7 @@ exports[`Storyshots active default first 1`] = `
 </div>
 `;
 
-exports[`Storyshots active explicit first 1`] = `
+exports[`Storyshots Components/ViewToggle Differing Text Lengths 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
@@ -56,7 +99,7 @@ exports[`Storyshots active explicit first 1`] = `
     <div
       data-css-1jyyyen=""
     >
-      I'm active
+      This one is really long because everyone likes those
     </div>
   </div>
   <button
@@ -65,7 +108,7 @@ exports[`Storyshots active explicit first 1`] = `
     onClick={[Function]}
     role="radio"
   >
-    I'm active
+    This one is really long because everyone likes those
   </button>
   <button
     aria-selected={false}
@@ -73,7 +116,7 @@ exports[`Storyshots active explicit first 1`] = `
     onClick={[Function]}
     role="radio"
   >
-    Option 2
+    This is medium
   </button>
   <button
     aria-selected={false}
@@ -81,98 +124,12 @@ exports[`Storyshots active explicit first 1`] = `
     onClick={[Function]}
     role="radio"
   >
-    Option 3
+    Short
   </button>
 </div>
 `;
 
-exports[`Storyshots active explicit second 1`] = `
-<div
-  data-css-13xtft9=""
-  role="radiogroup"
->
-  <div
-    aria-hidden={true}
-    data-css-w8tgx1=""
-    style={Object {}}
-  >
-    <div
-      data-css-1jyyyen=""
-    >
-      I'm active
-    </div>
-  </div>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    Option 1
-  </button>
-  <button
-    aria-selected={true}
-    data-css-kcifgk=""
-    onClick={[Function]}
-    role="radio"
-  >
-    I'm active
-  </button>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    Option 3
-  </button>
-</div>
-`;
-
-exports[`Storyshots active explicit third 1`] = `
-<div
-  data-css-13xtft9=""
-  role="radiogroup"
->
-  <div
-    aria-hidden={true}
-    data-css-w8tgx1=""
-    style={Object {}}
-  >
-    <div
-      data-css-1jyyyen=""
-    >
-      I'm active
-    </div>
-  </div>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    Option 1
-  </button>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    Option 2
-  </button>
-  <button
-    aria-selected={true}
-    data-css-kcifgk=""
-    onClick={[Function]}
-    role="radio"
-  >
-    I'm active
-  </button>
-</div>
-`;
-
-exports[`Storyshots dynamic options sizes correctly 1`] = `
+exports[`Storyshots Components/ViewToggle Example Controlled 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
@@ -215,50 +172,7 @@ exports[`Storyshots dynamic options sizes correctly 1`] = `
 </div>
 `;
 
-exports[`Storyshots onSelect handles click 1`] = `
-<div
-  data-css-13xtft9=""
-  role="radiogroup"
->
-  <div
-    aria-hidden={true}
-    data-css-w8tgx1=""
-    style={Object {}}
-  >
-    <div
-      data-css-1jyyyen=""
-    >
-      Option 1
-    </div>
-  </div>
-  <button
-    aria-selected={true}
-    data-css-kcifgk=""
-    onClick={[Function]}
-    role="radio"
-  >
-    Option 1
-  </button>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    Option 2
-  </button>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    Option 3
-  </button>
-</div>
-`;
-
-exports[`Storyshots options count dynamic 1`] = `
+exports[`Storyshots Components/ViewToggle Example Dynamic Options 1`] = `
 Array [
   <div
     data-css-13xtft9=""
@@ -272,7 +186,7 @@ Array [
       <div
         data-css-1jyyyen=""
       >
-        item: 
+        Item: 
         1
       </div>
     </div>
@@ -282,7 +196,7 @@ Array [
       onClick={[Function]}
       role="radio"
     >
-      item: 
+      Item: 
       1
     </button>
     <button
@@ -291,7 +205,7 @@ Array [
       onClick={[Function]}
       role="radio"
     >
-      item: 
+      Item: 
       2
     </button>
   </div>,
@@ -314,7 +228,136 @@ Array [
 ]
 `;
 
-exports[`Storyshots options count more than max 1`] = `
+exports[`Storyshots Components/ViewToggle Explicit Active First 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      I'm active
+    </div>
+  </div>
+  <button
+    aria-selected={true}
+    data-css-kcifgk=""
+    onClick={[Function]}
+    role="radio"
+  >
+    I'm active
+  </button>
+  <button
+    aria-selected={false}
+    data-css-118ipcw=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
+  <button
+    aria-selected={false}
+    data-css-118ipcw=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 3
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/ViewToggle Explicit Active Second 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      Option 2
+    </div>
+  </div>
+  <button
+    aria-selected={false}
+    data-css-118ipcw=""
+    onClick={[Function]}
+    role="radio"
+  >
+    I'm active
+  </button>
+  <button
+    aria-selected={true}
+    data-css-kcifgk=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
+  <button
+    aria-selected={false}
+    data-css-118ipcw=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 3
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/ViewToggle Explicit Active Third 1`] = `
+<div
+  data-css-13xtft9=""
+  role="radiogroup"
+>
+  <div
+    aria-hidden={true}
+    data-css-w8tgx1=""
+    style={Object {}}
+  >
+    <div
+      data-css-1jyyyen=""
+    >
+      Option 3
+    </div>
+  </div>
+  <button
+    aria-selected={false}
+    data-css-118ipcw=""
+    onClick={[Function]}
+    role="radio"
+  >
+    I'm active
+  </button>
+  <button
+    aria-selected={false}
+    data-css-118ipcw=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 2
+  </button>
+  <button
+    aria-selected={true}
+    data-css-kcifgk=""
+    onClick={[Function]}
+    role="radio"
+  >
+    Option 3
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/ViewToggle Max Options 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
@@ -357,7 +400,7 @@ exports[`Storyshots options count more than max 1`] = `
 </div>
 `;
 
-exports[`Storyshots options count one 1`] = `
+exports[`Storyshots Components/ViewToggle One Option 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
@@ -370,7 +413,7 @@ exports[`Storyshots options count one 1`] = `
     <div
       data-css-1jyyyen=""
     >
-      The Only Option
+      Option 1
     </div>
   </div>
   <button
@@ -379,12 +422,12 @@ exports[`Storyshots options count one 1`] = `
     onClick={[Function]}
     role="radio"
   >
-    The Only Option
+    Option 1
   </button>
 </div>
 `;
 
-exports[`Storyshots options count three 1`] = `
+exports[`Storyshots Components/ViewToggle Three Options 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
@@ -427,7 +470,7 @@ exports[`Storyshots options count three 1`] = `
 </div>
 `;
 
-exports[`Storyshots options count two 1`] = `
+exports[`Storyshots Components/ViewToggle Two Options 1`] = `
 <div
   data-css-13xtft9=""
   role="radiogroup"
@@ -458,92 +501,6 @@ exports[`Storyshots options count two 1`] = `
     role="radio"
   >
     Option 2
-  </button>
-</div>
-`;
-
-exports[`Storyshots text length all long 1`] = `
-<div
-  data-css-13xtft9=""
-  role="radiogroup"
->
-  <div
-    aria-hidden={true}
-    data-css-w8tgx1=""
-    style={Object {}}
-  >
-    <div
-      data-css-1jyyyen=""
-    >
-      This one is really long because everyone likes those
-    </div>
-  </div>
-  <button
-    aria-selected={true}
-    data-css-kcifgk=""
-    onClick={[Function]}
-    role="radio"
-  >
-    This one is really long because everyone likes those
-  </button>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    This one is really long because everyone likes those
-  </button>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    This one is really long because everyone likes those
-  </button>
-</div>
-`;
-
-exports[`Storyshots text length differing lengths 1`] = `
-<div
-  data-css-13xtft9=""
-  role="radiogroup"
->
-  <div
-    aria-hidden={true}
-    data-css-w8tgx1=""
-    style={Object {}}
-  >
-    <div
-      data-css-1jyyyen=""
-    >
-      This one is really long because everyone likes those
-    </div>
-  </div>
-  <button
-    aria-selected={true}
-    data-css-kcifgk=""
-    onClick={[Function]}
-    role="radio"
-  >
-    This one is really long because everyone likes those
-  </button>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    This is medium
-  </button>
-  <button
-    aria-selected={false}
-    data-css-118ipcw=""
-    onClick={[Function]}
-    role="radio"
-  >
-    Short
   </button>
 </div>
 `;

@@ -1,5 +1,3 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
 import { breakpoints } from '@pluralsight/ps-design-system-core'
 import {
   HomeIcon,
@@ -7,43 +5,46 @@ import {
   PlaceholderIcon
 } from '@pluralsight/ps-design-system-icon'
 import { useMatchMedia } from '@pluralsight/ps-design-system-util'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import React from 'react'
 
 import AppFrame from '../index'
 import { MockContent, SideNav, TopNav } from './shared'
 
-storiesOf('AppFrame|Examples', module).add('Skills', () => {
-  function Story() {
-    const mobile = !useMatchMedia(`(min-width: ${breakpoints.xSmall})`)
+export default {
+  title: 'Components/AppFrame/Examples',
+  component: AppFrame
+} as Meta
 
-    const sidenavSections = React.useMemo(
-      () =>
-        mobile
-          ? [{ items: MAIN_NAV_ITEMS }, ...SIDE_NAV_SECTIONS]
-          : SIDE_NAV_SECTIONS,
-      [mobile]
-    )
+export const Skills: Story = () => {
+  const mobile = !useMatchMedia(`(min-width: ${breakpoints.xSmall})`)
 
-    const topnavItems = React.useMemo(() => (mobile ? [] : MAIN_NAV_ITEMS), [
+  const sidenavSections = React.useMemo(
+    () =>
       mobile
-    ])
+        ? [{ items: MAIN_NAV_ITEMS }, ...SIDE_NAV_SECTIONS]
+        : SIDE_NAV_SECTIONS,
+    [mobile]
+  )
 
-    return (
-      <AppFrame
-        topnav={({ openSidenav, closeSidenav, sidenavOpen }) => {
-          const toggle = sidenavOpen ? closeSidenav : openSidenav
-          return <TopNav items={topnavItems} onMobileMenuClick={toggle} />
-        }}
-        sidenav={({ visible }) => (
-          <SideNav collapsed={!visible} sections={sidenavSections} />
-        )}
-      >
-        <MockContent />
-      </AppFrame>
-    )
-  }
+  const topnavItems = React.useMemo(() => (mobile ? [] : MAIN_NAV_ITEMS), [
+    mobile
+  ])
 
-  return <Story />
-})
+  return (
+    <AppFrame
+      topnav={({ openSidenav, closeSidenav, sidenavOpen }) => {
+        const toggle = sidenavOpen ? closeSidenav : openSidenav
+        return <TopNav items={topnavItems} onMobileMenuClick={toggle} />
+      }}
+      sidenav={({ visible }) => (
+        <SideNav collapsed={!visible} sections={sidenavSections} />
+      )}
+    >
+      <MockContent />
+    </AppFrame>
+  )
+}
 
 const MAIN_NAV_ITEMS = [
   {

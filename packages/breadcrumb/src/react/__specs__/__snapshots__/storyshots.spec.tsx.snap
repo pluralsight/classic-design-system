@@ -1,6 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots as link hrefs 1`] = `
+exports[`Storyshots Components/Breadcrumb As Button 1`] = `
+<div
+  data-css-nipl9k=""
+>
+  <button
+    data-css-scrazl=""
+    disabled={false}
+    onClick={[Function]}
+    style={Object {}}
+  >
+    <div
+      data-css-73kfkk=""
+    >
+      <div
+        data-css-k31qw2=""
+      >
+        <svg
+          aria-label="caret left icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      Clicks once
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Breadcrumb As Link 1`] = `
 <div
   data-css-nipl9k=""
 >
@@ -35,43 +71,7 @@ exports[`Storyshots as link hrefs 1`] = `
 </div>
 `;
 
-exports[`Storyshots disabled disabled 1`] = `
-<div
-  data-css-nipl9k=""
->
-  <button
-    data-css-18r2msp=""
-    disabled={true}
-    onClick={[Function]}
-    style={Object {}}
-  >
-    <div
-      data-css-73kfkk=""
-    >
-      <div
-        data-css-k31qw2=""
-      >
-        <svg
-          aria-label="caret left icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-          />
-        </svg>
-      </div>
-    </div>
-    <span
-      data-css-15b13by=""
-    >
-      Disabled
-    </span>
-  </button>
-</div>
-`;
-
-exports[`Storyshots normal looks great 1`] = `
+exports[`Storyshots Components/Breadcrumb Basic 1`] = `
 <div
   data-css-nipl9k=""
 >
@@ -106,13 +106,13 @@ exports[`Storyshots normal looks great 1`] = `
 </div>
 `;
 
-exports[`Storyshots with onClick clicks once 1`] = `
+exports[`Storyshots Components/Breadcrumb Disabled 1`] = `
 <div
   data-css-nipl9k=""
 >
   <button
-    data-css-scrazl=""
-    disabled={false}
+    data-css-18r2msp=""
+    disabled={true}
     onClick={[Function]}
     style={Object {}}
   >
@@ -136,7 +136,7 @@ exports[`Storyshots with onClick clicks once 1`] = `
     <span
       data-css-15b13by=""
     >
-      Clicks once
+      Disabled
     </span>
   </button>
 </div>

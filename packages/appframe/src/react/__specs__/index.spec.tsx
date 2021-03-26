@@ -1,48 +1,55 @@
-import { render } from '@testing-library/react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { screen, render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import AppFrame from '../index'
 
+import * as stories from '../__stories__/index.story'
+
 describe('AppFrame', () => {
-  it('renders', () => {
-    const { getByTestId } = render(
-      <AppFrame data-testid="undertest" topnav={<div>topnav</div>}>
-        hello world
-      </AppFrame>
-    )
+  const cases = convertStoriesToJestCases(stories)
 
-    expect(getByTestId('undertest')).toBeInTheDocument()
-  })
-
-  it('forwards refs', () => {
+  it('forwards ref', () => {
     const ref = React.createRef<HTMLDivElement>()
-
-    render(
-      <AppFrame data-testid="undertest" ref={ref} topnav={<div>topnav</div>}>
-        hello world
-      </AppFrame>
-    )
-
-    expect(ref.current).not.toBeNull()
+    render(<AppFrame ref={ref} />)
+    expect(ref).not.toBeNull()
   })
 
-  it('renders the sidenav with a function render prop', () => {
-    const sidenav = () => <div data-testid="undertest">sidenav</div>
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    const { getByTestId } = render(
-      <AppFrame topnav={sidenav}>hello world</AppFrame>
-    )
-
-    expect(getByTestId('undertest')).toBeInTheDocument()
+      expect(results).toHaveNoViolations()
+    })
   })
 
-  it('renders the topnav with a function render prop', () => {
-    const topnav = () => <div data-testid="undertest">topnav</div>
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-    const { getByTestId } = render(
-      <AppFrame topnav={topnav}>hello world</AppFrame>
-    )
+    it('forwards className', () => {
+      render(
+        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
+      )
 
-    expect(getByTestId('undertest')).toBeInTheDocument()
+      const el = screen.getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
+    })
+
+    it('renders the sidenav with a function render prop', () => {
+      const sidenav = () => <div data-testid="undertest">sidenav</div>
+      render(<Basic {...Basic.args} sidenav={sidenav} />)
+
+      const el = screen.getByTestId('undertest')
+      expect(el).toBeInTheDocument()
+    })
+    it('renders the topnav with a function render prop', () => {
+      const topnav = () => <div data-testid="undertest">topnav</div>
+      render(<Basic {...Basic.args} topnav={topnav} />)
+
+      const el = screen.getByTestId('undertest')
+      expect(el).toBeInTheDocument()
+    })
   })
 })

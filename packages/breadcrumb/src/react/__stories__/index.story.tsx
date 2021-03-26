@@ -1,23 +1,34 @@
 import { action } from '@storybook/addon-actions'
-import { storiesOf } from '@storybook/react'
-import React from 'react'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import * as React from 'react'
 
-import Breadcrumb from '..'
+import Breadcrumb from '../index'
 
-storiesOf('normal', module).add('looks great', () => (
-  <Breadcrumb>All the things</Breadcrumb>
-))
+export default {
+  title: 'Components/Breadcrumb',
+  component: Breadcrumb
+} as Meta
 
-storiesOf('disabled', module).add('disabled', () => (
-  <Breadcrumb onClick={action('should never click')} disabled>
-    Disabled
-  </Breadcrumb>
-))
+const Template: Story = args => <Breadcrumb {...args} />
 
-storiesOf('as link', module).add('hrefs', () => (
-  <Breadcrumb href="https://duckduckgo.com">Click as link</Breadcrumb>
-))
+export const Basic = Template.bind({})
+Basic.args = { children: 'All the things' }
 
-storiesOf('with onClick', module).add('clicks once', () => (
-  <Breadcrumb onClick={action('click count')}>Clicks once</Breadcrumb>
-))
+export const Disabled = Template.bind({})
+Disabled.args = {
+  children: 'Disabled',
+  disabled: true,
+  onClick: action('never clicks')
+}
+
+export const AsLink = Template.bind({})
+AsLink.args = {
+  children: 'Click as link',
+  href: 'https://duckduckgo.com'
+}
+
+export const AsButton = Template.bind({})
+AsButton.args = {
+  children: 'Clicks once',
+  onClick: action('click count')
+}

@@ -1,28 +1,37 @@
-import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { storiesOf } from '@storybook/react'
+import { Meta, Story } from '@storybook/react/types-6-0'
 
-import React from 'react'
+import * as React from 'react'
 
 import Badge from '../index'
-import * as vars from '../../vars/index'
 
-const BadgeStory = ({
-  appearance
-}: {
-  appearance: ValueOf<typeof vars.appearances>
-}) => (
-  <div style={{ display: 'grid', gridGap: 10 }}>
-    {Object.values(Badge.colors).map((color, i) => (
-      <div key={i}>
-        <Badge appearance={appearance} color={color}>
+export default {
+  title: 'Components/Badge',
+  component: Badge
+} as Meta
+
+export const AppearancesAndColors: Story = () => (
+  <StoryGrid>
+    {Object.values(Badge.colors).map((color, i) =>
+      Object.values(Badge.appearances).map((appearance, i) => (
+        <Badge key={i} color={color} appearance={appearance}>
           {appearance} {color}
         </Badge>
-      </div>
-    ))}
-  </div>
+      ))
+    )}
+  </StoryGrid>
 )
 
-const appearanceStory = storiesOf('appearance', module)
-Object.values(Badge.appearances).forEach(appearance =>
-  appearanceStory.add(appearance, () => <BadgeStory appearance={appearance} />)
-)
+const StoryGrid: React.FC<{ cols?: number }> = props => {
+  const { cols = 2, ...rest } = props
+
+  return (
+    <div
+      style={{
+        display: 'grid',
+        gap: '20px',
+        gridTemplateColumns: Array(cols).fill('1fr').join(' ')
+      }}
+      {...rest}
+    />
+  )
+}

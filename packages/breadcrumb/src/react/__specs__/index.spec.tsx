@@ -1,9 +1,13 @@
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { fireEvent, render } from '@testing-library/react'
-import React from 'react'
+import { axe } from 'jest-axe'
+import * as React from 'react'
 
-import Breadcrumb from '..'
+import Breadcrumb from '../index'
+import * as stories from '../__stories__/index.story'
 
 describe('Breadcrumb', () => {
+  const cases = convertStoriesToJestCases(stories)
   it('forwards refs', () => {
     const ref = React.createRef<HTMLButtonElement>()
     render(
@@ -13,6 +17,14 @@ describe('Breadcrumb', () => {
     )
 
     expect(ref.current).not.toBeNull()
+  })
+
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+      expect(results).toHaveNoViolations()
+    })
   })
 
   describe('when disabled', () => {
