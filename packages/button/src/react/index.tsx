@@ -6,10 +6,10 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { css, keyframes } from 'glamor'
-import React, { Children } from 'react'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
 const spin = keyframes(stylesheet['@keyframes psds-button__keyframes__spin'])
 
@@ -175,7 +175,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       ...rest
     } = props
 
-    const iconOnly = Children.count(children) <= 0
+    const iconOnly = React.Children.count(children) <= 0
 
     const themeName = useTheme()
 

@@ -3,15 +3,9 @@ import Theme from '@pluralsight/ps-design-system-theme'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { css } from 'glamor'
-import React, {
-  ComponentProps,
-  Fragment,
-  useEffect,
-  useRef,
-  useState
-} from 'react'
+import React from 'react'
 
-import Button from '..'
+import Button from '../index'
 
 const defaultArgs = { children: 'click me', onClick: action('click') }
 
@@ -35,7 +29,7 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
   )
 }
 
-const Template: Story<ComponentProps<typeof Button>> = args => (
+const Template: Story<React.ComponentProps<typeof Button>> = args => (
   <Button {...args} />
 )
 
@@ -173,13 +167,13 @@ export const ThemeNesting: Story = () => (
 export const Variations: Story = () => (
   <StoryGrid cols={4}>
     {Object.values(Button.appearances).map(app => (
-      <Fragment key={app}>
+      <React.Fragment key={app}>
         {Object.values(Button.sizes).map(size => (
           <Button key={`key-${app}-${size}`} appearance={app} size={size}>
             {app}
           </Button>
         ))}
-      </Fragment>
+      </React.Fragment>
     ))}
   </StoryGrid>
 )
@@ -187,21 +181,21 @@ export const Variations: Story = () => (
 export const VertAlignment: Story = () => (
   <StoryGrid cols={Object.values(Button.appearances).length}>
     {Object.values(Button.appearances).map(app => (
-      <Fragment key={app}>
+      <React.Fragment key={app}>
         {Object.values(Button.sizes).map(size => (
           <Button key={`key-${app}-${size}`} appearance={app} size={size}>
             {app}
           </Button>
         ))}
-      </Fragment>
+      </React.Fragment>
     ))}
   </StoryGrid>
 )
 
 export const ExampleAutofocus: Story = () => {
   const Example: React.FC = () => {
-    const ref = useRef<HTMLButtonElement>()
-    useEffect(() => {
+    const ref = React.useRef<HTMLButtonElement>()
+    React.useEffect(() => {
       if (ref && ref.current) ref.current.focus()
     }, [])
 
@@ -213,9 +207,9 @@ export const ExampleAutofocus: Story = () => {
 
 export const ExampleLoadingTransition: Story = () => {
   const Example: React.FC = () => {
-    const [loading, setLoading] = useState<boolean>(false)
+    const [loading, setLoading] = React.useState<boolean>(false)
 
-    useEffect(() => {
+    React.useEffect(() => {
       const timer = setInterval(() => {
         setLoading(!loading)
       }, 1500)
