@@ -1,11 +1,10 @@
-const { promises: fs } = require('fs')
-const fg = require('fast-glob')
-const path = require('path')
-const SVGO = require('svgo')
-
+import { promises as fs } from 'fs'
+import fg from 'fast-glob'
+import path from 'path'
+import SVGO from 'svgo'
 const svgo = new SVGO({ plugins: [{ removeXMLNS: true }] })
 
-exports.generateComponents = async ({
+export const generateComponents = async ({
   src = 'src',
   dest = 'dist',
   ext = 'dist.tsx',
@@ -42,7 +41,7 @@ exports.generateComponents = async ({
 
 const generateComponent = (componentName, svgString, core) => {
   const regex = />/
-  const baseImport = core ? '..' : '@pluralsight/ps-design-system-icon'
+  const baseImport = core ? '../index' : '@pluralsight/ps-design-system-icon'
 
   return `
 import React, { forwardRef } from 'react'
@@ -73,7 +72,7 @@ export { ${componentName}  }
 const generateManifest = (fileNames, ext = 'dist.tsx') => {
   return [...fileNames]
     .sort((a, b) => a.localeCompare(b))
-    .map(n => `export { ${n} } from './${n}.${ext.split('.').slice(0, -1)}'`)
+    .map(n => `export { ${n} } from './${n}.${ext.split('.').slice(0, -1)}.js'`)
     .join('\n')
     .concat('\n')
 }
