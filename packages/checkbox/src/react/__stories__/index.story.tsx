@@ -2,7 +2,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { DecoratorFn, storiesOf } from '@storybook/react'
 
-import Checkbox from '..'
+import Checkbox from '../index'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>

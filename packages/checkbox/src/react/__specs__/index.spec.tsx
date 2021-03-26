@@ -2,7 +2,7 @@ import { axe } from 'jest-axe'
 import React from 'react'
 import { fireEvent, render } from '@testing-library/react'
 
-import Checkbox from '..'
+import Checkbox from '../index'
 
 describe('Checkbox', () => {
   it('renders', () => {
