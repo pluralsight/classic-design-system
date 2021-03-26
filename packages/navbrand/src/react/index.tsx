@@ -1,7 +1,7 @@
 import Halo from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
 import { css, media } from 'glamor'
-import React, { MouseEventHandler, ReactNode } from 'react'
+import React from 'react'
 
 import stylesheet from '../css/index'
 
@@ -33,20 +33,20 @@ const styles = {
 }
 
 interface BaseNavBrandProps {
-  logo?: ReactNode
-  wordmark?: ReactNode
+  logo?: React.ReactNode
+  wordmark?: React.ReactNode
 }
 interface AnchorProps extends BaseNavBrandProps, HTMLPropsFor<'a'> {
   href: string
-  onClick?: MouseEventHandler<HTMLAnchorElement>
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
 }
 interface ButtonProps extends BaseNavBrandProps, HTMLPropsFor<'button'> {
   href?: undefined
-  onClick: MouseEventHandler<HTMLButtonElement>
+  onClick: React.MouseEventHandler<HTMLButtonElement>
 }
 interface DivProps extends BaseNavBrandProps, HTMLPropsFor<'div'> {
   href?: undefined
-  onClick?: MouseEventHandler<HTMLDivElement>
+  onClick?: React.MouseEventHandler<HTMLDivElement>
 }
 
 type NavBrandElement = HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
