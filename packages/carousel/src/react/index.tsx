@@ -6,18 +6,16 @@ import {
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, { cloneElement } from 'react'
-
-import stylesheet from '../css'
-import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js'
-import { chunk, pick } from '../js/utils'
-import * as vars from '../vars'
+import React from 'react'
 
 import CarouselContext from './context'
 import { Control } from './control'
-
+import stylesheet from '../css/index'
+import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js/index'
+import { chunk, pick } from '../js/utils'
 import useSwipe, { UseSwipeOpts } from './use-swipe'
 import useUniqueId from './use-unique-id'
+import * as vars from '../vars/index'
 
 const styles = {
   carousel: (ready: boolean) =>
@@ -115,7 +113,7 @@ const Carousel: CarouselComponent = ({
                     if (!wrapped) item = <Item key={itemIndex}>{item}</Item>
 
                     // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-                    return cloneElement(item!, {
+                    return React.cloneElement(item!, {
                       key: itemIndex,
                       ...(itemIndex === 0 && isActivePage && { tabIndex: -1 }),
                       isActivePage,
