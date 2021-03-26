@@ -1,5 +1,5 @@
 import React from 'react'
-import { createPortal } from 'react-dom'
+import ReactDom from 'react-dom'
 
 import { canUseDOM } from './can-use-dom'
 
@@ -10,5 +10,5 @@ export function createUniversalPortal(
 ): React.ReactPortal | undefined {
   if (!canUseDOM() || !container) return
 
-  return createPortal(children, container, key)
+  return ReactDom.createPortal(children, container, key)
 }
