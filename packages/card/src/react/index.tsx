@@ -12,13 +12,13 @@ import {
   canUseDOM,
   omit
 } from '@pluralsight/ps-design-system-util'
-import { compose, css, StyleAttribute } from 'glamor'
-import * as React from 'react'
+import { compose, css } from 'glamor'
+import React from 'react'
 import Shiitake from 'shiitake'
 
-import stylesheet from '../css'
-import { toPercentageString } from '../js'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import { toPercentageString } from '../js/index'
+import * as vars from '../vars/index'
 
 if (canUseDOM()) polyfillFocusWithin(document)
 
