@@ -2,7 +2,11 @@ import React from 'react'
 import { css } from 'glamor'
 import { action } from '@storybook/addon-actions'
 
-import { handleMenuKeyDownEvents, handleMenuKeyUpEvents, useMenuRef } from '..'
+import {
+  handleMenuKeyDownEvents,
+  handleMenuKeyUpEvents,
+  useMenuRef
+} from '../index'
 
 export default {
   title: 'Utils/useMenuKeyEvents'
