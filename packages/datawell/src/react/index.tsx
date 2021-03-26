@@ -11,7 +11,7 @@ import {
 import { css } from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = {
   dataWell: (themeName: ValueOf<typeof themeNames>) =>
