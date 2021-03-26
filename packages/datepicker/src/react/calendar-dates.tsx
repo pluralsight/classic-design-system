@@ -1,9 +1,10 @@
-import React, { useContext } from 'react'
-import { css } from 'glamor'
-import { DateObj, RenderProps } from 'dayzed'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { DateObj, RenderProps } from 'dayzed'
+import { css } from 'glamor'
+import React from 'react'
+
 import { DateContext } from './context'
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = {
   calendarDate: (selected: boolean, today: boolean) =>
@@ -28,7 +29,7 @@ export const CalendarDates: React.FC<CalendarDatesProps> = ({
   children,
   ...rest
 }) => {
-  const calendar = useContext(DateContext)
+  const calendar = React.useContext(DateContext)
   return (
     <>
       {calendar.weeks.map((week, weekIndex) => {

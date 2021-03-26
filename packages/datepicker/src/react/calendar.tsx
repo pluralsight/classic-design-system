@@ -1,26 +1,22 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import React from 'react'
 import Button from '@pluralsight/ps-design-system-button'
-import Theme from '@pluralsight/ps-design-system-theme'
-import { css, keyframes } from 'glamor'
-
+import {
+  CaretLeftIcon,
+  CaretRightIcon
+} from '@pluralsight/ps-design-system-icon'
 import {
   HTMLPropsFor,
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-
+import Theme from '@pluralsight/ps-design-system-theme'
 import { RenderProps } from 'dayzed'
-
-import {
-  CaretLeftIcon,
-  CaretRightIcon
-} from '@pluralsight/ps-design-system-icon'
+import { css, keyframes } from 'glamor'
+import React from 'react'
 
 import { DateContext } from './context'
-
-import stylesheet from '../css'
-import { slides } from '../vars'
+import stylesheet from '../css/index'
+import { slides } from '../vars/index'
 
 const forward = keyframes(
   stylesheet['@keyframes psds-calendar__keyframes__forward']
