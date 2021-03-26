@@ -44,11 +44,11 @@ const generateComponent = (componentName, svgString, core) => {
   const baseImport = core ? '../index' : '@pluralsight/ps-design-system-icon'
 
   return `
-import React, { forwardRef } from 'react'
+import React from 'react'
 
 import Icon, { IconComponent } from '${baseImport}'
 
-const ${componentName} = forwardRef((props, ref) => {
+const ${componentName} = React.forwardRef((props, ref) => {
   const { 'aria-label': ariaLabel, ...rest } = props
   return (
     <Icon {...rest} ref={ref}>
