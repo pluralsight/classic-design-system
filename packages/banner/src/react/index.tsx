@@ -8,12 +8,12 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css, StyleAttribute } from 'glamor'
-import React, { createContext, useContext } from 'react'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
-const ColorContext = createContext<ValueOf<typeof vars.colors>>(
+const ColorContext = React.createContext<ValueOf<typeof vars.colors>>(
   vars.colors.blue
 )
 
@@ -80,7 +80,7 @@ const Button = React.forwardRef<
   HTMLAnchorElement | HTMLButtonElement,
   AnchorProps | ButtonProps
 >((props, ref) => {
-  const color = useContext(ColorContext)
+  const color = React.useContext(ColorContext)
 
   return 'href' in props ? (
     <DSButton
