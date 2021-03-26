@@ -1,4 +1,4 @@
-import { RefCallback, useCallback, useEffect, useState } from 'react'
+import React from 'react'
 
 import {
   forceRepaint,
@@ -9,13 +9,13 @@ import {
 } from '../js'
 
 export const useCollapsible = (isOpen: boolean) => {
-  const [mounted, setMount] = useState(false)
+  const [mounted, setMount] = React.useState(false)
 
-  useEffect(() => {
+  React.useEffect(() => {
     setMount(true)
   }, [])
 
-  const ref = useCallback<RefCallback<HTMLElement>>(
+  const ref = React.useCallback<React.RefCallback<HTMLElement>>(
     async node => {
       if (node) isOpen ? await open(node) : await close(node, { mounted })
     },
