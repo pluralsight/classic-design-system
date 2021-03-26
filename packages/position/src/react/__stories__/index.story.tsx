@@ -15,8 +15,28 @@ import {
   belowRight,
   rightOf,
   leftOf
-} from '../../js'
-import * as positionComponents from '..'
+} from '../../js/index'
+import {
+  Above,
+  AboveLeft,
+  AboveRight,
+  Below,
+  BelowLeft,
+  BelowRight,
+  LeftOf,
+  RightOf
+} from '../index'
+
+const positionComponents = {
+  Above,
+  AboveLeft,
+  AboveRight,
+  Below,
+  BelowLeft,
+  BelowRight,
+  LeftOf,
+  RightOf
+}
 
 const positionFns = {
   above,
@@ -114,11 +134,9 @@ Object.values(positionComponents).forEach(Comp => {
 storiesOf('Components | Position / custom style', module).add(
   'shown element keeps style prop',
   () => (
-    <positionComponents.Above
-      show={<MockToolip style={{ color: core.colorsPink.base }} />}
-    >
+    <Above show={<MockToolip style={{ color: core.colorsPink.base }} />}>
       <Box>Tooltip is pink</Box>
-    </positionComponents.Above>
+    </Above>
   )
 )
 
@@ -132,13 +150,13 @@ storiesOf('Components | Position / custom ref', module).add(
 
     return (
       <>
-        <positionComponents.Above
+        <Above
           show={
             <MockToolip style={{ color: core.colorsPink.base }} ref={ref} />
           }
         >
           <Box>Tooltip is pink</Box>
-        </positionComponents.Above>
+        </Above>
         <span style={{ color: 'white', position: 'absolute', top: 250 }}>
           X: {x}, Y: {y}
         </span>
@@ -212,8 +230,6 @@ Object.values(positionComponents).forEach(Comp => {
 storiesOf('Components | Position / in scrollable container', module).add(
   'RightOf',
   () => {
-    const { RightOf } = positionComponents
-
     function ScrollStory() {
       const ref = React.useRef<HTMLDivElement>(null)
 

@@ -1,7 +1,27 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import * as components from '..'
+import {
+  Above,
+  AboveLeft,
+  AboveRight,
+  Below,
+  BelowLeft,
+  BelowRight,
+  LeftOf,
+  RightOf
+} from '../index'
+
+const components = {
+  Above,
+  AboveLeft,
+  AboveRight,
+  Below,
+  BelowLeft,
+  BelowRight,
+  LeftOf,
+  RightOf
+}
 
 describe('Position', () => {
   // NOTE: suppressing unnecessary warnings from test renderer.
