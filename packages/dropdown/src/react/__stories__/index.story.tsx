@@ -3,17 +3,10 @@ import { layout } from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
-import React, {
-  HTMLAttributes,
-  ReactElement,
-  ReactText,
-  forwardRef,
-  useEffect,
-  useState
-} from 'react'
+import React from 'react'
 
-import Dropdown from '../'
-import { DropdownContext, useDropdown } from '../../js'
+import Dropdown from '../index'
+import { DropdownContext, useDropdown } from '../../js/index'
 
 // TODO: convert jest storybook format
 const stableId = (prefix = '') => prefix + 'unique-id'
@@ -115,11 +108,13 @@ storiesOf('disabled', module)
 storiesOf('whitelist', module)
   .add('onChange', () => {
     function ChangeStory() {
-      const [value, setValue] = React.useState<ReactText | undefined>('two')
+      const [value, setValue] = React.useState<React.ReactText | undefined>(
+        'two'
+      )
 
       function handleChange(
         evt: React.MouseEvent | React.KeyboardEvent,
-        value?: ReactText
+        value?: React.ReactText
       ) {
         setValue(value)
       }
@@ -147,11 +142,13 @@ storiesOf('whitelist', module)
   })
   .add('clear', () => {
     const ClearStory: React.FC = props => {
-      const [value, setValue] = React.useState<ReactText | undefined>('two')
+      const [value, setValue] = React.useState<React.ReactText | undefined>(
+        'two'
+      )
 
       function handleChange(
         evt: React.MouseEvent | React.KeyboardEvent,
-        value?: ReactText
+        value?: React.ReactText
       ) {
         setValue(value)
       }
@@ -242,10 +239,12 @@ storiesOf('layouts', module)
   ))
   .add('custom width', () => {
     function ChangeStory() {
-      const [value, setValue] = React.useState<ReactText | undefined>('two')
+      const [value, setValue] = React.useState<React.ReactText | undefined>(
+        'two'
+      )
       function handleChange(
         evt: React.MouseEvent | React.KeyboardEvent,
-        value?: ReactText
+        value?: React.ReactText
       ) {
         setValue(value)
       }
@@ -359,8 +358,10 @@ storiesOf('value', module)
   .add('external state change', () => {
     function StateChange() {
       const values = ['o', 'w', 'h']
-      const [value, setValue] = useState<ReactText | undefined>(values[0])
-      useEffect(() => {
+      const [value, setValue] = React.useState<React.ReactText | undefined>(
+        values[0]
+      )
+      React.useEffect(() => {
         const timerId = setInterval(() => {
           const i = values.findIndex(v => v === value)
           setValue(i < values.length - 1 ? values[i + 1] : values[0])
@@ -723,41 +724,42 @@ storiesOf('portal', module).add('position', () => (
 ))
 
 interface DropdownWithIconProps extends React.ComponentProps<typeof Dropdown> {
-  icon: ReactElement
+  icon: React.ReactElement
 }
 
-const DropdownWithIcon = forwardRef<HTMLButtonElement, DropdownWithIconProps>(
-  ({ icon, ...props }, forwardedRef) => {
-    const allProps = useDropdown(props, forwardedRef)
+const DropdownWithIcon = React.forwardRef<
+  HTMLButtonElement,
+  DropdownWithIconProps
+>(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
 
-    return (
-      <Dropdown.Layout
-        {...allProps.layout}
-        label={<Dropdown.Label {...allProps.label} />}
-        menu={
-          <DropdownContext.Provider {...allProps.value}>
-            <Dropdown.Menu {...allProps.menu} />
-          </DropdownContext.Provider>
-        }
-        subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
-        button={
-          <Dropdown.Button {...allProps.button}>
-            {icon}
-            <div style={{ height: '100%', position: 'relative', flex: 1 }}>
-              <Dropdown.Selected {...allProps.selected} />
-            </div>
-          </Dropdown.Button>
-        }
-      />
-    )
-  }
-)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
 
 const DropdownWithDynamicIcon = () => {
-  const [selected, setSelected] = useState<ReactText | undefined>()
+  const [selected, setSelected] = React.useState<React.ReactText | undefined>()
   interface ItemValues {
     value: string
-    icon: ReactElement
+    icon: React.ReactElement
     label: string
   }
   const values: { [key: string]: ItemValues } = {

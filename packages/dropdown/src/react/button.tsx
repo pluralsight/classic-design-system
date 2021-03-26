@@ -1,16 +1,17 @@
-import React, { forwardRef, useLayoutEffect, useRef } from 'react'
-import { compose, css } from 'glamor'
+import Halo from '@pluralsight/ps-design-system-halo'
+import Icon from '@pluralsight/ps-design-system-icon'
 import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import stylesheet from '../css'
-import Icon from '@pluralsight/ps-design-system-icon'
-import Halo from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
+import React from 'react'
+
+import stylesheet from '../css/index'
 import { CaretDown } from './caret-down'
 import { ErrorIcon } from './error-icon'
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 const styles = {
   field: (
@@ -71,7 +72,7 @@ interface DropdownButtonProps extends HTMLPropsFor<'button'> {
   size?: ValueOf<typeof vars.sizes>
 }
 
-export const Button = forwardRef<HTMLButtonElement, DropdownButtonProps>(
+export const Button = React.forwardRef<HTMLButtonElement, DropdownButtonProps>(
   (
     {
       appearance,
@@ -87,8 +88,8 @@ export const Button = forwardRef<HTMLButtonElement, DropdownButtonProps>(
     ref
   ) => {
     const themeName = useTheme()
-    const fieldContainerRef = useRef<HTMLDivElement>(null)
-    useLayoutEffect(() => {
+    const fieldContainerRef = React.useRef<HTMLDivElement>(null)
+    React.useLayoutEffect(() => {
       if (!isOpen || !fieldContainerRef.current) return
       const {
         left,

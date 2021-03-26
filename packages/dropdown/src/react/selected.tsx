@@ -1,10 +1,10 @@
-import React from 'react'
-import { compose, css } from 'glamor'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import stylesheet from '../css'
-import * as vars from '../vars'
+import { compose, css } from 'glamor'
+import React from 'react'
 
-import { ItemData } from '../js'
+import stylesheet from '../css/index'
+import { ItemData } from '../js/index'
+import * as vars from '../vars/index'
 
 const styles = {
   buttonSizer: () => css(stylesheet['.psds-dropdown__button-sizer']),

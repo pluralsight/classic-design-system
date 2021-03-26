@@ -1,8 +1,8 @@
-import React from 'react'
-import { css } from 'glamor'
-
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
-import stylesheet from '../css'
+import { css } from 'glamor'
+import React from 'react'
+
+import stylesheet from '../css/index'
 
 const styles = css(stylesheet['.psds-dropdown__error'])
 

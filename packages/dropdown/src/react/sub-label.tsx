@@ -1,12 +1,12 @@
-import { ValueOf } from '@pluralsight/ps-design-system-util'
 import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import React from 'react'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = (themeName: ValueOf<typeof themeNames>) => {
   const label = 'psds-dropdown__sub-label'
