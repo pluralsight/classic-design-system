@@ -4,7 +4,7 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 export default {
   '@keyframes psds-circularprogress__keyframes__spin': {
