@@ -1,11 +1,4 @@
-import { css } from 'glamor'
-import React, {
-  createContext,
-  useContext,
-  useImperativeHandle,
-  forwardRef
-} from 'react'
-
+import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import {
@@ -18,9 +11,10 @@ import {
   HTMLPropsFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
+import React from 'react'
 
-import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = {
   head: (themeName: ValueOf<typeof themeNames>, isOpen: boolean) =>
@@ -53,10 +47,10 @@ const initialValue = {
   onToggle: () => {}
 }
 
-const DrawerContext = createContext<DrawerContextValue>(initialValue)
+const DrawerContext = React.createContext<DrawerContextValue>(initialValue)
 
 export const useDrawerContext = () => {
-  const context = useContext(DrawerContext)
+  const context = React.useContext(DrawerContext)
   if (!context) {
     throw new Error(
       `Drawer compound components cannot be rendered outside the Drawer component`
@@ -66,7 +60,7 @@ export const useDrawerContext = () => {
 }
 
 interface SummaryProps extends HTMLPropsFor<'div'> {}
-const Summary = forwardRef<HTMLDivElement, SummaryProps>(
+const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
   ({ children, ...rest }, ref) => {
     const themeName = useTheme()
     const { isOpen, onToggle } = useDrawerContext()
@@ -92,12 +86,12 @@ const Summary = forwardRef<HTMLDivElement, SummaryProps>(
 )
 
 interface DetailsProps extends HTMLPropsFor<'div'> {}
-const Details = forwardRef<HTMLDivElement, DetailsProps>(
+const Details = React.forwardRef<HTMLDivElement, DetailsProps>(
   (props, forwardedRef) => {
     const themeName = useTheme()
     const { isOpen } = useDrawerContext()
     const { 'aria-hidden': ariaHidden, ref } = useCollapsible(isOpen)
-    useImperativeHandle(
+    React.useImperativeHandle(
       forwardedRef,
       () =>
         (((ref as unknown) as RefFor<'div'>)
