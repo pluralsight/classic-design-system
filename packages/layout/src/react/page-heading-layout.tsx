@@ -3,7 +3,7 @@ import { compose, css, media } from 'glamor'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
-import { pageHeadingLayoutCSS as stylesheet } from '../css'
+import { pageHeadingLayoutCSS as stylesheet } from '../css/index'
 
 const styles = {
   actions: () => {

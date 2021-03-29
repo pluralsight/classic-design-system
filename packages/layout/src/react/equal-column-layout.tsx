@@ -2,8 +2,8 @@ import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css, media } from 'glamor'
 import React from 'react'
 
-import { equalColumnLayout as vars } from '../vars'
-import { equalColumnLayoutCSS as stylesheet } from '../css'
+import { equalColumnLayoutCSS as stylesheet } from '../css/index'
+import { equalColumnLayout as vars } from '../vars/index'
 
 const styleLayout = () => css(stylesheet['.psds-equal-column-layout'])
 

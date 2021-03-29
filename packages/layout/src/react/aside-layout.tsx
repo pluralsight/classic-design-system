@@ -2,8 +2,8 @@ import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css, media } from 'glamor'
 import React from 'react'
 
-import { asideLayout as vars } from '../vars'
-import { asideLayoutCSS as stylesheet } from '../css'
+import { asideLayoutCSS as stylesheet } from '../css/index'
+import { asideLayout as vars } from '../vars/index'
 
 const styleLayout = (asidePosition: ValueOf<typeof vars.asidePositions>) => {
   const label = 'psds-aside-layout'
