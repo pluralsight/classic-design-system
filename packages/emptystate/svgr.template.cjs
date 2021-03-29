@@ -12,16 +12,13 @@ function template(api, _opts, values) {
 
   return tmpl.ast`
     ${imports}
-    import { Props } from './types'
-
     ${interfaces}
+    interface Props extends SVGRProps, React.HTMLAttributes<SVGElement> {}
 
-    const ${componentName} = (allProps: Props) => {
-      const { title = '${defaultTitle}', ...props} = allProps
+    export const ${componentName} = (allProps: Props) => {
+      const { title = '${defaultTitle}', titleId, ...props} = allProps
       return ${jsx}
     };
-
-    ${exports}
   `
 }
 

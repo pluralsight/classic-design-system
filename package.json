@@ -103,7 +103,7 @@
     "@storybook/addons": "^6.1.10",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^6.1.10",
-    "@svgr/cli": "^4.3.3",
+    "@svgr/cli": "^5.5.0",
     "@testing-library/jest-dom": "^5.9.0",
     "@testing-library/react": "^11.0.4",
     "@testing-library/react-hooks": "^3.2.1",
