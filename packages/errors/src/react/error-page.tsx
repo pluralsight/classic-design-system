@@ -10,27 +10,20 @@ import {
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
-import React, {
-  ReactNode,
-  forwardRef,
-  useEffect,
-  useImperativeHandle,
-  useRef,
-  useState
-} from 'react'
+import React from 'react'
 
 import Context, { ContextValue } from './context'
-import stylesheet, { sizeClasses, themeClasses } from '../css'
-import { error } from './illustrations'
-import { sizes } from '../vars'
+import stylesheet, { sizeClasses, themeClasses } from '../css/index'
+import { error } from './illustrations/index'
+import { sizes } from '../vars/index'
 
 export interface ErrorPageProps extends HTMLPropsFor<'div'> {
   size?: ValueOf<typeof sizes>
-  actions?: ReactNode
-  caption?: ReactNode
-  errorCode?: ReactNode
-  heading: ReactNode
-  illustration?: ReactNode
+  actions?: React.ReactNode
+  caption?: React.ReactNode
+  errorCode?: React.ReactNode
+  heading: React.ReactNode
+  illustration?: React.ReactNode
   themeName?: ValueOf<typeof themeNames>
 }
 
@@ -83,7 +76,7 @@ const combineClasses = (className: string, { size, themeName }: ContextValue) =>
     stylesheet[className + sizeClasses[size as string]]
   )
 
-const ErrorPage = forwardRef<HTMLDivElement, ErrorPageProps>(
+const ErrorPage = React.forwardRef<HTMLDivElement, ErrorPageProps>(
   (props, forwardedRef) => {
     const {
       actions,
@@ -95,16 +88,16 @@ const ErrorPage = forwardRef<HTMLDivElement, ErrorPageProps>(
       ...rest
     } = props
 
-    const ref = useRef<HTMLDivElement>()
+    const ref = React.useRef<HTMLDivElement>()
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-    useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
+    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
     const themeName = useTheme()
 
-    const [hasRenderedOnce, setHasRenderedOnce] = useState(false)
+    const [hasRenderedOnce, setHasRenderedOnce] = React.useState(false)
     const { width } = useResizeObserver(ref)
 
-    useEffect(() => {
+    React.useEffect(() => {
       setHasRenderedOnce(true)
     }, [])
 

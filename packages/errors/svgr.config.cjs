@@ -10,6 +10,6 @@ module.exports = {
     'aria-hidden': 'true',
     role: 'img'
   },
-  template: require('./svgr.template.js'),
+  template: require('./svgr.template.cjs'),
   titleProp: true
 }

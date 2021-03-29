@@ -1,6 +1,6 @@
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
-export interface Props extends HTMLAttributes<SVGElement> {
+export interface Props extends React.HTMLAttributes<SVGElement> {
   title?: string
 }
 
