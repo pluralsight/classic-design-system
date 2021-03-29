@@ -527,7 +527,7 @@ function formatAllColorSubCategory({
       .map(key => parseInt(key, 10))
       .filter(key => Number.isInteger(key))
       .map(key => ({
-        name: name + ' ' + key + (key === 6 ? ' (Base)' : ''),
+        name: name + ' ' + key,
         var: 'psColors' + name + key,
         hex: color[key],
         js: `colors${name}[${key}]`,

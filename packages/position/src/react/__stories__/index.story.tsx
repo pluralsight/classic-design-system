@@ -40,8 +40,8 @@ const Box = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
       top: '200px',
       left: '200px',
       alignItems: 'center',
-      border: `4px dashed ${core.colorsPink.base}`,
-      color: core.colorsPink.base,
+      border: `4px dashed ${core.colorsPink[6]}`,
+      color: core.colorsPink[6],
       display: 'flex',
       fontSize: core.type.fontSize400,
       fontWeight: core.type.fontWeight700,
@@ -76,7 +76,7 @@ const MockToolip = React.forwardRef<
 
 const ScrollContainer: React.FC = props => {
   const containerSelectors = css({
-    border: `4px dashed ${core.colorsOrange.base}`,
+    border: `4px dashed ${core.colorsOrange[6]}`,
     color: core.colorsTextIcon.highOnDark,
     height: 500,
     overflow: 'scroll',
@@ -115,7 +115,7 @@ storiesOf('Components | Position / custom style', module).add(
   'shown element keeps style prop',
   () => (
     <positionComponents.Above
-      show={<MockToolip style={{ color: core.colorsPink.base }} />}
+      show={<MockToolip style={{ color: core.colorsPink[6] }} />}
     >
       <Box>Tooltip is pink</Box>
     </positionComponents.Above>
@@ -134,7 +134,7 @@ storiesOf('Components | Position / custom ref', module).add(
       <>
         <positionComponents.Above
           show={
-            <MockToolip style={{ color: core.colorsPink.base }} ref={ref} />
+            <MockToolip style={{ color: core.colorsPink[6] }} ref={ref} />
           }
         >
           <Box>Tooltip is pink</Box>
@@ -157,7 +157,7 @@ Object.values(positionComponents).forEach(Comp => {
 
   const Outer: React.FC = props => {
     const selectors = css({
-      border: `4px dashed ${core.colorsOrange.base}`,
+      border: `4px dashed ${core.colorsOrange[6]}`,
       color: core.colorsTextIcon.highOnDark,
       height: 500,
       padding: 20,

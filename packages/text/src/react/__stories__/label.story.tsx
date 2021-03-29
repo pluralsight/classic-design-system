@@ -5,9 +5,9 @@ import React from 'react'
 
 import Label from '../label'
 
-const style = { color: core.colorsPink.base }
+const style = { color: core.colorsPink[6] }
 const className = glamor
-  .css({ color: `${core.colorsBlue.base} !important` })
+  .css({ color: `${core.colorsBlue[6]} !important` })
   .toString()
 
 const PaddingDecorator = (storyFn: () => React.ReactNode) => (

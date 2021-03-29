@@ -60,16 +60,16 @@ export default {
     borderRadius: '12px'
   },
   [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.blue}`]: {
-    backgroundColor: colorsBlue.base,
+    backgroundColor: colorsBlue[6],
     borderColor: 'transparent'
   },
   [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.green}`]: {
-    backgroundColor: colorsGreen.base,
+    backgroundColor: colorsGreen[6],
     borderColor: 'transparent'
   },
   [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.orange}`]: {
     // NOTE: temp: make orange blue until we do a breaking change to remove orange
-    backgroundColor: colorsBlue.base,
+    backgroundColor: colorsBlue[6],
     borderColor: 'transparent'
   },
 
