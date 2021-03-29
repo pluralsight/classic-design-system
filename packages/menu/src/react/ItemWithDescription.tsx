@@ -1,5 +1,5 @@
-import React, { forwardRef } from 'react'
-import { ForwardRefComponent } from '@pluralsight/ps-design-system-util'
+import React from 'react'
+import { forwardRefWithAs } from '@pluralsight/ps-design-system-util'
 import Menu, { MenuItemProps } from './index'
 import { css } from 'glamor'
 import stylesheet from '../css'
@@ -18,7 +18,10 @@ interface MenuItemWithDescriptionProps extends MenuItemProps {
   description: React.ReactText
 }
 
-export const MenuItemWithDescription = forwardRef((props, ref) => {
+export const MenuItemWithDescription = forwardRefWithAs<
+  MenuItemWithDescriptionProps,
+  'button'
+>((props, ref) => {
   const { id, name, description, ...rest } = props
   return (
     <Menu.Item {...rest} ref={ref} value={{ id, name }} {...styles.item()}>
@@ -29,4 +32,4 @@ export const MenuItemWithDescription = forwardRef((props, ref) => {
       <Menu.Check style={{ marginLeft: 'auto' }} />
     </Menu.Item>
   )
-}) as ForwardRefComponent<'button', MenuItemWithDescriptionProps>
+})
