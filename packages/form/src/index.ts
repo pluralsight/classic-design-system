@@ -1,3 +1,3 @@
-export { default } from './react'
-export * from './vars'
-export { default as css } from './css'
+export { default } from './react/index'
+export * from './vars/index'
+export { default as css } from './css/index'

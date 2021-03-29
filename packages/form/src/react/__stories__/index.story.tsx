@@ -1,35 +1,26 @@
-import React from 'react'
-
-import { storiesOf } from '@storybook/react'
-
-import * as core from '@pluralsight/ps-design-system-core'
-
-// Form controls:
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
-// @ts-ignore: waiting on typescript conversion
-import { useDayzed, DateObj } from 'dayzed'
+import * as core from '@pluralsight/ps-design-system-core'
 import {
   Calendar,
   CalendarDates,
   useDateSelectChange,
   slides
 } from '@pluralsight/ps-design-system-datepicker'
-import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
-
+// @ts-ignore: waiting on typescript conversion
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Radio from '@pluralsight/ps-design-system-radio'
-// @ts-ignore: waiting on typescript conversion
 import Switch from '@pluralsight/ps-design-system-switch'
-// @ts-ignore: waiting on typescript conversion
 import Tag from '@pluralsight/ps-design-system-tag'
 import * as Text from '@pluralsight/ps-design-system-text'
-// @ts-ignore: waiting on typescript conversion
 import TextArea from '@pluralsight/ps-design-system-textarea'
 import TextInput from '@pluralsight/ps-design-system-textinput'
+import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { storiesOf } from '@storybook/react'
+import { useDayzed, DateObj } from 'dayzed'
+import React from 'react'
 
-import Form from '..'
+import Form from '../index'
 
 const useInputClientRect = (
   inputRef: React.MutableRefObject<HTMLInputElement | undefined>
@@ -133,12 +124,12 @@ storiesOf('Sample Form', module)
         label="Occupation"
         placeholder="Select your occupation..."
         menu={
-          <ActionMenu>
-            <ActionMenu.Item>Engineer</ActionMenu.Item>
-            <ActionMenu.Item>Craftsperson</ActionMenu.Item>
-            <ActionMenu.Item>Artisan</ActionMenu.Item>
-            <ActionMenu.Item>Creator</ActionMenu.Item>
-          </ActionMenu>
+          <>
+            <Dropdown.Item>Engineer</Dropdown.Item>
+            <Dropdown.Item>Craftsperson</Dropdown.Item>
+            <Dropdown.Item>Artisan</Dropdown.Item>
+            <Dropdown.Item>Creator</Dropdown.Item>
+          </>
         }
       />
 
