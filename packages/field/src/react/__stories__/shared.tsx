@@ -1,21 +1,13 @@
-import { Story } from '@storybook/react/types-6-0'
-
 import { colorsPink, layout } from '@pluralsight/ps-design-system-core'
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { Story } from '@storybook/react/types-6-0'
 import { css } from 'glamor'
 
-import Field from '..'
+import Field from '../index'
 
-import React, {
-  ComponentProps,
-  ForwardRefExoticComponent,
-  MouseEventHandler,
-  RefAttributes,
-  forwardRef,
-  useMemo
-} from 'react'
+import React from 'react'
 
 const variables = {
   pills: { gutter: 2 }
@@ -47,38 +39,40 @@ export const SetWidthDecorator = (Story: Story) => {
 
 interface PillsProps
   extends Omit<HTMLPropsFor<'div'>, 'ref'>,
-    RefAttributes<HTMLDivElement> {}
+    React.RefAttributes<HTMLDivElement> {}
 
 interface PillsStatics {
   Pill: typeof Pill
   Input: typeof PillAdjacentInput
 }
 
-export const Pills = forwardRef<HTMLDivElement, PillsProps>((props, ref) => {
-  const { children, ...rest } = props
+export const Pills = React.forwardRef<HTMLDivElement, PillsProps>(
+  (props, ref) => {
+    const { children, ...rest } = props
 
-  const styles = {
-    alignItems: 'center',
-    display: 'flex',
-    flex: 1,
-    flexWrap: 'wrap',
-    maxHeight: 75,
-    overflowY: 'scroll',
-    padding: `${layout.spacingXSmall}`,
-    width: '100%'
+    const styles = {
+      alignItems: 'center',
+      display: 'flex',
+      flex: 1,
+      flexWrap: 'wrap',
+      maxHeight: 75,
+      overflowY: 'scroll',
+      padding: `${layout.spacingXSmall}`,
+      width: '100%'
+    }
+
+    return (
+      <div ref={ref} {...rest} {...css(styles)}>
+        {children}
+      </div>
+    )
   }
+) as React.ForwardRefExoticComponent<PillsProps> & PillsStatics
 
-  return (
-    <div ref={ref} {...rest} {...css(styles)}>
-      {children}
-    </div>
-  )
-}) as ForwardRefExoticComponent<PillsProps> & PillsStatics
-
-interface PillProps extends ComponentProps<typeof Tag> {
-  onRequestRemove: MouseEventHandler
+interface PillProps extends React.ComponentProps<typeof Tag> {
+  onRequestRemove: React.MouseEventHandler
 }
-const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
+const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   const { children, onRequestRemove, ...rest } = props
 
   const styles = {
@@ -99,13 +93,13 @@ const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
 })
 Pills.Pill = Pill
 
-const PillAdjacentInput = forwardRef<
+const PillAdjacentInput = React.forwardRef<
   HTMLInputElement,
-  ComponentProps<typeof Field.Input>
+  React.ComponentProps<typeof Field.Input>
 >((props, ref) => {
-  const Container = useMemo(
+  const Container = React.useMemo(
     () =>
-      forwardRef<HTMLDivElement>((p, r) => (
+      React.forwardRef<HTMLDivElement>((p, r) => (
         <div
           ref={r}
           {...p}

@@ -1,6 +1,6 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React, { forwardRef } from 'react'
+import React from 'react'
 
 import stylesheet from '../css/text-area'
 
@@ -13,7 +13,7 @@ interface TextAreaProps extends HTMLPropsFor<'textarea'> {
   renderContainer?: typeof defaultRenderContainer
 }
 
-const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
+const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
   (props, ref) => {
     const { renderContainer = defaultRenderContainer, ...rest } = props
 
@@ -29,8 +29,9 @@ const TextArea = forwardRef<HTMLTextAreaElement, TextAreaProps>(
 )
 TextArea.displayName = 'Field.TextArea'
 
-const defaultRenderContainer = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-  (props, ref) => <div ref={ref} {...props} />
-)
+const defaultRenderContainer = React.forwardRef<
+  HTMLDivElement,
+  HTMLPropsFor<'div'>
+>((props, ref) => <div ref={ref} {...props} />)
 
 export default TextArea

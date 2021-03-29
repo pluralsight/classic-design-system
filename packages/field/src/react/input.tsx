@@ -1,10 +1,10 @@
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, { forwardRef, useContext, useMemo } from 'react'
+import React from 'react'
 
 import { FieldContext } from './context'
 import stylesheet from '../css/input'
-import { sizes } from '../vars'
+import { sizes } from '../vars/index'
 
 const styles = {
   container: () => css(stylesheet['.psds-field__input__container']),
@@ -20,8 +20,8 @@ interface InputProps extends Omit<HTMLPropsFor<'input'>, 'ref'> {
   renderTag?: typeof defaultRenderTag
 }
 
-const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  const { size } = useContext(FieldContext)
+const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
+  const { size } = React.useContext(FieldContext)
   const {
     renderContainer = defaultRenderContainer,
     renderTag = defaultRenderTag,
@@ -29,9 +29,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   } = props
 
   const containerRef = React.useRef<HTMLDivElement>(null)
-  const Container = useMemo(() => renderContainer, [renderContainer])
+  const Container = React.useMemo(() => renderContainer, [renderContainer])
 
-  const Tag = useMemo(() => renderTag, [renderTag])
+  const Tag = React.useMemo(() => renderTag, [renderTag])
 
   return (
     <Container {...styles.container()} ref={containerRef}>
@@ -41,12 +41,14 @@ const Input = forwardRef<HTMLInputElement, InputProps>((props, ref) => {
 })
 Input.displayName = 'Field.Input'
 
-const defaultRenderContainer = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-  (props, ref) => <div ref={ref} {...props} />
-)
+const defaultRenderContainer = React.forwardRef<
+  HTMLDivElement,
+  HTMLPropsFor<'div'>
+>((props, ref) => <div ref={ref} {...props} />)
 
-const defaultRenderTag = forwardRef<HTMLInputElement, HTMLPropsFor<'input'>>(
-  (props, ref) => <input ref={ref} {...props} />
-)
+const defaultRenderTag = React.forwardRef<
+  HTMLInputElement,
+  HTMLPropsFor<'input'>
+>((props, ref) => <input ref={ref} {...props} />)
 
 export default Input

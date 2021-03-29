@@ -1,28 +1,22 @@
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { useUniqueId } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, {
-  ComponentProps,
-  RefObject,
-  useEffect,
-  useRef,
-  useState
-} from 'react'
+import React from 'react'
 
-import { sizes } from '../../vars'
-import Field from '..'
+import { sizes } from '../../vars/index'
+import Field from '../index'
 
-interface TextAreaFieldProps extends ComponentProps<typeof Field> {}
+interface TextAreaFieldProps extends React.ComponentProps<typeof Field> {}
 
 const TextAreaField: React.FC<TextAreaFieldProps> = props => {
   const { disabled, placeholder, ...rest } = props
 
-  const [value, setValue] = useState<string>('')
+  const [value, setValue] = React.useState<string>('')
 
   const labelId = useUniqueId('text-area__label-')
   const areaId = useUniqueId('text-area__area-')
 
-  const areaRef = useRef<HTMLTextAreaElement>(null)
+  const areaRef = React.useRef<HTMLTextAreaElement>(null)
   useAutoGrow(areaRef, value)
 
   return (
@@ -53,10 +47,10 @@ const TextAreaField: React.FC<TextAreaFieldProps> = props => {
 }
 
 function useAutoGrow(
-  ref: RefObject<HTMLTextAreaElement | undefined>,
+  ref: React.RefObject<HTMLTextAreaElement | undefined>,
   value: string
 ) {
-  useEffect(() => {
+  React.useEffect(() => {
     if (!ref.current) return
     const { current: el } = ref
 
@@ -81,7 +75,7 @@ export default {
   args: { size: sizes.medium }
 } as Meta
 
-const Template: Story<ComponentProps<typeof TextAreaField>> = args => {
+const Template: Story<React.ComponentProps<typeof TextAreaField>> = args => {
   return <TextAreaField {...args} />
 }
 

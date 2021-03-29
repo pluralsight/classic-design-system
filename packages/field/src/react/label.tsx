@@ -4,7 +4,7 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { compose, css } from 'glamor'
-import React, { forwardRef } from 'react'
+import React from 'react'
 
 import stylesheet from '../css/label'
 
@@ -18,7 +18,7 @@ const styles = {
 
 interface LabelProps extends HTMLPropsFor<'label'> {}
 
-const Label = forwardRef<HTMLLabelElement, LabelProps>((props, ref) => {
+const Label = React.forwardRef<HTMLLabelElement, LabelProps>((props, ref) => {
   const { children, ...rest } = props
   const themeName = useTheme()
 

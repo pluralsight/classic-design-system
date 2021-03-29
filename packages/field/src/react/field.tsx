@@ -7,17 +7,7 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import { compose, css } from 'glamor'
-import React, {
-  ForwardRefExoticComponent,
-  MouseEventHandler,
-  ReactNode,
-  RefAttributes,
-  SyntheticEvent,
-  forwardRef,
-  useCallback,
-  useMemo,
-  useRef
-} from 'react'
+import React from 'react'
 
 import { FieldContext } from './context'
 import stylesheet from '../css/field'
@@ -25,7 +15,7 @@ import Input from './input'
 import Label from './label'
 import SubLabel from './sub-label'
 import TextArea from './text-area'
-import { appearances, sizes } from '../vars'
+import { appearances, sizes } from '../vars/index'
 
 const styles = {
   container: (opts: { disabled?: boolean; error?: boolean }) =>
@@ -52,14 +42,14 @@ type InputElements = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
 interface FieldProps extends Omit<HTMLPropsFor<'div'>, 'prefix' | 'ref'> {
   disabled?: boolean
   error?: boolean
-  label?: ReactNode
-  onClick?: MouseEventHandler<HTMLDivElement>
-  prefix?: ReactNode
-  renderContainer?: ForwardRefExoticComponent<RefAttributes<any>>
+  label?: React.ReactNode
+  onClick?: React.MouseEventHandler<HTMLDivElement>
+  prefix?: React.ReactNode
+  renderContainer?: React.ForwardRefExoticComponent<React.RefAttributes<any>>
   renderTag?: React.FC
   size?: ValueOf<typeof sizes>
-  subLabel?: ReactNode
-  suffix?: ReactNode
+  subLabel?: React.ReactNode
+  suffix?: React.ReactNode
 }
 
 export interface FieldStatics {
@@ -90,11 +80,11 @@ const Field: FieldComponent = props => {
     ...rest
   } = props
 
-  const containerRef = useRef<HTMLDivElement>(null)
-  const Container = useMemo(() => renderContainer, [renderContainer])
-  const Tag = useMemo(() => renderTag, [renderTag])
+  const containerRef = React.useRef<HTMLDivElement>(null)
+  const Container = React.useMemo(() => renderContainer, [renderContainer])
+  const Tag = React.useMemo(() => renderTag, [renderTag])
 
-  const focusOnClick: MouseEventHandler = useCallback(evt => {
+  const focusOnClick: React.MouseEventHandler = React.useCallback(evt => {
     const focusableTags = ['input', 'select', 'textarea']
 
     const { current: el } = containerRef
@@ -151,14 +141,14 @@ const Field: FieldComponent = props => {
   )
 }
 
-const defaultRenderContainer = forwardRef<
+const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
   Omit<HTMLPropsFor<'div'>, 'ref'>
 >((props, ref) => <div ref={ref} {...props} />)
 
 const defaultRenderTag: React.FC = props => <div {...props} />
 
-const getTargetTag = (evt: SyntheticEvent | Event): string => {
+const getTargetTag = (evt: React.SyntheticEvent | Event): string => {
   if (!(evt.target instanceof Element)) return 'unknown'
   return evt.target.tagName.toLowerCase()
 }

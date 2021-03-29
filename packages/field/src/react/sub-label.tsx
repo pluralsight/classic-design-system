@@ -4,7 +4,7 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { compose, css } from 'glamor'
-import React, { forwardRef } from 'react'
+import React from 'react'
 
 import stylesheet from '../css/sub-label'
 
@@ -18,16 +18,18 @@ const styles = {
 
 interface SubLabelProps extends HTMLPropsFor<'div'> {}
 
-const SubLabel = forwardRef<HTMLDivElement, SubLabelProps>((props, ref) => {
-  const { children, ...rest } = props
-  const themeName = useTheme()
+const SubLabel = React.forwardRef<HTMLDivElement, SubLabelProps>(
+  (props, ref) => {
+    const { children, ...rest } = props
+    const themeName = useTheme()
 
-  return (
-    <div ref={ref} {...styles.subLabel(themeName)} {...rest}>
-      {children}
-    </div>
-  )
-})
+    return (
+      <div ref={ref} {...styles.subLabel(themeName)} {...rest}>
+        {children}
+      </div>
+    )
+  }
+)
 
 SubLabel.displayName = 'Field.SubLabel'
 

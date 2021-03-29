@@ -1,4 +1,4 @@
-import { sizes } from '../vars'
+import { sizes } from '../vars/index'
 
 export default {
   '.psds-field__input__container': {
