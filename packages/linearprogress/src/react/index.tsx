@@ -4,8 +4,8 @@ import React from 'react'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import stylesheet from '../css'
-import { toPercentageString } from '../js'
+import stylesheet from '../css/index'
+import { toPercentageString } from '../js/index'
 
 const styles = {
   bg: ({ themeName }) =>
