@@ -135,6 +135,24 @@ const Button = forwardRefWithAs<Props, 'button'>((props, ref) => {
 })
 ```
 
+If you need to use it with a render prop function it's straightforward.
+
+```typescript noRender startExpanded
+import { forwardRefWithAs } from '@pluralsight/ps-design-system-util'
+
+interface Props {
+  children?: React.ReactNode | (() => JSX.Element);
+}
+
+const TestInput = forwardRefWithAs<Props, "input">((props, ref) => {
+  const { as: Comp = "input", children, ...rest } = props;
+  return (
+    <Comp ref={ref} {...rest}> {isFunction(children) ? children() : children} </Comp>
+  );
+});
+
+```
+
 If you need a component that also support static properties (like for instance
 you are using the compound components pattern) we provide a higher order
 function to create typesafe components with typed static properties.
