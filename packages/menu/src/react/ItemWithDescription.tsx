@@ -7,7 +7,6 @@ import stylesheet from '../css'
 const styles = {
   item: () => css(stylesheet['.psds-menu__item-with-description']),
   wrapper: () => css(stylesheet['.psds-menu__item-with-description__wrapper']),
-  name: () => css(stylesheet['.psds-menu__item-with-description__name']),
   description: () =>
     css(stylesheet[`.psds-menu__item-with-description__description`])
 }
@@ -26,7 +25,7 @@ export const MenuItemWithDescription = forwardRefWithAs<
   return (
     <Menu.Item {...rest} ref={ref} value={{ id, name }} {...styles.item()}>
       <div {...styles.wrapper()}>
-        <span {...styles.name()}>{name}</span>
+        <span>{name}</span>
         <span {...styles.description()}>{description}</span>
       </div>
       <Menu.Check style={{ marginLeft: 'auto' }} />

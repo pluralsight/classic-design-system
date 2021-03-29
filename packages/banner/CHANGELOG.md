@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@9.0.6...@pluralsight/ps-design-system-banner@9.0.7) (2021-03-26)
+
+
+### Bug Fixes
+
+* **banner:** avoid Text.P styles overriding Banner styles ([29b16de](https://github.com/pluralsight/design-system/commit/29b16de8073f052d3aba270838c4bcc33209edf1))
+
+
+
+
+
 ## [9.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@9.0.5...@pluralsight/ps-design-system-banner@9.0.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-banner

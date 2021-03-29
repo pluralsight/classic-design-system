@@ -7,7 +7,7 @@ exports[`Storyshots customized styles item style 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -16,7 +16,7 @@ exports[`Storyshots customized styles item style 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       style={
         Object {
           "outline": "1px solid red",
@@ -32,7 +32,7 @@ exports[`Storyshots customized styles item style 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -41,7 +41,7 @@ exports[`Storyshots customized styles item style 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       style={
         Object {
           "outline": "1px solid blue",
@@ -57,7 +57,7 @@ exports[`Storyshots customized styles item style 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -66,7 +66,7 @@ exports[`Storyshots customized styles item style 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       style={
         Object {
           "outline": "1px solid green",
@@ -90,7 +90,7 @@ exports[`Storyshots disabled item 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -99,7 +99,7 @@ exports[`Storyshots disabled item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -110,7 +110,7 @@ exports[`Storyshots disabled item 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-1gzxx54=""
+    data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -119,7 +119,7 @@ exports[`Storyshots disabled item 1`] = `
     role="menuitem"
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       disabled={true}
     >
       <div
@@ -131,7 +131,7 @@ exports[`Storyshots disabled item 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -140,7 +140,7 @@ exports[`Storyshots disabled item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -151,7 +151,7 @@ exports[`Storyshots disabled item 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-1gzxx54=""
+    data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -160,7 +160,7 @@ exports[`Storyshots disabled item 1`] = `
     role="menuitem"
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       disabled={true}
     >
       <div
@@ -180,7 +180,7 @@ exports[`Storyshots disabled links 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -189,7 +189,7 @@ exports[`Storyshots disabled links 1`] = `
     tabIndex={-1}
   >
     <a
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       href="https://duck.com"
       target="_blank"
     >
@@ -202,7 +202,7 @@ exports[`Storyshots disabled links 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-1gzxx54=""
+    data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -211,7 +211,7 @@ exports[`Storyshots disabled links 1`] = `
     role="menuitem"
   >
     <a
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       disabled={true}
       href="https://duck.com"
       target="_blank"
@@ -225,7 +225,7 @@ exports[`Storyshots disabled links 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -234,7 +234,7 @@ exports[`Storyshots disabled links 1`] = `
     tabIndex={-1}
   >
     <a
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       href="https://duck.com"
       target="_blank"
     >
@@ -247,7 +247,7 @@ exports[`Storyshots disabled links 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-1gzxx54=""
+    data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -256,7 +256,7 @@ exports[`Storyshots disabled links 1`] = `
     role="menuitem"
   >
     <a
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       disabled={true}
       href="https://duck.com"
       target="_blank"
@@ -278,7 +278,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-1gzxx54=""
+    data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -287,7 +287,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
     role="menuitem"
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       disabled={true}
     >
       <div
@@ -299,7 +299,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-1gzxx54=""
+    data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -308,7 +308,7 @@ exports[`Storyshots disabled multiple, all disabled 1`] = `
     role="menuitem"
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       disabled={true}
     >
       <div
@@ -328,7 +328,7 @@ exports[`Storyshots disabled single, disabled 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-1gzxx54=""
+    data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -337,7 +337,7 @@ exports[`Storyshots disabled single, disabled 1`] = `
     role="menuitem"
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       disabled={true}
     >
       <div
@@ -357,7 +357,7 @@ exports[`Storyshots dividers edge 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -366,7 +366,7 @@ exports[`Storyshots dividers edge 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -388,7 +388,7 @@ exports[`Storyshots dividers sandwich 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -397,7 +397,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -411,7 +411,7 @@ exports[`Storyshots dividers sandwich 1`] = `
   />
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -420,7 +420,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -431,7 +431,7 @@ exports[`Storyshots dividers sandwich 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -440,7 +440,7 @@ exports[`Storyshots dividers sandwich 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -459,7 +459,7 @@ exports[`Storyshots item with description default 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -468,7 +468,7 @@ exports[`Storyshots item with description default 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       data-css-1wqs04=""
     >
       <div
@@ -477,13 +477,11 @@ exports[`Storyshots item with description default 1`] = `
         <div
           data-css-1v08evy=""
         >
-          <span
-            data-css-xpk9xc=""
-          >
+          <span>
             item
           </span>
           <span
-            data-css-15cv973=""
+            data-css-1paf77e=""
           >
             some words that describe a thing that really should wrap you known
           </span>
@@ -502,14 +500,14 @@ exports[`Storyshots item with description default 1`] = `
 </ul>
 `;
 
-exports[`Storyshots item with description selected 1`] = `
+exports[`Storyshots item with description next to items w/o description 1`] = `
 <ul
   data-css-rls1dj=""
   role="menu"
 >
   <li
-    aria-selected={true}
-    data-css-1813eq8=""
+    aria-selected={false}
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -518,7 +516,7 @@ exports[`Storyshots item with description selected 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       data-css-1wqs04=""
     >
       <div
@@ -527,13 +525,179 @@ exports[`Storyshots item with description selected 1`] = `
         <div
           data-css-1v08evy=""
         >
+          <span>
+            Can view
+          </span>
           <span
-            data-css-xpk9xc=""
+            data-css-1paf77e=""
           >
+            View details, content and other members in the channel.
+          </span>
+        </div>
+        <div
+          data-css-zt0o3m=""
+          style={
+            Object {
+              "marginLeft": "auto",
+            }
+          }
+        />
+      </div>
+    </button>
+  </li>
+  <li
+    aria-selected={false}
+    data-css-12h6umw=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <button
+      data-css-141hx40=""
+      data-css-1wqs04=""
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        <div
+          data-css-1v08evy=""
+        >
+          <span>
+            Can edit
+          </span>
+          <span
+            data-css-1paf77e=""
+          >
+            Edit details, add or remove content and invite or remove members
+          </span>
+        </div>
+        <div
+          data-css-zt0o3m=""
+          style={
+            Object {
+              "marginLeft": "auto",
+            }
+          }
+        />
+      </div>
+    </button>
+  </li>
+  <li
+    aria-selected={false}
+    data-css-12h6umw=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <button
+      data-css-141hx40=""
+      data-css-1wqs04=""
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        <div
+          data-css-1v08evy=""
+        >
+          <span>
+            Make owner
+          </span>
+          <span
+            data-css-1paf77e=""
+          >
+            Edit details, add or remove content, invite or remove members and delete Channel
+          </span>
+        </div>
+        <div
+          data-css-zt0o3m=""
+          style={
+            Object {
+              "marginLeft": "auto",
+            }
+          }
+        />
+      </div>
+    </button>
+  </li>
+  <li
+    aria-selected={false}
+    data-css-12h6umw=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <button
+      data-css-141hx40=""
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Remove member
+      </div>
+    </button>
+  </li>
+  <li
+    aria-selected={false}
+    data-css-12h6umw=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <button
+      data-css-141hx40=""
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        Remove member with so many lines that it goes to a second line
+      </div>
+    </button>
+  </li>
+</ul>
+`;
+
+exports[`Storyshots item with description selected 1`] = `
+<ul
+  data-css-rls1dj=""
+  role="menu"
+>
+  <li
+    aria-selected={true}
+    data-css-uzsybs=""
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <button
+      data-css-141hx40=""
+      data-css-1wqs04=""
+    >
+      <div
+        data-css-fxdh11=""
+      >
+        <div
+          data-css-1v08evy=""
+        >
+          <span>
             item active
           </span>
           <span
-            data-css-15cv973=""
+            data-css-1paf77e=""
           >
             some words that describe a thing that really should wrap you known
           </span>
@@ -570,7 +734,7 @@ exports[`Storyshots link a w/ href 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -579,7 +743,7 @@ exports[`Storyshots link a w/ href 1`] = `
     tabIndex={-1}
   >
     <a
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       href="https://duckduckgo.com"
       target="_blank"
     >
@@ -600,7 +764,7 @@ exports[`Storyshots menu items active & selected item 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -609,7 +773,7 @@ exports[`Storyshots menu items active & selected item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -620,7 +784,7 @@ exports[`Storyshots menu items active & selected item 1`] = `
   </li>
   <li
     aria-selected={true}
-    data-css-1813eq8=""
+    data-css-uzsybs=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -629,7 +793,7 @@ exports[`Storyshots menu items active & selected item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -659,7 +823,7 @@ exports[`Storyshots menu items active & selected item 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-h4obbt=""
+    data-css-9ndocp=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -668,7 +832,7 @@ exports[`Storyshots menu items active & selected item 1`] = `
     role="menuitem"
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       disabled={true}
     >
       <div
@@ -688,7 +852,7 @@ exports[`Storyshots menu items active item 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -697,7 +861,7 @@ exports[`Storyshots menu items active item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -708,7 +872,7 @@ exports[`Storyshots menu items active item 1`] = `
   </li>
   <li
     aria-selected={true}
-    data-css-1813eq8=""
+    data-css-uzsybs=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -717,7 +881,7 @@ exports[`Storyshots menu items active item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -728,7 +892,7 @@ exports[`Storyshots menu items active item 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-h4obbt=""
+    data-css-9ndocp=""
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -737,7 +901,7 @@ exports[`Storyshots menu items active item 1`] = `
     role="menuitem"
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
       disabled={true}
     >
       <div
@@ -757,7 +921,7 @@ exports[`Storyshots menu items ellipsis 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -766,7 +930,7 @@ exports[`Storyshots menu items ellipsis 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -789,7 +953,7 @@ exports[`Storyshots menu items long text 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -798,7 +962,7 @@ exports[`Storyshots menu items long text 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -813,7 +977,7 @@ exports[`Storyshots menu items long text 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -822,7 +986,7 @@ exports[`Storyshots menu items long text 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -845,7 +1009,7 @@ exports[`Storyshots menu items lots 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -854,7 +1018,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -866,7 +1030,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -875,7 +1039,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -887,7 +1051,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -896,7 +1060,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -908,7 +1072,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -917,7 +1081,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -929,7 +1093,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -938,7 +1102,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -950,7 +1114,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -959,7 +1123,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -971,7 +1135,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -980,7 +1144,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -992,7 +1156,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1001,7 +1165,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1013,7 +1177,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1022,7 +1186,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1034,7 +1198,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1043,7 +1207,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1055,7 +1219,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1064,7 +1228,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1076,7 +1240,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1085,7 +1249,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1097,7 +1261,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1106,7 +1270,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1118,7 +1282,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1127,7 +1291,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1139,7 +1303,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1148,7 +1312,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1160,7 +1324,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1169,7 +1333,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1181,7 +1345,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1190,7 +1354,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1202,7 +1366,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1211,7 +1375,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1223,7 +1387,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1232,7 +1396,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1244,7 +1408,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1253,7 +1417,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1265,7 +1429,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1274,7 +1438,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1286,7 +1450,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1295,7 +1459,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1307,7 +1471,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1316,7 +1480,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1328,7 +1492,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1337,7 +1501,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1349,7 +1513,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1358,7 +1522,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1370,7 +1534,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1379,7 +1543,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1391,7 +1555,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1400,7 +1564,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1412,7 +1576,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1421,7 +1585,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1433,7 +1597,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1442,7 +1606,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1454,7 +1618,7 @@ exports[`Storyshots menu items lots 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1463,7 +1627,7 @@ exports[`Storyshots menu items lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1483,7 +1647,7 @@ exports[`Storyshots menu items multiple 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1492,7 +1656,7 @@ exports[`Storyshots menu items multiple 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1503,7 +1667,7 @@ exports[`Storyshots menu items multiple 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1512,7 +1676,7 @@ exports[`Storyshots menu items multiple 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1523,7 +1687,7 @@ exports[`Storyshots menu items multiple 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1532,7 +1696,7 @@ exports[`Storyshots menu items multiple 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1551,7 +1715,7 @@ exports[`Storyshots menu items null item 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1560,7 +1724,7 @@ exports[`Storyshots menu items null item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1571,7 +1735,7 @@ exports[`Storyshots menu items null item 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1580,7 +1744,7 @@ exports[`Storyshots menu items null item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1599,7 +1763,7 @@ exports[`Storyshots menu items one 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1608,7 +1772,7 @@ exports[`Storyshots menu items one 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1627,7 +1791,7 @@ exports[`Storyshots onClick flat 1`] = `
 >
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1636,7 +1800,7 @@ exports[`Storyshots onClick flat 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1647,7 +1811,7 @@ exports[`Storyshots onClick flat 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1656,7 +1820,7 @@ exports[`Storyshots onClick flat 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1667,7 +1831,7 @@ exports[`Storyshots onClick flat 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-xc6vje=""
+    data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1676,7 +1840,7 @@ exports[`Storyshots onClick flat 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-1f3xl6a=""
+      data-css-141hx40=""
     >
       <div
         data-css-fxdh11=""
@@ -1721,7 +1885,7 @@ Array [
       >
         <li
           aria-selected={false}
-          data-css-xc6vje=""
+          data-css-12h6umw=""
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1730,7 +1894,7 @@ Array [
           tabIndex={-1}
         >
           <button
-            data-css-1f3xl6a=""
+            data-css-141hx40=""
           >
             <div
               data-css-fxdh11=""
@@ -1741,7 +1905,7 @@ Array [
         </li>
         <li
           aria-selected={false}
-          data-css-xc6vje=""
+          data-css-12h6umw=""
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1750,7 +1914,7 @@ Array [
           tabIndex={-1}
         >
           <button
-            data-css-1f3xl6a=""
+            data-css-141hx40=""
           >
             <div
               data-css-fxdh11=""
@@ -1761,7 +1925,7 @@ Array [
         </li>
         <li
           aria-selected={false}
-          data-css-xc6vje=""
+          data-css-12h6umw=""
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1770,7 +1934,7 @@ Array [
           tabIndex={-1}
         >
           <button
-            data-css-1f3xl6a=""
+            data-css-141hx40=""
           >
             <div
               data-css-fxdh11=""
@@ -1816,7 +1980,7 @@ Array [
     >
       <li
         aria-selected={false}
-        data-css-xc6vje=""
+        data-css-12h6umw=""
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -1825,7 +1989,7 @@ Array [
         tabIndex={-1}
       >
         <button
-          data-css-1f3xl6a=""
+          data-css-141hx40=""
         >
           <div
             data-css-fxdh11=""
@@ -1836,7 +2000,7 @@ Array [
       </li>
       <li
         aria-selected={false}
-        data-css-xc6vje=""
+        data-css-12h6umw=""
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -1845,7 +2009,7 @@ Array [
         tabIndex={-1}
       >
         <button
-          data-css-1f3xl6a=""
+          data-css-141hx40=""
         >
           <div
             data-css-fxdh11=""
@@ -1856,7 +2020,7 @@ Array [
       </li>
       <li
         aria-selected={false}
-        data-css-xc6vje=""
+        data-css-12h6umw=""
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -1865,7 +2029,7 @@ Array [
         tabIndex={-1}
       >
         <button
-          data-css-1f3xl6a=""
+          data-css-141hx40=""
         >
           <div
             data-css-fxdh11=""
