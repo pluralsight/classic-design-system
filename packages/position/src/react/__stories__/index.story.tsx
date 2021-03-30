@@ -133,9 +133,7 @@ storiesOf('Components | Position / custom ref', module).add(
     return (
       <>
         <positionComponents.Above
-          show={
-            <MockToolip style={{ color: core.colorsPink[6] }} ref={ref} />
-          }
+          show={<MockToolip style={{ color: core.colorsPink[6] }} ref={ref} />}
         >
           <Box>Tooltip is pink</Box>
         </positionComponents.Above>

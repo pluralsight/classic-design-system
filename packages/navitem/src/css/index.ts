@@ -34,13 +34,13 @@ export default {
       color: colorsTextIcon.highOnDark
     },
     '&:hover, &:focus': {
-      background: transparentize(0.85, colorsBackgroundUtility.base)
+      background: `rgba(${colorsBackgroundUtility.base},0.15)`
     },
     '&:focus': {
       outline: 'none'
     },
     '&:active': {
-      background: transparentize(0.75, colorsBackgroundUtility.base)
+      background: `rgba(${colorsBackgroundUtility.base},0.25)`
     }
   },
   '.psds-navitem__button--selected': {

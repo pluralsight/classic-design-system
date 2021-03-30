@@ -62,6 +62,6 @@ export default {
     flexDirection: 'column',
     justifyContent: 'center',
     color: colorsTextIcon.highOnDark,
-    backgroundColor: colorsBackgroundUtility.base
+    backgroundColor: `rgb(${colorsBackgroundUtility.base})`
   }
 }

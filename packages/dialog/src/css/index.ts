@@ -139,11 +139,11 @@ export default {
         colorsPrimaryAction.background
       )}`,
       cursor: 'pointer',
-      background: transparentize(0.55, colorsBackgroundUtility.base),
+      background: `rgba(${colorsBackgroundUtility.base},0.45)`,
       color: colorsTextIcon.highOnLight
     },
     '&:not([disabled]):active': {
-      background: transparentize(0.35, colorsBackgroundUtility.base),
+      background: `rgba(${colorsBackgroundUtility.base},0.65)`,
       color: colorsTextIcon.highOnLight,
       transform: 'scale(0.98)'
     },

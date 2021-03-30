@@ -20,7 +20,7 @@ exports[`Storyshots Components/NavUser As Button 1`] = `
       />
       <div
         aria-label="Jake Trent"
-        data-css-1h1qs66=""
+        data-css-1xbr5gr=""
         style={
           Object {
             "backgroundColor": "#7048C6",
@@ -66,7 +66,7 @@ exports[`Storyshots Components/NavUser As Link 1`] = `
       />
       <div
         aria-label="Jake Trent"
-        data-css-1h1qs66=""
+        data-css-1xbr5gr=""
         style={
           Object {
             "backgroundColor": "#7048C6",
@@ -110,7 +110,7 @@ exports[`Storyshots Components/NavUser Avatar Only 1`] = `
         src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
       />
       <div
-        data-css-1h1qs66=""
+        data-css-1xbr5gr=""
         style={
           Object {
             "backgroundColor": "#D1487B",
@@ -153,7 +153,7 @@ exports[`Storyshots Components/NavUser Basic 1`] = `
       />
       <div
         aria-label="Jake Trent"
-        data-css-1h1qs66=""
+        data-css-1xbr5gr=""
         style={
           Object {
             "backgroundColor": "#7048C6",
@@ -240,7 +240,7 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
         />
         <div
           aria-label="Then click me, same as 2nd button"
-          data-css-1h1qs66=""
+          data-css-1xbr5gr=""
           style={
             Object {
               "backgroundColor": "#B28300",
@@ -295,7 +295,7 @@ exports[`Storyshots Components/NavUser With Meta 1`] = `
       />
       <div
         aria-label="Jake Trent"
-        data-css-1h1qs66=""
+        data-css-1xbr5gr=""
         style={
           Object {
             "backgroundColor": "#7048C6",

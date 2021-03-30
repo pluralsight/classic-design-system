@@ -81,8 +81,8 @@ const colors: Record<string, SubCategory> = {
         name: 'Utility',
         var: 'psColorsBackgroundUtilityBase',
         js: 'colorsBackgroundUtility.base',
-        bg: core.colorsBackgroundUtility.base,
-        hex: core.colorsBackgroundUtility.base + ' / rgba(138, 153, 168, 1)'
+        bg: `rgb(${core.colorsBackgroundUtility.base})`,
+        hex: 'N/A (138,153,168)'
       }
     ]
   },
