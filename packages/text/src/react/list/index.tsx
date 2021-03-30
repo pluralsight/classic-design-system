@@ -1,13 +1,11 @@
+import { useTheme, names } from '@pluralsight/ps-design-system-theme'
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import React from 'react'
 
-import { useTheme, names } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-
 import ListItem from './list-item'
-
-import stylesheet from '../../css'
-import * as vars from '../../vars'
+import stylesheet from '../../css/index'
+import * as vars from '../../vars/index'
 
 const styles = ({
   themeName,

@@ -6,18 +6,21 @@
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "dist/esm/index.mjs",
+  "module": "dist/esm/index.mjs",
   "scripts": {
-    "build": "run-s build:cjs build:esm build:css",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
-    "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
-    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "build": "run-s build:esm build:css",
+    "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
+    "build:esm": "run-s compile:esm rewrite:esm",
     "build:watch": "yarn build:esm --watch",
+    "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "rewrite:esm": "tsc-esm --project tsconfig.build.json",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:watch": "yarn test --watchAll"
   },
+  "sideEffects": false,
+  "type": "module",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.9.3",
     "@pluralsight/ps-design-system-util": "^7.3.0"

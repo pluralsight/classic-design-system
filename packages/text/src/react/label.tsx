@@ -1,10 +1,10 @@
-import { compose, css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
 const style = ({
   themeName,
@@ -37,7 +37,7 @@ interface LabelStatics {
   colors: typeof vars.textColors
 }
 
-interface LabelProps extends HTMLAttributes<HTMLSpanElement> {
+interface LabelProps extends React.HTMLAttributes<HTMLSpanElement> {
   size?: ValueOf<typeof vars.labelSizes>
   color?: ValueOf<typeof vars.textColors>
   mono?: boolean
