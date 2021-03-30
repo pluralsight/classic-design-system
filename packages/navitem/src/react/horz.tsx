@@ -1,12 +1,11 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, { useContext } from 'react'
-
-import stylesheet from '../css'
+import React from 'react'
 
 import Context from './context'
 import { Bar, Button } from './common'
+import stylesheet from '../css/index'
 
 const styles = {
   container: () => css(stylesheet['.psds-navitem__horz-container']),
@@ -29,7 +28,7 @@ const styles = {
 }
 
 export const HorzLayout: React.FC = props => {
-  const { icon, menu } = useContext(Context)
+  const { icon, menu } = React.useContext(Context)
   const hasLabel = !!props.children
 
   return (

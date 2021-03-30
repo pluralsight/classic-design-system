@@ -1,12 +1,11 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React, { useContext } from 'react'
-
-import stylesheet from '../css'
+import React from 'react'
 
 import Context from './context'
 import { Bar, Button } from './common'
+import stylesheet from '../css/index'
 
 const styles = {
   container: () => css(stylesheet['.psds-navitem__vert-container']),
@@ -17,7 +16,7 @@ const styles = {
 }
 
 export const VertLayout: React.FC = props => {
-  const { icon, menu } = useContext(Context)
+  const { icon, menu } = React.useContext(Context)
 
   return (
     <VertContainer>

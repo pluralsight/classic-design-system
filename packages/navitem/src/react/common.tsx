@@ -5,11 +5,11 @@ import {
   stylesFor
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, { FC, useContext, useMemo } from 'react'
+import React from 'react'
 
 import Context from './context'
-import stylesheet from '../css'
-import { alignments } from '../vars'
+import stylesheet from '../css/index'
+import { alignments } from '../vars/index'
 
 const styles = {
   bar: (props: {
@@ -37,9 +37,9 @@ const styles = {
     )
 }
 
-export const Bar: FC<HTMLPropsFor<'div'>> = props => {
+export const Bar: React.FC<HTMLPropsFor<'div'>> = props => {
   // eslint-disable-next-line camelcase
-  const { alignment, selected, UNSAFE_stylesFor } = useContext(Context)
+  const { alignment, selected, UNSAFE_stylesFor } = React.useContext(Context)
 
   return (
     <div
@@ -49,9 +49,9 @@ export const Bar: FC<HTMLPropsFor<'div'>> = props => {
   )
 }
 
-export const Button: FC = props => {
-  const { renderContainer, ref, selected, rest } = useContext(Context)
-  const Container = useMemo(() => renderContainer, [renderContainer])
+export const Button: React.FC = props => {
+  const { renderContainer, ref, selected, rest } = React.useContext(Context)
+  const Container = React.useMemo(() => renderContainer, [renderContainer])
 
   return (
     <Halo inline gapSize={Halo.gapSizes.small}>
