@@ -2,9 +2,9 @@ import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React from 'react'
-import { RadioContext } from './context'
 
-import stylesheet from '../css'
+import { RadioContext } from './context'
+import stylesheet from '../css/index'
 
 const styles = {
   buttonContainer: () => css(stylesheet['.psds-radio-group__button-container']),

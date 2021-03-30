@@ -1,10 +1,11 @@
-import { createContext, ReactText, MouseEvent } from 'react'
+import React from 'react'
+
 interface ContextValue {
-  checkedValue?: ReactText
-  onChange?: (evt?: MouseEvent, val?: ReactText) => void
+  checkedValue?: React.ReactText
+  onChange?: (evt?: React.MouseEvent, val?: React.ReactText) => void
   disabled?: boolean
   error?: boolean
   name?: string
 }
 
-export const RadioContext = createContext<ContextValue>({})
+export const RadioContext = React.createContext<ContextValue>({})

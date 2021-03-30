@@ -6,16 +6,10 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, {
-  FocusEvent,
-  MouseEvent,
-  ReactText,
-  useContext,
-  useState
-} from 'react'
+import React from 'react'
 
 import { RadioContext } from './context'
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = {
   button: (disabled?: boolean) =>
@@ -40,21 +34,24 @@ const styles = {
     )
 }
 
-const isChecked = (a: ReactText, b?: ReactText) => a === b
+const isChecked = (a: React.ReactText, b?: React.ReactText) => a === b
 
 export interface RadioButtonProps
   extends Omit<HTMLPropsFor<'input'>, 'onClick'> {
   label: React.ReactNode
-  onBlur?: (evt: FocusEvent<HTMLInputElement>) => void
-  onClick?: (evt: MouseEvent<HTMLInputElement>, val?: ReactText) => void
-  onFocus?: (evt: FocusEvent<HTMLInputElement>) => void
+  onBlur?: (evt: React.FocusEvent<HTMLInputElement>) => void
+  onClick?: (
+    evt: React.MouseEvent<HTMLInputElement>,
+    val?: React.ReactText
+  ) => void
+  onFocus?: (evt: React.FocusEvent<HTMLInputElement>) => void
   value: React.ReactText
 }
 
 const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
   ({ value, label, ...props }, forwardedRef) => {
     const themeName = useTheme()
-    const { checkedValue, onChange, disabled, error, name } = useContext(
+    const { checkedValue, onChange, disabled, error, name } = React.useContext(
       RadioContext
     )
     const ref = React.useRef<HTMLInputElement>(
@@ -62,21 +59,21 @@ const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
     )
     React.useImperativeHandle(forwardedRef, () => ref.current)
 
-    const [isFocused, setFocus] = useState(false)
+    const [isFocused, setFocus] = React.useState(false)
 
-    const handleFocus = (evt: FocusEvent<HTMLInputElement>) => {
+    const handleFocus = (evt: React.FocusEvent<HTMLInputElement>) => {
       if (disabled) return
 
       combineFns(_evt => setFocus(true), props.onFocus)(evt)
     }
 
-    const handleBlur = (evt: FocusEvent<HTMLInputElement>) => {
+    const handleBlur = (evt: React.FocusEvent<HTMLInputElement>) => {
       if (disabled) return
 
       combineFns(props.onBlur, () => setFocus(false))(evt)
     }
 
-    const handleClick = (evt: MouseEvent<HTMLInputElement>) => {
+    const handleClick = (evt: React.MouseEvent<HTMLInputElement>) => {
       const value = (evt.target as HTMLInputElement).value
       combineFns(onChange, props.onClick)(evt, value)
       ref.current.focus()
