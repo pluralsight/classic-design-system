@@ -1,5 +1,5 @@
 import { css } from 'glamor'
-import React, { useRef } from 'react'
+import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
@@ -7,7 +7,7 @@ import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 import { callAll, RefFor } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = {
   clear: (isClearBtnVisible: boolean) =>
@@ -31,7 +31,7 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
     const hasVisibleValue = !!rest.value && String(rest.value).length > 0
     const isClearBtnVisible = isClearable && hasVisibleValue
 
-    const ref = useRef<HTMLInputElement | null>(null)
+    const ref = React.useRef<HTMLInputElement | null>(null)
     React.useImperativeHandle(
       forwardedRef,
       () => (ref.current as unknown) as HTMLInputElement
