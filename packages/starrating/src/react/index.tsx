@@ -1,9 +1,9 @@
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React from 'react'
 
+import stylesheet from '../css/index'
 import Star from './star'
-import stylesheet from '../css'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 const styles = {
   screenReaderInput: () =>

@@ -1,6 +1,3 @@
-import { css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
-
 import Icon, {
   StarFillIcon,
   StarIcon
@@ -9,9 +6,11 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-
-import stylesheet from '../css'
 import { ValueOf, keyMirror } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
+import React from 'react'
+
+import stylesheet from '../css/index'
 
 const APPEARANCES = keyMirror('empty', 'half', 'full')
 
@@ -75,7 +74,7 @@ const HalfStarIcon = ({ size }: { size: ValueOf<typeof Icon.sizes> }) => {
 
 interface StarProp
   extends Omit<
-    HTMLAttributes<HTMLSpanElement & HTMLButtonElement>,
+    React.HTMLAttributes<HTMLSpanElement & HTMLButtonElement>,
     'onClick' | 'onEnter' | 'onLeave'
   > {
   active?: boolean
