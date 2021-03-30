@@ -1,6 +1,3 @@
-import { compose, css } from 'glamor'
-import React from 'react'
-
 import { layout, type } from '@pluralsight/ps-design-system-core'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
@@ -13,9 +10,11 @@ import {
   HTMLPropsFor,
   RefForwardingComponent
 } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
 const calcRowsPxHeight = (rows: React.ReactText) => {
   const int = (varVal: string) => parseInt(varVal.replace('px', ''), 10)
