@@ -8,18 +8,10 @@ import {
   omit
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, {
-  ReactElement,
-  cloneElement,
-  forwardRef,
-  HTMLAttributes,
-  isValidElement,
-  useState
-} from 'react'
+import React from 'react'
 
+import stylesheet from '../css/index'
 import { List } from './list'
-
-import stylesheet from '../css'
 
 const styles = {
   group: () => css({ label: 'verticaltabs__group' }),
@@ -52,7 +44,7 @@ const styles = {
 }
 
 interface GroupProps extends HTMLPropsFor<'li'> {
-  header?: ReactElement<typeof GroupHeader>
+  header?: React.ReactElement<typeof GroupHeader>
   startOpen?: boolean
 }
 
@@ -63,7 +55,7 @@ interface GroupStatics {
 interface GroupComponent
   extends RefForwardingComponent<GroupProps, HTMLLIElement, GroupStatics> {}
 
-const Group = forwardRef((props, ref) => {
+const Group = React.forwardRef((props, ref) => {
   const rest = omit(props as Record<string, any>, ['header', 'startOpen'])
 
   return (
@@ -75,10 +67,10 @@ const Group = forwardRef((props, ref) => {
   )
 }) as GroupComponent
 
-interface GroupHeaderProps extends HTMLAttributes<HTMLElement> {
+interface GroupHeaderProps extends React.HTMLAttributes<HTMLElement> {
   tagName?: React.ElementType | keyof JSX.IntrinsicElements
 }
-const GroupHeader = forwardRef<any, GroupHeaderProps>((props, ref) => {
+const GroupHeader = React.forwardRef<any, GroupHeaderProps>((props, ref) => {
   const { children, tagName: Tag = 'h2', ...rest } = props
   const themeName = useTheme()
 
@@ -98,7 +90,7 @@ Group.Header.displayName = 'VerticalTabs.Group.Header'
 
 interface CollapsibleGroupProps extends HTMLPropsFor<'div'> {
   groupButtonAriaLabel?: string
-  header?: ReactElement<typeof CollapsibleGroupHeader>
+  header?: React.ReactElement<typeof CollapsibleGroupHeader>
   startOpen?: boolean
 }
 
@@ -113,9 +105,9 @@ interface CollapsibleGroupComponent
     CollapsibleGroupStatics
   > {}
 
-const CollapsibleGroup = forwardRef((props, ref) => {
+const CollapsibleGroup = React.forwardRef((props, ref) => {
   const { children, header, startOpen, groupButtonAriaLabel, ...rest } = props
-  const [open, setOpenState] = useState(startOpen)
+  const [open, setOpenState] = React.useState(startOpen)
 
   const getButtonAriaLabel = () => {
     const prefix = open ? 'Collapse' : 'Expand'
@@ -128,8 +120,8 @@ const CollapsibleGroup = forwardRef((props, ref) => {
 
   return (
     <div ref={ref} {...rest}>
-      {isValidElement(header) &&
-        cloneElement<CollapsibleGroupHeaderProps>(header as any, {
+      {React.isValidElement(header) &&
+        React.cloneElement<CollapsibleGroupHeaderProps>(header as any, {
           toggle,
           open,
           getButtonAriaLabel
@@ -146,42 +138,44 @@ const CollapsibleGroup = forwardRef((props, ref) => {
   )
 }) as CollapsibleGroupComponent
 
-interface CollapsibleGroupHeaderProps extends HTMLAttributes<HTMLElement> {
+interface CollapsibleGroupHeaderProps
+  extends React.HTMLAttributes<HTMLElement> {
   getButtonAriaLabel?: () => string
   open?: boolean
   tagName?: React.ElementType | keyof JSX.IntrinsicElements
   toggle?: () => void
 }
-const CollapsibleGroupHeader = forwardRef<any, CollapsibleGroupHeaderProps>(
-  (props, ref) => {
-    const {
-      children,
-      open,
-      getButtonAriaLabel,
-      tagName: Tag = 'h2',
-      toggle,
-      ...rest
-    } = props
-    const themeName = useTheme()
+const CollapsibleGroupHeader = React.forwardRef<
+  any,
+  CollapsibleGroupHeaderProps
+>((props, ref) => {
+  const {
+    children,
+    open,
+    getButtonAriaLabel,
+    tagName: Tag = 'h2',
+    toggle,
+    ...rest
+  } = props
+  const themeName = useTheme()
 
-    return (
-      <Tag {...rest} {...styles.groupHeader(themeName)} ref={ref}>
-        <button
-          {...styles.groupButton()}
-          aria-label={getButtonAriaLabel()}
-          onClick={toggle}
-        >
-          <span {...styles.headerLabel()}>{children}</span>
+  return (
+    <Tag {...rest} {...styles.groupHeader(themeName)} ref={ref}>
+      <button
+        {...styles.groupButton()}
+        aria-label={getButtonAriaLabel()}
+        onClick={toggle}
+      >
+        <span {...styles.headerLabel()}>{children}</span>
 
-          <CaretDownIcon
-            size={CaretDownIcon.sizes.small}
-            {...styles.rotatable(open)}
-          />
-        </button>
-      </Tag>
-    )
-  }
-)
+        <CaretDownIcon
+          size={CaretDownIcon.sizes.small}
+          {...styles.rotatable(open)}
+        />
+      </button>
+    </Tag>
+  )
+})
 
 CollapsibleGroup.Header = CollapsibleGroupHeader
 

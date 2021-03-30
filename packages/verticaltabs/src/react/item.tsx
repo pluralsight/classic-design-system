@@ -8,17 +8,10 @@ import {
   RefFor
 } from '@pluralsight/ps-design-system-util'
 import { StyleAttribute, compose, css } from 'glamor'
-import React, {
-  ReactElement,
-  ReactNode,
-  cloneElement,
-  forwardRef,
-  useState
-} from 'react'
-
-import stylesheet from '../css'
+import React from 'react'
 
 import { useHideLabels } from './context'
+import stylesheet from '../css/index'
 import { List, CollapsibleList } from './list'
 
 type StyleFn = (
@@ -89,10 +82,10 @@ const styles: { [key: string]: StyleFn } = {
 }
 
 interface ItemProps extends HTMLPropsFor<'li'> {
-  active?: ReactNode
+  active?: React.ReactNode
   collapsed?: boolean
   collapsible?: boolean
-  header?: ReactElement
+  header?: React.ReactElement
   itemType?: string
 }
 
@@ -100,7 +93,7 @@ interface ItemHeaderBaseProps {
   active?: boolean
   collapsed?: boolean
   collapsible?: boolean
-  icon?: ReactElement
+  icon?: React.ReactElement
 }
 interface AnchorHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'a'> {
   onclick?: undefined
@@ -119,7 +112,7 @@ interface SpanHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'span'> {
 
 type ItemHeaderProps = AnchorHeaderProps | ButtonHeaderProps | SpanHeaderProps
 
-const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
+const Item = React.forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
   const {
     active,
     collapsed: initialCollapsed = false,
@@ -131,7 +124,7 @@ const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
     ...rest
   } = props
 
-  const [collapsed, setCollapsed] = useState<boolean>(initialCollapsed)
+  const [collapsed, setCollapsed] = React.useState<boolean>(initialCollapsed)
   const themeName = useTheme()
 
   const handleHeaderClick = combineFns<[React.MouseEvent<HTMLLIElement>]>(
@@ -149,7 +142,7 @@ const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
         {...styles.itemTier(themeName, { type })}
         {...(active && { 'data-active': true })}
       >
-        {cloneElement(header, {
+        {React.cloneElement(header, {
           active,
           collapsed,
           collapsible,
@@ -165,13 +158,13 @@ const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
 Item.displayName = 'VerticalTabs.Item'
 
 interface Tier1Props extends Omit<React.ComponentProps<typeof Item>, 'header'> {
-  header: ReactElement<typeof Tier1Header>
+  header: React.ReactElement<typeof Tier1Header>
 }
 const Tier1: React.FC<Tier1Props> & { Header: typeof Tier1Header } = props => (
   <Item {...props} itemType="tier1" />
 )
 
-const Tier1Header = forwardRef<any, ItemHeaderProps>((props, ref) => {
+const Tier1Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
   const { active, collapsed, collapsible, children, icon, ...rest } = props
   const hideLabels = useHideLabels()
   const Tag: React.FC = wrapperProps =>
@@ -185,7 +178,7 @@ const Tier1Header = forwardRef<any, ItemHeaderProps>((props, ref) => {
   return (
     <Tag {...styles.tier1Header()} {...rest}>
       {icon &&
-        cloneElement(icon, {
+        React.cloneElement(icon, {
           size: CaretDownIcon.sizes.medium,
           ...styles.itemIcon(),
           ...(active ? { 'data-active': true } : {})
@@ -209,7 +202,7 @@ Tier1.displayName = 'VerticalTabs.Tier1'
 Tier1.Header.displayName = 'VerticalTabs.Tier1.Header'
 
 interface Tier2Props extends Omit<React.ComponentProps<typeof Item>, 'header'> {
-  header: ReactElement<typeof Tier1Header>
+  header: React.ReactElement<typeof Tier1Header>
 }
 
 const Tier2: React.FC<Tier2Props> & {
@@ -218,7 +211,7 @@ const Tier2: React.FC<Tier2Props> & {
   return <Item {...props} itemType="tier2" />
 }
 
-const Tier2Header = forwardRef<any, ItemHeaderProps>((props, ref) => {
+const Tier2Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
   const hideLabels = useHideLabels()
 
   // NOTE: some props are given during clone that are not used as should not be

@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
 
-import VerticalTabs from '..'
+import VerticalTabs from '../index'
 
 const { CollapsibleGroup, Group, Tier1, Tier2 } = VerticalTabs
 
