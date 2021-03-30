@@ -3,9 +3,9 @@ import Button from '@pluralsight/ps-design-system-button'
 import { RightOf } from '@pluralsight/ps-design-system-position'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { useState } from 'react'
+import React from 'react'
 
-import NavUser from '..'
+import NavUser from '../index'
 
 const defaultArgs = {
   name: 'Jake Trent',
@@ -36,7 +36,7 @@ export const WithMeta = Template.bind({})
 WithMeta.args = { ...defaultArgs, name: 'Jake Trent', meta: 'Accenture' }
 
 export const WithActionMenu: Story = () => {
-  const [toggleOpen, setToggleOpen] = useState('')
+  const [toggleOpen, setToggleOpen] = React.useState('')
 
   const clickHandler = (name: string) => {
     const isOpen = name === toggleOpen

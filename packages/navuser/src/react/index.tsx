@@ -2,9 +2,9 @@ import Avatar from '@pluralsight/ps-design-system-avatar'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, { ReactNode, MouseEventHandler } from 'react'
+import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = {
   navUser: (props: NavUserProps) => {
@@ -21,21 +21,21 @@ const styles = {
 }
 
 interface BaseNavUserProps {
-  meta?: ReactNode
+  meta?: React.ReactNode
   name?: string
   src?: string
 }
 interface AnchorProps extends BaseNavUserProps, HTMLPropsFor<'a'> {
   href: string
-  onClick?: MouseEventHandler<HTMLAnchorElement>
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
 }
 interface ButtonProps extends BaseNavUserProps, HTMLPropsFor<'button'> {
   href?: undefined
-  onClick: MouseEventHandler<HTMLButtonElement>
+  onClick: React.MouseEventHandler<HTMLButtonElement>
 }
 interface DivProps extends BaseNavUserProps, HTMLPropsFor<'div'> {
   href?: undefined
-  onClick?: MouseEventHandler<HTMLDivElement>
+  onClick?: React.MouseEventHandler<HTMLDivElement>
 }
 
 type NavUserElement = HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
@@ -94,7 +94,7 @@ NavUser.displayName = 'NavUser'
 export default NavUser
 
 interface WordsProps extends HTMLPropsFor<'div'> {
-  meta?: ReactNode
+  meta?: React.ReactNode
   name?: string
 }
 const Words: React.FC<WordsProps> = props => {
