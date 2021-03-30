@@ -4,6 +4,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import EmptyState from '@pluralsight/ps-design-system-emptystate'
+// @ts-ignore: module not found
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import {
   CaretDownIcon,
@@ -37,7 +38,7 @@ import {
   useTable
 } from 'react-table'
 
-import Table from '..'
+import Table from '../index'
 
 import { generateNestedUserRows, generateUserRows } from './seed'
 import { FlexContainer, HorzSpacer } from './shared'
@@ -644,7 +645,10 @@ const Paginator: React.FC<PaginatorProps> = props => {
 
       <Dropdown
         appearance="subtle"
-        onChange={(_evt, value) => {
+        onChange={(
+          _evt: React.MouseEvent | React.KeyboardEvent,
+          value: React.ReactText
+        ) => {
           table.setPageSize(Number(value))
         }}
         menu={

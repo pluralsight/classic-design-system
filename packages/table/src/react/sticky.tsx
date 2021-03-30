@@ -1,5 +1,5 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import React, { useCallback, useRef, useState } from 'react'
+import React from 'react'
 import invariant from 'invariant'
 
 import { Sentinel, useIntersectionSentinels } from './sentinel'
@@ -13,12 +13,12 @@ export const StickyContainer = React.forwardRef<
   const { children, ...rest } = props
   invariant(ref, 'ref is required')
 
-  const [stuck, setStuck] = useState<boolean>(false)
+  const [stuck, setStuck] = React.useState<boolean>(false)
 
-  const start = useRef<HTMLDivElement>(null)
-  const end = useRef<HTMLDivElement>(null)
+  const start = React.useRef<HTMLDivElement>(null)
+  const end = React.useRef<HTMLDivElement>(null)
 
-  const getHeaders = useCallback(() => {
+  const getHeaders = React.useCallback(() => {
     const { current: el } = ref as React.MutableRefObject<HTMLDivElement>
     if (!el) return []
 
@@ -26,7 +26,7 @@ export const StickyContainer = React.forwardRef<
     return Array.from(el.querySelectorAll<HTMLDivElement>(selector))
   }, [ref])
 
-  const stickHeaders = useCallback(() => {
+  const stickHeaders = React.useCallback(() => {
     const headers = getHeaders()
 
     for (const el of Array.from(headers)) {
@@ -42,7 +42,7 @@ export const StickyContainer = React.forwardRef<
     }
   }, [getHeaders])
 
-  const unstickHeaders = useCallback(() => {
+  const unstickHeaders = React.useCallback(() => {
     const headers = getHeaders()
 
     for (const el of Array.from(headers)) {
@@ -62,17 +62,17 @@ export const StickyContainer = React.forwardRef<
     else unstickHeaders()
   }, [stickHeaders, unstickHeaders, stuck])
 
-  const stick = useCallback(() => {
+  const stick = React.useCallback(() => {
     setStuck(true)
   }, [])
 
-  const unstick = useCallback(() => {
+  const unstick = React.useCallback(() => {
     setStuck(false)
   }, [])
 
   useIntersectionSentinels(stick, unstick, { start, end })
 
-  const update = useCallback(() => {
+  const update = React.useCallback(() => {
     if (stuck) stickHeaders()
   }, [stuck, stickHeaders])
 

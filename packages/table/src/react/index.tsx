@@ -11,10 +11,10 @@ import {
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
 import invariant from 'invariant'
-import React, { forwardRef, useMemo } from 'react'
+import React from 'react'
 
-import stylesheet from '../css'
-import { alignments, sorts } from '../vars'
+import stylesheet from '../css/index'
+import { alignments, sorts } from '../vars/index'
 
 const styles = {
   container: (
@@ -98,7 +98,7 @@ interface TableStatics {
 }
 type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
 
-const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
+const Table = React.forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   const {
     renderContainer = defaultRenderContainer,
     scrollable = false,
@@ -120,21 +120,23 @@ const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   )
 }) as TableComponent
 
-const defaultRenderContainer = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-  (props, ref) => <div ref={ref} {...props} />
-)
+const defaultRenderContainer = React.forwardRef<
+  HTMLDivElement,
+  HTMLPropsFor<'div'>
+>((props, ref) => <div ref={ref} {...props} />)
 
-const TableBody = forwardRef<HTMLTableSectionElement, HTMLPropsFor<'tbody'>>(
-  (props, ref) => {
-    return <tbody ref={ref} {...props} />
-  }
-)
+const TableBody = React.forwardRef<
+  HTMLTableSectionElement,
+  HTMLPropsFor<'tbody'>
+>((props, ref) => {
+  return <tbody ref={ref} {...props} />
+})
 TableBody.displayName = 'Table.Body'
 
 interface TableCellProps extends HTMLPropsFor<'td'> {
   align?: ValueOf<typeof alignments>
 }
-const TableCell = forwardRef<HTMLTableCellElement, TableCellProps>(
+const TableCell = React.forwardRef<HTMLTableCellElement, TableCellProps>(
   (props, ref) => {
     const { align = alignments.left, ...rest } = props
     return (
@@ -144,13 +146,14 @@ const TableCell = forwardRef<HTMLTableCellElement, TableCellProps>(
 )
 TableCell.displayName = 'Table.Cell'
 
-const TableHead = forwardRef<HTMLTableSectionElement, HTMLPropsFor<'thead'>>(
-  (props, ref) => {
-    const themeName = useTheme()
+const TableHead = React.forwardRef<
+  HTMLTableSectionElement,
+  HTMLPropsFor<'thead'>
+>((props, ref) => {
+  const themeName = useTheme()
 
-    return <thead ref={ref} {...styles.head(themeName)} {...props} />
-  }
-)
+  return <thead ref={ref} {...styles.head(themeName)} {...props} />
+})
 TableHead.displayName = 'Table.Head'
 
 interface TableHeaderProps extends HTMLPropsFor<'th'> {
@@ -161,79 +164,80 @@ interface TableHeaderProps extends HTMLPropsFor<'th'> {
   sticky?: boolean
   title?: string
 }
-const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
-  (props, ref) => {
-    const {
-      align = alignments.left,
-      children,
-      sort,
-      sticky = false,
-      title,
-      ...rest
-    } = props
-    const sortable = isDefined(sort)
-    const sorted = !isBoolean(sort)
-    const themeName = useTheme()
+const TableHeader = React.forwardRef<
+  HTMLTableHeaderCellElement,
+  TableHeaderProps
+>((props, ref) => {
+  const {
+    align = alignments.left,
+    children,
+    sort,
+    sticky = false,
+    title,
+    ...rest
+  } = props
+  const sortable = isDefined(sort)
+  const sorted = !isBoolean(sort)
+  const themeName = useTheme()
 
-    if (sortable) {
-      const msg =
-        'Missing title prop in Table.Header. A title is required when the header is sortable.'
+  if (sortable) {
+    const msg =
+      'Missing title prop in Table.Header. A title is required when the header is sortable.'
 
-      invariant(title, msg)
+    invariant(title, msg)
+  }
+
+  const ariaSort = React.useMemo(() => {
+    if (!sorted) return 'none'
+    return sort === sorts.asc ? 'ascending' : 'descending'
+  }, [sort, sorted])
+
+  const ariaLabel = React.useMemo(() => {
+    const options = {
+      ascending: 'Ascending sort applied',
+      descending: 'Descending sort applied',
+      none: 'No sort applied'
     }
 
-    const ariaSort = useMemo(() => {
-      if (!sorted) return 'none'
-      return sort === sorts.asc ? 'ascending' : 'descending'
-    }, [sort, sorted])
+    return `${title || ''}: ${options[ariaSort]}`
+  }, [ariaSort, title])
 
-    const ariaLabel = useMemo(() => {
-      const options = {
-        ascending: 'Ascending sort applied',
-        descending: 'Descending sort applied',
-        none: 'No sort applied'
-      }
+  const Icon = React.useMemo(() => {
+    const options = {
+      ascending: SortAscIcon,
+      descending: SortDescIcon,
+      none: SortIcon
+    }
 
-      return `${title || ''}: ${options[ariaSort]}`
-    }, [ariaSort, title])
+    return options[ariaSort]
+  }, [ariaSort])
 
-    const Icon = useMemo(() => {
-      const options = {
-        ascending: SortAscIcon,
-        descending: SortDescIcon,
-        none: SortIcon
-      }
-
-      return options[ariaSort]
-    }, [ariaSort])
-
-    return (
-      <th
-        ref={ref}
-        title={title}
-        {...styles.header(themeName, { align, sortable, sticky })}
-        {...(sortable && {
-          'aria-label': ariaLabel,
-          'aria-sort': ariaSort,
-          tabIndex: 0
-        })}
-        {...rest}
-      >
-        <div>
-          {children}
-          {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
-        </div>
-      </th>
-    )
-  }
-)
+  return (
+    <th
+      ref={ref}
+      title={title}
+      {...styles.header(themeName, { align, sortable, sticky })}
+      {...(sortable && {
+        'aria-label': ariaLabel,
+        'aria-sort': ariaSort,
+        tabIndex: 0
+      })}
+      {...rest}
+    >
+      <div>
+        {children}
+        {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
+      </div>
+    </th>
+  )
+})
 TableHeader.displayName = 'Table.Header'
 
 interface TableRowProps extends HTMLPropsFor<'tr'> {
   expanded?: boolean
   selected?: boolean
 }
-const TableRow = forwardRef<HTMLTableRowElement, TableRowProps>(
+const TableRow = React.forwardRef<HTMLTableRowElement, TableRowProps>(
   (props, ref) => {
     const { expanded = true, selected = false, ...rest } = props
     const themeName = useTheme()
@@ -255,7 +259,7 @@ interface TableDrawerProps extends Omit<HTMLPropsFor<'tr'>, 'ref'> {
   colSpan: number
   indentWithCell?: boolean
 }
-const TableDrawer = forwardRef<HTMLTableRowElement, TableDrawerProps>(
+const TableDrawer = React.forwardRef<HTMLTableRowElement, TableDrawerProps>(
   (props, ref) => {
     const {
       expanded,
