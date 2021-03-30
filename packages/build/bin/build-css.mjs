@@ -17,7 +17,7 @@ const logSuccess = str => console.log(chalk.green(prefix + str))
 
 const { packageJson } = readPkgUp.sync()
 
-const main = async () => {
+;(async function main() {
   program
     .version(packageJson.version)
     .option(
@@ -62,6 +62,4 @@ const main = async () => {
   }
 
   logSuccess('Success.')
-}
-
-await main()
+})()
