@@ -7,7 +7,6 @@ import {
   useDateSelectChange,
   slides
 } from '@pluralsight/ps-design-system-datepicker'
-// @ts-ignore: waiting on typescript conversion
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Switch from '@pluralsight/ps-design-system-switch'

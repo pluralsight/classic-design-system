@@ -4,7 +4,6 @@ import Button from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import EmptyState from '@pluralsight/ps-design-system-emptystate'
-// @ts-ignore: module not found
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import {
   CaretDownIcon,
