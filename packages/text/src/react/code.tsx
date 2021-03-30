@@ -3,7 +3,7 @@ import React from 'react'
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const style = ({ themeName }: { themeName: ValueOf<typeof names> }) =>
   compose(
