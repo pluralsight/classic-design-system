@@ -1,11 +1,10 @@
-import { css } from 'glamor'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { appearances } from '../vars'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
+import React from 'react'
 
-import React, { HTMLAttributes } from 'react'
-
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+import { appearances } from '../vars/index'
 
 const style = ({
   appearance,
@@ -27,7 +26,7 @@ interface LinkStatics {
   appearances: typeof appearances
 }
 
-interface Props extends HTMLAttributes<HTMLAnchorElement> {
+interface Props extends React.HTMLAttributes<HTMLAnchorElement> {
   appearance?: string
 }
 interface LinkComponent
