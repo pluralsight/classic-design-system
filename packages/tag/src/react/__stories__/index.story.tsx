@@ -1,9 +1,9 @@
 import { action } from '@storybook/addon-actions'
 import * as Icon from '@pluralsight/ps-design-system-icon'
-import React, { useState } from 'react'
+import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Tag from '..'
+import Tag from '../index'
 
 const sizeStory = storiesOf('size', module)
 Object.values(Tag.sizes).forEach(size =>
@@ -20,7 +20,7 @@ Object.values(Tag.sizes).forEach(size =>
 )
 
 const PressedTag = React.forwardRef((props, _ref) => {
-  const [pressed, setPressed] = useState(true)
+  const [pressed, setPressed] = React.useState(true)
   return (
     <Tag isPressed={pressed} {...props} onClick={() => setPressed(!pressed)} />
   )

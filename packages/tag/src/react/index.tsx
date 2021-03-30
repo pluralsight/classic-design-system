@@ -4,16 +4,16 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { compose, css } from 'glamor'
-import React from 'react'
-
-import stylesheet from '../css'
-import * as vars from '../vars'
 import {
   HTMLPropsFor,
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
+import { compose, css } from 'glamor'
+import React from 'react'
+
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
 const styles = {
   tag: ({
