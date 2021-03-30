@@ -2,7 +2,7 @@ import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { compose, css, media } from 'glamor'
 import React from 'react'
 
-import { pageWidthLayoutCSS as stylesheet } from '../css'
+import { pageWidthLayoutCSS as stylesheet } from '../css/index'
 
 const styles = {
   layout: () =>
