@@ -1,8 +1,9 @@
-import React, { forwardRef } from 'react'
 import { ForwardRefComponent } from '@pluralsight/ps-design-system-util'
-import Menu, { MenuItemProps } from './index'
 import { css } from 'glamor'
-import stylesheet from '../css'
+import React from 'react'
+
+import stylesheet from '../css/index'
+import Menu, { MenuItemProps } from './index'
 
 const styles = {
   item: () => css(stylesheet['.psds-menu__item-with-description']),
@@ -18,7 +19,7 @@ interface MenuItemWithDescriptionProps extends MenuItemProps {
   description: React.ReactText
 }
 
-export const MenuItemWithDescription = forwardRef((props, ref) => {
+export const MenuItemWithDescription = React.forwardRef((props, ref) => {
   const { id, name, description, ...rest } = props
   return (
     <Menu.Item {...rest} ref={ref} value={{ id, name }} {...styles.item()}>

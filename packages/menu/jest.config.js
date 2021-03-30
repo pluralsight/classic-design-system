@@ -1,8 +1,15 @@
-const path = require('path')
-const baseConfig = require('../../jest/base.config.js')
-const { name } = require('./package.json')
+import * as path from 'path'
+import readPkg from 'read-pkg-up'
+import { fileURLToPath } from 'url'
 
-module.exports = {
+import baseConfig from '../../jest/base.config.js'
+
+const {
+  packageJson: { name }
+} = readPkg.sync()
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+export default {
   ...baseConfig,
   displayName: name,
   name: name,

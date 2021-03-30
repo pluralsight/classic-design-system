@@ -1,8 +1,8 @@
 import { RefFor, ForwardRefComponent } from '@pluralsight/ps-design-system-util'
-import React, { forwardRef, useContext, useRef } from 'react'
+import React from 'react'
 import { css, compose } from 'glamor'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 import { MenuContext, ItemContext, SelectedItem } from './context'
 
 const styles = {
@@ -27,7 +27,7 @@ export interface MenuItemProps {
   onKeyDown?: React.KeyboardEventHandler
 }
 
-export const Item = forwardRef((props, ref) => {
+export const Item = React.forwardRef((props, ref) => {
   const {
     as: Comp = 'button',
     active,
@@ -42,7 +42,7 @@ export const Item = forwardRef((props, ref) => {
     role,
     ...rest
   } = props
-  const { onMenuClick, selectedItem, optionRole, useActive } = useContext(
+  const { onMenuClick, selectedItem, optionRole, useActive } = React.useContext(
     MenuContext
   )
   const handleClick = (evt: React.MouseEvent | React.KeyboardEvent) => {
@@ -54,7 +54,7 @@ export const Item = forwardRef((props, ref) => {
     onKeyDown && onKeyDown(evt)
   }
   const selected = selectedItem?.id === value.id
-  const listItem = useRef<HTMLLIElement | undefined>()
+  const listItem = React.useRef<HTMLLIElement | undefined>()
   const { active: hookActive, handleActiveState } = useActive(listItem)
   return (
     <li

@@ -1,9 +1,11 @@
-import React, { useContext } from 'react'
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
+import React from 'react'
+
 import { ItemContext } from './context'
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
 const styles = {
   icon: css(stylesheet[`.psds-menu__item-icon`]),
   filler: css(stylesheet[`.psds-menu__item-icon-filler`])
@@ -11,7 +13,7 @@ const styles = {
 interface CheckProps extends HTMLPropsFor<'div'> {}
 
 export const Check: React.FC<CheckProps> = props => {
-  const { selected } = useContext(ItemContext)
+  const { selected } = React.useContext(ItemContext)
   return selected ? (
     // @ts-ignore: ignore icon type
     <CheckIcon {...styles.icon} {...props} />

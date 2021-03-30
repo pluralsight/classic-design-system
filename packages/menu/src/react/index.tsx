@@ -1,11 +1,11 @@
-import React, { MouseEvent, ReactText } from 'react'
-import { css, compose, keyframes } from 'glamor'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   useMenuRef
 } from '@pluralsight/ps-design-system-util'
+import { css, compose, keyframes } from 'glamor'
+import React from 'react'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
@@ -37,8 +37,8 @@ interface MenuStatics {
 
 interface MenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
   selectedItem?: {
-    id: ReactText
-    name: ReactText
+    id: React.ReactText
+    name: React.ReactText
   }
   optionRole?: string
   useActive?: (
@@ -47,7 +47,7 @@ interface MenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
     active: boolean
     handleActiveState: (event: React.FocusEvent<Element>) => void
   }
-  onClick?: (evt: MouseEvent, selectedItem: SelectedItem) => void
+  onClick?: (evt: React.MouseEvent, selectedItem: SelectedItem) => void
   origin?: ValueOf<typeof vars.origins>
 }
 type MenuComponent = RefForwardingComponent<
