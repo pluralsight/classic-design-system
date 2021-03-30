@@ -4,7 +4,7 @@ import { compose, css, media } from 'glamor'
 import React from 'react'
 import { useCookies } from 'react-cookie'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const DISMISS_COOKIE_NAME = 'prism-cookienotify'
 const DEFAULT_PRIVACY_UPDATED_DATE = new Date('2018-05-24T00:00:00')
