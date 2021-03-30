@@ -12,7 +12,7 @@
   "scripts": {
     "build": "run-s build:svg build:esm build:css copy:svg",
     "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
-    "build:esm": "run-s compile:esm rewrite:esm",
+    "build:esm": "run-s compile:esm rewrite:esm rewriteillustration:esm",
     "build:svg": "run-s convert:svg removeindex:svg",
     "build:watch": "yarn build:esm --watch",
     "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
@@ -20,6 +20,7 @@
     "copy:svg": "node copy-svgs.js",
     "removeindex:svg": "rimraf src/react/illustrations/index.dist.tsx",
     "rewrite:esm": "tsc-esm --project tsconfig.build.json",
+    "rewriteillustration:esm": "node build/rewrite-illustration-index.js",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
     "test:watch": "yarn test --watchAll"
