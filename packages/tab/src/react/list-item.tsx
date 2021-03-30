@@ -8,9 +8,9 @@ import {
   RefFor
 } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
-import React, { ForwardRefExoticComponent, RefObject, forwardRef } from 'react'
+import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = {
   bar: () => css(stylesheet['.psds-tab__list-item__bar']),
@@ -46,31 +46,33 @@ export interface ListItemButtonProps
 }
 type ListItemElement = HTMLButtonElement | HTMLAnchorElement
 type ListItemProps = ListItemAnchorProps | ListItemButtonProps
-type ListItemComponent = ForwardRefExoticComponent<ListItemProps> & {
+type ListItemComponent = React.ForwardRefExoticComponent<ListItemProps> & {
   (props: ListItemAnchorProps, ref?: RefFor<'a'>): JSX.Element
   (props: ListItemButtonProps, ref?: RefFor<'button'>): JSX.Element
 }
 
-const ListItem = forwardRef<ListItemElement, ListItemProps>((props, ref) => {
-  const { active, children, ...rest } = props
-  const themeName = useTheme()
-  return React.createElement(
-    'href' in props ? 'a' : 'button',
-    {
-      ...rest,
-      ...styles.listItem(active || false, themeName),
-      'aria-selected': active,
-      ref,
-      role: 'tab',
-      tabIndex: -1
-    },
-    <div {...styles.textWidth()} tabIndex={-1}>
-      <div {...styles.textInner()} tabIndex={-1}>
-        {children}
+const ListItem = React.forwardRef<ListItemElement, ListItemProps>(
+  (props, ref) => {
+    const { active, children, ...rest } = props
+    const themeName = useTheme()
+    return React.createElement(
+      'href' in props ? 'a' : 'button',
+      {
+        ...rest,
+        ...styles.listItem(active || false, themeName),
+        'aria-selected': active,
+        ref,
+        role: 'tab',
+        tabIndex: -1
+      },
+      <div {...styles.textWidth()} tabIndex={-1}>
+        <div {...styles.textInner()} tabIndex={-1}>
+          {children}
+        </div>
+        <span {...styles.bar()} />
       </div>
-      <span {...styles.bar()} />
-    </div>
-  )
-}) as ListItemComponent
+    )
+  }
+) as ListItemComponent
 
 export default ListItem
