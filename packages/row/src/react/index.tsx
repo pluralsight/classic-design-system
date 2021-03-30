@@ -9,22 +9,13 @@ import {
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
 import { compose, css } from 'glamor'
-import React, {
-  Children,
-  FocusEventHandler,
-  ReactElement,
-  ReactNode,
-  cloneElement,
-  isValidElement,
-  useState
-} from 'react'
-
-import stylesheet from '../css'
-import { toPercentageString } from '../js'
-import * as vars from '../vars'
+import React from 'react'
 
 import ConditionalWrap from './conditional-wrap'
+import stylesheet from '../css/index'
+import { toPercentageString } from '../js/index'
 import Shave from './shave'
+import * as vars from '../vars/index'
 
 const styles = {
   actionBar: (props: ActionBarProps) =>
@@ -127,22 +118,27 @@ const formatActionBarWidth = (actionBar: unknown): string => {
 
 type MetadataNode =
   | string
-  | ReactElement<typeof Text>
-  | ReactElement<typeof TextLink>
+  | React.ReactElement<typeof Text>
+  | React.ReactElement<typeof TextLink>
 
 // NOTE: the `title` prop clashes with a native html attr so we're exclude
 //       it from being mistakenly used in any child component
 interface RowProps extends Omit<HTMLPropsFor<'div'>, 'title'> {
-  actionBar?: ReactNode[] // <Button size="small" appearance="secondary" />
+  actionBar?: React.ReactNode[] // <Button size="small" appearance="secondary" />
   actionBarVisible?: boolean
-  fullOverlay?: ReactNode | ReactElement<typeof FullOverlayLink>
+  fullOverlay?: React.ReactNode | React.ReactElement<typeof FullOverlayLink>
   fullOverlayVisible?: boolean
-  image?: ReactElement<typeof Image> | ReactElement<typeof ImageLink>
+  image?:
+    | React.ReactElement<typeof Image>
+    | React.ReactElement<typeof ImageLink>
   metadata1?: MetadataNode[]
   metadata2?: MetadataNode[]
   progress?: number
   size?: ValueOf<typeof vars.sizes>
-  title?: string | ReactElement<typeof Text> | ReactElement<typeof TextLink>
+  title?:
+    | string
+    | React.ReactElement<typeof Text>
+    | React.ReactElement<typeof TextLink>
   titleTruncated?: boolean
 }
 
@@ -289,21 +285,24 @@ interface FullOverlayFocusManagerProps
 const FullOverlayFocusManager: React.FC<FullOverlayFocusManagerProps> = props => {
   const { fullOverlayVisible, fullOverlay } = props
 
-  const [isFocused, setFocused] = useState(false)
+  const [isFocused, setFocused] = React.useState(false)
 
-  const handleFocus: FocusEventHandler<HTMLDivElement> = () => {
+  const handleFocus: React.FocusEventHandler<HTMLDivElement> = () => {
     setFocused(true)
   }
 
-  const handleBlur: FocusEventHandler<HTMLDivElement> = () => {
+  const handleBlur: React.FocusEventHandler<HTMLDivElement> = () => {
     setFocused(false)
   }
 
-  if (!isValidElement(fullOverlay)) return null
+  if (!React.isValidElement(fullOverlay)) return null
 
   return (
     <FullOverlay isFocused={isFocused} fullOverlayVisible={fullOverlayVisible}>
-      {cloneElement(fullOverlay, { onFocus: handleFocus, onBlur: handleBlur })}
+      {React.cloneElement(fullOverlay, {
+        onFocus: handleFocus,
+        onBlur: handleBlur
+      })}
     </FullOverlay>
   )
 }
@@ -405,11 +404,11 @@ const TextLink: React.FC<TextLinkProps> = props => {
   const { children, truncated = false, ...rest } = props
   const themeName = useTheme()
 
-  const anchor = Children.only(children)
+  const anchor = React.Children.only(children)
   const anchorText = anchor.props.children
 
   const shouldWrap = truncated && isString(anchorText)
-  const shaveWrap = (child: ReactNode) => {
+  const shaveWrap = (child: React.ReactNode) => {
     if (!isString(child)) return null
 
     return <Shave lines={2}>{child}</Shave>
@@ -436,20 +435,20 @@ const Title: React.FC<TitleProps> = props => {
   const { children, size, truncated = false, ...rest } = props
   const themeName = useTheme()
 
-  const wrapAsLink = (child: ReactNode) => {
-    if (!isValidElement(child)) return null
+  const wrapAsLink = (child: React.ReactNode) => {
+    if (!React.isValidElement(child)) return null
 
-    return cloneElement(child, { truncated })
+    return React.cloneElement(child, { truncated })
   }
 
-  const wrapWithShave = (child: ReactNode) => {
+  const wrapWithShave = (child: React.ReactNode) => {
     return (
       <ConditionalWrap shouldWrap={truncated} wrapper={shaveWrap}>
         {child}
       </ConditionalWrap>
     )
   }
-  const shaveWrap = (child: ReactNode) => {
+  const shaveWrap = (child: React.ReactNode) => {
     if (!isString(child)) return null
     return <Shave lines={2}>{child}</Shave>
   }

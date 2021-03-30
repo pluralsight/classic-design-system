@@ -6,13 +6,12 @@ import {
   layout,
   type
 } from '@pluralsight/ps-design-system-core'
-
 import {
   defaultName as themeDefaultName,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 export default {
   '.psds-row': {
