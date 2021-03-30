@@ -8,10 +8,10 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { compose, css } from 'glamor'
-import React, { forwardRef, useContext, useMemo } from 'react'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
 import Context, { ContextValue, initialContext } from './context'
 
@@ -119,7 +119,7 @@ interface StepsProps extends HTMLPropsFor<'div'> {
   orientation?: ValueOf<typeof Steps.orientations>
   size?: ValueOf<typeof Steps.sizes>
 }
-const Steps = forwardRef<HTMLDivElement, StepsProps>((props, ref) => {
+const Steps = React.forwardRef<HTMLDivElement, StepsProps>((props, ref) => {
   const {
     counter = initialContext.counter,
     orientation = initialContext.orientation,
@@ -149,7 +149,7 @@ const defaultMarkerContainer = (props: HTMLPropsFor<'div'>) => (
   <div {...props} />
 )
 
-const Step = forwardRef<HTMLDivElement, StepProps>((props, ref) => {
+const Step = React.forwardRef<HTMLDivElement, StepProps>((props, ref) => {
   const {
     children,
     description,
@@ -159,14 +159,14 @@ const Step = forwardRef<HTMLDivElement, StepProps>((props, ref) => {
     ...rest
   } = props
 
-  const MarkerContainer = useMemo(() => renderMarkerContainer, [
+  const MarkerContainer = React.useMemo(() => renderMarkerContainer, [
     renderMarkerContainer
   ])
 
   const interactive = 'onClick' in props
 
   const themeName = useTheme()
-  const { orientation, size } = useContext(Context)
+  const { orientation, size } = React.useContext(Context)
 
   return (
     <div
@@ -198,13 +198,13 @@ interface MarkerProps extends Omit<HTMLPropsFor<'div'>, 'ref'> {
   status: ValueOf<typeof Steps.statuses>
 }
 
-const Marker = forwardRef<HTMLDivElement, MarkerProps>((props, ref) => {
+const Marker = React.forwardRef<HTMLDivElement, MarkerProps>((props, ref) => {
   const { status, ...rest } = props
 
   const themeName = useTheme()
-  const { counter, size } = useContext(Context)
+  const { counter, size } = React.useContext(Context)
 
-  const [diameter, stroke, radius] = useMemo(() => {
+  const [diameter, stroke, radius] = React.useMemo(() => {
     const large = size === 'large'
     const _diameter = large ? 36 : 24
     const _stroke = large ? 2 : 2

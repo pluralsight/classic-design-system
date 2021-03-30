@@ -3,7 +3,7 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { css } from 'glamor'
 import React from 'react'
 
-import { statuses } from '../../vars'
+import { statuses } from '../../vars/index'
 
 interface StoryStep {
   description: string

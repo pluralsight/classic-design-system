@@ -3,10 +3,9 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import { css } from 'glamor'
 import React from 'react'
 
-import * as vars from '../../vars'
-
 import Context, { initialContext } from '../context'
-import Steps from '..'
+import Steps from '../index'
+import * as vars from '../../vars/index'
 
 const { Marker } = Steps
 

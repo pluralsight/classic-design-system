@@ -9,7 +9,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 const dark = `.psds-theme--${themeNames.dark}`
 const light = `.psds-theme--${themeNames.light}`

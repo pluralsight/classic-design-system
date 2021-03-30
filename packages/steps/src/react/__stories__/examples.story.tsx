@@ -3,9 +3,8 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import { css } from 'glamor'
 import React from 'react'
 
-import * as vars from '../../vars'
-
-import Steps from '..'
+import * as vars from '../../vars/index'
+import Steps from '../index'
 
 import { FixedWidthContainer } from './shared'
 
