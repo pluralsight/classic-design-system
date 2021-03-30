@@ -1,6 +1,3 @@
-import { css } from 'glamor'
-import React from 'react'
-
 import Halo from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
@@ -12,9 +9,11 @@ import {
   RefForwardingComponent,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
+import { css } from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
 const styles = {
   error: () => css(stylesheet['.psds-text-input__error']),
