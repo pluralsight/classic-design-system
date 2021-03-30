@@ -6,17 +6,9 @@ import {
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
 import { compose, css, media } from 'glamor'
-import React, {
-  forwardRef,
-  useCallback,
-  useEffect,
-  useImperativeHandle,
-  useMemo,
-  useState,
-  useRef
-} from 'react'
+import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 
 const styles = {
   outer: () =>
@@ -54,22 +46,22 @@ interface ScrollableProps extends HTMLPropsFor<'div'> {
     ref: React.Ref<HTMLElement>
   ) => React.ReactNode
 }
-const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
+const Scrollable = React.forwardRef<HTMLElement, ScrollableProps>(
   (props, forwardedRef) => {
     const { renderContent = defaultRenderContent, ...rest } = props
 
-    const ref = useRef<HTMLElement>()
+    const ref = React.useRef<HTMLElement>()
     /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
-    useImperativeHandle(forwardedRef, () => ref.current as HTMLElement)
+    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLElement)
 
-    const dragPreview = useRef(BLANK_IMAGE)
+    const dragPreview = React.useRef(BLANK_IMAGE)
 
-    const [hidden, setHidden] = useState<boolean>(true)
-    const [pageY, setPageY] = useState<number>(0)
-    const [offset, setOffset] = useState<string>('0%')
-    const [scrollRatio, setScrollRatio] = useState<number>(0)
+    const [hidden, setHidden] = React.useState<boolean>(true)
+    const [pageY, setPageY] = React.useState<number>(0)
+    const [offset, setOffset] = React.useState<string>('0%')
+    const [scrollRatio, setScrollRatio] = React.useState<number>(0)
 
-    const updateDimensions = useCallback(() => {
+    const updateDimensions = React.useCallback(() => {
       if (!ref.current) return
       const content = ref.current
 
@@ -86,7 +78,7 @@ const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
     useResizeObserver(ref, updateDimensions)
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    useEffect(() => updateDimensions(), [])
+    React.useEffect(() => updateDimensions(), [])
 
     function onHandleDrag(evt: React.DragEvent<HTMLDivElement>) {
       const nextPageY = evt.pageY
@@ -117,7 +109,7 @@ const Scrollable = forwardRef<HTMLElement, ScrollableProps>(
       setPageY(evt.pageY)
     }
 
-    const styleOverride = useMemo(() => {
+    const styleOverride = React.useMemo(() => {
       const height = Math.max(scrollRatio * 100, 10) + '%'
       const visibility = hidden ? 'hidden' : 'initial'
 
@@ -176,7 +168,7 @@ interface HandleProps {
   onDragStart?: React.DragEventHandler
 }
 const Handle: React.FC<HandleProps> = props => {
-  const [grabbed, setGrabbed] = useState<boolean>(false)
+  const [grabbed, setGrabbed] = React.useState<boolean>(false)
 
   const onDragEnd = combineFns<[React.DragEvent<HTMLDivElement>]>(() => {
     setGrabbed(false)
