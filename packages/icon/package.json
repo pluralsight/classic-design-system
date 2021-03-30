@@ -14,7 +14,7 @@
   "scripts": {
     "build": "run-s build:svg build:esm build:css copy:svg",
     "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
-    "build:esm": "run-s compile:esm rewrite:esm",
+    "build:esm": "run-s compile:esm rewrite:esm rewriteicon:esm",
     "prebuild:svg": "yarn clean:svg",
     "build:svg": "node bin/icon -s src/svg -d src/react/icons core",
     "build:watch": "yarn build:esm --watch",
@@ -22,6 +22,7 @@
     "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "copy:svg": "node cli/copy-svgs.js",
     "rewrite:esm": "tsc-esm --project tsconfig.build.json",
+    "rewriteicon:esm": "node cli/rewrite-icon-index.js",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test --watchAll"

@@ -72,7 +72,7 @@ export { ${componentName}  }
 const generateManifest = (fileNames, ext = 'dist.tsx') => {
   return [...fileNames]
     .sort((a, b) => a.localeCompare(b))
-    .map(n => `export { ${n} } from './${n}.${ext.split('.').slice(0, -1)}.js'`)
+    .map(n => `export { ${n} } from './${n}.${ext.split('.').slice(0, -1)}'`)
     .join('\n')
     .concat('\n')
 }
