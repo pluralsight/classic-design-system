@@ -1,13 +1,14 @@
-import React, { forwardRef } from 'react'
-import { compose, css } from 'glamor'
+import { WarningIcon, CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import stylesheet from '../css'
-import { WarningIcon, CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import * as vars from '../vars'
+import { compose, css } from 'glamor'
+import React from 'react'
+
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
 const styles = {
   button: ({
@@ -50,7 +51,7 @@ interface SelectButtonProps extends HTMLPropsFor<'button'> {
   size?: ValueOf<typeof vars.sizes>
 }
 
-export const Button = forwardRef<HTMLButtonElement, SelectButtonProps>(
+export const Button = React.forwardRef<HTMLButtonElement, SelectButtonProps>(
   (
     {
       children,

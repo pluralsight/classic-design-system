@@ -1,18 +1,17 @@
-import { Button } from './button'
-import { Selected } from './selected'
-import * as vars from '../vars'
-
-import React, { forwardRef, useMemo } from 'react'
 import * as PositionComponents from '@pluralsight/ps-design-system-position'
 import {
   ValueOf,
   ForwardRefComponent
 } from '@pluralsight/ps-design-system-util'
 import Menu from '@pluralsight/ps-design-system-menu'
-import { useListbox, UseListboxProps } from './useListbox'
+import React from 'react'
 
-import { positions } from '../vars'
+import { Button } from './button'
+import { Selected } from './selected'
+import { useListbox, UseListboxProps } from './useListbox'
+import * as vars from '../vars/index'
 export { useListbox } from './useListbox'
+
 export type { UseListboxProps } from './useListbox'
 
 interface DefaultRenderOptionProps {
@@ -20,7 +19,7 @@ interface DefaultRenderOptionProps {
   name: React.ReactText
 }
 
-const defaultRenderOption = forwardRef((props, ref) => {
+const defaultRenderOption = React.forwardRef((props, ref) => {
   const { id, name } = props
   return (
     <Menu.Item value={{ id, name }} ref={ref}>
@@ -32,11 +31,11 @@ const defaultRenderOption = forwardRef((props, ref) => {
 
 interface SelectProps extends UseListboxProps {
   items?: Array<{ id: React.ReactText; name: React.ReactText }>
-  position?: ValueOf<typeof positions>
+  position?: ValueOf<typeof vars.positions>
   renderOption?: React.FC
 }
 
-const Select = forwardRef((props, ref) => {
+const Select = React.forwardRef((props, ref) => {
   const {
     items = [],
     position = 'belowLeft',
@@ -49,7 +48,7 @@ const Select = forwardRef((props, ref) => {
     ref
   )
 
-  const RenderOption = useMemo(() => renderOption, [renderOption])
+  const RenderOption = React.useMemo(() => renderOption, [renderOption])
   return (
     <PositionComponents.Position
       position={PositionComponents[position]}
