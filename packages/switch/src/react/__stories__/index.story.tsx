@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Switch from '..'
+import Switch from '../index'
 
 const sizeStory = storiesOf('size', module)
 Object.values(Switch.sizes).forEach(size =>

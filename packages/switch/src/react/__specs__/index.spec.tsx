@@ -1,9 +1,8 @@
 /* eslint-disable  @typescript-eslint/no-unnecessary-type-assertion */
-
 import { fireEvent, render } from '@testing-library/react'
 import React from 'react'
 
-import Switch from '..'
+import Switch from '../index'
 
 describe('Switch', () => {
   it('forwards refs', () => {
