@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-select",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Select UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "*",
-    "@pluralsight/ps-design-system-menu": "^1.0.2",
+    "@pluralsight/ps-design-system-menu": "^1.0.3",
     "@pluralsight/ps-design-system-position": "^6.1.7",
     "@pluralsight/ps-design-system-storybook-preset": "^0.4.6"
   }

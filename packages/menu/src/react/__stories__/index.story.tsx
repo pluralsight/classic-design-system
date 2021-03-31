@@ -155,6 +155,29 @@ storiesOf('item with description', module)
       </Menu>
     )
   })
+  .add('next to items w/o description', () => (
+    <Menu>
+      <MenuItemWithDescription
+        id="1"
+        name="Can view"
+        description="View details, content and other members in the channel."
+      />
+      <MenuItemWithDescription
+        id="2"
+        name="Can edit"
+        description="Edit details, add or remove content and invite or remove members"
+      />
+      <MenuItemWithDescription
+        id="3"
+        name="Make owner"
+        description="Edit details, add or remove content, invite or remove members and delete Channel"
+      />
+      <Menu.Item>Remove member</Menu.Item>
+      <Menu.Item>
+        Remove member with so many lines that it goes to a second line
+      </Menu.Item>
+    </Menu>
+  ))
 
 storiesOf('dividers', module)
   .add('edge', () => (

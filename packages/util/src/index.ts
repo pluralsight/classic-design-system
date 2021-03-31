@@ -1,5 +1,6 @@
 export * from './jest'
 export * from './menu-keys'
+export * from './primatives'
 export * from './types'
 
 export { callAll } from './call-all'

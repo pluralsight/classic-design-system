@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-menu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Menu UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",

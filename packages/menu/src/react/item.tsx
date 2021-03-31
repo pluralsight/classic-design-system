@@ -1,5 +1,5 @@
-import { RefFor, ForwardRefComponent } from '@pluralsight/ps-design-system-util'
-import React, { forwardRef, useContext, useRef } from 'react'
+import { RefFor, forwardRefWithAs } from '@pluralsight/ps-design-system-util'
+import React, { useContext, useRef } from 'react'
 import { css, compose } from 'glamor'
 
 import stylesheet from '../css'
@@ -27,7 +27,7 @@ export interface MenuItemProps {
   onKeyDown?: React.KeyboardEventHandler
 }
 
-export const Item = forwardRef((props, ref) => {
+export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
   const {
     as: Comp = 'button',
     active,
@@ -83,6 +83,6 @@ export const Item = forwardRef((props, ref) => {
       </Comp>
     </li>
   )
-}) as ForwardRefComponent<'button', MenuItemProps>
+})
 
 Item.displayName = 'Dropdown.Item'
