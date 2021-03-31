@@ -2,7 +2,7 @@
 
 Storybook Addon Theme can be used to change the background color and default theme inside the preview in [Storybook](https://storybook.js.org).
 
-![React Storybook Screenshot](https://user-images.githubusercontent.com/679346/113080059-755a3c00-9193-11eb-9193-f54ec63c2e4a.png)
+![Storybook screenshot](https://user-images.githubusercontent.com/679346/113085270-c0c51800-919c-11eb-8325-d41f32fc2b50.png)
 
 ## Installation
 

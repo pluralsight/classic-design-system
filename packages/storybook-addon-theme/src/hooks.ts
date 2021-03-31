@@ -12,7 +12,8 @@ export function useSelectedTheme(api: StorybookApi = storybookApi) {
   const [globals, updateGlobals] = api.useGlobals()
   const userSelectedTheme = globals[PARAM_KEY]?.name
 
-  const theme = userSelectedTheme ?? storyTheme ?? defaultTheme
+  const storyDefaultTheme = storyTheme ?? defaultTheme
+  const theme = userSelectedTheme ?? storyDefaultTheme
 
   const setTheme = useCallback(
     (value: ThemeName) => {
@@ -21,7 +22,7 @@ export function useSelectedTheme(api: StorybookApi = storybookApi) {
     [updateGlobals, globals]
   )
 
-  return { theme, setTheme }
+  return { theme, storyDefaultTheme, setTheme }
 }
 
 type ThemeName = keyof typeof names
