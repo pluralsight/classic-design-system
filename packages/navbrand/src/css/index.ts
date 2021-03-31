@@ -1,10 +1,8 @@
 import {
-  colorsBackgroundUtility,
+  colorsBackgroundUtilityCsv,
   colorsWhite,
   layout
 } from '@pluralsight/ps-design-system-core'
-
-import { transparentize } from '@pluralsight/ps-design-system-util'
 
 export default {
   '.psds-navbrand': {
@@ -22,13 +20,13 @@ export default {
     textDecoration: 'none',
 
     '&:hover, &:focus': {
-      background: `rgba(${colorsBackgroundUtility.base},0.15)`
+      background: `rgba(${colorsBackgroundUtilityCsv},0.15)`
     },
     '&:focus': {
       outline: 'none'
     },
     '&:active': {
-      background: `rgba(${colorsBackgroundUtility.base},0.25)`
+      background: `rgba(${colorsBackgroundUtilityCsv},0.25)`
     }
   },
   '.psds-navbrand__logo': {

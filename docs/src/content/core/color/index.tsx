@@ -79,9 +79,9 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Utility',
-        var: 'psColorsBackgroundUtilityBase',
-        js: 'colorsBackgroundUtility.base',
-        bg: `rgb(${core.colorsBackgroundUtility.base})`,
+        var: 'psColorsBackgroundUtilityCsv',
+        js: 'colorsBackgroundUtilityCsv',
+        bg: `rgb(${core.colorsBackgroundUtilityCsv})`,
         hex: 'N/A (138,153,168)'
       }
     ]

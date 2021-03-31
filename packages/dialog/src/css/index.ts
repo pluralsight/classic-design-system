@@ -1,5 +1,5 @@
 import {
-  colorsBackgroundUtility,
+  colorsBackgroundUtilityCsv,
   colorsPrimaryAction,
   colorsWhite,
   colorsTextIcon,
@@ -139,11 +139,11 @@ export default {
         colorsPrimaryAction.background
       )}`,
       cursor: 'pointer',
-      background: `rgba(${colorsBackgroundUtility.base},0.45)`,
+      background: `rgba(${colorsBackgroundUtilityCsv},0.45)`,
       color: colorsTextIcon.highOnLight
     },
     '&:not([disabled]):active': {
-      background: `rgba(${colorsBackgroundUtility.base},0.65)`,
+      background: `rgba(${colorsBackgroundUtilityCsv},0.65)`,
       color: colorsTextIcon.highOnLight,
       transform: 'scale(0.98)'
     },

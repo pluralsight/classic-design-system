@@ -1,7 +1,7 @@
 import {
   type,
   colorsTextIcon,
-  colorsBackgroundUtility
+  colorsBackgroundUtilityCsv
 } from '@pluralsight/ps-design-system-core'
 
 import * as vars from '../vars'
@@ -62,6 +62,6 @@ export default {
     flexDirection: 'column',
     justifyContent: 'center',
     color: colorsTextIcon.highOnDark,
-    backgroundColor: `rgb(${colorsBackgroundUtility.base})`
+    backgroundColor: `rgb(${colorsBackgroundUtilityCsv})`
   }
 }

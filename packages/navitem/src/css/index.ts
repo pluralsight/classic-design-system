@@ -1,12 +1,11 @@
 import {
-  colorsBackgroundUtility,
+  colorsBackgroundUtilityCsv,
   colorsTextIcon,
   colorsWhite,
   layout,
   motion,
   type
 } from '@pluralsight/ps-design-system-core'
-import { transparentize } from '@pluralsight/ps-design-system-util'
 
 export default {
   // common
@@ -34,13 +33,13 @@ export default {
       color: colorsTextIcon.highOnDark
     },
     '&:hover, &:focus': {
-      background: `rgba(${colorsBackgroundUtility.base},0.15)`
+      background: `rgba(${colorsBackgroundUtilityCsv},0.15)`
     },
     '&:focus': {
       outline: 'none'
     },
     '&:active': {
-      background: `rgba(${colorsBackgroundUtility.base},0.25)`
+      background: `rgba(${colorsBackgroundUtilityCsv},0.25)`
     }
   },
   '.psds-navitem__button--selected': {

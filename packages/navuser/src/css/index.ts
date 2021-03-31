@@ -1,10 +1,9 @@
 import {
-  colorsBackgroundUtility,
+  colorsBackgroundUtilityCsv,
   colorsTextIcon,
   layout,
   type
 } from '@pluralsight/ps-design-system-core'
-import { transparentize } from '@pluralsight/ps-design-system-util'
 
 export default {
   '.psds-navuser': {
@@ -20,13 +19,13 @@ export default {
     cursor: 'pointer',
 
     '&:hover, &:focus': {
-      background: `rgba(${colorsBackgroundUtility.base},0.15)`
+      background: `rgba(${colorsBackgroundUtilityCsv},0.15)`
     },
     '&:focus': {
       outline: 'none'
     },
     '&:active': {
-      background: `rgba(${colorsBackgroundUtility.base},0.25)`
+      background: `rgba(${colorsBackgroundUtilityCsv},0.25)`
     }
   },
   '.psds-navuser__plan-name': {
