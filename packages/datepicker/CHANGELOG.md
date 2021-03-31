@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.2...@pluralsight/ps-design-system-datepicker@14.1.3) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
 ## [14.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.1...@pluralsight/ps-design-system-datepicker@14.1.2) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

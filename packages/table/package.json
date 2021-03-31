@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "13.1.3",
+  "version": "13.1.4",
   "description": "Table UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,8 +24,8 @@
   "dependencies": {
     "@pluralsight/ps-design-system-collapsible": "^4.0.2",
     "@pluralsight/ps-design-system-core": "^6.9.3",
-    "@pluralsight/ps-design-system-icon": "^21.0.6",
-    "@pluralsight/ps-design-system-util": "^7.3.0",
+    "@pluralsight/ps-design-system-icon": "^21.0.7",
+    "@pluralsight/ps-design-system-util": "^7.3.1",
     "invariant": "^2.2.4"
   },
   "peerDependencies": {
@@ -35,17 +35,17 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-avatar": "^7.1.6",
+    "@pluralsight/ps-design-system-avatar": "^7.1.7",
     "@pluralsight/ps-design-system-build": "^2.1.0",
-    "@pluralsight/ps-design-system-button": "^21.0.6",
-    "@pluralsight/ps-design-system-checkbox": "^7.1.6",
-    "@pluralsight/ps-design-system-dropdown": "^11.2.3",
-    "@pluralsight/ps-design-system-emptystate": "^12.0.6",
-    "@pluralsight/ps-design-system-layout": "^9.0.6",
-    "@pluralsight/ps-design-system-screenreaderonly": "^3.1.7",
-    "@pluralsight/ps-design-system-searchinput": "^8.0.7",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.4.6",
-    "@pluralsight/ps-design-system-text": "^18.2.2",
+    "@pluralsight/ps-design-system-button": "^21.0.7",
+    "@pluralsight/ps-design-system-checkbox": "^7.1.7",
+    "@pluralsight/ps-design-system-dropdown": "^11.2.4",
+    "@pluralsight/ps-design-system-emptystate": "^12.0.7",
+    "@pluralsight/ps-design-system-layout": "^9.0.7",
+    "@pluralsight/ps-design-system-screenreaderonly": "^3.1.8",
+    "@pluralsight/ps-design-system-searchinput": "^8.0.8",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.4.7",
+    "@pluralsight/ps-design-system-text": "^18.2.3",
     "@types/faker": "^5.1.4",
     "@types/react-beautiful-dnd": "^13.0.0",
     "@types/react-table": "^7.0.25",

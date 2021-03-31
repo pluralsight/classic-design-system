@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@8.1.6...@pluralsight/ps-design-system-storybook-addon-theme@8.2.0) (2021-03-31)
+
+
+### Bug Fixes
+
+* **storybook-addon-theme:** update incorrect package name in README ([105595e](https://github.com/pluralsight/design-system/commit/105595e03152aec26d9434b424a9ee86c7ec957b))
+
+
+### Features
+
+* **storybook-addon-theme:** ability to set theme per-story ([ae52523](https://github.com/pluralsight/design-system/commit/ae52523a796b488d90bb1862462080313a48c8a1))
+* **storybook-addon-theme:** update icon to circle ([9bb5869](https://github.com/pluralsight/design-system/commit/9bb5869ed4913a899fd17e405e57d13430a9dc5f))
+
+
+
+
+
 ## [8.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@8.1.5...@pluralsight/ps-design-system-storybook-addon-theme@8.1.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-addon-theme
