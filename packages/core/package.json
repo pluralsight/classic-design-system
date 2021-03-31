@@ -10,7 +10,6 @@
   "module": "dist/esm/index.mjs",
   "scripts": {
     "build": "run-s build:esm build:css",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "node ./build",
     "build:esm": "run-s compile:esm rewrite:esm",
     "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
@@ -18,6 +17,7 @@
   },
   "sideEffects": false,
   "style": "dist/css/index.css",
+  "type": "module",
   "types": "dist/esm/index.d.ts",
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.1.0",

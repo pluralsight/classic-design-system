@@ -1,8 +1,8 @@
-const { fs, postcss } = require('@pluralsight/ps-design-system-build')
-const globby = require('globby')
-const path = require('path')
-const presetEnv = require('postcss-preset-env')
-const atImport = require('postcss-import')
+import { fs, postcss } from '@pluralsight/ps-design-system-build'
+import globby from 'globby'
+import * as path from 'path'
+import presetEnv from 'postcss-preset-env'
+import atImport from 'postcss-import'
 
 async function main() {
   await fs.mkdir('dist')
