@@ -6,7 +6,9 @@
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [
-    "react-storybook"
+    "react-storybook",
+    "storybook-addon",
+    "style"
   ],
   "main": "dist/index.js",
   "module": "dist/index.js",
