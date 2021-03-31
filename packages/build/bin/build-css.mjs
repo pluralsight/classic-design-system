@@ -5,7 +5,7 @@ import program from 'commander'
 import * as path from 'path'
 import readPkgUp from 'read-pkg-up'
 
-import { css } from '../index.js'
+import index from '../index.js'
 
 const defaultInputFilePath = path.join('dist', 'css', 'index.js')
 const defaultOutputDirectoryPath = path.join('dist')
@@ -51,7 +51,7 @@ const { packageJson } = readPkgUp.sync()
   }
 
   try {
-    css.buildComponentStylesheet(js, {
+    index.css.buildComponentStylesheet(js, {
       outputDir: outputDirectoryPath,
       useGlamor: program.useGlamor
     })
