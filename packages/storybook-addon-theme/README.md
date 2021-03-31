@@ -6,10 +6,10 @@ Storybook Addon Theme can be used to change the background color and default the
 
 ## Installation
 
-Theme is part of [@pluralsight/storybook-preset](https://github.com/pluralsight/design-system/tree/master/packages/storybook-preset) or you can install it individually with:
+Theme is part of [@pluralsight/ps-design-system-storybook-preset](https://github.com/pluralsight/design-system/tree/master/packages/storybook-preset) or you can install it individually with:
 
 ```sh
-npm i -D @pluralsight/storybook-addon-theme
+npm i -D @pluralsight/ps-design-system-storybook-addon-theme
 ```
 
 ## Configuration
@@ -18,7 +18,7 @@ Add the following to [`.storybook/main.js`](https://storybook.js.org/docs/react/
 
 ```js
 module.exports = {
-  addons: ['@pluralsight/storybook-addon-theme']
+  addons: ['@pluralsight/ps-design-system-storybook-addon-theme']
 }
 ```
 
