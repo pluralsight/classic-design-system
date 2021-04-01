@@ -1,7 +1,7 @@
 import Field from '@pluralsight/ps-design-system-field'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, canUseDOM, RefFor } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
-import React, { FC, ComponentProps } from 'react'
+import React, { FC, ComponentProps, useEffect, useRef } from 'react'
 
 import { Calendar } from './calendar'
 import { CalendarDates } from './calendar-dates'
@@ -50,8 +50,31 @@ export const DatePicker: FC<DatePickerProps> = ({
     setSlide,
     setSelected
   })
+  const ref = useRef<HTMLDivElement | undefined>()
+  useEffect(() => {
+    if (!canUseDOM()) return () => {}
+
+    const handleClickOutsideMenu = (evt: MouseEvent) => {
+      if (evt.target instanceof HTMLElement) {
+        // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+        if ((ref.current as HTMLDivElement).contains(evt.target)) return
+        setOpen(false)
+      }
+    }
+    document.addEventListener('click', handleClickOutsideMenu, {
+      capture: true
+    })
+    return () =>
+      document.removeEventListener('click', handleClickOutsideMenu, {
+        capture: true
+      })
+  }, [setOpen])
   return (
-    <div style={{ display: 'inline-block', position: 'relative' }} {...props}>
+    <div
+      style={{ display: 'inline-block', position: 'relative' }}
+      {...props}
+      ref={ref as RefFor<'div'>}
+    >
       <TextInputField
         disabled={disabled}
         error={error}
