@@ -1,6 +1,5 @@
 import React, { HTMLAttributes } from 'react'
-import Icon from '@pluralsight/ps-design-system-icon'
-import * as Icons from '@pluralsight/ps-design-system-icon/dist/esm/react/icons/index.js'
+import Icon, { icons } from '@pluralsight/ps-design-system-icon'
 import * as core from '@pluralsight/ps-design-system-core'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {}
@@ -14,8 +13,8 @@ export const IconCommonSet: React.FC<Props> = () => (
       backgroundColor: 'var(--appColorsBackgroundMed)'
     }}
   >
-    {Object.keys(Icons).map((id, i) => {
-      const Comp = Icons[id]
+    {Object.keys(icons).map((id, i) => {
+      const Comp = icons[id]
       return (
         <div
           className="icon"
