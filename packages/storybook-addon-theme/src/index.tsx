@@ -1,22 +1,19 @@
 import { makeDecorator } from '@storybook/addons'
-import { useAddonState } from '@storybook/client-api'
+import * as api from '@storybook/client-api'
 import React from 'react'
-
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
 import { ADDON_ID, PARAM_KEY } from './constants'
 import { Themed } from './components/themed'
+import { useSelectedTheme } from './hooks'
 
 export const withTheme = makeDecorator({
   name: ADDON_ID,
   parameterName: PARAM_KEY,
   wrapper: (storyFn, context) => {
     // eslint-disable-next-line
-    const [themeName] = useAddonState<keyof typeof themeNames>(
-      `${ADDON_ID}/name`
-    )
+    const { theme } = useSelectedTheme(api)
 
-    return <Themed themeName={themeName}>{storyFn(context)}</Themed>
+    return <Themed themeName={theme}>{storyFn(context)}</Themed>
   }
 })
 

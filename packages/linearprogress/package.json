@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-linearprogress",
-  "version": "6.1.8",
+  "version": "6.1.9",
   "description": "Linear Progress UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,8 +21,8 @@
   },
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^6.9.3",
-    "@pluralsight/ps-design-system-icon": "^21.0.6",
-    "@pluralsight/ps-design-system-screenreaderonly": "^3.1.7"
+    "@pluralsight/ps-design-system-icon": "^21.0.7",
+    "@pluralsight/ps-design-system-screenreaderonly": "^3.1.8"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.1.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.4.6",
-    "@pluralsight/ps-design-system-theme": "^7.1.6"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.4.7",
+    "@pluralsight/ps-design-system-theme": "^7.1.7"
   }
 }
