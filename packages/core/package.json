@@ -12,7 +12,8 @@
     "build": "run-s build:cjs build:esm build:css",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "node ./build",
-    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm"
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "test": "tsc --noEmit --project ./tsconfig.json && jest"
   },
   "sideEffects": false,
   "style": "dist/css/index.css",
