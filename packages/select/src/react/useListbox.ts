@@ -111,7 +111,7 @@ export const useListbox = (
       evt.type === 'click' ||
       (evt.type === 'keydown' &&
         'key' in evt &&
-        ['Enter', 'ArrowDown', 'ArrowUp'].includes(evt.key))
+        ['Enter', 'ArrowDown', 'ArrowUp', ' '].includes(evt.key))
     ) {
       evt.preventDefault()
       evt.stopPropagation()
