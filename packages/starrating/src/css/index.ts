@@ -71,7 +71,7 @@ export default {
   },
 
   '.psds-starrating__star--active': {
-    color: colorsYellow.base
+    color: colorsYellow[6]
   },
   [`.psds-starrating__star--bright.psds-theme--${themeDefaultName}`]: {
     color: colorsTextIcon.lowOnDark

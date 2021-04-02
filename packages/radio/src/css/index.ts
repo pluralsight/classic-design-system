@@ -78,8 +78,8 @@ export default {
     borderColor: colorsTextIcon.lowOnLight
   },
   '.psds-radio-button__circle--checked': {
-    borderColor: colorsBlue.base,
-    background: colorsBlue.base
+    borderColor: colorsBlue[6],
+    background: colorsBlue[6]
   },
 
   '.psds-radio-button__circle-inner': {

@@ -57,22 +57,22 @@ export default {
   },
   '.psds-icon--color-red': {
     [`& > svg`]: {
-      fill: colorsRed.base
+      fill: colorsRed[6]
     }
   },
   '.psds-icon--color-blue': {
     [`& > svg`]: {
-      fill: colorsBlue.base
+      fill: colorsBlue[6]
     }
   },
   '.psds-icon--color-green': {
     [`& > svg`]: {
-      fill: colorsGreen.base
+      fill: colorsGreen[6]
     }
   },
   '.psds-icon--color-yellow': {
     [`& > svg`]: {
-      fill: colorsYellow.base
+      fill: colorsYellow[6]
     }
   }
 }

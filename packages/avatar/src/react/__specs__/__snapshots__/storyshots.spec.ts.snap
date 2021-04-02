@@ -6,7 +6,7 @@ exports[`Storyshots Components/Avatar Basic 1`] = `
 >
   <div
     aria-label="Jake Trent"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -25,7 +25,7 @@ exports[`Storyshots Components/Avatar Class Name Override 1`] = `
 >
   <div
     aria-label="Jake Trent"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -50,7 +50,7 @@ exports[`Storyshots Components/Avatar Gravatar Invalid 1`] = `
   />
   <div
     aria-label="Jake Trent"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -75,7 +75,7 @@ exports[`Storyshots Components/Avatar Image Error 1`] = `
   />
   <div
     aria-label="Bill Dill"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#0074AB",
@@ -100,7 +100,7 @@ exports[`Storyshots Components/Avatar Image Flat And Long 1`] = `
   />
   <div
     aria-label="Jake Trent"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -125,7 +125,7 @@ exports[`Storyshots Components/Avatar Image Square 1`] = `
   />
   <div
     aria-label="Jake Trent"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -150,7 +150,7 @@ exports[`Storyshots Components/Avatar Image Tall And Thin 1`] = `
   />
   <div
     aria-label="Jake Trent"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -175,7 +175,7 @@ exports[`Storyshots Components/Avatar Image Valid 1`] = `
   />
   <div
     aria-label="Jake Trent"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -193,7 +193,7 @@ exports[`Storyshots Components/Avatar Name Empty 1`] = `
 >
   <div
     aria-label=""
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#C00F00",
@@ -211,7 +211,7 @@ exports[`Storyshots Components/Avatar Name Single Char 1`] = `
 >
   <div
     aria-label="x"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -229,7 +229,7 @@ exports[`Storyshots Components/Avatar Name Special Char 1`] = `
 >
   <div
     aria-label="% Special Char"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -246,7 +246,7 @@ exports[`Storyshots Components/Avatar Name Undefined 1`] = `
   data-css-1a2nnhr=""
 >
   <div
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#D1487B",
@@ -264,7 +264,7 @@ Array [
     data-css-79vgce=""
   >
     <div
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -278,7 +278,7 @@ Array [
     data-css-xthig=""
   >
     <div
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -292,7 +292,7 @@ Array [
     data-css-1a2nnhr=""
   >
     <div
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -306,7 +306,7 @@ Array [
     data-css-1bcvkli=""
   >
     <div
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -320,7 +320,7 @@ Array [
     data-css-1vdca9w=""
   >
     <div
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -344,7 +344,7 @@ exports[`Storyshots Components/Avatar Style Override 1`] = `
 >
   <div
     aria-label="Jake Trent"
-    data-css-1h1qs66=""
+    data-css-1xbr5gr=""
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -363,7 +363,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Anakin Skywalker"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#C00F00",
@@ -378,7 +378,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Budapest Skywalker"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -393,7 +393,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Carlos Organa"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#009380",
@@ -408,7 +408,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Dennis Pimenta"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#7048C6",
@@ -423,7 +423,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Peia Organa"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#0074AB",
@@ -438,7 +438,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Obi-Wan Kenobi"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -453,7 +453,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Uy Marley"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -468,7 +468,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Harry Potter"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#0074AB",
@@ -483,7 +483,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Diz Blau"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#6BA300",
@@ -498,7 +498,7 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
   >
     <div
       aria-label="Single"
-      data-css-1h1qs66=""
+      data-css-1xbr5gr=""
       style={
         Object {
           "backgroundColor": "#7048C6",
