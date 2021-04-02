@@ -3,7 +3,7 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -30,16 +30,16 @@ type AvatarComponent = RefForwardingComponent<
 
 type ImageState = 'loading' | 'error' | 'success'
 
-type StyleFn = (props: AvatarProps) => StyleAttribute
+type StyleFn = (props: AvatarProps) => glamor.StyleAttribute
 
 const styles: { [key: string]: StyleFn } = {
   avatar: props =>
-    compose(
-      css(stylesheet['.psds-avatar']),
-      css(stylesheet[`.psds-avatar--size-${props.size}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-avatar']),
+      glamor.css(stylesheet[`.psds-avatar--size-${props.size}`])
     ),
-  image: () => css(stylesheet['.psds-avatar__image']),
-  initials: () => css(stylesheet['.psds-avatar__initials'])
+  image: () => glamor.css(stylesheet['.psds-avatar__image']),
+  initials: () => glamor.css(stylesheet['.psds-avatar__initials'])
 }
 
 const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
