@@ -11,31 +11,31 @@ import {
   HTMLPropsFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 
 const styles = {
   head: (themeName: ValueOf<typeof themeNames>, isOpen: boolean) =>
-    css(
+    glamor.css(
       stylesheet[`.psds-drawer__summary`],
       isOpen && stylesheet['.psds-drawer__summary.psds-drawer--isOpen'],
       stylesheet[`.psds-drawer__summary.psds-theme--${themeName}`]
     ),
   body: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-drawer__details'],
       stylesheet[`.psds-drawer__details.psds-theme--${themeName}`]
     ),
-  iconSlot: () => css(stylesheet['.psds-drawer__icon-slot']),
+  iconSlot: () => glamor.css(stylesheet['.psds-drawer__icon-slot']),
   rotatable: (themeName: ValueOf<typeof themeNames>, isOpen: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-drawer__rotatable'],
       stylesheet[`.psds-drawer__rotatable.psds-theme--${themeName}`],
       isOpen && stylesheet['.psds-drawer__rotatable.psds-drawer--isOpen']
     ),
-  collapsible: () => css(stylesheet['.psds-drawer__collapsible'])
+  collapsible: () => glamor.css(stylesheet['.psds-drawer__collapsible'])
 }
 
 interface DrawerContextValue {
