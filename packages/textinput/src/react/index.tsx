@@ -9,14 +9,14 @@ import {
   RefForwardingComponent,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
 
 const styles = {
-  error: () => css(stylesheet['.psds-text-input__error']),
+  error: () => glamor.css(stylesheet['.psds-text-input__error']),
   field: ({
     appearance,
     error,
@@ -35,7 +35,7 @@ const styles = {
     size: ValueOf<typeof vars.sizes>
   }) => {
     const small = size === vars.sizes.small
-    return css(
+    return glamor.css(
       stylesheet['.psds-text-input__field'],
       stylesheet[`.psds-text-input__field--appearance-${appearance}`],
       stylesheet[`.psds-text-input__field.psds-theme--${themeName}`],
@@ -56,12 +56,13 @@ const styles = {
         stylesheet[`.psds-text-input__field--error.psds-theme--${themeName}`]
     )
   },
-  fieldContainer: () => css(stylesheet['.psds-text-input__field-container']),
+  fieldContainer: () =>
+    glamor.css(stylesheet['.psds-text-input__field-container']),
   fieldInput: (
     appearance: ValueOf<typeof vars.appearances>,
     themeName: ValueOf<typeof themeNames>
   ) =>
-    css(
+    glamor.css(
       stylesheet['.psds-text-input__field-input'],
       stylesheet[`.psds-text-input__field-input--appearance-${appearance}`],
       stylesheet[`.psds-text-input__field-input.psds-theme--${themeName}`]
@@ -77,7 +78,7 @@ const styles = {
     iconAlign: ValueOf<typeof vars.iconAligns>
     themeName: ValueOf<typeof themeNames>
   }) =>
-    css(
+    glamor.css(
       stylesheet['.psds-text-input__icon'],
       Boolean(icon) &&
         stylesheet[`.psds-text-input__icon--icon-align-${iconAlign}`],
@@ -85,17 +86,17 @@ const styles = {
       stylesheet[`.psds-text-input__icon.psds-theme--${themeName}`]
     ),
   textInput: (disabled: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-text-input'],
       disabled && stylesheet['.psds-text-input--disabled']
     ),
   label: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-text-input__label'],
       stylesheet[`.psds-text-input__label.psds-theme--${themeName}`]
     ),
   subLabel: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-text-input__sub-label'],
       stylesheet[`.psds-text-input__sub-label.psds-theme--${themeName}`]
     )
