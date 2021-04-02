@@ -8,29 +8,29 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 
 const styles = {
   dataWell: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-datawell'],
       stylesheet[`.psds-datawell.psds-theme--${themeName}`]
     ),
   label: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-datawell__label'],
       stylesheet[`.psds-datawell__label.psds-theme--${themeName}`]
     ),
   data: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-datawell__data'],
       stylesheet[`.psds-datawell__data.psds-theme--${themeName}`]
     ),
   subLabel: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-datawell__sublabel'],
       stylesheet[`.psds-datawell__sublabel.psds-theme--${themeName}`]
     )
