@@ -1,6 +1,6 @@
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -13,7 +13,7 @@ const style = ({
   appearance: string
   themeName: string
 }) =>
-  css(
+  glamor.css(
     stylesheet[`.psds-link`],
     appearance === appearances.default
       ? stylesheet[
