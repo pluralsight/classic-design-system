@@ -1,6 +1,6 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { DateObj, RenderProps } from 'dayzed'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { DateContext } from './context'
@@ -8,12 +8,12 @@ import stylesheet from '../css/index'
 
 const styles = {
   calendarDate: (selected: boolean, today: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-calendar__date'],
       selected && stylesheet['.psds-calendar__date--selected'],
       today && stylesheet['.psds-calendar__date--today']
     ),
-  dateFiller: () => css(stylesheet['.psds-calendar__filler'])
+  dateFiller: () => glamor.css(stylesheet['.psds-calendar__filler'])
 }
 
 interface ChildrenRenderProps extends HTMLPropsFor<'button'> {}

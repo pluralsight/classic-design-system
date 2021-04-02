@@ -11,39 +11,39 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import Theme from '@pluralsight/ps-design-system-theme'
 import { RenderProps } from 'dayzed'
-import { css, keyframes } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { DateContext } from './context'
 import stylesheet from '../css/index'
 import { slides } from '../vars/index'
 
-const forward = keyframes(
+const forward = glamor.keyframes(
   stylesheet['@keyframes psds-calendar__keyframes__forward']
 )
-const backward = keyframes(
+const backward = glamor.keyframes(
   stylesheet['@keyframes psds-calendar__keyframes__backward']
 )
 
 const styles = {
-  calendar: () => css(stylesheet['.psds-calendar']),
-  headerWrapper: () => css(stylesheet[`.psds-calendar__header-wrapper`]),
-  gridWrapper: () => css(stylesheet[`.psds-calendar__grid-wrapper`]),
+  calendar: () => glamor.css(stylesheet['.psds-calendar']),
+  headerWrapper: () => glamor.css(stylesheet[`.psds-calendar__header-wrapper`]),
+  gridWrapper: () => glamor.css(stylesheet[`.psds-calendar__grid-wrapper`]),
   gridSlide: (slide?: ValueOf<typeof slides>) =>
-    css(
+    glamor.css(
       stylesheet[`.psds-calendar__grid-slide`],
       slide === 'forward' &&
         stylesheet[`.psds-calendar__grid-slide--forward`](forward),
       slide === 'backward' &&
         stylesheet[`.psds-calendar__grid-slide--backward`](backward)
     ),
-  month: () => css(stylesheet['.psds-calendar__month']),
-  header: () => css(stylesheet['.psds-calendar__header']),
-  headerButton: () => css(stylesheet['.psds-calendar__header-button']),
-  headerMonth: () => css(stylesheet['.psds-calendar__header-month']),
-  weekdayHeader: () => css(stylesheet['.psds-calendar__weekday-header']),
-  dateFiller: () => css(stylesheet['.psds-calendar__filler']),
-  dateGrid: () => css(stylesheet['.psds-calendar__date-grid'])
+  month: () => glamor.css(stylesheet['.psds-calendar__month']),
+  header: () => glamor.css(stylesheet['.psds-calendar__header']),
+  headerButton: () => glamor.css(stylesheet['.psds-calendar__header-button']),
+  headerMonth: () => glamor.css(stylesheet['.psds-calendar__header-month']),
+  weekdayHeader: () => glamor.css(stylesheet['.psds-calendar__weekday-header']),
+  dateFiller: () => glamor.css(stylesheet['.psds-calendar__filler']),
+  dateGrid: () => glamor.css(stylesheet['.psds-calendar__date-grid'])
 }
 
 const monthNamesShort = [

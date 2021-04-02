@@ -2,17 +2,17 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { parse, format, differenceInCalendarMonths } from 'date-fns'
 import { DateObj } from 'dayzed'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { slides } from '../vars/index'
 
 const style = {
-  start: () => css(stylesheet['.psds-calendar__date--selected-start']),
-  end: () => css(stylesheet['.psds-calendar__date--selected-end']),
+  start: () => glamor.css(stylesheet['.psds-calendar__date--selected-start']),
+  end: () => glamor.css(stylesheet['.psds-calendar__date--selected-end']),
   inRange: (arg?: boolean) =>
-    css(arg && stylesheet['.psds-calendar__date--in-range'])
+    glamor.css(arg && stylesheet['.psds-calendar__date--in-range'])
 }
 
 export const useIsInRange = (selected: Date[] = []) => {
