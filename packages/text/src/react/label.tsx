@@ -1,6 +1,6 @@
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -21,15 +21,15 @@ const style = ({
   strong: boolean
   caps: boolean
 }) =>
-  compose(
-    css(stylesheet['.psds-text__label']),
-    css(stylesheet[`.psds-text__label--size-${size}`]),
-    css(
+  glamor.compose(
+    glamor.css(stylesheet['.psds-text__label']),
+    glamor.css(stylesheet[`.psds-text__label--size-${size}`]),
+    glamor.css(
       stylesheet[`.psds-text__label--color-${color}.psds-theme--${themeName}`]
     ),
-    strong && css(stylesheet[`.psds-text__label--strong`]),
-    caps && css(stylesheet[`.psds-text__label--caps`]),
-    mono && css(stylesheet[`.psds-text__label--mono`])
+    strong && glamor.css(stylesheet[`.psds-text__label--strong`]),
+    caps && glamor.css(stylesheet[`.psds-text__label--caps`]),
+    mono && glamor.css(stylesheet[`.psds-text__label--mono`])
   )
 
 interface LabelStatics {

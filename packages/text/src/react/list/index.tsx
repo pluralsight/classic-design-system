@@ -1,6 +1,6 @@
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import ListItem from './list-item'
@@ -18,13 +18,13 @@ const styles = ({
   color: ValueOf<typeof vars.textColors>
   type: ValueOf<typeof vars.listTypes>
 }) =>
-  compose(
-    css(stylesheet[`.psds-text__list`]),
-    css(stylesheet[`.psds-text__list--size-${size}`]),
-    css(
+  glamor.compose(
+    glamor.css(stylesheet[`.psds-text__list`]),
+    glamor.css(stylesheet[`.psds-text__list--size-${size}`]),
+    glamor.css(
       stylesheet[`.psds-text__list--color-${color}.psds-theme--${themeName}`]
     ),
-    css(stylesheet[`.psds-text__list--type-${type}`])
+    glamor.css(stylesheet[`.psds-text__list--type-${type}`])
   )
 
 interface ListStatics {

@@ -1,6 +1,6 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
-import * as glamor from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import P from '../p'

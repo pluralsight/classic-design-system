@@ -1,6 +1,6 @@
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -15,10 +15,12 @@ const style = ({
   size: ValueOf<typeof vars.pSizes>
   color: ValueOf<typeof vars.textColors>
 }) =>
-  compose(
-    css(stylesheet[`.psds-text__p`]),
-    css(stylesheet[`.psds-text__p--size-${size}`]),
-    css(stylesheet[`.psds-text__p--color-${color}.psds-theme--${themeName}`])
+  glamor.compose(
+    glamor.css(stylesheet[`.psds-text__p`]),
+    glamor.css(stylesheet[`.psds-text__p--size-${size}`]),
+    glamor.css(
+      stylesheet[`.psds-text__p--color-${color}.psds-theme--${themeName}`]
+    )
   )
 
 interface PStatics {

@@ -1,4 +1,4 @@
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
@@ -15,10 +15,10 @@ const style = ({
   size?: ValueOf<typeof vars.headingSizes>
   color: ValueOf<typeof vars.textColors>
 }) =>
-  compose(
-    css(stylesheet['.psds-text__heading']),
-    css(stylesheet[`.psds-text__heading--size-${size}`]),
-    css(
+  glamor.compose(
+    glamor.css(stylesheet['.psds-text__heading']),
+    glamor.css(stylesheet[`.psds-text__heading--size-${size}`]),
+    glamor.css(
       stylesheet[`.psds-text__heading--color-${color}.psds-theme--${themeName}`]
     )
   )
