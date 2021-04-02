@@ -6,7 +6,7 @@ import {
   HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -15,7 +15,7 @@ import * as vars from '../vars/index'
 type StyleFn = (
   themeName: ValueOf<keyof typeof names>,
   props?: Record<string, any>
-) => StyleAttribute
+) => glamor.StyleAttribute
 
 interface ViewToggleProps
   extends Omit<React.ComponentProps<typeof List>, 'onSelect'> {
@@ -35,27 +35,28 @@ interface ViewToggleComponent
 
 const styles: { [key: string]: StyleFn } = {
   optionButton: (themeName, props) =>
-    compose(
-      css(
+    glamor.compose(
+      glamor.css(
         { label: 'viewtoggle__option' },
         stylesheet['.psds-viewtoggle__option'],
         stylesheet[`.psds-viewtoggle__option.psds-theme--${themeName}`]
       ),
-      props.active && css(stylesheet['.psds-viewtoggle__option--active'])
+      props.active && glamor.css(stylesheet['.psds-viewtoggle__option--active'])
     ),
   list: themeName =>
-    css(
+    glamor.css(
       { label: 'viewtoggle' },
       stylesheet['.psds-viewtoggle'],
       stylesheet[`.psds-viewtoggle.psds-theme--${themeName}`]
     ),
   activePillBg: themeName =>
-    css(
+    glamor.css(
       { label: 'viewtoggle__option-bg' },
       stylesheet['.psds-viewtoggle__option-bg'],
       stylesheet[`.psds-viewtoggle__option-bg.psds-theme--${themeName}`]
     ),
-  pillBgSpacer: () => css(stylesheet['.psds-viewtoggle__option-bg__spacer'])
+  pillBgSpacer: () =>
+    glamor.css(stylesheet['.psds-viewtoggle__option-bg__spacer'])
 }
 
 const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(

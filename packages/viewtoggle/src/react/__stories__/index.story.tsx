@@ -1,6 +1,6 @@
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import ViewToggle from '../index'
@@ -144,7 +144,7 @@ export const ExampleDynamicOptions: Story = () => {
       </ViewToggle>
 
       <div
-        {...css({
+        {...glamor.css({
           alignItems: 'center',
           display: 'flex',
           justifyContent: 'center',
