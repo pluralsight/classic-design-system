@@ -10,7 +10,7 @@ import {
   HTMLPropsFor,
   RefForwardingComponent
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -25,7 +25,7 @@ const calcRowsPxHeight = (rows: React.ReactText) => {
 }
 
 const styles = {
-  error: () => css(stylesheet['.psds-text-area__error']),
+  error: () => glamor.css(stylesheet['.psds-text-area__error']),
   field: (
     themeName: ValueOf<typeof themeNames>,
     appearance: ValueOf<typeof vars.appearances>,
@@ -33,41 +33,43 @@ const styles = {
   ) => {
     const label = 'psds-text-area__field'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--appearance--${appearance}`]),
-      css(
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}--appearance--${appearance}`]),
+      glamor.css(
         stylesheet[
           `.${label}--appearance-${appearance}.psds-theme--${themeName}`
         ]
       ),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
-      error && css(stylesheet[`.${label}--error.psds-theme--${themeName}`])
+      glamor.css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      error &&
+        glamor.css(stylesheet[`.${label}--error.psds-theme--${themeName}`])
     )
   },
-  fieldContainer: () => css(stylesheet['.psds-text-area__field-container']),
+  fieldContainer: () =>
+    glamor.css(stylesheet['.psds-text-area__field-container']),
   textarea: (disabled: boolean) => {
     const label = 'psds-text-area'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      disabled && css(stylesheet[`.${label}--disabled`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      disabled && glamor.css(stylesheet[`.${label}--disabled`])
     )
   },
   label: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'psds-text-area__label'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}.psds-theme--${themeName}`])
     )
   },
   subLabel: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'psds-text-area__sub-label'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}.psds-theme--${themeName}`])
     )
   }
 }
