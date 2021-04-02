@@ -3,17 +3,17 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { colors, sizes } from '../vars/index'
 
-type StyleFn = (props: IconProps) => StyleAttribute
+type StyleFn = (props: IconProps) => glamor.StyleAttribute
 
 const style: { [name: string]: StyleFn } = {
   icon: props =>
-    css(
+    glamor.css(
       stylesheet['.psds-icon'],
       stylesheet[`.psds-icon--size-${props.size}`],
       stylesheet[`.psds-icon--color-${props.color}`]

@@ -1,4 +1,4 @@
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
@@ -6,16 +6,16 @@ import Icon from '../index'
 import * as Icons from '../icons/index'
 
 const styles = {
-  grid: css({
+  grid: glamor.css({
     display: 'grid',
     gridGap: '1em',
     gridTemplateColumns: '1fr 1fr 1fr 1fr 1fr 1fr'
   }),
-  gridItem: css({
+  gridItem: glamor.css({
     height: '24px',
     width: '24px'
   }),
-  name: css({
+  name: glamor.css({
     height: '24px',
     lineHeight: '24px',
     paddingLeft: '8px'
