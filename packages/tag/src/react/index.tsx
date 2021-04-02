@@ -9,7 +9,7 @@ import {
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -31,26 +31,26 @@ const styles = {
   }) => {
     const label = 'psds-tag'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
-      clickable && css(stylesheet[`.${label}--clickable`]),
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      clickable && glamor.css(stylesheet[`.${label}--clickable`]),
       clickable &&
-        css(stylesheet[`.${label}--clickable.psds-theme--${themeName}`]),
-      css(stylesheet[`.${label}--size-${size}`]),
-      icon && css(stylesheet[`.${label}--icon`]),
-      isPressed && css(stylesheet[`.${label}--isPressed`]),
+        glamor.css(stylesheet[`.${label}--clickable.psds-theme--${themeName}`]),
+      glamor.css(stylesheet[`.${label}--size-${size}`]),
+      icon && glamor.css(stylesheet[`.${label}--icon`]),
+      isPressed && glamor.css(stylesheet[`.${label}--isPressed`]),
       isPressed &&
         clickable &&
-        css(stylesheet[`.${label}--isPressed.${label}--clickable`])
+        glamor.css(stylesheet[`.${label}--isPressed.${label}--clickable`])
     )
   },
   label: (themeName: ValueOf<typeof themeNames>, icon: boolean) => {
     const label = 'psds-tag__label'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}.psds-theme--${themeName}`]),
       icon && stylesheet[`.${label}--icon`]
     )
   }
