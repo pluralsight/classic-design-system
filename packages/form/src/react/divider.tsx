@@ -1,4 +1,4 @@
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 import {
   useTheme,
@@ -10,7 +10,7 @@ import stylesheet from '../css/index'
 
 const styles = {
   divider: (themeName: ValueOf<typeof themNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-form-divider'],
       stylesheet[`.psds-form-divider.psds-theme--${themeName}`]
     )

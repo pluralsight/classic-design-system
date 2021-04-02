@@ -1,12 +1,12 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 
 const styles = {
-  layout: () => css(stylesheet['.psds-form-vertical-layout']),
-  child: () => css(stylesheet['.psds-form-vertical-layout__child'])
+  layout: () => glamor.css(stylesheet['.psds-form-vertical-layout']),
+  child: () => glamor.css(stylesheet['.psds-form-vertical-layout__child'])
 }
 
 const VerticalLayout: React.FC<HTMLPropsFor<'div'>> = ({ style, ...props }) => {
