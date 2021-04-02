@@ -1,7 +1,7 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -10,14 +10,14 @@ const styles = {
   navUser: (props: NavUserProps) => {
     const clickable: boolean = !!props.href || !!props.onClick
 
-    return compose(
-      css(stylesheet['.psds-navuser']),
-      clickable && css(stylesheet['.psds-navuser--clickable'])
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-navuser']),
+      clickable && glamor.css(stylesheet['.psds-navuser--clickable'])
     )
   },
-  meta: () => css(stylesheet['.psds-navuser__plan-name']),
-  name: () => css(stylesheet['.psds-navuser__name']),
-  words: () => css(stylesheet['.psds-navuser__words'])
+  meta: () => glamor.css(stylesheet['.psds-navuser__plan-name']),
+  name: () => glamor.css(stylesheet['.psds-navuser__name']),
+  words: () => glamor.css(stylesheet['.psds-navuser__words'])
 }
 
 interface BaseNavUserProps {
