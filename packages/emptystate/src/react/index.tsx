@@ -9,7 +9,7 @@ import {
   ValueOf,
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import Context, { ContextValue } from './context'
@@ -45,13 +45,13 @@ type StyleFn = (
   props: unknown,
   ctx: ContextValue,
   opts?: unknown
-) => StyleAttribute
+) => glamor.StyleAttribute
 
 const renderSmallIfElementLessThan = 450
 
 const styles = {
   emptyState: (ctx: ContextValue, hasRenderedOnce: boolean) =>
-    compose(
+    glamor.compose(
       combineClasses('.psds-emptystate', ctx),
       !hasRenderedOnce && stylesheet['.psds-emptystate--hidden']
     ),
@@ -66,7 +66,7 @@ const styles = {
 }
 
 const combineClasses = (className: string, { size, themeName }: ContextValue) =>
-  css(
+  glamor.css(
     stylesheet[className],
     stylesheet[className + themeClasses[themeName as string]],
     stylesheet[className + sizeClasses[size as string]]
