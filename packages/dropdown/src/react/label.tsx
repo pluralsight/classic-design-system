@@ -4,14 +4,14 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 
 const styles = {
   label: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['psds-dropdown__label'],
       stylesheet[`.psds-dropdown__label.psds-theme--${themeName}`]
     )

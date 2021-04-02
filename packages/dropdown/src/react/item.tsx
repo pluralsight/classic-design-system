@@ -1,6 +1,6 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -8,14 +8,15 @@ import { DropdownContext } from '../js/index'
 
 const styles = {
   item: (isActive: boolean, disabled: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-dropdown__item'],
       disabled && stylesheet['.psds-dropdown__item--disabled'],
       isActive && stylesheet['.psds-dropdown__item--active']
     ),
-  itemIcon: () => css(stylesheet[`.psds-dropdown__item-icon`]),
-  itemEllipsis: () => css(stylesheet[`.psds-dropdown__item-text`]),
-  itemSelectedIcon: () => css(stylesheet['.psds-dropdown__item-selected-icon'])
+  itemIcon: () => glamor.css(stylesheet[`.psds-dropdown__item-icon`]),
+  itemEllipsis: () => glamor.css(stylesheet[`.psds-dropdown__item-text`]),
+  itemSelectedIcon: () =>
+    glamor.css(stylesheet['.psds-dropdown__item-selected-icon'])
 }
 
 interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'onClick'> {

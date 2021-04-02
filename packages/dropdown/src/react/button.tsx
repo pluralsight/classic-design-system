@@ -5,7 +5,7 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -25,30 +25,32 @@ const styles = {
     const label = 'psds-dropdown__field'
     const isSmall = size === vars.sizes.small
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      isSmall && css(stylesheet[`.${label}.psds-dropdown--small`]),
-      css(stylesheet[`.${label}--appearance-${appearance}`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
-      error && css(stylesheet[`.${label}-error.psds-theme--${themeName}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      isSmall && glamor.css(stylesheet[`.${label}.psds-dropdown--small`]),
+      glamor.css(stylesheet[`.${label}--appearance-${appearance}`]),
+      glamor.css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      error &&
+        glamor.css(stylesheet[`.${label}-error.psds-theme--${themeName}`])
     )
   },
-  fieldAligner: () => css(stylesheet['.psds-dropdown__field-aligner']),
-  fieldContainer: () => css(stylesheet['.psds-dropdown__field-container']),
-  halo: () => css(stylesheet['.psds-dropdown__field-halo']),
+  fieldAligner: () => glamor.css(stylesheet['.psds-dropdown__field-aligner']),
+  fieldContainer: () =>
+    glamor.css(stylesheet['.psds-dropdown__field-container']),
+  halo: () => glamor.css(stylesheet['.psds-dropdown__field-halo']),
   icon: (
     appearance: DropdownButtonProps['appearance'],
     themeName: ValueOf<typeof themeNames>
   ) => {
     const label = 'psds-dropdown__icon'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--appearance-${appearance}`]),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}--appearance-${appearance}`]),
+      glamor.css(stylesheet[`.${label}.psds-theme--${themeName}`])
     )
   },
-  inner: () => css(stylesheet['.psds-dropdown__field-inner'])
+  inner: () => glamor.css(stylesheet['.psds-dropdown__field-inner'])
 }
 
 interface DropdownButtonProps extends HTMLPropsFor<'button'> {

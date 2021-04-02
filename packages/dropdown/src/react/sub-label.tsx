@@ -3,7 +3,7 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -11,9 +11,9 @@ import stylesheet from '../css/index'
 const styles = (themeName: ValueOf<typeof themeNames>) => {
   const label = 'psds-dropdown__sub-label'
 
-  return compose(
-    css(stylesheet[`.${label}`]),
-    css(stylesheet[`.${label}.psds-theme--${themeName}`])
+  return glamor.compose(
+    glamor.css(stylesheet[`.${label}`]),
+    glamor.css(stylesheet[`.${label}.psds-theme--${themeName}`])
   )
 }
 

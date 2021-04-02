@@ -1,5 +1,5 @@
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -7,7 +7,7 @@ import { ItemData } from '../js/index'
 import * as vars from '../vars/index'
 
 const styles = {
-  buttonSizer: () => css(stylesheet['.psds-dropdown__button-sizer']),
+  buttonSizer: () => glamor.css(stylesheet['.psds-dropdown__button-sizer']),
   placeholder: ({
     appearance,
     selectedItem,
@@ -17,15 +17,15 @@ const styles = {
     const isSmall = size === vars.sizes.small
     const placeholderColor =
       appearance === vars.appearances.subtle
-        ? css(
+        ? glamor.css(
             stylesheet[
               `.psds-dropdown__field--appearance-${vars.appearances.subtle}.psds-dropdown__placeholder--color`
             ]
           )
-        : css(stylesheet['.psds-dropdown__placeholder--color'])
-    return compose(
-      css(stylesheet[`.${label}`]),
-      isSmall && css(stylesheet[`.${label}.psds-dropdown--small`]),
+        : glamor.css(stylesheet['.psds-dropdown__placeholder--color'])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      isSmall && glamor.css(stylesheet[`.${label}.psds-dropdown--small`]),
       !selectedItem && placeholderColor
     )
   }
