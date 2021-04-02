@@ -4,7 +4,7 @@ import {
   ValueOf,
   useMenuRef
 } from '@pluralsight/ps-design-system-util'
-import { css, compose, keyframes } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -16,13 +16,15 @@ import { Divider } from './divider'
 import { Ellipsis } from './ellipsis'
 import { Item } from './item'
 
-const slide = keyframes(stylesheet['@keyframes psds-menu__keyframes__slide'])
+const slide = glamor.keyframes(
+  stylesheet['@keyframes psds-menu__keyframes__slide']
+)
 
 const styles = ({ origin }: { origin?: ValueOf<typeof vars.origins> }) =>
-  compose(
-    css(stylesheet['.psds-menu']),
-    css(stylesheet[`.psds-menu--origin-${origin}`]),
-    css(stylesheet['.psds-menu__animation']({ slide }))
+  glamor.compose(
+    glamor.css(stylesheet['.psds-menu']),
+    glamor.css(stylesheet[`.psds-menu--origin-${origin}`]),
+    glamor.css(stylesheet['.psds-menu__animation']({ slide }))
   )
 
 interface MenuStatics {

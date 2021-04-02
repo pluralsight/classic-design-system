@@ -1,19 +1,19 @@
 import { RefFor, ForwardRefComponent } from '@pluralsight/ps-design-system-util'
 import React from 'react'
-import { css, compose } from 'glamor'
+import glamor from 'glamor'
 
 import stylesheet from '../css/index'
 import { MenuContext, ItemContext, SelectedItem } from './context'
 
 const styles = {
   listItem: (isActive: boolean, disabled: boolean) =>
-    compose(
-      css(stylesheet['.psds-menu__list-item']),
-      disabled && css(stylesheet['.psds-menu__list-item--disabled']),
-      isActive && css(stylesheet['.psds-menu__list-item--active'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-menu__list-item']),
+      disabled && glamor.css(stylesheet['.psds-menu__list-item--disabled']),
+      isActive && glamor.css(stylesheet['.psds-menu__list-item--active'])
     ),
-  option: () => css(stylesheet['.psds-menu__option']),
-  optionInner: () => css(stylesheet[`.psds-menu__option-inner`])
+  option: () => glamor.css(stylesheet['.psds-menu__option']),
+  optionInner: () => glamor.css(stylesheet[`.psds-menu__option-inner`])
 }
 
 export interface MenuItemProps {
