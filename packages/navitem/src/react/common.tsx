@@ -4,7 +4,7 @@ import {
   ValueOf,
   stylesFor
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import Context from './context'
@@ -21,19 +21,20 @@ const styles = {
     const isHorz = props.alignment === alignments.horizontal
     const isVert = props.alignment === alignments.vertical
 
-    return compose(
-      css(stylesheet['.psds-navitem__bar']),
-      isHorz && css(stylesheet['.psds-navitem__horz-bar']),
-      isVert && css(stylesheet['.psds-navitem__vert-bar']),
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-navitem__bar']),
+      isHorz && glamor.css(stylesheet['.psds-navitem__horz-bar']),
+      isVert && glamor.css(stylesheet['.psds-navitem__vert-bar']),
       props.selected && stylesheet['.psds-navitem__bar--selected'],
       stylesFor('navitem__bar', props),
       props.selected && stylesFor('navitem__bar--selected', props)
     )
   },
   button: (props: { selected: boolean }) =>
-    compose(
-      css(stylesheet['.psds-navitem__button']),
-      props.selected && css(stylesheet['.psds-navitem__button--selected'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-navitem__button']),
+      props.selected &&
+        glamor.css(stylesheet['.psds-navitem__button--selected'])
     )
 }
 

@@ -1,6 +1,6 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import Context from './context'
@@ -8,22 +8,23 @@ import { Bar, Button } from './common'
 import stylesheet from '../css/index'
 
 const styles = {
-  container: () => css(stylesheet['.psds-navitem__horz-container']),
+  container: () => glamor.css(stylesheet['.psds-navitem__horz-container']),
 
-  caret: () => css(stylesheet['.psds-navitem__horz-caret']),
+  caret: () => glamor.css(stylesheet['.psds-navitem__horz-caret']),
 
   icon: (props: { hasLabel: boolean }) =>
-    compose(
-      css(stylesheet['.psds-navitem__horz-icon']),
-      !props.hasLabel && css(stylesheet['.psds-navitem__horz-icon--icon-only'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-navitem__horz-icon']),
+      !props.hasLabel &&
+        glamor.css(stylesheet['.psds-navitem__horz-icon--icon-only'])
     ),
 
-  label: () => css(stylesheet['.psds-navitem__horz-label']),
+  label: () => glamor.css(stylesheet['.psds-navitem__horz-label']),
 
   layout: (props: { menu?: unknown }) =>
-    compose(
-      css(stylesheet['.psds-navitem__horz-layout']),
-      props.menu && css(stylesheet['.psds-navitem__horz-layout--menu'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-navitem__horz-layout']),
+      props.menu && glamor.css(stylesheet['.psds-navitem__horz-layout--menu'])
     )
 }
 

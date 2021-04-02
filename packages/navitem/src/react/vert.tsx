@@ -1,6 +1,6 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import Context from './context'
@@ -8,11 +8,11 @@ import { Bar, Button } from './common'
 import stylesheet from '../css/index'
 
 const styles = {
-  container: () => css(stylesheet['.psds-navitem__vert-container']),
-  caret: () => css(stylesheet['.psds-navitem__vert-caret']),
-  icon: () => css(stylesheet['.psds-navitem__vert-icon']),
-  label: () => css(stylesheet['.psds-navitem__vert-label']),
-  layout: () => css(stylesheet['.psds-navitem__vert-layout'])
+  container: () => glamor.css(stylesheet['.psds-navitem__vert-container']),
+  caret: () => glamor.css(stylesheet['.psds-navitem__vert-caret']),
+  icon: () => glamor.css(stylesheet['.psds-navitem__vert-icon']),
+  label: () => glamor.css(stylesheet['.psds-navitem__vert-label']),
+  layout: () => glamor.css(stylesheet['.psds-navitem__vert-layout'])
 }
 
 export const VertLayout: React.FC = props => {
