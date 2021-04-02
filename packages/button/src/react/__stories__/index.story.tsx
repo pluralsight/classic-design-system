@@ -2,7 +2,7 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import Button from '../index'
@@ -19,7 +19,7 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
 
   return (
     <div
-      {...css({
+      {...glamor.css({
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
@@ -78,7 +78,7 @@ StyleOverride.args = { ...defaultArgs, style: { background: 'red' } }
 export const ClassNameOverride = Template.bind({})
 ClassNameOverride.args = {
   ...defaultArgs,
-  className: css({ background: 'green' })
+  className: glamor.css({ background: 'green' })
 }
 
 export const Layouts: Story = () => (
@@ -86,7 +86,11 @@ export const Layouts: Story = () => (
     {Object.values(Button.layouts).map((layout, i) => (
       <div
         key={i}
-        {...css({ outline: '1px dashed pink', margin: 8, width: '400px' })}
+        {...glamor.css({
+          outline: '1px dashed pink',
+          margin: 8,
+          width: '400px'
+        })}
       >
         <Button layout={layout}>{layout}</Button>
       </div>
