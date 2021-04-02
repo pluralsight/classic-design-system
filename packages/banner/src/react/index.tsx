@@ -7,7 +7,7 @@ import {
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { compose, css, StyleAttribute } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -17,21 +17,21 @@ const ColorContext = React.createContext<ValueOf<typeof vars.colors>>(
   vars.colors.blue
 )
 
-type StyleFn = (props: BannerProps) => StyleAttribute
+type StyleFn = (props: BannerProps) => glamor.StyleAttribute
 
 const styles: { [name: string]: StyleFn } = {
   banner: ({ color }) =>
-    compose(
-      css(stylesheet['.psds-banner']),
-      css(stylesheet[`.psds-banner--color-${color}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-banner']),
+      glamor.css(stylesheet[`.psds-banner--color-${color}`])
     ),
   button: ({ color }) =>
-    compose(
-      css(stylesheet['.psds-banner__button']),
-      css(stylesheet[`.psds-banner__button--color-${color}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-banner__button']),
+      glamor.css(stylesheet[`.psds-banner__button--color-${color}`])
     ),
-  dismiss: () => css(stylesheet['.psds-banner__dismiss']),
-  text: () => css(stylesheet['.psds-banner__text'])
+  dismiss: () => glamor.css(stylesheet['.psds-banner__dismiss']),
+  text: () => glamor.css(stylesheet['.psds-banner__text'])
 }
 
 interface BannerProps extends Omit<HTMLPropsFor<'div'>, 'onClick'> {
