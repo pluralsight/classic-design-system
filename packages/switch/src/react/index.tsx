@@ -10,7 +10,7 @@ import {
   HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -18,10 +18,10 @@ import * as vars from '../vars/index'
 
 const styles = {
   switch: (disabled: boolean, labelAlign: ValueOf<typeof vars.labelAligns>) =>
-    compose(
-      css(stylesheet['.psds-switch']),
-      css(stylesheet[`.psds-switch--labelAlign-${labelAlign}`]),
-      disabled && css(stylesheet['.psds-switch--disabled'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-switch']),
+      glamor.css(stylesheet[`.psds-switch--labelAlign-${labelAlign}`]),
+      disabled && glamor.css(stylesheet['.psds-switch--disabled'])
     ),
 
   track: (props: {
@@ -30,26 +30,28 @@ const styles = {
     color: ValueOf<typeof vars.colors>
     size: ValueOf<typeof vars.sizes>
   }) =>
-    compose(
-      css(stylesheet['.psds-switch__track']),
-      css(stylesheet[`.psds-switch__track.psds-theme--${props.themeName}`]),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-switch__track']),
+      glamor.css(
+        stylesheet[`.psds-switch__track.psds-theme--${props.themeName}`]
+      ),
       props.checked &&
-        css(
+        glamor.css(
           stylesheet[
             `.psds-switch__track--checked.psds-switch__track--color-${props.color}`
           ]
         ),
-      css(
+      glamor.css(
         stylesheet[`.psds-switch__track.psds-switch__track--size-${props.size}`]
       )
     ),
 
   thumb: (checked: boolean, size: ValueOf<typeof vars.sizes>) =>
-    compose(
-      css(stylesheet['.psds-switch__thumb']),
-      css(stylesheet[`.psds-switch__thumb--size-${size}`]),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-switch__thumb']),
+      glamor.css(stylesheet[`.psds-switch__thumb--size-${size}`]),
       checked &&
-        css(
+        glamor.css(
           stylesheet[
             `.psds-switch__thumb--checked.psds-switch__thumb--size-${size}`
           ]
@@ -61,18 +63,20 @@ const styles = {
     labelAlign: ValueOf<typeof vars.labelAligns>
     size: ValueOf<typeof vars.sizes>
   }) =>
-    compose(
-      css(stylesheet['.psds-switch__label']),
-      css(stylesheet[`.psds-switch__label--size-${props.size}`]),
-      css(
+    glamor.compose(
+      glamor.css(stylesheet['.psds-switch__label']),
+      glamor.css(stylesheet[`.psds-switch__label--size-${props.size}`]),
+      glamor.css(
         stylesheet[
           `.psds-switch__label--size-${props.size}.psds-switch__label--labelAlign-${props.labelAlign}`
         ]
       ),
-      css(stylesheet[`.psds-switch__label.psds-theme--${props.themeName}`])
+      glamor.css(
+        stylesheet[`.psds-switch__label.psds-theme--${props.themeName}`]
+      )
     ),
 
-  checkbox: () => css(stylesheet['.psds-switch__checkbox'])
+  checkbox: () => glamor.css(stylesheet['.psds-switch__checkbox'])
 }
 
 interface SwitchStatics {
