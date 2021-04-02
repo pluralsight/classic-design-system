@@ -1,5 +1,5 @@
 import React from 'react'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import { action } from '@storybook/addon-actions'
 
 import {
@@ -26,7 +26,7 @@ const MockStory: React.FC = () => {
       onKeyDown={handleMenuKeyDownEvents}
       onKeyUp={handleMenuKeyUpEvents}
       ref={ref}
-      {...css({ '& :focus': { outline: '1px solid violet' } })}
+      {...glamor.css({ '& :focus': { outline: '1px solid violet' } })}
     >
       {rootList.map((el, i) => {
         return i === 4 || i === 7 ? (
