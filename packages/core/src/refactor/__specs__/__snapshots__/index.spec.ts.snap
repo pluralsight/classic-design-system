@@ -27,7 +27,19 @@ Object {
     "30": "var(--psColorsBackgroundUtility30)",
     "40": "var(--psColorsBackgroundUtility40)",
     "60": "var(--psColorsBackgroundUtility60)",
-    "base": "var(--psColorsBackgroundUtilityBase)",
+  },
+  "colorsBackgroundUtilityCsv": Object {
+    "0": "var(--psColorsBackgroundUtilityCsv0)",
+    "1": "var(--psColorsBackgroundUtilityCsv1)",
+    "10": "var(--psColorsBackgroundUtilityCsv10)",
+    "2": "var(--psColorsBackgroundUtilityCsv2)",
+    "3": "var(--psColorsBackgroundUtilityCsv3)",
+    "4": "var(--psColorsBackgroundUtilityCsv4)",
+    "5": "var(--psColorsBackgroundUtilityCsv5)",
+    "6": "var(--psColorsBackgroundUtilityCsv6)",
+    "7": "var(--psColorsBackgroundUtilityCsv7)",
+    "8": "var(--psColorsBackgroundUtilityCsv8)",
+    "9": "var(--psColorsBackgroundUtilityCsv9)",
   },
   "colorsBlack": Object {
     "0": "var(--psColorsBlack0)",
@@ -49,7 +61,6 @@ Object {
     "7": "var(--psColorsBlue7)",
     "8": "var(--psColorsBlue8)",
     "9": "var(--psColorsBlue9)",
-    "base": "var(--psColorsBlueBase)",
   },
   "colorsBorder": Object {
     "highOnDark": "var(--psColorsBorderHighOnDark)",
@@ -88,7 +99,6 @@ Object {
     "7": "var(--psColorsGreen7)",
     "8": "var(--psColorsGreen8)",
     "9": "var(--psColorsGreen9)",
-    "base": "var(--psColorsGreenBase)",
   },
   "colorsLime": Object {
     "1": "var(--psColorsLime1)",
@@ -101,7 +111,6 @@ Object {
     "7": "var(--psColorsLime7)",
     "8": "var(--psColorsLime8)",
     "9": "var(--psColorsLime9)",
-    "base": "var(--psColorsLimeBase)",
   },
   "colorsOrange": Object {
     "1": "var(--psColorsOrange1)",
@@ -114,7 +123,6 @@ Object {
     "7": "var(--psColorsOrange7)",
     "8": "var(--psColorsOrange8)",
     "9": "var(--psColorsOrange9)",
-    "base": "var(--psColorsOrangeBase)",
   },
   "colorsPink": Object {
     "1": "var(--psColorsPink1)",
@@ -127,7 +135,6 @@ Object {
     "7": "var(--psColorsPink7)",
     "8": "var(--psColorsPink8)",
     "9": "var(--psColorsPink9)",
-    "base": "var(--psColorsPinkBase)",
   },
   "colorsPrimaryAction": Object {
     "background": "var(--psColorsPrimaryActionBackground)",
@@ -145,7 +152,6 @@ Object {
     "7": "var(--psColorsPurple7)",
     "8": "var(--psColorsPurple8)",
     "9": "var(--psColorsPurple9)",
-    "base": "var(--psColorsPurpleBase)",
   },
   "colorsRed": Object {
     "1": "var(--psColorsRed1)",
@@ -158,7 +164,6 @@ Object {
     "7": "var(--psColorsRed7)",
     "8": "var(--psColorsRed8)",
     "9": "var(--psColorsRed9)",
-    "base": "var(--psColorsRedBase)",
   },
   "colorsStatus": Object {
     "error": "var(--psColorsStatusError)",
@@ -177,7 +182,6 @@ Object {
     "7": "var(--psColorsTeal7)",
     "8": "var(--psColorsTeal8)",
     "9": "var(--psColorsTeal9)",
-    "base": "var(--psColorsTealBase)",
   },
   "colorsTextIcon": Object {
     "highOnDark": "var(--psColorsTextIconHighOnDark)",
@@ -205,7 +209,6 @@ Object {
     "7": "var(--psColorsYellow7)",
     "8": "var(--psColorsYellow8)",
     "9": "var(--psColorsYellow9)",
-    "base": "var(--psColorsYellowBase)",
   },
   "layers": Object {
     "globalDropdown": "var(--psLayersGlobalDropdown)",
