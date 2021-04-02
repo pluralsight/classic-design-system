@@ -8,7 +8,7 @@ import {
   ValueOf,
   canUseDOM
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
+import glamor from 'glamor'
 import polyfillFocusWithin from 'focus-within'
 import React from 'react'
 
@@ -20,7 +20,7 @@ if (canUseDOM()) polyfillFocusWithin(document)
 export type StyleFn<P> = (
   themeName: ValueOf<typeof themeNames>,
   props: P
-) => StyleAttribute
+) => glamor.StyleAttribute
 
 const styles: { [name: string]: StyleFn<InternalHaloProps> } = {
   halo: (themeName, props) => {
@@ -34,17 +34,17 @@ const styles: { [name: string]: StyleFn<InternalHaloProps> } = {
     const visible = `${BASE_CLASSNAME}--visible`
     const visibleOnFocus = `${BASE_CLASSNAME}--visible-on-focus`
 
-    return compose(
-      css(stylesheet[base]),
-      css(stylesheet[theme]),
-      css(stylesheet[shape]),
-      css(stylesheet[gapSize]),
-      css(stylesheet[gapTheme]),
+    return glamor.compose(
+      glamor.css(stylesheet[base]),
+      glamor.css(stylesheet[theme]),
+      glamor.css(stylesheet[shape]),
+      glamor.css(stylesheet[gapSize]),
+      glamor.css(stylesheet[gapTheme]),
 
-      props.inline && css(stylesheet[`${BASE_CLASSNAME}--inline`]),
-      props.error && css(stylesheet[`${BASE_CLASSNAME}--error`]),
-      props.visible && css(stylesheet[visible]),
-      props.visibleOnFocus && css(stylesheet[visibleOnFocus])
+      props.inline && glamor.css(stylesheet[`${BASE_CLASSNAME}--inline`]),
+      props.error && glamor.css(stylesheet[`${BASE_CLASSNAME}--error`]),
+      props.visible && glamor.css(stylesheet[visible]),
+      props.visibleOnFocus && glamor.css(stylesheet[visibleOnFocus])
     )
   }
 }
