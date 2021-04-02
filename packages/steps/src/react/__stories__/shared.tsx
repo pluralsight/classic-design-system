@@ -1,6 +1,6 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { statuses } from '../../vars/index'
@@ -70,6 +70,9 @@ export const FixedWidthContainer: React.FC<{ width?: number }> = props => {
   const { width = 300, ...rest } = props
 
   return (
-    <div {...css({ padding: core.layout.spacingMedium, width })} {...rest} />
+    <div
+      {...glamor.css({ padding: core.layout.spacingMedium, width })}
+      {...rest}
+    />
   )
 }

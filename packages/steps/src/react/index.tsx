@@ -7,7 +7,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -20,10 +20,10 @@ const styles = {
     themeName: ValueOf<typeof themeNames>,
     opts: { orientation: ValueOf<typeof vars.orientations> }
   ) =>
-    compose(
-      css(stylesheet['.psds-steps']),
-      css(stylesheet[`.psds-steps.psds-theme--${themeName}`]),
-      css(stylesheet[`.psds-steps--${opts.orientation}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-steps']),
+      glamor.css(stylesheet[`.psds-steps.psds-theme--${themeName}`]),
+      glamor.css(stylesheet[`.psds-steps--${opts.orientation}`])
     ),
   step: (
     themeName: ValueOf<typeof themeNames>,
@@ -34,13 +34,14 @@ const styles = {
       status: ValueOf<typeof vars.statuses>
     }
   ) =>
-    compose(
-      css(stylesheet['.psds-steps__step']),
-      css(stylesheet[`.psds-steps__step.psds-theme--${themeName}`]),
-      css(stylesheet[`.psds-steps__step--${opts.orientation}`]),
-      css(stylesheet[`.psds-steps__step--${opts.size}`]),
-      css(stylesheet[`.psds-steps__step--${opts.status}`]),
-      opts.interactive && css(stylesheet['.psds-steps__step--interactive'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-steps__step']),
+      glamor.css(stylesheet[`.psds-steps__step.psds-theme--${themeName}`]),
+      glamor.css(stylesheet[`.psds-steps__step--${opts.orientation}`]),
+      glamor.css(stylesheet[`.psds-steps__step--${opts.size}`]),
+      glamor.css(stylesheet[`.psds-steps__step--${opts.status}`]),
+      opts.interactive &&
+        glamor.css(stylesheet['.psds-steps__step--interactive'])
     ),
 
   title: (
@@ -53,12 +54,12 @@ const styles = {
     const theme = `.psds-theme--${themeName}`
     const status = `.psds-steps__title--${opts.status}`
 
-    return compose(
-      css(stylesheet['.psds-steps__title']),
-      css(stylesheet['.psds-steps__title' + theme]),
-      css(stylesheet[`.psds-steps__title--${opts.size}`]),
-      css(stylesheet[status]),
-      css(stylesheet[status + theme])
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-steps__title']),
+      glamor.css(stylesheet['.psds-steps__title' + theme]),
+      glamor.css(stylesheet[`.psds-steps__title--${opts.size}`]),
+      glamor.css(stylesheet[status]),
+      glamor.css(stylesheet[status + theme])
     )
   },
 
@@ -66,16 +67,16 @@ const styles = {
     size: ValueOf<typeof vars.sizes>
     status: ValueOf<typeof vars.statuses>
   }) =>
-    compose(
-      css(stylesheet['.psds-steps__description']),
-      css(stylesheet[`.psds-steps__description--${opts.size}`]),
-      css(stylesheet[`.psds-steps__description--${opts.status}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-steps__description']),
+      glamor.css(stylesheet[`.psds-steps__description--${opts.size}`]),
+      glamor.css(stylesheet[`.psds-steps__description--${opts.status}`])
     ),
 
   markerContainer: (opts: { size: ValueOf<typeof vars.sizes> }) =>
-    compose(
-      css(stylesheet['.psds-steps__marker-container']),
-      css(stylesheet[`.psds-steps__marker-container--${opts.size}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-steps__marker-container']),
+      glamor.css(stylesheet[`.psds-steps__marker-container--${opts.size}`])
     ),
 
   marker: (
@@ -89,20 +90,21 @@ const styles = {
     const theme = `.psds-theme--${themeName}`
     const status = `.psds-steps__marker--${opts.status}`
 
-    return compose(
-      css(stylesheet['.psds-steps__marker']),
-      css(stylesheet['.psds-steps__marker' + theme]),
-      css(stylesheet[`.psds-steps__marker--${opts.size}`]),
-      css(stylesheet[status]),
-      css(stylesheet[status + theme]),
-      !opts.counter && css(stylesheet['.psds-steps__marker--hide-counter'])
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-steps__marker']),
+      glamor.css(stylesheet['.psds-steps__marker' + theme]),
+      glamor.css(stylesheet[`.psds-steps__marker--${opts.size}`]),
+      glamor.css(stylesheet[status]),
+      glamor.css(stylesheet[status + theme]),
+      !opts.counter &&
+        glamor.css(stylesheet['.psds-steps__marker--hide-counter'])
     )
   },
-  markerCircle: () => css(stylesheet['.psds-steps__marker__circle']),
+  markerCircle: () => glamor.css(stylesheet['.psds-steps__marker__circle']),
   markerCheck: (opts: { status: ValueOf<typeof vars.statuses> }) =>
-    compose(
-      css(stylesheet['.psds-steps__marker__check']),
-      css(stylesheet[`.psds-steps__marker__check--${opts.status}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-steps__marker__check']),
+      glamor.css(stylesheet[`.psds-steps__marker__check--${opts.status}`])
     )
 }
 
@@ -217,7 +219,7 @@ const Marker = React.forwardRef<HTMLDivElement, MarkerProps>((props, ref) => {
     <div
       ref={ref}
       {...styles.marker(themeName, { counter, size, status })}
-      {...css({ width: diameter, height: diameter })}
+      {...glamor.css({ width: diameter, height: diameter })}
       {...rest}
     >
       <svg viewBox={`0 0 ${diameter} ${diameter}`}>

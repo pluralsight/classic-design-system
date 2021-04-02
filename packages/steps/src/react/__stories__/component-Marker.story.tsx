@@ -1,6 +1,6 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import Context, { initialContext } from '../context'
@@ -14,7 +14,7 @@ export default {
   component: Marker,
   decorators: [
     StoryFn => (
-      <div {...css({ counterReset: 'line-number 2' })}>
+      <div {...glamor.css({ counterReset: 'line-number 2' })}>
         <StoryFn />
       </div>
     )
