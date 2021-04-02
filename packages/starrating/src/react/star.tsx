@@ -7,7 +7,7 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, keyMirror } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -26,7 +26,7 @@ const styles = {
     interactive: boolean
     themeName: ValueOf<typeof themeNames>
   }) =>
-    css(
+    glamor.css(
       stylesheet['.psds-starrating__star'],
       stylesheet[`.psds-starrating__star--theme-${themeName}`],
       bright &&
@@ -35,7 +35,7 @@ const styles = {
       interactive && stylesheet['.psds-starrating__star--interactive']
     ),
   halfStarSecondary: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet[`.psds-starrating__star__half__secondary--theme-${themeName}`]
     )
 }

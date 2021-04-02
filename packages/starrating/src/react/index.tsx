@@ -1,5 +1,5 @@
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -7,9 +7,9 @@ import Star from './star'
 
 const styles = {
   screenReaderInput: () =>
-    css(stylesheet[`.psds-starrating__screen-reader-input`]),
+    glamor.css(stylesheet[`.psds-starrating__screen-reader-input`]),
   screenReaderText: () =>
-    css(stylesheet[`.psds-starrating__screen-reader-text`])
+    glamor.css(stylesheet[`.psds-starrating__screen-reader-text`])
 }
 
 interface ScreenReaderInputProps extends HTMLPropsFor<'input'> {
