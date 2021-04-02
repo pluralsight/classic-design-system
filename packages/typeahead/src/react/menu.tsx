@@ -1,19 +1,21 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor, combineFns } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { SuggestionOption } from './suggestion'
 
 const styles = {
-  menu: () => css(stylesheet['.psds-typeahead__menu']),
-  menuItem: () => css(stylesheet['.psds-typeahead__menu__item']),
-  menuItemLabel: () => css(stylesheet['.psds-typeahead__menu__item__label']),
+  menu: () => glamor.css(stylesheet['.psds-typeahead__menu']),
+  menuItem: () => glamor.css(stylesheet['.psds-typeahead__menu__item']),
+  menuItemLabel: () =>
+    glamor.css(stylesheet['.psds-typeahead__menu__item__label']),
   menuItemIcon: ({ selected }: { selected: boolean }) =>
-    compose(
-      css(stylesheet['.psds-typeahead__menu__item__icon']),
-      selected && css(stylesheet['.psds-typeahead__menu__item__icon--selected'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-typeahead__menu__item__icon']),
+      selected &&
+        glamor.css(stylesheet['.psds-typeahead__menu__item__icon--selected'])
     )
 }
 
