@@ -7,7 +7,7 @@ import {
   useCloseOnDocumentEvents,
   useMenuRef
 } from '@pluralsight/ps-design-system-util'
-import { css, compose, keyframes } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { ActionMenuContext } from './context'
@@ -18,15 +18,15 @@ import { Item } from './item'
 import { Icon } from './icon'
 import * as vars from '../vars/index'
 
-const slide = keyframes(
+const slide = glamor.keyframes(
   stylesheet['@keyframes psds-actionmenu__keyframes__slide']
 )
 
 const styles = ({ origin }: { origin?: ValueOf<typeof vars.origins> }) =>
-  compose(
-    css(stylesheet['.psds-actionmenu']),
-    css(stylesheet[`.psds-actionmenu--origin-${origin}`]),
-    css(stylesheet['.psds-actionmenu__animation']({ slide }))
+  glamor.compose(
+    glamor.css(stylesheet['.psds-actionmenu']),
+    glamor.css(stylesheet[`.psds-actionmenu--origin-${origin}`]),
+    glamor.css(stylesheet['.psds-actionmenu__animation']({ slide }))
   )
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function

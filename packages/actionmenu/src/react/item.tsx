@@ -3,7 +3,7 @@ import {
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -17,22 +17,23 @@ const styles = {
     active,
     disabled
   }: Pick<BaseItemProps, 'active' | 'disabled'>) =>
-    compose(
-      css(stylesheet['.psds-actionmenu__item-container']),
-      disabled && css(stylesheet['.psds-actionmenu__item--disabled']),
-      active && css(stylesheet['.psds-actionmenu__item-container--active'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-actionmenu__item-container']),
+      disabled && glamor.css(stylesheet['.psds-actionmenu__item--disabled']),
+      active &&
+        glamor.css(stylesheet['.psds-actionmenu__item-container--active'])
     ),
   item: ({ hasSubMenu }: { hasSubMenu: boolean }) =>
-    compose(
-      css(stylesheet['.psds-actionmenu__item']),
-      hasSubMenu && css(stylesheet['.psds-actionmenu__item--nested'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-actionmenu__item']),
+      hasSubMenu && glamor.css(stylesheet['.psds-actionmenu__item--nested'])
     ),
-  inner: () => css(stylesheet['.psds-actionmenu__item-inner']),
+  inner: () => glamor.css(stylesheet['.psds-actionmenu__item-inner']),
   nested: ({ origin }: { origin?: ValueOf<typeof origins> }) =>
-    compose(
-      css(stylesheet['.psds-actionmenu']),
-      css(stylesheet['.psds-actionmenu__nested']),
-      css(
+    glamor.compose(
+      glamor.css(stylesheet['.psds-actionmenu']),
+      glamor.css(stylesheet['.psds-actionmenu__nested']),
+      glamor.css(
         stylesheet[`.psds-actionmenu__nested.psds-actionmenu--origin-${origin}`]
       )
     )
