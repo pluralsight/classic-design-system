@@ -1,16 +1,16 @@
 import Halo from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
-import { css, media } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 
 const styles = {
   logo: (props: { children?: unknown }) =>
-    css(
+    glamor.css(
       stylesheet['.psds-navbrand__logo'],
       props.children &&
-        media(
+        glamor.media(
           '(min-width: 1200px)',
           stylesheet['@media (min-width: 1200px)'][
             '.psds-navbrand__logo--wordmark'
@@ -18,14 +18,14 @@ const styles = {
         )
     ),
   navBrand: (props: { href?: string; onClick?: unknown }) =>
-    css(
+    glamor.css(
       stylesheet['.psds-navbrand'],
       (props.href || props.onClick) && stylesheet['.psds-navbrand--clickable']
     ),
   wordmark: () =>
-    css(
+    glamor.css(
       stylesheet['.psds-navbrand__wordmark'],
-      media(
+      glamor.media(
         '(min-width: 1200px)',
         stylesheet['@media (min-width: 1200px)']['.psds-navbrand__wordmark']
       )
