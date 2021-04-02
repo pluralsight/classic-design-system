@@ -5,7 +5,7 @@ import {
   combineFns,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { RadioContext } from './context'
@@ -13,24 +13,28 @@ import stylesheet from '../css/index'
 
 const styles = {
   button: (disabled?: boolean) =>
-    compose(
-      css(stylesheet['.psds-radio-button']),
-      disabled && css(stylesheet['.psds-radio-button--disabled'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-radio-button']),
+      disabled && glamor.css(stylesheet['.psds-radio-button--disabled'])
     ),
   circle: (themeName: ValueOf<typeof Theme.names>, checked: boolean) =>
-    compose(
-      css(stylesheet['.psds-radio-button__circle']),
-      css(stylesheet[`.psds-radio-button__circle.psds-theme--${themeName}`]),
-      checked && css(stylesheet['.psds-radio-button__circle--checked'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-radio-button__circle']),
+      glamor.css(
+        stylesheet[`.psds-radio-button__circle.psds-theme--${themeName}`]
+      ),
+      checked && glamor.css(stylesheet['.psds-radio-button__circle--checked'])
     ),
-  circleOuter: () => css(stylesheet['.psds-radio-button__circle-outer']),
-  circleInner: () => css(stylesheet['.psds-radio-button__circle-inner']),
-  halo: () => css(stylesheet['.psds-radio-button__halo']),
-  input: () => css(stylesheet['.psds-radio-button__input']),
+  circleOuter: () => glamor.css(stylesheet['.psds-radio-button__circle-outer']),
+  circleInner: () => glamor.css(stylesheet['.psds-radio-button__circle-inner']),
+  halo: () => glamor.css(stylesheet['.psds-radio-button__halo']),
+  input: () => glamor.css(stylesheet['.psds-radio-button__input']),
   label: (themeName: ValueOf<typeof Theme.names>) =>
-    compose(
-      css(stylesheet['.psds-radio-button__label']),
-      css(stylesheet[`.psds-radio-button__label.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-radio-button__label']),
+      glamor.css(
+        stylesheet[`.psds-radio-button__label.psds-theme--${themeName}`]
+      )
     )
 }
 

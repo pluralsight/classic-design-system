@@ -1,25 +1,26 @@
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { RadioContext } from './context'
 import stylesheet from '../css/index'
 
 const styles = {
-  buttonContainer: () => css(stylesheet['.psds-radio-group__button-container']),
+  buttonContainer: () =>
+    glamor.css(stylesheet['.psds-radio-group__button-container']),
   group: (disabled: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-radio-group'],
       disabled && stylesheet['.psds-radio-group--disabled']
     ),
   label: (themeName: ValueOf<typeof Theme.names>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-radio-group__label'],
       stylesheet[`.psds-radio-group__label.psds-theme--${themeName}`]
     ),
   subLabel: (themeName: ValueOf<typeof Theme.names>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-radio-group__sub-label'],
       stylesheet[`.psds-radio-group__sub-label.psds-theme--${themeName}`]
     )
