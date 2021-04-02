@@ -2,7 +2,7 @@ import {
   RefForwardingComponent,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import Context from './context'
@@ -12,7 +12,7 @@ import { Group, CollapsibleGroup } from './group'
 import { Tier1, Tier2 } from './item'
 
 const styles = {
-  verticaltabs: () => css(stylesheet['.psds-verticaltabs'])
+  verticaltabs: () => glamor.css(stylesheet['.psds-verticaltabs'])
 }
 
 interface VerticalTabsProps extends HTMLPropsFor<'ul'> {

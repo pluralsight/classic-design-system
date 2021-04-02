@@ -7,40 +7,41 @@ import {
   HTMLPropsFor,
   omit
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { List } from './list'
 
 const styles = {
-  group: () => css({ label: 'verticaltabs__group' }),
+  group: () => glamor.css({ label: 'verticaltabs__group' }),
 
   groupHeader: (themeName: ValueOf<typeof Theme.names>) => {
     const label = 'verticaltabs__group__header'
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`]),
-      css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`]),
+      glamor.css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
     )
   },
 
-  groupButton: () => css(stylesheet['.psds-verticaltabs__group__button']),
+  groupButton: () =>
+    glamor.css(stylesheet['.psds-verticaltabs__group__button']),
 
   groupCollapsibleList: () =>
-    compose(
-      css(stylesheet['.psds-verticaltabs__list']),
-      css(stylesheet['.psds-verticaltabs__group__collapsible-list'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-verticaltabs__list']),
+      glamor.css(stylesheet['.psds-verticaltabs__group__collapsible-list'])
     ),
 
   rotatable: (open: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-verticaltabs__rotatable'],
       open && stylesheet['.psds-verticaltabs__rotatable--isOpen']
     ),
 
-  headerLabel: () => css(stylesheet['.psds-verticaltabs__header__label'])
+  headerLabel: () => glamor.css(stylesheet['.psds-verticaltabs__header__label'])
 }
 
 interface GroupProps extends HTMLPropsFor<'li'> {

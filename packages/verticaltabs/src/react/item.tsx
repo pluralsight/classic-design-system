@@ -7,7 +7,7 @@ import {
   HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { useHideLabels } from './context'
@@ -17,66 +17,75 @@ import { List, CollapsibleList } from './list'
 type StyleFn = (
   themeName?: ValueOf<keyof typeof Theme.names>,
   props?: Record<string, unknown>
-) => StyleAttribute
+) => glamor.StyleAttribute
 
 const styles: { [key: string]: StyleFn } = {
   item: themeName => {
     const label = 'verticaltabs__item'
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`]),
-      css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`]),
+      glamor.css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
     )
   },
 
-  itemIcon: () => css(stylesheet['.psds-verticaltabs__item__icon']),
+  itemIcon: () => glamor.css(stylesheet['.psds-verticaltabs__item__icon']),
   itemIconActive: () =>
-    css(stylesheet['.psds-verticaltabs__item__icon--active']),
+    glamor.css(stylesheet['.psds-verticaltabs__item__icon--active']),
 
   itemTier: (themeName, props: { type: string }) => {
     const label = `verticaltabs__${props.type}`
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`]),
-      css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`]),
+      glamor.css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
     )
   },
 
   tier1Header: () => {
     const label = `verticaltabs__tier1__header`
 
-    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`])
+    )
   },
   tier1HeaderInner: () => {
     const label = `verticaltabs__tier1__header__inner`
 
-    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`])
+    )
   },
 
   tier2Header: () => {
     const label = `verticaltabs__tier2__header`
 
-    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`])
+    )
   },
 
   tierHeaderLabel: (_themeName, props: { hideLabels: boolean }) => {
     const label = `verticaltabs__header__label`
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`]),
-      props.hideLabels && css(stylesheet[`.psds-${label}--hide-labels`])
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`]),
+      props.hideLabels && glamor.css(stylesheet[`.psds-${label}--hide-labels`])
     )
   },
   tierHeaderLabelIcon: (_themeName, props: { collapsed: boolean }) => {
     const label = `verticaltabs__header__label__icon`
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`]),
-      props.collapsed && css(stylesheet[`.psds-${label}--collapsed`])
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`]),
+      props.collapsed && glamor.css(stylesheet[`.psds-${label}--collapsed`])
     )
   }
 }

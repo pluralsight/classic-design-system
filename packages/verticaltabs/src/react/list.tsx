@@ -1,5 +1,5 @@
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { useForceCollapsed } from './context'
@@ -7,9 +7,9 @@ import stylesheet from '../css/index'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 const styles = {
-  list: () => css(stylesheet['.psds-verticaltabs__list']),
+  list: () => glamor.css(stylesheet['.psds-verticaltabs__list']),
   listCollapsible: () =>
-    css(stylesheet['.psds-verticaltabs__list--collapsible'])
+    glamor.css(stylesheet['.psds-verticaltabs__list--collapsible'])
 }
 
 interface ListProps extends HTMLPropsFor<'ul'> {
