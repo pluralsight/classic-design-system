@@ -1,5 +1,5 @@
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css, media } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { asideLayoutCSS as stylesheet } from '../css/index'
@@ -9,15 +9,15 @@ const styleLayout = (asidePosition: ValueOf<typeof vars.asidePositions>) => {
   const label = 'psds-aside-layout'
   const position = `${label}--aside-position-${asidePosition}`
 
-  return compose(
-    css(stylesheet[`.${label}`]),
-    css(stylesheet[`.${position}`]),
+  return glamor.compose(
+    glamor.css(stylesheet[`.${label}`]),
+    glamor.css(stylesheet[`.${position}`]),
 
-    media(
+    glamor.media(
       '(min-width: 769px)',
-      compose(
-        css(stylesheet['@media (min-width: 769px)'][`.${label}`]),
-        css(stylesheet['@media (min-width: 769px)'][`.${position}`])
+      glamor.compose(
+        glamor.css(stylesheet['@media (min-width: 769px)'][`.${label}`]),
+        glamor.css(stylesheet['@media (min-width: 769px)'][`.${position}`])
       )
     )
   )
@@ -53,15 +53,15 @@ const styleAside = (asidePosition: ValueOf<typeof vars.asidePositions>) => {
   const label = 'psds-aside-layout__aside'
   const position = `${label}--aside-position-${asidePosition}`
 
-  return compose(
-    css(stylesheet[`.${label}`]),
-    css(stylesheet[`.${position}`]),
+  return glamor.compose(
+    glamor.css(stylesheet[`.${label}`]),
+    glamor.css(stylesheet[`.${position}`]),
 
-    media(
+    glamor.media(
       '(min-width: 769px)',
-      compose(
-        css(stylesheet['@media (min-width: 769px)'][`.${label}`]),
-        css(stylesheet['@media (min-width: 769px)'][`.${position}`])
+      glamor.compose(
+        glamor.css(stylesheet['@media (min-width: 769px)'][`.${label}`]),
+        glamor.css(stylesheet['@media (min-width: 769px)'][`.${position}`])
       )
     )
   )
@@ -86,12 +86,12 @@ Aside.displayName = 'AsideLayout.Aside'
 const styleMain = () => {
   const label = 'psds-aside-layout__main'
 
-  return compose(
-    css(stylesheet[`.${label}`]),
+  return glamor.compose(
+    glamor.css(stylesheet[`.${label}`]),
 
-    media(
+    glamor.media(
       '(min-width: 769px)',
-      css(stylesheet['@media (min-width: 769px)'][`.${label}`])
+      glamor.css(stylesheet['@media (min-width: 769px)'][`.${label}`])
     )
   )
 }

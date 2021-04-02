@@ -1,14 +1,14 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { compose, css, media } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { pageWidthLayoutCSS as stylesheet } from '../css/index'
 
 const styles = {
   layout: () =>
-    compose(
-      css(stylesheet['.psds-page-width-layout']),
-      media(
+    glamor.compose(
+      glamor.css(stylesheet['.psds-page-width-layout']),
+      glamor.media(
         '(min-width: 769px)',
         stylesheet['@media (min-width: 769px)']['.psds-page-width-layout']
       )

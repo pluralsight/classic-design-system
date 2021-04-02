@@ -1,10 +1,10 @@
-import { CSSProperties } from 'glamor'
+import glamor from 'glamor'
 import { layout } from '@pluralsight/ps-design-system-core'
 
 const selectors: {
-  [selector: string]: CSSProperties
+  [selector: string]: glamor.CSSProperties
   '@media (min-width: 769px)': {
-    [selector: string]: CSSProperties
+    [selector: string]: glamor.CSSProperties
   }
 } = {
   '.psds-page-heading-layout': {
