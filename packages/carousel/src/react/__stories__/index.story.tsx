@@ -3,7 +3,7 @@ import Card from '@pluralsight/ps-design-system-card'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
 import { storiesOf } from '@storybook/react'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import Carousel, { Item } from '../index'
@@ -56,7 +56,7 @@ const longStringsMetaData = [
 
 const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
-    {...css({
+    {...glamor.css({
       alignItems: 'center',
       background: 'pink',
       display: 'flex',
@@ -69,11 +69,11 @@ const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
     {...props}
   >
     {' '}
-    <button {...css({ flex: 'none' })}>Button: {props.children}</button>
-    <p {...css({ width: '100%', textAlign: 'center', padding: 10 })}>
+    <button {...glamor.css({ flex: 'none' })}>Button: {props.children}</button>
+    <p {...glamor.css({ width: '100%', textAlign: 'center', padding: 10 })}>
       non focusable /tabIndex text
     </p>
-    <a href="https://duckduckgo.com/" {...css({ flex: 'none' })}>
+    <a href="https://duckduckgo.com/" {...glamor.css({ flex: 'none' })}>
       Link: {props.children}
     </a>{' '}
   </div>
@@ -114,7 +114,7 @@ storiesOf('Carousel/items', module)
           </Carousel>
 
           <div
-            {...css({
+            {...glamor.css({
               alignItems: 'center',
               display: 'flex',
               justifyContent: 'center',

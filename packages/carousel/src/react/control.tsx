@@ -13,7 +13,7 @@ import {
   ValueOf,
   combineFns
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import CarouselContext from './context'
@@ -22,14 +22,14 @@ import * as vars from '../vars/index'
 
 const styles = {
   control: (direction: ValueOf<typeof vars.controlDirections>) =>
-    compose(
-      css(stylesheet['.psds-carousel__controls__control']),
-      css(stylesheet[`.psds-carousel__controls__control--${direction}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-carousel__controls__control']),
+      glamor.css(stylesheet[`.psds-carousel__controls__control--${direction}`])
     ),
   controlButton: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-carousel__controls__control__button']),
-      css(
+    glamor.compose(
+      glamor.css(stylesheet['.psds-carousel__controls__control__button']),
+      glamor.css(
         stylesheet[
           `.psds-carousel__controls__control__button.psds-theme--${themeName}`
         ]
