@@ -7,7 +7,7 @@ import {
   usePrevious
 } from '@pluralsight/ps-design-system-util'
 import { useMultipleSelection } from 'downshift'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -17,20 +17,22 @@ export { Option }
 
 const styles = {
   tagsInput: (opts: { disabled?: boolean }) =>
-    compose(
-      css(stylesheet['.psds-tagsinput']),
-      opts.disabled && css(stylesheet['.psds-tagsinput--disabled'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-tagsinput']),
+      opts.disabled && glamor.css(stylesheet['.psds-tagsinput--disabled'])
     ),
 
-  prefix: () => css(stylesheet['.psds-tagsinput__prefix']),
-  suffix: () => css(stylesheet['.psds-tagsinput__suffix']),
+  prefix: () => glamor.css(stylesheet['.psds-tagsinput__prefix']),
+  suffix: () => glamor.css(stylesheet['.psds-tagsinput__suffix']),
 
-  inputContainer: () => css(stylesheet['.psds-tagsinput__input-container']),
-  input: () => css(stylesheet['.psds-tagsinput__input']),
+  inputContainer: () =>
+    glamor.css(stylesheet['.psds-tagsinput__input-container']),
+  input: () => glamor.css(stylesheet['.psds-tagsinput__input']),
 
-  pillsContainer: () => css(stylesheet['.psds-tagsinput__pills-container']),
-  pills: () => css(stylesheet['.psds-tagsinput__pills']),
-  pill: () => css(stylesheet['.psds-tagsinput__pill'])
+  pillsContainer: () =>
+    glamor.css(stylesheet['.psds-tagsinput__pills-container']),
+  pills: () => glamor.css(stylesheet['.psds-tagsinput__pills']),
+  pill: () => glamor.css(stylesheet['.psds-tagsinput__pill'])
 }
 
 interface TagsInputProps
