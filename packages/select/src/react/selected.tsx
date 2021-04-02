@@ -4,15 +4,17 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 
 import stylesheet from '../css/index'
 
 const styles = (placeholder: boolean, themeName: ValueOf<typeof themeNames>) =>
-  compose(
-    css(stylesheet['.psds-select__selected']),
+  glamor.compose(
+    glamor.css(stylesheet['.psds-select__selected']),
     placeholder &&
-      css(stylesheet[`.psds-select__placeholder.psds-theme--${themeName}`])
+      glamor.css(
+        stylesheet[`.psds-select__placeholder.psds-theme--${themeName}`]
+      )
   )
 
 interface SelectSelectedProps extends HTMLPropsFor<'label'> {

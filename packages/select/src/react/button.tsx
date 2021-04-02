@@ -4,7 +4,7 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -23,22 +23,23 @@ const styles = {
     isOpen: boolean
   }) => {
     const label = 'psds-select__button'
-    return compose(
-      css(stylesheet[`.${label}`]),
-      error && css(stylesheet['.psds-select__button--error']),
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      error && glamor.css(stylesheet['.psds-select__button--error']),
       size === vars.sizes.small &&
-        css(stylesheet['.psds-select__button--small']),
-      css(stylesheet[`.${label}.psds-theme--${themeName}`]),
-      isOpen && css(stylesheet[`.${label}--is-open.psds-theme--${themeName}`])
+        glamor.css(stylesheet['.psds-select__button--small']),
+      glamor.css(stylesheet[`.${label}.psds-theme--${themeName}`]),
+      isOpen &&
+        glamor.css(stylesheet[`.${label}--is-open.psds-theme--${themeName}`])
     )
   },
-  inner: () => css(stylesheet['.psds-select__button-inner']),
+  inner: () => glamor.css(stylesheet['.psds-select__button-inner']),
   icon: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-select__icon']),
-      css(stylesheet[`.psds-select__icon.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-select__icon']),
+      glamor.css(stylesheet[`.psds-select__icon.psds-theme--${themeName}`])
     ),
-  warningIcon: () => css(stylesheet['.psds-select__error'])
+  warningIcon: () => glamor.css(stylesheet['.psds-select__error'])
 }
 
 interface SelectButtonProps extends HTMLPropsFor<'button'> {
