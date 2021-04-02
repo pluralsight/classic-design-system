@@ -9,8 +9,8 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
-  RefForwardingComponent,
-  HTMLPropsFor
+  HTMLPropsFor,
+  forwardRefWithAsAndStatics
 } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css'
@@ -124,14 +124,11 @@ export interface TextInputProps extends Omit<HTMLPropsFor<'input'>, 'size'> {
   value?: React.ReactText
 }
 
-export interface TextInputComponent
-  extends RefForwardingComponent<
-    TextInputProps,
-    HTMLInputElement,
-    TextInputStatics
-  > {}
-
-const TextInput = React.forwardRef(
+const TextInput = forwardRefWithAsAndStatics<
+  TextInputProps,
+  'input',
+  TextInputStatics
+>(
   (
     {
       appearance = vars.appearances.default,
@@ -197,7 +194,7 @@ const TextInput = React.forwardRef(
       </label>
     )
   }
-) as TextInputComponent
+)
 
 TextInput.appearances = vars.appearances
 TextInput.iconAligns = vars.iconAligns
