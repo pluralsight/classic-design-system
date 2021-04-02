@@ -1,5 +1,5 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
@@ -9,19 +9,24 @@ import { toPercentageString } from '../js/index'
 
 const styles = {
   bg: ({ themeName }) =>
-    compose(
-      css(stylesheet['.psds-linearprogress__bg']),
-      css(stylesheet[`.psds-linearprogress__bg.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-linearprogress__bg']),
+      glamor.css(
+        stylesheet[`.psds-linearprogress__bg.psds-theme--${themeName}`]
+      )
     ),
   fg: ({ themeName, value }) => {
     const percent = toPercentageString(value)
     const isComplete = percent === '100%'
 
-    return compose(
-      css(stylesheet['.psds-linearprogress__fg']),
-      css(stylesheet[`.psds-linearprogress__fg.psds-theme--${themeName}`]),
-      isComplete && css(stylesheet['.psds-linearprogress__fg--complete']),
-      css({ width: percent })
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-linearprogress__fg']),
+      glamor.css(
+        stylesheet[`.psds-linearprogress__fg.psds-theme--${themeName}`]
+      ),
+      isComplete &&
+        glamor.css(stylesheet['.psds-linearprogress__fg--complete']),
+      glamor.css({ width: percent })
     )
   }
 }
