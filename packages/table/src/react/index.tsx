@@ -9,7 +9,7 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import invariant from 'invariant'
 import React from 'react'
 
@@ -23,26 +23,27 @@ const styles = {
   ) => {
     const themeClass = `.psds-theme--${themeName}`
 
-    return compose(
-      css(stylesheet['.psds-table__container']),
-      css(stylesheet[`.psds-table__container${themeClass}`]),
-      opts.scrollable && css(stylesheet['.psds-table__container--scrollable'])
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-table__container']),
+      glamor.css(stylesheet[`.psds-table__container${themeClass}`]),
+      opts.scrollable &&
+        glamor.css(stylesheet['.psds-table__container--scrollable'])
     )
   },
   table: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-table']),
-      css(stylesheet[`.psds-table.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-table']),
+      glamor.css(stylesheet[`.psds-table.psds-theme--${themeName}`])
     ),
   cell: (opts: { align: ValueOf<typeof alignments> }) =>
-    compose(
-      css(stylesheet['.psds-table__cell']),
-      css(stylesheet[`.psds-table__cell--align-${opts.align}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-table__cell']),
+      glamor.css(stylesheet[`.psds-table__cell--align-${opts.align}`])
     ),
   head: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-table__head']),
-      css(stylesheet[`.psds-table__head.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-table__head']),
+      glamor.css(stylesheet[`.psds-table__head.psds-theme--${themeName}`])
     ),
   header: (
     themeName: ValueOf<typeof themeNames>,
@@ -52,18 +53,20 @@ const styles = {
       sticky: boolean
     }
   ) => {
-    const stickyClasses = compose(
-      css(stylesheet['.psds-table__header--sticky']),
-      css(stylesheet[`.psds-table__header--sticky.psds-theme--${themeName}`])
+    const stickyClasses = glamor.compose(
+      glamor.css(stylesheet['.psds-table__header--sticky']),
+      glamor.css(
+        stylesheet[`.psds-table__header--sticky.psds-theme--${themeName}`]
+      )
     )
-    return compose(
-      css(stylesheet['.psds-table__header']),
-      css(stylesheet[`.psds-table__header--align-${opts.align}`]),
-      opts.sortable && css(stylesheet['.psds-table__header--sortable']),
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-table__header']),
+      glamor.css(stylesheet[`.psds-table__header--align-${opts.align}`]),
+      opts.sortable && glamor.css(stylesheet['.psds-table__header--sortable']),
       opts.sticky && stickyClasses
     )
   },
-  sortIcon: () => css(stylesheet['.psds-table__header__sort-icon']),
+  sortIcon: () => glamor.css(stylesheet['.psds-table__header__sort-icon']),
   row: (
     themeName: ValueOf<typeof themeNames>,
     opts: { expanded: boolean; selected: boolean }
@@ -71,16 +74,16 @@ const styles = {
     const collapsed = !opts.expanded
     const themeClass = `.psds-theme--${themeName}`
 
-    return compose(
-      css(stylesheet[`.psds-table__row${themeClass}`]),
-      collapsed && css(stylesheet['.psds-table__row--collapsed']),
+    return glamor.compose(
+      glamor.css(stylesheet[`.psds-table__row${themeClass}`]),
+      collapsed && glamor.css(stylesheet['.psds-table__row--collapsed']),
       opts.selected &&
-        css(stylesheet[`.psds-table__row--selected${themeClass}`])
+        glamor.css(stylesheet[`.psds-table__row--selected${themeClass}`])
     )
   },
-  drawer: () => css(stylesheet['.psds-table__drawer']),
-  drawerCell: () => css(stylesheet['.psds-table__drawer__cell']),
-  drawerInner: () => css(stylesheet['.psds-table__drawer__inner'])
+  drawer: () => glamor.css(stylesheet['.psds-table__drawer']),
+  drawerCell: () => glamor.css(stylesheet['.psds-table__drawer__cell']),
+  drawerInner: () => glamor.css(stylesheet['.psds-table__drawer__inner'])
 }
 
 interface TableProps extends HTMLPropsFor<'table'> {

@@ -5,7 +5,7 @@ import {
 } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { before, css } from 'glamor'
+import glamor from 'glamor'
 import {
   DragDropContext,
   DraggableProvided,
@@ -145,7 +145,7 @@ const Handle: React.FC = props => {
     })
   )
 
-  const style = css(
+  const style = glamor.css(
     {
       color: dark ? colorsTextIcon.lowOnDark : colorsTextIcon.lowOnLight,
       cursor: 'grab',
@@ -154,7 +154,7 @@ const Handle: React.FC = props => {
       position: 'relative',
       width: (size + gutter) * cols
     },
-    before({
+    glamor.before({
       backgroundColor: 'currentColor',
       boxShadow: shadow.toString(),
       content: ' ',
