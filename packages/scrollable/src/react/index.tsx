@@ -5,23 +5,23 @@ import {
   useResizeObserver,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import { compose, css, media } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 
 const styles = {
   outer: () =>
-    compose(
-      css(stylesheet['.psds-scrollable__outer']),
-      media('not print', stylesheet['.psds-scrollable__outer--screen'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-scrollable__outer']),
+      glamor.media('not print', stylesheet['.psds-scrollable__outer--screen'])
     ),
-  inner: () => css(stylesheet['.psds-scrollable__inner']),
-  content: () => css(stylesheet['.psds-scrollable__content']),
+  inner: () => glamor.css(stylesheet['.psds-scrollable__inner']),
+  content: () => glamor.css(stylesheet['.psds-scrollable__content']),
   handle: (grabbed: boolean) =>
-    compose(
-      css(stylesheet['.psds-scrollable__handle']),
-      grabbed && css(stylesheet['.psds-scrollable__handle--grabbed'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-scrollable__handle']),
+      grabbed && glamor.css(stylesheet['.psds-scrollable__handle--grabbed'])
     )
 }
 
@@ -113,7 +113,7 @@ const Scrollable = React.forwardRef<HTMLElement, ScrollableProps>(
       const height = Math.max(scrollRatio * 100, 10) + '%'
       const visibility = hidden ? 'hidden' : 'initial'
 
-      return css({ height, top: offset, visibility })
+      return glamor.css({ height, top: offset, visibility })
     }, [hidden, offset, scrollRatio])
 
     return (
