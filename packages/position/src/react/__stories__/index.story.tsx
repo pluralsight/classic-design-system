@@ -3,7 +3,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 import { HTMLPropsFor, usePortal } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import {
@@ -55,7 +55,7 @@ const Box = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
     /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
     React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
-    const selectors = css({
+    const selectors = glamor.css({
       position: 'relative',
       top: '200px',
       left: '200px',
@@ -95,7 +95,7 @@ const MockToolip = React.forwardRef<
 })
 
 const ScrollContainer: React.FC = props => {
-  const containerSelectors = css({
+  const containerSelectors = glamor.css({
     border: `4px dashed ${core.colorsOrange.base}`,
     color: core.colorsTextIcon.highOnDark,
     height: 500,
@@ -103,7 +103,7 @@ const ScrollContainer: React.FC = props => {
     padding: 20,
     width: 500
   })
-  const shimSelectors = css({
+  const shimSelectors = glamor.css({
     border: `1px dashed ${core.colorsBorder.highOnLight}`,
     height: 200,
     margin: '20px 0',
@@ -174,7 +174,7 @@ Object.values(positionComponents).forEach(Comp => {
   const name = `<${Comp.displayName} />`
 
   const Outer: React.FC = props => {
-    const selectors = css({
+    const selectors = glamor.css({
       border: `4px dashed ${core.colorsOrange.base}`,
       color: core.colorsTextIcon.highOnDark,
       height: 500,
