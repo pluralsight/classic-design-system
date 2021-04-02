@@ -7,15 +7,15 @@ import {
   HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 
 const styles = {
-  bar: () => css(stylesheet['.psds-tab__list-item__bar']),
+  bar: () => glamor.css(stylesheet['.psds-tab__list-item__bar']),
   listItem: (active: boolean, themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-tab__list-item'],
       stylesheet[`.psds-tab__list-item.psds-theme--${themeName}`],
       active && stylesheet[`.psds-tab__list-item.psds-tab__list-item--active`],
@@ -24,8 +24,8 @@ const styles = {
           `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeName}`
         ]
     ),
-  textInner: () => css(stylesheet['.psds-tab__list-item__text-inner']),
-  textWidth: () => css(stylesheet['.psds-tab__list-item__text'])
+  textInner: () => glamor.css(stylesheet['.psds-tab__list-item__text-inner']),
+  textWidth: () => glamor.css(stylesheet['.psds-tab__list-item__text'])
 }
 
 export interface BaseListItemProps {

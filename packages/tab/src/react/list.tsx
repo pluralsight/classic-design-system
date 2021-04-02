@@ -13,7 +13,7 @@ import {
   ValueOf,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -23,7 +23,7 @@ const slideAnimationLength = parseInt(motion.speedFast) + 10
 
 const styles = {
   list: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-tab__list'],
       stylesheet[`.psds-tab__list.psds-theme--${themeName}`]
     ),
@@ -31,7 +31,7 @@ const styles = {
     position: OverflowButtonPosition,
     themeName: ValueOf<typeof themeNames>
   ) =>
-    css(
+    glamor.css(
       stylesheet['.psds-tab__overflow-button'],
       stylesheet[`.psds-tab__overflow-button--${String(position)}`],
       stylesheet[`.psds-tab__overflow-button.psds-theme--${themeName}`],
@@ -39,8 +39,9 @@ const styles = {
         `.psds-tab__overflow-button--${position}.psds-theme--${themeName}`
       ]
     ),
-  overflowButtonIcon: () => css(stylesheet['.psds-tab__overflow-button__icon']),
-  slider: () => css(stylesheet['.psds-tab__slider'])
+  overflowButtonIcon: () =>
+    glamor.css(stylesheet['.psds-tab__overflow-button__icon']),
+  slider: () => glamor.css(stylesheet['.psds-tab__slider'])
 }
 
 interface Overflows {
