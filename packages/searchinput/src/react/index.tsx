@@ -1,4 +1,4 @@
-import { css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
@@ -11,11 +11,11 @@ import stylesheet from '../css/index'
 
 const styles = {
   clear: (isClearBtnVisible: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-searchinput-clear'],
       isClearBtnVisible && stylesheet['.psds-searchinput-clear--visible']
     ),
-  field: () => css(stylesheet['.psds-searchinput-field'])
+  field: () => glamor.css(stylesheet['.psds-searchinput-field'])
 }
 
 export interface SearchInputProps
