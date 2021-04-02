@@ -1,6 +1,6 @@
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { compose, css, media } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 import { useCookies } from 'react-cookie'
 
@@ -11,16 +11,21 @@ const DEFAULT_PRIVACY_UPDATED_DATE = new Date('2018-05-24T00:00:00')
 
 const styles = {
   banner: () =>
-    compose(
-      css(stylesheet['.psds-navcookiebanner']),
-      media(
+    glamor.compose(
+      glamor.css(stylesheet['.psds-navcookiebanner']),
+      glamor.media(
         '(min-width: 769px)',
-        css(stylesheet['@media (min-width: 769px)']['.psds-navcookiebanner'])
+        glamor.css(
+          stylesheet['@media (min-width: 769px)']['.psds-navcookiebanner']
+        )
       ),
-      media('print', css(stylesheet['@media print']['.psds-navcookiebanner']))
+      glamor.media(
+        'print',
+        glamor.css(stylesheet['@media print']['.psds-navcookiebanner'])
+      )
     ),
-  message: () => css(stylesheet['.psds-navcookiebanner__message']),
-  dismiss: () => css(stylesheet['.psds-navcookiebanner__dismiss'])
+  message: () => glamor.css(stylesheet['.psds-navcookiebanner__message']),
+  dismiss: () => glamor.css(stylesheet['.psds-navcookiebanner__dismiss'])
 }
 
 interface NavCookieBannerProps extends HTMLPropsFor<'div'> {
