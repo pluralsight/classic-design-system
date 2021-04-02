@@ -17,7 +17,7 @@ Colors are available from the core package. Colors are usable in CSS:
 @import '@pluralsight/ps-design-system-core';
 
 .mySelector {
-  color: var(--psColorsBlueBase);
+  color: var(--psColorsBlue6);
 }
 ```
 
@@ -30,7 +30,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 
 myCssInJsSolution({
-  color: colorsBlue.base
+  color: colorsBlue[6]
 })
 ```
 
@@ -50,7 +50,7 @@ Light
 
 Use utility color with transparency to lighten or darken backgrounds beyond the three colors provided.
 
-Utility base color
+Utility base coma seperated values
       
 <Colors id="utilityBase" />
 
@@ -106,7 +106,7 @@ On light backgrounds
 
 ## All colors
 
-These are additional colors beyond the core set. They can be used for things like illustrations, complex data visualizations, etc. Colors numbered 6 are the same as base colors. (e.g., `psColorsBlue6` has the same value as `psColorsBlueBase`)
+These are additional colors beyond the core set. They can be used for things like illustrations, complex data visualizations, etc.
 
 <Colors id="blue" />
 

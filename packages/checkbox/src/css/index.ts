@@ -73,13 +73,13 @@ export default {
     bottom: '-7px'
   },
   '.psds-checkbox__square:focus:after': {
-    background: colorsBlue.base
+    background: colorsBlue[6]
   },
   '.psds-checkbox__square--error:after': {
     background: colorsStatus.error
   },
   '.psds-checkbox__square--active': {
-    background: colorsBlue.base,
+    background: colorsBlue[6],
     border: 'none'
   },
   '.psds-checkbox__square--active:focus:before, .psds-checkbox__square--active--error:before': {
