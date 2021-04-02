@@ -9,7 +9,7 @@ import {
   stylesFor,
   usePortal
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css, keyframes } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -18,26 +18,28 @@ import * as vars from '../vars/index'
 /* eslint-disable-next-line camelcase */
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
-const fade = keyframes(stylesheet['@keyframes psds-dialog__keyframes__fade'])
+const fade = glamor.keyframes(
+  stylesheet['@keyframes psds-dialog__keyframes__fade']
+)
 
 const styles = {
   dialog: (modal: boolean, tailPosition?: ValueOf<typeof vars.tailPositions>) =>
-    compose(
-      css(stylesheet['.psds-dialog']({ fade })),
-      modal && css(stylesheet['.psds-dialog--modal']),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-dialog']({ fade })),
+      modal && glamor.css(stylesheet['.psds-dialog--modal']),
       Boolean(tailPosition) &&
-        compose(
+        glamor.compose(
           stylesheet['.psds-dialog--w-tail'],
           stylesheet[`.psds-dialog--tailPosition-${tailPosition}`]
         )
     ),
   content: (props: DialogProps) =>
-    css(
+    glamor.css(
       stylesheet['.psds-dialog__content'],
-      stylesFor('dialog__content', props) as StyleAttribute
+      stylesFor('dialog__content', props) as glamor.StyleAttribute
     ),
-  close: () => css(stylesheet['.psds-dialog__close']),
-  overlay: () => css(stylesheet['.psds-dialog__overlay'])
+  close: () => glamor.css(stylesheet['.psds-dialog__close']),
+  overlay: () => glamor.css(stylesheet['.psds-dialog__overlay'])
 }
 
 const CloseButton: React.FC<HTMLPropsFor<'button'>> = props => (
