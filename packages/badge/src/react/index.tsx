@@ -4,7 +4,7 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { css, StyleAttribute } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -14,11 +14,11 @@ import * as vars from '../vars/index'
 type StyleFn = (
   props: InternalBadgeProps,
   themeName: ValueOf<typeof Theme.names>
-) => StyleAttribute
+) => glamor.StyleAttribute
 
 const styles: { [key: string]: StyleFn } = {
   badge: (props, themeName) =>
-    css(
+    glamor.css(
       stylesheet['.psds-badge'],
       stylesheet[select(themeName, props.appearance, props.color)]
     )
