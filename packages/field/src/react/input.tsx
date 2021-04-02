@@ -1,5 +1,5 @@
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { FieldContext } from './context'
@@ -7,11 +7,11 @@ import stylesheet from '../css/input'
 import { sizes } from '../vars/index'
 
 const styles = {
-  container: () => css(stylesheet['.psds-field__input__container']),
+  container: () => glamor.css(stylesheet['.psds-field__input__container']),
   input: (size: ValueOf<typeof sizes>) =>
-    compose(
-      css(stylesheet['.psds-field__input']),
-      css(stylesheet[`.psds-field__input--${size}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-field__input']),
+      glamor.css(stylesheet[`.psds-field__input--${size}`])
     )
 }
 

@@ -6,7 +6,7 @@ import {
   combineFns
 } from '@pluralsight/ps-design-system-util'
 import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import { FieldContext } from './context'
@@ -19,22 +19,23 @@ import { appearances, sizes } from '../vars/index'
 
 const styles = {
   container: (opts: { disabled?: boolean; error?: boolean }) =>
-    compose(
-      css(stylesheet['.psds-field__container']),
-      opts.disabled && css(stylesheet['.psds-field__container--disabled']),
-      opts.error && css(stylesheet['.psds-field__container--error'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-field__container']),
+      opts.disabled &&
+        glamor.css(stylesheet['.psds-field__container--disabled']),
+      opts.error && glamor.css(stylesheet['.psds-field__container--error'])
     ),
   field: (opts: { hasPrefix: boolean; hasSuffix: boolean; size?: string }) =>
-    compose(
-      css(stylesheet['.psds-field']),
-      css(stylesheet[`.psds-field--${opts.size}`]),
-      opts.hasPrefix && css(stylesheet['.psds-field--prefix']),
-      opts.hasSuffix && css(stylesheet['.psds-field--suffix'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-field']),
+      glamor.css(stylesheet[`.psds-field--${opts.size}`]),
+      opts.hasPrefix && glamor.css(stylesheet['.psds-field--prefix']),
+      opts.hasSuffix && glamor.css(stylesheet['.psds-field--suffix'])
     ),
-  halo: () => css(stylesheet['.psds-field__halo']),
-  prefix: () => css(stylesheet['.psds-field__prefix']),
-  suffix: () => css(stylesheet['.psds-field__suffix']),
-  errorIcon: () => css(stylesheet['.psds-field__error-icon'])
+  halo: () => glamor.css(stylesheet['.psds-field__halo']),
+  prefix: () => glamor.css(stylesheet['.psds-field__prefix']),
+  suffix: () => glamor.css(stylesheet['.psds-field__suffix']),
+  errorIcon: () => glamor.css(stylesheet['.psds-field__error-icon'])
 }
 
 type InputElements = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement

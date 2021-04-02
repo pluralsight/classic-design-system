@@ -3,16 +3,16 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/label'
 
 const styles = {
   label: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-field__label']),
-      css(stylesheet[`.psds-field__label.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-field__label']),
+      glamor.css(stylesheet[`.psds-field__label.psds-theme--${themeName}`])
     )
 }
 

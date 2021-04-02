@@ -3,7 +3,7 @@ import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { Story } from '@storybook/react/types-6-0'
-import { css } from 'glamor'
+import glamor from 'glamor'
 
 import Field from '../index'
 
@@ -15,7 +15,7 @@ const variables = {
 
 export const ConstrainWidthDecorator = (Story: Story) => {
   return (
-    <div {...css({ maxWidth: '400px' })}>
+    <div {...glamor.css({ maxWidth: '400px' })}>
       <Story />
     </div>
   )
@@ -23,7 +23,7 @@ export const ConstrainWidthDecorator = (Story: Story) => {
 
 export const OutlineDecorator = (Story: Story) => {
   return (
-    <div {...css({ outline: `2px dashed ${colorsPink.base}` })}>
+    <div {...glamor.css({ outline: `2px dashed ${colorsPink.base}` })}>
       <Story />
     </div>
   )
@@ -31,7 +31,7 @@ export const OutlineDecorator = (Story: Story) => {
 
 export const SetWidthDecorator = (Story: Story) => {
   return (
-    <div {...css({ width: '400px' })}>
+    <div {...glamor.css({ width: '400px' })}>
       <Story />
     </div>
   )
@@ -62,7 +62,7 @@ export const Pills = React.forwardRef<HTMLDivElement, PillsProps>(
     }
 
     return (
-      <div ref={ref} {...rest} {...css(styles)}>
+      <div ref={ref} {...rest} {...glamor.css(styles)}>
         {children}
       </div>
     )
@@ -80,7 +80,7 @@ const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   }
 
   return (
-    <div ref={ref} {...rest} {...css(styles)}>
+    <div ref={ref} {...rest} {...glamor.css(styles)}>
       <Tag
         icon={<CloseIcon onClick={onRequestRemove} />}
         isPressed
@@ -103,7 +103,7 @@ const PillAdjacentInput = React.forwardRef<
         <div
           ref={r}
           {...p}
-          {...css({ margin: `calc(${variables.pills.gutter}px / 2)` })}
+          {...glamor.css({ margin: `calc(${variables.pills.gutter}px / 2)` })}
         />
       )),
     []
@@ -115,7 +115,7 @@ const PillAdjacentInput = React.forwardRef<
       renderContainer={Container}
       type="text"
       {...props}
-      {...css({ minWidth: 50 })}
+      {...glamor.css({ minWidth: 50 })}
     />
   )
 })
