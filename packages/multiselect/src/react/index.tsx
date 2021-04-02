@@ -4,7 +4,7 @@ import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import Tag from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor, canUseDOM } from '@pluralsight/ps-design-system-util'
 import { useCombobox, useMultipleSelection } from 'downshift'
-import { compose, css } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -18,22 +18,24 @@ const { stateChangeTypes } = useCombobox
 
 const styles = {
   multiSelect: (opts: { disabled?: boolean }) =>
-    compose(
-      css(stylesheet['.psds-multi-select']),
-      opts.disabled && css(stylesheet['.psds-multi-select--disabled'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-multi-select']),
+      opts.disabled && glamor.css(stylesheet['.psds-multi-select--disabled'])
     ),
 
-  prefix: () => css(stylesheet['.psds-multi-select__prefix']),
-  caret: () => css(stylesheet['.psds-multi-select__caret']),
+  prefix: () => glamor.css(stylesheet['.psds-multi-select__prefix']),
+  caret: () => glamor.css(stylesheet['.psds-multi-select__caret']),
 
-  menu: () => css(stylesheet['.psds-multi-select__menu']),
+  menu: () => glamor.css(stylesheet['.psds-multi-select__menu']),
 
-  inputContainer: () => css(stylesheet['.psds-multi-select__input-container']),
-  input: () => css(stylesheet['.psds-multi-select__input']),
+  inputContainer: () =>
+    glamor.css(stylesheet['.psds-multi-select__input-container']),
+  input: () => glamor.css(stylesheet['.psds-multi-select__input']),
 
-  pillsContainer: () => css(stylesheet['.psds-multi-select__pills-container']),
-  pills: () => css(stylesheet['.psds-multi-select__pills']),
-  pill: () => css(stylesheet['.psds-multi-select__pill'])
+  pillsContainer: () =>
+    glamor.css(stylesheet['.psds-multi-select__pills-container']),
+  pills: () => glamor.css(stylesheet['.psds-multi-select__pills']),
+  pill: () => glamor.css(stylesheet['.psds-multi-select__pill'])
 }
 
 interface MultiSelectFieldProps
