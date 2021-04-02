@@ -1,4 +1,4 @@
-import { compose, css, keyframes } from 'glamor'
+import glamor from 'glamor'
 import React from 'react'
 
 import {
@@ -9,33 +9,35 @@ import {
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
 
-const fade = keyframes(stylesheet[`@keyframes psds-tooltip__keyframes__fade`])
+const fade = glamor.keyframes(
+  stylesheet[`@keyframes psds-tooltip__keyframes__fade`]
+)
 const styles = {
   tail: (props: Pick<TooltipProps, 'appearance' | 'tailPosition'>) => {
     const label = 'psds-tooltip__tail'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--appearance-${props.appearance}`]),
-      css(stylesheet[`.${label}--tailPosition-${props.tailPosition}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}--appearance-${props.appearance}`]),
+      glamor.css(stylesheet[`.${label}--tailPosition-${props.tailPosition}`])
     )
   },
   tooltip: (props: Pick<TooltipProps, 'appearance' | 'onClose'>) => {
     const label = 'psds-tooltip'
     const closeable = typeof props.onClose === 'function'
 
-    return compose(
-      css(stylesheet['.psds-tooltip']({ fade })),
-      css(stylesheet[`.${label}--appearance-${props.appearance}`]),
-      closeable && css(stylesheet[`.${label}--closeable`])
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-tooltip']({ fade })),
+      glamor.css(stylesheet[`.${label}--appearance-${props.appearance}`]),
+      closeable && glamor.css(stylesheet[`.${label}--closeable`])
     )
   },
   close: (props: Pick<TooltipProps, 'appearance'>) => {
     const label = 'psds-tooltip__close'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--appearance-${props.appearance}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}--appearance-${props.appearance}`])
     )
   }
 }
