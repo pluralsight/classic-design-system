@@ -7,17 +7,19 @@ import {
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
 
+const glamor = glamorDefault || glamorExports
+
 const ColorContext = React.createContext<ValueOf<typeof vars.colors>>(
   vars.colors.blue
 )
 
-type StyleFn = (props: BannerProps) => glamor.StyleAttribute
+type StyleFn = (props: BannerProps) => glamorExports.StyleAttribute
 
 const styles: { [name: string]: StyleFn } = {
   banner: ({ color }) =>
