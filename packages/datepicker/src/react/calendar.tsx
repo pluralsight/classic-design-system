@@ -10,13 +10,15 @@ import {
   ValueOf
 } from '@pluralsight/ps-design-system-util'
 import Theme from '@pluralsight/ps-design-system-theme'
-import { RenderProps } from 'dayzed'
-import glamor from 'glamor'
+import type { RenderProps } from 'dayzed'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { DateContext } from './context'
 import stylesheet from '../css/index'
 import { slides } from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const forward = glamor.keyframes(
   stylesheet['@keyframes psds-calendar__keyframes__forward']

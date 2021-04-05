@@ -1,6 +1,7 @@
 import Field from '@pluralsight/ps-design-system-field'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { useDayzed, DateObj } from 'dayzed'
+import type { DateObj } from 'dayzed'
+import DayzedDefault, * as DayzedExports from 'dayzed'
 import React from 'react'
 
 import { Calendar } from './calendar'
@@ -14,6 +15,9 @@ interface DatePickerProps
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
   _uniqueId?: (prefix: string) => string
 }
+
+const Dayzed = DayzedExports || DayzedDefault
+const { useDayzed } = Dayzed
 
 export const DatePicker: React.FC<DatePickerProps> = ({
   disabled,

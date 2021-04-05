@@ -1,10 +1,12 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { DateObj, RenderProps } from 'dayzed'
-import glamor from 'glamor'
+import type { DateObj, RenderProps } from 'dayzed'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { DateContext } from './context'
 import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   calendarDate: (selected: boolean, today: boolean) =>

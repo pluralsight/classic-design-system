@@ -1,12 +1,16 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { parse, format, differenceInCalendarMonths } from 'date-fns'
-import { DateObj } from 'dayzed'
-import glamor from 'glamor'
+import differenceInCalendarMonths from 'date-fns/differenceInCalendarMonths'
+import format from 'date-fns/format'
+import parse from 'date-fns/parse'
+import type { DateObj } from 'dayzed'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { slides } from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const style = {
   start: () => glamor.css(stylesheet['.psds-calendar__date--selected-start']),

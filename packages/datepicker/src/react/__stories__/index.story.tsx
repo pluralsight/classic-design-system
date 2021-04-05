@@ -4,7 +4,8 @@ import TextInput from '@pluralsight/ps-design-system-textinput'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
-import { useDayzed, DateObj } from 'dayzed'
+import type { DateObj } from 'dayzed'
+import DayzedDefault, * as DayzedExports from 'dayzed'
 
 import {
   Calendar,
@@ -17,6 +18,9 @@ import {
   useRangeSelectChange
 } from '../index'
 import { slides } from '../../vars/index'
+
+const Dayzed = DayzedExports || DayzedDefault
+const { useDayzed } = Dayzed
 
 storiesOf('SingleDate', module)
   .add('calendar: date is selected', () => {
