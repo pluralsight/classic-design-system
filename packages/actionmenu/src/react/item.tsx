@@ -3,7 +3,7 @@ import {
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -11,6 +11,8 @@ import { origins, tagName as tagNames } from '../vars/index'
 
 import { ActionMenuContext } from './context'
 import { Arrow } from './arrow'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   itemContainer: ({

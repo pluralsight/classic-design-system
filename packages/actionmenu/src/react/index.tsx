@@ -7,7 +7,7 @@ import {
   useCloseOnDocumentEvents,
   useMenuRef
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { ActionMenuContext } from './context'
@@ -17,6 +17,8 @@ import { Ellipsis } from './ellipsis'
 import { Item } from './item'
 import { Icon } from './icon'
 import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const slide = glamor.keyframes(
   stylesheet['@keyframes psds-actionmenu__keyframes__slide']
