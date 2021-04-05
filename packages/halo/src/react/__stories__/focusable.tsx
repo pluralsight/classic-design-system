@@ -1,11 +1,13 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { StyleFn } from '../index'
 import * as vars from '../../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const stylesheet: { [selector: string]: Record<string, unknown> } = {
   '.focusable': {

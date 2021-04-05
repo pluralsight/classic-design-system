@@ -8,19 +8,21 @@ import {
   ValueOf,
   canUseDOM
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import polyfillFocusWithin from 'focus-within'
 import React from 'react'
 
 import stylesheet, { BASE_CLASSNAME, themeClasses } from '../css/index'
 import * as vars from '../vars/index'
 
+const glamor = glamorDefault || glamorExports
+
 if (canUseDOM()) polyfillFocusWithin(document)
 
 export type StyleFn<P> = (
   themeName: ValueOf<typeof themeNames>,
   props: P
-) => glamor.StyleAttribute
+) => glamorExports.StyleAttribute
 
 const styles: { [name: string]: StyleFn<InternalHaloProps> } = {
   halo: (themeName, props) => {
