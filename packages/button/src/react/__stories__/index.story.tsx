@@ -2,10 +2,12 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Button from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 const defaultArgs = { children: 'click me', onClick: action('click') }
 
