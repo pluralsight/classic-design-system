@@ -3,7 +3,7 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -30,7 +30,9 @@ type AvatarComponent = RefForwardingComponent<
 
 type ImageState = 'loading' | 'error' | 'success'
 
-type StyleFn = (props: AvatarProps) => glamor.StyleAttribute
+type StyleFn = (props: AvatarProps) => glamorExports.StyleAttribute
+
+const glamor = glamorDefault || glamorExports
 
 const styles: { [key: string]: StyleFn } = {
   avatar: props =>
