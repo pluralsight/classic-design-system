@@ -9,11 +9,13 @@ import {
   RefForwardingComponent,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   error: () => glamor.css(stylesheet['.psds-text-input__error']),
