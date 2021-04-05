@@ -34,8 +34,7 @@ export default {
     margin: `calc(${PILL_GUTTER_SIZE}px * -2)`,
     maxHeight: 75,
     overflowY: 'auto',
-    padding: `${layout.spacingXXSmall} ${layout.spacingXSmall}`,
-    width: '100%'
+    padding: `${layout.spacingXXSmall} ${layout.spacingXSmall}`
   },
   '.psds-tagsinput__pill': { margin: `calc(${PILL_GUTTER_SIZE}px / 2)` },
 
