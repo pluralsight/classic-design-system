@@ -1,9 +1,11 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Heading from '../heading'
+
+const glamor = glamorDefault || glamorExports
 
 const style = { color: core.colorsPink.base }
 const className = glamor
