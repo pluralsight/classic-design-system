@@ -3,7 +3,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 import { HTMLPropsFor, usePortal } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import {
@@ -26,6 +26,8 @@ import {
   LeftOf,
   RightOf
 } from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 const positionComponents = {
   Above,
