@@ -1,5 +1,5 @@
 import React from 'react'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import { action } from '@storybook/addon-actions'
 
 import {
@@ -11,6 +11,8 @@ import {
 export default {
   title: 'Utils/useMenuKeyEvents'
 }
+
+const glamor = glamorDefault || glamorExports
 
 export const basic = () => <MockStory />
 
