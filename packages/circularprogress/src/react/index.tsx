@@ -5,11 +5,13 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const radius = vars.style.width / 2 - vars.style.strokeWidth / 2
 const circumference = 2 * Math.PI * radius
@@ -22,7 +24,7 @@ const spin = glamor.keyframes({
 type StyleFn = (
   themeName: string,
   props: CircularProgressProps
-) => glamor.StyleAttribute
+) => glamorExports.StyleAttribute
 
 const styles: { [key: string]: StyleFn } = {
   circularprogress: (themeName, { size = vars.sizes.medium }) =>
