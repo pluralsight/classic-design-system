@@ -3,13 +3,15 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { colors, sizes } from '../vars/index'
 
-type StyleFn = (props: IconProps) => glamor.StyleAttribute
+const glamor = glamorDefault || glamorExports
+
+type StyleFn = (props: IconProps) => glamorExports.StyleAttribute
 
 const style: { [name: string]: StyleFn } = {
   icon: props =>

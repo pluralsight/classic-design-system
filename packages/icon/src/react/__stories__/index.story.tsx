@@ -1,9 +1,11 @@
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Icon from '../index'
 import * as Icons from '../icons/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   grid: glamor.css({
