@@ -3,11 +3,13 @@ import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { Story } from '@storybook/react/types-6-0'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 
 import Field from '../index'
 
 import React from 'react'
+
+const glamor = glamorDefault || glamorExports
 
 const variables = {
   pills: { gutter: 2 }

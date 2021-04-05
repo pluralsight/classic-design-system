@@ -6,7 +6,7 @@ import {
   combineFns
 } from '@pluralsight/ps-design-system-util'
 import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { FieldContext } from './context'
@@ -16,6 +16,8 @@ import Label from './label'
 import SubLabel from './sub-label'
 import TextArea from './text-area'
 import { appearances, sizes } from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   container: (opts: { disabled?: boolean; error?: boolean }) =>

@@ -1,8 +1,10 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/text-area'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   container: () => glamor.css(stylesheet['.psds-field__text-area__container']),

@@ -3,10 +3,12 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/label'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   label: (themeName: ValueOf<typeof themeNames>) =>

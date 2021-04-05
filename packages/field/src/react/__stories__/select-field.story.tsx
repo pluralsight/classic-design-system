@@ -2,11 +2,13 @@ import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { useSelect } from 'downshift'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { Option, periodicElements } from '../__fixtures__/options'
 import Field from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 interface SelectFieldProps extends React.ComponentProps<typeof Field> {
   options: Option[]
