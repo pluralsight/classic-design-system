@@ -4,17 +4,19 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { select } from '../js/index'
 import * as vars from '../vars/index'
 
+const glamor = glamorDefault || glamorExports
+
 type StyleFn = (
   props: InternalBadgeProps,
   themeName: ValueOf<typeof Theme.names>
-) => glamor.StyleAttribute
+) => glamorExports.StyleAttribute
 
 const styles: { [key: string]: StyleFn } = {
   badge: (props, themeName) =>
