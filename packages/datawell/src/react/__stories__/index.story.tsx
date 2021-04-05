@@ -1,8 +1,10 @@
-import { css } from 'glamor'
 import { storiesOf } from '@storybook/react'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import DataWell from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 storiesOf('DataWell', module)
   .add('label/data', () => <DataWell label="Dog count">123</DataWell>)
@@ -32,7 +34,7 @@ storiesOf('DataWell', module)
   ))
   .add('fixed width in row, no spaces', () => (
     <div
-      {...css({
+      {...glamor.css({
         display: 'flex',
         '& > div': {
           width: '25%'
