@@ -5,7 +5,7 @@ import {
   ValueOf,
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import CarouselContext from './context'
@@ -16,6 +16,8 @@ import { chunk, pick } from '../js/utils'
 import useSwipe, { UseSwipeOpts } from './use-swipe'
 import useUniqueId from './use-unique-id'
 import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   carousel: (ready: boolean) =>

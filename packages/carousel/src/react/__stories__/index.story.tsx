@@ -3,10 +3,12 @@ import Card from '@pluralsight/ps-design-system-card'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
 import { storiesOf } from '@storybook/react'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Carousel, { Item } from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 const uniqueId = (prefix = '') => `${prefix}mock_unique_id`
 

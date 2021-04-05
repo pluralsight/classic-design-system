@@ -13,12 +13,14 @@ import {
   ValueOf,
   combineFns
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import CarouselContext from './context'
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   control: (direction: ValueOf<typeof vars.controlDirections>) =>
