@@ -1,4 +1,4 @@
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import {
@@ -8,6 +8,8 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const fade = glamor.keyframes(
   stylesheet[`@keyframes psds-tooltip__keyframes__fade`]
