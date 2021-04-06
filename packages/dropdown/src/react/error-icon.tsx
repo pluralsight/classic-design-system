@@ -1,8 +1,10 @@
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = glamor.css(stylesheet['.psds-dropdown__error'])
 

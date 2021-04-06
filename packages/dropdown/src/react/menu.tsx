@@ -3,7 +3,7 @@ import {
   createUniversalPortal,
   useCloseOnDocumentEvents
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -12,6 +12,8 @@ import {
   useMenuRef,
   handleMenuKeyDownEvents
 } from '../js/index'
+
+const glamor = glamorDefault || glamorExports
 
 const slide = glamor.keyframes(
   stylesheet['@keyframes psds-dropdown__menu__keyframes__slide']

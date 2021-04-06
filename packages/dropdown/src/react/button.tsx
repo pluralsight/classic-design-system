@@ -5,13 +5,15 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { CaretDown } from './caret-down'
 import { ErrorIcon } from './error-icon'
 import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   field: (
