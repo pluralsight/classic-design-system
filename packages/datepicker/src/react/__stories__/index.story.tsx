@@ -5,7 +5,6 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 import type { DateObj } from 'dayzed'
-import DayzedDefault, * as DayzedExports from 'dayzed'
 
 import {
   Calendar,
@@ -17,10 +16,8 @@ import {
   useDateSelectChange,
   useRangeSelectChange
 } from '../index'
+import { getUseDayzed } from '../utils'
 import { slides } from '../../vars/index'
-
-const Dayzed = DayzedExports || DayzedDefault
-const { useDayzed } = Dayzed
 
 storiesOf('SingleDate', module)
   .add('calendar: date is selected', () => {
@@ -30,7 +27,7 @@ storiesOf('SingleDate', module)
     const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
       setSelected(dateObj.date)
     }
-    const { getDateProps, ...dayzedData } = useDayzed({
+    const { getDateProps, ...dayzedData } = getUseDayzed()({
       date: selected || new Date('05/30/2020'),
       selected,
       onDateSelected
@@ -52,7 +49,7 @@ storiesOf('SingleDate', module)
     const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
       setSelected(dateObj.date)
     }
-    const { getDateProps, ...dayzedData } = useDayzed({
+    const { getDateProps, ...dayzedData } = getUseDayzed()({
       date: new Date('04/10/2020'),
       selected,
       onDateSelected
@@ -72,7 +69,7 @@ storiesOf('SingleDate', module)
     const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
       setSelected(dateObj.date)
     }
-    const { getDateProps, ...dayzedData } = useDayzed({
+    const { getDateProps, ...dayzedData } = getUseDayzed()({
       date: selected || new Date('05/30/2020'),
       selected,
       onDateSelected
@@ -101,7 +98,7 @@ storiesOf('SingleDate', module)
       setSelected(dateObj.date)
       setOpen(false)
     }
-    const { getDateProps, ...dayzedData } = useDayzed({
+    const { getDateProps, ...dayzedData } = getUseDayzed()({
       date: selected || new Date('05/30/2020'),
       selected,
       onDateSelected
@@ -214,7 +211,7 @@ storiesOf('DatePicker', module)
 storiesOf('RangeDate', module)
   .add('Calendar', () => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
-    const { getDateProps, ...dayzedData } = useDayzed({
+    const { getDateProps, ...dayzedData } = getUseDayzed()({
       selected,
       onDateSelected: onRangeDateSelected({ selected, setSelected }),
       date: new Date('05/30/2020')
@@ -238,7 +235,7 @@ storiesOf('RangeDate', module)
   })
   .add('Calendar: with button', () => {
     const [selected, setSelected] = React.useState<Date[]>([])
-    const { getDateProps, ...dayzedData } = useDayzed({
+    const { getDateProps, ...dayzedData } = getUseDayzed()({
       selected,
       onDateSelected: onRangeDateSelected({ selected, setSelected }),
       date: new Date('05/30/2020')
@@ -270,7 +267,7 @@ storiesOf('RangeDate', module)
   })
   .add('calendar: with input', () => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
-    const { getDateProps, ...dayzedData } = useDayzed({
+    const { getDateProps, ...dayzedData } = getUseDayzed()({
       selected,
       onDateSelected: onRangeDateSelected({ selected, setSelected }),
       date: new Date('05/30/2020')
@@ -311,7 +308,7 @@ storiesOf('RangeDate', module)
   })
   .add('calendar: with input (display two months)', () => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
-    const { getDateProps, ...dayzedData } = useDayzed({
+    const { getDateProps, ...dayzedData } = getUseDayzed()({
       monthsToDisplay: 2,
       selected,
       onDateSelected: onRangeDateSelected({ selected, setSelected }),
@@ -359,7 +356,7 @@ storiesOf('MultiDate', module).add('Calendar', () => {
     initialDate,
     initialDate2
   ])
-  const { getDateProps, ...dayzedData } = useDayzed({
+  const { getDateProps, ...dayzedData } = getUseDayzed()({
     selected,
     onDateSelected: onMultiDateSelected({ selected, setSelected }),
     date: initialDate

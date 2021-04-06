@@ -1,13 +1,12 @@
 import Field from '@pluralsight/ps-design-system-field'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import type { DateObj } from 'dayzed'
-import DayzedDefault, * as DayzedExports from 'dayzed'
 import React from 'react'
 
 import { Calendar } from './calendar'
 import { CalendarDates } from './calendar-dates'
 import { TextInputField } from './text-input-field'
-import { useDateSelectChange } from './utils'
+import { useDateSelectChange, getUseDayzed } from './utils'
 import { slides } from '../vars/index'
 
 interface DatePickerProps
@@ -15,9 +14,6 @@ interface DatePickerProps
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
   _uniqueId?: (prefix: string) => string
 }
-
-const Dayzed = DayzedExports || DayzedDefault
-const { useDayzed } = Dayzed
 
 export const DatePicker: React.FC<DatePickerProps> = ({
   disabled,
@@ -40,7 +36,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     setSelected(dateObj.date)
     setOpen(false)
   }
-  const { getDateProps, ...dayzedData } = useDayzed({
+  const { getDateProps, ...dayzedData } = getUseDayzed()({
     date: selected || new Date('05/30/2020'),
     selected,
     onDateSelected
