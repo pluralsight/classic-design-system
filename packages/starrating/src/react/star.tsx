@@ -7,11 +7,12 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, keyMirror } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 
+const glamor = glamorDefault || glamorExports
 const APPEARANCES = keyMirror('empty', 'half', 'full')
 
 const styles = {
