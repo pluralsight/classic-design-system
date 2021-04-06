@@ -1,9 +1,11 @@
 import { ForwardRefComponent } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import Menu, { MenuItemProps } from './index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   item: () => glamor.css(stylesheet['.psds-menu__item-with-description']),

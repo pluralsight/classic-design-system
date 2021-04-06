@@ -1,9 +1,11 @@
 import { RefFor, ForwardRefComponent } from '@pluralsight/ps-design-system-util'
 import React from 'react'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 
 import stylesheet from '../css/index'
 import { MenuContext, ItemContext, SelectedItem } from './context'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   listItem: (isActive: boolean, disabled: boolean) =>

@@ -4,7 +4,7 @@ import {
   ValueOf,
   useMenuRef
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -15,6 +15,8 @@ import { Check } from './check'
 import { Divider } from './divider'
 import { Ellipsis } from './ellipsis'
 import { Item } from './item'
+
+const glamor = glamorDefault || glamorExports
 
 const slide = glamor.keyframes(
   stylesheet['@keyframes psds-menu__keyframes__slide']
