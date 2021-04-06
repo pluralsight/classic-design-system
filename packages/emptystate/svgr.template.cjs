@@ -11,7 +11,7 @@ function template(api, _opts, values) {
   exports.declaration.name = componentName.name
 
   return tmpl.ast`
-    ${imports}
+    import React from 'react'
     ${interfaces}
     interface Props extends SVGRProps, React.HTMLAttributes<SVGElement> {}
 
