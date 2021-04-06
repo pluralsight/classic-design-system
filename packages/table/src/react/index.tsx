@@ -9,12 +9,14 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import invariant from 'invariant'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { alignments, sorts } from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   container: (

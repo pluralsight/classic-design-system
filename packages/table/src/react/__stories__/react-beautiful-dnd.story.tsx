@@ -5,7 +5,7 @@ import {
 } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import {
   DragDropContext,
   DraggableProvided,
@@ -21,6 +21,8 @@ import React from 'react'
 
 import Table from '../index'
 import { generateUser } from './seed'
+
+const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Table/react-beautiful-dnd',

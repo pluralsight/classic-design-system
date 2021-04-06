@@ -646,7 +646,7 @@ const Paginator: React.FC<PaginatorProps> = props => {
         appearance="subtle"
         onChange={(
           _evt: React.MouseEvent | React.KeyboardEvent,
-          value: React.ReactText
+          value: string | number | undefined
         ) => {
           table.setPageSize(Number(value))
         }}
