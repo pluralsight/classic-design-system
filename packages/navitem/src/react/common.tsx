@@ -4,12 +4,14 @@ import {
   ValueOf,
   stylesFor
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Context from './context'
 import stylesheet from '../css/index'
 import { alignments } from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   bar: (props: {
