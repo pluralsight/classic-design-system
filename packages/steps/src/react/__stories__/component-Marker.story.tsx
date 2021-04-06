@@ -1,6 +1,6 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Context, { initialContext } from '../context'
@@ -8,6 +8,8 @@ import Steps from '../index'
 import * as vars from '../../vars/index'
 
 const { Marker } = Steps
+
+const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Steps/Marker',

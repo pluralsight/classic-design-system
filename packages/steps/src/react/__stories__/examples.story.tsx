@@ -1,12 +1,14 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import * as vars from '../../vars/index'
 import Steps from '../index'
 
 import { FixedWidthContainer } from './shared'
+
+const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Steps/examples',

@@ -7,13 +7,15 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
 
 import Context, { ContextValue, initialContext } from './context'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   steps: (

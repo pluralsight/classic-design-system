@@ -1,6 +1,6 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { statuses } from '../../vars/index'
@@ -10,6 +10,9 @@ interface StoryStep {
   status: ValueOf<typeof statuses>
   title: string
 }
+
+const glamor = glamorDefault || glamorExports
+
 export function useStoryData() {
   const description =
     'An optional description to provide more detail about this step.'
