@@ -1,18 +1,20 @@
 import { MenuIcon } from '@pluralsight/ps-design-system-icon'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 
+const glamor = glamorDefault || glamorExports
+
 const styles = {
-  brand: () => css(stylesheet['.psds-navbar__brand']),
-  mobileMenu: () => css(stylesheet['.psds-navbar__mobile-menu']),
-  navbar: () => css(stylesheet['.psds-navbar']),
-  items: () => css(stylesheet['.psds-navbar__items']),
-  user: () => css(stylesheet['.psds-navbar__user']),
-  utility: () => css(stylesheet['.psds-navbar__utility'])
+  brand: () => glamor.css(stylesheet['.psds-navbar__brand']),
+  mobileMenu: () => glamor.css(stylesheet['.psds-navbar__mobile-menu']),
+  navbar: () => glamor.css(stylesheet['.psds-navbar']),
+  items: () => glamor.css(stylesheet['.psds-navbar__items']),
+  user: () => glamor.css(stylesheet['.psds-navbar__user']),
+  utility: () => glamor.css(stylesheet['.psds-navbar__utility'])
 }
 
 interface NavBarProps extends HTMLPropsFor<'div'> {
