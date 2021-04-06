@@ -1,10 +1,12 @@
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import { layout } from '@pluralsight/ps-design-system-core'
 
+const glamor = glamorDefault || glamorExports
+
 const selectors: {
-  [selector: string]: glamor.CSSProperties
+  [selector: string]: glamorExports.CSSProperties
   '@media (min-width: 769px)': {
-    [selector: string]: glamor.CSSProperties
+    [selector: string]: glamorExports.CSSProperties
   }
 } = {
   '.psds-page-heading-layout': {
