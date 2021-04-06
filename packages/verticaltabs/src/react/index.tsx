@@ -2,7 +2,7 @@ import {
   RefForwardingComponent,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Context from './context'
@@ -10,6 +10,8 @@ import stylesheet from '../css/index'
 import Divider from './divider'
 import { Group, CollapsibleGroup } from './group'
 import { Tier1, Tier2 } from './item'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   verticaltabs: () => glamor.css(stylesheet['.psds-verticaltabs'])

@@ -1,10 +1,11 @@
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { storiesOf } from '@storybook/react'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import VerticalTabs from '../index'
 
+const glamor = glamorDefault || glamorExports
 const { CollapsibleGroup, Group, Tier1, Tier2 } = VerticalTabs
 
 const noop = () => null

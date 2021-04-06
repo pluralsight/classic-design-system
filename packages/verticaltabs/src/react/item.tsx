@@ -7,7 +7,7 @@ import {
   HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { useHideLabels } from './context'
@@ -17,7 +17,9 @@ import { List, CollapsibleList } from './list'
 type StyleFn = (
   themeName?: ValueOf<keyof typeof Theme.names>,
   props?: Record<string, unknown>
-) => glamor.StyleAttribute
+) => glamorExports.StyleAttribute
+
+const glamor = glamorDefault || glamorExports
 
 const styles: { [key: string]: StyleFn } = {
   item: themeName => {
