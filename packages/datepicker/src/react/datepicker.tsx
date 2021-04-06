@@ -1,12 +1,12 @@
 import Field from '@pluralsight/ps-design-system-field'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import type { DateObj } from 'dayzed'
+import { DateObj, useDayzed } from 'dayzed'
 import React from 'react'
 
 import { Calendar } from './calendar'
 import { CalendarDates } from './calendar-dates'
 import { TextInputField } from './text-input-field'
-import { useDateSelectChange, getUseDayzed } from './utils'
+import { useDateSelectChange } from './utils'
 import { slides } from '../vars/index'
 
 interface DatePickerProps
@@ -36,7 +36,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     setSelected(dateObj.date)
     setOpen(false)
   }
-  const { getDateProps, ...dayzedData } = getUseDayzed()({
+  const { getDateProps, ...dayzedData } = useDayzed({
     date: selected || new Date('05/30/2020'),
     selected,
     onDateSelected

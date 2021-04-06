@@ -4,7 +4,6 @@ import differenceInCalendarMonths from 'date-fns/differenceInCalendarMonths'
 import format from 'date-fns/format'
 import parse from 'date-fns/parse'
 import type { DateObj } from 'dayzed'
-import DayzedDefault, * as DayzedExports from 'dayzed'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -247,15 +246,4 @@ export const useRangeSelectChange = ({
     }
   }
   return [value, onChange]
-}
-
-// NOTE: This is a hack to make tsc happy at build, esm happy at import. Requires a runtime
-// detection of where the function actually is because those scenarios pull it from a different
-// place, but this is the only import pattern that will work in both.
-export const getUseDayzed = () => {
-  const Dayzed = DayzedExports || DayzedDefault
-  // @ts-ignore: When this package imported as mjs, DayzedDefault.default.useDayzed *does* exist
-  const defaultUseDayzed = Dayzed.default.useDayzed
-  const useDayzed = Dayzed.useDayzed
-  return typeof defaultUseDayzed === 'function' ? defaultUseDayzed : useDayzed
 }
