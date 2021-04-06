@@ -40,7 +40,6 @@ const styles = {
   prefix: () => css(stylesheet['.psds-tagsinput__prefix']),
   suffix: () => css(stylesheet['.psds-tagsinput__suffix']),
 
-  inputContainer: () => css(stylesheet['.psds-tagsinput__input-container']),
   input: () => css(stylesheet['.psds-tagsinput__input']),
 
   pillsContainer: () => css(stylesheet['.psds-tagsinput__pills-container']),
@@ -221,7 +220,7 @@ const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
 })
 
 const PillAdjacentInputContainer = forwardRef<HTMLDivElement>((props, ref) => {
-  return <div ref={ref} {...props} {...styles.inputContainer()} />
+  return <div ref={ref} {...props} />
 })
 
 const PillAdjacentInput = forwardRef<
