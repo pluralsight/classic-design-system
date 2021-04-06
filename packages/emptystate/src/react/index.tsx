@@ -9,7 +9,7 @@ import {
   ValueOf,
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Context, { ContextValue } from './context'
@@ -45,7 +45,9 @@ type StyleFn = (
   props: unknown,
   ctx: ContextValue,
   opts?: unknown
-) => glamor.StyleAttribute
+) => glamorExports.StyleAttribute
+
+const glamor = glamorDefault || glamorExports
 
 const renderSmallIfElementLessThan = 450
 
