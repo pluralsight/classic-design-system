@@ -4,7 +4,7 @@ import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import Tag from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor, canUseDOM } from '@pluralsight/ps-design-system-util'
 import { useCombobox, useMultipleSelection } from 'downshift'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
@@ -14,6 +14,7 @@ import { noop, simpleTextFilter, switchcase } from './utils'
 
 export { Option }
 
+const glamor = glamorDefault || glamorExports
 const { stateChangeTypes } = useCombobox
 
 const styles = {

@@ -1,21 +1,23 @@
-import { compose, css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index'
 
+const glamor = glamorDefault || glamorExports
+
 const styles = {
   menu: (opts: { open: boolean }) =>
-    compose(
-      css(stylesheet['.psds-multi-select__menu']),
-      opts.open && css(stylesheet['.psds-multi-select__menu--open'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-multi-select__menu']),
+      opts.open && glamor.css(stylesheet['.psds-multi-select__menu--open'])
     ),
 
   menuItem: (opts: { highlighted: boolean }) =>
-    compose(
-      css(stylesheet['.psds-multi-select__menu__item']),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-multi-select__menu__item']),
       opts.highlighted &&
-        css(stylesheet['.psds-multi-select__menu__item--highlighted'])
+        glamor.css(stylesheet['.psds-multi-select__menu__item--highlighted'])
     )
 }
 
