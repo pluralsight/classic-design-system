@@ -1,4 +1,4 @@
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
@@ -8,6 +8,8 @@ import TextInput from '@pluralsight/ps-design-system-textinput'
 import { callAll, RefFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   clear: (isClearBtnVisible: boolean) =>
