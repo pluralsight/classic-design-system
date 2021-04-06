@@ -1,10 +1,12 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Halo from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   navUser: (props: NavUserProps) => {
