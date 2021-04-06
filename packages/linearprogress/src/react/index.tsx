@@ -1,11 +1,13 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index'
 import { toPercentageString } from '../js/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   bg: ({ themeName }) =>
