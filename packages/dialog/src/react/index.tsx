@@ -9,12 +9,13 @@ import {
   stylesFor,
   usePortal
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
 
+const glamor = glamorDefault || glamorExports
 /* eslint-disable-next-line camelcase */
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
@@ -36,7 +37,7 @@ const styles = {
   content: (props: DialogProps) =>
     glamor.css(
       stylesheet['.psds-dialog__content'],
-      stylesFor('dialog__content', props) as glamor.StyleAttribute
+      stylesFor('dialog__content', props) as glamorExports.StyleAttribute
     ),
   close: () => glamor.css(stylesheet['.psds-dialog__close']),
   overlay: () => glamor.css(stylesheet['.psds-dialog__overlay'])
