@@ -7,13 +7,15 @@ import {
   usePrevious
 } from '@pluralsight/ps-design-system-util'
 import { useMultipleSelection } from 'downshift'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import { Option } from './types'
 
 export { Option }
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   tagsInput: (opts: { disabled?: boolean }) =>
