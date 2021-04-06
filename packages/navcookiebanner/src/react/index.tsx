@@ -2,12 +2,10 @@ import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
-import CookiesDefault, * as CookiesExports from 'react-cookie'
+import { useCookies } from 'react-cookie'
 
 import stylesheet from '../css/index'
 
-const Cookies = CookiesDefault || CookiesExports
-const { useCookies } = Cookies
 const glamor = glamorDefault || glamorExports
 const DISMISS_COOKIE_NAME = 'prism-cookienotify'
 const DEFAULT_PRIVACY_UPDATED_DATE = new Date('2018-05-24T00:00:00')
