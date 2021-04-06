@@ -6,16 +6,18 @@ import {
   HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
 
+const glamor = glamorDefault || glamorExports
+
 type StyleFn = (
   themeName: ValueOf<keyof typeof names>,
   props?: Record<string, any>
-) => glamor.StyleAttribute
+) => glamorExports.StyleAttribute
 
 interface ViewToggleProps
   extends Omit<React.ComponentProps<typeof List>, 'onSelect'> {

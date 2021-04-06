@@ -1,9 +1,11 @@
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import ViewToggle from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 const defaultArgs = {
   onSelect: action('on select')
