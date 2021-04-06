@@ -4,9 +4,11 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 
 import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = (placeholder: boolean, themeName: ValueOf<typeof themeNames>) =>
   glamor.compose(
