@@ -13,11 +13,13 @@ import {
   ValueOf,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
 import ListItem from './list-item'
+
+const glamor = glamorDefault || glamorExports
 
 const slideAnimationLength = parseInt(motion.speedFast) + 10
 
