@@ -8,7 +8,7 @@ import {
   useMatchMedia,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import ConditionalWrap from './conditional-wrap'
@@ -16,6 +16,8 @@ import stylesheet from '../css/index'
 import { toPercentageString } from '../js/index'
 import Shave from './shave'
 import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   actionBar: (props: ActionBarProps) =>
