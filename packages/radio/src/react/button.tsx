@@ -5,11 +5,13 @@ import {
   combineFns,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { RadioContext } from './context'
 import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   button: (disabled?: boolean) =>
