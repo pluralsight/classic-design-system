@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.9.3...@pluralsight/ps-design-system-core@7.0.0) (2021-04-05)
+
+
+### Features
+
+* **core:** temp core util for refactoring to vanillia css ([#1689](https://github.com/pluralsight/design-system/issues/1689)) ([f8485da](https://github.com/pluralsight/design-system/commit/f8485dad01195c2d0520af1e6505b7838335d0b8))
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
 ## [6.9.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.9.2...@pluralsight/ps-design-system-core@6.9.3) (2021-03-11)
 
 

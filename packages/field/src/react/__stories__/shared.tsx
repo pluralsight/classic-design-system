@@ -25,7 +25,7 @@ export const ConstrainWidthDecorator = (Story: Story) => {
 
 export const OutlineDecorator = (Story: Story) => {
   return (
-    <div {...glamor.css({ outline: `2px dashed ${colorsPink.base}` })}>
+    <div {...glamor.css({ outline: `2px dashed ${colorsPink[6]}` })}>
       <Story />
     </div>
   )

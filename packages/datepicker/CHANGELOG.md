@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.3...@pluralsight/ps-design-system-datepicker@14.1.4) (2021-04-05)
+
+
+### Bug Fixes
+
+* **datepicker:** closes on click outside resolves [#1655](https://github.com/pluralsight/design-system/issues/1655) ([#1700](https://github.com/pluralsight/design-system/issues/1700)) ([55aeaef](https://github.com/pluralsight/design-system/commit/55aeaef494cd9ced86c21ff21e041245119ee03a))
+
+
+
+
+
+## [14.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.2...@pluralsight/ps-design-system-datepicker@14.1.3) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
 ## [14.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.1...@pluralsight/ps-design-system-datepicker@14.1.2) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

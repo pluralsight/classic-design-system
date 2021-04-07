@@ -1,27 +1,197 @@
 ---
-name: Polymorphic example
+name: Polymorphism
 route: /patterns/polymorphic'
 ---
 
-To create a polymorphic component in react use the following setup:
- 
+# Polymorphism
+
+## `as` prop
+
+With the polymorphic `as` prop you can replace the DOM element that will be
+rendered. This is necessary when you need to change the element to meet a
+semantic need, or provide a different interaction.
+
+> NOTE: Usage of the `as` prop is a new pattern still being adopted in the Design System and therefore is not yet fully supported on all components. If you have an immediate need for component polymorphism please reach out to the Design System team so we can expedite the conversion process for your needs.
+
+### Using a polymorphic component
+
+One common use case for component polymorphism is to provide a more semantically
+meaningful HTML element. Say for example a component that renders using a `div`
+element by default but a more semantically meaningful element(like a `nav` el)
+is preferred. This need can easily be accomplished using the following approach.
+
 ```typescript noRender startExpanded
-import React, { forwardRef } from 'react'
-import { ForwardRefComponent, RefFor } from './types'
+import { PolymorphicDivComponent } from 'some/psds/component/path'
+import { PolymorphicButton } from 'some/other/psds/component/path'
+import { Link } from 'some/routing-library'
 
-type PolyButtonProps = {}
+render(
+  <>
+    {/* NOTE: The components default behavior is to render a `div` element. */}
+    <PolymorphicDivComponent />
 
-const PolyButton = forwardRef((props, forwardedRef) => {
-  const { as: Comp = DEFAULT_TAG, ...primitiveProps } = props
-  return <Comp {...primitiveProps} ref={forwardedRef as RefFor<typeof Comp>} />
-}) as ForwardRefComponent<'button', PolyButtonProps>
+    {/* NOTE: Using the `as` prop, you can change the component to render using
+      *       a different HTMLElement that is more semantically meaningful.
+      */}
+    <PolymorphicDivComponent as="footer" />
+    <PolymorphicDivComponent as="header" />
+    <PolymorphicDivComponent as="nav" />
+    <PolymorphicDivComponent as="section" />
 
+    {/* NOTE: Using the as prop for changing Button components based on semantic
+      *       need is also a common use case for polymorphism
+      */}
+    <PolymorphicButton as="a" />
+    <PolymorphicButton as="button" />
 
-const Comp = () => {
-  <PolyButton>button</PolyButton>
-  <br/>
-  <PolyButton  href="https://duckduckgo.com" as="a" target="_blank">llink</PolyButton>
-} 
+    {/* NOTE: The `as` prop can also be used to replace the rendering element
+      *       with a new React Element. This can be used to achieve greater
+      *       component composition and can help when integrating with external
+      *       libraries.
+      */}
+    <PolymorphicButton as={Link} />
+  </>
+)
+```
 
-export default Comp
+### Usage with styled-components
+
+The Design System polymorphic approach is designed to work with
+`styled-components`. You should be able to compose and style any Design System
+components that support polymorphism using the common `styled-components` api
+patterns.
+
+> Official [styled-component polymorphic docs](https://styled-components.com/docs/api#as-polymorphic-prop)
+
+```typescript noRender startExpanded
+import styled from "styled-components";
+import { PolymorphicButton } from 'some/other/psds/component/path'
+
+const StyledButton = styled(PolymorphicButton)`
+  color: red;
+`;
+
+render(
+  <>
+    <StyledButton />
+    <StyledButton as="a" />
+    <StyledButton as="span" />
+  </>
+)
+```
+
+### Usage with Emotion
+
+The Design System polymorphic approach is also designed to work with `emotion`.
+You should be able to compose and style any Design System components that
+supports polymorphism using the common `emotion` api patterns.
+
+> Official [emotion polymorphic docs](https://emotion.sh/docs/styled#as-prop)
+
+```typescript noRender startExpanded
+import emotion from "@emotion/styled";
+import { PolymorphicButton } from 'some/other/psds/component/path'
+
+/* NOTE: I've had some issues with the emotion typings to fully support our
+ *       polymorphic `as` typings. Below is the approach I've found works the
+ *       best and avoids type errors - although it's not as clean or as helpful
+ *       with its introspections as the styled-component examples. I'm not as
+ *       experienced with emotion as i would like to be...so if anyone reading
+ *       this has a better approach please inform the Design System team or open
+ *       an issue on github.
+ *
+ *       - danethurber 03/25/2021
+ */
+const BaseStyledButton = emotion("button")`
+  color: hotpink;
+`;
+const StyledButton = React.forwardRef<HTMLButtonElement, any>((props, ref) => (
+  <BaseStyledButton as={PolymorphicButton} ref={ref} {...props} />
+));
+
+render(
+  <>
+    <StyledButton />
+    <StyledButton as="a" />
+    <StyledButton as="span" />
+  </>
+)
+```
+
+## Creating a polymorphic component
+
+The `utils` package of the design system exports a genericized higher order
+function that you can use to replace the native `React.forwardRef`. Using the
+`forwardRefWithAs` utility will provide you with greater type introspection of
+the `ref`, native props/attribute typings, and will include typings for the
+`as` props.
+
+```typescript noRender startExpanded
+import { forwardRefWithAs } from '@pluralsight/ps-design-system-util'
+
+const Button = forwardRefWithAs<Props, 'button'>((props, ref) => {
+  const { as: Comp = 'button', ...rest } = props
+  return <Comp ref={ref} {...rest} />
+})
+```
+
+If you need to use it with a render prop function it's straightforward.
+
+```typescript noRender startExpanded
+import { forwardRefWithAs } from '@pluralsight/ps-design-system-util'
+
+interface Props {
+  children?: React.ReactNode | (() => JSX.Element);
+}
+
+const TestInput = forwardRefWithAs<Props, "input">((props, ref) => {
+  const { as: Comp = "input", children, ...rest } = props;
+  return (
+    <Comp ref={ref} {...rest}> {isFunction(children) ? children() : children} </Comp>
+  );
+});
+
+```
+
+If you need a component that also support static properties (like for instance
+you are using the compound components pattern) we provide a higher order
+function to create typesafe components with typed static properties.
+
+```typescript noRender startExpanded
+import { forwardRefWithAsAndStatics } from '@pluralsight/ps-design-system-util'
+
+const Nested: React.FC = props => <div {...props} />
+
+interface Statics {
+  Nested: typeof Nested
+}
+
+const Compound = forwardRefWithAsAndStatics<unknown, 'div', Statics>(
+  (props, ref) => {
+    const { as: Comp = 'div', ...rest } = props
+    return <Comp ref={ref} {...rest} />
+  }
+)
+Compound.Nested = Nested
+```
+
+In the case you need to memoize a component, there is also a utility function
+that can be used to replace the functionality of the core `React.memo` function.
+
+```typescript noRender startExpanded
+import { forwardRefWithAs, memoWithAs } from '@pluralsight/ps-design-system-util'
+
+const ButtonImpl = forwardRefWithAs<Props, 'button'>((props, ref) => {
+  const { as: Comp = 'button', ...rest } = props
+  return <Comp ref={ref} {...rest} />
+})
+
+const Button = memoWithAs(ButtonImpl)
+
+render(
+  <>
+    <Button />
+    <Button as="a" />
+  </>
+)
 ```

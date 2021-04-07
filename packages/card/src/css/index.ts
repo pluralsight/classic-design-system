@@ -251,7 +251,7 @@ export default {
     backgroundColor: '#ffffff'
   },
   '.psds-card__progress__bar--complete': {
-    backgroundColor: colorsGreen.base
+    backgroundColor: colorsGreen[6]
   },
 
   // __title-container

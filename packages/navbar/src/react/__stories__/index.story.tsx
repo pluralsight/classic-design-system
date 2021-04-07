@@ -27,9 +27,9 @@ const Filler: React.FC = props => (
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      color: colorsPink.base,
+      color: colorsPink[6],
       height: '100%',
-      border: `2px dashed ${colorsPink.base}`,
+      border: `2px dashed ${colorsPink[6]}`,
       padding: `0 ${layout.spacingMedium}`
     })}
     {...props}

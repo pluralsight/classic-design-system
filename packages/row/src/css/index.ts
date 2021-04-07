@@ -131,7 +131,7 @@ export default {
     backgroundColor: colorsTextIcon.highOnDark
   },
   '.psds-row__progress__bar--complete': {
-    backgroundColor: colorsGreen.base
+    backgroundColor: colorsGreen[6]
   },
 
   // __words

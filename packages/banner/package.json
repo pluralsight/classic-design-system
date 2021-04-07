@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-banner",
-  "version": "9.0.6",
+  "version": "9.0.9",
   "description": "Design System component for banner ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,11 +24,11 @@
   "type": "module",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.9.3",
-    "@pluralsight/ps-design-system-icon": "^21.0.6",
-    "@pluralsight/ps-design-system-link": "^11.1.6",
-    "@pluralsight/ps-design-system-text": "^18.2.2",
-    "@pluralsight/ps-design-system-util": "^7.3.0"
+    "@pluralsight/ps-design-system-core": "^7.0.0",
+    "@pluralsight/ps-design-system-icon": "^22.0.0",
+    "@pluralsight/ps-design-system-link": "^11.1.8",
+    "@pluralsight/ps-design-system-text": "^19.0.0",
+    "@pluralsight/ps-design-system-util": "^8.0.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.1.0",
-    "@pluralsight/ps-design-system-button": "^21.0.6",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.4.6"
+    "@pluralsight/ps-design-system-button": "^21.0.8",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.4.8"
   }
 }

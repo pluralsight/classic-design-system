@@ -1,4 +1,8 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  layout,
+  colorsPink,
+  colorsBlue
+} from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -7,13 +11,12 @@ import Label from '../label'
 
 const glamor = glamorDefault || glamorExports
 
-const style = { color: core.colorsPink.base }
 const className = glamor
-  .css({ color: `${core.colorsBlue.base} !important` })
+  .css({ color: `${colorsBlue[6]} !important` })
   .toString()
 
 const PaddingDecorator = (storyFn: () => React.ReactNode) => (
-  <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>
+  <div style={{ padding: layout.spacingXLarge }}>{storyFn()}</div>
 )
 
 const stories = storiesOf('Label', module).addDecorator(PaddingDecorator)
@@ -57,7 +60,9 @@ stories.add('caps & strong: true', () => (
   </Label>
 ))
 
-stories.add('style override', () => <Label style={style}>pink</Label>)
+stories.add('style override', () => (
+  <Label style={{ color: colorsPink[6] }}>pink</Label>
+))
 
 stories.add('className override', () => (
   <Label className={className}>blue</Label>

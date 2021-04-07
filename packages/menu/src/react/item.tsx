@@ -1,4 +1,4 @@
-import { RefFor, ForwardRefComponent } from '@pluralsight/ps-design-system-util'
+import { RefFor, forwardRefWithAs } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 import glamorDefault, * as glamorExports from 'glamor'
 
@@ -29,7 +29,7 @@ export interface MenuItemProps {
   onKeyDown?: React.KeyboardEventHandler
 }
 
-export const Item = React.forwardRef((props, ref) => {
+export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
   const {
     as: Comp = 'button',
     active,
@@ -85,6 +85,6 @@ export const Item = React.forwardRef((props, ref) => {
       </Comp>
     </li>
   )
-}) as ForwardRefComponent<'button', MenuItemProps>
+})
 
 Item.displayName = 'Dropdown.Item'

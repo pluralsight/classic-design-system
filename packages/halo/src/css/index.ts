@@ -20,7 +20,7 @@ export default {
       position: 'absolute',
       borderWidth: '3px',
       borderStyle: 'solid',
-      borderColor: colorsBlue.base,
+      borderColor: colorsBlue[6],
       pointerEvents: 'none',
       visibility: 'hidden'
     }
@@ -41,14 +41,14 @@ export default {
   [`${BASE_CLASSNAME}--visible`]: {
     '&:after': {
       visibility: 'visible',
-      borderColor: colorsBlue.base
+      borderColor: colorsBlue[6]
     }
   },
 
   [`${BASE_CLASSNAME}--visible-on-focus`]: {
     '&:focus-within:after, &[focus-within]:after': {
       visibility: 'visible',
-      borderColor: colorsBlue.base
+      borderColor: colorsBlue[6]
     }
   },
 

@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.2.5...@pluralsight/ps-design-system-multiselect@1.2.6) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-multiselect
+
+
+
+
+
+## [1.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.2.4...@pluralsight/ps-design-system-multiselect@1.2.5) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-multiselect
+
+
+
+
+
 ## [1.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.2.3...@pluralsight/ps-design-system-multiselect@1.2.4) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-multiselect

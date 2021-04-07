@@ -1,26 +1,23 @@
 import React from 'react'
-import { useAddonState } from '@storybook/api'
 import { Icons, IconButton } from '@storybook/components'
+import { names } from '@pluralsight/ps-design-system-theme'
 
-import { defaultName, names } from '@pluralsight/ps-design-system-theme'
-
-import { ADDON_ID } from '../constants'
+import { useSelectedTheme } from '../hooks'
 
 export const ThemeTool: React.FC = () => {
-  const [themeName, setThemeName] = useAddonState<keyof typeof names>(
-    `${ADDON_ID}/name`,
-    defaultName
-  )
+  const { theme, storyDefaultTheme, setTheme } = useSelectedTheme()
 
-  const isDark = themeName === names.dark
+  const isDark = theme === names.dark
 
-  const toggleTheme = () => {
-    setThemeName(isDark ? names.light : names.dark)
-  }
+  const toggleTheme = () => setTheme(isDark ? names.light : names.dark)
 
   return (
-    <IconButton active={isDark} title="Toggle theme" onClick={toggleTheme}>
-      <Icons icon="mirror" />
+    <IconButton
+      active={theme !== storyDefaultTheme}
+      title="Toggle theme"
+      onClick={toggleTheme}
+    >
+      <Icons icon={isDark ? 'circle' : 'circlehollow'} />
     </IconButton>
   )
 }

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-core",
-  "version": "6.9.3",
+  "version": "7.0.0",
   "description": "Collection of Core design elements for the Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -13,7 +13,8 @@
     "build:css": "node ./build",
     "build:esm": "run-s compile:esm rewrite:esm",
     "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
-    "rewrite:esm": "tsc-esm --project tsconfig.build.json"
+    "rewrite:esm": "tsc-esm --project tsconfig.build.json",
+    "test": "tsc --noEmit --project ./tsconfig.json && jest"
   },
   "sideEffects": false,
   "style": "dist/css/index.css",

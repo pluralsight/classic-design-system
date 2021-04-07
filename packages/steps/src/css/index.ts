@@ -155,7 +155,7 @@ export default {
   },
 
   [`.psds-steps__marker--${vars.statuses.completed}`]: {
-    color: colorsGreen.base,
+    color: colorsGreen[6],
 
     '&:after': { opacity: 0 }
   },

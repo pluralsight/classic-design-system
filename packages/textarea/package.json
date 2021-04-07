@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textarea",
-  "version": "8.1.7",
+  "version": "8.1.9",
   "description": "Design system components for text area",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -24,10 +24,10 @@
   "type": "module",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^6.9.3",
-    "@pluralsight/ps-design-system-halo": "^8.1.6",
-    "@pluralsight/ps-design-system-icon": "^21.0.6",
-    "@pluralsight/ps-design-system-util": "^7.3.0"
+    "@pluralsight/ps-design-system-core": "^7.0.0",
+    "@pluralsight/ps-design-system-halo": "^9.0.0",
+    "@pluralsight/ps-design-system-icon": "^22.0.0",
+    "@pluralsight/ps-design-system-util": "^8.0.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.1.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.4.6",
-    "@pluralsight/ps-design-system-theme": "^7.1.6"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.4.8",
+    "@pluralsight/ps-design-system-theme": "^7.1.8"
   }
 }
