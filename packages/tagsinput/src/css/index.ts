@@ -1,6 +1,7 @@
 import { layout } from '@pluralsight/ps-design-system-core'
 
-const PILL_GUTTER_SIZE = 4
+const GUTTER_SIZE = layout.spacingXSmall
+const PILL_GUTTER_SIZE = layout.spacingXXSmall
 
 const INPUT_MIN_HEIGHT = 24 // NOTE: this matches the size of the small Tag
 const INPUT_MIN_WIDTH = 50
@@ -23,27 +24,30 @@ export default {
   },
 
   '.psds-tagsinput__pills-container': {
-    paddingTop: '10px',
-    paddingBottom: '10px'
+    flexGrow: 1
   },
   '.psds-tagsinput__pills': {
     alignItems: 'center',
     display: 'flex',
     flex: 1,
     flexWrap: 'wrap',
-    margin: `calc(${PILL_GUTTER_SIZE}px * -2)`,
+    margin: `0 calc(${PILL_GUTTER_SIZE} * -2)`,
     maxHeight: 75,
     overflowY: 'auto',
-    padding: `${layout.spacingXXSmall} ${layout.spacingXSmall}`
+    padding: `
+      calc(${GUTTER_SIZE} - 1px)
+      ${GUTTER_SIZE}
+      calc(${GUTTER_SIZE} / 2 - 1px)
+      ${GUTTER_SIZE}
+    `
   },
-  '.psds-tagsinput__pill': { margin: `calc(${PILL_GUTTER_SIZE}px / 2)` },
-
-  '.psds-tagsinput__input-container': {
-    margin: `calc(${PILL_GUTTER_SIZE}px / 2)`
+  '.psds-tagsinput__pill': {
+    margin: `0 ${PILL_GUTTER_SIZE} ${PILL_GUTTER_SIZE} 0`
   },
   '.psds-tagsinput__input': {
-    minHeight: INPUT_MIN_HEIGHT,
     minWidth: INPUT_MIN_WIDTH,
+    height: `${INPUT_MIN_HEIGHT}px !important`,
+    marginBottom: `calc(${GUTTER_SIZE} / 2)`,
 
     '&:disabled': { background: 'transparent' }
   }
