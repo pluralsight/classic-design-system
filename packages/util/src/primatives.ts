@@ -21,7 +21,7 @@ import type {
   ValidationMap,
   WeakValidationMap
 } from 'react'
-import { forwardRef, memo } from 'react'
+import React from 'react'
 
 export type As<BaseProps = any> = ElementType<BaseProps>
 
@@ -165,7 +165,7 @@ export function forwardRefWithAs<
   Props,
   DefaultComponentType extends As = 'div'
 >(render: ForwardRefWithAsRenderFunction<DefaultComponentType, Props>) {
-  return forwardRef(render) as ForwardRefExoticComponentWithAs<
+  return React.forwardRef(render) as ForwardRefExoticComponentWithAs<
     DefaultComponentType,
     Props
   >
@@ -176,7 +176,7 @@ export function forwardRefWithAsAndStatics<
   DefaultComponentType extends As = 'div',
   Statics = unknown
 >(render: ForwardRefWithAsRenderFunction<DefaultComponentType, Props>) {
-  return forwardRef(render) as ForwardRefExoticComponentWithAs<
+  return React.forwardRef(render) as ForwardRefExoticComponentWithAs<
     DefaultComponentType,
     Props
   > &
@@ -188,7 +188,7 @@ export function forwardRefWithStatics<
   TagName = 'div',
   Statics = unknown
 >(render: ForwardRefRenderFunction<HTMLDivElement, Props>) {
-  return forwardRef(render) as ForwardRefExoticComponent<
+  return React.forwardRef(render) as ForwardRefExoticComponent<
     PropsWithoutRef<Props> & RefAttributes<TagName>
   > &
     Statics
@@ -201,7 +201,7 @@ export function memoWithAs<Props, DefaultComponentType extends As = 'div'>(
     nextProps: Readonly<PropsWithChildren<Props>>
   ) => boolean
 ) {
-  return memo(Component, propsAreEqual) as MemoExoticComponentWithAs<
+  return React.memo(Component, propsAreEqual) as MemoExoticComponentWithAs<
     DefaultComponentType,
     Props
   >

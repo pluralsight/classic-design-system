@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
 import { render, screen } from '@testing-library/react'
-import React, { MouseEventHandler } from 'react'
+import React from 'react'
 
 import {
   HTMLPropsFor,
@@ -55,7 +55,7 @@ describe('utils/primatives', () => {
 
       it('accepts a typed onClick prop', () => {
         expect.assertions(0)
-        const onClick: MouseEventHandler<HTMLAnchorElement> = jest.fn()
+        const onClick: React.MouseEventHandler<HTMLAnchorElement> = jest.fn()
         render(<Anchor as="a" req onClick={onClick} />)
       })
 
@@ -85,7 +85,7 @@ describe('utils/primatives', () => {
 
       it('accepts a typed onClick prop', () => {
         expect.assertions(0)
-        const onClick: MouseEventHandler<HTMLButtonElement> = jest.fn()
+        const onClick: React.MouseEventHandler<HTMLButtonElement> = jest.fn()
         render(<Anchor as="button" req onClick={onClick} />)
       })
 
@@ -115,7 +115,7 @@ describe('utils/primatives', () => {
 
       it('accepts a typed onClick prop', () => {
         expect.assertions(0)
-        const onClick: MouseEventHandler<HTMLButtonElement> = jest.fn()
+        const onClick: React.MouseEventHandler<HTMLButtonElement> = jest.fn()
         render(<Anchor as={Button} req onClick={onClick} />)
       })
     })
@@ -217,7 +217,7 @@ describe('utils/primatives', () => {
 
       it('accepts a typed onClick prop', () => {
         expect.assertions(0)
-        const onClick: MouseEventHandler<HTMLAnchorElement> = jest.fn()
+        const onClick: React.MouseEventHandler<HTMLAnchorElement> = jest.fn()
         render(<Anchor as="a" req onClick={onClick} />)
       })
 
@@ -247,7 +247,7 @@ describe('utils/primatives', () => {
 
       it('accepts a typed onClick prop', () => {
         expect.assertions(0)
-        const onClick: MouseEventHandler<HTMLButtonElement> = jest.fn()
+        const onClick: React.MouseEventHandler<HTMLButtonElement> = jest.fn()
         render(<Anchor as="button" req onClick={onClick} />)
       })
 
