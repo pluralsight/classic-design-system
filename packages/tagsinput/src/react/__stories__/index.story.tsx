@@ -34,10 +34,12 @@ const Template: Story<React.ComponentProps<typeof TagsInput>> = args => {
     setSearchTerm(evt.target.value)
   }
 
-  const [value, setValue] = React.useState<Option[]>([
-    { label: 'first', value: 'first' },
-    { label: 'second', value: 'second' }
-  ])
+  const [value, setValue] = React.useState<Option[]>(
+    args.value || [
+      { label: 'first', value: 'first' },
+      { label: 'second', value: 'second' }
+    ]
+  )
 
   const handleOnKeyPress: React.KeyboardEventHandler = evt => {
     if (evt.key !== 'Enter') return
@@ -107,4 +109,19 @@ CustomInputTag.args = {
       style={{ outline: '1px dashed pink' }}
     />
   ))
+}
+
+export const Empty = Template.bind({})
+Empty.args = {
+  ...defaultArgs,
+  value: []
+}
+
+export const MultipleLines = Template.bind({})
+MultipleLines.args = {
+  ...defaultArgs,
+  value: [...new Array(15)].map((_, i) => ({
+    label: `Item ${i + 1}`,
+    value: i.toString()
+  }))
 }

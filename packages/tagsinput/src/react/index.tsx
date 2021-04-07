@@ -27,8 +27,6 @@ const styles = {
   prefix: () => glamor.css(stylesheet['.psds-tagsinput__prefix']),
   suffix: () => glamor.css(stylesheet['.psds-tagsinput__suffix']),
 
-  inputContainer: () =>
-    glamor.css(stylesheet['.psds-tagsinput__input-container']),
   input: () => glamor.css(stylesheet['.psds-tagsinput__input']),
 
   pillsContainer: () =>
@@ -216,7 +214,7 @@ const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
 
 const PillAdjacentInputContainer = React.forwardRef<HTMLDivElement>(
   (props, ref) => {
-    return <div ref={ref} {...props} {...styles.inputContainer()} />
+    return <div ref={ref} {...props} />
   }
 )
 
