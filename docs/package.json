@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-docs",
-  "version": "0.24.0",
+  "version": "0.24.1",
   "description": "Reference site",
   "license": "Apache-2.0",
   "private": true,
@@ -74,7 +74,7 @@
     "@pluralsight/ps-design-system-tab": "^17.1.9",
     "@pluralsight/ps-design-system-table": "^14.0.0",
     "@pluralsight/ps-design-system-tag": "^9.0.8",
-    "@pluralsight/ps-design-system-tagsinput": "^1.2.5",
+    "@pluralsight/ps-design-system-tagsinput": "^1.2.6",
     "@pluralsight/ps-design-system-text": "^19.0.0",
     "@pluralsight/ps-design-system-textarea": "^8.1.9",
     "@pluralsight/ps-design-system-textinput": "^10.1.9",

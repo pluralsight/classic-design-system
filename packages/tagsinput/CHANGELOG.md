@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.2.5...@pluralsight/ps-design-system-tagsinput@1.2.6) (2021-04-07)
+
+
+### Bug Fixes
+
+* **tagsinput:** match height of buttons & text inputs ([93aa412](https://github.com/pluralsight/design-system/commit/93aa41259af49c8617becd8847acf7c1ec510519))
+
+
+
+
+
 ## [1.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.2.4...@pluralsight/ps-design-system-tagsinput@1.2.5) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tagsinput
