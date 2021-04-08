@@ -6,15 +6,16 @@
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
-  "main": "dist/esm/index.mjs",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.mjs",
   "scripts": {
-    "build": "run-s build:esm build:css",
+    "build": "run-s build:esm build:cjs build:css",
     "build:css": "node ./build",
     "build:esm": "run-s compile:esm rewrite:esm",
     "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "rewrite:esm": "tsc-esm --project tsconfig.build.json",
-    "test": "tsc --noEmit --project ./tsconfig.json && jest"
+    "test": "tsc --noEmit --project ./tsconfig.json && jest",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
   },
   "sideEffects": false,
   "style": "dist/css/index.css",
