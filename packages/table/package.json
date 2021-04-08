@@ -56,5 +56,9 @@
     "faker": "^5.1.0",
     "react-beautiful-dnd": "^13.0.0",
     "react-table": "^7.6.2"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
