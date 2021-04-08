@@ -55,5 +55,9 @@
     "@pluralsight/ps-design-system-theme": "^7.1.8",
     "@pluralsight/ps-design-system-verticaltabs": "^6.0.8",
     "@types/body-scroll-lock": "^2.6.1"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
