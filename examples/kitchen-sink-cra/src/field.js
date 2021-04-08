@@ -1,8 +1,7 @@
 import React, { ComponentProps } from 'react'
 import Field from '@pluralsight/ps-design-system-field'
 
-interface Props extends ComponentProps<typeof Field> {}
-const TextInputField: React.FC<Props> = (props) => {
+const TextInputField = props => {
   const { disabled, placeholder, type = 'text', ...rest } = props
 
   const labelId = 'this-needs-to-be-a-unique-label-id-1'

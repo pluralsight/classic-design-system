@@ -1,12 +1,12 @@
 import Button from '@pluralsight/ps-design-system-button'
 import {
   PageHeadingLayout,
-  PageWidthLayout,
+  PageWidthLayout
 } from '@pluralsight/ps-design-system-layout'
 import { Heading, P } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   return (
     <React.Fragment>
       <PageWidthLayout>
@@ -15,7 +15,7 @@ const Example: React.FC = (props) => {
             <Button key="btn-1" appearance={Button.appearances.stroke}>
               Button
             </Button>,
-            <Button key="btn-2">Button</Button>,
+            <Button key="btn-2">Button</Button>
           ]}
           heading={
             <Heading size={Heading.sizes.large}>

@@ -1,7 +1,7 @@
 import Typeahead from '@pluralsight/ps-design-system-typeahead'
 import React from 'react'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   const options = ['Beginner', 'Intermediate', 'Advanced']
 
   return (

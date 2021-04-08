@@ -38,7 +38,7 @@ const FlowLogo = () => {
   )
 }
 
-const FlowWordmark: React.FC = () => {
+const FlowWordmark = () => {
   return (
     <svg
       fill="none"

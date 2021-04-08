@@ -2,7 +2,7 @@ import { P } from '@pluralsight/ps-design-system-text'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
 import React from 'react'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   return (
     <Scrollable style={{ height: 164, outline: '1px dashed pink' }}>
       <P>

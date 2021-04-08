@@ -5,15 +5,15 @@ import { MoreIcon } from '@pluralsight/ps-design-system-icon'
 import Table from '@pluralsight/ps-design-system-table'
 import React from 'react'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   const [users] = React.useState([
     { firstName: 'Lucy', lastName: 'Peck', email: 'lucy.peck@example.com' },
     {
       firstName: 'Jayden',
       lastName: 'Morales',
-      email: 'jayden.morales@example.com',
+      email: 'jayden.morales@example.com'
     },
-    { firstName: 'Milton', lastName: 'Lane', email: 'milton.lane@example.com' },
+    { firstName: 'Milton', lastName: 'Lane', email: 'milton.lane@example.com' }
   ])
 
   return (
@@ -59,15 +59,15 @@ const Example: React.FC = (props) => {
   )
 }
 
-const FlexContainer: React.FC = (props) => (
+const FlexContainer = props => (
   <div style={{ display: 'flex', alignItems: 'center' }} {...props} />
 )
 
-const HorzSpacer: React.FC = (props) => (
+const HorzSpacer = props => (
   <div
     style={{
       display: 'inline-block',
-      width: layout.spacingSmall,
+      width: layout.spacingSmall
     }}
     {...props}
   />

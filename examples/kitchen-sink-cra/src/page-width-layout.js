@@ -1,14 +1,14 @@
 import {
   colorsPink,
   colorsPurple,
-  layout,
+  layout
 } from '@pluralsight/ps-design-system-core'
 import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import { P } from '@pluralsight/ps-design-system-text'
 import Theme from '@pluralsight/ps-design-system-theme'
 import React from 'react'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   return (
     <React.Fragment>
       <Theme name={Theme.names.dark}>

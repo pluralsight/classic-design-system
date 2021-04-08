@@ -5,7 +5,7 @@ import Tooltip from '@pluralsight/ps-design-system-tooltip'
 
 import { RightOf } from '@pluralsight/ps-design-system-position'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   const [hovered, setHovered] = useState(false)
 
   const hide = () => setHovered(false)

@@ -2,12 +2,12 @@ import {
   colorsBlue,
   colorsTextIcon,
   type,
-  layout,
+  layout
 } from '@pluralsight/ps-design-system-core'
 import { AsideLayout } from '@pluralsight/ps-design-system-layout'
 import React from 'react'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   return (
     <React.Fragment>
       <div>
@@ -46,7 +46,7 @@ const Example: React.FC = (props) => {
   )
 }
 
-const BlueBox: React.FC = (props) => (
+const BlueBox = props => (
   <React.Fragment>
     <div className="bluebox" {...props} />
 

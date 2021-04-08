@@ -3,18 +3,16 @@ import TagsInput from '@pluralsight/ps-design-system-tagsinput'
 
 const Comp = () => {
   const [searchTerm, setSearchTerm] = React.useState('')
-  const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = (
-    evt
-  ) => {
+  const handleInputChange = evt => {
     setSearchTerm(evt.target.value)
   }
 
   const [value, setValue] = React.useState([
     { label: 'first', value: 'first' },
-    { label: 'second', value: 'second' },
+    { label: 'second', value: 'second' }
   ])
 
-  const handleOnKeyPress: React.KeyboardEventHandler = (evt) => {
+  const handleOnKeyPress = evt => {
     if (evt.key !== 'Enter') return
 
     if (evt.target instanceof HTMLInputElement) {
@@ -43,9 +41,9 @@ const Comp = () => {
   )
 }
 
-const uniqBy = (arr: any[], key: string) =>
-  Array.from(new Set(arr.map((item) => item[key]))).map((k) =>
-    arr.find((i) => i[key] === k)
+const uniqBy = (arr, key) =>
+  Array.from(new Set(arr.map(item => item[key]))).map(k =>
+    arr.find(i => i[key] === k)
   )
 
 export default Comp

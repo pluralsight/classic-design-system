@@ -2,12 +2,12 @@ import {
   colorsBlue,
   colorsTextIcon,
   type,
-  layout,
+  layout
 } from '@pluralsight/ps-design-system-core'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 import React from 'react'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   return (
     <React.Fragment>
       <EqualColumnLayout count={EqualColumnLayout.counts.two}>
@@ -43,7 +43,7 @@ const Example: React.FC = (props) => {
   )
 }
 
-const BlueBox: React.FC = (props) => (
+const BlueBox = props => (
   <React.Fragment>
     <div className="bluebox" {...props} />
 

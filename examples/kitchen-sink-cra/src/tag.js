@@ -1,7 +1,7 @@
 import Tag from '@pluralsight/ps-design-system-tag'
 import React from 'react'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   return (
     <div className="example-grid--col-2">
       <Tag size={Tag.sizes.small}>small</Tag>

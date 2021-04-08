@@ -2,7 +2,7 @@ import FeatureFlags from '@pluralsight/ps-design-system-featureflags'
 import Button from '@pluralsight/ps-design-system-button'
 import React from 'react'
 
-const Example: React.FC = (props) => {
+const Example = props => {
   return (
     <div>
       <FeatureFlags flags={{}}>

@@ -5,7 +5,7 @@ import { Label } from '@pluralsight/ps-design-system-text'
 import { Code } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
-const Headings = (props) => {
+const Headings = props => {
   return (
     <React.Fragment>
       <Heading size={Heading.sizes.xLarge}>
@@ -39,7 +39,7 @@ const Headings = (props) => {
   )
 }
 
-const Labels = (props) => {
+const Labels = props => {
   return (
     <React.Fragment>
       <div>
@@ -58,7 +58,7 @@ const Labels = (props) => {
   )
 }
 
-const Ps: React.FC = (props) => {
+const Ps = props => {
   return (
     <React.Fragment>
       <P size={P.sizes.large}>
@@ -91,7 +91,7 @@ const Ps: React.FC = (props) => {
   )
 }
 
-const Lists: React.FC = (props) => {
+const Lists = props => {
   return (
     <div className="example-grid--col-3">
       <List>
@@ -121,7 +121,7 @@ const Lists: React.FC = (props) => {
   )
 }
 
-const Codes = (props) => {
+const Codes = props => {
   return (
     <React.Fragment>
       <P>
