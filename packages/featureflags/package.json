@@ -4,19 +4,20 @@
   "description": "Feature flags utility component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
-  "main": "dist/esm/index.mjs",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.mjs",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "run-s build:esm",
+    "build": "run-s build:esm build:cjs",
     "build:esm": "run-s compile:esm rewrite:esm",
     "build:watch": "yarn build:esm --watch",
     "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "rewrite:esm": "tsc-esm --project tsconfig.build.json",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "test:watch": "yarn test --watchAll"
+    "test:watch": "yarn test --watchAll",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
   },
   "sideEffects": false,
   "type": "module",
