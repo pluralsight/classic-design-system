@@ -27,5 +27,9 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.1.0"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
