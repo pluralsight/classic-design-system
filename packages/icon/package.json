@@ -49,5 +49,9 @@
     "@pluralsight/ps-design-system-storybook-preset": "^0.4.8",
     "@types/svgo": "^1.3.3",
     "ncp": "^2.0.0"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
