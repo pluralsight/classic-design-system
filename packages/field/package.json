@@ -43,5 +43,9 @@
     "@pluralsight/ps-design-system-storybook-preset": "^0.4.8",
     "@pluralsight/ps-design-system-tag": "^9.0.8",
     "downshift": "^6.1.0"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
