@@ -6,10 +6,10 @@
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
-  "main": "dist/esm/index.mjs",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.mjs",
   "scripts": {
-    "build": "run-s build:svg build:esm build:types build:css",
+    "build": "run-s build:svg build:esm build:cjs build:types build:css",
     "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
     "build:esm": "run-s compile:esm rewrite:esm rewriteillustrations:esm",
     "build:svg": "run-s convert:svg removeindex:svg",
@@ -22,7 +22,8 @@
     "rewriteillustrations:esm": "node build/rewrite-illustrations-index.js",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "test:watch": "yarn test --watchAll"
+    "test:watch": "yarn test --watchAll",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
   },
   "sideEffects": false,
   "style": "dist/index.css",
