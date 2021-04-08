@@ -9,7 +9,7 @@
   "bin": {
     "build-css": "./bin/build-css.mjs"
   },
-  "main": "dist/cjs/index.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test --watchAll"
@@ -28,5 +28,6 @@
     "react-svg-loader": "^3.0.3",
     "string-replace-loader": "^2.2.0",
     "style-loader": "^1.0.0"
-  }
+  },
+  "exports": "./index.js"
 }
