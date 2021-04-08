@@ -1,179 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots button Select.Button 1`] = `
-<button
-  data-css-vqbjxt=""
->
-  <div
-    data-css-1nr9efp=""
-  >
-    Hello
-    <div
-      data-css-7dab2f=""
-      data-css-vgdpow=""
-    >
-      <svg
-        aria-label="caret down icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-        />
-      </svg>
-    </div>
-  </div>
-</button>
-`;
-
-exports[`Storyshots button Select.Button: disabled 1`] = `
-<button
-  data-css-vqbjxt=""
-  disabled={true}
->
-  <div
-    data-css-1nr9efp=""
-  >
-    Hello
-    <div
-      data-css-7dab2f=""
-      data-css-vgdpow=""
-    >
-      <svg
-        aria-label="caret down icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-        />
-      </svg>
-    </div>
-  </div>
-</button>
-`;
-
-exports[`Storyshots button Select.Button: erred 1`] = `
-<button
-  data-css-19jlcd8=""
->
-  <div
-    data-css-1nr9efp=""
-  >
-    Hello
-    <div
-      data-css-7dab2f=""
-      data-css-vgdpow=""
-    >
-      <svg
-        aria-label="caret down icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-        />
-      </svg>
-    </div>
-  </div>
-  <div
-    data-css-7dab2f=""
-    data-css-vaotfo=""
-  >
-    <svg
-      aria-label="warning icon"
-      role="img"
-      viewBox="0 0 24 24"
-    >
-      <path
-        clipRule="evenodd"
-        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-        fillRule="evenodd"
-      />
-    </svg>
-  </div>
-</button>
-`;
-
-exports[`Storyshots button Select.Button: focused 1`] = `
-<button
-  data-css-vqbjxt=""
->
-  <div
-    data-css-1nr9efp=""
-  >
-    Hello
-    <div
-      data-css-7dab2f=""
-      data-css-vgdpow=""
-    >
-      <svg
-        aria-label="caret down icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-        />
-      </svg>
-    </div>
-  </div>
-</button>
-`;
-
-exports[`Storyshots button Select.Button: isOpen 1`] = `
-<button
-  data-css-3d7soc=""
->
-  <div
-    data-css-1nr9efp=""
-  >
-    Hello
-    <div
-      data-css-7dab2f=""
-      data-css-vgdpow=""
-    >
-      <svg
-        aria-label="caret down icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-        />
-      </svg>
-    </div>
-  </div>
-</button>
-`;
-
-exports[`Storyshots button Select.Button: size 1`] = `
-<button
-  data-css-1ns8ici=""
->
-  <div
-    data-css-1nr9efp=""
-  >
-    Hello
-    <div
-      data-css-7dab2f=""
-      data-css-vgdpow=""
-    >
-      <svg
-        aria-label="caret down icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-        />
-      </svg>
-    </div>
-  </div>
-</button>
-`;
-
-exports[`Storyshots dropdown BelowLeft: placholder 1`] = `
+exports[`Storyshots Components/Select Basic 1`] = `
 Array [
   <button
     aria-haspopup="listbox"
@@ -217,7 +44,180 @@ Array [
 ]
 `;
 
-exports[`Storyshots dropdown BelowRight: selected value 1`] = `
+exports[`Storyshots Components/Select Button Basic 1`] = `
+<button
+  data-css-vqbjxt=""
+>
+  <div
+    data-css-1nr9efp=""
+  >
+    Hello
+    <div
+      data-css-7dab2f=""
+      data-css-vgdpow=""
+    >
+      <svg
+        aria-label="caret down icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+        />
+      </svg>
+    </div>
+  </div>
+</button>
+`;
+
+exports[`Storyshots Components/Select Button Disabled 1`] = `
+<button
+  data-css-vqbjxt=""
+  disabled={true}
+>
+  <div
+    data-css-1nr9efp=""
+  >
+    Hello
+    <div
+      data-css-7dab2f=""
+      data-css-vgdpow=""
+    >
+      <svg
+        aria-label="caret down icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+        />
+      </svg>
+    </div>
+  </div>
+</button>
+`;
+
+exports[`Storyshots Components/Select Button Error 1`] = `
+<button
+  data-css-19jlcd8=""
+>
+  <div
+    data-css-1nr9efp=""
+  >
+    Hello
+    <div
+      data-css-7dab2f=""
+      data-css-vgdpow=""
+    >
+      <svg
+        aria-label="caret down icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    data-css-7dab2f=""
+    data-css-vaotfo=""
+  >
+    <svg
+      aria-label="warning icon"
+      role="img"
+      viewBox="0 0 24 24"
+    >
+      <path
+        clipRule="evenodd"
+        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+        fillRule="evenodd"
+      />
+    </svg>
+  </div>
+</button>
+`;
+
+exports[`Storyshots Components/Select Button Focused 1`] = `
+<button
+  data-css-vqbjxt=""
+>
+  <div
+    data-css-1nr9efp=""
+  >
+    Hello
+    <div
+      data-css-7dab2f=""
+      data-css-vgdpow=""
+    >
+      <svg
+        aria-label="caret down icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+        />
+      </svg>
+    </div>
+  </div>
+</button>
+`;
+
+exports[`Storyshots Components/Select Button Is Open 1`] = `
+<button
+  data-css-3d7soc=""
+>
+  <div
+    data-css-1nr9efp=""
+  >
+    Hello
+    <div
+      data-css-7dab2f=""
+      data-css-vgdpow=""
+    >
+      <svg
+        aria-label="caret down icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+        />
+      </svg>
+    </div>
+  </div>
+</button>
+`;
+
+exports[`Storyshots Components/Select Button Small 1`] = `
+<button
+  data-css-1ns8ici=""
+>
+  <div
+    data-css-1nr9efp=""
+  >
+    Hello
+    <div
+      data-css-7dab2f=""
+      data-css-vgdpow=""
+    >
+      <svg
+        aria-label="caret down icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+        />
+      </svg>
+    </div>
+  </div>
+</button>
+`;
+
+exports[`Storyshots Components/Select Custom Render Option 1`] = `
 Array [
   <button
     aria-haspopup="listbox"
@@ -231,9 +231,9 @@ Array [
       data-css-1nr9efp=""
     >
       <span
-        data-css-wvjvpq=""
+        data-css-1p9e07r=""
       >
-        Two item
+        Select item
       </span>
       <div
         data-css-7dab2f=""
@@ -261,7 +261,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots dropdown custom item: dynamic 1`] = `
+exports[`Storyshots Components/Select Position Below Left 1`] = `
 Array [
   <button
     aria-haspopup="listbox"
@@ -275,9 +275,9 @@ Array [
       data-css-1nr9efp=""
     >
       <span
-        data-css-wvjvpq=""
+        data-css-1p9e07r=""
       >
-        Can view
+        Select item
       </span>
       <div
         data-css-7dab2f=""
@@ -305,51 +305,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots dropdown custom item: static manual 1`] = `
-Array [
-  <button
-    aria-haspopup="listbox"
-    aria-labelledby="select-button-4fzzzxjyl"
-    data-css-vqbjxt=""
-    id="select-button-4fzzzxjyl"
-    onClick={[Function]}
-    onKeyDown={[Function]}
-  >
-    <div
-      data-css-1nr9efp=""
-    >
-      <span
-        data-css-wvjvpq=""
-      >
-        Can view
-      </span>
-      <div
-        data-css-7dab2f=""
-        data-css-vgdpow=""
-      >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
-      </div>
-    </div>
-  </button>,
-  <div
-    style={
-      Object {
-        "visibility": "hidden",
-      }
-    }
-  />,
-]
-`;
-
-exports[`Storyshots selected Select.Selected: placeholder 1`] = `
+exports[`Storyshots Components/Select Selected Placeholder 1`] = `
 <span
   data-css-1p9e07r=""
 >
@@ -357,7 +313,7 @@ exports[`Storyshots selected Select.Selected: placeholder 1`] = `
 </span>
 `;
 
-exports[`Storyshots selected Select.Selected: selected 1`] = `
+exports[`Storyshots Components/Select Selected Selected 1`] = `
 <span
   data-css-wvjvpq=""
 >
