@@ -6,9 +6,10 @@
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
-  "main": "dist/index.css",
+  "main": "dist/cjs/index.js",
   "scripts": {
-    "build": "postcss css/index.css --dir dist"
+    "build": "postcss css/index.css --dir dist",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
   },
   "style": "dist/index.css",
   "dependencies": {
