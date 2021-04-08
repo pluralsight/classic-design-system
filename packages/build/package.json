@@ -9,7 +9,7 @@
   "bin": {
     "build-css": "./bin/build-css.mjs"
   },
-  "main": "index.js",
+  "main": "dist/cjs/index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test --watchAll"
