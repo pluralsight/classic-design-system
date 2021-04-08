@@ -29,5 +29,9 @@
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
     "glamor": "^2.20.40",
     "react": "^17.0.1"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
