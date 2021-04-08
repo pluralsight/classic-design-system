@@ -6,12 +6,12 @@
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
-  "main": "dist/esm/index.mjs",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.mjs",
   "type": "module",
   "sideEffects": false,
   "scripts": {
-    "build": "run-s build:esm build:css",
+    "build": "run-s build:esm build:cjs build:css",
     "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
     "build:esm": "run-s compile:esm rewrite:esm",
     "compile:esm": "tsc --project tsconfig.build.json --module esnext --target es5 --outDir dist/esm",
@@ -19,7 +19,8 @@
     "build:watch": "yarn build:js --watch",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "test:watch": "yarn test --watchAll"
+    "test:watch": "yarn test --watchAll",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
   },
   "style": "dist/css/index.css",
   "dependencies": {
