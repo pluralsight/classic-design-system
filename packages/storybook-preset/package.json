@@ -28,5 +28,9 @@
   },
   "peerDependencies": {
     "react": "*"
+  },
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/cjs/index.js"
   }
 }
