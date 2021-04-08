@@ -49,5 +49,9 @@
     "@pluralsight/ps-design-system-textinput": "^10.1.9",
     "@pluralsight/ps-design-system-theme": "^7.1.8",
     "ncp": "^2.0.0"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
