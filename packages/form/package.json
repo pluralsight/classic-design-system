@@ -53,5 +53,9 @@
     "@pluralsight/ps-design-system-textarea": "^8.1.9",
     "@pluralsight/ps-design-system-textinput": "^10.1.9",
     "@pluralsight/ps-design-system-theme": "^7.1.8"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
