@@ -41,5 +41,9 @@
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.1.0",
     "@pluralsight/ps-design-system-storybook-preset": "^0.4.8"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
