@@ -4,13 +4,13 @@
   "description": "EmptyState UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
-  "main": "dist/esm/index.mjs",
+  "main": "dist/cjs/index.js",
   "module": "dist/esm/index.mjs",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "build": "run-s build:svg build:esm build:css copy:svg",
+    "build": "run-s build:svg build:esm build:cjs build:css copy:svg",
     "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
     "build:esm": "run-s compile:esm rewrite:esm rewriteillustration:esm",
     "build:svg": "run-s convert:svg removeindex:svg",
@@ -23,7 +23,8 @@
     "rewriteillustration:esm": "node build/rewrite-illustration-index.js",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "test:watch": "yarn test --watchAll"
+    "test:watch": "yarn test --watchAll",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
   },
   "sideEffects": false,
   "style": "dist/index.css",
