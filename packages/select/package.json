@@ -40,5 +40,9 @@
     "@pluralsight/ps-design-system-menu": "^1.0.5",
     "@pluralsight/ps-design-system-position": "^7.0.0",
     "@pluralsight/ps-design-system-storybook-preset": "^0.4.8"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js"
   }
 }
