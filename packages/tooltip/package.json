@@ -22,7 +22,6 @@
   },
   "sideEffects": false,
   "style": "dist/index.css",
-  "type": "module",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^7.0.0",
