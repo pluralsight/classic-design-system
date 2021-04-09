@@ -2,8 +2,8 @@
 
 import arg from 'arg'
 
-import { generateComponents } from '../cli/generate-components.js'
-import { cleanSvgs } from '../cli/clean-svgs.js'
+import { generateComponents } from '../cli/generate-components.mjs'
+import { cleanSvgs } from '../cli/clean-svgs.mjs'
 
 const args = arg({
   '--dest': String,
