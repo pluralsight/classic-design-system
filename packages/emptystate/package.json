@@ -11,24 +11,29 @@
   },
   "scripts": {
     "build": "run-s build:svg build:esm build:cjs build:css copy:svg",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
     "build:esm": "run-s compile:esm rewrite:esm rewriteillustration:esm",
     "build:svg": "run-s convert:svg removeindex:svg",
     "build:watch": "yarn build:esm --watch",
     "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "convert:svg": "svgr --config-file svgr.config.cjs --typescript --filename-case kebab --ext \"dist.tsx\" -d src/react/illustrations src/svg",
-    "copy:svg": "node copy-svgs.js",
+    "copy:svg": "node copy-svgs.mjs",
     "removeindex:svg": "rimraf src/react/illustrations/index.dist.tsx",
     "rewrite:esm": "tsc-esm --project tsconfig.build.json",
-    "rewriteillustration:esm": "node build/rewrite-illustration-index.js",
+    "rewriteillustration:esm": "node build/rewrite-illustration-index.mjs",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "test:watch": "yarn test --watchAll",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
+    "test:watch": "yarn test --watchAll"
+  },
+  "exports": {
+    "default": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.mjs",
+    "node": "./dist/cjs/index.js",
+    "require": "./dist/cjs/index.js"
   },
   "sideEffects": false,
   "style": "dist/index.css",
-  "type": "module",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^7.0.0",
@@ -49,11 +54,5 @@
     "@pluralsight/ps-design-system-textinput": "^10.1.9",
     "@pluralsight/ps-design-system-theme": "^7.1.8",
     "ncp": "^2.0.0"
-  },
-  "exports": {
-    "import": "./dist/esm/index.mjs",
-    "require": "./dist/cjs/index.js",
-    "node": "./dist/cjs/index.js",
-    "default": "./dist/cjs/index.js"
   }
 }
