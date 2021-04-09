@@ -20,7 +20,6 @@
   },
   "sideEffects": false,
   "style": "dist/index.css",
-  "type": "module",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-collapsible": "^4.0.2",
