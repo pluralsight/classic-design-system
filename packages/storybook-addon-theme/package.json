@@ -10,12 +10,15 @@
     "storybook-addon",
     "style"
   ],
-  "main": "dist/cjs/index.js",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
     "build": "tsc --project tsconfig.build.json --module commonjs --target es5",
-    "build:watch": "yarn build --watch",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
+    "build:watch": "yarn build --watch"
+  },
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.js"
   },
   "types": "dist/index.d.ts",
   "dependencies": {
@@ -30,9 +33,5 @@
   },
   "peerDependencies": {
     "react": "^17.0.1"
-  },
-  "exports": {
-    "import": "./dist/index.js",
-    "require": "./dist/cjs/index.js"
   }
 }
