@@ -10,6 +10,7 @@
   "module": "dist/esm/index.mjs",
   "scripts": {
     "build": "run-s build:svg build:esm build:cjs build:types build:css",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
     "build:esm": "run-s compile:esm rewrite:esm rewriteillustrations:esm",
     "build:svg": "run-s convert:svg removeindex:svg",
@@ -19,15 +20,19 @@
     "convert:svg": "svgr --typescript --filename-case kebab --ext \"dist.tsx\" -d src/react/illustrations src/svg",
     "removeindex:svg": "rimraf src/react/illustrations/index.dist.tsx",
     "rewrite:esm": "tsc-esm --project tsconfig.build.json",
-    "rewriteillustrations:esm": "node build/rewrite-illustrations-index.js",
+    "rewriteillustrations:esm": "node build/rewrite-illustrations-index.mjs",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "test:watch": "yarn test --watchAll",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
+    "test:watch": "yarn test --watchAll"
+  },
+  "exports": {
+    "default": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.mjs",
+    "node": "./dist/cjs/index.js",
+    "require": "./dist/cjs/index.js"
   },
   "sideEffects": false,
   "style": "dist/index.css",
-  "type": "module",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-button": "^21.0.8",
@@ -48,11 +53,5 @@
     "@pluralsight/ps-design-system-normalize": "^4.4.1",
     "@pluralsight/ps-design-system-storybook-preset": "^0.4.8",
     "@pluralsight/ps-design-system-theme": "^7.1.8"
-  },
-  "exports": {
-    "import": "./dist/esm/index.mjs",
-    "require": "./dist/cjs/index.js",
-    "node": "./dist/cjs/index.js",
-    "default": "./dist/cjs/index.js"
   }
 }
