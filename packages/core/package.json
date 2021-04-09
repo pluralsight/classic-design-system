@@ -10,16 +10,21 @@
   "module": "dist/esm/index.mjs",
   "scripts": {
     "build": "run-s build:esm build:cjs build:css",
-    "build:css": "node ./build",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
+    "build:css": "node ./build/index.mjs",
     "build:esm": "run-s compile:esm rewrite:esm",
     "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "rewrite:esm": "tsc-esm --project tsconfig.build.json",
-    "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
+    "test": "tsc --noEmit --project ./tsconfig.json && jest"
+  },
+  "exports": {
+    "default": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.mjs",
+    "node": "./dist/cjs/index.js",
+    "require": "./dist/cjs/index.js"
   },
   "sideEffects": false,
   "style": "dist/css/index.css",
-  "type": "module",
   "types": "dist/esm/index.d.ts",
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.1.0",
@@ -27,11 +32,5 @@
     "postcss": "^7.0.26",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0"
-  },
-  "exports": {
-    "import": "./dist/esm/index.mjs",
-    "require": "./dist/cjs/index.js",
-    "node": "./dist/cjs/index.js",
-    "default": "./dist/cjs/index.js"
   }
 }
