@@ -20,7 +20,6 @@
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
   },
   "sideEffects": false,
-  "type": "module",
   "types": "dist/esm/index.d.ts",
   "peerDependencies": {
     "react": "^17.0.1"
