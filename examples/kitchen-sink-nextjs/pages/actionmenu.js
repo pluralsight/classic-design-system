@@ -1,33 +1,36 @@
-import React from 'react'
-import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import {
-  PencilIcon,
+const ActionMenu = require('@pluralsight/ps-design-system-actionmenu').default
+const {
   ChannelIcon,
   PlayIcon,
-} from '@pluralsight/ps-design-system-icon'
+  PencilIcon,
+} = require('@pluralsight/ps-design-system-icon')
+const React = require('react')
 
 function Example() {
   return (
-    <ActionMenu>
-      <ActionMenu.Item>
-        <ActionMenu.Icon marginLeft>
-          <PencilIcon />
-        </ActionMenu.Icon>
-        One item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        <ActionMenu.Icon marginLeft>
-          <ChannelIcon />
-        </ActionMenu.Icon>
-        Two item
-      </ActionMenu.Item>
-      <ActionMenu.Item>
-        <ActionMenu.Icon marginLeft>
-          <PlayIcon />
-        </ActionMenu.Icon>
-        Three item
-      </ActionMenu.Item>
-    </ActionMenu>
+    <div>
+      <ActionMenu>
+        <ActionMenu.Item>
+          <ActionMenu.Icon marginRight>
+            <PencilIcon />
+          </ActionMenu.Icon>
+          One item
+        </ActionMenu.Item>
+        <ActionMenu.Item>
+          <ActionMenu.Icon marginRight>
+            <ChannelIcon />
+          </ActionMenu.Icon>
+          Two item
+        </ActionMenu.Item>
+        <ActionMenu.Item>
+          <ActionMenu.Icon marginRight>
+            <PlayIcon />
+          </ActionMenu.Icon>
+          Three item
+        </ActionMenu.Item>
+      </ActionMenu>
+    </div>
   )
 }
-export default Example
+// export default Example
+module.exports = Example
