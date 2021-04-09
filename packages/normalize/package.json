@@ -12,7 +12,9 @@
   },
   "exports": {
     "import": "./dist/index.css",
-    "require": "./dist/index.css"
+    "require": "./dist/index.css",
+    "node": "./dist/index.css",
+    "default": "./dist/index.css"
   },
   "style": "dist/index.css",
   "dependencies": {
