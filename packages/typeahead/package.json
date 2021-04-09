@@ -24,7 +24,6 @@
   "gitHead": "ea4595a4bff6a08255102a0321bb641dc4d25913",
   "sideEffects": false,
   "style": "dist/index.css",
-  "type": "module",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^7.0.0",
