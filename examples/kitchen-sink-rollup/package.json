@@ -1,0 +1,37 @@
+{
+  "name": "kitchen-sink-rollup",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "sh links.sh",
+    "start": "rollup -c rollup.config.js -w"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.13.13",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-replace": "^2.4.2",
+    "date-fns": "^2.19.0",
+    "dayzed": "^3.2.2",
+    "downshift": "^6.1.2",
+    "exenv": "^1.2.2",
+    "focus-within": "^3.0.2",
+    "glamor": "^2.20.40",
+    "hoist-non-react-statics": "^3.3.2",
+    "invariant": "^2.2.4",
+    "react": "^17.0.2",
+    "react-cookie": "^4.0.3",
+    "react-dom": "^17.0.2",
+    "react-innertext": "^1.1.5",
+    "react-scripts": "4.0.3",
+    "resize-observer-polyfill": "^1.5.1",
+    "rollup": "^2.44.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-serve": "^1.1.0",
+    "shave": "^2.5.10",
+    "shiitake": "^3.0.2",
+    "tiny-hashes": "^1.0.1"
+  }
+}
