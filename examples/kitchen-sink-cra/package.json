@@ -2,6 +2,34 @@
   "name": "test-esm",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "build": "craco build",
+    "eject": "react-scripts eject",
+    "postinstall": "sh links.sh",
+    "start": "craco start",
+    "test": "craco test"
+  },
+  "browserslist": {
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "resolutions": {
+    "react": "7.0.2"
+  },
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@testing-library/jest-dom": "^5.11.4",
@@ -23,35 +51,6 @@
     "resize-observer-polyfill": "^1.5.1",
     "shave": "^2.5.10",
     "shiitake": "^3.0.2",
-    "tiny-hashes": "^1.0.1",
-    "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "start": "craco start",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject",
-    "postinstall": "sh links.sh"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "resolutions": {
-    "react": "7.0.2"
+    "tiny-hashes": "^1.0.1"
   }
 }
