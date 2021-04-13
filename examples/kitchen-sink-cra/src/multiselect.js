@@ -1,8 +1,8 @@
-import { useMemo, useState } from 'react'
+import React from 'react'
 import MultiSelect from '@pluralsight/ps-design-system-multiselect'
 
 const Comp = () => {
-  const options = useMemo(
+  const options = React.useMemo(
     () => [
       { label: 'Hydrogen', value: 'H' },
       { label: 'Helium', value: 'He' },
@@ -18,11 +18,11 @@ const Comp = () => {
       { label: 'Magnesium', value: 'Mg' },
       { label: 'Aluminum', value: 'Al' },
       { label: 'Silicon', value: 'Si' },
-      { label: 'Phosphorus', value: 'P' },
+      { label: 'Phosphorus', value: 'P' }
     ],
     []
   )
-  const [value, setValue] = useState(options.slice(0, 2))
+  const [value, setValue] = React.useState(options.slice(0, 2))
 
   return (
     <MultiSelect

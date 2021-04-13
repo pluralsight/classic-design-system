@@ -1,4 +1,5 @@
 import Row from '@pluralsight/ps-design-system-row'
+import React from 'react'
 
 function Example() {
   return (

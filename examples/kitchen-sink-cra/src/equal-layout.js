@@ -2,12 +2,12 @@ import {
   colorsBlue,
   colorsTextIcon,
   type,
-  layout
+  layout,
 } from '@pluralsight/ps-design-system-core'
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 import React from 'react'
 
-const Example = props => {
+const Example = (props) => {
   return (
     <React.Fragment>
       <EqualColumnLayout count={EqualColumnLayout.counts.two}>
@@ -43,21 +43,9 @@ const Example = props => {
   )
 }
 
-const BlueBox = props => (
+const BlueBox = (props) => (
   <React.Fragment>
     <div className="bluebox" {...props} />
-
-    <style jsx>{`
-      .bluebox {
-        align-items: center;
-        background: ${colorsBlue[6]};
-        color: ${colorsTextIcon.highOnDark};
-        display: flex;
-        font-weight: ${type.fontWeightBold};
-        height: ${layout.spacingLarge};
-        justify-content: center;
-      }
-    `}</style>
   </React.Fragment>
 )
 

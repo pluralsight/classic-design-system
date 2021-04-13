@@ -3,22 +3,7 @@ import NavBar from '@pluralsight/ps-design-system-navbar'
 import React from 'react'
 
 function Filler(props) {
-  return (
-    <div className="filler">
-      {props.children}
-      <style jsx>{`
-        .filler {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: ${colorsPink[6]};
-          height: 100%;
-          border: 2px dashed ${colorsPink[6]};
-          padding: 0 ${layout.spacingMedium};
-        }
-      `}</style>
-    </div>
-  )
+  return <div className="filler">{props.children}</div>
 }
 
 function Example() {

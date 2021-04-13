@@ -55,11 +55,11 @@ import Typeahead from './typeahead.js'
 import VerticalTabs from './verticaltabs.js'
 import ViewToggle from './viewtoggle.js'
 
-import './App.css'
+import React from 'react'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <ActionMenu />
       <Avatar />
       <Badge />
