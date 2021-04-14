@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@8.0.9...@pluralsight/ps-design-system-searchinput@9.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **searchinput:** add exports to package.json as alternate entry point ([b9db209](https://github.com/pluralsight/design-system/commit/b9db209acbcb810b58548f2939a6345a342da98b))
+* **searchinput:** convert to esm ([a3a4854](https://github.com/pluralsight/design-system/commit/a3a4854cdd305c2b9adace5d0ee41f9f39111965))
+
+
+### BREAKING CHANGES
+
+* **searchinput:** add exports to package.json
+* **searchinput:** Drop cjs; esm only; all in on tree shaking
+* **searchinput:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [8.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@8.0.8...@pluralsight/ps-design-system-searchinput@8.0.9) (2021-04-05)
 
 

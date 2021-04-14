@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@7.1.8...@pluralsight/ps-design-system-tooltip@8.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **tooltip:** add exports to package.json as alternate entry point ([c7cf4a8](https://github.com/pluralsight/design-system/commit/c7cf4a836762d5c77262cd9461b87cd2849ba93a))
+* **tooltip:** convert to esm ([356e6ff](https://github.com/pluralsight/design-system/commit/356e6ff10775a536a6e893d12d2958465630c932))
+
+
+### BREAKING CHANGES
+
+* **tooltip:** add exports to package.json
+* **tooltip:** Drop cjs; esm only; all in on tree shaking
+* **tooltip:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [7.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@7.1.7...@pluralsight/ps-design-system-tooltip@7.1.8) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tooltip

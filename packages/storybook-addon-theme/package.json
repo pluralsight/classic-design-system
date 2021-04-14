@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-addon-theme",
-  "version": "8.2.1",
+  "version": "9.0.0",
   "description": "Storybook addon for Theme switching",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -17,15 +17,15 @@
     "build:watch": "yarn build --watch"
   },
   "exports": {
+    "default": "./dist/index.js",
     "import": "./dist/index.js",
-    "require": "./dist/index.js",
     "node": "./dist/index.js",
-    "default": "./dist/index.js"
+    "require": "./dist/index.js"
   },
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^7.0.0",
-    "@pluralsight/ps-design-system-theme": "^7.1.8",
+    "@pluralsight/ps-design-system-core": "^8.0.0",
+    "@pluralsight/ps-design-system-theme": "^8.0.0",
     "@storybook/addons": "^6.0.26",
     "@storybook/api": "^6.0.26",
     "@storybook/client-logger": "^6.0.26",

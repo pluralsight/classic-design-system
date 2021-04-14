@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-actionmenu",
-  "version": "16.2.5",
+  "version": "17.0.0",
   "description": "Design System component for actionmenu ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -21,18 +21,18 @@
     "test:watch": "yarn test --watchAll"
   },
   "exports": {
+    "default": "./dist/cjs/index.js",
     "import": "./dist/esm/index.mjs",
-    "require": "./dist/cjs/index.js",
     "node": "./dist/cjs/index.js",
-    "default": "./dist/cjs/index.js"
+    "require": "./dist/cjs/index.js"
   },
   "sideEffects": false,
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^7.0.0",
-    "@pluralsight/ps-design-system-icon": "^22.0.0",
-    "@pluralsight/ps-design-system-util": "^8.0.0"
+    "@pluralsight/ps-design-system-core": "^8.0.0",
+    "@pluralsight/ps-design-system-icon": "^23.0.0",
+    "@pluralsight/ps-design-system-util": "^9.0.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -40,8 +40,8 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^2.1.0",
-    "@pluralsight/ps-design-system-position": "^7.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.4.8"
+    "@pluralsight/ps-design-system-build": "^3.0.0",
+    "@pluralsight/ps-design-system-position": "^8.0.0",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.5.0"
   }
 }

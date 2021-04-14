@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@3.0.0...@pluralsight/ps-design-system-field@4.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **field:** add exports to package.json as alternate entry point ([110c2ff](https://github.com/pluralsight/design-system/commit/110c2ffcfc840992bbb7bb1da1a9670eacd445bd))
+* **field:** convert to esm ([03e9754](https://github.com/pluralsight/design-system/commit/03e9754d984fabeda30ee35615c90103dbfecbcc))
+
+
+### BREAKING CHANGES
+
+* **field:** add exports to package.json
+* **field:** Drop cjs; esm only; all in on tree shaking
+* **field:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@2.1.4...@pluralsight/ps-design-system-field@3.0.0) (2021-04-05)
 
 

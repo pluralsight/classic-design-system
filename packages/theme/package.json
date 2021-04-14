@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "7.1.8",
+  "version": "8.0.0",
   "description": "Design System component for theming",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -10,29 +10,29 @@
   "module": "dist/esm/index.mjs",
   "scripts": {
     "build": "run-s build:esm build:cjs",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:esm": "run-s compile:esm rewrite:esm",
     "build:watch": "yarn build:esm --watch",
     "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "rewrite:esm": "tsc-esm --project tsconfig.build.json",
     "test": "jest",
-    "test:watch": "yarn test --watchAll",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
+    "test:watch": "yarn test --watchAll"
+  },
+  "exports": {
+    "default": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.mjs",
+    "node": "./dist/cjs/index.js",
+    "require": "./dist/cjs/index.js"
   },
   "sideEffects": false,
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-util": "^8.0.0",
+    "@pluralsight/ps-design-system-util": "^9.0.0",
     "hoist-non-react-statics": "^3.3.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
     "glamor": "^2.20.40",
     "react": "^17.0.1"
-  },
-  "exports": {
-    "import": "./dist/esm/index.mjs",
-    "require": "./dist/cjs/index.js",
-    "node": "./dist/cjs/index.js",
-    "default": "./dist/cjs/index.js"
   }
 }

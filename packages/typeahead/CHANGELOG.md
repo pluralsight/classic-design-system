@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@8.0.0...@pluralsight/ps-design-system-typeahead@9.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **typeahead:** add exports to package.json as alternate entry point ([baa570e](https://github.com/pluralsight/design-system/commit/baa570e2074cdb743d6cacc4bfe109c8ace0148b))
+* **typeahead:** convert to esm ([978b7f5](https://github.com/pluralsight/design-system/commit/978b7f5478038aa843724a1a8c6936996a8c1157))
+
+
+### BREAKING CHANGES
+
+* **typeahead:** add exports to package.json
+* **typeahead:** Drop cjs; esm only; all in on tree shaking
+* **typeahead:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@7.1.8...@pluralsight/ps-design-system-typeahead@8.0.0) (2021-04-05)
 
 

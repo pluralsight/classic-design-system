@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@8.0.0...@pluralsight/ps-design-system-avatar@9.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **avatar:** add exports to package.json as alternate entry point ([e9614d7](https://github.com/pluralsight/design-system/commit/e9614d73abed05f8564b97bfc321fe7b9c10dfa8))
+* **avatar:** convert to esm ([3b1076c](https://github.com/pluralsight/design-system/commit/3b1076ce31e789952d05d6d3aee4881e797a7dff))
+
+
+### BREAKING CHANGES
+
+* **avatar:** add exports to package.json
+* **avatar:** Drop cjs; esm only; all in on tree shaking
+* **avatar:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@7.1.7...@pluralsight/ps-design-system-avatar@8.0.0) (2021-04-05)
 
 

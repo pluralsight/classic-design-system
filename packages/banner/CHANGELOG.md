@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@9.0.9...@pluralsight/ps-design-system-banner@10.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **banner:** add exports to package.json as alternate entry point ([c5b6897](https://github.com/pluralsight/design-system/commit/c5b68970d24f17112328243b2dca710a6f8b0a14))
+* **banner:** convert to esm ([34f7021](https://github.com/pluralsight/design-system/commit/34f7021dd517dbfb905a9fb4a60a0c42371ed4ab))
+
+
+### BREAKING CHANGES
+
+* **banner:** add exports to package.json
+* **banner:** Drop cjs; esm only; all in on tree shaking
+* **banner:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [9.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@9.0.8...@pluralsight/ps-design-system-banner@9.0.9) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-banner

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@9.0.0...@pluralsight/ps-design-system-halo@10.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **halo:** add exports to package.json as alternate entry point ([4d68e11](https://github.com/pluralsight/design-system/commit/4d68e1155a476a52fa2b351df25af249c762ee6a))
+* **halo:** convert to esm ([28a5709](https://github.com/pluralsight/design-system/commit/28a570921455a9ca2737fce6d2ded5f6f42b7ad3))
+
+
+### BREAKING CHANGES
+
+* **halo:** add exports to package.json
+* **halo:** Drop cjs; esm only; all in on tree shaking
+* **halo:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@8.1.7...@pluralsight/ps-design-system-halo@9.0.0) (2021-04-05)
 
 

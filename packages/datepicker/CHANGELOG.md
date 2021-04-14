@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.4...@pluralsight/ps-design-system-datepicker@15.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **datepicker:** add exports to package.json as alternate entry point ([aaa642c](https://github.com/pluralsight/design-system/commit/aaa642c0d7de38f8397a426373dc88a2b267ebd9))
+* **datepicker:** convert to esm ([a29b3df](https://github.com/pluralsight/design-system/commit/a29b3dfe0bd4cd4000f3220636cab4d1fed5c7fa))
+
+
+### BREAKING CHANGES
+
+* **datepicker:** add exports to package.json
+* **datepicker:** Drop cjs; esm only; all in on tree shaking
+* **datepicker:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [14.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.3...@pluralsight/ps-design-system-datepicker@14.1.4) (2021-04-05)
 
 

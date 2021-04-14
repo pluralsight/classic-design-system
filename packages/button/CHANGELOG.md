@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [22.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@21.0.8...@pluralsight/ps-design-system-button@22.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **button:** add exports to package.json as alternate entry point ([275849c](https://github.com/pluralsight/design-system/commit/275849c2544c25190ce091ee99358f256f02f53e))
+* **button:** convert to esm ([c33423a](https://github.com/pluralsight/design-system/commit/c33423a8a997fc6f57920400d15c3f2221fe12c9))
+
+
+### BREAKING CHANGES
+
+* **button:** add exports to package.json
+* **button:** Drop cjs; esm only; all in on tree shaking
+* **button:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [21.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@21.0.7...@pluralsight/ps-design-system-button@21.0.8) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

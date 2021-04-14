@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.2.6...@pluralsight/ps-design-system-multiselect@2.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **multiselect:** add exports to package.json as alternate entry point ([4be6ec3](https://github.com/pluralsight/design-system/commit/4be6ec3068d00427765977899ad187ec0b8e8231))
+* **multiselect:** convert to esm ([fd5e0af](https://github.com/pluralsight/design-system/commit/fd5e0af70ccd44ea72ae392a76668009f3462e20))
+
+
+### BREAKING CHANGES
+
+* **multiselect:** add exports to package.json
+* **multiselect:** Drop cjs; esm only; all in on tree shaking
+* **multiselect:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [1.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.2.5...@pluralsight/ps-design-system-multiselect@1.2.6) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-multiselect

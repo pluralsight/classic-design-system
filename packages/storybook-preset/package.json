@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-preset",
-  "version": "0.4.8",
+  "version": "0.5.0",
   "description": "",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -14,15 +14,15 @@
     "build:watch": "yarn build --watch"
   },
   "exports": {
+    "default": "./dist/index.js",
     "import": "./dist/index.js",
-    "require": "./dist/index.js",
     "node": "./dist/index.js",
-    "default": "./dist/index.js"
+    "require": "./dist/index.js"
   },
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-storybook-addon-center": "^4.0.2",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^8.2.1",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^5.0.0",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^9.0.0",
     "@storybook/addon-a11y": "^6.0.21",
     "@storybook/addon-actions": "^6.0.21",
     "@storybook/addon-viewport": "^6.0.21",

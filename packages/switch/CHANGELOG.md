@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@8.0.0...@pluralsight/ps-design-system-switch@9.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **switch:** add exports to package.json as alternate entry point ([fd62dcc](https://github.com/pluralsight/design-system/commit/fd62dcc9e2ffa048055604c5a798eabfb2707a47))
+* **switch:** convert to esm ([0893d2b](https://github.com/pluralsight/design-system/commit/0893d2ba2d4750c432871ebab44ea4a04e32124c))
+
+
+### BREAKING CHANGES
+
+* **switch:** add exports to package.json
+* **switch:** Drop cjs; esm only; all in on tree shaking
+* **switch:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@7.1.7...@pluralsight/ps-design-system-switch@8.0.0) (2021-04-05)
 
 

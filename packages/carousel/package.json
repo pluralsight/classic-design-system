@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-carousel",
-  "version": "11.2.8",
+  "version": "12.0.0",
   "description": "Carousel UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -11,6 +11,7 @@
   },
   "scripts": {
     "build": "run-s build:esm build:cjs build:css",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
     "build:esm": "run-s compile:esm rewrite:esm",
     "build:watch": "yarn build:esm --watch",
@@ -18,18 +19,23 @@
     "rewrite:esm": "tsc-esm --project tsconfig.build.json",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "test:watch": "yarn test --watchAll",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
+    "test:watch": "yarn test --watchAll"
+  },
+  "exports": {
+    "default": "./dist/cjs/index.js",
+    "import": "./dist/esm/index.mjs",
+    "node": "./dist/cjs/index.js",
+    "require": "./dist/cjs/index.js"
   },
   "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "sideEffects": false,
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^7.0.0",
-    "@pluralsight/ps-design-system-halo": "^9.0.0",
-    "@pluralsight/ps-design-system-icon": "^22.0.0",
-    "@pluralsight/ps-design-system-util": "^8.0.0",
+    "@pluralsight/ps-design-system-core": "^8.0.0",
+    "@pluralsight/ps-design-system-halo": "^10.0.0",
+    "@pluralsight/ps-design-system-icon": "^23.0.0",
+    "@pluralsight/ps-design-system-util": "^9.0.0",
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
@@ -39,17 +45,11 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^16.2.5",
-    "@pluralsight/ps-design-system-build": "^2.1.0",
-    "@pluralsight/ps-design-system-card": "^17.0.0",
-    "@pluralsight/ps-design-system-position": "^7.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.4.8",
-    "@pluralsight/ps-design-system-theme": "^7.1.8"
-  },
-  "exports": {
-    "import": "./dist/esm/index.mjs",
-    "require": "./dist/cjs/index.js",
-    "node": "./dist/cjs/index.js",
-    "default": "./dist/cjs/index.js"
+    "@pluralsight/ps-design-system-actionmenu": "^17.0.0",
+    "@pluralsight/ps-design-system-build": "^3.0.0",
+    "@pluralsight/ps-design-system-card": "^18.0.0",
+    "@pluralsight/ps-design-system-position": "^8.0.0",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.5.0",
+    "@pluralsight/ps-design-system-theme": "^8.0.0"
   }
 }

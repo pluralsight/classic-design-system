@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@3.0.0...@pluralsight/ps-design-system-navbrand@4.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **navbrand:** add exports to package.json as alternate entry point ([4e8289e](https://github.com/pluralsight/design-system/commit/4e8289e4a664c0fc4c9b8e40882f45d45064ce63))
+* **navbrand:** convert to esm ([e3a2c5d](https://github.com/pluralsight/design-system/commit/e3a2c5df35bc3a12de1d79a183789b99c92aa193))
+
+
+### BREAKING CHANGES
+
+* **navbrand:** add exports to package.json
+* **navbrand:** Drop cjs; esm only; all in on tree shaking
+* **navbrand:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@2.1.7...@pluralsight/ps-design-system-navbrand@3.0.0) (2021-04-05)
 
 

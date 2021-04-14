@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@10.0.9...@pluralsight/ps-design-system-drawer@11.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **drawer:** add exports to package.json as alternate entry point ([434fce7](https://github.com/pluralsight/design-system/commit/434fce7e82e3efcb23d884f92bf0cfd147c34462))
+* **drawer:** convert to esm ([6e63c7a](https://github.com/pluralsight/design-system/commit/6e63c7ab34c123cf0fb182f5afb501e21bd67af4))
+
+
+### BREAKING CHANGES
+
+* **drawer:** add exports to package.json
+* **drawer:** Drop cjs; esm only; all in on tree shaking
+* **drawer:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [10.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@10.0.8...@pluralsight/ps-design-system-drawer@10.0.9) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [20.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@19.0.0...@pluralsight/ps-design-system-text@20.0.0) (2021-04-14)
+
+
+### Bug Fixes
+
+* **text:** add missing types def link ([6b25337](https://github.com/pluralsight/design-system/commit/6b253377904a7ab65f4557c1abe5901276c4f90f))
+
+
+### Code Refactoring
+
+* **text:** add exports to package.json as alternate entry point ([057faf3](https://github.com/pluralsight/design-system/commit/057faf359f6c5fb2cc81c8a3e3e5a8f8f63706cd))
+* **text:** convert to esm ([a1065ee](https://github.com/pluralsight/design-system/commit/a1065eed6f8d7cbe73b4c9d5405363c95d901456))
+
+
+### BREAKING CHANGES
+
+* **text:** add exports to package.json
+* **text:** Drop cjs; esm only; all in on tree shaking
+* **text:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [19.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@18.2.3...@pluralsight/ps-design-system-text@19.0.0) (2021-04-05)
 
 

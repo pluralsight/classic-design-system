@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@6.1.8...@pluralsight/ps-design-system-focusmanager@7.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **focusmanager:** add exports to package.json as alternate entry point ([d5110f0](https://github.com/pluralsight/design-system/commit/d5110f00044132bf38170c25e7dbcdfeeb726526))
+* **focusmanager:** convert to esm ([fdb9797](https://github.com/pluralsight/design-system/commit/fdb97970380c7b5ccd0c7b23c0246493b1e97df8))
+
+
+### BREAKING CHANGES
+
+* **focusmanager:** add exports to package.json
+* **focusmanager:** Drop cjs; esm only; all in on tree shaking
+* **focusmanager:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [6.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@6.1.7...@pluralsight/ps-design-system-focusmanager@6.1.8) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager

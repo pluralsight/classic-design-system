@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@4.0.2...@pluralsight/ps-design-system-collapsible@5.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **collapsible:** add exports to package.json as alternate entry point ([0a7f904](https://github.com/pluralsight/design-system/commit/0a7f904c4208f5b7de1bf826c9242b22399c2d42))
+* **collapsible:** convert to esm ([b063413](https://github.com/pluralsight/design-system/commit/b0634130448d14f70ee5c866502e66476d804e78))
+
+
+### BREAKING CHANGES
+
+* **collapsible:** add exports to package.json
+* **collapsible:** Drop cjs; esm only; all in on tree shaking
+* **collapsible:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [4.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@4.0.1...@pluralsight/ps-design-system-collapsible@4.0.2) (2021-03-11)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-collapsible

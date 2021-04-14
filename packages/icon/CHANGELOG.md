@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@22.0.0...@pluralsight/ps-design-system-icon@23.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **icon:** add exports to package.json as alternate entry point ([b793e08](https://github.com/pluralsight/design-system/commit/b793e08c33baafeff8f333d68ce286cea70579fc))
+* **icon:** convert to esm ([b4a8d87](https://github.com/pluralsight/design-system/commit/b4a8d874d8724e0c59a030779890e0216ea2cbaa))
+
+
+### Features
+
+* **icon:** export icons object for component collection ([664e12a](https://github.com/pluralsight/design-system/commit/664e12a970955ef1dab8a12afc5a7b21cbb59f08))
+
+
+### BREAKING CHANGES
+
+* **icon:** add exports to package.json
+* **icon:** Drop cjs; esm only; all in on tree shaking
+* **icon:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [22.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@21.0.7...@pluralsight/ps-design-system-icon@22.0.0) (2021-04-05)
 
 
