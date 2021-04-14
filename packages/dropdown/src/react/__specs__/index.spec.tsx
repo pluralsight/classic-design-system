@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Dropdown from '..'
+import Dropdown from '../index'
 
 it('button click opens the menu', () => {
   render(

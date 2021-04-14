@@ -1,6 +1,6 @@
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
-interface CenterProps extends HTMLAttributes<HTMLDivElement> {}
+interface CenterProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const Center: React.FC<CenterProps> = props => (
   <div

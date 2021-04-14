@@ -1,5 +1,5 @@
 import { HTMLPropsFor, canUseDOM } from '@pluralsight/ps-design-system-util'
-import React, { useEffect, useMemo, useRef } from 'react'
+import React from 'react'
 
 const canUseIntersectionObserver =
   canUseDOM() && 'IntersectionObserver' in window
@@ -22,11 +22,13 @@ export const useIntersectionSentinels = (
   _options?: IntersectionObserverInit
 ) => {
   const { start, end } = refs
-  const options = useMemo(() => ({ ...defaultOptions, _options }), [_options])
+  const options = React.useMemo(() => ({ ...defaultOptions, _options }), [
+    _options
+  ])
 
-  const observerRef = useRef<IntersectionObserver>()
+  const observerRef = React.useRef<IntersectionObserver>()
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!canUseIntersectionObserver) return
     if (observerRef.current) observerRef.current.disconnect()
 

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import React from 'react'
 
 const noop = (evt: MouseEvent | TouchEvent) => {}
 
@@ -37,14 +37,14 @@ const useSwipe = (ref: React.MutableRefObject<HTMLElement>, opts = {}) => {
     timeThreshold
   } = { ...defaultOpts, ...opts }
 
-  const timeout = useRef<NodeJS.Timeout>()
+  const timeout = React.useRef<NodeJS.Timeout>()
 
-  const [swiping, setSwiping] = useState<boolean>(false)
-  const [startPosition, setStartPosition] = useState<Point | null>(null)
+  const [swiping, setSwiping] = React.useState<boolean>(false)
+  const [startPosition, setStartPosition] = React.useState<Point | null>(null)
 
   const resetCoords = () => setStartPosition(null)
 
-  useEffect(() => {
+  React.useEffect(() => {
     document.addEventListener('touchstart', handleStart)
     document.addEventListener('touchend', handleEnd)
 

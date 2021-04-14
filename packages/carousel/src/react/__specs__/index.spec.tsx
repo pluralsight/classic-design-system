@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import Carousel from '..'
-import * as vars from '../../vars'
+import Carousel from '../index'
+import * as vars from '../../vars/index'
 
 describe('Carousel', () => {
   it('exports sizes', () => {

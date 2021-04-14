@@ -16,7 +16,7 @@
   grid-template-columns: 1fr;
   grid-column-gap: var(--psLayoutSpacingLarge);
 
-  @media (--breakpoint-small) {
+  @media ((width >= 768px)) {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -63,7 +63,7 @@
     font-weight: var(--psTypeFontWeightMedium);
   }
 
-  @media (--breakpoint-small) {
+  @media ((width >= 768px)) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: var(--psLayoutSpacingLarge);
   }

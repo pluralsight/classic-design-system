@@ -2,16 +2,12 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { css } from 'glamor'
-import React, {
-  ComponentProps,
-  Fragment,
-  useEffect,
-  useRef,
-  useState
-} from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import Button from '..'
+import Button from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 const defaultArgs = { children: 'click me', onClick: action('click') }
 
@@ -25,7 +21,7 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
 
   return (
     <div
-      {...css({
+      {...glamor.css({
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
@@ -35,7 +31,7 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
   )
 }
 
-const Template: Story<ComponentProps<typeof Button>> = args => (
+const Template: Story<React.ComponentProps<typeof Button>> = args => (
   <Button {...args} />
 )
 
@@ -84,7 +80,7 @@ StyleOverride.args = { ...defaultArgs, style: { background: 'red' } }
 export const ClassNameOverride = Template.bind({})
 ClassNameOverride.args = {
   ...defaultArgs,
-  className: css({ background: 'green' })
+  className: glamor.css({ background: 'green' })
 }
 
 export const Layouts: Story = () => (
@@ -92,7 +88,11 @@ export const Layouts: Story = () => (
     {Object.values(Button.layouts).map((layout, i) => (
       <div
         key={i}
-        {...css({ outline: '1px dashed pink', margin: 8, width: '400px' })}
+        {...glamor.css({
+          outline: '1px dashed pink',
+          margin: 8,
+          width: '400px'
+        })}
       >
         <Button layout={layout}>{layout}</Button>
       </div>
@@ -173,13 +173,13 @@ export const ThemeNesting: Story = () => (
 export const Variations: Story = () => (
   <StoryGrid cols={4}>
     {Object.values(Button.appearances).map(app => (
-      <Fragment key={app}>
+      <React.Fragment key={app}>
         {Object.values(Button.sizes).map(size => (
           <Button key={`key-${app}-${size}`} appearance={app} size={size}>
             {app}
           </Button>
         ))}
-      </Fragment>
+      </React.Fragment>
     ))}
   </StoryGrid>
 )
@@ -187,21 +187,21 @@ export const Variations: Story = () => (
 export const VertAlignment: Story = () => (
   <StoryGrid cols={Object.values(Button.appearances).length}>
     {Object.values(Button.appearances).map(app => (
-      <Fragment key={app}>
+      <React.Fragment key={app}>
         {Object.values(Button.sizes).map(size => (
           <Button key={`key-${app}-${size}`} appearance={app} size={size}>
             {app}
           </Button>
         ))}
-      </Fragment>
+      </React.Fragment>
     ))}
   </StoryGrid>
 )
 
 export const ExampleAutofocus: Story = () => {
   const Example: React.FC = () => {
-    const ref = useRef<HTMLButtonElement>()
-    useEffect(() => {
+    const ref = React.useRef<HTMLButtonElement>()
+    React.useEffect(() => {
       if (ref && ref.current) ref.current.focus()
     }, [])
 
@@ -213,9 +213,9 @@ export const ExampleAutofocus: Story = () => {
 
 export const ExampleLoadingTransition: Story = () => {
   const Example: React.FC = () => {
-    const [loading, setLoading] = useState<boolean>(false)
+    const [loading, setLoading] = React.useState<boolean>(false)
 
-    useEffect(() => {
+    React.useEffect(() => {
       const timer = setInterval(() => {
         setLoading(!loading)
       }, 1500)

@@ -1,21 +1,26 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import React, { useState, useEffect, SyntheticEvent } from 'react'
-import { DateObj } from 'dayzed'
-import { parse, format, differenceInCalendarMonths } from 'date-fns'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { slides } from '../vars'
-import { css } from 'glamor'
-import stylesheet from '../css'
+import differenceInCalendarMonths from 'date-fns/differenceInCalendarMonths'
+import format from 'date-fns/format'
+import parse from 'date-fns/parse'
+import type { DateObj } from 'dayzed'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
+
+import stylesheet from '../css/index'
+import { slides } from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const style = {
-  start: () => css(stylesheet['.psds-calendar__date--selected-start']),
-  end: () => css(stylesheet['.psds-calendar__date--selected-end']),
+  start: () => glamor.css(stylesheet['.psds-calendar__date--selected-start']),
+  end: () => glamor.css(stylesheet['.psds-calendar__date--selected-end']),
   inRange: (arg?: boolean) =>
-    css(arg && stylesheet['.psds-calendar__date--in-range'])
+    glamor.css(arg && stylesheet['.psds-calendar__date--in-range'])
 }
 
 export const useIsInRange = (selected: Date[] = []) => {
-  const [hoveredDate, setHoveredDate] = useState<Date | undefined>()
+  const [hoveredDate, setHoveredDate] = React.useState<Date | undefined>()
   // Calendar level
   const onMouseLeave = () => {
     setHoveredDate(undefined)
@@ -62,14 +67,17 @@ export const useIsInRange = (selected: Date[] = []) => {
 interface OnMultipleDatesSelected {
   setSelected: (arr: Date[]) => void
   selected?: Date[]
-  onSelect?: (evt: SyntheticEvent, selectedDate: DateObj) => void
+  onSelect?: (evt: React.SyntheticEvent, selectedDate: DateObj) => void
 }
 
 export const onRangeDateSelected = ({
   selected = [],
   setSelected,
   onSelect
-}: OnMultipleDatesSelected) => (dateObj: DateObj, evt: SyntheticEvent) => {
+}: OnMultipleDatesSelected) => (
+  dateObj: DateObj,
+  evt: React.SyntheticEvent
+) => {
   const { selectable, date } = dateObj
   if (!selectable) {
     return
@@ -117,7 +125,10 @@ export const onMultiDateSelected = ({
   selected = [],
   setSelected,
   onSelect
-}: OnMultipleDatesSelected) => (dateObj: DateObj, evt: SyntheticEvent) => {
+}: OnMultipleDatesSelected) => (
+  dateObj: DateObj,
+  evt: React.SyntheticEvent
+) => {
   const { selected: isSelected, selectable, date } = dateObj
   if (!selectable) {
     return
@@ -154,7 +165,7 @@ export const useDateSelectChange = ({
   const [value, setValue] = React.useState<string>(
     selected ? format(selected, dateFormat) : ''
   )
-  useEffect(() => {
+  React.useEffect(() => {
     selected ? setValue(format(selected, dateFormat)) : ''
   }, [selected])
   const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
@@ -203,7 +214,7 @@ export const useRangeSelectChange = ({
   const [value, setValue] = React.useState<string>(
     _selected ? format(_selected, dateFormat) : ''
   )
-  useEffect(() => {
+  React.useEffect(() => {
     _selected ? setValue(format(_selected, dateFormat)) : ''
   }, [_selected])
   const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {

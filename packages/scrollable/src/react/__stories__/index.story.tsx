@@ -1,16 +1,18 @@
 import { storiesOf } from '@storybook/react'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import Scrollable, { renderContentProps } from '..'
+import Scrollable, { renderContentProps } from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 storiesOf('components|Scrollable', module)
   .addDecorator(storyFn => (
     <div
-      {...css({
+      {...glamor.css({
         display: 'grid',
         gap: core.layout.spacingLarge,
         gridTemplateColumns: '50% 50%'
@@ -32,11 +34,13 @@ storiesOf('components|Scrollable', module)
   ))
   .add('with container padding', () => (
     <>
-      <ScrollableWithDefaults {...css({ padding: core.layout.spacingMedium })}>
+      <ScrollableWithDefaults
+        {...glamor.css({ padding: core.layout.spacingMedium })}
+      >
         <Filler />
       </ScrollableWithDefaults>
 
-      <VanillaScroll {...css({ padding: core.layout.spacingMedium })}>
+      <VanillaScroll {...glamor.css({ padding: core.layout.spacingMedium })}>
         <Filler />
       </VanillaScroll>
     </>
@@ -44,11 +48,11 @@ storiesOf('components|Scrollable', module)
   .add('with content padding', () => (
     <>
       <ScrollableWithDefaults>
-        <Filler {...css({ padding: core.layout.spacingMedium })} />
+        <Filler {...glamor.css({ padding: core.layout.spacingMedium })} />
       </ScrollableWithDefaults>
 
       <VanillaScroll>
-        <Filler {...css({ padding: core.layout.spacingMedium })} />
+        <Filler {...glamor.css({ padding: core.layout.spacingMedium })} />
       </VanillaScroll>
     </>
   ))
@@ -76,12 +80,12 @@ storiesOf('components|Scrollable', module)
         })
 
       return (
-        <ScrollableWithDefaults {...css({ height })}>
-          <div {...css({ position: 'relative', paddingTop: 50 })}>
-            <Filler {...css({ padding: core.layout.spacingMedium })} />
+        <ScrollableWithDefaults {...glamor.css({ height })}>
+          <div {...glamor.css({ position: 'relative', paddingTop: 50 })}>
+            <Filler {...glamor.css({ padding: core.layout.spacingMedium })} />
 
             <div
-              {...css({
+              {...glamor.css({
                 alignItems: 'center',
                 display: 'flex',
                 height: 50,
@@ -136,7 +140,7 @@ storiesOf('components|Scrollable', module)
 const Filler: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
     {...props}
-    {...css({
+    {...glamor.css({
       '& > p': { marginBottom: 10 },
       '& > p:last-child': { marginBottom: 0 }
     })}
@@ -194,7 +198,7 @@ const ScrollableWithDefaults: React.FC<
 > = props => {
   return (
     <Scrollable
-      {...css({
+      {...glamor.css({
         height: 260,
         outline: '1px dashed pink',
         width: 500
@@ -209,7 +213,7 @@ const ScrollableWithDefaults: React.FC<
 const VanillaScroll: React.FC = props => {
   return (
     <div
-      {...css({
+      {...glamor.css({
         height: 260,
         outline: '1px dashed lightblue',
         overflowX: 'auto',

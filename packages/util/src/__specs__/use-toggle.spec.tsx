@@ -1,7 +1,7 @@
 import { renderHook } from '@testing-library/react-hooks'
 import { act } from 'react-test-renderer'
 
-import { useToggle } from '..'
+import { useToggle } from '../index'
 
 describe('useToggle', () => {
   test('uncontrolled', () => {

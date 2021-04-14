@@ -5,7 +5,7 @@ import {
 } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { before, css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import {
   DragDropContext,
   DraggableProvided,
@@ -19,9 +19,10 @@ import {
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Table from '..'
-
+import Table from '../index'
 import { generateUser } from './seed'
+
+const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Table/react-beautiful-dnd',
@@ -146,7 +147,7 @@ const Handle: React.FC = props => {
     })
   )
 
-  const style = css(
+  const style = glamor.css(
     {
       color: dark ? colorsTextIcon.lowOnDark : colorsTextIcon.lowOnLight,
       cursor: 'grab',
@@ -155,7 +156,7 @@ const Handle: React.FC = props => {
       position: 'relative',
       width: (size + gutter) * cols
     },
-    before({
+    glamor.before({
       backgroundColor: 'currentColor',
       boxShadow: shadow.toString(),
       content: ' ',

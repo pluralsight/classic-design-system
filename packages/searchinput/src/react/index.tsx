@@ -1,5 +1,5 @@
-import { css } from 'glamor'
-import React, { useRef } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
@@ -9,15 +9,17 @@ import TextInput, {
 } from '@pluralsight/ps-design-system-textinput'
 import { RefFor, forwardRefWithAs } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   clear: (isClearBtnVisible: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-searchinput-clear'],
       isClearBtnVisible && stylesheet['.psds-searchinput-clear--visible']
     ),
-  field: () => css(stylesheet['.psds-searchinput-field'])
+  field: () => glamor.css(stylesheet['.psds-searchinput-field'])
 }
 
 export interface SearchInputProps extends TextInputProps {
@@ -32,7 +34,7 @@ const SearchInput = forwardRefWithAs<SearchInputProps, 'input'>(
     const hasVisibleValue = !!rest.value && String(rest.value).length > 0
     const isClearBtnVisible = isClearable && hasVisibleValue
 
-    const ref = useRef<HTMLInputElement | null>(null)
+    const ref = React.useRef<HTMLInputElement | null>(null)
     React.useImperativeHandle(
       forwardedRef,
       () => (ref.current as unknown) as HTMLInputElement

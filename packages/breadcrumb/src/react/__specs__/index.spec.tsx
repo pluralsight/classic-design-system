@@ -1,7 +1,7 @@
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { fireEvent, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
-import * as React from 'react'
+import React from 'react'
 
 import Breadcrumb from '../index'
 import * as stories from '../__stories__/index.story'

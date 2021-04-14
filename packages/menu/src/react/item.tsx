@@ -1,19 +1,21 @@
 import { RefFor, forwardRefWithAs } from '@pluralsight/ps-design-system-util'
-import React, { useContext, useRef } from 'react'
-import { css, compose } from 'glamor'
+import React from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
 import { MenuContext, ItemContext, SelectedItem } from './context'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   listItem: (isActive: boolean, disabled: boolean) =>
-    compose(
-      css(stylesheet['.psds-menu__list-item']),
-      disabled && css(stylesheet['.psds-menu__list-item--disabled']),
-      isActive && css(stylesheet['.psds-menu__list-item--active'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-menu__list-item']),
+      disabled && glamor.css(stylesheet['.psds-menu__list-item--disabled']),
+      isActive && glamor.css(stylesheet['.psds-menu__list-item--active'])
     ),
-  option: () => css(stylesheet['.psds-menu__option']),
-  optionInner: () => css(stylesheet[`.psds-menu__option-inner`])
+  option: () => glamor.css(stylesheet['.psds-menu__option']),
+  optionInner: () => glamor.css(stylesheet[`.psds-menu__option-inner`])
 }
 
 export interface MenuItemProps {
@@ -42,7 +44,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     role,
     ...rest
   } = props
-  const { onMenuClick, selectedItem, optionRole, useActive } = useContext(
+  const { onMenuClick, selectedItem, optionRole, useActive } = React.useContext(
     MenuContext
   )
   const handleClick = (evt: React.MouseEvent | React.KeyboardEvent) => {
@@ -54,7 +56,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     onKeyDown && onKeyDown(evt)
   }
   const selected = selectedItem?.id === value.id
-  const listItem = useRef<HTMLLIElement | undefined>()
+  const listItem = React.useRef<HTMLLIElement | undefined>()
   const { active: hookActive, handleActiveState } = useActive(listItem)
   return (
     <li

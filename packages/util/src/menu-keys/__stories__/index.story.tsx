@@ -1,12 +1,18 @@
 import React from 'react'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import { action } from '@storybook/addon-actions'
 
-import { handleMenuKeyDownEvents, handleMenuKeyUpEvents, useMenuRef } from '..'
+import {
+  handleMenuKeyDownEvents,
+  handleMenuKeyUpEvents,
+  useMenuRef
+} from '../index'
 
 export default {
   title: 'Utils/useMenuKeyEvents'
 }
+
+const glamor = glamorDefault || glamorExports
 
 export const basic = () => <MockStory />
 
@@ -22,7 +28,7 @@ const MockStory: React.FC = () => {
       onKeyDown={handleMenuKeyDownEvents}
       onKeyUp={handleMenuKeyUpEvents}
       ref={ref}
-      {...css({ '& :focus': { outline: '1px solid violet' } })}
+      {...glamor.css({ '& :focus': { outline: '1px solid violet' } })}
     >
       {rootList.map((el, i) => {
         return i === 4 || i === 7 ? (

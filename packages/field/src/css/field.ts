@@ -8,7 +8,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { widths as iconWidths } from '@pluralsight/ps-design-system-icon'
 
-import { sizes } from '../vars'
+import { sizes } from '../vars/index'
 
 export default {
   '.psds-field__container': {

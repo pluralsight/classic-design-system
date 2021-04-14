@@ -7,16 +7,19 @@
   "author": "jaketrent",
   "keywords": [],
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "module": "dist/esm/index.mjs",
   "scripts": {
-    "build": "run-s build:cjs build:esm",
-    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
-    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "build": "run-s build:esm build:cjs",
+    "build:esm": "run-s compile:esm rewrite:esm",
     "build:watch": "yarn build:esm --watch",
+    "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "rewrite:esm": "tsc-esm --project tsconfig.build.json",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs"
   },
+  "sideEffects": false,
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "exenv": "^1.2.2",
@@ -27,5 +30,11 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^2.1.0"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js",
+    "node": "./dist/cjs/index.js",
+    "default": "./dist/cjs/index.js"
   }
 }

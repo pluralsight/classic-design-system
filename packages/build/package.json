@@ -7,12 +7,15 @@
   "author": "jaketrent",
   "keywords": [],
   "bin": {
-    "build-css": "./bin/build-css.js"
+    "build-css": "./bin/build-css.mjs"
   },
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test --watchAll"
+  },
+  "exports": {
+    "default": "./index.js"
   },
   "dependencies": {
     "chalk": "^2.4.2",

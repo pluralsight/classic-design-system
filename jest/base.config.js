@@ -16,10 +16,16 @@ module.exports = {
   ],
   testEnvironment: 'jest-environment-jsdom-sixteen',
   transform: {
-    '^.+\\.js$': '<rootDir>/jest/babel-transformer.js',
-    '^.+\\.tsx?$': '<rootDir>/jest/babel-transformer.js'
+    '^.+\\.m?js$': [
+      'babel-jest',
+      { configFile: path.join(__dirname, 'babel.config.cjs') }
+    ],
+    '^.+\\.tsx?$': [
+      'babel-jest',
+      { configFile: path.join(__dirname, 'babel.config.cjs') }
+    ]
   },
-  transformIgnorePatterns: ['<rootDir>/node_modules', '<rootDir>/.*/dist'],
+  transformIgnorePatterns: ['<rootDir>/node_modules'],
   watchPlugins: [
     'jest-watch-typeahead/filename',
     'jest-watch-typeahead/testname'

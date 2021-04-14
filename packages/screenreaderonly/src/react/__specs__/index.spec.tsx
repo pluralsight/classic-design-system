@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import ScreenReaderOnly from '..'
+import ScreenReaderOnly from '../index'
 
 describe('ScreenReaderOnly', () => {
   it('renders', () => {

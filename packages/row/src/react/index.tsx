@@ -8,104 +8,98 @@ import {
   useMatchMedia,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
-import React, {
-  Children,
-  FocusEventHandler,
-  ReactElement,
-  ReactNode,
-  cloneElement,
-  isValidElement,
-  useState
-} from 'react'
-
-import stylesheet from '../css'
-import { toPercentageString } from '../js'
-import * as vars from '../vars'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import ConditionalWrap from './conditional-wrap'
+import stylesheet from '../css/index'
+import { toPercentageString } from '../js/index'
 import Shave from './shave'
+import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   actionBar: (props: ActionBarProps) =>
-    compose(
-      css(stylesheet['.psds-row__action-bar']),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-row__action-bar']),
       !!props.fullOverlay &&
-        css(stylesheet['.psds-row__action-bar--fullOverlay']),
+        glamor.css(stylesheet['.psds-row__action-bar--fullOverlay']),
       props.actionBarVisible &&
-        css(stylesheet['.psds-row__action-bar--actionBarVisible'])
+        glamor.css(stylesheet['.psds-row__action-bar--actionBarVisible'])
     ),
 
   fullOverlay: (props: FullOverlayProps) =>
-    compose(
-      css(stylesheet['.psds-row__full-overlay']),
-      props.isFocused && css(stylesheet['.psds-row__full-overlay--isFocused']),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-row__full-overlay']),
+      props.isFocused &&
+        glamor.css(stylesheet['.psds-row__full-overlay--isFocused']),
       props.fullOverlayVisible &&
-        css(stylesheet['.psds-row__full-overlay--fullOverlayVisible'])
+        glamor.css(stylesheet['.psds-row__full-overlay--fullOverlayVisible'])
     ),
 
-  fullOverlayLink: () => css(stylesheet['.psds-row__full-overlay-link']),
+  fullOverlayLink: () => glamor.css(stylesheet['.psds-row__full-overlay-link']),
 
   image: (props: ImageProps) =>
-    compose(
-      css(stylesheet['.psds-row__image']),
-      css({ backgroundImage: `url(${props.src})` })
+    glamor.compose(
+      glamor.css(stylesheet['.psds-row__image']),
+      glamor.css({ backgroundImage: `url(${props.src})` })
     ),
 
-  imageLink: () => css(stylesheet['.psds-row__image-link']),
+  imageLink: () => glamor.css(stylesheet['.psds-row__image-link']),
 
   metadata: (themeName: ValueOf<typeof themeNames>, props: MetadataProps) =>
-    compose(
-      css(stylesheet['.psds-row__metadata']),
-      css(stylesheet[`.psds-row__metadata.psds-theme--${themeName}`]),
-      css(stylesheet[`.psds-row__metadata--size-${props.size}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-row__metadata']),
+      glamor.css(stylesheet[`.psds-row__metadata.psds-theme--${themeName}`]),
+      glamor.css(stylesheet[`.psds-row__metadata--size-${props.size}`])
     ),
 
-  metadataDatum: () => css(stylesheet['.psds-row__metadata__datum']),
+  metadataDatum: () => glamor.css(stylesheet['.psds-row__metadata__datum']),
 
-  metadataDot: () => css(stylesheet['.psds-row__metadata__dot']),
+  metadataDot: () => glamor.css(stylesheet['.psds-row__metadata__dot']),
 
-  overlays: () => css(stylesheet['.psds-row__overlays']),
+  overlays: () => glamor.css(stylesheet['.psds-row__overlays']),
 
-  progress: () => css(stylesheet['.psds-row__progress']),
+  progress: () => glamor.css(stylesheet['.psds-row__progress']),
 
   progressBar: (props: ProgressBarProps) => {
     const percent = toPercentageString(props.progress)
     const complete = percent === '100%'
 
-    return compose(
-      css(stylesheet['.psds-row__progress__bar']),
-      complete && css(stylesheet['.psds-row__progress__bar--complete']),
-      css({ width: percent })
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-row__progress__bar']),
+      complete && glamor.css(stylesheet['.psds-row__progress__bar--complete']),
+      glamor.css({ width: percent })
     )
   },
 
   row: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-row'],
       stylesheet[`.psds-row.psds-theme--${themeName}`]
     ),
 
   textLink: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-row__text-link']),
-      css(stylesheet[`.psds-row__text-link.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-row__text-link']),
+      glamor.css(stylesheet[`.psds-row__text-link.psds-theme--${themeName}`])
     ),
 
   title: (themeName: ValueOf<typeof themeNames>, props: TitleProps) =>
-    compose(
-      css(stylesheet['.psds-row__title']),
-      css(stylesheet[`.psds-row__title--size-${props.size}`]),
-      css(stylesheet[`.psds-row__title.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-row__title']),
+      glamor.css(stylesheet[`.psds-row__title--size-${props.size}`]),
+      glamor.css(stylesheet[`.psds-row__title.psds-theme--${themeName}`])
     ),
 
   words: (props: Pick<WordsProps, 'actionBar' | 'image' | 'size'>) => {
     const imgWidth = formatImageWidth(props.image, props.size)
     const actionBarWidth = formatActionBarWidth(props.actionBar)
 
-    return compose(
-      css(stylesheet['.psds-row__words']),
-      css({ maxWidth: `calc(100% - ${imgWidth} - ${actionBarWidth})` })
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-row__words']),
+      glamor.css({ maxWidth: `calc(100% - ${imgWidth} - ${actionBarWidth})` })
     )
   }
 }
@@ -127,22 +121,27 @@ const formatActionBarWidth = (actionBar: unknown): string => {
 
 type MetadataNode =
   | string
-  | ReactElement<typeof Text>
-  | ReactElement<typeof TextLink>
+  | React.ReactElement<typeof Text>
+  | React.ReactElement<typeof TextLink>
 
 // NOTE: the `title` prop clashes with a native html attr so we're exclude
 //       it from being mistakenly used in any child component
 interface RowProps extends Omit<HTMLPropsFor<'div'>, 'title'> {
-  actionBar?: ReactNode[] // <Button size="small" appearance="secondary" />
+  actionBar?: React.ReactNode[] // <Button size="small" appearance="secondary" />
   actionBarVisible?: boolean
-  fullOverlay?: ReactNode | ReactElement<typeof FullOverlayLink>
+  fullOverlay?: React.ReactNode | React.ReactElement<typeof FullOverlayLink>
   fullOverlayVisible?: boolean
-  image?: ReactElement<typeof Image> | ReactElement<typeof ImageLink>
+  image?:
+    | React.ReactElement<typeof Image>
+    | React.ReactElement<typeof ImageLink>
   metadata1?: MetadataNode[]
   metadata2?: MetadataNode[]
   progress?: number
   size?: ValueOf<typeof vars.sizes>
-  title?: string | ReactElement<typeof Text> | ReactElement<typeof TextLink>
+  title?:
+    | string
+    | React.ReactElement<typeof Text>
+    | React.ReactElement<typeof TextLink>
   titleTruncated?: boolean
 }
 
@@ -289,21 +288,24 @@ interface FullOverlayFocusManagerProps
 const FullOverlayFocusManager: React.FC<FullOverlayFocusManagerProps> = props => {
   const { fullOverlayVisible, fullOverlay } = props
 
-  const [isFocused, setFocused] = useState(false)
+  const [isFocused, setFocused] = React.useState(false)
 
-  const handleFocus: FocusEventHandler<HTMLDivElement> = () => {
+  const handleFocus: React.FocusEventHandler<HTMLDivElement> = () => {
     setFocused(true)
   }
 
-  const handleBlur: FocusEventHandler<HTMLDivElement> = () => {
+  const handleBlur: React.FocusEventHandler<HTMLDivElement> = () => {
     setFocused(false)
   }
 
-  if (!isValidElement(fullOverlay)) return null
+  if (!React.isValidElement(fullOverlay)) return null
 
   return (
     <FullOverlay isFocused={isFocused} fullOverlayVisible={fullOverlayVisible}>
-      {cloneElement(fullOverlay, { onFocus: handleFocus, onBlur: handleBlur })}
+      {React.cloneElement(fullOverlay, {
+        onFocus: handleFocus,
+        onBlur: handleBlur
+      })}
     </FullOverlay>
   )
 }
@@ -405,11 +407,11 @@ const TextLink: React.FC<TextLinkProps> = props => {
   const { children, truncated = false, ...rest } = props
   const themeName = useTheme()
 
-  const anchor = Children.only(children)
+  const anchor = React.Children.only(children)
   const anchorText = anchor.props.children
 
   const shouldWrap = truncated && isString(anchorText)
-  const shaveWrap = (child: ReactNode) => {
+  const shaveWrap = (child: React.ReactNode) => {
     if (!isString(child)) return null
 
     return <Shave lines={2}>{child}</Shave>
@@ -436,20 +438,20 @@ const Title: React.FC<TitleProps> = props => {
   const { children, size, truncated = false, ...rest } = props
   const themeName = useTheme()
 
-  const wrapAsLink = (child: ReactNode) => {
-    if (!isValidElement(child)) return null
+  const wrapAsLink = (child: React.ReactNode) => {
+    if (!React.isValidElement(child)) return null
 
-    return cloneElement(child, { truncated })
+    return React.cloneElement(child, { truncated })
   }
 
-  const wrapWithShave = (child: ReactNode) => {
+  const wrapWithShave = (child: React.ReactNode) => {
     return (
       <ConditionalWrap shouldWrap={truncated} wrapper={shaveWrap}>
         {child}
       </ConditionalWrap>
     )
   }
-  const shaveWrap = (child: ReactNode) => {
+  const shaveWrap = (child: React.ReactNode) => {
     if (!isString(child)) return null
     return <Shave lines={2}>{child}</Shave>
   }

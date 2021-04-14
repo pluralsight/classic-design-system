@@ -1,4 +1,4 @@
-import { KeyboardEventHandler, useCallback, createRef } from 'react'
+import React from 'react'
 import { useCombinedRefs } from '../use-combined-refs'
 
 export const searchListItem = <E extends Element>(
@@ -127,7 +127,7 @@ const character = (evt: KeyboardEvent) => {
   }
 }
 
-export const handleMenuKeyDownEvents: KeyboardEventHandler<HTMLUListElement> = synthetic => {
+export const handleMenuKeyDownEvents: React.KeyboardEventHandler<HTMLUListElement> = synthetic => {
   const evt = synthetic.nativeEvent
 
   evt.key === 'ArrowDown'
@@ -143,7 +143,7 @@ export const handleMenuKeyDownEvents: KeyboardEventHandler<HTMLUListElement> = s
   evt.preventDefault()
 }
 
-export const handleMenuKeyUpEvents: KeyboardEventHandler<HTMLUListElement> = synthetic => {
+export const handleMenuKeyUpEvents: React.KeyboardEventHandler<HTMLUListElement> = synthetic => {
   const evt = synthetic.nativeEvent
 
   evt.key === 'ArrowRight' && rightArrow(evt)
@@ -153,8 +153,8 @@ export const handleMenuKeyUpEvents: KeyboardEventHandler<HTMLUListElement> = syn
 }
 
 export const useMenuRef = <El extends HTMLElement>(focus = false) => {
-  const outer = createRef<El>()
-  const inner = useCallback(
+  const outer = React.createRef<El>()
+  const inner = React.useCallback(
     node => {
       if (node && focus) {
         const firstMenuItem = searchListItem(node.firstElementChild)

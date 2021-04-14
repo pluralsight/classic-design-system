@@ -1,13 +1,8 @@
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, {
-  ChangeEventHandler,
-  KeyboardEventHandler,
-  ComponentProps,
-  useState
-} from 'react'
+import React from 'react'
 
-import TagsInput, { Option } from '..'
+import TagsInput, { Option } from '../index'
 
 const ConstrainWidthDecorator = (Story: Story) => {
   return (
@@ -33,20 +28,20 @@ const defaultArgs = {
   subLabel: 'The sub label'
 }
 
-const Template: Story<ComponentProps<typeof TagsInput>> = args => {
-  const [searchTerm, setSearchTerm] = useState('')
-  const handleInputChange: ChangeEventHandler<HTMLInputElement> = evt => {
+const Template: Story<React.ComponentProps<typeof TagsInput>> = args => {
+  const [searchTerm, setSearchTerm] = React.useState('')
+  const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
     setSearchTerm(evt.target.value)
   }
 
-  const [value, setValue] = useState<Option[]>(
+  const [value, setValue] = React.useState<Option[]>(
     args.value || [
       { label: 'first', value: 'first' },
       { label: 'second', value: 'second' }
     ]
   )
 
-  const handleOnKeyPress: KeyboardEventHandler = evt => {
+  const handleOnKeyPress: React.KeyboardEventHandler = evt => {
     if (evt.key !== 'Enter') return
 
     if (evt.target instanceof HTMLInputElement) {

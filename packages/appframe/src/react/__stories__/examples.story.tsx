@@ -6,10 +6,9 @@ import {
 } from '@pluralsight/ps-design-system-icon'
 import { useMatchMedia } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { useMemo } from 'react'
+import React from 'react'
 
-import AppFrame from '..'
-
+import AppFrame from '../index'
 import { MockContent, SideNav, TopNav } from './shared'
 
 export default {
@@ -20,7 +19,7 @@ export default {
 export const Skills: Story = () => {
   const mobile = !useMatchMedia(`(min-width: ${breakpoints.xSmall})`)
 
-  const sidenavSections = useMemo(
+  const sidenavSections = React.useMemo(
     () =>
       mobile
         ? [{ items: MAIN_NAV_ITEMS }, ...SIDE_NAV_SECTIONS]
@@ -28,7 +27,9 @@ export const Skills: Story = () => {
     [mobile]
   )
 
-  const topnavItems = useMemo(() => (mobile ? [] : MAIN_NAV_ITEMS), [mobile])
+  const topnavItems = React.useMemo(() => (mobile ? [] : MAIN_NAV_ITEMS), [
+    mobile
+  ])
 
   return (
     <AppFrame

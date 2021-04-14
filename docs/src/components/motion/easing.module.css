@@ -152,7 +152,7 @@ b {
   background: var(--psColorsPink6);
 }
 
-@media (--breakpoint-large) {
+@media ((width >= 1280px)) {
   .function {
     flex-direction: row;
   }

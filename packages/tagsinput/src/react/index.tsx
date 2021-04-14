@@ -1,21 +1,3 @@
-import { useMultipleSelection } from 'downshift'
-import { compose, css } from 'glamor'
-import React, {
-  ChangeEventHandler,
-  ComponentProps,
-  MouseEvent,
-  MouseEventHandler,
-  ReactElement,
-  ReactNode,
-  SyntheticEvent,
-  cloneElement,
-  forwardRef,
-  isValidElement,
-  useLayoutEffect,
-  useMemo,
-  useState
-} from 'react'
-
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
 import Tag from '@pluralsight/ps-design-system-tag'
@@ -24,41 +6,47 @@ import {
   useUniqueId,
   usePrevious
 } from '@pluralsight/ps-design-system-util'
+import { useMultipleSelection } from 'downshift'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-
+import stylesheet from '../css/index'
 import { Option } from './types'
+
 export { Option }
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   tagsInput: (opts: { disabled?: boolean }) =>
-    compose(
-      css(stylesheet['.psds-tagsinput']),
-      opts.disabled && css(stylesheet['.psds-tagsinput--disabled'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-tagsinput']),
+      opts.disabled && glamor.css(stylesheet['.psds-tagsinput--disabled'])
     ),
 
-  prefix: () => css(stylesheet['.psds-tagsinput__prefix']),
-  suffix: () => css(stylesheet['.psds-tagsinput__suffix']),
+  prefix: () => glamor.css(stylesheet['.psds-tagsinput__prefix']),
+  suffix: () => glamor.css(stylesheet['.psds-tagsinput__suffix']),
 
-  input: () => css(stylesheet['.psds-tagsinput__input']),
+  input: () => glamor.css(stylesheet['.psds-tagsinput__input']),
 
-  pillsContainer: () => css(stylesheet['.psds-tagsinput__pills-container']),
-  pills: () => css(stylesheet['.psds-tagsinput__pills']),
-  pill: () => css(stylesheet['.psds-tagsinput__pill'])
+  pillsContainer: () =>
+    glamor.css(stylesheet['.psds-tagsinput__pills-container']),
+  pills: () => glamor.css(stylesheet['.psds-tagsinput__pills']),
+  pill: () => glamor.css(stylesheet['.psds-tagsinput__pill'])
 }
 
 interface TagsInputProps
   extends Omit<
-    ComponentProps<typeof Field>,
+    React.ComponentProps<typeof Field>,
     'children' | 'label' | 'onChange' | 'subLabel'
   > {
-  label?: string | ReactElement<typeof Field.Label>
-  onChange: (evt: SyntheticEvent | null, nextValue: Option[]) => void
-  onSearchInputChange: ChangeEventHandler<HTMLInputElement>
+  label?: string | React.ReactElement<typeof Field.Label>
+  onChange: (evt: React.SyntheticEvent | null, nextValue: Option[]) => void
+  onSearchInputChange: React.ChangeEventHandler<HTMLInputElement>
   placeholder?: string
-  renderInputTag?: ComponentProps<typeof Field.Input>['renderTag']
+  renderInputTag?: React.ComponentProps<typeof Field.Input>['renderTag']
   searchInputValue: string
-  subLabel?: string | ReactNode
+  subLabel?: string | React.ReactNode
   value: Option[]
 }
 
@@ -87,8 +75,8 @@ const TagsInput: TagsInputComponent = props => {
 
   const inputId = useUniqueId('tagsinput__input-')
 
-  const [hasMounted, setHasMounted] = useState(false)
-  useLayoutEffect(() => {
+  const [hasMounted, setHasMounted] = React.useState(false)
+  React.useLayoutEffect(() => {
     setHasMounted(true)
   }, [])
   const prevWasMounted = usePrevious(hasMounted)
@@ -105,32 +93,35 @@ const TagsInput: TagsInputComponent = props => {
     selectedItems: value
   })
 
-  const handleRemoveSelected = (evt: MouseEvent<unknown>, item: Option) => {
+  const handleRemoveSelected = (
+    evt: React.MouseEvent<unknown>,
+    item: Option
+  ) => {
     evt.stopPropagation()
     removeSelectedItem(item)
   }
 
-  const Label = useMemo(() => {
+  const Label = React.useMemo(() => {
     if (!label) return null
 
-    if (isValidElement(label)) {
-      return cloneElement<any>(label, { htmlFor: inputId })
+    if (React.isValidElement(label)) {
+      return React.cloneElement<any>(label, { htmlFor: inputId })
     }
 
     return <Field.Label htmlFor={inputId}>{label}</Field.Label>
   }, [label, inputId])
 
-  const SubLabel = useMemo(() => {
+  const SubLabel = React.useMemo(() => {
     if (!subLabel) return null
 
-    if (isValidElement(subLabel)) return subLabel
+    if (React.isValidElement(subLabel)) return subLabel
 
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
   }, [subLabel])
 
   const inputProps = getDropdownProps()
 
-  useLayoutEffect(
+  React.useLayoutEffect(
     function keepInputInView() {
       if (!hasMounted) return
       if (hasMounted && !prevWasMounted) return
@@ -190,20 +181,22 @@ TagsInput.SubLabel = Field.SubLabel
 
 export default TagsInput
 
-const Pills = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>((props, ref) => {
-  const { children, ...rest } = props
+const Pills = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+  (props, ref) => {
+    const { children, ...rest } = props
 
-  return (
-    <div ref={ref} {...rest} {...styles.pills()}>
-      {children}
-    </div>
-  )
-})
+    return (
+      <div ref={ref} {...rest} {...styles.pills()}>
+        {children}
+      </div>
+    )
+  }
+)
 
-interface PillProps extends ComponentProps<typeof Tag> {
-  onRequestRemove: MouseEventHandler
+interface PillProps extends React.ComponentProps<typeof Tag> {
+  onRequestRemove: React.MouseEventHandler
 }
-const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
+const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   const { children, onRequestRemove, ...rest } = props
 
   return (
@@ -219,13 +212,15 @@ const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   )
 })
 
-const PillAdjacentInputContainer = forwardRef<HTMLDivElement>((props, ref) => {
-  return <div ref={ref} {...props} />
-})
+const PillAdjacentInputContainer = React.forwardRef<HTMLDivElement>(
+  (props, ref) => {
+    return <div ref={ref} {...props} />
+  }
+)
 
-const PillAdjacentInput = forwardRef<
+const PillAdjacentInput = React.forwardRef<
   HTMLInputElement,
-  ComponentProps<typeof Field.Input>
+  React.ComponentProps<typeof Field.Input>
 >((props, ref) => {
   return (
     <Field.Input

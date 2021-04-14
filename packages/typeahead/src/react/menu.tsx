@@ -1,20 +1,23 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor, combineFns } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
-import React, { forwardRef, useEffect, useMemo, useState } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-
+import stylesheet from '../css/index'
 import { SuggestionOption } from './suggestion'
 
+const glamor = glamorDefault || glamorExports
+
 const styles = {
-  menu: () => css(stylesheet['.psds-typeahead__menu']),
-  menuItem: () => css(stylesheet['.psds-typeahead__menu__item']),
-  menuItemLabel: () => css(stylesheet['.psds-typeahead__menu__item__label']),
+  menu: () => glamor.css(stylesheet['.psds-typeahead__menu']),
+  menuItem: () => glamor.css(stylesheet['.psds-typeahead__menu__item']),
+  menuItemLabel: () =>
+    glamor.css(stylesheet['.psds-typeahead__menu__item__label']),
   menuItemIcon: ({ selected }: { selected: boolean }) =>
-    compose(
-      css(stylesheet['.psds-typeahead__menu__item__icon']),
-      selected && css(stylesheet['.psds-typeahead__menu__item__icon--selected'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-typeahead__menu__item__icon']),
+      selected &&
+        glamor.css(stylesheet['.psds-typeahead__menu__item__icon--selected'])
     )
 }
 
@@ -31,7 +34,7 @@ interface SuggestionsMenuProps extends Omit<HTMLPropsFor<'div'>, 'onChange'> {
   suggestions: SuggestionOption[]
 }
 
-const SuggestionsMenu = forwardRef<HTMLDivElement, SuggestionsMenuProps>(
+const SuggestionsMenu = React.forwardRef<HTMLDivElement, SuggestionsMenuProps>(
   (props, forwardedRef) => {
     const { activeValue, onChange, suggestions, ...rest } = props
 
@@ -41,8 +44,8 @@ const SuggestionsMenu = forwardRef<HTMLDivElement, SuggestionsMenuProps>(
       () => (ref.current as unknown) as HTMLDivElement
     )
 
-    const [cursor, setCursor] = useState<number>()
-    const itemCount = useMemo(() => suggestions.length, [suggestions])
+    const [cursor, setCursor] = React.useState<number>()
+    const itemCount = React.useMemo(() => suggestions.length, [suggestions])
 
     const resetCursor = () => setCursor(undefined)
 
@@ -60,7 +63,7 @@ const SuggestionsMenu = forwardRef<HTMLDivElement, SuggestionsMenuProps>(
       setCursor(nextCursor)
     }
 
-    useEffect(() => {
+    React.useEffect(() => {
       resetCursor()
     }, [itemCount])
 
@@ -71,7 +74,7 @@ const SuggestionsMenu = forwardRef<HTMLDivElement, SuggestionsMenuProps>(
       return Array.from(nodeList)
     }
 
-    useEffect(() => {
+    React.useEffect(() => {
       if (!ref.current || typeof cursor !== 'number') return
       if (cursor < 0 || cursor > itemCount) return
 
@@ -106,7 +109,7 @@ const SuggestionsMenu = forwardRef<HTMLDivElement, SuggestionsMenuProps>(
       evt.preventDefault()
     }, props.onKeyDown)
 
-    const items = useMemo(() => {
+    const items = React.useMemo(() => {
       if (itemCount <= 0) return <MenuItem disabled>no results found</MenuItem>
 
       return suggestions.map(sug => (

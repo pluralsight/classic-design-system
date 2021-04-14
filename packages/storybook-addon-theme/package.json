@@ -16,6 +16,12 @@
     "build": "tsc --project tsconfig.build.json --module commonjs --target es5",
     "build:watch": "yarn build --watch"
   },
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.js",
+    "node": "./dist/index.js",
+    "default": "./dist/index.js"
+  },
   "types": "dist/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^7.0.0",

@@ -1,11 +1,11 @@
-import React, { MouseEvent, ReactText } from 'react'
-import { css, compose, keyframes } from 'glamor'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   useMenuRef
 } from '@pluralsight/ps-design-system-util'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
@@ -16,13 +16,17 @@ import { Divider } from './divider'
 import { Ellipsis } from './ellipsis'
 import { Item } from './item'
 
-const slide = keyframes(stylesheet['@keyframes psds-menu__keyframes__slide'])
+const glamor = glamorDefault || glamorExports
+
+const slide = glamor.keyframes(
+  stylesheet['@keyframes psds-menu__keyframes__slide']
+)
 
 const styles = ({ origin }: { origin?: ValueOf<typeof vars.origins> }) =>
-  compose(
-    css(stylesheet['.psds-menu']),
-    css(stylesheet[`.psds-menu--origin-${origin}`]),
-    css(stylesheet['.psds-menu__animation']({ slide }))
+  glamor.compose(
+    glamor.css(stylesheet['.psds-menu']),
+    glamor.css(stylesheet[`.psds-menu--origin-${origin}`]),
+    glamor.css(stylesheet['.psds-menu__animation']({ slide }))
   )
 
 interface MenuStatics {
@@ -37,8 +41,8 @@ interface MenuStatics {
 
 interface MenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
   selectedItem?: {
-    id: ReactText
-    name: ReactText
+    id: React.ReactText
+    name: React.ReactText
   }
   optionRole?: string
   useActive?: (
@@ -47,7 +51,7 @@ interface MenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
     active: boolean
     handleActiveState: (event: React.FocusEvent<Element>) => void
   }
-  onClick?: (evt: MouseEvent, selectedItem: SelectedItem) => void
+  onClick?: (evt: React.MouseEvent, selectedItem: SelectedItem) => void
   origin?: ValueOf<typeof vars.origins>
 }
 type MenuComponent = RefForwardingComponent<

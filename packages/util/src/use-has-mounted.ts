@@ -1,9 +1,9 @@
-import { useEffect, useRef } from 'react'
+import React from 'react'
 
 export function useHasMounted(): boolean {
-  const ref = useRef(false)
+  const ref = React.useRef(false)
 
-  useEffect(() => {
+  React.useEffect(() => {
     ref.current = true
 
     function reset() {

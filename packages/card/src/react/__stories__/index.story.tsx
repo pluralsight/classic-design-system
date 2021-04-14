@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react'
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
-import Card, { CardProps } from '..'
+import Card, { CardProps } from '../index'
 import { StoryFn } from '@storybook/addons'
 
 const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>

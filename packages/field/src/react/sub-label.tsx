@@ -3,31 +3,35 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { compose, css } from 'glamor'
-import React, { forwardRef } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import stylesheet from '../css/sub-label'
 
+const glamor = glamorDefault || glamorExports
+
 const styles = {
   subLabel: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-field__sub-label']),
-      css(stylesheet[`.psds-field__sub-label.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-field__sub-label']),
+      glamor.css(stylesheet[`.psds-field__sub-label.psds-theme--${themeName}`])
     )
 }
 
 interface SubLabelProps extends HTMLPropsFor<'div'> {}
 
-const SubLabel = forwardRef<HTMLDivElement, SubLabelProps>((props, ref) => {
-  const { children, ...rest } = props
-  const themeName = useTheme()
+const SubLabel = React.forwardRef<HTMLDivElement, SubLabelProps>(
+  (props, ref) => {
+    const { children, ...rest } = props
+    const themeName = useTheme()
 
-  return (
-    <div ref={ref} {...styles.subLabel(themeName)} {...rest}>
-      {children}
-    </div>
-  )
-})
+    return (
+      <div ref={ref} {...styles.subLabel(themeName)} {...rest}>
+        {children}
+      </div>
+    )
+  }
+)
 
 SubLabel.displayName = 'Field.SubLabel'
 

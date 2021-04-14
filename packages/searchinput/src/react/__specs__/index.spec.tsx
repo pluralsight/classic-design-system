@@ -1,8 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import React, { useState } from 'react'
-
 import { fireEvent, render, screen } from '@testing-library/react'
-import SearchInput from '..'
+import React from 'react'
+
+import SearchInput from '../index'
 
 describe('SearchInput', () => {
   it('focuses input when clear button clicked', () => {
@@ -17,7 +17,7 @@ describe('SearchInput', () => {
 
   it('clears input when clear button clicked', () => {
     const SearchInputWithState = () => {
-      const [value, setValue] = useState('')
+      const [value, setValue] = React.useState('')
       const onChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
         setValue(evt.target.value)
       }

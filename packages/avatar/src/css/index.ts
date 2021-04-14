@@ -4,7 +4,7 @@ import {
   colorsBackgroundUtilityCsv
 } from '@pluralsight/ps-design-system-core'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 export default {
   '.psds-avatar': {

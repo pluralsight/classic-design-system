@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import Halo from '..'
+import Halo from '../index'
 import Focusable from './focusable'
 
 const gapSizeStories = storiesOf('Halo/gapSizes', module)

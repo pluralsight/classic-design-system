@@ -10,6 +10,12 @@
   "scripts": {
     "build": "postcss css/index.css --dir dist"
   },
+  "exports": {
+    "import": "./dist/index.css",
+    "require": "./dist/index.css",
+    "node": "./dist/index.css",
+    "default": "./dist/index.css"
+  },
   "style": "dist/index.css",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^7.0.0",

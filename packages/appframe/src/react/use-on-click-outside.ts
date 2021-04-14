@@ -1,11 +1,12 @@
-import { RefObject, useCallback } from 'react'
+import React from 'react'
+
 import useOnDocumentClick, { Callback } from './use-on-document-click'
 
 export default function useOnClickOutside<El extends HTMLElement>(
-  ref: RefObject<El>,
+  ref: React.RefObject<El>,
   handler: Callback
 ) {
-  const handleClick = useCallback<Callback>(
+  const handleClick = React.useCallback<Callback>(
     evt => {
       const target = evt.target as HTMLElement
       const isInner = ref.current && ref.current.contains(target)

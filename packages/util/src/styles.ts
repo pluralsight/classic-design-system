@@ -1,7 +1,7 @@
 /* eslint-disable camelcase */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { CSSProperties } from 'react'
+import React from 'react'
 
 export type PropsWithStylesFor<
   Selectors extends keyof any,
@@ -11,7 +11,7 @@ export type PropsWithStylesFor<
 } & P
 
 export type StylesForProp<Selectors extends keyof any> = Partial<
-  Record<Selectors, CSSProperties>
+  Record<Selectors, React.CSSProperties>
 >
 
 export const stylesFor = (

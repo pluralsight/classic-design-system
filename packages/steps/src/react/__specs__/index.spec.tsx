@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Steps from '..'
+import Steps from '../index'
 
 describe('Steps', () => {
   it('renders', () => {

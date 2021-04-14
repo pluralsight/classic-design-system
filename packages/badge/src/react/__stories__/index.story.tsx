@@ -29,7 +29,8 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
       style={{
         display: 'grid',
         gap: '20px',
-        gridTemplateColumns: Array(cols).fill('1fr').join(' ')
+        gridTemplateColumns: Array(cols).fill('1fr').join(' '),
+        justifyItems: 'left'
       }}
       {...rest}
     />

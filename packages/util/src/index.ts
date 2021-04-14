@@ -1,7 +1,7 @@
 export * from './jest'
-export * from './menu-keys'
+export * from './menu-keys/index'
 export * from './primatives'
-export * from './types'
+export * from './types/index'
 
 export { callAll } from './call-all'
 export { canUseDOM } from './can-use-dom'
