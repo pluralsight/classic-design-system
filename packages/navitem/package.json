@@ -22,10 +22,10 @@
     "test:watch": "yarn test --watchAll"
   },
   "exports": {
-    "default": "./dist/cjs/index.js",
     "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js",
     "node": "./dist/cjs/index.js",
-    "require": "./dist/cjs/index.js"
+    "default": "./dist/cjs/index.js"
   },
   "sideEffects": false,
   "style": "dist/index.css",
