@@ -17,10 +17,10 @@
     "build:watch": "yarn build --watch"
   },
   "exports": {
-    "default": "./dist/index.js",
     "import": "./dist/index.js",
+    "require": "./dist/index.js",
     "node": "./dist/index.js",
-    "require": "./dist/index.js"
+    "default": "./dist/index.js"
   },
   "types": "dist/index.d.ts",
   "dependencies": {
