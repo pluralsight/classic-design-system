@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@13.0.0...@pluralsight/ps-design-system-dialog@13.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **dialog:** properly order the conditional exports in package ([9b67438](https://github.com/pluralsight/design-system/commit/9b67438aa48666a7b27bf1ff2f541c6156612885))
+
+
+
+
+
 # [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@12.0.0...@pluralsight/ps-design-system-dialog@13.0.0) (2021-04-14)
 
 

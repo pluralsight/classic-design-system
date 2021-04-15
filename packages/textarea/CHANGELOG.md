@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.0.0...@pluralsight/ps-design-system-textarea@9.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **textarea:** properly order the conditional exports in package ([a45a988](https://github.com/pluralsight/design-system/commit/a45a988d9dac136b1488d625864170ce753187b0))
+
+
+
+
+
 # [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@8.1.9...@pluralsight/ps-design-system-textarea@9.0.0) (2021-04-14)
 
 

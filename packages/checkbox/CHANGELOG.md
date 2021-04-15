@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@9.0.0...@pluralsight/ps-design-system-checkbox@9.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **checkbox:** properly order the conditional exports in package ([7649cb0](https://github.com/pluralsight/design-system/commit/7649cb085a0cbb752c709d8f97d44965e585d57d))
+
+
+
+
+
 # [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@8.0.0...@pluralsight/ps-design-system-checkbox@9.0.0) (2021-04-14)
 
 

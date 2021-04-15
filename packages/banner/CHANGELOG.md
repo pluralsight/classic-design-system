@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@10.0.0...@pluralsight/ps-design-system-banner@10.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **banner:** properly order the conditional exports in package ([d766cbf](https://github.com/pluralsight/design-system/commit/d766cbfcfc2741ccab2f231069323e697a58691f))
+
+
+
+
+
 # [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@9.0.9...@pluralsight/ps-design-system-banner@10.0.0) (2021-04-14)
 
 

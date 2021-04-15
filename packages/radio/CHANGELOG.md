@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@10.0.0...@pluralsight/ps-design-system-radio@10.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **radio:** properly order the conditional exports in package ([cfc7db8](https://github.com/pluralsight/design-system/commit/cfc7db83043808a6fe9bcc513c62ae5bca3eef56))
+
+
+
+
+
 # [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@9.0.0...@pluralsight/ps-design-system-radio@10.0.0) (2021-04-14)
 
 

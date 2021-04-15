@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.0.0...@pluralsight/ps-design-system-util@9.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **util:** properly order the conditional exports in package ([aca2b46](https://github.com/pluralsight/design-system/commit/aca2b4675a9faf49047dd883b17e832a5c054f1e))
+
+
+
+
+
 # [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@8.0.0...@pluralsight/ps-design-system-util@9.0.0) (2021-04-14)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-menu@2.0.0...@pluralsight/ps-design-system-menu@2.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **menu:** properly order the conditional exports in package ([693b15b](https://github.com/pluralsight/design-system/commit/693b15baef580bb5ba98901727498165190ef555))
+
+
+
+
+
 # [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-menu@1.0.5...@pluralsight/ps-design-system-menu@2.0.0) (2021-04-14)
 
 

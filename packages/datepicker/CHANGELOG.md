@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.0.0...@pluralsight/ps-design-system-datepicker@15.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **datepicker:** properly order the conditional exports in package ([cb6b7e7](https://github.com/pluralsight/design-system/commit/cb6b7e764928f89e108a494b6893cf241821ba24))
+
+
+
+
+
 # [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.4...@pluralsight/ps-design-system-datepicker@15.0.0) (2021-04-14)
 
 

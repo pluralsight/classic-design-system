@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-breadcrumb",
-  "version": "11.0.0",
+  "version": "11.0.1",
   "description": "Design System component for breadcrumb ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -30,9 +30,9 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^22.0.0",
-    "@pluralsight/ps-design-system-core": "^8.0.0",
-    "@pluralsight/ps-design-system-icon": "^23.0.0"
+    "@pluralsight/ps-design-system-button": "^22.0.1",
+    "@pluralsight/ps-design-system-core": "^8.0.1",
+    "@pluralsight/ps-design-system-icon": "^23.0.1"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.5.0",
-    "@pluralsight/ps-design-system-util": "^9.0.0"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.5.1",
+    "@pluralsight/ps-design-system-util": "^9.0.1"
   }
 }

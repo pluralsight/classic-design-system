@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@4.0.0...@pluralsight/ps-design-system-navuser@4.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **navuser:** properly order the conditional exports in package ([49e2614](https://github.com/pluralsight/design-system/commit/49e2614aae14d9958be52b52c12bc1c73b8b124a))
+
+
+
+
+
 # [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@3.0.0...@pluralsight/ps-design-system-navuser@4.0.0) (2021-04-14)
 
 

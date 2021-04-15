@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@5.0.0...@pluralsight/ps-design-system-normalize@5.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **normalize:** properly order the conditional exports in package ([19b1623](https://github.com/pluralsight/design-system/commit/19b1623ef2ac760e78f6bef6ffe3881886af4185))
+
+
+
+
+
 # [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@4.4.1...@pluralsight/ps-design-system-normalize@5.0.0) (2021-04-14)
 
 

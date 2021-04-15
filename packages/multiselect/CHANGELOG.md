@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@2.0.0...@pluralsight/ps-design-system-multiselect@2.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **multiselect:** properly order the conditional exports in package ([9277e8b](https://github.com/pluralsight/design-system/commit/9277e8b60cbe9d77471e0b4c47f34988a2ad5693))
+
+
+
+
+
 # [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@1.2.6...@pluralsight/ps-design-system-multiselect@2.0.0) (2021-04-14)
 
 

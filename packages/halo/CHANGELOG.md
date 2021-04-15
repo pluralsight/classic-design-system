@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@10.0.0...@pluralsight/ps-design-system-halo@10.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **halo:** properly order the conditional exports in package ([f02755b](https://github.com/pluralsight/design-system/commit/f02755ba68f003f7d66dd8a46954a1b4156d8cc5))
+
+
+
+
+
 # [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@9.0.0...@pluralsight/ps-design-system-halo@10.0.0) (2021-04-14)
 
 

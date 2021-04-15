@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@9.0.0...@pluralsight/ps-design-system-searchinput@9.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **searchinput:** properly order the conditional exports in package ([23fc608](https://github.com/pluralsight/design-system/commit/23fc608cc8b63770a1ba5a3a135d85874c7d3da6))
+
+
+
+
+
 # [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@8.0.9...@pluralsight/ps-design-system-searchinput@9.0.0) (2021-04-14)
 
 

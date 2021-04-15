@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [22.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.0.0...@pluralsight/ps-design-system-button@22.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **button:** properly order the conditional exports in package ([e4af566](https://github.com/pluralsight/design-system/commit/e4af56677d13ef7975aa97282a29f3c8f09bd9b8))
+
+
+
+
+
 # [22.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@21.0.8...@pluralsight/ps-design-system-button@22.0.0) (2021-04-14)
 
 

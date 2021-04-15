@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@8.0.0...@pluralsight/ps-design-system-tooltip@8.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **tooltip:** properly order the conditional exports in package ([ed26e94](https://github.com/pluralsight/design-system/commit/ed26e9489e480c6a7c52fd03f569f9ba1b976c3a))
+
+
+
+
+
 # [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@7.1.8...@pluralsight/ps-design-system-tooltip@8.0.0) (2021-04-14)
 
 

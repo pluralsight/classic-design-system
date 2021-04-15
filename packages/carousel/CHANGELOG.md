@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@12.0.0...@pluralsight/ps-design-system-carousel@12.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **carousel:** properly order the conditional exports in package ([d4de3c8](https://github.com/pluralsight/design-system/commit/d4de3c88e8dd5973904e040bf16388fdb3354945))
+
+
+
+
+
 # [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@11.2.8...@pluralsight/ps-design-system-carousel@12.0.0) (2021-04-14)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@11.0.0...@pluralsight/ps-design-system-drawer@11.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **drawer:** properly order the conditional exports in package ([2e0f2f3](https://github.com/pluralsight/design-system/commit/2e0f2f3760cb7a16eb0ff5b7f28f095510985a04))
+
+
+
+
+
 # [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@10.0.9...@pluralsight/ps-design-system-drawer@11.0.0) (2021-04-14)
 
 

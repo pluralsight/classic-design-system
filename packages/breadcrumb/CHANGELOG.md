@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@11.0.0...@pluralsight/ps-design-system-breadcrumb@11.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **breadcrumb:** properly order the conditional exports in package ([881722e](https://github.com/pluralsight/design-system/commit/881722eab4857e260c254b5a15a64716b9452a4b))
+
+
+
+
+
 # [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@10.0.9...@pluralsight/ps-design-system-breadcrumb@11.0.0) (2021-04-14)
 
 

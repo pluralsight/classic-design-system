@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@17.0.0...@pluralsight/ps-design-system-actionmenu@17.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **actionmenu:** conditional exports order ([ae530b4](https://github.com/pluralsight/design-system/commit/ae530b48bd12c757a1ce4705eb5c46ab079063a9))
+
+
+
+
+
 # [17.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@16.2.5...@pluralsight/ps-design-system-actionmenu@17.0.0) (2021-04-14)
 
 
