@@ -1,8 +1,7 @@
 import { fireEvent, render } from '@testing-library/react'
-
 import React from 'react'
 
-import Typeahead from '..'
+import Typeahead from '../index'
 
 describe('Typeahead', () => {
   // NOTE: suppressing unnecessary warnings from test renderer.

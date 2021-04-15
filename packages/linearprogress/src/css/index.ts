@@ -33,6 +33,6 @@ export default {
     backgroundColor: colorsTextIcon.highOnLight
   },
   '.psds-linearprogress__fg--complete': {
-    backgroundColor: colorsGreen.base
+    backgroundColor: colorsGreen[6]
   }
 }

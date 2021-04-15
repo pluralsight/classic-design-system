@@ -1,18 +1,18 @@
-import { storiesOf } from '@storybook/react'
-import React, { useRef } from 'react'
-import { action } from '@storybook/addon-actions'
-
-import Select from '..'
+import { colorsStatus } from '@pluralsight/ps-design-system-core'
 import Menu, {
   MenuItemWithDescription
 } from '@pluralsight/ps-design-system-menu'
-import { colorsStatus } from '@pluralsight/ps-design-system-core'
 import { RefFor } from '@pluralsight/ps-design-system-util'
+import { action } from '@storybook/addon-actions'
+import { storiesOf } from '@storybook/react'
+import React from 'react'
+
+import Select from '../index'
 
 storiesOf('button', module)
   .add('Select.Button', () => <Select.Button>Hello</Select.Button>)
   .add('Select.Button: focused', () => {
-    const ref = useRef<HTMLButtonElement>()
+    const ref = React.useRef<HTMLButtonElement>()
     ref.current && ref.current.focus()
     return <Select.Button ref={ref as RefFor<'button'>}>Hello</Select.Button>
   })

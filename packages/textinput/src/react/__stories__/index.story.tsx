@@ -1,12 +1,10 @@
-import { action } from '@storybook/addon-actions'
-import { storiesOf } from '@storybook/react'
-
-import React from 'react'
-
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
+import { action } from '@storybook/addon-actions'
+import { storiesOf } from '@storybook/react'
+import React from 'react'
 
-import TextInput from '..'
+import TextInput from '../index'
 
 const PaddingDecorator = (storyFn: () => React.ReactNode) => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>

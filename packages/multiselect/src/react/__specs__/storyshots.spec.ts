@@ -4,7 +4,7 @@ import initStoryshots, {
 } from '@storybook/addon-storyshots'
 
 initStoryshots({
-  configPath: path.resolve(__dirname, '../../../.storybook'),
+  configPath: path.resolve(__dirname, '../../../.storybook-storyshots'),
   framework: 'react',
   test: snapshotWithOptions(() => ({ createNodeMock }))
 })

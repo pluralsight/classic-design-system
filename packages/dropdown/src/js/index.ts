@@ -1,16 +1,4 @@
-import {
-  Children,
-  ReactElement,
-  ReactNode,
-  ReactText,
-  Ref,
-  createContext,
-  useEffect,
-  useImperativeHandle,
-  useMemo,
-  useRef,
-  useState
-} from 'react'
+import React from 'react'
 import {
   canUseDOM,
   uniqueId as defaultUniqueId,
@@ -19,7 +7,7 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import innerText from 'react-innertext'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 interface DropdownContextValue {
   activeItem?: ItemData
@@ -27,7 +15,7 @@ interface DropdownContextValue {
   onMenuClick: (evt: React.MouseEvent, value?: number | string) => void
   selectedItem?: ItemData
 }
-export const DropdownContext = createContext<DropdownContextValue>({
+export const DropdownContext = React.createContext<DropdownContextValue>({
   onDocumentEvents: _evt => {},
   onMenuClick: (_evt, _value) => {}
 })
@@ -37,8 +25,8 @@ interface UseDropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
   disabled?: boolean
   className?: string
   error?: boolean
-  label?: ReactNode
-  menu?: ReactElement | ReactElement[]
+  label?: React.ReactNode
+  menu?: React.ReactElement | React.ReactElement[]
   onChange?: (
     evt: React.MouseEvent | React.KeyboardEvent,
     value?: React.ReactText
@@ -47,7 +35,7 @@ interface UseDropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
   placeholder?: string
   size?: ValueOf<typeof vars.sizes>
   style?: React.CSSProperties
-  subLabel?: ReactNode
+  subLabel?: React.ReactNode
   uniqueId?: (prefix: string) => string
   value?: number | string
 }
@@ -109,16 +97,16 @@ const sortDropdownProps = ({
 // TODO: move to react folder? Uses React APIs.
 export const useDropdown = (
   props: UseDropdownProps,
-  forwardedRef: Ref<HTMLButtonElement>
+  forwardedRef: React.Ref<HTMLButtonElement>
 ) => {
   const uid = props.uniqueId || defaultUniqueId
-  const buttonId = useMemo(() => uid('dropdown-button-'), [])
-  const labelId = useMemo(() => uid('dropdown-label-'), [])
-  const menuId = useMemo(() => uid('dropdown-menu-'), [])
+  const buttonId = React.useMemo(() => uid('dropdown-button-'), [])
+  const labelId = React.useMemo(() => uid('dropdown-label-'), [])
+  const menuId = React.useMemo(() => uid('dropdown-menu-'), [])
   const { hook, ...rest } = sortDropdownProps(props)
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setOpen] = React.useState(false)
 
-  const items = useMemo(() => parseMenuChildren(menuId, hook.menu), [
+  const items = React.useMemo(() => parseMenuChildren(menuId, hook.menu), [
     menuId,
     hook.menu
   ])
@@ -130,13 +118,13 @@ export const useDropdown = (
   )
   const itemMatchingValue = items[itemMatchingValueIndex]
 
-  const [selectedItem, setSelectedItem] = useState(itemMatchingValue)
+  const [selectedItem, setSelectedItem] = React.useState(itemMatchingValue)
 
-  useEffect(() => {
+  React.useEffect(() => {
     setSelectedItem(itemMatchingValue)
   }, [itemMatchingValue])
 
-  useEffect(() => {
+  React.useEffect(() => {
     function handleEscape(evt: KeyboardEvent) {
       if (evt.key === 'Escape') {
         setOpen(false)
@@ -183,14 +171,14 @@ export const useDropdown = (
 
   const longestLabel = getLongestMenuLabel(items, hook.placeholder)
 
-  const buttonRef = useRef<HTMLButtonElement>(null)
-  useImperativeHandle(
+  const buttonRef = React.useRef<HTMLButtonElement>(null)
+  React.useImperativeHandle(
     forwardedRef,
     () => (buttonRef.current as unknown) as HTMLButtonElement
   )
 
   const inNode = canUseDOM() ? document.body : undefined
-  const [menuPosition, setMenuPosition] = useState({
+  const [menuPosition, setMenuPosition] = React.useState({
     left: 0,
     top: 0,
     width: 0
@@ -244,8 +232,8 @@ export const useDropdown = (
 
 function findIndexMatchingValueOrLabel(
   items: ItemData[],
-  label?: ReactText,
-  value?: ReactText
+  label?: React.ReactText,
+  value?: React.ReactText
 ): number {
   return items.findIndex(
     item =>
@@ -256,8 +244,8 @@ function findIndexMatchingValueOrLabel(
 
 function findItemMatchingValueOrLabel(
   items: ItemData[],
-  label?: ReactText,
-  value?: ReactText
+  label?: React.ReactText,
+  value?: React.ReactText
 ) {
   const index = findIndexMatchingValueOrLabel(items, label, value)
   return items[index]
@@ -271,11 +259,11 @@ export interface ItemData {
 
 export const parseMenuChildren = (
   menuId: string,
-  menu?: ReactElement | ReactElement[]
+  menu?: React.ReactElement | React.ReactElement[]
 ): ItemData[] => {
   if (!menu) return []
 
-  function parseItem(item: ReactElement) {
+  function parseItem(item: React.ReactElement) {
     return innerText(item) !== ''
       ? {
           id: formatItemId(menuId, item.props.children, item.props.value),
@@ -288,15 +276,15 @@ export const parseMenuChildren = (
   if (Array.isArray(menu)) {
     return menu.map(parseItem).filter(Boolean) as ItemData[]
   } else {
-    if (Children.count(menu.props.children) <= 0) return []
-    else return Children.map(menu.props.children, parseItem)
+    if (React.Children.count(menu.props.children) <= 0) return []
+    else return React.Children.map(menu.props.children, parseItem)
   }
 }
 
 export const formatItemId = (
   menuId: string,
   label: string,
-  value?: ReactText
+  value?: React.ReactText
 ): string => {
   return `${menuId}-${value || label.toString().replace(/ /g, '')}`
 }

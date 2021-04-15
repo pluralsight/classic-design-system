@@ -1,13 +1,4 @@
-import React, {
-  Ref,
-  useCallback,
-  useEffect,
-  useImperativeHandle,
-  useRef,
-  useState,
-  FocusEventHandler,
-  ReactText
-} from 'react'
+import React from 'react'
 import {
   useUniqueId,
   ValueOf,
@@ -16,29 +7,28 @@ import {
   canUseDOM
 } from '@pluralsight/ps-design-system-util'
 
-import * as vars from '../vars'
-
 import { useMenuRef, handleMenuKeyDownEvents } from './menuKeyEvents'
+import * as vars from '../vars/index'
 
 export const useActive = (
   ref: React.MutableRefObject<HTMLLIElement | undefined>
 ) => {
-  const [active, setActive] = useState(false)
-  const handleActiveState = useCallback(() => {
+  const [active, setActive] = React.useState(false)
+  const handleActiveState = React.useCallback(() => {
     ref.current && setActive(document.activeElement === ref.current)
   }, [ref, setActive])
-  useEffect(() => {
+  React.useEffect(() => {
     handleActiveState()
   }, [handleActiveState])
   return {
     active,
-    handleActiveState: handleActiveState as FocusEventHandler
+    handleActiveState: handleActiveState as React.FocusEventHandler
   }
 }
 
 interface SelectedItem {
-  id: ReactText
-  name: ReactText
+  id: React.ReactText
+  name: React.ReactText
 }
 
 export interface UseListboxProps
@@ -96,22 +86,24 @@ const sortListboxProps = ({
 
 export const useListbox = (
   props: UseListboxProps,
-  forwardedRef?: Ref<HTMLButtonElement>
+  forwardedRef?: React.Ref<HTMLButtonElement>
 ) => {
   const { hook, ...rest } = sortListboxProps(props)
   const uid = useUniqueId()
   const buttonId = `select-button-${hook.dataTestId || uid}`
   const menuId = `select-menu-${hook.dataTestId || uid}`
-  const [isOpen, setOpen] = useState<boolean>(hook.mountOpen)
+  const [isOpen, setOpen] = React.useState<boolean>(hook.mountOpen)
 
-  const [selectedItem, setSelectedItem] = useState<SelectedItem>(hook.value)
+  const [selectedItem, setSelectedItem] = React.useState<SelectedItem>(
+    hook.value
+  )
 
   function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
     if (
       evt.type === 'click' ||
       (evt.type === 'keydown' &&
         'key' in evt &&
-        (evt.key === 'Enter' || 'ArrowDown' || 'ArrowUp'))
+        ['Enter', 'ArrowDown', 'ArrowUp', ' '].includes(evt.key))
     ) {
       evt.preventDefault()
       evt.stopPropagation()
@@ -135,8 +127,8 @@ export const useListbox = (
     }
   }
 
-  const buttonRef = useRef<HTMLButtonElement>(null)
-  useImperativeHandle(
+  const buttonRef = React.useRef<HTMLButtonElement>(null)
+  React.useImperativeHandle(
     forwardedRef,
     () => (buttonRef.current as unknown) as HTMLButtonElement
   )
@@ -147,7 +139,7 @@ export const useListbox = (
       buttonRef.current.focus()
     }
   }
-  useEffect(() => {
+  React.useEffect(() => {
     function handleEscape(evt: KeyboardEvent) {
       if (evt.key === 'Escape') {
         setOpen(false)

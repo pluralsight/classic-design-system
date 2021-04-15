@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@13.0.0...@pluralsight/ps-design-system-dialog@13.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **dialog:** properly order the conditional exports in package ([9b67438](https://github.com/pluralsight/design-system/commit/9b67438aa48666a7b27bf1ff2f541c6156612885))
+
+
+
+
+
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@12.0.0...@pluralsight/ps-design-system-dialog@13.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **dialog:** add exports to package.json as alternate entry point ([29f3adc](https://github.com/pluralsight/design-system/commit/29f3adc2e4cc701c18d822a392d36414b9d7390b))
+* **dialog:** convert to esm ([09210c8](https://github.com/pluralsight/design-system/commit/09210c83f1c083b4b662233e7781253f5808d530))
+
+
+### BREAKING CHANGES
+
+* **dialog:** add exports to package.json
+* **dialog:** Drop cjs; esm only; all in on tree shaking
+* **dialog:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@11.0.7...@pluralsight/ps-design-system-dialog@12.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [11.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@11.0.6...@pluralsight/ps-design-system-dialog@11.0.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dialog
+
+
+
+
+
 ## [11.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@11.0.5...@pluralsight/ps-design-system-dialog@11.0.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

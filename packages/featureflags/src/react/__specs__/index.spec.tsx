@@ -2,7 +2,7 @@ import { render } from '@testing-library/react'
 import { renderHook } from '@testing-library/react-hooks'
 import React from 'react'
 
-import FeatureFlags, { useFeatureFlags } from '..'
+import FeatureFlags, { useFeatureFlags } from '../index'
 
 describe('FeatureFlags', () => {
   const MockComponent: React.FC<

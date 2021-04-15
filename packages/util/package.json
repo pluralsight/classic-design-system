@@ -1,22 +1,31 @@
 {
   "name": "@pluralsight/ps-design-system-util",
-  "version": "7.3.0",
+  "version": "9.0.1",
   "description": "Runtime dependencies for utilitarian tasks. Analogous to a lodash.",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "module": "dist/esm/index.mjs",
   "scripts": {
-    "build": "run-s build:cjs build:esm",
+    "build": "run-s build:esm build:cjs",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
-    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "build:esm": "run-s compile:esm rewrite:esm",
     "build:watch": "yarn build:esm --watch",
+    "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "rewrite:esm": "tsc-esm --project tsconfig.build.json",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test --watch"
   },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js",
+    "node": "./dist/cjs/index.js",
+    "default": "./dist/cjs/index.js"
+  },
+  "sideEffects": false,
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "exenv": "^1.2.2",
@@ -26,6 +35,6 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^2.1.0"
+    "@pluralsight/ps-design-system-build": "^3.0.0"
   }
 }

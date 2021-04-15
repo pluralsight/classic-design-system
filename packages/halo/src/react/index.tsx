@@ -8,19 +8,21 @@ import {
   ValueOf,
   canUseDOM
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import polyfillFocusWithin from 'focus-within'
-import React, { forwardRef } from 'react'
+import React from 'react'
 
-import stylesheet, { BASE_CLASSNAME, themeClasses } from '../css'
-import * as vars from '../vars'
+import stylesheet, { BASE_CLASSNAME, themeClasses } from '../css/index'
+import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 if (canUseDOM()) polyfillFocusWithin(document)
 
 export type StyleFn<P> = (
   themeName: ValueOf<typeof themeNames>,
   props: P
-) => StyleAttribute
+) => glamorExports.StyleAttribute
 
 const styles: { [name: string]: StyleFn<InternalHaloProps> } = {
   halo: (themeName, props) => {
@@ -34,17 +36,17 @@ const styles: { [name: string]: StyleFn<InternalHaloProps> } = {
     const visible = `${BASE_CLASSNAME}--visible`
     const visibleOnFocus = `${BASE_CLASSNAME}--visible-on-focus`
 
-    return compose(
-      css(stylesheet[base]),
-      css(stylesheet[theme]),
-      css(stylesheet[shape]),
-      css(stylesheet[gapSize]),
-      css(stylesheet[gapTheme]),
+    return glamor.compose(
+      glamor.css(stylesheet[base]),
+      glamor.css(stylesheet[theme]),
+      glamor.css(stylesheet[shape]),
+      glamor.css(stylesheet[gapSize]),
+      glamor.css(stylesheet[gapTheme]),
 
-      props.inline && css(stylesheet[`${BASE_CLASSNAME}--inline`]),
-      props.error && css(stylesheet[`${BASE_CLASSNAME}--error`]),
-      props.visible && css(stylesheet[visible]),
-      props.visibleOnFocus && css(stylesheet[visibleOnFocus])
+      props.inline && glamor.css(stylesheet[`${BASE_CLASSNAME}--inline`]),
+      props.error && glamor.css(stylesheet[`${BASE_CLASSNAME}--error`]),
+      props.visible && glamor.css(stylesheet[visible]),
+      props.visibleOnFocus && glamor.css(stylesheet[visibleOnFocus])
     )
   }
 }
@@ -71,7 +73,7 @@ type HaloComponent = RefForwardingComponent<
   HaloStatics
 >
 
-const Halo = forwardRef((props, ref) => {
+const Halo = React.forwardRef((props, ref) => {
   const themeName = useTheme()
 
   const {

@@ -1,36 +1,38 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { compose, css, media } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
-import { pageHeadingLayoutCSS as stylesheet } from '../css'
+import { pageHeadingLayoutCSS as stylesheet } from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   actions: () => {
     const label = 'psds-page-heading-layout__actions'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
 
-      media(
+      glamor.media(
         '(min-width: 769px)',
-        css(stylesheet['@media (min-width: 769px)'][`.${label}`])
+        glamor.css(stylesheet['@media (min-width: 769px)'][`.${label}`])
       )
     )
   },
   heading: () => {
     const label = 'psds-page-heading-layout__heading'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
 
-      media(
+      glamor.media(
         '(min-width: 769px)',
-        css(stylesheet['@media (min-width: 769px)'][`.${label}`])
+        glamor.css(stylesheet['@media (min-width: 769px)'][`.${label}`])
       )
     )
   },
-  layout: () => css(stylesheet['.psds-page-heading-layout'])
+  layout: () => glamor.css(stylesheet['.psds-page-heading-layout'])
 }
 
 interface PageHeadingLayoutProps extends HTMLPropsFor<'div'> {

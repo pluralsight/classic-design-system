@@ -1,5 +1,5 @@
-import { RefObject, useCallback, useEffect, useState } from 'react'
 import { canUseEventListeners, canUseDOM } from 'exenv'
+import React from 'react'
 
 import { usePrevious } from '@pluralsight/ps-design-system-util'
 
@@ -9,24 +9,26 @@ interface EventHandlers {
 }
 
 export default function useOnInnerFocus<El extends HTMLElement>(
-  ref: RefObject<El>,
+  ref: React.RefObject<El>,
   { onEnter, onLeave }: EventHandlers
 ) {
-  const refContainsActiveElement = useCallback(() => {
+  const refContainsActiveElement = React.useCallback(() => {
     if (!canUseDOM || !ref.current) return false
 
     return ref.current.contains(document.activeElement)
   }, [ref])
 
-  const [activeElInRef, setActiveElInRef] = useState(refContainsActiveElement)
+  const [activeElInRef, setActiveElInRef] = React.useState(
+    refContainsActiveElement
+  )
   const prevActiveElInRef = usePrevious(activeElInRef)
 
-  const handleFocus = useCallback(() => {
+  const handleFocus = React.useCallback(() => {
     const nextActive = refContainsActiveElement()
     setActiveElInRef(nextActive)
   }, [refContainsActiveElement, setActiveElInRef])
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!exists(activeElInRef) || !exists(prevActiveElInRef)) return
     if (prevActiveElInRef === activeElInRef) return
 
@@ -37,7 +39,7 @@ export default function useOnInnerFocus<El extends HTMLElement>(
     else if (leaving) onLeave()
   }, [activeElInRef, prevActiveElInRef, onEnter, onLeave])
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!canUseEventListeners) return
 
     document.addEventListener('focus', handleFocus, true)

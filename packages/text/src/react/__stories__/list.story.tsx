@@ -2,7 +2,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import List from '../list'
+import List from '../list/index'
 
 const PaddingDecorator = (storyFn: () => React.ReactNode) => (
   <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>

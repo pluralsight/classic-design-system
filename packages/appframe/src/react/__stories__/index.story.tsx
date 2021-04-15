@@ -2,10 +2,9 @@ import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import { P } from '@pluralsight/ps-design-system-text'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { css } from 'glamor'
-import React, { ComponentProps, useState } from 'react'
+import React from 'react'
 
-import AppFrame from '..'
-
+import AppFrame from '../index'
 import { MockContent, SideNav, TopNav } from './shared'
 
 const defaultArgs = { children: <MockContent />, topnav: <TopNav /> }
@@ -15,7 +14,7 @@ export default {
   component: AppFrame
 } as Meta
 
-const Template: Story<ComponentProps<typeof AppFrame>> = args => (
+const Template: Story<React.ComponentProps<typeof AppFrame>> = args => (
   <AppFrame {...args} />
 )
 
@@ -47,7 +46,7 @@ export const SideNavUncontrolled: Story = props => (
 SideNavUncontrolled.args = { ...defaultArgs }
 
 export const SideNavControlled: Story = props => {
-  const [sidenavOpen, setOpen] = useState(false)
+  const [sidenavOpen, setOpen] = React.useState(false)
 
   const close = () => setOpen(false)
   const open = () => setOpen(true)

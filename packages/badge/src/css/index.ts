@@ -12,8 +12,8 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import { appearances, colors } from '../vars'
-import { select } from '../js'
+import { appearances, colors } from '../vars/index'
+import { select } from '../js/index'
 
 export default {
   '.psds-badge': {

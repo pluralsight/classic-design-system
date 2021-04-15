@@ -1,55 +1,48 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
-import React, {
-  ReactNode,
-  ReactText,
-  forwardRef,
-  useContext,
-  useImperativeHandle,
-  useState,
-  useRef,
-  useEffect,
-  useCallback
-} from 'react'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import { DropdownContext } from '../js'
+import stylesheet from '../css/index'
+import { DropdownContext } from '../js/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   item: (isActive: boolean, disabled: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-dropdown__item'],
       disabled && stylesheet['.psds-dropdown__item--disabled'],
       isActive && stylesheet['.psds-dropdown__item--active']
     ),
-  itemIcon: () => css(stylesheet[`.psds-dropdown__item-icon`]),
-  itemEllipsis: () => css(stylesheet[`.psds-dropdown__item-text`]),
-  itemSelectedIcon: () => css(stylesheet['.psds-dropdown__item-selected-icon'])
+  itemIcon: () => glamor.css(stylesheet[`.psds-dropdown__item-icon`]),
+  itemEllipsis: () => glamor.css(stylesheet[`.psds-dropdown__item-text`]),
+  itemSelectedIcon: () =>
+    glamor.css(stylesheet['.psds-dropdown__item-selected-icon'])
 }
 
 interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'onClick'> {
-  children: ReactText
+  children: React.ReactText
   disabled?: boolean
-  onClick?: (evt: React.MouseEvent, value: ReactText) => void
-  icon?: ReactNode
-  value?: ReactText
+  onClick?: (evt: React.MouseEvent, value: React.ReactText) => void
+  icon?: React.ReactNode
+  value?: React.ReactText
 }
 
-export const Item = forwardRef<HTMLButtonElement, DropdownItemProps>(
+export const Item = React.forwardRef<HTMLButtonElement, DropdownItemProps>(
   ({ disabled, onClick, value, icon, children, ...rest }, forwardedRef) => {
-    const context = useContext(DropdownContext)
-    const ref = useRef<HTMLButtonElement>()
-    useImperativeHandle(
+    const context = React.useContext(DropdownContext)
+    const ref = React.useRef<HTMLButtonElement>()
+    React.useImperativeHandle(
       forwardedRef,
       // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
       () => ref.current as HTMLButtonElement
     )
-    const [active, setActive] = useState(false)
-    const isActive = useCallback(() => {
+    const [active, setActive] = React.useState(false)
+    const isActive = React.useCallback(() => {
       ref.current && setActive(document.activeElement === ref.current)
     }, [ref, setActive])
-    useEffect(() => {
+    React.useEffect(() => {
       isActive()
     }, [isActive])
     const valueExists = typeof value !== 'undefined'

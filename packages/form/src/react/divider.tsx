@@ -1,4 +1,4 @@
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import {
   useTheme,
@@ -6,11 +6,13 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   divider: (themeName: ValueOf<typeof themNames>) =>
-    css(
+    glamor.css(
       stylesheet['.psds-form-divider'],
       stylesheet[`.psds-form-divider.psds-theme--${themeName}`]
     )

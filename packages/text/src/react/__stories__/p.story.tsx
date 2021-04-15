@@ -1,17 +1,22 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import {
+  colorsPink,
+  layout,
+  colorsBlue
+} from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
-import * as glamor from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import P from '../p'
 
-const style = { color: core.colorsPink.base }
+const glamor = glamorDefault || glamorExports
+
 const className = glamor
-  .css({ color: `${core.colorsBlue.base} !important` })
+  .css({ color: `${colorsBlue[6]} !important` })
   .toString()
 
 const PaddingDecorator = (storyFn: () => React.ReactNode) => (
-  <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>
+  <div style={{ padding: layout.spacingXLarge }}>{storyFn()}</div>
 )
 
 const stories = storiesOf('P', module).addDecorator(PaddingDecorator)
@@ -59,7 +64,7 @@ stories.add('color: secondary', () => (
 ))
 
 stories.add('style override', () => (
-  <P style={style}>
+  <P style={{ color: colorsPink[6] }}>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam
     pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta
     tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import StarRating from '..'
+import StarRating from '../index'
 
 describe('StarRating', () => {
   function collectStarNodes(container: Element) {

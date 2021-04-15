@@ -5,5 +5,5 @@ export {
   InternalServerErrorPage,
   ServiceUnavailableErrorPage,
   GatewayTimeoutErrorPage
-} from './react'
-export { default as css } from './css'
+} from './react/index'
+export { default as css } from './css/index'

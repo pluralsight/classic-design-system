@@ -3,10 +3,9 @@ import { screen, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import NavItem from '..'
-import * as vars from '../../vars'
-
+import NavItem from '../index'
 import * as stories from '../__stories__/index.story'
+import * as vars from '../../vars/index'
 
 describe('NavItem', () => {
   const cases = convertStoriesToJestCases(stories)

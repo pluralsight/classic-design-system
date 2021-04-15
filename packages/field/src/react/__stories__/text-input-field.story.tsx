@@ -1,7 +1,7 @@
 import { LockIcon, PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { useUniqueId } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { ComponentProps, forwardRef } from 'react'
+import React from 'react'
 
 import {
   ConstrainWidthDecorator,
@@ -9,12 +9,12 @@ import {
   SetWidthDecorator
 } from './shared'
 
-import { sizes } from '../../vars'
-import Field from '..'
+import { sizes } from '../../vars/index'
+import Field from '../index'
 
-interface TextInputFieldProps extends ComponentProps<typeof Field> {
+interface TextInputFieldProps extends React.ComponentProps<typeof Field> {
   placeholder?: string
-  renderInputTag?: ComponentProps<typeof Field.Input>['renderTag']
+  renderInputTag?: React.ComponentProps<typeof Field.Input>['renderTag']
   type?: 'text' | 'search' | 'password'
 }
 
@@ -55,7 +55,7 @@ export default {
   decorators: [ConstrainWidthDecorator]
 } as Meta
 
-const Template: Story<ComponentProps<typeof TextInputField>> = args => {
+const Template: Story<React.ComponentProps<typeof TextInputField>> = args => {
   return <TextInputField {...args} />
 }
 
@@ -85,14 +85,14 @@ PasswordType.args = { suffix: <LockIcon />, type: 'password' }
 export const StyleOverrideDisplayBlock = Template.bind({})
 StyleOverrideDisplayBlock.decorators = [SetWidthDecorator, OutlineDecorator]
 StyleOverrideDisplayBlock.args = {
-  renderContainer: forwardRef((props, ref) => (
+  renderContainer: React.forwardRef((props, ref) => (
     <div ref={ref} {...props} style={{ display: 'block' }} />
   ))
 }
 
 export const CustomInputTag = Template.bind({})
 CustomInputTag.args = {
-  renderInputTag: forwardRef((props, ref) => (
+  renderInputTag: React.forwardRef((props, ref) => (
     <input
       {...props}
       ref={ref}

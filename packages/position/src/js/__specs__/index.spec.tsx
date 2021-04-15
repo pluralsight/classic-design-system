@@ -1,14 +1,14 @@
-import { render, waitForElement } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import React from 'react'
 
-import * as positionFns from '..'
+import * as positionFns from '../index'
 
 describe('#below', () => {
   const { below } = positionFns
 
   it('returns {} if no el given', async () => {
-    const { getByTestId } = render(<div data-testid="target-el" />)
-    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    const { findByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await findByTestId('target-el')
     expect(below(targetEl).styleFor(undefined)).toEqual({})
   })
 
@@ -84,8 +84,8 @@ describe('#belowLeft', () => {
   const { belowLeft } = positionFns
 
   it('returns {} if no el given', async () => {
-    const { getByTestId } = render(<div data-testid="target-el" />)
-    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    const { findByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await findByTestId('target-el')
     expect(belowLeft(targetEl).styleFor(undefined)).toEqual({})
   })
 
@@ -161,8 +161,8 @@ describe('#belowRight', () => {
   const { belowRight } = positionFns
 
   it('returns {} if no el given', async () => {
-    const { getByTestId } = render(<div data-testid="target-el" />)
-    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    const { findByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await findByTestId('target-el')
     expect(belowRight(targetEl).styleFor(undefined)).toEqual({})
   })
 
@@ -235,8 +235,8 @@ describe('#above', () => {
   const { above } = positionFns
 
   it('returns {} if no el given', async () => {
-    const { getByTestId } = render(<div data-testid="target-el" />)
-    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    const { findByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await findByTestId('target-el')
     expect(above(targetEl).styleFor(undefined)).toEqual({})
   })
 
@@ -283,8 +283,8 @@ describe('#aboveLeft', () => {
   const { aboveLeft } = positionFns
 
   it('returns {} if no el given', async () => {
-    const { getByTestId } = render(<div data-testid="target-el" />)
-    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    const { findByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await findByTestId('target-el')
     expect(aboveLeft(targetEl).styleFor(undefined)).toEqual({})
   })
 
@@ -331,8 +331,8 @@ describe('#aboveRight', () => {
   const { aboveRight } = positionFns
 
   it('returns undefined if no el given', async () => {
-    const { getByTestId } = render(<div data-testid="target-el" />)
-    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    const { findByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await findByTestId('target-el')
     expect(aboveRight(targetEl).styleFor(undefined)).toEqual({})
   })
 
@@ -379,8 +379,8 @@ describe('#rightOf', () => {
   const { rightOf } = positionFns
 
   it('returns {} if no el given', async () => {
-    const { getByTestId } = render(<div data-testid="target-el" />)
-    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    const { findByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await findByTestId('target-el')
     expect(rightOf(targetEl).styleFor(undefined)).toEqual({})
   })
 
@@ -425,8 +425,8 @@ describe('#leftOf', () => {
   const { leftOf } = positionFns
 
   it('returns {} if no el given', async () => {
-    const { getByTestId } = render(<div data-testid="target-el" />)
-    const targetEl = await waitForElement(() => getByTestId('target-el'))
+    const { findByTestId } = render(<div data-testid="target-el" />)
+    const targetEl = await findByTestId('target-el')
     expect(leftOf(targetEl).styleFor(undefined)).toEqual({})
   })
 
@@ -615,8 +615,8 @@ function randStr() {
 
 async function createEl(boundingClientRectOpts?: Partial<DOMRect>) {
   const id = randStr()
-  const { getByTestId } = render(<div data-testid={id} />)
-  const el = await waitForElement(() => getByTestId(id))
+  const { findByTestId } = render(<div data-testid={id} />)
+  const el = await findByTestId(id)
   el.getBoundingClientRect = () =>
     ({
       width: 0,

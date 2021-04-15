@@ -4,7 +4,8 @@ import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Select from '..'
+import Select from '../index'
+
 const items = [
   { id: 'One item', name: 'One item' },
   { id: 'Two item', name: 'Two item' },

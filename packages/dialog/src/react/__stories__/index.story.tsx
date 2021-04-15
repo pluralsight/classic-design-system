@@ -7,7 +7,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import * as Text from '@pluralsight/ps-design-system-text'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
-import Dialog from '..'
+import Dialog from '../index'
 
 const closeAction = action('close')
 const openAction = action('open')

@@ -1,9 +1,11 @@
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { css } from 'glamor'
-import React, { MouseEvent, useState } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import ViewToggle from '..'
+import ViewToggle from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 const defaultArgs = {
   onSelect: action('on select')
@@ -130,7 +132,7 @@ AllLongTextLengths.args = {
 }
 
 export const ExampleDynamicOptions: Story = () => {
-  const [count, updateCount] = useState(2)
+  const [count, updateCount] = React.useState(2)
 
   const add = () => updateCount(count + 1)
   const remove = () => updateCount(count - 1)
@@ -144,7 +146,7 @@ export const ExampleDynamicOptions: Story = () => {
       </ViewToggle>
 
       <div
-        {...css({
+        {...glamor.css({
           alignItems: 'center',
           display: 'flex',
           justifyContent: 'center',
@@ -165,9 +167,12 @@ export const ExampleDynamicOptions: Story = () => {
 
 export const ExampleControlled: Story = () => {
   const options = ['Apple', 'Banana', 'Orange']
-  const [selected, setSelected] = useState(options[2])
+  const [selected, setSelected] = React.useState(options[2])
 
-  const handleSelect = (_evt: MouseEvent<HTMLButtonElement>, i: number) => {
+  const handleSelect = (
+    _evt: React.MouseEvent<HTMLButtonElement>,
+    i: number
+  ) => {
     setSelected(options[i])
   }
 

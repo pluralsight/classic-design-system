@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@9.0.0...@pluralsight/ps-design-system-checkbox@9.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **checkbox:** properly order the conditional exports in package ([7649cb0](https://github.com/pluralsight/design-system/commit/7649cb085a0cbb752c709d8f97d44965e585d57d))
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@8.0.0...@pluralsight/ps-design-system-checkbox@9.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **checkbox:** add exports to package.json as alternate entry point ([c2ae36a](https://github.com/pluralsight/design-system/commit/c2ae36a75c487eff7c06a229e5743c4615e2bcc4))
+* **checkbox:** convert to esm ([7904cae](https://github.com/pluralsight/design-system/commit/7904caeedfe627f8d0d07a83b15e431f5669a1bd))
+
+
+### BREAKING CHANGES
+
+* **checkbox:** add exports to package.json
+* **checkbox:** Drop cjs; esm only; all in on tree shaking
+* **checkbox:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@7.1.7...@pluralsight/ps-design-system-checkbox@8.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [7.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@7.1.6...@pluralsight/ps-design-system-checkbox@7.1.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-checkbox
+
+
+
+
+
 ## [7.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@7.1.5...@pluralsight/ps-design-system-checkbox@7.1.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox

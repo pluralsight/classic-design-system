@@ -1,15 +1,13 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import Link from '@pluralsight/ps-design-system-link'
-// @ts-ignore: TODO: type position
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import * as Text from '@pluralsight/ps-design-system-text'
+import { storiesOf } from '@storybook/react'
+import React from 'react'
 
-import Note from '..'
+import Note from '../index'
 
 const longStringsMetaData = [
   'It is impossible to count the grand contributions of this great author',

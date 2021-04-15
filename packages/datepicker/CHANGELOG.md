@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.0.0...@pluralsight/ps-design-system-datepicker@15.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **datepicker:** properly order the conditional exports in package ([cb6b7e7](https://github.com/pluralsight/design-system/commit/cb6b7e764928f89e108a494b6893cf241821ba24))
+
+
+
+
+
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.4...@pluralsight/ps-design-system-datepicker@15.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **datepicker:** add exports to package.json as alternate entry point ([aaa642c](https://github.com/pluralsight/design-system/commit/aaa642c0d7de38f8397a426373dc88a2b267ebd9))
+* **datepicker:** convert to esm ([a29b3df](https://github.com/pluralsight/design-system/commit/a29b3dfe0bd4cd4000f3220636cab4d1fed5c7fa))
+
+
+### BREAKING CHANGES
+
+* **datepicker:** add exports to package.json
+* **datepicker:** Drop cjs; esm only; all in on tree shaking
+* **datepicker:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [14.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.3...@pluralsight/ps-design-system-datepicker@14.1.4) (2021-04-05)
+
+
+### Bug Fixes
+
+* **datepicker:** closes on click outside resolves [#1655](https://github.com/pluralsight/design-system/issues/1655) ([#1700](https://github.com/pluralsight/design-system/issues/1700)) ([55aeaef](https://github.com/pluralsight/design-system/commit/55aeaef494cd9ced86c21ff21e041245119ee03a))
+
+
+
+
+
+## [14.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.2...@pluralsight/ps-design-system-datepicker@14.1.3) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
 ## [14.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@14.1.1...@pluralsight/ps-design-system-datepicker@14.1.2) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

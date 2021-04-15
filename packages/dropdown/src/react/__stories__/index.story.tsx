@@ -6,7 +6,7 @@ import { DecoratorFn } from '@storybook/react'
 import { css } from 'glamor'
 import React, { ComponentProps } from 'react'
 
-import Dropdown from '../'
+import Dropdown from '../index'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
   <div {...css({ height: '100vh', padding: layout.spacingLarge })}>
@@ -49,7 +49,6 @@ const defaultArgs = {
   placeholder: 'Some placeholder',
   subLabel: 'The sub label'
 }
-
 export default {
   title: 'Components/Dropdown',
   component: Dropdown,

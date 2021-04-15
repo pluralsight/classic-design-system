@@ -9,12 +9,14 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import invariant from 'invariant'
-import React, { forwardRef, useMemo } from 'react'
+import React from 'react'
 
-import stylesheet from '../css'
-import { alignments, sorts } from '../vars'
+import stylesheet from '../css/index'
+import { alignments, sorts } from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   container: (
@@ -23,26 +25,27 @@ const styles = {
   ) => {
     const themeClass = `.psds-theme--${themeName}`
 
-    return compose(
-      css(stylesheet['.psds-table__container']),
-      css(stylesheet[`.psds-table__container${themeClass}`]),
-      opts.scrollable && css(stylesheet['.psds-table__container--scrollable'])
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-table__container']),
+      glamor.css(stylesheet[`.psds-table__container${themeClass}`]),
+      opts.scrollable &&
+        glamor.css(stylesheet['.psds-table__container--scrollable'])
     )
   },
   table: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-table']),
-      css(stylesheet[`.psds-table.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-table']),
+      glamor.css(stylesheet[`.psds-table.psds-theme--${themeName}`])
     ),
   cell: (opts: { align: ValueOf<typeof alignments> }) =>
-    compose(
-      css(stylesheet['.psds-table__cell']),
-      css(stylesheet[`.psds-table__cell--align-${opts.align}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-table__cell']),
+      glamor.css(stylesheet[`.psds-table__cell--align-${opts.align}`])
     ),
   head: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-table__head']),
-      css(stylesheet[`.psds-table__head.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-table__head']),
+      glamor.css(stylesheet[`.psds-table__head.psds-theme--${themeName}`])
     ),
   header: (
     themeName: ValueOf<typeof themeNames>,
@@ -52,18 +55,20 @@ const styles = {
       sticky: boolean
     }
   ) => {
-    const stickyClasses = compose(
-      css(stylesheet['.psds-table__header--sticky']),
-      css(stylesheet[`.psds-table__header--sticky.psds-theme--${themeName}`])
+    const stickyClasses = glamor.compose(
+      glamor.css(stylesheet['.psds-table__header--sticky']),
+      glamor.css(
+        stylesheet[`.psds-table__header--sticky.psds-theme--${themeName}`]
+      )
     )
-    return compose(
-      css(stylesheet['.psds-table__header']),
-      css(stylesheet[`.psds-table__header--align-${opts.align}`]),
-      opts.sortable && css(stylesheet['.psds-table__header--sortable']),
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-table__header']),
+      glamor.css(stylesheet[`.psds-table__header--align-${opts.align}`]),
+      opts.sortable && glamor.css(stylesheet['.psds-table__header--sortable']),
       opts.sticky && stickyClasses
     )
   },
-  sortIcon: () => css(stylesheet['.psds-table__header__sort-icon']),
+  sortIcon: () => glamor.css(stylesheet['.psds-table__header__sort-icon']),
   row: (
     themeName: ValueOf<typeof themeNames>,
     opts: { expanded: boolean; selected: boolean }
@@ -71,16 +76,16 @@ const styles = {
     const collapsed = !opts.expanded
     const themeClass = `.psds-theme--${themeName}`
 
-    return compose(
-      css(stylesheet[`.psds-table__row${themeClass}`]),
-      collapsed && css(stylesheet['.psds-table__row--collapsed']),
+    return glamor.compose(
+      glamor.css(stylesheet[`.psds-table__row${themeClass}`]),
+      collapsed && glamor.css(stylesheet['.psds-table__row--collapsed']),
       opts.selected &&
-        css(stylesheet[`.psds-table__row--selected${themeClass}`])
+        glamor.css(stylesheet[`.psds-table__row--selected${themeClass}`])
     )
   },
-  drawer: () => css(stylesheet['.psds-table__drawer']),
-  drawerCell: () => css(stylesheet['.psds-table__drawer__cell']),
-  drawerInner: () => css(stylesheet['.psds-table__drawer__inner'])
+  drawer: () => glamor.css(stylesheet['.psds-table__drawer']),
+  drawerCell: () => glamor.css(stylesheet['.psds-table__drawer__cell']),
+  drawerInner: () => glamor.css(stylesheet['.psds-table__drawer__inner'])
 }
 
 interface TableProps extends HTMLPropsFor<'table'> {
@@ -98,7 +103,7 @@ interface TableStatics {
 }
 type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
 
-const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
+const Table = React.forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   const {
     renderContainer = defaultRenderContainer,
     scrollable = false,
@@ -120,21 +125,23 @@ const Table = forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   )
 }) as TableComponent
 
-const defaultRenderContainer = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-  (props, ref) => <div ref={ref} {...props} />
-)
+const defaultRenderContainer = React.forwardRef<
+  HTMLDivElement,
+  HTMLPropsFor<'div'>
+>((props, ref) => <div ref={ref} {...props} />)
 
-const TableBody = forwardRef<HTMLTableSectionElement, HTMLPropsFor<'tbody'>>(
-  (props, ref) => {
-    return <tbody ref={ref} {...props} />
-  }
-)
+const TableBody = React.forwardRef<
+  HTMLTableSectionElement,
+  HTMLPropsFor<'tbody'>
+>((props, ref) => {
+  return <tbody ref={ref} {...props} />
+})
 TableBody.displayName = 'Table.Body'
 
 interface TableCellProps extends HTMLPropsFor<'td'> {
   align?: ValueOf<typeof alignments>
 }
-const TableCell = forwardRef<HTMLTableCellElement, TableCellProps>(
+const TableCell = React.forwardRef<HTMLTableCellElement, TableCellProps>(
   (props, ref) => {
     const { align = alignments.left, ...rest } = props
     return (
@@ -144,13 +151,14 @@ const TableCell = forwardRef<HTMLTableCellElement, TableCellProps>(
 )
 TableCell.displayName = 'Table.Cell'
 
-const TableHead = forwardRef<HTMLTableSectionElement, HTMLPropsFor<'thead'>>(
-  (props, ref) => {
-    const themeName = useTheme()
+const TableHead = React.forwardRef<
+  HTMLTableSectionElement,
+  HTMLPropsFor<'thead'>
+>((props, ref) => {
+  const themeName = useTheme()
 
-    return <thead ref={ref} {...styles.head(themeName)} {...props} />
-  }
-)
+  return <thead ref={ref} {...styles.head(themeName)} {...props} />
+})
 TableHead.displayName = 'Table.Head'
 
 interface TableHeaderProps extends HTMLPropsFor<'th'> {
@@ -161,79 +169,80 @@ interface TableHeaderProps extends HTMLPropsFor<'th'> {
   sticky?: boolean
   title?: string
 }
-const TableHeader = forwardRef<HTMLTableHeaderCellElement, TableHeaderProps>(
-  (props, ref) => {
-    const {
-      align = alignments.left,
-      children,
-      sort,
-      sticky = false,
-      title,
-      ...rest
-    } = props
-    const sortable = isDefined(sort)
-    const sorted = !isBoolean(sort)
-    const themeName = useTheme()
+const TableHeader = React.forwardRef<
+  HTMLTableHeaderCellElement,
+  TableHeaderProps
+>((props, ref) => {
+  const {
+    align = alignments.left,
+    children,
+    sort,
+    sticky = false,
+    title,
+    ...rest
+  } = props
+  const sortable = isDefined(sort)
+  const sorted = !isBoolean(sort)
+  const themeName = useTheme()
 
-    if (sortable) {
-      const msg =
-        'Missing title prop in Table.Header. A title is required when the header is sortable.'
+  if (sortable) {
+    const msg =
+      'Missing title prop in Table.Header. A title is required when the header is sortable.'
 
-      invariant(title, msg)
+    invariant(title, msg)
+  }
+
+  const ariaSort = React.useMemo(() => {
+    if (!sorted) return 'none'
+    return sort === sorts.asc ? 'ascending' : 'descending'
+  }, [sort, sorted])
+
+  const ariaLabel = React.useMemo(() => {
+    const options = {
+      ascending: 'Ascending sort applied',
+      descending: 'Descending sort applied',
+      none: 'No sort applied'
     }
 
-    const ariaSort = useMemo(() => {
-      if (!sorted) return 'none'
-      return sort === sorts.asc ? 'ascending' : 'descending'
-    }, [sort, sorted])
+    return `${title || ''}: ${options[ariaSort]}`
+  }, [ariaSort, title])
 
-    const ariaLabel = useMemo(() => {
-      const options = {
-        ascending: 'Ascending sort applied',
-        descending: 'Descending sort applied',
-        none: 'No sort applied'
-      }
+  const Icon = React.useMemo(() => {
+    const options = {
+      ascending: SortAscIcon,
+      descending: SortDescIcon,
+      none: SortIcon
+    }
 
-      return `${title || ''}: ${options[ariaSort]}`
-    }, [ariaSort, title])
+    return options[ariaSort]
+  }, [ariaSort])
 
-    const Icon = useMemo(() => {
-      const options = {
-        ascending: SortAscIcon,
-        descending: SortDescIcon,
-        none: SortIcon
-      }
-
-      return options[ariaSort]
-    }, [ariaSort])
-
-    return (
-      <th
-        ref={ref}
-        title={title}
-        {...styles.header(themeName, { align, sortable, sticky })}
-        {...(sortable && {
-          'aria-label': ariaLabel,
-          'aria-sort': ariaSort,
-          tabIndex: 0
-        })}
-        {...rest}
-      >
-        <div>
-          {children}
-          {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
-        </div>
-      </th>
-    )
-  }
-)
+  return (
+    <th
+      ref={ref}
+      title={title}
+      {...styles.header(themeName, { align, sortable, sticky })}
+      {...(sortable && {
+        'aria-label': ariaLabel,
+        'aria-sort': ariaSort,
+        tabIndex: 0
+      })}
+      {...rest}
+    >
+      <div>
+        {children}
+        {sortable && <Icon aria-hidden {...styles.sortIcon()} />}
+      </div>
+    </th>
+  )
+})
 TableHeader.displayName = 'Table.Header'
 
 interface TableRowProps extends HTMLPropsFor<'tr'> {
   expanded?: boolean
   selected?: boolean
 }
-const TableRow = forwardRef<HTMLTableRowElement, TableRowProps>(
+const TableRow = React.forwardRef<HTMLTableRowElement, TableRowProps>(
   (props, ref) => {
     const { expanded = true, selected = false, ...rest } = props
     const themeName = useTheme()
@@ -255,7 +264,7 @@ interface TableDrawerProps extends Omit<HTMLPropsFor<'tr'>, 'ref'> {
   colSpan: number
   indentWithCell?: boolean
 }
-const TableDrawer = forwardRef<HTMLTableRowElement, TableDrawerProps>(
+const TableDrawer = React.forwardRef<HTMLTableRowElement, TableDrawerProps>(
   (props, ref) => {
     const {
       expanded,

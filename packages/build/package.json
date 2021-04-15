@@ -1,18 +1,21 @@
 {
   "name": "@pluralsight/ps-design-system-build",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "Utilities for building and configuring Design System packages",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
   "bin": {
-    "build-css": "./bin/build-css.js"
+    "build-css": "./bin/build-css.mjs"
   },
   "main": "index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "yarn test --watchAll"
+  },
+  "exports": {
+    "default": "./index.js"
   },
   "dependencies": {
     "chalk": "^2.4.2",

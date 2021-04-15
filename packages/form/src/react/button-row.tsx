@@ -1,17 +1,19 @@
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   buttonRow: (align: string) =>
-    css(
+    glamor.css(
       stylesheet['.psds-form-button-row'],
       stylesheet[`.psds-form-button-row--align-${align}`]
     ),
-  button: () => css(stylesheet['.psds-form-button-row__button'])
+  button: () => glamor.css(stylesheet['.psds-form-button-row__button'])
 }
 
 export interface ButtonRowStatics {

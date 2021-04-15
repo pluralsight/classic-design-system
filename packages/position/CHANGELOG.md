@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@8.0.0...@pluralsight/ps-design-system-position@8.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **position:** properly order the conditional exports in package ([851986f](https://github.com/pluralsight/design-system/commit/851986f64d4fff082593f03f634e5e85bcde0678))
+
+
+
+
+
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@7.0.0...@pluralsight/ps-design-system-position@8.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **position:** add exports to package.json as alternate entry point ([4d8e1d8](https://github.com/pluralsight/design-system/commit/4d8e1d820afbd40b548586db0e741c441b2f9e7f))
+* **position:** convert to esm ([815a522](https://github.com/pluralsight/design-system/commit/815a522434e1e24e073dc724b1e9866db164351f))
+
+
+### BREAKING CHANGES
+
+* **position:** add exports to package.json
+* **position:** Drop cjs; esm only; all in on tree shaking
+* **position:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@6.1.8...@pluralsight/ps-design-system-position@7.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [6.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@6.1.7...@pluralsight/ps-design-system-position@6.1.8) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-position
+
+
+
+
+
 ## [6.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@6.1.6...@pluralsight/ps-design-system-position@6.1.7) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-position

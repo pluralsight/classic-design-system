@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { ComponentProps } from 'react'
+import React from 'react'
 
-import Avatar from '..'
+import Avatar from '../index'
 
 const defaultArgs = {
   alt: 'Jake Trent',
@@ -14,7 +14,7 @@ export default {
   component: Avatar
 } as Meta
 
-const Template: Story<ComponentProps<typeof Avatar>> = args => (
+const Template: Story<React.ComponentProps<typeof Avatar>> = args => (
   <Avatar {...args} />
 )
 

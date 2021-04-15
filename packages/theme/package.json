@@ -1,24 +1,33 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "7.1.6",
+  "version": "8.0.1",
   "description": "Design System component for theming",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "module": "dist/esm/index.mjs",
   "scripts": {
-    "build": "run-s build:cjs build:esm",
+    "build": "run-s build:esm build:cjs",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
-    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "build:esm": "run-s compile:esm rewrite:esm",
     "build:watch": "yarn build:esm --watch",
+    "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "rewrite:esm": "tsc-esm --project tsconfig.build.json",
     "test": "jest",
     "test:watch": "yarn test --watchAll"
   },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js",
+    "node": "./dist/cjs/index.js",
+    "default": "./dist/cjs/index.js"
+  },
+  "sideEffects": false,
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-util": "^7.3.0",
+    "@pluralsight/ps-design-system-util": "^9.0.1",
     "hoist-non-react-statics": "^3.3.0"
   },
   "peerDependencies": {

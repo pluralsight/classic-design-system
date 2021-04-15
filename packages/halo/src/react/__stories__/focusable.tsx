@@ -1,11 +1,13 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import { StyleFn } from '..'
-import * as vars from '../../vars'
+import { StyleFn } from '../index'
+import * as vars from '../../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const stylesheet: { [selector: string]: Record<string, unknown> } = {
   '.focusable': {
@@ -34,7 +36,7 @@ const stylesheet: { [selector: string]: Record<string, unknown> } = {
 
 const styles: { [name: string]: StyleFn<FocusableProps> } = {
   focusable: (themeName, { shape }) =>
-    css(
+    glamor.css(
       stylesheet['.focusable'],
       stylesheet[`.focusable--theme-${themeName}`],
       stylesheet[`.focusable--shape-${shape}`]

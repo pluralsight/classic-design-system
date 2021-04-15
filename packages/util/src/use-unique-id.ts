@@ -1,11 +1,11 @@
-import { useLayoutEffect, useState } from 'react'
+import React from 'react'
 
 import { uniqueId } from './unique-id'
 
 export function useUniqueId(prefix = '') {
-  const [id, setId] = useState('')
+  const [id, setId] = React.useState('')
 
-  useLayoutEffect(() => {
+  React.useLayoutEffect(() => {
     setId(uniqueId(prefix))
   }, [prefix])
 

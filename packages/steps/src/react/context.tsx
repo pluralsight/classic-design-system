@@ -1,7 +1,7 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 export interface ContextValue {
   counter: boolean

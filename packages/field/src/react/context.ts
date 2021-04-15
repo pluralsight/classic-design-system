@@ -1,12 +1,12 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { createContext } from 'react'
+import React from 'react'
 
-import { sizes } from '../vars'
+import { sizes } from '../vars/index'
 
 export interface FieldContextValue {
   size: ValueOf<typeof sizes>
 }
 
-export const FieldContext = createContext<FieldContextValue>({
+export const FieldContext = React.createContext<FieldContextValue>({
   size: sizes.medium
 })

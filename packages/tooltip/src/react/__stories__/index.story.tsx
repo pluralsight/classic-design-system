@@ -4,7 +4,7 @@ import React from 'react'
 
 import * as core from '@pluralsight/ps-design-system-core'
 
-import Tooltip from '..'
+import Tooltip from '../index'
 
 const PaddingDecorator = (storyFn: () => React.ReactNode) => (
   <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>

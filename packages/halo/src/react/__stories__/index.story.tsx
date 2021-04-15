@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import { css } from 'glamor'
 import React, { ComponentProps } from 'react'
 
-import Halo from '..'
+import Halo from '../index'
 import Focusable from './focusable'
 
 const defaultArgs = { children: <Focusable /> }

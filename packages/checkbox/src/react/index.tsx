@@ -7,33 +7,35 @@ import {
   omit,
   isFunction
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   checkbox: (props: { disabled?: boolean }) =>
-    compose(
-      css(stylesheet['.psds-checkbox']),
-      props.disabled && css(stylesheet['.psds-checkbox--disabled'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-checkbox']),
+      props.disabled && glamor.css(stylesheet['.psds-checkbox--disabled'])
     ),
   square: (
     themeName: ValueOf<typeof Theme.names>,
     props: { checked?: boolean; indeterminate?: boolean }
   ) =>
-    compose(
-      css(stylesheet['.psds-checkbox__square']),
-      css(stylesheet[`.psds-checkbox__square.psds-theme--${themeName}`]),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-checkbox__square']),
+      glamor.css(stylesheet[`.psds-checkbox__square.psds-theme--${themeName}`]),
       (props.checked || props.indeterminate) &&
-        css(stylesheet['.psds-checkbox__square--active'])
+        glamor.css(stylesheet['.psds-checkbox__square--active'])
     ),
-  icon: () => css(stylesheet['.psds-checkbox__icon']),
-  input: () => css(accessibility.screenReaderOnly),
+  icon: () => glamor.css(stylesheet['.psds-checkbox__icon']),
+  input: () => glamor.css(accessibility.screenReaderOnly),
   label: (themeName: ValueOf<typeof Theme.names>) =>
-    compose(
-      css(stylesheet['.psds-checkbox__label']),
-      css(stylesheet[`.psds-checkbox__label.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-checkbox__label']),
+      glamor.css(stylesheet[`.psds-checkbox__label.psds-theme--${themeName}`])
     )
 }
 

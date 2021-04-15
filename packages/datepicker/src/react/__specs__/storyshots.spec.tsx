@@ -11,6 +11,6 @@ jest.mock(
 )
 
 initStoryshots({
-  configPath: path.resolve(__dirname, '../../../.storybook'),
+  configPath: path.resolve(__dirname, '../../../.storybook-storyshots'),
   framework: 'react'
 })

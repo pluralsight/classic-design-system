@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
 import { fireEvent, render } from '@testing-library/react'
+import React from 'react'
 
-import Drawer from '..'
+import Drawer from '../index'
 
 describe('Drawer', () => {
   describe('when uncontrolled', () => {
@@ -28,7 +28,7 @@ describe('Drawer', () => {
   })
   it('when controlled', () => {
     const Controlled = () => {
-      const [open, setOpen] = useState(false)
+      const [open, setOpen] = React.useState(false)
       return (
         <Drawer onToggle={() => setOpen(!open)} isOpen={open}>
           <Drawer.Summary data-testid="summary">

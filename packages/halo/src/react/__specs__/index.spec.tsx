@@ -3,8 +3,8 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Halo from '..'
-import * as vars from '../../vars'
+import Halo from '../index'
+import * as vars from '../../vars/index'
 
 import * as stories from '../__stories__/index.story'
 

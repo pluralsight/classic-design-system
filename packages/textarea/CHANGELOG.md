@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.0.0...@pluralsight/ps-design-system-textarea@9.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **textarea:** properly order the conditional exports in package ([a45a988](https://github.com/pluralsight/design-system/commit/a45a988d9dac136b1488d625864170ce753187b0))
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@8.1.9...@pluralsight/ps-design-system-textarea@9.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **textarea:** add exports to package.json as alternate entry point ([2aea5ec](https://github.com/pluralsight/design-system/commit/2aea5ec534f86bb764c1146cd38786fce6ab3df7))
+* **textarea:** convert to esm ([9a3a46e](https://github.com/pluralsight/design-system/commit/9a3a46e066685446f1829cd3d1cac5de716710fc))
+
+
+### BREAKING CHANGES
+
+* **textarea:** add exports to package.json
+* **textarea:** Drop cjs; esm only; all in on tree shaking
+* **textarea:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [8.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@8.1.8...@pluralsight/ps-design-system-textarea@8.1.9) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
+## [8.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@8.1.7...@pluralsight/ps-design-system-textarea@8.1.8) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
 ## [8.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@8.1.6...@pluralsight/ps-design-system-textarea@8.1.7) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textarea

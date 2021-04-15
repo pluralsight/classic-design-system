@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.0.0...@pluralsight/ps-design-system-table@15.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **table:** properly order the conditional exports in package ([91d6304](https://github.com/pluralsight/design-system/commit/91d6304aaa4062947093a073ecc8882c77db5576))
+
+
+
+
+
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@14.0.0...@pluralsight/ps-design-system-table@15.0.0) (2021-04-14)
+
+
+### Bug Fixes
+
+* **dropdown:** add missing types def link ([d58294d](https://github.com/pluralsight/design-system/commit/d58294de65176840468e2d0b323eafb6bf6f7fb5))
+
+
+### Code Refactoring
+
+* **table:** add exports to package.json as alternate entry point ([ef52357](https://github.com/pluralsight/design-system/commit/ef523575ac39907d3c24d9ef075c479e7df96646))
+* **table:** convert to esm ([93f2534](https://github.com/pluralsight/design-system/commit/93f2534e41ffa4f31ffbe885383faa621fb5d109))
+
+
+### BREAKING CHANGES
+
+* **table:** add exports to package.json
+* **table:** Drop cjs; esm only; all in on tree shaking
+* **table:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@13.1.4...@pluralsight/ps-design-system-table@14.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [13.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@13.1.3...@pluralsight/ps-design-system-table@13.1.4) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
 ## [13.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@13.1.2...@pluralsight/ps-design-system-table@13.1.3) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

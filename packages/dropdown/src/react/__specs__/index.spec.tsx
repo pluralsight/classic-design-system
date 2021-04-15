@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Dropdown from '..'
+import Dropdown from '../index'
 
 import * as stories from '../__stories__/index.story'
 

@@ -10,7 +10,7 @@ import React, {
   useState
 } from 'react'
 
-import Checkbox from '..'
+import Checkbox from '../index'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
   <div {...css({ padding: layout.spacingLarge })}>{storyFn()}</div>

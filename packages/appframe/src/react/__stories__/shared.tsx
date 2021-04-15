@@ -1,4 +1,4 @@
-import React, { Fragment, HTMLAttributes } from 'react'
+import React from 'react'
 
 import {
   colorsBorder,
@@ -134,7 +134,7 @@ export const MockContent: React.FC = () => {
   )
 }
 
-interface SideNavProps extends HTMLAttributes<HTMLDivElement> {
+interface SideNavProps extends React.HTMLAttributes<HTMLDivElement> {
   collapsed?: boolean
   sections?: Section[]
 }
@@ -216,7 +216,7 @@ export const SideNav: React.FC<SideNavProps> = props => {
         const { header, items = [] } = section
 
         return (
-          <Fragment key={sectionKey}>
+          <React.Fragment key={sectionKey}>
             {header && (
               <SectionHeader collapsed={collapsed} title={header.title} />
             )}
@@ -253,7 +253,7 @@ export const SideNav: React.FC<SideNavProps> = props => {
             </VerticalTabs>
 
             <SectionDivider />
-          </Fragment>
+          </React.Fragment>
         )
       })}
 
@@ -262,7 +262,7 @@ export const SideNav: React.FC<SideNavProps> = props => {
   )
 }
 
-interface SectionHeaderProps extends HTMLAttributes<HTMLDivElement> {
+interface SectionHeaderProps extends React.HTMLAttributes<HTMLDivElement> {
   collapsed?: boolean
   title: string
 }
@@ -291,7 +291,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = props => {
   )
 }
 
-interface SectionDividerProps extends HTMLAttributes<HTMLDivElement> {}
+interface SectionDividerProps extends React.HTMLAttributes<HTMLDivElement> {}
 export const SectionDivider: React.FC<SectionDividerProps> = props => {
   return (
     <div
@@ -301,7 +301,7 @@ export const SectionDivider: React.FC<SectionDividerProps> = props => {
   )
 }
 
-interface TopNavProps extends HTMLAttributes<HTMLDivElement> {
+interface TopNavProps extends React.HTMLAttributes<HTMLDivElement> {
   brand?: React.ReactNode
   onMobileMenuClick?: React.MouseEventHandler
   items?: TopNavItem[]
@@ -353,7 +353,7 @@ export const TopNav: React.FC<TopNavProps> = props => {
   )
 }
 
-interface SkillsBrandProps extends HTMLAttributes<HTMLDivElement> {}
+interface SkillsBrandProps extends React.HTMLAttributes<HTMLDivElement> {}
 export const SkillsBrand: React.FC<SkillsBrandProps> = props => {
   return <NavBrand {...props} logo={<SkillsLogo />} wordmark="SKILLS" />
 }

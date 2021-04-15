@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import ScreenReaderOnly from '..'
+import ScreenReaderOnly from '../index'
 
 storiesOf('ScreenReaderOnly', module).add('basic', _ => (
   <div>

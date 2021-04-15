@@ -3,27 +3,26 @@ import {
   createUniversalPortal,
   useCloseOnDocumentEvents
 } from '@pluralsight/ps-design-system-util'
-import React, {
-  ForwardRefRenderFunction,
-  forwardRef,
-  useContext,
-  useLayoutEffect,
-  useState,
-  RefObject
-} from 'react'
-import { css, keyframes } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import { DropdownContext, useMenuRef, handleMenuKeyDownEvents } from '../js'
+import stylesheet from '../css/index'
+import {
+  DropdownContext,
+  useMenuRef,
+  handleMenuKeyDownEvents
+} from '../js/index'
 
-const slide = keyframes(
+const glamor = glamorDefault || glamorExports
+
+const slide = glamor.keyframes(
   stylesheet['@keyframes psds-dropdown__menu__keyframes__slide']
 )
 
 const styles = {
-  menuWrapper: () => css(stylesheet['.psds-dropdown__menu-wrapper']),
+  menuWrapper: () => glamor.css(stylesheet['.psds-dropdown__menu-wrapper']),
   menu: () =>
-    css(
+    glamor.css(
       stylesheet['.psds-dropdown__menu'],
       stylesheet['.psds-dropdown__menu__animation']({ slide })
     )
@@ -34,24 +33,24 @@ interface DropdownMenuProps extends HTMLPropsFor<'div'> {
   isOpen: boolean
   menu: React.ReactNode
   menuPosition: { top: number; left: number; width: number }
-  buttonRef: RefObject<HTMLButtonElement>
+  buttonRef: React.RefObject<HTMLButtonElement>
 }
 
-export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
+export const Menu = React.forwardRef<HTMLDivElement, DropdownMenuProps>(((
   props,
   forwardedRef
 ) => {
   const { inNode, isOpen, menu, menuPosition, buttonRef, ...rest } = props
 
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
-  const [adjMenuPosition, setAdjMenuPosition] = useState<{
+  const [adjMenuPosition, setAdjMenuPosition] = React.useState<{
     left: number
     top: number
     width: number
   }>()
 
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
-  const context = useContext(DropdownContext)
+  const context = React.useContext(DropdownContext)
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
   const ref = useMenuRef(forwardedRef)
 
@@ -63,7 +62,7 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
   }
 
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
-  useLayoutEffect(() => {
+  React.useLayoutEffect(() => {
     setAdjMenuPosition(menuPosition)
     if (!isOpen || !ref.current || !buttonRef.current) return
 
@@ -95,7 +94,7 @@ export const Menu = forwardRef<HTMLDivElement, DropdownMenuProps>(((
       inNode
     )
   )
-}) as ForwardRefRenderFunction<HTMLDivElement, DropdownMenuProps>)
+}) as React.ForwardRefRenderFunction<HTMLDivElement, DropdownMenuProps>)
 
 Menu.displayName = 'Dropdown.Menu'
 // TODO: replace

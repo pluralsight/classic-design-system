@@ -1,4 +1,4 @@
-import { omit } from '..'
+import { omit } from '../index'
 
 describe('#omit', () => {
   it('should create a copy', () => {

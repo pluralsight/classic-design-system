@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@4.0.0...@pluralsight/ps-design-system-navuser@4.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **navuser:** properly order the conditional exports in package ([49e2614](https://github.com/pluralsight/design-system/commit/49e2614aae14d9958be52b52c12bc1c73b8b124a))
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@3.0.0...@pluralsight/ps-design-system-navuser@4.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **navuser:** add exports to package.json as alternate entry point ([38e24f0](https://github.com/pluralsight/design-system/commit/38e24f02bb296bef11578df0904b643ce2d52859))
+* **navuser:** convert to esm ([37663d4](https://github.com/pluralsight/design-system/commit/37663d4086c21e0222f73387f486893c321f24d8))
+
+
+### BREAKING CHANGES
+
+* **navuser:** add exports to package.json
+* **navuser:** Drop cjs; esm only; all in on tree shaking
+* **navuser:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@2.1.7...@pluralsight/ps-design-system-navuser@3.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [2.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@2.1.6...@pluralsight/ps-design-system-navuser@2.1.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navuser
+
+
+
+
+
 ## [2.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@2.1.5...@pluralsight/ps-design-system-navuser@2.1.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navuser
