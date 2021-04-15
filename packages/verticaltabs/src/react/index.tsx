@@ -2,17 +2,19 @@ import {
   RefForwardingComponent,
   HTMLPropsFor
 } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
-import React, { forwardRef, useMemo } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
+
 import Context from './context'
+import stylesheet from '../css/index'
 import Divider from './divider'
 import { Group, CollapsibleGroup } from './group'
 import { Tier1, Tier2 } from './item'
 
-import stylesheet from '../css'
+const glamor = glamorDefault || glamorExports
 
 const styles = {
-  verticaltabs: () => css(stylesheet['.psds-verticaltabs'])
+  verticaltabs: () => glamor.css(stylesheet['.psds-verticaltabs'])
 }
 
 interface VerticalTabsProps extends HTMLPropsFor<'ul'> {
@@ -35,7 +37,7 @@ interface VerticalTabsComponents
     VerticalTabsStatics
   > {}
 
-const VerticalTabs = forwardRef((props, ref) => {
+const VerticalTabs = React.forwardRef((props, ref) => {
   const {
     children,
     forceCollapsed = false,
@@ -43,7 +45,7 @@ const VerticalTabs = forwardRef((props, ref) => {
     ...rest
   } = props
 
-  const contextValue = useMemo(() => ({ forceCollapsed, hideLabels }), [
+  const contextValue = React.useMemo(() => ({ forceCollapsed, hideLabels }), [
     forceCollapsed,
     hideLabels
   ])

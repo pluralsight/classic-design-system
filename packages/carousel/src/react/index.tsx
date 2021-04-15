@@ -5,34 +5,34 @@ import {
   ValueOf,
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
-import React, { cloneElement } from 'react'
-
-import stylesheet from '../css'
-import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js'
-import { chunk, pick } from '../js/utils'
-import * as vars from '../vars'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import CarouselContext from './context'
 import { Control } from './control'
-
+import stylesheet from '../css/index'
+import { calcItemsPerPage, isLeftArrow, isRightArrow } from '../js/index'
+import { chunk, pick } from '../js/utils'
 import useSwipe, { UseSwipeOpts } from './use-swipe'
 import useUniqueId from './use-unique-id'
+import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   carousel: (ready: boolean) =>
-    compose(
-      css(stylesheet['.psds-carousel']),
-      ready && css(stylesheet['.psds-carousel--ready'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-carousel']),
+      ready && glamor.css(stylesheet['.psds-carousel--ready'])
     ),
-  pages: () => compose(css(stylesheet['.psds-carousel__pages'])),
+  pages: () => glamor.compose(glamor.css(stylesheet['.psds-carousel__pages'])),
   page: (isActivePage: boolean) =>
-    compose(
-      css(stylesheet['.psds-carousel__page']),
-      isActivePage && css(stylesheet['.psds-carousel__page--active'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-carousel__page']),
+      isActivePage && glamor.css(stylesheet['.psds-carousel__page--active'])
     ),
-  instructions: () => css(stylesheet['.psds-carousel__instructions']),
-  item: () => css(stylesheet['.psds-carousel__item'])
+  instructions: () => glamor.css(stylesheet['.psds-carousel__instructions']),
+  item: () => glamor.css(stylesheet['.psds-carousel__item'])
 }
 
 interface CarouselProps extends HTMLPropsFor<'div'> {
@@ -115,7 +115,7 @@ const Carousel: CarouselComponent = ({
                     if (!wrapped) item = <Item key={itemIndex}>{item}</Item>
 
                     // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-                    return cloneElement(item!, {
+                    return React.cloneElement(item!, {
                       key: itemIndex,
                       ...(itemIndex === 0 && isActivePage && { tabIndex: -1 }),
                       isActivePage,
@@ -262,7 +262,7 @@ const Page: React.FC<PageProps> = props => {
     <ul
       ref={ref}
       {...styles.page(!!props.isActivePage)}
-      {...css({ transform: `translate3d(${offset}px, 0, 0)` })}
+      {...glamor.css({ transform: `translate3d(${offset}px, 0, 0)` })}
       {...rest}
       {...(!isActivePage && {
         hidden: true,

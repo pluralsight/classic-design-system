@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-featureflags@4.0.0...@pluralsight/ps-design-system-featureflags@4.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **featureflags:** properly order the conditional exports in package ([307071e](https://github.com/pluralsight/design-system/commit/307071e5187e64d6d7fa915c554c08a2890764b5))
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-featureflags@3.0.2...@pluralsight/ps-design-system-featureflags@4.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **featureflags:** add exports to package.json as alternate entry point ([40da9ef](https://github.com/pluralsight/design-system/commit/40da9ef30a14c6c826d96ea88a253e57aeb31dbc))
+* **featureflags:** convert to esm ([cc965bc](https://github.com/pluralsight/design-system/commit/cc965bc20c91051ae1761f853eedc042f2ffe5fd))
+
+
+### BREAKING CHANGES
+
+* **featureflags:** add exports to package.json
+* **featureflags:** Drop cjs; esm only; all in on tree shaking
+* **featureflags:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [3.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-featureflags@3.0.1...@pluralsight/ps-design-system-featureflags@3.0.2) (2021-03-11)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-featureflags

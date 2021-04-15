@@ -1,9 +1,3 @@
-import { Button } from './button'
-import { Selected } from './selected'
-import * as vars from '../vars'
-
-import React, { useMemo } from 'react'
-import { css } from 'glamor'
 import * as PositionComponents from '@pluralsight/ps-design-system-position'
 import {
   ValueOf,
@@ -11,18 +5,24 @@ import {
   forwardRefWithAsAndStatics
 } from '@pluralsight/ps-design-system-util'
 import Menu from '@pluralsight/ps-design-system-menu'
-import { useListbox, UseListboxProps } from './useListbox'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import { positions } from '../vars'
+import { Button } from './button'
+import { Selected } from './selected'
+import { useListbox, UseListboxProps } from './useListbox'
+import * as vars from '../vars/index'
 
 import stylesheet from '../css'
-
-const styles = css(stylesheet['.psds-select__menu'])
 
 interface DefaultRenderOptionProps {
   id: React.ReactText
   name: React.ReactText
 }
+
+const glamor = glamorDefault || glamorExports
+
+const styles = glamor.css(stylesheet['.psds-select__menu'])
 
 const defaultRenderOption = forwardRefWithAs<
   DefaultRenderOptionProps,
@@ -39,7 +39,7 @@ const defaultRenderOption = forwardRefWithAs<
 
 interface SelectProps extends UseListboxProps {
   items?: Array<{ id: React.ReactText; name: React.ReactText }>
-  position?: ValueOf<typeof positions>
+  position?: ValueOf<typeof vars.positions>
   renderOption?: React.FC
 }
 
@@ -57,7 +57,7 @@ const Select = forwardRefWithAsAndStatics<SelectProps, 'button', SelectStatics>(
       ref
     )
 
-    const RenderOption = useMemo(() => renderOption, [renderOption])
+    const RenderOption = React.useMemo(() => renderOption, [renderOption])
     return (
       <PositionComponents.Position
         position={PositionComponents[position]}
@@ -75,6 +75,7 @@ const Select = forwardRefWithAsAndStatics<SelectProps, 'button', SelectStatics>(
     )
   }
 )
+
 interface SelectStatics {
   Button: typeof Button
   Selected: typeof Selected

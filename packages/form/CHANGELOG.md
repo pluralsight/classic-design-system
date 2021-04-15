@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.0.0...@pluralsight/ps-design-system-form@12.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **form:** properly order the conditional exports in package ([beb857d](https://github.com/pluralsight/design-system/commit/beb857decce65fd3a438b44c15f10dc8fb65c610))
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@11.1.5...@pluralsight/ps-design-system-form@12.0.0) (2021-04-14)
+
+
+### Bug Fixes
+
+* **dropdown:** add missing types def link ([d58294d](https://github.com/pluralsight/design-system/commit/d58294de65176840468e2d0b323eafb6bf6f7fb5))
+
+
+### Code Refactoring
+
+* **form:** add exports to package.json as alternate entry point ([2a5ea03](https://github.com/pluralsight/design-system/commit/2a5ea03481ca40d1cf4ce8f959c147132d6f7e50))
+* **form:** convert to esm ([f5b98f8](https://github.com/pluralsight/design-system/commit/f5b98f8dc86e4ed2b77ce0c6a473313644786666))
+
+
+### BREAKING CHANGES
+
+* **form:** add exports to package.json
+* **form:** Drop cjs; esm only; all in on tree shaking
+* **form:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [11.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@11.1.4...@pluralsight/ps-design-system-form@11.1.5) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

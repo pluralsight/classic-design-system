@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@10.0.0...@pluralsight/ps-design-system-starrating@10.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **starrating:** properly order the conditional exports in package ([7ad010b](https://github.com/pluralsight/design-system/commit/7ad010b11aec3b6aa0833375c8d0b52871818b9e))
+
+
+
+
+
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@9.0.0...@pluralsight/ps-design-system-starrating@10.0.0) (2021-04-14)
+
+
+### Build System
+
+* **starrating:** support only react 17 as peerDependency ([2c03acc](https://github.com/pluralsight/design-system/commit/2c03acc39fec0cf3670ea17a109b0270f8cf5cab))
+
+
+### Code Refactoring
+
+* **starrating:** add exports to package.json as alternate entry point ([1e6cce2](https://github.com/pluralsight/design-system/commit/1e6cce2a575af208d24586d9873f43d10023420a))
+* **starrating:** convert to esm ([11c406b](https://github.com/pluralsight/design-system/commit/11c406b096f5501a1783e4ec951ed421d4006bb0))
+
+
+### BREAKING CHANGES
+
+* **starrating:** add exports to package.json
+* **starrating:** support only react 17 as peerDependency
+* **starrating:** Drop cjs; esm only; all in on tree shaking
+* **starrating:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@8.0.7...@pluralsight/ps-design-system-starrating@9.0.0) (2021-04-05)
 
 

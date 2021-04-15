@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@5.0.0...@pluralsight/ps-design-system-scrollable@5.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **scrollable:** properly order the conditional exports in package ([024cf9f](https://github.com/pluralsight/design-system/commit/024cf9f0d6457b3c6d0520bfc6119fd1636e363b))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@4.1.8...@pluralsight/ps-design-system-scrollable@5.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **scrollable:** add exports to package.json as alternate entry point ([78b5c99](https://github.com/pluralsight/design-system/commit/78b5c99c61c717040706dae60c3edaa2842c028d))
+* **scrollable:** convert to esm ([77aa3be](https://github.com/pluralsight/design-system/commit/77aa3be075b255fe44727e7b0a6c5211bed220fe))
+
+
+### BREAKING CHANGES
+
+* **scrollable:** add exports to package.json
+* **scrollable:** Drop cjs; esm only; all in on tree shaking
+* **scrollable:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [4.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@4.1.7...@pluralsight/ps-design-system-scrollable@4.1.8) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-scrollable

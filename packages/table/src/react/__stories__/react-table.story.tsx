@@ -37,7 +37,7 @@ import {
   useTable
 } from 'react-table'
 
-import Table from '..'
+import Table from '../index'
 
 import { generateNestedUserRows, generateUserRows } from './seed'
 import { FlexContainer, HorzSpacer } from './shared'
@@ -644,7 +644,10 @@ const Paginator: React.FC<PaginatorProps> = props => {
 
       <Dropdown
         appearance="subtle"
-        onChange={(_evt, value) => {
+        onChange={(
+          _evt: React.MouseEvent | React.KeyboardEvent,
+          value: string | number | undefined
+        ) => {
           table.setPageSize(Number(value))
         }}
         menu={

@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@17.0.0...@pluralsight/ps-design-system-actionmenu@17.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **actionmenu:** conditional exports order ([ae530b4](https://github.com/pluralsight/design-system/commit/ae530b48bd12c757a1ce4705eb5c46ab079063a9))
+
+
+
+
+
+# [17.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@16.2.5...@pluralsight/ps-design-system-actionmenu@17.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **actionmenu:** add exports to package.json as alternate entry point ([01df151](https://github.com/pluralsight/design-system/commit/01df1515fdb136c31778fe425db93f8a31ab7cd1))
+* **actionmenu:** convert to esm ([1ba0139](https://github.com/pluralsight/design-system/commit/1ba013954e8fb6c602cfeff64ec8e556fc746ff9))
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** add exports to package.json
+* **actionmenu:** Drop cjs; esm only; all in on tree shaking
+* **actionmenu:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [16.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@16.2.4...@pluralsight/ps-design-system-actionmenu@16.2.5) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

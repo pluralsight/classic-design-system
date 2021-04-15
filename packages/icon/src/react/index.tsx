@@ -3,17 +3,19 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, css } from 'glamor'
-import React, { forwardRef } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import { colors, sizes } from '../vars'
+import stylesheet from '../css/index'
+import { colors, sizes } from '../vars/index'
 
-type StyleFn = (props: IconProps) => StyleAttribute
+const glamor = glamorDefault || glamorExports
+
+type StyleFn = (props: IconProps) => glamorExports.StyleAttribute
 
 const style: { [name: string]: StyleFn } = {
   icon: props =>
-    css(
+    glamor.css(
       stylesheet['.psds-icon'],
       stylesheet[`.psds-icon--size-${props.size}`],
       stylesheet[`.psds-icon--color-${props.color}`]
@@ -33,7 +35,7 @@ export interface IconStatics {
 export interface IconComponent
   extends RefForwardingComponent<IconProps, HTMLDivElement, IconStatics> {}
 
-const Icon = forwardRef((props, ref) => {
+const Icon = React.forwardRef((props, ref) => {
   const { size = sizes.medium, color, ...rest } = props
 
   return <div {...style.icon({ color, size })} {...rest} ref={ref} />

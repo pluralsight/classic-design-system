@@ -1,2 +1,2 @@
-export * from './js'
-export * from './react'
+export * from './js/index'
+export * from './react/index'

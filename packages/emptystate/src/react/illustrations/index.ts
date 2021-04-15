@@ -1,64 +1,64 @@
 import { Illustration } from './types'
 
-import BookmarkIllustration from './bookmark.dist'
-import BookmarkIllustrationSmall from './bookmark-small.dist'
-import ChannelIllustration from './channel.dist'
-import ChannelIllustrationSmall from './channel-small.dist'
-import CloudIllustration from './cloud.dist'
-import CloudIllustrationSmall from './cloud-small.dist'
-import CodeIllustration from './code.dist'
-import CodeIllustrationSmall from './code-small.dist'
-import DataIllustration from './data.dist'
-import DataIllustrationSmall from './data-small.dist'
-import DocumentIllustration from './document.dist'
-import DocumentIllustrationSmall from './document-small.dist'
-import MagnifyIllustration from './magnify.dist'
-import MagnifyIllustrationSmall from './magnify-small.dist'
-import SignalIllustration from './signal.dist'
-import SignalIllustrationSmall from './signal-small.dist'
-import VideoIllustration from './video.dist'
-import VideoIllustrationSmall from './video-small.dist'
-import ZenIllustration from './zen.dist'
-import ZenIllustrationSmall from './zen-small.dist'
+import { BookmarkIllustration } from './bookmark.dist'
+import { BookmarkSmallIllustration } from './bookmark-small.dist'
+import { ChannelIllustration } from './channel.dist'
+import { ChannelSmallIllustration } from './channel-small.dist'
+import { CloudIllustration } from './cloud.dist'
+import { CloudSmallIllustration } from './cloud-small.dist'
+import { CodeIllustration } from './code.dist'
+import { CodeSmallIllustration } from './code-small.dist'
+import { DataIllustration } from './data.dist'
+import { DataSmallIllustration } from './data-small.dist'
+import { DocumentIllustration } from './document.dist'
+import { DocumentSmallIllustration } from './document-small.dist'
+import { MagnifyIllustration } from './magnify.dist'
+import { MagnifySmallIllustration } from './magnify-small.dist'
+import { SignalIllustration } from './signal.dist'
+import { SignalSmallIllustration } from './signal-small.dist'
+import { VideoIllustration } from './video.dist'
+import { VideoSmallIllustration } from './video-small.dist'
+import { ZenIllustration } from './zen.dist'
+import { ZenSmallIllustration } from './zen-small.dist'
 
 const bookmark: Illustration = Object.assign(BookmarkIllustration, {
-  small: BookmarkIllustrationSmall
+  small: BookmarkSmallIllustration
 })
 
 const channel: Illustration = Object.assign(ChannelIllustration, {
-  small: ChannelIllustrationSmall
+  small: ChannelSmallIllustration
 })
 
 const cloud: Illustration = Object.assign(CloudIllustration, {
-  small: CloudIllustrationSmall
+  small: CloudSmallIllustration
 })
 
 const code: Illustration = Object.assign(CodeIllustration, {
-  small: CodeIllustrationSmall
+  small: CodeSmallIllustration
 })
 
 const data: Illustration = Object.assign(DataIllustration, {
-  small: DataIllustrationSmall
+  small: DataSmallIllustration
 })
 
 const document: Illustration = Object.assign(DocumentIllustration, {
-  small: DocumentIllustrationSmall
+  small: DocumentSmallIllustration
 })
 
 const magnify: Illustration = Object.assign(MagnifyIllustration, {
-  small: MagnifyIllustrationSmall
+  small: MagnifySmallIllustration
 })
 
 const signal: Illustration = Object.assign(SignalIllustration, {
-  small: SignalIllustrationSmall
+  small: SignalSmallIllustration
 })
 
 const video: Illustration = Object.assign(VideoIllustration, {
-  small: VideoIllustrationSmall
+  small: VideoSmallIllustration
 })
 
 const zen: Illustration = Object.assign(ZenIllustration, {
-  small: ZenIllustrationSmall
+  small: ZenSmallIllustration
 })
 
 export {

@@ -12,13 +12,15 @@ import {
   canUseDOM,
   omit
 } from '@pluralsight/ps-design-system-util'
-import { compose, css, StyleAttribute } from 'glamor'
-import * as React from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 import Shiitake from 'shiitake'
 
-import stylesheet from '../css'
-import { toPercentageString } from '../js'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import { toPercentageString } from '../js/index'
+import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 if (canUseDOM()) polyfillFocusWithin(document)
 
@@ -29,39 +31,42 @@ const styles = {
   }: Partial<CardProps>) => {
     const label = 'psds-card__action-bar'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
       fullOverlay &&
         !visible &&
-        css(stylesheet[`.${label}--fullOverlay.${label}--no-actionBarVisible`]),
-      visible && css(stylesheet[`.${label}--actionBarVisible`])
+        glamor.css(
+          stylesheet[`.${label}--fullOverlay.${label}--no-actionBarVisible`]
+        ),
+      visible && glamor.css(stylesheet[`.${label}--actionBarVisible`])
     )
   },
   actionButton: ({ disabled }: Partial<ActionBarActionProps>) => {
     const label = 'psds-card__action-bar__button'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      disabled && css(stylesheet[`.${label}--disabled`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      disabled && glamor.css(stylesheet[`.${label}--disabled`])
     )
   },
 
-  bonusBar: () => css(stylesheet['.psds-card__bonus-bar']),
+  bonusBar: () => glamor.css(stylesheet['.psds-card__bonus-bar']),
 
-  card: () => css(stylesheet['.psds-card']),
+  card: () => glamor.css(stylesheet['.psds-card']),
 
   fullOverlay: ({ fullOverlayVisible: visible }: Partial<CardProps>) => {
     const label = 'psds-card__full-overlay'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      visible && css(stylesheet[`.${label}--fullOverlayVisible`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      visible && glamor.css(stylesheet[`.${label}--fullOverlayVisible`])
     )
   },
-  fullOverlayLink: () => css(stylesheet['.psds-card__full-overlay-link']),
+  fullOverlayLink: () =>
+    glamor.css(stylesheet['.psds-card__full-overlay-link']),
 
-  image: () => css(stylesheet['.psds-card__image']),
-  imageLink: () => css(stylesheet['.psds-card__image-link']),
+  image: () => glamor.css(stylesheet['.psds-card__image']),
+  imageLink: () => glamor.css(stylesheet['.psds-card__image-link']),
 
   metadata: (
     { size }: Partial<MetaDataProps>,
@@ -69,65 +74,65 @@ const styles = {
   ) => {
     const label = 'psds-card__metadata'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--size-${size}`]),
-      css(stylesheet[`.${label}--theme-${themeName}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}--size-${size}`]),
+      glamor.css(stylesheet[`.${label}--theme-${themeName}`])
     )
   },
-  metadataDatum: () => css(stylesheet['.psds-card__metadata__datum']),
-  metadataDot: () => css(stylesheet['.psds-card__metadata__dot']),
+  metadataDatum: () => glamor.css(stylesheet['.psds-card__metadata__datum']),
+  metadataDot: () => glamor.css(stylesheet['.psds-card__metadata__dot']),
 
   overlays: ({ size }: Partial<CardProps>) => {
     const label = 'psds-card__overlays'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--size-${size}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}--size-${size}`])
     )
   },
 
-  progress: () => css(stylesheet['.psds-card__progress']),
+  progress: () => glamor.css(stylesheet['.psds-card__progress']),
   progressBar: ({ progress }: Partial<CardProps>) => {
     const label = 'psds-card__progress__bar'
     const percent = toPercentageString(progress || 0)
     const isCompleted = percent === '100%'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      isCompleted && css(stylesheet[`.${label}--complete`]),
-      css({ width: percent })
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      isCompleted && glamor.css(stylesheet[`.${label}--complete`]),
+      glamor.css({ width: percent })
     )
   },
 
-  tag: () => css(stylesheet['.psds-card__tag']),
-  tagIcon: () => css(stylesheet['.psds-card__tag__icon']),
-  tagText: () => css(stylesheet['.psds-card__tag__text']),
+  tag: () => glamor.css(stylesheet['.psds-card__tag']),
+  tagIcon: () => glamor.css(stylesheet['.psds-card__tag__icon']),
+  tagText: () => glamor.css(stylesheet['.psds-card__tag__text']),
 
   textLink: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'psds-card__text-link'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--theme-${themeName}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}--theme-${themeName}`])
     )
   },
 
   title: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'psds-card__title'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--theme-${themeName}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}--theme-${themeName}`])
     )
   },
 
   titleContainer: ({ size }: Partial<CardProps>) => {
     const label = 'psds-card__title-container'
 
-    return compose(
-      css(stylesheet[`.${label}`]),
-      css(stylesheet[`.${label}--size-${size}`])
+    return glamor.compose(
+      glamor.css(stylesheet[`.${label}`]),
+      glamor.css(stylesheet[`.${label}--size-${size}`])
     )
   }
 }

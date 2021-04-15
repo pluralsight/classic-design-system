@@ -4,8 +4,8 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Select from '..'
-import * as vars from '../../vars'
+import Select from '../index'
+import * as vars from '../../vars/index'
 
 import * as stories from '../__stories__/index.story'
 

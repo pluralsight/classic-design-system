@@ -1,9 +1,8 @@
-import React from 'react'
-
 import { action } from '@storybook/addon-actions'
 import { storiesOf } from '@storybook/react'
+import React from 'react'
 
-import StarRating from '..'
+import StarRating from '../index'
 
 const VALUES = [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5, null, undefined]
 const ROUNDING_VALUES = [1.7, 2.0, 2.2, 2.4, 2.6, 2.78]

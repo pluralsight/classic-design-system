@@ -1,9 +1,9 @@
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { ComponentProps, useMemo, useState } from 'react'
+import React from 'react'
 
 import { periodicElements } from '../__fixtures__/options'
-import MultiSelect, { Option } from '..'
+import MultiSelect, { Option } from '../index'
 
 const SetWidthDecorator = (Story: Story) => {
   return (
@@ -24,9 +24,9 @@ const defaultArgs = {
   subLabel: 'The sub label'
 }
 
-const Template: Story<ComponentProps<typeof MultiSelect>> = args => {
-  const options = useMemo(() => periodicElements, [])
-  const [value, setValue] = useState<Option[]>(options.slice(0, 2))
+const Template: Story<React.ComponentProps<typeof MultiSelect>> = args => {
+  const options = React.useMemo(() => periodicElements, [])
+  const [value, setValue] = React.useState<Option[]>(options.slice(0, 2))
 
   return (
     <MultiSelect

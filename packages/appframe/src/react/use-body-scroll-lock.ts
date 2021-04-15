@@ -1,4 +1,4 @@
-import { RefObject, useEffect } from 'react'
+import React from 'react'
 
 import {
   disableBodyScroll,
@@ -7,10 +7,10 @@ import {
 } from 'body-scroll-lock'
 
 export default function useBodyScrollLock<El extends HTMLElement>(
-  ref: RefObject<El>,
+  ref: React.RefObject<El>,
   locked = false
 ) {
-  useEffect(() => {
+  React.useEffect(() => {
     if (!ref.current) return
 
     const fn = locked ? disableBodyScroll : enableBodyScroll
@@ -18,7 +18,7 @@ export default function useBodyScrollLock<El extends HTMLElement>(
     fn(ref.current)
   }, [ref, locked])
 
-  useEffect(() => {
+  React.useEffect(() => {
     function onUnmount() {
       clearAllBodyScrollLocks()
     }

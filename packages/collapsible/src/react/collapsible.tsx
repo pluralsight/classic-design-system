@@ -1,8 +1,8 @@
-import React, { HTMLAttributes } from 'react'
+import React from 'react'
 
 import { useCollapsible } from './use-collapsible'
 
-interface CollapsibleProps extends HTMLAttributes<HTMLElement> {
+interface CollapsibleProps extends React.HTMLAttributes<HTMLElement> {
   isOpen?: boolean
   tagName?: React.ElementType | keyof JSX.IntrinsicElements
 }

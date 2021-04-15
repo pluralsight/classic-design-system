@@ -1,18 +1,21 @@
-import React, { useContext } from 'react'
-import { css } from 'glamor'
-import { DateObj, RenderProps } from 'dayzed'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import type { DateObj, RenderProps } from 'dayzed'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
+
 import { DateContext } from './context'
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   calendarDate: (selected: boolean, today: boolean) =>
-    css(
+    glamor.css(
       stylesheet['.psds-calendar__date'],
       selected && stylesheet['.psds-calendar__date--selected'],
       today && stylesheet['.psds-calendar__date--today']
     ),
-  dateFiller: () => css(stylesheet['.psds-calendar__filler'])
+  dateFiller: () => glamor.css(stylesheet['.psds-calendar__filler'])
 }
 
 interface ChildrenRenderProps extends HTMLPropsFor<'button'> {}
@@ -28,7 +31,7 @@ export const CalendarDates: React.FC<CalendarDatesProps> = ({
   children,
   ...rest
 }) => {
-  const calendar = useContext(DateContext)
+  const calendar = React.useContext(DateContext)
   return (
     <>
       {calendar.weeks.map((week, weekIndex) => {

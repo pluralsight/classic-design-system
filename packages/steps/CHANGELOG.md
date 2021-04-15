@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@4.0.0...@pluralsight/ps-design-system-steps@4.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **steps:** properly order the conditional exports in package ([5ae05bb](https://github.com/pluralsight/design-system/commit/5ae05bb1b166cebee11ea4d74edbf36a75e4ef6e))
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@3.0.0...@pluralsight/ps-design-system-steps@4.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **steps:** add exports to package.json as alternate entry point ([433955f](https://github.com/pluralsight/design-system/commit/433955fda813f115fff76b6505fa1f90f02709f1))
+* **steps:** convert to esm ([672db05](https://github.com/pluralsight/design-system/commit/672db05c8725e7bf340884fcfb7cf60d33726269))
+
+
+### BREAKING CHANGES
+
+* **steps:** add exports to package.json
+* **steps:** Drop cjs; esm only; all in on tree shaking
+* **steps:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@2.1.8...@pluralsight/ps-design-system-steps@3.0.0) (2021-04-05)
 
 

@@ -1,5 +1,5 @@
 import { PropsWithStylesFor } from '@pluralsight/ps-design-system-util'
-import React, { ForwardRefExoticComponent, ReactText, forwardRef } from 'react'
+import React from 'react'
 
 import Context, {
   AllowedSelectors,
@@ -7,7 +7,7 @@ import Context, {
   initialValue
 } from './context'
 import { HorzLayout } from './horz'
-import { alignments } from '../vars'
+import { alignments } from '../vars/index'
 import { VertLayout } from './vert'
 
 interface NavItemProps
@@ -18,7 +18,7 @@ interface NavItemStatics {
   alignments: typeof alignments
 }
 
-const NavItem = forwardRef<HTMLButtonElement, NavItemProps>(
+const NavItem = React.forwardRef<HTMLButtonElement, NavItemProps>(
   (props, forwardedRef) => {
     const {
       alignment = initialValue.alignment,
@@ -52,7 +52,8 @@ const NavItem = forwardRef<HTMLButtonElement, NavItemProps>(
       </Context.Provider>
     )
   }
-) as ForwardRefExoticComponent<Pick<NavItemProps, ReactText>> & NavItemStatics
+) as React.ForwardRefExoticComponent<Pick<NavItemProps, React.ReactText>> &
+  NavItemStatics
 
 NavItem.displayName = 'NavItem'
 NavItem.alignments = alignments

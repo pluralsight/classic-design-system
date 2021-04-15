@@ -1,4 +1,4 @@
-import { Story } from '@storybook/react/types-6-0'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { screen } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
@@ -23,7 +23,7 @@ jest.mock('@pluralsight/ps-design-system-position', () => {
 })
 
 describe('MultiSelectField', () => {
-  const cases = generateCasesFromStories(stories)
+  const cases = convertStoriesToJestCases(stories)
 
   let raf: jest.Mock
 
@@ -38,7 +38,7 @@ describe('MultiSelectField', () => {
   })
 
   describe.each(cases)('%s story', (_name, Story) => {
-    it('should pass an basic axe a11y audit', async () => {
+    it('has no axe-core violations', async () => {
       const { container } = render(<Story {...Story.args} />)
       const results = await axe(container)
 
@@ -49,7 +49,7 @@ describe('MultiSelectField', () => {
   describe('Basic story', () => {
     const { Basic } = stories
 
-    it('should focus input when label clicked', () => {
+    it('focuses input when label clicked', () => {
       render(<Basic {...(Basic.args as any)} />)
       const [label] = screen.getAllByLabelText('The label')
       const input = screen.getByRole('textbox')
@@ -59,7 +59,7 @@ describe('MultiSelectField', () => {
       expect(input).toHaveFocus()
     })
 
-    it('should open the menu when input receives focus', async () => {
+    it('opens the menu when input receives focus', async () => {
       render(<Basic {...(Basic.args as any)} />)
       const input = screen.getByRole('textbox')
 
@@ -70,7 +70,7 @@ describe('MultiSelectField', () => {
       expect(menu).toBeVisible()
     })
 
-    it('should close the menu when input loses focus', async () => {
+    it('closes the menu when input loses focus', async () => {
       render(<Basic {...(Basic.args as any)} />)
       const input = screen.getByRole('textbox')
 
@@ -86,7 +86,7 @@ describe('MultiSelectField', () => {
       expect(menu).not.toBeVisible()
     })
 
-    it('should close the menu when esc pressed', async () => {
+    it('closes the menu when esc pressed', async () => {
       render(<Basic {...(Basic.args as any)} />)
       const input = screen.getByRole('textbox')
 
@@ -102,7 +102,7 @@ describe('MultiSelectField', () => {
       expect(menu).not.toBeVisible()
     })
 
-    it('should open the menu when alt+down pressed', async () => {
+    it('opens the menu when alt+down pressed', async () => {
       render(<Basic {...(Basic.args as any)} />)
       const input = screen.getByRole('textbox')
 
@@ -127,7 +127,7 @@ describe('MultiSelectField', () => {
      */
 
     // eslint-disable-next-line
-    it.skip('should close the menu when alt+up pressed', async () => {
+    it.skip('closes the menu when alt+up pressed', async () => {
       render(<Basic {...(Basic.args as any)} />)
       const input = screen.getByRole('textbox')
 
@@ -144,14 +144,3 @@ describe('MultiSelectField', () => {
     })
   })
 })
-
-function generateCasesFromStories(
-  obj: Record<string, unknown>
-): [string, Story][] {
-  const keys = Object.keys(obj)
-
-  return keys.reduce<any>((acc, key) => {
-    if (key === 'default') return acc
-    return [...acc, [key, obj[key]]]
-  }, [])
-}

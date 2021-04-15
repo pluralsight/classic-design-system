@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@5.0.0...@pluralsight/ps-design-system-navitem@5.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **navitem:** properly order the conditional exports in package ([6c68e0d](https://github.com/pluralsight/design-system/commit/6c68e0d0f4c58e30c269d714a4513ae4a2f85206))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@4.0.0...@pluralsight/ps-design-system-navitem@5.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **navitem:** add exports to package.json as alternate entry point ([6bf22b9](https://github.com/pluralsight/design-system/commit/6bf22b97fce50018395589bc2d78435408ebb202))
+* **navitem:** convert to esm ([45ddb34](https://github.com/pluralsight/design-system/commit/45ddb34ad2ad3eba768df58af4d9b6bc0ee3709b))
+
+
+### BREAKING CHANGES
+
+* **navitem:** add exports to package.json
+* **navitem:** Drop cjs; esm only; all in on tree shaking
+* **navitem:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@3.0.7...@pluralsight/ps-design-system-navitem@4.0.0) (2021-04-05)
 
 

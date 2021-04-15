@@ -5,15 +5,17 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { compose, css, keyframes, StyleAttribute } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const radius = vars.style.width / 2 - vars.style.strokeWidth / 2
 const circumference = 2 * Math.PI * radius
-const spin = keyframes({
+const spin = glamor.keyframes({
   to: {
     transform: 'rotate(270deg)'
   }
@@ -22,32 +24,38 @@ const spin = keyframes({
 type StyleFn = (
   themeName: string,
   props: CircularProgressProps
-) => StyleAttribute
+) => glamorExports.StyleAttribute
 
 const styles: { [key: string]: StyleFn } = {
   circularprogress: (themeName, { size = vars.sizes.medium }) =>
-    css(stylesheet[`.psds-circularprogress--size-${size}`]),
+    glamor.css(stylesheet[`.psds-circularprogress--size-${size}`]),
 
   svg: (themeName, { value }) => {
     const noValue = typeof value === 'undefined'
 
-    return compose(
-      css(stylesheet['.psds-circularprogress__svg']),
+    return glamor.compose(
+      glamor.css(stylesheet['.psds-circularprogress__svg']),
       noValue &&
-        css(stylesheet['.psds-circularprogress__svg--no-value']({ spin }))
+        glamor.css(
+          stylesheet['.psds-circularprogress__svg--no-value']({ spin })
+        )
     )
   },
 
   bg: (themeName, _props) =>
-    compose(
-      css(stylesheet['.psds-circularprogress__bg']),
-      css(stylesheet[`.psds-circularprogress__bg.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-circularprogress__bg']),
+      glamor.css(
+        stylesheet[`.psds-circularprogress__bg.psds-theme--${themeName}`]
+      )
     ),
 
   fg: (themeName, _props) =>
-    compose(
-      css(stylesheet['.psds-circularprogress__fg']),
-      css(stylesheet[`.psds-circularprogress__fg.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-circularprogress__fg']),
+      glamor.css(
+        stylesheet[`.psds-circularprogress__fg.psds-theme--${themeName}`]
+      )
     )
 }
 

@@ -14,14 +14,16 @@ import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { css } from 'glamor'
-import React, { ComponentProps, useState } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import NavBar from '..'
+import NavBar from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 const Filler: React.FC = props => (
   <div
-    {...css({
+    {...glamor.css({
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -57,7 +59,7 @@ const SkillsLogo: React.FC = () => (
 )
 
 type SkillsBrandProps = Omit<
-  ComponentProps<typeof NavBrand>,
+  React.ComponentProps<typeof NavBrand>,
   'logo' | 'wordmark'
 >
 
@@ -78,7 +80,7 @@ export default {
   component: NavBar
 } as Meta
 
-const Template: Story<ComponentProps<typeof NavBar>> = args => (
+const Template: Story<React.ComponentProps<typeof NavBar>> = args => (
   <NavBar {...args} />
 )
 
@@ -91,9 +93,11 @@ DesktopOnly.args = { ...defaultArgs, onMobileMenuClick: undefined }
 export const WithSkillsBrand = Template.bind({})
 WithSkillsBrand.args = { ...defaultArgs, brand: <SkillsBrand /> }
 
-export const ExampleSkills: Story<ComponentProps<typeof NavBar>> = args => {
-  const [isBrowseMenuOpen, setBrowseMenuOpen] = useState(false)
-  const [isProfileMenuOpen, setProfileMenuOpen] = useState(false)
+export const ExampleSkills: Story<
+  React.ComponentProps<typeof NavBar>
+> = args => {
+  const [isBrowseMenuOpen, setBrowseMenuOpen] = React.useState(false)
+  const [isProfileMenuOpen, setProfileMenuOpen] = React.useState(false)
 
   return (
     <NavBar
@@ -102,7 +106,7 @@ export const ExampleSkills: Story<ComponentProps<typeof NavBar>> = args => {
       items={
         <>
           <div
-            {...css({
+            {...glamor.css({
               display: 'inline-block',
               marginRight: layout.spacingXXSmall
             })}
@@ -110,7 +114,7 @@ export const ExampleSkills: Story<ComponentProps<typeof NavBar>> = args => {
             <NavItem icon={<HomeIcon />}>Home</NavItem>
           </div>
 
-          <div {...css({ display: 'inline-block' })}>
+          <div {...glamor.css({ display: 'inline-block' })}>
             <BelowLeft
               show={
                 <ActionMenu>
@@ -157,7 +161,7 @@ export const ExampleSkills: Story<ComponentProps<typeof NavBar>> = args => {
       utility={
         <>
           <div
-            {...css({
+            {...glamor.css({
               display: 'inline-block',
               marginRight: layout.spacingXXSmall
             })}
@@ -165,7 +169,7 @@ export const ExampleSkills: Story<ComponentProps<typeof NavBar>> = args => {
             <NavItem icon={<NotificationsIcon />} />
           </div>
 
-          <div {...css({ display: 'inline-block' })}>
+          <div {...glamor.css({ display: 'inline-block' })}>
             <NavItem icon={<AccountIcon />} />
           </div>
         </>

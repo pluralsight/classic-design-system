@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@5.0.0...@pluralsight/ps-design-system-navbar@5.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **navbar:** properly order the conditional exports in package ([89eb267](https://github.com/pluralsight/design-system/commit/89eb267daef8654329094f04f437f8f09c6af42b))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@4.0.0...@pluralsight/ps-design-system-navbar@5.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **navbar:** add exports to package.json as alternate entry point ([f0436fc](https://github.com/pluralsight/design-system/commit/f0436fc42e6f6de1a1df3a7bb1303f5183cf1239))
+* **navbar:** convert to esm ([44220c9](https://github.com/pluralsight/design-system/commit/44220c9b5ac313a5cc5971830099e109cdb68a7f))
+
+
+### BREAKING CHANGES
+
+* **navbar:** add exports to package.json
+* **navbar:** Drop cjs; esm only; all in on tree shaking
+* **navbar:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@3.0.7...@pluralsight/ps-design-system-navbar@4.0.0) (2021-04-05)
 
 

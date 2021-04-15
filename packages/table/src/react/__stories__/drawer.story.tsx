@@ -1,8 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Table from '..'
-
+import Table from '../index'
 import { generateUser } from './seed'
 import { ExpandButton, OutlineBox } from './shared'
 

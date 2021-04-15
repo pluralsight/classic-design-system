@@ -1,8 +1,8 @@
-import { createContext } from 'react'
 import { names as themes } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
+import React from 'react'
 
-import { sizes } from '../vars'
+import { sizes } from '../vars/index'
 
 export interface ContextValue {
   size?: ValueOf<typeof sizes>
@@ -14,6 +14,6 @@ export const initialValue: ContextValue = {
   themeName: undefined
 }
 
-const Context = createContext<ContextValue>(initialValue)
+const Context = React.createContext<ContextValue>(initialValue)
 
 export default Context

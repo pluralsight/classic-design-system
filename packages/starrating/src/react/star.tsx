@@ -1,6 +1,3 @@
-import { css } from 'glamor'
-import React, { HTMLAttributes } from 'react'
-
 import Icon, {
   StarFillIcon,
   StarIcon
@@ -9,10 +6,13 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-
-import stylesheet from '../css'
 import { ValueOf, keyMirror } from '@pluralsight/ps-design-system-util'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 const APPEARANCES = keyMirror('empty', 'half', 'full')
 
 const styles = {
@@ -27,7 +27,7 @@ const styles = {
     interactive: boolean
     themeName: ValueOf<typeof themeNames>
   }) =>
-    css(
+    glamor.css(
       stylesheet['.psds-starrating__star'],
       stylesheet[`.psds-starrating__star--theme-${themeName}`],
       bright &&
@@ -36,7 +36,7 @@ const styles = {
       interactive && stylesheet['.psds-starrating__star--interactive']
     ),
   halfStarSecondary: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet[`.psds-starrating__star__half__secondary--theme-${themeName}`]
     )
 }
@@ -75,7 +75,7 @@ const HalfStarIcon = ({ size }: { size: ValueOf<typeof Icon.sizes> }) => {
 
 interface StarProp
   extends Omit<
-    HTMLAttributes<HTMLSpanElement & HTMLButtonElement>,
+    React.HTMLAttributes<HTMLSpanElement & HTMLButtonElement>,
     'onClick' | 'onEnter' | 'onLeave'
   > {
   active?: boolean

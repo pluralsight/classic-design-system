@@ -1,12 +1,11 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
-
 import Button from '@pluralsight/ps-design-system-button'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import TextInput from '@pluralsight/ps-design-system-textinput'
+import { storiesOf } from '@storybook/react'
+import React from 'react'
 
-import EmptyState, { EmptyStateProps } from '..'
+import EmptyState, { EmptyStateProps } from '../index'
 
 const CustomIllustration = () => (
   <svg viewBox="0 0 128 128" aria-hidden role="img">
@@ -17,7 +16,9 @@ const CustomIllustration = () => (
   </svg>
 )
 
-const EmptyStateWithDefaults: React.FC<Partial<EmptyStateProps>> = props => {
+const EmptyStateWithDefaults = (
+  props: Partial<React.PropsWithoutRef<EmptyStateProps>>
+) => {
   const actions = (
     <EmptyState.Actions>
       <Button>Do a Thing</Button>
@@ -60,7 +61,7 @@ SearchInput.defaultProps = {
 
 const InlineList: React.FC = props => {
   const { children, ...rest } = props
-  const styles: { [key: string]: unknown } = {
+  const styles: { [key: string]: React.CSSProperties } = {
     list: { display: 'flex', flexWrap: 'wrap', justifyContent: 'center' },
     item: { display: 'inline-flex', margin: '0 5px 12px' }
   }
@@ -77,21 +78,21 @@ const InlineList: React.FC = props => {
 }
 
 storiesOf('EmptyState', module)
-  .add('combo', _ => <EmptyStateWithDefaults />)
-  .add('in a small fixed size container', _ => (
+  .add('combo', () => <EmptyStateWithDefaults />)
+  .add('in a small fixed size container', () => (
     <div style={{ width: 400 }}>
       <EmptyStateWithDefaults />
     </div>
   ))
 
 Object.values(EmptyState.sizes).forEach(size => {
-  storiesOf('EmptyState/sizes', module).add(size, _ => (
+  storiesOf('EmptyState/sizes', module).add(size, () => (
     <EmptyStateWithDefaults size={size} />
   ))
 })
 
 Object.values(EmptyState.Illustration.names).forEach(name => {
-  storiesOf('EmptyState/illustrations/large', module).add(name, _ => (
+  storiesOf('EmptyState/illustrations/large', module).add(name, () => (
     <EmptyState
       heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
       illustration={<EmptyState.Illustration name={name} />}
@@ -99,7 +100,7 @@ Object.values(EmptyState.Illustration.names).forEach(name => {
     />
   ))
 
-  storiesOf('EmptyState/illustrations/small', module).add(name, _ => (
+  storiesOf('EmptyState/illustrations/small', module).add(name, () => (
     <EmptyState
       heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
       illustration={<EmptyState.Illustration name={name} />}
@@ -108,7 +109,7 @@ Object.values(EmptyState.Illustration.names).forEach(name => {
   ))
 })
 
-storiesOf('EmptyState/illustrations/small', module).add('custom', _ => (
+storiesOf('EmptyState/illustrations/small', module).add('custom', () => (
   <EmptyState
     heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
     illustration={
@@ -120,7 +121,7 @@ storiesOf('EmptyState/illustrations/small', module).add('custom', _ => (
   />
 ))
 
-storiesOf('EmptyState/illustrations/large', module).add('custom', _ => (
+storiesOf('EmptyState/illustrations/large', module).add('custom', () => (
   <EmptyState
     heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
     illustration={
@@ -133,7 +134,7 @@ storiesOf('EmptyState/illustrations/large', module).add('custom', _ => (
 ))
 
 storiesOf('EmptyState/actions', module)
-  .add('with an input', _ => (
+  .add('with an input', () => (
     <EmptyStateWithDefaults
       actions={
         <EmptyState.Actions>
@@ -142,7 +143,7 @@ storiesOf('EmptyState/actions', module)
       }
     />
   ))
-  .add('with buttons', _ => (
+  .add('with buttons', () => (
     <EmptyStateWithDefaults
       actions={
         <EmptyState.Actions>
@@ -162,7 +163,7 @@ storiesOf('EmptyState/actions', module)
       }
     />
   ))
-  .add('with tags', _ => (
+  .add('with tags', () => (
     <EmptyStateWithDefaults
       actions={
         <EmptyState.Actions>

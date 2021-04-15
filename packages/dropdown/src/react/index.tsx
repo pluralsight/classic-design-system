@@ -1,19 +1,20 @@
-import React, { ReactText, ReactElement, ReactNode, forwardRef } from 'react'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
+import React from 'react'
+
 import { Divider } from './divider'
 import { Item } from './item'
-import { useDropdown, DropdownContext } from '../js'
+import { useDropdown, DropdownContext } from '../js/index'
 import { Label } from './label'
 import { Layout } from './layout'
 import { Menu } from './menu'
 import { SubLabel } from './sub-label'
 import { Button } from './button'
 import { Selected } from './selected'
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 interface DropdownStatics {
   context: typeof DropdownContext
@@ -34,16 +35,16 @@ interface DropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
   disabled?: boolean
   className?: string
   error?: boolean
-  label?: ReactNode
-  menu?: ReactElement | ReactElement[]
+  label?: React.ReactNode
+  menu?: React.ReactElement | React.ReactElement[]
   onChange?: (
     evt: React.MouseEvent | React.KeyboardEvent,
-    value?: ReactText
+    value?: React.ReactText
   ) => void
   onClick?: (e: React.MouseEvent | React.KeyboardEvent) => void
   placeholder?: string
   size?: ValueOf<typeof vars.sizes>
-  subLabel?: ReactNode
+  subLabel?: React.ReactNode
   uniqueId?: (prefix: string) => string
   value?: React.ReactText
 }
@@ -54,7 +55,7 @@ interface DropdownComponent
     DropdownStatics
   > {}
 
-const Dropdown = forwardRef<HTMLButtonElement, DropdownProps>(
+const Dropdown = React.forwardRef<HTMLButtonElement, DropdownProps>(
   ({ children, ...props }, forwardedRef) => {
     const allProps = useDropdown(props, forwardedRef)
     return (

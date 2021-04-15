@@ -3,12 +3,12 @@ import {
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
-import React, { ReactEventHandler, forwardRef, useState } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import { sizes, widths } from '../vars'
-import { getColorByName, getInitials, transformSrc } from '../js'
+import stylesheet from '../css/index'
+import { sizes, widths } from '../vars/index'
+import { getColorByName, getInitials, transformSrc } from '../js/index'
 
 interface AvatarProps extends HTMLPropsFor<'div'> {
   alt?: string
@@ -30,30 +30,32 @@ type AvatarComponent = RefForwardingComponent<
 
 type ImageState = 'loading' | 'error' | 'success'
 
-type StyleFn = (props: AvatarProps) => StyleAttribute
+type StyleFn = (props: AvatarProps) => glamorExports.StyleAttribute
+
+const glamor = glamorDefault || glamorExports
 
 const styles: { [key: string]: StyleFn } = {
   avatar: props =>
-    compose(
-      css(stylesheet['.psds-avatar']),
-      css(stylesheet[`.psds-avatar--size-${props.size}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-avatar']),
+      glamor.css(stylesheet[`.psds-avatar--size-${props.size}`])
     ),
-  image: () => css(stylesheet['.psds-avatar__image']),
-  initials: () => css(stylesheet['.psds-avatar__initials'])
+  image: () => glamor.css(stylesheet['.psds-avatar__image']),
+  initials: () => glamor.css(stylesheet['.psds-avatar__initials'])
 }
 
-const Avatar = forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
+const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
   const { alt, name, size: _size, src, ...rest } = props
 
-  const [imageState, setImageState] = useState<ImageState>('loading')
+  const [imageState, setImageState] = React.useState<ImageState>('loading')
 
-  const handleImageLoadSuccess: ReactEventHandler<HTMLImageElement> = evt => {
+  const handleImageLoadSuccess: React.ReactEventHandler<HTMLImageElement> = evt => {
     const pixel = evt.target as HTMLImageElement
     const isFallbackPixel = pixel.naturalWidth === 1
     setImageState(isFallbackPixel ? 'error' : 'success')
   }
 
-  const handleImageLoadError: ReactEventHandler<HTMLImageElement> = () => {
+  const handleImageLoadError: React.ReactEventHandler<HTMLImageElement> = () => {
     setImageState('error')
   }
 

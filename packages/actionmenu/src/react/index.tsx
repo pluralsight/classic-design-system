@@ -1,10 +1,3 @@
-import React, {
-  KeyboardEventHandler,
-  MouseEvent,
-  ReactText,
-  useImperativeHandle
-} from 'react'
-import { css, compose, keyframes } from 'glamor'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -14,25 +7,28 @@ import {
   useCloseOnDocumentEvents,
   useMenuRef
 } from '@pluralsight/ps-design-system-util'
-
-import stylesheet from '../css/index'
-import * as vars from '../vars/index'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import { ActionMenuContext } from './context'
+import stylesheet from '../css/index'
 import { Divider } from './divider'
-import { Item } from './item'
 import { Ellipsis } from './ellipsis'
+import { Item } from './item'
 import { Icon } from './icon'
+import * as vars from '../vars/index'
 
-const slide = keyframes(
+const glamor = glamorDefault || glamorExports
+
+const slide = glamor.keyframes(
   stylesheet['@keyframes psds-actionmenu__keyframes__slide']
 )
 
 const styles = ({ origin }: { origin?: ValueOf<typeof vars.origins> }) =>
-  compose(
-    css(stylesheet['.psds-actionmenu']),
-    css(stylesheet[`.psds-actionmenu--origin-${origin}`]),
-    css(stylesheet['.psds-actionmenu__animation']({ slide }))
+  glamor.compose(
+    glamor.css(stylesheet['.psds-actionmenu']),
+    glamor.css(stylesheet[`.psds-actionmenu--origin-${origin}`]),
+    glamor.css(stylesheet['.psds-actionmenu__animation']({ slide }))
   )
 
 // eslint-disable-next-line @typescript-eslint/no-empty-function
@@ -48,7 +44,7 @@ interface ActionMenuStatics {
   useMenuRef: typeof useMenuRef
 }
 interface ActionMenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
-  onClick?: (evt: MouseEvent, value?: ReactText) => void
+  onClick?: (evt: React.MouseEvent, value?: React.ReactText) => void
   onClose?: () => void
   origin?: ValueOf<typeof vars.origins>
 }
@@ -69,14 +65,14 @@ export const ActionMenu = React.forwardRef<HTMLUListElement, ActionMenuProps>(
     forwardedRef
   ) => {
     const ref = React.useRef<HTMLUListElement | null>(null)
-    useImperativeHandle<HTMLUListElement | null, HTMLUListElement | null>(
+    React.useImperativeHandle<HTMLUListElement | null, HTMLUListElement | null>(
       forwardedRef,
       () => ref.current
     )
 
     useCloseOnDocumentEvents<HTMLUListElement>(ref, onClose)
 
-    const handleKeyDown: KeyboardEventHandler<HTMLUListElement> = evt => {
+    const handleKeyDown: React.KeyboardEventHandler<HTMLUListElement> = evt => {
       handleMenuKeyDownEvents(evt)
       if (evt.key === 'Escape') onClose()
     }

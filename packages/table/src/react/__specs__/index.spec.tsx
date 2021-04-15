@@ -3,7 +3,7 @@ import { axe } from 'jest-axe'
 import React from 'react'
 import { fireEvent, render, screen, within } from '@testing-library/react'
 
-import Table from '..'
+import Table from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('Table', () => {

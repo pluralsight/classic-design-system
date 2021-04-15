@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@8.0.0...@pluralsight/ps-design-system-viewtoggle@8.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **viewtoggle:** properly order the conditional exports in package ([4e4b800](https://github.com/pluralsight/design-system/commit/4e4b8008fda9a8457e7ce6866de593903a11ec82))
+
+
+
+
+
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@7.1.10...@pluralsight/ps-design-system-viewtoggle@8.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **viewtoggle:** add exports to package.json as alternate entry point ([546e972](https://github.com/pluralsight/design-system/commit/546e97265f78a2dce4ca61bfb3f8f7bf396879cd))
+* **viewtoggle:** convert to esm ([7ed063f](https://github.com/pluralsight/design-system/commit/7ed063fa34a42a4b6a69d2b9ac74ca96ab0b184c))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** add exports to package.json
+
+FIRST:
+
+import * as fs from 'fs'
+import glob from 'glob'
+import prettier from 'prettier'
+
+glob('packages/**/package.json', (err, files) => {
+  files
+    .filter(filePath => !/node_modules/.test(filePath))
+    .forEach(filePath => {
+      const contents = fs.readFileSync(filePath, 'utf8')
+      const pkg = JSON.parse(contents)
+      pkg.exports = {
+        import: './' + pkg.module,
+        require: './' + pkg.main
+      }
+      fs.writeFileSync(
+        filePath,
+        prettier.format(JSON.stringify(pkg), {
+          parser: 'json-stringify'
+        }),
+        'utf8'
+      )
+    })
+})
+
+LAST:
+
+for FILE in $(git diff --name-only); do
+  PACKAGE=`echo $FILE | sed "s|packages/\(.*\)/.*|\1|"`
+  git add "$FILE"
+  git commit -m "refactor($PACKAGE): add exports to package.json as alternate entry point" \
+    --message "BREAKING CHANGE: add exports to package.json" -n
+done
+* **viewtoggle:** Drop cjs; esm only; all in on tree shaking
+* **viewtoggle:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [7.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@7.1.9...@pluralsight/ps-design-system-viewtoggle@7.1.10) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle

@@ -1,17 +1,21 @@
 import { accessibility } from '@pluralsight/ps-design-system-core'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
-import React, { ReactNode, forwardRef } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 interface Props extends HTMLPropsFor<'div'> {
-  children?: ReactNode
+  children?: React.ReactNode
   as?: React.ElementType | keyof JSX.IntrinsicElements
 }
 
-const ScreenReaderOnly = forwardRef<HTMLElement, Props>((props, ref) => {
+const glamor = glamorDefault || glamorExports
+
+const ScreenReaderOnly = React.forwardRef<HTMLElement, Props>((props, ref) => {
   const { as: Tag = 'div', ...rest } = props
 
-  return <Tag ref={ref} {...css(accessibility.screenReaderOnly)} {...rest} />
+  return (
+    <Tag ref={ref} {...glamor.css(accessibility.screenReaderOnly)} {...rest} />
+  )
 })
 
 ScreenReaderOnly.displayName = 'ScreenReaderOnly'

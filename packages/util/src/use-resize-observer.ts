@@ -1,18 +1,22 @@
-import { canUseDOM } from 'exenv'
-import { MutableRefObject, RefObject, useEffect, useState } from 'react'
+import exenv from 'exenv'
+import React from 'react'
 import ResizeObserver from 'resize-observer-polyfill'
 
 import { combineFns } from './combine-fns'
 import { debounce } from './debounce'
 
+const { canUseDOM } = exenv
+
 export function useResizeObserver(
-  ref: RefObject<HTMLElement> | MutableRefObject<HTMLElement | undefined>,
+  ref:
+    | React.RefObject<HTMLElement>
+    | React.MutableRefObject<HTMLElement | undefined>,
   onResize?: ResizeObserverCallback
 ) {
-  const [width, setWidth] = useState(0)
-  const [height, setHeight] = useState(0)
+  const [width, setWidth] = React.useState(0)
+  const [height, setHeight] = React.useState(0)
 
-  useEffect(() => {
+  React.useEffect(() => {
     const { current: el } = ref
     if (!el || !canUseDOM) return
 

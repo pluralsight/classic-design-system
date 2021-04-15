@@ -1,11 +1,12 @@
-import { css } from 'glamor'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { appearances } from '../vars'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import React, { HTMLAttributes } from 'react'
+import stylesheet from '../css/index'
+import { appearances } from '../vars/index'
 
-import stylesheet from '../css'
+const glamor = glamorDefault || glamorExports
 
 const style = ({
   appearance,
@@ -14,7 +15,7 @@ const style = ({
   appearance: string
   themeName: string
 }) =>
-  css(
+  glamor.css(
     stylesheet[`.psds-link`],
     appearance === appearances.default
       ? stylesheet[
@@ -27,7 +28,7 @@ interface LinkStatics {
   appearances: typeof appearances
 }
 
-interface Props extends HTMLAttributes<HTMLAnchorElement> {
+interface Props extends React.HTMLAttributes<HTMLAnchorElement> {
   appearance?: string
 }
 interface LinkComponent

@@ -1,21 +1,21 @@
 import Field from '@pluralsight/ps-design-system-field'
 import { ValueOf, canUseDOM, RefFor } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
-import React, { FC, ComponentProps, useEffect, useRef } from 'react'
+import React from 'react'
 
 import { Calendar } from './calendar'
 import { CalendarDates } from './calendar-dates'
 import { TextInputField } from './text-input-field'
 import { useDateSelectChange } from './utils'
-import { slides } from '../vars'
+import { slides } from '../vars/index'
 
 interface DatePickerProps
-  extends Omit<ComponentProps<typeof Field>, 'onSelect'> {
+  extends Omit<React.ComponentProps<typeof Field>, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
   _uniqueId?: (prefix: string) => string
 }
 
-export const DatePicker: FC<DatePickerProps> = ({
+export const DatePicker: React.FC<DatePickerProps> = ({
   disabled,
   error,
   label,
@@ -50,8 +50,8 @@ export const DatePicker: FC<DatePickerProps> = ({
     setSlide,
     setSelected
   })
-  const ref = useRef<HTMLDivElement | undefined>()
-  useEffect(() => {
+  const ref = React.useRef<HTMLDivElement | undefined>()
+  React.useEffect(() => {
     if (!canUseDOM()) return () => {}
 
     const handleClickOutsideMenu = (evt: MouseEvent) => {

@@ -1,14 +1,18 @@
-import React from 'react'
 import { forwardRefWithAs } from '@pluralsight/ps-design-system-util'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
+
+import stylesheet from '../css/index'
 import Menu, { MenuItemProps } from './index'
-import { css } from 'glamor'
-import stylesheet from '../css'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
-  item: () => css(stylesheet['.psds-menu__item-with-description']),
-  wrapper: () => css(stylesheet['.psds-menu__item-with-description__wrapper']),
+  item: () => glamor.css(stylesheet['.psds-menu__item-with-description']),
+  wrapper: () =>
+    glamor.css(stylesheet['.psds-menu__item-with-description__wrapper']),
   description: () =>
-    css(stylesheet[`.psds-menu__item-with-description__description`])
+    glamor.css(stylesheet[`.psds-menu__item-with-description__description`])
 }
 
 interface MenuItemWithDescriptionProps extends MenuItemProps {

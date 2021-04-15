@@ -1,16 +1,18 @@
 import Halo from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
-import { css, media } from 'glamor'
-import React, { MouseEventHandler, ReactNode } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   logo: (props: { children?: unknown }) =>
-    css(
+    glamor.css(
       stylesheet['.psds-navbrand__logo'],
       props.children &&
-        media(
+        glamor.media(
           '(min-width: 1200px)',
           stylesheet['@media (min-width: 1200px)'][
             '.psds-navbrand__logo--wordmark'
@@ -18,14 +20,14 @@ const styles = {
         )
     ),
   navBrand: (props: { href?: string; onClick?: unknown }) =>
-    css(
+    glamor.css(
       stylesheet['.psds-navbrand'],
       (props.href || props.onClick) && stylesheet['.psds-navbrand--clickable']
     ),
   wordmark: () =>
-    css(
+    glamor.css(
       stylesheet['.psds-navbrand__wordmark'],
-      media(
+      glamor.media(
         '(min-width: 1200px)',
         stylesheet['@media (min-width: 1200px)']['.psds-navbrand__wordmark']
       )
@@ -33,20 +35,20 @@ const styles = {
 }
 
 interface BaseNavBrandProps {
-  logo?: ReactNode
-  wordmark?: ReactNode
+  logo?: React.ReactNode
+  wordmark?: React.ReactNode
 }
 interface AnchorProps extends BaseNavBrandProps, HTMLPropsFor<'a'> {
   href: string
-  onClick?: MouseEventHandler<HTMLAnchorElement>
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
 }
 interface ButtonProps extends BaseNavBrandProps, HTMLPropsFor<'button'> {
   href?: undefined
-  onClick: MouseEventHandler<HTMLButtonElement>
+  onClick: React.MouseEventHandler<HTMLButtonElement>
 }
 interface DivProps extends BaseNavBrandProps, HTMLPropsFor<'div'> {
   href?: undefined
-  onClick?: MouseEventHandler<HTMLDivElement>
+  onClick?: React.MouseEventHandler<HTMLDivElement>
 }
 
 type NavBrandElement = HTMLAnchorElement | HTMLButtonElement | HTMLDivElement

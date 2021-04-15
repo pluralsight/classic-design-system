@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@11.0.0...@pluralsight/ps-design-system-breadcrumb@11.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **breadcrumb:** properly order the conditional exports in package ([881722e](https://github.com/pluralsight/design-system/commit/881722eab4857e260c254b5a15a64716b9452a4b))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@10.0.9...@pluralsight/ps-design-system-breadcrumb@11.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **breadcrumb:** add exports to package.json as alternate entry point ([a637057](https://github.com/pluralsight/design-system/commit/a6370575e070589e0357f5b5897f85cd023eeef1))
+* **breadcrumb:** convert to esm ([eb9f0ae](https://github.com/pluralsight/design-system/commit/eb9f0aee8d7ccae71cbb1eac5b972210827cf298))
+
+
+### BREAKING CHANGES
+
+* **breadcrumb:** add exports to package.json
+* **breadcrumb:** Drop cjs; esm only; all in on tree shaking
+* **breadcrumb:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [10.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@10.0.8...@pluralsight/ps-design-system-breadcrumb@10.0.9) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb

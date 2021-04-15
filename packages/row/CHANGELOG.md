@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@15.0.0...@pluralsight/ps-design-system-row@15.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **row:** properly order the conditional exports in package ([afc86f2](https://github.com/pluralsight/design-system/commit/afc86f2307a138f4ade5af44b53614b713becdd1))
+
+
+
+
+
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@14.0.0...@pluralsight/ps-design-system-row@15.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **row:** add exports to package.json as alternate entry point ([a20e741](https://github.com/pluralsight/design-system/commit/a20e741599466e72af4eb29912057bfc782ad255))
+* **row:** convert to esm ([80c21b5](https://github.com/pluralsight/design-system/commit/80c21b5bd63b1b0be44c6c0d9b28414f24cc32a8))
+
+
+### BREAKING CHANGES
+
+* **row:** add exports to package.json
+* **row:** Drop cjs; esm only; all in on tree shaking
+* **row:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 # [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@13.0.7...@pluralsight/ps-design-system-row@14.0.0) (2021-04-05)
 
 

@@ -5,7 +5,7 @@ import { DecoratorFn } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
 
-import Switch from '..'
+import Switch from '../index'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
   <div {...css({ padding: layout.spacingLarge })}>{storyFn()}</div>

@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@12.0.0...@pluralsight/ps-design-system-badge@12.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **badge:** properly order the conditional exports in package ([8cf807e](https://github.com/pluralsight/design-system/commit/8cf807e2dfb26cc810d98831193f30c7e406509a))
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@11.1.9...@pluralsight/ps-design-system-badge@12.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **badge:** add exports to package.json as alternate entry point ([4644471](https://github.com/pluralsight/design-system/commit/4644471a3671e8d75dad1517bcc11838bc20af1e))
+* **badge:** convert to esm ([1fea378](https://github.com/pluralsight/design-system/commit/1fea378c2cee24e7c563e08aba917e52ed0e5f1d))
+
+
+### BREAKING CHANGES
+
+* **badge:** add exports to package.json
+* **badge:** Drop cjs; esm only; all in on tree shaking
+* **badge:** Remove file imports (eg, packageName/react)
+
+
+
+
+
 ## [11.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@11.1.8...@pluralsight/ps-design-system-badge@11.1.9) (2021-04-05)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-badge

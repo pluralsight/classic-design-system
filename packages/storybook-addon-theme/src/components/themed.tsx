@@ -1,10 +1,9 @@
-import React, { HTMLAttributes } from 'react'
-import { styled } from '@storybook/theming'
-
 import * as core from '@pluralsight/ps-design-system-core'
 import Theme from '@pluralsight/ps-design-system-theme'
+import { styled } from '@storybook/theming'
+import React from 'react'
 
-interface ThemedProps extends HTMLAttributes<HTMLDivElement> {
+interface ThemedProps extends React.HTMLAttributes<HTMLDivElement> {
   themeName: keyof typeof Theme.names
 }
 

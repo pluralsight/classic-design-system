@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 
 interface Options {
   isOpen?: boolean
@@ -10,7 +10,7 @@ const noop = () => {}
 
 export const useToggle = (opts: Options = {}) => {
   const { isOpen, onToggle = noop } = opts
-  const [_isOpen, setOpen] = useState(false)
+  const [_isOpen, setOpen] = React.useState(false)
   return {
     ...(isOpen !== undefined
       ? { isOpen, onToggle }
