@@ -41,7 +41,14 @@ import SearchInput from '@pluralsight/ps-design-system-searchinput'
 
 const Comp = () => { 
   const [value, setValue] = React.useState('')
-  return <SearchInput onClear={() => setValue('')} placeholder="Searching for?" />
+  return <SearchInput
+    onClear={() => setValue('')}
+    placeholder="Searching for?" 
+    value={value}
+    onChange={(evt: React.ChangeEvent<HTMLInputElement>) => {
+      setValue(evt.target.value)
+    }}
+  />
 }
 
 export default Comp
