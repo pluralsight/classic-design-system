@@ -1,9 +1,11 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { css } from 'glamor'
-import React, { ComponentProps } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import Halo from '../index'
 import Focusable from './focusable'
+import Halo from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 const defaultArgs = { children: <Focusable /> }
 
@@ -12,7 +14,7 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
 
   return (
     <div
-      {...css({
+      {...glamor.css({
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
@@ -27,7 +29,9 @@ export default {
   component: Halo
 } as Meta
 
-const Template: Story<ComponentProps<typeof Halo>> = args => <Halo {...args} />
+const Template: Story<React.ComponentProps<typeof Halo>> = args => (
+  <Halo {...args} />
+)
 
 export const Basic = Template.bind({})
 Basic.args = { ...defaultArgs }
