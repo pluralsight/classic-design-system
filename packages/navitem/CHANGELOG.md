@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@5.0.0...@pluralsight/ps-design-system-navitem@5.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **navitem:** properly order the conditional exports in package ([6c68e0d](https://github.com/pluralsight/design-system/commit/6c68e0d0f4c58e30c269d714a4513ae4a2f85206))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@4.0.0...@pluralsight/ps-design-system-navitem@5.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **navitem:** add exports to package.json as alternate entry point ([6bf22b9](https://github.com/pluralsight/design-system/commit/6bf22b97fce50018395589bc2d78435408ebb202))
+* **navitem:** convert to esm ([45ddb34](https://github.com/pluralsight/design-system/commit/45ddb34ad2ad3eba768df58af4d9b6bc0ee3709b))
+
+
+### BREAKING CHANGES
+
+* **navitem:** add exports to package.json
+* **navitem:** Drop cjs; esm only; all in on tree shaking
+* **navitem:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@3.0.7...@pluralsight/ps-design-system-navitem@4.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [3.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@3.0.6...@pluralsight/ps-design-system-navitem@3.0.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navitem
+
+
+
+
+
 ## [3.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@3.0.5...@pluralsight/ps-design-system-navitem@3.0.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navitem

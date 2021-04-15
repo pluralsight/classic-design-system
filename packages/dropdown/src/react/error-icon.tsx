@@ -1,10 +1,12 @@
-import React from 'react'
-import { css } from 'glamor'
-
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
-import stylesheet from '../css'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-const styles = css(stylesheet['.psds-dropdown__error'])
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
+
+const styles = glamor.css(stylesheet['.psds-dropdown__error'])
 
 export const ErrorIcon = ({ error }: { error: boolean }) =>
   error ? (

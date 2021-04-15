@@ -1,12 +1,14 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   layout: (disabled?: boolean) =>
-    css(
+    glamor.css(
       stylesheet[`.psds-dropdown`],
       disabled && stylesheet[`.psds-dropdown--disabled`]
     )

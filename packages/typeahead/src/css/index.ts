@@ -66,6 +66,6 @@ export default {
     marginLeft: layout.spacingXSmall
   },
   '.psds-typeahead__menu__item__icon--selected': {
-    color: colorsBlue.base
+    color: colorsBlue[6]
   }
 }

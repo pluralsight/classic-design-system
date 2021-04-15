@@ -6,6 +6,10 @@
     "rootDir": null,
     "strict": true
   },
-  "exclude": ["node_modules"],
-  "include": ["js/*.ts"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "src/*.ts"
+  ]
 }

@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@8.0.0...@pluralsight/ps-design-system-linearprogress@8.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **linearprogress:** properly order the conditional exports in package ([a27f1bb](https://github.com/pluralsight/design-system/commit/a27f1bb5cb78a836e043f112b7ce65d40c3b4eba))
+
+
+
+
+
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@7.0.0...@pluralsight/ps-design-system-linearprogress@8.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **linearprogress:** add exports to package.json as alternate entry point ([40aa558](https://github.com/pluralsight/design-system/commit/40aa55862ac78767068e435ba80e715b52a51352))
+* **linearprogress:** convert to esm ([505360f](https://github.com/pluralsight/design-system/commit/505360fedd3c6f37545a2182199b21ed0f8c1ce2))
+
+
+### BREAKING CHANGES
+
+* **linearprogress:** add exports to package.json
+* **linearprogress:** Drop cjs; esm only; all in on tree shaking
+* **linearprogress:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@6.1.9...@pluralsight/ps-design-system-linearprogress@7.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [6.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@6.1.8...@pluralsight/ps-design-system-linearprogress@6.1.9) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-linearprogress
+
+
+
+
+
 ## [6.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@6.1.7...@pluralsight/ps-design-system-linearprogress@6.1.8) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-linearprogress

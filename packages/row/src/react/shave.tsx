@@ -1,6 +1,6 @@
 import { type } from '@pluralsight/ps-design-system-core'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import React, { useEffect, useRef, useCallback } from 'react'
+import React from 'react'
 import shave from 'shave'
 
 interface ShaveProps extends HTMLPropsFor<'div'> {
@@ -19,26 +19,26 @@ const Shave: React.FC<ShaveProps> = props => {
     ...rest
   } = props
 
-  const ref = useRef<HTMLDivElement>(null)
+  const ref = React.useRef<HTMLDivElement>(null)
 
-  const reset = useCallback(() => {
+  const reset = React.useCallback(() => {
     if (!ref.current) return
 
     ref.current.innerHTML = children
   }, [children])
 
-  const truncate = useCallback(() => {
+  const truncate = React.useCallback(() => {
     if (!ref.current) return
 
     const maxHeight = lineHeight * lines
     shave(ref.current, maxHeight, { character })
   }, [lineHeight, lines, character])
 
-  useEffect(() => {
+  React.useEffect(() => {
     reset()
   }, [reset])
 
-  useEffect(() => {
+  React.useEffect(() => {
     window.addEventListener('resize', truncate)
     truncate()
 

@@ -1,8 +1,8 @@
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { ComponentProps, useState } from 'react'
+import React from 'react'
 
-import SearchInput from '..'
+import SearchInput from '../index'
 
 const defaultArgs = {
   onFocus: action('on focus'),
@@ -17,8 +17,8 @@ export default {
   component: SearchInput
 } as Meta
 
-const Template: Story<ComponentProps<typeof SearchInput>> = args => {
-  const [value, setValue] = useState('')
+const Template: Story<React.ComponentProps<typeof SearchInput>> = args => {
+  const [value, setValue] = React.useState('')
 
   return (
     <SearchInput

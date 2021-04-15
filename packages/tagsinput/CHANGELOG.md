@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@2.0.0...@pluralsight/ps-design-system-tagsinput@2.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **tagsinput:** properly order the conditional exports in package ([79a58ea](https://github.com/pluralsight/design-system/commit/79a58eaf8fd0a599f4bc889a2c7941cb43203350))
+
+
+
+
+
+# [2.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.2.6...@pluralsight/ps-design-system-tagsinput@2.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **tagsinput:** add exports to package.json as alternate entry point ([104c7ca](https://github.com/pluralsight/design-system/commit/104c7ca3edb537cab3a9df36cd571bc142e034ec))
+* **tagsinput:** convert to esm ([e235101](https://github.com/pluralsight/design-system/commit/e23510118cd38ba4d3d34db65722a8d23f8652ee))
+
+
+### BREAKING CHANGES
+
+* **tagsinput:** add exports to package.json
+* **tagsinput:** Drop cjs; esm only; all in on tree shaking
+* **tagsinput:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [1.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.2.5...@pluralsight/ps-design-system-tagsinput@1.2.6) (2021-04-07)
+
+
+### Bug Fixes
+
+* **tagsinput:** match height of buttons & text inputs ([93aa412](https://github.com/pluralsight/design-system/commit/93aa41259af49c8617becd8847acf7c1ec510519))
+
+
+
+
+
+## [1.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.2.4...@pluralsight/ps-design-system-tagsinput@1.2.5) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tagsinput
+
+
+
+
+
+## [1.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.2.3...@pluralsight/ps-design-system-tagsinput@1.2.4) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tagsinput
+
+
+
+
+
 ## [1.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@1.2.2...@pluralsight/ps-design-system-tagsinput@1.2.3) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tagsinput

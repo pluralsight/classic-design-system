@@ -6,28 +6,18 @@ import {
   HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
-import React, {
-  Children,
-  ReactElement,
-  ReactNode,
-  cloneElement,
-  forwardRef,
-  isValidElement,
-  useEffect,
-  useImperativeHandle,
-  useMemo,
-  useRef,
-  useState
-} from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 type StyleFn = (
   themeName: ValueOf<keyof typeof names>,
   props?: Record<string, any>
-) => StyleAttribute
+) => glamorExports.StyleAttribute
 
 interface ViewToggleProps
   extends Omit<React.ComponentProps<typeof List>, 'onSelect'> {
@@ -47,42 +37,45 @@ interface ViewToggleComponent
 
 const styles: { [key: string]: StyleFn } = {
   optionButton: (themeName, props) =>
-    compose(
-      css(
+    glamor.compose(
+      glamor.css(
         { label: 'viewtoggle__option' },
         stylesheet['.psds-viewtoggle__option'],
         stylesheet[`.psds-viewtoggle__option.psds-theme--${themeName}`]
       ),
-      props.active && css(stylesheet['.psds-viewtoggle__option--active'])
+      props.active && glamor.css(stylesheet['.psds-viewtoggle__option--active'])
     ),
   list: themeName =>
-    css(
+    glamor.css(
       { label: 'viewtoggle' },
       stylesheet['.psds-viewtoggle'],
       stylesheet[`.psds-viewtoggle.psds-theme--${themeName}`]
     ),
   activePillBg: themeName =>
-    css(
+    glamor.css(
       { label: 'viewtoggle__option-bg' },
       stylesheet['.psds-viewtoggle__option-bg'],
       stylesheet[`.psds-viewtoggle__option-bg.psds-theme--${themeName}`]
     ),
-  pillBgSpacer: () => css(stylesheet['.psds-viewtoggle__option-bg__spacer'])
+  pillBgSpacer: () =>
+    glamor.css(stylesheet['.psds-viewtoggle__option-bg__spacer'])
 }
 
-const ViewToggle = forwardRef<HTMLDivElement, ViewToggleProps>(
+const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
   (props, forwardedRef) => {
     const { children, onSelect, ...rest } = props
 
-    const ref = useRef<HTMLDivElement>(null)
-    useImperativeHandle(forwardedRef, () => ref.current)
+    const ref = React.useRef<HTMLDivElement>(null)
+    React.useImperativeHandle(forwardedRef, () => ref.current)
 
     const hasRenderedOnce = useHasRenderedOnce()
 
-    const initialIndex = useMemo(() => findActiveIndex(children), [children])
-    const [activeIndex, setActiveIndex] = useState<number>(initialIndex)
+    const initialIndex = React.useMemo(() => findActiveIndex(children), [
+      children
+    ])
+    const [activeIndex, setActiveIndex] = React.useState<number>(initialIndex)
 
-    useEffect(() => {
+    React.useEffect(() => {
       const index = findActiveIndex(children)
       setActiveIndex(index)
     }, [children])
@@ -95,8 +88,8 @@ const ViewToggle = forwardRef<HTMLDivElement, ViewToggleProps>(
     )
 
     function renderActivePill() {
-      const activeEl = Children.toArray(children)[activeIndex]
-      if (!isValidElement(activeEl)) return null
+      const activeEl = React.Children.toArray(children)[activeIndex]
+      if (!React.isValidElement(activeEl)) return null
 
       let activePillStyle = {}
       if (hasRenderedOnce && ref.current) {
@@ -114,11 +107,11 @@ const ViewToggle = forwardRef<HTMLDivElement, ViewToggleProps>(
     }
 
     function renderChildren() {
-      return Children.map(children, (child, i) => {
-        if (!isValidElement(child)) return null
+      return React.Children.map(children, (child, i) => {
+        if (!React.isValidElement(child)) return null
         if (i >= vars.maxOptionsCount) return null
 
-        return cloneElement(child, {
+        return React.cloneElement(child, {
           _i: i,
           _onSelect: handleSelect,
           active: activeIndex === i
@@ -140,10 +133,12 @@ const ActivePillBg: React.FC<HTMLPropsFor<'div'>> = props => {
   return <div {...styles.activePillBg(themeName)} aria-hidden {...props} />
 }
 
-const List = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>((props, ref) => {
-  const themeName = useTheme()
-  return <div ref={ref} {...styles.list(themeName)} {...props} />
-})
+const List = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+  (props, ref) => {
+    const themeName = useTheme()
+    return <div ref={ref} {...styles.list(themeName)} {...props} />
+  }
+)
 
 const PillBgSpacer: React.FC<HTMLPropsFor<'div'>> = props => {
   const themeName = useTheme()
@@ -153,7 +148,7 @@ const PillBgSpacer: React.FC<HTMLPropsFor<'div'>> = props => {
 interface OptionButtonProps extends HTMLPropsFor<'button'> {
   active: boolean
 }
-const OptionButton = forwardRef<HTMLButtonElement, OptionButtonProps>(
+const OptionButton = React.forwardRef<HTMLButtonElement, OptionButtonProps>(
   (props, ref) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { active, ...rest } = props
@@ -174,40 +169,42 @@ interface OptionProps
   _onSelect?: (evt: React.MouseEvent<HTMLButtonElement>, index: number) => void
   active?: boolean
 }
-const Option = forwardRef<HTMLButtonElement, OptionProps>((props, ref) => {
-  const { active = false, _onSelect, _i, ...rest } = props
+const Option = React.forwardRef<HTMLButtonElement, OptionProps>(
+  (props, ref) => {
+    const { active = false, _onSelect, _i, ...rest } = props
 
-  const handleClick = (evt: React.MouseEvent<HTMLButtonElement>) => {
-    _onSelect(evt, _i)
+    const handleClick = (evt: React.MouseEvent<HTMLButtonElement>) => {
+      _onSelect(evt, _i)
+    }
+
+    return (
+      <OptionButton
+        active={active}
+        aria-selected={active}
+        onClick={handleClick}
+        ref={ref}
+        role="radio"
+        {...rest}
+      />
+    )
   }
-
-  return (
-    <OptionButton
-      active={active}
-      aria-selected={active}
-      onClick={handleClick}
-      ref={ref}
-      role="radio"
-      {...rest}
-    />
-  )
-})
+)
 
 ViewToggle.Option = Option
 
 export default ViewToggle
 
-function findActiveIndex(els: ReactNode): number {
-  const index = Children.toArray(els).findIndex(
-    (el: ReactElement) => el.props.active
+function findActiveIndex(els: React.ReactNode): number {
+  const index = React.Children.toArray(els).findIndex(
+    (el: React.ReactElement) => el.props.active
   )
   return index >= 0 ? index : 0
 }
 
 function useHasRenderedOnce() {
-  const [hasRenderedOnce, setHasRenderedOnce] = useState(false)
+  const [hasRenderedOnce, setHasRenderedOnce] = React.useState(false)
 
-  useEffect(() => {
+  React.useEffect(() => {
     setHasRenderedOnce(true)
   }, [])
 

@@ -1,10 +1,9 @@
+import Button from '@pluralsight/ps-design-system-button'
+import * as Icon from '@pluralsight/ps-design-system-icon'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button'
-import * as Icon from '@pluralsight/ps-design-system-icon'
-
-import Row from '..'
+import Row from '../index'
 
 const getImgSrc = ({ w = 680, h = 320, id = 42 } = {}) =>
   `//picsum.photos/${w}/${h}?image=${id}&gravity=north`

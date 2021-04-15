@@ -1,5 +1,5 @@
-import { KeyboardEventHandler, useCallback, useState } from 'react'
 import { useCombinedRefs } from '@pluralsight/ps-design-system-util'
+import React from 'react'
 
 export const searchListItem = (
   el?: HTMLLIElement,
@@ -99,7 +99,7 @@ const character = (evt: KeyboardEvent) => {
   }
 }
 
-export const handleMenuKeyDownEvents: KeyboardEventHandler = synthetic => {
+export const handleMenuKeyDownEvents: React.KeyboardEventHandler = synthetic => {
   const evt = synthetic.nativeEvent
 
   evt.key === 'ArrowDown'
@@ -116,8 +116,8 @@ export const handleMenuKeyDownEvents: KeyboardEventHandler = synthetic => {
 }
 
 export const useMenuRef = () => {
-  const [, setFocus] = useState<boolean | undefined>()
-  const inner = useCallback(
+  const [, setFocus] = React.useState<boolean | undefined>()
+  const inner = React.useCallback(
     node => {
       if (node) {
         const firstMenuItem =

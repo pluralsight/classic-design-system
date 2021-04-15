@@ -1,13 +1,27 @@
-import * as React from 'react'
+import React from 'react'
 import {
   canUseDOM,
   cloneElementWithRef,
   createUniversalPortal
 } from '@pluralsight/ps-design-system-util'
 
-import * as positionFns from '../js'
+import * as positionFns from '../js/index'
 import useOnWindowResize from './use-on-window-resize'
 import useOnWindowScroll from './use-on-window-scroll'
+
+export interface PositionProps {
+  children: React.FunctionComponentElement<unknown>
+  inNode?: HTMLElement
+  position: positionFns.PositionFunction
+  show: React.FunctionComponentElement<ShowProps>
+  target?: HTMLElement | React.RefObject<HTMLElement>
+  when?: boolean
+}
+
+interface ShowProps {
+  ref?: React.RefObject<HTMLElement>
+  style?: React.CSSProperties
+}
 
 export const Above = React.forwardRef<
   HTMLElement,
@@ -73,18 +87,6 @@ export const LeftOf = React.forwardRef<
 })
 LeftOf.displayName = 'LeftOf'
 
-interface ShowProps {
-  ref?: React.RefObject<HTMLElement>
-  style?: React.CSSProperties
-}
-interface PositionProps {
-  children: React.FunctionComponentElement<unknown>
-  inNode?: HTMLElement
-  position: positionFns.PositionFunction
-  show: React.FunctionComponentElement<ShowProps>
-  target?: HTMLElement | React.RefObject<HTMLElement>
-  when?: boolean
-}
 export const Position = React.forwardRef<HTMLElement, PositionProps>(
   (props, forwardedRef) => {
     const { target, position: positionFn } = props

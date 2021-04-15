@@ -1,5 +1,5 @@
 import {
-  colorsBackgroundUtility,
+  colorsBackgroundUtilityCsv,
   colorsPrimaryAction,
   colorsWhite,
   colorsTextIcon,
@@ -9,7 +9,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { transparentize } from '@pluralsight/ps-design-system-util'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 const tailDimension = '14px'
 
@@ -139,11 +139,11 @@ export default {
         colorsPrimaryAction.background
       )}`,
       cursor: 'pointer',
-      background: transparentize(0.55, colorsBackgroundUtility.base),
+      background: `rgba(${colorsBackgroundUtilityCsv},0.45)`,
       color: colorsTextIcon.highOnLight
     },
     '&:not([disabled]):active': {
-      background: transparentize(0.35, colorsBackgroundUtility.base),
+      background: `rgba(${colorsBackgroundUtilityCsv},0.65)`,
       color: colorsTextIcon.highOnLight,
       transform: 'scale(0.98)'
     },

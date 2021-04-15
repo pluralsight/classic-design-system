@@ -1,4 +1,4 @@
-export { default } from './react'
-export * from './vars'
-export { default as css } from './css'
-export { DropdownContext, useDropdown } from './js'
+export { default } from './react/index'
+export * from './vars/index'
+export { default as css } from './css/index'
+export { DropdownContext, useDropdown } from './js/index'

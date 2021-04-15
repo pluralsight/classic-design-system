@@ -1,15 +1,18 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import { statuses } from '../../vars'
+import { statuses } from '../../vars/index'
 
 interface StoryStep {
   description: string
   status: ValueOf<typeof statuses>
   title: string
 }
+
+const glamor = glamorDefault || glamorExports
+
 export function useStoryData() {
   const description =
     'An optional description to provide more detail about this step.'
@@ -70,6 +73,9 @@ export const FixedWidthContainer: React.FC<{ width?: number }> = props => {
   const { width = 300, ...rest } = props
 
   return (
-    <div {...css({ padding: core.layout.spacingMedium, width })} {...rest} />
+    <div
+      {...glamor.css({ padding: core.layout.spacingMedium, width })}
+      {...rest}
+    />
   )
 }

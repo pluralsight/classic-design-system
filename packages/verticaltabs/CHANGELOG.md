@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.0.0...@pluralsight/ps-design-system-verticaltabs@7.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **verticaltabs:** properly order the conditional exports in package ([530bc1f](https://github.com/pluralsight/design-system/commit/530bc1f2a18f16a76e32665aebc5e2ab2e96e69e))
+
+
+
+
+
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@6.0.8...@pluralsight/ps-design-system-verticaltabs@7.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **verticaltabs:** add exports to package.json as alternate entry point ([18e9692](https://github.com/pluralsight/design-system/commit/18e9692b3d4580d36d8f2bb9b0eff2ca3b9cfc4a))
+* **verticaltabs:** convert to esm ([dedeca7](https://github.com/pluralsight/design-system/commit/dedeca7897c9f852007b0a15ec8a3b89af70e56c))
+
+
+### BREAKING CHANGES
+
+* **verticaltabs:** add exports to package.json
+* **verticaltabs:** Drop cjs; esm only; all in on tree shaking
+* **verticaltabs:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [6.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@6.0.7...@pluralsight/ps-design-system-verticaltabs@6.0.8) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [6.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@6.0.6...@pluralsight/ps-design-system-verticaltabs@6.0.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
 ## [6.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@6.0.5...@pluralsight/ps-design-system-verticaltabs@6.0.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs

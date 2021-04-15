@@ -5,9 +5,9 @@ import { HomeIcon, PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { useState } from 'react'
+import React from 'react'
 
-import NavItem from '..'
+import NavItem from '../index'
 
 const defaultArgs = {
   children: 'Item Text',
@@ -132,7 +132,7 @@ SelectedSkillsItem.args = {
 }
 
 export const WithActionMenu: Story = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = React.useState(false)
 
   return (
     <div>

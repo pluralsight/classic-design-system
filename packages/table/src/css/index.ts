@@ -9,7 +9,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import { alignments } from '../vars'
+import { alignments } from '../vars/index'
 
 const cellPadding = `${layout.spacingXSmall} ${layout.spacingSmall}`
 

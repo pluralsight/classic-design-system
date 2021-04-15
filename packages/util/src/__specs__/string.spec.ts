@@ -1,4 +1,4 @@
-import { capitalize } from '..'
+import { capitalize } from '../index'
 
 describe('#capitalize', () => {
   test('empty', () => {

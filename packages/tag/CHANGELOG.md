@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@10.0.0...@pluralsight/ps-design-system-tag@10.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **tag:** properly order the conditional exports in package ([032c460](https://github.com/pluralsight/design-system/commit/032c460268d09b146beef98b895777ab44e94d8e))
+
+
+
+
+
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@9.0.8...@pluralsight/ps-design-system-tag@10.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **tag:** add exports to package.json as alternate entry point ([dfca074](https://github.com/pluralsight/design-system/commit/dfca0749b145a52f424a5c882653be3e6deff595))
+* **tag:** convert to esm ([165fe6a](https://github.com/pluralsight/design-system/commit/165fe6ad2fbdfc6e2de54e77bed2cc6da264ac34))
+
+
+### BREAKING CHANGES
+
+* **tag:** add exports to package.json
+* **tag:** Drop cjs; esm only; all in on tree shaking
+* **tag:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [9.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@9.0.7...@pluralsight/ps-design-system-tag@9.0.8) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tag
+
+
+
+
+
+## [9.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@9.0.6...@pluralsight/ps-design-system-tag@9.0.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-tag
+
+
+
+
+
 ## [9.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@9.0.5...@pluralsight/ps-design-system-tag@9.0.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tag

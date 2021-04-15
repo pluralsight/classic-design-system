@@ -1,8 +1,8 @@
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
-import { getLongestMenuLabel, formatItemId, parseMenuChildren } from '..'
-import Dropdown from '../../react'
+import { getLongestMenuLabel, formatItemId, parseMenuChildren } from '../index'
+import Dropdown from '../../react/index'
 
 describe('#formatItemId', () => {
   it('is menuId-value by default', () => {

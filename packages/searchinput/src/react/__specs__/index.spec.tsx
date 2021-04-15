@@ -4,8 +4,7 @@ import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import SearchInput from '..'
-
+import SearchInput from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('SearchInput', () => {

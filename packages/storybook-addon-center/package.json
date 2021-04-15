@@ -1,17 +1,27 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-addon-center",
-  "version": "4.0.1",
+  "version": "5.0.1",
   "description": "Storybook addon for Centering",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "keywords": [
-    "react-storybook"
+    "react-storybook",
+    "storybook-addon"
   ],
   "main": "dist/index.js",
   "module": "dist/index.js",
   "scripts": {
     "build": "tsc --project tsconfig.build.json --module commonjs --target es5",
     "build:watch": "yarn build --watch"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "node": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
   },
   "types": "dist/index.d.ts",
   "dependencies": {

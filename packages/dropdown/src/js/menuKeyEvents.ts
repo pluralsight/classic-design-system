@@ -1,5 +1,5 @@
-import { KeyboardEventHandler, useCallback } from 'react'
 import { useCombinedRefs } from '@pluralsight/ps-design-system-util'
+import React from 'react'
 
 export const searchListItem = <E extends Element>(
   el?: E,
@@ -99,7 +99,7 @@ const character = (evt: KeyboardEvent) => {
   }
 }
 
-export const handleMenuKeyDownEvents: KeyboardEventHandler = synthetic => {
+export const handleMenuKeyDownEvents: React.KeyboardEventHandler = synthetic => {
   const evt = synthetic.nativeEvent
 
   evt.key === 'ArrowDown'
@@ -118,7 +118,7 @@ export const handleMenuKeyDownEvents: KeyboardEventHandler = synthetic => {
 export const useMenuRef = <El extends HTMLElement>(
   outer: React.ForwardedRef<El>
 ) => {
-  const inner = useCallback(node => {
+  const inner = React.useCallback(node => {
     if (node) {
       const firstMenuItem =
         node.querySelector('[aria-selected="true"]') ||

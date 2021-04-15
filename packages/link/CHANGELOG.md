@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@12.0.0...@pluralsight/ps-design-system-link@12.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **link:** properly order the conditional exports in package ([387a5ef](https://github.com/pluralsight/design-system/commit/387a5ef22cf5a287c82d336fa3463f21b4a1d777))
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@11.1.8...@pluralsight/ps-design-system-link@12.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **link:** add exports to package.json as alternate entry point ([c5f61ea](https://github.com/pluralsight/design-system/commit/c5f61ea5a240575b170e7f971978fd49acab9970))
+* **link:** convert to esm ([eee60e0](https://github.com/pluralsight/design-system/commit/eee60e0af9f77619b591aae3fb9636dea45ae4af))
+
+
+### BREAKING CHANGES
+
+* **link:** add exports to package.json
+* **link:** Drop cjs; esm only; all in on tree shaking
+* **link:** Remove file imports (eg, packageName/react)
+* **link:** Change from typings to types in package.json; update
+types
+
+
+
+
+
+## [11.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@11.1.7...@pluralsight/ps-design-system-link@11.1.8) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [11.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@11.1.6...@pluralsight/ps-design-system-link@11.1.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
 ## [11.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@11.1.5...@pluralsight/ps-design-system-link@11.1.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-link

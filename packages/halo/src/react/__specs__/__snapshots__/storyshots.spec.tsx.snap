@@ -1,135 +1,75 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Halo/error false 1`] = `
+exports[`Storyshots Components/Halo Basic 1`] = `
 <div
   data-css-ctre2o=""
 >
-  <div>
-    not error
-  </div>
+  <div />
 </div>
 `;
 
-exports[`Storyshots Halo/error true 1`] = `
+exports[`Storyshots Components/Halo Error 1`] = `
 <div
   data-css-in6gqi=""
 >
-  <div>
-    error
-  </div>
+  <div />
 </div>
 `;
 
-exports[`Storyshots Halo/gapSizes default 1`] = `
+exports[`Storyshots Components/Halo Gap Sizes 1`] = `
 <div
-  data-css-77dl98=""
->
-  <div>
-    default
-  </div>
-</div>
-`;
-
-exports[`Storyshots Halo/gapSizes small 1`] = `
-<div
-  data-css-77dl98=""
->
-  <div>
-    small
-  </div>
-</div>
-`;
-
-exports[`Storyshots Halo/shapes default 1`] = `
-<div
-  data-css-77dl98=""
+  data-css-1gfhbu8=""
 >
   <div
-    shape="default"
+    data-css-77dl98=""
   >
-    default
+    <div>
+      default
+    </div>
   </div>
-</div>
-`;
-
-exports[`Storyshots Halo/shapes pill 1`] = `
-<div
-  data-css-1jg9j68=""
->
   <div
-    shape="pill"
+    data-css-77dl98=""
   >
-    pill
+    <div>
+      small
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Halo/visible false & error 1`] = `
-<div
-  data-css-in6gqi=""
->
-  <div>
-    not visible (always visible if error) & error
-  </div>
-</div>
-`;
-
-exports[`Storyshots Halo/visible false & not visibleOnFocus 1`] = `
+exports[`Storyshots Components/Halo Not Visible On Focus 1`] = `
 <div
   data-css-rmw7at=""
 >
-  <div>
-    really not visible (even on focus)
-  </div>
+  <div />
 </div>
 `;
 
-exports[`Storyshots Halo/visible false 1`] = `
+exports[`Storyshots Components/Halo Shapes 1`] = `
 <div
-  data-css-ctre2o=""
+  data-css-1gfhbu8=""
 >
-  <div>
-    not visible (until focused)
+  <div
+    data-css-77dl98=""
+  >
+    <div>
+      default
+    </div>
+  </div>
+  <div
+    data-css-1jg9j68=""
+  >
+    <div>
+      pill
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Halo/visible true & error 1`] = `
+exports[`Storyshots Components/Halo Visible 1`] = `
 <div
   data-css-77dl98=""
 >
-  <div>
-    visible & error
-  </div>
-</div>
-`;
-
-exports[`Storyshots Halo/visible true 1`] = `
-<div
-  data-css-77dl98=""
->
-  <div>
-    visible
-  </div>
-</div>
-`;
-
-exports[`Storyshots Halo/visibleOnFocus enabled & error 1`] = `
-<div
-  data-css-in6gqi=""
->
-  <div>
-    visible when focused with error
-  </div>
-</div>
-`;
-
-exports[`Storyshots Halo/visibleOnFocus enabled 1`] = `
-<div
-  data-css-ctre2o=""
->
-  <div>
-    visible when focused
-  </div>
+  <div />
 </div>
 `;

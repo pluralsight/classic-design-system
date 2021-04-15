@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.0.0...@pluralsight/ps-design-system-dropdown@12.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **dropdown:** properly order the conditional exports in package ([fad32e4](https://github.com/pluralsight/design-system/commit/fad32e4695cbabdbf015124db96e733262de7886))
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.2.5...@pluralsight/ps-design-system-dropdown@12.0.0) (2021-04-14)
+
+
+### Bug Fixes
+
+* **dropdown:** add missing types def link ([d58294d](https://github.com/pluralsight/design-system/commit/d58294de65176840468e2d0b323eafb6bf6f7fb5))
+
+
+### Code Refactoring
+
+* **dropdown:** add exports to package.json as alternate entry point ([4b4c489](https://github.com/pluralsight/design-system/commit/4b4c48908d96f73fac6375100e014bcd2f489385))
+* **dropdown:** convert to esm ([effc729](https://github.com/pluralsight/design-system/commit/effc729e7b81fa5a4b8962ca5c5f11176e4631ce))
+
+
+### BREAKING CHANGES
+
+* **dropdown:** add exports to package.json
+* **dropdown:** Drop cjs; esm only; all in on tree shaking
+* **dropdown:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [11.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.2.4...@pluralsight/ps-design-system-dropdown@11.2.5) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
+## [11.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.2.3...@pluralsight/ps-design-system-dropdown@11.2.4) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
+
+
+
+
+
 ## [11.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@11.2.2...@pluralsight/ps-design-system-dropdown@11.2.3) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

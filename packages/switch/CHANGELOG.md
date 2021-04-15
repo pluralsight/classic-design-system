@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.0.0...@pluralsight/ps-design-system-switch@9.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **switch:** properly order the conditional exports in package ([2962c42](https://github.com/pluralsight/design-system/commit/2962c42977222595eb441d5500e68b7377382614))
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@8.0.0...@pluralsight/ps-design-system-switch@9.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **switch:** add exports to package.json as alternate entry point ([fd62dcc](https://github.com/pluralsight/design-system/commit/fd62dcc9e2ffa048055604c5a798eabfb2707a47))
+* **switch:** convert to esm ([0893d2b](https://github.com/pluralsight/design-system/commit/0893d2ba2d4750c432871ebab44ea4a04e32124c))
+
+
+### BREAKING CHANGES
+
+* **switch:** add exports to package.json
+* **switch:** Drop cjs; esm only; all in on tree shaking
+* **switch:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@7.1.7...@pluralsight/ps-design-system-switch@8.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [7.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@7.1.6...@pluralsight/ps-design-system-switch@7.1.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
 ## [7.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@7.1.5...@pluralsight/ps-design-system-switch@7.1.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch

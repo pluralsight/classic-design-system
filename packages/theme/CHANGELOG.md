@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@8.0.0...@pluralsight/ps-design-system-theme@8.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **theme:** properly order the conditional exports in package ([3ef37ad](https://github.com/pluralsight/design-system/commit/3ef37ad334e8efe795a6ef998e42668c11631d31))
+
+
+
+
+
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@7.1.8...@pluralsight/ps-design-system-theme@8.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **theme:** add exports to package.json as alternate entry point ([12e3310](https://github.com/pluralsight/design-system/commit/12e33109f1beee08cdfda96eb146d6830a76f4f8))
+* **theme:** convert to esm ([e9d6cbe](https://github.com/pluralsight/design-system/commit/e9d6cbe9d30903b6c0d983d463a31b74a567d66a))
+
+
+### BREAKING CHANGES
+
+* **theme:** add exports to package.json
+* **theme:** Drop cjs; esm only; all in on tree shaking
+* **theme:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [7.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@7.1.7...@pluralsight/ps-design-system-theme@7.1.8) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-theme
+
+
+
+
+
+## [7.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@7.1.6...@pluralsight/ps-design-system-theme@7.1.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-theme
+
+
+
+
+
 ## [7.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@7.1.5...@pluralsight/ps-design-system-theme@7.1.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-theme

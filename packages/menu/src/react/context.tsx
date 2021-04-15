@@ -1,14 +1,14 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
-import { MouseEvent, ReactText, createContext, FocusEvent } from 'react'
+import React from 'react'
 
-import { origins } from '../vars'
+import { origins } from '../vars/index'
 
 export interface SelectedItem {
-  id: ReactText
-  name: ReactText
+  id: React.ReactText
+  name: React.ReactText
 }
 interface MenuContextValue {
-  onMenuClick?: (evt: MouseEvent, selectedItem: SelectedItem) => void
+  onMenuClick?: (evt: React.MouseEvent, selectedItem: SelectedItem) => void
   originContext?: ValueOf<typeof origins>
   selectedItem?: SelectedItem
   optionRole: string
@@ -16,7 +16,7 @@ interface MenuContextValue {
     ref: React.MutableRefObject<HTMLLIElement | undefined>
   ) => {
     active: boolean
-    handleActiveState: (event: FocusEvent<Element>) => void
+    handleActiveState: (event: React.FocusEvent<Element>) => void
   }
 }
 
@@ -32,7 +32,9 @@ const menuInitialValue = {
   optionRole: 'menuitem'
 }
 
-export const MenuContext = createContext<MenuContextValue>(menuInitialValue)
+export const MenuContext = React.createContext<MenuContextValue>(
+  menuInitialValue
+)
 
 interface ItemContextValue {
   selected?: boolean
@@ -40,4 +42,6 @@ interface ItemContextValue {
 
 const itemInitialValue = {}
 
-export const ItemContext = createContext<ItemContextValue>(itemInitialValue)
+export const ItemContext = React.createContext<ItemContextValue>(
+  itemInitialValue
+)

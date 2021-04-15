@@ -1,4 +1,4 @@
-import { pick } from '..'
+import { pick } from '../index'
 
 describe('#pick', () => {
   it('returns an object', () => {

@@ -2,7 +2,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import LinearProgress from '..'
+import LinearProgress from '../index'
 
 const useRandom = () => {
   const [value, setValue] = React.useState(0)

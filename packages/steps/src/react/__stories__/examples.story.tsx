@@ -1,13 +1,14 @@
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import * as vars from '../../vars'
-
-import Steps from '..'
+import * as vars from '../../vars/index'
+import Steps from '../index'
 
 import { FixedWidthContainer } from './shared'
+
+const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Steps/examples',
@@ -87,14 +88,14 @@ export const Wizard: Story = () => {
       </Steps>
 
       <div
-        {...css({
+        {...glamor.css({
           backgroundColor: 'black',
           color: 'white',
           outline: '1px dashed pink',
           padding: 40
         })}
       >
-        <p {...css({ margin: 20, textAlign: 'center' })}>
+        <p {...glamor.css({ margin: 20, textAlign: 'center' })}>
           <button disabled={!hasPrev} onClick={prev}>
             Previous
           </button>

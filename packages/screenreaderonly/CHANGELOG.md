@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@4.0.0...@pluralsight/ps-design-system-screenreaderonly@4.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **screenreaderonly:** properly order the conditional exports in package ([e9f3f15](https://github.com/pluralsight/design-system/commit/e9f3f15e1d9caee4c0e53f97e69337bf27079b2e))
+
+
+
+
+
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@3.1.9...@pluralsight/ps-design-system-screenreaderonly@4.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **screenreaderonly:** add exports to package.json as alternate entry point ([defb0b4](https://github.com/pluralsight/design-system/commit/defb0b4ab84583127bdfc0f92f862e6094785d53))
+* **screenreaderonly:** convert to esm ([8a7a19a](https://github.com/pluralsight/design-system/commit/8a7a19ace60f54781734be608d5ac9ad090601b0))
+
+
+### BREAKING CHANGES
+
+* **screenreaderonly:** add exports to package.json
+* **screenreaderonly:** Drop cjs; esm only; all in on tree shaking
+* **screenreaderonly:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [3.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@3.1.8...@pluralsight/ps-design-system-screenreaderonly@3.1.9) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-screenreaderonly
+
+
+
+
+
+## [3.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@3.1.7...@pluralsight/ps-design-system-screenreaderonly@3.1.8) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-screenreaderonly
+
+
+
+
+
 ## [3.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@3.1.6...@pluralsight/ps-design-system-screenreaderonly@3.1.7) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-screenreaderonly

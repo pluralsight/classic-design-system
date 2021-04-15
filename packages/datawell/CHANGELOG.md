@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@6.0.0...@pluralsight/ps-design-system-datawell@6.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **datawell:** properly order the conditional exports in package ([579770f](https://github.com/pluralsight/design-system/commit/579770f8f877e5a0a715d9fadba76cd613192aed))
+
+
+
+
+
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@5.1.8...@pluralsight/ps-design-system-datawell@6.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **datawell:** add exports to package.json as alternate entry point ([f43dd4d](https://github.com/pluralsight/design-system/commit/f43dd4d36ce8220258eb7225020a6fdc78e824d5))
+* **datawell:** convert to esm ([b9c9c98](https://github.com/pluralsight/design-system/commit/b9c9c988038240163c0f4e5df01ea6857a434d6d))
+
+
+### BREAKING CHANGES
+
+* **datawell:** add exports to package.json
+* **datawell:** Drop cjs; esm only; all in on tree shaking
+* **datawell:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [5.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@5.1.7...@pluralsight/ps-design-system-datawell@5.1.8) (2021-04-05)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
+## [5.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@5.1.6...@pluralsight/ps-design-system-datawell@5.1.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datawell
+
+
+
+
+
 ## [5.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@5.1.5...@pluralsight/ps-design-system-datawell@5.1.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datawell

@@ -1,4 +1,4 @@
-import { MutableRefObject, useEffect } from 'react'
+import React from 'react'
 import { canUseDOM } from './can-use-dom'
 
 type Callback = (evt: Event | MouseEvent | UIEvent) => void
@@ -49,10 +49,10 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
 }
 
 export const useCloseOnDocumentEvents = <El extends HTMLElement>(
-  ref: MutableRefObject<El | null>,
+  ref: React.MutableRefObject<El | null>,
   cb: Callback = noop
 ) =>
-  useEffect(() => {
+  React.useEffect(() => {
     if (!canUseDOM()) return noop
     const el = ref.current
     if (el) {

@@ -3,6 +3,72 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [20.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@20.0.0...@pluralsight/ps-design-system-text@20.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **text:** properly order the conditional exports in package ([e3cbfd3](https://github.com/pluralsight/design-system/commit/e3cbfd3c6837301045432406d45707415261fcf2))
+
+
+
+
+
+# [20.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@19.0.0...@pluralsight/ps-design-system-text@20.0.0) (2021-04-14)
+
+
+### Bug Fixes
+
+* **text:** add missing types def link ([6b25337](https://github.com/pluralsight/design-system/commit/6b253377904a7ab65f4557c1abe5901276c4f90f))
+
+
+### Code Refactoring
+
+* **text:** add exports to package.json as alternate entry point ([057faf3](https://github.com/pluralsight/design-system/commit/057faf359f6c5fb2cc81c8a3e3e5a8f8f63706cd))
+* **text:** convert to esm ([a1065ee](https://github.com/pluralsight/design-system/commit/a1065eed6f8d7cbe73b4c9d5405363c95d901456))
+
+
+### BREAKING CHANGES
+
+* **text:** add exports to package.json
+* **text:** Drop cjs; esm only; all in on tree shaking
+* **text:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [19.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@18.2.3...@pluralsight/ps-design-system-text@19.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [18.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@18.2.2...@pluralsight/ps-design-system-text@18.2.3) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-text
+
+
+
+
+
 ## [18.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-text@18.2.1...@pluralsight/ps-design-system-text@18.2.2) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-text

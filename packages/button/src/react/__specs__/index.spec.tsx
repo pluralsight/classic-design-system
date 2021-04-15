@@ -4,8 +4,8 @@ import { fireEvent, screen, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Button from '..'
-import * as vars from '../../vars'
+import Button from '../index'
+import * as vars from '../../vars/index'
 
 import * as stories from '../__stories__/index.story'
 

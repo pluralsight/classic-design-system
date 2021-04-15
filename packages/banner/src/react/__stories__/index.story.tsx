@@ -1,7 +1,7 @@
 import Link from '@pluralsight/ps-design-system-link'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import * as React from 'react'
+import React from 'react'
 
 import Banner from '../index'
 

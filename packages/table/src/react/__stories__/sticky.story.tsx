@@ -1,11 +1,10 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import { StickyContainer } from '../sticky'
-import Table from '..'
-
+import Table from '../index'
 import { generateUser } from './seed'
 import { OutlineBox } from './shared'
+import { StickyContainer } from '../sticky'
 
 export default {
   title: 'Components/Table/sticky',

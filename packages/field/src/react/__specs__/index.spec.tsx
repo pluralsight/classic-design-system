@@ -1,4 +1,4 @@
-import { Story } from '@storybook/react/types-6-0'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { screen } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
@@ -8,13 +8,13 @@ import React from 'react'
 import * as textAreaStories from '../__stories__/text-area-field.story'
 import * as textInputStories from '../__stories__/text-input-field.story'
 
-describe('Field stories a11y', () => {
+describe('Field', () => {
   describe('TextAreaField', () => {
     const { Basic } = textAreaStories
-    const cases = generateCasesFromStories(textAreaStories)
+    const cases = convertStoriesToJestCases(textAreaStories)
 
     describe.each(cases)('%s story', (_name, Story) => {
-      it('should pass an basic axe a11y audit', async () => {
+      it('has no axe-core violations', async () => {
         const { container } = render(<Story {...Story.args} />)
         const results = await axe(container)
 
@@ -23,7 +23,7 @@ describe('Field stories a11y', () => {
     })
 
     describe('Basic story', () => {
-      it('should focus input when label clicked', () => {
+      it('focuses input when label clicked', () => {
         render(<Basic {...Basic.args} />)
         const label = screen.getByLabelText('Text area label area')
         const input = screen.getByRole('textbox')
@@ -37,10 +37,10 @@ describe('Field stories a11y', () => {
 
   describe('TextInputField', () => {
     const { Basic } = textInputStories
-    const cases = generateCasesFromStories(textInputStories)
+    const cases = convertStoriesToJestCases(textInputStories)
 
     describe.each(cases)('%s story', (_name, Story) => {
-      it('should pass an basic axe a11y audit', async () => {
+      it('has no axe-core violations', async () => {
         const { container } = render(<Story {...Story.args} />)
         const results = await axe(container)
 
@@ -49,7 +49,7 @@ describe('Field stories a11y', () => {
     })
 
     describe('Basic story', () => {
-      it('should focus input when label clicked', () => {
+      it('focuses input when label clicked', () => {
         render(<Basic {...Basic.args} />)
         const label = screen.getByLabelText('Text input label area')
         const input = screen.getByRole('textbox')
@@ -59,7 +59,7 @@ describe('Field stories a11y', () => {
         expect(input).toHaveFocus()
       })
 
-      it('should support a search type', () => {
+      it('supports the search type', () => {
         render(<Basic {...Basic.args} type="search" />)
         const input = screen.getByRole('searchbox')
 
@@ -68,14 +68,3 @@ describe('Field stories a11y', () => {
     })
   })
 })
-
-function generateCasesFromStories(
-  obj: Record<string, unknown>
-): [string, Story][] {
-  const keys = Object.keys(obj)
-
-  return keys.reduce<any>((acc, key) => {
-    if (key === 'default') return acc
-    return [...acc, [key, obj[key]]]
-  }, [])
-}

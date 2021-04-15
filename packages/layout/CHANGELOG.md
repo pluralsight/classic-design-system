@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@11.0.0...@pluralsight/ps-design-system-layout@11.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **layout:** properly order the conditional exports in package ([2ddc975](https://github.com/pluralsight/design-system/commit/2ddc975a84527c4bcc4f6a5200bba60c677f55bc))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@10.0.0...@pluralsight/ps-design-system-layout@11.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **layout:** add exports to package.json as alternate entry point ([a6d5eb7](https://github.com/pluralsight/design-system/commit/a6d5eb731cd186faab9eaff9fe3cfadc6ee3c840))
+* **layout:** convert to esm ([18605c1](https://github.com/pluralsight/design-system/commit/18605c1c9bfd79a299d867f2d36032f09b67a235))
+
+
+### BREAKING CHANGES
+
+* **layout:** add exports to package.json
+* **layout:** Drop cjs; esm only; all in on tree shaking
+* **layout:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@9.0.7...@pluralsight/ps-design-system-layout@10.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [9.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@9.0.6...@pluralsight/ps-design-system-layout@9.0.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-layout
+
+
+
+
+
 ## [9.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@9.0.5...@pluralsight/ps-design-system-layout@9.0.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-layout

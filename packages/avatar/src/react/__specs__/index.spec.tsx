@@ -3,10 +3,9 @@ import { screen, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Avatar from '..'
-import * as vars from '../../vars'
-
+import Avatar from '../index'
 import * as stories from '../__stories__/index.story'
+import * as vars from '../../vars/index'
 
 describe('Avatar', () => {
   const cases = convertStoriesToJestCases(stories)

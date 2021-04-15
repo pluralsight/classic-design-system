@@ -1,5 +1,5 @@
 import { storiesOf } from '@storybook/react'
-import React, { Fragment } from 'react'
+import React from 'react'
 
 import { ADMIN_TOOLS_NAV, DESIGN_SYSTEM_NAV, FLOW_NAV } from './fixtures'
 import VerticalTabs from '..'
@@ -105,7 +105,7 @@ storiesOf('components|VerticalTabs/examples', module)
               )
 
               return (
-                <Fragment key={groupKey}>
+                <React.Fragment key={groupKey}>
                   <GroupComp header={groupHeader} startOpen>
                     {(group.sections || []).map((section, sectionKey) => {
                       const sectionHeader = section.header && (
@@ -148,7 +148,7 @@ storiesOf('components|VerticalTabs/examples', module)
                     })}
                   </GroupComp>
                   <Divider />
-                </Fragment>
+                </React.Fragment>
               )
             })}
           </VerticalTabs>

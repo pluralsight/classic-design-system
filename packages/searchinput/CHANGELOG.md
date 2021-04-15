@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@9.0.0...@pluralsight/ps-design-system-searchinput@9.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **searchinput:** properly order the conditional exports in package ([23fc608](https://github.com/pluralsight/design-system/commit/23fc608cc8b63770a1ba5a3a135d85874c7d3da6))
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@8.0.9...@pluralsight/ps-design-system-searchinput@9.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **searchinput:** add exports to package.json as alternate entry point ([b9db209](https://github.com/pluralsight/design-system/commit/b9db209acbcb810b58548f2939a6345a342da98b))
+* **searchinput:** convert to esm ([a3a4854](https://github.com/pluralsight/design-system/commit/a3a4854cdd305c2b9adace5d0ee41f9f39111965))
+
+
+### BREAKING CHANGES
+
+* **searchinput:** add exports to package.json
+* **searchinput:** Drop cjs; esm only; all in on tree shaking
+* **searchinput:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [8.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@8.0.8...@pluralsight/ps-design-system-searchinput@8.0.9) (2021-04-05)
+
+
+### Bug Fixes
+
+* **searchinput:** weird type bug resolved ([#1698](https://github.com/pluralsight/design-system/issues/1698)) ([3845537](https://github.com/pluralsight/design-system/commit/3845537406b5cca7077669fcccddb4cc998f442c))
+
+
+
+
+
+## [8.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@8.0.7...@pluralsight/ps-design-system-searchinput@8.0.8) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-searchinput
+
+
+
+
+
 ## [8.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@8.0.6...@pluralsight/ps-design-system-searchinput@8.0.7) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-searchinput

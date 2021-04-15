@@ -17,7 +17,7 @@ default:
     key: $CI_PROJECT_ID
     policy: pull
     untracked: true
-  image: node:13.8-alpine
+  image: node:15.9-alpine
   retry:
     max: 1
     when:

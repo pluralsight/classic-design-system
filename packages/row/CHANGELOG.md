@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@15.0.0...@pluralsight/ps-design-system-row@15.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **row:** properly order the conditional exports in package ([afc86f2](https://github.com/pluralsight/design-system/commit/afc86f2307a138f4ade5af44b53614b713becdd1))
+
+
+
+
+
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@14.0.0...@pluralsight/ps-design-system-row@15.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **row:** add exports to package.json as alternate entry point ([a20e741](https://github.com/pluralsight/design-system/commit/a20e741599466e72af4eb29912057bfc782ad255))
+* **row:** convert to esm ([80c21b5](https://github.com/pluralsight/design-system/commit/80c21b5bd63b1b0be44c6c0d9b28414f24cc32a8))
+
+
+### BREAKING CHANGES
+
+* **row:** add exports to package.json
+* **row:** Drop cjs; esm only; all in on tree shaking
+* **row:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+# [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@13.0.7...@pluralsight/ps-design-system-row@14.0.0) (2021-04-05)
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
+## [13.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@13.0.6...@pluralsight/ps-design-system-row@13.0.7) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-row
+
+
+
+
+
 ## [13.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-row@13.0.5...@pluralsight/ps-design-system-row@13.0.6) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-row

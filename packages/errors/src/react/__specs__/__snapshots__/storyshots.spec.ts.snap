@@ -12,6 +12,7 @@ exports[`Storyshots pages 403: large 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Error
@@ -95,6 +96,7 @@ exports[`Storyshots pages 403: small 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         ErrorSmall
@@ -171,6 +173,7 @@ exports[`Storyshots pages 404: large 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Error
@@ -254,6 +257,7 @@ exports[`Storyshots pages 404: small 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         ErrorSmall
@@ -330,6 +334,7 @@ exports[`Storyshots pages 500: large 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Error
@@ -413,6 +418,7 @@ exports[`Storyshots pages 500: small 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         ErrorSmall
@@ -489,6 +495,7 @@ exports[`Storyshots pages 503: large 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Error
@@ -561,6 +568,7 @@ exports[`Storyshots pages 503: small 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         ErrorSmall
@@ -626,6 +634,7 @@ exports[`Storyshots pages 504: large 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Error
@@ -709,6 +718,7 @@ exports[`Storyshots pages 504: small 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         ErrorSmall
@@ -785,6 +795,7 @@ exports[`Storyshots pages Custom: large 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Error
@@ -867,6 +878,7 @@ exports[`Storyshots pages Custom: small 1`] = `
       fill="none"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         ErrorSmall

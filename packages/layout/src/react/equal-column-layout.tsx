@@ -1,23 +1,25 @@
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css, media } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import { equalColumnLayout as vars } from '../vars'
-import { equalColumnLayoutCSS as stylesheet } from '../css'
+import { equalColumnLayoutCSS as stylesheet } from '../css/index'
+import { equalColumnLayout as vars } from '../vars/index'
 
-const styleLayout = () => css(stylesheet['.psds-equal-column-layout'])
+const glamor = glamorDefault || glamorExports
+
+const styleLayout = () => glamor.css(stylesheet['.psds-equal-column-layout'])
 
 const styleColumn = (count: ValueOf<typeof vars.counts>) => {
   const label = 'psds-equal-column-layout__column'
   const labelCount = `${label}--count-${count}`
 
-  return compose(
-    css(stylesheet[`.${label}`]),
-    css(stylesheet[`.${labelCount}`]),
+  return glamor.compose(
+    glamor.css(stylesheet[`.${label}`]),
+    glamor.css(stylesheet[`.${labelCount}`]),
 
-    media(
+    glamor.media(
       '(min-width: 769px)',
-      css(stylesheet['@media (min-width: 769px)'][`.${labelCount}`])
+      glamor.css(stylesheet['@media (min-width: 769px)'][`.${labelCount}`])
     )
   )
 }

@@ -1,4 +1,4 @@
-import { debounce } from '..'
+import { debounce } from '../index'
 
 describe('#debounce', () => {
   beforeEach(() => {
