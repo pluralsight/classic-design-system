@@ -54,9 +54,6 @@
   "lint-staged": {
     "*.(js|tsx?)": [
       "eslint --fix"
-    ],
-    "package.json": [
-      "format-package -w"
     ]
   },
   "madge": {
@@ -145,7 +142,6 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-standard": "^5.0.0",
     "fork-ts-checker-webpack-plugin": "^6.0.5",
-    "format-package": "^6.1.0",
     "husky": "^4.2.5",
     "identity-obj-proxy": "^3.0.0",
     "import-all.macro": "^2.0.3",
