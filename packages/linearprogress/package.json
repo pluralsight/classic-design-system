@@ -30,6 +30,8 @@
     },
     "./package.json": "./package.json"
   },
+  "style": "dist/index.css",
+  "types": "dist/esm/index.d.ts",
   "sideEffects": false,
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.0.1",
