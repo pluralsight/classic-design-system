@@ -22,16 +22,18 @@ describe('Menu', () => {
 
     render(
       <Menu onClick={handleClick}>
-        <Menu.Item value={{ id: 'one', name: 'One item' }}>One item</Menu.Item>
+        <Menu.Item value={{ value: 'one', label: 'One item' }}>
+          One item
+        </Menu.Item>
 
         <Menu.Item
-          value={{ id: 'two', name: 'Two item' }}
+          value={{ value: 'two', label: 'Two item' }}
           data-testid="undertest"
         >
           Two item
         </Menu.Item>
 
-        <Menu.Item value={{ id: 'three', name: 'Three item' }}></Menu.Item>
+        <Menu.Item value={{ value: 'three', label: 'Three item' }}></Menu.Item>
       </Menu>
     )
 
@@ -39,8 +41,8 @@ describe('Menu', () => {
     fireEvent.click(opt)
 
     expect(handleClick).toHaveBeenCalledWith(expect.anything(), {
-      id: 'two',
-      name: 'Two item'
+      value: 'two',
+      label: 'Two item'
     })
   })
 
@@ -49,16 +51,18 @@ describe('Menu', () => {
 
     render(
       <Menu onClick={handleClick}>
-        <Menu.Item value={{ id: 'one', name: 'One item' }}>One item</Menu.Item>
+        <Menu.Item value={{ value: 'one', label: 'One item' }}>
+          One item
+        </Menu.Item>
 
         <Menu.Item
-          value={{ id: 'one', name: 'Two item' }}
+          value={{ value: 'one', label: 'Two item' }}
           data-testid="undertest"
         >
           Two item
         </Menu.Item>
 
-        <Menu.Item value={{ id: 'one', name: 'Three item' }}>
+        <Menu.Item value={{ value: 'one', label: 'Three item' }}>
           Three item
         </Menu.Item>
       </Menu>
@@ -68,8 +72,8 @@ describe('Menu', () => {
     fireEvent.keyDown(opt, { key: 'Enter', code: 13 })
 
     expect(handleClick).toHaveBeenCalledWith(expect.anything(), {
-      name: 'Two item',
-      id: 'one'
+      label: 'Two item',
+      value: 'one'
     })
   })
 

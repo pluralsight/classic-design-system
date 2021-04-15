@@ -4,8 +4,8 @@ import React from 'react'
 import { origins } from '../vars/index'
 
 export interface SelectedItem {
-  id: React.ReactText
-  name: React.ReactText
+  value: React.ReactText
+  label: React.ReactText
 }
 interface MenuContextValue {
   onMenuClick?: (evt: React.MouseEvent, selectedItem: SelectedItem) => void

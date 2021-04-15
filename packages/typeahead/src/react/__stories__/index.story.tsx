@@ -33,8 +33,8 @@ const Template: Story<ComponentProps<typeof Typeahead>> = args => {
       onChange={(
         evt: React.ChangeEvent<HTMLInputElement> | null,
         selectedItem?: {
-          name: React.ReactText
-          id?: React.ReactText
+          label: React.ReactText
+          value?: React.ReactText
         }
       ) => {
         setValue(evt?.target.value || '')

@@ -53,13 +53,13 @@ interface TypeaheadFieldProps
   onChange: (
     e: React.ChangeEvent<HTMLInputElement> | null,
     selectedItem?: {
-      name: React.ReactText
-      id?: React.ReactText
+      label: React.ReactText
+      value?: React.ReactText
     }
   ) => void
   options: {
-    name: React.ReactText
-    id: React.ReactText
+    label: React.ReactText
+    value: React.ReactText
   }[]
   placeholder?: string
   renderInputTag?: ComponentProps<typeof Field.Input>['renderTag']
@@ -145,12 +145,12 @@ const Typeahead: TypeaheadFieldComponent = props => {
         onChange(
           null,
           bothTypeAutoComplete
-            ? { name: searchTerm as string }
+            ? { label: searchTerm as string }
             : selectedItem || undefined
         )
       setInputItems(
-        options.filter(({ name }) =>
-          `${name}`
+        options.filter(({ label }) =>
+          `${label}`
             .toLowerCase()
             // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
             .startsWith((inputValue as string).toLowerCase())
