@@ -22,10 +22,13 @@
     "test:watch": "yarn test --watchAll"
   },
   "exports": {
-    "import": "./dist/esm/index.mjs",
-    "require": "./dist/cjs/index.js",
-    "node": "./dist/cjs/index.js",
-    "default": "./dist/cjs/index.js"
+    ".": {
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.js",
+      "node": "./dist/cjs/index.js",
+      "default": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
   },
   "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "sideEffects": false,
