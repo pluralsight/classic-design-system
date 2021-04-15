@@ -11,7 +11,7 @@ import {
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import { transparentize } from '@pluralsight/ps-design-system-util'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 export default {
   '.psds-card': {
@@ -251,7 +251,7 @@ export default {
     backgroundColor: '#ffffff'
   },
   '.psds-card__progress__bar--complete': {
-    backgroundColor: colorsGreen.base
+    backgroundColor: colorsGreen[6]
   },
 
   // __title-container

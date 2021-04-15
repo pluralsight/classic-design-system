@@ -1,72 +1,56 @@
-import { useCombobox, useMultipleSelection } from 'downshift'
-import { compose, css } from 'glamor'
-import React, {
-  ChangeEventHandler,
-  ComponentProps,
-  KeyboardEvent,
-  MouseEvent,
-  MouseEventHandler,
-  ReactElement,
-  ReactNode,
-  SyntheticEvent,
-  cloneElement,
-  forwardRef,
-  isValidElement,
-  useCallback,
-  useLayoutEffect,
-  useMemo,
-  useRef,
-  useState
-} from 'react'
-
 import { CaretDownIcon, CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import Tag from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor, canUseDOM } from '@pluralsight/ps-design-system-util'
+import { useCombobox, useMultipleSelection } from 'downshift'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-
+import stylesheet from '../css/index'
 import { Menu } from './menu'
 import { FilterFn, OnStateChangeFn, Option, StateReducer } from './types'
 import { noop, simpleTextFilter, switchcase } from './utils'
 
 export { Option }
 
+const glamor = glamorDefault || glamorExports
 const { stateChangeTypes } = useCombobox
 
 const styles = {
   multiSelect: (opts: { disabled?: boolean }) =>
-    compose(
-      css(stylesheet['.psds-multi-select']),
-      opts.disabled && css(stylesheet['.psds-multi-select--disabled'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-multi-select']),
+      opts.disabled && glamor.css(stylesheet['.psds-multi-select--disabled'])
     ),
 
-  prefix: () => css(stylesheet['.psds-multi-select__prefix']),
-  caret: () => css(stylesheet['.psds-multi-select__caret']),
+  prefix: () => glamor.css(stylesheet['.psds-multi-select__prefix']),
+  caret: () => glamor.css(stylesheet['.psds-multi-select__caret']),
 
-  menu: () => css(stylesheet['.psds-multi-select__menu']),
+  menu: () => glamor.css(stylesheet['.psds-multi-select__menu']),
 
-  inputContainer: () => css(stylesheet['.psds-multi-select__input-container']),
-  input: () => css(stylesheet['.psds-multi-select__input']),
+  inputContainer: () =>
+    glamor.css(stylesheet['.psds-multi-select__input-container']),
+  input: () => glamor.css(stylesheet['.psds-multi-select__input']),
 
-  pillsContainer: () => css(stylesheet['.psds-multi-select__pills-container']),
-  pills: () => css(stylesheet['.psds-multi-select__pills']),
-  pill: () => css(stylesheet['.psds-multi-select__pill'])
+  pillsContainer: () =>
+    glamor.css(stylesheet['.psds-multi-select__pills-container']),
+  pills: () => glamor.css(stylesheet['.psds-multi-select__pills']),
+  pill: () => glamor.css(stylesheet['.psds-multi-select__pill'])
 }
 
 interface MultiSelectFieldProps
   extends Omit<
-    ComponentProps<typeof Field>,
+    React.ComponentProps<typeof Field>,
     'children' | 'label' | 'onChange' | 'subLabel' | 'suffix'
   > {
   filterFn?: FilterFn
-  label?: string | ReactElement<typeof Field.Label>
-  onChange: (evt: SyntheticEvent | null, nextValue: Option[]) => void
+  label?: string | React.ReactElement<typeof Field.Label>
+  onChange: (evt: React.SyntheticEvent | null, nextValue: Option[]) => void
   options: Option[]
   placeholder?: string
-  renderInputTag?: ComponentProps<typeof Field.Input>['renderTag']
-  subLabel?: string | ReactNode
+  renderInputTag?: React.ComponentProps<typeof Field.Input>['renderTag']
+  subLabel?: string | React.ReactNode
   value: Option[]
 }
 
@@ -93,8 +77,8 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     ...rest
   } = props
 
-  const [searchTerm, setSearchTerm] = useState('')
-  const handleInputChange: ChangeEventHandler<HTMLInputElement> = evt => {
+  const [searchTerm, setSearchTerm] = React.useState('')
+  const handleInputChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
     setSearchTerm(evt.target.value)
   }
 
@@ -112,16 +96,19 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     selectedItems: value
   })
 
-  const handleRemoveSelected = (evt: MouseEvent<unknown>, item: Option) => {
+  const handleRemoveSelected = (
+    evt: React.MouseEvent<unknown>,
+    item: Option
+  ) => {
     evt.stopPropagation()
     removeSelectedItem(item)
   }
 
-  const unselectedOptions = useMemo(() => {
+  const unselectedOptions = React.useMemo(() => {
     return options.filter(option => value.indexOf(option) < 0)
   }, [options, value])
 
-  const filteredOptions = useMemo(() => {
+  const filteredOptions = React.useMemo(() => {
     return filterFn(searchTerm, unselectedOptions)
   }, [unselectedOptions, filterFn, searchTerm])
 
@@ -187,28 +174,29 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     }
   })
 
-  const positionTarget = useRef<HTMLDivElement>(null)
-  const RenderTag = useCallback(p => <div ref={positionTarget} {...p} />, [
-    positionTarget
-  ])
+  const positionTarget = React.useRef<HTMLDivElement>(null)
+  const RenderTag = React.useCallback(
+    p => <div ref={positionTarget} {...p} />,
+    [positionTarget]
+  )
 
-  const Label = useMemo(() => {
-    if (isValidElement(label)) {
-      return cloneElement<any>(label, { ...getLabelProps() })
+  const Label = React.useMemo(() => {
+    if (React.isValidElement(label)) {
+      return React.cloneElement<any>(label, { ...getLabelProps() })
     }
 
     return <Field.Label {...getLabelProps()}>{label}</Field.Label>
   }, [label, getLabelProps])
 
-  const SubLabel = useMemo(() => {
-    if (isValidElement(subLabel)) return subLabel
+  const SubLabel = React.useMemo(() => {
+    if (React.isValidElement(subLabel)) return subLabel
 
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
   }, [subLabel])
 
   const inputProps = getInputProps(
     getDropdownProps({
-      onKeyDown: (evt: KeyboardEvent<HTMLInputElement>) => {
+      onKeyDown: (evt: React.KeyboardEvent<HTMLInputElement>) => {
         if (!canUseDOM()) return
 
         const { altKey } = evt
@@ -226,7 +214,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
     })
   )
 
-  useLayoutEffect(
+  React.useLayoutEffect(
     function keepInputInView() {
       if (!isOpen) return
 
@@ -317,20 +305,22 @@ MultiSelect.SubLabel = Field.SubLabel
 
 export default MultiSelect
 
-const Pills = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>((props, ref) => {
-  const { children, ...rest } = props
+const Pills = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+  (props, ref) => {
+    const { children, ...rest } = props
 
-  return (
-    <div ref={ref} {...rest} {...styles.pills()}>
-      {children}
-    </div>
-  )
-})
+    return (
+      <div ref={ref} {...rest} {...styles.pills()}>
+        {children}
+      </div>
+    )
+  }
+)
 
-interface PillProps extends ComponentProps<typeof Tag> {
-  onRequestRemove: MouseEventHandler
+interface PillProps extends React.ComponentProps<typeof Tag> {
+  onRequestRemove: React.MouseEventHandler
 }
-const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
+const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   const { children, onRequestRemove, ...rest } = props
 
   return (
@@ -346,13 +336,15 @@ const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   )
 })
 
-const PillAdjacentInputContainer = forwardRef<HTMLDivElement>((props, ref) => {
-  return <div ref={ref} {...props} {...styles.inputContainer()} />
-})
+const PillAdjacentInputContainer = React.forwardRef<HTMLDivElement>(
+  (props, ref) => {
+    return <div ref={ref} {...props} {...styles.inputContainer()} />
+  }
+)
 
-const PillAdjacentInput = forwardRef<
+const PillAdjacentInput = React.forwardRef<
   HTMLInputElement,
-  ComponentProps<typeof Field.Input>
+  React.ComponentProps<typeof Field.Input>
 >((props, ref) => {
   return (
     <Field.Input

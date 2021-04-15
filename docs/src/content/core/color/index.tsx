@@ -79,10 +79,10 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Utility',
-        var: 'psColorsBackgroundUtilityBase',
-        js: 'colorsBackgroundUtility.base',
-        bg: core.colorsBackgroundUtility.base,
-        hex: core.colorsBackgroundUtility.base + ' / rgba(138, 153, 168, 1)'
+        var: 'psColorsBackgroundUtilityCsv',
+        js: 'colorsBackgroundUtilityCsv',
+        bg: `rgb(${core.colorsBackgroundUtilityCsv})`,
+        hex: 'N/A (138,153,168)'
       }
     ]
   },
@@ -527,7 +527,7 @@ function formatAllColorSubCategory({
       .map(key => parseInt(key, 10))
       .filter(key => Number.isInteger(key))
       .map(key => ({
-        name: name + ' ' + key + (key === 6 ? ' (Base)' : ''),
+        name: name + ' ' + key,
         var: 'psColors' + name + key,
         hex: color[key],
         js: `colors${name}[${key}]`,

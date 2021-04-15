@@ -13,7 +13,7 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import { transparentize } from '@pluralsight/ps-design-system-util'
 
-import * as vars from '../vars'
+import * as vars from '../vars/index'
 
 export const loading = {
   trackColorOnLight: colorsBorder.lowOnLight,

@@ -2,19 +2,21 @@ import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { useSelect } from 'downshift'
-import { css } from 'glamor'
-import React, { ComponentProps, forwardRef, useMemo } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import { Option, periodicElements } from '../__fixtures__/options'
-import Field from '..'
+import Field from '../index'
 
-interface SelectFieldProps extends ComponentProps<typeof Field> {
+const glamor = glamorDefault || glamorExports
+
+interface SelectFieldProps extends React.ComponentProps<typeof Field> {
   options: Option[]
   placeholder?: string
 }
 const SelectField: React.FC<SelectFieldProps> = props => {
   const { placeholder, options, ...rest } = props
-  const items = useMemo(() => options.map(o => o.value), [options])
+  const items = React.useMemo(() => options.map(o => o.value), [options])
 
   const {
     isOpen,
@@ -26,17 +28,17 @@ const SelectField: React.FC<SelectFieldProps> = props => {
     getItemProps
   } = useSelect({ items })
 
-  const selectedOption = useMemo(() => {
+  const selectedOption = React.useMemo(() => {
     return options.find(o => selectedItem === o.value)
   }, [options, selectedItem])
 
-  const CustomFieldTag = forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+  const CustomFieldTag = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
     (innerProps, innerRef) => {
       return (
         <div ref={innerRef} {...innerProps}>
           <button
             {...getToggleButtonProps()}
-            {...css({
+            {...glamor.css({
               all: 'unset',
               cursor: 'pointer',
               alignItems: 'center',
@@ -87,7 +89,7 @@ const SelectField: React.FC<SelectFieldProps> = props => {
               <li
                 key={`menu-option-${index}`}
                 {...getItemProps({ item, index })}
-                {...css({
+                {...glamor.css({
                   backgroundColor: highlightedIndex === index ? 'blue' : ''
                 })}
               >
@@ -107,7 +109,7 @@ export default {
   args: { placeholder: 'Do something', options: periodicElements }
 } as Meta
 
-const Template: Story<ComponentProps<typeof SelectField>> = args => {
+const Template: Story<React.ComponentProps<typeof SelectField>> = args => {
   return <SelectField {...args} />
 }
 

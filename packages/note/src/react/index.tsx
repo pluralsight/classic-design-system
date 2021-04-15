@@ -6,16 +6,18 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   note: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-note']),
-      css(stylesheet[`.psds-note.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-note']),
+      glamor.css(stylesheet[`.psds-note.psds-theme--${themeName}`])
     ),
   actionBar: (
     themeName: ValueOf<typeof themeNames>,
@@ -25,46 +27,48 @@ const styles = {
       actionBarVisible
     }: { hasHeading: boolean; hasMetadata: boolean; actionBarVisible: boolean }
   ) =>
-    compose(
-      css(stylesheet['.psds-note__action-bar']),
-      css(stylesheet[`.psds-note__action-bar.psds-theme--${themeName}`]),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-note__action-bar']),
+      glamor.css(stylesheet[`.psds-note__action-bar.psds-theme--${themeName}`]),
       actionBarVisible &&
-        css(stylesheet[`.psds-note__action-bar--action-bar-visible`]),
+        glamor.css(stylesheet[`.psds-note__action-bar--action-bar-visible`]),
       hasMetadata &&
         !hasHeading &&
-        css(stylesheet['.psds-note__action-bar--meta-sibling'])
+        glamor.css(stylesheet['.psds-note__action-bar--meta-sibling'])
     ),
   action: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-note__action']),
-      css(stylesheet[`.psds-note__action.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-note__action']),
+      glamor.css(stylesheet[`.psds-note__action.psds-theme--${themeName}`])
     ),
-  aside: () => css(stylesheet['.psds-note__aside']),
+  aside: () => glamor.css(stylesheet['.psds-note__aside']),
   contents: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-note__contents']),
-      css(stylesheet[`.psds-note__contents.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-note__contents']),
+      glamor.css(stylesheet[`.psds-note__contents.psds-theme--${themeName}`])
     ),
-  footer: () => css(stylesheet['.psds-note__footer']),
-  header: () => css(stylesheet['.psds-note__header']),
-  heading: () => compose(css(stylesheet['.psds-note__heading'])),
-  noteList: () => css(stylesheet['.psds-note__list']),
+  footer: () => glamor.css(stylesheet['.psds-note__footer']),
+  header: () => glamor.css(stylesheet['.psds-note__header']),
+  heading: () => glamor.compose(glamor.css(stylesheet['.psds-note__heading'])),
+  noteList: () => glamor.css(stylesheet['.psds-note__list']),
   noteListItem: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-note__list-item']),
-      css(stylesheet[`.psds-note__list-item.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-note__list-item']),
+      glamor.css(stylesheet[`.psds-note__list-item.psds-theme--${themeName}`])
     ),
   metadata: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-note__metadata']),
-      css(stylesheet[`.psds-note__metadata.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-note__metadata']),
+      glamor.css(stylesheet[`.psds-note__metadata.psds-theme--${themeName}`])
     ),
   metadataDatum: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-note__metadata-datum']),
-      css(stylesheet[`.psds-note__metadata-datum.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-note__metadata-datum']),
+      glamor.css(
+        stylesheet[`.psds-note__metadata-datum.psds-theme--${themeName}`]
+      )
     ),
-  metadataDot: () => css(stylesheet['.psds-note__metadata-dot'])
+  metadataDot: () => glamor.css(stylesheet['.psds-note__metadata-dot'])
 }
 
 interface NoteProps extends HTMLPropsFor<'div'> {

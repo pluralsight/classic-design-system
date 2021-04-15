@@ -9,27 +9,20 @@ import {
   ValueOf,
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
-import React, {
-  ReactNode,
-  forwardRef,
-  useEffect,
-  useImperativeHandle,
-  useRef,
-  useState
-} from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import Context, { ContextValue } from './context'
-import stylesheet, { sizeClasses, themeClasses } from '../css'
-import * as illustrations from './illustrations'
-import { illustrationNames, sizes } from '../vars'
+import stylesheet, { sizeClasses, themeClasses } from '../css/index'
+import * as illustrations from './illustrations/index'
+import { illustrationNames, sizes } from '../vars/index'
 
 export interface EmptyStateProps extends HTMLPropsFor<'div'> {
   size?: ValueOf<typeof sizes>
-  actions?: ReactNode
-  caption?: ReactNode
-  heading: ReactNode
-  illustration?: ReactNode
+  actions?: React.ReactNode
+  caption?: React.ReactNode
+  heading: React.ReactNode
+  illustration?: React.ReactNode
   themeName?: ValueOf<typeof themeNames>
 }
 
@@ -52,13 +45,15 @@ type StyleFn = (
   props: unknown,
   ctx: ContextValue,
   opts?: unknown
-) => StyleAttribute
+) => glamorExports.StyleAttribute
+
+const glamor = glamorDefault || glamorExports
 
 const renderSmallIfElementLessThan = 450
 
 const styles = {
   emptyState: (ctx: ContextValue, hasRenderedOnce: boolean) =>
-    compose(
+    glamor.compose(
       combineClasses('.psds-emptystate', ctx),
       !hasRenderedOnce && stylesheet['.psds-emptystate--hidden']
     ),
@@ -73,13 +68,13 @@ const styles = {
 }
 
 const combineClasses = (className: string, { size, themeName }: ContextValue) =>
-  css(
+  glamor.css(
     stylesheet[className],
     stylesheet[className + themeClasses[themeName as string]],
     stylesheet[className + sizeClasses[size as string]]
   )
 
-const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(
+const EmptyState = React.forwardRef<HTMLDivElement, EmptyStateProps>(
   (props, forwardedRef) => {
     const {
       actions,
@@ -90,16 +85,16 @@ const EmptyState = forwardRef<HTMLDivElement, EmptyStateProps>(
       ...rest
     } = props
 
-    const ref = useRef<HTMLDivElement>()
+    const ref = React.useRef<HTMLDivElement>()
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-    useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
+    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
     const themeName = useTheme()
 
-    const [hasRenderedOnce, setHasRenderedOnce] = useState(false)
+    const [hasRenderedOnce, setHasRenderedOnce] = React.useState(false)
     const { width } = useResizeObserver(ref)
 
-    useEffect(() => {
+    React.useEffect(() => {
       setHasRenderedOnce(true)
     }, [])
 

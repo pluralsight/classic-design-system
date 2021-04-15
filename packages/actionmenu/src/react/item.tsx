@@ -3,48 +3,39 @@ import {
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { compose, css } from 'glamor'
-import React, {
-  ForwardRefExoticComponent,
-  KeyboardEventHandler,
-  MouseEvent,
-  MouseEventHandler,
-  ReactNode,
-  ReactText,
-  forwardRef,
-  useContext,
-  useImperativeHandle,
-  useRef,
-  useState
-} from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import { origins, tagName as tagNames } from '../vars'
+import stylesheet from '../css/index'
+import { origins, tagName as tagNames } from '../vars/index'
 
 import { ActionMenuContext } from './context'
 import { Arrow } from './arrow'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   itemContainer: ({
     active,
     disabled
   }: Pick<BaseItemProps, 'active' | 'disabled'>) =>
-    compose(
-      css(stylesheet['.psds-actionmenu__item-container']),
-      disabled && css(stylesheet['.psds-actionmenu__item--disabled']),
-      active && css(stylesheet['.psds-actionmenu__item-container--active'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-actionmenu__item-container']),
+      disabled && glamor.css(stylesheet['.psds-actionmenu__item--disabled']),
+      active &&
+        glamor.css(stylesheet['.psds-actionmenu__item-container--active'])
     ),
   item: ({ hasSubMenu }: { hasSubMenu: boolean }) =>
-    compose(
-      css(stylesheet['.psds-actionmenu__item']),
-      hasSubMenu && css(stylesheet['.psds-actionmenu__item--nested'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-actionmenu__item']),
+      hasSubMenu && glamor.css(stylesheet['.psds-actionmenu__item--nested'])
     ),
-  inner: () => css(stylesheet['.psds-actionmenu__item-inner']),
+  inner: () => glamor.css(stylesheet['.psds-actionmenu__item-inner']),
   nested: ({ origin }: { origin?: ValueOf<typeof origins> }) =>
-    compose(
-      css(stylesheet['.psds-actionmenu']),
-      css(stylesheet['.psds-actionmenu__nested']),
-      css(
+    glamor.compose(
+      glamor.css(stylesheet['.psds-actionmenu']),
+      glamor.css(stylesheet['.psds-actionmenu__nested']),
+      glamor.css(
         stylesheet[`.psds-actionmenu__nested.psds-actionmenu--origin-${origin}`]
       )
     )
@@ -54,10 +45,10 @@ interface BaseItemProps {
   active?: boolean
   className?: string
   disabled?: boolean
-  nested?: ReactNode
-  onClick?: (event: MouseEvent, value?: ReactText) => void
+  nested?: React.ReactNode
+  onClick?: (event: React.MouseEvent, value?: React.ReactText) => void
   origin?: ValueOf<typeof origins>
-  value?: ReactText
+  value?: React.ReactText
 }
 
 interface AnchorProps
@@ -74,11 +65,11 @@ interface ButtonProps
 }
 
 type ItemProps = AnchorProps | ButtonProps
-type ItemComponent = ForwardRefExoticComponent<unknown> & {
+type ItemComponent = React.ForwardRefExoticComponent<unknown> & {
   (props: AnchorProps, ref?: RefFor<'li'>): JSX.Element
   (props: ButtonProps, ref?: RefFor<'li'>): JSX.Element
 }
-export const Item = forwardRef<HTMLLIElement, ItemProps>(
+export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
   (props, forwardedRef) => {
     const {
       active,
@@ -93,22 +84,22 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
       ...rest
     } = props
 
-    const { onClickContext, onClose, originContext } = useContext(
+    const { onClickContext, onClose, originContext } = React.useContext(
       ActionMenuContext
     )
 
-    const ref = useRef<HTMLLIElement>(null)
-    useImperativeHandle<HTMLLIElement | null, HTMLLIElement | null>(
+    const ref = React.useRef<HTMLLIElement>(null)
+    React.useImperativeHandle<HTMLLIElement | null, HTMLLIElement | null>(
       forwardedRef,
       () => ref.current
     )
 
-    const subMenuRef = useRef<HTMLUListElement>(null)
+    const subMenuRef = React.useRef<HTMLUListElement>(null)
 
-    const [open, setOpen] = useState(false)
+    const [open, setOpen] = React.useState(false)
     const hasSubMenu = Boolean(nested)
 
-    const handleKeyDown: KeyboardEventHandler<HTMLLIElement> = evt => {
+    const handleKeyDown: React.KeyboardEventHandler<HTMLLIElement> = evt => {
       if (evt.key === 'ArrowRight' && hasSubMenu) {
         setOpen(true)
         evt.stopPropagation()
@@ -123,22 +114,22 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
       evt.preventDefault()
     }
 
-    const handleMouseOut: MouseEventHandler<HTMLLIElement> = () => {
+    const handleMouseOut: React.MouseEventHandler<HTMLLIElement> = () => {
       hasSubMenu && setOpen(false)
     }
 
-    const handleMouseOver: MouseEventHandler<HTMLLIElement> = () => {
+    const handleMouseOver: React.MouseEventHandler<HTMLLIElement> = () => {
       hasSubMenu && setOpen(true)
     }
 
-    const handleArrowLeft: KeyboardEventHandler<HTMLUListElement> = evt => {
+    const handleArrowLeft: React.KeyboardEventHandler<HTMLUListElement> = evt => {
       if (evt.key === 'ArrowLeft' && hasSubMenu) {
         setOpen(false)
         evt.stopPropagation()
       }
     }
 
-    const handleClick = (evt: MouseEvent) => {
+    const handleClick = (evt: React.MouseEvent) => {
       if (hasSubMenu) return
 
       onClick && onClick(evt, value)
@@ -151,7 +142,7 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
     const Wrapper: React.FC = wrapperProps =>
       isAnchor ? (
         <a
-          onClick={handleClick as MouseEventHandler<HTMLAnchorElement>}
+          onClick={handleClick as React.MouseEventHandler<HTMLAnchorElement>}
           role="menuitem"
           aria-disabled={Boolean(disabled)}
           {...(rest as HTMLPropsFor<'a'>)}
@@ -160,7 +151,7 @@ export const Item = forwardRef<HTMLLIElement, ItemProps>(
       ) : (
         <button
           disabled={disabled}
-          onClick={handleClick as MouseEventHandler<HTMLButtonElement>}
+          onClick={handleClick as React.MouseEventHandler<HTMLButtonElement>}
           role="menuitem"
           {...(rest as HTMLPropsFor<'button'>)}
           {...wrapperProps}

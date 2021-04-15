@@ -1,13 +1,15 @@
 import Button from '@pluralsight/ps-design-system-button'
 import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
-  breadcrumb: () => css(stylesheet['.psds-breadcrumb'])
+  breadcrumb: () => glamor.css(stylesheet['.psds-breadcrumb'])
 }
 
 interface BreadcrumbProps

@@ -6,9 +6,7 @@ import {
   combineFns,
   usePortal
 } from '@pluralsight/ps-design-system-util'
-import React, { Children, useState } from 'react'
-
-import * as vars from '../vars'
+import React from 'react'
 
 import SuggestionsMenu from './menu'
 import Suggestion, {
@@ -18,6 +16,7 @@ import Suggestion, {
   getSuggestionValue
 } from './suggestion'
 import useOnDocumentClick from './use-on-document-click'
+import * as vars from '../vars/index'
 
 interface TypeaheadProps
   extends Pick<
@@ -81,7 +80,7 @@ const Typeahead = React.forwardRef<HTMLDivElement, TypeaheadProps>(
     const portal = usePortal()
     const containerRef = React.useRef<HTMLDivElement>(null)
 
-    const [target, setTarget] = useState<HTMLElement>()
+    const [target, setTarget] = React.useState<HTMLElement>()
     const inputRef = React.useRef<HTMLInputElement | null>()
     const setInputRef = React.useCallback(node => {
       inputRef.current = node
@@ -129,7 +128,7 @@ const Typeahead = React.forwardRef<HTMLDivElement, TypeaheadProps>(
     })
 
     const suggestions = React.useMemo(() => {
-      return Children.toArray(children)
+      return React.Children.toArray(children)
         .filter(React.isValidElement)
         .map((child, index) => ({
           index,

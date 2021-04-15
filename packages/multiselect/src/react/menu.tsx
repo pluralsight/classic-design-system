@@ -1,21 +1,23 @@
-import { compose, css } from 'glamor'
-import React, { ForwardRefExoticComponent, forwardRef } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   menu: (opts: { open: boolean }) =>
-    compose(
-      css(stylesheet['.psds-multi-select__menu']),
-      opts.open && css(stylesheet['.psds-multi-select__menu--open'])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-multi-select__menu']),
+      opts.open && glamor.css(stylesheet['.psds-multi-select__menu--open'])
     ),
 
   menuItem: (opts: { highlighted: boolean }) =>
-    compose(
-      css(stylesheet['.psds-multi-select__menu__item']),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-multi-select__menu__item']),
       opts.highlighted &&
-        css(stylesheet['.psds-multi-select__menu__item--highlighted'])
+        glamor.css(stylesheet['.psds-multi-select__menu__item--highlighted'])
     )
 }
 
@@ -26,9 +28,9 @@ interface MenuStatics {
   Item: typeof Item
 }
 
-type MenuComponent = ForwardRefExoticComponent<MenuProps> & MenuStatics
+type MenuComponent = React.ForwardRefExoticComponent<MenuProps> & MenuStatics
 
-const Menu = forwardRef<HTMLUListElement, MenuProps>((props, ref) => {
+const Menu = React.forwardRef<HTMLUListElement, MenuProps>((props, ref) => {
   const { open, ...rest } = props
 
   return <ul ref={ref} {...rest} {...styles.menu({ open })} />
@@ -37,7 +39,7 @@ const Menu = forwardRef<HTMLUListElement, MenuProps>((props, ref) => {
 interface ItemProps extends Omit<HTMLPropsFor<'li'>, 'ref'> {
   highlighted: boolean
 }
-const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
+const Item = React.forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
   const { children, highlighted, ...rest } = props
   return (
     <li ref={ref} {...rest} {...styles.menuItem({ highlighted })}>

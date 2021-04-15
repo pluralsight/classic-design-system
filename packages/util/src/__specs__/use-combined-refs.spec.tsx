@@ -1,16 +1,16 @@
 import { renderHook } from '@testing-library/react-hooks'
-import { useRef, useImperativeHandle, useCallback, useState } from 'react'
+import React from 'react'
 
-import { useCombinedRefs } from '..'
+import { useCombinedRefs } from '../index'
 
 describe('useCombinedRefs', () => {
   test('multiple refs', () => {
     const { result } = renderHook(() => {
-      const outer = useRef<HTMLElement>(null)
-      const inner = useRef<HTMLElement>(null)
+      const outer = React.useRef<HTMLElement>(null)
+      const inner = React.useRef<HTMLElement>(null)
       const combinedRef = useCombinedRefs(inner, outer)
 
-      useImperativeHandle<unknown, unknown>(combinedRef, () => ({
+      React.useImperativeHandle<unknown, unknown>(combinedRef, () => ({
         value: 'ref'
       }))
 
@@ -22,11 +22,11 @@ describe('useCombinedRefs', () => {
 
   test('one ref', () => {
     const { result } = renderHook(() => {
-      const outer = useRef<HTMLElement>(null)
-      const inner = useRef<HTMLElement>(null)
+      const outer = React.useRef<HTMLElement>(null)
+      const inner = React.useRef<HTMLElement>(null)
       const combinedRef = useCombinedRefs(outer)
 
-      useImperativeHandle<unknown, unknown>(combinedRef, () => ({
+      React.useImperativeHandle<unknown, unknown>(combinedRef, () => ({
         value: 'ref'
       }))
 
@@ -38,11 +38,11 @@ describe('useCombinedRefs', () => {
 
   test('no refs', () => {
     const { result } = renderHook(() => {
-      const outer = useRef<HTMLElement>(null)
-      const inner = useRef<HTMLElement>(null)
+      const outer = React.useRef<HTMLElement>(null)
+      const inner = React.useRef<HTMLElement>(null)
       const combinedRef = useCombinedRefs()
 
-      useImperativeHandle<unknown, unknown>(combinedRef, () => ({
+      React.useImperativeHandle<unknown, unknown>(combinedRef, () => ({
         value: 'ref'
       }))
 
@@ -55,8 +55,8 @@ describe('useCombinedRefs', () => {
 
   test('with a callback ref', () => {
     const { result } = renderHook(() => {
-      const [height, setHeight] = useState(0)
-      const cbRef = useCallback(() => setHeight(5), [])
+      const [height, setHeight] = React.useState(0)
+      const cbRef = React.useCallback(() => setHeight(5), [])
 
       useCombinedRefs(cbRef)
 

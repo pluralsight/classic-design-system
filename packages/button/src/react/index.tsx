@@ -5,13 +5,17 @@ import {
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import { css, keyframes } from 'glamor'
-import React, { Children } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
-const spin = keyframes(stylesheet['@keyframes psds-button__keyframes__spin'])
+const glamor = glamorDefault || glamorExports
+
+const spin = glamor.keyframes(
+  stylesheet['@keyframes psds-button__keyframes__spin']
+)
 
 const styles = {
   button: ({
@@ -24,7 +28,7 @@ const styles = {
     size,
     themeName
   }) =>
-    css(
+    glamor.css(
       stylesheet['.psds-button'],
       stylesheet[`.psds-button--layout-${layout}`],
       stylesheet[`.psds-button--size-${size}`],
@@ -57,7 +61,7 @@ const styles = {
       }
     ),
   loading: ({ appearance, themeName }) =>
-    css(
+    glamor.css(
       stylesheet[`.psds-button__loading`]({ spin }),
       stylesheet[`.psds-button__loading--appearance-${appearance}`],
       stylesheet[
@@ -65,7 +69,7 @@ const styles = {
       ]
     ),
   icon: ({ iconAlign, iconOnly, isLoadingWithNoText, size }) =>
-    css(
+    glamor.css(
       stylesheet['.psds-button__icon'],
       stylesheet[`.psds-button__icon--iconAlign-${iconAlign}`],
       stylesheet[
@@ -74,7 +78,7 @@ const styles = {
       (iconOnly || isLoadingWithNoText) &&
         stylesheet['.psds-button__icon--iconOnly']
     ),
-  text: () => css(stylesheet[`.psds-button__text`])
+  text: () => glamor.css(stylesheet[`.psds-button__text`])
 }
 
 const mapIconSize = (size: string) => {
@@ -175,7 +179,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       ...rest
     } = props
 
-    const iconOnly = Children.count(children) <= 0
+    const iconOnly = React.Children.count(children) <= 0
 
     const themeName = useTheme()
 

@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
-import React, { ComponentProps } from 'react'
+import React from 'react'
 
-import NavCookieBanner from '..'
+import NavCookieBanner from '../index'
 
 const defaultArgs = {}
 
@@ -10,7 +10,7 @@ export default {
   component: NavCookieBanner
 } as Meta
 
-const Template: Story<ComponentProps<typeof NavCookieBanner>> = args => (
+const Template: Story<React.ComponentProps<typeof NavCookieBanner>> = args => (
   <NavCookieBanner {...args} />
 )
 

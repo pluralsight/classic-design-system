@@ -3,7 +3,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 import { HTMLPropsFor, usePortal } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
-import { css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import {
@@ -15,8 +15,30 @@ import {
   belowRight,
   rightOf,
   leftOf
-} from '../../js'
-import * as positionComponents from '..'
+} from '../../js/index'
+import {
+  Above,
+  AboveLeft,
+  AboveRight,
+  Below,
+  BelowLeft,
+  BelowRight,
+  LeftOf,
+  RightOf
+} from '../index'
+
+const glamor = glamorDefault || glamorExports
+
+const positionComponents = {
+  Above,
+  AboveLeft,
+  AboveRight,
+  Below,
+  BelowLeft,
+  BelowRight,
+  LeftOf,
+  RightOf
+}
 
 const positionFns = {
   above,
@@ -35,13 +57,13 @@ const Box = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
     /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
     React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
-    const selectors = css({
+    const selectors = glamor.css({
       position: 'relative',
       top: '200px',
       left: '200px',
       alignItems: 'center',
-      border: `4px dashed ${core.colorsPink.base}`,
-      color: core.colorsPink.base,
+      border: `4px dashed ${core.colorsPink[6]}`,
+      color: core.colorsPink[6],
       display: 'flex',
       fontSize: core.type.fontSize400,
       fontWeight: core.type.fontWeight700,
@@ -75,15 +97,15 @@ const MockToolip = React.forwardRef<
 })
 
 const ScrollContainer: React.FC = props => {
-  const containerSelectors = css({
-    border: `4px dashed ${core.colorsOrange.base}`,
+  const containerSelectors = glamor.css({
+    border: `4px dashed ${core.colorsOrange[6]}`,
     color: core.colorsTextIcon.highOnDark,
     height: 500,
     overflow: 'scroll',
     padding: 20,
     width: 500
   })
-  const shimSelectors = css({
+  const shimSelectors = glamor.css({
     border: `1px dashed ${core.colorsBorder.highOnLight}`,
     height: 200,
     margin: '20px 0',
@@ -115,7 +137,7 @@ storiesOf('Components | Position / custom style', module).add(
   'shown element keeps style prop',
   () => (
     <positionComponents.Above
-      show={<MockToolip style={{ color: core.colorsPink.base }} />}
+      show={<MockToolip style={{ color: core.colorsPink[6] }} />}
     >
       <Box>Tooltip is pink</Box>
     </positionComponents.Above>
@@ -133,9 +155,7 @@ storiesOf('Components | Position / custom ref', module).add(
     return (
       <>
         <positionComponents.Above
-          show={
-            <MockToolip style={{ color: core.colorsPink.base }} ref={ref} />
-          }
+          show={<MockToolip style={{ color: core.colorsPink[6] }} ref={ref} />}
         >
           <Box>Tooltip is pink</Box>
         </positionComponents.Above>
@@ -156,8 +176,8 @@ Object.values(positionComponents).forEach(Comp => {
   const name = `<${Comp.displayName} />`
 
   const Outer: React.FC = props => {
-    const selectors = css({
-      border: `4px dashed ${core.colorsOrange.base}`,
+    const selectors = glamor.css({
+      border: `4px dashed ${core.colorsOrange[6]}`,
       color: core.colorsTextIcon.highOnDark,
       height: 500,
       padding: 20,
@@ -212,8 +232,6 @@ Object.values(positionComponents).forEach(Comp => {
 storiesOf('Components | Position / in scrollable container', module).add(
   'RightOf',
   () => {
-    const { RightOf } = positionComponents
-
     function ScrollStory() {
       const ref = React.useRef<HTMLDivElement>(null)
 

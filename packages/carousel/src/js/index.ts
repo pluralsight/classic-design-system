@@ -1,4 +1,4 @@
-import { ConstraintSet } from '../vars'
+import { ConstraintSet } from '../vars/index'
 
 export function calcItemsPerPage(
   constraints: ConstraintSet,

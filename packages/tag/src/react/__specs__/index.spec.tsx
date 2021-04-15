@@ -1,8 +1,8 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Tag from '..'
-import * as vars from '../../vars'
+import Tag from '../index'
+import * as vars from '../../vars/index'
 
 describe('Tag', () => {
   it('should export sizes as a static property', () => {

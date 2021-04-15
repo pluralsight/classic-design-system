@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import TextInput from '..'
+import TextInput from '../index'
 
 describe('TextInput', () => {
   it('renders', () => {

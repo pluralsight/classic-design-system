@@ -1,8 +1,7 @@
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import Typeahead from '..'
-
+import Typeahead from '../index'
 import US_STATES from './fixtures/us-states.json'
 
 storiesOf('Components | Typeahead / uncontrolled', module).add(

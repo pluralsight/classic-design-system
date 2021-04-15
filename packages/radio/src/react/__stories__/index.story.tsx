@@ -1,9 +1,9 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-
-import Radio from '..'
 import { StoryFn } from '@storybook/addons'
+import { storiesOf } from '@storybook/react'
+import React from 'react'
+
+import Radio from '../index'
 
 const PaddingDecorator = (storyFn: StoryFn<JSX.Element>) => (
   <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>

@@ -3,17 +3,17 @@ import { RefFor } from '@pluralsight/ps-design-system-util'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import React, { useState, useCallback, useEffect, useRef } from 'react'
+import React from 'react'
 
-import Menu from '..'
+import Menu from '../index'
 import { MenuItemWithDescription } from '../ItemWithDescription'
 
 const useActive = (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
-  const [active, setActive] = useState(false)
-  const handleActiveState = useCallback(() => {
+  const [active, setActive] = React.useState(false)
+  const handleActiveState = React.useCallback(() => {
     ref.current && setActive(document.activeElement === ref.current)
   }, [ref, setActive])
-  useEffect(() => {
+  React.useEffect(() => {
     handleActiveState()
   }, [handleActiveState])
   return {
@@ -76,12 +76,12 @@ storiesOf('menu items', module)
     </Menu>
   ))
   .add('active item', () => {
-    const ref = useRef<HTMLUListElement>()
+    const ref = React.useRef<HTMLUListElement>()
     const selectedItem = {
       name: 'Active',
       id: 'active'
     }
-    useEffect(() => {
+    React.useEffect(() => {
       if (ref?.current) {
         const li = ref.current.querySelectorAll('li')[1]
         li.focus()
@@ -100,12 +100,12 @@ storiesOf('menu items', module)
     )
   })
   .add('active & selected item', () => {
-    const ref = useRef<HTMLUListElement>()
+    const ref = React.useRef<HTMLUListElement>()
     const selectedItem = {
       name: 'Active',
       id: 'active'
     }
-    useEffect(() => {
+    React.useEffect(() => {
       if (ref?.current) {
         const li = ref.current.querySelectorAll('li')[1]
         li.focus()
@@ -155,6 +155,29 @@ storiesOf('item with description', module)
       </Menu>
     )
   })
+  .add('next to items w/o description', () => (
+    <Menu>
+      <MenuItemWithDescription
+        id="1"
+        name="Can view"
+        description="View details, content and other members in the channel."
+      />
+      <MenuItemWithDescription
+        id="2"
+        name="Can edit"
+        description="Edit details, add or remove content and invite or remove members"
+      />
+      <MenuItemWithDescription
+        id="3"
+        name="Make owner"
+        description="Edit details, add or remove content, invite or remove members and delete Channel"
+      />
+      <Menu.Item>Remove member</Menu.Item>
+      <Menu.Item>
+        Remove member with so many lines that it goes to a second line
+      </Menu.Item>
+    </Menu>
+  ))
 
 storiesOf('dividers', module)
   .add('edge', () => (

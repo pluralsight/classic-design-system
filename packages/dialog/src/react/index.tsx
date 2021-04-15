@@ -9,35 +9,38 @@ import {
   stylesFor,
   usePortal
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css, keyframes } from 'glamor'
-import React, { MutableRefObject } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
 
+const glamor = glamorDefault || glamorExports
 /* eslint-disable-next-line camelcase */
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
-const fade = keyframes(stylesheet['@keyframes psds-dialog__keyframes__fade'])
+const fade = glamor.keyframes(
+  stylesheet['@keyframes psds-dialog__keyframes__fade']
+)
 
 const styles = {
   dialog: (modal: boolean, tailPosition?: ValueOf<typeof vars.tailPositions>) =>
-    compose(
-      css(stylesheet['.psds-dialog']({ fade })),
-      modal && css(stylesheet['.psds-dialog--modal']),
+    glamor.compose(
+      glamor.css(stylesheet['.psds-dialog']({ fade })),
+      modal && glamor.css(stylesheet['.psds-dialog--modal']),
       Boolean(tailPosition) &&
-        compose(
+        glamor.compose(
           stylesheet['.psds-dialog--w-tail'],
           stylesheet[`.psds-dialog--tailPosition-${tailPosition}`]
         )
     ),
   content: (props: DialogProps) =>
-    css(
+    glamor.css(
       stylesheet['.psds-dialog__content'],
-      stylesFor('dialog__content', props) as StyleAttribute
+      stylesFor('dialog__content', props) as glamorExports.StyleAttribute
     ),
-  close: () => css(stylesheet['.psds-dialog__close']),
-  overlay: () => css(stylesheet['.psds-dialog__overlay'])
+  close: () => glamor.css(stylesheet['.psds-dialog__close']),
+  overlay: () => glamor.css(stylesheet['.psds-dialog__overlay'])
 }
 
 const CloseButton: React.FC<HTMLPropsFor<'button'>> = props => (
@@ -121,7 +124,7 @@ const Dialog = React.forwardRef((props, ref) => {
   const trapped = !!modal || !!onClose
   const closeOnEscape = isFunction(onClose) && !disableCloseOnEscape
 
-  const portal = usePortal() as MutableRefObject<HTMLDivElement>
+  const portal = usePortal() as React.MutableRefObject<HTMLDivElement>
 
   // TODO: combine fns
   function handleKeyUp(evt: React.KeyboardEvent) {

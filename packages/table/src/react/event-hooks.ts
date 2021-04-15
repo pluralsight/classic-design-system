@@ -1,10 +1,10 @@
 import { canUseDOM } from '@pluralsight/ps-design-system-util'
-import { useEffect } from 'react'
+import React from 'react'
 
 type GenericEventHandler = (evt: Event) => void
 
 export const useOnResize = (onResize: GenericEventHandler) => {
-  useEffect(() => {
+  React.useEffect(() => {
     if (!canUseDOM()) return
 
     window.addEventListener('resize', onResize, { passive: true })
@@ -14,7 +14,7 @@ export const useOnResize = (onResize: GenericEventHandler) => {
 }
 
 export const useOnScroll = (onScroll: GenericEventHandler) => {
-  useEffect(() => {
+  React.useEffect(() => {
     if (!canUseDOM()) return
 
     window.addEventListener('scroll', onScroll, { passive: true })

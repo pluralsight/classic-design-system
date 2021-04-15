@@ -3,6 +3,55 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.0.0...@pluralsight/ps-design-system-textinput@11.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **textinput:** properly order the conditional exports in package ([13b61ef](https://github.com/pluralsight/design-system/commit/13b61ef52b8732acac0c8ac6cf4b97002dc36e5f))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@10.1.9...@pluralsight/ps-design-system-textinput@11.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **textinput:** add exports to package.json as alternate entry point ([a5ed72f](https://github.com/pluralsight/design-system/commit/a5ed72f1205016616f8f7739ba2748bb7f7f00e5))
+* **textinput:** convert to esm ([bbb1aa6](https://github.com/pluralsight/design-system/commit/bbb1aa6a7b9a0e9c75013ec3aa7d631d78aa65aa))
+
+
+### BREAKING CHANGES
+
+* **textinput:** add exports to package.json
+* **textinput:** Drop cjs; esm only; all in on tree shaking
+* **textinput:** Remove file imports (eg, packageName/react)
+
+
+
+
+
+## [10.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@10.1.8...@pluralsight/ps-design-system-textinput@10.1.9) (2021-04-05)
+
+
+### Bug Fixes
+
+* **searchinput:** weird type bug resolved ([#1698](https://github.com/pluralsight/design-system/issues/1698)) ([3845537](https://github.com/pluralsight/design-system/commit/3845537406b5cca7077669fcccddb4cc998f442c))
+
+
+
+
+
+## [10.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@10.1.7...@pluralsight/ps-design-system-textinput@10.1.8) (2021-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textinput
+
+
+
+
+
 ## [10.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@10.1.6...@pluralsight/ps-design-system-textinput@10.1.7) (2021-03-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput

@@ -1,10 +1,11 @@
-import { storiesOf } from '@storybook/react'
-import React, { forwardRef } from 'react'
-import { useDayzed, DateObj } from 'dayzed'
-
 import Field from '@pluralsight/ps-design-system-field'
 import { HomeIcon, CalendarIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput from '@pluralsight/ps-design-system-textinput'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { storiesOf } from '@storybook/react'
+import React from 'react'
+import { DateObj, useDayzed } from 'dayzed'
+
 import {
   Calendar,
   CalendarDates,
@@ -14,9 +15,8 @@ import {
   onMultiDateSelected,
   useDateSelectChange,
   useRangeSelectChange
-} from '..'
-import { slides } from '../../vars'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
+} from '../index'
+import { slides } from '../../vars/index'
 
 storiesOf('SingleDate', module)
   .add('calendar: date is selected', () => {
@@ -171,7 +171,7 @@ storiesOf('DatePicker', module)
   .add('renderContainer', () => (
     <DatePicker
       label="renderContainer"
-      renderContainer={forwardRef((props, ref) => (
+      renderContainer={React.forwardRef((props, ref) => (
         <div ref={ref} {...props} style={{ outline: '2px dashed orange' }} />
       ))}
       _uniqueId={stableUniqueId}

@@ -1,10 +1,12 @@
-import { compose, css } from 'glamor'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
-import stylesheet from '../css'
-import * as vars from '../vars'
+import stylesheet from '../css/index'
+import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 const style = ({
   themeName,
@@ -15,10 +17,10 @@ const style = ({
   size?: ValueOf<typeof vars.headingSizes>
   color: ValueOf<typeof vars.textColors>
 }) =>
-  compose(
-    css(stylesheet['.psds-text__heading']),
-    css(stylesheet[`.psds-text__heading--size-${size}`]),
-    css(
+  glamor.compose(
+    glamor.css(stylesheet['.psds-text__heading']),
+    glamor.css(stylesheet[`.psds-text__heading--size-${size}`]),
+    glamor.css(
       stylesheet[`.psds-text__heading--color-${color}.psds-theme--${themeName}`]
     )
   )

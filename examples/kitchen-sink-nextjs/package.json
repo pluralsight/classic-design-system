@@ -1,0 +1,31 @@
+{
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "postinstall": "sh links.sh"
+  },
+  "dependencies": {
+    "date-fns": "^2.19.0",
+    "dayzed": "^3.2.2",
+    "downshift": "^6.1.2",
+    "exenv": "^1.2.2",
+    "focus-within": "^3.0.2",
+    "glamor": "^2.20.40",
+    "hoist-non-react-statics": "^3.3.2",
+    "invariant": "^2.2.4",
+    "next": "^10.0.0",
+    "next-transpile-modules": "^6.4.0",
+    "react": "17.0.1",
+    "react-cookie": "^4.0.3",
+    "react-dom": "17.0.1",
+    "react-innertext": "^1.1.5",
+    "resize-observer-polyfill": "^1.5.1",
+    "shave": "^2.5.10",
+    "shiitake": "^3.0.2",
+    "tiny-hashes": "^1.0.1"
+  }
+}

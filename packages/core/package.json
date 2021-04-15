@@ -1,24 +1,33 @@
 {
   "name": "@pluralsight/ps-design-system-core",
-  "version": "6.9.3",
+  "version": "8.0.1",
   "description": "Collection of Core design elements for the Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "module": "dist/esm/index.mjs",
   "scripts": {
-    "build": "run-s build:cjs build:esm build:css",
+    "build": "run-s build:esm build:cjs build:css",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
-    "build:css": "node ./build",
-    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm"
+    "build:css": "node ./build/index.mjs",
+    "build:esm": "run-s compile:esm rewrite:esm",
+    "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "rewrite:esm": "tsc-esm --project tsconfig.build.json",
+    "test": "tsc --noEmit --project ./tsconfig.json && jest"
+  },
+  "exports": {
+    "import": "./dist/esm/index.mjs",
+    "require": "./dist/cjs/index.js",
+    "node": "./dist/cjs/index.js",
+    "default": "./dist/cjs/index.js"
   },
   "sideEffects": false,
   "style": "dist/css/index.css",
   "types": "dist/esm/index.d.ts",
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^2.1.0",
+    "@pluralsight/ps-design-system-build": "^3.0.0",
     "globby": "^11.0.2",
     "postcss": "^7.0.26",
     "postcss-import": "^12.0.1",

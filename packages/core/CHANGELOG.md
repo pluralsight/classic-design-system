@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.0.0...@pluralsight/ps-design-system-core@8.0.1) (2021-04-15)
+
+
+### Bug Fixes
+
+* **core:** properly order the conditional exports in package ([e3de483](https://github.com/pluralsight/design-system/commit/e3de483c6466765e2ba586a92a40c3543891df8b))
+
+
+
+
+
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@7.0.0...@pluralsight/ps-design-system-core@8.0.0) (2021-04-14)
+
+
+### Code Refactoring
+
+* **core:** add exports to package.json as alternate entry point ([fb995e4](https://github.com/pluralsight/design-system/commit/fb995e4b03f776cd7aa7bc5df4b89b37725e87e6))
+* **core:** convert to esm ([6d8e9df](https://github.com/pluralsight/design-system/commit/6d8e9dfd7fffa1171b636b69012dbfd8c2741efe))
+
+
+### BREAKING CHANGES
+
+* **core:** add exports to package.json
+* **core:** Drop cjs; esm only; all in on tree shaking
+
+
+
+
+
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.9.3...@pluralsight/ps-design-system-core@7.0.0) (2021-04-05)
+
+
+### Features
+
+* **core:** temp core util for refactoring to vanillia css ([#1689](https://github.com/pluralsight/design-system/issues/1689)) ([f8485da](https://github.com/pluralsight/design-system/commit/f8485dad01195c2d0520af1e6505b7838335d0b8))
+
+
+### flexibility
+
+* remove base from color scale & add parseToRgb ([#1696](https://github.com/pluralsight/design-system/issues/1696)) ([b5abe62](https://github.com/pluralsight/design-system/commit/b5abe62c164f47cde093b6fce1381af2cb47e21e))
+
+
+### BREAKING CHANGES
+
+* update color.base usages to color[6]
+
+* feat(core): remove colorsBackgroundUtility.base update parseToRgb()
+* switch colorsBackgroundUtility.base usage to
+
+* feat(core): adds colorsBackgroundUtilityCsv
+
+* test(core): update snapshot
+
+
+
+
+
 ## [6.9.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@6.9.2...@pluralsight/ps-design-system-core@6.9.3) (2021-03-11)
 
 

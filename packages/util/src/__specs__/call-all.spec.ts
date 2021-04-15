@@ -1,4 +1,4 @@
-import { callAll } from '..'
+import { callAll } from '../index'
 
 test('callAll()', () => {
   const expected = 'string'

@@ -11,6 +11,7 @@ exports[`Storyshots EmptyState combo 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         MagnifySmall
@@ -101,6 +102,7 @@ exports[`Storyshots EmptyState in a small fixed size container 1`] = `
         aria-hidden="true"
         role="img"
         viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <title>
           MagnifySmall
@@ -185,6 +187,7 @@ exports[`Storyshots EmptyState/actions with an input 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         MagnifySmall
@@ -297,6 +300,7 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         MagnifySmall
@@ -499,6 +503,7 @@ exports[`Storyshots EmptyState/actions with tags 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         MagnifySmall
@@ -713,6 +718,7 @@ exports[`Storyshots EmptyState/illustrations/large bookmark 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Bookmark
@@ -758,6 +764,7 @@ exports[`Storyshots EmptyState/illustrations/large channel 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Channel
@@ -810,6 +817,7 @@ exports[`Storyshots EmptyState/illustrations/large cloud 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Cloud
@@ -861,6 +869,7 @@ exports[`Storyshots EmptyState/illustrations/large code 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Code
@@ -975,6 +984,7 @@ exports[`Storyshots EmptyState/illustrations/large data 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Data
@@ -1032,6 +1042,7 @@ exports[`Storyshots EmptyState/illustrations/large document 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Document
@@ -1112,6 +1123,7 @@ exports[`Storyshots EmptyState/illustrations/large magnify 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Magnify
@@ -1181,6 +1193,7 @@ exports[`Storyshots EmptyState/illustrations/large signal 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Signal
@@ -1239,6 +1252,7 @@ exports[`Storyshots EmptyState/illustrations/large video 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Video
@@ -1279,6 +1293,7 @@ exports[`Storyshots EmptyState/illustrations/large zen 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Zen
@@ -1332,6 +1347,7 @@ exports[`Storyshots EmptyState/illustrations/small bookmark 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         BookmarkSmall
@@ -1372,6 +1388,7 @@ exports[`Storyshots EmptyState/illustrations/small channel 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         ChannelSmall
@@ -1429,6 +1446,7 @@ exports[`Storyshots EmptyState/illustrations/small cloud 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         CloudSmall
@@ -1469,6 +1487,7 @@ exports[`Storyshots EmptyState/illustrations/small code 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         CodeSmall
@@ -1578,6 +1597,7 @@ exports[`Storyshots EmptyState/illustrations/small data 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         DataSmall
@@ -1615,6 +1635,7 @@ exports[`Storyshots EmptyState/illustrations/small document 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         DocumentSmall
@@ -1678,6 +1699,7 @@ exports[`Storyshots EmptyState/illustrations/small magnify 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         MagnifySmall
@@ -1741,6 +1763,7 @@ exports[`Storyshots EmptyState/illustrations/small signal 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         SignalSmall
@@ -1780,6 +1803,7 @@ exports[`Storyshots EmptyState/illustrations/small video 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         VideoSmall
@@ -1812,6 +1836,7 @@ exports[`Storyshots EmptyState/illustrations/small zen 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         ZenSmall
@@ -1884,6 +1909,7 @@ Array [
         aria-hidden="true"
         role="img"
         viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
       >
         <title>
           MagnifySmall
@@ -1968,6 +1994,7 @@ exports[`Storyshots EmptyState/sizes large 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 128 128"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         Magnify
@@ -2057,6 +2084,7 @@ exports[`Storyshots EmptyState/sizes small 1`] = `
       aria-hidden="true"
       role="img"
       viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <title>
         MagnifySmall

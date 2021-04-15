@@ -7,92 +7,96 @@ import {
   HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
-import { StyleAttribute, compose, css } from 'glamor'
-import React, {
-  ReactElement,
-  ReactNode,
-  cloneElement,
-  forwardRef,
-  useState
-} from 'react'
-
-import stylesheet from '../css'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import { useHideLabels } from './context'
+import stylesheet from '../css/index'
 import { List, CollapsibleList } from './list'
 
 type StyleFn = (
   themeName?: ValueOf<keyof typeof Theme.names>,
   props?: Record<string, unknown>
-) => StyleAttribute
+) => glamorExports.StyleAttribute
+
+const glamor = glamorDefault || glamorExports
 
 const styles: { [key: string]: StyleFn } = {
   item: themeName => {
     const label = 'verticaltabs__item'
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`]),
-      css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`]),
+      glamor.css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
     )
   },
 
-  itemIcon: () => css(stylesheet['.psds-verticaltabs__item__icon']),
+  itemIcon: () => glamor.css(stylesheet['.psds-verticaltabs__item__icon']),
   itemIconActive: () =>
-    css(stylesheet['.psds-verticaltabs__item__icon--active']),
+    glamor.css(stylesheet['.psds-verticaltabs__item__icon--active']),
 
   itemTier: (themeName, props: { type: string }) => {
     const label = `verticaltabs__${props.type}`
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`]),
-      css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`]),
+      glamor.css(stylesheet[`.psds-${label}.psds-theme--${themeName}`])
     )
   },
 
   tier1Header: () => {
     const label = `verticaltabs__tier1__header`
 
-    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`])
+    )
   },
   tier1HeaderInner: () => {
     const label = `verticaltabs__tier1__header__inner`
 
-    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`])
+    )
   },
 
   tier2Header: () => {
     const label = `verticaltabs__tier2__header`
 
-    return compose(css({ label }), css(stylesheet[`.psds-${label}`]))
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`])
+    )
   },
 
   tierHeaderLabel: (_themeName, props: { hideLabels: boolean }) => {
     const label = `verticaltabs__header__label`
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`]),
-      props.hideLabels && css(stylesheet[`.psds-${label}--hide-labels`])
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`]),
+      props.hideLabels && glamor.css(stylesheet[`.psds-${label}--hide-labels`])
     )
   },
   tierHeaderLabelIcon: (_themeName, props: { collapsed: boolean }) => {
     const label = `verticaltabs__header__label__icon`
 
-    return compose(
-      css({ label }),
-      css(stylesheet[`.psds-${label}`]),
-      props.collapsed && css(stylesheet[`.psds-${label}--collapsed`])
+    return glamor.compose(
+      glamor.css({ label }),
+      glamor.css(stylesheet[`.psds-${label}`]),
+      props.collapsed && glamor.css(stylesheet[`.psds-${label}--collapsed`])
     )
   }
 }
 
 interface ItemProps extends HTMLPropsFor<'li'> {
-  active?: ReactNode
+  active?: React.ReactNode
   collapsed?: boolean
   collapsible?: boolean
-  header?: ReactElement
+  header?: React.ReactElement
   itemType?: string
 }
 
@@ -100,7 +104,7 @@ interface ItemHeaderBaseProps {
   active?: boolean
   collapsed?: boolean
   collapsible?: boolean
-  icon?: ReactElement
+  icon?: React.ReactElement
 }
 interface AnchorHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'a'> {
   onclick?: undefined
@@ -119,7 +123,7 @@ interface SpanHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'span'> {
 
 type ItemHeaderProps = AnchorHeaderProps | ButtonHeaderProps | SpanHeaderProps
 
-const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
+const Item = React.forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
   const {
     active,
     collapsed: initialCollapsed = false,
@@ -131,7 +135,7 @@ const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
     ...rest
   } = props
 
-  const [collapsed, setCollapsed] = useState<boolean>(initialCollapsed)
+  const [collapsed, setCollapsed] = React.useState<boolean>(initialCollapsed)
   const themeName = useTheme()
 
   const handleHeaderClick = combineFns<[React.MouseEvent<HTMLLIElement>]>(
@@ -149,7 +153,7 @@ const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
         {...styles.itemTier(themeName, { type })}
         {...(active && { 'data-active': true })}
       >
-        {cloneElement(header, {
+        {React.cloneElement(header, {
           active,
           collapsed,
           collapsible,
@@ -165,13 +169,13 @@ const Item = forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
 Item.displayName = 'VerticalTabs.Item'
 
 interface Tier1Props extends Omit<React.ComponentProps<typeof Item>, 'header'> {
-  header: ReactElement<typeof Tier1Header>
+  header: React.ReactElement<typeof Tier1Header>
 }
 const Tier1: React.FC<Tier1Props> & { Header: typeof Tier1Header } = props => (
   <Item {...props} itemType="tier1" />
 )
 
-const Tier1Header = forwardRef<any, ItemHeaderProps>((props, ref) => {
+const Tier1Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
   const { active, collapsed, collapsible, children, icon, ...rest } = props
   const hideLabels = useHideLabels()
   const Tag: React.FC = wrapperProps =>
@@ -185,7 +189,7 @@ const Tier1Header = forwardRef<any, ItemHeaderProps>((props, ref) => {
   return (
     <Tag {...styles.tier1Header()} {...rest}>
       {icon &&
-        cloneElement(icon, {
+        React.cloneElement(icon, {
           size: CaretDownIcon.sizes.medium,
           ...styles.itemIcon(),
           ...(active ? { 'data-active': true } : {})
@@ -209,7 +213,7 @@ Tier1.displayName = 'VerticalTabs.Tier1'
 Tier1.Header.displayName = 'VerticalTabs.Tier1.Header'
 
 interface Tier2Props extends Omit<React.ComponentProps<typeof Item>, 'header'> {
-  header: ReactElement<typeof Tier1Header>
+  header: React.ReactElement<typeof Tier1Header>
 }
 
 const Tier2: React.FC<Tier2Props> & {
@@ -218,7 +222,7 @@ const Tier2: React.FC<Tier2Props> & {
   return <Item {...props} itemType="tier2" />
 }
 
-const Tier2Header = forwardRef<any, ItemHeaderProps>((props, ref) => {
+const Tier2Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
   const hideLabels = useHideLabels()
 
   // NOTE: some props are given during clone that are not used as should not be

@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react'
+import React from 'react'
 
 export default function useMatchMedia(query: string) {
-  const [matches, setMatches] = useState(false)
+  const [matches, setMatches] = React.useState(false)
 
-  useEffect(() => {
+  React.useEffect(() => {
     const update = () => {
       const { matches: nextMatches } = window.matchMedia(query)
       setMatches(nextMatches)

@@ -4,24 +4,26 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import { css } from 'glamor'
-import React, { FC, ReactNode } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import stylesheet from '../css'
+import stylesheet from '../css/index'
+
+const glamor = glamorDefault || glamorExports
 
 const styles = {
   label: (themeName: ValueOf<typeof themeNames>) =>
-    css(
+    glamor.css(
       stylesheet['psds-dropdown__label'],
       stylesheet[`.psds-dropdown__label.psds-theme--${themeName}`]
     )
 }
 
 interface LabelProps extends HTMLPropsFor<'label'> {
-  label?: ReactNode
+  label?: React.ReactNode
 }
 
-export const Label: FC<LabelProps> = props => {
+export const Label: React.FC<LabelProps> = props => {
   const themeName = useTheme()
   return (
     <label>

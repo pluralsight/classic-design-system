@@ -1,6 +1,6 @@
-export { default } from './react'
+export { default } from './react/index'
 export * from './react/sentinel'
 export * from './react/sticky'
 
-export * from './vars'
-export { default as css } from './css'
+export * from './vars/index'
+export { default as css } from './css/index'
