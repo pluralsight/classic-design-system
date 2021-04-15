@@ -1,7 +1,3 @@
-import { compose, css } from 'glamor'
-import polyfillFocusWithin from 'focus-within'
-import React from 'react'
-
 import Button from '@pluralsight/ps-design-system-button'
 import { breakpoints } from '@pluralsight/ps-design-system-core'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
@@ -15,15 +11,19 @@ import {
   useMatchMedia,
   usePrevious
 } from '@pluralsight/ps-design-system-util'
+import polyfillFocusWithin from 'focus-within'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import stylesheet from '../css/index'
 import polyfillElementClosest from '../js/polyfill-element-closest'
-import * as vars from '../vars/index'
-
 import useBodyScrollLock from './use-body-scroll-lock'
 import useOnClickOutside from './use-on-click-outside'
 import useOnEscape from './use-on-escape'
 import useOnInnerFocus from './use-on-inner-focus'
+import * as vars from '../vars/index'
+
+const glamor = glamorDefault || glamorExports
 
 if (canUseDOM()) {
   polyfillElementClosest()
@@ -35,28 +35,28 @@ const TOP_NAV_ID = 'ps-appframe--topnav'
 
 const styles = {
   appframe: (themeName: ValueOf<typeof Theme.names>) =>
-    compose(
-      css(stylesheet['.psds-appframe']),
-      css(stylesheet[`.psds-appframe.psds-theme--${themeName}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-appframe']),
+      glamor.css(stylesheet[`.psds-appframe.psds-theme--${themeName}`])
     ),
 
-  skipBanner: () => css(stylesheet['.psds-appframe__skip-banner']),
+  skipBanner: () => glamor.css(stylesheet['.psds-appframe__skip-banner']),
 
   container: (variant: ValueOf<typeof vars.sidenavVariants>) =>
-    compose(
-      css(stylesheet['.psds-appframe__container']),
-      variant && css(stylesheet[`.psds-appframe__container--${variant}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-appframe__container']),
+      variant && glamor.css(stylesheet[`.psds-appframe__container--${variant}`])
     ),
-  content: () => css(stylesheet['.psds-appframe__content']),
+  content: () => glamor.css(stylesheet['.psds-appframe__content']),
   sidenav: (variant: ValueOf<typeof vars.sidenavVariants>) =>
-    compose(
-      css(stylesheet['.psds-appframe__sidenav']),
-      variant && css(stylesheet[`.psds-appframe__sidenav--${variant}`])
+    glamor.compose(
+      glamor.css(stylesheet['.psds-appframe__sidenav']),
+      variant && glamor.css(stylesheet[`.psds-appframe__sidenav--${variant}`])
     ),
   sidenavOverflowMask: () =>
-    css(stylesheet['.psds-appframe__sidenav__overflow-mask']),
-  sidenavInner: () => css(stylesheet['.psds-appframe__sidenav__inner']),
-  topnav: () => css(stylesheet['.psds-appframe__topnav'])
+    glamor.css(stylesheet['.psds-appframe__sidenav__overflow-mask']),
+  sidenavInner: () => glamor.css(stylesheet['.psds-appframe__sidenav__inner']),
+  topnav: () => glamor.css(stylesheet['.psds-appframe__topnav'])
 }
 
 interface AppFrameContextValue {
