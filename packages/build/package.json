@@ -15,7 +15,10 @@
     "test:watch": "yarn test --watchAll"
   },
   "exports": {
-    "default": "./index.js"
+    ".": {
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json"
   },
   "dependencies": {
     "chalk": "^2.4.2",
