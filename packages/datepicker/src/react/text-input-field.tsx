@@ -1,9 +1,9 @@
-import Field from '@pluralsight/ps-design-system-field'
+import Field, { FieldProps } from '@pluralsight/ps-design-system-field'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 import { uniqueId as defaultUniqueId } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-interface TextInputFieldProps extends React.ComponentProps<typeof Field> {
+interface TextInputFieldProps extends FieldProps {
   onChange?: React.ChangeEventHandler<HTMLInputElement>
   placeholder?: string
   value?: React.ReactText
