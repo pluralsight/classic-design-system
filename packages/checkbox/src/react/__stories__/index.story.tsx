@@ -1,97 +1,109 @@
-import * as core from '@pluralsight/ps-design-system-core'
+import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { DecoratorFn } from '@storybook/react'
+import { css } from 'glamor'
 import React from 'react'
-import { DecoratorFn, storiesOf } from '@storybook/react'
 
 import Checkbox from '../index'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
-  <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
+  <div {...css({ padding: layout.spacingLarge })}>{storyFn()}</div>
 )
 
-storiesOf('Checkbox', module)
-  .addDecorator(PaddingDecorator)
-  .add('default', () => <Checkbox name="colorRed" value="red" label="Red" />)
-  .add('checked', () => (
-    <Checkbox checked name="colorRed" value="red" label="Red" />
-  ))
-  .add('indeterminate', () => (
-    <Checkbox indeterminate name="colorRed" value="red" label="Red" />
-  ))
-  .add('checked & indeterminate', () => (
-    <Checkbox checked indeterminate name="colorRed" value="red" label="Red" />
-  ))
-  .add('error', () => (
+const defaultArgs = {
+  label: 'Red',
+  name: 'colorRed',
+  value: 'red'
+}
+
+export default {
+  title: 'Components/Checkbox',
+  component: Checkbox,
+  decorators: [PaddingDecorator]
+} as Meta
+
+const Template: Story<React.ComponentProps<typeof Checkbox>> = args => (
+  <Checkbox {...args} />
+)
+
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
+
+export const Checked = Template.bind({})
+Checked.args = { ...defaultArgs, checked: true }
+
+export const Indeterminate = Template.bind({})
+Indeterminate.args = { ...defaultArgs, indeterminate: true }
+
+export const Disabled = Template.bind({})
+Disabled.args = { ...defaultArgs, disabled: true }
+
+export const Error = Template.bind({})
+Error.args = { ...defaultArgs, error: true }
+
+export const CheckedError = Template.bind({})
+CheckedError.args = { ...defaultArgs, checked: true, error: true }
+
+export const CheckedIndeterminate = Template.bind({})
+CheckedIndeterminate.args = {
+  ...defaultArgs,
+  checked: true,
+  indeterminate: true
+}
+
+export const ExampleStateDemo: Story = () => {
+  const [values, updateValues] = React.useState<{
+    [name: string]: React.ReactText
+  }>({})
+
+  const colorNames = Object.keys(values)
+  const checked = (name: string) => colorNames.indexOf(name) > -1
+
+  const handleCheck = (
+    _evt: React.KeyboardEvent | React.MouseEvent,
+    checked: boolean,
+    value: React.ReactText,
+    name?: string
+  ) => {
+    if (typeof name !== 'string') return
+
+    const nextValues = { ...values }
+
+    if (checked) nextValues[name] = value
+    else delete nextValues[name]
+
+    updateValues(nextValues)
+  }
+
+  return (
     <div>
-      <Checkbox checked error name="colorRed" value="red" label="Red" />
-      <Checkbox error name="colorRed" value="red" label="Red" />
+      <div {...css({ color: colorsTextIcon.highOnDark })}>
+        Checked: {colorNames.map(name => `${name}: ${values[name]}`).join('; ')}
+      </div>
+
+      <Checkbox
+        checked={checked('colorRed')}
+        label="Red"
+        name="colorRed"
+        onCheck={handleCheck}
+        value="red"
+      />
+
+      <Checkbox
+        checked={checked('colorGreen')}
+        label="Green"
+        name="colorGreen"
+        onCheck={handleCheck}
+        value="green"
+      />
+
+      <Checkbox
+        checked={checked('colorBlue')}
+        label="Blue"
+        name="colorBlue"
+        onCheck={handleCheck}
+        value="blue"
+      />
     </div>
-  ))
-  .add('disabled', () => (
-    <Checkbox disabled name="colorRed" value="red" label="Red" />
-  ))
-  .add('disabled & errored', () => (
-    <Checkbox disabled error name="colorRed" value="red" label="Red" />
-  ))
-  .add('state demo', () => {
-    function StateDemo() {
-      const [values, updateValues] = React.useState<{
-        [name: string]: React.ReactText
-      }>({})
-
-      function handleCheck(
-        _evt:
-          | React.KeyboardEvent<HTMLLabelElement>
-          | React.MouseEvent<HTMLLabelElement, MouseEvent>,
-        checked: boolean,
-        value: React.ReactText,
-        name: string | undefined
-      ) {
-        if (typeof name === 'string') {
-          const nextValues = { ...values }
-
-          if (checked) nextValues[name] = value
-          else delete nextValues[name]
-
-          updateValues(nextValues)
-        }
-      }
-
-      const colorNames = Object.keys(values)
-      const checked = (name: string) => colorNames.indexOf(name) > -1
-
-      return (
-        <div>
-          <div style={{ color: core.colorsTextIcon.highOnDark }}>
-            Checked:{' '}
-            {colorNames.map(name => `${name}: ${values[name]}`).join('; ')}
-          </div>
-
-          <Checkbox
-            onCheck={handleCheck}
-            name="colorRed"
-            value="red"
-            label="Red"
-            checked={checked('colorRed')}
-          />
-
-          <Checkbox
-            onCheck={handleCheck}
-            name="colorGreen"
-            value="green"
-            label="Green"
-            checked={checked('colorGreen')}
-          />
-
-          <Checkbox
-            onCheck={handleCheck}
-            name="colorBlue"
-            value="blue"
-            label="Blue"
-            checked={checked('colorBlue')}
-          />
-        </div>
-      )
-    }
-
-    return <StateDemo />
-  })
+  )
+}
