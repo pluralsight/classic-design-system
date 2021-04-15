@@ -2,13 +2,7 @@ import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { DecoratorFn } from '@storybook/react'
 import { css } from 'glamor'
-import React, {
-  ComponentProps,
-  KeyboardEvent,
-  MouseEvent,
-  ReactText,
-  useState
-} from 'react'
+import React from 'react'
 
 import Checkbox from '../index'
 
@@ -28,7 +22,7 @@ export default {
   decorators: [PaddingDecorator]
 } as Meta
 
-const Template: Story<ComponentProps<typeof Checkbox>> = args => (
+const Template: Story<React.ComponentProps<typeof Checkbox>> = args => (
   <Checkbox {...args} />
 )
 
@@ -58,15 +52,17 @@ CheckedIndeterminate.args = {
 }
 
 export const ExampleStateDemo: Story = () => {
-  const [values, updateValues] = useState<{ [name: string]: ReactText }>({})
+  const [values, updateValues] = React.useState<{
+    [name: string]: React.ReactText
+  }>({})
 
   const colorNames = Object.keys(values)
   const checked = (name: string) => colorNames.indexOf(name) > -1
 
   const handleCheck = (
-    _evt: KeyboardEvent | MouseEvent,
+    _evt: React.KeyboardEvent | React.MouseEvent,
     checked: boolean,
-    value: ReactText,
+    value: React.ReactText,
     name?: string
   ) => {
     if (typeof name !== 'string') return
