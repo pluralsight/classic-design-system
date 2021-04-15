@@ -31,6 +31,7 @@
   },
   "gitHead": "7418883d96a76c59a99f86c2b16516ec752bf913",
   "sideEffects": false,
+  "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.0.1",
