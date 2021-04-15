@@ -29,37 +29,37 @@ storiesOf('button', module)
 storiesOf('selected', module)
   .add('Select.Selected: placeholder', () => (
     <Select.Selected
-      selectedItem={{ name: 'placeholder', id: 'placeholder' }}
+      selectedItem={{ label: 'placeholder', value: 'placeholder' }}
       placeholder="placeholder"
     />
   ))
   .add('Select.Selected: selected', () => (
     <Select.Selected
-      selectedItem={{ name: 'selected', id: 'selected' }}
+      selectedItem={{ label: 'selected', value: 'selected' }}
       placeholder="placeholder"
     />
   ))
 
 const items = [
-  { id: 'One item', name: 'One item' },
-  { id: 'Two item', name: 'Two item' },
-  { id: 'Three item', name: 'Three item' }
+  { value: 'One item', label: 'One item' },
+  { value: 'Two item', label: 'Two item' },
+  { value: 'Three item', label: 'Three item' }
 ]
 const itemsWithDescription = [
   {
-    id: 'Can view',
-    name: 'Can view',
+    value: 'Can view',
+    label: 'Can view',
     description: 'View details, content and other members in the channel.'
   },
   {
-    id: 'Can edit',
-    name: 'Can edit',
+    value: 'Can edit',
+    label: 'Can edit',
     description:
       'Edit details, add or remove content and invite or remove members'
   },
   {
-    id: 'Make Owner',
-    name: 'Make Owner',
+    value: 'Make Owner',
+    label: 'Make Owner',
     description:
       'Edit details, add or remove content, invite or remove members and delete Channel'
   }
@@ -75,20 +75,20 @@ storiesOf('dropdown', module)
       <Select
         position={Select.positions.belowRight}
         value={{
-          name: itemsWithDescription[0].name,
-          id: itemsWithDescription[0].id
+          label: itemsWithDescription[0].label,
+          value: itemsWithDescription[0].value
         }}
       >
         {itemsWithDescription.map(i => (
-          <MenuItemWithDescription {...i} key={i.id} />
+          <MenuItemWithDescription {...i} key={i.value} />
         ))}
         <Menu.Divider />
         <Menu.Item
           onClick={handleClick}
           style={{ color: colorsStatus.error }}
           value={{
-            name: itemsWithDescription[0].name,
-            id: itemsWithDescription[0].id
+            label: itemsWithDescription[0].label,
+            value: itemsWithDescription[0].value
           }}
         >
           Remove Member
@@ -99,12 +99,12 @@ storiesOf('dropdown', module)
   .add('custom item: dynamic', () => {
     return (
       <Select
-        items={itemsWithDescription}
+        options={itemsWithDescription}
         position={Select.positions.belowRight}
         renderOption={(MenuItemWithDescription as unknown) as React.FC}
         value={{
-          name: itemsWithDescription[0].name,
-          id: itemsWithDescription[0].id
+          label: itemsWithDescription[0].label,
+          value: itemsWithDescription[0].value
         }}
       />
     )
@@ -112,17 +112,17 @@ storiesOf('dropdown', module)
   .add('BelowLeft: placholder', () => (
     <Select
       position={Select.positions.belowLeft}
-      items={items}
+      options={items}
       placeholder={'Select item'}
     />
   ))
   .add('BelowRight: selected value', () => (
     <Select
       position={Select.positions.belowRight}
-      items={items}
+      options={items}
       value={{
-        name: items[1].name,
-        id: items[1].id
+        label: items[1].label,
+        value: items[1].value
       }}
     />
   ))

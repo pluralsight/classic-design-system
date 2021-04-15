@@ -28,7 +28,7 @@ const defaultRenderOption = forwardRefWithAs<MenuItemProps, 'button'>(
     const { value } = props
     return (
       <Menu.Item {...props} ref={ref}>
-        {value && value.name}
+        {value && value.label}
         <Menu.Check style={{ marginLeft: 'auto' }} />
       </Menu.Item>
     )
@@ -124,8 +124,8 @@ const Typeahead: TypeaheadFieldComponent = props => {
           const { selectedItem, inputValue } = changes
           return {
             ...changes,
-            inputValue: selectedItem?.name
-              ? `${selectedItem?.name}`
+            inputValue: selectedItem?.label
+              ? `${selectedItem?.label}`
               : inputValue
           }
         }
