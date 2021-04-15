@@ -1,212 +1,125 @@
-import { fireEvent, render } from '@testing-library/react'
+import { Story } from '@storybook/react/types-6-0'
+import { screen } from '@testing-library/dom'
+import userEvent from '@testing-library/user-event'
+import { render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
-import Typeahead from '../index'
+import * as stories from '../__stories__/index.story'
 
-describe('Typeahead', () => {
-  // NOTE: suppressing unnecessary warnings from test renderer.
-  //       ref: https://github.com/facebook/react/pull/14853
-  // TODO: once we've upgraded to react@16.9 we can remove
-  const originalError = console.error
-
-  beforeAll(() => {
-    console.error = (...args: any[]) => {
-      if (/Warning.*not wrapped in act/.test(args[0])) return
-
-      originalError.call(console, ...args)
-    }
-  })
-
-  afterAll(() => {
-    console.error = originalError
-  })
-  // END NOTE
-
-  it('renders', () => {
-    const { getByTestId } = render(
-      <Typeahead data-testid="undertest">
-        <Typeahead.Suggestion>first</Typeahead.Suggestion>
-        <Typeahead.Suggestion>second</Typeahead.Suggestion>
-        <Typeahead.Suggestion>third</Typeahead.Suggestion>
-      </Typeahead>
-    )
-    expect(getByTestId('undertest')).toBeInTheDocument()
-  })
-
-  it('forwards refs', () => {
-    const ref = React.createRef<HTMLInputElement>()
-    render(<Typeahead ref={ref} />)
-
-    expect(ref.current).not.toBeNull()
-  })
-
-  it('calls onFocus prop when input is focused', () => {
-    const handleFocus = jest.fn()
-    const { container } = render(<Typeahead onFocus={handleFocus} />)
-
-    const input = container.querySelector<HTMLInputElement>('input')!
-    fireEvent.focus(input)
-
-    expect(handleFocus).toHaveBeenCalled()
-  })
-
-  describe('suggestion menu', () => {
-    const handleChange = jest.fn()
-
-    let container: HTMLElement
-    let input: HTMLInputElement
-    let rerender: (ui: React.ReactElement) => void
-
-    beforeEach(() => {
-      const result = render(
-        <Typeahead onChange={handleChange}>
-          <Typeahead.Suggestion>first</Typeahead.Suggestion>
-          <Typeahead.Suggestion>second</Typeahead.Suggestion>
-          <Typeahead.Suggestion>third</Typeahead.Suggestion>
-        </Typeahead>
+jest.mock('@pluralsight/ps-design-system-position', () => {
+  return {
+    esModule: true,
+    BelowLeft: jest.fn().mockImplementation(props => {
+      const { children, show, ...rest } = props
+      return (
+        <div {...rest}>
+          <div data-testid="position-show">{show}</div>
+          <div data-testid="position-children">{children}</div>
+        </div>
       )
-      input = result.container.querySelector<HTMLInputElement>('input')!
+    })
+  }
+})
 
-      container = result.container
-      rerender = result.rerender
+describe('TypeaheadField', () => {
+  const cases = generateCasesFromStories(stories)
+
+  let raf: jest.Mock
+
+  beforeEach(() => {
+    jest.spyOn(window, 'requestAnimationFrame')
+    raf = window.requestAnimationFrame as jest.Mock
+    raf.mockImplementation(cb => cb())
+  })
+
+  afterEach(() => {
+    raf.mockRestore()
+  })
+
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('should pass an basic axe a11y audit', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+
+      expect(results).toHaveNoViolations()
+    })
+  })
+
+  describe('Basic story', () => {
+    const { Basic } = stories
+
+    it('should focus input when label clicked', () => {
+      render(<Basic {...(Basic.args as any)} />)
+      const label = screen.getByText('The label')
+      const input = screen.getByRole('textbox')
+
+      userEvent.click(label)
+
+      expect(input).toHaveFocus()
     })
 
-    afterEach(() => {
-      handleChange.mockClear()
-    })
+    it('should open the menu when input receives focus', async () => {
+      render(<Basic {...(Basic.args as any)} />)
+      const input = await screen.findByRole('textbox')
 
-    it('is NOT visible on initial render', () => {
-      const menu = container.querySelector('[role="menu"]')
-      expect(menu).not.toBeInTheDocument()
-    })
-
-    it('is visible on input focus', () => {
-      fireEvent.focus(input)
-
-      const menu = document.querySelector('[role="menu"]')
+      userEvent.click(input)
+      const menu = await screen.findByRole('listbox')
+      expect(input).toHaveFocus()
       expect(menu).toBeInTheDocument()
     })
 
-    it('shows all suggestions when no search input', () => {
-      rerender(
-        <Typeahead onChange={handleChange}>
-          <Typeahead.Suggestion>first</Typeahead.Suggestion>
-          <Typeahead.Suggestion>second</Typeahead.Suggestion>
-          <Typeahead.Suggestion>third</Typeahead.Suggestion>
-        </Typeahead>
-      )
-      fireEvent.focus(input)
+    it('should close the menu when input loses focus', async () => {
+      render(<Basic {...(Basic.args as any)} />)
+      const input = await screen.findByRole('textbox')
 
-      const menu = document.querySelector('[role="menu"]')
+      userEvent.click(input)
+      const menu = await screen.findByRole('listbox')
 
-      expect(menu).toHaveTextContent('first')
-      expect(menu).toHaveTextContent('second')
-      expect(menu).toHaveTextContent('third')
+      expect(input).toHaveFocus()
+      expect(menu).toBeInTheDocument()
+
+      input.blur()
+      expect(menu).not.toBeVisible()
     })
 
-    it('filters suggestions when input value is updated', () => {
-      rerender(
-        <Typeahead onChange={handleChange}>
-          <Typeahead.Suggestion>first</Typeahead.Suggestion>
-          <Typeahead.Suggestion>second</Typeahead.Suggestion>
-          <Typeahead.Suggestion>third</Typeahead.Suggestion>
-        </Typeahead>
-      )
+    it('should close the menu when esc pressed', async () => {
+      render(<Basic {...(Basic.args as any)} />)
+      const input = await screen.findByRole('textbox')
 
-      fireEvent.focus(input)
-      fireEvent.change(input, { target: { value: 'second' } })
+      userEvent.click(input)
+      const menu = await screen.findByRole('listbox')
 
-      const menu = document.querySelector('[role="menu"]')
-
-      expect(menu).toHaveTextContent('second')
-
-      expect(menu).not.toHaveTextContent('first')
-      expect(menu).not.toHaveTextContent('third')
+      expect(input).toHaveFocus()
+      expect(menu).toBeInTheDocument()
+      userEvent.type(input, '{esc}')
+      expect(menu).not.toBeVisible()
     })
 
-    it('shows empty state if no suggestions are found', () => {
-      rerender(
-        <Typeahead onChange={handleChange}>
-          <Typeahead.Suggestion>first</Typeahead.Suggestion>
-          <Typeahead.Suggestion>second</Typeahead.Suggestion>
-          <Typeahead.Suggestion>third</Typeahead.Suggestion>
-        </Typeahead>
-      )
+    it('should open the menu when alt+down pressed', async () => {
+      render(<Basic {...(Basic.args as any)} />)
+      const input = screen.getByRole('textbox')
 
-      fireEvent.focus(input)
-      fireEvent.change(input, { target: { value: 'no match' } })
+      userEvent.click(input)
 
-      const menu = document.querySelector('[role="menu"]')
-      expect(menu).toHaveTextContent('no results found')
-    })
-  })
+      expect(input).toHaveFocus()
 
-  describe('when value is uncontrolled', () => {
-    const handleChange = jest.fn()
+      userEvent.type(input, '{alt}{arrowdown}')
+      const menu = await screen.findByRole('listbox')
 
-    let input: HTMLInputElement
-
-    beforeEach(() => {
-      const { container } = render(
-        <Typeahead onChange={handleChange}>
-          <Typeahead.Suggestion>first</Typeahead.Suggestion>
-          <Typeahead.Suggestion>second</Typeahead.Suggestion>
-        </Typeahead>
-      )
-      input = container.querySelector<HTMLInputElement>('input')!
-    })
-
-    it('updates the inner input on change', () => {
-      fireEvent.change(input, { target: { value: 'next value' } })
-      expect(input).toHaveValue('next value')
-    })
-
-    it('calls the onChange prop on input change', () => {
-      fireEvent.change(input, { target: { value: 'next value' } })
-      expect(handleChange).toHaveBeenCalledWith(expect.anything(), 'next value')
-    })
-  })
-
-  describe('when value is controlled', () => {
-    const initialValue = 'the initial value'
-    const handleChange = jest.fn()
-
-    let input: HTMLInputElement
-    let rerender: (ui: React.ReactElement) => void
-
-    beforeEach(() => {
-      const result = render(
-        <Typeahead onChange={handleChange} value={initialValue}>
-          <Typeahead.Suggestion>first</Typeahead.Suggestion>
-          <Typeahead.Suggestion>second</Typeahead.Suggestion>
-        </Typeahead>
-      )
-      input = result.container.querySelector<HTMLInputElement>('input')!
-      rerender = result.rerender
-    })
-
-    afterEach(() => {
-      handleChange.mockClear()
-    })
-
-    it('does NOT update the inner input on change', () => {
-      fireEvent.change(input, { target: { value: 'next value' } })
-      expect(input).toHaveValue(initialValue)
-    })
-
-    it('calls the onChange prop on input change', () => {
-      fireEvent.change(input, { target: { value: 'next value' } })
-      expect(handleChange).toHaveBeenCalledWith(expect.anything(), 'next value')
-    })
-
-    it('updates the inner input value on rerender with new value', () => {
-      rerender(
-        <Typeahead onChange={handleChange} value="the new value">
-          <Typeahead.Suggestion>first</Typeahead.Suggestion>
-          <Typeahead.Suggestion>second</Typeahead.Suggestion>
-        </Typeahead>
-      )
-      expect(input).toHaveValue('the new value')
+      expect(input).toHaveFocus()
+      expect(menu).toBeInTheDocument()
     })
   })
 })
+
+function generateCasesFromStories(
+  obj: Record<string, unknown>
+): [string, Story][] {
+  const keys = Object.keys(obj)
+
+  return keys.reduce<any>((acc, key) => {
+    if (key === 'default') return acc
+    return [...acc, [key, obj[key]]]
+  }, [])
+}

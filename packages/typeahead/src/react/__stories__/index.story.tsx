@@ -1,79 +1,90 @@
-import { storiesOf } from '@storybook/react'
-import React from 'react'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
+import React, { ComponentProps, useMemo, useState } from 'react'
 
+import { periodicElements } from '../__fixtures__/options'
 import Typeahead from '../index'
-import US_STATES from './fixtures/us-states.json'
 
-storiesOf('Components | Typeahead / uncontrolled', module).add(
-  'default',
-  () => {
-    return (
-      <Typeahead>
-        {US_STATES.map(state => (
-          <Typeahead.Suggestion key={state.abbreviation}>
-            {state.name}
-          </Typeahead.Suggestion>
-        ))}
-      </Typeahead>
-    )
-  }
-)
-
-storiesOf('Components | Typeahead / controlled', module).add('default', () => (
-  <ControlledStory />
-))
-
-storiesOf('Components | Typeahead / form props', module)
-  .add('label and subLabel', () => (
-    <ControlledStory label="Some label" subLabel="Some sublabel" />
-  ))
-  .add('all', () => (
-    <ControlledStory
-      label="Some label"
-      subLabel="Some sublabel"
-      placeholder="Some placeholder"
-    />
-  ))
-  .add('all w/error', () => (
-    <ControlledStory
-      error
-      label="Some label"
-      subLabel="Some sublabel"
-      placeholder="Some placeholder"
-    />
-  ))
-
-const appearances = storiesOf('Components | Typeahead / appearances', module)
-
-Object.values(Typeahead.appearances).forEach(appearance => {
-  appearances.add(appearance, () => <ControlledStory appearance={appearance} />)
-})
-
-const ControlledStory: React.FC<
-  React.ComponentProps<typeof Typeahead>
-> = props => {
-  const [value, setValue] = React.useState('')
-
-  const handleChange = (_evt: unknown, nextValue: string) => {
-    const nextState = US_STATES.find(state => state.abbreviation === nextValue)
-
-    if (nextState) {
-      setValue(nextState.name)
-    } else {
-      setValue(nextValue)
-    }
-  }
-
+const SetWidthDecorator = (Story: Story) => {
   return (
-    <Typeahead onChange={handleChange} value={value} {...props}>
-      {US_STATES.map(state => (
-        <Typeahead.Suggestion
-          key={state.abbreviation}
-          value={state.abbreviation}
-        >
-          {state.name}
-        </Typeahead.Suggestion>
-      ))}
-    </Typeahead>
+    <div style={{ width: '400px' }}>
+      <Story />
+    </div>
   )
+}
+
+export default {
+  title: 'Components/Typeahead',
+  component: Typeahead,
+  decorators: [SetWidthDecorator]
+} as Meta
+
+const defaultArgs = {
+  label: 'The label',
+  subLabel: 'The sub label'
+}
+
+const Template: Story<ComponentProps<typeof Typeahead>> = args => {
+  const options = useMemo(() => periodicElements, [])
+  const [value, setValue] = useState<string>()
+  return (
+    <Typeahead
+      {...args}
+      onChange={(
+        evt: React.ChangeEvent<HTMLInputElement> | null,
+        selectedItem?: {
+          name: React.ReactText
+          id?: React.ReactText
+        }
+      ) => {
+        setValue(evt?.target.value || '')
+      }}
+      options={options}
+      value={value}
+    />
+  )
+}
+
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
+
+export const BothInputAndAutoComplete = Template.bind({})
+BothInputAndAutoComplete.args = {
+  ...defaultArgs,
+  'aria-autocomplete': 'both'
+}
+
+export const ReactNodeLabel = Template.bind({})
+ReactNodeLabel.args = {
+  ...defaultArgs
+  // label: <Typeahead.Label>React node label</Typeahead.Label>
+}
+
+export const NoLabels = Template.bind({})
+NoLabels.args = {
+  ...defaultArgs,
+  label: undefined,
+  placeholder: 'Placeholder...', // NOTE: a11y requirement when there are no labels
+  subLabel: undefined
+}
+
+export const Disabled = Template.bind({})
+Disabled.args = { ...defaultArgs, disabled: true }
+
+export const Error = Template.bind({})
+Error.args = { ...defaultArgs, error: true }
+
+export const IconPrefix = Template.bind({})
+IconPrefix.args = { ...defaultArgs, prefix: <PlaceholderIcon /> }
+
+export const CustomInputTag = Template.bind({})
+CustomInputTag.args = {
+  renderInputTag: React.forwardRef((props, ref) => (
+    <input
+      {...props}
+      ref={ref}
+      placeholder="tag from render prop"
+      style={{ outline: '1px dashed pink' }}
+    />
+  ))
 }
