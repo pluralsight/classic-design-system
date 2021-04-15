@@ -29,6 +29,7 @@
     "./package.json": "./package.json"
   },
   "sideEffects": false,
+  "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "exenv": "^1.2.2",
