@@ -1,19 +1,6 @@
 import { useCombobox } from 'downshift'
 import { css, compose } from 'glamor'
-import React, {
-  ComponentProps,
-  KeyboardEvent,
-  ReactElement,
-  ReactNode,
-  useLayoutEffect,
-  useImperativeHandle,
-  useEffect,
-  useRef,
-  useState,
-  useMemo,
-  isValidElement,
-  cloneElement
-} from 'react'
+import React from 'react'
 
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
@@ -46,10 +33,10 @@ const styles = {
 }
 interface TypeaheadFieldProps
   extends Omit<
-    ComponentProps<typeof Field>,
+    React.ComponentProps<typeof Field>,
     'children' | 'label' | 'onChange' | 'subLabel' | 'suffix'
   > {
-  label?: string | ReactElement<typeof Field.Label>
+  label?: string | React.ReactElement<typeof Field.Label>
   onChange: (
     e: React.ChangeEvent<HTMLInputElement> | null,
     selectedItem?: {
@@ -62,8 +49,8 @@ interface TypeaheadFieldProps
     value: React.ReactText
   }[]
   placeholder?: string
-  renderInputTag?: ComponentProps<typeof Field.Input>['renderTag']
-  subLabel?: string | ReactNode
+  renderInputTag?: React.ComponentProps<typeof Field.Input>['renderTag']
+  subLabel?: string | React.ReactNode
   value?: string
   renderOption?: React.FC
 }
@@ -95,10 +82,10 @@ const Typeahead: TypeaheadFieldComponent = props => {
     'aria-autocomplete': ariaAutoComplete = 'list',
     ...rest
   } = props
-  const [searchTerm, setSearchTerm] = useState<React.ReactText | undefined>(
-    value || ''
-  )
-  const [inputItems, setInputItems] = useState(options)
+  const [searchTerm, setSearchTerm] = React.useState<
+    React.ReactText | undefined
+  >(value || '')
+  const [inputItems, setInputItems] = React.useState(options)
   const {
     closeMenu,
     getToggleButtonProps,
@@ -159,7 +146,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
     }
   })
   const { value: inputValue, ...inputProps } = getInputProps({
-    onKeyDown: (evt: KeyboardEvent<HTMLInputElement>) => {
+    onKeyDown: (evt: React.KeyboardEvent<HTMLInputElement>) => {
       if (!canUseDOM()) return
 
       const { altKey } = evt
@@ -179,7 +166,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
     }
   })
 
-  useLayoutEffect(
+  React.useLayoutEffect(
     function keepInputInView() {
       if (!isOpen) return
 
@@ -194,24 +181,24 @@ const Typeahead: TypeaheadFieldComponent = props => {
     },
     [isOpen, inputProps.id]
   )
-  const RenderOption = useMemo(() => renderOption, [renderOption])
-  const RenderInput = useMemo(() => renderInputTag, [renderInputTag])
-  const fieldRef = useRef<HTMLDivElement>(null)
+  const RenderOption = React.useMemo(() => renderOption, [renderOption])
+  const RenderInput = React.useMemo(() => renderInputTag, [renderInputTag])
+  const fieldRef = React.useRef<HTMLDivElement>(null)
   const { ref: comboRef, ...comboBoxProps } = getComboboxProps()
-  useImperativeHandle(
+  React.useImperativeHandle(
     comboRef,
     () => (fieldRef.current as unknown) as HTMLDivElement
   )
-  const [width, setWidth] = useState<number>()
-  useEffect(() => {
+  const [width, setWidth] = React.useState<number>()
+  React.useEffect(() => {
     const field = fieldRef.current
     if (field) {
       setWidth(field.getBoundingClientRect().width)
     }
   }, [fieldRef])
-  const Label = useMemo(() => {
-    if (isValidElement(label)) {
-      return cloneElement<any>(label, {
+  const Label = React.useMemo(() => {
+    if (React.isValidElement(label)) {
+      return React.cloneElement<any>(label, {
         ...getLabelProps(),
         'aria-label': !label ? ariaLabel : undefined
       })
@@ -220,8 +207,8 @@ const Typeahead: TypeaheadFieldComponent = props => {
     return <Field.Label {...getLabelProps()}>{label}</Field.Label>
   }, [label, getLabelProps])
 
-  const SubLabel = useMemo(() => {
-    if (isValidElement(subLabel)) return subLabel
+  const SubLabel = React.useMemo(() => {
+    if (React.isValidElement(subLabel)) return subLabel
 
     return <Field.SubLabel>{subLabel}</Field.SubLabel>
   }, [subLabel])

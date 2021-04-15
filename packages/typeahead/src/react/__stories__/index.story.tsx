@@ -1,6 +1,6 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
-import React, { ComponentProps, useMemo, useState } from 'react'
+import React from 'react'
 
 import { periodicElements } from '../__fixtures__/options'
 import Typeahead from '../index'
@@ -24,9 +24,9 @@ const defaultArgs = {
   subLabel: 'The sub label'
 }
 
-const Template: Story<ComponentProps<typeof Typeahead>> = args => {
-  const options = useMemo(() => periodicElements, [])
-  const [value, setValue] = useState<string>()
+const Template: Story<React.ComponentProps<typeof Typeahead>> = args => {
+  const options = React.useMemo(() => periodicElements, [])
+  const [value, setValue] = React.useState<string>()
   return (
     <Typeahead
       {...args}
