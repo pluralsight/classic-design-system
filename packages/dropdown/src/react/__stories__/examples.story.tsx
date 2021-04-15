@@ -1,20 +1,15 @@
 import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { DecoratorFn } from '@storybook/react'
-import { css } from 'glamor'
-import React, {
-  KeyboardEvent,
-  MouseEvent,
-  ReactText,
-  useEffect,
-  useRef,
-  useState
-} from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import Dropdown from '../'
+import Dropdown from '../index'
+
+const glamor = glamorDefault || glamorExports
 
 const PaddingDecorator: DecoratorFn = storyFn => (
-  <div {...css({ height: '100vh', padding: layout.spacingLarge })}>
+  <div {...glamor.css({ height: '100vh', padding: layout.spacingLarge })}>
     {storyFn()}
   </div>
 )
@@ -32,12 +27,12 @@ export default {
 } as Meta
 
 export const Controlled: Story = args => {
-  const [items] = useState<ReactText[]>(['one', 'two', 'three'])
-  const [value, setValue] = useState<ReactText | undefined>('two')
+  const [items] = React.useState<React.ReactText[]>(['one', 'two', 'three'])
+  const [value, setValue] = React.useState<React.ReactText | undefined>('two')
 
   const handleChange = (
-    _evt: KeyboardEvent | MouseEvent,
-    nextValue?: ReactText
+    _evt: React.KeyboardEvent | React.MouseEvent,
+    nextValue?: React.ReactText
   ) => {
     setValue(nextValue)
   }
@@ -65,7 +60,7 @@ export const Controlled: Story = args => {
       <br />
       <br />
 
-      <div {...css({ color: colorsTextIcon.lowOnDark })}>
+      <div {...glamor.css({ color: colorsTextIcon.lowOnDark })}>
         <span>Current value: {value}</span>
         <br />
 
@@ -77,9 +72,9 @@ export const Controlled: Story = args => {
 Controlled.args = { ...defaultArgs }
 
 export const Autofocused: Story = args => {
-  const ref = useRef<HTMLButtonElement>(null)
+  const ref = React.useRef<HTMLButtonElement>(null)
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (ref.current) ref.current?.focus()
   })
 

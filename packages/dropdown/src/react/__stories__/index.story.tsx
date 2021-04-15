@@ -3,13 +3,15 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { DecoratorFn } from '@storybook/react'
-import { css } from 'glamor'
-import React, { ComponentProps } from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
 import Dropdown from '../index'
 
+const glamor = glamorDefault || glamorExports
+
 const PaddingDecorator: DecoratorFn = storyFn => (
-  <div {...css({ height: '100vh', padding: layout.spacingLarge })}>
+  <div {...glamor.css({ height: '100vh', padding: layout.spacingLarge })}>
     {storyFn()}
   </div>
 )
@@ -19,7 +21,7 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
 
   return (
     <div
-      {...css({
+      {...glamor.css({
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
@@ -55,7 +57,7 @@ export default {
   decorators: [PaddingDecorator]
 } as Meta
 
-const Template: Story<ComponentProps<typeof Dropdown>> = args => (
+const Template: Story<React.ComponentProps<typeof Dropdown>> = args => (
   <Dropdown {...args} />
 )
 

@@ -9,23 +9,16 @@ import {
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { DecoratorFn } from '@storybook/react'
-import { css } from 'glamor'
-import React, {
-  ComponentProps,
-  KeyboardEvent,
-  MouseEvent,
-  ReactText,
-  ReactNode,
-  forwardRef,
-  useMemo,
-  useState
-} from 'react'
+import glamorDefault, * as glamorExports from 'glamor'
+import React from 'react'
 
-import Dropdown from '../'
-import { DropdownContext, useDropdown } from '../../js'
+import Dropdown from '../index'
+import { DropdownContext, useDropdown } from '../../js/index'
+
+const glamor = glamorDefault || glamorExports
 
 const PaddingDecorator: DecoratorFn = storyFn => (
-  <div {...css({ height: '100vh', padding: layout.spacingLarge })}>
+  <div {...glamor.css({ height: '100vh', padding: layout.spacingLarge })}>
     {storyFn()}
   </div>
 )
@@ -44,50 +37,53 @@ export default {
   decorators: [PaddingDecorator]
 } as Meta
 
-interface DropdownWithIconProps extends ComponentProps<typeof Dropdown> {
-  icon: ReactNode
+interface DropdownWithIconProps extends React.ComponentProps<typeof Dropdown> {
+  icon: React.ReactNode
 }
-const DropdownWithIcon = forwardRef<HTMLButtonElement, DropdownWithIconProps>(
-  (props, ref) => {
-    const { icon, ...rest } = props
+const DropdownWithIcon = React.forwardRef<
+  HTMLButtonElement,
+  DropdownWithIconProps
+>((props, ref) => {
+  const { icon, ...rest } = props
 
-    const dropdownProps = useDropdown(rest, ref)
+  const dropdownProps = useDropdown(rest, ref)
 
-    return (
-      <Dropdown.Layout
-        {...dropdownProps.layout}
-        button={
-          <Dropdown.Button {...dropdownProps.button}>
-            <div
-              {...css({
-                alignItems: 'center',
-                display: 'flex',
-                height: '100%',
-                marginRight: 8
-              })}
-            >
-              {icon}
-            </div>
+  return (
+    <Dropdown.Layout
+      {...dropdownProps.layout}
+      button={
+        <Dropdown.Button {...dropdownProps.button}>
+          <div
+            {...glamor.css({
+              alignItems: 'center',
+              display: 'flex',
+              height: '100%',
+              marginRight: 8
+            })}
+          >
+            {icon}
+          </div>
 
-            <div {...css({ height: '100%', position: 'relative', flex: 1 })}>
-              <Dropdown.Selected {...dropdownProps.selected} />
-            </div>
-          </Dropdown.Button>
-        }
-        label={<Dropdown.Label {...dropdownProps.label} />}
-        menu={
-          <DropdownContext.Provider {...dropdownProps.value}>
-            <Dropdown.Menu {...dropdownProps.menu} />
-          </DropdownContext.Provider>
-        }
-        subLabel={<Dropdown.SubLabel {...dropdownProps.subLabel} />}
-      />
-    )
-  }
-)
+          <div
+            {...glamor.css({ height: '100%', position: 'relative', flex: 1 })}
+          >
+            <Dropdown.Selected {...dropdownProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+      label={<Dropdown.Label {...dropdownProps.label} />}
+      menu={
+        <DropdownContext.Provider {...dropdownProps.value}>
+          <Dropdown.Menu {...dropdownProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...dropdownProps.subLabel} />}
+    />
+  )
+})
 
 const TemplateWithIcon: Story<
-  ComponentProps<typeof DropdownWithIcon>
+  React.ComponentProps<typeof DropdownWithIcon>
 > = args => <DropdownWithIcon {...args} />
 
 export const CustomIcon = TemplateWithIcon.bind({})
@@ -97,7 +93,7 @@ CustomIcon.args = {
 }
 
 export const DynamicCustomIcon: Story = args => {
-  const options = useMemo<{
+  const options = React.useMemo<{
     [key: string]: { value: string; icon: React.FC; label: string }
   }>(
     () => ({
@@ -124,10 +120,15 @@ export const DynamicCustomIcon: Story = args => {
     }),
     []
   )
-  const [selected, setSelected] = useState<string>(Object.keys(options)[1])
+  const [selected, setSelected] = React.useState<string>(
+    Object.keys(options)[1]
+  )
   const { icon: CurrentIcon, value } = options[selected]
 
-  const handleChange = (_evt: MouseEvent | KeyboardEvent, key?: ReactText) => {
+  const handleChange = (
+    _evt: React.MouseEvent | React.KeyboardEvent,
+    key?: React.ReactText
+  ) => {
     setSelected(key as string)
   }
 
