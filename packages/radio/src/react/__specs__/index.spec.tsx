@@ -1,36 +1,58 @@
-import { render, fireEvent } from '@testing-library/react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { fireEvent, screen, render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import Radio from '../index'
 
+import * as stories from '../__stories__/index.story'
+
 describe('Radio', () => {
-  it('forwards refs', () => {
-    const group = React.createRef<HTMLDivElement>()
-    const button = React.createRef<HTMLInputElement>()
+  const cases = convertStoriesToJestCases(stories)
 
-    render(
-      <Radio.Group ref={group} name="forwards refs">
-        <Radio.Button value="red" label="Red" />
-        <Radio.Button ref={button} value="green" label="Green" />
-        <Radio.Button value="blue" label="Blue" />
-      </Radio.Group>
-    )
-
-    expect(group.current).not.toBeNull()
-    expect(button.current).not.toBeNull()
+  it('forwards ref', () => {
+    const ref = React.createRef<HTMLDivElement>()
+    render(<Radio.Group name="undertest" ref={ref} />)
+    expect(ref).not.toBeNull()
   })
-  it('controlled: fires event once', () => {
-    const spy = jest.fn()
-    const { container } = render(
-      <Radio.Group onChange={spy} value="green" name="fires event once">
-        <Radio.Button value="red" label="Red" />
-        <Radio.Button value="green" label="Green" />
-        <Radio.Button value="blue" label="Blue" />
-      </Radio.Group>
-    )
-    const radio = container.querySelector('input')
-    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
-    fireEvent.click(radio!)
-    expect(spy).toHaveBeenCalledTimes(1)
+
+  describe('.Button component', () => {
+    it('exists', () => expect(Radio.Button).toBeDefined())
+
+    it('forwards ref', () => {
+      const ref = React.createRef<HTMLInputElement>()
+      render(<Radio.Button label="label" value="value" ref={ref} />)
+      expect(ref).not.toBeNull()
+    })
+  })
+
+  describe.skip.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+
+      expect(results).toHaveNoViolations()
+    })
+  })
+
+  describe('Controlled story', () => {
+    const { Controlled } = stories
+
+    it('fires change event only once', () => {
+      const onChange = jest.fn()
+      render(
+        <Controlled
+          {...(Controlled.args as any)}
+          name="undertest"
+          onChange={onChange}
+          value="green"
+        />
+      )
+
+      const radio = screen.getByRole('radio', { name: /Red/ })
+      fireEvent.click(radio)
+
+      expect(onChange).toHaveBeenCalledTimes(1)
+    })
   })
 })
