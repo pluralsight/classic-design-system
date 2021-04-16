@@ -1,50 +1,66 @@
-/* eslint-disable  @typescript-eslint/no-unnecessary-type-assertion */
-import { fireEvent, render } from '@testing-library/react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { fireEvent, screen, render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import Switch from '../index'
 
+import * as stories from '../__stories__/index.story'
+
 describe('Switch', () => {
-  it('forwards refs', () => {
+  const cases = convertStoriesToJestCases(stories)
+
+  it('forwards ref', () => {
     const ref = React.createRef<HTMLLabelElement>()
     render(<Switch ref={ref} />)
-
-    expect(ref.current).not.toBeNull()
+    expect(ref).not.toBeNull()
   })
 
-  it('clicking the label calls the onClick handler', () => {
-    const handleClick = jest.fn()
-    const { container } = render(
-      <Switch onClick={handleClick}>Clicks once</Switch>
-    )
+  describe.skip.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    const label = container.querySelector('label')
-    fireEvent.click(label as HTMLLabelElement)
-
-    expect(handleClick).toHaveBeenCalled()
+      expect(results).toHaveNoViolations()
+    })
   })
 
-  it('clicking the input calls the onClick handler', () => {
-    const handleClick = jest.fn()
-    const { container } = render(
-      <Switch onClick={handleClick}>Clicks once</Switch>
-    )
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-    const input = container.querySelector('input')
-    fireEvent.click(input as HTMLInputElement)
+    it('forwards className', () => {
+      render(
+        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
+      )
 
-    expect(handleClick).toHaveBeenCalled()
-  })
+      const el = screen.getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
+    })
 
-  it('clicking the span calls the onClick handler', () => {
-    const handleClick = jest.fn()
-    const { container } = render(
-      <Switch onClick={handleClick}>Clicks once</Switch>
-    )
+    it('clicking the label calls the onClick handler', () => {
+      const handleClick = jest.fn()
 
-    const span = container.querySelector('span')
-    fireEvent.click(span as HTMLSpanElement)
+      const { container } = render(
+        <Basic {...Basic.args} onClick={handleClick} />
+      )
 
-    expect(handleClick).toHaveBeenCalled()
+      const label = container.querySelector('label')!
+      fireEvent.click(label)
+
+      expect(handleClick).toHaveBeenCalled()
+    })
+
+    it('clicking the input calls the onClick handler', () => {
+      const handleClick = jest.fn()
+
+      const { container } = render(
+        <Basic {...Basic.args} onClick={handleClick} />
+      )
+
+      const input = container.querySelector('input')!
+      fireEvent.click(input)
+
+      expect(handleClick).toHaveBeenCalled()
+    })
   })
 })
