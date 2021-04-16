@@ -15,9 +15,9 @@ const styles = {
     glamor.css(stylesheet[`.psds-menu__item-with-description__description`])
 }
 
-interface MenuItemWithDescriptionProps extends MenuItemProps {
-  id: React.ReactText
-  name: React.ReactText
+interface MenuItemWithDescriptionProps extends Omit<MenuItemProps, 'value'> {
+  label: React.ReactText
+  value: React.ReactText
   description: React.ReactText
 }
 
@@ -25,11 +25,11 @@ export const MenuItemWithDescription = forwardRefWithAs<
   MenuItemWithDescriptionProps,
   'button'
 >((props, ref) => {
-  const { id, name, description, ...rest } = props
+  const { label, value, description, ...rest } = props
   return (
-    <Menu.Item {...rest} ref={ref} value={{ id, name }} {...styles.item()}>
+    <Menu.Item {...rest} ref={ref} value={{ label, value }} {...styles.item()}>
       <div {...styles.wrapper()}>
-        <span>{name}</span>
+        <span>{label}</span>
         <span {...styles.description()}>{description}</span>
       </div>
       <Menu.Check style={{ marginLeft: 'auto' }} />

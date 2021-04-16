@@ -1,223 +1,281 @@
-import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { BelowLeft } from '@pluralsight/ps-design-system-position'
-import TextInput from '@pluralsight/ps-design-system-textinput'
-import {
-  RefForwardingComponent,
-  combineFns,
-  usePortal
-} from '@pluralsight/ps-design-system-util'
+import { useCombobox } from 'downshift'
+import { css, compose } from 'glamor'
 import React from 'react'
 
-import SuggestionsMenu from './menu'
-import Suggestion, {
-  FilterFn,
-  filterSuggestions,
-  getSuggestionLabel,
-  getSuggestionValue
-} from './suggestion'
-import useOnDocumentClick from './use-on-document-click'
-import * as vars from '../vars/index'
+import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import Field from '@pluralsight/ps-design-system-field'
+import { BelowLeft } from '@pluralsight/ps-design-system-position'
+import { canUseDOM, forwardRefWithAs } from '@pluralsight/ps-design-system-util'
+import Menu, { MenuItemProps } from '@pluralsight/ps-design-system-menu'
 
-interface TypeaheadProps
-  extends Pick<
-    React.ComponentProps<typeof TextInput>,
-    | 'appearance'
-    | 'disabled'
-    | 'error'
-    | 'label'
-    | 'name'
-    | 'placeholder'
-    | 'size'
-    | 'subLabel'
-  > {
-  children?:
-    | React.ReactElement<typeof Suggestion>
-    | React.ReactElement<typeof Suggestion>[]
-  filterFn?: FilterFn
-  loading?: boolean
-  onBlur?: React.FocusEventHandler<HTMLInputElement>
-  onChange?: (
-    evt:
-      | React.FormEvent<HTMLInputElement>
-      | React.MouseEvent<HTMLButtonElement>
-      | React.KeyboardEvent<HTMLDivElement>,
-    value: string
-  ) => void
+import stylesheet from '../css/index'
 
-  onFocus?: React.FocusEventHandler<HTMLInputElement>
-  value?: string
-}
-interface TypeaheadStatics {
-  Suggestion: typeof Suggestion
-  appearances: typeof vars.appearances
-  sizes: typeof vars.sizes
-}
-
-type TypeaheadComponent = RefForwardingComponent<
-  TypeaheadProps,
-  HTMLDivElement,
-  TypeaheadStatics
->
-
-const Typeahead = React.forwardRef<HTMLDivElement, TypeaheadProps>(
-  (props, forwardedRef) => {
-    const {
-      appearance,
-      children,
-      disabled,
-      error,
-      filterFn = filterSuggestions,
-      label,
-      name,
-      onChange,
-      placeholder,
-      size,
-      subLabel,
-      value,
-      ...rest
-    } = props
-
-    const portal = usePortal()
-    const containerRef = React.useRef<HTMLDivElement>(null)
-
-    const [target, setTarget] = React.useState<HTMLElement>()
-    const inputRef = React.useRef<HTMLInputElement | null>()
-    const setInputRef = React.useCallback(node => {
-      inputRef.current = node
-      setTarget(node ? node.parentNode : undefined)
-    }, [])
-
-    React.useImperativeHandle(
-      forwardedRef,
-      () => (inputRef.current as unknown) as HTMLInputElement
-    )
-    const [controlled] = React.useState<boolean>(typeof value !== 'undefined')
-    const [open, setOpen] = React.useState<boolean>(false)
-
-    const [innerValue, setInnerValue] = React.useState<string | undefined>(
-      value || ''
-    )
-    const [searchTerm, setSearchTerm] = React.useState<string>('')
-
-    React.useEffect(
-      function updateControlledValue() {
-        if (controlled) setInnerValue(value)
-      },
-      [controlled, value]
-    )
-
-    React.useEffect(
-      function clearSearchTermOnClose() {
-        if (!open) setSearchTerm('')
-      },
-      [open]
-    )
-
-    useOnDocumentClick(evt => {
-      const target = evt.target as HTMLElement
-      const portalEl = portal.current as HTMLElement
-
-      const isInnerClick =
-        !containerRef.current ||
-        containerRef.current.contains(target) ||
-        portalEl.contains(target)
-
-      if (isInnerClick) return
-
-      setOpen(false)
-    })
-
-    const suggestions = React.useMemo(() => {
-      return React.Children.toArray(children)
-        .filter(React.isValidElement)
-        .map((child, index) => ({
-          index,
-          label: getSuggestionLabel(child),
-          value: getSuggestionValue(child)
-        }))
-    }, [children])
-
-    const filteredSuggestions = React.useMemo(
-      () => filterFn(searchTerm, suggestions),
-      [filterFn, searchTerm, suggestions]
-    )
-
-    const handleChange = (
-      evt:
-        | React.FormEvent<HTMLInputElement>
-        | React.MouseEvent<HTMLButtonElement>
-        | React.KeyboardEvent<HTMLDivElement>,
-      nextValue: string
-    ) => {
-      setSearchTerm(nextValue)
-
-      if (!controlled) setInnerValue(nextValue)
-      if (onChange) onChange(evt, nextValue)
-    }
-
-    const handleInputFocus = combineFns(_evt => {
-      setOpen(true)
-    }, props.onFocus)
-
-    const handleInputChange: React.FormEventHandler<HTMLInputElement> = evt => {
-      const target = evt.target as HTMLInputElement
-      const nextValue = target.value
-
-      handleChange(evt, nextValue)
-    }
-
-    const handleSuggestionMenuChange = (
-      evt:
-        | React.MouseEvent<HTMLButtonElement>
-        | React.KeyboardEvent<HTMLDivElement>,
-      nextValue: string
-    ) => {
-      setOpen(false)
-      handleChange(evt, nextValue)
-    }
-
+const defaultRenderOption = forwardRefWithAs<MenuItemProps, 'button'>(
+  (props, ref) => {
+    const { value } = props
     return (
-      <div ref={containerRef} {...rest}>
-        <BelowLeft
-          inNode={portal.current || undefined}
-          when={open}
-          show={
-            <SuggestionsMenu
-              activeValue={innerValue}
-              onChange={handleSuggestionMenuChange}
-              suggestions={filteredSuggestions}
-            />
-          }
-          target={target}
-        >
-          <TextInput
-            appearance={appearance}
-            disabled={disabled}
-            error={error}
-            icon={<CaretDownIcon />}
-            iconAlign={TextInput.iconAligns.right}
-            label={label}
-            name={name}
-            onChange={handleInputChange}
-            onFocus={handleInputFocus}
-            placeholder={placeholder}
-            ref={setInputRef}
-            size={size}
-            subLabel={subLabel}
-            value={innerValue}
-          />
-        </BelowLeft>
-      </div>
+      <Menu.Item {...props} ref={ref}>
+        {value && value.label}
+        <Menu.Check style={{ marginLeft: 'auto' }} />
+      </Menu.Item>
     )
   }
-) as TypeaheadComponent
+)
 
-Typeahead.appearances = vars.appearances
-Typeahead.sizes = vars.sizes
+const styles = {
+  caret: () => css(stylesheet['.psds-multi-select__caret']),
+  wrapper: (isOpen: boolean) =>
+    compose(
+      css(stylesheet['.psds-multi-select__wrapper']),
+      css(isOpen && stylesheet['.psds-multi-select__wrapper--open'])
+    ),
+  menu: () => css(stylesheet['.psds-multi-select__menu'])
+}
+interface TypeaheadFieldProps
+  extends Omit<
+    React.ComponentProps<typeof Field>,
+    'children' | 'label' | 'onChange' | 'subLabel' | 'suffix'
+  > {
+  label?: string | React.ReactElement<typeof Field.Label>
+  onChange: (
+    e: React.ChangeEvent<HTMLInputElement> | null,
+    selectedItem?: {
+      label: React.ReactText
+      value?: React.ReactText
+    }
+  ) => void
+  options: {
+    label: React.ReactText
+    value: React.ReactText
+  }[]
+  placeholder?: string
+  renderInputTag?: React.ComponentProps<typeof Field.Input>['renderTag']
+  subLabel?: string | React.ReactNode
+  value?: string
+  renderOption?: React.FC
+}
 
-Typeahead.Suggestion = Suggestion
+interface TypeaheadFieldStatics {
+  Label: typeof Field.Label
+  SubLabel: typeof Field.SubLabel
+  appearances: typeof Field.appearances
+  sizes: typeof Field.sizes
+}
 
-export const sizes = vars.sizes
-export const appearances = vars.appearances
+type TypeaheadFieldComponent = React.FC<TypeaheadFieldProps> &
+  TypeaheadFieldStatics
+
+const Typeahead: TypeaheadFieldComponent = props => {
+  const {
+    disabled,
+    label,
+    onChange,
+    options,
+    placeholder,
+    subLabel,
+    value,
+    error,
+    size,
+    renderInputTag = Field.Input,
+    renderOption = defaultRenderOption,
+    'aria-label': ariaLabel,
+    'aria-autocomplete': ariaAutoComplete = 'list',
+    ...rest
+  } = props
+  const [searchTerm, setSearchTerm] = React.useState<
+    React.ReactText | undefined
+  >(value || '')
+  const [inputItems, setInputItems] = React.useState(options)
+  const {
+    closeMenu,
+    getToggleButtonProps,
+    getComboboxProps,
+    getInputProps,
+    getItemProps,
+    getLabelProps,
+    getMenuProps,
+    highlightedIndex,
+    isOpen,
+    openMenu,
+    selectedItem: activeItem
+  } = useCombobox({
+    defaultHighlightedIndex: 0,
+    items: inputItems,
+    stateReducer(state, actionAndChanges) {
+      const { type, changes } = actionAndChanges
+      // this prevents the menu from being closed when the user selects an item with 'Enter' or mouse
+      switch (type) {
+        case useCombobox.stateChangeTypes.InputBlur:
+        case useCombobox.stateChangeTypes.InputKeyDownEnter:
+        case useCombobox.stateChangeTypes.ItemClick: {
+          const { selectedItem, inputValue } = changes
+          return {
+            ...changes,
+            inputValue: selectedItem?.label
+              ? `${selectedItem?.label}`
+              : inputValue
+          }
+        }
+        default:
+          return changes // otherwise business as usual.
+      }
+    },
+    onInputValueChange: ({ type, inputValue, selectedItem }) => {
+      const bothTypeAutoComplete =
+        type === '__input_blur__' &&
+        !selectedItem &&
+        !inputValue &&
+        ariaAutoComplete === 'both'
+      setSearchTerm(bothTypeAutoComplete ? searchTerm : inputValue)
+      type === '__input_blur__' &&
+        onChange &&
+        onChange(
+          null,
+          bothTypeAutoComplete
+            ? { label: searchTerm as string }
+            : selectedItem || undefined
+        )
+      setInputItems(
+        options.filter(({ label }) =>
+          `${label}`
+            .toLowerCase()
+            // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+            .startsWith((inputValue as string).toLowerCase())
+        )
+      )
+    }
+  })
+  const { value: inputValue, ...inputProps } = getInputProps({
+    onKeyDown: (evt: React.KeyboardEvent<HTMLInputElement>) => {
+      if (!canUseDOM()) return
+
+      const { altKey } = evt
+      const key = evt.key.toLowerCase()
+
+      const shouldClose = isOpen && altKey && key === 'arrowup'
+      const shouldOpen = !isOpen && altKey && key === 'arrowdown'
+
+      if (shouldClose) setTimeout(closeMenu, 0)
+      else if (shouldOpen) setTimeout(openMenu, 0)
+    },
+    onFocus: () => {
+      if (!isOpen) openMenu()
+    },
+    onChange: (evt: React.ChangeEvent<HTMLInputElement>) => {
+      onChange && onChange(evt, activeItem || undefined)
+    }
+  })
+
+  React.useLayoutEffect(
+    function keepInputInView() {
+      if (!isOpen) return
+
+      const el = document.getElementById(inputProps.id)
+      if (!el?.scrollIntoView) return
+
+      el.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'nearest'
+      })
+    },
+    [isOpen, inputProps.id]
+  )
+  const RenderOption = React.useMemo(() => renderOption, [renderOption])
+  const RenderInput = React.useMemo(() => renderInputTag, [renderInputTag])
+  const fieldRef = React.useRef<HTMLDivElement>(null)
+  const { ref: comboRef, ...comboBoxProps } = getComboboxProps()
+  React.useImperativeHandle(
+    comboRef,
+    () => (fieldRef.current as unknown) as HTMLDivElement
+  )
+  const [width, setWidth] = React.useState<number>()
+  React.useEffect(() => {
+    const field = fieldRef.current
+    if (field) {
+      setWidth(field.getBoundingClientRect().width)
+    }
+  }, [fieldRef])
+  const Label = React.useMemo(() => {
+    if (React.isValidElement(label)) {
+      return React.cloneElement<any>(label, {
+        ...getLabelProps(),
+        'aria-label': !label ? ariaLabel : undefined
+      })
+    }
+
+    return <Field.Label {...getLabelProps()}>{label}</Field.Label>
+  }, [label, getLabelProps])
+
+  const SubLabel = React.useMemo(() => {
+    if (React.isValidElement(subLabel)) return subLabel
+
+    return <Field.SubLabel>{subLabel}</Field.SubLabel>
+  }, [subLabel])
+  return (
+    <BelowLeft
+      show={
+        <div {...styles.wrapper(isOpen)}>
+          <Menu
+            {...styles.menu()}
+            selectedItem={activeItem}
+            {...getMenuProps({}, { suppressRefError: true })}
+            style={{ width: width || 'auto' }}
+          >
+            {inputItems.length < 1 && (
+              <RenderOption
+                id={`menu-option-empty-label`}
+                key={`menu-option-empty-label`}
+                name="No results found"
+                active={false}
+                role="option"
+              />
+            )}
+            {inputItems.map((option, index) => (
+              <RenderOption
+                key={`menu-option-${index}`}
+                value={option}
+                role="option"
+                active={highlightedIndex === index}
+                {...getItemProps({ item: option, index })}
+              />
+            ))}
+          </Menu>
+        </div>
+      }
+    >
+      <Field
+        ref={fieldRef}
+        {...comboBoxProps}
+        disabled={disabled}
+        size={size}
+        error={error}
+        label={Label}
+        subLabel={SubLabel}
+        suffix={<CaretSuffix {...getToggleButtonProps()} />}
+        {...rest}
+      >
+        <RenderInput
+          {...inputProps}
+          aria-autocomplete={ariaAutoComplete}
+          value={searchTerm}
+          disabled={disabled}
+          placeholder={placeholder}
+        />
+      </Field>
+    </BelowLeft>
+  )
+}
+
+Typeahead.Label = Field.Label
+Typeahead.SubLabel = Field.SubLabel
+Typeahead.appearances = Field.appearances
+Typeahead.sizes = Field.sizes
 
 export default Typeahead
+
+const CaretSuffix = forwardRefWithAs((props, ref) => (
+  <div {...props} {...styles.caret()} ref={ref}>
+    <CaretDownIcon />
+  </div>
+))
