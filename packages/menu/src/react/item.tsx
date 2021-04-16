@@ -36,8 +36,8 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     disabled,
     onClick,
     value = {
-      id: '',
-      name: ''
+      value: '',
+      label: ''
     },
     children,
     onKeyDown,
@@ -55,7 +55,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     evt.key === 'Enter' && handleClick(evt)
     onKeyDown && onKeyDown(evt)
   }
-  const selected = selectedItem?.id === value.id
+  const selected = selectedItem?.value === value.value
   const listItem = React.useRef<HTMLLIElement | undefined>()
   const { active: hookActive, handleActiveState } = useActive(listItem)
   return (

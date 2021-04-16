@@ -27,8 +27,8 @@ export const useActive = (
 }
 
 interface SelectedItem {
-  id: React.ReactText
-  name: React.ReactText
+  value: React.ReactText
+  label: React.ReactText
 }
 
 export interface UseListboxProps
@@ -56,8 +56,8 @@ const sortListboxProps = ({
   placeholder = '',
   size,
   value = {
-    name: placeholder,
-    id: ''
+    label: placeholder,
+    value: ''
   },
   labelId,
   'data-testid': dataTestId,

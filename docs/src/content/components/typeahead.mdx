@@ -16,14 +16,10 @@ import Typeahead from '@pluralsight/ps-design-system-typeahead'
 import React from 'react'
 
 const Example: React.FC = props => {
-  const options = ['Beginner', 'Intermediate', 'Advanced']
+  const options = [{label: 'Beginner', value: 'Beginner'}, {label: 'Intermediate', value: 'Intermediate'}, {label: 'Advanced', value: 'Advanced'}]
 
   return (
-    <Typeahead label="Level" placeholder="Select a Level">
-      {options.map((option, key) => (
-        <Typeahead.Suggestion key={key}>{option}</Typeahead.Suggestion>
-      ))}
-    </Typeahead>
+    <Typeahead label="Level" placeholder="Select a Level" options={options}/>
   )
 }
 
@@ -103,6 +99,7 @@ export default Example
     type="(Event, nextValue) => void"
     desc="triggered when value changes"
   />
+   <TypesProp name="options" required type="Option[]" />
   <TypesProp name="placeholder" type="string" desc="in-field usage hint" />
   <TypesProp
     name="size"
@@ -116,15 +113,4 @@ export default Example
     desc="supporting text or error messaging"
   />
   <TypesProp name="value" type="string" desc="controlled value" />
-</TypesTable>
-
-### Typeahead.Suggestion
-
-<TypesTable>
-  <TypesProp name="children" type="string" desc="suggestion label" />
-  <TypesProp
-    name="value"
-    type="string"
-    desc="suggestion value (optional, falls back to label)"
-  />
 </TypesTable>
