@@ -31,8 +31,8 @@
       "import": "./dist/esm/index.mjs",
       "require": "./dist/cjs/index.js",
       "node": "./dist/cjs/index.js",
-      "default": "./dist/cjs/index.js",
-      "style": "./dist/index.css"
+      "style": "./dist/index.css",
+      "default": "./dist/cjs/index.js"
     },
     "./package.json": "./package.json"
   },
