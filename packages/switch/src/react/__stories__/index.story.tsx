@@ -1,112 +1,119 @@
+import { layout } from '@pluralsight/ps-design-system-core'
+import { action } from '@storybook/addon-actions'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { DecoratorFn } from '@storybook/react'
+import { css } from 'glamor'
 import React from 'react'
-import { storiesOf } from '@storybook/react'
 
 import Switch from '../index'
 
-const sizeStory = storiesOf('size', module)
-Object.values(Switch.sizes).forEach(size =>
-  sizeStory.add(size, () => <Switch size={size}>Click me</Switch>)
+const PaddingDecorator: DecoratorFn = storyFn => (
+  <div {...css({ padding: layout.spacingLarge })}>{storyFn()}</div>
 )
 
-storiesOf('checked', module)
-  .add('false', () => <Switch>Click me</Switch>)
-  .add('true', () => <Switch checked>Click me</Switch>)
+const StoryGrid: React.FC<{ cols?: number }> = props => {
+  const { cols = 2, ...rest } = props
 
-const colorStory = storiesOf('color', module)
-Object.values(Switch.colors).forEach(color =>
-  colorStory.add(color, () => (
-    <Switch color={color} checked>
-      Click me
-    </Switch>
-  ))
-)
-
-storiesOf('click', module)
-  .add('large toggles', () => (
-    <ClickDemo>
-      {({ checked, handleCheck }) => (
-        <Switch checked={checked} onClick={handleCheck} />
-      )}
-    </ClickDemo>
-  ))
-  .add('small toggles', () => (
-    <ClickDemo>
-      {({ checked, handleCheck }) => (
-        <Switch
-          size={Switch.sizes.small}
-          checked={checked}
-          onClick={handleCheck}
-        />
-      )}
-    </ClickDemo>
-  ))
-
-const labelStory = storiesOf('label', module)
-Object.values(Switch.sizes).forEach(size =>
-  Object.values(Switch.labelAligns).forEach(labelAlign =>
-    labelStory.add(`${size} ${labelAlign}`, () => (
-      <Switch size={size} labelAlign={labelAlign}>
-        Click me
-      </Switch>
-    ))
+  return (
+    <div
+      {...css({
+        display: 'grid',
+        gap: '20px',
+        gridTemplateColumns: Array(cols).fill('1fr').join(' ')
+      })}
+      {...rest}
+    />
   )
-)
-
-type RenderPropProps = {
-  checked: boolean
-  handleCheck: (nextChecked: boolean) => void
 }
 
-storiesOf('disabled', module)
-  .add('false', () => (
-    <ClickDemo>
-      {({ checked, handleCheck }: RenderPropProps) => (
-        <Switch disabled={false} checked={checked} onClick={handleCheck} />
-      )}
-    </ClickDemo>
-  ))
-  .add('true', () => (
-    <ClickDemo>
-      {({ checked, handleCheck }: RenderPropProps) => (
-        <Switch disabled checked={checked} onClick={handleCheck} />
-      )}
-    </ClickDemo>
-  ))
+const defaultArgs = {
+  onFocus: action('on focus'),
+  onBlur: action('on blur')
+}
 
-storiesOf('error', module)
-  .add('false', () => (
-    <ClickDemo>
-      {({ checked, handleCheck }: RenderPropProps) => (
-        <Switch error={false} checked={checked} onClick={handleCheck} />
-      )}
-    </ClickDemo>
-  ))
-  .add('true', () => (
-    <ClickDemo>
-      {({ checked, handleCheck }: RenderPropProps) => (
-        <Switch error checked={checked} onClick={handleCheck}>
-          Clickable in error state
+export default {
+  title: 'Components/Switch',
+  component: Switch,
+  decorators: [PaddingDecorator]
+} as Meta
+
+const Template: Story<React.ComponentProps<typeof Switch>> = args => (
+  <Switch {...args} />
+)
+
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
+
+export const Checked = Template.bind({})
+Checked.args = { ...defaultArgs, checked: true }
+
+export const Disabled = Template.bind({})
+Disabled.args = { ...defaultArgs, disabled: true }
+
+export const Error = Template.bind({})
+Error.args = { ...defaultArgs, error: true }
+
+export const CheckedError = Template.bind({})
+CheckedError.args = { ...defaultArgs, checked: true, error: true }
+
+export const DisabledError = Template.bind({})
+DisabledError.args = { ...defaultArgs, disabled: true, error: true }
+
+export const Colors: Story = args => (
+  <StoryGrid>
+    {Object.values(Switch.colors).map((color, i) => (
+      <Switch key={i} color={color} {...args} />
+    ))}
+  </StoryGrid>
+)
+Colors.args = { ...defaultArgs, checked: true }
+
+export const LabelAlignment: Story = args => (
+  <StoryGrid>
+    {Object.values(Switch.sizes).map(size => (
+      <>
+        {Object.values(Switch.labelAligns).map(labelAlign => (
+          <Switch
+            key={`${size}-${labelAlign}`}
+            labelAlign={labelAlign}
+            size={size}
+            {...args}
+          >
+            {size}-{labelAlign}
+          </Switch>
+        ))}
+      </>
+    ))}
+  </StoryGrid>
+)
+LabelAlignment.args = { ...defaultArgs }
+
+export const Sizes: Story = args => (
+  <StoryGrid>
+    {Object.values(Switch.sizes).map((size, i) => (
+      <Switch key={i} size={size} {...args} />
+    ))}
+  </StoryGrid>
+)
+Sizes.args = { ...defaultArgs }
+
+export const ExampleStateDemo: Story = () => {
+  const [checked, setChecked] = React.useState<string>()
+
+  return (
+    <StoryGrid>
+      {Object.values(Switch.colors).map(color => (
+        <Switch
+          checked={checked === color}
+          color={color}
+          key={color}
+          onClick={next => {
+            setChecked(next ? color : undefined)
+          }}
+        >
+          {color}
         </Switch>
-      )}
-    </ClickDemo>
-  ))
-  .add('true w/ disabled', () => (
-    <ClickDemo>
-      {({ checked, handleCheck }: RenderPropProps) => (
-        <Switch error disabled checked={checked} onClick={handleCheck}>
-          Such errors
-        </Switch>
-      )}
-    </ClickDemo>
-  ))
-
-function ClickDemo({
-  children
-}: {
-  children: (obj: RenderPropProps) => React.ReactElement
-}) {
-  const [checked, setChecked] = React.useState(false)
-  const handleCheck = (nextChecked: boolean) => setChecked(nextChecked)
-
-  return children({ checked, handleCheck })
+      ))}
+    </StoryGrid>
+  )
 }

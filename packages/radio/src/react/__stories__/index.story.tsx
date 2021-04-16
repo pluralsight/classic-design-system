@@ -1,105 +1,170 @@
-import * as core from '@pluralsight/ps-design-system-core'
-import { StoryFn } from '@storybook/addons'
-import { storiesOf } from '@storybook/react'
+import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
+import { action } from '@storybook/addon-actions'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { DecoratorFn } from '@storybook/react'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Radio from '../index'
 
-const PaddingDecorator = (storyFn: StoryFn<JSX.Element>) => (
-  <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
+const glamor = glamorDefault || glamorExports
+
+const PaddingDecorator: DecoratorFn = storyFn => (
+  <div {...glamor.css({ height: '100vh', padding: layout.spacingLarge })}>
+    {storyFn()}
+  </div>
 )
 
-storiesOf('Radio', module)
-  .addDecorator(PaddingDecorator)
-  .add('default', () => (
-    <Radio.Group name="default">
-      <Radio.Button value="red" label="Red" />
-      <Radio.Button value="green" label="Green" />
-      <Radio.Button value="blue" label="Blue" />
-    </Radio.Group>
-  ))
-  .add('one selected', () => (
-    <Radio.Group value="green" name="one selected">
-      <Radio.Button value="red" label="Red" />
-      <Radio.Button value="green" label="Green" />
-      <Radio.Button value="blue" label="Blue" />
-    </Radio.Group>
-  ))
-  .add('labels', () => (
-    <Radio.Group
-      value="green"
-      label="Colors"
-      subLabel="These colors are very primary"
-      name="labels"
-    >
-      <Radio.Button value="red" label="Red" />
-      <Radio.Button value="green" label="Green" />
-      <Radio.Button value="blue" label="Blue" />
-    </Radio.Group>
-  ))
-  .add('error', () => (
-    <Radio.Group value="green" error name="error">
-      <Radio.Button value="red" label="Red" />
-      <Radio.Button value="green" label="Green" />
-      <Radio.Button value="blue" label="Blue" />
-    </Radio.Group>
-  ))
-  .add('disabled', () => (
-    <Radio.Group value="green" disabled name="disabled">
-      <Radio.Button value="red" label="Red" />
-      <Radio.Button value="green" label="Green" />
-      <Radio.Button value="blue" label="Blue" />
-    </Radio.Group>
-  ))
-  .add('disabled & error', () => (
-    <Radio.Group value="green" disabled error name="disabled & error">
-      <Radio.Button value="red" label="Red" />
-      <Radio.Button value="green" label="Green" />
-      <Radio.Button value="blue" label="Blue" />
-    </Radio.Group>
-  ))
-  .add('controlled', () => {
-    function StateDemo() {
-      const [value, setValue] = React.useState('red' as React.ReactText)
+interface StoryArgs extends React.ComponentProps<typeof Radio.Group> {
+  options: { label: string; value: React.ReactText }[]
+}
 
-      function handleChange(
-        evt?: React.MouseEvent,
-        nextValue?: React.ReactText
-      ) {
-        if (nextValue) setValue(nextValue)
-      }
+const defaultArgs: StoryArgs = {
+  label: 'The label',
+  name: 'radio-name',
+  onBlur: action('on blur'),
+  onChange: action('on change'),
+  onFocus: action('on focus'),
+  options: [
+    { label: 'Red', value: 'red' },
+    { label: 'Green', value: 'green' },
+    { label: 'Blue', value: 'blue' }
+  ],
+  placeholder: 'Some placeholder',
+  subLabel: 'The sub label'
+}
 
-      return (
-        <div>
-          <div style={{ color: core.colorsTextIcon.highOnDark }}>
-            Selected: {value}
-            <br />
-            <button onClick={(e: React.MouseEvent) => handleChange(e, 'blue')}>
-              blue
-            </button>
-          </div>
-          <Radio.Group value={value} onChange={handleChange} name="controlled">
-            <Radio.Button value="red" label="Red" />
-            <Radio.Button value="green" label="Green" />
-            <Radio.Button value="blue" label="Blue" />
-          </Radio.Group>
-        </div>
-      )
-    }
+export default {
+  title: 'Components/Radio',
+  component: Radio.Group,
+  decorators: [PaddingDecorator],
+  parameters: { layout: 'fullscreen', center: { disabled: true } }
+} as Meta
 
-    return <StateDemo />
-  })
-  .add('multiple radio groups', () => (
-    <div>
-      <Radio.Group name="group one">
-        <Radio.Button value="red" label="Red" />
-        <Radio.Button value="green" label="Green" />
-        <Radio.Button value="blue" label="Blue" />
+const Template: Story<StoryArgs> = args => {
+  const { options, ...rest } = args
+
+  return (
+    <Radio.Group {...rest}>
+      {options.map(option => (
+        <Radio.Button
+          key={option.value}
+          label={option.label}
+          value={option.value}
+        />
+      ))}
+    </Radio.Group>
+  )
+}
+
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
+
+export const LabelOnly = Template.bind({})
+LabelOnly.args = {
+  ...defaultArgs,
+  subLabel: undefined
+}
+
+export const SubLabelOnly = Template.bind({})
+SubLabelOnly.args = {
+  ...defaultArgs,
+  'aria-label': 'You need an a11y label',
+  label: undefined
+}
+
+export const NoLabels = Template.bind({})
+NoLabels.args = {
+  ...defaultArgs,
+  'aria-label': 'You need an a11y label',
+  label: undefined,
+  subLabel: undefined
+}
+
+export const Disabled = Template.bind({})
+Disabled.args = { ...defaultArgs, disabled: true }
+
+export const Error = Template.bind({})
+Error.args = { ...defaultArgs, error: true }
+
+export const PreSelected = Template.bind({})
+PreSelected.args = { ...defaultArgs, value: defaultArgs.options[0].value }
+
+export const Controlled: Story<StoryArgs> = args => {
+  const { onChange, options, value: outerValue, ...rest } = args
+
+  const [value, setValue] = React.useState(outerValue || options[1].value)
+
+  React.useEffect(() => {
+    if (!outerValue) return
+    if (outerValue === value) return
+
+    setValue(outerValue)
+  }, [outerValue, value])
+
+  const handleChange = (
+    evt?: React.MouseEvent,
+    nextValue?: React.ReactText
+  ) => {
+    if (!nextValue) return
+    setValue(nextValue)
+
+    if (onChange) onChange(evt, nextValue)
+  }
+
+  const handleButtonClick: React.MouseEventHandler<HTMLButtonElement> = evt => {
+    handleChange(evt, 'blue')
+  }
+
+  return (
+    <>
+      <div style={{ color: colorsTextIcon.highOnDark }}>
+        Selected: {value}
+        <br />
+        <button onClick={handleButtonClick}>set to blue</button>
+      </div>
+
+      <br />
+
+      <Radio.Group onChange={handleChange} value={value} {...rest}>
+        {options.map(option => (
+          <Radio.Button
+            key={option.value}
+            label={option.label}
+            value={option.value}
+          />
+        ))}
       </Radio.Group>
-      <Radio.Group name="group two">
-        <Radio.Button value="red" label="Red" />
-        <Radio.Button value="green" label="Green" />
-        <Radio.Button value="blue" label="Blue" />
+    </>
+  )
+}
+Controlled.args = { ...defaultArgs }
+
+export const MultipleStacked: Story<StoryArgs> = args => {
+  const { options, ...rest } = args
+
+  return (
+    <>
+      <Radio.Group {...rest}>
+        {options.map(option => (
+          <Radio.Button
+            key={option.value}
+            label={option.label}
+            value={option.value}
+          />
+        ))}
       </Radio.Group>
-    </div>
-  ))
+
+      <Radio.Group {...rest}>
+        {options.map(option => (
+          <Radio.Button
+            key={option.value}
+            label={option.label}
+            value={option.value}
+          />
+        ))}
+      </Radio.Group>
+    </>
+  )
+}
+MultipleStacked.args = { ...defaultArgs, label: undefined, subLabel: undefined }
