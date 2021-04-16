@@ -54,6 +54,9 @@
   "lint-staged": {
     "*.(js|tsx?)": [
       "eslint --fix"
+    ],
+    "package.json": [
+      "node scripts/format-package.js"
     ]
   },
   "madge": {
