@@ -223,8 +223,8 @@ describe('Select', () => {
       userEvent.click(item)
 
       expect(onChange).toHaveBeenCalledWith(expect.any(Object), {
-        id: 'Can edit',
-        name: 'Can edit'
+        value: 'Can edit',
+        label: 'Can edit'
       })
     })
 
@@ -242,8 +242,8 @@ describe('Select', () => {
       pressEnter()
 
       expect(onChange).toHaveBeenCalledWith(expect.any(Object), {
-        id: 'Can view',
-        name: 'Can view'
+        value: 'Can view',
+        label: 'Can view'
       })
     })
   })

@@ -2,7 +2,7 @@ import { colorsStatus } from '@pluralsight/ps-design-system-core'
 import Menu, {
   MenuItemWithDescription
 } from '@pluralsight/ps-design-system-menu'
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
@@ -18,8 +18,8 @@ interface StoryArgs {
   onClick?: any
   items: {
     description: React.ReactText
-    id: React.ReactText
-    name: React.ReactText
+    value: React.ReactText
+    label: React.ReactText
   }[]
   placeholder: string
   position: ValueOf<typeof Select.positions>
@@ -29,20 +29,20 @@ const defaultArgs: StoryArgs = {
   items: [
     {
       description: 'View details, content and other members in the channel.',
-      id: 'Can view',
-      name: 'Can view'
+      value: 'Can view',
+      label: 'Can view'
     },
     {
       description:
         'Edit details, add or remove content and invite or remove members',
-      id: 'Can edit',
-      name: 'Can edit'
+      value: 'Can edit',
+      label: 'Can edit'
     },
     {
       description:
         'Edit details, add or remove content, invite or remove members',
-      id: 'Make Owner',
-      name: 'Make Owner'
+      value: 'Make Owner',
+      label: 'Make Owner'
     }
   ],
   onClick: action('on click'),
@@ -67,7 +67,7 @@ const Template: Story<StoryArgs> = args => {
       value={selected}
     >
       {items.map(item => (
-        <MenuItemWithDescription {...item} key={item.id} />
+        <MenuItemWithDescription {...item} key={item.value} />
       ))}
 
       <Menu.Divider />
@@ -98,7 +98,7 @@ export const CustomRenderOption: Story<StoryArgs> = args => {
 
   return (
     <Select
-      items={items}
+      options={items}
       placeholder={placeholder}
       position={position}
       renderOption={(MenuItemWithDescription as unknown) as React.FC}
@@ -152,7 +152,7 @@ ButtonFocused.args = { ...defaultButtonArgs }
 
 const defaultSelectedArgs = {
   placeholder: 'placeholder',
-  selectedItem: { name: 'placeholder', id: 'placeholder' }
+  selectedItem: { label: 'placeholder', value: 'placeholder' }
 }
 
 const SelectedTemplate: Story<
@@ -165,5 +165,5 @@ SelectedPlaceholder.args = { ...defaultSelectedArgs }
 export const SelectedSelected = SelectedTemplate.bind({})
 SelectedSelected.args = {
   ...defaultSelectedArgs,
-  selectedItem: { name: 'selected', id: 'selected' }
+  selectedItem: { label: 'selected', value: 'selected' }
 }

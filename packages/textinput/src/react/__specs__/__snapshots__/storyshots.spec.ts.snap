@@ -1,261 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots after field w/icon 1`] = `
+exports[`Storyshots Components/TextInput Appearances 1`] = `
 <div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1b3f1la=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="Some placeholder"
-          />
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="close icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance default medium w/ iconAlign left 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1iawjij=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
-        </div>
-      </div>
-      <div
-        data-css-1sdemx4=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="info icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance default medium w/ iconAlign right 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-n9m9iv=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
-        </div>
-      </div>
-      <div
-        data-css-q4xxcc=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="info icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance default small w/ iconAlign left 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-mshnkv=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
-        </div>
-      </div>
-      <div
-        data-css-1sdemx4=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="info icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance default small w/ iconAlign right 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-126f0a3=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
-        </div>
-      </div>
-      <div
-        data-css-q4xxcc=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="info icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance default w/ error 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
+  data-css-1cpmtjf=""
 >
   <label
     data-css-w0yocm=""
@@ -263,7 +10,146 @@ exports[`Storyshots appearance default w/ error 1`] = `
     <div
       data-css-dysqqm=""
     >
-      Problem field
+      medium default
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      medium subtle
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ko2l60=""
+        >
+          <input
+            data-css-7mw7i0=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      small default
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-120j51l=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      small subtle
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-pc3zzk=""
+        >
+          <input
+            data-css-7mw7i0=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
+<div
+  data-css-1cpmtjf=""
+>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      medium default
     </div>
     <div
       data-css-1r967oi=""
@@ -277,6 +163,9 @@ exports[`Storyshots appearance default w/ error 1`] = `
           <input
             data-css-1iyk6mt=""
             disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
           />
         </div>
       </div>
@@ -300,261 +189,19 @@ exports[`Storyshots appearance default w/ error 1`] = `
         </div>
       </div>
     </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance small 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
     <div
-      data-css-1r967oi=""
+      data-css-o89kbw=""
     >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-120j51l=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="small input"
-          />
-        </div>
-      </div>
+      The sub label
     </div>
   </label>
-</div>
-`;
-
-exports[`Storyshots appearance subtle medium w/ iconAlign left 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1c5qy71=""
-        >
-          <input
-            data-css-7mw7i0=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
-        </div>
-      </div>
-      <div
-        data-css-1kca8ps=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="info icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance subtle medium w/ iconAlign right 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-rltil5=""
-        >
-          <input
-            data-css-7mw7i0=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
-        </div>
-      </div>
-      <div
-        data-css-1n6hr0x=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="info icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance subtle small w/ iconAlign left 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-zihsvl=""
-        >
-          <input
-            data-css-7mw7i0=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
-        </div>
-      </div>
-      <div
-        data-css-1kca8ps=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="info icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance subtle small w/ iconAlign right 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1jydbog=""
-        >
-          <input
-            data-css-7mw7i0=""
-            disabled={false}
-            placeholder="The placeholder "
-          />
-        </div>
-      </div>
-      <div
-        data-css-1n6hr0x=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="info icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots appearance subtle w/ error 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
   <label
     data-css-w0yocm=""
   >
     <div
       data-css-dysqqm=""
     >
-      Problem field
+      medium subtle
     </div>
     <div
       data-css-1r967oi=""
@@ -568,6 +215,9 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
           <input
             data-css-7mw7i0=""
             disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
           />
         </div>
       </div>
@@ -591,17 +241,650 @@ exports[`Storyshots appearance subtle w/ error 1`] = `
         </div>
       </div>
     </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      small default
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-120j51l=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      small subtle
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-pc3zzk=""
+        >
+          <input
+            data-css-7mw7i0=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
   </label>
 </div>
 `;
 
-exports[`Storyshots disabled compare 1`] = `
+exports[`Storyshots Components/TextInput Basic 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Compare Disabled 1`] = `
 <div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
+  data-css-1cpmtjf=""
+>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      Normal
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm normal, see"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      Still normal
+    </div>
+  </label>
+  <label
+    data-css-h2yjsn=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      I'm not usable
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm untouchable"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      Neither am I
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/TextInput Date Input 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+          type="date"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Disabled 1`] = `
+<label
+  data-css-h2yjsn=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Error 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-in6gqi=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+    <div
+      data-css-1ha66tv=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="warning icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            clipRule="evenodd"
+            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Field After 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1b3f1la=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="placeholder icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Label Only 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Long Placeholder 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="some placeholder that goes on forever when the little things can't handle it"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput No Labels 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          aria-label="You need an a11y label"
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Password Input 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+          type="password"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Props Inclusion 1`] = `
+<label
+  className="className is allowed"
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          className="className is allowed"
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+          title="title is allowed"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Sub Label Only 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          aria-label="You need an a11y label"
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput/examples Autofocused 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      The label
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/TextInput/examples Controlled 1`] = `
+<div
+  data-css-424rvd=""
 >
   <div>
     <label
@@ -610,7 +893,7 @@ exports[`Storyshots disabled compare 1`] = `
       <div
         data-css-dysqqm=""
       >
-        Normal
+        The label
       </div>
       <div
         data-css-1r967oi=""
@@ -624,7 +907,11 @@ exports[`Storyshots disabled compare 1`] = `
             <input
               data-css-1iyk6mt=""
               disabled={false}
-              placeholder="I'm normal, see"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Some placeholder"
+              value="a value"
             />
           </div>
         </div>
@@ -632,422 +919,26 @@ exports[`Storyshots disabled compare 1`] = `
       <div
         data-css-o89kbw=""
       >
-        Still normal
+        The sub label
       </div>
     </label>
-    <label
-      data-css-h2yjsn=""
+    <br />
+    <br />
+    <div
+      data-css-c8tnxo=""
     >
-      <div
-        data-css-dysqqm=""
-      >
-        I'm not usable
-      </div>
-      <div
-        data-css-1r967oi=""
-      >
-        <div
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-1okk1dp=""
-          >
-            <input
-              data-css-1iyk6mt=""
-              disabled={true}
-              placeholder="I'm untouchable"
-            />
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-o89kbw=""
-      >
-        Neither am I
-      </div>
-    </label>
-    <label
-      data-css-h2yjsn=""
-    >
-      <div
-        data-css-dysqqm=""
-      >
-        Disbled and errored
-      </div>
-      <div
-        data-css-1r967oi=""
-      >
-        <div
-          data-css-in6gqi=""
-        >
-          <div
-            data-css-1okk1dp=""
-          >
-            <input
-              data-css-1iyk6mt=""
-              disabled={true}
-              placeholder="I'm untouchable"
-            />
-          </div>
-        </div>
-        <div
-          data-css-1ha66tv=""
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="warning icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                clipRule="evenodd"
-                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-                fillRule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <div
-        data-css-o89kbw=""
-      >
-        Neither am I
-      </div>
-    </label>
+      <span>
+        Current value: 
+        a value
+      </span>
+    </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots labels all 1`] = `
+exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
 <div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Some label
-    </div>
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="Some placeholder"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-o89kbw=""
-    >
-      Some sublabel
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots labels all w/error 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Some label
-    </div>
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-in6gqi=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="Some placeholder"
-          />
-        </div>
-      </div>
-      <div
-        data-css-1ha66tv=""
-      >
-        <div
-          data-css-7dab2f=""
-        >
-          <svg
-            aria-label="warning icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              clipRule="evenodd"
-              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-o89kbw=""
-    >
-      Some sublabel
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots labels label 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Some label
-    </div>
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots labels label and subLabel 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Some label
-    </div>
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-o89kbw=""
-    >
-      Some sublabel
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots labels long placeholder 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-    style={
-      Object {
-        "width": "100%",
-      }
-    }
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="some placeholder that goes on forever when the little things can't handle it"
-            style={
-              Object {
-                "width": "100%",
-              }
-            }
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots labels none 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots labels placeholder 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="some placeholder"
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots labels subLabel 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-o89kbw=""
-    >
-      Some sublabel
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots layouts full width 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
+  data-css-424rvd=""
 >
   <div
     style={
@@ -1247,13 +1138,9 @@ exports[`Storyshots layouts full width 1`] = `
 </div>
 `;
 
-exports[`Storyshots layouts right-aligned 1`] = `
+exports[`Storyshots Components/TextInput/examples Style Right Aligned 1`] = `
 <div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
+  data-css-424rvd=""
 >
   <div
     style={
@@ -1280,32 +1167,13 @@ exports[`Storyshots layouts right-aligned 1`] = `
             data-css-ctre2o=""
           >
             <div
-              data-css-1c5qy71=""
+              data-css-1okk1dp=""
             >
               <input
-                data-css-7mw7i0=""
+                data-css-1iyk6mt=""
                 disabled={false}
-                placeholder="Search"
+                placeholder="Filter"
               />
-            </div>
-          </div>
-          <div
-            data-css-1kca8ps=""
-          >
-            <div
-              data-css-7dab2f=""
-            >
-              <svg
-                aria-label="search icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  clipRule="evenodd"
-                  d="M21.353 20.648a.5.5 0 000-.708l-5.039-5.04A7.928 7.928 0 0018 10a7.948 7.948 0 00-2.344-5.656A7.942 7.942 0 0010 2a7.94 7.94 0 00-5.656 2.344A7.944 7.944 0 002 10a7.94 7.94 0 002.344 5.656A7.94 7.94 0 0010 18a7.926 7.926 0 004.9-1.685l5.04 5.04a.5.5 0 00.707 0l.706-.707zm-7.111-6.405A5.96 5.96 0 0110 16a5.959 5.959 0 01-4.242-1.757A5.958 5.958 0 014 10c0-1.602.624-3.109 1.758-4.242A5.955 5.955 0 0110 4c1.602 0 3.109.624 4.242 1.758A5.957 5.957 0 0116 10c0 1.603-.624 3.11-1.758 4.243z"
-                  fillRule="evenodd"
-                />
-              </svg>
             </div>
           </div>
         </div>
@@ -1314,213 +1182,11 @@ exports[`Storyshots layouts right-aligned 1`] = `
     <div
       style={
         Object {
-          "border": "3px solid green",
+          "border": "2px dashed green",
           "height": "50px",
         }
       }
     />
   </div>
-</div>
-`;
-
-exports[`Storyshots whitelist className 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    className="shouldExistOnOneElement"
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            className="shouldExistOnOneElement"
-            data-css-1iyk6mt=""
-            disabled={false}
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots whitelist name 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            name="myFieldNameOfPower"
-            placeholder="I have a form name"
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots whitelist title 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            title="some title"
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots whitelist type=date 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="Date"
-            type="date"
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots whitelist type=password 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            placeholder="Password"
-            type="password"
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots whitelist value 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-dysqqm=""
-    >
-      Email address
-    </div>
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            type="email"
-            value="steve@example.com"
-          />
-        </div>
-      </div>
-    </div>
-  </label>
 </div>
 `;

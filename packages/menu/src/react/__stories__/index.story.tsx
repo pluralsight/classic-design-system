@@ -78,8 +78,8 @@ storiesOf('menu items', module)
   .add('active item', () => {
     const ref = React.useRef<HTMLUListElement>()
     const selectedItem = {
-      name: 'Active',
-      id: 'active'
+      label: 'Active',
+      value: 'active'
     }
     React.useEffect(() => {
       if (ref?.current) {
@@ -90,7 +90,7 @@ storiesOf('menu items', module)
     return (
       <Menu selectedItem={selectedItem} ref={ref as RefFor<'ul'>}>
         <Menu.Item>Not active</Menu.Item>
-        <Menu.Item active value={{ id: 'active', name: 'active' }}>
+        <Menu.Item active value={{ value: 'active', label: 'active' }}>
           Active
         </Menu.Item>
         <Menu.Item active disabled>
@@ -102,8 +102,8 @@ storiesOf('menu items', module)
   .add('active & selected item', () => {
     const ref = React.useRef<HTMLUListElement>()
     const selectedItem = {
-      name: 'Active',
-      id: 'active'
+      label: 'Active',
+      value: 'active'
     }
     React.useEffect(() => {
       if (ref?.current) {
@@ -118,7 +118,7 @@ storiesOf('menu items', module)
         ref={ref as RefFor<'ul'>}
       >
         <Menu.Item>Not active</Menu.Item>
-        <Menu.Item active value={{ id: 'active', name: 'active' }}>
+        <Menu.Item active value={{ value: 'active', label: 'active' }}>
           Selected
           <Menu.Check style={{ marginLeft: 'auto' }} />
         </Menu.Item>
@@ -133,23 +133,23 @@ storiesOf('item with description', module)
   .add('default', () => (
     <Menu>
       <MenuItemWithDescription
-        id="1"
-        name="item"
+        value="1"
+        label="item"
         description="some words that describe a thing that really should wrap you known"
       />
     </Menu>
   ))
   .add('selected', () => {
     const selectedItem = {
-      name: 'item active',
-      id: '1'
+      label: 'item active',
+      value: '1'
     }
     return (
       <Menu selectedItem={selectedItem}>
         <MenuItemWithDescription
           active
-          id="1"
-          name="item active"
+          value="1"
+          label="item active"
           description="some words that describe a thing that really should wrap you known"
         />
       </Menu>
@@ -158,18 +158,18 @@ storiesOf('item with description', module)
   .add('next to items w/o description', () => (
     <Menu>
       <MenuItemWithDescription
-        id="1"
-        name="Can view"
+        value="1"
+        label="Can view"
         description="View details, content and other members in the channel."
       />
       <MenuItemWithDescription
-        id="2"
-        name="Can edit"
+        value="2"
+        label="Can edit"
         description="Edit details, add or remove content and invite or remove members"
       />
       <MenuItemWithDescription
-        id="3"
-        name="Make owner"
+        value="3"
+        label="Make owner"
         description="Edit details, add or remove content, invite or remove members and delete Channel"
       />
       <Menu.Item>Remove member</Menu.Item>
@@ -201,9 +201,11 @@ const handleClick = (_e: unknown, value: unknown) => {
 
 storiesOf('onClick', module).add('flat', () => (
   <Menu onClick={handleClick}>
-    <Menu.Item value={{ name: 'One item', id: 'one' }}>One item</Menu.Item>
-    <Menu.Item value={{ name: 'Two item', id: 'two' }}>Two item</Menu.Item>
-    <Menu.Item value={{ name: 'Two item', id: 'three' }}>TTwo item</Menu.Item>
+    <Menu.Item value={{ label: 'One item', value: 'one' }}>One item</Menu.Item>
+    <Menu.Item value={{ label: 'Two item', value: 'two' }}>Two item</Menu.Item>
+    <Menu.Item value={{ label: 'Two item', value: 'three' }}>
+      TTwo item
+    </Menu.Item>
   </Menu>
 ))
 

@@ -35,6 +35,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.0.1",
+    "@pluralsight/ps-design-system-menu": "^2.0.1",
     "@pluralsight/ps-design-system-util": "^9.0.1"
   },
   "peerDependencies": {
@@ -45,7 +46,6 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.0.0",
-    "@pluralsight/ps-design-system-menu": "^2.0.1",
     "@pluralsight/ps-design-system-position": "^8.0.1",
     "@pluralsight/ps-design-system-storybook-preset": "^0.5.1"
   }

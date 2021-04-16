@@ -1,154 +1,146 @@
-import * as core from '@pluralsight/ps-design-system-core'
-import * as Icon from '@pluralsight/ps-design-system-icon'
+import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { action } from '@storybook/addon-actions'
-import { storiesOf } from '@storybook/react'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import TextInput from '../index'
 
-const PaddingDecorator = (storyFn: () => React.ReactNode) => (
-  <div style={{ padding: core.layout.spacingLarge }}>{storyFn()}</div>
-)
+const glamor = glamorDefault || glamorExports
 
-storiesOf('labels', module)
-  .addDecorator(PaddingDecorator)
-  .add('none', () => <TextInput />)
-  .add('placeholder', () => <TextInput placeholder="some placeholder" />)
-  .add('long placeholder', () => (
-    <TextInput
-      placeholder="some placeholder that goes on forever when the little things can't handle it"
-      style={{ width: '100%' }}
-    />
-  ))
-  .add('label', () => <TextInput label="Some label" />)
-  .add('subLabel', () => <TextInput subLabel="Some sublabel" />)
-  .add('label and subLabel', () => (
-    <TextInput label="Some label" subLabel="Some sublabel" />
-  ))
-  .add('all', () => (
-    <TextInput
-      label="Some label"
-      subLabel="Some sublabel"
-      placeholder="Some placeholder"
-    />
-  ))
-  .add('all w/error', () => (
-    <TextInput
-      error
-      label="Some label"
-      subLabel="Some sublabel"
-      placeholder="Some placeholder"
-    />
-  ))
+const defaultArgs = {
+  onFocus: action('on focus'),
+  onBlur: action('on blur'),
+  label: 'The label',
+  placeholder: 'Some placeholder',
+  subLabel: 'The sub label'
+}
 
-const appearanceStory = storiesOf('appearance', module)
-  .addDecorator(PaddingDecorator)
-  .add(`small`, () => (
-    <TextInput size={TextInput.sizes.small} placeholder="small input" />
-  ))
+export default {
+  title: 'Components/TextInput',
+  component: TextInput
+} as Meta
 
-Object.values(TextInput.appearances).forEach(appearance =>
-  Object.values(TextInput.sizes).forEach(size =>
-    Object.values(TextInput.iconAligns).forEach(iconAlign =>
-      appearanceStory.add(
-        `${appearance} ${size} w/ iconAlign ${iconAlign}`,
-        () => (
-          <TextInput
-            size={size}
-            appearance={appearance}
-            iconAlign={iconAlign}
-            icon={<Icon.InfoIcon />}
-            placeholder="The placeholder "
-          />
-        )
-      )
-    )
+const StoryGrid: React.FC<{ cols?: number }> = props => {
+  const { cols = 2, ...rest } = props
+
+  return (
+    <div
+      {...glamor.css({
+        display: 'grid',
+        gap: '20px',
+        gridTemplateColumns: Array(cols).fill('1fr').join(' ')
+      })}
+      {...rest}
+    />
   )
+}
+
+const Template: Story<React.ComponentProps<typeof TextInput>> = args => (
+  <TextInput {...args} />
 )
-Object.values(TextInput.appearances).forEach(appearance =>
-  appearanceStory.add(`${appearance} w/ error`, () => (
-    <TextInput appearance={appearance} error label="Problem field" />
-  ))
-)
 
-storiesOf('after field', module)
-  .addDecorator(PaddingDecorator)
-  .add('w/icon', () => (
-    <TextInput fieldAfter={<Icon.CloseIcon />} placeholder="Some placeholder" />
-  ))
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
 
-storiesOf('disabled', module)
-  .addDecorator(PaddingDecorator)
-  .add('compare', () => (
-    <div>
-      <TextInput
-        label="Normal"
-        subLabel="Still normal"
-        placeholder="I'm normal, see"
-      />
-      <TextInput
-        label="I'm not usable"
-        subLabel="Neither am I"
-        disabled
-        placeholder="I'm untouchable"
-      />
-      <TextInput
-        label="Disbled and errored"
-        subLabel="Neither am I"
-        disabled
-        error
-        placeholder="I'm untouchable"
-      />
-    </div>
-  ))
+export const LongPlaceholder = Template.bind({})
+LongPlaceholder.args = {
+  ...defaultArgs,
+  placeholder:
+    "some placeholder that goes on forever when the little things can't handle it"
+}
 
-storiesOf('whitelist', module)
-  .addDecorator(PaddingDecorator)
-  .add('title', () => <TextInput title="some title" />)
-  .add('type=password', () => (
-    <TextInput placeholder="Password" type="password" />
-  ))
-  .add('type=date', () => <TextInput placeholder="Date" type="date" />)
-  .add('name', () => (
-    <TextInput placeholder="I have a form name" name="myFieldNameOfPower" />
-  ))
-  .add('value', () => (
-    <TextInput type="email" label="Email address" value="steve@example.com" />
-  ))
-  .add('className', () => <TextInput className="shouldExistOnOneElement" />)
+export const LabelOnly = Template.bind({})
+LabelOnly.args = {
+  ...defaultArgs,
+  subLabel: undefined
+}
 
-storiesOf('layouts', module)
-  .addDecorator(PaddingDecorator)
-  .add('full width', () => (
-    <div style={{ border: '1px solid blue', width: '500px' }}>
-      <TextInput label="First" style={{ display: 'block', width: '100%' }} />
-      <TextInput
-        error
-        label="Second"
-        style={{ display: 'block', width: '100%' }}
-      />
-      <TextInput
-        appearance={TextInput.appearances.subtle}
-        label="Third"
-        style={{ display: 'block', width: '100%' }}
-      />
-      <TextInput
-        appearance={TextInput.appearances.subtle}
-        error
-        label="Fourth"
-        style={{ display: 'block', width: '100%' }}
-      />
-    </div>
-  ))
-  .add('right-aligned', () => (
-    <div style={{ border: '1px solid blue' }}>
-      <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+export const SubLabelOnly = Template.bind({})
+SubLabelOnly.args = {
+  ...defaultArgs,
+  'aria-label': 'You need an a11y label',
+  label: undefined
+}
+
+export const NoLabels = Template.bind({})
+NoLabels.args = {
+  ...defaultArgs,
+  'aria-label': 'You need an a11y label',
+  label: undefined,
+  subLabel: undefined
+}
+
+export const FieldAfter = Template.bind({})
+FieldAfter.args = { ...defaultArgs, fieldAfter: <PlaceholderIcon /> }
+
+export const Disabled = Template.bind({})
+Disabled.args = { ...defaultArgs, disabled: true }
+
+export const Error = Template.bind({})
+Error.args = { ...defaultArgs, error: true }
+
+export const PasswordInput = Template.bind({})
+PasswordInput.args = { ...defaultArgs, type: 'password' }
+
+export const DateInput = Template.bind({})
+DateInput.args = { ...defaultArgs, type: 'date' }
+
+export const PropsInclusion = Template.bind({})
+PropsInclusion.args = {
+  ...defaultArgs,
+  className: 'className is allowed',
+  title: 'title is allowed'
+}
+
+export const Appearances: Story = () => (
+  <StoryGrid cols={1}>
+    {Object.values(TextInput.sizes).map(size =>
+      Object.values(TextInput.appearances).map(app => (
         <TextInput
-          placeholder="Search"
-          icon={<Icon.SearchIcon />}
-          appearance={TextInput.appearances.subtle}
+          {...defaultArgs}
+          appearance={app}
+          key={`${size}-${app}`}
+          label={`${size} ${app}`}
+          size={size}
         />
-      </div>
-      <div style={{ border: '3px solid green', height: '50px' }} />
-    </div>
-  ))
+      ))
+    )}
+  </StoryGrid>
+)
+
+export const AppearancesWithError: Story = () => (
+  <StoryGrid cols={1}>
+    {Object.values(TextInput.sizes).map(size =>
+      Object.values(TextInput.appearances).map(app => (
+        <TextInput
+          {...defaultArgs}
+          appearance={app}
+          error
+          key={`${size}-${app}`}
+          label={`${size} ${app}`}
+          size={size}
+        />
+      ))
+    )}
+  </StoryGrid>
+)
+
+export const CompareDisabled: Story = () => (
+  <StoryGrid cols={1}>
+    <TextInput
+      {...defaultArgs}
+      label="Normal"
+      subLabel="Still normal"
+      placeholder="I'm normal, see"
+    />
+
+    <TextInput
+      {...defaultArgs}
+      label="I'm not usable"
+      subLabel="Neither am I"
+      disabled
+      placeholder="I'm untouchable"
+    />
+  </StoryGrid>
+)

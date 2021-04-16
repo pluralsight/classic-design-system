@@ -16,8 +16,8 @@ import * as vars from '../vars/index'
 import stylesheet from '../css'
 
 interface DefaultRenderOptionProps {
-  id: React.ReactText
-  name: React.ReactText
+  value: React.ReactText
+  label: React.ReactText
 }
 
 const glamor = glamorDefault || glamorExports
@@ -28,17 +28,17 @@ const defaultRenderOption = forwardRefWithAs<
   DefaultRenderOptionProps,
   'button'
 >((props, ref) => {
-  const { id, name } = props
+  const { value, label } = props
   return (
-    <Menu.Item value={{ id, name }} ref={ref}>
-      {name}
+    <Menu.Item value={{ value, label }} ref={ref}>
+      {label}
       <Menu.Check />
     </Menu.Item>
   )
 })
 
 interface SelectProps extends UseListboxProps {
-  items?: Array<{ id: React.ReactText; name: React.ReactText }>
+  options?: Array<{ value: React.ReactText; label: React.ReactText }>
   position?: ValueOf<typeof vars.positions>
   renderOption?: React.FC
 }
@@ -46,7 +46,7 @@ interface SelectProps extends UseListboxProps {
 const Select = forwardRefWithAsAndStatics<SelectProps, 'button', SelectStatics>(
   (props, ref) => {
     const {
-      items = [],
+      options = [],
       position = 'belowLeft',
       renderOption = defaultRenderOption,
       children,
@@ -64,7 +64,8 @@ const Select = forwardRefWithAsAndStatics<SelectProps, 'button', SelectStatics>(
         when={isOpen}
         show={
           <Menu origin={Menu.origins.topLeft} {...menuProps} {...styles}>
-            {children || items.map(i => <RenderOption key={i.id} {...i} />)}
+            {children ||
+              options.map(i => <RenderOption key={i.value} {...i} />)}
           </Menu>
         }
       >
