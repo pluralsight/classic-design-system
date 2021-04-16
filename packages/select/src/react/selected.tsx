@@ -23,8 +23,8 @@ interface SelectSelectedProps extends HTMLPropsFor<'label'> {
   label?: string
   placeholder: string
   selectedItem?: {
-    id?: React.ReactText
-    name?: React.ReactText
+    value?: React.ReactText
+    label?: React.ReactText
   }
 }
 
@@ -35,8 +35,8 @@ export const Selected: React.FC<SelectSelectedProps> = ({
   const themeName = useTheme()
   return (
     <>
-      <span {...styles(placeholder === selectedItem?.name, themeName)}>
-        {selectedItem?.name}
+      <span {...styles(placeholder === selectedItem?.label, themeName)}>
+        {selectedItem?.label}
       </span>
     </>
   )
