@@ -1,5 +1,5 @@
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
@@ -11,23 +11,24 @@ describe('ScreenReaderOnly', () => {
   const cases = convertStoriesToJestCases(stories)
 
   it('forwards the ref', () => {
-    const ref = React.createRef<HTMLInputElement>()
+    const ref = React.createRef<HTMLDivElement>()
+
     render(<ScreenReaderOnly ref={ref} />)
     expect(ref).not.toBeNull()
   })
 
   it('supports polymorphism', () => {
-    render(
-      <>
-        <ScreenReaderOnly as="span" data-testid="as-span" />
-        <ScreenReaderOnly as="div" data-testid="as-div" />
-        <ScreenReaderOnly as="button" data-testid="as-button" />
-      </>
-    )
+    expect.assertions(0)
 
-    expect(screen.getByTestId('as-span')).toBeInTheDocument()
-    expect(screen.getByTestId('as-div')).toBeInTheDocument()
-    expect(screen.getByTestId('as-button')).toBeInTheDocument()
+    render(
+      <ScreenReaderOnly as="span" ref={React.createRef<HTMLSpanElement>()} />
+    )
+    render(
+      <ScreenReaderOnly
+        as="button"
+        ref={React.createRef<HTMLButtonElement>()}
+      />
+    )
   })
 
   describe.each(cases)('%s story', (_name, Story) => {
