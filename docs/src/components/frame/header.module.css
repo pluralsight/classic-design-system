@@ -3,7 +3,7 @@
   display: flex;
   height: var(--topNavHeight);
   padding: var(--psLayoutSpacingXSmall);
-  background: var(--appColorsBackgroundHi);
+  background: var(--appColorsBackgroundHigh);
 
   @media ((width >= 768px)) {
     background-color: transparent;
