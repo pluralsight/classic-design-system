@@ -1,28 +1,41 @@
-import { render } from '@testing-library/react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { render, screen } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import ScreenReaderOnly from '../index'
 
+import * as stories from '../__stories__/index.story'
+
 describe('ScreenReaderOnly', () => {
-  it('renders', () => {
-    const { getByTestId } = render(<ScreenReaderOnly data-testid="undertest" />)
-    expect(getByTestId('undertest')).toBeInTheDocument()
-  })
+  const cases = convertStoriesToJestCases(stories)
 
-  it('forwards refs', () => {
-    const ref = React.createRef<HTMLDivElement>()
-
+  it('forwards the ref', () => {
+    const ref = React.createRef<HTMLInputElement>()
     render(<ScreenReaderOnly ref={ref} />)
-
-    expect(ref.current).not.toBeNull()
+    expect(ref).not.toBeNull()
   })
 
-  it('can render as a span', () => {
-    const ref = React.createRef<HTMLSpanElement>()
-
-    const { getByTestId } = render(
-      <ScreenReaderOnly as="span" data-testid="undertest" ref={ref} />
+  it('supports polymorphism', () => {
+    render(
+      <>
+        <ScreenReaderOnly as="span" data-testid="as-span" />
+        <ScreenReaderOnly as="div" data-testid="as-div" />
+        <ScreenReaderOnly as="button" data-testid="as-button" />
+      </>
     )
-    expect(getByTestId('undertest')).toBeInTheDocument()
+
+    expect(screen.getByTestId('as-span')).toBeInTheDocument()
+    expect(screen.getByTestId('as-div')).toBeInTheDocument()
+    expect(screen.getByTestId('as-button')).toBeInTheDocument()
+  })
+
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+
+      expect(results).toHaveNoViolations()
+    })
   })
 })
