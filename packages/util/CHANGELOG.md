@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.0.1...@pluralsight/ps-design-system-util@9.1.0) (2021-04-20)
+
+
+### Bug Fixes
+
+* **util:** add missing style field to package ([e47a7ed](https://github.com/pluralsight/design-system/commit/e47a7edc89206b55956499cee3b036b8714a7f44))
+
+
+### Features
+
+* **util:** add style condition to conditional exports ([8fa494a](https://github.com/pluralsight/design-system/commit/8fa494a8676718b8152e813cd86c19b708399e8a))
+* **util:** expose package.json in conditional exports ([ccdd16b](https://github.com/pluralsight/design-system/commit/ccdd16bb7dceb2197ee145eeb9b491a15747678f))
+
+
+
+
+
 ## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.0.0...@pluralsight/ps-design-system-util@9.0.1) (2021-04-15)
 
 

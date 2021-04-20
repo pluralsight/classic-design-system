@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.25.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.24.3...@pluralsight/ps-design-system-docs@0.25.0) (2021-04-20)
+
+
+### Features
+
+* **typeahead:** refactor to use field and downshift ([#1706](https://github.com/pluralsight/design-system/issues/1706)) ([f4fafde](https://github.com/pluralsight/design-system/commit/f4fafde87d0fa987610881c90ab2c9965c87b07d))
+
+
+### BREAKING CHANGES
+
+* **typeahead:** value and selectedItem -> { value: React.ReactText label: React.ReactText }
+
+* refactor(select): unifying list api
+* **typeahead:** value and selectedItem -> { value: React.ReactText label: React.ReactText }
+
+* refactor(typeahead): remove named react imports
+
+
+
+
+
 ## [0.24.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.24.2...@pluralsight/ps-design-system-docs@0.24.3) (2021-04-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

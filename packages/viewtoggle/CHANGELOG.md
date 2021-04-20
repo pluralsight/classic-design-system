@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@8.0.1...@pluralsight/ps-design-system-viewtoggle@8.1.0) (2021-04-20)
+
+
+### Features
+
+* **viewtoggle:** add style condition to conditional exports ([5e8e5e6](https://github.com/pluralsight/design-system/commit/5e8e5e6a6fb0f1a5022fba495a636785347053ba))
+* **viewtoggle:** expose package.json in conditional exports ([bb2d074](https://github.com/pluralsight/design-system/commit/bb2d074b7883eb2b2f933a7aedd5bfae3e96b096))
+
+
+
+
+
 ## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@8.0.0...@pluralsight/ps-design-system-viewtoggle@8.0.1) (2021-04-15)
 
 

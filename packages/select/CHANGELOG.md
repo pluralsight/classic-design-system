@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@2.0.1...@pluralsight/ps-design-system-select@3.0.0) (2021-04-20)
+
+
+### Features
+
+* **select:** add style condition to conditional exports ([ac84c8e](https://github.com/pluralsight/design-system/commit/ac84c8e35ce62d379f033ffc34717eaec20858d6))
+* **select:** expose package.json in conditional exports ([a48af78](https://github.com/pluralsight/design-system/commit/a48af78a74d4a2afe0416047e85a9a8e4057a8c8))
+* **typeahead:** refactor to use field and downshift ([#1706](https://github.com/pluralsight/design-system/issues/1706)) ([f4fafde](https://github.com/pluralsight/design-system/commit/f4fafde87d0fa987610881c90ab2c9965c87b07d))
+
+
+### BREAKING CHANGES
+
+* **typeahead:** value and selectedItem -> { value: React.ReactText label: React.ReactText }
+
+* refactor(select): unifying list api
+* **typeahead:** value and selectedItem -> { value: React.ReactText label: React.ReactText }
+
+* refactor(typeahead): remove named react imports
+
+
+
+
+
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@2.0.0...@pluralsight/ps-design-system-select@2.0.1) (2021-04-15)
 
 

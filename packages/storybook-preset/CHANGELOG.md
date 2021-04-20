@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-preset@0.5.1...@pluralsight/ps-design-system-storybook-preset@0.6.0) (2021-04-20)
+
+
+### Features
+
+* **storybook-preset:** expose package.json in conditional exports ([32a46e5](https://github.com/pluralsight/design-system/commit/32a46e5dd07c974c761016ecbec0c7d161f1a2fc))
+
+
+
+
+
 ## [0.5.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-preset@0.5.0...@pluralsight/ps-design-system-storybook-preset@0.5.1) (2021-04-15)
 
 

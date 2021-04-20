@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@5.0.1...@pluralsight/ps-design-system-navbar@5.1.0) (2021-04-20)
+
+
+### Features
+
+* **navbar:** add style condition to conditional exports ([d0edc6b](https://github.com/pluralsight/design-system/commit/d0edc6be696599bf017a375e3289ff004eebd3b9))
+* **navbar:** expose package.json in conditional exports ([37e518e](https://github.com/pluralsight/design-system/commit/37e518e3aba62106cc73758964a9f8ff00c1be71))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@5.0.0...@pluralsight/ps-design-system-navbar@5.0.1) (2021-04-15)
 
 

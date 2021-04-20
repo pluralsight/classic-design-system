@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@9.0.1...@pluralsight/ps-design-system-circularprogress@9.1.0) (2021-04-20)
+
+
+### Features
+
+* **circularprogress:** add style condition to conditional exports ([943aa89](https://github.com/pluralsight/design-system/commit/943aa8907ded6ca16072110730622a35f8beeca8))
+* **circularprogress:** expose package.json in conditional exports ([5e925ee](https://github.com/pluralsight/design-system/commit/5e925eeac7937bbe23c255518af13506f6f49627))
+
+
+
+
+
 ## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@9.0.0...@pluralsight/ps-design-system-circularprogress@9.0.1) (2021-04-15)
 
 

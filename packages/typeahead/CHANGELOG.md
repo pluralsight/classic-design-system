@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@9.0.1...@pluralsight/ps-design-system-typeahead@10.0.0) (2021-04-20)
+
+
+### Features
+
+* **typeahead:** add style condition to conditional exports ([cf29837](https://github.com/pluralsight/design-system/commit/cf298379d6146119206c918f25db44af746d79ae))
+* **typeahead:** expose package.json in conditional exports ([8ea3a54](https://github.com/pluralsight/design-system/commit/8ea3a544ebbd438f63a0b6961e6f3cca98eebed5))
+* **typeahead:** refactor to use field and downshift ([#1706](https://github.com/pluralsight/design-system/issues/1706)) ([f4fafde](https://github.com/pluralsight/design-system/commit/f4fafde87d0fa987610881c90ab2c9965c87b07d))
+
+
+### BREAKING CHANGES
+
+* **typeahead:** value and selectedItem -> { value: React.ReactText label: React.ReactText }
+
+* refactor(select): unifying list api
+* **typeahead:** value and selectedItem -> { value: React.ReactText label: React.ReactText }
+
+* refactor(typeahead): remove named react imports
+
+
+
+
+
 ## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@9.0.0...@pluralsight/ps-design-system-typeahead@9.0.1) (2021-04-15)
 
 

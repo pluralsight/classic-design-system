@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@10.0.1...@pluralsight/ps-design-system-halo@10.1.0) (2021-04-20)
+
+
+### Features
+
+* **halo:** add style condition to conditional exports ([5fde318](https://github.com/pluralsight/design-system/commit/5fde31841b199d13e1b85d8f4d1200d5db8576ac))
+* **halo:** expose package.json in conditional exports ([8d17322](https://github.com/pluralsight/design-system/commit/8d173222d1b46258dc7c62c7105f273cadf0d4ba))
+
+
+
+
+
 ## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@10.0.0...@pluralsight/ps-design-system-halo@10.0.1) (2021-04-15)
 
 

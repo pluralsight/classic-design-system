@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.0.1...@pluralsight/ps-design-system-focusmanager@7.1.0) (2021-04-20)
+
+
+### Features
+
+* **focusmanager:** expose package.json in conditional exports ([7119bba](https://github.com/pluralsight/design-system/commit/7119bba9fbc0969264183586e8e89b2128c5c3a0))
+
+
+
+
+
 ## [7.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.0.0...@pluralsight/ps-design-system-focusmanager@7.0.1) (2021-04-15)
 
 

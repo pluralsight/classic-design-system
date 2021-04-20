@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@10.0.1...@pluralsight/ps-design-system-starrating@10.1.0) (2021-04-20)
+
+
+### Features
+
+* **starrating:** add style condition to conditional exports ([f6e15ae](https://github.com/pluralsight/design-system/commit/f6e15ae109775754360a8ec3120f44c967c4211d))
+* **starrating:** expose package.json in conditional exports ([362becd](https://github.com/pluralsight/design-system/commit/362becda9a958b1e8023f3ddf4ec67b571ab37bb))
+
+
+
+
+
 ## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@10.0.0...@pluralsight/ps-design-system-starrating@10.0.1) (2021-04-15)
 
 
