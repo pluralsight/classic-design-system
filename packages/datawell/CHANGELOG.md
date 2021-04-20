@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@6.0.1...@pluralsight/ps-design-system-datawell@6.1.0) (2021-04-20)
+
+
+### Bug Fixes
+
+* **datawell:** add missing types and style field to package ([6b81232](https://github.com/pluralsight/design-system/commit/6b812321ec945b5d3d0e6ef5a183d0d9def37bce))
+
+
+### Features
+
+* **datawell:** add style condition to conditional exports ([fc8a16b](https://github.com/pluralsight/design-system/commit/fc8a16b1f43ee5416120a3737713758b892daab0))
+* **datawell:** expose package.json in conditional exports ([05fcb84](https://github.com/pluralsight/design-system/commit/05fcb84a93187a24972edc32fb1a56c1da9a2f05))
+
+
+
+
+
 ## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@6.0.0...@pluralsight/ps-design-system-datawell@6.0.1) (2021-04-15)
 
 

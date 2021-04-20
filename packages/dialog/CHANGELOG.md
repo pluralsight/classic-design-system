@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@13.0.1...@pluralsight/ps-design-system-dialog@13.1.0) (2021-04-20)
+
+
+### Features
+
+* **dialog:** add style condition to conditional exports ([b75773c](https://github.com/pluralsight/design-system/commit/b75773c4e247ea63667a58a8da40a87855d80163))
+* **dialog:** expose package.json in conditional exports ([1a80458](https://github.com/pluralsight/design-system/commit/1a804580dc9911733447994cdd4c529369030554))
+
+
+
+
+
 ## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@13.0.0...@pluralsight/ps-design-system-dialog@13.0.1) (2021-04-15)
 
 

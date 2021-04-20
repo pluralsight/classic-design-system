@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@4.0.1...@pluralsight/ps-design-system-navuser@4.1.0) (2021-04-20)
+
+
+### Features
+
+* **navuser:** add style condition to conditional exports ([2d723fe](https://github.com/pluralsight/design-system/commit/2d723fea8188e4670940fd1a34c042b7677cd15f))
+* **navuser:** expose package.json in conditional exports ([c6e0675](https://github.com/pluralsight/design-system/commit/c6e06750eb1cced892d324f96fd3d0a6cb7a5574))
+
+
+
+
+
 ## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@4.0.0...@pluralsight/ps-design-system-navuser@4.0.1) (2021-04-15)
 
 

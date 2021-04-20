@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-featureflags@4.0.1...@pluralsight/ps-design-system-featureflags@4.1.0) (2021-04-20)
+
+
+### Features
+
+* **featureflags:** expose package.json in conditional exports ([8e6b53d](https://github.com/pluralsight/design-system/commit/8e6b53dcfa46260bd8b6bf138473e713fa694c49))
+
+
+
+
+
 ## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-featureflags@4.0.0...@pluralsight/ps-design-system-featureflags@4.0.1) (2021-04-15)
 
 

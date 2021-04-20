@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [18.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@18.0.1...@pluralsight/ps-design-system-tab@18.1.0) (2021-04-20)
+
+
+### Features
+
+* **tab:** add style condition to conditional exports ([54b7e03](https://github.com/pluralsight/design-system/commit/54b7e03ca2098bcdb9495bb780214b5ac86550ce))
+* **tab:** expose package.json in conditional exports ([76d3c1e](https://github.com/pluralsight/design-system/commit/76d3c1e541a8c423fc37060a8217138979c1a26e))
+
+
+
+
+
 ## [18.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@18.0.0...@pluralsight/ps-design-system-tab@18.0.1) (2021-04-15)
 
 

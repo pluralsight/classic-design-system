@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@8.0.1...@pluralsight/ps-design-system-linearprogress@8.1.0) (2021-04-20)
+
+
+### Bug Fixes
+
+* **linearprogress:** add missing types and style field to package ([612a9d6](https://github.com/pluralsight/design-system/commit/612a9d6ebfc60a4ea3b7b374c7e5cb96a918ce8e))
+
+
+### Features
+
+* **linearprogress:** add style condition to conditional exports ([2b51a01](https://github.com/pluralsight/design-system/commit/2b51a01be6db9a49252ce6220e27e38830794a1f))
+* **linearprogress:** expose package.json in conditional exports ([6b08678](https://github.com/pluralsight/design-system/commit/6b0867886e866d8f21aa6fcc9cc13c94e0147a22))
+
+
+
+
+
 ## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@8.0.0...@pluralsight/ps-design-system-linearprogress@8.0.1) (2021-04-15)
 
 

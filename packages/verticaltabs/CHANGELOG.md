@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.0.1...@pluralsight/ps-design-system-verticaltabs@7.1.0) (2021-04-20)
+
+
+### Features
+
+* **verticaltabs:** add style condition to conditional exports ([f0a0dca](https://github.com/pluralsight/design-system/commit/f0a0dcaa7bbed8e7407ac26d16585587b851b8fb))
+* **verticaltabs:** expose package.json in conditional exports ([680734d](https://github.com/pluralsight/design-system/commit/680734d7d02232bd7c201d78152250444fefd61b))
+
+
+
+
+
 ## [7.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.0.0...@pluralsight/ps-design-system-verticaltabs@7.0.1) (2021-04-15)
 
 

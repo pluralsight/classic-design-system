@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@13.0.1...@pluralsight/ps-design-system-emptystate@13.1.0) (2021-04-20)
+
+
+### Features
+
+* **emptystate:** add style condition to conditional exports ([0fb76fd](https://github.com/pluralsight/design-system/commit/0fb76fd201af7b3c3f3153635c96a6f4ba32445d))
+* **emptystate:** expose package.json in conditional exports ([fc02609](https://github.com/pluralsight/design-system/commit/fc0260995200aa9ea15ecbfa6ab3eab737539981))
+
+
+
+
+
 ## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@13.0.0...@pluralsight/ps-design-system-emptystate@13.0.1) (2021-04-15)
 
 

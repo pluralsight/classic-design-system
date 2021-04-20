@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@4.0.1...@pluralsight/ps-design-system-screenreaderonly@4.1.0) (2021-04-20)
+
+
+### Features
+
+* **screenreaderonly:** add style condition to conditional exports ([38ec766](https://github.com/pluralsight/design-system/commit/38ec766b199fbab339b1d040e01e865152881c89))
+* **screenreaderonly:** expose package.json in conditional exports ([5a2d0aa](https://github.com/pluralsight/design-system/commit/5a2d0aad133eb62c9e9457925192c86e322b7343))
+
+
+
+
+
 ## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@4.0.0...@pluralsight/ps-design-system-screenreaderonly@4.0.1) (2021-04-15)
 
 

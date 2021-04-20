@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [22.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.0.1...@pluralsight/ps-design-system-button@22.1.0) (2021-04-20)
+
+
+### Bug Fixes
+
+* **button:** add missing style field to package ([9fc7ca9](https://github.com/pluralsight/design-system/commit/9fc7ca9efe4c5c8e16dbef528ea86536c98487af))
+
+
+### Features
+
+* **button:** add style condition to conditional exports ([6893cf0](https://github.com/pluralsight/design-system/commit/6893cf0c72b1b2e1c55bbced0456a27f8724c1f7))
+* **button:** expose package.json in conditional exports ([b3af80b](https://github.com/pluralsight/design-system/commit/b3af80b694f965b34ef6873cbe2188837836028d))
+
+
+
+
+
 ## [22.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.0.0...@pluralsight/ps-design-system-button@22.0.1) (2021-04-15)
 
 

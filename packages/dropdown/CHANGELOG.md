@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.0.1...@pluralsight/ps-design-system-dropdown@12.1.0) (2021-04-20)
+
+
+### Bug Fixes
+
+* **dropdown:** add missing style field to package ([0965fc7](https://github.com/pluralsight/design-system/commit/0965fc787aa8bcc76fce6fdc38692c9615a3d921))
+
+
+### Features
+
+* **dropdown:** add style condition to conditional exports ([42b006b](https://github.com/pluralsight/design-system/commit/42b006be20e513068cc82b9bbc9a76a4d7caec06))
+* **dropdown:** expose package.json in conditional exports ([125823f](https://github.com/pluralsight/design-system/commit/125823f4e805ef205485d6b87362b4da39d174bc))
+
+
+
+
+
 ## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.0.0...@pluralsight/ps-design-system-dropdown@12.0.1) (2021-04-15)
 
 

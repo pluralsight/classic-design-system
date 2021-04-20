@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@2.0.1...@pluralsight/ps-design-system-tagsinput@2.1.0) (2021-04-20)
+
+
+### Features
+
+* **tagsinput:** add style condition to conditional exports ([cb04169](https://github.com/pluralsight/design-system/commit/cb041693b3ea4511b1f56cb76304a127d3d2c94d))
+* **tagsinput:** expose package.json in conditional exports ([56874ba](https://github.com/pluralsight/design-system/commit/56874ba3e87b5ef64b5ec5b2fe9c722f0a3aea41))
+
+
+
+
+
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tagsinput@2.0.0...@pluralsight/ps-design-system-tagsinput@2.0.1) (2021-04-15)
 
 
