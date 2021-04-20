@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@9.0.1...@pluralsight/ps-design-system-checkbox@9.1.0) (2021-04-20)
+
+
+### Features
+
+* **checkbox:** add style condition to conditional exports ([f31dd5b](https://github.com/pluralsight/design-system/commit/f31dd5bf85e4ddbb0fd7392e9b0900652fcfec81))
+* **checkbox:** expose package.json in conditional exports ([d9438a0](https://github.com/pluralsight/design-system/commit/d9438a03b1f5f85c5fbb7abaa04c2951c851a2fe))
+
+
+
+
+
 ## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@9.0.0...@pluralsight/ps-design-system-checkbox@9.0.1) (2021-04-15)
 
 

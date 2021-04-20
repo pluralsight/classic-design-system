@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navitem",
-  "version": "5.0.1",
+  "version": "5.1.0",
   "description": "NavItem UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -35,10 +35,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^8.0.1",
-    "@pluralsight/ps-design-system-halo": "^10.0.1",
-    "@pluralsight/ps-design-system-theme": "^8.0.1",
-    "@pluralsight/ps-design-system-util": "^9.0.1"
+    "@pluralsight/ps-design-system-core": "^8.1.0",
+    "@pluralsight/ps-design-system-halo": "^10.1.0",
+    "@pluralsight/ps-design-system-theme": "^8.1.0",
+    "@pluralsight/ps-design-system-util": "^9.1.0"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.8",
@@ -47,11 +47,11 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^17.0.1",
-    "@pluralsight/ps-design-system-build": "^3.0.0",
-    "@pluralsight/ps-design-system-button": "^22.0.1",
-    "@pluralsight/ps-design-system-icon": "^23.0.1",
-    "@pluralsight/ps-design-system-position": "^8.0.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.5.1"
+    "@pluralsight/ps-design-system-actionmenu": "^17.1.0",
+    "@pluralsight/ps-design-system-build": "^3.1.0",
+    "@pluralsight/ps-design-system-button": "^22.1.0",
+    "@pluralsight/ps-design-system-icon": "^23.1.0",
+    "@pluralsight/ps-design-system-position": "^8.1.0",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.6.0"
   }
 }

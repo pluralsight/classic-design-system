@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@5.0.1...@pluralsight/ps-design-system-navitem@5.1.0) (2021-04-20)
+
+
+### Features
+
+* **navitem:** add style condition to conditional exports ([3abee34](https://github.com/pluralsight/design-system/commit/3abee348965740a4c42abe1e645f00955fd5cf3c))
+* **navitem:** expose package.json in conditional exports ([caeb863](https://github.com/pluralsight/design-system/commit/caeb86396d291f49caafb0bcfe492b8e62c1d16d))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@5.0.0...@pluralsight/ps-design-system-navitem@5.0.1) (2021-04-15)
 
 

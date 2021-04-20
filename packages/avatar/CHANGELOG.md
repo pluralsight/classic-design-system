@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@9.0.1...@pluralsight/ps-design-system-avatar@9.1.0) (2021-04-20)
+
+
+### Features
+
+* **avatar:** add style condition to conditional exports ([07ae7b5](https://github.com/pluralsight/design-system/commit/07ae7b54899f6c817f3b37941f9428c39d969887))
+* **avatar:** expose package.json in conditional exports ([dd86ca3](https://github.com/pluralsight/design-system/commit/dd86ca3a05b6e7973491be900e4d314575c9a567))
+
+
+
+
+
 ## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@9.0.0...@pluralsight/ps-design-system-avatar@9.0.1) (2021-04-15)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@4.0.1...@pluralsight/ps-design-system-navbrand@4.1.0) (2021-04-20)
+
+
+### Features
+
+* **navbrand:** add style condition to conditional exports ([59ddf87](https://github.com/pluralsight/design-system/commit/59ddf87d8f16228c0d410108b832e37e71d5d955))
+* **navbrand:** expose package.json in conditional exports ([40bbb74](https://github.com/pluralsight/design-system/commit/40bbb74e73e545596f12a2bed02423b6a92d98df))
+
+
+
+
+
 ## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@4.0.0...@pluralsight/ps-design-system-navbrand@4.0.1) (2021-04-15)
 
 

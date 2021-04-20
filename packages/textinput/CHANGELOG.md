@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.0.1...@pluralsight/ps-design-system-textinput@11.1.0) (2021-04-20)
+
+
+### Features
+
+* **textinput:** add style condition to conditional exports ([2fd737d](https://github.com/pluralsight/design-system/commit/2fd737d668ac101ff3cee0a5837a97df5aed8b8f))
+* **textinput:** expose package.json in conditional exports ([4536b47](https://github.com/pluralsight/design-system/commit/4536b471f9c7514ac040207d20231aa47b9d58d4))
+
+
+
+
+
 ## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.0.0...@pluralsight/ps-design-system-textinput@11.0.1) (2021-04-15)
 
 

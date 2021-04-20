@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-menu@2.0.1...@pluralsight/ps-design-system-menu@3.0.0) (2021-04-20)
+
+
+### Features
+
+* **menu:** add style condition to conditional exports ([f2df93f](https://github.com/pluralsight/design-system/commit/f2df93ff5e05d6cc8cd8ede77a16b77ad2c03492))
+* **menu:** expose package.json in conditional exports ([160cfb2](https://github.com/pluralsight/design-system/commit/160cfb21f992b61bba829f9ca95f06d5bf8ce5f8))
+* **typeahead:** refactor to use field and downshift ([#1706](https://github.com/pluralsight/design-system/issues/1706)) ([f4fafde](https://github.com/pluralsight/design-system/commit/f4fafde87d0fa987610881c90ab2c9965c87b07d))
+
+
+### BREAKING CHANGES
+
+* **typeahead:** value and selectedItem -> { value: React.ReactText label: React.ReactText }
+
+* refactor(select): unifying list api
+* **typeahead:** value and selectedItem -> { value: React.ReactText label: React.ReactText }
+
+* refactor(typeahead): remove named react imports
+
+
+
+
+
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-menu@2.0.0...@pluralsight/ps-design-system-menu@2.0.1) (2021-04-15)
 
 

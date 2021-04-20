@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.0.1...@pluralsight/ps-design-system-appframe@5.1.0) (2021-04-20)
+
+
+### Features
+
+* **appframe:** add style condition to conditional exports ([65352c8](https://github.com/pluralsight/design-system/commit/65352c878219c9157251ace2d6ea7f19107ccb4d))
+* **appframe:** expose package.json in conditional exports ([5ad4726](https://github.com/pluralsight/design-system/commit/5ad4726edfc0e51fcd79f15855bcf87a7d98570b))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.0.0...@pluralsight/ps-design-system-appframe@5.0.1) (2021-04-15)
 
 
