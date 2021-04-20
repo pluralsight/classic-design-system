@@ -1,15 +1,30 @@
-import { storiesOf } from '@storybook/react'
+import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
 import ScreenReaderOnly from '../index'
 
-storiesOf('ScreenReaderOnly', module).add('basic', _ => (
-  <div>
-    <p style={{ background: 'white', padding: 20 }}>
-      There is some hidden text on this page. Try to find it with a screen
-      reader
-    </p>
+const defaultArgs = {}
 
-    <ScreenReaderOnly>content only for screen readers</ScreenReaderOnly>
-  </div>
-))
+export default {
+  title: 'Components/ScreenReaderOnly',
+  component: ScreenReaderOnly,
+  decorators: [
+    storyFn => (
+      <>
+        <p>
+          There is some hidden text on this page. Try to find it with a screen
+          reader
+        </p>
+
+        {storyFn()}
+      </>
+    )
+  ]
+} as Meta
+
+const Template: Story<React.ComponentProps<typeof ScreenReaderOnly>> = args => (
+  <ScreenReaderOnly {...args} />
+)
+
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }

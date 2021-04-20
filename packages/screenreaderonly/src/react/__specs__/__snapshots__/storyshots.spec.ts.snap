@@ -1,21 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots ScreenReaderOnly basic 1`] = `
-<div>
-  <p
-    style={
-      Object {
-        "background": "white",
-        "padding": 20,
-      }
-    }
-  >
+exports[`Storyshots Components/ScreenReaderOnly Basic 1`] = `
+Array [
+  <p>
     There is some hidden text on this page. Try to find it with a screen reader
-  </p>
+  </p>,
   <div
     data-css-6wu9td=""
-  >
-    content only for screen readers
-  </div>
-</div>
+  />,
+]
 `;
