@@ -1,20 +1,34 @@
-import { render } from '@testing-library/react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { render, screen } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import Scrollable from '../index'
 
-describe('Scrollable', () => {
-  it('renders', () => {
-    const { getByTestId } = render(<Scrollable data-testid="undertest" />)
+import * as stories from '../__stories__/index.story'
 
-    expect(getByTestId('undertest')).toBeInTheDocument()
+describe('Scrollable', () => {
+  const cases = convertStoriesToJestCases(stories)
+
+  it('forwards className', () => {
+    render(<Scrollable data-testid="undertest" className="testclass" />)
+
+    const el = screen.getByTestId('undertest')
+    expect(el).toHaveClass('testclass')
   })
 
-  it('forwards refs', () => {
-    const ref = React.createRef<HTMLElement>()
-
+  it('forwards the ref', () => {
+    const ref = React.createRef<HTMLInputElement>()
     render(<Scrollable ref={ref} />)
+    expect(ref).not.toBeNull()
+  })
 
-    expect(ref.current).not.toBeNull()
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+
+      expect(results).toHaveNoViolations()
+    })
   })
 })
