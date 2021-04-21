@@ -346,42 +346,42 @@ Each one of these controls is a separate package. They are mean to be used insid
     <TextInput label="First name" placeholder="What's your name?" />
   </ControlExample>
 
-  <ControlExample
-    title="Checkbox"
-    href="/components/checkbox"
-    desc="For multiple selection."
-  >
-    <CheckboxExample />
-  </ControlExample>
+<ControlExample
+  title="Checkbox"
+  href="/components/checkbox"
+  desc="For multiple selection."
+>
+  <CheckboxExample />
+</ControlExample>
 
-  <ControlExample title="Switch" href="/components/switch" desc="For on/off selections.">
-    <SwitchExample />
-  </ControlExample>
+<ControlExample
+  title="Switch"
+  href="/components/switch"
+  desc="For on/off selections."
+>
+  <SwitchExample />
+</ControlExample>
 
-  <ControlExample title="DatePicker" href="/components/datepicker" desc="For dates.">
-    <DatePicker label="Birthday" />
-  </ControlExample>
+<ControlExample
+  title="DatePicker"
+  href="/components/datepicker"
+  desc="For dates."
+>
+  <DatePicker label="Birthday" />
+</ControlExample>
 
   <ControlExample title="Tag" href="/components/tag" desc="For dynamic lists.">
     <TagExample />
   </ControlExample>
 </FormFocusable>
 
-
 ## Guidelines
 
-Write labels in sentence case. Capital case is not optimal for scannability.
+Write labels in sentence case. Uppercase is not optimal for scannability.
 
 <Guideline
-  do={
-    <TextInput
-      label="Zip"
-      value="92101"
-      css={{ '& input': { minWidth: 0, width: '81px' } }}
-      onChange={() => {}}
-    />
-  }
-  dont={<TextInput label="Zip" value="92101" onChange={() => {}} />}
+  do={<TextInput label="Job title" />}
+  dont={<TextInput label="JOB TITLE" />}
 />
 
 Don't rely on the placeholder. Use the label to specify the purpose of each field to avoid usability issues.
@@ -400,20 +400,6 @@ Don't rely on the placeholder. Use the label to specify the purpose of each fiel
       <TextInput placeholder="Course title" />
     </Form.VerticalLayout>
   }
-/>
-
-Use field length as affordance. If a field has a defined character count, use it to determine the field length.
-
-<Guideline
-  do={
-    <TextInput
-      label="Zip"
-      value="92101"
-      onChange={() => {}}
-      css={{ '& input': { minWidth: 0, width: '81px' } }}
-    />
-  }
-  dont={<TextInput label="Zip" value="92101" onChange={() => {}} />}
 />
 
 Specify errors inline. Show where the error occurs and a clear reason for the error so users can find it in context.
