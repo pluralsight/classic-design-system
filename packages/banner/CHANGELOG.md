@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@10.0.1...@pluralsight/ps-design-system-banner@10.1.0) (2021-04-20)
+
+
+### Features
+
+* **banner:** add style condition to conditional exports ([f6710ab](https://github.com/pluralsight/design-system/commit/f6710abbb1dd70ed12eee27eb23ec306877688d6))
+* **banner:** expose package.json in conditional exports ([98ae221](https://github.com/pluralsight/design-system/commit/98ae22122b5b81aadd0510687d6670c2ee9c53f7))
+
+
+
+
+
 ## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@10.0.0...@pluralsight/ps-design-system-banner@10.0.1) (2021-04-15)
 
 

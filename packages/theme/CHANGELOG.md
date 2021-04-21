@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@8.0.1...@pluralsight/ps-design-system-theme@8.1.0) (2021-04-20)
+
+
+### Features
+
+* **theme:** expose package.json in conditional exports ([a67a623](https://github.com/pluralsight/design-system/commit/a67a623c37afcfb55026f251248dbc6c4750cfae))
+
+
+
+
+
 ## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-theme@8.0.0...@pluralsight/ps-design-system-theme@8.0.1) (2021-04-15)
 
 

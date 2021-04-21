@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@2.0.1...@pluralsight/ps-design-system-multiselect@2.1.0) (2021-04-20)
+
+
+### Features
+
+* **multiselect:** add style condition to conditional exports ([b84b753](https://github.com/pluralsight/design-system/commit/b84b753a73f3711fe78bcf25bce951bb9dfe04f2))
+* **multiselect:** expose package.json in conditional exports ([e41ba47](https://github.com/pluralsight/design-system/commit/e41ba47fbec9fd231a37efb321811a94c6e7c653))
+
+
+
+
+
 ## [2.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@2.0.0...@pluralsight/ps-design-system-multiselect@2.0.1) (2021-04-15)
 
 

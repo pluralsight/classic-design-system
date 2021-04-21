@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@12.0.1...@pluralsight/ps-design-system-badge@12.1.0) (2021-04-20)
+
+
+### Features
+
+* **badge:** add style condition to conditional exports ([0533c6c](https://github.com/pluralsight/design-system/commit/0533c6cfb6a7a97944425c4938871caa1c151923))
+* **badge:** expose package.json in conditional exports ([29fd34c](https://github.com/pluralsight/design-system/commit/29fd34c201f1cc228f9f4aba29a79d59ae4ba49d))
+
+
+
+
+
 ## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@12.0.0...@pluralsight/ps-design-system-badge@12.0.1) (2021-04-15)
 
 

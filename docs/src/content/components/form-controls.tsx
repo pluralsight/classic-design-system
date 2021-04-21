@@ -99,14 +99,13 @@ interface ControlExampleProps {
 export const ControlExample: FC<ControlExampleProps> = props => (
   <div className={styles.control}>
     <div className={styles.label}>
-      <Text.Heading size={Text.Heading.sizes.medium}>
+      <Text.Heading size={Text.Heading.sizes.xSmall}>
         <h3>{props.title}</h3>
       </Text.Heading>
       <div>
         <span className={styles.desc}>{props.desc}</span>
         <span className="link">
           <A href={props.href}>Docs</A>
-          <CaretRightIcon size={CaretRightIcon.sizes.small} />
         </span>
       </div>
     </div>

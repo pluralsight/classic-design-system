@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@5.0.1...@pluralsight/ps-design-system-scrollable@5.1.0) (2021-04-20)
+
+
+### Features
+
+* **scrollable:** add style condition to conditional exports ([a51970f](https://github.com/pluralsight/design-system/commit/a51970fe0971b24f1195dcdf5871ec440d0c621a))
+* **scrollable:** expose package.json in conditional exports ([8bb4f16](https://github.com/pluralsight/design-system/commit/8bb4f1600149e359d29a0012796d604190d2307d))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@5.0.0...@pluralsight/ps-design-system-scrollable@5.0.1) (2021-04-15)
 
 

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@11.0.1...@pluralsight/ps-design-system-breadcrumb@11.1.0) (2021-04-20)
+
+
+### Features
+
+* **breadcrumb:** add style condition to conditional exports ([78d92c1](https://github.com/pluralsight/design-system/commit/78d92c14f4efaed0202f0341a3a0e92a9049f9b0))
+* **breadcrumb:** expose package.json in conditional exports ([f5063df](https://github.com/pluralsight/design-system/commit/f5063dfb213da3f720a56920e21ac2150c936d47))
+
+
+
+
+
 ## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@11.0.0...@pluralsight/ps-design-system-breadcrumb@11.0.1) (2021-04-15)
 
 

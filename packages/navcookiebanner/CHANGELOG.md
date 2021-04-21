@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@3.0.1...@pluralsight/ps-design-system-navcookiebanner@3.1.0) (2021-04-20)
+
+
+### Features
+
+* **navcookiebanner:** add style condition to conditional exports ([2d9f7c7](https://github.com/pluralsight/design-system/commit/2d9f7c70c514d36814a3ff33f5a5d826e941a33e))
+* **navcookiebanner:** expose package.json in conditional exports ([b403437](https://github.com/pluralsight/design-system/commit/b403437ad4e37ab2568d1871f1a3eb0f600a47ae))
+
+
+
+
+
 ## [3.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@3.0.0...@pluralsight/ps-design-system-navcookiebanner@3.0.1) (2021-04-15)
 
 

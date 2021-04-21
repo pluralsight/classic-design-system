@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@9.0.1...@pluralsight/ps-design-system-storybook-addon-theme@9.1.0) (2021-04-20)
+
+
+### Features
+
+* **storybook-addon-theme:** expose package.json in conditional exports ([8ee47ec](https://github.com/pluralsight/design-system/commit/8ee47ecf412042e33253f326ebbe3098b6417b94))
+
+
+
+
+
 ## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@9.0.0...@pluralsight/ps-design-system-storybook-addon-theme@9.0.1) (2021-04-15)
 
 

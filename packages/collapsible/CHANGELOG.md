@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@5.0.1...@pluralsight/ps-design-system-collapsible@5.1.0) (2021-04-20)
+
+
+### Features
+
+* **collapsible:** expose package.json in conditional exports ([1c601f5](https://github.com/pluralsight/design-system/commit/1c601f52e5af9a37f88b0de6f7891c98d3c47186))
+
+
+
+
+
 ## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@5.0.0...@pluralsight/ps-design-system-collapsible@5.0.1) (2021-04-15)
 
 

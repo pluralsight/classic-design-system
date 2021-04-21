@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@12.0.1...@pluralsight/ps-design-system-errors@12.1.0) (2021-04-20)
+
+
+### Features
+
+* **errors:** add style condition to conditional exports ([8dd3bd8](https://github.com/pluralsight/design-system/commit/8dd3bd8842138f4ab9bd6bfff05757fdceae5f18))
+* **errors:** expose package.json in conditional exports ([bf9d4f9](https://github.com/pluralsight/design-system/commit/bf9d4f9b0a316e22d2d1c48fe89fcff58a6acfdb))
+
+
+
+
+
 ## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@12.0.0...@pluralsight/ps-design-system-errors@12.0.1) (2021-04-15)
 
 

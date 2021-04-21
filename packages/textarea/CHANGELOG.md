@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.0.1...@pluralsight/ps-design-system-textarea@9.1.0) (2021-04-20)
+
+
+### Features
+
+* **textarea:** add style condition to conditional exports ([9f5ddfb](https://github.com/pluralsight/design-system/commit/9f5ddfbca6919366652c0e44d47db280118b7312))
+* **textarea:** expose package.json in conditional exports ([f12b6d6](https://github.com/pluralsight/design-system/commit/f12b6d6f23853bf14a2c61c1ef9920127254c674))
+
+
+
+
+
 ## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.0.0...@pluralsight/ps-design-system-textarea@9.0.1) (2021-04-15)
 
 

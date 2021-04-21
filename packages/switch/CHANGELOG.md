@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.0.1...@pluralsight/ps-design-system-switch@9.1.0) (2021-04-20)
+
+
+### Features
+
+* **switch:** add style condition to conditional exports ([d1047e0](https://github.com/pluralsight/design-system/commit/d1047e0cfea38e469a03cc9faaec843509065087))
+* **switch:** expose package.json in conditional exports ([e00d73d](https://github.com/pluralsight/design-system/commit/e00d73dfe904cb8bf81114ae1d972f0a799dcacc))
+
+
+
+
+
 ## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.0.0...@pluralsight/ps-design-system-switch@9.0.1) (2021-04-15)
 
 
