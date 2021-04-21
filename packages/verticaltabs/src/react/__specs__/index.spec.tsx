@@ -1,20 +1,40 @@
-import { render } from '@testing-library/react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { screen, render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
-import VerticalTab from '../index'
+import VerticalTabs from '../index'
 
-describe('Verticaltab', () => {
-  it('renders', () => {
-    const { getByTestId } = render(<VerticalTab data-testid="undertest" />)
+import * as stories from '../__stories__/index.story'
 
-    expect(getByTestId('undertest')).toBeInTheDocument()
+describe('VerticalTabs', () => {
+  const cases = convertStoriesToJestCases(stories)
+
+  it('forwards ref', () => {
+    const ref = React.createRef<HTMLUListElement>()
+    render(<VerticalTabs ref={ref} />)
+    expect(ref).not.toBeNull()
   })
 
-  it('forwards refs', () => {
-    const ref = React.createRef<HTMLUListElement>()
+  describe.skip.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    render(<VerticalTab ref={ref} />)
+      expect(results).toHaveNoViolations()
+    })
+  })
 
-    expect(ref.current).not.toBeNull()
+  describe('Basic story', () => {
+    const { Basic } = stories
+
+    it('forwards className', () => {
+      render(
+        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
+      )
+
+      const el = screen.getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
+    })
   })
 })
