@@ -7,9 +7,17 @@ const illustrations = [
   'code',
   'data',
   'document',
+  'error',
+  'image',
+  'lightning',
+  'lock',
   'magnify',
+  'people',
   'signal',
+  'skillIQ',
+  'upload',
   'video',
+  'wrench',
   'zen'
 ] as const
 
