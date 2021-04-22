@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-scrollable",
-  "version": "5.1.0",
+  "version": "5.1.1",
   "description": "Scrollable UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
