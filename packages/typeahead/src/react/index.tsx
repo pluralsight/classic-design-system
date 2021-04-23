@@ -145,6 +145,16 @@ const Typeahead: TypeaheadFieldComponent = props => {
       )
     }
   })
+  React.useEffect(() => {
+    onChange &&
+      onChange(
+        null,
+        activeItem as {
+          label: React.ReactText
+          value?: React.ReactText | undefined
+        }
+      )
+  }, [activeItem])
   const { value: inputValue, ...inputProps } = getInputProps({
     onKeyDown: (evt: React.KeyboardEvent<HTMLInputElement>) => {
       if (!canUseDOM()) return
