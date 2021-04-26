@@ -53,6 +53,16 @@ interface TypeaheadFieldProps
   subLabel?: string | React.ReactNode
   value?: string
   renderOption?: React.FC
+  filterFunction?: (
+    options: {
+      label: React.ReactText
+      value: React.ReactText
+    }[],
+    inputValue?: string | undefined
+  ) => {
+    label: React.ReactText
+    value: React.ReactText
+  }[]
 }
 
 interface TypeaheadFieldStatics {
@@ -64,6 +74,20 @@ interface TypeaheadFieldStatics {
 
 type TypeaheadFieldComponent = React.FC<TypeaheadFieldProps> &
   TypeaheadFieldStatics
+
+const defaultFilterFunc = (
+  options: {
+    label: React.ReactText
+    value: React.ReactText
+  }[],
+  inputValue?: string
+) =>
+  options.filter(({ label }: { label: React.ReactText }) =>
+    `${label}`
+      .toLowerCase()
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      .includes((inputValue as string).toLowerCase())
+  )
 
 const Typeahead: TypeaheadFieldComponent = props => {
   const {
@@ -80,6 +104,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
     renderOption = defaultRenderOption,
     'aria-label': ariaLabel,
     'aria-autocomplete': ariaAutoComplete = 'list',
+    filterFunction = defaultFilterFunc,
     ...rest
   } = props
   const [searchTerm, setSearchTerm] = React.useState<
@@ -135,14 +160,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
             ? { label: searchTerm as string }
             : selectedItem || undefined
         )
-      setInputItems(
-        options.filter(({ label }) =>
-          `${label}`
-            .toLowerCase()
-            // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-            .startsWith((inputValue as string).toLowerCase())
-        )
-      )
+      setInputItems(filterFunction(options, inputValue))
     }
   })
   React.useEffect(() => {

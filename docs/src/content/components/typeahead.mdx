@@ -93,6 +93,21 @@ export default Example
     desc="error state flag"
     default="false"
   />
+   <TypesProp
+    name="filterFunction"
+    type="(
+    options: {
+      label: React.ReactText
+      value: React.ReactText
+    }[],
+    inputValue?: string | undefined
+  ) => {
+    label: React.ReactText
+    value: React.ReactText
+  }[]"
+    desc="optional filter function"
+    default="string includes"
+  />
   <TypesProp name="label" type="string" desc="identifying string for input" />
   <TypesProp
     name="onChange"
