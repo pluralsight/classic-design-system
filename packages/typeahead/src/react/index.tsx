@@ -86,7 +86,7 @@ const defaultFilterFunc = (
     `${label}`
       .toLowerCase()
       // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-      .includes((inputValue as string).toLowerCase())
+      .includes((inputValue || '').toLowerCase())
   )
 
 const Typeahead: TypeaheadFieldComponent = props => {
@@ -164,14 +164,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
     }
   })
   React.useEffect(() => {
-    onChange &&
-      onChange(
-        null,
-        activeItem as {
-          label: React.ReactText
-          value?: React.ReactText | undefined
-        }
-      )
+    onChange && onChange(null, activeItem || undefined)
   }, [activeItem])
   const { value: inputValue, ...inputProps } = getInputProps({
     onKeyDown: (evt: React.KeyboardEvent<HTMLInputElement>) => {
@@ -256,6 +249,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
                 key={`menu-option-empty-label`}
                 name="No results found"
                 active={false}
+                value={{ label: 'No results found', value: 'No results found' }}
                 role="option"
               />
             )}
