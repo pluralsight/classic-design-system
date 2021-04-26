@@ -1,69 +1,36 @@
-import {
-  layout,
-  colorsPink,
-  colorsBlue
-} from '@pluralsight/ps-design-system-core'
-import { storiesOf } from '@storybook/react'
-import glamorDefault, * as glamorExports from 'glamor'
+import { action } from '@storybook/addon-actions'
+import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Label from '../label'
+import { PaddingDecorator } from './shared'
+import { Label } from '../index'
 
-const glamor = glamorDefault || glamorExports
+export default {
+  title: 'Components/Text/Label',
+  component: Label,
+  decorators: [PaddingDecorator]
+} as Meta
 
-const className = glamor
-  .css({ color: `${colorsBlue[6]} !important` })
-  .toString()
+const defaultArgs = {
+  children: <h1>Label</h1>,
+  onClick: action('click')
+}
 
-const PaddingDecorator = (storyFn: () => React.ReactNode) => (
-  <div style={{ padding: layout.spacingXLarge }}>{storyFn()}</div>
+const Template: Story<React.ComponentProps<typeof Label>> = args => (
+  <Label {...args} />
 )
 
-const stories = storiesOf('Label', module).addDecorator(PaddingDecorator)
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
 
-Object.keys(Label.sizes).forEach(size =>
-  stories.add(`size: ${size}`, () => (
-    <Label size={size as keyof typeof Label.sizes}>{size}</Label>
-  ))
-)
+export const Strong = Template.bind({})
+Strong.args = { ...defaultArgs, strong: true }
 
-stories.add('color: primary', () => <Label color="primary">Primary</Label>)
-stories.add('color: secondary', () => (
-  <Label color="secondary">Secondary</Label>
-))
+export const Caps = Template.bind({})
+Caps.args = { ...defaultArgs, caps: true }
 
-stories.add('strong: true', () => <Label strong>Strong</Label>)
+export const Mono = Template.bind({})
+Mono.args = { ...defaultArgs, mono: true }
 
-stories.add('caps: true', () => <Label caps>Caps</Label>)
-
-stories.add('mono: true', () => (
-  <div>
-    <div>
-      <Label mono>Monospace font</Label>
-    </div>
-    <div>
-      <Label mono strong>
-        Monospace strong
-      </Label>
-    </div>
-    <div>
-      <Label mono caps>
-        Monospace caps
-      </Label>
-    </div>
-  </div>
-))
-
-stories.add('caps & strong: true', () => (
-  <Label caps strong>
-    Caps
-  </Label>
-))
-
-stories.add('style override', () => (
-  <Label style={{ color: colorsPink[6] }}>pink</Label>
-))
-
-stories.add('className override', () => (
-  <Label className={className}>blue</Label>
-))
+export const StrongCaps = Template.bind({})
+StrongCaps.args = { ...defaultArgs, caps: true, strong: true }
