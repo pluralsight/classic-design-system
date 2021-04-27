@@ -1,34 +1,50 @@
-import * as core from '@pluralsight/ps-design-system-core'
-import { storiesOf } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
+import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import List from '../list/index'
+import { PaddingDecorator, StoryGrid } from './shared'
+import { List } from '../index'
 
-const PaddingDecorator = (storyFn: () => React.ReactNode) => (
-  <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>
-)
+export default {
+  title: 'Components/Text/List',
+  component: List,
+  decorators: [PaddingDecorator]
+} as Meta
 
-const list = storiesOf('List', module).addDecorator(PaddingDecorator)
-
-Object.keys(List.sizes).forEach(typeProp =>
-  list.add(`size: ${typeProp}`, () => (
-    <List type={List.types.bulleted} size={typeProp as keyof typeof List.sizes}>
+const defaultArgs = {
+  children: (
+    <>
       <List.Item>one</List.Item>
       <List.Item>two</List.Item>
       <List.Item>three</List.Item>
       <List.Item>four</List.Item>
       <List.Item>five</List.Item>
-    </List>
-  ))
+    </>
+  ),
+  onClick: action('click')
+}
+
+const Template: Story<React.ComponentProps<typeof List>> = args => (
+  <List {...args} />
 )
-Object.keys(List.types).forEach(typeProp =>
-  list.add(`type: ${typeProp}`, () => (
-    <List type={typeProp as keyof typeof List.types}>
-      <List.Item>one</List.Item>
-      <List.Item>two</List.Item>
-      <List.Item>three</List.Item>
-      <List.Item>four</List.Item>
-      <List.Item>five</List.Item>
-    </List>
-  ))
+
+export const Basic = Template.bind({})
+Basic.args = { ...defaultArgs }
+
+export const Sizes: Story<React.ComponentProps<typeof List>> = args => (
+  <StoryGrid cols={1}>
+    {Object.values(List.sizes).map((size, i) => (
+      <List {...args} key={i} size={size} />
+    ))}
+  </StoryGrid>
 )
+Sizes.args = { ...defaultArgs }
+
+export const Types: Story<React.ComponentProps<typeof List>> = args => (
+  <StoryGrid cols={1}>
+    {Object.values(List.types).map((type, i) => (
+      <List {...args} key={i} type={type} />
+    ))}
+  </StoryGrid>
+)
+Types.args = { ...defaultArgs }
