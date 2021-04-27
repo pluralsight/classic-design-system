@@ -31,6 +31,16 @@ const styles = {
     ),
   menu: () => css(stylesheet['.psds-multi-select__menu'])
 }
+export type TypeaheadFilterFunction = (
+  options: {
+    label: React.ReactText
+    value: React.ReactText
+  }[],
+  inputValue?: string | undefined
+) => {
+  label: React.ReactText
+  value: React.ReactText
+}[]
 interface TypeaheadFieldProps
   extends Omit<
     React.ComponentProps<typeof Field>,
@@ -53,16 +63,7 @@ interface TypeaheadFieldProps
   subLabel?: string | React.ReactNode
   value?: string
   renderOption?: React.FC
-  filterFunction?: (
-    options: {
-      label: React.ReactText
-      value: React.ReactText
-    }[],
-    inputValue?: string | undefined
-  ) => {
-    label: React.ReactText
-    value: React.ReactText
-  }[]
+  filterFunction?: TypeaheadFilterFunction
 }
 
 interface TypeaheadFieldStatics {

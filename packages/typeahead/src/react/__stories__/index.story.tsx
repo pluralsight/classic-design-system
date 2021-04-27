@@ -3,7 +3,7 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
 import { periodicElements } from '../__fixtures__/options'
-import Typeahead from '../index'
+import Typeahead, { TypeaheadFilterFunction } from '../index'
 
 const SetWidthDecorator = (Story: Story) => {
   return (
@@ -87,4 +87,17 @@ CustomInputTag.args = {
       style={{ outline: '1px dashed pink' }}
     />
   ))
+}
+
+export const CustomFilterFunction = Template.bind({})
+const filterFunction: TypeaheadFilterFunction = (options, inputValue) =>
+  options.filter(({ label }) =>
+    `${label}`
+      .toLowerCase()
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      .startsWith((inputValue as string).toLowerCase())
+  )
+CustomFilterFunction.args = {
+  ...defaultArgs,
+  filterFunction
 }
