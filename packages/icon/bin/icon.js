@@ -1,10 +1,5 @@
 #!/usr/bin/env node
-
-import arg from 'arg'
-
-import { generateComponents } from '../cli/generate-components.mjs'
-import { cleanSvgs } from '../cli/clean-svgs.mjs'
-
+const arg = require('arg')
 const args = arg({
   '--dest': String,
   '--src': String,
@@ -23,5 +18,7 @@ const {
   '--clean': clean
 } = args
 
+const { generateComponents } = require('../cli/generate-components')
+const { cleanSvgs } = require('../cli/clean-svgs')
 !clean && generateComponents({ dest, src, ext, core: extra.includes('core') })
 clean && cleanSvgs({ dest, src })
