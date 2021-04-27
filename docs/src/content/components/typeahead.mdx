@@ -63,6 +63,32 @@ const Example: React.FC = props => {
 export default Example
 ```
 
+## Custom filterFunction
+
+The typeahead allows you to pass in a custom filter function that does not use the default String.includes method
+
+```typescript startExpanded=false noRender
+import Typeahead, {TypeaheadFilterFunction} from '@pluralsight/ps-design-system-typeahead'
+import React from 'react'
+
+const filterFunction: TypeaheadFilterFunction = (options, inputValue) =>
+  options.filter(({ label }) =>
+    `${label}`
+      .toLowerCase()
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      .startsWith((inputValue as string).toLowerCase())
+
+const Example: React.FC = props => {
+  const options = [{label: 'Beginner', value: 'Beginner'}, {label: 'Intermediate', value: 'Intermediate'}, {label: 'Advanced', value: 'Advanced'}]
+
+  return (
+    <Typeahead label="Level" placeholder="Select a Level" options={options} filterFunction={filterFunction}/>
+  )
+}
+
+export default Example
+```
+
 ## Usage & types
 
 <Usage
