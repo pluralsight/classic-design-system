@@ -1,7 +1,7 @@
-import { promises as fs } from 'fs'
-import fg from 'fast-glob'
-import path from 'path'
-import SVGO from 'svgo'
+const { promises: fs } = require('fs')
+const fg = require('fast-glob')
+const path = require('path')
+const SVGO = require('svgo')
 
 const svgo = new SVGO({
   plugins: [
@@ -21,7 +21,7 @@ const addAria = (svg, name) => {
 
 const dashCaseToLower = str => str.split('-').join(' ').toLowerCase()
 
-export const cleanSvgs = async ({ src, dest = src }) => {
+exports.cleanSvgs = async ({ src, dest = src }) => {
   try {
     await fs.mkdir(dest, { recursive: true })
     const files = await fg([`${src}/*.svg`])
