@@ -31,6 +31,16 @@ const styles = {
     ),
   menu: () => css(stylesheet['.psds-multi-select__menu'])
 }
+export type TypeaheadFilterFunction = (
+  options: {
+    label: React.ReactText
+    value: React.ReactText
+  }[],
+  inputValue?: string | undefined
+) => {
+  label: React.ReactText
+  value: React.ReactText
+}[]
 interface TypeaheadFieldProps
   extends Omit<
     React.ComponentProps<typeof Field>,
@@ -53,6 +63,7 @@ interface TypeaheadFieldProps
   subLabel?: string | React.ReactNode
   value?: string
   renderOption?: React.FC
+  filterFunction?: TypeaheadFilterFunction
 }
 
 interface TypeaheadFieldStatics {
@@ -64,6 +75,20 @@ interface TypeaheadFieldStatics {
 
 type TypeaheadFieldComponent = React.FC<TypeaheadFieldProps> &
   TypeaheadFieldStatics
+
+const defaultFilterFunc = (
+  options: {
+    label: React.ReactText
+    value: React.ReactText
+  }[],
+  inputValue?: string
+) =>
+  options.filter(({ label }: { label: React.ReactText }) =>
+    `${label}`
+      .toLowerCase()
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      .includes((inputValue || '').toLowerCase())
+  )
 
 const Typeahead: TypeaheadFieldComponent = props => {
   const {
@@ -80,6 +105,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
     renderOption = defaultRenderOption,
     'aria-label': ariaLabel,
     'aria-autocomplete': ariaAutoComplete = 'list',
+    filterFunction = defaultFilterFunc,
     ...rest
   } = props
   const [searchTerm, setSearchTerm] = React.useState<
@@ -135,16 +161,12 @@ const Typeahead: TypeaheadFieldComponent = props => {
             ? { label: searchTerm as string }
             : selectedItem || undefined
         )
-      setInputItems(
-        options.filter(({ label }) =>
-          `${label}`
-            .toLowerCase()
-            // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-            .startsWith((inputValue as string).toLowerCase())
-        )
-      )
+      setInputItems(filterFunction(options, inputValue))
     }
   })
+  React.useEffect(() => {
+    onChange && onChange(null, activeItem || undefined)
+  }, [activeItem])
   const { value: inputValue, ...inputProps } = getInputProps({
     onKeyDown: (evt: React.KeyboardEvent<HTMLInputElement>) => {
       if (!canUseDOM()) return
@@ -228,6 +250,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
                 key={`menu-option-empty-label`}
                 name="No results found"
                 active={false}
+                value={{ label: 'No results found', value: 'No results found' }}
                 role="option"
               />
             )}

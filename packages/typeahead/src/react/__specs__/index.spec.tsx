@@ -1,5 +1,5 @@
 import { Story } from '@storybook/react/types-6-0'
-import { screen } from '@testing-library/dom'
+import { screen, findByText, getByText } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
@@ -47,7 +47,7 @@ describe('TypeaheadField', () => {
   })
 
   describe('Basic story', () => {
-    const { Basic } = stories
+    const { Basic, CustomFilterFunction } = stories
 
     it('should focus input when label clicked', () => {
       render(<Basic {...(Basic.args as any)} />)
@@ -109,6 +109,32 @@ describe('TypeaheadField', () => {
 
       expect(input).toHaveFocus()
       expect(menu).toBeInTheDocument()
+    })
+
+    it('should filter using String.includes', async () => {
+      render(<Basic {...(Basic.args as any)} />)
+      const input = await screen.findByRole('textbox')
+
+      userEvent.click(input)
+      const menu = await screen.findByRole('listbox')
+      expect(input).toHaveFocus()
+      expect(menu).toBeInTheDocument()
+      userEvent.type(input, 'on')
+      expect(await findByText(menu, 'Boron')).toBeInTheDocument()
+      expect(screen.queryByText('Hydrogen')).toBeNull()
+    })
+
+    it('should filter using String.startsWith', async () => {
+      render(<CustomFilterFunction {...(CustomFilterFunction.args as any)} />)
+      const input = await screen.findByRole('textbox')
+
+      userEvent.click(input)
+      const menu = await screen.findByRole('listbox')
+      expect(input).toHaveFocus()
+      expect(menu).toBeInTheDocument()
+      userEvent.type(input, 'h')
+      expect(await findByText(menu, 'Hydrogen')).toBeInTheDocument()
+      expect(screen.queryByText('Boron')).toBeNull()
     })
   })
 })
