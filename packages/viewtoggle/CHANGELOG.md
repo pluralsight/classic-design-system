@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@8.1.0...@pluralsight/ps-design-system-viewtoggle@8.1.1) (2021-04-27)
+
+
+### Bug Fixes
+
+* **viewtoggle:** update aria attribute ([#1724](https://github.com/pluralsight/design-system/issues/1724)) ([7cb7784](https://github.com/pluralsight/design-system/commit/7cb7784ad4187fb5ead2f4ebcb8ae416e6b7a80c))
+
+
+
+
+
 # [8.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@8.0.1...@pluralsight/ps-design-system-viewtoggle@8.1.0) (2021-04-20)
 
 
