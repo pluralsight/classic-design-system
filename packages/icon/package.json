@@ -6,6 +6,19 @@
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
+  "files": [
+    "src/*",
+    "dist/*",
+    "!src/*/__stories__/*",
+    "!src/*/__specs__/*"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.mjs",
+      "require": "./dist/cjs/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "bin": {
     "psds-icon": "bin/icon.js"
   },
@@ -15,7 +28,7 @@
     "build": "run-s build:svg build:cjs build:esm build:css copy:svg",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
-    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
+    "build:esm": "yarn run rollup -c",
     "prebuild:svg": "yarn clean:svg",
     "build:svg": "node bin/icon -s src/svg -d src/react/icons core",
     "build:watch": "yarn build:esm -- --watch",
