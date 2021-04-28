@@ -1,12 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Code empty 1`] = `
+exports[`Storyshots Components/Text/Code Empty 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <p
     data-css-17nixd9=""
@@ -17,13 +13,9 @@ exports[`Storyshots Code empty 1`] = `
 </div>
 `;
 
-exports[`Storyshots Code ends single line 1`] = `
+exports[`Storyshots Components/Text/Code Ends Single Line 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <p
     data-css-17nixd9=""
@@ -38,13 +30,9 @@ exports[`Storyshots Code ends single line 1`] = `
 </div>
 `;
 
-exports[`Storyshots Code lead single line 1`] = `
+exports[`Storyshots Components/Text/Code Lead Single Line 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <p
     data-css-17nixd9=""
@@ -59,13 +47,9 @@ exports[`Storyshots Code lead single line 1`] = `
 </div>
 `;
 
-exports[`Storyshots Code line wrap 1`] = `
+exports[`Storyshots Components/Text/Code Line Wrap 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <p
     data-css-17nixd9=""
@@ -81,13 +65,9 @@ exports[`Storyshots Code line wrap 1`] = `
 </div>
 `;
 
-exports[`Storyshots Code maintains whitespace 1`] = `
+exports[`Storyshots Components/Text/Code Maintains Whitespace 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <code
     data-css-hvsxkc=""
@@ -97,18 +77,15 @@ exports[`Storyshots Code maintains whitespace 1`] = `
 </div>
 `;
 
-exports[`Storyshots Code middle of paragraph 1`] = `
+exports[`Storyshots Components/Text/Code Middle Of Paragraph 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <p
     data-css-17nixd9=""
   >
-    Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables 
+    Please advise soonest streamline data-point, and execute , price point. This is not the hill i want to die on going forward. Diversify kpis not the long pole in my tent. Synergize productive mindfulness can you send me an invite? nor high-level so back of the net vertical integration. Deliverables
+     
     <code
       data-css-hvsxkc=""
     >
@@ -119,13 +96,9 @@ exports[`Storyshots Code middle of paragraph 1`] = `
 </div>
 `;
 
-exports[`Storyshots Code standalone 1`] = `
+exports[`Storyshots Components/Text/Code Standalone 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <code
     data-css-hvsxkc=""
@@ -135,534 +108,209 @@ exports[`Storyshots Code standalone 1`] = `
 </div>
 `;
 
-exports[`Storyshots Heading className override 1`] = `
+exports[`Storyshots Components/Text/Heading Basic 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <h2
-    className="css-mbiza7"
-    data-css-vetqvm=""
-  >
-    blue
-  </h2>
-</div>
-`;
-
-exports[`Storyshots Heading color: primary 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <h1
     data-css-vetqvm=""
+    onClick={[Function]}
   >
-    Primary
+    Heading
   </h1>
 </div>
 `;
 
-exports[`Storyshots Heading color: secondary 1`] = `
+exports[`Storyshots Components/Text/Heading Class Override 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <h1
-    data-css-3hqi84=""
-  >
-    Secondary
-  </h1>
-</div>
-`;
-
-exports[`Storyshots Heading size: large 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <h1
+    className="css-1ub3o27"
     data-css-vetqvm=""
+    onClick={[Function]}
   >
-    large
+    Heading
   </h1>
 </div>
 `;
 
-exports[`Storyshots Heading size: medium 1`] = `
+exports[`Storyshots Components/Text/Heading Colors 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
-  <h1
-    data-css-1gbfzly=""
+  <div
+    data-css-1cpmtjf=""
   >
-    medium
-  </h1>
-</div>
-`;
-
-exports[`Storyshots Heading size: small 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <h1
-    data-css-1u6zvn6=""
-  >
-    small
-  </h1>
-</div>
-`;
-
-exports[`Storyshots Heading size: xLarge 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <h1
-    data-css-ovsjkc=""
-  >
-    xLarge
-  </h1>
-</div>
-`;
-
-exports[`Storyshots Heading size: xSmall 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <h1
-    data-css-1v8ehyy=""
-  >
-    xSmall
-  </h1>
-</div>
-`;
-
-exports[`Storyshots Heading size: xXSmall 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <h1
-    data-css-cjuz5h=""
-  >
-    xXSmall
-  </h1>
-</div>
-`;
-
-exports[`Storyshots Heading size: xXXSmall 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <h1
-    data-css-jq9ssw=""
-  >
-    xXXSmall
-  </h1>
-</div>
-`;
-
-exports[`Storyshots Heading style override 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <h2
-    data-css-vetqvm=""
-    style={
-      Object {
-        "color": "#E7558B",
-      }
-    }
-  >
-    pink
-  </h2>
-</div>
-`;
-
-exports[`Storyshots Label caps & strong: true 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-1q07l0j=""
-  >
-    Caps
-  </span>
-</div>
-`;
-
-exports[`Storyshots Label caps: true 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-wz4xbe=""
-  >
-    Caps
-  </span>
-</div>
-`;
-
-exports[`Storyshots Label className override 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    className="css-mbiza7"
-    data-css-r8e5nl=""
-  >
-    blue
-  </span>
-</div>
-`;
-
-exports[`Storyshots Label color: primary 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-r8e5nl=""
-  >
-    Primary
-  </span>
-</div>
-`;
-
-exports[`Storyshots Label color: secondary 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-1bb129s=""
-  >
-    Secondary
-  </span>
-</div>
-`;
-
-exports[`Storyshots Label mono: true 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div>
-    <div>
-      <span
-        data-css-phyd8e=""
-      >
-        Monospace font
-      </span>
-    </div>
-    <div>
-      <span
-        data-css-fo6hou=""
-      >
-        Monospace strong
-      </span>
-    </div>
-    <div>
-      <span
-        data-css-10spmcr=""
-      >
-        Monospace caps
-      </span>
-    </div>
+    <h1
+      data-css-vetqvm=""
+      onClick={[Function]}
+    >
+      primary
+    </h1>
+    <h1
+      data-css-3hqi84=""
+      onClick={[Function]}
+    >
+      secondary
+    </h1>
   </div>
 </div>
 `;
 
-exports[`Storyshots Label size: large 1`] = `
+exports[`Storyshots Components/Text/Heading Sizes 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
-  <span
-    data-css-1qk9cwn=""
+  <div
+    data-css-1cpmtjf=""
   >
-    large
-  </span>
+    <h1
+      data-css-jq9ssw=""
+      onClick={[Function]}
+    >
+      xXXSmall
+    </h1>
+    <h1
+      data-css-cjuz5h=""
+      onClick={[Function]}
+    >
+      xXSmall
+    </h1>
+    <h1
+      data-css-1v8ehyy=""
+      onClick={[Function]}
+    >
+      xSmall
+    </h1>
+    <h1
+      data-css-1u6zvn6=""
+      onClick={[Function]}
+    >
+      small
+    </h1>
+    <h1
+      data-css-1gbfzly=""
+      onClick={[Function]}
+    >
+      medium
+    </h1>
+    <h1
+      data-css-vetqvm=""
+      onClick={[Function]}
+    >
+      large
+    </h1>
+    <h1
+      data-css-ovsjkc=""
+      onClick={[Function]}
+    >
+      xLarge
+    </h1>
+  </div>
 </div>
 `;
 
-exports[`Storyshots Label size: medium 1`] = `
+exports[`Storyshots Components/Text/Heading Style Override 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
-  <span
-    data-css-r8e5nl=""
-  >
-    medium
-  </span>
-</div>
-`;
-
-exports[`Storyshots Label size: small 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-1hz5jub=""
-  >
-    small
-  </span>
-</div>
-`;
-
-exports[`Storyshots Label size: xSmall 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-da57qr=""
-  >
-    xSmall
-  </span>
-</div>
-`;
-
-exports[`Storyshots Label strong: true 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-bsz03x=""
-  >
-    Strong
-  </span>
-</div>
-`;
-
-exports[`Storyshots Label style override 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <span
-    data-css-r8e5nl=""
+  <h1
+    data-css-vetqvm=""
+    onClick={[Function]}
     style={
       Object {
         "color": "#E7558B",
       }
     }
   >
-    pink
+    Heading
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Components/Text/Label Basic 1`] = `
+<div
+  data-css-yto836=""
+>
+  <span
+    data-css-r8e5nl=""
+    onClick={[Function]}
+  >
+    <h1>
+      Label
+    </h1>
   </span>
 </div>
 `;
 
-exports[`Storyshots List size: large 1`] = `
+exports[`Storyshots Components/Text/Label Caps 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
-  <ul
-    data-css-f8xw9m=""
+  <span
+    data-css-wz4xbe=""
+    onClick={[Function]}
   >
-    <li>
-      one
-    </li>
-    <li>
-      two
-    </li>
-    <li>
-      three
-    </li>
-    <li>
-      four
-    </li>
-    <li>
-      five
-    </li>
-  </ul>
+    <h1>
+      Label
+    </h1>
+  </span>
 </div>
 `;
 
-exports[`Storyshots List size: medium 1`] = `
+exports[`Storyshots Components/Text/Label Mono 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
-  <ul
-    data-css-ktsu2d=""
+  <span
+    data-css-phyd8e=""
+    onClick={[Function]}
   >
-    <li>
-      one
-    </li>
-    <li>
-      two
-    </li>
-    <li>
-      three
-    </li>
-    <li>
-      four
-    </li>
-    <li>
-      five
-    </li>
-  </ul>
+    <h1>
+      Label
+    </h1>
+  </span>
 </div>
 `;
 
-exports[`Storyshots List size: small 1`] = `
+exports[`Storyshots Components/Text/Label Strong 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
-  <ul
-    data-css-l6lfc1=""
+  <span
+    data-css-bsz03x=""
+    onClick={[Function]}
   >
-    <li>
-      one
-    </li>
-    <li>
-      two
-    </li>
-    <li>
-      three
-    </li>
-    <li>
-      four
-    </li>
-    <li>
-      five
-    </li>
-  </ul>
+    <h1>
+      Label
+    </h1>
+  </span>
 </div>
 `;
 
-exports[`Storyshots List type: bulleted 1`] = `
+exports[`Storyshots Components/Text/Label Strong Caps 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
-  <ul
-    data-css-ktsu2d=""
+  <span
+    data-css-1q07l0j=""
+    onClick={[Function]}
   >
-    <li>
-      one
-    </li>
-    <li>
-      two
-    </li>
-    <li>
-      three
-    </li>
-    <li>
-      four
-    </li>
-    <li>
-      five
-    </li>
-  </ul>
+    <h1>
+      Label
+    </h1>
+  </span>
 </div>
 `;
 
-exports[`Storyshots List type: default 1`] = `
+exports[`Storyshots Components/Text/List Basic 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <ul
     data-css-n0w93d=""
+    onClick={[Function]}
   >
     <li>
       one
@@ -683,175 +331,262 @@ exports[`Storyshots List type: default 1`] = `
 </div>
 `;
 
-exports[`Storyshots List type: numbered 1`] = `
+exports[`Storyshots Components/Text/List Sizes 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
-  <ol
-    data-css-zj3w7f=""
+  <div
+    data-css-1cpmtjf=""
   >
-    <li>
-      one
-    </li>
-    <li>
-      two
-    </li>
-    <li>
-      three
-    </li>
-    <li>
-      four
-    </li>
-    <li>
-      five
-    </li>
-  </ol>
+    <ul
+      data-css-1w2mmlj=""
+      onClick={[Function]}
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+      <li>
+        four
+      </li>
+      <li>
+        five
+      </li>
+    </ul>
+    <ul
+      data-css-n0w93d=""
+      onClick={[Function]}
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+      <li>
+        four
+      </li>
+      <li>
+        five
+      </li>
+    </ul>
+    <ul
+      data-css-ejbpq4=""
+      onClick={[Function]}
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+      <li>
+        four
+      </li>
+      <li>
+        five
+      </li>
+    </ul>
+  </div>
 </div>
 `;
 
-exports[`Storyshots P className override 1`] = `
+exports[`Storyshots Components/Text/List Types 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
+>
+  <div
+    data-css-1cpmtjf=""
+  >
+    <ul
+      data-css-n0w93d=""
+      onClick={[Function]}
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+      <li>
+        four
+      </li>
+      <li>
+        five
+      </li>
+    </ul>
+    <ul
+      data-css-ktsu2d=""
+      onClick={[Function]}
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+      <li>
+        four
+      </li>
+      <li>
+        five
+      </li>
+    </ul>
+    <ol
+      data-css-zj3w7f=""
+      onClick={[Function]}
+    >
+      <li>
+        one
+      </li>
+      <li>
+        two
+      </li>
+      <li>
+        three
+      </li>
+      <li>
+        four
+      </li>
+      <li>
+        five
+      </li>
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Text/P Basic 1`] = `
+<div
+  data-css-yto836=""
 >
   <p
-    className="css-mbiza7"
     data-css-17nixd9=""
+    onClick={[Function]}
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
 </div>
 `;
 
-exports[`Storyshots P color: primary 1`] = `
+exports[`Storyshots Components/Text/P Class Override 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
+>
+  <p
+    className="css-1ub3o27"
+    data-css-17nixd9=""
+    onClick={[Function]}
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Text/P Colors 1`] = `
+<div
+  data-css-yto836=""
+>
+  <div
+    data-css-1cpmtjf=""
+  >
+    <p
+      data-css-17nixd9=""
+      onClick={[Function]}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+    </p>
+    <p
+      data-css-9llqti=""
+      onClick={[Function]}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Text/P Sizes 1`] = `
+<div
+  data-css-yto836=""
+>
+  <div
+    data-css-1cpmtjf=""
+  >
+    <p
+      data-css-1s5i094=""
+      onClick={[Function]}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+    </p>
+    <p
+      data-css-17nixd9=""
+      onClick={[Function]}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+    </p>
+    <p
+      data-css-7vvqm6=""
+      onClick={[Function]}
+    >
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Text/P Style Override 1`] = `
+<div
+  data-css-yto836=""
 >
   <p
     data-css-17nixd9=""
+    onClick={[Function]}
+    style={
+      Object {
+        "color": "#E7558B",
+      }
+    }
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
 </div>
 `;
 
-exports[`Storyshots P color: secondary 1`] = `
+exports[`Storyshots Components/Text/P With Em 1`] = `
 <div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
+  data-css-yto836=""
 >
   <p
-    data-css-9llqti=""
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
-  </p>
-</div>
-`;
-
-exports[`Storyshots P em 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <p
-    data-css-9llqti=""
+    data-css-17nixd9=""
+    onClick={[Function]}
   >
     Cras faucibus ex id ligula aliquam, eget porta
     <em>
       this is em
     </em>
      tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum. Vestibulum id nisi a massa
-     
     <em>
       THIS IS EM
     </em>
      tincidunt malesuada vitae non risus. cursus nibh.
-  </p>
-</div>
-`;
-
-exports[`Storyshots P size: large 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <p
-    data-css-7vvqm6=""
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
-  </p>
-</div>
-`;
-
-exports[`Storyshots P size: medium 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <p
-    data-css-17nixd9=""
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
-  </p>
-</div>
-`;
-
-exports[`Storyshots P size: small 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <p
-    data-css-1s5i094=""
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
-  </p>
-</div>
-`;
-
-exports[`Storyshots P style override 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <p
-    data-css-17nixd9=""
-    style={
-      Object {
-        "color": "#E7558B",
-      }
-    }
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
   </p>
 </div>
 `;

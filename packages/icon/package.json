@@ -1,42 +1,29 @@
 {
   "name": "@pluralsight/ps-design-system-icon",
-  "version": "23.1.0",
+  "version": "23.1.2",
   "description": "Design System component for icon ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
   "bin": {
-    "psds-icon": "bin/icon.mjs"
+    "psds-icon": "bin/icon.js"
   },
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.mjs",
+  "module": "dist/esm/index.js",
   "scripts": {
-    "build": "run-s build:svg build:esm build:cjs build:css copy:svg",
+    "build": "run-s build:svg build:cjs build:esm build:css copy:svg",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
-    "build:css": "build-css --useGlamor -i dist/esm/css/index.mjs",
-    "build:esm": "run-s compile:esm rewrite:esm rewriteicon:esm",
+    "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "prebuild:svg": "yarn clean:svg",
-    "build:svg": "node bin/icon.mjs -s src/svg -d src/react/icons core",
-    "build:watch": "yarn build:esm --watch",
-    "clean:svg": "node bin/icon.mjs -s src/svg --clean",
-    "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
-    "copy:svg": "node cli/copy-svgs.mjs",
-    "rewrite:esm": "tsc-esm --project tsconfig.build.json",
-    "rewriteicon:esm": "node cli/rewrite-icon-index.mjs",
+    "build:svg": "node bin/icon -s src/svg -d src/react/icons core",
+    "build:watch": "yarn build:esm -- --watch",
+    "clean:svg": "node bin/icon -s src/svg --clean",
+    "copy:svg": "node cli/copy-svgs.js",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
-    "test:watch": "yarn test --watchAll"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.mjs",
-      "require": "./dist/cjs/index.js",
-      "node": "./dist/cjs/index.js",
-      "style": "./dist/index.css",
-      "default": "./dist/cjs/index.js"
-    },
-    "./package.json": "./package.json"
+    "test:watch": "yarn test -- --watchAll"
   },
   "sideEffects": false,
   "style": "dist/index.css",
