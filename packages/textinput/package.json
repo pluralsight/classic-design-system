@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-textinput",
-  "version": "11.1.1",
+  "version": "11.1.2",
   "description": "Design system components for text input",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -34,10 +34,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^22.1.1",
+    "@pluralsight/ps-design-system-button": "^22.1.2",
     "@pluralsight/ps-design-system-core": "^8.1.0",
     "@pluralsight/ps-design-system-halo": "^10.1.0",
-    "@pluralsight/ps-design-system-icon": "^23.1.1",
+    "@pluralsight/ps-design-system-icon": "^23.1.2",
     "@pluralsight/ps-design-system-util": "^9.1.0"
   },
   "peerDependencies": {
