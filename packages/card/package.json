@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-card",
-  "version": "18.1.1",
+  "version": "18.1.2",
   "description": "Design System component for card ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -35,7 +35,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.1.0",
-    "@pluralsight/ps-design-system-icon": "^23.1.1",
+    "@pluralsight/ps-design-system-icon": "^23.1.2",
     "@pluralsight/ps-design-system-util": "^9.1.0",
     "focus-within": "^3.0.2",
     "shiitake": "^3.0.2"
