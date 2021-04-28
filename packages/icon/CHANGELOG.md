@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [23.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@23.1.1...@pluralsight/ps-design-system-icon@23.1.2) (2021-04-28)
+
+
+### Bug Fixes
+
+* **icon:** bin path corrected ([#1732](https://github.com/pluralsight/design-system/issues/1732)) ([2ac778c](https://github.com/pluralsight/design-system/commit/2ac778cd8ca7afc3e51528ccb11323302b48fe91))
+
+
+
+
+
 ## [23.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@23.1.0...@pluralsight/ps-design-system-icon@23.1.1) (2021-04-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
