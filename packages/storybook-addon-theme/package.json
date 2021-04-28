@@ -11,6 +11,12 @@
     "style"
   ],
   "main": "dist/index.js",
+  "files": [
+    "src/*",
+    "dist/*",
+    "!src/*/__stories__/*",
+    "!src/*/__specs__/*"
+  ],
   "scripts": {
     "build": "tsc --project tsconfig.build.json --module commonjs --target es5",
     "build:watch": "yarn build --watch"

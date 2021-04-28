@@ -18,6 +18,12 @@
   },
   "sideEffects": false,
   "types": "dist/esm/index.d.ts",
+  "files": [
+    "src/*",
+    "dist/*",
+    "!src/*/__stories__/*",
+    "!src/*/__specs__/*"
+  ],
   "dependencies": {
     "@pluralsight/ps-design-system-util": "^9.1.0",
     "hoist-non-react-statics": "^3.3.0"
