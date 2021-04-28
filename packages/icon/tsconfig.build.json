@@ -1,6 +1,8 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src"],
+  "include": [
+    "src"
+  ],
   "exclude": [
     ".storybook",
     "node_modules",
@@ -10,7 +12,8 @@
   ],
   "compilerOptions": {
     "declaration": true,
-    "outDir": "dist",
-    "rootDir": "src"
+    "declarationDir": "./dist/types",
+    "emitDeclarationOnly": true,
+    "rootDir": "src",
   }
 }

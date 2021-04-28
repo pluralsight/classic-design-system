@@ -12,7 +12,7 @@ function plugins() {
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
       envName: 'production',
       exclude: 'node_modules/**',
-      babelHelpers: 'bundled'
+      babelHelpers: 'runtime'
     })
   ]
 }
@@ -23,16 +23,27 @@ export const config = ({ root, packageJSON }) => {
     ...Object.keys(packageJSON.peerDependencies)
   ]
   const external = id => {
-    return externalPackages.some(aPackage => id.startsWith(aPackage))
+    return externalPackages.some(
+      aPackage => id.startsWith(aPackage) || id.includes('@babel/runtime')
+    )
   }
   return {
     input: `${root}/src/index.ts`,
-    output: {
-      format: 'esm',
-      dir: `${root}/dist/esm`,
-      preserveModules: true,
-      sourcemap: 'hidden'
-    },
+    output: [
+      {
+        format: 'cjs',
+        dir: `${root}/dist/cjs`,
+        preserveModules: true,
+        sourcemap: true,
+        exports: 'named'
+      },
+      {
+        format: 'esm',
+        dir: `${root}/dist/esm`,
+        preserveModules: true,
+        sourcemap: true
+      }
+    ],
     plugins: plugins({ root }),
     external
   }
