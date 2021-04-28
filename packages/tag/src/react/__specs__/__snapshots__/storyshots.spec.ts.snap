@@ -1,6 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots actions button 1`] = `
+exports[`Storyshots Components/Tag Basic 1`] = `
+<div
+  data-css-1lu7sfl=""
+>
+  <div
+    data-css-q4lcrt=""
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      hello world
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Tag Button 1`] = `
 <div
   data-css-1lu7sfl=""
 >
@@ -13,13 +29,46 @@ exports[`Storyshots actions button 1`] = `
     <span
       data-css-1997kh1=""
     >
-      As a button
+      hello world
     </span>
   </div>
 </div>
 `;
 
-exports[`Storyshots actions button w/ icon button 1`] = `
+exports[`Storyshots Components/Tag Class Name Override 1`] = `
+<div
+  data-css-1lu7sfl=""
+>
+  <div
+    className="css-1wsp713"
+    data-css-q4lcrt=""
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      hello world
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Tag Error 1`] = `
+<div
+  data-css-mmyfiy=""
+>
+  <div
+    data-css-q4lcrt=""
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      hello world
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Tag Icon Button 1`] = `
 <div
   data-css-1lu7sfl=""
 >
@@ -32,24 +81,24 @@ exports[`Storyshots actions button w/ icon button 1`] = `
     <span
       data-css-13bnfv4=""
     >
-      As a button
+      hello world
     </span>
     <div
       data-css-7dab2f=""
       onClick={[Function]}
       style={
         Object {
-          "cursor": "pointer",
+          "cursor": "default",
         }
       }
     >
       <svg
-        aria-label="close icon"
+        aria-label="placeholder icon"
         role="img"
         viewBox="0 0 24 24"
       >
         <path
-          d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
         />
       </svg>
     </div>
@@ -57,7 +106,40 @@ exports[`Storyshots actions button w/ icon button 1`] = `
 </div>
 `;
 
-exports[`Storyshots actions just icon button 1`] = `
+exports[`Storyshots Components/Tag Link 1`] = `
+<div
+  data-css-1lu7sfl=""
+>
+  <a
+    data-css-1aye8gw=""
+    href="https://duckduckgo.com/"
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      hello world
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Storyshots Components/Tag Long Text 1`] = `
+<div
+  data-css-1lu7sfl=""
+>
+  <div
+    data-css-q4lcrt=""
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      This is the string that goes on forever and always. There really isn't an end. Wow.
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Tag Long Text With Icon 1`] = `
 <div
   data-css-1lu7sfl=""
 >
@@ -67,24 +149,24 @@ exports[`Storyshots actions just icon button 1`] = `
     <span
       data-css-13bnfv4=""
     >
-      As a button
+      This is the string that goes on forever and always. There really isn't an end. Wow.
     </span>
     <div
       data-css-7dab2f=""
       onClick={[Function]}
       style={
         Object {
-          "cursor": "pointer",
+          "cursor": "default",
         }
       }
     >
       <svg
-        aria-label="close icon"
+        aria-label="placeholder icon"
         role="img"
         viewBox="0 0 24 24"
       >
         <path
-          d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
         />
       </svg>
     </div>
@@ -92,42 +174,201 @@ exports[`Storyshots actions just icon button 1`] = `
 </div>
 `;
 
-exports[`Storyshots actions link 1`] = `
+exports[`Storyshots Components/Tag Pressed 1`] = `
 <div
   data-css-1lu7sfl=""
 >
-  <a
-    data-css-1aye8gw=""
-    href="https://duckduckgo.com/"
+  <div
+    aria-pressed={true}
+    data-css-1glsily=""
   >
     <span
       data-css-1997kh1=""
     >
-      As a link
+      hello world
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Tag Pressed Button 1`] = `
+<div
+  data-css-1lu7sfl=""
+>
+  <div
+    aria-pressed={true}
+    data-css-ksyn9w=""
+    onClick={[Function]}
+    role="button"
+    tabIndex={0}
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      hello world
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Tag Pressed Link 1`] = `
+<div
+  data-css-1lu7sfl=""
+>
+  <a
+    data-css-ksyn9w=""
+    href="#"
+  >
+    <span
+      data-css-1997kh1=""
+    >
+      hello world
     </span>
   </a>
 </div>
 `;
 
-exports[`Storyshots actions link with target 1`] = `
+exports[`Storyshots Components/Tag Pressed With Icon 1`] = `
 <div
   data-css-1lu7sfl=""
 >
-  <a
-    data-css-1aye8gw=""
-    href="https://duckduckgo.com/"
-    target="_blank"
+  <div
+    aria-pressed={true}
+    data-css-1t6o9v5=""
   >
     <span
-      data-css-1997kh1=""
+      data-css-13bnfv4=""
     >
-      Opens in new window
+      hello world
     </span>
-  </a>
+    <div
+      data-css-7dab2f=""
+      onClick={[Function]}
+      style={
+        Object {
+          "cursor": "default",
+        }
+      }
+    >
+      <svg
+        aria-label="placeholder icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+        />
+      </svg>
+    </div>
+  </div>
 </div>
 `;
 
-exports[`Storyshots actions small button 1`] = `
+exports[`Storyshots Components/Tag Sizes 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <div
+    data-css-1lu7sfl=""
+  >
+    <div
+      data-css-zm8zht=""
+    >
+      <span
+        data-css-1997kh1=""
+      >
+        small
+      </span>
+    </div>
+  </div>
+  <div
+    data-css-1lu7sfl=""
+  >
+    <div
+      data-css-q4lcrt=""
+    >
+      <span
+        data-css-1997kh1=""
+      >
+        medium
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Tag Sizes With Icons 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <div
+    data-css-1lu7sfl=""
+  >
+    <div
+      data-css-1icj9y5=""
+    >
+      <span
+        data-css-13bnfv4=""
+      >
+        small
+      </span>
+      <div
+        data-css-k31qw2=""
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "default",
+          }
+        }
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-1lu7sfl=""
+  >
+    <div
+      data-css-1fdqpqx=""
+    >
+      <span
+        data-css-13bnfv4=""
+      >
+        medium
+      </span>
+      <div
+        data-css-7dab2f=""
+        onClick={[Function]}
+        style={
+          Object {
+            "cursor": "default",
+          }
+        }
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Tag Small Button 1`] = `
 <div
   data-css-1lu7sfl=""
 >
@@ -140,128 +381,39 @@ exports[`Storyshots actions small button 1`] = `
     <span
       data-css-1997kh1=""
     >
-      As a button
+      hello world
     </span>
   </div>
 </div>
 `;
 
-exports[`Storyshots error focusable 1`] = `
+exports[`Storyshots Components/Tag Style Override 1`] = `
 <div
-  data-css-mmyfiy=""
+  data-css-1lu7sfl=""
 >
   <div
-    data-css-1aye8gw=""
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
+    data-css-q4lcrt=""
+    style={
+      Object {
+        "background": "red",
+      }
+    }
   >
     <span
       data-css-1997kh1=""
     >
-      I have a problem
+      hello world
     </span>
   </div>
 </div>
 `;
 
-exports[`Storyshots icon medium 1`] = `
+exports[`Storyshots Components/Tag With Icon Button 1`] = `
 <div
   data-css-1lu7sfl=""
 >
   <div
-    data-css-1fdqpqx=""
-  >
-    <span
-      data-css-13bnfv4=""
-    >
-      With Icon
-    </span>
-    <div
-      data-css-7dab2f=""
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "default",
-        }
-      }
-    >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots icon small 1`] = `
-<div
-  data-css-1lu7sfl=""
->
-  <div
-    data-css-1icj9y5=""
-  >
-    <span
-      data-css-13bnfv4=""
-    >
-      With Icon
-    </span>
-    <div
-      data-css-k31qw2=""
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "default",
-        }
-      }
-    >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots isPressed button 1`] = `
-<div
-  data-css-1lu7sfl=""
->
-  <div
-    aria-pressed={true}
-    data-css-ksyn9w=""
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
-  >
-    <span
-      data-css-1997kh1=""
-    >
-      As a button
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots isPressed button w/ icon button 1`] = `
-<div
-  data-css-1lu7sfl=""
->
-  <div
-    aria-pressed={true}
-    data-css-1b31s64=""
+    data-css-22obee=""
     onClick={[Function]}
     role="button"
     tabIndex={0}
@@ -269,7 +421,7 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
     <span
       data-css-13bnfv4=""
     >
-      As a button
+      hello world
     </span>
     <div
       data-css-7dab2f=""
@@ -281,136 +433,15 @@ exports[`Storyshots isPressed button w/ icon button 1`] = `
       }
     >
       <svg
-        aria-label="close icon"
+        aria-label="placeholder icon"
         role="img"
         viewBox="0 0 24 24"
       >
         <path
-          d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
         />
       </svg>
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots isPressed link 1`] = `
-<div
-  data-css-1lu7sfl=""
->
-  <a
-    aria-pressed={true}
-    data-css-ksyn9w=""
-    href="https://duckduckgo.com/"
-    onClick={[Function]}
-    role="button"
-    tabIndex={0}
-  >
-    <span
-      data-css-1997kh1=""
-    >
-      As a link
-    </span>
-  </a>
-</div>
-`;
-
-exports[`Storyshots isPressed without click/href 1`] = `
-<div
-  data-css-1lu7sfl=""
->
-  <div
-    aria-pressed={true}
-    data-css-1glsily=""
-  >
-    <span
-      data-css-1997kh1=""
-    >
-      no click/href
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots long string 1`] = `
-<div
-  data-css-1lu7sfl=""
->
-  <div
-    data-css-q4lcrt=""
-  >
-    <span
-      data-css-1997kh1=""
-    >
-      This is the string that goes on forever and always. There really isn't an end. Wow.
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots long with icon 1`] = `
-<div
-  data-css-1lu7sfl=""
->
-  <div
-    data-css-1fdqpqx=""
-  >
-    <span
-      data-css-13bnfv4=""
-    >
-      This is the string that goes on forever and always. There really isn't an end. Wow.
-    </span>
-    <div
-      data-css-7dab2f=""
-      onClick={[Function]}
-      style={
-        Object {
-          "cursor": "default",
-        }
-      }
-    >
-      <svg
-        aria-label="check icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="M9.59 14.58l-2.818-2.818a.5.5 0 00-.706-.001l-.71.705a.5.5 0 00-.002.708l3.882 3.882a.5.5 0 00.708 0l9.292-9.292a.5.5 0 000-.708l-.702-.702a.5.5 0 00-.708 0L9.59 14.58z"
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots size medium 1`] = `
-<div
-  data-css-1lu7sfl=""
->
-  <div
-    data-css-q4lcrt=""
-  >
-    <span
-      data-css-1997kh1=""
-    >
-      medium
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots size small 1`] = `
-<div
-  data-css-1lu7sfl=""
->
-  <div
-    data-css-zm8zht=""
-  >
-    <span
-      data-css-1997kh1=""
-    >
-      small
-    </span>
   </div>
 </div>
 `;

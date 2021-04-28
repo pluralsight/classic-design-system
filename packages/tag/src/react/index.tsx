@@ -116,7 +116,7 @@ const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
   return (
     <Halo error={error} shape={Halo.shapes.pill} inline>
       <Wrapper
-        {...(isPressed && { 'aria-pressed': true })}
+        {...(isPressed && !isAnchor && { 'aria-pressed': true })}
         {...(Boolean(props.onClick) && { role: 'button', tabIndex: 0 })}
         {...styles.tag({
           themeName,
