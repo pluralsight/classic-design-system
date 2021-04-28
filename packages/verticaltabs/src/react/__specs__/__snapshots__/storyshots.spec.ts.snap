@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots components|VerticalTabs/Group active item 1`] = `
+exports[`Storyshots Components/VerticalTabs Active Item 1`] = `
 <div
   data-css-b1z6un=""
 >
@@ -95,7 +95,7 @@ exports[`Storyshots components|VerticalTabs/Group active item 1`] = `
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/Group basic 1`] = `
+exports[`Storyshots Components/VerticalTabs Basic 1`] = `
 <div
   data-css-b1z6un=""
 >
@@ -178,7 +178,7 @@ exports[`Storyshots components|VerticalTabs/Group basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/Group collapsible 1`] = `
+exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
 <div
   data-css-b1z6un=""
 >
@@ -289,7 +289,7 @@ exports[`Storyshots components|VerticalTabs/Group collapsible 1`] = `
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/Group collapsible open 1`] = `
+exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
 <div
   data-css-b1z6un=""
 >
@@ -400,7 +400,7 @@ exports[`Storyshots components|VerticalTabs/Group collapsible open 1`] = `
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/Group header 1`] = `
+exports[`Storyshots Components/VerticalTabs Header 1`] = `
 <div
   data-css-b1z6un=""
 >
@@ -494,7 +494,365 @@ exports[`Storyshots components|VerticalTabs/Group header 1`] = `
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
+exports[`Storyshots Components/VerticalTabs Tier 1 Active 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-active={true}
+        data-css-1dfha3z=""
+        data-css-1pa08jv=""
+      >
+        <span
+          data-css-zrqgca=""
+        >
+          <div
+            data-active={true}
+            data-css-1kqp8s2=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tier 1 Collapsible 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-css-1dfha3z=""
+        data-css-1pa08jv=""
+      >
+        <button
+          data-css-zrqgca=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-1kqp8s2=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+          <div
+            data-css-7bjcwq=""
+            data-css-k31qw2=""
+          >
+            <svg
+              aria-label="caret down icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tier 1 Header Basic 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-css-1dfha3z=""
+        data-css-1pa08jv=""
+      >
+        <span
+          data-css-zrqgca=""
+        >
+          <div
+            data-css-1kqp8s2=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tier 1 Header Button 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-css-1dfha3z=""
+        data-css-1pa08jv=""
+      >
+        <button
+          data-css-zrqgca=""
+          onClick={[Function]}
+        >
+          <div
+            data-css-1kqp8s2=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tier 1 Header Link 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-css-1dfha3z=""
+        data-css-1pa08jv=""
+      >
+        <a
+          data-css-zrqgca=""
+          href="href"
+        >
+          <div
+            data-css-1kqp8s2=""
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="placeholder icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+              />
+            </svg>
+          </div>
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tier 2 Active 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-active={true}
+        data-css-1pa08jv=""
+        data-css-1xd3fna=""
+      >
+        <span>
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tier 2 Basic 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-css-1pa08jv=""
+        data-css-1xd3fna=""
+      >
+        <span>
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tier 2 Header Basic 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-css-1pa08jv=""
+        data-css-1xd3fna=""
+      >
+        <span
+          icon={<PlaceholderIcon />}
+        >
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+        </span>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tier 2 Header Button 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-css-1pa08jv=""
+        data-css-1xd3fna=""
+      >
+        <button
+          icon={<PlaceholderIcon />}
+          onClick={[Function]}
+        >
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+        </button>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tier 2 Header Link 1`] = `
+<div
+  data-css-b1z6un=""
+>
+  <ul
+    data-css-15hj73r=""
+  >
+    <li>
+      <div
+        data-css-1pa08jv=""
+        data-css-1xd3fna=""
+      >
+        <a
+          href="#"
+          icon={<PlaceholderIcon />}
+        >
+          <span
+            data-css-1mxrpw9=""
+          >
+            text here
+          </span>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Storyshots Components/VerticalTabs Tiers 1`] = `
 <div
   data-css-b1z6un=""
 >
@@ -648,169 +1006,186 @@ exports[`Storyshots components|VerticalTabs/Group tiers 1`] = `
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/Tier1 active 1`] = `
+exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
 <div
   data-css-b1z6un=""
 >
   <ul
     data-css-15hj73r=""
   >
-    <li>
-      <div
-        data-active={true}
-        data-css-1dfha3z=""
-        data-css-1pa08jv=""
+    <li
+      data-css-1268me8=""
+    >
+      <h2
+        data-css-1972lph=""
       >
-        <span
-          data-css-zrqgca=""
-        >
-          <div
-            data-active={true}
-            data-css-1kqp8s2=""
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="placeholder icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-              />
-            </svg>
-          </div>
+        <div>
           <span
             data-css-1mxrpw9=""
           >
-            text here
+            Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
           </span>
-        </span>
-      </div>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots components|VerticalTabs/Tier1 basic 1`] = `
-<div
-  data-css-b1z6un=""
->
-  <ul
-    data-css-15hj73r=""
-  >
-    <li>
-      <div
-        data-css-1dfha3z=""
-        data-css-1pa08jv=""
+        </div>
+      </h2>
+      <ul
+        data-css-gkw1j5=""
       >
-        <span
-          data-css-zrqgca=""
-        >
+        <li>
           <div
-            data-css-1kqp8s2=""
-            data-css-7dab2f=""
+            data-css-1dfha3z=""
+            data-css-1pa08jv=""
           >
-            <svg
-              aria-label="placeholder icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <span
+              data-css-zrqgca=""
             >
-              <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-              />
-            </svg>
+              <span
+                data-css-1mxrpw9=""
+              >
+                Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+              </span>
+            </span>
           </div>
-          <span
-            data-css-1mxrpw9=""
+          <ul
+            data-css-gkw1j5=""
           >
-            text here
-          </span>
-        </span>
-      </div>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div
+            data-css-1dfha3z=""
+            data-css-1pa08jv=""
+          >
+            <span
+              data-css-zrqgca=""
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="placeholder icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span
+                data-css-1mxrpw9=""
+              >
+                Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+              </span>
+            </span>
+          </div>
+          <ul
+            data-css-gkw1j5=""
+          >
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots components|VerticalTabs/Tier1 button 1`] = `
-<div
-  data-css-b1z6un=""
->
-  <ul
-    data-css-15hj73r=""
-  >
-    <li>
-      <div
-        data-css-1dfha3z=""
-        data-css-1pa08jv=""
+    <div>
+      <h2
+        data-css-1972lph=""
       >
         <button
-          data-css-zrqgca=""
+          aria-label="Collapse"
+          data-css-h54kwj=""
           onClick={[Function]}
         >
-          <div
-            data-css-1kqp8s2=""
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="placeholder icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-              />
-            </svg>
-          </div>
           <span
             data-css-1mxrpw9=""
           >
-            text here
-          </span>
-        </button>
-      </div>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots components|VerticalTabs/Tier1 collapsible 1`] = `
-<div
-  data-css-b1z6un=""
->
-  <ul
-    data-css-15hj73r=""
-  >
-    <li>
-      <div
-        data-css-1dfha3z=""
-        data-css-1pa08jv=""
-      >
-        <button
-          data-css-zrqgca=""
-          onClick={[Function]}
-        >
-          <div
-            data-css-1kqp8s2=""
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="placeholder icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-              />
-            </svg>
-          </div>
-          <span
-            data-css-1mxrpw9=""
-          >
-            text here
+            Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
           </span>
           <div
-            data-css-7bjcwq=""
+            data-css-1rikgj2=""
             data-css-k31qw2=""
           >
             <svg
@@ -824,178 +1199,158 @@ exports[`Storyshots components|VerticalTabs/Tier1 collapsible 1`] = `
             </svg>
           </div>
         </button>
-      </div>
+      </h2>
       <ul
         aria-hidden={false}
-        data-css-gkw1j5=""
-        data-css-jlpnjv=""
+        data-css-1y8i23u=""
       >
-        <div
-          data-css-kiwo0=""
-        />
-      </ul>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots components|VerticalTabs/Tier1 link 1`] = `
-<div
-  data-css-b1z6un=""
->
-  <ul
-    data-css-15hj73r=""
-  >
-    <li>
-      <div
-        data-css-1dfha3z=""
-        data-css-1pa08jv=""
-      >
-        <a
-          data-css-zrqgca=""
-          href="#"
-        >
+        <li>
           <div
-            data-css-1kqp8s2=""
-            data-css-7dab2f=""
+            data-css-1dfha3z=""
+            data-css-1pa08jv=""
           >
-            <svg
-              aria-label="placeholder icon"
-              role="img"
-              viewBox="0 0 24 24"
+            <span
+              data-css-zrqgca=""
             >
-              <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-              />
-            </svg>
+              <span
+                data-css-1mxrpw9=""
+              >
+                Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+              </span>
+            </span>
           </div>
-          <span
-            data-css-1mxrpw9=""
+          <ul
+            data-css-gkw1j5=""
           >
-            text here
-          </span>
-        </a>
-      </div>
-    </li>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <div
+            data-css-1dfha3z=""
+            data-css-1pa08jv=""
+          >
+            <span
+              data-css-zrqgca=""
+            >
+              <div
+                data-css-1kqp8s2=""
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="placeholder icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  />
+                </svg>
+              </div>
+              <span
+                data-css-1mxrpw9=""
+              >
+                Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+              </span>
+            </span>
+          </div>
+          <ul
+            data-css-gkw1j5=""
+          >
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div
+                data-css-1pa08jv=""
+                data-css-1xd3fna=""
+              >
+                <span>
+                  <span
+                    data-css-1mxrpw9=""
+                  >
+                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
+                  </span>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </ul>
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/Tier2 active 1`] = `
+exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
 <div
-  data-css-b1z6un=""
->
-  <ul
-    data-css-15hj73r=""
-  >
-    <li>
-      <div
-        data-active={true}
-        data-css-1pa08jv=""
-        data-css-1xd3fna=""
-      >
-        <span>
-          <span
-            data-css-1mxrpw9=""
-          >
-            text here
-          </span>
-        </span>
-      </div>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots components|VerticalTabs/Tier2 basic 1`] = `
-<div
-  data-css-b1z6un=""
->
-  <ul
-    data-css-15hj73r=""
-  >
-    <li>
-      <div
-        data-css-1pa08jv=""
-        data-css-1xd3fna=""
-      >
-        <span>
-          <span
-            data-css-1mxrpw9=""
-          >
-            text here
-          </span>
-        </span>
-      </div>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots components|VerticalTabs/Tier2 button 1`] = `
-<div
-  data-css-b1z6un=""
->
-  <ul
-    data-css-15hj73r=""
-  >
-    <li>
-      <div
-        data-css-1pa08jv=""
-        data-css-1xd3fna=""
-      >
-        <button
-          onClick={[Function]}
-        >
-          <span
-            data-css-1mxrpw9=""
-          >
-            text here
-          </span>
-        </button>
-      </div>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots components|VerticalTabs/Tier2 link 1`] = `
-<div
-  data-css-b1z6un=""
->
-  <ul
-    data-css-15hj73r=""
-  >
-    <li>
-      <div
-        data-css-1pa08jv=""
-        data-css-1xd3fna=""
-      >
-        <a
-          href="#"
-        >
-          <span
-            data-css-1mxrpw9=""
-          >
-            text here
-          </span>
-        </a>
-      </div>
-    </li>
-  </ul>
-</div>
-`;
-
-exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
-<div
-  style={
-    Object {
-      "display": "flex",
-      "height": "100%",
-      "justifyContent": "start",
-      "width": "100%",
-    }
-  }
+  data-css-25w6jn=""
 >
   <div
     onMouseEnter={[Function]}
@@ -1295,16 +1650,9 @@ exports[`Storyshots components|VerticalTabs/examples Admin Tools 1`] = `
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
+exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
 <div
-  style={
-    Object {
-      "display": "flex",
-      "height": "100%",
-      "justifyContent": "start",
-      "width": "100%",
-    }
-  }
+  data-css-25w6jn=""
 >
   <div
     style={
@@ -1745,16 +2093,9 @@ exports[`Storyshots components|VerticalTabs/examples Design System 1`] = `
 </div>
 `;
 
-exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
+exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
 <div
-  style={
-    Object {
-      "display": "flex",
-      "height": "100%",
-      "justifyContent": "start",
-      "width": "100%",
-    }
-  }
+  data-css-25w6jn=""
 >
   <div
     onMouseEnter={[Function]}
@@ -2271,347 +2612,5 @@ exports[`Storyshots components|VerticalTabs/examples FLOW 1`] = `
       </li>
     </ul>
   </div>
-</div>
-`;
-
-exports[`Storyshots components|VerticalTabs/truncation basic 1`] = `
-<div
-  data-css-b1z6un=""
->
-  <ul
-    data-css-15hj73r=""
-  >
-    <li
-      data-css-1268me8=""
-    >
-      <h2
-        data-css-1972lph=""
-      >
-        <div>
-          <span
-            data-css-1mxrpw9=""
-          >
-            Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-          </span>
-        </div>
-      </h2>
-      <ul
-        data-css-gkw1j5=""
-      >
-        <li>
-          <div
-            data-css-1dfha3z=""
-            data-css-1pa08jv=""
-          >
-            <span
-              data-css-zrqgca=""
-            >
-              <span
-                data-css-1mxrpw9=""
-              >
-                Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-              </span>
-            </span>
-          </div>
-          <ul
-            data-css-gkw1j5=""
-          >
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <div
-            data-css-1dfha3z=""
-            data-css-1pa08jv=""
-          >
-            <span
-              data-css-zrqgca=""
-            >
-              <div
-                data-css-1kqp8s2=""
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="placeholder icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-                  />
-                </svg>
-              </div>
-              <span
-                data-css-1mxrpw9=""
-              >
-                Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-              </span>
-            </span>
-          </div>
-          <ul
-            data-css-gkw1j5=""
-          >
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <div>
-      <h2
-        data-css-1972lph=""
-      >
-        <button
-          aria-label="Collapse"
-          data-css-h54kwj=""
-          onClick={[Function]}
-        >
-          <span
-            data-css-1mxrpw9=""
-          >
-            Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-          </span>
-          <div
-            data-css-1rikgj2=""
-            data-css-k31qw2=""
-          >
-            <svg
-              aria-label="caret down icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-              />
-            </svg>
-          </div>
-        </button>
-      </h2>
-      <ul
-        aria-hidden={false}
-        data-css-1y8i23u=""
-      >
-        <li>
-          <div
-            data-css-1dfha3z=""
-            data-css-1pa08jv=""
-          >
-            <span
-              data-css-zrqgca=""
-            >
-              <span
-                data-css-1mxrpw9=""
-              >
-                Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-              </span>
-            </span>
-          </div>
-          <ul
-            data-css-gkw1j5=""
-          >
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <div
-            data-css-1dfha3z=""
-            data-css-1pa08jv=""
-          >
-            <span
-              data-css-zrqgca=""
-            >
-              <div
-                data-css-1kqp8s2=""
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="placeholder icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
-                  />
-                </svg>
-              </div>
-              <span
-                data-css-1mxrpw9=""
-              >
-                Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-              </span>
-            </span>
-          </div>
-          <ul
-            data-css-gkw1j5=""
-          >
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-            <li>
-              <div
-                data-css-1pa08jv=""
-                data-css-1xd3fna=""
-              >
-                <span>
-                  <span
-                    data-css-1mxrpw9=""
-                  >
-                    Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
-                  </span>
-                </span>
-              </div>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </ul>
 </div>
 `;

@@ -3,7 +3,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import Icon from '../index'
-import * as Icons from '../icons/index'
+import * as Icons from '../icons'
 
 const glamor = glamorDefault || glamorExports
 

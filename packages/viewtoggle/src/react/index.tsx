@@ -180,7 +180,7 @@ const Option = React.forwardRef<HTMLButtonElement, OptionProps>(
     return (
       <OptionButton
         active={active}
-        aria-selected={active}
+        aria-checked={active}
         onClick={handleClick}
         ref={ref}
         role="radio"

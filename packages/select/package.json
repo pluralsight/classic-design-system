@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-select",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "description": "Select UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -36,7 +36,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.1.0",
-    "@pluralsight/ps-design-system-menu": "^3.0.0",
+    "@pluralsight/ps-design-system-menu": "^3.0.2",
     "@pluralsight/ps-design-system-util": "^9.1.0"
   },
   "peerDependencies": {
@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.1.0",
-    "@pluralsight/ps-design-system-position": "^8.1.0",
+    "@pluralsight/ps-design-system-position": "^8.1.2",
     "@pluralsight/ps-design-system-storybook-preset": "^0.6.0"
   }
 }

@@ -1,13 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <g fill="none" fill-rule="evenodd">
-    <polyline stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="25.595 33 18 37.17 25.595 41.861"/>
-    <polyline stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" points="39.405 33 47 37.17 39.405 41.861"/>
-    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M36,30 L29,46"/>
-    <rect width="48.633" height="48" x="8" y="8" stroke="currentColor" stroke-width="2" rx="3"/>
-    <path stroke="currentColor" stroke-width="2" d="M8,20 L56.1013,20"/>
-    <rect width="49.367" height="12.127" x="8" y="9" fill="currentColor" opacity=".2"/>
-    <circle cx="14" cy="14" r="2" stroke="currentColor" stroke-width="2"/>
-    <circle cx="22" cy="14" r="2" stroke="currentColor" stroke-width="2"/>
-    <circle cx="30" cy="14" r="2" stroke="currentColor" stroke-width="2"/>
-  </g>
-</svg>
+<svg fill="none" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="m8 9h48v12h-48z" fill="currentColor" fill-opacity=".2"/><g stroke="currentColor" stroke-width="2"><path d="m25.5949 33-7.5949 4.1698 7.5949 4.691" stroke-linecap="round" stroke-linejoin="round"/><path d="m39.4051 33 7.5949 4.1698-7.5949 4.691" stroke-linecap="round" stroke-linejoin="round"/><path d="m36 30-7 16" stroke-linecap="round"/><rect height="48" rx="3" width="48.6329" x="8" y="8"/><path d="m8 20h48.1013"/><circle cx="14" cy="14" r="2"/><circle cx="22" cy="14" r="2"/><circle cx="30" cy="14" r="2"/></g></svg>

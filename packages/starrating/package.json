@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-starrating",
-  "version": "10.1.0",
+  "version": "10.1.2",
   "description": "Design System component for star rating ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -38,7 +38,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.1.0",
-    "@pluralsight/ps-design-system-icon": "^23.1.0",
+    "@pluralsight/ps-design-system-icon": "^23.1.2",
     "@pluralsight/ps-design-system-util": "^9.1.0"
   },
   "peerDependencies": {

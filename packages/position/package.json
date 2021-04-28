@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-position",
-  "version": "8.1.0",
+  "version": "8.1.2",
   "description": "Position UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.1.0",
-    "@pluralsight/ps-design-system-icon": "^23.1.0",
+    "@pluralsight/ps-design-system-icon": "^23.1.2",
     "@pluralsight/ps-design-system-storybook-preset": "^0.6.0",
     "@pluralsight/ps-design-system-tooltip": "^8.1.0"
   }

@@ -6,8 +6,8 @@ import {
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css/index'
-import { colors, sizes } from '../vars/index'
+import stylesheet from '../css'
+import { colors, sizes } from '../vars'
 
 const glamor = glamorDefault || glamorExports
 

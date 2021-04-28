@@ -93,19 +93,23 @@ Object.values(EmptyState.sizes).forEach(size => {
 
 Object.values(EmptyState.Illustration.names).forEach(name => {
   storiesOf('EmptyState/illustrations/large', module).add(name, () => (
-    <EmptyState
-      heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
-      illustration={<EmptyState.Illustration name={name} />}
-      size={EmptyState.sizes.large}
-    />
+    <div style={{ background: 'black' }}>
+      <EmptyState
+        heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
+        illustration={<EmptyState.Illustration name={name} />}
+        size={EmptyState.sizes.large}
+      />
+    </div>
   ))
 
   storiesOf('EmptyState/illustrations/small', module).add(name, () => (
-    <EmptyState
-      heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
-      illustration={<EmptyState.Illustration name={name} />}
-      size={EmptyState.sizes.small}
-    />
+    <div style={{ background: 'black' }}>
+      <EmptyState
+        heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
+        illustration={<EmptyState.Illustration name={name} />}
+        size={EmptyState.sizes.small}
+      />
+    </div>
   ))
 })
 
