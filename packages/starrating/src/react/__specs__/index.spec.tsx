@@ -1,17 +1,13 @@
-import { render } from '@testing-library/react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { render, screen } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import StarRating from '../index'
+import * as stories from '../__stories__/index.story'
 
 describe('StarRating', () => {
-  function collectStarNodes(container: Element) {
-    const nodeList = container.querySelectorAll('span, button')
-
-    return [...((nodeList as unknown) as Element[])].filter(node => {
-      const label = node.getAttribute('title')
-      return label && label.includes('Rate')
-    })
-  }
+  const cases = convertStoriesToJestCases(stories)
 
   it('forwards refs', () => {
     const ref = React.createRef<HTMLDivElement>()
@@ -20,37 +16,33 @@ describe('StarRating', () => {
     expect(ref.current).not.toBeNull()
   })
 
-  describe('with default props', () => {
-    it('renders stars as NOT interactive(span NOT button)', () => {
-      const { container } = render(<StarRating />)
-      const stars = collectStarNodes(container)
-      expect.assertions(5)
-
-      stars.forEach(node => {
-        expect(node.tagName.toLowerCase()).toBe('span')
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container, {
+        rules: {
+          'duplicate-id': { enabled: false }
+        }
       })
-    })
 
-    it('hides the individual stars from screen readers', () => {
-      const { container } = render(<StarRating />)
-      const stars = collectStarNodes(container)
-
-      stars.forEach(node => {
-        expect(node.getAttribute('aria-hidden')).toBe('true')
-      })
+      expect(results).toHaveNoViolations()
     })
   })
 
-  describe('with onChange prop', () => {
-    it('renders stars as interactive(button NOT span)', () => {
-      const handleChange = jest.fn()
-      const { container } = render(<StarRating onChange={handleChange} />)
-      const stars = collectStarNodes(container)
-      expect.assertions(5)
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-      stars.forEach(node => {
-        expect(node.tagName.toLowerCase()).toBe('button')
-      })
+    it('forwards className', () => {
+      render(
+        <Basic
+          {...(Basic.args as any)}
+          data-testid="undertest"
+          className="testclass"
+        />
+      )
+
+      const el = screen.getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
     })
   })
 })

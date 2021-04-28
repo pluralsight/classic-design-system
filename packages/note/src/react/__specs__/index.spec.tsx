@@ -1,9 +1,18 @@
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { fireEvent, render, screen } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
-import { fireEvent, render, waitForElement } from '@testing-library/react'
 
 import Note from '../index'
+import * as stories from '../__stories__/index.story'
 
 describe('Note', () => {
+  const cases = convertStoriesToJestCases(stories)
+
+  it.todo('forwards ref')
+
+  it.todo('supports polymorphism')
+
   it('exposes an Action Component', () => {
     expect(Note).toHaveProperty('Action')
   })
@@ -12,46 +21,65 @@ describe('Note', () => {
     expect(Note).toHaveProperty('List')
   })
 
-  it('renders the message', () => {
-    const { getByTestId } = render(
-      <Note message={<div data-testid="the-message" />} />
-    )
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
 
-    expect(getByTestId('the-message')).toBeInTheDocument()
+      expect(results).toHaveNoViolations()
+    })
   })
 
-  it('renders metadata', () => {
-    const { container } = render(
-      <Note message="message" metadata={['meta1', 'meta2']} />
-    )
+  describe('Basic story', () => {
+    const { Basic } = stories
 
-    expect(container).toHaveTextContent('meta1')
-    expect(container).toHaveTextContent('meta2')
-  })
+    it('forwards className', () => {
+      render(
+        <Basic
+          {...(Basic.args as any)}
+          data-testid="undertest"
+          className="testclass"
+        />
+      )
 
-  it('supports onMouseOver prop', async () => {
-    const spy = jest.fn()
+      const el = screen.getByTestId('undertest')
+      expect(el).toHaveClass('testclass')
+    })
 
-    const { getByTestId } = render(
-      <Note data-testid="note" message="message" onMouseOver={spy} />
-    )
+    it('supports onMouseOver prop', () => {
+      const onMouseOver = jest.fn()
 
-    const el = await waitForElement(() => getByTestId('note'))
-    fireEvent.mouseOver(el)
+      render(
+        <Basic
+          {...(Basic.args as any)}
+          data-testid="undertest"
+          className="testclass"
+          onMouseOver={onMouseOver}
+        />
+      )
 
-    expect(spy).toHaveBeenCalled()
-  })
+      const el = screen.getByTestId('undertest')
+      fireEvent.mouseOver(el)
 
-  it('supports onMouseOut prop', async () => {
-    const spy = jest.fn()
+      expect(onMouseOver).toHaveBeenCalled()
+    })
 
-    const { getByTestId } = render(
-      <Note data-testid="note" message="message" onMouseOut={spy} />
-    )
+    it('supports onMouseOut prop', () => {
+      const onMouseOut = jest.fn()
 
-    const el = await waitForElement(() => getByTestId('note'))
-    fireEvent.mouseOut(el)
+      render(
+        <Basic
+          {...(Basic.args as any)}
+          data-testid="undertest"
+          className="testclass"
+          onMouseOut={onMouseOut}
+        />
+      )
 
-    expect(spy).toHaveBeenCalled()
+      const el = screen.getByTestId('undertest')
+      fireEvent.mouseOut(el)
+
+      expect(onMouseOut).toHaveBeenCalled()
+    })
   })
 })
