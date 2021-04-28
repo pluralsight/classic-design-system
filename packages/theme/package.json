@@ -7,28 +7,23 @@
   "author": "jaketrent",
   "keywords": [],
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.mjs",
+  "module": "dist/esm/index.js",
   "scripts": {
     "build": "run-s build:esm build:cjs",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
-    "build:esm": "run-s compile:esm rewrite:esm",
     "build:watch": "yarn build:esm --watch",
-    "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
-    "rewrite:esm": "tsc-esm --project tsconfig.build.json",
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "test": "jest",
     "test:watch": "yarn test --watchAll"
   },
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.mjs",
-      "require": "./dist/cjs/index.js",
-      "node": "./dist/cjs/index.js",
-      "default": "./dist/cjs/index.js"
-    },
-    "./package.json": "./package.json"
-  },
   "sideEffects": false,
   "types": "dist/esm/index.d.ts",
+  "files": [
+    "src/*",
+    "dist/*",
+    "!src/*/__stories__/*",
+    "!src/*/__specs__/*"
+  ],
   "dependencies": {
     "@pluralsight/ps-design-system-util": "^9.1.0",
     "hoist-non-react-statics": "^3.3.0"
