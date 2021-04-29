@@ -8,6 +8,6 @@ jest.mock('../__stories__/focusable', () => (props: HTMLPropsFor<'div'>) => (
 ))
 
 initStoryshots({
-  configPath: path.resolve(__dirname, '../../../.storybook-storyshots'),
+  configPath: path.resolve(__dirname, '../../../.storybook'),
   framework: 'react'
 })
