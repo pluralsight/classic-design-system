@@ -7,7 +7,7 @@ import {
 import {
   ValueOf,
   HTMLPropsFor,
-  forwardRefWithAsAndStatics
+  forwardRefWithStatics
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -42,20 +42,20 @@ const styles = {
       stylesheet[`.psds-text-input__field--appearance-${appearance}`],
       stylesheet[`.psds-text-input__field.psds-theme--${themeName}`],
       stylesheet[
-        `.psds-text-input__field--appearance-${appearance}.psds-theme--${themeName}`
+      `.psds-text-input__field--appearance-${appearance}.psds-theme--${themeName}`
       ],
       Boolean(fieldAfter) && stylesheet[`.psds-text-input__field--w-after`],
       small && stylesheet['.psds-text-input__field.psds-text-input--small'],
       Boolean(icon) &&
-        small &&
-        stylesheet[
-          `.psds-text-input__field--icon-align-${iconAlign}.psds-text-input--small`
-        ],
+      small &&
+      stylesheet[
+      `.psds-text-input__field--icon-align-${iconAlign}.psds-text-input--small`
+      ],
       Boolean(icon) &&
-        !small &&
-        stylesheet[`.psds-text-input__field--icon-align-${iconAlign}`],
+      !small &&
+      stylesheet[`.psds-text-input__field--icon-align-${iconAlign}`],
       error &&
-        stylesheet[`.psds-text-input__field--error.psds-theme--${themeName}`]
+      stylesheet[`.psds-text-input__field--error.psds-theme--${themeName}`]
     )
   },
   fieldContainer: () =>
@@ -83,7 +83,7 @@ const styles = {
     glamor.css(
       stylesheet['.psds-text-input__icon'],
       Boolean(icon) &&
-        stylesheet[`.psds-text-input__icon--icon-align-${iconAlign}`],
+      stylesheet[`.psds-text-input__icon--icon-align-${iconAlign}`],
       stylesheet[`.psds-text-input__icon--appearance-${appearance}`],
       stylesheet[`.psds-text-input__icon.psds-theme--${themeName}`]
     ),
@@ -126,9 +126,9 @@ export interface TextInputProps extends Omit<HTMLPropsFor<'input'>, 'size'> {
   value?: React.ReactText
 }
 
-const TextInput = forwardRefWithAsAndStatics<
+const TextInput = forwardRefWithStatics<
   TextInputProps,
-  'input',
+  HTMLInputElement,
   TextInputStatics
 >(
   (
@@ -202,7 +202,4 @@ TextInput.appearances = vars.appearances
 TextInput.iconAligns = vars.iconAligns
 TextInput.sizes = vars.sizes
 
-export const appearances = vars.appearances
-export const sizes = vars.sizes
-export const iconAligns = vars.iconAligns
 export default TextInput

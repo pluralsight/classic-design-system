@@ -7,7 +7,7 @@ import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput, {
   TextInputProps
 } from '@pluralsight/ps-design-system-textinput'
-import { RefFor, forwardRefWithAs } from '@pluralsight/ps-design-system-util'
+import { RefFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index'
 
@@ -28,7 +28,7 @@ export interface SearchInputProps extends TextInputProps {
   onChange?: (evt: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const SearchInput = forwardRefWithAs<SearchInputProps, 'input'>(
+const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
   ({ loading = false, onClear, ...rest }, forwardedRef) => {
     const isClearable = typeof onClear === 'function'
     const hasVisibleValue = !!rest.value && String(rest.value).length > 0

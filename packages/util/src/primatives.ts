@@ -45,7 +45,7 @@ export type PropsFromAs<CompType extends As, ComponentProps> = (PropsWithAs<
 export interface FunctionComponentWithAs<
   DefaultComponentType extends As,
   ComponentProps
-> {
+  > {
   /**
    * Inherited from React.FunctionComponent with modifications to support `as`
    */
@@ -72,7 +72,7 @@ export interface FunctionComponentWithAs<
 interface ExoticComponentWithAs<
   DefaultComponentType extends As,
   ComponentProps
-> {
+  > {
   /**
    * **NOTE**: Exotic components are not callable.
    * Inherited from React.ExoticComponent with modifications to support `as`
@@ -95,7 +95,7 @@ interface ExoticComponentWithAs<
 interface NamedExoticComponentWithAs<
   DefaultComponentType extends As,
   ComponentProps
-> extends ExoticComponentWithAs<DefaultComponentType, ComponentProps> {
+  > extends ExoticComponentWithAs<DefaultComponentType, ComponentProps> {
   /**
    * Inherited from React.NamedExoticComponent
    */
@@ -105,7 +105,7 @@ interface NamedExoticComponentWithAs<
 export interface ForwardRefExoticComponentWithAs<
   DefaultComponentType extends As,
   ComponentProps
-> extends NamedExoticComponentWithAs<DefaultComponentType, ComponentProps> {
+  > extends NamedExoticComponentWithAs<DefaultComponentType, ComponentProps> {
   /**
    * Inherited from React.ForwardRefExoticComponent
    * Will show `ForwardRef(${Component.displayName || Component.name})` in devtools by default,
@@ -120,32 +120,32 @@ export interface ForwardRefExoticComponentWithAs<
 export interface MemoExoticComponentWithAs<
   DefaultComponentType extends As,
   ComponentProps
-> extends NamedExoticComponentWithAs<DefaultComponentType, ComponentProps> {
+  > extends NamedExoticComponentWithAs<DefaultComponentType, ComponentProps> {
   readonly type: DefaultComponentType extends ComponentType
-    ? DefaultComponentType
-    : FunctionComponentWithAs<DefaultComponentType, ComponentProps>
+  ? DefaultComponentType
+  : FunctionComponentWithAs<DefaultComponentType, ComponentProps>
 }
 
 export interface ForwardRefWithAsRenderFunction<
   DefaultComponentType extends As,
   ComponentProps = Record<string, any>
-> {
+  > {
   (
     props: PropsWithChildren<PropsFromAs<DefaultComponentType, ComponentProps>>,
     ref:
       | ((
-          instance:
-            | (DefaultComponentType extends keyof ElementTagNameMap
-                ? ElementTagNameMap[DefaultComponentType]
-                : any)
-            | null
-        ) => void)
-      | MutableRefObject<
+        instance:
           | (DefaultComponentType extends keyof ElementTagNameMap
-              ? ElementTagNameMap[DefaultComponentType]
-              : any)
+            ? ElementTagNameMap[DefaultComponentType]
+            : any)
           | null
-        >
+      ) => void)
+      | MutableRefObject<
+        | (DefaultComponentType extends keyof ElementTagNameMap
+          ? ElementTagNameMap[DefaultComponentType]
+          : any)
+        | null
+      >
       | null
   ): ReactElement | null
   displayName?: string
@@ -185,12 +185,10 @@ export function forwardRefWithAsAndStatics<
 
 export function forwardRefWithStatics<
   Props,
-  TagName = 'div',
+  IntrinsicElement = HTMLDivElement,
   Statics = unknown
->(render: ForwardRefRenderFunction<HTMLDivElement, Props>) {
-  return React.forwardRef(render) as ForwardRefExoticComponent<
-    PropsWithoutRef<Props> & RefAttributes<TagName>
-  > &
+>(render: ForwardRefRenderFunction<IntrinsicElement, Props>) {
+  return React.forwardRef(render) as ForwardRefExoticComponent<Props> &
     Statics
 }
 
