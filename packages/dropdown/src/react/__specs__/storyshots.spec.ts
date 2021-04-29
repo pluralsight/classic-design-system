@@ -8,7 +8,7 @@ const createNodeMock = () => {
 }
 
 initStoryshots({
-  configPath: path.resolve(__dirname, '../../../.storybook-storyshots'),
+  configPath: path.resolve(__dirname, '../../../.storybook'),
   framework: 'react',
   test: snapshotWithOptions({ createNodeMock })
 })
