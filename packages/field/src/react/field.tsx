@@ -25,7 +25,7 @@ const styles = {
     glamor.compose(
       glamor.css(stylesheet['.psds-field__container']),
       opts.disabled &&
-      glamor.css(stylesheet['.psds-field__container--disabled']),
+        glamor.css(stylesheet['.psds-field__container--disabled']),
       opts.error && glamor.css(stylesheet['.psds-field__container--error'])
     ),
   field: (opts: { hasPrefix: boolean; hasSuffix: boolean; size?: string }) =>
