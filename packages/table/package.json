@@ -6,6 +6,12 @@
   "repository": "pluralsight/design-system",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "files": [
+    "src/*",
+    "dist/*",
+    "!src/*/__stories__/*",
+    "!src/*/__specs__/*"
+  ],
   "publishConfig": {
     "access": "public"
   },
