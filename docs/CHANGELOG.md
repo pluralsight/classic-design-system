@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.25.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.25.5...@pluralsight/ps-design-system-docs@0.25.6) (2021-04-30)
+
+
+### Bug Fixes
+
+* **docs:** options is required in typeahead ([#1736](https://github.com/pluralsight/design-system/issues/1736)) ([14342f1](https://github.com/pluralsight/design-system/commit/14342f1f34badb9089ea82bcb0ac80c443a0a406))
+
+
+
+
+
 ## [0.25.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.25.4...@pluralsight/ps-design-system-docs@0.25.5) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs
