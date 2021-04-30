@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@10.1.2...@pluralsight/ps-design-system-tag@10.1.3) (2021-04-30)
+
+
+### Bug Fixes
+
+* **tag:** use pressed aria appropriately ([059fb6b](https://github.com/pluralsight/design-system/commit/059fb6b1798ccbb095ceebfa3096e8e21c5097c5))
+
+
+
+
+
 ## [10.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@10.1.1...@pluralsight/ps-design-system-tag@10.1.2) (2021-04-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tag

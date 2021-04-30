@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@9.1.0...@pluralsight/ps-design-system-storybook-addon-theme@9.1.1) (2021-04-30)
+
+
+### Bug Fixes
+
+* makes storybook theme addon work ([#1723](https://github.com/pluralsight/design-system/issues/1723)) ([fc3b845](https://github.com/pluralsight/design-system/commit/fc3b8456ec4b1b16d08087c64a96b5ff846555ec))
+
+
+
+
+
 # [9.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-addon-theme@9.0.1...@pluralsight/ps-design-system-storybook-addon-theme@9.1.0) (2021-04-20)
 
 

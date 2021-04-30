@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-steps",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Steps UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -29,8 +29,8 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^8.1.0",
-    "@pluralsight/ps-design-system-util": "^9.1.0"
+    "@pluralsight/ps-design-system-core": "^8.1.1",
+    "@pluralsight/ps-design-system-util": "^9.1.1"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^4.0.0",
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.1.0",
-    "@pluralsight/ps-design-system-circularprogress": "^9.1.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.6.0"
+    "@pluralsight/ps-design-system-circularprogress": "^9.1.1",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.6.1"
   }
 }
