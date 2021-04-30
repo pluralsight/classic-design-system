@@ -33,10 +33,10 @@ For a more subtle look, use `subtle` appearance. So subtle.
 ```typescript startExpanded=false
 import Typeahead from '@pluralsight/ps-design-system-typeahead'
 import React from 'react'
-
+const options = [{label: 'Beginner', value: 'Beginner'}, {label: 'Intermediate', value: 'Intermediate'}, {label: 'Advanced', value: 'Advanced'}]
 const Example: React.FC = props => {
   return (
-    <Typeahead appearance={Typeahead.appearances.subtle} placeholder="Search" />
+    <Typeahead appearance={Typeahead.appearances.subtle} placeholder="Select a Level"  options={options}/>
   )
 }
 
@@ -50,12 +50,12 @@ The small typeahead is ideal for usage within table rows otherwise use the defau
 ```typescript startExpanded=false
 import Typeahead from '@pluralsight/ps-design-system-typeahead'
 import React from 'react'
-
+const options = [{label: 'Beginner', value: 'Beginner'}, {label: 'Intermediate', value: 'Intermediate'}, {label: 'Advanced', value: 'Advanced'}]
 const Example: React.FC = props => {
   return (
     <div className="example-grid--col-2">
-      <Typeahead placeholder="medium typeahead" />
-      <Typeahead placeholder="small typeahead" size={Typeahead.sizes.small} />
+      <Typeahead placeholder="medium typeahead" options={options}/>
+      <Typeahead placeholder="small typeahead" size={Typeahead.sizes.small} options={options}/>
     </div>
   )
 }
