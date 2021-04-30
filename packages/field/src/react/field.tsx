@@ -67,7 +67,7 @@ export interface FieldStatics {
   sizes: typeof sizes
 }
 
-const Field = forwardRefWithStatics<FieldProps, 'div', FieldStatics>(
+const Field = forwardRefWithStatics<FieldProps, HTMLDivElement, FieldStatics>(
   (props, forwardedRef) => {
     const {
       children,

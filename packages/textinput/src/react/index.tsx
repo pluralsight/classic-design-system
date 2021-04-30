@@ -7,7 +7,7 @@ import {
 import {
   ValueOf,
   HTMLPropsFor,
-  forwardRefWithAsAndStatics
+  forwardRefWithStatics
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -126,9 +126,9 @@ export interface TextInputProps extends Omit<HTMLPropsFor<'input'>, 'size'> {
   value?: React.ReactText
 }
 
-const TextInput = forwardRefWithAsAndStatics<
+const TextInput = forwardRefWithStatics<
   TextInputProps,
-  'input',
+  HTMLInputElement,
   TextInputStatics
 >(
   (
@@ -202,7 +202,4 @@ TextInput.appearances = vars.appearances
 TextInput.iconAligns = vars.iconAligns
 TextInput.sizes = vars.sizes
 
-export const appearances = vars.appearances
-export const sizes = vars.sizes
-export const iconAligns = vars.iconAligns
 export default TextInput

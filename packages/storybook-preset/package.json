@@ -13,15 +13,6 @@
     "build": "tsc --project tsconfig.build.json --module commonjs --target es5",
     "build:watch": "yarn build --watch"
   },
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js",
-      "node": "./dist/index.js",
-      "default": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
-  },
   "types": "dist/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-storybook-addon-center": "^5.1.0",

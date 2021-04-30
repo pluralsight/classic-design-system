@@ -185,13 +185,10 @@ export function forwardRefWithAsAndStatics<
 
 export function forwardRefWithStatics<
   Props,
-  TagName = 'div',
+  IntrinsicElement = HTMLDivElement,
   Statics = unknown
->(render: ForwardRefRenderFunction<HTMLDivElement, Props>) {
-  return React.forwardRef(render) as ForwardRefExoticComponent<
-    PropsWithoutRef<Props> & RefAttributes<TagName>
-  > &
-    Statics
+>(render: ForwardRefRenderFunction<IntrinsicElement, Props>) {
+  return React.forwardRef(render) as ForwardRefExoticComponent<Props> & Statics
 }
 
 export function memoWithAs<Props, DefaultComponentType extends As = 'div'>(

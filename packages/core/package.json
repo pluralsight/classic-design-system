@@ -7,25 +7,19 @@
   "author": "jaketrent",
   "keywords": [],
   "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.mjs",
+  "module": "dist/esm/index.js",
+  "files": [
+    "src/*",
+    "dist/*",
+    "!src/*/__stories__/*",
+    "!src/*/__specs__/*"
+  ],
   "scripts": {
     "build": "run-s build:esm build:cjs build:css",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "node ./build/index.mjs",
-    "build:esm": "run-s compile:esm rewrite:esm",
-    "compile:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
-    "rewrite:esm": "tsc-esm --project tsconfig.build.json",
+    "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "test": "tsc --noEmit --project ./tsconfig.json && jest"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/esm/index.mjs",
-      "require": "./dist/cjs/index.js",
-      "node": "./dist/cjs/index.js",
-      "style": "./dist/css/index.css",
-      "default": "./dist/cjs/index.js"
-    },
-    "./package.json": "./package.json"
   },
   "sideEffects": false,
   "style": "dist/css/index.css",

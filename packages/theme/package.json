@@ -8,6 +8,12 @@
   "keywords": [],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
+  "files": [
+    "src/*",
+    "dist/*",
+    "!src/*/__stories__/*",
+    "!src/*/__specs__/*"
+  ],
   "scripts": {
     "build": "run-s build:esm build:cjs",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
@@ -18,12 +24,6 @@
   },
   "sideEffects": false,
   "types": "dist/esm/index.d.ts",
-  "files": [
-    "src/*",
-    "dist/*",
-    "!src/*/__stories__/*",
-    "!src/*/__specs__/*"
-  ],
   "dependencies": {
     "@pluralsight/ps-design-system-util": "^9.1.0",
     "hoist-non-react-statics": "^3.3.0"
