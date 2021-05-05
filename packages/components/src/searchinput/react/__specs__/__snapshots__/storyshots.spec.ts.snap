@@ -1,0 +1,299 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/SearchInput Basic 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1kh5e1a=""
+      >
+        <input
+          data-css-7mw7i0=""
+          data-css-r2g0l1=""
+          disabled={false}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+          type="search"
+          value=""
+        />
+        <button
+          data-css-1dnyz38=""
+          data-css-ttgr6s=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-4ducb0=""
+          >
+            <div
+              data-css-k31qw2=""
+            >
+              <svg
+                aria-label="close icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-1kca8ps=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="search icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            clipRule="evenodd"
+            d="M21.353 20.648a.5.5 0 000-.708l-5.039-5.04A7.928 7.928 0 0018 10a7.948 7.948 0 00-2.344-5.656A7.942 7.942 0 0010 2a7.94 7.94 0 00-5.656 2.344A7.944 7.944 0 002 10a7.94 7.94 0 002.344 5.656A7.94 7.94 0 0010 18a7.926 7.926 0 004.9-1.685l5.04 5.04a.5.5 0 00.707 0l.706-.707zm-7.111-6.405A5.96 5.96 0 0110 16a5.959 5.959 0 01-4.242-1.757A5.958 5.958 0 014 10c0-1.602.624-3.109 1.758-4.242A5.955 5.955 0 0110 4c1.602 0 3.109.624 4.242 1.758A5.957 5.957 0 0116 10c0 1.603-.624 3.11-1.758 4.243z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/SearchInput Loading 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1kh5e1a=""
+      >
+        <input
+          data-css-7mw7i0=""
+          data-css-r2g0l1=""
+          disabled={false}
+          onChange={[Function]}
+          type="search"
+          value=""
+        />
+        <button
+          data-css-1dnyz38=""
+          data-css-ttgr6s=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-4ducb0=""
+          >
+            <div
+              data-css-k31qw2=""
+            >
+              <svg
+                aria-label="close icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-1kca8ps=""
+    >
+      <div
+        data-css-1abx40i=""
+      >
+        <div
+          aria-live="off"
+          data-css-6wu9td=""
+          role="region"
+        >
+          Loading...
+        </div>
+        <svg
+          data-css-1txt1eh=""
+          version="1.1"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="24"
+            cy="24"
+            data-css-rk8c6r=""
+            r={22}
+          />
+          <circle
+            cx="24"
+            cy="24"
+            data-css-17x5ehd=""
+            r={22}
+            strokeDasharray="138.23007675795088 138.23007675795088"
+            strokeDashoffset={103.67255756846316}
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/SearchInput No On Clear 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1c5qy71=""
+      >
+        <input
+          data-css-7mw7i0=""
+          data-css-r2g0l1=""
+          disabled={false}
+          onChange={[Function]}
+          type="search"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      data-css-1kca8ps=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="search icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            clipRule="evenodd"
+            d="M21.353 20.648a.5.5 0 000-.708l-5.039-5.04A7.928 7.928 0 0018 10a7.948 7.948 0 00-2.344-5.656A7.942 7.942 0 0010 2a7.94 7.94 0 00-5.656 2.344A7.944 7.944 0 002 10a7.94 7.94 0 002.344 5.656A7.94 7.94 0 0010 18a7.926 7.926 0 004.9-1.685l5.04 5.04a.5.5 0 00.707 0l.706-.707zm-7.111-6.405A5.96 5.96 0 0110 16a5.959 5.959 0 01-4.242-1.757A5.958 5.958 0 014 10c0-1.602.624-3.109 1.758-4.242A5.955 5.955 0 0110 4c1.602 0 3.109.624 4.242 1.758A5.957 5.957 0 0116 10c0 1.603-.624 3.11-1.758 4.243z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/SearchInput Static Value 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1kh5e1a=""
+      >
+        <input
+          data-css-7mw7i0=""
+          data-css-r2g0l1=""
+          disabled={false}
+          onChange={[Function]}
+          type="search"
+          value="Set, not updated with state"
+        />
+        <button
+          data-css-15xnn26=""
+          data-css-1dnyz38=""
+          disabled={false}
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <div
+            data-css-4ducb0=""
+          >
+            <div
+              data-css-k31qw2=""
+            >
+              <svg
+                aria-label="close icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                />
+              </svg>
+            </div>
+          </div>
+          <span
+            data-css-15b13by=""
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-1kca8ps=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="search icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            clipRule="evenodd"
+            d="M21.353 20.648a.5.5 0 000-.708l-5.039-5.04A7.928 7.928 0 0018 10a7.948 7.948 0 00-2.344-5.656A7.942 7.942 0 0010 2a7.94 7.94 0 00-5.656 2.344A7.944 7.944 0 002 10a7.94 7.94 0 002.344 5.656A7.94 7.94 0 0010 18a7.926 7.926 0 004.9-1.685l5.04 5.04a.5.5 0 00.707 0l.706-.707zm-7.111-6.405A5.96 5.96 0 0110 16a5.959 5.959 0 01-4.242-1.757A5.958 5.958 0 014 10c0-1.602.624-3.109 1.758-4.242A5.955 5.955 0 0110 4c1.602 0 3.109.624 4.242 1.758A5.957 5.957 0 0116 10c0 1.603-.624 3.11-1.758 4.243z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</label>
+`;

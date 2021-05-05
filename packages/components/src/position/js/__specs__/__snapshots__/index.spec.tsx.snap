@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`#edgeCases #above: bottomLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #above: bottomRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #above: topLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #above: topRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #aboveLeft: bottomLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #aboveLeft: bottomRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #aboveLeft: topLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #aboveLeft: topRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #aboveRight: bottomLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #aboveRight: bottomRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #aboveRight: topLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #aboveRight: topRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #below: bottomLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #below: bottomRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #below: topLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #below: topRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #belowLeft: bottomLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #belowLeft: bottomRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #belowLeft: topLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #belowLeft: topRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #belowRight: bottomLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #belowRight: bottomRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases #belowRight: topLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #belowRight: topRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases #leftOf: bottomLeft 1`] = `
+Object {
+  "left": "28px",
+  "position": "absolute",
+  "top": "400px",
+}
+`;
+
+exports[`#edgeCases #leftOf: bottomRight 1`] = `
+Object {
+  "left": "372px",
+  "position": "absolute",
+  "top": "400px",
+}
+`;
+
+exports[`#edgeCases #leftOf: topLeft 1`] = `
+Object {
+  "left": "28px",
+  "position": "absolute",
+  "top": "0px",
+}
+`;
+
+exports[`#edgeCases #leftOf: topRight 1`] = `
+Object {
+  "left": "372px",
+  "position": "absolute",
+  "top": "0px",
+}
+`;
+
+exports[`#edgeCases #rightOf: bottomLeft 1`] = `
+Object {
+  "left": "28px",
+  "position": "absolute",
+  "top": "400px",
+}
+`;
+
+exports[`#edgeCases #rightOf: bottomRight 1`] = `
+Object {
+  "left": "372px",
+  "position": "absolute",
+  "top": "400px",
+}
+`;
+
+exports[`#edgeCases #rightOf: topLeft 1`] = `
+Object {
+  "left": "28px",
+  "position": "absolute",
+  "top": "0px",
+}
+`;
+
+exports[`#edgeCases #rightOf: topRight 1`] = `
+Object {
+  "left": "372px",
+  "position": "absolute",
+  "top": "0px",
+}
+`;

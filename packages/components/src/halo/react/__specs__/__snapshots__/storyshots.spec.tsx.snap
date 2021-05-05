@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Halo Basic 1`] = `
+<div
+  data-css-ctre2o=""
+>
+  <div />
+</div>
+`;
+
+exports[`Storyshots Components/Halo Error 1`] = `
+<div
+  data-css-in6gqi=""
+>
+  <div />
+</div>
+`;
+
+exports[`Storyshots Components/Halo Gap Sizes 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <div
+    data-css-77dl98=""
+  >
+    <div>
+      default
+    </div>
+  </div>
+  <div
+    data-css-77dl98=""
+  >
+    <div>
+      small
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Halo Not Visible On Focus 1`] = `
+<div
+  data-css-rmw7at=""
+>
+  <div />
+</div>
+`;
+
+exports[`Storyshots Components/Halo Shapes 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <div
+    data-css-77dl98=""
+  >
+    <div>
+      default
+    </div>
+  </div>
+  <div
+    data-css-1jg9j68=""
+  >
+    <div>
+      pill
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Halo Visible 1`] = `
+<div
+  data-css-77dl98=""
+>
+  <div />
+</div>
+`;

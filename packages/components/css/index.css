@@ -1,0 +1,149 @@
+@import 'normalize.css';
+
+@import '@pluralsight/ps-design-system-core';
+
+@font-face {
+  font-family: 'PS TT Commons Roman';
+  src: url('https://fonts.pluralsight.com/ps-tt-commons/v1/ps-tt-commons-variable-roman.woff2')
+    format('woff-variations');
+  font-display: swap;
+  font-weight: 100 900;
+}
+@font-face {
+  font-family: 'PS TT Commons Roman';
+  src: url('https://fonts.pluralsight.com/ps-tt-commons/v1/ps-tt-commons-variable-italic.woff2')
+    format('woff-variations');
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-light.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-light-italic.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-regular.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-italic.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-medium.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DM Mono';
+  src: url('https://fonts.pluralsight.com/dm-mono/v1/dm-mono-medium-italic.ttf')
+    format('truetype');
+  font-display: swap;
+  font-weight: 500;
+  font-style: italic;
+}
+
+html {
+  box-sizing: border-box;
+  text-size-adjust: 100%;
+  font-family: var(--psTypeFontFamily);
+  font-size: 0.875em;
+  font-weight: var(--psTypeFontWeightRegular);
+  line-height: 1.71429; /* calc(var(--psTypeLineHeightStandard) / var(--psTypeFontSizeSmall)); */
+  font-feature-settings: 'tnum' on, 'lnum' on;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+hr,
+table,
+fieldset,
+figure,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--psTypeFontWeightRegular);
+}
+
+ul,
+ol,
+dd {
+  margin-left: var(--psLayoutSpacingLarge);
+  line-height: var(--psTypeLineHeightStandard);
+}
+
+ul,
+ol {
+  padding-left: 0;
+}
+
+li {
+  & > ul,
+  & > ol {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+img[width],
+img[height] {
+  max-width: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}

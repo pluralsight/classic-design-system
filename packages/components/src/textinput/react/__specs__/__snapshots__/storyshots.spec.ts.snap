@@ -1,0 +1,1192 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/TextInput Appearances 1`] = `
+<div
+  data-css-1cpmtjf=""
+>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      medium default
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      medium subtle
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-ko2l60=""
+        >
+          <input
+            data-css-7mw7i0=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      small default
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-120j51l=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      small subtle
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-pc3zzk=""
+        >
+          <input
+            data-css-7mw7i0=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
+<div
+  data-css-1cpmtjf=""
+>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      medium default
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      medium subtle
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-ko2l60=""
+        >
+          <input
+            data-css-7mw7i0=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      small default
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-120j51l=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      small subtle
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-in6gqi=""
+      >
+        <div
+          data-css-pc3zzk=""
+        >
+          <input
+            data-css-7mw7i0=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+      <div
+        data-css-1ha66tv=""
+      >
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="warning icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              clipRule="evenodd"
+              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/TextInput Basic 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Compare Disabled 1`] = `
+<div
+  data-css-1cpmtjf=""
+>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      Normal
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm normal, see"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      Still normal
+    </div>
+  </label>
+  <label
+    data-css-h2yjsn=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      I'm not usable
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={true}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="I'm untouchable"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      Neither am I
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/TextInput Date Input 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+          type="date"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Disabled 1`] = `
+<label
+  data-css-h2yjsn=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={true}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Error 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-in6gqi=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+    <div
+      data-css-1ha66tv=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="warning icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            clipRule="evenodd"
+            d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Field After 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1b3f1la=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+        <div
+          data-css-7dab2f=""
+        >
+          <svg
+            aria-label="placeholder icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Label Only 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Long Placeholder 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="some placeholder that goes on forever when the little things can't handle it"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput No Labels 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          aria-label="You need an a11y label"
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Password Input 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+          type="password"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Props Inclusion 1`] = `
+<label
+  className="className is allowed"
+  data-css-w0yocm=""
+>
+  <div
+    data-css-dysqqm=""
+  >
+    The label
+  </div>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          className="className is allowed"
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+          title="title is allowed"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput Sub Label Only 1`] = `
+<label
+  data-css-w0yocm=""
+>
+  <div
+    data-css-1r967oi=""
+  >
+    <div
+      data-css-ctre2o=""
+    >
+      <div
+        data-css-1okk1dp=""
+      >
+        <input
+          aria-label="You need an a11y label"
+          data-css-1iyk6mt=""
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          placeholder="Some placeholder"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    data-css-o89kbw=""
+  >
+    The sub label
+  </div>
+</label>
+`;
+
+exports[`Storyshots Components/TextInput/examples Autofocused 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      The label
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onBlur={[Function]}
+            onFocus={[Function]}
+            placeholder="Some placeholder"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-o89kbw=""
+    >
+      The sub label
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/TextInput/examples Controlled 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div>
+    <label
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-dysqqm=""
+      >
+        The label
+      </div>
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-1okk1dp=""
+          >
+            <input
+              data-css-1iyk6mt=""
+              disabled={false}
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              placeholder="Some placeholder"
+              value="a value"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        data-css-o89kbw=""
+      >
+        The sub label
+      </div>
+    </label>
+    <br />
+    <br />
+    <div
+      data-css-c8tnxo=""
+    >
+      <span>
+        Current value: 
+        a value
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    style={
+      Object {
+        "border": "1px solid blue",
+        "width": "500px",
+      }
+    }
+  >
+    <label
+      data-css-w0yocm=""
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-css-dysqqm=""
+      >
+        First
+      </div>
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-1okk1dp=""
+          >
+            <input
+              data-css-1iyk6mt=""
+              disabled={false}
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </label>
+    <label
+      data-css-w0yocm=""
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-css-dysqqm=""
+      >
+        Second
+      </div>
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-in6gqi=""
+        >
+          <div
+            data-css-1okk1dp=""
+          >
+            <input
+              data-css-1iyk6mt=""
+              disabled={false}
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          data-css-1ha66tv=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </label>
+    <label
+      data-css-w0yocm=""
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-css-dysqqm=""
+      >
+        Third
+      </div>
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-ko2l60=""
+          >
+            <input
+              data-css-7mw7i0=""
+              disabled={false}
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
+            />
+          </div>
+        </div>
+      </div>
+    </label>
+    <label
+      data-css-w0yocm=""
+      style={
+        Object {
+          "display": "block",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-css-dysqqm=""
+      >
+        Fourth
+      </div>
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-in6gqi=""
+        >
+          <div
+            data-css-ko2l60=""
+          >
+            <input
+              data-css-7mw7i0=""
+              disabled={false}
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
+            />
+          </div>
+        </div>
+        <div
+          data-css-1ha66tv=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="warning icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/TextInput/examples Style Right Aligned 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div
+    style={
+      Object {
+        "border": "1px solid blue",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <label
+        data-css-w0yocm=""
+      >
+        <div
+          data-css-1r967oi=""
+        >
+          <div
+            data-css-ctre2o=""
+          >
+            <div
+              data-css-1okk1dp=""
+            >
+              <input
+                data-css-1iyk6mt=""
+                disabled={false}
+                placeholder="Filter"
+              />
+            </div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <div
+      style={
+        Object {
+          "border": "2px dashed green",
+          "height": "50px",
+        }
+      }
+    />
+  </div>
+</div>
+`;

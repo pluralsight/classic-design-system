@@ -1,0 +1,380 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Checkbox Basic 1`] = `
+<div
+  data-css-yto836=""
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <input
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-gx66zw=""
+      />
+    </div>
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/Checkbox Checked 1`] = `
+<div
+  data-css-yto836=""
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <input
+        checked={true}
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-1cfeqew=""
+      >
+        <svg
+          aria-label="Checkmark"
+          data-css-ey6g07=""
+          role="img"
+          version="1.1"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/Checkbox Checked Error 1`] = `
+<div
+  data-css-yto836=""
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-f76l29=""
+    >
+      <input
+        checked={true}
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-1cfeqew=""
+      >
+        <svg
+          aria-label="Checkmark"
+          data-css-ey6g07=""
+          role="img"
+          version="1.1"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polygon
+            points="6.89667458 13 2.62114014 8.72446556 4.12826603 7.21733967 6.89667458 9.97505938 12.871734 4 14.3788599 5.51781473"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/Checkbox Checked Indeterminate 1`] = `
+<div
+  data-css-yto836=""
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <input
+        checked={true}
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-1cfeqew=""
+      >
+        <svg
+          aria-label="Indeterminate Mark"
+          data-css-ey6g07=""
+          role="img"
+          version="1.1"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="2"
+            width="10"
+            x="3"
+            y="7"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/Checkbox Disabled 1`] = `
+<div
+  data-css-yto836=""
+>
+  <label
+    data-css-o2msqt=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1eqwi1x=""
+    >
+      <input
+        data-css-6wu9td=""
+        disabled={true}
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-gx66zw=""
+      />
+    </div>
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/Checkbox Error 1`] = `
+<div
+  data-css-yto836=""
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-f76l29=""
+    >
+      <input
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-gx66zw=""
+      />
+    </div>
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/Checkbox Example State Demo 1`] = `
+<div
+  data-css-yto836=""
+>
+  <div>
+    <div
+      data-css-1ez0qa4=""
+    >
+      Checked: 
+      
+    </div>
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-1ij5lym=""
+      >
+        <input
+          checked={false}
+          data-css-6wu9td=""
+          name="colorRed"
+          readOnly={true}
+          type="checkbox"
+          value="red"
+        />
+        <div
+          data-css-gx66zw=""
+        />
+      </div>
+      <div
+        data-css-ybwuvp=""
+      >
+        Red
+      </div>
+    </label>
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-1ij5lym=""
+      >
+        <input
+          checked={false}
+          data-css-6wu9td=""
+          name="colorGreen"
+          readOnly={true}
+          type="checkbox"
+          value="green"
+        />
+        <div
+          data-css-gx66zw=""
+        />
+      </div>
+      <div
+        data-css-ybwuvp=""
+      >
+        Green
+      </div>
+    </label>
+    <label
+      data-css-kn3wr0=""
+      onClick={[Function]}
+      onKeyDown={[Function]}
+    >
+      <div
+        data-css-1ij5lym=""
+      >
+        <input
+          checked={false}
+          data-css-6wu9td=""
+          name="colorBlue"
+          readOnly={true}
+          type="checkbox"
+          value="blue"
+        />
+        <div
+          data-css-gx66zw=""
+        />
+      </div>
+      <div
+        data-css-ybwuvp=""
+      >
+        Blue
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Checkbox Indeterminate 1`] = `
+<div
+  data-css-yto836=""
+>
+  <label
+    data-css-kn3wr0=""
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <div
+      data-css-1ij5lym=""
+    >
+      <input
+        data-css-6wu9td=""
+        name="colorRed"
+        readOnly={true}
+        type="checkbox"
+        value="red"
+      />
+      <div
+        data-css-1cfeqew=""
+      >
+        <svg
+          aria-label="Indeterminate Mark"
+          data-css-ey6g07=""
+          role="img"
+          version="1.1"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            height="2"
+            width="10"
+            x="3"
+            y="7"
+          />
+        </svg>
+      </div>
+    </div>
+    <div
+      data-css-ybwuvp=""
+    >
+      Red
+    </div>
+  </label>
+</div>
+`;

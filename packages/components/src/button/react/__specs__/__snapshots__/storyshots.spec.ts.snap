@@ -1,0 +1,1185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Components/Button Appearances 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <button
+    data-css-y5dqt5=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-1x5ax2g=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1cb2wrf=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1uk30vr=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Appearances Disabled 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <button
+    data-css-1283ymw=""
+    disabled={true}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-1ukz2bh=""
+    disabled={true}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1fra720=""
+    disabled={true}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1jpg809=""
+    disabled={true}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Appearances With Icon 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <button
+    data-css-12bozst=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-168olz2=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-t8b8by=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-68fqys=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button As Link 1`] = `
+<a
+  data-css-y5dqt5=""
+  href="https://duckduckgo.com"
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</a>
+`;
+
+exports[`Storyshots Components/Button As Link With Icon 1`] = `
+<a
+  data-css-12bozst=""
+  href="https://duckduckgo.com"
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-1mgd019=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <svg
+        aria-label="placeholder icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</a>
+`;
+
+exports[`Storyshots Components/Button Basic 1`] = `
+<button
+  data-css-y5dqt5=""
+  disabled={false}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Class Name Override 1`] = `
+<button
+  className={
+    Object {
+      "data-css-1wsp713": "",
+    }
+  }
+  data-css-y5dqt5=""
+  disabled={false}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Disabled 1`] = `
+<button
+  data-css-1283ymw=""
+  disabled={true}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Disabled With Icon 1`] = `
+<button
+  data-css-105jfs7=""
+  disabled={true}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-1mgd019=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <svg
+        aria-label="placeholder icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Example Autofocus 1`] = `
+<button
+  data-css-y5dqt5=""
+  disabled={false}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    Should be focused
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Example Loading Transition 1`] = `
+<button
+  data-css-y5dqt5=""
+  disabled={false}
+  style={Object {}}
+>
+  <span
+    data-css-15b13by=""
+  >
+    Wait for it
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Icon Alignments 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <button
+    data-css-12bozst=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      left
+    </span>
+  </button>
+  <button
+    data-css-dx671n=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-8b1vtw=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      right
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Icon Only 1`] = `
+<button
+  data-css-j12pym=""
+  disabled={false}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-y80vay=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <svg
+        aria-label="placeholder icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  />
+</button>
+`;
+
+exports[`Storyshots Components/Button Layouts 1`] = `
+Array [
+  <div
+    data-css-eska86=""
+  >
+    <button
+      data-css-vm007=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        fullWidth
+      </span>
+    </button>
+  </div>,
+  <div
+    data-css-eska86=""
+  >
+    <button
+      data-css-y5dqt5=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        inline
+      </span>
+    </button>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Button Loading Only 1`] = `
+<button
+  aria-label="loading"
+  data-css-y5dqt5=""
+  disabled={true}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-1mgd019=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <span
+        data-css-15l7w9e=""
+      />
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Sizes 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <button
+    data-css-v92x0z=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      xSmall
+    </span>
+  </button>
+  <button
+    data-css-b1m7w4=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      small
+    </span>
+  </button>
+  <button
+    data-css-y5dqt5=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      medium
+    </span>
+  </button>
+  <button
+    data-css-1p8sqig=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      large
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Sizes With Icon 1`] = `
+<div
+  data-css-1gfhbu8=""
+>
+  <button
+    data-css-11py1ib=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-73kfkk=""
+    >
+      <div
+        data-css-1gzzcm2=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      xSmall
+    </span>
+  </button>
+  <button
+    data-css-1ep5uzm=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-73kfkk=""
+    >
+      <div
+        data-css-k31qw2=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      small
+    </span>
+  </button>
+  <button
+    data-css-12bozst=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      medium
+    </span>
+  </button>
+  <button
+    data-css-k62s0p=""
+    disabled={false}
+    style={Object {}}
+  >
+    <div
+      data-css-1mgd019=""
+    >
+      <div
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="placeholder icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+          />
+        </svg>
+      </div>
+    </div>
+    <span
+      data-css-15b13by=""
+    >
+      large
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Style Override 1`] = `
+<button
+  data-css-y5dqt5=""
+  disabled={false}
+  onClick={[Function]}
+  style={
+    Object {
+      "background": "red",
+    }
+  }
+>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Theme Nesting 1`] = `
+Array [
+  <button
+    data-css-1uk30vr=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      dark
+    </span>
+  </button>,
+  <button
+    data-css-am7l87=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      light
+    </span>
+  </button>,
+  <button
+    data-css-1uk30vr=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      dark
+    </span>
+  </button>,
+]
+`;
+
+exports[`Storyshots Components/Button Variations 1`] = `
+<div
+  data-css-1fb0si4=""
+>
+  <button
+    data-css-v92x0z=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-b1m7w4=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-y5dqt5=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-1p8sqig=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-uv8iir=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-c3sd2l=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1x5ax2g=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-g84eh2=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1char72=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1mpmjtf=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1cb2wrf=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-iilb0c=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-10fisbo=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1d3b8qh=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1uk30vr=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1b5o285=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Vert Alignment 1`] = `
+<div
+  data-css-1fb0si4=""
+>
+  <button
+    data-css-v92x0z=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-b1m7w4=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-y5dqt5=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-1p8sqig=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      primary
+    </span>
+  </button>
+  <button
+    data-css-uv8iir=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-c3sd2l=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1x5ax2g=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-g84eh2=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      secondary
+    </span>
+  </button>
+  <button
+    data-css-1char72=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1mpmjtf=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-1cb2wrf=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-iilb0c=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      stroke
+    </span>
+  </button>
+  <button
+    data-css-10fisbo=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1d3b8qh=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1uk30vr=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+  <button
+    data-css-1b5o285=""
+    disabled={false}
+    style={Object {}}
+  >
+    <span
+      data-css-15b13by=""
+    >
+      flat
+    </span>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button With Icon 1`] = `
+<button
+  data-css-12bozst=""
+  disabled={false}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-1mgd019=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <svg
+        aria-label="placeholder icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button With Loading 1`] = `
+<button
+  data-css-y5dqt5=""
+  disabled={true}
+  onClick={[Function]}
+  style={Object {}}
+>
+  <div
+    data-css-1mgd019=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <span
+        data-css-15l7w9e=""
+      />
+    </div>
+  </div>
+  <span
+    data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
