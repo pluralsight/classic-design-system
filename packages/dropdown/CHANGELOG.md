@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.3...@pluralsight/ps-design-system-dropdown@12.1.4) (2021-05-11)
+
+
+### Bug Fixes
+
+* **dropdown:** allow scrolling within the dropdown ([79a4774](https://github.com/pluralsight/design-system/commit/79a4774909afa3e6bcf79f925954dd4b792bcc4e)), closes [#1741](https://github.com/pluralsight/design-system/issues/1741)
+
+
+
+
+
 ## [12.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.2...@pluralsight/ps-design-system-dropdown@12.1.3) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
