@@ -11,7 +11,10 @@ import * as vars from '../vars/index'
 
 interface DropdownContextValue {
   activeItem?: ItemData
-  onDocumentEvents: (evt: Event) => void
+  onDocumentEvents: (
+    ref: React.MutableRefObject<HTMLElement | null>,
+    evt: Event
+  ) => void
   onMenuClick: (evt: React.MouseEvent, value?: number | string) => void
   selectedItem?: ItemData
 }
@@ -220,8 +223,15 @@ export const useDropdown = (
     subLabel: rest.subLabel,
     value: {
       value: {
-        onDocumentEvents: (_evt: Event) => {
-          setOpen(false)
+        onDocumentEvents: (
+          ref: React.MutableRefObject<HTMLElement | null>,
+          evt: Event
+        ) => {
+          if (
+            !(evt.target instanceof HTMLElement) ||
+            !ref.current?.contains(evt.target)
+          )
+            setOpen(false)
         },
         onMenuClick: handleMenuItemClick,
         selectedItem
