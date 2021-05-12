@@ -1,37 +1,20 @@
-import { storiesOf } from '@storybook/react'
+import { Meta, Story } from '@storybook/react/types-6-0'
+
 import React from 'react'
 
 import Link from '../index'
 
-const appearanceStory = storiesOf('appearance', module)
+export default {
+  title: 'Components/Link',
+  component: Link
+} as Meta
 
-Object.keys(Link.appearances).forEach(appearance =>
-  appearanceStory.add(appearance, _ => (
-    <p style={{ color: 'white' }}>
-      <Link appearance={appearance}>
-        <a href="http://duckduckgo.com">Click me</a>
+export const Appearances: Story = () => (
+  <div>
+    {Object.values(Link.appearances).map((appearance, i) => (
+      <Link key={i} appearance={appearance}>
+        <a href="http://duckduckgo.com">{appearance}</a>
       </Link>
-    </p>
-  ))
+    ))}
+  </div>
 )
-
-storiesOf('tagNames', module).add('button', _ => (
-  <p style={{ color: 'white' }}>
-    <Link>
-      <button>Click me</button>
-    </Link>
-  </p>
-))
-
-storiesOf('css only', module).add('hover', _ => (
-  <p style={{ color: 'white' }}>
-    This is a css-styled anchor tag{' '}
-    <a
-      href="#"
-      className="psds-link psds-button--2020-colors psds-link--appearance-default psds-theme--light"
-    >
-      anchor
-    </a>
-    .
-  </p>
-))
