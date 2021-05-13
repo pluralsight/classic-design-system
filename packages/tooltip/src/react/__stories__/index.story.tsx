@@ -1,4 +1,4 @@
-import { storiesOf } from '@storybook/react'
+import { Meta, Story } from '@storybook/react/types-6-0'
 
 import React from 'react'
 
@@ -6,41 +6,63 @@ import * as core from '@pluralsight/ps-design-system-core'
 
 import Tooltip from '../index'
 
-const PaddingDecorator = (storyFn: () => React.ReactNode) => (
-  <div style={{ padding: core.layout.spacingXLarge }}>{storyFn()}</div>
+export default {
+  title: 'Components/Tooltip',
+  component: Tooltip
+} as Meta
+
+export const Appearances: Story = () => (
+  <StoryGrid>
+    {Object.values(Tooltip.appearances).map((appearance, i) => (
+      <Tooltip appearance={appearance}>{appearance}</Tooltip>
+    ))}
+  </StoryGrid>
 )
 
-const appearanceStory = storiesOf('appearance', module).addDecorator(
-  PaddingDecorator
-)
-Object.values(Tooltip.appearances).forEach(app =>
-  appearanceStory.add(app, () => <Tooltip appearance={app}>Some text</Tooltip>)
+export const TailPositions: Story = () => (
+  <StoryGrid cols={Object.keys(Tooltip.appearances).length}>
+    {Object.values(Tooltip.tailPositions).map(tailPosition =>
+      Object.values(Tooltip.appearances).map(appearance => (
+        <Tooltip
+          key={appearance + tailPosition}
+          appearance={appearance}
+          tailPosition={tailPosition}
+        >
+          {tailPosition}
+        </Tooltip>
+      ))
+    )}
+  </StoryGrid>
 )
 
-const tailPositionStory = storiesOf('tailPosition', module).addDecorator(
-  PaddingDecorator
-)
-Object.values(Tooltip.appearances).forEach(appearance =>
-  Object.values(Tooltip.tailPositions).forEach(tailPosition =>
-    tailPositionStory.add(`${appearance} ${tailPosition}`, () => (
-      <Tooltip appearance={appearance} tailPosition={tailPosition}>
-        Some text
+export const OnClose: Story = () => (
+  <StoryGrid>
+    {Object.values(Tooltip.appearances).map((appearance, i) => (
+      <Tooltip
+        key={appearance}
+        appearance={appearance}
+        tailPosition={Tooltip.tailPositions.topLeft}
+        onClose={() => {}}
+      >
+        Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
       </Tooltip>
-    ))
-  )
+    ))}
+  </StoryGrid>
 )
 
-const closeStory = storiesOf('onClose', module).addDecorator(PaddingDecorator)
-Object.values(Tooltip.appearances).forEach(appearance =>
-  closeStory.add(appearance, () => (
-    <Tooltip appearance={appearance} onClose={() => {}}>
-      Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
-    </Tooltip>
-  ))
-)
-closeStory.add('short text', () => <Tooltip onClose={() => {}}>Short</Tooltip>)
-closeStory.add('tailPosition topRight', () => (
-  <Tooltip tailPosition={Tooltip.tailPositions.topRight} onClose={() => {}}>
-    Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
-  </Tooltip>
-))
+const StoryGrid: React.FC<{ cols?: number }> = props => {
+  const { cols = 2, ...rest } = props
+
+  return (
+    <div
+      style={{
+        display: 'grid',
+        gap: '20px',
+        gridTemplateColumns: Array(cols).fill('1fr').join(' '),
+        alignItems: 'center',
+        justifyItems: 'left'
+      }}
+      {...rest}
+    />
+  )
+}
