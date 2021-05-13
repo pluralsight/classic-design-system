@@ -14,7 +14,9 @@ export default {
 export const Appearances: Story = () => (
   <StoryGrid>
     {Object.values(Tooltip.appearances).map((appearance, i) => (
-      <Tooltip appearance={appearance}>{appearance}</Tooltip>
+      <Tooltip key={appearance} appearance={appearance}>
+        {appearance}
+      </Tooltip>
     ))}
   </StoryGrid>
 )
