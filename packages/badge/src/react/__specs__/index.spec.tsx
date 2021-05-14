@@ -9,6 +9,14 @@ import * as stories from '../__stories__/index.story'
 describe('Badge', () => {
   const cases = convertStoriesToJestCases(stories)
 
+  it('renders', () => {
+    const { getByTestId } = render(
+      <Badge data-testid="undertest">Render me</Badge>
+    )
+
+    expect(getByTestId('undertest')).toBeInTheDocument()
+  })
+
   it('forwards ref', () => {
     const ref = React.createRef<HTMLDivElement>()
     render(<Badge ref={ref}>A label</Badge>)

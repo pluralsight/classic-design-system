@@ -16,10 +16,10 @@
     min-height: calc(100vh - var(--topNavHeight));
   }
 
-  @media ((width >= 768px)) {
+  @media (width >= 768px) {
     padding-left: var(--asideWidth);
   }
-  @media ((width >= 1280px)) {
+  @media (width >= 1280px) {
     padding-right: var(--metaWidth);
   }
 
