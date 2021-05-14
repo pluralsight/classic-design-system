@@ -24,8 +24,14 @@ export * from './styles'
 export { uniqueId } from './unique-id'
 
 export {
+  onClickOutside,
+  onGlobalEventsClose,
+  onResize,
+  onScrollOutisde,
+  useClickOutside,
   useCloseOnDocumentEvents,
-  onGlobalEventsClose
+  useResize,
+  useScrollOutside
 } from './use-close-on-document-events'
 export { useCombinedRefs } from './use-combined-refs'
 export { useHasMounted } from './use-has-mounted'
