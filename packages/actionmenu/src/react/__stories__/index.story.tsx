@@ -22,6 +22,29 @@ storiesOf('menu items', module)
       <ActionMenu.Item>Three item</ActionMenu.Item>
     </ActionMenu>
   ))
+  .add('button open', () => {
+    function ButtonOpen() {
+      const [open, setOpen] = React.useState(false)
+      return (
+        <div>
+          <BelowRight
+            show={
+              <ActionMenu onClose={() => setOpen(false)}>
+                {new Array(30).fill(null).map((_, index) => (
+                  <ActionMenu.Item key={index}>index: {index}</ActionMenu.Item>
+                ))}
+              </ActionMenu>
+            }
+            when={open}
+          >
+            <button onClick={() => setOpen(!open)}>toggle</button>
+          </BelowRight>
+        </div>
+      )
+    }
+
+    return <ButtonOpen />
+  })
   .add('lots', () => (
     <ActionMenu>
       {new Array(30).fill(null).map((_, index) => (
