@@ -1,12 +1,17 @@
 import React from 'react'
+
 import { canUseDOM } from './can-use-dom'
 
 type Callback = (evt: Event | MouseEvent | UIEvent) => void
 
-export const onClickOutside = <El extends HTMLElement>(
-  el: El,
-  callback: Callback
-) => {
+type EventHandler = <El extends HTMLElement>(el: El, cb: Callback) => () => void
+
+type EventHandlerHook = <El extends HTMLElement>(
+  ref: React.MutableRefObject<El | null>,
+  cb: Callback
+) => void
+
+export const onClickOutside: EventHandler = (el, callback) => {
   if (!canUseDOM()) return noop
 
   const handleClick = (evt: MouseEvent) => {
@@ -28,12 +33,10 @@ export const onClickOutside = <El extends HTMLElement>(
   }
 }
 
-export const useEventOutside: <El extends HTMLElement>(
-  eventHander: (el: El, cb: Callback) => void
-) => (
-  ref: React.MutableRefObject<El | null>,
-  cb: Callback
-) => void = eventHandler => (ref, cb = noop) => {
+export const useEvent: (
+  eventHander: EventHandler
+) => EventHandlerHook = eventHandler => (ref, cb = noop) => {
+  /* eslint-disable-next-line react-hooks/rules-of-hooks */
   React.useEffect(() => {
     if (!canUseDOM()) return noop
     const el = ref.current
@@ -44,15 +47,10 @@ export const useEventOutside: <El extends HTMLElement>(
   }, [ref, cb])
 }
 
-export const useClickOutside = <El extends HTMLElement>(
-  ref: React.MutableRefObject<El | null>,
-  cb: Callback = noop
-) => useEventOutside(onClickOutside)(ref, cb)
+export const useClickOutside: EventHandlerHook = (ref, cb = noop) =>
+  useEvent(onClickOutside)(ref, cb)
 
-export const onResize = <El extends HTMLElement>(
-  el: El,
-  callback: Callback
-) => {
+export const onResize: EventHandler = (_el, callback) => {
   if (!canUseDOM()) return noop
 
   let currentAnimationFrame: number
@@ -74,15 +72,10 @@ export const onResize = <El extends HTMLElement>(
   }
 }
 
-export const useResize = <El extends HTMLElement>(
-  ref: React.MutableRefObject<El | null>,
-  cb: Callback = noop
-) => useEventOutside(onResize)(ref, cb)
+export const useResize: EventHandlerHook = (ref, cb = noop) =>
+  useEvent(onResize)(ref, cb)
 
-export const onScrollOutisde = <El extends HTMLElement>(
-  el: El,
-  callback: Callback
-) => {
+export const onScrollOutside: EventHandler = (el, callback) => {
   if (!canUseDOM()) return noop
 
   let currentAnimationFrame: number
@@ -110,15 +103,10 @@ export const onScrollOutisde = <El extends HTMLElement>(
   }
 }
 
-export const useScrollOutside = <El extends HTMLElement>(
-  ref: React.MutableRefObject<El | null>,
-  cb: Callback = noop
-) => useEventOutside(onScrollOutisde)(ref, cb)
+export const useScrollOutside: EventHandlerHook = (ref, cb = noop) =>
+  useEvent(onScrollOutside)(ref, cb)
 
-export const onGlobalEventsClose = <El extends HTMLElement>(
-  el: El,
-  callback: Callback
-) => {
+export const onGlobalEventsClose: EventHandler = (el, callback) => {
   if (!canUseDOM()) return noop
 
   const handleClickOutsideMenu = (evt: MouseEvent) => {
@@ -160,15 +148,12 @@ export const onGlobalEventsClose = <El extends HTMLElement>(
   }
 }
 
-export const useCloseOnDocumentEvents = <El extends HTMLElement>(
-  ref: React.MutableRefObject<El | null>,
-  cb: Callback = noop
-) =>
+export const useCloseOnDocumentEvents: EventHandlerHook = (ref, cb = noop) =>
   React.useEffect(() => {
     if (!canUseDOM()) return noop
     const el = ref.current
     if (el) {
-      return onGlobalEventsClose<El>(el, cb)
+      return onGlobalEventsClose(el, cb)
     }
     return noop
   }, [ref, cb])

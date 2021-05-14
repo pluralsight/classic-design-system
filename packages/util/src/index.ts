@@ -27,7 +27,7 @@ export {
   onClickOutside,
   onGlobalEventsClose,
   onResize,
-  onScrollOutisde,
+  onScrollOutside,
   useClickOutside,
   useCloseOnDocumentEvents,
   useResize,
