@@ -5,14 +5,14 @@
   padding: var(--psLayoutSpacingXSmall);
   background: var(--appColorsBackgroundHigh);
 
-  @media ((width >= 768px)) {
+  @media (width >= 768px) {
     background-color: transparent;
   }
 
   & .menuButton {
     margin-right: auto;
 
-    @media ((width >= 768px)) {
+    @media (width >= 768px) {
       display: none;
     }
   }
@@ -22,7 +22,7 @@
     top: var(--psLayoutSpacingXSmall);
     right: var(--psLayoutSpacingXSmall);
 
-    @media ((width >= 768px)) {
+    @media (width >= 768px) {
       top: var(--psLayoutSpacingMedium);
       right: var(--psLayoutSpacingMedium);
     }
