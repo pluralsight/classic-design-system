@@ -32,7 +32,7 @@ const styles = {
       glamor.css(stylesheet['.psds-verticaltabs__group__collapsible-list'])
     ),
 
-  rotatable: (open: boolean) =>
+  rotatable: (open?: boolean) =>
     glamor.css(
       stylesheet['.psds-verticaltabs__rotatable'],
       open && stylesheet['.psds-verticaltabs__rotatable--isOpen']
@@ -150,7 +150,7 @@ const CollapsibleGroupHeader = React.forwardRef<
   const {
     children,
     open,
-    getButtonAriaLabel,
+    getButtonAriaLabel = () => undefined,
     tagName: Tag = 'h2',
     toggle,
     ...rest

@@ -14,11 +14,13 @@
     "!src/*/__specs__/*"
   ],
   "scripts": {
-    "build": "exit 0",
+    "build": "run-s build:images build:cjs build:esm",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:normalize": "postcss css/index.css --dir dist",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
-    "build:watch": "yarn build:esm --watch",
+    "build:images": "node scripts",
+    "build:watch": "yarn build:esm -- --watch",
+    "lint": "eslint . --cache --quiet --ext .js,.jsx,.ts,.tsx ",
     "storybook": "start-storybook -p 6006",
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test --watchAll"

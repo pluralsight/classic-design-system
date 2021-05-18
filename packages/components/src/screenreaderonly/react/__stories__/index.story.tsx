@@ -23,6 +23,7 @@ export default {
 } as Meta
 
 const Template: Story<React.ComponentProps<typeof ScreenReaderOnly>> = args => (
+  // @ts-ignore: story
   <ScreenReaderOnly {...args} />
 )
 

@@ -46,7 +46,7 @@ const idStory = storiesOf('names', module)
 idStory.add('all export names', () => (
   <Grid>
     {Object.keys(Icons).map(id => {
-      const Comp = Icons[id]
+      const Comp = Icons[id as keyof typeof Icons]
       return (
         <GridItem key={`item-${id}`}>
           <Comp color={Icon.colors.textIconHighOnDark} />
@@ -57,7 +57,7 @@ idStory.add('all export names', () => (
 ))
 Object.keys(Icons).forEach(id =>
   idStory.add(id, () => {
-    const Comp = Icons[id]
+    const Comp = Icons[id as keyof typeof Icons]
     return (
       <Comp color={Icon.colors.textIconHighOnDark} size={Icon.sizes.large} />
     )

@@ -13,22 +13,22 @@ export { DataWell } from './datawell/index'
 export * from './datepicker/index'
 export { Dialog } from './dialog/index'
 export { Drawer, useDrawerContext } from './drawer/index'
-// export { EmptyState } from './emptystate/index'
-// export {
-//   ErrorPage,
-//   ForbiddenErrorPage,
-//   NotFoundErrorPage,
-//   InternalServerErrorPage,
-//   ServiceUnavailableErrorPage,
-//   GatewayTimeoutErrorPage
-// } from './errors/index'
+export { EmptyState } from './emptystate/index'
+export {
+  ErrorPage,
+  ForbiddenErrorPage,
+  NotFoundErrorPage,
+  InternalServerErrorPage,
+  ServiceUnavailableErrorPage,
+  GatewayTimeoutErrorPage
+} from './errors/index'
 export { FeatureFlags, useFeatureFlags } from './featureflags/index'
-export { FieldProps, FieldStatics, Field } from './field/index'
+export { FieldProps, FieldStatics, Field, FieldInputProps } from './field/index'
 export { useFocusManager, FocusManager } from './focusmanager/index'
 export { Form } from './form/index'
 export { Halo } from './halo/index'
-// export { Icon } from './icon/index'
-// export * from './icon/react/icons/index'
+export { Icon } from './icon/index'
+export * from './icon/react/icons/index'
 export {
   AsideLayout,
   EqualColumnLayout,

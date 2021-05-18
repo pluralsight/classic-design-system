@@ -1,4 +1,4 @@
-import Halo from '../../halo'
+import { Halo } from '../../halo'
 import { CaretLeftIcon, CaretRightIcon, sizes as iconSizes } from '../../icon'
 import { themeNames, useTheme } from '../../theme'
 import { HTMLPropsFor, ValueOf, combineFns } from '../../util'

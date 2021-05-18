@@ -4,7 +4,7 @@ import initStoryshots, {
 } from '@storybook/addon-storyshots'
 
 jest.mock('../../../util', () => {
-  const actual = jest.requireActual('../../../util')
+  const actual = jest.requireActual('../../util')
   const mockUniqueId = (prefix: string) => `${prefix}unique-id`
 
   return {

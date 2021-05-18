@@ -1,4 +1,4 @@
-import Button from '../../button'
+import { Button } from '../../button'
 import { HTMLPropsFor, ValueOf } from '../../util'
 import React from 'react'
 

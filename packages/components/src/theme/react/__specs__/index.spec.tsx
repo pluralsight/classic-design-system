@@ -4,8 +4,8 @@ import { renderHook } from '@testing-library/react-hooks'
 
 import React from 'react'
 
-import Theme, { defaultName, useTheme, withTheme } from '../index'
-
+import { Theme, useTheme, withTheme } from '../index'
+import { themeDefaultName } from '../../vars'
 describe('Theme', () => {
   const MockComponent: React.FC<
     React.HTMLAttributes<HTMLDivElement>
@@ -35,13 +35,13 @@ describe('Theme', () => {
     expect(container).toHaveTextContent(Theme.names.light)
   })
 
-  it('defaults to dark theme', () => {
+  it('themeDefaultNamelts to dark theme', () => {
     const { container } = render(
       <Theme>
         <MockComponent />
       </Theme>
     )
-    expect(container).toHaveTextContent(defaultName)
+    expect(container).toHaveTextContent(themeDefaultName)
     expect(container).toHaveTextContent(Theme.names.dark)
   })
 
@@ -80,7 +80,7 @@ describe('Theme', () => {
 describe('useTheme', () => {
   it('should return the themeName', () => {
     const { result } = renderHook(() => useTheme())
-    expect(result.current).toEqual(defaultName)
+    expect(result.current).toEqual(themeDefaultName)
   })
 })
 
@@ -92,10 +92,10 @@ describe('withTheme', () => {
     return <div {...props}>{themeName}</div>
   }
 
-  let EnhancedComponent
+  let EnhancedComponent: React.FC
 
   beforeAll(() => {
-    EnhancedComponent = withTheme(MockComponent)
+    EnhancedComponent = (withTheme(MockComponent) as unknown) as React.FC
   })
 
   it('enhances the Component', () => {
@@ -119,10 +119,10 @@ describe('withTheme', () => {
   })
 
   describe('when NOT wrapped in a ThemeProvider', () => {
-    it('falls back to the default theme', () => {
+    it('falls back to the themeDefaultNamelt theme', () => {
       const { container } = render(<EnhancedComponent />)
 
-      expect(container).toHaveTextContent(defaultName)
+      expect(container).toHaveTextContent(themeDefaultName)
     })
   })
 })

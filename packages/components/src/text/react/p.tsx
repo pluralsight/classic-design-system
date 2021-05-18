@@ -35,7 +35,7 @@ interface PProps extends HTMLPropsFor<'p'> {
   color?: ValueOf<typeof vars.textColors>
 }
 
-const P: React.FC<PProps> & PStatics = ({
+export const P: React.FC<PProps> & PStatics = ({
   size = vars.pSizes.medium,
   color = vars.textColors.primary,
   ...props
@@ -51,8 +51,3 @@ const P: React.FC<PProps> & PStatics = ({
 
 P.sizes = vars.pSizes
 P.colors = vars.textColors
-
-export const sizes = vars.pSizes
-export const colors = vars.textColors
-
-export default P

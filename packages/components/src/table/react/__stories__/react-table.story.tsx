@@ -24,6 +24,7 @@ import {
   CellProps,
   Column,
   HeaderProps,
+  HeaderGroup,
   Hooks,
   TableInstance,
   useExpanded,
@@ -60,6 +61,10 @@ export default {
   parameters: { center: { disabled: true }, storyshots: { disable: true } }
 } as Meta
 
+interface CustomHeaderGroup extends HeaderGroup {
+  title: string
+}
+
 export const Basic: Story = () => {
   const columns = React.useMemo<Column[]>(
     () => [
@@ -87,7 +92,7 @@ export const Basic: Story = () => {
           {table.headerGroups.map(group => (
             <Table.Row {...group.getHeaderGroupProps()}>
               {group.headers.map(column => {
-                const title: string = column.title
+                const title: string = (column as CustomHeaderGroup).title
 
                 return (
                   <Table.Header
@@ -174,7 +179,7 @@ export const Sorting: Story = () => {
               const { canSort, isSorted, isSortedDesc } = column
 
               const sort = isSorted ? (isSortedDesc ? 'desc' : 'asc') : false
-              const title: string = column.title
+              const title: string = (column as CustomHeaderGroup).title
 
               const sortByProps = column.getSortByToggleProps()
               const headerProps = column.getHeaderProps(sortByProps)
@@ -248,7 +253,7 @@ export const Filtering: Story = () => {
           {table.headerGroups.map(group => (
             <Table.Row {...group.getHeaderGroupProps()}>
               {group.headers.map(column => {
-                const title: string = column.title
+                const title: string = (column as CustomHeaderGroup).title
 
                 return (
                   <Table.Header
@@ -348,7 +353,7 @@ export const Pagination: Story = () => {
           {table.headerGroups.map(group => (
             <Table.Row {...group.getHeaderGroupProps()}>
               {group.headers.map(column => {
-                const title: string = column.title
+                const title: string = (column as CustomHeaderGroup).title
 
                 return (
                   <Table.Header
@@ -412,7 +417,7 @@ export const RowExpansion: Story = () => {
           {table.headerGroups.map(group => (
             <Table.Row {...group.getHeaderGroupProps()}>
               {group.headers.map(column => {
-                const title: string = column.title
+                const title: string = (column as CustomHeaderGroup).title
                 const style = {
                   width: column.id === '_expander' ? 1 : undefined
                 }
@@ -506,7 +511,7 @@ export const RowSelection: Story = () => {
           {table.headerGroups.map(group => (
             <Table.Row {...group.getHeaderGroupProps()}>
               {group.headers.map(column => {
-                const title: string = column.title
+                const title: string = (column as CustomHeaderGroup).title
                 const style = {
                   width: column.id === '_selection' ? 1 : undefined
                 }

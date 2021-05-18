@@ -1,1 +1,2 @@
-export const appearances = { default: 'default', subtle: 'subtle' }
+import { keyMirror } from '../../util'
+export const appearances = keyMirror('default', 'subtle')

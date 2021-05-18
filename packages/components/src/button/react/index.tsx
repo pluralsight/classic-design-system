@@ -1,5 +1,5 @@
 import { Icon } from '../../icon'
-import { useTheme } from '../../theme'
+import { useTheme, themeNames } from '../../theme'
 import { HTMLPropsFor, RefFor, ValueOf } from '../../util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -12,7 +12,17 @@ const glamor = glamorDefault || glamorExports
 const spin = glamor.keyframes(
   stylesheet['@keyframes psds-button__keyframes__spin']
 )
-
+interface ButtonStyleProps {
+  appearance: ValueOf<typeof vars.appearances>
+  disabled: boolean
+  icon: boolean
+  iconAlign: ValueOf<typeof vars.iconAligns>
+  iconOnly: boolean
+  layout: ValueOf<typeof vars.layouts>
+  size: ValueOf<typeof vars.sizes>
+  themeName: ValueOf<typeof themeNames>
+  isLoadingWithNoText: boolean
+}
 const styles = {
   button: ({
     appearance,
@@ -23,7 +33,7 @@ const styles = {
     layout,
     size,
     themeName
-  }) =>
+  }: Omit<ButtonStyleProps, 'isLoadingWithNoText'>) =>
     glamor.css(
       stylesheet['.psds-button'],
       stylesheet[`.psds-button--layout-${layout}`],
@@ -56,7 +66,10 @@ const styles = {
         ...stylesheet[`.psds-button--iconOnly.psds-button--size-${size}`]
       }
     ),
-  loading: ({ appearance, themeName }) =>
+  loading: ({
+    appearance,
+    themeName
+  }: Pick<ButtonStyleProps, 'appearance' | 'themeName'>) =>
     glamor.css(
       stylesheet[`.psds-button__loading`]({ spin }),
       stylesheet[`.psds-button__loading--appearance-${appearance}`],
@@ -64,7 +77,15 @@ const styles = {
         `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
       ]
     ),
-  icon: ({ iconAlign, iconOnly, isLoadingWithNoText, size }) =>
+  icon: ({
+    iconAlign,
+    iconOnly,
+    isLoadingWithNoText,
+    size
+  }: Pick<
+    ButtonStyleProps,
+    'iconAlign' | 'iconOnly' | 'isLoadingWithNoText' | 'size'
+  >) =>
     glamor.css(
       stylesheet['.psds-button__icon'],
       stylesheet[`.psds-button__icon--iconAlign-${iconAlign}`],
@@ -77,7 +98,7 @@ const styles = {
   text: () => glamor.css(stylesheet[`.psds-button__text`])
 }
 
-const mapIconSize = (size: string) => {
+const mapIconSize = (size: ValueOf<typeof vars.sizes>) => {
   const btnToIconSizes = {
     [vars.sizes.xSmall]: Icon.sizes.xSmall,
     [vars.sizes.small]: Icon.sizes.small,
@@ -90,12 +111,12 @@ const mapIconSize = (size: string) => {
 interface RenderIconProps extends HTMLPropsFor<'div'> {
   loading: boolean
   icon: React.ReactNode
-  appearance: string
-  themeName: string
-  size: string
+  appearance: ValueOf<typeof vars.appearances>
+  themeName: ValueOf<typeof themeNames>
+  size: ValueOf<typeof vars.sizes>
   iconOnly: boolean
   isLoadingWithNoText: boolean
-  iconAlign: string
+  iconAlign: ValueOf<typeof vars.iconAligns>
 }
 
 const renderIcon: React.FC<RenderIconProps> = props =>
@@ -145,7 +166,7 @@ interface ButtonAnchorProps extends BaseButtonProps, HTMLPropsFor<'a'> {
   href: string
 }
 interface ButtonButtonProps extends BaseButtonProps, HTMLPropsFor<'button'> {
-  href?: undefined
+  href?: string
 }
 type ButtonElement = HTMLAnchorElement | HTMLButtonElement
 type ButtonProps = ButtonAnchorProps | ButtonButtonProps
@@ -180,7 +201,12 @@ export const Button = React.forwardRef<ButtonElement, ButtonProps>(
     const themeName = useTheme()
 
     const ref = React.useRef<HTMLAnchorElement | HTMLButtonElement>()
-    React.useImperativeHandle(forwardedRef, () => ref.current)
+
+    React.useImperativeHandle(
+      forwardedRef,
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      () => ref.current as HTMLAnchorElement | HTMLButtonElement
+    )
 
     const nonLoadingWidth = React.useMemo(() => {
       if (loading && ref && ref.current) return ref.current.offsetWidth
@@ -190,7 +216,7 @@ export const Button = React.forwardRef<ButtonElement, ButtonProps>(
     const glamorStyle = styles.button({
       appearance,
       disabled,
-      icon,
+      icon: Boolean(icon),
       iconAlign,
       iconOnly,
       layout,

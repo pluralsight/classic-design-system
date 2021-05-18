@@ -193,7 +193,8 @@ Object.values(positionComponents).forEach(Comp => {
     }): React.ReactNode
   }
   const PortalStory = (props: PortalStoryProps) => {
-    const portal = usePortal()
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+    const portal = usePortal() as React.MutableRefObject<HTMLDivElement>
     return <Outer>{props.children({ portal })}</Outer>
   }
 

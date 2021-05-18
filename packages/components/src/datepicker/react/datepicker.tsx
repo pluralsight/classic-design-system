@@ -1,4 +1,4 @@
-import Field from '../../field'
+import { Field } from '../../field'
 import { ValueOf, canUseDOM, RefFor } from '../../util'
 import { useDayzed, DateObj } from 'dayzed'
 import React from 'react'

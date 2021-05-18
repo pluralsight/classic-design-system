@@ -1,5 +1,5 @@
-import { useTheme } from '../../theme'
-import { RefForwardingComponent } from '../../util'
+import { useTheme, themeNames } from '../../theme'
+import { forwardRefWithStatics, ValueOf } from '../../util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -12,8 +12,8 @@ const style = ({
   appearance,
   themeName
 }: {
-  appearance: string
-  themeName: string
+  appearance: ValueOf<typeof appearances>
+  themeName: ValueOf<typeof themeNames>
 }) =>
   glamor.css(
     stylesheet[`.psds-link`],
@@ -29,30 +29,34 @@ interface LinkStatics {
 }
 
 interface Props extends React.HTMLAttributes<HTMLAnchorElement> {
-  appearance?: string
+  appearance?: ValueOf<typeof appearances>
 }
-interface LinkComponent
-  extends RefForwardingComponent<Props, HTMLAnchorElement, LinkStatics> {}
 
-export const Link = React.forwardRef<HTMLAnchorElement, Props>(
-  (props, forwardedRef) => {
-    const { appearance, children: _children, ...rest } = props
-    const ref = React.useRef<HTMLAnchorElement>()
-    React.useImperativeHandle(forwardedRef, () => ref.current)
-    const themeName = useTheme()
+export const Link = forwardRefWithStatics<
+  Props,
+  HTMLAnchorElement,
+  LinkStatics
+>((props, forwardedRef) => {
+  const {
+    appearance = appearances.default,
+    children: _children,
+    ...rest
+  } = props
+  const ref = React.useRef<HTMLAnchorElement>()
+  React.useImperativeHandle(
+    forwardedRef,
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+    () => ref.current as HTMLAnchorElement
+  )
+  const themeName = useTheme()
 
-    return React.cloneElement(
-      React.Children.only(props.children as React.ReactElement),
-      {
-        ...style({ appearance, themeName }),
-        ...rest
-      }
-    )
-  }
-) as LinkComponent
+  return React.cloneElement(
+    React.Children.only(props.children as React.ReactElement),
+    {
+      ...style({ appearance, themeName }),
+      ...rest
+    }
+  )
+})
 
 Link.appearances = appearances
-
-Link.defaultProps = {
-  appearance: appearances.default
-}

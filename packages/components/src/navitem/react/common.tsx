@@ -1,4 +1,4 @@
-import Halo from '../../halo'
+import { Halo } from '../../halo'
 import { HTMLPropsFor, ValueOf, stylesFor } from '../../util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'

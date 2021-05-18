@@ -1,0 +1,8 @@
+node_modules/*
+dist/*
+*.dist.js
+*.dist.ts
+*.dist.tsx
+.cache
+coverage/*
+scripts/*

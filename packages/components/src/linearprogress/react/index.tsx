@@ -1,8 +1,8 @@
-import { HTMLPropsFor } from '../../util'
+import { HTMLPropsFor, ValueOf } from '../../util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import { ScreenReaderOnly } from '../../screenreaderonly'
-import { useTheme } from '../../theme'
+import { useTheme, themeNames } from '../../theme'
 
 import stylesheet from '../css/index'
 import { toPercentageString } from '../js/index'
@@ -10,14 +10,20 @@ import { toPercentageString } from '../js/index'
 const glamor = glamorDefault || glamorExports
 
 const styles = {
-  bg: ({ themeName }) =>
+  bg: ({ themeName }: { themeName: ValueOf<typeof themeNames> }) =>
     glamor.compose(
       glamor.css(stylesheet['.psds-linearprogress__bg']),
       glamor.css(
         stylesheet[`.psds-linearprogress__bg.psds-theme--${themeName}`]
       )
     ),
-  fg: ({ themeName, value }) => {
+  fg: ({
+    themeName,
+    value
+  }: {
+    themeName: ValueOf<typeof themeNames>
+    value?: number
+  }) => {
     const percent = toPercentageString(value)
     const isComplete = percent === '100%'
 
@@ -45,7 +51,7 @@ export const LinearProgress: React.FC<LinearProgressProps> = ({
   return (
     <div {...styles.bg({ themeName })} {...rest}>
       <ScreenReaderOnly role="region" aria-live="off">
-        {`${value}% complete`}
+        {`${value || 0}% complete`}
       </ScreenReaderOnly>
       <div {...styles.fg({ themeName, value })} />
     </div>

@@ -6,7 +6,7 @@ import { Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 
 import { Field } from '../index'
-
+import { FieldInputProps } from '../input'
 import React from 'react'
 
 const glamor = glamorDefault || glamorExports
@@ -95,30 +95,29 @@ const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
 })
 Pills.Pill = Pill
 
-const PillAdjacentInput = React.forwardRef<
-  HTMLInputElement,
-  React.ComponentProps<typeof Field.Input>
->((props, ref) => {
-  const Container = React.useMemo(
-    () =>
-      React.forwardRef<HTMLDivElement>((p, r) => (
-        <div
-          ref={r}
-          {...p}
-          {...glamor.css({ margin: `calc(${variables.pills.gutter}px / 2)` })}
-        />
-      )),
-    []
-  )
+const PillAdjacentInput = React.forwardRef<HTMLInputElement, FieldInputProps>(
+  (props, ref) => {
+    const Container = React.useMemo(
+      () =>
+        React.forwardRef<HTMLDivElement>((p, r) => (
+          <div
+            ref={r}
+            {...p}
+            {...glamor.css({ margin: `calc(${variables.pills.gutter}px / 2)` })}
+          />
+        )),
+      []
+    )
 
-  return (
-    <Field.Input
-      ref={ref}
-      renderContainer={Container}
-      type="text"
-      {...props}
-      {...glamor.css({ minWidth: 50 })}
-    />
-  )
-})
+    return (
+      <Field.Input
+        ref={ref}
+        renderContainer={Container}
+        type="text"
+        {...props}
+        {...glamor.css({ minWidth: 50 })}
+      />
+    )
+  }
+)
 Pills.Input = PillAdjacentInput

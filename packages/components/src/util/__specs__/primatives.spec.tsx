@@ -10,6 +10,7 @@ import {
   forwardRefWithStatics,
   memoWithAs
 } from '..'
+import { RefFor } from '../types'
 
 describe('utils/primatives', () => {
   describe('#forwardRefWithAs', () => {
@@ -158,7 +159,7 @@ describe('utils/primatives', () => {
 
     const Nested: React.FC = props => <div {...props} />
     const Compound = forwardRefWithStatics<Props, 'div', Statics>(
-      (props, ref) => <div ref={ref} {...props} />
+      (props, ref) => <div ref={ref as RefFor<'div'>} {...props} />
     )
     Compound.Nested = Nested
 

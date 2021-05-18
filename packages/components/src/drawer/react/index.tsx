@@ -1,6 +1,6 @@
 import { useCollapsible } from '../../collapsible'
 import { CaretDownIcon } from '../../icon'
-import ScreenReaderOnly from '../../screenreaderonly'
+import { ScreenReaderOnly } from '../../screenreaderonly'
 import { useTheme, themeNames } from '../../theme'
 import { useToggle, RefFor, HTMLPropsFor, ValueOf } from '../../util'
 import glamorDefault, * as glamorExports from 'glamor'

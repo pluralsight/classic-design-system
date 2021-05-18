@@ -1,4 +1,4 @@
-import Field, { FieldProps } from '../../field'
+import { Field, FieldProps } from '../../field'
 import { CalendarIcon } from '../../icon'
 import { uniqueId as defaultUniqueId } from '../../util'
 import React from 'react'

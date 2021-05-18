@@ -6,6 +6,7 @@ import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { Button } from '../index'
+import { RefFor } from 'packages/components/src/util'
 
 const glamor = glamorDefault || glamorExports
 
@@ -80,7 +81,7 @@ StyleOverride.args = { ...defaultArgs, style: { background: 'red' } }
 export const ClassNameOverride = Template.bind({})
 ClassNameOverride.args = {
   ...defaultArgs,
-  className: glamor.css({ background: 'green' })
+  className: (glamor.css({ background: 'green' }) as unknown) as string
 }
 
 export const Layouts: Story = () => (
@@ -205,7 +206,7 @@ export const ExampleAutofocus: Story = () => {
       if (ref && ref.current) ref.current.focus()
     }, [])
 
-    return <Button ref={ref}>Should be focused</Button>
+    return <Button ref={ref as RefFor<'button'>}>Should be focused</Button>
   }
 
   return <Example />

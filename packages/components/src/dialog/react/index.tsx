@@ -1,5 +1,5 @@
-import FocusManager from '../../focusmanager'
-import Theme from '../../theme'
+import { FocusManager } from '../../focusmanager'
+import { Theme } from '../../theme'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -167,7 +167,8 @@ export const Dialog = React.forwardRef((props, ref) => {
             >
               {content}
             </Overlay>,
-            portal.current
+            // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+            portal.current as HTMLDivElement
           )
         : content}
     </>

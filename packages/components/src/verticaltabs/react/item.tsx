@@ -1,4 +1,4 @@
-import { Theme, useTheme } from '../../theme'
+import { themeNames, useTheme } from '../../theme'
 import { CaretDownIcon } from '../../icon'
 import { ValueOf, combineFns, omit, HTMLPropsFor, RefFor } from '../../util'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -8,15 +8,10 @@ import { useHideLabels } from './context'
 import stylesheet from '../css/index'
 import { List, CollapsibleList } from './list'
 
-type StyleFn = (
-  themeName?: ValueOf<keyof typeof Theme.names>,
-  props?: Record<string, unknown>
-) => glamorExports.StyleAttribute
-
 const glamor = glamorDefault || glamorExports
 
-const styles: { [key: string]: StyleFn } = {
-  item: themeName => {
+const styles = {
+  item: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'verticaltabs__item'
 
     return glamor.compose(
@@ -30,8 +25,8 @@ const styles: { [key: string]: StyleFn } = {
   itemIconActive: () =>
     glamor.css(stylesheet['.psds-verticaltabs__item__icon--active']),
 
-  itemTier: (themeName, props: { type: string }) => {
-    const label = `verticaltabs__${props.type}`
+  itemTier: (themeName: ValueOf<typeof themeNames>, type = '') => {
+    const label = `verticaltabs__${type}`
 
     return glamor.compose(
       glamor.css({ label }),
@@ -66,22 +61,22 @@ const styles: { [key: string]: StyleFn } = {
     )
   },
 
-  tierHeaderLabel: (_themeName, props: { hideLabels: boolean }) => {
+  tierHeaderLabel: (hideLabels: boolean) => {
     const label = `verticaltabs__header__label`
 
     return glamor.compose(
       glamor.css({ label }),
       glamor.css(stylesheet[`.psds-${label}`]),
-      props.hideLabels && glamor.css(stylesheet[`.psds-${label}--hide-labels`])
+      hideLabels && glamor.css(stylesheet[`.psds-${label}--hide-labels`])
     )
   },
-  tierHeaderLabelIcon: (_themeName, props: { collapsed: boolean }) => {
+  tierHeaderLabelIcon: (collapsed?: boolean) => {
     const label = `verticaltabs__header__label__icon`
 
     return glamor.compose(
       glamor.css({ label }),
       glamor.css(stylesheet[`.psds-${label}`]),
-      props.collapsed && glamor.css(stylesheet[`.psds-${label}--collapsed`])
+      collapsed && glamor.css(stylesheet[`.psds-${label}--collapsed`])
     )
   }
 }
@@ -144,15 +139,16 @@ const Item = React.forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
     <li ref={ref} {...rest}>
       <div
         {...styles.item(themeName)}
-        {...styles.itemTier(themeName, { type })}
+        {...styles.itemTier(themeName, type)}
         {...(active && { 'data-active': true })}
       >
-        {React.cloneElement(header, {
-          active,
-          collapsed,
-          collapsible,
-          ...(collapsible && { onClick: handleHeaderClick })
-        })}
+        {header &&
+          React.cloneElement(header, {
+            active,
+            collapsed,
+            collapsible,
+            ...(collapsible && { onClick: handleHeaderClick })
+          })}
       </div>
 
       {children && <ListComp collapsed={collapsed}>{children}</ListComp>}
@@ -189,12 +185,12 @@ const Tier1Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
           ...(active ? { 'data-active': true } : {})
         })}
 
-      <span {...styles.tierHeaderLabel(null, { hideLabels })}>{children}</span>
+      <span {...styles.tierHeaderLabel(hideLabels)}>{children}</span>
 
       {collapsible && (
         <CaretDownIcon
           size={CaretDownIcon.sizes.small}
-          {...styles.tierHeaderLabelIcon(null, { collapsed })}
+          {...styles.tierHeaderLabelIcon(collapsed)}
         />
       )}
     </Tag>
@@ -233,9 +229,7 @@ const Tier2Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
 
   return (
     <Tag {...styles.tier2Header} {...rest}>
-      <span {...styles.tierHeaderLabel(null, { hideLabels })}>
-        {props.children}
-      </span>
+      <span {...styles.tierHeaderLabel(hideLabels)}>{props.children}</span>
     </Tag>
   )
 })

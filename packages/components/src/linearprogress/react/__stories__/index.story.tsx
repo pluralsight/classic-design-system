@@ -16,7 +16,7 @@ const useRandom = () => {
   return value
 }
 
-const AnimationDemo = props => {
+const AnimationDemo: React.FC = props => {
   const value = useRandom()
   return (
     <div
@@ -31,8 +31,8 @@ const AnimationDemo = props => {
 }
 
 storiesOf('LinearProgress', module)
-  .add('min width, no val', _ => <LinearProgress />)
-  .add('fills container', _ => (
+  .add('min width, no val', () => <LinearProgress />)
+  .add('fills container', () => (
     <div
       style={{
         width: '200px',
@@ -43,9 +43,9 @@ storiesOf('LinearProgress', module)
       <LinearProgress value={66} />
     </div>
   ))
-  .add('value, 0%', _ => <LinearProgress value={0} />)
-  .add('value, 33%', _ => <LinearProgress value={33} />)
-  .add('value, 50%', _ => <LinearProgress value={50} />)
-  .add('value, 100%', _ => <LinearProgress value={100} />)
-  .add('value, 999%', _ => <LinearProgress value={999} />)
-  .add('animates to new values', _ => <AnimationDemo />)
+  .add('value, 0%', () => <LinearProgress value={0} />)
+  .add('value, 33%', () => <LinearProgress value={33} />)
+  .add('value, 50%', () => <LinearProgress value={50} />)
+  .add('value, 100%', () => <LinearProgress value={100} />)
+  .add('value, 999%', () => <LinearProgress value={999} />)
+  .add('animates to new values', () => <AnimationDemo />)

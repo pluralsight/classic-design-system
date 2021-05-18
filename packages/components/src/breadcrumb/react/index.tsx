@@ -1,6 +1,6 @@
 import { Button } from '../../button'
 import { CaretLeftIcon } from '../../icon'
-import { RefForwardingComponent } from '../../util'
+import { RefFor } from '../../util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -25,15 +25,6 @@ interface BreadcrumbProps
   ) => void
 }
 
-interface BreadcrumbStatics {}
-
-interface BreadcrumbComponent
-  extends RefForwardingComponent<
-    BreadcrumbProps,
-    HTMLAnchorElement | HTMLButtonElement,
-    BreadcrumbStatics
-  > {}
-
 export const Breadcrumb = React.forwardRef<
   HTMLAnchorElement | HTMLButtonElement,
   BreadcrumbProps
@@ -41,6 +32,7 @@ export const Breadcrumb = React.forwardRef<
   const { disabled, href, loading, onClick, ...rest } = props
   return (
     <div {...rest} {...styles.breadcrumb()}>
+      {/* @ts-ignore: polymorphic */}
       <Button
         appearance={Button.appearances.flat}
         href={href}
@@ -55,4 +47,4 @@ export const Breadcrumb = React.forwardRef<
       </Button>
     </div>
   )
-}) as BreadcrumbComponent
+})

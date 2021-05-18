@@ -1,0 +1,39 @@
+const { promises: fs } = require('fs')
+const fg = require('fast-glob')
+const path = require('path')
+const SVGO = require('svgo')
+
+const svgo = new SVGO({
+  plugins: [
+    { removeXMLNS: true },
+    { removeDimensions: true },
+    { removeAttrs: { attrs: '(stroke|fill)' } }
+  ]
+})
+
+const ariaLabelRegEx = /aria-label=(?:"|')([\w ]+)(?:"|')/
+
+const addAria = (svg, name) => {
+  return ariaLabelRegEx.test(svg)
+    ? svg
+    : svg.replace(/<svg/, `<svg aria-label="${name} icon"`)
+}
+
+const dashCaseToLower = str => str.split('-').join(' ').toLowerCase()
+
+exports.cleanSvgs = async svgs => {
+  try {
+    await fs.mkdir(svgs, { recursive: true })
+    const files = await fg([`${svgs}/*.svg`])
+    await Promise.all(
+      files.map(async file => {
+        const name = dashCaseToLower(path.basename(file, '.svg').split('.')[0])
+        const svg = await fs.readFile(file, 'utf8')
+        const { data } = await svgo.optimize(svg)
+        await fs.writeFile(file, addAria(data, name))
+      })
+    )
+  } catch (err) {
+    console.error(err)
+  }
+}

@@ -5,7 +5,7 @@ jest.mock(
   '../../../util',
   () =>
     ({
-      ...jest.requireActual('../../../util'),
+      ...jest.requireActual('../../util'),
       useUniqueId: jest.fn().mockImplementation(prefix => prefix + 'unique-id')
     } as typeof jest)
 )

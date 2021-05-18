@@ -13,11 +13,6 @@ import * as vars from '../vars/index'
 
 const glamor = glamorDefault || glamorExports
 
-type StyleFn = (
-  themeName: ValueOf<keyof typeof themeNames>,
-  props?: Record<string, any>
-) => glamorExports.StyleAttribute
-
 interface ViewToggleProps
   extends Omit<React.ComponentProps<typeof List>, 'onSelect'> {
   onSelect?: (evt: React.MouseEvent<HTMLButtonElement>, index: number) => void
@@ -34,23 +29,23 @@ interface ViewToggleComponent
     ViewToggleStatics
   > {}
 
-const styles: { [key: string]: StyleFn } = {
-  optionButton: (themeName, props) =>
+const styles = {
+  optionButton: (themeName: ValueOf<typeof themeNames>, active: boolean) =>
     glamor.compose(
       glamor.css(
         { label: 'viewtoggle__option' },
         stylesheet['.psds-viewtoggle__option'],
         stylesheet[`.psds-viewtoggle__option.psds-theme--${themeName}`]
       ),
-      props.active && glamor.css(stylesheet['.psds-viewtoggle__option--active'])
+      active && glamor.css(stylesheet['.psds-viewtoggle__option--active'])
     ),
-  list: themeName =>
+  list: (themeName: ValueOf<typeof themeNames>) =>
     glamor.css(
       { label: 'viewtoggle' },
       stylesheet['.psds-viewtoggle'],
       stylesheet[`.psds-viewtoggle.psds-theme--${themeName}`]
     ),
-  activePillBg: themeName =>
+  activePillBg: (themeName: ValueOf<typeof themeNames>) =>
     glamor.css(
       { label: 'viewtoggle__option-bg' },
       stylesheet['.psds-viewtoggle__option-bg'],
@@ -65,7 +60,11 @@ export const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
     const { children, onSelect, ...rest } = props
 
     const ref = React.useRef<HTMLDivElement>(null)
-    React.useImperativeHandle(forwardedRef, () => ref.current)
+    React.useImperativeHandle(
+      forwardedRef,
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      () => ref.current as HTMLDivElement
+    )
 
     const hasRenderedOnce = useHasRenderedOnce()
 
@@ -93,7 +92,10 @@ export const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
       let activePillStyle = {}
       if (hasRenderedOnce && ref.current) {
         const selector = `button:nth-of-type(${activeIndex + 1})`
-        const activeNode: HTMLElement = ref.current.querySelector(selector)
+        // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+        const activeNode: HTMLElement = ref.current.querySelector(
+          selector
+        ) as HTMLElement
 
         if (activeNode) activePillStyle = { left: activeNode.offsetLeft }
       }
@@ -139,10 +141,9 @@ const List = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
   }
 )
 
-const PillBgSpacer: React.FC<HTMLPropsFor<'div'>> = props => {
-  const themeName = useTheme()
-  return <div {...styles.pillBgSpacer(themeName)} {...props} />
-}
+const PillBgSpacer: React.FC<HTMLPropsFor<'div'>> = props => (
+  <div {...styles.pillBgSpacer()} {...props} />
+)
 
 interface OptionButtonProps extends HTMLPropsFor<'button'> {
   active: boolean
@@ -154,7 +155,7 @@ const OptionButton = React.forwardRef<HTMLButtonElement, OptionButtonProps>(
     const themeName = useTheme()
 
     return (
-      <button ref={ref} {...styles.optionButton(themeName, props)} {...rest} />
+      <button ref={ref} {...styles.optionButton(themeName, active)} {...rest} />
     )
   }
 )
@@ -165,7 +166,7 @@ interface OptionProps
     '_i' | '_onselect' | 'active'
   > {
   _i?: number
-  _onSelect?: (evt: React.MouseEvent<HTMLButtonElement>, index: number) => void
+  _onSelect?: (evt: React.MouseEvent<HTMLButtonElement>, index?: number) => void
   active?: boolean
 }
 const Option = React.forwardRef<HTMLButtonElement, OptionProps>(
@@ -173,7 +174,7 @@ const Option = React.forwardRef<HTMLButtonElement, OptionProps>(
     const { active = false, _onSelect, _i, ...rest } = props
 
     const handleClick = (evt: React.MouseEvent<HTMLButtonElement>) => {
-      _onSelect(evt, _i)
+      _onSelect && _onSelect(evt, _i)
     }
 
     return (
@@ -193,6 +194,7 @@ ViewToggle.Option = Option
 
 function findActiveIndex(els: React.ReactNode): number {
   const index = React.Children.toArray(els).findIndex(
+    // @ts-ignore: uhh
     (el: React.ReactElement) => el.props.active
   )
   return index >= 0 ? index : 0
