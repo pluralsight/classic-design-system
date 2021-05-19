@@ -1,9 +1,14 @@
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { render, fireEvent } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import ActionMenu from '../index'
+import * as stories from '../__stories__/index.story'
 
 describe('ActionMenu', () => {
+  const cases = convertStoriesToJestCases(stories)
+
   it('forwards ref', () => {
     const refToForward = React.createRef<HTMLUListElement>()
 
@@ -161,4 +166,13 @@ describe('ActionMenu', () => {
       expect(ref.current).not.toBeNull()
     })
   })
+
+  // TODO: fix issues and enable
+  // describe.each(cases)('%s story', (_name, Story) => {
+  //   it('has no axe-core violations', async () => {
+  //     const { container } = render(<Story {...Story.args} />)
+  //     const results = await axe(container)
+  //     expect(results).toHaveNoViolations()
+  //   })
+  // })
 })
