@@ -1,34 +1,32 @@
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
-import { render } from '@testing-library/react'
+import { screen, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import DataWell from '../index'
+import Link from '../index'
 import * as stories from '../__stories__/index.story'
 
-describe('DataWell', () => {
+describe('Link', () => {
   const cases = convertStoriesToJestCases(stories)
 
   it('renders', () => {
     const { getByTestId } = render(
-      <DataWell data-testid="undertest" label="Dog count">
-        234,345
-      </DataWell>
+      <Link data-testid="undertest">
+        <a href="#">Render me</a>
+      </Link>
     )
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
 
-  it('forwards refs', () => {
+  it('forwards ref', () => {
     const ref = React.createRef<HTMLDivElement>()
-
     render(
-      <DataWell ref={ref} label="Dog count">
-        234,345
-      </DataWell>
+      <Link ref={ref}>
+        <a href="#">A label</a>
+      </Link>
     )
-
-    expect(ref.current).not.toBeNull()
+    expect(ref).not.toBeNull()
   })
 
   describe.each(cases)('%s story', (_name, Story) => {

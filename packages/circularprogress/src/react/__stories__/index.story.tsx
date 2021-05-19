@@ -1,25 +1,35 @@
+import { Meta, Story } from '@storybook/react/types-6-0'
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
 import CircularProgress from '../../index'
 
-const valueStory = storiesOf('value', module)
-;[0, 25, 50, 75, 100, 33, 66].forEach(value =>
-  valueStory.add(`value ${value}`, () => <CircularProgress value={value} />)
+export default {
+  title: 'Components/CircularProgress',
+  component: CircularProgress
+} as Meta
+
+export const ValuesAndSizes: Story = () => (
+  <StoryGrid cols={Object.keys(CircularProgress.sizes).length + 1}>
+    {[0, 25, 33, 50, 66, 75, 100].reduce<(Element | JSX.Element)[]>(
+      (acc, value) => [
+        ...acc,
+        <div key={'val' + value}>{value}</div>,
+        ...Object.values(CircularProgress.sizes).map(size => (
+          <CircularProgress key={size + value} value={value} size={size} />
+        ))
+      ],
+      []
+    )}
+    <div>Indeterminate</div>
+    {Object.values(CircularProgress.sizes).map(size => (
+      <CircularProgress size={size} key={size} />
+    ))}
+  </StoryGrid>
 )
 
-const sizeStory = storiesOf('size', module)
-Object.values(CircularProgress.sizes).forEach(size =>
-  sizeStory.add(size, () => <CircularProgress size={size} value={75} />)
-)
-
-const indeterminateStory = storiesOf('indeterminate', module)
-Object.values(CircularProgress.sizes).forEach(size =>
-  indeterminateStory.add(size, () => <CircularProgress size={size} />)
-)
-
-storiesOf('animation', module).add('animates to new values', () => {
+export const Animation: Story = () => {
   const AnimationDemo = () => {
     const [value, updateValue] = React.useState(0)
 
@@ -44,10 +54,29 @@ storiesOf('animation', module).add('animates to new values', () => {
   }
 
   return <AnimationDemo />
-})
+}
 
-storiesOf('style overrides', module)
-  .add('style', () => <CircularProgress style={{ outline: '1px solid red' }} />)
-  .add('className (no viz change)', () => (
-    <CircularProgress className="someString" />
-  ))
+export const StyleOverride: Story = () => (
+  <CircularProgress style={{ outline: '1px solid red' }} />
+)
+
+export const ClassNameOverride: Story = () => (
+  <CircularProgress className="someString" />
+)
+
+const StoryGrid: React.FC<{ cols?: number }> = props => {
+  const { cols = 2, ...rest } = props
+
+  return (
+    <div
+      style={{
+        display: 'grid',
+        gap: '20px',
+        gridTemplateColumns: Array(cols).fill('1fr').join(' '),
+        alignItems: 'center',
+        justifyItems: 'left'
+      }}
+      {...rest}
+    />
+  )
+}

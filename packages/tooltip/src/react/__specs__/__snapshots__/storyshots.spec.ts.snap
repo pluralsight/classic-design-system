@@ -1,45 +1,67 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots appearance accent 1`] = `
+exports[`Storyshots Components/Tooltip Appearances 1`] = `
 <div
   style={
     Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-vuc25n=""
-  >
-    Some text
-  </div>
-</div>
-`;
-
-exports[`Storyshots appearance basic 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
+      "alignItems": "center",
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+      "justifyItems": "left",
     }
   }
 >
   <div
     data-css-18t2vqu=""
   >
-    Some text
+    basic
+  </div>
+  <div
+    data-css-vuc25n=""
+  >
+    accent
   </div>
 </div>
 `;
 
-exports[`Storyshots onClose accent 1`] = `
+exports[`Storyshots Components/Tooltip On Close 1`] = `
 <div
   style={
     Object {
-      "padding": "48px",
+      "alignItems": "center",
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+      "justifyItems": "left",
     }
   }
 >
+  <div
+    data-css-1cwxxu7=""
+  >
+    <button
+      aria-label="Close tooltip"
+      data-css-q0lk4z=""
+      onClick={[Function]}
+    >
+      <svg
+        aria-label="close icon"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+        />
+      </svg>
+    </button>
+    Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
+    <div
+      aria-hidden={true}
+      data-css-1oan5ap=""
+    />
+  </div>
   <div
     data-css-3w2dnc=""
   >
@@ -60,242 +82,6 @@ exports[`Storyshots onClose accent 1`] = `
       </svg>
     </button>
     Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
-  </div>
-</div>
-`;
-
-exports[`Storyshots onClose basic 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-1cwxxu7=""
-  >
-    <button
-      aria-label="Close tooltip"
-      data-css-q0lk4z=""
-      onClick={[Function]}
-    >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
-    </button>
-    Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
-  </div>
-</div>
-`;
-
-exports[`Storyshots onClose short text 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-1cwxxu7=""
-  >
-    <button
-      aria-label="Close tooltip"
-      data-css-q0lk4z=""
-      onClick={[Function]}
-    >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
-    </button>
-    Short
-  </div>
-</div>
-`;
-
-exports[`Storyshots onClose tailPosition topRight 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-1cwxxu7=""
-  >
-    <button
-      aria-label="Close tooltip"
-      data-css-q0lk4z=""
-      onClick={[Function]}
-    >
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
-        />
-      </svg>
-    </button>
-    Consectetur adipisicing elit, sed do ab eiusmod tempor incididunt ut
-    <div
-      aria-hidden={true}
-      data-css-pnrenl=""
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition accent bottomCenter 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-vuc25n=""
-  >
-    Some text
-    <div
-      aria-hidden={true}
-      data-css-nd5yk0=""
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition accent bottomLeft 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-vuc25n=""
-  >
-    Some text
-    <div
-      aria-hidden={true}
-      data-css-tyguzv=""
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition accent bottomRight 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-vuc25n=""
-  >
-    Some text
-    <div
-      aria-hidden={true}
-      data-css-83qlyn=""
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition accent leftCenter 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-vuc25n=""
-  >
-    Some text
-    <div
-      aria-hidden={true}
-      data-css-19dct80=""
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition accent rightCenter 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-vuc25n=""
-  >
-    Some text
-    <div
-      aria-hidden={true}
-      data-css-65ft98=""
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition accent topCenter 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-vuc25n=""
-  >
-    Some text
-    <div
-      aria-hidden={true}
-      data-css-1vyju2i=""
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition accent topLeft 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-vuc25n=""
-  >
-    Some text
     <div
       aria-hidden={true}
       data-css-q7mnkc=""
@@ -304,181 +90,160 @@ exports[`Storyshots tailPosition accent topLeft 1`] = `
 </div>
 `;
 
-exports[`Storyshots tailPosition accent topRight 1`] = `
+exports[`Storyshots Components/Tooltip Tail Positions 1`] = `
 <div
   style={
     Object {
-      "padding": "48px",
-    }
-  }
->
-  <div
-    data-css-vuc25n=""
-  >
-    Some text
-    <div
-      aria-hidden={true}
-      data-css-1to1u91=""
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition basic bottomCenter 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
+      "alignItems": "center",
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+      "justifyItems": "left",
     }
   }
 >
   <div
     data-css-18t2vqu=""
   >
-    Some text
+    bottomCenter
     <div
       aria-hidden={true}
       data-css-s1sch4=""
     />
   </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition basic bottomLeft 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
+  <div
+    data-css-vuc25n=""
+  >
+    bottomCenter
+    <div
+      aria-hidden={true}
+      data-css-nd5yk0=""
+    />
+  </div>
   <div
     data-css-18t2vqu=""
   >
-    Some text
+    bottomLeft
     <div
       aria-hidden={true}
       data-css-1jxkkwb=""
     />
   </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition basic bottomRight 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
+  <div
+    data-css-vuc25n=""
+  >
+    bottomLeft
+    <div
+      aria-hidden={true}
+      data-css-tyguzv=""
+    />
+  </div>
   <div
     data-css-18t2vqu=""
   >
-    Some text
+    bottomRight
     <div
       aria-hidden={true}
       data-css-as9lde=""
     />
   </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition basic leftCenter 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
+  <div
+    data-css-vuc25n=""
+  >
+    bottomRight
+    <div
+      aria-hidden={true}
+      data-css-83qlyn=""
+    />
+  </div>
   <div
     data-css-18t2vqu=""
   >
-    Some text
+    leftCenter
     <div
       aria-hidden={true}
       data-css-1bzlzco=""
     />
   </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition basic rightCenter 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
+  <div
+    data-css-vuc25n=""
+  >
+    leftCenter
+    <div
+      aria-hidden={true}
+      data-css-19dct80=""
+    />
+  </div>
   <div
     data-css-18t2vqu=""
   >
-    Some text
+    rightCenter
     <div
       aria-hidden={true}
       data-css-1lnrdce=""
     />
   </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition basic topCenter 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
+  <div
+    data-css-vuc25n=""
+  >
+    rightCenter
+    <div
+      aria-hidden={true}
+      data-css-65ft98=""
+    />
+  </div>
   <div
     data-css-18t2vqu=""
   >
-    Some text
+    topCenter
     <div
       aria-hidden={true}
       data-css-161cv40=""
     />
   </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition basic topLeft 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
+  <div
+    data-css-vuc25n=""
+  >
+    topCenter
+    <div
+      aria-hidden={true}
+      data-css-1vyju2i=""
+    />
+  </div>
   <div
     data-css-18t2vqu=""
   >
-    Some text
+    topLeft
     <div
       aria-hidden={true}
       data-css-1oan5ap=""
     />
   </div>
-</div>
-`;
-
-exports[`Storyshots tailPosition basic topRight 1`] = `
-<div
-  style={
-    Object {
-      "padding": "48px",
-    }
-  }
->
+  <div
+    data-css-vuc25n=""
+  >
+    topLeft
+    <div
+      aria-hidden={true}
+      data-css-q7mnkc=""
+    />
+  </div>
   <div
     data-css-18t2vqu=""
   >
-    Some text
+    topRight
     <div
       aria-hidden={true}
       data-css-pnrenl=""
+    />
+  </div>
+  <div
+    data-css-vuc25n=""
+  >
+    topRight
+    <div
+      aria-hidden={true}
+      data-css-1to1u91=""
     />
   </div>
 </div>
