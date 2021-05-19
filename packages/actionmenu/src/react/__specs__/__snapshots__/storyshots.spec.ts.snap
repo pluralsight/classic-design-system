@@ -94,6 +94,23 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
 </ul>
 `;
 
+exports[`Storyshots Components/ActionMenu Button Open 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    toggle
+  </button>
+  <div
+    style={
+      Object {
+        "visibility": "hidden",
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
 <ul
   data-css-rls1dj=""
