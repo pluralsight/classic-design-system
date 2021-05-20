@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.26.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.25.7...@pluralsight/ps-design-system-docs@0.26.0) (2021-05-20)
+
+
+### Bug Fixes
+
+* **docs:** remove extra parens in [@media](https://github.com/media) rules ([e009a21](https://github.com/pluralsight/design-system/commit/e009a211eed1dd49fb81116e22098bfea4fd919a))
+
+
+### Features
+
+* **docs:** add position component style prop note ([78e7507](https://github.com/pluralsight/design-system/commit/78e7507bacab874459a55611ad5ac5c7c48d4fe9))
+
+
+
+
+
 ## [0.25.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.25.6...@pluralsight/ps-design-system-docs@0.25.7) (2021-05-11)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs
