@@ -4,8 +4,10 @@ import {
   ValueOf,
   handleMenuKeyDownEvents,
   handleMenuKeyUpEvents,
-  useCloseOnDocumentEvents,
-  useMenuRef
+  useMenuRef,
+  useResize,
+  useClickOutside,
+  useScrollOutside
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -70,7 +72,9 @@ export const ActionMenu = React.forwardRef<HTMLUListElement, ActionMenuProps>(
       () => ref.current
     )
 
-    useCloseOnDocumentEvents<HTMLUListElement>(ref, onClose)
+    useClickOutside<HTMLUListElement>(ref, onClose)
+    useResize<HTMLUListElement>(ref, onClose)
+    useScrollOutside<HTMLUListElement>(ref, onClose)
 
     const handleKeyDown: React.KeyboardEventHandler<HTMLUListElement> = evt => {
       handleMenuKeyDownEvents(evt)
