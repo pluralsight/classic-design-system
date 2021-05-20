@@ -1,6 +1,10 @@
-import React from 'react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import { render } from '@testing-library/react'
 import { renderHook, act } from '@testing-library/react-hooks'
 import formatISO from 'date-fns/formatISO'
+import { axe } from 'jest-axe'
+import React from 'react'
+
 import {
   useIsInRange,
   onRangeDateSelected,
@@ -8,6 +12,7 @@ import {
   useDateSelectChange,
   useRangeSelectChange
 } from '..'
+import * as stories from '../__stories__/index.story'
 
 test('useIsInRange: none selected', () => {
   const { result } = renderHook(() => useIsInRange([]))
@@ -44,6 +49,7 @@ test('useIsInRange: start date and end date selected', () => {
     'out of range'
   )
 })
+
 test('onRangeDateSelected: onSelect', () => {
   const onSelect = jest.fn()
   const { result } = renderHook(() => React.useState<Date[] | undefined>())
@@ -422,4 +428,15 @@ test('useRangeSelectChange', () => {
   expect(result.current.startValue).toBe('02/05/2020')
   expect(result.current.endValue).toBe('05/21/2020')
   expect(result.current.slide).toBe('backward')
+})
+
+describe('accessibility', () => {
+  const cases = convertStoriesToJestCases(stories)
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+      expect(results).toHaveNoViolations()
+    })
+  })
 })
