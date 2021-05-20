@@ -19,6 +19,7 @@ export const OneItem: Story = () => (
     <ActionMenu.Item>One item</ActionMenu.Item>
   </ActionMenu>
 )
+
 export const MultipleItems: Story = () => (
   <ActionMenu>
     <ActionMenu.Item>One item</ActionMenu.Item>
@@ -26,6 +27,30 @@ export const MultipleItems: Story = () => (
     <ActionMenu.Item>Three item</ActionMenu.Item>
   </ActionMenu>
 )
+
+export const ButtonOpen: Story = () => {
+  function ButtonOpenDemo() {
+    const [open, setOpen] = React.useState(false)
+    return (
+      <div>
+        <BelowRight
+          show={
+            <ActionMenu onClose={() => setOpen(false)}>
+              {new Array(30).fill(null).map((_, index) => (
+                <ActionMenu.Item key={index}>index: {index}</ActionMenu.Item>
+              ))}
+            </ActionMenu>
+          }
+          when={open}
+        >
+          <button onClick={() => setOpen(!open)}>toggle</button>
+        </BelowRight>
+      </div>
+    )
+  }
+
+  return <ButtonOpenDemo />
+}
 
 export const LotsOfItems: Story = () => (
   <ActionMenu>
