@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.4...@pluralsight/ps-design-system-select@3.0.5) (2021-05-20)
+
+
+### Bug Fixes
+
+* move preventDefault into key callbacks ([#1759](https://github.com/pluralsight/design-system/issues/1759)) ([21a4ba6](https://github.com/pluralsight/design-system/commit/21a4ba6f777fee97f1c1d7a50434da5cb8de6cf5))
+
+
+
+
+
 ## [3.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.3...@pluralsight/ps-design-system-select@3.0.4) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-select
