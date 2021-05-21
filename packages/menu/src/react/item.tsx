@@ -52,7 +52,10 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     onClick && onClick(evt as React.MouseEvent, value)
   }
   const handleKeyDown: React.KeyboardEventHandler = evt => {
-    evt.key === 'Enter' && handleClick(evt)
+    if (evt.key === 'Enter') {
+      handleClick(evt)
+      evt.preventDefault()
+    }
     onKeyDown && onKeyDown(evt)
   }
   const selected = selectedItem?.value === value.value
