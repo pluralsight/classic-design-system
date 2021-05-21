@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.6...@pluralsight/ps-design-system-dropdown@12.1.7) (2021-05-21)
+
+
+### Bug Fixes
+
+* enter selects and closes menu ([#1760](https://github.com/pluralsight/design-system/issues/1760)) ([3f23a20](https://github.com/pluralsight/design-system/commit/3f23a209d33a126a9034995bccb5a6bbe36079ee))
+
+
+
+
+
 ## [12.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.5...@pluralsight/ps-design-system-dropdown@12.1.6) (2021-05-20)
 
 
