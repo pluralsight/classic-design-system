@@ -123,7 +123,7 @@ describe('Dropdown', () => {
       expect(onChange).toHaveBeenCalledWith(expect.anything(), 1)
     })
 
-    it('calls onChange when an item is selected by keyboard', () => {
+    it('calls onChange when an item is selected by keyboard', async () => {
       const onChange = jest.fn()
 
       // NOTE: placeholder is not recommend for a11y label
@@ -132,12 +132,13 @@ describe('Dropdown', () => {
       const btn = screen.getByRole('button', { name: /Select/ })
       btn.focus()
       pressEnter()
-
+      const menu = await screen.findByRole('listbox')
       pressArrowDown()
       pressArrowDown()
       pressEnter()
 
       expect(onChange).toHaveBeenCalledWith(expect.anything(), 3)
+      expect(menu).not.toBeInTheDocument()
     })
 
     it('calls Item#onClick when an item is clicked', () => {

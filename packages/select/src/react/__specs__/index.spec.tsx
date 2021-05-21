@@ -159,7 +159,7 @@ describe('Select', () => {
       button.focus()
       pressEnter()
 
-      await screen.findByRole('listbox')
+      const menu = await screen.findByRole('listbox')
 
       pressArrowDown()
       pressArrowUp()
@@ -167,6 +167,7 @@ describe('Select', () => {
       pressEnter()
 
       expect(button).toHaveTextContent('Make Owner')
+      expect(menu).not.toBeInTheDocument()
     })
 
     it('re-navigates, active index is maintained on selection', async () => {
