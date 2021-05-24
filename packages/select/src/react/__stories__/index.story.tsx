@@ -16,6 +16,42 @@ export default {
 interface StoryArgs {
   onChange?: any
   onClick?: any
+  options: {
+    value: React.ReactText
+    label: React.ReactText
+  }[]
+  placeholder: string
+  position: ValueOf<typeof Select.positions>
+}
+
+const basicArgs: StoryArgs = {
+  options: [
+    {
+      value: 'Can view',
+      label: 'Can view'
+    },
+    {
+      value: 'Can edit',
+      label: 'Can edit'
+    },
+    {
+      value: 'Make Owner',
+      label: 'Make Owner'
+    }
+  ],
+  onClick: action('on click'),
+  placeholder: 'Select item',
+  position: Select.positions.belowLeft
+}
+
+const Template: Story<StoryArgs> = args => <Select {...args} />
+
+export const Basic = Template.bind({})
+Basic.args = { ...basicArgs }
+
+interface CustomStoryArgs {
+  onChange?: any
+  onClick?: any
   items: {
     description: React.ReactText
     value: React.ReactText
@@ -25,7 +61,7 @@ interface StoryArgs {
   position: ValueOf<typeof Select.positions>
 }
 
-const defaultArgs: StoryArgs = {
+const customArgs: CustomStoryArgs = {
   items: [
     {
       description: 'View details, content and other members in the channel.',
@@ -50,7 +86,7 @@ const defaultArgs: StoryArgs = {
   position: Select.positions.belowLeft
 }
 
-const Template: Story<StoryArgs> = args => {
+const CustomMenuItemTemplate: Story<CustomStoryArgs> = args => {
   const { items } = args
   const [selected] = React.useState()
 
@@ -83,16 +119,16 @@ const Template: Story<StoryArgs> = args => {
   )
 }
 
-export const Basic = Template.bind({})
-Basic.args = { ...defaultArgs }
+export const CustomMenuItem = CustomMenuItemTemplate.bind({})
+CustomMenuItem.args = { ...customArgs }
 
-export const PositionBelowLeft = Template.bind({})
+export const PositionBelowLeft = CustomMenuItemTemplate.bind({})
 PositionBelowLeft.args = {
-  ...defaultArgs,
+  ...customArgs,
   position: Select.positions.belowRight
 }
 
-export const CustomRenderOption: Story<StoryArgs> = args => {
+export const CustomRenderOption: Story<CustomStoryArgs> = args => {
   const { items, placeholder, position } = args
   const [selected] = React.useState()
 
@@ -106,7 +142,7 @@ export const CustomRenderOption: Story<StoryArgs> = args => {
     />
   )
 }
-CustomRenderOption.args = { ...defaultArgs }
+CustomRenderOption.args = { ...customArgs }
 
 const defaultButtonArgs = { children: 'Hello' }
 

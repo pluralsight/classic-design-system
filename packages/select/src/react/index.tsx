@@ -2,7 +2,7 @@ import * as PositionComponents from '@pluralsight/ps-design-system-position'
 import {
   ValueOf,
   forwardRefWithAs,
-  forwardRefWithAsAndStatics
+  forwardRefWithStatics
 } from '@pluralsight/ps-design-system-util'
 import Menu from '@pluralsight/ps-design-system-menu'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -43,39 +43,40 @@ interface SelectProps extends UseListboxProps {
   renderOption?: React.FC
 }
 
-const Select = forwardRefWithAsAndStatics<SelectProps, 'button', SelectStatics>(
-  (props, ref) => {
-    const {
-      options = [],
-      position = 'belowLeft',
-      renderOption = defaultRenderOption,
-      children,
-      ...rest
-    } = props
-    const { buttonProps, selectedProps, menuProps, isOpen } = useListbox(
-      rest,
-      ref
-    )
+const Select = forwardRefWithStatics<
+  SelectProps,
+  HTMLButtonElement,
+  SelectStatics
+>((props, ref) => {
+  const {
+    options = [],
+    position = 'belowLeft',
+    renderOption = defaultRenderOption,
+    children,
+    ...rest
+  } = props
+  const { buttonProps, selectedProps, menuProps, isOpen } = useListbox(
+    rest,
+    ref
+  )
 
-    const RenderOption = React.useMemo(() => renderOption, [renderOption])
-    return (
-      <PositionComponents.Position
-        position={PositionComponents[position]}
-        when={isOpen}
-        show={
-          <Menu origin={Menu.origins.topLeft} {...menuProps} {...styles}>
-            {children ||
-              options.map(i => <RenderOption key={i.value} {...i} />)}
-          </Menu>
-        }
-      >
-        <Button {...buttonProps}>
-          <Selected {...selectedProps} />
-        </Button>
-      </PositionComponents.Position>
-    )
-  }
-)
+  const RenderOption = React.useMemo(() => renderOption, [renderOption])
+  return (
+    <PositionComponents.Position
+      position={PositionComponents[position]}
+      when={isOpen}
+      show={
+        <Menu origin={Menu.origins.topLeft} {...menuProps} {...styles}>
+          {children || options.map(i => <RenderOption key={i.value} {...i} />)}
+        </Menu>
+      }
+    >
+      <Button {...buttonProps}>
+        <Selected {...selectedProps} />
+      </Button>
+    </PositionComponents.Position>
+  )
+})
 
 interface SelectStatics {
   Button: typeof Button
