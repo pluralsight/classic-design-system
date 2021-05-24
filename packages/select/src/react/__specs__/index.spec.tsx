@@ -195,7 +195,7 @@ describe('Select', () => {
       pressArrowDown()
       pressEnter()
 
-      expect(button).toHaveTextContent('Can view')
+      expect(button).toHaveTextContent('Can edit')
     })
 
     it('select button onClick is triggered', async () => {
@@ -243,8 +243,8 @@ describe('Select', () => {
       pressEnter()
 
       expect(onChange).toHaveBeenCalledWith(expect.any(Object), {
-        value: 'Can view',
-        label: 'Can view'
+        value: 'Can edit',
+        label: 'Can edit'
       })
     })
   })
