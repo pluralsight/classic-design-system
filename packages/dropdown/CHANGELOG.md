@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.7...@pluralsight/ps-design-system-dropdown@12.1.8) (2021-05-24)
+
+
+### Bug Fixes
+
+* **dropdown:** preventdefault needs to be wrapped in conditional statement ([#1761](https://github.com/pluralsight/design-system/issues/1761)) ([3a55e28](https://github.com/pluralsight/design-system/commit/3a55e28d832bb6be754cea98f3690b06ddd14f08))
+
+
+
+
+
 ## [12.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.6...@pluralsight/ps-design-system-dropdown@12.1.7) (2021-05-21)
 
 

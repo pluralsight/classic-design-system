@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "12.1.8",
+  "version": "12.1.9",
   "description": "Design system components for form layout",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -47,7 +47,7 @@
     "@pluralsight/ps-design-system-button": "^22.1.4",
     "@pluralsight/ps-design-system-checkbox": "^9.1.2",
     "@pluralsight/ps-design-system-datepicker": "^15.1.4",
-    "@pluralsight/ps-design-system-dropdown": "^12.1.7",
+    "@pluralsight/ps-design-system-dropdown": "^12.1.8",
     "@pluralsight/ps-design-system-radio": "^10.1.4",
     "@pluralsight/ps-design-system-storybook-preset": "^0.6.2",
     "@pluralsight/ps-design-system-switch": "^9.1.2",
