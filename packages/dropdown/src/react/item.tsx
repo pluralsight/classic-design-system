@@ -57,8 +57,10 @@ export const Item = React.forwardRef<HTMLButtonElement, DropdownItemProps>(
         onClick(evt as React.MouseEvent, valueToSend)
     }
     const handleKeyDown: React.KeyboardEventHandler = evt => {
-      evt.key === 'Enter' && handleClick(evt)
-      evt.preventDefault()
+      if (evt.key === 'Enter') {
+        handleClick(evt)
+        evt.preventDefault()
+      }
     }
     return (
       <button
