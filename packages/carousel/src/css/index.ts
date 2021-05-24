@@ -6,7 +6,7 @@ import {
 } from '@pluralsight/ps-design-system-core'
 import { names as themeNames } from '@pluralsight/ps-design-system-theme'
 
-import { controlDirections as directions } from '../vars/index'
+import * as vars from '../vars/index'
 
 const resetButton = {
   background: 'transparent',
@@ -45,10 +45,8 @@ const resetList = {
 
 export default {
   '.psds-carousel': {
-    position: 'relative',
-    opacity: 0
+    position: 'relative'
   },
-  '.psds-carousel--ready': { opacity: 1 },
 
   '.psds-carousel__controls__control': {
     zIndex: 1,
@@ -56,13 +54,13 @@ export default {
     top: '50%',
     transition: `transform ${motion.speedFast} ease-in-out`
   },
-  [`.psds-carousel__controls__control--${directions.prev}`]: {
+  [`.psds-carousel__controls__control--${vars.controlDirections.prev}`]: {
     left: 0,
     transform: 'translate(-50%, -50%)',
 
     '&[hidden]': { transform: 'translate(-50%, -50%) scale(0)' }
   },
-  [`.psds-carousel__controls__control--${directions.next}`]: {
+  [`.psds-carousel__controls__control--${vars.controlDirections.next}`]: {
     right: 0,
     transform: 'translate(50%, -50%)',
 
@@ -94,39 +92,44 @@ export default {
     '&:hover, &:focus, &:active': { background: 'black' }
   },
 
-  '.psds-carousel__pages': {
+  '.psds-carousel__stage': {
+    position: 'relative',
+    display: 'flex',
+    flexDirection: 'column',
+    overflowY: 'hidden',
+    overflowX: 'auto',
+    scrollSnapType: 'x mandatory',
+    overscrollBehaviorX: 'contain',
+    scrollPadding: '0',
+    scrollbarWidth: 'none',
+
+    '&::-webkit-scrollbar': {
+      display: 'none'
+    }
+  },
+  '.psds-carousel__stage--ready': {
+    '& > ul > li': {
+      visibility: 'visible',
+      scrollSnapAlign: 'start',
+    }
+  },
+  '.psds-carousel__track': {
     ...resetFocus,
-    display: 'flex',
-    width: '100%',
-    overflow: 'hidden'
-  },
-
-  '.psds-carousel__page': {
     ...resetList,
-    alignItems: 'flex-start',
+    position: 'relative',
     display: 'flex',
-    flex: '1 0 100%',
-    margin: `0 calc(${layout.spacingSmall}/2)`,
-    pointerEvents: 'none',
-    transition: `transform ${motion.speedXSlow} ease-in-out`,
-
-    '&:first-child': { marginLeft: 0 },
-    '&:last-child': { marginRight: 0 }
+    flexGrow: '1',
+    flexDirection: 'row',
+    transition: 'left 400ms'
   },
-
-  '.psds-carousel__page--active': { pointerEvents: 'auto' },
 
   '.psds-carousel__item': {
-    margin: `0 calc(${layout.spacingSmall}/2)`,
-    flex: '1 1 100%',
-    width: 0,
-    minWidth: 0,
+    margin: `0 8px`,
+    flexGrow: 0,
+    flexShrink: 0,
+    visibility: 'hidden',
 
     '&:first-child': { marginLeft: 0 },
     '&:last-child': { marginRight: 0 }
   },
-
-  '.psds-carousel__instructions': {
-    ...accessibility.screenReaderOnly
-  }
 }

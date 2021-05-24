@@ -9160,6 +9160,816 @@ exports[`Storyshots Components/Carousel Controls 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Carousel Controls Override 1`] = `
+<div
+  style={
+    Object {
+      "margin": "64px",
+    }
+  }
+>
+  <div
+    data-css-13azwyo=""
+  >
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="Previous items"
+          data-css-170yy8n=""
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "2px solid red",
+              "top": "33%",
+            }
+          }
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-7uapup=""
+    >
+      <ul
+        data-css-gi8slw=""
+        onKeyDown={[Function]}
+      >
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            1
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            2
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            3
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            4
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            5
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            6
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            7
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            8
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            9
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="Next items"
+          data-css-170yy8n=""
+          onClick={[Function]}
+          style={
+            Object {
+              "outline": "2px solid red",
+              "top": "33%",
+            }
+          }
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Carousel Item Style Override 1`] = `
+<div
+  style={
+    Object {
+      "margin": "64px",
+    }
+  }
+>
+  <div
+    data-css-13azwyo=""
+  >
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="Previous items"
+          data-css-170yy8n=""
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-7uapup=""
+    >
+      <ul
+        data-css-gi8slw=""
+        onKeyDown={[Function]}
+      >
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "color": "red",
+              "flexBasis": "0px",
+              "fontSize": "3rem",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            1
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "color": "red",
+              "flexBasis": "0px",
+              "fontSize": "3rem",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            2
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "color": "red",
+              "flexBasis": "0px",
+              "fontSize": "3rem",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            3
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "color": "red",
+              "flexBasis": "0px",
+              "fontSize": "3rem",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            4
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "color": "red",
+              "flexBasis": "0px",
+              "fontSize": "3rem",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            5
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "color": "red",
+              "flexBasis": "0px",
+              "fontSize": "3rem",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            6
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "color": "red",
+              "flexBasis": "0px",
+              "fontSize": "3rem",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            7
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "color": "red",
+              "flexBasis": "0px",
+              "fontSize": "3rem",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            8
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "color": "red",
+              "flexBasis": "0px",
+              "fontSize": "3rem",
+            }
+          }
+        >
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            9
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="Next items"
+          data-css-170yy8n=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Carousel Item With Child Nodes 1`] = `
 <div
   style={
@@ -10895,6 +11705,1042 @@ exports[`Storyshots Components/Carousel Items 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Carousel Items Count 1`] = `
+<div
+  style={
+    Object {
+      "margin": "64px",
+    }
+  }
+>
+  <div>
+    <h2
+      style={
+        Object {
+          "paddingTop": "16px",
+        }
+      }
+    >
+      Single
+    </h2>
+    <div
+      data-css-13azwyo=""
+    >
+      <div
+        data-css-v9qvho=""
+        data-testid="carousel control"
+        hidden={true}
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="Previous items"
+            data-css-170yy8n=""
+            onClick={[Function]}
+            tabIndex={-1}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-7uapup=""
+      >
+        <ul
+          data-css-gi8slw=""
+          onKeyDown={[Function]}
+        >
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+              just one item
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        data-css-1n8kzqg=""
+        data-testid="carousel control"
+        hidden={true}
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="Next items"
+            data-css-170yy8n=""
+            onClick={[Function]}
+            tabIndex={-1}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2
+      style={
+        Object {
+          "paddingTop": "16px",
+        }
+      }
+    >
+      Multiple
+    </h2>
+    <div
+      data-css-13azwyo=""
+    >
+      <div
+        data-css-v9qvho=""
+        data-testid="carousel control"
+        hidden={true}
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="Previous items"
+            data-css-170yy8n=""
+            onClick={[Function]}
+            tabIndex={-1}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-7uapup=""
+      >
+        <ul
+          data-css-gi8slw=""
+          onKeyDown={[Function]}
+        >
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+              first item
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+              second item
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        data-css-1n8kzqg=""
+        data-testid="carousel control"
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="Next items"
+            data-css-170yy8n=""
+            onClick={[Function]}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2
+      style={
+        Object {
+          "paddingTop": "16px",
+        }
+      }
+    >
+      Many
+    </h2>
+    <div
+      data-css-13azwyo=""
+    >
+      <div
+        data-css-v9qvho=""
+        data-testid="carousel control"
+        hidden={true}
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="Previous items"
+            data-css-170yy8n=""
+            onClick={[Function]}
+            tabIndex={-1}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-7uapup=""
+      >
+        <ul
+          data-css-gi8slw=""
+          onKeyDown={[Function]}
+        >
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-qv4hlw=""
+              data-testid="mock-item"
+            >
+               
+              <button
+                data-css-1kybs28=""
+              >
+                Button
+              </button>
+              <p
+                data-css-1hmiaa7=""
+              >
+                non focusable /tabIndex text
+              </p>
+              <a
+                data-css-1kybs28=""
+                href="https://duckduckgo.com/"
+              >
+                Link
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        data-css-1n8kzqg=""
+        data-testid="carousel control"
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="Next items"
+            data-css-170yy8n=""
+            onClick={[Function]}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Carousel Items Dyanmic 1`] = `
 <div
   style={
@@ -11153,6 +12999,249 @@ exports[`Storyshots Components/Carousel Items Dyanmic 1`] = `
       <p>
         Use left and right arrow keys for navigation.
       </p>
+    </div>
+  </div>
+  <div
+    data-css-18ma6i3=""
+  >
+    <button
+      disabled={false}
+      onClick={[Function]}
+    >
+      remove
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      add
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
+<div
+  style={
+    Object {
+      "margin": "64px",
+    }
+  }
+>
+  <div
+    data-css-13azwyo=""
+  >
+    <div
+      data-css-v9qvho=""
+      data-testid="carousel control"
+      hidden={true}
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="Previous items"
+          data-css-170yy8n=""
+          onClick={[Function]}
+          tabIndex={-1}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret left icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div
+      data-css-7uapup=""
+    >
+      <ul
+        data-css-gi8slw=""
+        onKeyDown={[Function]}
+      >
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+           key=
+          0
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            1
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+           key=
+          1
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            2
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+           key=
+          2
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            3
+          </div>
+        </li>
+        <li
+          data-css-1wcfo81=""
+          onFocus={[Function]}
+          style={
+            Object {
+              "flexBasis": "0px",
+            }
+          }
+        >
+           key=
+          3
+          <div
+            data-css-qv4hlw=""
+            data-testid="mock-item"
+          >
+             
+            <button
+              data-css-1kybs28=""
+            >
+              Button
+            </button>
+            <p
+              data-css-1hmiaa7=""
+            >
+              non focusable /tabIndex text
+            </p>
+            <a
+              data-css-1kybs28=""
+              href="https://duckduckgo.com/"
+            >
+              Link
+            </a>
+            item: 
+            4
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div
+      data-css-1n8kzqg=""
+      data-testid="carousel control"
+    >
+      <div
+        data-css-a3m9si=""
+      >
+        <button
+          aria-label="Next items"
+          data-css-170yy8n=""
+          onClick={[Function]}
+        >
+          <div
+            aria-hidden={true}
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="caret right icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+              />
+            </svg>
+          </div>
+        </button>
+      </div>
     </div>
   </div>
   <div
