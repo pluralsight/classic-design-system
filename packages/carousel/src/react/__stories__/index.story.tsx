@@ -22,16 +22,16 @@ interface MockCardProps
     React.ComponentProps<typeof Card>,
     'title' | 'actionBar' | 'image' | 'metadata1'
   > {
-  titleText: string
+  index: number
 }
 const MockCard: React.FC<MockCardProps> = props => {
-  const { titleText, ...rest } = props
+  const { index, ...rest } = props
   return (
     <Card
       title={
         <Card.TextLink>
-          <a href="#" tabIndex={1}>
-            <Card.Title>{props.titleText}</Card.Title>
+          <a href="#">
+            <Card.Title>{'Title: ' + index}</Card.Title>
           </a>
         </Card.TextLink>
       }
@@ -43,7 +43,9 @@ const MockCard: React.FC<MockCardProps> = props => {
         />
       ]}
       image={
-        <Card.Image src="//picsum.photos/680/320?image=42&gravity=north" />
+        <Card.Image
+          src={`//picsum.photos/680/320?image=${40 + index}&gravity=north`}
+        />
       }
       metadata1={[
         <Card.TextLink key="text">
@@ -76,46 +78,53 @@ const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
     {...props}
   >
     {' '}
-    <button {...glamor.css({ flex: 'none' })}>Button: {props.children}</button>
+    <button {...glamor.css({ flex: 'none' })}>Button</button>
     <p {...glamor.css({ width: '100%', textAlign: 'center', padding: 10 })}>
       non focusable /tabIndex text
     </p>
     <a href="https://duckduckgo.com/" {...glamor.css({ flex: 'none' })}>
-      Link: {props.children}
-    </a>{' '}
+      Link
+    </a>
+    {props.children}
   </div>
 )
 
 const Container: React.FC = props => (
-  <div style={{ margin: '64px', outline: '1px solid red' }}>
-    {props.children}
-  </div>
+  <div style={{ margin: '64px' }}>{props.children}</div>
 )
 const Header: React.FC = props => (
   <h2 style={{ paddingTop: '16px' }}>{props.children}</h2>
 )
 
-export const Items: Story = () => {
+export const ItemsCount: Story = () => {
   return (
     <Container>
       <div>
         <Header>Single</Header>
-        <Carousel uniqueId={uniqueId}>
-          <MockItem>just one item</MockItem>
+        <Carousel>
+          <Carousel.Item>
+            <MockItem>just one item</MockItem>
+          </Carousel.Item>
         </Carousel>
       </div>
       <div>
         <Header>Multiple</Header>
-        <Carousel uniqueId={uniqueId}>
+        <Carousel>
+          <Carousel.Item>
           <MockItem>first item</MockItem>
-          <MockItem>second item</MockItem>
+          </Carousel.Item>
+          <Carousel.Item>
+            <MockItem>second item</MockItem>
+          </Carousel.Item>
         </Carousel>
       </div>
       <div>
         <Header>Many</Header>
-        <Carousel uniqueId={uniqueId}>
+        <Carousel>
           {new Array(21).fill(null).map((_, index) => (
-            <MockItem key={index}>item: {index + 1}</MockItem>
+            <Carousel.Item key={index}>
+              <MockItem />
+            </Carousel.Item>
           ))}
         </Carousel>
       </div>
@@ -123,7 +132,7 @@ export const Items: Story = () => {
   )
 }
 
-export const ItemsDyanmic: Story = () => {
+export const ItemsDynamic: Story = () => {
   function DynamicItems() {
     const [count, updateCount] = React.useState(4)
 
@@ -132,9 +141,11 @@ export const ItemsDyanmic: Story = () => {
 
     return (
       <Container>
-        <Carousel uniqueId={uniqueId}>
+        <Carousel>
           {new Array(count).fill(null).map((_, index) => (
-            <MockItem key={index}>item: {index + 1}</MockItem>
+            <Carousel.Item> key={index}
+              <MockItem>item: {index + 1}</MockItem>
+            </Carousel.Item>
           ))}
         </Carousel>
 
@@ -159,104 +170,66 @@ export const ItemsDyanmic: Story = () => {
   return <DynamicItems />
 }
 
-export const Controls: Story = () => (
-  <Carousel
-    uniqueId={uniqueId}
-    controlPrev={
-      <Carousel.Control
-        direction={Carousel.Control.directions.prev}
-        style={{ top: '33%' }}
-      />
-    }
-    controlNext={
-      <Carousel.Control
-        direction={Carousel.Control.directions.next}
-        style={{ top: '33%' }}
-      />
-    }
-  >
-    {new Array(9).fill(null).map((_, index) => (
-      <MockItem key={index}>item: {index + 1}</MockItem>
-    ))}
-  </Carousel>
+export const ControlsOverride: Story = () => (
+  <Container>
+    <Carousel
+      controlPrev={
+        <Carousel.Control
+          direction={Carousel.Control.directions.prev}
+          style={{ top: '33%', outline: '2px solid red' }}
+        />
+      }
+      controlNext={
+        <Carousel.Control
+          direction={Carousel.Control.directions.next}
+          style={{ top: '33%', outline: '2px solid red' }}
+        />
+      }
+    >
+      {new Array(9).fill(null).map((_, index) => (
+        <Carousel.Item key={index}>
+          <MockItem>item: {index + 1}</MockItem>
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  </Container>
+)
+
+export const ItemStyleOverride: Story = () => (
+  <Container>
+    <Carousel>
+      {new Array(9).fill(null).map((_, index) => (
+        <Carousel.Item key={index} style={{fontSize: '3rem', color: 'red'}}>
+          <MockItem>item: {index + 1}</MockItem>
+        </Carousel.Item>
+      ))}
+    </Carousel>
+  </Container>
 )
 
 export const Sizes: Story = () => (
-  <Container>
-    {Object.values(Carousel.sizes).map(size => (
-      <div key={size}>
-        <Header>{size}</Header>
-        <Carousel uniqueId={uniqueId} size={size}>
-          {new Array(13).fill(null).map((_, index) => (
-            <MockItem key={index}>item: {index + 1}</MockItem>
-          ))}
-        </Carousel>
-      </div>
-    ))}
-  </Container>
-)
-
-export const ItemWithChildNodes: Story = () => (
-  <Container>
-    <Carousel uniqueId={uniqueId} size={Carousel.sizes.wide}>
-      {new Array(9).fill(null).map((_, index) => (
-        <Carousel.Item key={index}>
-          <MockItem />
-        </Carousel.Item>
-      ))}
-    </Carousel>
-  </Container>
-)
-
-export const ItemsRenderProps: Story = () => (
-  <Container>
-    <Carousel uniqueId={uniqueId} size={Carousel.sizes.wide}>
-      {new Array(9).fill(null).map((_, index) => (
-        <Carousel.Item key={index}>
-          {(data: React.ComponentProps<typeof Item>) => (
-            <MockItem>
-              <pre>{JSON.stringify(data, null, 2)}</pre>
-            </MockItem>
-          )}
-        </Carousel.Item>
-      ))}
-    </Carousel>
-  </Container>
-)
-
-export const SizesWithCards: Story = () => (
-  <Container>
-    {Object.values(Carousel.sizes).map(size => (
-      <div key={size}>
-        <Header>{size}</Header>
-        <Carousel uniqueId={uniqueId} size={size}>
-          <MockCard metadata1={longStringsMetaData} titleText="Title Here" />
-
-          {new Array(13).fill(null).map((_, index) => (
-            <MockCard key={index} titleText={`Card ${index}`} />
-          ))}
-        </Carousel>
-      </div>
-    ))}
-  </Container>
-)
-
-export const ActionMenuPositionedChild: Story = () => (
-  <Container>
-    <Carousel uniqueId={uniqueId} size={Carousel.sizes.wide}>
-      <MockItem>
-        <ActionMenu style={{ left: 20, top: 20 }}>
-          {new Array(8).fill(null).map((_, index) => (
-            <ActionMenu.Item key={index}>item: {index}</ActionMenu.Item>
-          ))}
-        </ActionMenu>
-      </MockItem>
-
-      {new Array(13).fill(null).map((_, index) => (
-        <MockItem key={index} />
-      ))}
-    </Carousel>
-  </Container>
+  <div>
+    <Container>
+      <Header>Narrow Carousel Cards</Header>
+      <Carousel size={Carousel.sizes.narrow}>
+        {new Array(9).fill(null).map((_, index) => (
+          <Carousel.Item key={index}>
+            <MockCard index={index} />
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </Container>
+    <Container>
+      <Header>Wide Carousel Cards</Header>
+      <Carousel size={Carousel.sizes.wide}>
+        {new Array(9).fill(null).map((_, index) => (
+          <Carousel.Item key={index}>
+            <MockCard index={index} />
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </Container>
+  </div>
 )
 
 export const ActionMenuInPortal: Story = () => {
@@ -265,7 +238,6 @@ export const ActionMenuInPortal: Story = () => {
     return (
       <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
         <Carousel
-          uniqueId={uniqueId}
           size={Carousel.sizes.wide}
           controlPrev={
             <Carousel.Control
@@ -280,6 +252,7 @@ export const ActionMenuInPortal: Story = () => {
             />
           }
         >
+          <Carousel.Item key="a">
           <MockCard
             actionBarVisible
             actionBar={[
@@ -304,10 +277,13 @@ export const ActionMenuInPortal: Story = () => {
                 />
               </BelowRight>
             ]}
-            titleText="Yahoo"
+            index={0}
           />
+          </Carousel.Item>
           {new Array(3).fill(null).map((_, index) => (
-            <MockItem key={index} />
+            <Carousel.Item key={index}>
+              <MockItem />
+            </Carousel.Item>
           ))}
         </Carousel>
       </div>
@@ -323,7 +299,7 @@ export const CardsInPortalsPerf: Story = () => {
     return new Array(count).fill(null).map((_, i) => ({
       author: 'Some Author',
       id: i + 1,
-      image: '//picsum.photos/680/320?image=42&gravity=north',
+      image: `//picsum.photos/680/320?image=${40 + i}&gravity=north`,
       level: 'Advanced',
       title: 'Some Title'
     }))
@@ -343,9 +319,8 @@ export const CardsInPortalsPerf: Story = () => {
     }
 
     return (
-      <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
+      <Container>
         <Carousel
-          uniqueId={uniqueId}
           size={Carousel.sizes.wide}
           controlPrev={
             <Carousel.Control
@@ -361,45 +336,46 @@ export const CardsInPortalsPerf: Story = () => {
           }
         >
           {MOCK_DATA.courses.map(course => (
-            <Card
-              key={course.id}
-              image={<Card.Image src={course.image} />}
-              metadata1={[course.author, course.level]}
-              title={<Card.Title>{course.title}</Card.Title>}
-              actionBarVisible
-              actionBar={[
-                <BelowRight
-                  inNode={
-                    typeof document !== 'undefined' ? document.body : undefined
-                  }
-                  when={course.id === courseIdForOpenMenu}
-                  show={
-                    <ActionMenu>
-                      <ActionMenu.Item key={0}>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item key={1}>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item key={2}>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item key={3}>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item key={4}>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item key={5}>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item key={6}>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item key={7}>Useless item</ActionMenu.Item>
-                    </ActionMenu>
-                  }
-                  key="a"
-                >
-                  <Card.Action
-                    title="See more"
-                    icon={<Icon.MoreIcon />}
-                    onClick={(evt: React.MouseEvent) =>
-                      handleClickMore(evt, course.id)
+            <Carousel.Item key={course.id}>
+              <Card
+                image={<Card.Image src={course.image} />}
+                metadata1={[course.author, course.level]}
+                title={<Card.Title>{course.title}</Card.Title>}
+                actionBarVisible
+                actionBar={[
+                  <BelowRight
+                    inNode={
+                      typeof document !== 'undefined' ? document.body : undefined
                     }
-                  />
-                </BelowRight>
-              ]}
-            />
+                    when={course.id === courseIdForOpenMenu}
+                    show={
+                      <ActionMenu>
+                        <ActionMenu.Item key={0}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={1}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={2}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={3}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={4}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={5}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={6}>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item key={7}>Useless item</ActionMenu.Item>
+                      </ActionMenu>
+                    }
+                    key="a"
+                  >
+                    <Card.Action
+                      title="See more"
+                      icon={<Icon.MoreIcon />}
+                      onClick={(evt: React.MouseEvent) =>
+                        handleClickMore(evt, course.id)
+                      }
+                    />
+                  </BelowRight>
+                ]}
+              />
+            </Carousel.Item>
           ))}
         </Carousel>
-      </div>
+      </Container>
     )
   }
   return <PerfPortalStory />
