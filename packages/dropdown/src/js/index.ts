@@ -143,13 +143,11 @@ export const useDropdown = (
       }
     }
   }, [itemMatchingValueIndex, isOpen])
-
+  const openKeyEvents = new Set(['Enter', 'ArrowDown', 'ArrowUp', ' '])
   function handleButtonEvent(evt: React.MouseEvent | React.KeyboardEvent) {
     if (
       evt.type === 'click' ||
-      (evt.type === 'keydown' &&
-        'key' in evt &&
-        ['Enter', 'ArrowDown', 'ArrowUp', ' '].includes(evt.key))
+      (evt.type === 'keydown' && 'key' in evt && openKeyEvents.has(evt.key))
     ) {
       evt.preventDefault()
       evt.stopPropagation()
