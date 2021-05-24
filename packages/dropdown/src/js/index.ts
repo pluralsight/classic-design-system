@@ -149,7 +149,7 @@ export const useDropdown = (
       evt.type === 'click' ||
       (evt.type === 'keydown' &&
         'key' in evt &&
-        (evt.key === 'Enter' || 'ArrowDown' || 'ArrowUp'))
+        ['Enter', 'ArrowDown', 'ArrowUp', ' '].includes(evt.key))
     ) {
       evt.preventDefault()
       evt.stopPropagation()
