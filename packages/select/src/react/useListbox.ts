@@ -134,9 +134,6 @@ export const useListbox = (
   )
   const menuRef = useMenuRef()
   const closeMenu = () => {
-    if (isOpen && buttonRef.current) {
-      buttonRef.current.focus()
-    }
     setOpen(false)
   }
   React.useEffect(() => {
