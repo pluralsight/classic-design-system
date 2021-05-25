@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.7...@pluralsight/ps-design-system-dropdown@12.1.8) (2021-05-24)
+
+
+### Bug Fixes
+
+* **dropdown:** preventdefault needs to be wrapped in conditional statement ([#1761](https://github.com/pluralsight/design-system/issues/1761)) ([3a55e28](https://github.com/pluralsight/design-system/commit/3a55e28d832bb6be754cea98f3690b06ddd14f08))
+
+
+
+
+
+## [12.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.6...@pluralsight/ps-design-system-dropdown@12.1.7) (2021-05-21)
+
+
+### Bug Fixes
+
+* enter selects and closes menu ([#1760](https://github.com/pluralsight/design-system/issues/1760)) ([3f23a20](https://github.com/pluralsight/design-system/commit/3f23a209d33a126a9034995bccb5a6bbe36079ee))
+
+
+
+
+
+## [12.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.5...@pluralsight/ps-design-system-dropdown@12.1.6) (2021-05-20)
+
+
+### Bug Fixes
+
+* move preventDefault into key callbacks ([#1759](https://github.com/pluralsight/design-system/issues/1759)) ([21a4ba6](https://github.com/pluralsight/design-system/commit/21a4ba6f777fee97f1c1d7a50434da5cb8de6cf5))
+
+
+
+
+
 ## [12.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.4...@pluralsight/ps-design-system-dropdown@12.1.5) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
