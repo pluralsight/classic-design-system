@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.7...@pluralsight/ps-design-system-select@3.0.8) (2021-05-25)
+
+
+### Bug Fixes
+
+* **select:** fix button focus trap in useListbox ([51315ea](https://github.com/pluralsight/design-system/commit/51315ea020179446e13b989260fb70fbce8f7784))
+* **select:** no need to ever focus on a document close event ([4f99b70](https://github.com/pluralsight/design-system/commit/4f99b70c95bbd4713899b790b586d6f3f80e4bf1))
+
+
+
+
+
 ## [3.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.6...@pluralsight/ps-design-system-select@3.0.7) (2021-05-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-select
