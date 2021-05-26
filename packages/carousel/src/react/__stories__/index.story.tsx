@@ -205,7 +205,7 @@ export const ItemStyleOverride: Story = () => (
 export const Sizes: Story = () => (
   <div>
     {Object.values(vars.sizes).map(size => (
-      <Container>
+      <Container key={size}>
         <Header>{size}</Header>
         <Carousel size={size}>
           {new Array(9).fill(null).map((_, index) => (

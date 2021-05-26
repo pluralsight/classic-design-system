@@ -66,7 +66,7 @@ const Carousel: CarouselComponent = ({
 
   controlPrev = controlPrev || <Control direction={Control.directions.prev} />
   controlNext = controlNext || <Control direction={Control.directions.next} />
-  size = size || Carousel.sizes.small
+  size = size || Carousel.sizes.medium
 
   const ready = !!width && width > 0
   const stageRef = React.createRef<HTMLDivElement>()
