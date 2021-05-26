@@ -63,7 +63,6 @@ export const Control: ControlComponent = props => {
 
   return (
     <div
-      data-testid="carousel control"
       {...styles.control(props.direction)}
       {...(!isVisible && { hidden: true })}
     >
