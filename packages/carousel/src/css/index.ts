@@ -110,7 +110,7 @@ export default {
   '.psds-carousel__stage--ready': {
     '& > ul > li': {
       visibility: 'visible',
-      scrollSnapAlign: 'start',
+      scrollSnapAlign: 'start'
     }
   },
   '.psds-carousel__track': {
@@ -131,5 +131,5 @@ export default {
 
     '&:first-child': { marginLeft: 0 },
     '&:last-child': { marginRight: 0 }
-  },
+  }
 }
