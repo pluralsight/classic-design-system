@@ -3,6 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.8...@pluralsight/ps-design-system-select@3.0.9) (2021-05-26)
+
+
+### Bug Fixes
+
+* **select:** set correct peer dependency on ps normalize ([4b5f5f1](https://github.com/pluralsight/design-system/commit/4b5f5f15b6ab6f1d14243a70fa1f0d10033557e7))
+
+
+
+
+
+## [3.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.7...@pluralsight/ps-design-system-select@3.0.8) (2021-05-25)
+
+
+### Bug Fixes
+
+* **select:** fix button focus trap in useListbox ([51315ea](https://github.com/pluralsight/design-system/commit/51315ea020179446e13b989260fb70fbce8f7784))
+* **select:** no need to ever focus on a document close event ([4f99b70](https://github.com/pluralsight/design-system/commit/4f99b70c95bbd4713899b790b586d6f3f80e4bf1))
+
+
+
+
+
+## [3.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.6...@pluralsight/ps-design-system-select@3.0.7) (2021-05-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-select
+
+
+
+
+
+## [3.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.5...@pluralsight/ps-design-system-select@3.0.6) (2021-05-21)
+
+
+### Bug Fixes
+
+* enter selects and closes menu ([#1760](https://github.com/pluralsight/design-system/issues/1760)) ([3f23a20](https://github.com/pluralsight/design-system/commit/3f23a209d33a126a9034995bccb5a6bbe36079ee))
+
+
+
+
+
+## [3.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.4...@pluralsight/ps-design-system-select@3.0.5) (2021-05-20)
+
+
+### Bug Fixes
+
+* move preventDefault into key callbacks ([#1759](https://github.com/pluralsight/design-system/issues/1759)) ([21a4ba6](https://github.com/pluralsight/design-system/commit/21a4ba6f777fee97f1c1d7a50434da5cb8de6cf5))
+
+
+
+
+
 ## [3.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.3...@pluralsight/ps-design-system-select@3.0.4) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-select

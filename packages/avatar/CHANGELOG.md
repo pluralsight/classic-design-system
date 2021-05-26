@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@9.1.2...@pluralsight/ps-design-system-avatar@9.1.3) (2021-05-26)
+
+
+### Bug Fixes
+
+* **avatar:** set correct peer dependency on ps normalize ([15ee9d0](https://github.com/pluralsight/design-system/commit/15ee9d07c7d1a82b0a6effbff3f1286ef4c7a42d))
+
+
+
+
+
 ## [9.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@9.1.1...@pluralsight/ps-design-system-avatar@9.1.2) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar

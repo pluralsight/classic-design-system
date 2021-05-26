@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@13.1.5...@pluralsight/ps-design-system-emptystate@13.1.6) (2021-05-26)
+
+
+### Bug Fixes
+
+* **emptystate:** set correct peer dependency on ps normalize ([a8d8ed9](https://github.com/pluralsight/design-system/commit/a8d8ed94a739a56aae4748b3a026d4e4343188ce))
+
+
+
+
+
 ## [13.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@13.1.4...@pluralsight/ps-design-system-emptystate@13.1.5) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-emptystate

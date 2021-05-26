@@ -159,7 +159,7 @@ describe('Select', () => {
       button.focus()
       pressEnter()
 
-      await screen.findByRole('listbox')
+      const menu = await screen.findByRole('listbox')
 
       pressArrowDown()
       pressArrowUp()
@@ -167,6 +167,7 @@ describe('Select', () => {
       pressEnter()
 
       expect(button).toHaveTextContent('Make Owner')
+      expect(menu).not.toBeInTheDocument()
     })
 
     it('re-navigates, active index is maintained on selection', async () => {
@@ -194,7 +195,7 @@ describe('Select', () => {
       pressArrowDown()
       pressEnter()
 
-      expect(button).toHaveTextContent('Can view')
+      expect(button).toHaveTextContent('Can edit')
     })
 
     it('select button onClick is triggered', async () => {
@@ -242,8 +243,8 @@ describe('Select', () => {
       pressEnter()
 
       expect(onChange).toHaveBeenCalledWith(expect.any(Object), {
-        value: 'Can view',
-        label: 'Can view'
+        value: 'Can edit',
+        label: 'Can edit'
       })
     })
   })

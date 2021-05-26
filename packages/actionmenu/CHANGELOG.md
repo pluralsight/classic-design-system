@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@17.1.4...@pluralsight/ps-design-system-actionmenu@17.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **actionmenu:** set correct peer dependency on ps normalize ([74e0b75](https://github.com/pluralsight/design-system/commit/74e0b750e746d8c3456dca97fe41af6ee5e57e90))
+
+
+
+
+
 ## [17.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@17.1.3...@pluralsight/ps-design-system-actionmenu@17.1.4) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

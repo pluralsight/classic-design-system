@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@10.1.5...@pluralsight/ps-design-system-banner@10.1.6) (2021-05-26)
+
+
+### Bug Fixes
+
+* **banner:** set correct peer dependency on ps normalize ([f0e3a61](https://github.com/pluralsight/design-system/commit/f0e3a611f2d1af5192a9c42a9a4a01434ea20a4d))
+
+
+
+
+
 ## [10.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@10.1.4...@pluralsight/ps-design-system-banner@10.1.5) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-banner

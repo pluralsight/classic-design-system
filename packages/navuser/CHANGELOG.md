@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@4.1.4...@pluralsight/ps-design-system-navuser@4.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **navuser:** set correct peer dependency on ps normalize ([f1f01db](https://github.com/pluralsight/design-system/commit/f1f01db9f6de5ed6d98390d18339db4a7e3424d8))
+
+
+
+
+
 ## [4.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@4.1.3...@pluralsight/ps-design-system-navuser@4.1.4) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navuser
