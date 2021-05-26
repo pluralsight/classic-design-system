@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tooltip",
-  "version": "8.1.2",
+  "version": "8.1.3",
   "description": "Design System component for tooltip ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -38,6 +38,6 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.1.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.6.2"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.6.3"
   }
 }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.6...@pluralsight/ps-design-system-typeahead@10.0.7) (2021-05-26)
+
+
+### Bug Fixes
+
+* **typeahead:** set correct peer dependency on ps normalize ([0435e5b](https://github.com/pluralsight/design-system/commit/0435e5bc33dcc3eb494043881542d3d76396e61c))
+
+
+
+
+
 ## [10.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.5...@pluralsight/ps-design-system-typeahead@10.0.6) (2021-05-21)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-typeahead

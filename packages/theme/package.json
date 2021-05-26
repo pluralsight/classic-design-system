@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "8.1.2",
+  "version": "8.1.3",
   "description": "Design System component for theming",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",

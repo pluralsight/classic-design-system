@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@5.1.4...@pluralsight/ps-design-system-navitem@5.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **navitem:** set correct peer dependency on ps normalize ([7f8a96b](https://github.com/pluralsight/design-system/commit/7f8a96bf53d1bb17c2c0b9b3f25f0f102f2700a7))
+
+
+
+
+
 ## [5.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@5.1.3...@pluralsight/ps-design-system-navitem@5.1.4) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navitem
