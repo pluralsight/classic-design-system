@@ -7,7 +7,8 @@ import {
   useDateSelectChange,
   slides
 } from '../../../datepicker'
-import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import { Select } from '../../../select'
+import { Menu } from '../../../menu'
 import { Radio } from '../../../radio'
 import { Switch } from '../../../switch'
 import { Tag } from '../../../tag'
@@ -119,18 +120,12 @@ storiesOf('Sample Form', module)
         subLabel="Not a valid email address"
       />
 
-      <Dropdown
-        label="Occupation"
-        placeholder="Select your occupation..."
-        menu={
-          <>
-            <Dropdown.Item>Engineer</Dropdown.Item>
-            <Dropdown.Item>Craftsperson</Dropdown.Item>
-            <Dropdown.Item>Artisan</Dropdown.Item>
-            <Dropdown.Item>Creator</Dropdown.Item>
-          </>
-        }
-      />
+      <Select placeholder="Select your occupation...">
+        <Menu.Item>Engineer</Menu.Item>
+        <Menu.Item>Craftsperson</Menu.Item>
+        <Menu.Item>Artisan</Menu.Item>
+        <Menu.Item>Creator</Menu.Item>
+      </Select>
 
       <div style={{ display: 'flex' }}>
         <Tag href="http://google.com">Foo</Tag>

@@ -50,7 +50,7 @@ export const generateUser = (company = generateCompany()) => ({
   company,
   email: faker.internet.email(),
   firstName: faker.name.firstName(),
-  handle: faker.random.uuid(),
+  handle: faker.datatype.uuid(),
   job: generateJob(),
   lastName: faker.name.lastName()
 })

@@ -84,7 +84,7 @@ storiesOf('menu items', module)
     React.useEffect(() => {
       if (ref?.current) {
         const li = ref.current.querySelectorAll('li')[1]
-        li.focus()
+        li && li.focus()
       }
     })
     return (
@@ -108,7 +108,7 @@ storiesOf('menu items', module)
     React.useEffect(() => {
       if (ref?.current) {
         const li = ref.current.querySelectorAll('li')[1]
-        li.focus()
+        li && li.focus()
       }
     })
     return (
