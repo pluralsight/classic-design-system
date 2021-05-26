@@ -15,7 +15,6 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
   >
     <div
       data-css-v9qvho=""
-      data-testid="carousel control"
       hidden={true}
     >
       <div
@@ -241,7 +240,6 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -273,7 +271,6 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -305,7 +302,6 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -330,7 +326,6 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
     </div>
     <div
       data-css-1n8kzqg=""
-      data-testid="carousel control"
     >
       <div
         data-css-a3m9si=""
@@ -374,7 +369,6 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
   >
     <div
       data-css-v9qvho=""
-      data-testid="carousel control"
       hidden={true}
     >
       <div
@@ -7374,7 +7368,6 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
     </div>
     <div
       data-css-1n8kzqg=""
-      data-testid="carousel control"
     >
       <div
         data-css-a3m9si=""
@@ -7418,7 +7411,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
   >
     <div
       data-css-v9qvho=""
-      data-testid="carousel control"
       hidden={true}
     >
       <div
@@ -7471,7 +7463,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7505,7 +7496,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7539,7 +7529,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7573,7 +7562,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7607,7 +7595,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7641,7 +7628,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7675,7 +7661,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7709,7 +7694,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7743,7 +7727,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7770,7 +7753,6 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
     </div>
     <div
       data-css-1n8kzqg=""
-      data-testid="carousel control"
     >
       <div
         data-css-a3m9si=""
@@ -7820,7 +7802,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
   >
     <div
       data-css-v9qvho=""
-      data-testid="carousel control"
       hidden={true}
     >
       <div
@@ -7869,7 +7850,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7905,7 +7885,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7941,7 +7920,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -7977,7 +7955,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -8013,7 +7990,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -8049,7 +8025,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -8085,7 +8060,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -8121,7 +8095,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -8157,7 +8130,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -8184,7 +8156,6 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
     </div>
     <div
       data-css-1n8kzqg=""
-      data-testid="carousel control"
     >
       <div
         data-css-a3m9si=""
@@ -8238,7 +8209,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
     >
       <div
         data-css-v9qvho=""
-        data-testid="carousel control"
         hidden={true}
       >
         <div
@@ -8285,7 +8255,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8311,7 +8280,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
       </div>
       <div
         data-css-1n8kzqg=""
-        data-testid="carousel control"
         hidden={true}
       >
         <div
@@ -8357,7 +8325,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
     >
       <div
         data-css-v9qvho=""
-        data-testid="carousel control"
         hidden={true}
       >
         <div
@@ -8404,7 +8371,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8437,7 +8403,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8463,7 +8428,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
       </div>
       <div
         data-css-1n8kzqg=""
-        data-testid="carousel control"
       >
         <div
           data-css-a3m9si=""
@@ -8507,7 +8471,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
     >
       <div
         data-css-v9qvho=""
-        data-testid="carousel control"
         hidden={true}
       >
         <div
@@ -8554,7 +8517,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8586,7 +8548,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8618,7 +8579,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8650,7 +8610,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8682,7 +8641,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8714,7 +8672,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8746,7 +8703,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8778,7 +8734,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8810,7 +8765,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8842,7 +8796,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8874,7 +8827,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8906,7 +8858,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8938,7 +8889,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -8970,7 +8920,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -9002,7 +8951,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -9034,7 +8982,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -9066,7 +9013,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -9098,7 +9044,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -9130,7 +9075,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -9162,7 +9106,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -9194,7 +9137,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               data-css-qv4hlw=""
-              data-testid="mock-item"
             >
                
               <button
@@ -9219,7 +9161,6 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
       </div>
       <div
         data-css-1n8kzqg=""
-        data-testid="carousel control"
       >
         <div
           data-css-a3m9si=""
@@ -9264,7 +9205,6 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
   >
     <div
       data-css-v9qvho=""
-      data-testid="carousel control"
       hidden={true}
     >
       <div
@@ -9309,11 +9249,8 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
             }
           }
         >
-           key=
-          0
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -9345,11 +9282,8 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
             }
           }
         >
-           key=
-          1
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -9381,11 +9315,8 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
             }
           }
         >
-           key=
-          2
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -9417,11 +9348,8 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
             }
           }
         >
-           key=
-          3
           <div
             data-css-qv4hlw=""
-            data-testid="mock-item"
           >
              
             <button
@@ -9448,7 +9376,6 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
     </div>
     <div
       data-css-1n8kzqg=""
-      data-testid="carousel control"
     >
       <div
         data-css-a3m9si=""
@@ -9517,7 +9444,6 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
     >
       <div
         data-css-v9qvho=""
-        data-testid="carousel control"
         hidden={true}
       >
         <div
@@ -11096,7 +11022,6 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
       </div>
       <div
         data-css-1n8kzqg=""
-        data-testid="carousel control"
       >
         <div
           data-css-a3m9si=""
@@ -11146,7 +11071,6 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
     >
       <div
         data-css-v9qvho=""
-        data-testid="carousel control"
         hidden={true}
       >
         <div
@@ -12725,7 +12649,6 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
       </div>
       <div
         data-css-1n8kzqg=""
-        data-testid="carousel control"
       >
         <div
           data-css-a3m9si=""
