@@ -77,6 +77,8 @@ const Carousel: CarouselComponent = ({
     itemWidth,
     stageOffset
   )
+  const isPrevVisible = leftMostVisibleIndex > 0
+  const isNextVisible = leftMostVisibleIndex < numItems - perPage
 
   const next = () => {
     scroll(
@@ -96,15 +98,9 @@ const Carousel: CarouselComponent = ({
     )
   }
 
-  const isPrevVisible = leftMostVisibleIndex > 0
-  const isNextVisible = leftMostVisibleIndex < numItems - perPage
-
-  const context = {
-    next,
-    prev,
-    isNextVisible,
-    isPrevVisible,
-    itemWidth: calcItemWidth(size, width)
+  const scroll = (offset: number) => {
+    setStageOffset(offset)
+    stageRef.current?.scroll({ left: offset, behavior: 'smooth' })
   }
 
   const handleItemFocus = (index: number) => (_evt: React.FocusEvent) => {
@@ -118,11 +114,6 @@ const Carousel: CarouselComponent = ({
     }
   }
 
-  const scroll = (offset: number) => {
-    setStageOffset(offset)
-    stageRef.current?.scroll({ left: offset, behavior: 'smooth' })
-  }
-
   const handleTrackKeyDown = (evt: React.KeyboardEvent) => {
     if (isLeftArrow(evt))
       scroll(calcStageOffsetBackward(itemWidth, activeIndex - 1))
@@ -130,6 +121,13 @@ const Carousel: CarouselComponent = ({
       scroll(calcStageOffsetForward(perPage, itemWidth, activeIndex + 1))
   }
 
+  const context = {
+    next,
+    prev,
+    isNextVisible,
+    isPrevVisible,
+    itemWidth: calcItemWidth(size, width)
+  }
   return (
     <CarouselContext.Provider value={context}>
       <div {...styles.carousel()} {...rest} ref={ref}>
