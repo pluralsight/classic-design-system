@@ -4,7 +4,7 @@ import initStoryshots, {
 } from '@storybook/addon-storyshots'
 
 jest.mock('../../../util', () => {
-  const actual = jest.requireActual('../../util')
+  const actual = jest.requireActual('../../../util')
   const mockUniqueId = (prefix: string) => `${prefix}unique-id`
 
   return {
@@ -15,7 +15,7 @@ jest.mock('../../../util', () => {
 })
 
 initStoryshots({
-  configPath: path.resolve(__dirname, '../../../../.storybook'),
+  configPath: path.resolve(__dirname, '../../.storyshots'),
   framework: 'react',
   test: snapshotWithOptions(() => ({ createNodeMock }))
 })

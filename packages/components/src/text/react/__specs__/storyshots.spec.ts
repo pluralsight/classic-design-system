@@ -6,7 +6,7 @@ import initStoryshots, {
 const createNodeMock = () => document.createElement('div')
 
 initStoryshots({
-  configPath: path.resolve(__dirname, '../../../../.storybook'),
+  configPath: path.resolve(__dirname, '../../.storyshots'),
   framework: 'react',
   test: snapshotWithOptions({ createNodeMock })
 })

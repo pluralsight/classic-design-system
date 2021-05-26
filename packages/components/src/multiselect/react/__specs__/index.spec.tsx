@@ -7,7 +7,7 @@ import React from 'react'
 
 import * as stories from '../__stories__/index.story'
 
-jest.mock('../../position', () => {
+jest.mock('../../../position', () => {
   return {
     esModule: true,
     BelowLeft: jest.fn().mockImplementation(props => {
