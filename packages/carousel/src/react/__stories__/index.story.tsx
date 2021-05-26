@@ -7,10 +7,9 @@ import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Carousel, { Item } from '../index'
+import * as vars from '../../vars/index'
 
 const glamor = glamorDefault || glamorExports
-
-const uniqueId = (prefix = '') => `${prefix}mock_unique_id`
 
 export default {
   title: 'Components/Carousel',
@@ -205,26 +204,18 @@ export const ItemStyleOverride: Story = () => (
 
 export const Sizes: Story = () => (
   <div>
-    <Container>
-      <Header>Narrow Carousel Cards</Header>
-      <Carousel size={Carousel.sizes.narrow}>
-        {new Array(9).fill(null).map((_, index) => (
-          <Carousel.Item key={index}>
-            <MockCard index={index} />
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </Container>
-    <Container>
-      <Header>Wide Carousel Cards</Header>
-      <Carousel size={Carousel.sizes.wide}>
-        {new Array(9).fill(null).map((_, index) => (
-          <Carousel.Item key={index}>
-            <MockCard index={index} />
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </Container>
+    {Object.values(vars.sizes).map(size => (
+      <Container>
+        <Header>{size}</Header>
+        <Carousel size={size}>
+          {new Array(9).fill(null).map((_, index) => (
+            <Carousel.Item key={index}>
+              <MockCard index={index} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </Container>
+    ))}
   </div>
 )
 
@@ -234,7 +225,7 @@ export const ActionMenuInPortal: Story = () => {
     return (
       <div style={{ border: '1px solid red', maxWidth: 600, padding: 10 }}>
         <Carousel
-          size={Carousel.sizes.wide}
+          size={Carousel.sizes.medium}
           controlPrev={
             <Carousel.Control
               direction={Carousel.Control.directions.prev}
@@ -317,7 +308,7 @@ export const CardsInPortalsPerf: Story = () => {
     return (
       <Container>
         <Carousel
-          size={Carousel.sizes.wide}
+          size={Carousel.sizes.medium}
           controlPrev={
             <Carousel.Control
               direction={Carousel.Control.directions.prev}

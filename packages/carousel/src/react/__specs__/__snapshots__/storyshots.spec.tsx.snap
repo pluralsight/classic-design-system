@@ -9437,7 +9437,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
         }
       }
     >
-      Narrow Carousel Cards
+      small
     </h2>
     <div
       data-css-13azwyo=""
@@ -11064,7 +11064,1634 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
         }
       }
     >
-      Wide Carousel Cards
+      medium
+    </h2>
+    <div
+      data-css-13azwyo=""
+    >
+      <div
+        data-css-v9qvho=""
+        hidden={true}
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="Previous items"
+            data-css-170yy8n=""
+            onClick={[Function]}
+            tabIndex={-1}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret left icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div
+        data-css-7uapup=""
+      >
+        <ul
+          data-css-gi8slw=""
+          onKeyDown={[Function]}
+        >
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="Bookmark"
+                    data-css-45oxhg=""
+                    title="Bookmark"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="bookmark icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-18hqvbo=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-fvvao4=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            className="shiitake-children"
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 0
+                            …
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 0
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              className="shiitake-test-children"
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              
+                              …
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-9h0kuv=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-18hqvbo=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=41&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="Bookmark"
+                    data-css-45oxhg=""
+                    title="Bookmark"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="bookmark icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-18hqvbo=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-fvvao4=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            className="shiitake-children"
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 1
+                            …
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 1
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              className="shiitake-test-children"
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              
+                              …
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-9h0kuv=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-18hqvbo=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="Bookmark"
+                    data-css-45oxhg=""
+                    title="Bookmark"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="bookmark icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-18hqvbo=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-fvvao4=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            className="shiitake-children"
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 2
+                            …
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 2
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              className="shiitake-test-children"
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              
+                              …
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-9h0kuv=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-18hqvbo=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=43&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="Bookmark"
+                    data-css-45oxhg=""
+                    title="Bookmark"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="bookmark icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-18hqvbo=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-fvvao4=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            className="shiitake-children"
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 3
+                            …
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 3
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              className="shiitake-test-children"
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              
+                              …
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-9h0kuv=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-18hqvbo=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=44&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="Bookmark"
+                    data-css-45oxhg=""
+                    title="Bookmark"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="bookmark icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-18hqvbo=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-fvvao4=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            className="shiitake-children"
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 4
+                            …
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 4
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              className="shiitake-test-children"
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              
+                              …
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-9h0kuv=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-18hqvbo=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=45&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="Bookmark"
+                    data-css-45oxhg=""
+                    title="Bookmark"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="bookmark icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-18hqvbo=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-fvvao4=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            className="shiitake-children"
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 5
+                            …
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 5
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              className="shiitake-test-children"
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              
+                              …
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-9h0kuv=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-18hqvbo=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=46&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="Bookmark"
+                    data-css-45oxhg=""
+                    title="Bookmark"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="bookmark icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-18hqvbo=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-fvvao4=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            className="shiitake-children"
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 6
+                            …
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 6
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              className="shiitake-test-children"
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              
+                              …
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-9h0kuv=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-18hqvbo=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=47&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="Bookmark"
+                    data-css-45oxhg=""
+                    title="Bookmark"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="bookmark icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-18hqvbo=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-fvvao4=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            className="shiitake-children"
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 7
+                            …
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 7
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              className="shiitake-test-children"
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              
+                              …
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-9h0kuv=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-18hqvbo=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li
+            data-css-1wcfo81=""
+            onFocus={[Function]}
+            style={
+              Object {
+                "flexBasis": "0px",
+              }
+            }
+          >
+            <div
+              data-css-1ybvkp1=""
+            >
+              <div
+                data-css-1pdjifv=""
+              >
+                <div
+                  data-css-i7gti2=""
+                  style={
+                    Object {
+                      "backgroundImage": "url(//picsum.photos/680/320?image=48&gravity=north)",
+                    }
+                  }
+                />
+                <div
+                  data-css-4ed7vx=""
+                >
+                  <button
+                    aria-label="Bookmark"
+                    data-css-45oxhg=""
+                    title="Bookmark"
+                  >
+                    <div
+                      data-css-7dab2f=""
+                    >
+                      <svg
+                        aria-label="bookmark icon"
+                        role="img"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                        />
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+              <div
+                data-css-piydn8=""
+              >
+                <span
+                  data-css-18hqvbo=""
+                >
+                  <a
+                    href="#"
+                  >
+                    <div
+                      data-css-fvvao4=""
+                    >
+                      <div
+                        className=""
+                      >
+                        <span
+                          style={
+                            Object {
+                              "display": "block",
+                              "maxHeight": "0px",
+                              "overflow": "hidden",
+                              "position": "relative",
+                            }
+                          }
+                        >
+                          <span
+                            className="shiitake-children"
+                            style={
+                              Object {
+                                "display": "block",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 8
+                            …
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "height": "0px",
+                                "overflow": "hidden",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            Title: 8
+                          </span>
+                          <span
+                            aria-hidden="true"
+                            style={
+                              Object {
+                                "display": "block",
+                                "left": "-20000px",
+                                "position": "absolute",
+                                "width": "100%",
+                              }
+                            }
+                          >
+                            <span
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                              <span
+                                style={
+                                  Object {
+                                    "display": "block",
+                                  }
+                                }
+                              >
+                                W
+                              </span>
+                            </span>
+                            <span
+                              className="shiitake-test-children"
+                              style={
+                                Object {
+                                  "display": "block",
+                                }
+                              }
+                            >
+                              
+                              …
+                            </span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </span>
+              </div>
+              <div
+                data-css-9h0kuv=""
+              >
+                <span
+                  data-css-1tz10dh=""
+                >
+                  <span
+                    data-css-18hqvbo=""
+                  >
+                    <a
+                      href="#"
+                    >
+                      meta
+                    </a>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div
+        data-css-1n8kzqg=""
+      >
+        <div
+          data-css-a3m9si=""
+        >
+          <button
+            aria-label="Next items"
+            data-css-170yy8n=""
+            onClick={[Function]}
+          >
+            <div
+              aria-hidden={true}
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="caret right icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "margin": "64px",
+      }
+    }
+  >
+    <h2
+      style={
+        Object {
+          "paddingTop": "16px",
+        }
+      }
+    >
+      large
     </h2>
     <div
       data-css-13azwyo=""
