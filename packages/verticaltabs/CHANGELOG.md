@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.6...@pluralsight/ps-design-system-verticaltabs@7.1.7) (2021-05-26)
+
+
+### Bug Fixes
+
+* **verticaltabs:** make collapse prop dynamic ([5bf5243](https://github.com/pluralsight/design-system/commit/5bf5243df2542fa2473dba33fb401a4a40db3978))
+
+
+
+
+
 ## [7.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.5...@pluralsight/ps-design-system-verticaltabs@7.1.6) (2021-05-26)
 
 
