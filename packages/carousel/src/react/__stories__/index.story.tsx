@@ -22,16 +22,17 @@ interface MockCardProps
     React.ComponentProps<typeof Card>,
     'title' | 'actionBar' | 'image' | 'metadata1'
   > {
-  index: number
+  titleText?: string
+  index?: number
 }
 const MockCard: React.FC<MockCardProps> = props => {
-  const { index, ...rest } = props
+  const { index, titleText, ...rest } = props
   return (
     <Card
       title={
         <Card.TextLink>
           <a href="#">
-            <Card.Title>{'Title: ' + index}</Card.Title>
+            <Card.Title>{titleText || 'Title: ' + index}</Card.Title>
           </a>
         </Card.TextLink>
       }
@@ -44,7 +45,9 @@ const MockCard: React.FC<MockCardProps> = props => {
       ]}
       image={
         <Card.Image
-          src={`//picsum.photos/680/320?image=${40 + index}&gravity=north`}
+          src={`//picsum.photos/680/320?image=${
+            40 + (index || 0)
+          }&gravity=north`}
         />
       }
       metadata1={[
@@ -56,12 +59,6 @@ const MockCard: React.FC<MockCardProps> = props => {
     />
   )
 }
-
-const longStringsMetaData = [
-  'It is impossible to count the grand contributions of this great author',
-  'Levels heretofore unknown in the battle for truth and knowledge',
-  'A length of such amazing lengthitude so-as to blow the mind'
-]
 
 const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
@@ -111,7 +108,7 @@ export const ItemsCount: Story = () => {
         <Header>Multiple</Header>
         <Carousel>
           <Carousel.Item>
-          <MockItem>first item</MockItem>
+            <MockItem>first item</MockItem>
           </Carousel.Item>
           <Carousel.Item>
             <MockItem>second item</MockItem>
@@ -143,7 +140,9 @@ export const ItemsDynamic: Story = () => {
       <Container>
         <Carousel>
           {new Array(count).fill(null).map((_, index) => (
-            <Carousel.Item> key={index}
+            <Carousel.Item>
+              {' '}
+              key={index}
               <MockItem>item: {index + 1}</MockItem>
             </Carousel.Item>
           ))}
@@ -199,7 +198,7 @@ export const ItemStyleOverride: Story = () => (
   <Container>
     <Carousel>
       {new Array(9).fill(null).map((_, index) => (
-        <Carousel.Item key={index} style={{fontSize: '3rem', color: 'red'}}>
+        <Carousel.Item key={index} style={{ fontSize: '3rem', color: 'red' }}>
           <MockItem>item: {index + 1}</MockItem>
         </Carousel.Item>
       ))}
@@ -253,32 +252,32 @@ export const ActionMenuInPortal: Story = () => {
           }
         >
           <Carousel.Item key="a">
-          <MockCard
-            actionBarVisible
-            actionBar={[
-              <BelowRight
-                inNode={document.body}
-                when={isOpen}
-                show={
-                  <ActionMenu>
-                    {new Array(8).fill(null).map((_, index) => (
-                      <ActionMenu.Item key={index}>
-                        item: {index}
-                      </ActionMenu.Item>
-                    ))}
-                  </ActionMenu>
-                }
-                key="a"
-              >
-                <Card.Action
-                  title="asdf"
-                  icon={<Icon.MoreIcon />}
-                  onClick={() => setOpen(!isOpen)}
-                />
-              </BelowRight>
-            ]}
-            index={0}
-          />
+            <MockCard
+              actionBarVisible
+              actionBar={[
+                <BelowRight
+                  inNode={document.body}
+                  when={isOpen}
+                  show={
+                    <ActionMenu>
+                      {new Array(8).fill(null).map((_, index) => (
+                        <ActionMenu.Item key={index}>
+                          item: {index}
+                        </ActionMenu.Item>
+                      ))}
+                    </ActionMenu>
+                  }
+                  key="a"
+                >
+                  <Card.Action
+                    title="asdf"
+                    icon={<Icon.MoreIcon />}
+                    onClick={() => setOpen(!isOpen)}
+                  />
+                </BelowRight>
+              ]}
+              index={0}
+            />
           </Carousel.Item>
           {new Array(3).fill(null).map((_, index) => (
             <Carousel.Item key={index}>
@@ -345,7 +344,9 @@ export const CardsInPortalsPerf: Story = () => {
                 actionBar={[
                   <BelowRight
                     inNode={
-                      typeof document !== 'undefined' ? document.body : undefined
+                      typeof document !== 'undefined'
+                        ? document.body
+                        : undefined
                     }
                     when={course.id === courseIdForOpenMenu}
                     show={
