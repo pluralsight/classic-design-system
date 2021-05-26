@@ -71,7 +71,6 @@ const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
       justifyContent: 'center',
       position: 'relative'
     })}
-    data-testid="mock-item"
     {...props}
   >
     {' '}
@@ -140,9 +139,7 @@ export const ItemsDynamic: Story = () => {
       <Container>
         <Carousel>
           {new Array(count).fill(null).map((_, index) => (
-            <Carousel.Item>
-              {' '}
-              key={index}
+            <Carousel.Item key={index}>
               <MockItem>item: {index + 1}</MockItem>
             </Carousel.Item>
           ))}
