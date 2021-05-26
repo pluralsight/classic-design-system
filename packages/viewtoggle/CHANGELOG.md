@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@8.1.5...@pluralsight/ps-design-system-viewtoggle@8.1.6) (2021-05-26)
+
+
+### Bug Fixes
+
+* **viewtoggle:** set correct peer dependency on ps normalize ([79dbb1d](https://github.com/pluralsight/design-system/commit/79dbb1d82a2876612d7e5b5a538a235eec8b114c))
+
+
+
+
+
 ## [8.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@8.1.4...@pluralsight/ps-design-system-viewtoggle@8.1.5) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle

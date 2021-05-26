@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.2...@pluralsight/ps-design-system-switch@9.1.3) (2021-05-26)
+
+
+### Bug Fixes
+
+* **switch:** set correct peer dependency on ps normalize ([b357acf](https://github.com/pluralsight/design-system/commit/b357acffbf3e45fb3a337e196f45e5701160d468))
+
+
+
+
+
 ## [9.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.1...@pluralsight/ps-design-system-switch@9.1.2) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch

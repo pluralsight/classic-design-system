@@ -135,9 +135,6 @@ export const useListbox = (
   const menuRef = useMenuRef()
   const closeMenu = () => {
     setOpen(false)
-    if (buttonRef.current) {
-      buttonRef.current.focus()
-    }
   }
   React.useEffect(() => {
     function handleEscape(evt: KeyboardEvent) {
