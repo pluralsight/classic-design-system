@@ -4,22 +4,29 @@ import { sizes } from '../vars/index'
 import * as vars from '../vars'
 
 const cardCountsPerWidth = {
-  narrow: [
-    { min: 1401, max: 9999, count: 8 },
-    { min: 1201, max: 1400, count: 7 },
+  small: [
+    { min: 1551, max: 9999, count: 8 },
+    { min: 1201, max: 1550, count: 7 },
     { min: 901, max: 1200, count: 6 },
-    { min: 701, max: 900, count: 5 },
-    { min: 401, max: 700, count: 4 },
-    { min: 321, max: 400, count: 2 },
-    { min: 0, max: 320, count: 1 }
+    { min: 651, max: 900, count: 5 },
+    { min: 451, max: 650, count: 4 },
+    { min: 301, max: 450, count: 3 },
+    { min: 201, max: 300, count: 2 },
+    { min: 0, max: 200, count: 1 }
   ],
-  wide: [
-    { min: 1401, max: 9999, count: 6 },
-    { min: 1201, max: 1400, count: 5 },
-    { min: 901, max: 1200, count: 4 },
-    { min: 701, max: 900, count: 3 },
-    { min: 401, max: 700, count: 2 },
-    { min: 0, max: 400, count: 1 }
+  medium: [
+    { min: 1501, max: 9999, count: 6 },
+    { min: 1151, max: 1500, count: 5 },
+    { min: 851, max: 1150, count: 4 },
+    { min: 601, max: 850, count: 3 },
+    { min: 301, max: 600, count: 2 },
+    { min: 0, max: 300, count: 1 }
+  ],
+  large: [
+    { min: 1301, max: 9999, count: 4 },
+    { min: 901, max: 1300, count: 3 },
+    { min: 501, max: 900, count: 2 },
+    { min: 0, max: 500, count: 1 }
   ]
 }
 
