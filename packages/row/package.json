@@ -32,7 +32,7 @@
     "shave": "^2.5.6"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^4.0.0",
+    "@pluralsight/ps-design-system-normalize": "^5.0.0",
     "@pluralsight/ps-design-system-theme": "^7.0.0",
     "glamor": "^2.20.40",
     "react": "^17.0.1"

@@ -34,7 +34,7 @@
     "@pluralsight/ps-design-system-util": "^9.2.0"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^4.0.0",
+    "@pluralsight/ps-design-system-normalize": "^5.0.0",
     "@pluralsight/ps-design-system-theme": "^7.0.0",
     "glamor": "^2.x.x",
     "react": "^17.0.1"
