@@ -21,9 +21,11 @@ import { MockItem } from '../../components/carousel'
 
 ## Examples
 
-### Auto paging
+### Size
 
-The number and width of items are handled automatically.
+The number and width of items in the Carousel are handled automatically.  Item min and max width constraints will adjust based on the `size` prop passed the Carousel. Similarly, the number of items in the Carousel can be controlled by constraining the width of a container element around the Carousel.
+
+The content that you pass as a child to `Carousel.Item` to be responsive. In the case of `Card`, a common item child, the width is `100%`, infinitely flexible. If not sufficiently flexible, the carousel will not look great. If the child can't expand to fill the item, the gutters will be off. If the child can't shrink to fit the item, the paging will be off.
 
 ```typescript
 import Card from '@pluralsight/ps-design-system-card'
@@ -32,17 +34,39 @@ import React from 'react'
 
 function Example() {
   return (
-    <Carousel>
-      {MOCK_DATA.courses.map(course => (
-        <Card
-          key={course.id}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
-          metadata1={[course.author, course.level]}
-          progress={randomInt()}
-          title={<Card.Title>{course.title}</Card.Title>}
-        />
-      ))}
-    </Carousel>
+    <>
+      <Carousel size={Carousel.sizes.narrow}>
+        {MOCK_DATA.courses.map(course => (
+          <Carousel.Item key={course.id}>
+            <Card
+              image={
+                <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+              }
+              metadata1={[course.author, course.level]}
+              progress={randomInt()}
+              title={<Card.Title>{course.title}</Card.Title>}
+            />
+          </Carousel.Item>
+        ))}
+      </Carousel>
+
+      <br />
+
+      <Carousel size={Carousel.sizes.wide}>
+        {MOCK_DATA.courses.map(course => (
+          <Carousel.Item key={course.id}>
+            <Card
+              image={
+                <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+              }
+              metadata1={[course.author, course.level]}
+              progress={randomInt()}
+              title={<Card.Title>{course.title}</Card.Title>}
+            />
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </>
   )
 }
 
@@ -164,7 +188,7 @@ const MOCK_DATA = {
 }
 ```
 
-### Using portals
+### Use portals for overflow
 
 If there are any UI elements that need to appear in the same visual space as the carousel container, they will need to be rendered outside the `Carousel` DOM. This is because the Carousel container solution requires being styled `overflow: hidden`. A [React Portal](https://reactjs.org/docs/portals.html) is a great solution. A common example could be an `ActionMenu` rendered from a `Card`. Here is some example code:
 
@@ -180,42 +204,43 @@ function Example() {
   return (
     <Carousel size={Carousel.sizes.wide}>
       {MOCK_DATA.courses.map(course => (
-        <Toggle>
-          {({ active, toggle }) => (
-            <Card
-              key={course.id}
-              image={<Card.Image src={course.image} />}
-              metadata1={[course.author, course.level]}
-              title={<Card.Title>{course.title}</Card.Title>}
-              actionBarVisible
-              actionBar={[
-                <BelowRight
-                  inNode={typeof document !== 'undefined' && document.body}
-                  when={active}
-                  show={
-                    <ActionMenu onClick={toggle}>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                      <ActionMenu.Item>Useless item</ActionMenu.Item>
-                    </ActionMenu>
-                  }
-                  key="a"
-                >
-                  <Card.Action
-                    title="See more"
-                    icon={<MoreIcon />}
-                    onClick={toggle}
-                  />
-                </BelowRight>
-              ]}
-            />
-          )}
-        </Toggle>
+        <Carousel.Item key={course.id}>
+          <Toggle>
+            {({ active, toggle }) => (
+              <Card
+                image={<Card.Image src={course.image} />}
+                metadata1={[course.author, course.level]}
+                title={<Card.Title>{course.title}</Card.Title>}
+                actionBarVisible
+                actionBar={[
+                  <BelowRight
+                    inNode={typeof document !== 'undefined' && document.body}
+                    when={active}
+                    show={
+                      <ActionMenu onClick={toggle}>
+                        <ActionMenu.Item>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item>Useless item</ActionMenu.Item>
+                        <ActionMenu.Item>Useless item</ActionMenu.Item>
+                      </ActionMenu>
+                    }
+                    key="a"
+                  >
+                    <Card.Action
+                      title="See more"
+                      icon={<MoreIcon />}
+                      onClick={toggle}
+                    />
+                  </BelowRight>
+                ]}
+              />
+            )}
+          </Toggle>
+        </Carousel.Item>
       ))}
     </Carousel>
   )
@@ -349,104 +374,6 @@ const MOCK_DATA = {
 }
 ```
 
-### Size
-
-The size will adjust the min/max constraints of the individual items in the carousel.
-
-```typescript
-import Card from '@pluralsight/ps-design-system-card'
-import Carousel from '@pluralsight/ps-design-system-carousel'
-import React from 'react'
-
-function Example() {
-  return (
-    <>
-      <Carousel size={Carousel.sizes.narrow}>
-        {MOCK_DATA.courses.map(course => (
-          <Card
-            key={course.id}
-            image={
-              <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
-            }
-            metadata1={[course.author, course.level]}
-            progress={randomInt()}
-            title={<Card.Title>{course.title}</Card.Title>}
-          />
-        ))}
-      </Carousel>
-
-      <br />
-
-      <Carousel size={Carousel.sizes.wide}>
-        {MOCK_DATA.courses.map(course => (
-          <Card
-            key={course.id}
-            image={
-              <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
-            }
-            metadata1={[course.author, course.level]}
-            progress={randomInt()}
-            title={<Card.Title>{course.title}</Card.Title>}
-          />
-        ))}
-      </Carousel>
-    </>
-  )
-}
-
-export default Example
-
-const randomInt = (max = 100) => Math.floor(Math.random() * Math.floor(max))
-
-const MOCK_DATA = {
-  courses: [
-    {
-      author: 'Jim Cooper',
-      id: '1',
-      level: 'Intermediate',
-      title: 'Vue.js Fundamentals'
-    },
-    {
-      author: 'Mark Heath',
-      id: '2',
-      level: 'Intermediate',
-      title: 'Azure Functions Fundamentals'
-    }
-  ]
-}
-```
-
-### Access to page and item metadata
-
-Access to page and item metadata
-
-```typescript
-import Card from '@pluralsight/ps-design-system-card'
-import Carousel from '@pluralsight/ps-design-system-carousel'
-import { P } from '@pluralsight/ps-design-system-text'
-import React from 'react'
-
-function Example() {
-  return (
-    <Carousel size={Carousel.sizes.wide}>
-      {new Array(9).fill(null).map((_, index) => (
-        <Carousel.Item key={index}>
-          {data => (
-            <div>
-              <P>
-                <pre>{JSON.stringify(data, null, 2)}</pre>
-              </P>
-            </div>
-          )}
-        </Carousel.Item>
-      ))}
-    </Carousel>
-  )
-}
-
-export default Example
-```
-
 ## Guidelines
 
 The height of the carousel adapts to the height of the content it contains, but the width of its children will be equalized, so make sure to use related content for children that are intended to be used at the same height and width.
@@ -455,41 +382,55 @@ The height of the carousel adapts to the height of the content it contains, but 
   columnCount={1}
   do={
     <Carousel size={Carousel.sizes.wide}>
-      <MockItem />
-      <MockItem />
-      <MockItem />
-      <MockItem />
-      <MockItem />
-      <MockItem />
-      <MockItem />
+      <Carousel.Item>
+        <MockItem />
+      </Carousel.Item>
+      <Carousel.Item>
+        <MockItem />
+      </Carousel.Item>
+      <Carousel.Item>
+        <MockItem />
+      </Carousel.Item>
+      <Carousel.Item>
+        <MockItem />
+      </Carousel.Item>
+      <Carousel.Item>
+        <MockItem />
+      </Carousel.Item>
     </Carousel>
   }
   dont={
     <Carousel size={Carousel.sizes.wide}>
-      <Note
-        avatar={<Avatar name="Bob Ross" src="//picsum.photos/128" />}
-        message={
-          <p>
-            Wow, this is a card. The text goes on for a long time. It makes a
-            vertical alignment problem with hetereogeneous content in a
-            carousel.
-          </p>
-        }
-      />
-      <Avatar name="Bob Ross" src="//picsum.photos/128" />
-      <Card
-        bonusBar={<Avatar size={Avatar.sizes.xSmall} name="Jake Trent" />}
-        title={
-          <Card.Title>
-            Getting Started with Reactive Programming Using RxJS
-          </Card.Title>
-        }
-        progress={20}
-        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
-        metadata1={['Scott Allen', 'Intermediate']}
-        metadata2={['23m watched']}
-        size={Card.sizes.small}
-      />
+      <Carousel.Item>
+        <Note
+          avatar={<Avatar name="Bob Ross" src="//picsum.photos/128" />}
+          message={
+            <p>
+              Wow, this is a card. The text goes on for a long time. It makes a
+              vertical alignment problem with hetereogeneous content in a
+              carousel.
+            </p>
+          }
+        />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Avatar name="Bob Ross" src="//picsum.photos/128" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <Card
+          bonusBar={<Avatar size={Avatar.sizes.xSmall} name="Jake Trent" />}
+          title={
+            <Card.Title>
+              Getting Started with Reactive Programming Using RxJS
+            </Card.Title>
+          }
+          progress={20}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          metadata1={['Scott Allen', 'Intermediate']}
+          metadata2={['23m watched']}
+          size={Card.sizes.small}
+        />
+      </Carousel.Item>
     </Carousel>
   }
 />
@@ -509,7 +450,7 @@ The height of the carousel adapts to the height of the content it contains, but 
   <TypesProp
     name="children"
     required
-    type="React.ReactNode"
+    type="Carousel.Item"
     desc="items to place in carousel"
   />
   <TypesProp
