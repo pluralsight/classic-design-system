@@ -10,9 +10,9 @@ Light WIP -- 50% less fat!
 
 ## Get involved
 
-- [Use it in your app](http://design-system.pluralsight.com/install)
-- [Find ways to contribute](http://design-system.pluralsight.com/contribute)
-- [Prep to commit code](http://design-system.pluralsight.com/contribute/code)
+- [Use it in your app](https://design-system.pluralsight.com/guides/developmentworkflow)
+- [Find ways to contribute](https://design-system.pluralsight.com/guides/contribute)
+- [Prep to commit code](https://design-system.pluralsight.com/guides/contribute#contribute-code)
 
 ## Run locally
 
