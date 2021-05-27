@@ -152,7 +152,7 @@ interface HandleChange<T> {
   selected?: T
   setSlide: React.Dispatch<React.SetStateAction<ValueOf<typeof slides>>>
   setSelected: React.Dispatch<React.SetStateAction<T | undefined>>
-  dateFormat: string
+  dateFormat?: string
 }
 
 export const useDateSelectChange = ({

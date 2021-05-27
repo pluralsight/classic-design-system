@@ -274,7 +274,7 @@ test('useDateSelectChange', () => {
   expect(formatISO(result.current.selected)).toBe(
     formatISO(new Date('03/10/2020'))
   )
-  expect(result.current.slide).toBe('backward')
+  expect(result.current.slide).toBeUndefined()
   act(() => {
     result.current.onChange({
       target: { value: '03/11/2020' }
@@ -285,6 +285,38 @@ test('useDateSelectChange', () => {
     formatISO(new Date('03/11/2020'))
   )
   expect(result.current.slide).toBe(undefined)
+})
+test('useDateSelectChange: custom date format', () => {
+  const { result } = renderHook(() => {
+    const [selected, setSelected] = React.useState<Date | undefined>()
+    const [slide, setSlide] = React.useState<
+      'forward' | 'backward' | undefined
+      >()
+    const dateFormat = 'yyyy-MM-dd'
+    const [value, onChange] = useDateSelectChange({
+      setSelected,
+      selected,
+      setSlide,
+      dateFormat
+    })
+    return { selected, slide, value, onChange }
+  })
+  act(() => {
+    result.current.onChange({
+      target: { value: '01/10/2020' }
+    } as React.ChangeEvent<HTMLInputElement>)
+  })
+  expect(result.current.value).toBe('01/10/2020')
+  expect(result.current.selected).toBe(undefined)
+  act(() => {
+    result.current.onChange({
+      target: { value: '2020-01-10' }
+    } as React.ChangeEvent<HTMLInputElement>)
+  })
+  expect(result.current.value).toBe('2020-01-10')
+  expect(formatISO(result.current.selected)).toBe(
+    formatISO(new Date('01/10/2020'))
+  )
 })
 test('useRangeSelectChange', () => {
   const { result } = renderHook(() => {
