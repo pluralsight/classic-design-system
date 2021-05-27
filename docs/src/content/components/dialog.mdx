@@ -168,7 +168,10 @@ When a modal Dialog (or non-modal Dialog) are shown on the screen, it will take 
 
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
-import { colorsBackgroundLight, layout } from '@pluralsight/ps-design-system-core'
+import {
+  colorsBackgroundLight,
+  layout
+} from '@pluralsight/ps-design-system-core'
 import Dialog from '@pluralsight/ps-design-system-dialog'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -352,9 +355,9 @@ Be explicit as possible when writing dialog buttons. Use affirmative action text
           appearance={Button.appearances.secondary}
           style={{ marginRight: layout.spacingMedium }}
         >
-          Delete
+          Cancel
         </Button>
-        <Button>Cancel</Button>
+        <Button>Delete record</Button>
       </div>
     </Dialog>
   }
