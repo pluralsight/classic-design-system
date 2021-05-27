@@ -14,7 +14,8 @@
     "!src/*/__specs__/*"
   ],
   "scripts": {
-    "build": "run-s build:images build:cjs build:esm",
+    "prebuild": "yarn build:images",
+    "build": "run-p build:cjs build:esm",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:normalize": "postcss css/index.css --dir dist",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
