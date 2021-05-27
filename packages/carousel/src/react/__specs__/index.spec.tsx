@@ -22,7 +22,9 @@ describe('Carousel', () => {
     beforeEach(() => {
       render(
         <Carousel>
-          <Carousel.Item><div /></Carousel.Item>
+          <Carousel.Item>
+            <div />
+          </Carousel.Item>
         </Carousel>
       )
     })
@@ -44,19 +46,33 @@ describe('Carousel', () => {
     beforeEach(() => {
       const { container: _container } = render(
         <Carousel>
-          <Carousel.Item><div /></Carousel.Item>
-          <Carousel.Item><div /></Carousel.Item>
-          <Carousel.Item><div /></Carousel.Item>
-          <Carousel.Item><div /></Carousel.Item>
-          <Carousel.Item><div /></Carousel.Item>
-          <Carousel.Item><div /></Carousel.Item>
-          <Carousel.Item><div /></Carousel.Item>
+          <Carousel.Item>
+            <div />
+          </Carousel.Item>
+          <Carousel.Item>
+            <div />
+          </Carousel.Item>
+          <Carousel.Item>
+            <div />
+          </Carousel.Item>
+          <Carousel.Item>
+            <div />
+          </Carousel.Item>
+          <Carousel.Item>
+            <div />
+          </Carousel.Item>
+          <Carousel.Item>
+            <div />
+          </Carousel.Item>
+          <Carousel.Item>
+            <div />
+          </Carousel.Item>
         </Carousel>
       )
       container = _container
     })
 
-    it(' shows the next control', () => {
+    it('shows the next control', () => {
       const next = screen.getByRole('button', { name: /Next items/ })
       expect(next.parentElement).not.toHaveAttribute('hidden')
     })
