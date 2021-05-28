@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.6...@pluralsight/ps-design-system-docs@0.27.0) (2021-05-28)
+
+
+### Features
+
+* **datepicker:** add optional dateFormat parameter to useDateSelectChange and useRangeSelectChange ([ef0bef1](https://github.com/pluralsight/design-system/commit/ef0bef108e89ead69c3c36530bf85f7dbb9aefb9))
+
+
+
+
+
 ## [0.26.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.5...@pluralsight/ps-design-system-docs@0.26.6) (2021-05-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs
