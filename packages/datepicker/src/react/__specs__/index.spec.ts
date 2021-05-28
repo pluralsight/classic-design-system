@@ -291,7 +291,7 @@ test('useDateSelectChange: custom date format', () => {
     const [selected, setSelected] = React.useState<Date | undefined>()
     const [slide, setSlide] = React.useState<
       'forward' | 'backward' | undefined
-      >()
+    >()
     const dateFormat = 'yyyy-MM-dd'
     const [value, onChange] = useDateSelectChange({
       setSelected,
@@ -460,7 +460,7 @@ test('useRangeSelectChange: custom date format', () => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
     const [slide, setSlide] = React.useState<
       'forward' | 'backward' | undefined
-      >()
+    >()
     const dateFormat = 'yyyy-MM-dd'
     const [startValue, onStartChange] = useRangeSelectChange({
       start: true,
@@ -511,7 +511,8 @@ test('useRangeSelectChange: custom date format', () => {
   })
   expect(result.current.startValue).toBe('2021-03-01')
   expect(result.current.endValue).toBe('2021-03-11')
-  expect(result.current.selected.map(date => formatISO(date))).toMatchObject(
-    [formatISO(new Date('03/01/2021')), formatISO(new Date('03/11/2021'))]
-  )
+  expect(result.current.selected.map(date => formatISO(date))).toMatchObject([
+    formatISO(new Date('03/01/2021')),
+    formatISO(new Date('03/11/2021'))
+  ])
 })
