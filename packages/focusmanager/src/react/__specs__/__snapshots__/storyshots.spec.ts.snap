@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots FocusManager no focusable children 1`] = `
+exports[`Storyshots Components/FocusManager No Focusable Children 1`] = `
 <div
   style={
     Object {
@@ -18,7 +18,7 @@ exports[`Storyshots FocusManager no focusable children 1`] = `
 </div>
 `;
 
-exports[`Storyshots FocusManager not trapped 1`] = `
+exports[`Storyshots Components/FocusManager Not Trapped 1`] = `
 <div
   style={
     Object {
@@ -55,7 +55,7 @@ exports[`Storyshots FocusManager not trapped 1`] = `
 </div>
 `;
 
-exports[`Storyshots FocusManager trapped 1`] = `
+exports[`Storyshots Components/FocusManager Trapped 1`] = `
 <div
   style={
     Object {
