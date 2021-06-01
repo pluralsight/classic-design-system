@@ -2,12 +2,12 @@
 
 exports[`Storyshots Components/ViewToggle All Long Text Lengths 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -18,7 +18,7 @@ exports[`Storyshots Components/ViewToggle All Long Text Lengths 1`] = `
   </div>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -26,7 +26,7 @@ exports[`Storyshots Components/ViewToggle All Long Text Lengths 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -34,7 +34,7 @@ exports[`Storyshots Components/ViewToggle All Long Text Lengths 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -45,12 +45,12 @@ exports[`Storyshots Components/ViewToggle All Long Text Lengths 1`] = `
 
 exports[`Storyshots Components/ViewToggle Default First Option 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -61,7 +61,7 @@ exports[`Storyshots Components/ViewToggle Default First Option 1`] = `
   </div>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -69,7 +69,7 @@ exports[`Storyshots Components/ViewToggle Default First Option 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -77,7 +77,7 @@ exports[`Storyshots Components/ViewToggle Default First Option 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -88,12 +88,12 @@ exports[`Storyshots Components/ViewToggle Default First Option 1`] = `
 
 exports[`Storyshots Components/ViewToggle Differing Text Lengths 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -104,7 +104,7 @@ exports[`Storyshots Components/ViewToggle Differing Text Lengths 1`] = `
   </div>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -112,7 +112,7 @@ exports[`Storyshots Components/ViewToggle Differing Text Lengths 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -120,7 +120,7 @@ exports[`Storyshots Components/ViewToggle Differing Text Lengths 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -131,12 +131,12 @@ exports[`Storyshots Components/ViewToggle Differing Text Lengths 1`] = `
 
 exports[`Storyshots Components/ViewToggle Example Controlled 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -147,7 +147,7 @@ exports[`Storyshots Components/ViewToggle Example Controlled 1`] = `
   </div>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -155,7 +155,7 @@ exports[`Storyshots Components/ViewToggle Example Controlled 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -163,7 +163,7 @@ exports[`Storyshots Components/ViewToggle Example Controlled 1`] = `
   </button>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -175,12 +175,12 @@ exports[`Storyshots Components/ViewToggle Example Controlled 1`] = `
 exports[`Storyshots Components/ViewToggle Example Dynamic Options 1`] = `
 Array [
   <div
-    data-css-13xtft9=""
+    data-css-19cvl98=""
     role="radiogroup"
   >
     <div
       aria-hidden={true}
-      data-css-w8tgx1=""
+      data-css-widv77=""
       style={Object {}}
     >
       <div
@@ -192,7 +192,7 @@ Array [
     </div>
     <button
       aria-checked={true}
-      data-css-kcifgk=""
+      data-css-92wnb6=""
       onClick={[Function]}
       role="radio"
     >
@@ -201,7 +201,7 @@ Array [
     </button>
     <button
       aria-checked={false}
-      data-css-118ipcw=""
+      data-css-92wnb6=""
       onClick={[Function]}
       role="radio"
     >
@@ -230,12 +230,12 @@ Array [
 
 exports[`Storyshots Components/ViewToggle Explicit Active First 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -246,7 +246,7 @@ exports[`Storyshots Components/ViewToggle Explicit Active First 1`] = `
   </div>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -254,7 +254,7 @@ exports[`Storyshots Components/ViewToggle Explicit Active First 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -262,7 +262,7 @@ exports[`Storyshots Components/ViewToggle Explicit Active First 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -273,12 +273,12 @@ exports[`Storyshots Components/ViewToggle Explicit Active First 1`] = `
 
 exports[`Storyshots Components/ViewToggle Explicit Active Second 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -289,7 +289,7 @@ exports[`Storyshots Components/ViewToggle Explicit Active Second 1`] = `
   </div>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -297,7 +297,7 @@ exports[`Storyshots Components/ViewToggle Explicit Active Second 1`] = `
   </button>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -305,7 +305,7 @@ exports[`Storyshots Components/ViewToggle Explicit Active Second 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -316,12 +316,12 @@ exports[`Storyshots Components/ViewToggle Explicit Active Second 1`] = `
 
 exports[`Storyshots Components/ViewToggle Explicit Active Third 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -332,7 +332,7 @@ exports[`Storyshots Components/ViewToggle Explicit Active Third 1`] = `
   </div>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -340,7 +340,7 @@ exports[`Storyshots Components/ViewToggle Explicit Active Third 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -348,7 +348,7 @@ exports[`Storyshots Components/ViewToggle Explicit Active Third 1`] = `
   </button>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -359,12 +359,12 @@ exports[`Storyshots Components/ViewToggle Explicit Active Third 1`] = `
 
 exports[`Storyshots Components/ViewToggle Max Options 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -375,7 +375,7 @@ exports[`Storyshots Components/ViewToggle Max Options 1`] = `
   </div>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -383,7 +383,7 @@ exports[`Storyshots Components/ViewToggle Max Options 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -391,7 +391,7 @@ exports[`Storyshots Components/ViewToggle Max Options 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -402,12 +402,12 @@ exports[`Storyshots Components/ViewToggle Max Options 1`] = `
 
 exports[`Storyshots Components/ViewToggle One Option 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -418,7 +418,7 @@ exports[`Storyshots Components/ViewToggle One Option 1`] = `
   </div>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -429,12 +429,12 @@ exports[`Storyshots Components/ViewToggle One Option 1`] = `
 
 exports[`Storyshots Components/ViewToggle Three Options 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -445,7 +445,7 @@ exports[`Storyshots Components/ViewToggle Three Options 1`] = `
   </div>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -453,7 +453,7 @@ exports[`Storyshots Components/ViewToggle Three Options 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -461,7 +461,7 @@ exports[`Storyshots Components/ViewToggle Three Options 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -472,12 +472,12 @@ exports[`Storyshots Components/ViewToggle Three Options 1`] = `
 
 exports[`Storyshots Components/ViewToggle Two Options 1`] = `
 <div
-  data-css-13xtft9=""
+  data-css-19cvl98=""
   role="radiogroup"
 >
   <div
     aria-hidden={true}
-    data-css-w8tgx1=""
+    data-css-widv77=""
     style={Object {}}
   >
     <div
@@ -488,7 +488,7 @@ exports[`Storyshots Components/ViewToggle Two Options 1`] = `
   </div>
   <button
     aria-checked={true}
-    data-css-kcifgk=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
@@ -496,7 +496,7 @@ exports[`Storyshots Components/ViewToggle Two Options 1`] = `
   </button>
   <button
     aria-checked={false}
-    data-css-118ipcw=""
+    data-css-92wnb6=""
     onClick={[Function]}
     role="radio"
   >
