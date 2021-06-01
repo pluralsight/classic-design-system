@@ -89,6 +89,7 @@ test('onRangeDateSelected: onSelect', () => {
   })
   expect(onSelect).toHaveBeenCalledWith({}, dateObj)
 })
+
 test('onRangeDateSelected: selectable true', () => {
   const { result } = renderHook(() => React.useState<Date[] | undefined>())
   const selectedDate = new Date('06/20/2020')
@@ -108,6 +109,7 @@ test('onRangeDateSelected: selectable true', () => {
   })
   expect(result.current[0]).toStrictEqual([selectedDate])
 })
+
 test('onRangeDateSelected: start date selects end date', () => {
   const startDate = new Date('06/10/2020')
   const { result } = renderHook(() =>
@@ -130,6 +132,7 @@ test('onRangeDateSelected: start date selects end date', () => {
   })
   expect(result.current[0]).toStrictEqual([startDate, selectedDate])
 })
+
 test('onRangeDateSelected: end date selects start date', () => {
   const initialDates = [new Date('06/10/2020'), new Date('06/20/2020')]
   const { result } = renderHook(() =>
@@ -152,6 +155,7 @@ test('onRangeDateSelected: end date selects start date', () => {
   })
   expect(result.current[0]).toStrictEqual([selectedDate])
 })
+
 test('onMultiDateSelected: onSelect', () => {
   const onSelect = jest.fn()
   const { result } = renderHook(() => React.useState<Date[] | undefined>())
@@ -191,6 +195,7 @@ test('onMultiDateSelected: onSelect', () => {
   })
   expect(onSelect).toHaveBeenCalledWith({}, dateObj)
 })
+
 test('onMultiDateSelected: selectable (toggle test)', () => {
   const selectedDate = new Date('06/20/2020')
   const { result } = renderHook(() => React.useState<Date[] | undefined>())
@@ -217,6 +222,7 @@ test('onMultiDateSelected: selectable (toggle test)', () => {
   })
   expect(result.current[0]).toStrictEqual([])
 })
+
 test('useDateSelectChange', () => {
   const { result } = renderHook(() => {
     const [selected, setSelected] = React.useState<Date | undefined>()
@@ -247,7 +253,7 @@ test('useDateSelectChange', () => {
     } as React.ChangeEvent<HTMLInputElement>)
   })
   expect(result.current.value).toBe('01/10/2020')
-  expect(formatISO(result.current.selected)).toBe(
+  expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('01/10/2020'))
   )
   expect(result.current.slide).toBe(undefined)
@@ -257,7 +263,7 @@ test('useDateSelectChange', () => {
     } as React.ChangeEvent<HTMLInputElement>)
   })
   expect(result.current.value).toBe('08/10/2020')
-  expect(formatISO(result.current.selected)).toBe(
+  expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('08/10/2020'))
   )
   expect(result.current.slide).toBe('forward')
@@ -267,7 +273,7 @@ test('useDateSelectChange', () => {
     } as React.ChangeEvent<HTMLInputElement>)
   })
   expect(result.current.value).toBe('03/10/2020')
-  expect(formatISO(result.current.selected)).toBe(
+  expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('03/10/2020'))
   )
   expect(result.current.slide).toBe('backward')
@@ -277,7 +283,7 @@ test('useDateSelectChange', () => {
     } as React.ChangeEvent<HTMLInputElement>)
   })
   expect(result.current.value).toBe('13/10/2020')
-  expect(formatISO(result.current.selected)).toBe(
+  expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('03/10/2020'))
   )
   expect(result.current.slide).toBeUndefined()
@@ -287,11 +293,12 @@ test('useDateSelectChange', () => {
     } as React.ChangeEvent<HTMLInputElement>)
   })
   expect(result.current.value).toBe('03/11/2020')
-  expect(formatISO(result.current.selected)).toBe(
+  expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('03/11/2020'))
   )
   expect(result.current.slide).toBe(undefined)
 })
+
 test('useDateSelectChange: custom date format', () => {
   const { result } = renderHook(() => {
     const [selected, setSelected] = React.useState<Date | undefined>()
@@ -320,10 +327,11 @@ test('useDateSelectChange: custom date format', () => {
     } as React.ChangeEvent<HTMLInputElement>)
   })
   expect(result.current.value).toBe('2020-01-10')
-  expect(formatISO(result.current.selected)).toBe(
+  expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('01/10/2020'))
   )
 })
+
 test('useRangeSelectChange', () => {
   const { result } = renderHook(() => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
@@ -397,7 +405,7 @@ test('useRangeSelectChange', () => {
       target: { value: '03/11' }
     } as React.ChangeEvent<HTMLInputElement>)
   })
-  expect(result.current.selected.map(date => formatISO(date))).toMatchObject(
+  expect(result.current.selected!.map(date => formatISO(date))).toMatchObject(
     [new Date('03/01/2020')].map(date => formatISO(date))
   )
   expect(result.current.startValue).toBe('03/01/2020')
@@ -408,7 +416,7 @@ test('useRangeSelectChange', () => {
       target: { value: '03/11/2020' }
     } as React.ChangeEvent<HTMLInputElement>)
   })
-  expect(result.current.selected.map(date => formatISO(date))).toMatchObject(
+  expect(result.current.selected!.map(date => formatISO(date))).toMatchObject(
     [new Date('03/01/2020'), new Date('03/11/2020')].map(date =>
       formatISO(date)
     )
@@ -426,7 +434,7 @@ test('useRangeSelectChange', () => {
       target: { value: '03/21/2020' }
     } as React.ChangeEvent<HTMLInputElement>)
   })
-  expect(result.current.selected.map(date => formatISO(date))).toMatchObject(
+  expect(result.current.selected!.map(date => formatISO(date))).toMatchObject(
     [new Date('03/05/2020'), new Date('03/21/2020')].map(date =>
       formatISO(date)
     )
@@ -439,7 +447,7 @@ test('useRangeSelectChange', () => {
       target: { value: '05/21/2020' }
     } as React.ChangeEvent<HTMLInputElement>)
   })
-  expect(result.current.selected.map(date => formatISO(date))).toMatchObject(
+  expect(result.current.selected!.map(date => formatISO(date))).toMatchObject(
     [new Date('03/05/2020'), new Date('05/21/2020')].map(date =>
       formatISO(date)
     )
@@ -452,7 +460,7 @@ test('useRangeSelectChange', () => {
       target: { value: '02/05/2020' }
     } as React.ChangeEvent<HTMLInputElement>)
   })
-  expect(result.current.selected.map(date => formatISO(date))).toMatchObject(
+  expect(result.current.selected!.map(date => formatISO(date))).toMatchObject(
     [new Date('02/05/2020'), new Date('05/21/2020')].map(date =>
       formatISO(date)
     )
@@ -529,7 +537,7 @@ test('useRangeSelectChange: custom date format', () => {
   })
   expect(result.current.startValue).toBe('2021-03-01')
   expect(result.current.endValue).toBe('2021-03-11')
-  expect(result.current.selected.map(date => formatISO(date))).toMatchObject([
+  expect(result.current.selected!.map(date => formatISO(date))).toMatchObject([
     formatISO(new Date('03/01/2021')),
     formatISO(new Date('03/11/2021'))
   ])
