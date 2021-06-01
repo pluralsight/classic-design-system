@@ -1,6 +1,7 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import Button from '@pluralsight/ps-design-system-button'
+import Button from "@pluralsight/ps-design-system-button";
+import { Meta, Story } from "@storybook/react/types-6-0";
+import { storiesOf } from "@storybook/react";
+import React from "react";
 
 import ErrorPage, {
   ForbiddenErrorPage,
@@ -8,38 +9,39 @@ import ErrorPage, {
   InternalServerErrorPage,
   ServiceUnavailableErrorPage,
   GatewayTimeoutErrorPage
-} from '..'
+} from "..";
 
-const pages = storiesOf('pages', module)
+export default {
+  title: "Components/Errors",
+  component: ErrorPage
+} as Meta;
 
-Object.values(ErrorPage.sizes).forEach(size => {
-  pages.add(`403: ${size}`, () => <ForbiddenErrorPage size={size} />)
-})
-Object.values(ErrorPage.sizes).forEach(size => {
-  pages.add(`404: ${size}`, () => <NotFoundErrorPage size={size} />)
-})
-Object.values(ErrorPage.sizes).forEach(size => {
-  pages.add(`500: ${size}`, () => <InternalServerErrorPage size={size} />)
-})
-Object.values(ErrorPage.sizes).forEach(size => {
-  pages.add(`503: ${size}`, () => <ServiceUnavailableErrorPage size={size} />)
-})
-Object.values(ErrorPage.sizes).forEach(size => {
-  pages.add(`504: ${size}`, () => <GatewayTimeoutErrorPage size={size} />)
-})
-Object.values(ErrorPage.sizes).forEach(size => {
-  pages.add(`Custom: ${size}`, () => (
-    <ErrorPage
-      illustration={<ErrorPage.Illustration />}
-      heading={<ErrorPage.Heading>Heading goes here</ErrorPage.Heading>}
-      caption={<ErrorPage.Caption>Error caption goes here</ErrorPage.Caption>}
-      errorCode={<ErrorPage.ErrorCode>error code: ### </ErrorPage.ErrorCode>}
-      actions={
-        <Button href="https://help.pluralsight.com/help/contact-us">
-          Contact support
-        </Button>
-      }
-      size={size}
-    />
-  ))
-})
+
+export const Sizes: Story = () => (
+  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px", justifyItems: "center" }}>
+    {Object.values(ErrorPage.sizes).map((size) => <h2 key={size}>{size}</h2>)}
+    {[ForbiddenErrorPage, NotFoundErrorPage, InternalServerErrorPage, ServiceUnavailableErrorPage, GatewayTimeoutErrorPage].map((Page, i) =>
+      Object.values(ErrorPage.sizes).map(size => <Page size={size} key={i + size} />)
+    )}
+  </div>
+);
+
+export const CustomErrorPage: Story = () => (
+  <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "32px", justifyItems: "center" }}>
+    {Object.values(ErrorPage.sizes).map(size =>
+      <ErrorPage
+        key={size}
+        illustration={<ErrorPage.Illustration />}
+        heading={<ErrorPage.Heading>Heading goes here</ErrorPage.Heading>}
+        caption={<ErrorPage.Caption>Error caption goes here</ErrorPage.Caption>}
+        errorCode={<ErrorPage.ErrorCode>error code: ### </ErrorPage.ErrorCode>}
+        actions={
+          <Button href="https://help.pluralsight.com/help/contact-us">
+            Contact support
+          </Button>
+        }
+        size={size}
+      />)}
+  </div>
+);
+
