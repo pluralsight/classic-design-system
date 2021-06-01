@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.27.0...@pluralsight/ps-design-system-docs@0.28.0) (2021-06-01)
+
+
+### Code Refactoring
+
+* **carousel:** add large size; rename sizes ([c84cc47](https://github.com/pluralsight/design-system/commit/c84cc473e0079c3bee21c6b1e4fe3e5610cee262))
+* **carousel:** set default size to medium ([b86582c](https://github.com/pluralsight/design-system/commit/b86582c2070e2fa5ff64e4c6186b6e6270d4ce0f))
+
+
+### BREAKING CHANGES
+
+* **carousel:** default size is medium
+* **carousel:** sizes renamed to small, medium, large
+* **carousel:** default size is small
+
+
+
+
+
 # [0.27.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.6...@pluralsight/ps-design-system-docs@0.27.0) (2021-05-28)
 
 
