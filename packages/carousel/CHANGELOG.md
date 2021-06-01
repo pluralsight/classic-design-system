@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@12.1.6...@pluralsight/ps-design-system-carousel@13.0.0) (2021-06-01)
+
+
+### Bug Fixes
+
+* **carousel:** lint fix ([b89da90](https://github.com/pluralsight/design-system/commit/b89da90aeeae708f7ab55ac43ce91fc577a4d294))
+
+
+### Code Refactoring
+
+* **carousel:** add large size; rename sizes ([c84cc47](https://github.com/pluralsight/design-system/commit/c84cc473e0079c3bee21c6b1e4fe3e5610cee262))
+* **carousel:** item flexibility, tab, per-item paging rewrite ([d03dbf8](https://github.com/pluralsight/design-system/commit/d03dbf8106b837352b09e8351115f02c605beaa9))
+* **carousel:** set default size to medium ([b86582c](https://github.com/pluralsight/design-system/commit/b86582c2070e2fa5ff64e4c6186b6e6270d4ce0f))
+
+
+### BREAKING CHANGES
+
+* **carousel:** default size is medium
+* **carousel:** sizes renamed to small, medium, large
+* **carousel:** default size is small
+* **carousel:** remove uniqueId prop
+* **carousel:** remove Carousel.Item render prop
+* **carousel:** Carousel children can only be Carousel.Item
+
+
+
+
+
+## [12.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@12.1.5...@pluralsight/ps-design-system-carousel@12.1.6) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
+## [12.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@12.1.4...@pluralsight/ps-design-system-carousel@12.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **carousel:** set correct peer dependency on ps normalize ([dcfae76](https://github.com/pluralsight/design-system/commit/dcfae76ab6bc3ff6499aaf19cee83aab94524695))
+
+
+
+
+
 ## [12.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@12.1.3...@pluralsight/ps-design-system-carousel@12.1.4) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

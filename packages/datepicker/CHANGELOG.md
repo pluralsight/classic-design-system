@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.1.6...@pluralsight/ps-design-system-datepicker@15.2.0) (2021-05-28)
+
+
+### Features
+
+* **datepicker:** add optional dateFormat parameter to useDateSelectChange and useRangeSelectChange ([ef0bef1](https://github.com/pluralsight/design-system/commit/ef0bef108e89ead69c3c36530bf85f7dbb9aefb9))
+* **datepicker:** test custom date format ([a11a06c](https://github.com/pluralsight/design-system/commit/a11a06c56fdb8eb5beb887974047c6562ef00d71))
+* **datepicker:** test custom date format ([528afd9](https://github.com/pluralsight/design-system/commit/528afd98d195c181c60d386d8f6b47b3acde37bd))
+
+
+
+
+
+## [15.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.1.5...@pluralsight/ps-design-system-datepicker@15.1.6) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [15.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.1.4...@pluralsight/ps-design-system-datepicker@15.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **datepicker:** set correct peer dependency on ps normalize ([ebabdb0](https://github.com/pluralsight/design-system/commit/ebabdb039647df85160e01b5c1d58b3f27a84baa))
+
+
+
+
+
 ## [15.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.1.3...@pluralsight/ps-design-system-datepicker@15.1.4) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

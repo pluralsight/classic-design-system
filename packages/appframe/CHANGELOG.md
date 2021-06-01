@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.8...@pluralsight/ps-design-system-appframe@5.1.9) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-appframe
+
+
+
+
+
+## [5.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.7...@pluralsight/ps-design-system-appframe@5.1.8) (2021-05-26)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-appframe
+
+
+
+
+
+## [5.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.6...@pluralsight/ps-design-system-appframe@5.1.7) (2021-05-26)
+
+
+### Bug Fixes
+
+* **appframe:** set correct peer dependency on ps normalize ([3dec5e6](https://github.com/pluralsight/design-system/commit/3dec5e623598d21e5f579b06aa4b458acc304612))
+
+
+
+
+
 ## [5.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.5...@pluralsight/ps-design-system-appframe@5.1.6) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-appframe

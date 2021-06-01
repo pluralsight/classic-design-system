@@ -27,6 +27,7 @@ const downArrow = (evt: KeyboardEvent) => {
 
   if (nextSibling) nextSibling.focus()
   else if (firstChild) firstChild.focus()
+  evt.preventDefault()
 }
 
 const upArrow = (evt: KeyboardEvent) => {
@@ -40,6 +41,7 @@ const upArrow = (evt: KeyboardEvent) => {
 
   if (prevSibling) prevSibling.focus()
   else if (lastChild) lastChild.focus()
+  evt.preventDefault()
 }
 
 const home = (evt: KeyboardEvent) => {
@@ -49,6 +51,7 @@ const home = (evt: KeyboardEvent) => {
   const firstChild = searchListItem(firstChildEl)
 
   if (firstChild) firstChild.focus()
+  evt.preventDefault()
 }
 
 const end = (evt: KeyboardEvent) => {
@@ -58,6 +61,7 @@ const end = (evt: KeyboardEvent) => {
   const lastChild = searchListItem(lastChildEl, false)
 
   if (lastChild) lastChild.focus()
+  evt.preventDefault()
 }
 
 const startsWith = (el: HTMLElement, key: string) => {
@@ -97,6 +101,7 @@ const character = (evt: KeyboardEvent) => {
       break
     }
   }
+  evt.preventDefault()
 }
 
 export const handleMenuKeyDownEvents: React.KeyboardEventHandler = synthetic => {
@@ -111,8 +116,6 @@ export const handleMenuKeyDownEvents: React.KeyboardEventHandler = synthetic => 
     : evt.key === 'End'
     ? end(evt)
     : character(evt)
-
-  evt.preventDefault()
 }
 
 export const useMenuRef = <El extends HTMLElement>(

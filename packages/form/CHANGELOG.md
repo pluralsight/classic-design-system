@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.1.11...@pluralsight/ps-design-system-form@12.1.12) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
+## [12.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.1.10...@pluralsight/ps-design-system-form@12.1.11) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
+## [12.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.1.9...@pluralsight/ps-design-system-form@12.1.10) (2021-05-26)
+
+
+### Bug Fixes
+
+* **form:** set correct peer dependency on ps normalize ([892fe91](https://github.com/pluralsight/design-system/commit/892fe91ec91a519da5a19d0996b18a6766e6531a))
+
+
+
+
+
+## [12.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.1.8...@pluralsight/ps-design-system-form@12.1.9) (2021-05-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
+## [12.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.1.7...@pluralsight/ps-design-system-form@12.1.8) (2021-05-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
+## [12.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.1.6...@pluralsight/ps-design-system-form@12.1.7) (2021-05-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-form
+
+
+
+
+
 ## [12.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.1.5...@pluralsight/ps-design-system-form@12.1.6) (2021-05-20)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form
