@@ -1,40 +1,40 @@
-import Button from "@pluralsight/ps-design-system-button";
-import Checkbox from "@pluralsight/ps-design-system-checkbox";
-import * as core from "@pluralsight/ps-design-system-core";
+import Button from '@pluralsight/ps-design-system-button'
+import Checkbox from '@pluralsight/ps-design-system-checkbox'
+import * as core from '@pluralsight/ps-design-system-core'
 import {
   Calendar,
   CalendarDates,
   useDateSelectChange,
   slides
-} from "@pluralsight/ps-design-system-datepicker";
-import Dropdown from "@pluralsight/ps-design-system-dropdown";
-import Radio from "@pluralsight/ps-design-system-radio";
-import Switch from "@pluralsight/ps-design-system-switch";
-import Tag from "@pluralsight/ps-design-system-tag";
-import * as Text from "@pluralsight/ps-design-system-text";
-import TextArea from "@pluralsight/ps-design-system-textarea";
-import TextInput from "@pluralsight/ps-design-system-textinput";
-import { RefFor, ValueOf } from "@pluralsight/ps-design-system-util";
-import { storiesOf } from "@storybook/react";
-import { Meta, Story } from "@storybook/react/types-6-0";
-import { useDayzed, DateObj } from "dayzed";
-import React from "react";
+} from '@pluralsight/ps-design-system-datepicker'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+import Radio from '@pluralsight/ps-design-system-radio'
+import Switch from '@pluralsight/ps-design-system-switch'
+import Tag from '@pluralsight/ps-design-system-tag'
+import * as Text from '@pluralsight/ps-design-system-text'
+import TextArea from '@pluralsight/ps-design-system-textarea'
+import TextInput from '@pluralsight/ps-design-system-textinput'
+import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { storiesOf } from '@storybook/react'
+import { Meta, Story } from '@storybook/react/types-6-0'
+import { useDayzed, DateObj } from 'dayzed'
+import React from 'react'
 
-import Form from "../index";
+import Form from '../index'
 
 const PaddingDecorator = (storyFn: () => React.ReactNode) => (
-  <div style={{ padding: core.layout.spacingLarge, width: "50%" }}>
+  <div style={{ padding: core.layout.spacingLarge, width: '50%' }}>
     {storyFn()}
   </div>
-);
+)
 const FormContainer = (storyFn: () => React.ReactNode) => (
-  <div style={{ border: "1px solid blue" }}>{storyFn()}</div>
-);
+  <div style={{ border: '1px solid blue' }}>{storyFn()}</div>
+)
 
 export default {
-  title: "Components/Form",
+  title: 'Components/Form',
   decorators: [PaddingDecorator, FormContainer]
-} as Meta;
+} as Meta
 
 const useInputClientRect = (
   inputRef: React.MutableRefObject<HTMLInputElement | undefined>
@@ -42,43 +42,43 @@ const useInputClientRect = (
   const [menuPosition, setMenuPosition] = React.useState({
     left: 0,
     top: 0
-  });
+  })
   React.useEffect(() => {
     if (inputRef.current) {
-      const { left, bottom } = inputRef.current.getBoundingClientRect();
-      setMenuPosition({ left: left - 18, top: bottom + 10 });
+      const { left, bottom } = inputRef.current.getBoundingClientRect()
+      setMenuPosition({ left: left - 18, top: bottom + 10 })
     }
-  }, [inputRef]);
-  return menuPosition;
-};
+  }, [inputRef])
+  return menuPosition
+}
 const DatePicker = ({ label }: { label: string }) => {
-  const [selected, setSelected] = React.useState<Date | undefined>();
+  const [selected, setSelected] = React.useState<Date | undefined>()
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
-    setSelected(dateObj.date);
-  };
+    setSelected(dateObj.date)
+  }
   const { getDateProps, ...dayzedData } = useDayzed({
-    date: selected || new Date("05/30/2020"),
+    date: selected || new Date('05/30/2020'),
     selected,
     onDateSelected
-  });
-  const inputRef = React.useRef<HTMLInputElement | undefined>(undefined);
-  const [open, setOpen] = React.useState<boolean>(false);
+  })
+  const inputRef = React.useRef<HTMLInputElement | undefined>(undefined)
+  const [open, setOpen] = React.useState<boolean>(false)
   const onFocus: React.FocusEventHandler<HTMLInputElement> = evt => {
     if (evt.target === inputRef.current) {
-      setOpen(true);
+      setOpen(true)
     }
-  };
-  const menuPosition = useInputClientRect(inputRef);
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>();
+  }
+  const menuPosition = useInputClientRect(inputRef)
+  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
   const [value, onChange] = useDateSelectChange({
     selected,
     setSlide,
     setSelected
-  });
+  })
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: 'relative' }}>
       <TextInput
-        ref={inputRef as RefFor<"input">}
+        ref={inputRef as RefFor<'input'>}
         onChange={onChange}
         value={value}
         onFocus={onFocus}
@@ -87,19 +87,19 @@ const DatePicker = ({ label }: { label: string }) => {
       {open && (
         <Calendar
           {...dayzedData}
-          style={{ position: "fixed", ...menuPosition }}
+          style={{ position: 'fixed', ...menuPosition }}
           slide={slide}
         >
           <CalendarDates getDateProps={getDateProps}>
             {renderProps => {
-              return <button {...renderProps} />;
+              return <button {...renderProps} />
             }}
           </CalendarDates>
         </Calendar>
       )}
     </div>
-  );
-};
+  )
+}
 
 export const Sample: Story = () => (
   <Form.VerticalLayout>
@@ -135,7 +135,7 @@ export const Sample: Story = () => (
       }
     />
 
-    <div style={{ display: "flex" }}>
+    <div style={{ display: 'flex' }}>
       <Tag href="http://google.com">Foo</Tag>
       <span style={{ marginRight: core.layout.spacingXSmall }} />
       <Tag href="http://google.com">Bar</Tag>
@@ -167,8 +167,7 @@ export const Sample: Story = () => (
       <Button appearance={Button.appearances.flat}>Cancel</Button>
     </Form.ButtonRow>
   </Form.VerticalLayout>
-
-);
+)
 
 export const NullChildren: Story = () => (
   <Form.VerticalLayout>
@@ -179,11 +178,11 @@ export const NullChildren: Story = () => (
     <TextInput label="Name" placeholder="What's your name?" />
     {null}
   </Form.VerticalLayout>
-);
+)
 
 export const ButtonRowAligns: Story = () => (
   <>
-    {Object.values(Form.ButtonRow.aligns).map(align =>
+    {Object.values(Form.ButtonRow.aligns).map(align => (
       <Form.VerticalLayout key={align}>
         <div>{align}</div>
         <Form.ButtonRow align={align}>
@@ -191,9 +190,9 @@ export const ButtonRowAligns: Story = () => (
           <Button appearance={Button.appearances.flat}>Cancel</Button>
         </Form.ButtonRow>
       </Form.VerticalLayout>
-    )}
+    ))}
   </>
-);
+)
 
 export const ButtonRowSingleButton: Story = () => (
   <Form.VerticalLayout>
@@ -201,4 +200,4 @@ export const ButtonRowSingleButton: Story = () => (
       <Button>Only One</Button>
     </Form.ButtonRow>
   </Form.VerticalLayout>
-);
+)
