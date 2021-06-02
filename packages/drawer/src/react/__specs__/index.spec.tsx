@@ -7,7 +7,6 @@ import Drawer from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('Drawer', () => {
-
   describe('when uncontrolled', () => {
     it('toggles open/close', async () => {
       const { getByTestId } = render(
@@ -64,5 +63,4 @@ describe('Drawer', () => {
       expect(results).toHaveNoViolations()
     })
   })
-
 })
