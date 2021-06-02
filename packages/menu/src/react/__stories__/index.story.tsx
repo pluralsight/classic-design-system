@@ -1,12 +1,17 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { RefFor } from '@pluralsight/ps-design-system-util'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
-import { storiesOf } from '@storybook/react'
+import { Meta, Story } from '@storybook/react/types-6-0'
 import { action } from '@storybook/addon-actions'
 import React from 'react'
 
 import Menu from '../index'
 import { MenuItemWithDescription } from '../ItemWithDescription'
+
+export default {
+  title: 'Components/Menu',
+  component: Menu
+} as Meta
 
 const useActive = (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
   const [active, setActive] = React.useState(false)
@@ -22,27 +27,26 @@ const useActive = (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
   }
 }
 
-storiesOf('menu items', module)
-  .add('one', () => (
+export const MenuItemsOne: Story = () =>
     <Menu>
       <Menu.Item>One item</Menu.Item>
     </Menu>
-  ))
-  .add('multiple', () => (
+
+export const MenuItemsMultiple : Story = () =>
     <Menu>
       <Menu.Item>One item</Menu.Item>
       <Menu.Item>Two item</Menu.Item>
       <Menu.Item>Three item</Menu.Item>
     </Menu>
-  ))
-  .add('lots', () => (
+
+export const MenuItemsLots: Story = () =>
     <Menu>
       {new Array(30).fill(null).map((_, index) => (
         <Menu.Item key={index}>index: {index}</Menu.Item>
       ))}
     </Menu>
-  ))
-  .add('ellipsis', () => (
+
+export const Ellipsis: Story = () =>
     <Menu>
       <Menu.Item>
         <Menu.Ellipsis>
@@ -51,8 +55,8 @@ storiesOf('menu items', module)
         </Menu.Ellipsis>
       </Menu.Item>
     </Menu>
-  ))
-  .add('long text', () => (
+
+export const LongText: Story = () =>
     <Menu>
       <Menu.Item>
         <Menu.Ellipsis>
@@ -67,15 +71,15 @@ storiesOf('menu items', module)
         </Menu.Ellipsis>
       </Menu.Item>
     </Menu>
-  ))
-  .add('null item', () => (
+
+export const NullItem: Story = () =>
     <Menu>
       <Menu.Item>One item</Menu.Item>
       {null}
       <Menu.Item>Skip to three item</Menu.Item>
     </Menu>
-  ))
-  .add('active item', () => {
+
+export const ActiveItem: Story = () => {
     const ref = React.useRef<HTMLUListElement>()
     const selectedItem = {
       label: 'Active',
@@ -98,8 +102,9 @@ storiesOf('menu items', module)
         </Menu.Item>
       </Menu>
     )
-  })
-  .add('active & selected item', () => {
+  }
+
+export const ActiveAndSelectedItem: Story = () => {
     const ref = React.useRef<HTMLUListElement>()
     const selectedItem = {
       label: 'Active',
@@ -127,10 +132,9 @@ storiesOf('menu items', module)
         </Menu.Item>
       </Menu>
     )
-  })
+  }
 
-storiesOf('item with description', module)
-  .add('default', () => (
+export const ItemWithDescription: Story = () =>
     <Menu>
       <MenuItemWithDescription
         value="1"
@@ -138,8 +142,8 @@ storiesOf('item with description', module)
         description="some words that describe a thing that really should wrap you known"
       />
     </Menu>
-  ))
-  .add('selected', () => {
+
+export const ItemWithDescriptionSelected: Story = () => {
     const selectedItem = {
       label: 'item active',
       value: '1'
@@ -154,8 +158,9 @@ storiesOf('item with description', module)
         />
       </Menu>
     )
-  })
-  .add('next to items w/o description', () => (
+  }
+
+export const ItemNextToItemsWithNoDescription: Story = () =>
     <Menu>
       <MenuItemWithDescription
         value="1"
@@ -177,29 +182,26 @@ storiesOf('item with description', module)
         Remove member with so many lines that it goes to a second line
       </Menu.Item>
     </Menu>
-  ))
 
-storiesOf('dividers', module)
-  .add('edge', () => (
+export const DividerEdge: Story = () =>
     <Menu>
       <Menu.Item>One item</Menu.Item>
       <Menu.Divider />
     </Menu>
-  ))
-  .add('sandwich', () => (
+
+export const DividerSandwich: Story = () =>
     <Menu>
       <Menu.Item>One item</Menu.Item>
       <Menu.Divider />
       <Menu.Item>Two item</Menu.Item>
       <Menu.Item>Three item</Menu.Item>
     </Menu>
-  ))
 
 const handleClick = (_e: unknown, value: unknown) => {
   action('on click')(value)
 }
 
-storiesOf('onClick', module).add('flat', () => (
+export const OnClick: Story = () =>
   <Menu onClick={handleClick}>
     <Menu.Item value={{ label: 'One item', value: 'one' }}>One item</Menu.Item>
     <Menu.Item value={{ label: 'Two item', value: 'two' }}>Two item</Menu.Item>
@@ -207,63 +209,57 @@ storiesOf('onClick', module).add('flat', () => (
       TTwo item
     </Menu.Item>
   </Menu>
-))
 
-storiesOf('customized styles', module).add('item style', () => (
+export const CustomStyleItem: Story = () =>
   <Menu>
     <Menu.Item style={{ outline: '1px solid red' }}>One item</Menu.Item>
     <Menu.Item style={{ outline: '1px solid blue' }}>Two item</Menu.Item>
     <Menu.Item style={{ outline: '1px solid green' }}>Three item</Menu.Item>
   </Menu>
-))
 
-storiesOf('link', module).add('a w/ href', () => (
+export const ItemLink: Story = () =>
   <Menu>
     <Menu.Item href="https://duckduckgo.com" as="a" target="_blank">
       Links to web
     </Menu.Item>
   </Menu>
-))
 
-storiesOf('disabled', module)
-  .add('single, disabled', () => (
+export const ItemDisabled: Story = () =>
     <Menu>
       <Menu.Item disabled>Single, disabled</Menu.Item>
     </Menu>
-  ))
-  .add('multiple, all disabled', () => (
+
+export const ItemDisabledMultiple: Story = () =>
     <Menu>
       <Menu.Item disabled>Mult 1, disabled</Menu.Item>
       <Menu.Item disabled>Mult 2, disabled</Menu.Item>
     </Menu>
-  ))
-  .add('item', () => (
-    <Menu>
-      <Menu.Item>Enabled</Menu.Item>
-      <Menu.Item disabled>Disabled</Menu.Item>
-      <Menu.Item>Enabled</Menu.Item>
-      <Menu.Item disabled>Disabled</Menu.Item>
-    </Menu>
-  ))
-  .add('links', () => (
-    <Menu>
-      <Menu.Item href="https://duck.com" as="a" target="_blank">
-        Enabled
-      </Menu.Item>
-      <Menu.Item disabled href="https://duck.com" as="a" target="_blank">
-        Disabled
-      </Menu.Item>
-      <Menu.Item href="https://duck.com" as="a" target="_blank">
-        Enabled
-      </Menu.Item>
-      <Menu.Item disabled href="https://duck.com" as="a" target="_blank">
-        Disabled
-      </Menu.Item>
-    </Menu>
-  ))
 
-storiesOf('with Position', module)
-  .add('BelowLeft', () => (
+export const ItemDisabledMix: Story = () =>
+    <Menu>
+      <Menu.Item>Enabled</Menu.Item>
+      <Menu.Item disabled>Disabled</Menu.Item>
+      <Menu.Item>Enabled</Menu.Item>
+      <Menu.Item disabled>Disabled</Menu.Item>
+    </Menu>
+
+export const ItemLinks: Story = () =>
+    <Menu>
+      <Menu.Item href="https://duck.com" as="a" target="_blank">
+        Enabled
+      </Menu.Item>
+      <Menu.Item disabled href="https://duck.com" as="a" target="_blank">
+        Disabled
+      </Menu.Item>
+      <Menu.Item href="https://duck.com" as="a" target="_blank">
+        Enabled
+      </Menu.Item>
+      <Menu.Item disabled href="https://duck.com" as="a" target="_blank">
+        Disabled
+      </Menu.Item>
+    </Menu>
+
+export const PositionBelowLeft: Story = () =>
     <BelowLeft
       when
       show={
@@ -286,8 +282,8 @@ storiesOf('with Position', module)
         anchor
       </div>
     </BelowLeft>
-  ))
-  .add('BelowRight', () => (
+
+export const PositionBelowRight: Story = () =>
     <BelowRight
       when
       show={
@@ -308,4 +304,3 @@ storiesOf('with Position', module)
         anchor
       </div>
     </BelowRight>
-  ))
