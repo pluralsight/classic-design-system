@@ -34,8 +34,7 @@ export default {
     padding: '0',
     height: '32px',
     background: colorsBackgroundUtility[25],
-    borderRadius: `3px`,
-    overflow: 'hidden'
+    borderRadius: `3px`
   },
   [`.psds-viewtoggle.psds-theme--${themeNames.light}`]: {
     background: colorsBackgroundUtility[20]
@@ -46,9 +45,22 @@ export default {
     ...option,
     position: 'relative',
     background: 'none',
-    color: colorsTextIcon.highOnDark
+    color: colorsTextIcon.lowOnDark,
+    '&:hover, &:focus': {
+      color: colorsTextIcon.highOnDark
+    }
   },
   [`.psds-viewtoggle__option.psds-theme--${themeNames.light}`]: {
+    color: colorsTextIcon.lowOnLight,
+    '&:hover, &:focus': {
+      color: colorsTextIcon.highOnLight
+    }
+  },
+
+  '.psds-viewtoggle__option--active': {
+    color: colorsTextIcon.highOnDark
+  },
+  [`.psds-viewtoggle__option--active.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
 
