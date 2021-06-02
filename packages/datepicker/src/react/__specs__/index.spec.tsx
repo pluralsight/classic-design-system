@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { render } from '@testing-library/react'
 import { renderHook, act } from '@testing-library/react-hooks'
