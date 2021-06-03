@@ -2,28 +2,27 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 import hoistNonReactStatics from 'hoist-non-react-statics'
 import React from 'react'
 
-import { defaultName, names } from '../vars/index'
-export { defaultName, names }
+import { themeDefaultName, themeNames } from '../vars/index'
 
-type Names = typeof names
-export const ThemeContext = React.createContext<ValueOf<Names>>(defaultName)
+type Names = typeof themeNames
+export const ThemeContext = React.createContext<ValueOf<Names>>(
+  themeDefaultName
+)
 
 type ThemeProps = { name?: ValueOf<Names> }
-type ThemeStatics = { defaultName: typeof defaultName; names: Names }
+type ThemeStatics = { defaultName: typeof themeDefaultName; names: Names }
 type ThemeComponent = React.FC<ThemeProps> & ThemeStatics
 
-const Theme: ThemeComponent = props => {
-  const { name = defaultName } = props
+export const Theme: ThemeComponent = props => {
+  const { name = themeDefaultName } = props
 
   return (
     <ThemeContext.Provider value={name}>{props.children}</ThemeContext.Provider>
   )
 }
 
-Theme.names = names
-Theme.defaultName = defaultName
-
-export default Theme
+Theme.names = themeNames
+Theme.defaultName = themeDefaultName
 
 export function useTheme() {
   const themeName = React.useContext(ThemeContext)

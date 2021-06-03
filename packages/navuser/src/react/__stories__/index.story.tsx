@@ -1,11 +1,11 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import { RightOf } from '@pluralsight/ps-design-system-position'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import NavUser from '../index'
+import { NavUser } from '../index'
 
 const defaultArgs = {
   name: 'Jake Trent',

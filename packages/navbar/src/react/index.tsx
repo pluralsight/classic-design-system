@@ -1,5 +1,5 @@
 import { MenuIcon } from '@pluralsight/ps-design-system-icon'
-import NavItem from '@pluralsight/ps-design-system-navitem'
+import { NavItem } from '@pluralsight/ps-design-system-navitem'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -25,7 +25,7 @@ interface NavBarProps extends HTMLPropsFor<'div'> {
   utility?: React.ReactNode
 }
 
-const NavBar = React.forwardRef<HTMLDivElement, NavBarProps>(
+export const NavBar = React.forwardRef<HTMLDivElement, NavBarProps>(
   (props, forwardedRef) => {
     const { brand, items, onMobileMenuClick, utility, user, ...rest } = props
 
@@ -51,5 +51,3 @@ const NavBar = React.forwardRef<HTMLDivElement, NavBarProps>(
   }
 )
 NavBar.displayName = 'NavBar'
-
-export default NavBar

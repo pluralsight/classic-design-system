@@ -59,7 +59,7 @@ type MenuComponent = RefForwardingComponent<
   HTMLUListElement,
   MenuStatics
 >
-const Menu = React.forwardRef<HTMLUListElement, MenuProps>(
+export const Menu = React.forwardRef<HTMLUListElement, MenuProps>(
   (
     {
       selectedItem,
@@ -101,4 +101,3 @@ Menu.tagName = vars.tagName
 
 Menu.useMenuRef = useMenuRef
 export type { MenuItemProps } from './item'
-export default Menu

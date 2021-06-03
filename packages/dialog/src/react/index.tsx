@@ -1,5 +1,5 @@
-import FocusManager from '@pluralsight/ps-design-system-focusmanager'
-import Theme from '@pluralsight/ps-design-system-theme'
+import { FocusManager } from '@pluralsight/ps-design-system-focusmanager'
+import { Theme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -104,7 +104,7 @@ export interface DialogProps extends HTMLPropsFor<'div'> {
 export interface DialogComponent
   extends RefForwardingComponent<DialogProps, HTMLDivElement, DialogStatics> {}
 
-const Dialog = React.forwardRef((props, ref) => {
+export const Dialog = React.forwardRef((props, ref) => {
   const {
     children,
     disableCloseButton = false,
@@ -178,8 +178,6 @@ Dialog.displayName = 'Dialog'
 
 Dialog.tailPositions = vars.tailPositions
 export const tailPositions = Dialog.tailPositions
-
-export default Dialog
 
 function isEscape(evt: React.KeyboardEvent) {
   return evt.key === 'Escape'

@@ -1,10 +1,25 @@
 {
-  "packages": ["docs", "./packages/*", "./examples/*"],
+  "packages": [
+    "docs",
+    "./packages/*",
+    "./examples/*"
+  ],
   "command": {
+    "publish": {
+      "ignore": [
+        "docs",
+        "./examples/*",
+        "components"
+      ]
+    },
     "version": {
       "allowBranch": "master",
       "conventionalCommits": true,
-      "ignore": ["docs", "./examples/*"],
+      "ignore": [
+        "docs",
+        "./examples/*",
+        "components"
+      ],
       "message": "build: publish"
     }
   },

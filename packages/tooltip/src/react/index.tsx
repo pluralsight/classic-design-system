@@ -83,7 +83,7 @@ interface TooltipComponent
     TooltipStatics
   > {}
 
-const Tooltip = React.forwardRef(
+export const Tooltip = React.forwardRef(
   (
     {
       appearance = vars.appearances.basic,
@@ -115,5 +115,3 @@ Tooltip.tailPositions = vars.tailPositions
 
 export const appearances = vars.appearances
 export const tailPositions = vars.tailPositions
-
-export default Tooltip

@@ -1,4 +1,4 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { Theme, useTheme } from '@pluralsight/ps-design-system-theme'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import {
   ValueOf,

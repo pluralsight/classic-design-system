@@ -4,7 +4,8 @@ import { renderHook } from '@testing-library/react-hooks'
 
 import React from 'react'
 
-import Theme, { defaultName, useTheme, withTheme } from '../index'
+import { Theme, useTheme, withTheme } from '../index'
+import { themeDefaultName } from '../../vars'
 
 describe('Theme', () => {
   const MockComponent: React.FC<
@@ -41,7 +42,7 @@ describe('Theme', () => {
         <MockComponent />
       </Theme>
     )
-    expect(container).toHaveTextContent(defaultName)
+    expect(container).toHaveTextContent(themeDefaultName)
     expect(container).toHaveTextContent(Theme.names.dark)
   })
 
@@ -80,7 +81,7 @@ describe('Theme', () => {
 describe('useTheme', () => {
   it('should return the themeName', () => {
     const { result } = renderHook(() => useTheme())
-    expect(result.current).toEqual(defaultName)
+    expect(result.current).toEqual(themeDefaultName)
   })
 })
 
@@ -122,7 +123,7 @@ describe('withTheme', () => {
     it('falls back to the default theme', () => {
       const { container } = render(<EnhancedComponent />)
 
-      expect(container).toHaveTextContent(defaultName)
+      expect(container).toHaveTextContent(themeDefaultName)
     })
   })
 })

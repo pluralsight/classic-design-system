@@ -1,4 +1,4 @@
-import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
+import { Icon, sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
@@ -165,7 +165,7 @@ type ButtonComponent = React.ForwardRefExoticComponent<unknown> & {
   (props: ButtonButtonProps, ref?: RefFor<'button'>): JSX.Element
 }
 
-const Button = React.forwardRef<ButtonElement, ButtonProps>(
+export const Button = React.forwardRef<ButtonElement, ButtonProps>(
   (props, forwardedRef) => {
     const {
       appearance = vars.appearances.primary,
@@ -262,5 +262,3 @@ Button.sizes = vars.sizes
 export const appearances = vars.appearances
 export const iconAligns = vars.iconAligns
 export const sizes = vars.sizes
-
-export default Button

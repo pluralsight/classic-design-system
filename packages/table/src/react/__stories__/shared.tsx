@@ -1,4 +1,4 @@
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import { layout } from '@pluralsight/ps-design-system-core'
 import {
   CaretDownIcon,

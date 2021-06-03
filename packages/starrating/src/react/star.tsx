@@ -1,11 +1,9 @@
-import Icon, {
+import {
+  Icon,
   StarFillIcon,
   StarIcon
 } from '@pluralsight/ps-design-system-icon'
-import {
-  useTheme,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme'
+import { useTheme, themeNames } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, keyMirror } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'

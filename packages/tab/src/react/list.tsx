@@ -4,10 +4,7 @@ import {
   CaretRightIcon,
   CaretLeftIcon
 } from '@pluralsight/ps-design-system-icon'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   useResizeObserver,
   ValueOf,

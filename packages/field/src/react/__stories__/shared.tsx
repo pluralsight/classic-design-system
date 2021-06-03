@@ -5,7 +5,7 @@ import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import { Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 
-import Field from '../index'
+import { Field } from '../index'
 
 import React from 'react'
 

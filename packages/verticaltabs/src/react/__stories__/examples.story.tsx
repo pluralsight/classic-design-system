@@ -5,7 +5,7 @@ import React from 'react'
 
 import { ADMIN_TOOLS_NAV, DESIGN_SYSTEM_NAV, FLOW_NAV } from './fixtures'
 
-import VerticalTabs from '../index'
+import { VerticalTabs } from '../index'
 
 const glamor = glamorDefault || glamorExports
 const { CollapsibleGroup, Divider, Group, Tier1, Tier2 } = VerticalTabs

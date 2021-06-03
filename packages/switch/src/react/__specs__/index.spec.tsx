@@ -3,7 +3,7 @@ import { fireEvent, screen, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Switch from '../index'
+import { Switch } from '../index'
 
 import * as stories from '../__stories__/index.story'
 

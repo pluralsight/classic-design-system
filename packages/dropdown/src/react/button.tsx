@@ -1,9 +1,6 @@
-import Halo from '@pluralsight/ps-design-system-halo'
-import Icon from '@pluralsight/ps-design-system-icon'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { Halo } from '@pluralsight/ps-design-system-halo'
+import { Icon } from '@pluralsight/ps-design-system-icon'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'

@@ -1,10 +1,7 @@
 import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
-import {
-  useTheme,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme'
+import { ScreenReaderOnly } from '@pluralsight/ps-design-system-screenreaderonly'
+import { useTheme, themeNames } from '@pluralsight/ps-design-system-theme'
 import {
   useToggle,
   RefFor,
@@ -120,7 +117,7 @@ interface DrawerProps {
   onToggle?: () => unknown
 }
 
-const Drawer: React.FC<DrawerProps> & DrawerStatics = ({
+export const Drawer: React.FC<DrawerProps> & DrawerStatics = ({
   children,
   isOpen,
   onToggle
@@ -138,5 +135,3 @@ Details.displayName = 'Drawer.Details'
 Drawer.displayName = 'Drawer'
 Drawer.Summary = Summary
 Drawer.Details = Details
-
-export default Drawer

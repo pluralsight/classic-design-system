@@ -1,9 +1,6 @@
-import Halo from '@pluralsight/ps-design-system-halo'
+import { Halo } from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
-import {
-  useTheme,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme'
+import { useTheme, themeNames } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
   HTMLPropsFor,
@@ -126,7 +123,7 @@ export interface TextInputProps extends Omit<HTMLPropsFor<'input'>, 'size'> {
   value?: React.ReactText
 }
 
-const TextInput = forwardRefWithStatics<
+export const TextInput = forwardRefWithStatics<
   TextInputProps,
   HTMLInputElement,
   TextInputStatics
@@ -201,5 +198,3 @@ const TextInput = forwardRefWithStatics<
 TextInput.appearances = vars.appearances
 TextInput.iconAligns = vars.iconAligns
 TextInput.sizes = vars.sizes
-
-export default TextInput

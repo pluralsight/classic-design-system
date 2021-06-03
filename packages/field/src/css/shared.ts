@@ -1,4 +1,4 @@
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import { themeNames } from '@pluralsight/ps-design-system-theme'
 
 export const dark = {
   className: `.psds-theme--${themeNames.dark}`

@@ -3,7 +3,7 @@ import React from 'react'
 
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import FocusManager from '../index'
+import { FocusManager } from '../index'
 
 storiesOf('FocusManager', module)
   .add('trapped', () => (

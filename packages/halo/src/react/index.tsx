@@ -1,7 +1,4 @@
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -73,7 +70,7 @@ type HaloComponent = RefForwardingComponent<
   HaloStatics
 >
 
-const Halo = React.forwardRef((props, ref) => {
+export const Halo = React.forwardRef((props, ref) => {
   const themeName = useTheme()
 
   const {
@@ -99,5 +96,3 @@ const Halo = React.forwardRef((props, ref) => {
 
 Halo.gapSizes = vars.gapSizes
 Halo.shapes = vars.shapes
-
-export default Halo

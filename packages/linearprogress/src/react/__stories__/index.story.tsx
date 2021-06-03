@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 
-import LinearProgress from '../index'
+import { LinearProgress } from '../index'
 
 export default {
   title: 'Components/LinearProgress',

@@ -1,5 +1,5 @@
-import Halo from '@pluralsight/ps-design-system-halo'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { Halo } from '@pluralsight/ps-design-system-halo'
+import { Theme, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   combineFns,

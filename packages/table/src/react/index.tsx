@@ -4,10 +4,7 @@ import {
   SortDescIcon,
   SortIcon
 } from '@pluralsight/ps-design-system-icon'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import invariant from 'invariant'
@@ -103,27 +100,29 @@ interface TableStatics {
 }
 type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
 
-const Table = React.forwardRef<HTMLTableElement, TableProps>((props, ref) => {
-  const {
-    renderContainer = defaultRenderContainer,
-    scrollable = false,
-    ...rest
-  } = props
-  const themeName = useTheme()
+export const Table = React.forwardRef<HTMLTableElement, TableProps>(
+  (props, ref) => {
+    const {
+      renderContainer = defaultRenderContainer,
+      scrollable = false,
+      ...rest
+    } = props
+    const themeName = useTheme()
 
-  const containerRef = React.useRef<HTMLDivElement>(null)
-  const Container = React.useMemo(() => renderContainer, [renderContainer])
+    const containerRef = React.useRef<HTMLDivElement>(null)
+    const Container = React.useMemo(() => renderContainer, [renderContainer])
 
-  return (
-    <Container
-      ref={containerRef}
-      {...styles.container(themeName, { scrollable })}
-      {...(scrollable && { role: 'region', tabIndex: 0 })}
-    >
-      <table role="grid" ref={ref} {...styles.table(themeName)} {...rest} />
-    </Container>
-  )
-}) as TableComponent
+    return (
+      <Container
+        ref={containerRef}
+        {...styles.container(themeName, { scrollable })}
+        {...(scrollable && { role: 'region', tabIndex: 0 })}
+      >
+        <table role="grid" ref={ref} {...styles.table(themeName)} {...rest} />
+      </Container>
+    )
+  }
+) as TableComponent
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
@@ -309,5 +308,3 @@ Table.alignments = alignments
 
 const isBoolean = (val: unknown) => typeof val === 'boolean'
 const isDefined = (val: unknown) => typeof val !== 'undefined'
-
-export default Table

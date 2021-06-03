@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import Tag from '../index'
+import { Tag } from '../index'
 
 const glamor = glamorDefault || glamorExports
 

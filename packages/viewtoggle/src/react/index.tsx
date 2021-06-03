@@ -1,4 +1,4 @@
-import { names, useTheme } from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
   ValueOf,
@@ -15,7 +15,7 @@ import * as vars from '../vars/index'
 const glamor = glamorDefault || glamorExports
 
 type StyleFn = (
-  themeName: ValueOf<keyof typeof names>,
+  themeName: ValueOf<keyof typeof themeNames>,
   props?: Record<string, any>
 ) => glamorExports.StyleAttribute
 
@@ -61,7 +61,7 @@ const styles: { [key: string]: StyleFn } = {
     glamor.css(stylesheet['.psds-viewtoggle__option-bg__spacer'])
 }
 
-const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
+export const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
   (props, forwardedRef) => {
     const { children, onSelect, ...rest } = props
 
@@ -191,8 +191,6 @@ const Option = React.forwardRef<HTMLButtonElement, OptionProps>(
 )
 
 ViewToggle.Option = Option
-
-export default ViewToggle
 
 function findActiveIndex(els: React.ReactNode): number {
   const index = React.Children.toArray(els).findIndex(

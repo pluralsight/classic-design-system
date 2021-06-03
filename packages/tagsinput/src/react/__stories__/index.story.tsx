@@ -2,7 +2,7 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import TagsInput, { Option } from '../index'
+import { TagsInput, Option } from '../index'
 
 const ConstrainWidthDecorator = (Story: Story) => {
   return (

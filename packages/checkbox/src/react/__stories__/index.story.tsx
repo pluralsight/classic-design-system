@@ -4,7 +4,7 @@ import { DecoratorFn } from '@storybook/react'
 import { css } from 'glamor'
 import React from 'react'
 
-import Checkbox from '../index'
+import { Checkbox } from '../index'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
   <div {...css({ padding: layout.spacingLarge })}>{storyFn()}</div>

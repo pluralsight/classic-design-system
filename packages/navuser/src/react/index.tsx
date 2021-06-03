@@ -1,5 +1,5 @@
-import Avatar from '@pluralsight/ps-design-system-avatar'
-import Halo from '@pluralsight/ps-design-system-halo'
+import { Avatar } from '@pluralsight/ps-design-system-avatar'
+import { Halo } from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -48,7 +48,7 @@ type NavUserComponent = React.ForwardRefExoticComponent<NavUserProps> & {
   (props: DivProps, ref?: RefFor<'div'>): JSX.Element
 }
 
-const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
+export const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
   (props, forwardedRef) => {
     const { meta, name, src, ...rest } = props
 
@@ -92,8 +92,6 @@ const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
 ) as NavUserComponent
 
 NavUser.displayName = 'NavUser'
-
-export default NavUser
 
 interface WordsProps extends HTMLPropsFor<'div'> {
   meta?: React.ReactNode

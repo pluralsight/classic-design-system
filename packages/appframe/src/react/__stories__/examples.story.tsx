@@ -8,7 +8,7 @@ import { useMatchMedia } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import AppFrame from '../index'
+import { AppFrame } from '../index'
 import { MockContent, SideNav, TopNav } from './shared'
 
 export default {

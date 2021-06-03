@@ -1,8 +1,5 @@
-import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { ScreenReaderOnly } from '@pluralsight/ps-design-system-screenreaderonly'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'

@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import NavCookieBanner from '../index'
+import { NavCookieBanner } from '../index'
 
 const defaultArgs = {}
 

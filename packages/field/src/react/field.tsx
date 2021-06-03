@@ -1,4 +1,4 @@
-import Halo from '@pluralsight/ps-design-system-halo'
+import { Halo } from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
   HTMLPropsFor,
@@ -6,7 +6,7 @@ import {
   combineFns,
   forwardRefWithStatics
 } from '@pluralsight/ps-design-system-util'
-import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import { Theme, themeNames } from '@pluralsight/ps-design-system-theme'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -67,92 +67,90 @@ export interface FieldStatics {
   sizes: typeof sizes
 }
 
-const Field = forwardRefWithStatics<FieldProps, HTMLDivElement, FieldStatics>(
-  (props, forwardedRef) => {
-    const {
-      children,
-      disabled,
-      error,
-      label,
-      onClick,
-      prefix,
-      renderContainer = defaultRenderContainer,
-      renderTag = defaultRenderTag,
-      size = sizes.medium,
-      subLabel,
-      suffix,
-      ...rest
-    } = props
+export const Field = forwardRefWithStatics<
+  FieldProps,
+  HTMLDivElement,
+  FieldStatics
+>((props, forwardedRef) => {
+  const {
+    children,
+    disabled,
+    error,
+    label,
+    onClick,
+    prefix,
+    renderContainer = defaultRenderContainer,
+    renderTag = defaultRenderTag,
+    size = sizes.medium,
+    subLabel,
+    suffix,
+    ...rest
+  } = props
 
-    const containerRef = React.useRef<HTMLDivElement>(null)
-    React.useImperativeHandle(
-      forwardedRef,
-      () => (containerRef.current as unknown) as HTMLDivElement
-    )
-    const Container = React.useMemo(() => renderContainer, [renderContainer])
-    const Tag = React.useMemo(() => renderTag, [renderTag])
+  const containerRef = React.useRef<HTMLDivElement>(null)
+  React.useImperativeHandle(
+    forwardedRef,
+    () => (containerRef.current as unknown) as HTMLDivElement
+  )
+  const Container = React.useMemo(() => renderContainer, [renderContainer])
+  const Tag = React.useMemo(() => renderTag, [renderTag])
 
-    const focusOnClick: React.MouseEventHandler = React.useCallback(evt => {
-      const focusableTags = ['input', 'select', 'textarea']
+  const focusOnClick: React.MouseEventHandler = React.useCallback(evt => {
+    const focusableTags = ['input', 'select', 'textarea']
 
-      const { current: el } = containerRef
-      if (!el || el.contains(document.activeElement)) return
-      if (focusableTags.includes(getTargetTag(evt))) return
+    const { current: el } = containerRef
+    if (!el || el.contains(document.activeElement)) return
+    if (focusableTags.includes(getTargetTag(evt))) return
 
-      const node = el.querySelector<InputElements>(focusableTags.join(','))
-      if (node) node.focus()
-    }, [])
+    const node = el.querySelector<InputElements>(focusableTags.join(','))
+    if (node) node.focus()
+  }, [])
 
-    const handleClick = combineFns(onClick, focusOnClick)
+  const handleClick = combineFns(onClick, focusOnClick)
 
-    return (
-      <FieldContext.Provider
-        value={{
-          size
-        }}
+  return (
+    <FieldContext.Provider
+      value={{
+        size
+      }}
+    >
+      <Container
+        {...styles.container({ disabled, error })}
+        onClick={handleClick}
+        ref={containerRef}
       >
-        <Container
-          {...styles.container({ disabled, error })}
-          onClick={handleClick}
-          ref={containerRef}
-        >
-          {label && label}
+        {label && label}
 
-          <Theme name={themeNames.light}>
-            <Halo
-              error={error}
-              gapSize={Halo.gapSizes.small}
-              {...styles.halo()}
+        <Theme name={themeNames.light}>
+          <Halo error={error} gapSize={Halo.gapSizes.small} {...styles.halo()}>
+            <Tag
+              {...styles.field({
+                hasPrefix: !!prefix,
+                hasSuffix: !!suffix,
+                size
+              })}
+              {...rest}
             >
-              <Tag
-                {...styles.field({
-                  hasPrefix: !!prefix,
-                  hasSuffix: !!suffix,
-                  size
-                })}
-                {...rest}
-              >
-                {prefix && <div {...styles.prefix()}>{prefix}</div>}
+              {prefix && <div {...styles.prefix()}>{prefix}</div>}
 
-                {children}
+              {children}
 
-                {suffix && <div {...styles.suffix()}>{suffix}</div>}
+              {suffix && <div {...styles.suffix()}>{suffix}</div>}
 
-                {error && (
-                  <div {...styles.errorIcon()}>
-                    <WarningIcon />
-                  </div>
-                )}
-              </Tag>
-            </Halo>
-          </Theme>
+              {error && (
+                <div {...styles.errorIcon()}>
+                  <WarningIcon />
+                </div>
+              )}
+            </Tag>
+          </Halo>
+        </Theme>
 
-          {subLabel && subLabel}
-        </Container>
-      </FieldContext.Provider>
-    )
-  }
-)
+        {subLabel && subLabel}
+      </Container>
+    </FieldContext.Provider>
+  )
+})
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
@@ -175,5 +173,3 @@ Field.TextArea = TextArea
 
 Field.appearances = appearances
 Field.sizes = sizes
-
-export default Field

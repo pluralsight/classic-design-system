@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
 import { periodicElements } from '../__fixtures__/options'
-import MultiSelect, { Option } from '../index'
+import { MultiSelect, Option } from '../index'
 
 const SetWidthDecorator = (Story: Story) => {
   return (

@@ -4,12 +4,15 @@ import {
   UseComboboxStateChangeOptions
 } from 'downshift'
 
-export interface Option {
+export interface MultiSelectOption {
   label: string
   value: string
 }
 
-export type FilterFn = (term: string, options: Option[]) => Option[]
+export type FilterFn = (
+  term: string,
+  options: MultiSelectOption[]
+) => MultiSelectOption[]
 
 export type OnStateChangeFn<T = any> = (
   changes: UseComboboxStateChange<T>

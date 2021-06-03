@@ -3,7 +3,7 @@ import { screen, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Link from '../index'
+import { Link } from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('Link', () => {

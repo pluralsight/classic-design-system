@@ -1,10 +1,11 @@
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button'
-import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
+import { Button } from '@pluralsight/ps-design-system-button'
+import { CircularProgress } from '@pluralsight/ps-design-system-circularprogress'
 import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
-import TextInput, {
+import {
+  TextInput,
   TextInputProps
 } from '@pluralsight/ps-design-system-textinput'
 import { RefFor } from '@pluralsight/ps-design-system-util'
@@ -28,7 +29,7 @@ export interface SearchInputProps extends TextInputProps {
   onChange?: (evt: React.ChangeEvent<HTMLInputElement>) => void
 }
 
-const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
+export const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
   ({ loading = false, onClear, ...rest }, forwardedRef) => {
     const isClearable = typeof onClear === 'function'
     const hasVisibleValue = !!rest.value && String(rest.value).length > 0
@@ -76,5 +77,3 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
 )
 
 SearchInput.displayName = 'SearchInput'
-
-export default SearchInput

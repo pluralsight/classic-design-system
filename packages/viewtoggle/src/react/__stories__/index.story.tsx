@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import ViewToggle from '../index'
+import { ViewToggle } from '../index'
 
 const glamor = glamorDefault || glamorExports
 

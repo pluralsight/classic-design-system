@@ -1,7 +1,7 @@
 import { CaretDownIcon, CloseIcon } from '@pluralsight/ps-design-system-icon'
-import Field from '@pluralsight/ps-design-system-field'
+import { Field } from '@pluralsight/ps-design-system-field'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
-import Tag from '@pluralsight/ps-design-system-tag'
+import { Tag } from '@pluralsight/ps-design-system-tag'
 import { HTMLPropsFor, canUseDOM } from '@pluralsight/ps-design-system-util'
 import { useCombobox, useMultipleSelection } from 'downshift'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -9,10 +9,15 @@ import React from 'react'
 
 import stylesheet from '../css/index'
 import { Menu } from './menu'
-import { FilterFn, OnStateChangeFn, Option, StateReducer } from './types'
+import {
+  FilterFn,
+  OnStateChangeFn,
+  MultiSelectOption,
+  StateReducer
+} from './types'
 import { noop, simpleTextFilter, switchcase } from './utils'
 
-export { Option }
+export { MultiSelectOption }
 
 const glamor = glamorDefault || glamorExports
 const { stateChangeTypes } = useCombobox
@@ -46,12 +51,15 @@ interface MultiSelectFieldProps
   > {
   filterFn?: FilterFn
   label?: string | React.ReactElement<typeof Field.Label>
-  onChange: (evt: React.SyntheticEvent | null, nextValue: Option[]) => void
-  options: Option[]
+  onChange: (
+    evt: React.SyntheticEvent | null,
+    nextValue: MultiSelectOption[]
+  ) => void
+  options: MultiSelectOption[]
   placeholder?: string
   renderInputTag?: React.ComponentProps<typeof Field.Input>['renderTag']
   subLabel?: string | React.ReactNode
-  value: Option[]
+  value: MultiSelectOption[]
 }
 
 interface MultiSelectFieldStatics {
@@ -62,7 +70,7 @@ interface MultiSelectFieldStatics {
 type MultiSelectFieldComponent = React.FC<MultiSelectFieldProps> &
   MultiSelectFieldStatics
 
-const MultiSelect: MultiSelectFieldComponent = props => {
+export const MultiSelect: MultiSelectFieldComponent = props => {
   const {
     disabled,
     filterFn = simpleTextFilter,
@@ -98,7 +106,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
 
   const handleRemoveSelected = (
     evt: React.MouseEvent<unknown>,
-    item: Option
+    item: MultiSelectOption
   ) => {
     evt.stopPropagation()
     removeSelectedItem(item)
@@ -302,8 +310,6 @@ const MultiSelect: MultiSelectFieldComponent = props => {
 
 MultiSelect.Label = Field.Label
 MultiSelect.SubLabel = Field.SubLabel
-
-export default MultiSelect
 
 const Pills = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
   (props, ref) => {

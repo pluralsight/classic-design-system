@@ -1,5 +1,5 @@
 import { colorsBlue, colorsStatus } from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import { themeNames } from '@pluralsight/ps-design-system-theme'
 
 export const BASE_CLASSNAME = '.psds-halo'
 

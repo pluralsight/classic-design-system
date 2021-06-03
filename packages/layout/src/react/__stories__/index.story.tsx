@@ -2,9 +2,9 @@ import { storiesOf } from '@storybook/react'
 
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
-import Link from '@pluralsight/ps-design-system-link'
+import { Link } from '@pluralsight/ps-design-system-link'
 
 import {
   AsideLayout,

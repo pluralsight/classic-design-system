@@ -5,7 +5,7 @@ import { DecoratorFn } from '@storybook/react'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import Radio from '../index'
+import { Radio } from '../index'
 
 const glamor = glamorDefault || glamorExports
 

@@ -1,4 +1,4 @@
-import Field, { FieldProps } from '@pluralsight/ps-design-system-field'
+import { Field, FieldProps } from '@pluralsight/ps-design-system-field'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 import { uniqueId as defaultUniqueId } from '@pluralsight/ps-design-system-util'
 import React from 'react'

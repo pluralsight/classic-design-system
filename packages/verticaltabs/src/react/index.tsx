@@ -37,7 +37,7 @@ interface VerticalTabsComponents
     VerticalTabsStatics
   > {}
 
-const VerticalTabs = React.forwardRef((props, ref) => {
+export const VerticalTabs = React.forwardRef((props, ref) => {
   const {
     children,
     forceCollapsed = false,
@@ -68,5 +68,3 @@ VerticalTabs.Divider = Divider
 
 VerticalTabs.Tier1 = Tier1
 VerticalTabs.Tier2 = Tier2
-
-export default VerticalTabs

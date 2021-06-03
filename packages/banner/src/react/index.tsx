@@ -1,4 +1,4 @@
-import DSButton from '@pluralsight/ps-design-system-button'
+import { Button as DSButton } from '@pluralsight/ps-design-system-button'
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import { P } from '@pluralsight/ps-design-system-text'
 import {
@@ -49,7 +49,7 @@ interface BannerStatics {
 interface BannerComponent
   extends RefForwardingComponent<BannerProps, HTMLDivElement, BannerStatics> {}
 
-const Banner = React.forwardRef((props, ref) => {
+export const Banner = React.forwardRef((props, ref) => {
   const { color = vars.colors.blue, onClick, ...rest } = props
 
   return (
@@ -110,5 +110,3 @@ Banner.Button = Button
 
 Banner.colors = vars.colors
 export const colors = vars.colors
-
-export default Banner

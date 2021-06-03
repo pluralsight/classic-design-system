@@ -10,7 +10,7 @@ import {
   colorsRed,
   colorsWhite
 } from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import { themeNames } from '@pluralsight/ps-design-system-theme'
 
 import { appearances, colors } from '../vars/index'
 import { select } from '../js/index'

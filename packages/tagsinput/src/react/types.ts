@@ -1,4 +1,4 @@
-export interface Option {
+export interface TagsInputOption {
   label: string
   value: string
 }

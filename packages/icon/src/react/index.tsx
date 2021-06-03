@@ -35,7 +35,7 @@ export interface IconStatics {
 export interface IconComponent
   extends RefForwardingComponent<IconProps, HTMLDivElement, IconStatics> {}
 
-const Icon = React.forwardRef((props, ref) => {
+export const Icon = React.forwardRef((props, ref) => {
   const { size = sizes.medium, color, ...rest } = props
 
   return <div {...style.icon({ color, size })} {...rest} ref={ref} />
@@ -45,6 +45,3 @@ Icon.displayName = 'Icon'
 
 Icon.colors = colors
 Icon.sizes = sizes
-
-export { colors, sizes }
-export default Icon

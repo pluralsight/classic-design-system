@@ -1,4 +1,4 @@
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
@@ -10,7 +10,7 @@ const Action: React.FC<HTMLPropsFor<'a'>> = ({
   href = 'https://help.pluralsight.com/help/contact-us'
 }) => <Button href={href}>Contact support</Button>
 
-export default ErrorPage
+export { ErrorPage }
 
 export const subComponents = ({
   heading,

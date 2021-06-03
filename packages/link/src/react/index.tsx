@@ -34,7 +34,7 @@ interface Props extends React.HTMLAttributes<HTMLAnchorElement> {
 interface LinkComponent
   extends RefForwardingComponent<Props, HTMLAnchorElement, LinkStatics> {}
 
-const Link = React.forwardRef<HTMLAnchorElement, Props>(
+export const Link = React.forwardRef<HTMLAnchorElement, Props>(
   (props, forwardedRef) => {
     const { appearance, children: _children, ...rest } = props
     const ref = React.useRef<HTMLAnchorElement>()
@@ -56,7 +56,3 @@ Link.appearances = appearances
 Link.defaultProps = {
   appearance: appearances.default
 }
-
-export { appearances }
-
-export default Link

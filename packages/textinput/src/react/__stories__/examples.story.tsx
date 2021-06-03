@@ -12,7 +12,7 @@ import React, {
   useState
 } from 'react'
 
-import TextInput from '..'
+import { TextInput } from '..'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
   <div {...css({ height: '100vh', padding: layout.spacingLarge })}>

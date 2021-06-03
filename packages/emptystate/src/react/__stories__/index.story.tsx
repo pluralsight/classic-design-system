@@ -1,12 +1,12 @@
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import * as Icon from '@pluralsight/ps-design-system-icon'
-import Tag from '@pluralsight/ps-design-system-tag'
-import TextInput from '@pluralsight/ps-design-system-textinput'
+import { Tag } from '@pluralsight/ps-design-system-tag'
+import { TextInput } from '@pluralsight/ps-design-system-textinput'
 import { storiesOf } from '@storybook/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import EmptyState, { EmptyStateProps } from '../index'
+import { EmptyState, EmptyStateProps } from '../index'
 
 export default {
   title: 'Components/EmptyState',

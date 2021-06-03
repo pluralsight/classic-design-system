@@ -5,8 +5,8 @@ import {
   type
 } from '@pluralsight/ps-design-system-core'
 import {
-  defaultName as themeDefaultName,
-  names as themeNames
+  themeDefaultName,
+  themeNames
 } from '@pluralsight/ps-design-system-theme'
 
 import * as vars from '../vars/index'

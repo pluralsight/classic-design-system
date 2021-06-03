@@ -1,1 +1,1 @@
-export { default } from './react/index'
+export { ScreenReaderOnly } from './react/index'

@@ -1,7 +1,4 @@
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 import glamorDefault, * as glamorExports from 'glamor'

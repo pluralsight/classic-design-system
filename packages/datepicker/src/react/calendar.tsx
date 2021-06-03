@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import {
   CaretLeftIcon,
   CaretRightIcon
@@ -9,7 +9,7 @@ import {
   RefFor,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
-import Theme from '@pluralsight/ps-design-system-theme'
+import { Theme } from '@pluralsight/ps-design-system-theme'
 import type { RenderProps } from 'dayzed'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'

@@ -47,9 +47,9 @@ const generateComponent = (componentName, svgString, core) => {
   return `
 import React, { forwardRef } from 'react'
 
-import Icon, { IconComponent } from '${baseImport}'
+import { Icon, IconComponent } from '${baseImport}'
 
-const ${componentName} = forwardRef((props, ref) => {
+export const ${componentName} = forwardRef((props, ref) => {
   const { 'aria-label': ariaLabel, ...rest } = props
   return (
     <Icon {...rest} ref={ref}>
@@ -66,7 +66,6 @@ ${componentName}.displayName = "${componentName}"
 ${componentName}.colors = Icon.colors
 ${componentName}.sizes = Icon.sizes
 
-export { ${componentName}  }
 `
 }
 

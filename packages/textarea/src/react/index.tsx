@@ -1,10 +1,7 @@
 import { layout, type } from '@pluralsight/ps-design-system-core'
-import Halo from '@pluralsight/ps-design-system-halo'
+import { Halo } from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
-import {
-  useTheme,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme'
+import { useTheme, themeNames } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
   HTMLPropsFor,
@@ -99,7 +96,7 @@ export interface TextAreaComponent
     TextAreaStatics
   > {}
 
-const TextArea = React.forwardRef(
+export const TextArea = React.forwardRef(
   (
     {
       appearance = vars.appearances.default,
@@ -147,4 +144,3 @@ const TextArea = React.forwardRef(
 
 TextArea.appearances = vars.appearances
 export const appearances = vars.appearances
-export default TextArea

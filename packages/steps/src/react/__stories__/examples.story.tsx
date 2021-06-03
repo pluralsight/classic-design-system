@@ -4,7 +4,7 @@ import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import * as vars from '../../vars/index'
-import Steps from '../index'
+import { Steps } from '../index'
 
 import { FixedWidthContainer } from './shared'
 

@@ -1,4 +1,4 @@
-import Field from '@pluralsight/ps-design-system-field'
+import { Field } from '@pluralsight/ps-design-system-field'
 import { ValueOf, canUseDOM, RefFor } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
 import React from 'react'

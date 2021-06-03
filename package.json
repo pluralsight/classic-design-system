@@ -17,6 +17,7 @@
     "nohoist": [],
     "packages": [
       "packages/**",
+      "components",
       "docs"
     ]
   },

@@ -3,7 +3,7 @@ import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
-import Menu, { MenuItemProps } from './index'
+import { Menu, MenuItemProps } from './index'
 
 const glamor = glamorDefault || glamorExports
 

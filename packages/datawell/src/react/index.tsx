@@ -1,8 +1,5 @@
 import { Label } from '@pluralsight/ps-design-system-text'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -52,7 +49,7 @@ interface DataWellComponent
     DataWellStatics
   > {}
 
-const DataWell = React.forwardRef((props, ref) => {
+export const DataWell = React.forwardRef((props, ref) => {
   const { children, label, subLabel, ...rest } = props
   const themeName = useTheme()
 
@@ -75,5 +72,3 @@ const DataWell = React.forwardRef((props, ref) => {
     </div>
   )
 }) as DataWellComponent
-
-export default DataWell

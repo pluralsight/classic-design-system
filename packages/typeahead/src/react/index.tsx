@@ -3,10 +3,10 @@ import { css, compose } from 'glamor'
 import React from 'react'
 
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import Field from '@pluralsight/ps-design-system-field'
+import { Field } from '@pluralsight/ps-design-system-field'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import { canUseDOM, forwardRefWithAs } from '@pluralsight/ps-design-system-util'
-import Menu, { MenuItemProps } from '@pluralsight/ps-design-system-menu'
+import { Menu, MenuItemProps } from '@pluralsight/ps-design-system-menu'
 
 import stylesheet from '../css/index'
 
@@ -90,7 +90,7 @@ const defaultFilterFunc = (
       .includes((inputValue || '').toLowerCase())
   )
 
-const Typeahead: TypeaheadFieldComponent = props => {
+export const Typeahead: TypeaheadFieldComponent = props => {
   const {
     disabled,
     label,
@@ -294,8 +294,6 @@ Typeahead.Label = Field.Label
 Typeahead.SubLabel = Field.SubLabel
 Typeahead.appearances = Field.appearances
 Typeahead.sizes = Field.sizes
-
-export default Typeahead
 
 const CaretSuffix = forwardRefWithAs((props, ref) => (
   <div {...props} {...styles.caret()} ref={ref}>

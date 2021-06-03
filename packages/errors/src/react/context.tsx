@@ -1,4 +1,4 @@
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import { themeNames } from '@pluralsight/ps-design-system-theme'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 

@@ -2,7 +2,7 @@
 import React from 'react'
 import { fireEvent, render } from '@testing-library/react'
 
-import FocusManager from '../index'
+import { FocusManager } from '../index'
 
 describe('FocusManager', () => {
   beforeEach(() => (document.activeElement as HTMLElement).blur())

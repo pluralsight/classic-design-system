@@ -1,2 +1,2 @@
-export { default, useCollapsible } from './react/index'
+export { Collapsible, useCollapsible } from './react/index'
 export * from './js/index'

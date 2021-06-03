@@ -1,15 +1,16 @@
 import React from 'react'
 import { Icons, IconButton } from '@storybook/components'
-import { names } from '@pluralsight/ps-design-system-theme'
+import { themeNames } from '@pluralsight/ps-design-system-theme'
 
 import { useSelectedTheme } from '../hooks'
 
 export const ThemeTool: React.FC = () => {
   const { theme, storyDefaultTheme, setTheme } = useSelectedTheme()
 
-  const isDark = theme === names.dark
+  const isDark = theme === themeNames.dark
 
-  const toggleTheme = () => setTheme(isDark ? names.light : names.dark)
+  const toggleTheme = () =>
+    setTheme(isDark ? themeNames.light : themeNames.dark)
 
   return (
     <IconButton

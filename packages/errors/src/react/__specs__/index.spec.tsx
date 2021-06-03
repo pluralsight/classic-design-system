@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import ErrorPage from '../index'
+import { ErrorPage } from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('ErrorPage', () => {

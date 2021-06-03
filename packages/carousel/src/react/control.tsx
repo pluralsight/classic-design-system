@@ -1,13 +1,10 @@
-import Halo from '@pluralsight/ps-design-system-halo'
+import { Halo } from '@pluralsight/ps-design-system-halo'
 import {
   CaretLeftIcon,
   CaretRightIcon,
   sizes as iconSizes
 } from '@pluralsight/ps-design-system-icon'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   ValueOf,

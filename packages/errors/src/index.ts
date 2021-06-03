@@ -1,5 +1,5 @@
 export {
-  default,
+  ErrorPage,
   ForbiddenErrorPage,
   NotFoundErrorPage,
   InternalServerErrorPage,

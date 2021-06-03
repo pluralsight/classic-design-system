@@ -6,9 +6,9 @@ import {
   HomeIcon,
   NotificationsIcon
 } from '@pluralsight/ps-design-system-icon'
-import NavBrand from '@pluralsight/ps-design-system-navbrand'
-import NavItem from '@pluralsight/ps-design-system-navitem'
-import NavUser from '@pluralsight/ps-design-system-navuser'
+import { NavBrand } from '@pluralsight/ps-design-system-navbrand'
+import { NavItem } from '@pluralsight/ps-design-system-navitem'
+import { NavUser } from '@pluralsight/ps-design-system-navuser'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
@@ -17,7 +17,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import NavBar from '../index'
+import { NavBar } from '../index'
 
 const glamor = glamorDefault || glamorExports
 

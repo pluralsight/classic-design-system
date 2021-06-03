@@ -17,7 +17,7 @@ export function useFeatureFlags() {
 interface FeatureFlagsProps {
   flags?: Record<string, unknown>
 }
-const FeatureFlags: React.FC<FeatureFlagsProps> = props => {
+export const FeatureFlags: React.FC<FeatureFlagsProps> = props => {
   const context = { flags: props.flags || {} }
   return (
     <FeatureFlagsContext.Provider value={context}>
@@ -25,5 +25,3 @@ const FeatureFlags: React.FC<FeatureFlagsProps> = props => {
     </FeatureFlagsContext.Provider>
   )
 }
-
-export default FeatureFlags

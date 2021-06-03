@@ -1,10 +1,10 @@
-import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
+import { CircularProgress } from '@pluralsight/ps-design-system-circularprogress'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
 import Context, { initialContext } from '../context'
-import Steps from '../index'
+import { Steps } from '../index'
 import { FixedWidthContainer } from './shared'
 
 const { Step } = Steps

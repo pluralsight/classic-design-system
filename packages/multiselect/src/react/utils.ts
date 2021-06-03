@@ -1,10 +1,10 @@
-import { Option } from './types'
+import { MultiSelectOption } from './types'
 
 /* eslint-disable @typescript-eslint/no-empty-function */
 export function noop() {}
 /* eslint-enable @typescript-eslint/no-empty-function */
 
-export function simpleTextFilter(term = '', options: Option[]) {
+export function simpleTextFilter(term = '', options: MultiSelectOption[]) {
   if (term.length === 0) return options
 
   const needle = term.toLowerCase()

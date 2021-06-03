@@ -44,60 +44,61 @@ const styles: { [key: string]: StyleFn } = {
   initials: () => glamor.css(stylesheet['.psds-avatar__initials'])
 }
 
-const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
-  const { alt, name, size: _size, src, ...rest } = props
+export const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>(
+  (props, ref) => {
+    const { alt, name, size: _size, src, ...rest } = props
 
-  const [imageState, setImageState] = React.useState<ImageState>('loading')
+    const [imageState, setImageState] = React.useState<ImageState>('loading')
 
-  const handleImageLoadSuccess: React.ReactEventHandler<HTMLImageElement> = evt => {
-    const pixel = evt.target as HTMLImageElement
-    const isFallbackPixel = pixel.naturalWidth === 1
-    setImageState(isFallbackPixel ? 'error' : 'success')
+    const handleImageLoadSuccess: React.ReactEventHandler<HTMLImageElement> = evt => {
+      const pixel = evt.target as HTMLImageElement
+      const isFallbackPixel = pixel.naturalWidth === 1
+      setImageState(isFallbackPixel ? 'error' : 'success')
+    }
+
+    const handleImageLoadError: React.ReactEventHandler<HTMLImageElement> = () => {
+      setImageState('error')
+    }
+
+    const shouldShowImg = src && imageState !== 'error'
+    const shouldShowInitials =
+      imageState === 'error' || imageState === 'loading'
+
+    const hideFromScreenReaders = shouldShowImg && !alt
+
+    return (
+      <div
+        {...styles.avatar(props)}
+        {...(hideFromScreenReaders && { 'aria-hidden': true })}
+        {...rest}
+        ref={ref}
+      >
+        {shouldShowImg && (
+          <img
+            {...styles.image(props)}
+            alt={alt}
+            onError={handleImageLoadError}
+            onLoad={handleImageLoadSuccess}
+            src={transformSrc(src)}
+          />
+        )}
+
+        {shouldShowInitials && (
+          <div
+            {...styles.initials(props)}
+            aria-label={name}
+            style={{ backgroundColor: getColorByName(name) }}
+          >
+            {getInitials(name)}
+          </div>
+        )}
+      </div>
+    )
   }
-
-  const handleImageLoadError: React.ReactEventHandler<HTMLImageElement> = () => {
-    setImageState('error')
-  }
-
-  const shouldShowImg = src && imageState !== 'error'
-  const shouldShowInitials = imageState === 'error' || imageState === 'loading'
-
-  const hideFromScreenReaders = shouldShowImg && !alt
-
-  return (
-    <div
-      {...styles.avatar(props)}
-      {...(hideFromScreenReaders && { 'aria-hidden': true })}
-      {...rest}
-      ref={ref}
-    >
-      {shouldShowImg && (
-        <img
-          {...styles.image(props)}
-          alt={alt}
-          onError={handleImageLoadError}
-          onLoad={handleImageLoadSuccess}
-          src={transformSrc(src)}
-        />
-      )}
-
-      {shouldShowInitials && (
-        <div
-          {...styles.initials(props)}
-          aria-label={name}
-          style={{ backgroundColor: getColorByName(name) }}
-        >
-          {getInitials(name)}
-        </div>
-      )}
-    </div>
-  )
-}) as AvatarComponent
+) as AvatarComponent
 
 Avatar.defaultProps = { size: sizes.medium }
 Avatar.displayName = 'Avatar'
 
 Avatar.sizes = sizes
 Avatar.widths = widths
-
-export default Avatar

@@ -1,7 +1,7 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
-import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import { ScreenReaderOnly } from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index'
@@ -37,7 +37,10 @@ interface LinearProgressProps extends HTMLPropsFor<'div'> {
   value?: number
 }
 
-const LinearProgress: React.FC<LinearProgressProps> = ({ value, ...rest }) => {
+export const LinearProgress: React.FC<LinearProgressProps> = ({
+  value,
+  ...rest
+}) => {
   const themeName = useTheme()
   return (
     <div {...styles.bg({ themeName })} {...rest}>
@@ -52,5 +55,3 @@ const LinearProgress: React.FC<LinearProgressProps> = ({ value, ...rest }) => {
 LinearProgress.defaultProps = {
   value: 0
 }
-
-export default LinearProgress

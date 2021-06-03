@@ -1,4 +1,4 @@
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
 import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -34,7 +34,7 @@ interface BreadcrumbComponent
     BreadcrumbStatics
   > {}
 
-const Breadcrumb = React.forwardRef<
+export const Breadcrumb = React.forwardRef<
   HTMLAnchorElement | HTMLButtonElement,
   BreadcrumbProps
 >((props, ref) => {
@@ -56,5 +56,3 @@ const Breadcrumb = React.forwardRef<
     </div>
   )
 }) as BreadcrumbComponent
-
-export default Breadcrumb

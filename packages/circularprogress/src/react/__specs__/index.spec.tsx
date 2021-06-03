@@ -3,7 +3,7 @@ import { axe } from 'jest-axe'
 import React from 'react'
 import { render } from '@testing-library/react'
 
-import CircularProgress from '../index'
+import { CircularProgress } from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('CircularProgress', () => {

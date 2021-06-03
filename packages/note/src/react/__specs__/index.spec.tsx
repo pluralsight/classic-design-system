@@ -3,7 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Note from '../index'
+import { Note } from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('Note', () => {

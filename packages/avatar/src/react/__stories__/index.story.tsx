@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Avatar from '../index'
+import { Avatar } from '../index'
 
 const defaultArgs = {
   alt: 'Jake Trent',

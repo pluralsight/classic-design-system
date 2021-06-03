@@ -6,7 +6,7 @@ import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { Option, periodicElements } from '../__fixtures__/options'
-import Field from '../index'
+import { Field } from '../index'
 
 const glamor = glamorDefault || glamorExports
 

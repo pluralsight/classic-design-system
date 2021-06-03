@@ -1,12 +1,12 @@
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import Card from '@pluralsight/ps-design-system-card'
+import { Card } from '@pluralsight/ps-design-system-card'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import Carousel, { Item } from '../index'
+import { Carousel, Item } from '../index'
 import * as vars from '../../vars/index'
 
 const glamor = glamorDefault || glamorExports

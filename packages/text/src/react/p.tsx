@@ -1,4 +1,4 @@
-import { useTheme, names } from '@pluralsight/ps-design-system-theme'
+import { useTheme, themeNames } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -13,7 +13,7 @@ const style = ({
   size,
   color
 }: {
-  themeName: ValueOf<typeof names>
+  themeName: ValueOf<typeof themeNames>
   size: ValueOf<typeof vars.pSizes>
   color: ValueOf<typeof vars.textColors>
 }) =>

@@ -1,7 +1,4 @@
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
   isString,
@@ -154,7 +151,7 @@ interface RowStatics {
   sizes: typeof vars.sizes
 }
 
-const Row: React.FC<RowProps> & RowStatics = props => {
+export const Row: React.FC<RowProps> & RowStatics = props => {
   const themeName = useTheme()
 
   const {
@@ -479,5 +476,3 @@ Row.TextLink = TextLink
 
 Row.sizes = vars.sizes
 export const sizes = Row.sizes
-
-export default Row

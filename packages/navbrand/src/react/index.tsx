@@ -1,4 +1,4 @@
-import Halo from '@pluralsight/ps-design-system-halo'
+import { Halo } from '@pluralsight/ps-design-system-halo'
 import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -59,7 +59,7 @@ type NavBrandComponent = {
   (props: DivProps, ref?: RefFor<'div'>): JSX.Element
 }
 
-const NavBrand = React.forwardRef<NavBrandElement, NavBrandProps>(
+export const NavBrand = React.forwardRef<NavBrandElement, NavBrandProps>(
   (props, forwardedRef) => {
     const { logo, wordmark, ...rest } = props
 
@@ -102,8 +102,6 @@ const NavBrand = React.forwardRef<NavBrandElement, NavBrandProps>(
     )
   }
 ) as NavBrandComponent
-
-export default NavBrand
 
 const Logo: React.FC = props => <div {...styles.logo(props)} {...props} />
 Logo.displayName = 'NavBrand.Logo'

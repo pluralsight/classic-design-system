@@ -1,5 +1,5 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import Collapsible from '@pluralsight/ps-design-system-collapsible'
+import { Theme, useTheme } from '@pluralsight/ps-design-system-theme'
+import { Collapsible } from '@pluralsight/ps-design-system-collapsible'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import {
   RefForwardingComponent,

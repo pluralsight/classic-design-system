@@ -1,4 +1,4 @@
-import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import { ScreenReaderOnly } from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
@@ -75,7 +75,7 @@ interface CircularProgressComponent
     CircularProgressStatics
   > {}
 
-const CircularProgress = React.forwardRef<
+export const CircularProgress = React.forwardRef<
   HTMLDivElement,
   CircularProgressProps
 >((props, ref) => {
@@ -114,5 +114,3 @@ const CircularProgress = React.forwardRef<
 
 CircularProgress.sizes = vars.sizes
 export const sizes = vars.sizes
-
-export default CircularProgress

@@ -3,10 +3,7 @@ import {
   ValueOf,
   isString
 } from '@pluralsight/ps-design-system-util'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -123,23 +120,29 @@ interface StepsProps extends HTMLPropsFor<'div'> {
   orientation?: ValueOf<typeof Steps.orientations>
   size?: ValueOf<typeof Steps.sizes>
 }
-const Steps = React.forwardRef<HTMLDivElement, StepsProps>((props, ref) => {
-  const {
-    counter = initialContext.counter,
-    orientation = initialContext.orientation,
-    size = initialContext.size,
-    ...rest
-  } = props
+export const Steps = React.forwardRef<HTMLDivElement, StepsProps>(
+  (props, ref) => {
+    const {
+      counter = initialContext.counter,
+      orientation = initialContext.orientation,
+      size = initialContext.size,
+      ...rest
+    } = props
 
-  const themeName = useTheme()
-  const contextValue: ContextValue = { counter, orientation, size }
+    const themeName = useTheme()
+    const contextValue: ContextValue = { counter, orientation, size }
 
-  return (
-    <Context.Provider value={contextValue}>
-      <div ref={ref} {...styles.steps(themeName, { orientation })} {...rest} />
-    </Context.Provider>
-  )
-}) as React.ForwardRefExoticComponent<StepsProps> & StepsStatics
+    return (
+      <Context.Provider value={contextValue}>
+        <div
+          ref={ref}
+          {...styles.steps(themeName, { orientation })}
+          {...rest}
+        />
+      </Context.Provider>
+    )
+  }
+) as React.ForwardRefExoticComponent<StepsProps> & StepsStatics
 
 Steps.displayName = 'Steps'
 
@@ -255,5 +258,3 @@ Steps.Step = Step
 Steps.orientations = vars.orientations
 Steps.sizes = vars.sizes
 Steps.statuses = vars.statuses
-
-export default Steps

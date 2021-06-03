@@ -1,4 +1,4 @@
-import Collapsible from '@pluralsight/ps-design-system-collapsible'
+import { Collapsible } from '@pluralsight/ps-design-system-collapsible'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 

@@ -1,7 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import ScreenReaderOnly from '../index'
+import { ScreenReaderOnly } from '../index'
 
 const defaultArgs = {}
 

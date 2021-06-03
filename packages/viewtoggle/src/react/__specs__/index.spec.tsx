@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import ViewToggle from '../index'
+import { ViewToggle } from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('ViewToggle', () => {

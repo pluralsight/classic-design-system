@@ -1,10 +1,7 @@
 import polyfillFocusWithin from 'focus-within'
 
-import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { Icon, sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -284,7 +281,7 @@ interface CardStatics {
   TextLink: typeof TextLink
   Title: typeof Title
 }
-const Card: React.FC<CardProps> & CardStatics = props => {
+export const Card: React.FC<CardProps> & CardStatics = props => {
   const htmlProps = omit<
     CardProps,
     [
@@ -364,5 +361,3 @@ Card.Title = Title
 Card.sizes = vars.sizes
 
 export const sizes = vars.sizes
-
-export default Card

@@ -45,64 +45,64 @@ interface CookieSetOptions {
   encode?: (value: string) => string
 }
 
-const NavCookieBanner = React.forwardRef<HTMLDivElement, NavCookieBannerProps>(
-  (props, forwardedRef) => {
-    const {
-      cookieOptions,
-      message,
-      privacyUpdatedDate = DEFAULT_PRIVACY_UPDATED_DATE,
-      ...rest
-    } = props
+export const NavCookieBanner = React.forwardRef<
+  HTMLDivElement,
+  NavCookieBannerProps
+>((props, forwardedRef) => {
+  const {
+    cookieOptions,
+    message,
+    privacyUpdatedDate = DEFAULT_PRIVACY_UPDATED_DATE,
+    ...rest
+  } = props
 
-    const ref = React.useRef<HTMLDivElement>(null)
-    React.useImperativeHandle(
-      forwardedRef,
-      () => (ref.current as unknown) as HTMLDivElement
-    )
+  const ref = React.useRef<HTMLDivElement>(null)
+  React.useImperativeHandle(
+    forwardedRef,
+    () => (ref.current as unknown) as HTMLDivElement
+  )
 
-    const [cookies, setCookie] = useCookies([DISMISS_COOKIE_NAME])
-    const cookieDateAccepted = parseCookie(cookies[DISMISS_COOKIE_NAME])
-    const dismissed =
-      cookieDateAccepted && cookieDateAccepted > privacyUpdatedDate
+  const [cookies, setCookie] = useCookies([DISMISS_COOKIE_NAME])
+  const cookieDateAccepted = parseCookie(cookies[DISMISS_COOKIE_NAME])
+  const dismissed =
+    cookieDateAccepted && cookieDateAccepted > privacyUpdatedDate
 
-    if (dismissed) return null
+  if (dismissed) return null
 
-    function dismiss() {
-      const oneYear = new Date()
-      oneYear.setFullYear(oneYear.getFullYear() + 1)
+  function dismiss() {
+    const oneYear = new Date()
+    oneYear.setFullYear(oneYear.getFullYear() + 1)
 
-      setCookie(DISMISS_COOKIE_NAME, Date.now(), {
-        domain: '.pluralsight.com',
-        expires: oneYear,
-        secure: true,
-        sameSite: 'strict',
-        ...cookieOptions
-      })
-    }
-
-    return (
-      <div ref={ref} {...styles.banner()} {...rest}>
-        <p {...styles.message()}>
-          {message || (
-            <>
-              <label>Pluralsight uses cookies.</label>
-              {'  '}
-              <a href="//www.pluralsight.com/privacy">
-                Learn more about your privacy
-              </a>
-            </>
-          )}
-        </p>
-
-        <button {...styles.dismiss()} aria-label="close" onClick={dismiss}>
-          <CloseIcon />
-        </button>
-      </div>
-    )
+    setCookie(DISMISS_COOKIE_NAME, Date.now(), {
+      domain: '.pluralsight.com',
+      expires: oneYear,
+      secure: true,
+      sameSite: 'strict',
+      ...cookieOptions
+    })
   }
-)
+
+  return (
+    <div ref={ref} {...styles.banner()} {...rest}>
+      <p {...styles.message()}>
+        {message || (
+          <>
+            <label>Pluralsight uses cookies.</label>
+            {'  '}
+            <a href="//www.pluralsight.com/privacy">
+              Learn more about your privacy
+            </a>
+          </>
+        )}
+      </p>
+
+      <button {...styles.dismiss()} aria-label="close" onClick={dismiss}>
+        <CloseIcon />
+      </button>
+    </div>
+  )
+})
 NavCookieBanner.displayName = 'NavCookieBanner'
-export default NavCookieBanner
 
 function parseCookie(numberStr: string) {
   return numberStr ? new Date(parseInt(numberStr, 10)) : undefined

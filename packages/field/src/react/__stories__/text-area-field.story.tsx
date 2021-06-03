@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
 import { sizes } from '../../vars/index'
-import Field from '../index'
+import { Field } from '../index'
 
 interface TextAreaFieldProps extends React.ComponentProps<typeof Field> {}
 

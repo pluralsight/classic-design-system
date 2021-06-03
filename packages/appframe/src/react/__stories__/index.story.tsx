@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import AppFrame from '../index'
+import { AppFrame } from '../index'
 import { MockContent, SideNav, TopNav } from './shared'
 
 const glamor = glamorDefault || glamorExports

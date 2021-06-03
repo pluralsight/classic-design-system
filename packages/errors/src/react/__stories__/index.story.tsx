@@ -1,9 +1,10 @@
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { storiesOf } from '@storybook/react'
 import React from 'react'
 
-import ErrorPage, {
+import {
+  ErrorPage,
   ForbiddenErrorPage,
   NotFoundErrorPage,
   InternalServerErrorPage,

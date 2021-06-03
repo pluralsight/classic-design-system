@@ -1,4 +1,4 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { Theme, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -41,7 +41,7 @@ interface BadgeStatics {
 interface BadgeComponent
   extends RefForwardingComponent<BadgeProps, HTMLDivElement, BadgeStatics> {}
 
-const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
+export const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
   (
     {
       appearance = vars.appearances.default,
@@ -73,5 +73,3 @@ Badge.colors = vars.colors
 
 export const appearances = vars.appearances
 export const colors = vars.colors
-
-export default Badge

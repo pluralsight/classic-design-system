@@ -1,6 +1,6 @@
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
-import Field from '@pluralsight/ps-design-system-field'
-import Tag from '@pluralsight/ps-design-system-tag'
+import { Field } from '@pluralsight/ps-design-system-field'
+import { Tag } from '@pluralsight/ps-design-system-tag'
 import {
   HTMLPropsFor,
   useUniqueId,
@@ -11,9 +11,9 @@ import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import stylesheet from '../css/index'
-import { Option } from './types'
+import { TagsInputOption } from './types'
 
-export { Option }
+export { TagsInputOption }
 
 const glamor = glamorDefault || glamorExports
 
@@ -41,13 +41,16 @@ interface TagsInputProps
     'children' | 'label' | 'onChange' | 'subLabel'
   > {
   label?: string | React.ReactElement<typeof Field.Label>
-  onChange: (evt: React.SyntheticEvent | null, nextValue: Option[]) => void
+  onChange: (
+    evt: React.SyntheticEvent | null,
+    nextValue: TagsInputOption[]
+  ) => void
   onSearchInputChange: React.ChangeEventHandler<HTMLInputElement>
   placeholder?: string
   renderInputTag?: React.ComponentProps<typeof Field.Input>['renderTag']
   searchInputValue: string
   subLabel?: string | React.ReactNode
-  value: Option[]
+  value: TagsInputOption[]
 }
 
 interface TagsInputStatics {
@@ -57,7 +60,7 @@ interface TagsInputStatics {
 
 type TagsInputComponent = React.FC<TagsInputProps> & TagsInputStatics
 
-const TagsInput: TagsInputComponent = props => {
+export const TagsInput: TagsInputComponent = props => {
   const {
     disabled,
     label,
@@ -95,7 +98,7 @@ const TagsInput: TagsInputComponent = props => {
 
   const handleRemoveSelected = (
     evt: React.MouseEvent<unknown>,
-    item: Option
+    item: TagsInputOption
   ) => {
     evt.stopPropagation()
     removeSelectedItem(item)
@@ -178,8 +181,6 @@ const TagsInput: TagsInputComponent = props => {
 
 TagsInput.Label = Field.Label
 TagsInput.SubLabel = Field.SubLabel
-
-export default TagsInput
 
 const Pills = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
   (props, ref) => {

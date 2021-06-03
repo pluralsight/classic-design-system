@@ -5,7 +5,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import VerticalTabs from '../index'
+import { VerticalTabs } from '../index'
 
 const glamor = glamorDefault || glamorExports
 const { CollapsibleGroup, Group, Tier1, Tier2 } = VerticalTabs

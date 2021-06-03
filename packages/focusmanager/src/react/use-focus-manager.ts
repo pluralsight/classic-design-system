@@ -15,7 +15,7 @@ const FOCUSABLE_SELECTORS = [
   'video[controls]'
 ]
 
-export default function useFocusManager(
+export function useFocusManager(
   ref: RefFor<'div'>,
   {
     autofocus,

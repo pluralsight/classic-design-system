@@ -39,7 +39,7 @@ export interface StarRatingProps extends Omit<HTMLPropsFor<'div'>, 'onChange'> {
   value?: React.ReactText | null
 }
 
-const StarRating = React.forwardRef<HTMLDivElement, StarRatingProps>(
+export const StarRating = React.forwardRef<HTMLDivElement, StarRatingProps>(
   ({ starCount = 5, value, onChange, ...props }, ref) => {
     const [hoverIndex, setHoverIndex] = React.useState<null | number>(null)
     const isInteractive = !!onChange
@@ -141,5 +141,3 @@ const StarRating = React.forwardRef<HTMLDivElement, StarRatingProps>(
     )
   }
 )
-
-export default StarRating

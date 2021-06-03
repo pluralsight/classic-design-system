@@ -1,5 +1,6 @@
 import { colorsStatus } from '@pluralsight/ps-design-system-core'
-import Menu, {
+import {
+  Menu,
   MenuItemWithDescription
 } from '@pluralsight/ps-design-system-menu'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
@@ -7,7 +8,7 @@ import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Select from '../index'
+import { Select } from '../index'
 
 export default {
   title: 'Components/Select'

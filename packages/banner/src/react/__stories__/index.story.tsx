@@ -1,9 +1,9 @@
-import Link from '@pluralsight/ps-design-system-link'
+import { Link } from '@pluralsight/ps-design-system-link'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Banner from '../index'
+import { Banner } from '../index'
 
 export default {
   title: 'Components/Banner',

@@ -5,12 +5,16 @@ import React from 'react'
 
 const glamor = glamorDefault || glamorExports
 
-const ScreenReaderOnly = forwardRefWithAs<unknown, 'div'>((props, ref) => {
-  const { as: Tag = 'div', ...rest } = props
+export const ScreenReaderOnly = forwardRefWithAs<unknown, 'div'>(
+  (props, ref) => {
+    const { as: Tag = 'div', ...rest } = props
 
-  return (
-    <Tag ref={ref} {...glamor.css(accessibility.screenReaderOnly)} {...rest} />
-  )
-})
-
-export default ScreenReaderOnly
+    return (
+      <Tag
+        ref={ref}
+        {...glamor.css(accessibility.screenReaderOnly)}
+        {...rest}
+      />
+    )
+  }
+)

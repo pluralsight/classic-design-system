@@ -1,7 +1,4 @@
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -74,7 +71,7 @@ const combineClasses = (className: string, { size, themeName }: ContextValue) =>
     stylesheet[className + sizeClasses[size as string]]
   )
 
-const EmptyState = React.forwardRef<HTMLDivElement, EmptyStateProps>(
+export const EmptyState = React.forwardRef<HTMLDivElement, EmptyStateProps>(
   (props, forwardedRef) => {
     const {
       actions,
@@ -189,5 +186,3 @@ EmptyState.Heading = Heading
 EmptyState.Illustration = Illustration
 
 EmptyState.sizes = sizes
-
-export default EmptyState

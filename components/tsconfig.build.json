@@ -8,9 +8,7 @@
     ".storybook",
     "node_modules",
     "dist",
-    "**/__specs__",
     "**/*.spec.*",
-    "**/__stories__",
     "**/*.story.*"
   ],
   "compilerOptions": {

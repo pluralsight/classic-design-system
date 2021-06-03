@@ -18,7 +18,7 @@ interface NavItemStatics {
   alignments: typeof alignments
 }
 
-const NavItem = React.forwardRef<HTMLButtonElement, NavItemProps>(
+export const NavItem = React.forwardRef<HTMLButtonElement, NavItemProps>(
   (props, forwardedRef) => {
     const {
       alignment = initialValue.alignment,
@@ -57,5 +57,3 @@ const NavItem = React.forwardRef<HTMLButtonElement, NavItemProps>(
 
 NavItem.displayName = 'NavItem'
 NavItem.alignments = alignments
-
-export default NavItem

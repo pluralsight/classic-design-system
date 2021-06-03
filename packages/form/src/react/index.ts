@@ -2,7 +2,7 @@ import ButtonRow from './button-row'
 import Divider from './divider'
 import VerticalLayout from './vertical-layout'
 
-export default {
+export const Form = {
   ButtonRow,
   Divider,
   VerticalLayout

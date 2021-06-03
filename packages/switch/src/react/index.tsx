@@ -1,8 +1,5 @@
-import Halo from '@pluralsight/ps-design-system-halo'
-import {
-  useTheme,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme'
+import { Halo } from '@pluralsight/ps-design-system-halo'
+import { useTheme, themeNames } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
   isFunction,
@@ -107,7 +104,7 @@ interface SwitchComponent
     SwitchStatics
   > {}
 
-const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
+export const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
   (
     {
       checked = false,
@@ -200,5 +197,3 @@ Switch.labelAligns = vars.labelAligns
 export const colors = vars.colors
 export const sizes = vars.sizes
 export const labelAligns = vars.labelAligns
-
-export default Switch

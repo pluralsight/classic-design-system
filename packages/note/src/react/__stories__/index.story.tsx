@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import Avatar from '@pluralsight/ps-design-system-avatar'
+import { Avatar } from '@pluralsight/ps-design-system-avatar'
 import { layout } from '@pluralsight/ps-design-system-core'
-import Link from '@pluralsight/ps-design-system-link'
+import { Link } from '@pluralsight/ps-design-system-link'
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import { Heading, P } from '@pluralsight/ps-design-system-text'
@@ -13,7 +13,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import Note from '../index'
+import { Note } from '../index'
 
 const glamor = glamorDefault || glamorExports
 

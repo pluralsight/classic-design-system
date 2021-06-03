@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Banner from '../index'
+import { Banner } from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('Banner', () => {

@@ -1,13 +1,13 @@
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
-import Row from '@pluralsight/ps-design-system-row'
+import { Row } from '@pluralsight/ps-design-system-row'
 import { DecoratorFn, storiesOf } from '@storybook/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { action } from '@storybook/addon-actions'
 import React from 'react'
 
-import Drawer from '../index'
+import { Drawer } from '../index'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
   <div style={{ padding: 48 }}>{storyFn()}</div>

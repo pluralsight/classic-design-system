@@ -1,6 +1,6 @@
 import { accessibility } from '@pluralsight/ps-design-system-core'
-import Halo from '@pluralsight/ps-design-system-halo'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { Halo } from '@pluralsight/ps-design-system-halo'
+import { Theme, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   ValueOf,
@@ -57,7 +57,7 @@ interface CheckboxProps extends HTMLPropsFor<'div'>, Record<string, unknown> {
   value: string | number
 }
 
-const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
+export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   (props, forwardedRef) => {
     const { checked, disabled, indeterminate, name, value, onCheck } = props
 
@@ -140,8 +140,6 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     )
   }
 )
-
-export default Checkbox
 
 const Checkmark: React.FC = () => (
   <svg

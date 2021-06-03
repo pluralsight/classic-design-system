@@ -2,7 +2,7 @@ import { fireEvent, screen } from '@testing-library/dom'
 import { render } from '@testing-library/react'
 import React from 'react'
 
-import Menu from '../index'
+import { Menu } from '../index'
 
 describe('Menu', () => {
   it('forwards ref', () => {

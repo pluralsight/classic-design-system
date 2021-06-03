@@ -3,7 +3,7 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import EmptyState from '../index'
+import { EmptyState } from '../index'
 import * as vars from '../../vars/index'
 import * as stories from '../__stories__/index.story'
 

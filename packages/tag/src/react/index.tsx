@@ -1,9 +1,6 @@
-import Halo from '@pluralsight/ps-design-system-halo'
+import { Halo } from '@pluralsight/ps-design-system-halo'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
-import {
-  useTheme,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme'
+import { useTheme, themeNames } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   RefFor,
@@ -83,7 +80,7 @@ export interface TagStatics {
   sizes: typeof vars.sizes
 }
 
-const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
+export const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
   const {
     children,
     error = false,
@@ -167,4 +164,3 @@ const renderIcon = (
 }
 
 export const sizes = vars.sizes
-export default Tag

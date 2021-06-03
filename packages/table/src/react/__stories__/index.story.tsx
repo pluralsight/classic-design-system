@@ -1,10 +1,10 @@
-import Avatar from '@pluralsight/ps-design-system-avatar'
-import Checkbox from '@pluralsight/ps-design-system-checkbox'
-import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import { Avatar } from '@pluralsight/ps-design-system-avatar'
+import { Checkbox } from '@pluralsight/ps-design-system-checkbox'
+import { ScreenReaderOnly } from '@pluralsight/ps-design-system-screenreaderonly'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Table from '../index'
+import { Table } from '../index'
 import { generateUser } from './seed'
 import { FlexContainer, HorzSpacer } from './shared'
 

@@ -1,3 +1,3 @@
-export { default } from './react/index'
+export { Tooltip } from './react/index'
 export * from './vars/index'
 export { default as css } from './css/index'

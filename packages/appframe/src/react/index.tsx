@@ -1,7 +1,7 @@
-import Button from '@pluralsight/ps-design-system-button'
+import { Button } from '@pluralsight/ps-design-system-button'
 import { breakpoints } from '@pluralsight/ps-design-system-core'
-import Scrollable from '@pluralsight/ps-design-system-scrollable'
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import { Scrollable } from '@pluralsight/ps-design-system-scrollable'
+import { Theme, useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   RefForwardingComponent,
@@ -102,7 +102,7 @@ interface AppFrameComponent
     AppFrameStatics
   > {}
 
-const AppFrame = React.forwardRef((props, forwardedRef) => {
+export const AppFrame = React.forwardRef((props, forwardedRef) => {
   const {
     children,
     onRequestSideNavClose,
@@ -336,5 +336,3 @@ AppFrame.SideNav.displayName = 'AppFrame.SideNav'
 
 AppFrame.TopNav = TopNav
 AppFrame.TopNav.displayName = 'AppFrame.TopNav'
-
-export default AppFrame

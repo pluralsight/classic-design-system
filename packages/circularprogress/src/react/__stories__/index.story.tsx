@@ -3,7 +3,7 @@ import * as core from '@pluralsight/ps-design-system-core'
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 
-import CircularProgress from '../../index'
+import { CircularProgress } from '../../index'
 
 export default {
   title: 'Components/CircularProgress',

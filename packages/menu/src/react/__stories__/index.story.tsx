@@ -5,7 +5,7 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import React from 'react'
 
-import Menu from '../index'
+import { Menu } from '../index'
 import { MenuItemWithDescription } from '../ItemWithDescription'
 
 const useActive = (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {

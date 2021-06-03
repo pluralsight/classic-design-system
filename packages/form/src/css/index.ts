@@ -1,5 +1,5 @@
 import { colorsBorder, layout } from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import { themeNames } from '@pluralsight/ps-design-system-theme'
 
 import * as vars from '../vars/index'
 

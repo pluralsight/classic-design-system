@@ -1,4 +1,4 @@
-export { default } from './react/index'
+export { Table } from './react/index'
 export * from './react/sentinel'
 export * from './react/sticky'
 

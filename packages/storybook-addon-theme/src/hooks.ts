@@ -1,6 +1,6 @@
 import {
-  names,
-  defaultName as defaultTheme
+  themeNames,
+  themeDefaultName
 } from '@pluralsight/ps-design-system-theme'
 import * as storybookApi from '@storybook/api'
 import React from 'react'
@@ -12,7 +12,7 @@ export function useSelectedTheme(api: StorybookApi = storybookApi) {
   const [globals, updateGlobals] = api.useGlobals()
   const userSelectedTheme = globals[PARAM_KEY]?.name
 
-  const storyDefaultTheme = storyTheme ?? defaultTheme
+  const storyDefaultTheme = storyTheme ?? themeDefaultName
   const theme = userSelectedTheme ?? storyDefaultTheme
 
   const setTheme = React.useCallback(
@@ -25,7 +25,7 @@ export function useSelectedTheme(api: StorybookApi = storybookApi) {
   return { theme, storyDefaultTheme, setTheme }
 }
 
-type ThemeName = keyof typeof names
+type ThemeName = keyof typeof themeNames
 
 type StorybookApi = {
   useGlobals: typeof storybookApi.useGlobals

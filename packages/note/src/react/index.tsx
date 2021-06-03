@@ -1,10 +1,7 @@
 import Avatar, {
   sizes as avatarSizes
 } from '@pluralsight/ps-design-system-avatar'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
+import { themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
 import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -89,7 +86,7 @@ interface NoteStatics {
   List: typeof NoteList
 }
 
-const Note: React.FC<NoteProps> & NoteStatics = props => {
+export const Note: React.FC<NoteProps> & NoteStatics = props => {
   const {
     actionBar,
     actionBarVisible,
@@ -184,7 +181,6 @@ const Note: React.FC<NoteProps> & NoteStatics = props => {
     </div>
   )
 }
-export default Note
 
 const NoteList: React.FC<HTMLPropsFor<'ol'>> = ({ children, ...rest }) => {
   const themeName = useTheme()

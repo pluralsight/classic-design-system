@@ -1,7 +1,7 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import useFocusManager from './use-focus-manager'
+import { useFocusManager } from './use-focus-manager'
 
 export interface FocusManagerProps extends HTMLPropsFor<'div'> {
   autofocus?: boolean
@@ -9,7 +9,7 @@ export interface FocusManagerProps extends HTMLPropsFor<'div'> {
   trapped?: boolean
 }
 
-const FocusManager = React.forwardRef<HTMLDivElement, FocusManagerProps>(
+export const FocusManager = React.forwardRef<HTMLDivElement, FocusManagerProps>(
   ({ autofocus = true, returnFocus = true, trapped = true, ...rest }, _ref) => {
     const ref = React.useRef<HTMLDivElement>(null)
     // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
@@ -24,5 +24,3 @@ const FocusManager = React.forwardRef<HTMLDivElement, FocusManagerProps>(
     return <div ref={ref} {...rest} />
   }
 )
-
-export default FocusManager

@@ -4,7 +4,7 @@ import {
   layout,
   type
 } from '@pluralsight/ps-design-system-core'
-import { names as themeNames } from '@pluralsight/ps-design-system-theme'
+import { themeNames } from '@pluralsight/ps-design-system-theme'
 
 export default {
   '.psds-datawell': {

@@ -1,6 +1,6 @@
-import Field from '@pluralsight/ps-design-system-field'
+import { Field } from '@pluralsight/ps-design-system-field'
 import { HomeIcon, CalendarIcon } from '@pluralsight/ps-design-system-icon'
-import TextInput from '@pluralsight/ps-design-system-textinput'
+import { TextInput } from '@pluralsight/ps-design-system-textinput'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import { storiesOf } from '@storybook/react'
 import React from 'react'

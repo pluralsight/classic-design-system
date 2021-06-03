@@ -4,7 +4,7 @@ import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Context, { initialContext } from '../context'
-import Steps from '../index'
+import { Steps } from '../index'
 import * as vars from '../../vars/index'
 
 const { Marker } = Steps

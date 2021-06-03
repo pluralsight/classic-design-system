@@ -52,7 +52,7 @@ interface CarouselStatics {
 
 type CarouselComponent = React.FC<CarouselProps> & CarouselStatics
 
-const Carousel: CarouselComponent = ({
+export const Carousel: CarouselComponent = ({
   children,
   controlPrev,
   controlNext,
@@ -153,7 +153,6 @@ const Carousel: CarouselComponent = ({
     </CarouselContext.Provider>
   )
 }
-export default Carousel
 Carousel.Control = Control
 Carousel.sizes = vars.sizes
 

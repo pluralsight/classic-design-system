@@ -4,7 +4,7 @@ import {
   forwardRefWithAs,
   forwardRefWithStatics
 } from '@pluralsight/ps-design-system-util'
-import Menu from '@pluralsight/ps-design-system-menu'
+import { Menu } from '@pluralsight/ps-design-system-menu'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -43,7 +43,7 @@ interface SelectProps extends UseListboxProps {
   renderOption?: React.FC
 }
 
-const Select = forwardRefWithStatics<
+export const Select = forwardRefWithStatics<
   SelectProps,
   HTMLButtonElement,
   SelectStatics
@@ -93,5 +93,3 @@ Select.Button = Button
 Select.Selected = Selected
 Select.sizes = vars.sizes
 Select.positions = vars.positions
-
-export default Select

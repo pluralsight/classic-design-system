@@ -48,7 +48,7 @@ interface ScrollableProps extends HTMLPropsFor<'div'> {
     ref: React.Ref<HTMLElement>
   ) => React.ReactNode
 }
-const Scrollable = React.forwardRef<HTMLElement, ScrollableProps>(
+export const Scrollable = React.forwardRef<HTMLElement, ScrollableProps>(
   (props, forwardedRef) => {
     const { renderContent = defaultRenderContent, ...rest } = props
 
@@ -190,5 +190,3 @@ const Handle: React.FC<HandleProps> = props => {
   )
 }
 Handle.displayName = 'Scrollable.Handle'
-
-export default Scrollable

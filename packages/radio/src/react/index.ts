@@ -1,7 +1,7 @@
 import Button from './button'
 import Group from './group'
 
-export default {
+export const Radio = {
   Button,
   Group
 }

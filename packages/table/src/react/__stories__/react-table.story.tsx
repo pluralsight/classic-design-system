@@ -1,9 +1,9 @@
 /* eslint-disable react/jsx-key */
-import Avatar from '@pluralsight/ps-design-system-avatar'
-import Button from '@pluralsight/ps-design-system-button'
+import { Avatar } from '@pluralsight/ps-design-system-avatar'
+import { Button } from '@pluralsight/ps-design-system-button'
 import * as core from '@pluralsight/ps-design-system-core'
-import Checkbox from '@pluralsight/ps-design-system-checkbox'
-import EmptyState from '@pluralsight/ps-design-system-emptystate'
+import { Checkbox } from '@pluralsight/ps-design-system-checkbox'
+import { EmptyState } from '@pluralsight/ps-design-system-emptystate'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import {
   CaretDownIcon,
@@ -16,11 +16,11 @@ import {
   PageHeadingLayout,
   PageWidthLayout
 } from '@pluralsight/ps-design-system-layout'
-import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import { ScreenReaderOnly } from '@pluralsight/ps-design-system-screenreaderonly'
 import * as Text from '@pluralsight/ps-design-system-text'
 import { HTMLPropsFor, useUniqueId } from '@pluralsight/ps-design-system-util'
 
-import SearchInput from '@pluralsight/ps-design-system-searchinput'
+import { SearchInput } from '@pluralsight/ps-design-system-searchinput'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 import {
