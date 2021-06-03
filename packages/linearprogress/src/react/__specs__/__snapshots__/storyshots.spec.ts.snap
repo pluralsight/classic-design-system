@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots LinearProgress animates to new values 1`] = `
+exports[`Storyshots Components/LinearProgress Animation 1`] = `
 <div
   style={
     Object {
@@ -37,7 +37,7 @@ exports[`Storyshots LinearProgress animates to new values 1`] = `
 </div>
 `;
 
-exports[`Storyshots LinearProgress fills container 1`] = `
+exports[`Storyshots Components/LinearProgress Fills Container 1`] = `
 <div
   style={
     Object {
@@ -64,7 +64,7 @@ exports[`Storyshots LinearProgress fills container 1`] = `
 </div>
 `;
 
-exports[`Storyshots LinearProgress min width, no val 1`] = `
+exports[`Storyshots Components/LinearProgress Min Width No Val 1`] = `
 <div
   data-css-f5n0d7=""
 >
@@ -81,87 +81,136 @@ exports[`Storyshots LinearProgress min width, no val 1`] = `
 </div>
 `;
 
-exports[`Storyshots LinearProgress value, 0% 1`] = `
+exports[`Storyshots Components/LinearProgress Values And Sizes 1`] = `
 <div
-  data-css-f5n0d7=""
+  style={
+    Object {
+      "alignItems": "center",
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+      "justifyItems": "left",
+    }
+  }
 >
-  <div
-    aria-live="off"
-    data-css-6wu9td=""
-    role="region"
-  >
-    0% complete
+  <div>
+    0
   </div>
   <div
-    data-css-lskj0=""
-  />
-</div>
-`;
-
-exports[`Storyshots LinearProgress value, 33% 1`] = `
-<div
-  data-css-f5n0d7=""
->
-  <div
-    aria-live="off"
-    data-css-6wu9td=""
-    role="region"
+    data-css-f5n0d7=""
   >
-    33% complete
+    <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      0% complete
+    </div>
+    <div
+      data-css-lskj0=""
+    />
+  </div>
+  <div>
+    25
   </div>
   <div
-    data-css-6wpswa=""
-  />
-</div>
-`;
-
-exports[`Storyshots LinearProgress value, 50% 1`] = `
-<div
-  data-css-f5n0d7=""
->
-  <div
-    aria-live="off"
-    data-css-6wu9td=""
-    role="region"
+    data-css-f5n0d7=""
   >
-    50% complete
+    <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      25% complete
+    </div>
+    <div
+      data-css-1rwpn2j=""
+    />
+  </div>
+  <div>
+    33
   </div>
   <div
-    data-css-qfqbsq=""
-  />
-</div>
-`;
-
-exports[`Storyshots LinearProgress value, 100% 1`] = `
-<div
-  data-css-f5n0d7=""
->
-  <div
-    aria-live="off"
-    data-css-6wu9td=""
-    role="region"
+    data-css-f5n0d7=""
   >
-    100% complete
+    <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      33% complete
+    </div>
+    <div
+      data-css-6wpswa=""
+    />
+  </div>
+  <div>
+    50
   </div>
   <div
-    data-css-1hrjrcb=""
-  />
-</div>
-`;
-
-exports[`Storyshots LinearProgress value, 999% 1`] = `
-<div
-  data-css-f5n0d7=""
->
-  <div
-    aria-live="off"
-    data-css-6wu9td=""
-    role="region"
+    data-css-f5n0d7=""
   >
-    999% complete
+    <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      50% complete
+    </div>
+    <div
+      data-css-qfqbsq=""
+    />
+  </div>
+  <div>
+    66
   </div>
   <div
-    data-css-1hrjrcb=""
-  />
+    data-css-f5n0d7=""
+  >
+    <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      66% complete
+    </div>
+    <div
+      data-css-1y8zqkb=""
+    />
+  </div>
+  <div>
+    75
+  </div>
+  <div
+    data-css-f5n0d7=""
+  >
+    <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      75% complete
+    </div>
+    <div
+      data-css-ich03u=""
+    />
+  </div>
+  <div>
+    100
+  </div>
+  <div
+    data-css-f5n0d7=""
+  >
+    <div
+      aria-live="off"
+      data-css-6wu9td=""
+      role="region"
+    >
+      100% complete
+    </div>
+    <div
+      data-css-1hrjrcb=""
+    />
+  </div>
 </div>
 `;

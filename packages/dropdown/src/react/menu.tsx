@@ -55,7 +55,9 @@ export const Menu = React.forwardRef<HTMLDivElement, DropdownMenuProps>(((
   const ref = useMenuRef(forwardedRef)
 
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
-  useCloseOnDocumentEvents<HTMLDivElement>(ref, context.onDocumentEvents)
+  useCloseOnDocumentEvents<HTMLDivElement>(ref, (evt: Event) =>
+    context.onDocumentEvents(ref, evt)
+  )
 
   const handleKeyDown: React.KeyboardEventHandler<HTMLDivElement> = evt => {
     isOpen && handleMenuKeyDownEvents(evt)

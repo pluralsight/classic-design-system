@@ -17,6 +17,8 @@ import IframeResizer from 'iframe-resizer-react'
 
 ### Using the React component
 
+The component that you pass to the `show` prop must be wrapped in `React.forwardRef` and allow the `style` prop to be set.
+
 ```typescript
 import React, { useState } from 'react'
 

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.2.0...@pluralsight/ps-design-system-util@9.2.1) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-util
+
+
+
+
+
+# [9.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.1.1...@pluralsight/ps-design-system-util@9.2.0) (2021-05-20)
+
+
+### Features
+
+* **util:** add useResize, useScrollOutside and useClickOutside ([aeebceb](https://github.com/pluralsight/design-system/commit/aeebceb257fc8107bd2367cf1f24e694d864c9f4))
+
+
+
+
+
 ## [9.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.1.0...@pluralsight/ps-design-system-util@9.1.1) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util

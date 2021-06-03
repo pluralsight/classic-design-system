@@ -1,6 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots drawer controlled: external state 1`] = `
+exports[`Storyshots Components/Row Controlled Button Only 1`] = `
+<div
+  style={
+    Object {
+      "padding": 48,
+    }
+  }
+>
+  <button
+    onClick={[Function]}
+  >
+    toggle drawer
+  </button>
+  <div
+    aria-expanded={false}
+    data-css-1suuvy1=""
+    onClick={[Function]}
+    role="button"
+  >
+    <p
+      data-css-17nixd9=""
+      style={
+        Object {
+          "margin": 0,
+          "padding": "10px 0",
+        }
+      }
+    >
+      Clicking me won't toggle drawer
+    </p>
+    <div
+      data-css-17v14zz=""
+    >
+      <div
+        data-css-1h00rme=""
+        data-css-7dab2f=""
+      >
+        <svg
+          aria-label="caret down icon"
+          role="img"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          />
+        </svg>
+      </div>
+      <div
+        data-css-6wu9td=""
+      >
+        Collapsed
+      </div>
+    </div>
+  </div>
+  <div
+    aria-hidden={true}
+    data-css-1s813js=""
+  >
+    <p
+      data-css-17nixd9=""
+      style={
+        Object {
+          "margin": 0,
+          "padding": 20,
+        }
+      }
+    >
+      Drawer Content here
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Row Controlled External State 1`] = `
 <div
   style={
     Object {
@@ -78,80 +151,7 @@ exports[`Storyshots drawer controlled: external state 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer controlled: open with button only 1`] = `
-<div
-  style={
-    Object {
-      "padding": 48,
-    }
-  }
->
-  <button
-    onClick={[Function]}
-  >
-    toggle drawer
-  </button>
-  <div
-    aria-expanded={false}
-    data-css-1suuvy1=""
-    onClick={[Function]}
-    role="button"
-  >
-    <p
-      data-css-17nixd9=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": "10px 0",
-        }
-      }
-    >
-      Clicking me won't toggle drawer
-    </p>
-    <div
-      data-css-17v14zz=""
-    >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
-      </div>
-      <div
-        data-css-6wu9td=""
-      >
-        Collapsed
-      </div>
-    </div>
-  </div>
-  <div
-    aria-hidden={true}
-    data-css-1s813js=""
-  >
-    <p
-      data-css-17nixd9=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": 20,
-        }
-      }
-    >
-      Drawer Content here
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Storyshots drawer controlled: start open 1`] = `
+exports[`Storyshots Components/Row Controlled Start Open 1`] = `
 <div
   style={
     Object {
@@ -219,7 +219,7 @@ exports[`Storyshots drawer controlled: start open 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer default 1`] = `
+exports[`Storyshots Components/Row Default 1`] = `
 <div
   style={
     Object {
@@ -287,7 +287,7 @@ exports[`Storyshots drawer default 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer row component with actions 1`] = `
+exports[`Storyshots Components/Row Row Component With Actions 1`] = `
 <div
   style={
     Object {
@@ -314,6 +314,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
             href="https://duckduckgo.com?q=image"
           >
             <img
+              alt="Link text"
               src="https://cataas.com/cat"
             />
           </a>
@@ -454,7 +455,7 @@ exports[`Storyshots drawer row component with actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer stack of drawers 1`] = `
+exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
 <div
   style={
     Object {
@@ -638,7 +639,7 @@ exports[`Storyshots drawer stack of drawers 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
+exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
 <div
   style={
     Object {
@@ -826,7 +827,7 @@ exports[`Storyshots drawer stack of non-sibling drawers 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer using custom aria label 1`] = `
+exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
 <div
   style={
     Object {
@@ -896,7 +897,7 @@ exports[`Storyshots drawer using custom aria label 1`] = `
 </div>
 `;
 
-exports[`Storyshots drawer with row component 1`] = `
+exports[`Storyshots Components/Row With Row Component 1`] = `
 <div
   style={
     Object {

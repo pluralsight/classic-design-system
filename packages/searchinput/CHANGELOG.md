@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@9.1.5...@pluralsight/ps-design-system-searchinput@9.1.6) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-searchinput
+
+
+
+
+
+## [9.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@9.1.4...@pluralsight/ps-design-system-searchinput@9.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **searchinput:** set correct peer dependency on ps normalize ([7693777](https://github.com/pluralsight/design-system/commit/76937773de071d424f1922a074afba1161317c96))
+
+
+
+
+
+## [9.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@9.1.3...@pluralsight/ps-design-system-searchinput@9.1.4) (2021-05-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-searchinput
+
+
+
+
+
 ## [9.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@9.1.2...@pluralsight/ps-design-system-searchinput@9.1.3) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-searchinput

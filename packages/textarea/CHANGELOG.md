@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.1.5...@pluralsight/ps-design-system-textarea@9.1.6) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
+## [9.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.1.4...@pluralsight/ps-design-system-textarea@9.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **textarea:** set correct peer dependency on ps normalize ([fbc8a65](https://github.com/pluralsight/design-system/commit/fbc8a65fe0a8da4f6d2938c963e3b405b535890a))
+
+
+
+
+
+## [9.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.1.3...@pluralsight/ps-design-system-textarea@9.1.4) (2021-05-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textarea
+
+
+
+
+
 ## [9.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.1.2...@pluralsight/ps-design-system-textarea@9.1.3) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textarea

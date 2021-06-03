@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [22.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.1.5...@pluralsight/ps-design-system-button@22.1.6) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
+
+
+
+
+## [22.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.1.4...@pluralsight/ps-design-system-button@22.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **button:** set correct peer dependency on ps normalize ([9db4b06](https://github.com/pluralsight/design-system/commit/9db4b060fbf0ba48a1d053ce54173c2ec889d290))
+
+
+
+
+
+## [22.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.1.3...@pluralsight/ps-design-system-button@22.1.4) (2021-05-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-button
+
+
+
+
+
 ## [22.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.1.2...@pluralsight/ps-design-system-button@22.1.3) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

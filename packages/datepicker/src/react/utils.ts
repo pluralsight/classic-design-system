@@ -3,6 +3,7 @@ import { ValueOf } from '@pluralsight/ps-design-system-util'
 import differenceInCalendarMonths from 'date-fns/differenceInCalendarMonths'
 import format from 'date-fns/format'
 import parse from 'date-fns/parse'
+import isMatch from 'date-fns/isMatch'
 import type { DateObj } from 'dayzed'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -151,17 +152,18 @@ interface HandleChange<T> {
   selected?: T
   setSlide: React.Dispatch<React.SetStateAction<ValueOf<typeof slides>>>
   setSelected: React.Dispatch<React.SetStateAction<T | undefined>>
+  dateFormat?: string
 }
 
 export const useDateSelectChange = ({
   selected,
   setSlide,
-  setSelected
+  setSelected,
+  dateFormat = 'MM/dd/yyyy'
 }: HandleChange<Date>): [
   string,
   (event: React.ChangeEvent<HTMLInputElement>) => void
 ] => {
-  const dateFormat = 'MM/dd/yyyy'
   const [value, setValue] = React.useState<string>(
     selected ? format(selected, dateFormat) : ''
   )
@@ -171,8 +173,14 @@ export const useDateSelectChange = ({
   const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
     const nextValue = evt.target.value
     setValue(nextValue)
-    const regex = /[0-1][0-9]\/[0-3][0-9]\/[0-9][0-9][0-9][0-9]/
-    const fulldate = regex.test(nextValue)
+    let fulldate = false
+    try {
+      fulldate = isMatch(nextValue, dateFormat)
+    } catch (err) {
+      if (!(err instanceof RangeError)) {
+        throw err
+      }
+    }
     const nextSelected = fulldate
       ? parse(nextValue, dateFormat, new Date())
       : selected
@@ -204,12 +212,12 @@ export const useRangeSelectChange = ({
   start,
   selected = [],
   setSlide,
-  setSelected
+  setSelected,
+  dateFormat = 'MM/dd/yyyy'
 }: HandleRangeChange): [
   string,
   (event: React.ChangeEvent<HTMLInputElement>) => void
 ] => {
-  const dateFormat = 'MM/dd/yyyy'
   const _selected = start ? selected[0] : selected[1]
   const [value, setValue] = React.useState<string>(
     _selected ? format(_selected, dateFormat) : ''
@@ -220,8 +228,14 @@ export const useRangeSelectChange = ({
   const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
     const nextValue = evt.target.value
     setValue(nextValue)
-    const regex = /[0-1][0-9]\/[0-3][0-9]\/[0-9][0-9][0-9][0-9]/
-    const fulldate = regex.test(nextValue)
+    let fulldate = false
+    try {
+      fulldate = isMatch(nextValue, dateFormat)
+    } catch (err) {
+      if (!(err instanceof RangeError)) {
+        throw err
+      }
+    }
     const nextSelected = fulldate
       ? parse(nextValue, dateFormat, new Date())
       : selected

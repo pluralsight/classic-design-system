@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@4.1.3...@pluralsight/ps-design-system-navbrand@4.1.4) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navbrand
+
+
+
+
+
+## [4.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@4.1.2...@pluralsight/ps-design-system-navbrand@4.1.3) (2021-05-26)
+
+
+### Bug Fixes
+
+* **navbrand:** set correct peer dependency on ps normalize ([1b4dc35](https://github.com/pluralsight/design-system/commit/1b4dc35de0be47033a3956c82ec59ba7eafb974c))
+
+
+
+
+
+## [4.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@4.1.1...@pluralsight/ps-design-system-navbrand@4.1.2) (2021-05-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navbrand
+
+
+
+
+
 ## [4.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@4.1.0...@pluralsight/ps-design-system-navbrand@4.1.1) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navbrand

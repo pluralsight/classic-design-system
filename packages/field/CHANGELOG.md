@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@4.1.5...@pluralsight/ps-design-system-field@4.1.6) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-field
+
+
+
+
+
+## [4.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@4.1.4...@pluralsight/ps-design-system-field@4.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **field:** set correct peer dependency on ps normalize ([dc28ead](https://github.com/pluralsight/design-system/commit/dc28ead7661795443fe707137a20e7ed3d7700f5))
+
+
+
+
+
+## [4.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@4.1.3...@pluralsight/ps-design-system-field@4.1.4) (2021-05-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-field
+
+
+
+
+
 ## [4.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@4.1.2...@pluralsight/ps-design-system-field@4.1.3) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-field

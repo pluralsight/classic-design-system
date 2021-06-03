@@ -8,7 +8,7 @@ import {
   RefFor
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { useHideLabels } from './context'
 import stylesheet from '../css/index'
@@ -136,6 +136,10 @@ const Item = React.forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
   } = props
 
   const [collapsed, setCollapsed] = React.useState<boolean>(initialCollapsed)
+  useEffect(() => {
+    setCollapsed(initialCollapsed)
+  }, [initialCollapsed])
+
   const themeName = useTheme()
 
   const handleHeaderClick = combineFns<[React.MouseEvent<HTMLLIElement>]>(

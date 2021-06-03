@@ -1,286 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots EmptyState combo 1`] = `
-<div
-  data-css-g3x4fp=""
->
-  <div
-    data-css-1gwvklx=""
-  >
-    <svg
-      aria-hidden="true"
-      fill="none"
-      role="img"
-      viewBox="0 0 64 64"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <title>
-        MagnifySmall
-      </title>
-      <path
-        d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
-        fill="currentColor"
-        fillOpacity={0.2}
-      />
-      <path
-        d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
-        fill="currentColor"
-        fillOpacity={0.2}
-      />
-      <g
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      >
-        <path
-          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
-        />
-      </g>
-    </svg>
-  </div>
-  <h1
-    data-css-1akj4c1=""
-  >
-    Filet mignon pork chop salami shank tail.
-  </h1>
-  <p
-    data-css-1wmcf4e=""
-  >
-    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
-  </p>
-  <div
-    data-css-aelvpu=""
-  >
-    <button
-      data-css-y5dqt5=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
-      >
-        Do a Thing
-      </span>
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState in a small fixed size container 1`] = `
-<div
-  style={
-    Object {
-      "width": 400,
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          MagnifySmall
-        </title>
-        <path
-          d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeMiterlimit={10}
-          strokeWidth={2}
-        />
-        <path
-          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <path
-          d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeMiterlimit={10}
-          strokeWidth={2}
-        />
-        <path
-          d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <g
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeMiterlimit={10}
-          strokeWidth={2}
-        >
-          <path
-            d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      Filet mignon pork chop salami shank tail.
-    </h1>
-    <p
-      data-css-1wmcf4e=""
-    >
-      Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
-    </p>
-    <div
-      data-css-aelvpu=""
-    >
-      <button
-        data-css-y5dqt5=""
-        disabled={false}
-        style={Object {}}
-      >
-        <span
-          data-css-15b13by=""
-        >
-          Do a Thing
-        </span>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/actions with an input 1`] = `
-<div
-  data-css-g3x4fp=""
->
-  <div
-    data-css-1gwvklx=""
-  >
-    <svg
-      aria-hidden="true"
-      fill="none"
-      role="img"
-      viewBox="0 0 64 64"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <title>
-        MagnifySmall
-      </title>
-      <path
-        d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
-        fill="currentColor"
-        fillOpacity={0.2}
-      />
-      <path
-        d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
-        fill="currentColor"
-        fillOpacity={0.2}
-      />
-      <g
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      >
-        <path
-          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
-        />
-      </g>
-    </svg>
-  </div>
-  <h1
-    data-css-1akj4c1=""
-  >
-    Filet mignon pork chop salami shank tail.
-  </h1>
-  <p
-    data-css-1wmcf4e=""
-  >
-    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
-  </p>
-  <div
-    data-css-aelvpu=""
-  >
-    <label
-      data-css-w0yocm=""
-    >
-      <div
-        data-css-1r967oi=""
-      >
-        <div
-          data-css-ctre2o=""
-        >
-          <div
-            data-css-1c5qy71=""
-          >
-            <input
-              data-css-7mw7i0=""
-              disabled={false}
-              placeholder="Find Something"
-            />
-          </div>
-        </div>
-        <div
-          data-css-1kca8ps=""
-        >
-          <div
-            data-css-7dab2f=""
-          >
-            <svg
-              aria-label="search icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                clipRule="evenodd"
-                d="M21.353 20.648a.5.5 0 000-.708l-5.039-5.04A7.928 7.928 0 0018 10a7.948 7.948 0 00-2.344-5.656A7.942 7.942 0 0010 2a7.94 7.94 0 00-5.656 2.344A7.944 7.944 0 002 10a7.94 7.94 0 002.344 5.656A7.94 7.94 0 0010 18a7.926 7.926 0 004.9-1.685l5.04 5.04a.5.5 0 00.707 0l.706-.707zm-7.111-6.405A5.96 5.96 0 0110 16a5.959 5.959 0 01-4.242-1.757A5.958 5.958 0 014 10c0-1.602.624-3.109 1.758-4.242A5.955 5.955 0 0110 4c1.602 0 3.109.624 4.242 1.758A5.957 5.957 0 0116 10c0 1.603-.624 3.11-1.758 4.243z"
-                fillRule="evenodd"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-    </label>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/actions with buttons 1`] = `
+exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
 <div
   data-css-g3x4fp=""
 >
@@ -480,7 +200,117 @@ exports[`Storyshots EmptyState/actions with buttons 1`] = `
 </div>
 `;
 
-exports[`Storyshots EmptyState/actions with tags 1`] = `
+exports[`Storyshots Components/EmptyState Actions With An Input 1`] = `
+<div
+  data-css-g3x4fp=""
+>
+  <div
+    data-css-1gwvklx=""
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      role="img"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        MagnifySmall
+      </title>
+      <path
+        d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth={2}
+      />
+      <path
+        d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
+        fill="currentColor"
+        fillOpacity={0.2}
+      />
+      <path
+        d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth={2}
+      />
+      <path
+        d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
+        fill="currentColor"
+        fillOpacity={0.2}
+      />
+      <g
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth={2}
+      >
+        <path
+          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
+        />
+      </g>
+    </svg>
+  </div>
+  <h1
+    data-css-1akj4c1=""
+  >
+    Filet mignon pork chop salami shank tail.
+  </h1>
+  <p
+    data-css-1wmcf4e=""
+  >
+    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
+  </p>
+  <div
+    data-css-aelvpu=""
+  >
+    <label
+      data-css-w0yocm=""
+    >
+      <div
+        data-css-1r967oi=""
+      >
+        <div
+          data-css-ctre2o=""
+        >
+          <div
+            data-css-1c5qy71=""
+          >
+            <input
+              data-css-7mw7i0=""
+              disabled={false}
+              placeholder="Find Something"
+            />
+          </div>
+        </div>
+        <div
+          data-css-1kca8ps=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="search icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M21.353 20.648a.5.5 0 000-.708l-5.039-5.04A7.928 7.928 0 0018 10a7.948 7.948 0 00-2.344-5.656A7.942 7.942 0 0010 2a7.94 7.94 0 00-5.656 2.344A7.944 7.944 0 002 10a7.94 7.94 0 002.344 5.656A7.94 7.94 0 0010 18a7.926 7.926 0 004.9-1.685l5.04 5.04a.5.5 0 00.707 0l.706-.707zm-7.111-6.405A5.96 5.96 0 0110 16a5.959 5.959 0 01-4.242-1.757A5.958 5.958 0 014 10c0-1.602.624-3.109 1.758-4.242A5.955 5.955 0 0110 4c1.602 0 3.109.624 4.242 1.758A5.957 5.957 0 0116 10c0 1.603-.624 3.11-1.758 4.243z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
 <div
   data-css-g3x4fp=""
 >
@@ -692,14 +522,144 @@ exports[`Storyshots EmptyState/actions with tags 1`] = `
 </div>
 `;
 
-exports[`Storyshots EmptyState/illustrations/large bookmark 1`] = `
+exports[`Storyshots Components/EmptyState Combo 1`] = `
+<div
+  data-css-g3x4fp=""
+>
+  <div
+    data-css-1gwvklx=""
+  >
+    <svg
+      aria-hidden="true"
+      fill="none"
+      role="img"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <title>
+        MagnifySmall
+      </title>
+      <path
+        d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth={2}
+      />
+      <path
+        d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
+        fill="currentColor"
+        fillOpacity={0.2}
+      />
+      <path
+        d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth={2}
+      />
+      <path
+        d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
+        fill="currentColor"
+        fillOpacity={0.2}
+      />
+      <g
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeMiterlimit={10}
+        strokeWidth={2}
+      >
+        <path
+          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
+        />
+      </g>
+    </svg>
+  </div>
+  <h1
+    data-css-1akj4c1=""
+  >
+    Filet mignon pork chop salami shank tail.
+  </h1>
+  <p
+    data-css-1wmcf4e=""
+  >
+    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
+  </p>
+  <div
+    data-css-aelvpu=""
+  >
+    <button
+      data-css-y5dqt5=""
+      disabled={false}
+      style={Object {}}
+    >
+      <span
+        data-css-15b13by=""
+      >
+        Do a Thing
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Illustrations 1`] = `
 <div
   style={
     Object {
       "background": "black",
+      "display": "grid",
+      "gap": "16px",
+      "gridTemplateColumns": "repeat(2, 1fr)",
     }
   }
 >
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-11zs1jp=""
+    >
+      <svg
+        aria-hidden={true}
+        role="img"
+        viewBox="0 0 128 128"
+      >
+        <path
+          d="M44.99 43.356v-16.77L109.792 64 44.99 101.414v-16.77l-14.897 8.601v-58.49l14.897 8.601zm0 7.162l-8.695-5.02v37.003l8.695-5.02V50.518zm6.202 30.544v9.609L97.387 64 51.192 37.329v9.608l29.552 17.062-29.552 17.063zm0-7.162l17.147-9.901-17.147-9.9v19.8z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-ol3iu9=""
+    >
+      Custom Illustration
+    </h1>
+  </div>
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden={true}
+        role="img"
+        viewBox="0 0 128 128"
+      >
+        <path
+          d="M44.99 43.356v-16.77L109.792 64 44.99 101.414v-16.77l-14.897 8.601v-58.49l14.897 8.601zm0 7.162l-8.695-5.02v37.003l8.695-5.02V50.518zm6.202 30.544v9.609L97.387 64 51.192 37.329v9.608l29.552 17.062-29.552 17.063zm0-7.162l17.147-9.901-17.147-9.9v19.8z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      Custom Illustration
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -743,17 +703,42 @@ exports[`Storyshots EmptyState/illustrations/large bookmark 1`] = `
       bookmark
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large channel 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          BookmarkSmall
+        </title>
+        <path
+          clipRule="evenodd"
+          d="M29.5 45.568l.095-.092 9.689 10.11a1.29 1.29 0 001.76.073c.258-.225.405-.542.405-.875V15.083c0-.29-.005-.6-.01-.925C41.396 11.533 41.34 8 43.736 8H29.5z"
+          fill="currentColor"
+          fillOpacity={0.2}
+          fillRule="evenodd"
+        />
+        <path
+          d="M43.685 8C49.175 8 52 12.262 52 17.498v7.124c0 1.313-1.114 2.374-2.487 2.374H41.4M43.685 8c-2.687 0-2.284 4.465-2.284 7.087v11.91M43.685 8H26.95C20.214 8 17 11.58 17 17.498v37.315c0 .655.557 1.187 1.244 1.187.348 0 .68-.14.916-.385l10.41-10.116 9.67 10.116c.465.483 1.251.516 1.758.073.257-.225.403-.542.403-.875V26.996"
+          stroke="currentColor"
+          strokeWidth={2}
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      bookmark
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -816,17 +801,73 @@ exports[`Storyshots EmptyState/illustrations/large channel 1`] = `
       channel
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large cloud 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          ChannelSmall
+        </title>
+        <g
+          fill="currentColor"
+        >
+          <path
+            d="M22.5 31.5a9.482 9.482 0 013.515-7.378.31.31 0 00.052-.43l-.86-1.129-.003-.005a.272.272 0 00-.383-.043A11.479 11.479 0 0020.5 31.5a11.471 11.471 0 004.136 8.83l.016.012a.5.5 0 00.7-.095l.606-.797a.5.5 0 00-.078-.687A9.475 9.475 0 0122.5 31.5z"
+          />
+          <path
+            clipRule="evenodd"
+            d="M31 43.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-8.645A3.501 3.501 0 0032 28a3.5 3.5 0 00-1 6.855zm2.5-12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+            fillRule="evenodd"
+          />
+          <path
+            d="M43.5 31.5a11.47 11.47 0 01-3.782 8.525c-.09.082-.208.184-.355.304a.5.5 0 01-.703-.067l-.007-.008-.006-.008-.605-.797a.5.5 0 01.078-.686c.116-.097.211-.18.285-.246A9.475 9.475 0 0041.5 31.5a9.476 9.476 0 00-3.38-7.263.5.5 0 01-.078-.687l.607-.798a.5.5 0 01.715-.084l.14.118A11.473 11.473 0 0143.5 31.5zM28.127 27.595c.05-.05.113-.108.19-.175a.5.5 0 00.067-.678l-.609-.8a.5.5 0 00-.725-.076l-.078.069A7.48 7.48 0 0024.5 31.5a7.48 7.48 0 002.552 5.634.5.5 0 00.724-.077l.608-.799a.5.5 0 00-.068-.678A5.484 5.484 0 0126.5 31.5c0-1.527.622-2.909 1.627-3.905z"
+          />
+          <path
+            d="M39.5 31.5a7.48 7.48 0 01-2.55 5.634.5.5 0 01-.725-.075l-.61-.802a.5.5 0 01.068-.678c.1-.088.18-.164.243-.227A5.482 5.482 0 0037.5 31.5a5.482 5.482 0 00-1.539-3.816 4.956 4.956 0 00-.28-.263.5.5 0 01-.066-.677l.609-.801a.5.5 0 01.723-.077A7.479 7.479 0 0139.5 31.5z"
+          />
+          <circle
+            cx={32}
+            cy={32}
+            fillOpacity={0.2}
+            opacity={0.2}
+            r={19}
+            stroke="currentColor"
+            strokeWidth={2}
+          />
+          <circle
+            cx={32}
+            cy={32}
+            fillOpacity={0.2}
+            opacity={0.2}
+            r={15}
+            stroke="currentColor"
+            strokeWidth={2}
+          />
+        </g>
+        <circle
+          cx={32}
+          cy={32}
+          r={23}
+          stroke="currentColor"
+          strokeWidth={2}
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      channel
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -883,17 +924,42 @@ exports[`Storyshots EmptyState/illustrations/large cloud 1`] = `
       cloud
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large code 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          CloudSmall
+        </title>
+        <path
+          clipRule="evenodd"
+          d="M43 33.5C43 39.851 37.851 45 31.5 45c-.168 0-.334-.004-.5-.01V45H16v-.015c-.165.01-.332.015-.5.015-4.142 0-7.5-3.134-7.5-7s3.358-7 7.5-7c1.71 0 3.287.534 4.549 1.434C20.587 26.583 25.509 22 31.5 22 37.851 22 43 27.149 43 33.5z"
+          fill="currentColor"
+          fillOpacity={0.2}
+          fillRule="evenodd"
+        />
+        <path
+          d="M16.505 28.404l.904.168.244-.886C19.51 20.936 25.615 16 32.842 16c5.16 0 9.744 2.514 12.624 6.412l.281.38.472.024C52.77 23.15 58 28.645 58 35.4 58 42.372 52.429 48 45.585 48H14.732C9.37 48 5 43.59 5 38.12s4.37-9.88 9.732-9.88c.606 0 1.199.056 1.773.164z"
+          stroke="currentColor"
+          strokeWidth={2}
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      cloud
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -969,43 +1035,74 @@ exports[`Storyshots EmptyState/illustrations/large code 1`] = `
       code
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large custom 1`] = `
-<div
-  data-css-g3x4fp=""
->
   <div
-    data-css-11zs1jp=""
+    data-css-g3x4fp=""
   >
-    <svg
-      aria-hidden={true}
-      role="img"
-      viewBox="0 0 128 128"
+    <div
+      data-css-1gwvklx=""
     >
-      <path
-        d="M44.99 43.356v-16.77L109.792 64 44.99 101.414v-16.77l-14.897 8.601v-58.49l14.897 8.601zm0 7.162l-8.695-5.02v37.003l8.695-5.02V50.518zm6.202 30.544v9.609L97.387 64 51.192 37.329v9.608l29.552 17.062-29.552 17.063zm0-7.162l17.147-9.901-17.147-9.9v19.8z"
-        fill="currentColor"
-      />
-    </svg>
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          CodeSmall
+        </title>
+        <path
+          d="M8 9h48v12H8z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <g
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            d="M25.595 33L18 37.17l7.595 4.69M39.405 33L47 37.17l-7.595 4.69"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M36 30l-7 16"
+            strokeLinecap="round"
+          />
+          <rect
+            height={48}
+            rx={3}
+            width={48.633}
+            x={8}
+            y={8}
+          />
+          <path
+            d="M8 20h48.101"
+          />
+          <circle
+            cx={14}
+            cy={14}
+            r={2}
+          />
+          <circle
+            cx={22}
+            cy={14}
+            r={2}
+          />
+          <circle
+            cx={30}
+            cy={14}
+            r={2}
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      code
+    </h1>
   </div>
-  <h1
-    data-css-ol3iu9=""
-  >
-    Custom Illustration
-  </h1>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large data 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
   <div
     data-css-g3x4fp=""
   >
@@ -1064,17 +1161,43 @@ exports[`Storyshots EmptyState/illustrations/large data 1`] = `
       data
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large document 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          DataSmall
+        </title>
+        <g
+          clipRule="evenodd"
+          fill="currentColor"
+          fillRule="evenodd"
+        >
+          <path
+            d="M51 10a1 1 0 10-2 0v4h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 00-.684 1.73L16 48.794V46h3v1.775l.27-.092c.324-.098.648-.131 1.08-.164.245 0 .455.01.65.038V46h3v2.428l7.158 2.167L33.893 49H31v-3h3v2.938l2-1.167V46h3v.021l2.425-1.414c.216-.131.649-.23 1.081-.23.432-.032.973.033 1.297.132L51 46.544V46h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3zm2.638 39v2H54a1 1 0 100-2zM16 19v-3h3v3zm0 5v-3h3v3zm0 5v-3h1.257a2.075 2.075 0 013.743.392V26h3v3h-3v-1.254A2.077 2.077 0 0118.274 29zm0 5v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm5 0h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-10h3v-3h-3zm0-5h3v-3h-3zm5 0v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3h-.75a2.076 2.076 0 01.75 3.903V39h-3v-2.513A2.076 2.076 0 0127.817 34zm0 10v-3h3v3zm0 5v-3h3v3zm5-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm5-1.396V16h3v1.129a2.076 2.076 0 11-3 .475zM36 24v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm5 0h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm5 0v-3h3v3zm0 5v-3h3v3zm2.76 2A2.077 2.077 0 1046 28.325V29h3v-3zM46 34v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3z"
+            fillOpacity={0.2}
+          />
+          <path
+            d="M9 10a1 1 0 011-1h42.206C53.776 9 55 10.31 55 11.85v3.134a.98.98 0 010 .034V54a1 1 0 01-1 1H10a1 1 0 01-1-.968v-2.858zm44 1.85v2.87l-4.572 7.542A3.99 3.99 0 0047 22a3.985 3.985 0 00-2.648 1.002L41.7 20.524a4 4 0 10-7.023.703l-5.66 10.903a4.006 4.006 0 00-2.752.265l-3.66-3.66a4 4 0 10-6.888.551L11 34.538V11h41.206c.405 0 .794.355.794.85zM11 49.732v-12.2l6.234-6.94c.533.262 1.132.409 1.766.409.86 0 1.657-.271 2.309-.733l3.424 3.424a4 4 0 106.03-.584l5.462-10.522A3.983 3.983 0 0038 23c.941 0 1.807-.325 2.49-.87l2.732 2.553a4 4 0 106.84-1.257L53 18.579v27.309l-8.62-2.685a4.716 4.716 0 00-1.656-.193c-.53.006-1.162.131-1.595.416l-9.954 6.395-9.363-3.123c-.468-.155-.913-.196-1.407-.196-.028 0-.055 0-.083.003-.435.036-.871.079-1.324.23a1.006 1.006 0 00-.035.012zm32.777-4.621L53 47.983V53H11v-1.133l8.646-3.24c.19-.061.401-.091.8-.125.353.002.553.034.733.094l9.817 3.274a1 1 0 00.857-.108l10.362-6.657.003-.001a.994.994 0 01.152-.049c.116-.028.256-.045.395-.045a2.742 2.742 0 01.992.094zm-22.78-17.984a2.015 2.015 0 00-.007-.33 2 2 0 10.006.33zm6.877 6.878a2 2 0 11.253 3.991 2 2 0 01-.253-3.991zm19.482-9.972a2.014 2.014 0 00-1.529.348 1.997 1.997 0 00-.792 1.996 2 2 0 102.32-2.345zM38 17a2 2 0 110 4 2 2 0 010-4z"
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      data
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -1155,17 +1278,67 @@ exports[`Storyshots EmptyState/illustrations/large document 1`] = `
       document
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large error 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          DocumentSmall
+        </title>
+        <path
+          d="M12 56.6v-7.425L44.175 17v39.601z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <path
+          d="M43.61 56.628H13.03c-.618 0-1.03-.412-1.03-1.03V15.03c0-.618.412-1.03 1.03-1.03h30.58c.618 0 1.03.412 1.03 1.03v40.568c0 .618-.515 1.03-1.03 1.03z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          clipRule="evenodd"
+          d="M19 9.031l.001-.03.014-.001h30.159a.34.34 0 01.001.031v40.632a.07.07 0 010 .016l-.001.002v.001l-.002.001-.002.002a.044.044 0 01-.013.009H47v2h2.16c1.01 0 2.016-.81 2.016-2.03V9.03c0-.532-.179-1.055-.567-1.449-.39-.395-.912-.582-1.448-.582H19.015c-.537 0-1.06.187-1.449.582-.388.394-.566.917-.566 1.45V12h2z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+        <g
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            d="M29 23h10M18 28h21M18 33h21M18 38h21M18 43h21M18 48h12"
+            strokeLinecap="round"
+          />
+          <rect
+            fill="currentColor"
+            fillOpacity={0.2}
+            height={4}
+            rx={1}
+            width={7}
+            x={17}
+            y={19}
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      document
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -1224,17 +1397,57 @@ exports[`Storyshots EmptyState/illustrations/large error 1`] = `
       error
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large image 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          ErrorSmall
+        </title>
+        <path
+          d="M58.242 51.552L34.628 8.696c-1.14-2.07-4.115-2.07-5.256 0L5.758 51.552C4.656 53.552 6.103 56 8.386 56h47.228c2.283 0 3.73-2.448 2.628-4.448z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+        />
+        <path
+          d="M32 54V9L7.825 52.514A1 1 0 008.7 54z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <g
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+        >
+          <path
+            d="M31.923 39L29.61 27.92a2.425 2.425 0 114.743.026z"
+          />
+          <circle
+            cx={32}
+            cy={45}
+            r={2}
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      error
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -1296,17 +1509,62 @@ exports[`Storyshots EmptyState/illustrations/large image 1`] = `
       image
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large lightning 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          ImageSmall
+        </title>
+        <path
+          d="M50.563 43.463v-.001l-4.607-6.254c0-.002-.002-.003-.003-.004a2.43 2.43 0 00-3.658-.318l-3.913 3.725-10.326-14.02s0 0 0 0a2.43 2.43 0 00-3.997.114s0 0 0 0l-11 16.871v.002a2.43 2.43 0 002.085 3.753h33.408a2.43 2.43 0 002.011-3.868z"
+          stroke="currentColor"
+          strokeWidth={2}
+        />
+        <path
+          clipRule="evenodd"
+          d="M22.904 30.307l12.19 16.024H15.133a1.43 1.43 0 01-1.236-2.208z"
+          fill="currentColor"
+          fillOpacity={0.2}
+          fillRule="evenodd"
+        />
+        <path
+          d="M42.252 27.369a5.018 5.018 0 100-10.035 5.018 5.018 0 000 10.035z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <g
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            d="M42.252 28.369a6.018 6.018 0 100-12.035 6.018 6.018 0 000 12.035z"
+          />
+          <rect
+            height={42}
+            rx={3}
+            width={52}
+            x={6}
+            y={11}
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      image
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -1352,17 +1610,46 @@ exports[`Storyshots EmptyState/illustrations/large lightning 1`] = `
       lightning
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large lock 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          LightningSmall
+        </title>
+        <g
+          clipRule="evenodd"
+          fillRule="evenodd"
+        >
+          <path
+            d="M34.587 4L16 36.083h13.94l4.647-9.166z"
+            fill="currentColor"
+            fillOpacity={0.2}
+          />
+          <path
+            d="M34.587 4L16 36.083h13.94V59l18.587-32.083h-13.94z"
+            stroke="currentColor"
+            strokeLinejoin="round"
+            strokeWidth={2}
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      lightning
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -1400,17 +1687,37 @@ exports[`Storyshots EmptyState/illustrations/large lock 1`] = `
       lock
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large magnify 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          LockSmall
+        </title>
+        <path
+          d="M18.202 26.206H16.6A3.601 3.601 0 0013 29.807v23.407c0 1.989 1.612 3.601 3.6 3.601l31.212.001a3.6 3.6 0 003.6-3.6V29.806c0-1.988-1.612-3.6-3.6-3.6H46.21v-4.202C46.21 14.282 39.929 8 32.206 8s-14.004 6.282-14.004 14.005zm7.202-4.201c0-3.75 3.053-6.803 6.802-6.803 3.75 0 6.803 3.053 6.803 6.803v4.201H25.404zm9.704 19.505a2.901 2.901 0 11-5.803 0 2.901 2.901 0 015.803 0z"
+          fill="currentColor"
+          fillOpacity={0.2}
+          stroke="currentColor"
+          strokeWidth={2}
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      lock
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -1486,17 +1793,64 @@ exports[`Storyshots EmptyState/illustrations/large magnify 1`] = `
       magnify
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large people 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-1gwvklx=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          MagnifySmall
+        </title>
+        <path
+          d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <path
+          d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <g
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        >
+          <path
+            d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      magnify
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -1578,1070 +1932,6 @@ exports[`Storyshots EmptyState/illustrations/large people 1`] = `
       people
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large signal 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-11zs1jp=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 128 128"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          Signal
-        </title>
-        <path
-          d="M64 108l.5-73 28 62.5z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <path
-          clipRule="evenodd"
-          d="M55.716 46.387C47.672 43.115 42 35.22 42 26c0-12.15 9.85-22 22-22s22 9.85 22 22c0 9.209-5.657 17.096-13.686 20.375l-.834-1.82C78.82 41.591 84 34.4 84 26c0-11.046-8.954-20-20-20s-20 8.954-20 20c0 8.411 5.192 15.61 12.546 18.565zm-6.082 13.346a17.283 17.283 0 00-7.744-1.732c.073-.657.11-1.325.11-2.001 0-9.941-8.059-18-18-18S6 46.059 6 56a17.92 17.92 0 003.612 10.817c-3.2 2.106-5.659 5.393-6.924 9.238C1.807 78.732 4.002 81 6.394 81h33.549l.911-2H6.394c-1.247 0-2.196-1.135-1.807-2.32 1.988-6.04 7.163-10.347 13.233-10.347 2.83 0 5.463.935 7.671 2.545.554.404 1.081.85 1.578 1.335.294-.632.619-1.243.972-1.831C31.082 63.325 36.234 60 42.077 60c2.39 0 4.664.556 6.725 1.56zM33.791 94.5H5a1 1 0 100 2h27.88zm-1.823 4H12a1 1 0 100 2h19.057zm65.138 2l-.916-2H115a1 1 0 010 2zm-8.384 2h2.452a2.993 2.993 0 011.494 1.453l.26.547h-9.761zm-52.156 0h2.267l5.667 2h-9.727l.145-.356a2.994 2.994 0 011.648-1.644zm-6.42 0H21a1 1 0 000 2h8.234zm2.99 6h22.697l-5.666-2H33.954zm44.475-2l-5.556 2h22.778l-.952-2zm21.328-2H106a1 1 0 000-2h-7.977zm-38.319 6H33a1 1 0 000 2h28.497a3 3 0 00-.877-2zm5.882 2a2.998 2.998 0 01.864-2H94a1 1 0 010 2zm-5.002 2H41a1 1 0 000 2h20.5zm5 2v-2H86a1 1 0 010 2zm-4.95 2H48a1 1 0 000 2h32a1 1 0 000-2H66.45a2.501 2.501 0 01-4.9 0zm33.724-22l-.916-2H123a1 1 0 010 2zM57.792 41.83C51.474 39.352 47 33.199 47 26c0-9.389 7.611-17 17-17s17 7.611 17 17c0 7.19-4.464 13.338-10.771 15.823L69.394 40C75.014 37.835 79 32.383 79 26c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 6.39 3.995 11.846 9.623 14.008zm2.078-4.56C55.277 35.587 52 31.176 52 26c0-6.627 5.373-12 12-12s12 5.373 12 12c0 5.172-3.272 9.58-7.859 11.266l-.836-1.825C71.204 34.076 74 30.365 74 26c0-5.523-4.477-10-10-10s-10 4.477-10 10c0 4.368 2.8 8.081 6.703 9.444zM55 122.5a1 1 0 000 2h18a1 1 0 000-2zM8 56a15.93 15.93 0 003.366 9.82 14.723 14.723 0 016.454-1.487c3.2 0 6.166 1.033 8.65 2.786 2.985-4.82 7.78-8.253 13.388-8.977.094-.7.142-1.416.142-2.142 0-8.837-7.163-16-16-16S8 47.163 8 56zm80 12h28.627a3.908 3.908 0 003.075-1.472c.74-.94 1.03-2.26.511-3.553-1.59-3.962-5.135-6.975-9.505-6.975-1.809 0-3.49.524-4.946 1.419-2.173-3.223-5.604-5.419-9.608-5.419-6.283 0-11.09 5.335-11.995 11.726C83.807 66.214 85.881 68 88 68zm22.708-10a7.41 7.41 0 00-3.947 1.152 8.569 8.569 0 00-1.602 1.298 12.497 12.497 0 00-.993-1.823C102.308 55.812 99.41 54 96.154 54c-5.033 0-9.21 4.328-10.014 10.006C85.985 65.099 86.895 66 88 66h28.627c1.24 0 2.192-1.13 1.73-2.28C117 60.338 114.085 58 110.708 58z"
-          fill="currentColor"
-          fillOpacity={0.2}
-          fillRule="evenodd"
-        />
-        <g
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeWidth={2}
-        >
-          <path
-            d="M64 34l-34 75M64 34l34 75M64 34v84M45 77l30-18M58 49l17 10M93 98L44 78M93 98l-28 10M36 99l28 10M83 77L53 59M70 49L53 59M35 98l49-20"
-          />
-        </g>
-        <path
-          clipRule="evenodd"
-          d="M64 28a2 2 0 100-4 2 2 0 000 4z"
-          fill="currentColor"
-          fillRule="evenodd"
-        />
-        <path
-          clipRule="evenodd"
-          d="M67 32.326a7 7 0 10-6 0V30a5 5 0 116 0z"
-          fill="currentColor"
-          fillRule="evenodd"
-        />
-        <path
-          d="M63 26h2v9h-2z"
-          fill="currentColor"
-        />
-      </svg>
-    </div>
-    <h1
-      data-css-ol3iu9=""
-    >
-      signal
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large skillIQ 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-11zs1jp=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 128 128"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          SkillIQ
-        </title>
-        <g
-          fill="currentColor"
-          fillOpacity={0.2}
-        >
-          <path
-            clipRule="evenodd"
-            d="M30.384 13.09C40.023 6.713 51.578 3 64 3c33.69 0 61 27.31 61 61s-27.31 61-61 61c-13.615 0-26.188-4.46-36.338-12A9.952 9.952 0 0029 108c0-5.523-4.477-10-10-10-1.742 0-3.38.445-4.805 1.228C7.144 89.278 3 77.123 3 64c0-11.937 3.429-23.073 9.355-32.477A13.443 13.443 0 0018.5 33C25.956 33 32 26.956 32 19.5c0-2.32-.585-4.503-1.616-6.41zm-1.079-1.684C39.255 4.829 51.18 1 64 1c34.794 0 63 28.206 63 63s-28.206 63-63 63c-14.052 0-27.029-4.6-37.508-12.377A9.976 9.976 0 0119 118c-5.523 0-10-4.477-10-10a9.98 9.98 0 013.546-7.639C5.274 90.089 1 77.544 1 64c0-12.318 3.535-23.81 9.647-33.518A13.483 13.483 0 015 19.5C5 12.044 11.044 6 18.5 6a13.48 13.48 0 0110.805 5.406zM11.74 28.804A11.484 11.484 0 017 19.5C7 13.149 12.149 8 18.5 8c3.734 0 7.052 1.78 9.153 4.536A63.353 63.353 0 0011.74 28.805zm1.716 1.034a61.344 61.344 0 0115.267-15.61A11.45 11.45 0 0130 19.5C30 25.851 24.851 31 18.5 31c-1.81 0-3.521-.418-5.044-1.162zm.275 72.142a8 8 0 1011.17 11.422 63.383 63.383 0 01-11.17-11.422zm12.328 9.788a8 8 0 00-10.668-10.91 61.353 61.353 0 0010.668 10.91zM95 35.5c0-1.532.627-2.918 1.638-3.916a46.224 46.224 0 016.731 8.61A5.5 5.5 0 0195 35.5zm-2 0c0-2.072.84-3.947 2.198-5.304C86.998 22.626 76.04 18 64 18c-25.405 0-46 20.595-46 46s20.595 46 46 46a45.808 45.808 0 0028.639-10h3.11c-8.46 7.468-19.576 12-31.749 12-26.51 0-48-21.49-48-48s21.49-48 48-48c12.69 0 24.23 4.925 32.813 12.967a7.5 7.5 0 019.136 11.686C109.804 47.563 112 55.525 112 64c0 12.707-4.938 24.262-13 32.848v-2.997A45.818 45.818 0 00110 64a45.8 45.8 0 00-5.632-22.073A7.5 7.5 0 0193 35.5zm11.879 3.329a48.213 48.213 0 00-6.554-8.382 5.5 5.5 0 016.554 8.382z"
-            fillRule="evenodd"
-          />
-          <path
-            d="M97 64.5V98H64c-18.212 0-33-14.985-33-33.5S45.788 31 64 31s33 14.985 33 33.5zM64 82.75c9.955 0 18-8.185 18-18.25s-8.045-18.25-18-18.25-18 8.185-18 18.25 8.045 18.25 18 18.25z"
-            stroke="currentColor"
-            strokeWidth={2}
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-ol3iu9=""
-    >
-      skillIQ
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large upload 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-11zs1jp=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 128 128"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          Upload
-        </title>
-        <path
-          clipRule="evenodd"
-          d="M94.693 61c0 15.213-12.332 27.545-27.544 27.545-.355 0-.708-.007-1.06-.02v.02H35.366v-.074a17.17 17.17 0 01-1.589.074c-9.069 0-16.42-7.115-16.42-15.891 0-8.777 7.351-15.891 16.42-15.891 2.12 0 4.145.388 6.004 1.095C41.341 44.125 53 33.456 67.15 33.456c15.212 0 27.544 12.332 27.544 27.544z"
-          fill="currentColor"
-          fillOpacity={0.2}
-          fillRule="evenodd"
-        />
-        <path
-          clipRule="evenodd"
-          d="M124 64c0 13.453-4.428 25.872-11.905 35.88A12.441 12.441 0 00105.5 98c-6.904 0-12.5 5.596-12.5 12.5 0 1.917.431 3.732 1.202 5.356C85.332 121.033 75.012 124 64 124c-15.34 0-29.335-5.757-39.944-15.227a8 8 0 00-9.842-11.275C7.764 87.932 4 76.405 4 64 4 30.863 30.863 4 64 4c12.01 0 23.197 3.529 32.578 9.607A7.5 7.5 0 00107.6 22.78C117.767 33.53 124.001 48.037 124.001 64zm-60 62c-15.771 0-30.167-5.889-41.109-15.587a8 8 0 11-10.46-11.981C5.844 88.582 2 76.74 2 64 2 29.758 29.758 2 64 2c12.38 0 23.912 3.628 33.592 9.88a7.5 7.5 0 1111.523 9.592C119.584 32.573 126 47.537 126 64c0 13.898-4.573 26.729-12.297 37.068A12.471 12.471 0 01118 110.5c0 6.904-5.596 12.5-12.5 12.5a12.487 12.487 0 01-10.298-5.412C86.037 122.936 75.376 126 64 126zm-41-21a5.98 5.98 0 01-.479 2.353 60.295 60.295 0 01-7.107-8.141A6 6 0 0123 105zm-1.584 4.062a62.331 62.331 0 01-7.845-8.986 6 6 0 107.845 8.986zM99.26 12.996a5.5 5.5 0 118.455 7.038 62.311 62.311 0 00-8.455-7.038zm-.977 1.757a60.268 60.268 0 017.881 6.56 5.5 5.5 0 01-7.88-6.56zM105.5 100c1.959 0 3.794.537 5.363 1.471a60.326 60.326 0 01-14.94 13.341A10.464 10.464 0 0195 110.5c0-5.799 4.701-10.5 10.5-10.5zm6.978 2.654a62.327 62.327 0 01-15.561 13.896A10.488 10.488 0 00105.5 121c5.799 0 10.5-4.701 10.5-10.5 0-3.12-1.361-5.923-3.522-7.846zM98.85 94.025C90.415 103.808 77.93 110 64 110c-13.508 0-25.655-5.822-34.07-15.094a20.048 20.048 0 01-3.114-.55C35.618 105.125 49.006 112 64 112c15.767 0 29.758-7.602 38.508-19.34a25.223 25.223 0 01-3.658 1.365zM64 18c18.542 0 34.521 10.97 41.802 26.775a26.35 26.35 0 013.193 2.47C102.197 28.997 84.616 16 64 16c-24.744 0-45.115 18.723-47.719 42.774a21.42 21.42 0 012.339-2.344C22.23 34.627 41.173 18 64 18z"
-          fill="currentColor"
-          fillOpacity={0.2}
-          fillRule="evenodd"
-        />
-        <path
-          d="M64 56v51.5M64 56L51 69m13-13l13 13"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-        />
-        <path
-          clipRule="evenodd"
-          d="M36.459 54.404l1.808.338.488-1.773c3.456-12.566 14.813-21.751 28.252-21.751 9.596 0 18.123 4.678 23.481 11.933l.562.761.945.049c12.165.62 21.886 10.834 21.886 23.395 0 12.965-10.353 23.426-23.064 23.426H71.505v2h19.312c13.843 0 25.064-11.383 25.064-25.426 0-13.607-10.536-24.717-23.784-25.393-5.714-7.738-14.826-12.745-25.09-12.745-14.38 0-26.496 9.826-30.18 23.22a19.885 19.885 0 00-3.657-.337c-11.074 0-20.051 9.107-20.051 20.34s8.977 20.341 20.051 20.341h23.504v-2H33.17c-9.942 0-18.051-8.184-18.051-18.34 0-10.157 8.109-18.341 18.051-18.341 1.125 0 2.224.104 3.289.303z"
-          fill="currentColor"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <h1
-      data-css-ol3iu9=""
-    >
-      upload
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large video 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-11zs1jp=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 128 128"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          Video
-        </title>
-        <clipPath
-          id="video_svg__a"
-        >
-          <path
-            d="M0 0h128v128H0z"
-          />
-        </clipPath>
-        <g
-          clipPath="url(#video_svg__a)"
-          fill="currentColor"
-          fillOpacity={0.2}
-        >
-          <path
-            d="M64 97c18.225 0 33-14.775 33-33S82.225 31 64 31 31 45.775 31 64s14.775 33 33 33zm-8-24.426V56.041c0-2.328 2.537-3.768 4.536-2.576l14.094 8.402c1.968 1.173 1.947 4.03-.037 5.175l-14.094 8.13c-2 1.155-4.499-.289-4.499-2.598z"
-            stroke="currentColor"
-            strokeWidth={2}
-          />
-          <path
-            d="M97.541 13.004l.413-.626-.907-.598-.237 1.06zm17.411 17.388l.165.732 1.06-.24-.599-.906zM97.8 12.015l-.718-.216-.161.538.47.306zm18.141 18.117l-.628.41.307.47.537-.162zm.526.819l-.229-.714-.922.296.517.818zM96.98 11.49l-.4.635.82.516.295-.923zm-83.055 89.076l.424.619.639-.437-.457-.625zm12.394 12.673l.456-.595-.615-.471-.45.629zm89.176-82.011l.632-.404-.29-.455-.524.131zm-18.79-18.766l.728.18.13-.523-.456-.29zm-81.948 87.599l-.605.444.385.525.574-.308zm12.085 12.359l-.653-.369-.32.567.516.396zm-.496-.386l-.463.59.694.545.426-.773zM15.13 100.566l-.347-.665-.783.408.53.706zm-.836.5l.6-.449-.429-.575-.593.403zm11.533 11.793l.61.435.417-.584-.565-.442zm31.19-94.84l-.106-.742-.738.105.1.739zm10.589-.276l.747.062.062-.743-.743-.066zm-11.605-.614l.12.74.614-.099.016-.622zm12.573-.329l-.748.059.048.62.62.067zm-11.597.182l-.749-.043-.053.912.905-.126zm10.615-.276l-.065.747.91.078-.1-.908zm.978 1.133l.081-.746-.763-.083-.065.765zm-12.511.327l.742-.103-.105-.761-.758.123zm40.378-1.963c0 8.448 6.849 15.296 15.296 15.296V30c-7.619 0-13.796-6.177-13.796-13.796zm.372-3.364a15.35 15.35 0 00-.372 3.364h1.5c0-1.044.116-2.06.335-3.035zm.319.791a60.619 60.619 0 0117.198 17.175l1.251-.827a62.116 62.116 0 00-17.624-17.6zm14.605 17.87c1.162 0 2.294-.13 3.383-.377l-.33-1.463c-.981.222-2.003.34-3.053.34zM97.391 12.642a61.591 61.591 0 0117.922 17.899l1.255-.82A63.07 63.07 0 0098.21 11.386zM111.734.907C104.816.907 98.973 5.5 97.082 11.8l1.437.432c1.706-5.684 6.978-9.824 13.215-9.824zm15.296 15.296c0-8.448-6.848-15.296-15.296-15.296v1.5c7.62 0 13.796 6.177 13.796 13.796zM116.157 30.85c6.291-1.897 10.873-7.736 10.873-14.647h-1.5c0 6.231-4.131 11.5-9.806 13.21zm.539.815c6.538-2.096 11.273-8.225 11.273-15.462h-1.5c0 6.566-4.295 12.13-10.231 14.034zm11.273-15.462c0-8.966-7.269-16.234-16.235-16.234v1.5c8.138 0 14.735 6.597 14.735 14.734zM111.734-.03c-7.244 0-13.378 4.744-15.468 11.293l1.429.456c1.897-5.945 7.467-10.25 14.039-10.25zM64 2.75c11.975 0 23.145 3.436 32.58 9.375l.8-1.27C87.712 4.77 76.266 1.25 64 1.25zM2.75 64C2.75 30.172 30.173 2.75 64 2.75v-1.5C29.344 1.25 1.25 29.344 1.25 64zm11.78 36.123C7.124 89.996 2.75 77.51 2.75 64h-1.5c0 13.839 4.48 26.633 12.07 37.009zm-1.028-.176A9.741 9.741 0 009.25 108h1.5a8.24 8.24 0 013.599-6.815zM9.25 108c0 5.385 4.365 9.75 9.75 9.75v-1.5a8.25 8.25 0 01-8.25-8.25zm9.75 9.75a9.737 9.737 0 007.928-4.074l-1.219-.874A8.24 8.24 0 0119 116.25zm45 7.5c-14.004 0-26.908-4.699-37.225-12.606l-.913 1.191c10.57 8.1 23.793 12.915 38.138 12.915zM125.25 64c0 33.827-27.423 61.25-61.25 61.25v1.5c34.656 0 62.75-28.094 62.75-62.75zm-9.417-32.649c5.965 9.45 9.417 20.645 9.417 32.649h1.5c0-12.295-3.537-23.766-9.649-33.45zm-4.099 1.086c1.359 0 2.68-.167 3.942-.482l-.363-1.455a14.762 14.762 0 01-3.579.437zM95.5 16.203c0 8.966 7.268 16.234 16.234 16.234v-1.5C103.597 30.937 97 24.341 97 16.203zm.477-3.921a16.267 16.267 0 00-.477 3.921H97c0-1.228.15-2.42.433-3.56zM64 3.719c11.886 0 22.966 3.439 32.303 9.376l.804-1.266C87.537 5.744 76.18 2.22 64 2.22zM3.719 64C3.719 30.708 30.708 3.719 64 3.719v-1.5C29.88 2.219 2.219 29.879 2.219 64zM15.36 99.617C8.041 89.64 3.72 77.325 3.72 64h-1.5c0 13.655 4.43 26.277 11.933 36.505zM19 98.25a9.711 9.711 0 00-4.598 1.15l.709 1.322A8.213 8.213 0 0119 99.75zm9.75 9.75c0-5.385-4.365-9.75-9.75-9.75v1.5a8.25 8.25 0 018.25 8.25zm-1.255 4.788A9.706 9.706 0 0028.75 108h-1.5a8.21 8.21 0 01-1.061 4.051zM64 124.281c-13.812 0-26.537-4.644-36.701-12.456l-.914 1.189c10.417 8.007 23.461 12.767 37.615 12.767zM124.281 64c0 33.292-26.989 60.281-60.281 60.281v1.5c34.12 0 61.781-27.66 61.781-61.781zm-9.418-32.369c5.963 9.35 9.418 20.455 9.418 32.369h1.5c0-12.208-3.541-23.591-9.654-33.176zm-87.86 80.765A9.093 9.093 0 0028.129 108h-1.5a7.594 7.594 0 01-.94 3.673zM28.129 108A9.13 9.13 0 0019 98.87v1.501A7.629 7.629 0 0126.63 108zM19 98.87c-1.52 0-2.954.372-4.216 1.03l.693 1.331a7.582 7.582 0 013.523-.86zm7.809 12.574a60.644 60.644 0 01-11.078-11.328l-1.2.899a62.118 62.118 0 0011.352 11.609zm-12.936-10.999A9.123 9.123 0 009.871 108h1.5a7.62 7.62 0 013.345-6.314zM9.871 108A9.129 9.129 0 0019 117.129v-1.5A7.629 7.629 0 0111.37 108zM19 117.129a9.118 9.118 0 007.438-3.835l-1.221-.87A7.62 7.62 0 0119 115.629zm7.29-4.861a61.618 61.618 0 01-11.394-11.651l-1.202.897a63.116 63.116 0 0011.671 11.936zm36.007-90.393a4.58 4.58 0 01-4.536-3.956l-1.487.202a6.08 6.08 0 006.023 5.254zm4.562-4.194a4.579 4.579 0 01-4.562 4.194v1.5a6.079 6.079 0 006.057-5.57zm-3.343.633c1.356 0 2.699.06 4.025.177l.132-1.495a47.309 47.309 0 00-4.157-.182zm-6.393.448a45.594 45.594 0 016.393-.448v-1.5c-2.241 0-4.446.158-6.604.463zm-.371-1.614a5.547 5.547 0 015.545-5.398v-1.5a7.047 7.047 0 00-7.044 6.86zm5.545-5.398a5.547 5.547 0 015.53 5.109l1.495-.117a7.047 7.047 0 00-7.025-6.492zm6.198 5.796c23.192 2.483 41.255 22.117 41.255 45.97h1.5c0-24.627-18.649-44.898-42.596-47.461zm41.255 45.97c0 25.534-20.7 46.234-46.234 46.234v1.5c26.363 0 47.734-21.371 47.734-47.734zM63.516 109.75c-25.535 0-46.235-20.7-46.235-46.234h-1.5c0 26.363 21.372 47.734 47.735 47.734zM17.28 63.516c0-23.018 16.82-42.108 38.84-45.647l-.238-1.48C33.148 20.041 15.781 39.75 15.781 63.515zm40.446-46.49a4.578 4.578 0 014.57-4.307v-1.5a6.079 6.079 0 00-6.068 5.72zm4.57-4.307a4.579 4.579 0 014.55 4.069l1.491-.165a6.079 6.079 0 00-6.041-5.404zm1.219 4.562c1.352 0 2.69.058 4.012.172l.129-1.495a48.36 48.36 0 00-4.141-.177zm-6.435.444a46.644 46.644 0 016.435-.444v-1.5c-2.254 0-4.47.156-6.642.459zm11.408.86c22.624 2.475 40.228 21.647 40.228 44.93h1.5c0-24.056-18.189-43.864-41.565-46.422zm40.228 44.93c0 24.965-20.237 45.202-45.201 45.202v1.5c25.792 0 46.701-20.909 46.701-46.701zm-45.201 45.202c-24.965 0-45.202-20.237-45.202-45.201h-1.5c0 25.792 20.909 46.701 46.702 46.701zM18.314 63.516c0-22.467 16.39-41.106 37.866-44.61l-.241-1.48c-22.19 3.62-39.125 22.876-39.125 46.09zm43.983-40.672a5.548 5.548 0 01-5.495-4.78l-1.486.204a7.048 7.048 0 006.98 6.076zm5.526-5.069a5.547 5.547 0 01-5.526 5.069v1.5a7.047 7.047 0 007.021-6.442z"
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-ol3iu9=""
-    >
-      video
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large wrench 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-11zs1jp=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 128 128"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          Wrench
-        </title>
-        <path
-          d="M27.154 35.924L16.104 24.87a19.723 19.723 0 0023.353 27.735l36.757 36.76a19.723 19.723 0 0027.736 23.352l-11.05-11.05v-8.765L35.92 35.923z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <path
-          clipRule="evenodd"
-          d="M16.104 24.87l11.05 11.053h8.766v-8.765L24.87 16.104a19.725 19.725 0 0127.736 23.352l36.757 36.76a19.724 19.724 0 0123.353 27.734l-11.05-11.049H92.9v8.766l11.05 11.049a19.723 19.723 0 01-27.736-23.352l-36.757-36.76A19.724 19.724 0 0116.104 24.87z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-        />
-        <g
-          fill="currentColor"
-          fillOpacity={0.2}
-        >
-          <path
-            d="M50.893 96.36l-1 .003a1 1 0 00.744.964zm4.603 1.222l.258-.966h-.002zm-7.131-10.75l-.707-.706a1 1 0 00-.162 1.201zm3.38-3.38l-.706-.707zm.01-2.887l-.708.707zm-4.321-4.321l.707-.707zm-2.888.008l.706.708zm-3.382 3.377l-.494.87a1 1 0 001.2-.162zm-9.53-2.519l-.967.257a1 1 0 00.966.743zm-1.221-4.602l.966-.257zm-2.497-1.436l.26.965zm-5.923 1.602l.262.965zm-1.45 2.504l-.967.257zm1.22 4.599l.504.863a1 1 0 00.462-1.12zm-7.004 7l-.257.967a1 1 0 001.12-.462zm-4.58-1.219l.257-.966h-.001zM7.673 87.01l-.965-.261zm-1.601 5.924l.965.261zm1.436 2.495l.257-.966zm4.603 1.222l1-.003a1 1 0 00-.744-.964zm2.528 9.528l.707.707a1 1 0 00.162-1.202zm-3.38 3.381l.706.707zm-.01 2.886l.708-.707zm4.321 4.322l-.707.707zm2.888-.009l-.706-.707zm3.382-3.377l.494-.87a1.001 1.001 0 00-1.2.162zm9.508 2.517l.967-.257a1 1 0 00-.965-.743zm1.22 4.594l-.967.257zm2.496 1.436l-.26-.965zm5.923-1.602l.26.965zm1.45-2.504l-.966.256zm-1.218-4.595l-.505-.863a1 1 0 00-.462 1.12zm7.003-7l.256-.967a1 1 0 00-1.119.462zm4.601 1.217l.257-.967h-.001zm2.506-1.451l.965.262v-.001zm1.601-5.923l.966.261v-.003zm-6.293-2.743l4.602 1.221.513-1.933-4.602-1.22zm-3.141-10a18.356 18.356 0 012.397 9.036l2-.005a20.356 20.356 0 00-2.659-10.02zm3.543-4.582l-3.381 3.38 1.414 1.415 3.38-3.381zm.008-1.473c.4.4.405 1.06-.008 1.473l1.414 1.414a3.04 3.04 0 00.008-4.301zm-4.32-4.321l4.32 4.321 1.414-1.414-4.32-4.321zm-1.474.008a1.043 1.043 0 011.474-.008l1.414-1.415a3.043 3.043 0 00-4.302.009zm-3.383 3.378l3.382-3.377-1.413-1.415-3.382 3.377zM31.633 78.11c3.173.003 6.286.826 9.037 2.389l.988-1.74a20.325 20.325 0 00-10.023-2.649zm-2.187-5.346l1.221 4.603 1.934-.513-1.222-4.603zm-1.27-.727a1.03 1.03 0 011.27.727l1.933-.513a3.03 3.03 0 00-3.724-2.145zm-5.921 1.602l5.922-1.602-.522-1.93-5.923 1.602zm-.746 1.283a1.054 1.054 0 01.746-1.283l-.523-1.93a3.054 3.054 0 00-2.156 3.726zm1.22 4.598l-1.22-4.598-1.933.513 1.22 4.598zm-7.107 7.762a18.562 18.562 0 016.645-6.642l-1.01-1.727a20.562 20.562 0 00-7.36 7.359zm-5.7-.757l4.58 1.219.514-1.933-4.58-1.219zm-1.283.745c.152-.56.729-.892 1.283-.745l.513-1.933a3.055 3.055 0 00-3.727 2.156zm-1.602 5.924l1.602-5.924-1.93-.522-1.603 5.924zm.728 1.268a1.029 1.029 0 01-.728-1.268l-1.93-.523a3.029 3.029 0 002.145 3.724zm4.602 1.221l-4.602-1.221-.513 1.933 4.602 1.221zm3.141 10a18.355 18.355 0 01-2.397-9.036l-2 .005a20.355 20.355 0 002.659 10.02zm-3.543 4.583l3.381-3.381-1.414-1.415-3.381 3.382zm-.008 1.472a1.04 1.04 0 01.008-1.472l-1.414-1.415a3.042 3.042 0 00-.008 4.302zm4.32 4.322l-4.32-4.322-1.414 1.414 4.32 4.322zm1.474-.009a1.043 1.043 0 01-1.474.008l-1.414 1.415a3.044 3.044 0 004.302-.008zm3.383-3.378l-3.382 3.378 1.413 1.415 3.382-3.377zm10.216 2.225a18.321 18.321 0 01-9.016-2.387l-.987 1.74a20.333 20.333 0 0010 2.647zm2.184 5.338l-1.22-4.595-1.932.513 1.219 4.595zm1.27.727a1.03 1.03 0 01-1.27-.727l-1.933.513a3.03 3.03 0 003.725 2.145zm5.922-1.602l-5.923 1.602.523 1.931 5.922-1.603zm.745-1.283a1.054 1.054 0 01-.745 1.283l.522 1.93a3.053 3.053 0 002.157-3.726zm-1.219-4.594l1.22 4.594 1.933-.513-1.22-4.594zm7.107-7.762a18.563 18.563 0 01-6.645 6.642l1.01 1.727a20.565 20.565 0 007.36-7.359zm5.72.755l-4.601-1.217-.512 1.933 4.601 1.218zm1.284-.745c-.152.561-.73.892-1.283.745l-.513 1.934a3.055 3.055 0 003.727-2.156zm1.602-5.923l-1.602 5.923 1.93.522 1.603-5.923zm-.728-1.261c.548.146.875.708.727 1.264l1.932.516a3.029 3.029 0 00-2.142-3.712zM38.625 96.5a7.125 7.125 0 01-7.125 7.125v2a9.125 9.125 0 009.125-9.125zM31.5 89.375a7.125 7.125 0 017.125 7.125h2a9.125 9.125 0 00-9.125-9.125zM24.375 96.5a7.125 7.125 0 017.125-7.125v-2a9.125 9.125 0 00-9.125 9.125zm7.125 7.125a7.125 7.125 0 01-7.125-7.125h-2a9.125 9.125 0 009.125 9.125zM76.49 37.148l1 .002a1 1 0 01-.743.964zm-3.384.897l-.258-.966h.002zm5.243-7.903l.707-.707a1 1 0 01.163 1.201zm-2.486-2.486l.707-.707zm-.006-2.123l.707.707zm3.177-3.177l-.707-.707zm2.124.006l-.707.708zm2.486 2.483l.494.87a1 1 0 01-1.2-.162zm7.007-1.852l.967.256a1 1 0 01-.966.744zm.899-3.384l.966.256zm1.835-1.056l-.26.965zm4.355 1.178l-.261.965zm1.067 1.841l-.966-.256zm-.897 3.381l-.505.864a1 1 0 01-.462-1.12zm5.149 5.148l.258.966a1.001 1.001 0 01-1.121-.46zm3.368-.896l-.257-.967h.001zm1.843 1.066l.965-.261zm1.177 4.356l-.965.261zm-1.056 1.835l-.257-.966h.001zm-3.384.898l-1-.002a1 1 0 01.743-.964zm-1.859 7.006l-.707.707a1 1 0 01-.163-1.202zm2.486 2.486l-.707.707zm.006 2.123l-.707-.707zm-3.177 3.177l.707.707zm-2.124-.006l.707-.708zm-2.486-2.483l-.494-.87a1 1 0 011.2.162zm-6.991 1.85l-.967-.256a1 1 0 01.965-.744zm-.897 3.378l.967.257zm-1.836 1.056l.261-.965zm-4.355-1.178l-.26.966zm-1.067-1.841l.967.256zm.897-3.378l.505-.864a1 1 0 01.461 1.12zm-5.15-5.148l-.255-.967a1 1 0 011.118.462zm-3.383.895l-.256-.966zm-1.842-1.066l-.965.26zm-1.178-4.356l-.965.26v-.002zm4.696-1.76l-3.384.897-.513-1.933 3.384-.898zm2.472-7.479a13.233 13.233 0 00-1.729 6.514l-2-.005a15.233 15.233 0 011.99-7.498zM76.57 26.95l2.486 2.486-1.414 1.414-2.486-2.486zm-.006-.709a.5.5 0 00.006.709l-1.414 1.414a2.5 2.5 0 01-.006-3.537zm3.177-3.177l-3.177 3.177-1.414-1.414 3.177-3.177zm.71.006a.502.502 0 00-.71-.006l-1.414-1.415a2.502 2.502 0 013.538.007zm2.487 2.484L80.45 23.07l1.413-1.416 2.487 2.484zm7.714-1.56a13.209 13.209 0 00-6.514 1.722l-.988-1.74a15.21 15.21 0 017.5-1.982zm1.864-4.128l-.898 3.384-1.933-.513.898-3.384zm.608-.347a.493.493 0 00-.608.347l-1.933-.513a2.493 2.493 0 013.064-1.765zm4.355 1.178l-4.355-1.178.523-1.93L98 18.765zm.362.62a.51.51 0 00-.362-.62l.522-1.93a2.51 2.51 0 011.773 3.063zm-.898 3.38l.898-3.38 1.933.513-.898 3.38zm5.253 5.91a13.38 13.38 0 00-4.79-4.79l1.009-1.726a15.379 15.379 0 015.507 5.506zm4.489-.435l-3.368.896-.515-1.932 3.368-.897zm.619.362a.51.51 0 00-.62-.362l-.513-1.933a2.511 2.511 0 013.064 1.772zm1.178 4.355l-1.178-4.356 1.931-.522 1.178 4.356zm-.347.608a.491.491 0 00.347-.608l1.931-.522a2.492 2.492 0 01-1.766 3.063zm-3.385.898l3.384-.898.513 1.933-3.384.898zm-2.472 7.477a13.228 13.228 0 001.729-6.513l2 .004a15.23 15.23 0 01-1.99 7.498zm2.649 3.688l-2.486-2.486 1.414-1.414 2.486 2.486zm.006.708a.5.5 0 00-.006-.708l1.414-1.414a2.5 2.5 0 01.006 3.537zm-3.177 3.178l3.177-3.177 1.414 1.414-3.177 3.177zm-.71-.006c.202.2.52.196.71.006l1.414 1.414a2.502 2.502 0 01-3.538-.006zm-2.487-2.484l2.487 2.483-1.413 1.415-2.487-2.483zm-7.7 1.558a13.209 13.209 0 006.5-1.72l.987 1.74a15.21 15.21 0 01-7.483 1.98zM89 54.635l.896-3.378 1.933.513-.896 3.378zm-.609.347a.493.493 0 00.609-.347l1.933.513a2.493 2.493 0 01-3.064 1.765zm-4.354-1.178l4.354 1.178-.522 1.93-4.355-1.177zm-.362-.62a.51.51 0 00.362.62l-.523 1.93a2.51 2.51 0 01-1.772-3.063zm.896-3.378l-.896 3.378-1.933-.513.896-3.378zm-5.253-5.91c1.16 1.981 2.81 3.631 4.792 4.79l-1.01 1.727a15.383 15.383 0 01-5.508-5.506zm-4.502.434l3.384-.895.511 1.934-3.383.895zm-.62-.36a.51.51 0 00.62.36l.512 1.934a2.51 2.51 0 01-3.063-1.772zm-1.178-4.356l1.177 4.355-1.93.523-1.178-4.356zm.347-.602a.492.492 0 00-.347.605l-1.932.516a2.492 2.492 0 011.763-3.054zm12.412-1.762a4.974 4.974 0 004.974 4.974v2a6.974 6.974 0 01-6.974-6.974zm4.974-4.974a4.974 4.974 0 00-4.974 4.974h-2a6.974 6.974 0 016.974-6.974zm4.974 4.974a4.974 4.974 0 00-4.974-4.974v-2a6.974 6.974 0 016.974 6.974zm-4.974 4.974a4.974 4.974 0 004.974-4.974h2a6.974 6.974 0 01-6.974 6.974z"
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-ol3iu9=""
-    >
-      wrench
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/large zen 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-11zs1jp=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 128 128"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          Zen
-        </title>
-        <path
-          d="M48.218 64.921a22.226 22.226 0 001.75-8.635c0-5.665-2.026-10.865-5.527-14.765-3.095-3.982-7.615-5.93-9.488-6.407C32.742 34.371 30.347 34 27.859 34 15.607 34 5.75 43.936 5.75 56.286c0 6.314 2.672 12.071 6.91 16.157m35.65-7.429a21.726 21.726 0 00-7.461-1.3c-6.91 0-13.174 3.25-17.227 8.265a14.587 14.587 0 00-4.883-.836C10.91 71.143 4.553 77.27 4 84.979c0 .557.368 1.021.921 1.021H53.5"
-          stroke="currentColor"
-          strokeMiterlimit={10}
-          strokeOpacity={0.2}
-          strokeWidth={2}
-        />
-        <path
-          d="M96.133 46.657c.582 0 1.248.083 1.83.083v-.083c0-1.83.75-3.495 1.914-4.66-.499.25-.998.583-1.331 1.082C97.381 41.249 95.301 40 92.971 40c-3.661 0-6.657 2.996-6.657 6.657v.083c-.583-.083-1.165-.083-1.83-.083-4.91 0-9.237 2.663-11.484 6.657h11.65c2.33-3.994 6.573-6.657 11.483-6.657zM60.978 64.331C59.48 63.5 57.816 63 55.985 63 50.493 63 46 67.493 46 72.985h9.985c0-3.66 1.997-6.906 4.993-8.654zM49.964 15.321c.665 0 1.33.083 1.997.167 2.33-3.329 5.741-5.992 9.735-7.323C59.533 7.416 57.286 7 54.956 7c-6.74 0-12.731 3.328-16.31 8.488-.665-.084-1.33-.167-1.996-.167-6.408 0-11.65 5.243-11.65 11.65h13.314c0-6.407 5.242-11.65 11.65-11.65zM30.664 86A1.67 1.67 0 0029 87.664v4.993h19.97V86zM25 104.206a9.151 9.151 0 00.861 3.971c2.521 5.397 7.807 8.823 13.5 8.823H88.64c5.773 0 10.978-3.426 13.499-8.823.732-1.542.975-3.255.813-4.883H44.601a7.386 7.386 0 011.394-3.527c1.626-2.141 3.985-3.34 6.587-3.34h47.002L96.982 93h-65.38l-5.124 6.767a7.045 7.045 0 00-1.428 3.527h-.002a7.47 7.47 0 00-.048.912z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <g
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeMiterlimit={10}
-          strokeWidth={2}
-        >
-          <path
-            d="M100 93H28v-4.5c0-.825.736-1.5 1.636-1.5h68.728c.9 0 1.636.675 1.636 1.5zM101.227 99l-4.552-6h-65.35l-4.552 6c-1.95 2.571-2.357 6.171-.894 9.171 2.52 5.4 7.803 8.829 13.493 8.829h49.256c5.69 0 10.973-3.429 13.493-8.829 1.463-3 1.056-6.6-.894-9.171zM26 103l76-.004M109.143 43.25c-1.807 0-3.532.487-4.929 1.3-.164-1.625-1.56-2.925-3.285-2.925-1.15 0-2.054.569-2.711 1.381A6.58 6.58 0 0092.714 40c-3.614 0-6.571 2.925-6.571 6.5v.081c-.575-.081-1.15-.081-1.807-.081-4.847 0-9.118 2.6-11.336 6.5h46c0-5.362-4.436-9.75-9.857-9.75zM72 60c-4.225 0-8.044 2.122-10.4 5.433a9.464 9.464 0 00-5.85-2.038C50.388 63.395 46 67.398 46 73h39c0-7.47-5.85-13-13-13z"
-          />
-        </g>
-        <path
-          d="M106.745 56.328L109.657 53h-2.912L103 56.329z"
-          fill="currentColor"
-          opacity={0.25}
-        />
-        <path
-          d="M81.019 18.667c-1.7 0-3.319.333-4.776.916C75.433 18 73.814 17 71.953 17c-.324 0-.648 0-.972.083C67.661 11.083 61.348 7 54.143 7c-6.557 0-12.386 3.333-15.867 8.5-.647-.083-1.295-.167-1.943-.167C30.1 15.333 25 20.583 25 27h68c-1.943-4.917-6.557-8.333-11.981-8.333zM77.127 48.22l-8.717-2.938-6.273-2.122-3.015-1.06c-.407-.082-.815-.327-1.14-.572-.652-.571-1.141-1.632-1.06-2.612 0-.163 0-.245.082-.408 0-.163.081-.245.081-.408l.082-.163.163-.327.326-.734 1.466-3.02L62.462 27H58.39l-2.422 4.163c-.408.572-1.223.408-1.467-.163l-2-4h-2.095l.651 6.448c-.244.326-1.059 2.122-1.222 2.53-.163.408-.326.816-.407 1.224-.978 3.265-.244 7.02 1.874 9.876 1.059 1.387 2.444 2.612 4.073 3.428l3.015 1.55 5.947 3.02 9.45 4.816c6.519.734 11.488 6.415 11.488 13.108H57.655l3.585 3.46c1.06 1.061.897 2.775-.244 3.673l-7.333 6.795h26.968l4.562-5.734 2.281-2.367 1.14-1.224.734-.816c.326-.408.652-.735.978-1.143l19.145-22.363h-2.77L93.829 64.544v-.163a16.927 16.927 0 00-1.467-5.632 17.225 17.225 0 00-3.34-4.734c-.326-.244-.57-.57-.896-.816"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeMiterlimit={10}
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <h1
-      data-css-ol3iu9=""
-    >
-      zen
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small bookmark 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          BookmarkSmall
-        </title>
-        <path
-          clipRule="evenodd"
-          d="M29.5 45.568l.095-.092 9.689 10.11a1.29 1.29 0 001.76.073c.258-.225.405-.542.405-.875V15.083c0-.29-.005-.6-.01-.925C41.396 11.533 41.34 8 43.736 8H29.5z"
-          fill="currentColor"
-          fillOpacity={0.2}
-          fillRule="evenodd"
-        />
-        <path
-          d="M43.685 8C49.175 8 52 12.262 52 17.498v7.124c0 1.313-1.114 2.374-2.487 2.374H41.4M43.685 8c-2.687 0-2.284 4.465-2.284 7.087v11.91M43.685 8H26.95C20.214 8 17 11.58 17 17.498v37.315c0 .655.557 1.187 1.244 1.187.348 0 .68-.14.916-.385l10.41-10.116 9.67 10.116c.465.483 1.251.516 1.758.073.257-.225.403-.542.403-.875V26.996"
-          stroke="currentColor"
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      bookmark
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small channel 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          ChannelSmall
-        </title>
-        <g
-          fill="currentColor"
-        >
-          <path
-            d="M22.5 31.5a9.482 9.482 0 013.515-7.378.31.31 0 00.052-.43l-.86-1.129-.003-.005a.272.272 0 00-.383-.043A11.479 11.479 0 0020.5 31.5a11.471 11.471 0 004.136 8.83l.016.012a.5.5 0 00.7-.095l.606-.797a.5.5 0 00-.078-.687A9.475 9.475 0 0122.5 31.5z"
-          />
-          <path
-            clipRule="evenodd"
-            d="M31 43.5a.5.5 0 00.5.5h1a.5.5 0 00.5-.5v-8.645A3.501 3.501 0 0032 28a3.5 3.5 0 00-1 6.855zm2.5-12a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
-            fillRule="evenodd"
-          />
-          <path
-            d="M43.5 31.5a11.47 11.47 0 01-3.782 8.525c-.09.082-.208.184-.355.304a.5.5 0 01-.703-.067l-.007-.008-.006-.008-.605-.797a.5.5 0 01.078-.686c.116-.097.211-.18.285-.246A9.475 9.475 0 0041.5 31.5a9.476 9.476 0 00-3.38-7.263.5.5 0 01-.078-.687l.607-.798a.5.5 0 01.715-.084l.14.118A11.473 11.473 0 0143.5 31.5zM28.127 27.595c.05-.05.113-.108.19-.175a.5.5 0 00.067-.678l-.609-.8a.5.5 0 00-.725-.076l-.078.069A7.48 7.48 0 0024.5 31.5a7.48 7.48 0 002.552 5.634.5.5 0 00.724-.077l.608-.799a.5.5 0 00-.068-.678A5.484 5.484 0 0126.5 31.5c0-1.527.622-2.909 1.627-3.905z"
-          />
-          <path
-            d="M39.5 31.5a7.48 7.48 0 01-2.55 5.634.5.5 0 01-.725-.075l-.61-.802a.5.5 0 01.068-.678c.1-.088.18-.164.243-.227A5.482 5.482 0 0037.5 31.5a5.482 5.482 0 00-1.539-3.816 4.956 4.956 0 00-.28-.263.5.5 0 01-.066-.677l.609-.801a.5.5 0 01.723-.077A7.479 7.479 0 0139.5 31.5z"
-          />
-          <circle
-            cx={32}
-            cy={32}
-            fillOpacity={0.2}
-            opacity={0.2}
-            r={19}
-            stroke="currentColor"
-            strokeWidth={2}
-          />
-          <circle
-            cx={32}
-            cy={32}
-            fillOpacity={0.2}
-            opacity={0.2}
-            r={15}
-            stroke="currentColor"
-            strokeWidth={2}
-          />
-        </g>
-        <circle
-          cx={32}
-          cy={32}
-          r={23}
-          stroke="currentColor"
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      channel
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small cloud 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          CloudSmall
-        </title>
-        <path
-          clipRule="evenodd"
-          d="M43 33.5C43 39.851 37.851 45 31.5 45c-.168 0-.334-.004-.5-.01V45H16v-.015c-.165.01-.332.015-.5.015-4.142 0-7.5-3.134-7.5-7s3.358-7 7.5-7c1.71 0 3.287.534 4.549 1.434C20.587 26.583 25.509 22 31.5 22 37.851 22 43 27.149 43 33.5z"
-          fill="currentColor"
-          fillOpacity={0.2}
-          fillRule="evenodd"
-        />
-        <path
-          d="M16.505 28.404l.904.168.244-.886C19.51 20.936 25.615 16 32.842 16c5.16 0 9.744 2.514 12.624 6.412l.281.38.472.024C52.77 23.15 58 28.645 58 35.4 58 42.372 52.429 48 45.585 48H14.732C9.37 48 5 43.59 5 38.12s4.37-9.88 9.732-9.88c.606 0 1.199.056 1.773.164z"
-          stroke="currentColor"
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      cloud
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small code 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          CodeSmall
-        </title>
-        <path
-          d="M8 9h48v12H8z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <g
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            d="M25.595 33L18 37.17l7.595 4.69M39.405 33L47 37.17l-7.595 4.69"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          <path
-            d="M36 30l-7 16"
-            strokeLinecap="round"
-          />
-          <rect
-            height={48}
-            rx={3}
-            width={48.633}
-            x={8}
-            y={8}
-          />
-          <path
-            d="M8 20h48.101"
-          />
-          <circle
-            cx={14}
-            cy={14}
-            r={2}
-          />
-          <circle
-            cx={22}
-            cy={14}
-            r={2}
-          />
-          <circle
-            cx={30}
-            cy={14}
-            r={2}
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      code
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small custom 1`] = `
-<div
-  data-css-g3x4fp=""
->
-  <div
-    data-css-1gwvklx=""
-  >
-    <svg
-      aria-hidden={true}
-      role="img"
-      viewBox="0 0 128 128"
-    >
-      <path
-        d="M44.99 43.356v-16.77L109.792 64 44.99 101.414v-16.77l-14.897 8.601v-58.49l14.897 8.601zm0 7.162l-8.695-5.02v37.003l8.695-5.02V50.518zm6.202 30.544v9.609L97.387 64 51.192 37.329v9.608l29.552 17.062-29.552 17.063zm0-7.162l17.147-9.901-17.147-9.9v19.8z"
-        fill="currentColor"
-      />
-    </svg>
-  </div>
-  <h1
-    data-css-1akj4c1=""
-  >
-    Custom Illustration
-  </h1>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small data 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          DataSmall
-        </title>
-        <g
-          clipRule="evenodd"
-          fill="currentColor"
-          fillRule="evenodd"
-        >
-          <path
-            d="M51 10a1 1 0 10-2 0v4h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3v-3a1 1 0 10-2 0v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 100 2h3v3h-3a1 1 0 00-.684 1.73L16 48.794V46h3v1.775l.27-.092c.324-.098.648-.131 1.08-.164.245 0 .455.01.65.038V46h3v2.428l7.158 2.167L33.893 49H31v-3h3v2.938l2-1.167V46h3v.021l2.425-1.414c.216-.131.649-.23 1.081-.23.432-.032.973.033 1.297.132L51 46.544V46h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3v-3h3a1 1 0 100-2h-3zm2.638 39v2H54a1 1 0 100-2zM16 19v-3h3v3zm0 5v-3h3v3zm0 5v-3h1.257a2.075 2.075 0 013.743.392V26h3v3h-3v-1.254A2.077 2.077 0 0118.274 29zm0 5v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm5 0h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-10h3v-3h-3zm0-5h3v-3h-3zm5 0v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3h-.75a2.076 2.076 0 01.75 3.903V39h-3v-2.513A2.076 2.076 0 0127.817 34zm0 10v-3h3v3zm0 5v-3h3v3zm5-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm5-1.396V16h3v1.129a2.076 2.076 0 11-3 .475zM36 24v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3zm5 0h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm0-5h3v-3h-3zm5 0v-3h3v3zm0 5v-3h3v3zm2.76 2A2.077 2.077 0 1046 28.325V29h3v-3zM46 34v-3h3v3zm0 5v-3h3v3zm0 5v-3h3v3z"
-            fillOpacity={0.2}
-          />
-          <path
-            d="M9 10a1 1 0 011-1h42.206C53.776 9 55 10.31 55 11.85v3.134a.98.98 0 010 .034V54a1 1 0 01-1 1H10a1 1 0 01-1-.968v-2.858zm44 1.85v2.87l-4.572 7.542A3.99 3.99 0 0047 22a3.985 3.985 0 00-2.648 1.002L41.7 20.524a4 4 0 10-7.023.703l-5.66 10.903a4.006 4.006 0 00-2.752.265l-3.66-3.66a4 4 0 10-6.888.551L11 34.538V11h41.206c.405 0 .794.355.794.85zM11 49.732v-12.2l6.234-6.94c.533.262 1.132.409 1.766.409.86 0 1.657-.271 2.309-.733l3.424 3.424a4 4 0 106.03-.584l5.462-10.522A3.983 3.983 0 0038 23c.941 0 1.807-.325 2.49-.87l2.732 2.553a4 4 0 106.84-1.257L53 18.579v27.309l-8.62-2.685a4.716 4.716 0 00-1.656-.193c-.53.006-1.162.131-1.595.416l-9.954 6.395-9.363-3.123c-.468-.155-.913-.196-1.407-.196-.028 0-.055 0-.083.003-.435.036-.871.079-1.324.23a1.006 1.006 0 00-.035.012zm32.777-4.621L53 47.983V53H11v-1.133l8.646-3.24c.19-.061.401-.091.8-.125.353.002.553.034.733.094l9.817 3.274a1 1 0 00.857-.108l10.362-6.657.003-.001a.994.994 0 01.152-.049c.116-.028.256-.045.395-.045a2.742 2.742 0 01.992.094zm-22.78-17.984a2.015 2.015 0 00-.007-.33 2 2 0 10.006.33zm6.877 6.878a2 2 0 11.253 3.991 2 2 0 01-.253-3.991zm19.482-9.972a2.014 2.014 0 00-1.529.348 1.997 1.997 0 00-.792 1.996 2 2 0 102.32-2.345zM38 17a2 2 0 110 4 2 2 0 010-4z"
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      data
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small document 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          DocumentSmall
-        </title>
-        <path
-          d="M12 56.6v-7.425L44.175 17v39.601z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <path
-          d="M43.61 56.628H13.03c-.618 0-1.03-.412-1.03-1.03V15.03c0-.618.412-1.03 1.03-1.03h30.58c.618 0 1.03.412 1.03 1.03v40.568c0 .618-.515 1.03-1.03 1.03z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeMiterlimit={10}
-          strokeWidth={2}
-        />
-        <path
-          clipRule="evenodd"
-          d="M19 9.031l.001-.03.014-.001h30.159a.34.34 0 01.001.031v40.632a.07.07 0 010 .016l-.001.002v.001l-.002.001-.002.002a.044.044 0 01-.013.009H47v2h2.16c1.01 0 2.016-.81 2.016-2.03V9.03c0-.532-.179-1.055-.567-1.449-.39-.395-.912-.582-1.448-.582H19.015c-.537 0-1.06.187-1.449.582-.388.394-.566.917-.566 1.45V12h2z"
-          fill="currentColor"
-          fillRule="evenodd"
-        />
-        <g
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            d="M29 23h10M18 28h21M18 33h21M18 38h21M18 43h21M18 48h12"
-            strokeLinecap="round"
-          />
-          <rect
-            fill="currentColor"
-            fillOpacity={0.2}
-            height={4}
-            rx={1}
-            width={7}
-            x={17}
-            y={19}
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      document
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small error 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          ErrorSmall
-        </title>
-        <path
-          d="M58.242 51.552L34.628 8.696c-1.14-2.07-4.115-2.07-5.256 0L5.758 51.552C4.656 53.552 6.103 56 8.386 56h47.228c2.283 0 3.73-2.448 2.628-4.448z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-        />
-        <path
-          d="M32 54V9L7.825 52.514A1 1 0 008.7 54z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <g
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-        >
-          <path
-            d="M31.923 39L29.61 27.92a2.425 2.425 0 114.743.026z"
-          />
-          <circle
-            cx={32}
-            cy={45}
-            r={2}
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      error
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small image 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          ImageSmall
-        </title>
-        <path
-          d="M50.563 43.463v-.001l-4.607-6.254c0-.002-.002-.003-.003-.004a2.43 2.43 0 00-3.658-.318l-3.913 3.725-10.326-14.02s0 0 0 0a2.43 2.43 0 00-3.997.114s0 0 0 0l-11 16.871v.002a2.43 2.43 0 002.085 3.753h33.408a2.43 2.43 0 002.011-3.868z"
-          stroke="currentColor"
-          strokeWidth={2}
-        />
-        <path
-          clipRule="evenodd"
-          d="M22.904 30.307l12.19 16.024H15.133a1.43 1.43 0 01-1.236-2.208z"
-          fill="currentColor"
-          fillOpacity={0.2}
-          fillRule="evenodd"
-        />
-        <path
-          d="M42.252 27.369a5.018 5.018 0 100-10.035 5.018 5.018 0 000 10.035z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <g
-          stroke="currentColor"
-          strokeWidth={2}
-        >
-          <path
-            d="M42.252 28.369a6.018 6.018 0 100-12.035 6.018 6.018 0 000 12.035z"
-          />
-          <rect
-            height={42}
-            rx={3}
-            width={52}
-            x={6}
-            y={11}
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      image
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small lightning 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          LightningSmall
-        </title>
-        <g
-          clipRule="evenodd"
-          fillRule="evenodd"
-        >
-          <path
-            d="M34.587 4L16 36.083h13.94l4.647-9.166z"
-            fill="currentColor"
-            fillOpacity={0.2}
-          />
-          <path
-            d="M34.587 4L16 36.083h13.94V59l18.587-32.083h-13.94z"
-            stroke="currentColor"
-            strokeLinejoin="round"
-            strokeWidth={2}
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      lightning
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small lock 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          LockSmall
-        </title>
-        <path
-          d="M18.202 26.206H16.6A3.601 3.601 0 0013 29.807v23.407c0 1.989 1.612 3.601 3.6 3.601l31.212.001a3.6 3.6 0 003.6-3.6V29.806c0-1.988-1.612-3.6-3.6-3.6H46.21v-4.202C46.21 14.282 39.929 8 32.206 8s-14.004 6.282-14.004 14.005zm7.202-4.201c0-3.75 3.053-6.803 6.802-6.803 3.75 0 6.803 3.053 6.803 6.803v4.201H25.404zm9.704 19.505a2.901 2.901 0 11-5.803 0 2.901 2.901 0 015.803 0z"
-          fill="currentColor"
-          fillOpacity={0.2}
-          stroke="currentColor"
-          strokeWidth={2}
-        />
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      lock
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small magnify 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
-  <div
-    data-css-g3x4fp=""
-  >
-    <div
-      data-css-1gwvklx=""
-    >
-      <svg
-        aria-hidden="true"
-        fill="none"
-        role="img"
-        viewBox="0 0 64 64"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>
-          MagnifySmall
-        </title>
-        <path
-          d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeMiterlimit={10}
-          strokeWidth={2}
-        />
-        <path
-          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <path
-          d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeMiterlimit={10}
-          strokeWidth={2}
-        />
-        <path
-          d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
-          fill="currentColor"
-          fillOpacity={0.2}
-        />
-        <g
-          stroke="currentColor"
-          strokeLinecap="round"
-          strokeMiterlimit={10}
-          strokeWidth={2}
-        >
-          <path
-            d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
-          />
-        </g>
-      </svg>
-    </div>
-    <h1
-      data-css-1akj4c1=""
-    >
-      magnify
-    </h1>
-  </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small people 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
   <div
     data-css-g3x4fp=""
   >
@@ -2716,17 +2006,67 @@ exports[`Storyshots EmptyState/illustrations/small people 1`] = `
       people
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small signal 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-11zs1jp=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 128 128"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Signal
+        </title>
+        <path
+          d="M64 108l.5-73 28 62.5z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <path
+          clipRule="evenodd"
+          d="M55.716 46.387C47.672 43.115 42 35.22 42 26c0-12.15 9.85-22 22-22s22 9.85 22 22c0 9.209-5.657 17.096-13.686 20.375l-.834-1.82C78.82 41.591 84 34.4 84 26c0-11.046-8.954-20-20-20s-20 8.954-20 20c0 8.411 5.192 15.61 12.546 18.565zm-6.082 13.346a17.283 17.283 0 00-7.744-1.732c.073-.657.11-1.325.11-2.001 0-9.941-8.059-18-18-18S6 46.059 6 56a17.92 17.92 0 003.612 10.817c-3.2 2.106-5.659 5.393-6.924 9.238C1.807 78.732 4.002 81 6.394 81h33.549l.911-2H6.394c-1.247 0-2.196-1.135-1.807-2.32 1.988-6.04 7.163-10.347 13.233-10.347 2.83 0 5.463.935 7.671 2.545.554.404 1.081.85 1.578 1.335.294-.632.619-1.243.972-1.831C31.082 63.325 36.234 60 42.077 60c2.39 0 4.664.556 6.725 1.56zM33.791 94.5H5a1 1 0 100 2h27.88zm-1.823 4H12a1 1 0 100 2h19.057zm65.138 2l-.916-2H115a1 1 0 010 2zm-8.384 2h2.452a2.993 2.993 0 011.494 1.453l.26.547h-9.761zm-52.156 0h2.267l5.667 2h-9.727l.145-.356a2.994 2.994 0 011.648-1.644zm-6.42 0H21a1 1 0 000 2h8.234zm2.99 6h22.697l-5.666-2H33.954zm44.475-2l-5.556 2h22.778l-.952-2zm21.328-2H106a1 1 0 000-2h-7.977zm-38.319 6H33a1 1 0 000 2h28.497a3 3 0 00-.877-2zm5.882 2a2.998 2.998 0 01.864-2H94a1 1 0 010 2zm-5.002 2H41a1 1 0 000 2h20.5zm5 2v-2H86a1 1 0 010 2zm-4.95 2H48a1 1 0 000 2h32a1 1 0 000-2H66.45a2.501 2.501 0 01-4.9 0zm33.724-22l-.916-2H123a1 1 0 010 2zM57.792 41.83C51.474 39.352 47 33.199 47 26c0-9.389 7.611-17 17-17s17 7.611 17 17c0 7.19-4.464 13.338-10.771 15.823L69.394 40C75.014 37.835 79 32.383 79 26c0-8.284-6.716-15-15-15s-15 6.716-15 15c0 6.39 3.995 11.846 9.623 14.008zm2.078-4.56C55.277 35.587 52 31.176 52 26c0-6.627 5.373-12 12-12s12 5.373 12 12c0 5.172-3.272 9.58-7.859 11.266l-.836-1.825C71.204 34.076 74 30.365 74 26c0-5.523-4.477-10-10-10s-10 4.477-10 10c0 4.368 2.8 8.081 6.703 9.444zM55 122.5a1 1 0 000 2h18a1 1 0 000-2zM8 56a15.93 15.93 0 003.366 9.82 14.723 14.723 0 016.454-1.487c3.2 0 6.166 1.033 8.65 2.786 2.985-4.82 7.78-8.253 13.388-8.977.094-.7.142-1.416.142-2.142 0-8.837-7.163-16-16-16S8 47.163 8 56zm80 12h28.627a3.908 3.908 0 003.075-1.472c.74-.94 1.03-2.26.511-3.553-1.59-3.962-5.135-6.975-9.505-6.975-1.809 0-3.49.524-4.946 1.419-2.173-3.223-5.604-5.419-9.608-5.419-6.283 0-11.09 5.335-11.995 11.726C83.807 66.214 85.881 68 88 68zm22.708-10a7.41 7.41 0 00-3.947 1.152 8.569 8.569 0 00-1.602 1.298 12.497 12.497 0 00-.993-1.823C102.308 55.812 99.41 54 96.154 54c-5.033 0-9.21 4.328-10.014 10.006C85.985 65.099 86.895 66 88 66h28.627c1.24 0 2.192-1.13 1.73-2.28C117 60.338 114.085 58 110.708 58z"
+          fill="currentColor"
+          fillOpacity={0.2}
+          fillRule="evenodd"
+        />
+        <g
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeWidth={2}
+        >
+          <path
+            d="M64 34l-34 75M64 34l34 75M64 34v84M45 77l30-18M58 49l17 10M93 98L44 78M93 98l-28 10M36 99l28 10M83 77L53 59M70 49L53 59M35 98l49-20"
+          />
+        </g>
+        <path
+          clipRule="evenodd"
+          d="M64 28a2 2 0 100-4 2 2 0 000 4z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+        <path
+          clipRule="evenodd"
+          d="M67 32.326a7 7 0 10-6 0V30a5 5 0 116 0z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+        <path
+          d="M63 26h2v9h-2z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-ol3iu9=""
+    >
+      signal
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -2784,17 +2124,45 @@ exports[`Storyshots EmptyState/illustrations/small signal 1`] = `
       signal
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small skillIQ 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-11zs1jp=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 128 128"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          SkillIQ
+        </title>
+        <g
+          fill="currentColor"
+          fillOpacity={0.2}
+        >
+          <path
+            clipRule="evenodd"
+            d="M30.384 13.09C40.023 6.713 51.578 3 64 3c33.69 0 61 27.31 61 61s-27.31 61-61 61c-13.615 0-26.188-4.46-36.338-12A9.952 9.952 0 0029 108c0-5.523-4.477-10-10-10-1.742 0-3.38.445-4.805 1.228C7.144 89.278 3 77.123 3 64c0-11.937 3.429-23.073 9.355-32.477A13.443 13.443 0 0018.5 33C25.956 33 32 26.956 32 19.5c0-2.32-.585-4.503-1.616-6.41zm-1.079-1.684C39.255 4.829 51.18 1 64 1c34.794 0 63 28.206 63 63s-28.206 63-63 63c-14.052 0-27.029-4.6-37.508-12.377A9.976 9.976 0 0119 118c-5.523 0-10-4.477-10-10a9.98 9.98 0 013.546-7.639C5.274 90.089 1 77.544 1 64c0-12.318 3.535-23.81 9.647-33.518A13.483 13.483 0 015 19.5C5 12.044 11.044 6 18.5 6a13.48 13.48 0 0110.805 5.406zM11.74 28.804A11.484 11.484 0 017 19.5C7 13.149 12.149 8 18.5 8c3.734 0 7.052 1.78 9.153 4.536A63.353 63.353 0 0011.74 28.805zm1.716 1.034a61.344 61.344 0 0115.267-15.61A11.45 11.45 0 0130 19.5C30 25.851 24.851 31 18.5 31c-1.81 0-3.521-.418-5.044-1.162zm.275 72.142a8 8 0 1011.17 11.422 63.383 63.383 0 01-11.17-11.422zm12.328 9.788a8 8 0 00-10.668-10.91 61.353 61.353 0 0010.668 10.91zM95 35.5c0-1.532.627-2.918 1.638-3.916a46.224 46.224 0 016.731 8.61A5.5 5.5 0 0195 35.5zm-2 0c0-2.072.84-3.947 2.198-5.304C86.998 22.626 76.04 18 64 18c-25.405 0-46 20.595-46 46s20.595 46 46 46a45.808 45.808 0 0028.639-10h3.11c-8.46 7.468-19.576 12-31.749 12-26.51 0-48-21.49-48-48s21.49-48 48-48c12.69 0 24.23 4.925 32.813 12.967a7.5 7.5 0 019.136 11.686C109.804 47.563 112 55.525 112 64c0 12.707-4.938 24.262-13 32.848v-2.997A45.818 45.818 0 00110 64a45.8 45.8 0 00-5.632-22.073A7.5 7.5 0 0193 35.5zm11.879 3.329a48.213 48.213 0 00-6.554-8.382 5.5 5.5 0 016.554 8.382z"
+            fillRule="evenodd"
+          />
+          <path
+            d="M97 64.5V98H64c-18.212 0-33-14.985-33-33.5S45.788 31 64 31s33 14.985 33 33.5zM64 82.75c9.955 0 18-8.185 18-18.25s-8.045-18.25-18-18.25-18 8.185-18 18.25 8.045 18.25 18 18.25z"
+            stroke="currentColor"
+            strokeWidth={2}
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-ol3iu9=""
+    >
+      skillIQ
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -2826,17 +2194,57 @@ exports[`Storyshots EmptyState/illustrations/small skillIQ 1`] = `
       skillIQ
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small upload 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-11zs1jp=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 128 128"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Upload
+        </title>
+        <path
+          clipRule="evenodd"
+          d="M94.693 61c0 15.213-12.332 27.545-27.544 27.545-.355 0-.708-.007-1.06-.02v.02H35.366v-.074a17.17 17.17 0 01-1.589.074c-9.069 0-16.42-7.115-16.42-15.891 0-8.777 7.351-15.891 16.42-15.891 2.12 0 4.145.388 6.004 1.095C41.341 44.125 53 33.456 67.15 33.456c15.212 0 27.544 12.332 27.544 27.544z"
+          fill="currentColor"
+          fillOpacity={0.2}
+          fillRule="evenodd"
+        />
+        <path
+          clipRule="evenodd"
+          d="M124 64c0 13.453-4.428 25.872-11.905 35.88A12.441 12.441 0 00105.5 98c-6.904 0-12.5 5.596-12.5 12.5 0 1.917.431 3.732 1.202 5.356C85.332 121.033 75.012 124 64 124c-15.34 0-29.335-5.757-39.944-15.227a8 8 0 00-9.842-11.275C7.764 87.932 4 76.405 4 64 4 30.863 30.863 4 64 4c12.01 0 23.197 3.529 32.578 9.607A7.5 7.5 0 00107.6 22.78C117.767 33.53 124.001 48.037 124.001 64zm-60 62c-15.771 0-30.167-5.889-41.109-15.587a8 8 0 11-10.46-11.981C5.844 88.582 2 76.74 2 64 2 29.758 29.758 2 64 2c12.38 0 23.912 3.628 33.592 9.88a7.5 7.5 0 1111.523 9.592C119.584 32.573 126 47.537 126 64c0 13.898-4.573 26.729-12.297 37.068A12.471 12.471 0 01118 110.5c0 6.904-5.596 12.5-12.5 12.5a12.487 12.487 0 01-10.298-5.412C86.037 122.936 75.376 126 64 126zm-41-21a5.98 5.98 0 01-.479 2.353 60.295 60.295 0 01-7.107-8.141A6 6 0 0123 105zm-1.584 4.062a62.331 62.331 0 01-7.845-8.986 6 6 0 107.845 8.986zM99.26 12.996a5.5 5.5 0 118.455 7.038 62.311 62.311 0 00-8.455-7.038zm-.977 1.757a60.268 60.268 0 017.881 6.56 5.5 5.5 0 01-7.88-6.56zM105.5 100c1.959 0 3.794.537 5.363 1.471a60.326 60.326 0 01-14.94 13.341A10.464 10.464 0 0195 110.5c0-5.799 4.701-10.5 10.5-10.5zm6.978 2.654a62.327 62.327 0 01-15.561 13.896A10.488 10.488 0 00105.5 121c5.799 0 10.5-4.701 10.5-10.5 0-3.12-1.361-5.923-3.522-7.846zM98.85 94.025C90.415 103.808 77.93 110 64 110c-13.508 0-25.655-5.822-34.07-15.094a20.048 20.048 0 01-3.114-.55C35.618 105.125 49.006 112 64 112c15.767 0 29.758-7.602 38.508-19.34a25.223 25.223 0 01-3.658 1.365zM64 18c18.542 0 34.521 10.97 41.802 26.775a26.35 26.35 0 013.193 2.47C102.197 28.997 84.616 16 64 16c-24.744 0-45.115 18.723-47.719 42.774a21.42 21.42 0 012.339-2.344C22.23 34.627 41.173 18 64 18z"
+          fill="currentColor"
+          fillOpacity={0.2}
+          fillRule="evenodd"
+        />
+        <path
+          d="M64 56v51.5M64 56L51 69m13-13l13 13"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+        />
+        <path
+          clipRule="evenodd"
+          d="M36.459 54.404l1.808.338.488-1.773c3.456-12.566 14.813-21.751 28.252-21.751 9.596 0 18.123 4.678 23.481 11.933l.562.761.945.049c12.165.62 21.886 10.834 21.886 23.395 0 12.965-10.353 23.426-23.064 23.426H71.505v2h19.312c13.843 0 25.064-11.383 25.064-25.426 0-13.607-10.536-24.717-23.784-25.393-5.714-7.738-14.826-12.745-25.09-12.745-14.38 0-26.496 9.826-30.18 23.22a19.885 19.885 0 00-3.657-.337c-11.074 0-20.051 9.107-20.051 20.34s8.977 20.341 20.051 20.341h23.504v-2H33.17c-9.942 0-18.051-8.184-18.051-18.34 0-10.157 8.109-18.341 18.051-18.341 1.125 0 2.224.104 3.289.303z"
+          fill="currentColor"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-ol3iu9=""
+    >
+      upload
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -2881,17 +2289,51 @@ exports[`Storyshots EmptyState/illustrations/small upload 1`] = `
       upload
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small video 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-11zs1jp=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 128 128"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Video
+        </title>
+        <clipPath
+          id="video_svg__a"
+        >
+          <path
+            d="M0 0h128v128H0z"
+          />
+        </clipPath>
+        <g
+          clipPath="url(#video_svg__a)"
+          fill="currentColor"
+          fillOpacity={0.2}
+        >
+          <path
+            d="M64 97c18.225 0 33-14.775 33-33S82.225 31 64 31 31 45.775 31 64s14.775 33 33 33zm-8-24.426V56.041c0-2.328 2.537-3.768 4.536-2.576l14.094 8.402c1.968 1.173 1.947 4.03-.037 5.175l-14.094 8.13c-2 1.155-4.499-.289-4.499-2.598z"
+            stroke="currentColor"
+            strokeWidth={2}
+          />
+          <path
+            d="M97.541 13.004l.413-.626-.907-.598-.237 1.06zm17.411 17.388l.165.732 1.06-.24-.599-.906zM97.8 12.015l-.718-.216-.161.538.47.306zm18.141 18.117l-.628.41.307.47.537-.162zm.526.819l-.229-.714-.922.296.517.818zM96.98 11.49l-.4.635.82.516.295-.923zm-83.055 89.076l.424.619.639-.437-.457-.625zm12.394 12.673l.456-.595-.615-.471-.45.629zm89.176-82.011l.632-.404-.29-.455-.524.131zm-18.79-18.766l.728.18.13-.523-.456-.29zm-81.948 87.599l-.605.444.385.525.574-.308zm12.085 12.359l-.653-.369-.32.567.516.396zm-.496-.386l-.463.59.694.545.426-.773zM15.13 100.566l-.347-.665-.783.408.53.706zm-.836.5l.6-.449-.429-.575-.593.403zm11.533 11.793l.61.435.417-.584-.565-.442zm31.19-94.84l-.106-.742-.738.105.1.739zm10.589-.276l.747.062.062-.743-.743-.066zm-11.605-.614l.12.74.614-.099.016-.622zm12.573-.329l-.748.059.048.62.62.067zm-11.597.182l-.749-.043-.053.912.905-.126zm10.615-.276l-.065.747.91.078-.1-.908zm.978 1.133l.081-.746-.763-.083-.065.765zm-12.511.327l.742-.103-.105-.761-.758.123zm40.378-1.963c0 8.448 6.849 15.296 15.296 15.296V30c-7.619 0-13.796-6.177-13.796-13.796zm.372-3.364a15.35 15.35 0 00-.372 3.364h1.5c0-1.044.116-2.06.335-3.035zm.319.791a60.619 60.619 0 0117.198 17.175l1.251-.827a62.116 62.116 0 00-17.624-17.6zm14.605 17.87c1.162 0 2.294-.13 3.383-.377l-.33-1.463c-.981.222-2.003.34-3.053.34zM97.391 12.642a61.591 61.591 0 0117.922 17.899l1.255-.82A63.07 63.07 0 0098.21 11.386zM111.734.907C104.816.907 98.973 5.5 97.082 11.8l1.437.432c1.706-5.684 6.978-9.824 13.215-9.824zm15.296 15.296c0-8.448-6.848-15.296-15.296-15.296v1.5c7.62 0 13.796 6.177 13.796 13.796zM116.157 30.85c6.291-1.897 10.873-7.736 10.873-14.647h-1.5c0 6.231-4.131 11.5-9.806 13.21zm.539.815c6.538-2.096 11.273-8.225 11.273-15.462h-1.5c0 6.566-4.295 12.13-10.231 14.034zm11.273-15.462c0-8.966-7.269-16.234-16.235-16.234v1.5c8.138 0 14.735 6.597 14.735 14.734zM111.734-.03c-7.244 0-13.378 4.744-15.468 11.293l1.429.456c1.897-5.945 7.467-10.25 14.039-10.25zM64 2.75c11.975 0 23.145 3.436 32.58 9.375l.8-1.27C87.712 4.77 76.266 1.25 64 1.25zM2.75 64C2.75 30.172 30.173 2.75 64 2.75v-1.5C29.344 1.25 1.25 29.344 1.25 64zm11.78 36.123C7.124 89.996 2.75 77.51 2.75 64h-1.5c0 13.839 4.48 26.633 12.07 37.009zm-1.028-.176A9.741 9.741 0 009.25 108h1.5a8.24 8.24 0 013.599-6.815zM9.25 108c0 5.385 4.365 9.75 9.75 9.75v-1.5a8.25 8.25 0 01-8.25-8.25zm9.75 9.75a9.737 9.737 0 007.928-4.074l-1.219-.874A8.24 8.24 0 0119 116.25zm45 7.5c-14.004 0-26.908-4.699-37.225-12.606l-.913 1.191c10.57 8.1 23.793 12.915 38.138 12.915zM125.25 64c0 33.827-27.423 61.25-61.25 61.25v1.5c34.656 0 62.75-28.094 62.75-62.75zm-9.417-32.649c5.965 9.45 9.417 20.645 9.417 32.649h1.5c0-12.295-3.537-23.766-9.649-33.45zm-4.099 1.086c1.359 0 2.68-.167 3.942-.482l-.363-1.455a14.762 14.762 0 01-3.579.437zM95.5 16.203c0 8.966 7.268 16.234 16.234 16.234v-1.5C103.597 30.937 97 24.341 97 16.203zm.477-3.921a16.267 16.267 0 00-.477 3.921H97c0-1.228.15-2.42.433-3.56zM64 3.719c11.886 0 22.966 3.439 32.303 9.376l.804-1.266C87.537 5.744 76.18 2.22 64 2.22zM3.719 64C3.719 30.708 30.708 3.719 64 3.719v-1.5C29.88 2.219 2.219 29.879 2.219 64zM15.36 99.617C8.041 89.64 3.72 77.325 3.72 64h-1.5c0 13.655 4.43 26.277 11.933 36.505zM19 98.25a9.711 9.711 0 00-4.598 1.15l.709 1.322A8.213 8.213 0 0119 99.75zm9.75 9.75c0-5.385-4.365-9.75-9.75-9.75v1.5a8.25 8.25 0 018.25 8.25zm-1.255 4.788A9.706 9.706 0 0028.75 108h-1.5a8.21 8.21 0 01-1.061 4.051zM64 124.281c-13.812 0-26.537-4.644-36.701-12.456l-.914 1.189c10.417 8.007 23.461 12.767 37.615 12.767zM124.281 64c0 33.292-26.989 60.281-60.281 60.281v1.5c34.12 0 61.781-27.66 61.781-61.781zm-9.418-32.369c5.963 9.35 9.418 20.455 9.418 32.369h1.5c0-12.208-3.541-23.591-9.654-33.176zm-87.86 80.765A9.093 9.093 0 0028.129 108h-1.5a7.594 7.594 0 01-.94 3.673zM28.129 108A9.13 9.13 0 0019 98.87v1.501A7.629 7.629 0 0126.63 108zM19 98.87c-1.52 0-2.954.372-4.216 1.03l.693 1.331a7.582 7.582 0 013.523-.86zm7.809 12.574a60.644 60.644 0 01-11.078-11.328l-1.2.899a62.118 62.118 0 0011.352 11.609zm-12.936-10.999A9.123 9.123 0 009.871 108h1.5a7.62 7.62 0 013.345-6.314zM9.871 108A9.129 9.129 0 0019 117.129v-1.5A7.629 7.629 0 0111.37 108zM19 117.129a9.118 9.118 0 007.438-3.835l-1.221-.87A7.62 7.62 0 0119 115.629zm7.29-4.861a61.618 61.618 0 01-11.394-11.651l-1.202.897a63.116 63.116 0 0011.671 11.936zm36.007-90.393a4.58 4.58 0 01-4.536-3.956l-1.487.202a6.08 6.08 0 006.023 5.254zm4.562-4.194a4.579 4.579 0 01-4.562 4.194v1.5a6.079 6.079 0 006.057-5.57zm-3.343.633c1.356 0 2.699.06 4.025.177l.132-1.495a47.309 47.309 0 00-4.157-.182zm-6.393.448a45.594 45.594 0 016.393-.448v-1.5c-2.241 0-4.446.158-6.604.463zm-.371-1.614a5.547 5.547 0 015.545-5.398v-1.5a7.047 7.047 0 00-7.044 6.86zm5.545-5.398a5.547 5.547 0 015.53 5.109l1.495-.117a7.047 7.047 0 00-7.025-6.492zm6.198 5.796c23.192 2.483 41.255 22.117 41.255 45.97h1.5c0-24.627-18.649-44.898-42.596-47.461zm41.255 45.97c0 25.534-20.7 46.234-46.234 46.234v1.5c26.363 0 47.734-21.371 47.734-47.734zM63.516 109.75c-25.535 0-46.235-20.7-46.235-46.234h-1.5c0 26.363 21.372 47.734 47.735 47.734zM17.28 63.516c0-23.018 16.82-42.108 38.84-45.647l-.238-1.48C33.148 20.041 15.781 39.75 15.781 63.515zm40.446-46.49a4.578 4.578 0 014.57-4.307v-1.5a6.079 6.079 0 00-6.068 5.72zm4.57-4.307a4.579 4.579 0 014.55 4.069l1.491-.165a6.079 6.079 0 00-6.041-5.404zm1.219 4.562c1.352 0 2.69.058 4.012.172l.129-1.495a48.36 48.36 0 00-4.141-.177zm-6.435.444a46.644 46.644 0 016.435-.444v-1.5c-2.254 0-4.47.156-6.642.459zm11.408.86c22.624 2.475 40.228 21.647 40.228 44.93h1.5c0-24.056-18.189-43.864-41.565-46.422zm40.228 44.93c0 24.965-20.237 45.202-45.201 45.202v1.5c25.792 0 46.701-20.909 46.701-46.701zm-45.201 45.202c-24.965 0-45.202-20.237-45.202-45.201h-1.5c0 25.792 20.909 46.701 46.702 46.701zM18.314 63.516c0-22.467 16.39-41.106 37.866-44.61l-.241-1.48c-22.19 3.62-39.125 22.876-39.125 46.09zm43.983-40.672a5.548 5.548 0 01-5.495-4.78l-1.486.204a7.048 7.048 0 006.98 6.076zm5.526-5.069a5.547 5.547 0 01-5.526 5.069v1.5a7.047 7.047 0 007.021-6.442z"
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-ol3iu9=""
+    >
+      video
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -2936,17 +2378,51 @@ exports[`Storyshots EmptyState/illustrations/small video 1`] = `
       video
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small wrench 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-11zs1jp=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 128 128"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Wrench
+        </title>
+        <path
+          d="M27.154 35.924L16.104 24.87a19.723 19.723 0 0023.353 27.735l36.757 36.76a19.723 19.723 0 0027.736 23.352l-11.05-11.05v-8.765L35.92 35.923z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <path
+          clipRule="evenodd"
+          d="M16.104 24.87l11.05 11.053h8.766v-8.765L24.87 16.104a19.725 19.725 0 0127.736 23.352l36.757 36.76a19.724 19.724 0 0123.353 27.734l-11.05-11.049H92.9v8.766l11.05 11.049a19.723 19.723 0 01-27.736-23.352l-36.757-36.76A19.724 19.724 0 0116.104 24.87z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth={2}
+        />
+        <g
+          fill="currentColor"
+          fillOpacity={0.2}
+        >
+          <path
+            d="M50.893 96.36l-1 .003a1 1 0 00.744.964zm4.603 1.222l.258-.966h-.002zm-7.131-10.75l-.707-.706a1 1 0 00-.162 1.201zm3.38-3.38l-.706-.707zm.01-2.887l-.708.707zm-4.321-4.321l.707-.707zm-2.888.008l.706.708zm-3.382 3.377l-.494.87a1 1 0 001.2-.162zm-9.53-2.519l-.967.257a1 1 0 00.966.743zm-1.221-4.602l.966-.257zm-2.497-1.436l.26.965zm-5.923 1.602l.262.965zm-1.45 2.504l-.967.257zm1.22 4.599l.504.863a1 1 0 00.462-1.12zm-7.004 7l-.257.967a1 1 0 001.12-.462zm-4.58-1.219l.257-.966h-.001zM7.673 87.01l-.965-.261zm-1.601 5.924l.965.261zm1.436 2.495l.257-.966zm4.603 1.222l1-.003a1 1 0 00-.744-.964zm2.528 9.528l.707.707a1 1 0 00.162-1.202zm-3.38 3.381l.706.707zm-.01 2.886l.708-.707zm4.321 4.322l-.707.707zm2.888-.009l-.706-.707zm3.382-3.377l.494-.87a1.001 1.001 0 00-1.2.162zm9.508 2.517l.967-.257a1 1 0 00-.965-.743zm1.22 4.594l-.967.257zm2.496 1.436l-.26-.965zm5.923-1.602l.26.965zm1.45-2.504l-.966.256zm-1.218-4.595l-.505-.863a1 1 0 00-.462 1.12zm7.003-7l.256-.967a1 1 0 00-1.119.462zm4.601 1.217l.257-.967h-.001zm2.506-1.451l.965.262v-.001zm1.601-5.923l.966.261v-.003zm-6.293-2.743l4.602 1.221.513-1.933-4.602-1.22zm-3.141-10a18.356 18.356 0 012.397 9.036l2-.005a20.356 20.356 0 00-2.659-10.02zm3.543-4.582l-3.381 3.38 1.414 1.415 3.38-3.381zm.008-1.473c.4.4.405 1.06-.008 1.473l1.414 1.414a3.04 3.04 0 00.008-4.301zm-4.32-4.321l4.32 4.321 1.414-1.414-4.32-4.321zm-1.474.008a1.043 1.043 0 011.474-.008l1.414-1.415a3.043 3.043 0 00-4.302.009zm-3.383 3.378l3.382-3.377-1.413-1.415-3.382 3.377zM31.633 78.11c3.173.003 6.286.826 9.037 2.389l.988-1.74a20.325 20.325 0 00-10.023-2.649zm-2.187-5.346l1.221 4.603 1.934-.513-1.222-4.603zm-1.27-.727a1.03 1.03 0 011.27.727l1.933-.513a3.03 3.03 0 00-3.724-2.145zm-5.921 1.602l5.922-1.602-.522-1.93-5.923 1.602zm-.746 1.283a1.054 1.054 0 01.746-1.283l-.523-1.93a3.054 3.054 0 00-2.156 3.726zm1.22 4.598l-1.22-4.598-1.933.513 1.22 4.598zm-7.107 7.762a18.562 18.562 0 016.645-6.642l-1.01-1.727a20.562 20.562 0 00-7.36 7.359zm-5.7-.757l4.58 1.219.514-1.933-4.58-1.219zm-1.283.745c.152-.56.729-.892 1.283-.745l.513-1.933a3.055 3.055 0 00-3.727 2.156zm-1.602 5.924l1.602-5.924-1.93-.522-1.603 5.924zm.728 1.268a1.029 1.029 0 01-.728-1.268l-1.93-.523a3.029 3.029 0 002.145 3.724zm4.602 1.221l-4.602-1.221-.513 1.933 4.602 1.221zm3.141 10a18.355 18.355 0 01-2.397-9.036l-2 .005a20.355 20.355 0 002.659 10.02zm-3.543 4.583l3.381-3.381-1.414-1.415-3.381 3.382zm-.008 1.472a1.04 1.04 0 01.008-1.472l-1.414-1.415a3.042 3.042 0 00-.008 4.302zm4.32 4.322l-4.32-4.322-1.414 1.414 4.32 4.322zm1.474-.009a1.043 1.043 0 01-1.474.008l-1.414 1.415a3.044 3.044 0 004.302-.008zm3.383-3.378l-3.382 3.378 1.413 1.415 3.382-3.377zm10.216 2.225a18.321 18.321 0 01-9.016-2.387l-.987 1.74a20.333 20.333 0 0010 2.647zm2.184 5.338l-1.22-4.595-1.932.513 1.219 4.595zm1.27.727a1.03 1.03 0 01-1.27-.727l-1.933.513a3.03 3.03 0 003.725 2.145zm5.922-1.602l-5.923 1.602.523 1.931 5.922-1.603zm.745-1.283a1.054 1.054 0 01-.745 1.283l.522 1.93a3.053 3.053 0 002.157-3.726zm-1.219-4.594l1.22 4.594 1.933-.513-1.22-4.594zm7.107-7.762a18.563 18.563 0 01-6.645 6.642l1.01 1.727a20.565 20.565 0 007.36-7.359zm5.72.755l-4.601-1.217-.512 1.933 4.601 1.218zm1.284-.745c-.152.561-.73.892-1.283.745l-.513 1.934a3.055 3.055 0 003.727-2.156zm1.602-5.923l-1.602 5.923 1.93.522 1.603-5.923zm-.728-1.261c.548.146.875.708.727 1.264l1.932.516a3.029 3.029 0 00-2.142-3.712zM38.625 96.5a7.125 7.125 0 01-7.125 7.125v2a9.125 9.125 0 009.125-9.125zM31.5 89.375a7.125 7.125 0 017.125 7.125h2a9.125 9.125 0 00-9.125-9.125zM24.375 96.5a7.125 7.125 0 017.125-7.125v-2a9.125 9.125 0 00-9.125 9.125zm7.125 7.125a7.125 7.125 0 01-7.125-7.125h-2a9.125 9.125 0 009.125 9.125zM76.49 37.148l1 .002a1 1 0 01-.743.964zm-3.384.897l-.258-.966h.002zm5.243-7.903l.707-.707a1 1 0 01.163 1.201zm-2.486-2.486l.707-.707zm-.006-2.123l.707.707zm3.177-3.177l-.707-.707zm2.124.006l-.707.708zm2.486 2.483l.494.87a1 1 0 01-1.2-.162zm7.007-1.852l.967.256a1 1 0 01-.966.744zm.899-3.384l.966.256zm1.835-1.056l-.26.965zm4.355 1.178l-.261.965zm1.067 1.841l-.966-.256zm-.897 3.381l-.505.864a1 1 0 01-.462-1.12zm5.149 5.148l.258.966a1.001 1.001 0 01-1.121-.46zm3.368-.896l-.257-.967h.001zm1.843 1.066l.965-.261zm1.177 4.356l-.965.261zm-1.056 1.835l-.257-.966h.001zm-3.384.898l-1-.002a1 1 0 01.743-.964zm-1.859 7.006l-.707.707a1 1 0 01-.163-1.202zm2.486 2.486l-.707.707zm.006 2.123l-.707-.707zm-3.177 3.177l.707.707zm-2.124-.006l.707-.708zm-2.486-2.483l-.494-.87a1 1 0 011.2.162zm-6.991 1.85l-.967-.256a1 1 0 01.965-.744zm-.897 3.378l.967.257zm-1.836 1.056l.261-.965zm-4.355-1.178l-.26.966zm-1.067-1.841l.967.256zm.897-3.378l.505-.864a1 1 0 01.461 1.12zm-5.15-5.148l-.255-.967a1 1 0 011.118.462zm-3.383.895l-.256-.966zm-1.842-1.066l-.965.26zm-1.178-4.356l-.965.26v-.002zm4.696-1.76l-3.384.897-.513-1.933 3.384-.898zm2.472-7.479a13.233 13.233 0 00-1.729 6.514l-2-.005a15.233 15.233 0 011.99-7.498zM76.57 26.95l2.486 2.486-1.414 1.414-2.486-2.486zm-.006-.709a.5.5 0 00.006.709l-1.414 1.414a2.5 2.5 0 01-.006-3.537zm3.177-3.177l-3.177 3.177-1.414-1.414 3.177-3.177zm.71.006a.502.502 0 00-.71-.006l-1.414-1.415a2.502 2.502 0 013.538.007zm2.487 2.484L80.45 23.07l1.413-1.416 2.487 2.484zm7.714-1.56a13.209 13.209 0 00-6.514 1.722l-.988-1.74a15.21 15.21 0 017.5-1.982zm1.864-4.128l-.898 3.384-1.933-.513.898-3.384zm.608-.347a.493.493 0 00-.608.347l-1.933-.513a2.493 2.493 0 013.064-1.765zm4.355 1.178l-4.355-1.178.523-1.93L98 18.765zm.362.62a.51.51 0 00-.362-.62l.522-1.93a2.51 2.51 0 011.773 3.063zm-.898 3.38l.898-3.38 1.933.513-.898 3.38zm5.253 5.91a13.38 13.38 0 00-4.79-4.79l1.009-1.726a15.379 15.379 0 015.507 5.506zm4.489-.435l-3.368.896-.515-1.932 3.368-.897zm.619.362a.51.51 0 00-.62-.362l-.513-1.933a2.511 2.511 0 013.064 1.772zm1.178 4.355l-1.178-4.356 1.931-.522 1.178 4.356zm-.347.608a.491.491 0 00.347-.608l1.931-.522a2.492 2.492 0 01-1.766 3.063zm-3.385.898l3.384-.898.513 1.933-3.384.898zm-2.472 7.477a13.228 13.228 0 001.729-6.513l2 .004a15.23 15.23 0 01-1.99 7.498zm2.649 3.688l-2.486-2.486 1.414-1.414 2.486 2.486zm.006.708a.5.5 0 00-.006-.708l1.414-1.414a2.5 2.5 0 01.006 3.537zm-3.177 3.178l3.177-3.177 1.414 1.414-3.177 3.177zm-.71-.006c.202.2.52.196.71.006l1.414 1.414a2.502 2.502 0 01-3.538-.006zm-2.487-2.484l2.487 2.483-1.413 1.415-2.487-2.483zm-7.7 1.558a13.209 13.209 0 006.5-1.72l.987 1.74a15.21 15.21 0 01-7.483 1.98zM89 54.635l.896-3.378 1.933.513-.896 3.378zm-.609.347a.493.493 0 00.609-.347l1.933.513a2.493 2.493 0 01-3.064 1.765zm-4.354-1.178l4.354 1.178-.522 1.93-4.355-1.177zm-.362-.62a.51.51 0 00.362.62l-.523 1.93a2.51 2.51 0 01-1.772-3.063zm.896-3.378l-.896 3.378-1.933-.513.896-3.378zm-5.253-5.91c1.16 1.981 2.81 3.631 4.792 4.79l-1.01 1.727a15.383 15.383 0 01-5.508-5.506zm-4.502.434l3.384-.895.511 1.934-3.383.895zm-.62-.36a.51.51 0 00.62.36l.512 1.934a2.51 2.51 0 01-3.063-1.772zm-1.178-4.356l1.177 4.355-1.93.523-1.178-4.356zm.347-.602a.492.492 0 00-.347.605l-1.932.516a2.492 2.492 0 011.763-3.054zm12.412-1.762a4.974 4.974 0 004.974 4.974v2a6.974 6.974 0 01-6.974-6.974zm4.974-4.974a4.974 4.974 0 00-4.974 4.974h-2a6.974 6.974 0 016.974-6.974zm4.974 4.974a4.974 4.974 0 00-4.974-4.974v-2a6.974 6.974 0 016.974 6.974zm-4.974 4.974a4.974 4.974 0 004.974-4.974h2a6.974 6.974 0 01-6.974 6.974z"
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-ol3iu9=""
+    >
+      wrench
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -2984,17 +2460,64 @@ exports[`Storyshots EmptyState/illustrations/small wrench 1`] = `
       wrench
     </h1>
   </div>
-</div>
-`;
-
-exports[`Storyshots EmptyState/illustrations/small zen 1`] = `
-<div
-  style={
-    Object {
-      "background": "black",
-    }
-  }
->
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-11zs1jp=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 128 128"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Zen
+        </title>
+        <path
+          d="M48.218 64.921a22.226 22.226 0 001.75-8.635c0-5.665-2.026-10.865-5.527-14.765-3.095-3.982-7.615-5.93-9.488-6.407C32.742 34.371 30.347 34 27.859 34 15.607 34 5.75 43.936 5.75 56.286c0 6.314 2.672 12.071 6.91 16.157m35.65-7.429a21.726 21.726 0 00-7.461-1.3c-6.91 0-13.174 3.25-17.227 8.265a14.587 14.587 0 00-4.883-.836C10.91 71.143 4.553 77.27 4 84.979c0 .557.368 1.021.921 1.021H53.5"
+          stroke="currentColor"
+          strokeMiterlimit={10}
+          strokeOpacity={0.2}
+          strokeWidth={2}
+        />
+        <path
+          d="M96.133 46.657c.582 0 1.248.083 1.83.083v-.083c0-1.83.75-3.495 1.914-4.66-.499.25-.998.583-1.331 1.082C97.381 41.249 95.301 40 92.971 40c-3.661 0-6.657 2.996-6.657 6.657v.083c-.583-.083-1.165-.083-1.83-.083-4.91 0-9.237 2.663-11.484 6.657h11.65c2.33-3.994 6.573-6.657 11.483-6.657zM60.978 64.331C59.48 63.5 57.816 63 55.985 63 50.493 63 46 67.493 46 72.985h9.985c0-3.66 1.997-6.906 4.993-8.654zM49.964 15.321c.665 0 1.33.083 1.997.167 2.33-3.329 5.741-5.992 9.735-7.323C59.533 7.416 57.286 7 54.956 7c-6.74 0-12.731 3.328-16.31 8.488-.665-.084-1.33-.167-1.996-.167-6.408 0-11.65 5.243-11.65 11.65h13.314c0-6.407 5.242-11.65 11.65-11.65zM30.664 86A1.67 1.67 0 0029 87.664v4.993h19.97V86zM25 104.206a9.151 9.151 0 00.861 3.971c2.521 5.397 7.807 8.823 13.5 8.823H88.64c5.773 0 10.978-3.426 13.499-8.823.732-1.542.975-3.255.813-4.883H44.601a7.386 7.386 0 011.394-3.527c1.626-2.141 3.985-3.34 6.587-3.34h47.002L96.982 93h-65.38l-5.124 6.767a7.045 7.045 0 00-1.428 3.527h-.002a7.47 7.47 0 00-.048.912z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <g
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        >
+          <path
+            d="M100 93H28v-4.5c0-.825.736-1.5 1.636-1.5h68.728c.9 0 1.636.675 1.636 1.5zM101.227 99l-4.552-6h-65.35l-4.552 6c-1.95 2.571-2.357 6.171-.894 9.171 2.52 5.4 7.803 8.829 13.493 8.829h49.256c5.69 0 10.973-3.429 13.493-8.829 1.463-3 1.056-6.6-.894-9.171zM26 103l76-.004M109.143 43.25c-1.807 0-3.532.487-4.929 1.3-.164-1.625-1.56-2.925-3.285-2.925-1.15 0-2.054.569-2.711 1.381A6.58 6.58 0 0092.714 40c-3.614 0-6.571 2.925-6.571 6.5v.081c-.575-.081-1.15-.081-1.807-.081-4.847 0-9.118 2.6-11.336 6.5h46c0-5.362-4.436-9.75-9.857-9.75zM72 60c-4.225 0-8.044 2.122-10.4 5.433a9.464 9.464 0 00-5.85-2.038C50.388 63.395 46 67.398 46 73h39c0-7.47-5.85-13-13-13z"
+          />
+        </g>
+        <path
+          d="M106.745 56.328L109.657 53h-2.912L103 56.329z"
+          fill="currentColor"
+          opacity={0.25}
+        />
+        <path
+          d="M81.019 18.667c-1.7 0-3.319.333-4.776.916C75.433 18 73.814 17 71.953 17c-.324 0-.648 0-.972.083C67.661 11.083 61.348 7 54.143 7c-6.557 0-12.386 3.333-15.867 8.5-.647-.083-1.295-.167-1.943-.167C30.1 15.333 25 20.583 25 27h68c-1.943-4.917-6.557-8.333-11.981-8.333zM77.127 48.22l-8.717-2.938-6.273-2.122-3.015-1.06c-.407-.082-.815-.327-1.14-.572-.652-.571-1.141-1.632-1.06-2.612 0-.163 0-.245.082-.408 0-.163.081-.245.081-.408l.082-.163.163-.327.326-.734 1.466-3.02L62.462 27H58.39l-2.422 4.163c-.408.572-1.223.408-1.467-.163l-2-4h-2.095l.651 6.448c-.244.326-1.059 2.122-1.222 2.53-.163.408-.326.816-.407 1.224-.978 3.265-.244 7.02 1.874 9.876 1.059 1.387 2.444 2.612 4.073 3.428l3.015 1.55 5.947 3.02 9.45 4.816c6.519.734 11.488 6.415 11.488 13.108H57.655l3.585 3.46c1.06 1.061.897 2.775-.244 3.673l-7.333 6.795h26.968l4.562-5.734 2.281-2.367 1.14-1.224.734-.816c.326-.408.652-.735.978-1.143l19.145-22.363h-2.77L93.829 64.544v-.163a16.927 16.927 0 00-1.467-5.632 17.225 17.225 0 00-3.34-4.734c-.326-.244-.57-.57-.896-.816"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-ol3iu9=""
+    >
+      zen
+    </h1>
+  </div>
   <div
     data-css-g3x4fp=""
   >
@@ -3049,7 +2572,7 @@ exports[`Storyshots EmptyState/illustrations/small zen 1`] = `
 </div>
 `;
 
-exports[`Storyshots EmptyState/mounting toggle show/hide 1`] = `
+exports[`Storyshots Components/EmptyState Mounting Toggle Show Hide 1`] = `
 Array [
   <button
     onClick={[Function]}
@@ -3144,181 +2667,269 @@ Array [
 ]
 `;
 
-exports[`Storyshots EmptyState/sizes large 1`] = `
-<div
-  data-css-g3x4fp=""
->
+exports[`Storyshots Components/EmptyState Sizes 1`] = `
+Array [
   <div
-    data-css-11zs1jp=""
+    data-css-g3x4fp=""
   >
-    <svg
-      aria-hidden="true"
-      fill="none"
-      role="img"
-      viewBox="0 0 128 128"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      data-css-1gwvklx=""
     >
-      <title>
-        Magnify
-      </title>
-      <path
-        d="M53 82c18.778 0 34-15.222 34-34S71.778 14 53 14 19 29.222 19 48s15.222 34 34 34z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        d="M53 75c14.912 0 27-12.088 27-27S67.912 21 53 21 26 33.088 26 48s12.088 27 27 27z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        d="M89.722 73.65L78.408 84.964l4.243 4.242 11.313-11.313z"
-        fill="currentColor"
-        fillOpacity={0.2}
-        opacity={0.25}
-      />
-      <path
-        d="M70.874 44.222c3.218-3.218 1.932-9.72-2.872-14.524-4.804-4.804-11.306-6.09-14.524-2.872s-1.932 9.72 2.872 14.524c4.804 4.803 11.306 6.09 14.524 2.872z"
-        fill="currentColor"
-        fillOpacity={0.2}
-      />
-      <path
-        d="M77 72.2c-1 1-2 1.8-3 2.6l7.3 7.3 5.7-5.7-7.3-7.3c-.8 1.2-1.7 2.2-2.7 3.1z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        d="M88.3 83.5l5.7-5.7L115.2 99c1.6 1.6 1.6 4.1 0 5.7l-2.8 2.8z"
-        fill="currentColor"
-        fillOpacity={0.2}
-      />
-      <path
-        d="M89.722 73.65L78.408 84.964l4.243 4.242 11.313-11.313zM115.2 104.8l-5.7 5.7c-1.6 1.6-4.1 1.6-5.7 0L82.6 89.3 93.9 78l21.2 21.2c1.7 1.5 1.7 4 .1 5.6z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        clipRule="evenodd"
-        d="M88.986 49a36.926 36.926 0 000-2H115a2 2 0 002-2V27a2 2 0 00-2-2H88a2 2 0 00-2 2v6.59a35.887 35.887 0 00-2-3.904V27a4 4 0 014-4h27a4 4 0 014 4v18a4 4 0 01-4 4zm-71.863 2H4a4 4 0 00-4 4v18a4 4 0 004 4h8v22a4 4 0 004 4h34a4 4 0 004-4V83.986a36.926 36.926 0 01-2 0V99a2 2 0 01-2 2H16a2 2 0 01-2-2V77h17.665a36.154 36.154 0 01-2.477-2H14v-4a2 2 0 012-2h7.756a36.02 36.02 0 01-1.34-2H16a4 4 0 00-4 4v4H4a2 2 0 01-2-2V55a2 2 0 012-2h13.344a36.2 36.2 0 01-.22-2zM66.04 81.566a35.682 35.682 0 001.96-.83V81a2 2 0 002 2h8.678L77 84.678l.322.322H70a4 4 0 01-3.96-3.434zM86.58 61c.255-.657.49-1.324.707-2H124a4 4 0 014 4v18a4 4 0 01-4 4h-21.222l-2-2H124a2 2 0 002-2V63a2 2 0 00-2-2z"
-        fill="currentColor"
-        fillOpacity={0.2}
-        fillRule="evenodd"
-      />
-    </svg>
-  </div>
-  <h1
-    data-css-ol3iu9=""
-  >
-    Filet mignon pork chop salami shank tail.
-  </h1>
-  <p
-    data-css-1wmcf4e=""
-  >
-    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
-  </p>
-  <div
-    data-css-aelvpu=""
-  >
-    <button
-      data-css-y5dqt5=""
-      disabled={false}
-      style={Object {}}
-    >
-      <span
-        data-css-15b13by=""
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        Do a Thing
-      </span>
-    </button>
-  </div>
-</div>
+        <title>
+          MagnifySmall
+        </title>
+        <path
+          d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <path
+          d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <g
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        >
+          <path
+            d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
+    >
+      Filet mignon pork chop salami shank tail.
+    </h1>
+    <p
+      data-css-1wmcf4e=""
+    >
+      Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
+    </p>
+    <div
+      data-css-aelvpu=""
+    >
+      <button
+        data-css-y5dqt5=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          Do a Thing
+        </span>
+      </button>
+    </div>
+  </div>,
+  <div
+    data-css-g3x4fp=""
+  >
+    <div
+      data-css-11zs1jp=""
+    >
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 128 128"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <title>
+          Magnify
+        </title>
+        <path
+          d="M53 82c18.778 0 34-15.222 34-34S71.778 14 53 14 19 29.222 19 48s15.222 34 34 34z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          d="M53 75c14.912 0 27-12.088 27-27S67.912 21 53 21 26 33.088 26 48s12.088 27 27 27z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          d="M89.722 73.65L78.408 84.964l4.243 4.242 11.313-11.313z"
+          fill="currentColor"
+          fillOpacity={0.2}
+          opacity={0.25}
+        />
+        <path
+          d="M70.874 44.222c3.218-3.218 1.932-9.72-2.872-14.524-4.804-4.804-11.306-6.09-14.524-2.872s-1.932 9.72 2.872 14.524c4.804 4.803 11.306 6.09 14.524 2.872z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <path
+          d="M77 72.2c-1 1-2 1.8-3 2.6l7.3 7.3 5.7-5.7-7.3-7.3c-.8 1.2-1.7 2.2-2.7 3.1z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          d="M88.3 83.5l5.7-5.7L115.2 99c1.6 1.6 1.6 4.1 0 5.7l-2.8 2.8z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <path
+          d="M89.722 73.65L78.408 84.964l4.243 4.242 11.313-11.313zM115.2 104.8l-5.7 5.7c-1.6 1.6-4.1 1.6-5.7 0L82.6 89.3 93.9 78l21.2 21.2c1.7 1.5 1.7 4 .1 5.6z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          clipRule="evenodd"
+          d="M88.986 49a36.926 36.926 0 000-2H115a2 2 0 002-2V27a2 2 0 00-2-2H88a2 2 0 00-2 2v6.59a35.887 35.887 0 00-2-3.904V27a4 4 0 014-4h27a4 4 0 014 4v18a4 4 0 01-4 4zm-71.863 2H4a4 4 0 00-4 4v18a4 4 0 004 4h8v22a4 4 0 004 4h34a4 4 0 004-4V83.986a36.926 36.926 0 01-2 0V99a2 2 0 01-2 2H16a2 2 0 01-2-2V77h17.665a36.154 36.154 0 01-2.477-2H14v-4a2 2 0 012-2h7.756a36.02 36.02 0 01-1.34-2H16a4 4 0 00-4 4v4H4a2 2 0 01-2-2V55a2 2 0 012-2h13.344a36.2 36.2 0 01-.22-2zM66.04 81.566a35.682 35.682 0 001.96-.83V81a2 2 0 002 2h8.678L77 84.678l.322.322H70a4 4 0 01-3.96-3.434zM86.58 61c.255-.657.49-1.324.707-2H124a4 4 0 014 4v18a4 4 0 01-4 4h-21.222l-2-2H124a2 2 0 002-2V63a2 2 0 00-2-2z"
+          fill="currentColor"
+          fillOpacity={0.2}
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <h1
+      data-css-ol3iu9=""
+    >
+      Filet mignon pork chop salami shank tail.
+    </h1>
+    <p
+      data-css-1wmcf4e=""
+    >
+      Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
+    </p>
+    <div
+      data-css-aelvpu=""
+    >
+      <button
+        data-css-y5dqt5=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          Do a Thing
+        </span>
+      </button>
+    </div>
+  </div>,
+]
 `;
 
-exports[`Storyshots EmptyState/sizes small 1`] = `
+exports[`Storyshots Components/EmptyState Small Fixed Size Container 1`] = `
 <div
-  data-css-g3x4fp=""
+  style={
+    Object {
+      "width": 400,
+    }
+  }
 >
   <div
-    data-css-1gwvklx=""
+    data-css-g3x4fp=""
   >
-    <svg
-      aria-hidden="true"
-      fill="none"
-      role="img"
-      viewBox="0 0 64 64"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      data-css-1gwvklx=""
     >
-      <title>
-        MagnifySmall
-      </title>
-      <path
-        d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
-        fill="currentColor"
-        fillOpacity={0.2}
-      />
-      <path
-        d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
-      />
-      <path
-        d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
-        fill="currentColor"
-        fillOpacity={0.2}
-      />
-      <g
-        stroke="currentColor"
-        strokeLinecap="round"
-        strokeMiterlimit={10}
-        strokeWidth={2}
+      <svg
+        aria-hidden="true"
+        fill="none"
+        role="img"
+        viewBox="0 0 64 64"
+        xmlns="http://www.w3.org/2000/svg"
       >
+        <title>
+          MagnifySmall
+        </title>
         <path
-          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
+          d="M23.877 39.753c8.768 0 15.876-7.108 15.876-15.877C39.753 15.108 32.645 8 23.876 8 15.108 8 8 15.108 8 23.877c0 8.768 7.108 15.876 15.877 15.876z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
         />
-      </g>
-    </svg>
-  </div>
-  <h1
-    data-css-1akj4c1=""
-  >
-    Filet mignon pork chop salami shank tail.
-  </h1>
-  <p
-    data-css-1wmcf4e=""
-  >
-    Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
-  </p>
-  <div
-    data-css-aelvpu=""
-  >
-    <button
-      data-css-y5dqt5=""
-      disabled={false}
-      style={Object {}}
+        <path
+          d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM34.73 24.27c2.08-2.08 1.249-6.281-1.855-9.385s-7.306-3.935-9.385-1.856c-2.08 2.079-1.248 6.28 1.856 9.385s7.305 3.934 9.384 1.855z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <path
+          d="M35.096 35.096c-.53.53-1.058.953-1.588 1.376l3.863 3.863 3.017-3.016-3.863-3.863a8.606 8.606 0 01-1.43 1.64z"
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        />
+        <path
+          d="M41.076 41.076l3.017-3.016 11.219 11.219c.847.847.847 2.17 0 3.016l-1.482 1.482z"
+          fill="currentColor"
+          fillOpacity={0.2}
+        />
+        <g
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeMiterlimit={10}
+          strokeWidth={2}
+        >
+          <path
+            d="M41.829 35.863l-5.988 5.988 2.246 2.245 5.987-5.987zM55.312 52.349l-3.017 3.016a2.109 2.109 0 01-3.016 0l-11.22-11.22 5.98-5.98 11.22 11.22c.9.794.9 2.117.053 2.963z"
+          />
+        </g>
+      </svg>
+    </div>
+    <h1
+      data-css-1akj4c1=""
     >
-      <span
-        data-css-15b13by=""
+      Filet mignon pork chop salami shank tail.
+    </h1>
+    <p
+      data-css-1wmcf4e=""
+    >
+      Burgdoggen boudin shoulder, sirloin turducken landjaeger kielbasa brisket. Bacon venison meatball pork, alcatra capicola turducken. Salami shoulder strip steak filet mignon pork.
+    </p>
+    <div
+      data-css-aelvpu=""
+    >
+      <button
+        data-css-y5dqt5=""
+        disabled={false}
+        style={Object {}}
       >
-        Do a Thing
-      </span>
-    </button>
+        <span
+          data-css-15b13by=""
+        >
+          Do a Thing
+        </span>
+      </button>
+    </div>
   </div>
 </div>
 `;

@@ -3,6 +3,108 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.27.0...@pluralsight/ps-design-system-docs@0.28.0) (2021-06-01)
+
+
+### Code Refactoring
+
+* **carousel:** add large size; rename sizes ([c84cc47](https://github.com/pluralsight/design-system/commit/c84cc473e0079c3bee21c6b1e4fe3e5610cee262))
+* **carousel:** set default size to medium ([b86582c](https://github.com/pluralsight/design-system/commit/b86582c2070e2fa5ff64e4c6186b6e6270d4ce0f))
+
+
+### BREAKING CHANGES
+
+* **carousel:** default size is medium
+* **carousel:** sizes renamed to small, medium, large
+* **carousel:** default size is small
+
+
+
+
+
+# [0.27.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.6...@pluralsight/ps-design-system-docs@0.27.0) (2021-05-28)
+
+
+### Features
+
+* **datepicker:** add optional dateFormat parameter to useDateSelectChange and useRangeSelectChange ([ef0bef1](https://github.com/pluralsight/design-system/commit/ef0bef108e89ead69c3c36530bf85f7dbb9aefb9))
+
+
+
+
+
+## [0.26.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.5...@pluralsight/ps-design-system-docs@0.26.6) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.26.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.4...@pluralsight/ps-design-system-docs@0.26.5) (2021-05-26)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.26.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.3...@pluralsight/ps-design-system-docs@0.26.4) (2021-05-26)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.26.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.2...@pluralsight/ps-design-system-docs@0.26.3) (2021-05-24)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.26.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.1...@pluralsight/ps-design-system-docs@0.26.2) (2021-05-21)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.26.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.26.0...@pluralsight/ps-design-system-docs@0.26.1) (2021-05-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.26.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.25.7...@pluralsight/ps-design-system-docs@0.26.0) (2021-05-20)
+
+
+### Bug Fixes
+
+* **docs:** remove extra parens in [@media](https://github.com/media) rules ([e009a21](https://github.com/pluralsight/design-system/commit/e009a211eed1dd49fb81116e22098bfea4fd919a))
+
+
+### Features
+
+* **docs:** add position component style prop note ([78e7507](https://github.com/pluralsight/design-system/commit/78e7507bacab874459a55611ad5ac5c7c48d4fe9))
+
+
+
+
+
+## [0.25.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.25.6...@pluralsight/ps-design-system-docs@0.25.7) (2021-05-11)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
 ## [0.25.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.25.5...@pluralsight/ps-design-system-docs@0.25.6) (2021-04-30)
 
 

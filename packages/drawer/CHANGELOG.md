@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@11.1.6...@pluralsight/ps-design-system-drawer@11.1.7) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-drawer
+
+
+
+
+
+## [11.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@11.1.5...@pluralsight/ps-design-system-drawer@11.1.6) (2021-05-26)
+
+
+### Bug Fixes
+
+* **drawer:** set correct peer dependency on ps normalize ([0f7a895](https://github.com/pluralsight/design-system/commit/0f7a8958de8b51b7ea7ba58f923e3dfcf2bd6c1d))
+
+
+
+
+
+## [11.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@11.1.4...@pluralsight/ps-design-system-drawer@11.1.5) (2021-05-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-drawer
+
+
+
+
+
 ## [11.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@11.1.3...@pluralsight/ps-design-system-drawer@11.1.4) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

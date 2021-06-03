@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@8.1.5...@pluralsight/ps-design-system-position@8.1.6) (2021-05-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-position
+
+
+
+
+
+## [8.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@8.1.4...@pluralsight/ps-design-system-position@8.1.5) (2021-05-26)
+
+
+### Bug Fixes
+
+* **position:** set correct peer dependency on ps normalize ([4c81918](https://github.com/pluralsight/design-system/commit/4c81918a6eb06a503261e6fa41d2c008cbcb776c))
+
+
+
+
+
+## [8.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@8.1.3...@pluralsight/ps-design-system-position@8.1.4) (2021-05-20)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-position
+
+
+
+
+
 ## [8.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@8.1.2...@pluralsight/ps-design-system-position@8.1.3) (2021-04-30)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-position

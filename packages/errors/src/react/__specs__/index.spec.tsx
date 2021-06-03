@@ -3,32 +3,32 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import DataWell from '../index'
+import ErrorPage from '../index'
 import * as stories from '../__stories__/index.story'
 
-describe('DataWell', () => {
+describe('ErrorPage', () => {
   const cases = convertStoriesToJestCases(stories)
 
   it('renders', () => {
     const { getByTestId } = render(
-      <DataWell data-testid="undertest" label="Dog count">
-        234,345
-      </DataWell>
+      <ErrorPage
+        data-testid="undertest"
+        heading={<ErrorPage.Heading>Wow</ErrorPage.Heading>}
+      />
     )
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
 
-  it('forwards refs', () => {
+  it('forwards ref', () => {
     const ref = React.createRef<HTMLDivElement>()
-
     render(
-      <DataWell ref={ref} label="Dog count">
-        234,345
-      </DataWell>
+      <ErrorPage
+        ref={ref}
+        heading={<ErrorPage.Heading>Wow</ErrorPage.Heading>}
+      />
     )
-
-    expect(ref.current).not.toBeNull()
+    expect(ref).not.toBeNull()
   })
 
   describe.each(cases)('%s story', (_name, Story) => {

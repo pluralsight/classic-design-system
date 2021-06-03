@@ -43,45 +43,36 @@ interface ControlProps extends Omit<HTMLPropsFor<'button'>, 'onClick'> {
   direction: ValueOf<typeof vars.controlDirections>
   onClick?: (evt?: React.MouseEvent) => void
 }
+
 interface ControlStatics {
   directions: typeof vars.controlDirections
 }
+
 type ControlComponent = React.FC<ControlProps> & ControlStatics
 export const Control: ControlComponent = props => {
   const { direction, onClick, ...rest } = props
   const context = React.useContext(CarouselContext)
   const themeName = useTheme()
 
-  const {
-    activePage = 0,
-    pageCount = 0,
-    next,
-    prev,
-    setTransitioning
-  } = context
-
   const isPrev = direction === Control.directions.prev
-  const visible = isPrev ? activePage > 0 : activePage !== pageCount - 1
+  const isVisible = isPrev ? context.isPrevVisible : context.isNextVisible
+  const label = isPrev ? 'Previous items' : 'Next items'
 
   const IconCaret = isPrev ? CaretLeftIcon : CaretRightIcon
-  const handleClick = combineFns(isPrev ? prev : next, onClick, () =>
-    setTransitioning(true)
-  )
-  const scr = `get ${isPrev ? 'previous' : 'next'} carousel page`
+  const handleClick = combineFns(isPrev ? context.prev : context.next, onClick)
 
   return (
     <div
-      data-testid="carousel control"
       {...styles.control(props.direction)}
-      {...(!visible && { hidden: true })}
+      {...(!isVisible && { hidden: true })}
     >
       <Halo shape={Halo.shapes.pill}>
         <button
           {...rest}
+          aria-label={label}
           onClick={handleClick}
-          aria-label={scr}
           {...styles.controlButton(themeName)}
-          {...(!visible && { tabIndex: -1 })}
+          {...(!isVisible && { tabIndex: -1 })}
         >
           <IconCaret aria-hidden size={iconSizes.medium} />
         </button>

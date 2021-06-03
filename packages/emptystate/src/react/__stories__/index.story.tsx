@@ -3,9 +3,15 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import TextInput from '@pluralsight/ps-design-system-textinput'
 import { storiesOf } from '@storybook/react'
+import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
 import EmptyState, { EmptyStateProps } from '../index'
+
+export default {
+  title: 'Components/EmptyState',
+  component: EmptyState
+} as Meta
 
 const CustomIllustration = () => (
   <svg viewBox="0 0 128 128" aria-hidden role="img">
@@ -77,114 +83,113 @@ const InlineList: React.FC = props => {
   )
 }
 
-storiesOf('EmptyState', module)
-  .add('combo', () => <EmptyStateWithDefaults />)
-  .add('in a small fixed size container', () => (
-    <div style={{ width: 400 }}>
-      <EmptyStateWithDefaults />
-    </div>
-  ))
+export const Combo: Story = () => <EmptyStateWithDefaults />
 
-Object.values(EmptyState.sizes).forEach(size => {
-  storiesOf('EmptyState/sizes', module).add(size, () => (
-    <EmptyStateWithDefaults size={size} />
-  ))
-})
+export const SmallFixedSizeContainer: Story = () => (
+  <div style={{ width: 400 }}>
+    <EmptyStateWithDefaults />
+  </div>
+)
 
-Object.values(EmptyState.Illustration.names).forEach(name => {
-  storiesOf('EmptyState/illustrations/large', module).add(name, () => (
-    <div style={{ background: 'black' }}>
+export const Sizes: Story = () => (
+  <>
+    {Object.values(EmptyState.sizes).map(size => (
+      <EmptyStateWithDefaults size={size} key={size} />
+    ))}
+  </>
+)
+
+export const Illustrations: Story = () => (
+  <div
+    style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(2, 1fr)',
+      gap: '16px',
+      background: 'black'
+    }}
+  >
+    <EmptyState
+      heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
+      illustration={
+        <EmptyState.Illustration>
+          <CustomIllustration />
+        </EmptyState.Illustration>
+      }
+      size={EmptyState.sizes.large}
+    />
+    <EmptyState
+      heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
+      illustration={
+        <EmptyState.Illustration>
+          <CustomIllustration />
+        </EmptyState.Illustration>
+      }
+      size={EmptyState.sizes.small}
+    />
+    {Object.values(EmptyState.Illustration.names).map(name => [
       <EmptyState
         heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
         illustration={<EmptyState.Illustration name={name} />}
         size={EmptyState.sizes.large}
-      />
-    </div>
-  ))
-
-  storiesOf('EmptyState/illustrations/small', module).add(name, () => (
-    <div style={{ background: 'black' }}>
+        key={name + 'lrg'}
+      />,
       <EmptyState
         heading={<EmptyState.Heading>{name}</EmptyState.Heading>}
         illustration={<EmptyState.Illustration name={name} />}
         size={EmptyState.sizes.small}
+        key={name + 'sm'}
       />
-    </div>
-  ))
-})
+    ])}
+  </div>
+)
 
-storiesOf('EmptyState/illustrations/small', module).add('custom', () => (
-  <EmptyState
-    heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
-    illustration={
-      <EmptyState.Illustration>
-        <CustomIllustration />
-      </EmptyState.Illustration>
+export const ActionsWithAnInput: Story = () => (
+  <EmptyStateWithDefaults
+    actions={
+      <EmptyState.Actions>
+        <SearchInput />
+      </EmptyState.Actions>
     }
-    size={EmptyState.sizes.small}
   />
-))
+)
 
-storiesOf('EmptyState/illustrations/large', module).add('custom', () => (
-  <EmptyState
-    heading={<EmptyState.Heading>Custom Illustration</EmptyState.Heading>}
-    illustration={
-      <EmptyState.Illustration>
-        <CustomIllustration />
-      </EmptyState.Illustration>
+export const ActionsWithAButton: Story = () => (
+  <EmptyStateWithDefaults
+    actions={
+      <EmptyState.Actions>
+        <InlineList>
+          <Button appearance={Button.appearances.stroke}>Asssessments</Button>
+          <Button appearance={Button.appearances.stroke}>Guides</Button>
+          <Button appearance={Button.appearances.stroke}>
+            Interactive Courses
+          </Button>
+          <Button appearance={Button.appearances.stroke}>Paths</Button>
+          <Button appearance={Button.appearances.stroke}>Projects</Button>
+          <Button appearance={Button.appearances.stroke}>Video Courses</Button>
+        </InlineList>
+      </EmptyState.Actions>
     }
-    size={EmptyState.sizes.large}
   />
-))
+)
 
-storiesOf('EmptyState/actions', module)
-  .add('with an input', () => (
-    <EmptyStateWithDefaults
-      actions={
-        <EmptyState.Actions>
-          <SearchInput />
-        </EmptyState.Actions>
-      }
-    />
-  ))
-  .add('with buttons', () => (
-    <EmptyStateWithDefaults
-      actions={
-        <EmptyState.Actions>
-          <InlineList>
-            <Button appearance={Button.appearances.stroke}>Asssessments</Button>
-            <Button appearance={Button.appearances.stroke}>Guides</Button>
-            <Button appearance={Button.appearances.stroke}>
-              Interactive Courses
-            </Button>
-            <Button appearance={Button.appearances.stroke}>Paths</Button>
-            <Button appearance={Button.appearances.stroke}>Projects</Button>
-            <Button appearance={Button.appearances.stroke}>
-              Video Courses
-            </Button>
-          </InlineList>
-        </EmptyState.Actions>
-      }
-    />
-  ))
-  .add('with tags', () => (
-    <EmptyStateWithDefaults
-      actions={
-        <EmptyState.Actions>
-          <InlineList>
-            <Tag>Asssessments</Tag>
-            <Tag>Guides</Tag>
-            <Tag>Interactive Courses</Tag>
-            <Tag>Paths</Tag>
-            <Tag>Projects</Tag>
-            <Tag>Video Courses</Tag>
-          </InlineList>
-        </EmptyState.Actions>
-      }
-    />
-  ))
+export const ActionsWithTags: Story = () => (
+  <EmptyStateWithDefaults
+    actions={
+      <EmptyState.Actions>
+        <InlineList>
+          <Tag>Asssessments</Tag>
+          <Tag>Guides</Tag>
+          <Tag>Interactive Courses</Tag>
+          <Tag>Paths</Tag>
+          <Tag>Projects</Tag>
+          <Tag>Video Courses</Tag>
+        </InlineList>
+      </EmptyState.Actions>
+    }
+  />
+)
 
-storiesOf('EmptyState/mounting', module).add('toggle show/hide', () => {
+export const MountingToggleShowHide: Story = () => {
   const MountStory: React.FC = props => {
     const [shown, setShown] = React.useState(true)
 
@@ -207,4 +212,4 @@ storiesOf('EmptyState/mounting', module).add('toggle show/hide', () => {
       <EmptyStateWithDefaults />
     </MountStory>
   )
-})
+}
