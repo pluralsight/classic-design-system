@@ -1,7 +1,0 @@
-export { default as accessibility } from './accessibility'
-export { default as breakpoints } from './breakpoints'
-export { default as layers } from './layers'
-export { default as layout } from './layout'
-export { default as type } from './type'
-export { default as motion } from './motion'
-export * from './colors'
