@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@13.1.7...@pluralsight/ps-design-system-emptystate@13.1.8) (2021-06-03)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-emptystate
+
+
+
+
+
 ## [13.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@13.1.6...@pluralsight/ps-design-system-emptystate@13.1.7) (2021-05-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-emptystate

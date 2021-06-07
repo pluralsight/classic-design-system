@@ -57,6 +57,7 @@ const sortDropdownProps = ({
   subLabel,
   style,
   value,
+  css: _avoidWeirdCssPropTypeError,
   ...rest
 }: UseDropdownProps) => ({
   button: {
