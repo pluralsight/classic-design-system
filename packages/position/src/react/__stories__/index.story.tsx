@@ -165,7 +165,7 @@ export const ShownElementKeepsRef: Story = () => {
 export const PositionsInCustomPortal: Story = () => {
   return (
     <StoryGrid>
-      {Object.values(positionComponents).map(Comp => {
+      {Object.values(positionComponents).map((Comp, i) => {
         const { displayName } = Comp
         const name = `<${Comp.displayName} />`
 
@@ -192,7 +192,7 @@ export const PositionsInCustomPortal: Story = () => {
         }
 
         return (
-          <PortalStory>
+          <PortalStory key={i}>
             {({ portal }) => (
               <Comp show={<MockToolip />} inNode={portal.current}>
                 <Box>{name}</Box>
@@ -207,7 +207,7 @@ export const PositionsInCustomPortal: Story = () => {
 
 export const Target: Story = () => (
   <StoryGrid style={{ gap: '128px' }}>
-    {Object.values(positionComponents).map(Comp => {
+    {Object.values(positionComponents).map((Comp, i) => {
       const TargetStory: React.FC = props => {
         const ref = React.useRef<HTMLDivElement>(null)
 
@@ -224,7 +224,7 @@ export const Target: Story = () => (
       const { displayName } = Comp
       const name = `<${Comp.displayName} />`
 
-      return <TargetStory />
+      return <TargetStory key={i} />
     })}
   </StoryGrid>
 )
@@ -244,7 +244,7 @@ export const ScrollableContainer: Story = () => {
 export const JavascriptPositions: Story = () => (
   <StoryGrid style={{ gap: '128px' }}>
     {Object.keys(positionFns).map((pos: string) => (
-      <JsStory positionFnName={pos as keyof typeof positionFns} />
+      <JsStory key={pos} positionFnName={pos as keyof typeof positionFns} />
     ))}
   </StoryGrid>
 )
@@ -297,7 +297,7 @@ const JsStory: React.FC<JsStoryProps> = ({ positionFnName }) => {
 
 export const PositionsOnEdge: Story = () => (
   <StoryGrid style={{ gap: '128px' }}>
-    {Object.values(positionComponents).map(Comp => {
+    {Object.values(positionComponents).map((Comp, i) => {
       const { displayName } = Comp
       function Demo() {
         const [b1hover, setb1hover] = React.useState(false)
@@ -387,7 +387,7 @@ export const PositionsOnEdge: Story = () => (
           </div>
         )
       }
-      return <Demo />
+      return <Demo key={i} />
     })}
   </StoryGrid>
 )
