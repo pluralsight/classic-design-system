@@ -1,18 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
+exports[`Storyshots Components/Form Button Row Aligns 1`] = `
 <div
   style={
     Object {
-      "padding": "24px",
-      "width": "50%",
+      "border": "1px solid blue",
     }
   }
 >
   <div
     style={
       Object {
-        "border": "1px solid blue",
+        "padding": "24px",
+        "width": "50%",
       }
     }
   >
@@ -30,7 +30,7 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
             }
           }
         >
-          form stuff
+          left
         </div>
       </div>
       <div
@@ -72,26 +72,6 @@ exports[`Storyshots Form.ButtonRow | aligns left 1`] = `
         </div>
       </div>
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
-<div
-  style={
-    Object {
-      "padding": "24px",
-      "width": "50%",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "border": "1px solid blue",
-      }
-    }
-  >
     <div
       data-css-63oe3q=""
     >
@@ -106,7 +86,7 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
             }
           }
         >
-          form stuff
+          right
         </div>
       </div>
       <div
@@ -152,19 +132,19 @@ exports[`Storyshots Form.ButtonRow | aligns right 1`] = `
 </div>
 `;
 
-exports[`Storyshots Form.ButtonRow single form element with single button 1`] = `
+exports[`Storyshots Components/Form Button Row Single Button 1`] = `
 <div
   style={
     Object {
-      "padding": "24px",
-      "width": "50%",
+      "border": "1px solid blue",
     }
   }
 >
   <div
     style={
       Object {
-        "border": "1px solid blue",
+        "padding": "24px",
+        "width": "50%",
       }
     }
   >
@@ -199,19 +179,19 @@ exports[`Storyshots Form.ButtonRow single form element with single button 1`] = 
 </div>
 `;
 
-exports[`Storyshots Sample Form null children 1`] = `
+exports[`Storyshots Components/Form Null Children 1`] = `
 <div
   style={
     Object {
-      "padding": "24px",
-      "width": "50%",
+      "border": "1px solid blue",
     }
   }
 >
   <div
     style={
       Object {
-        "border": "1px solid blue",
+        "padding": "24px",
+        "width": "50%",
       }
     }
   >
@@ -230,7 +210,7 @@ exports[`Storyshots Sample Form null children 1`] = `
             }
           }
         >
-          Sample form
+          With null children
         </h2>
       </div>
       <div
@@ -275,153 +255,24 @@ exports[`Storyshots Sample Form null children 1`] = `
           </div>
         </label>
       </div>
-      <div
-        data-css-4l6uky=""
-      >
-        <label
-          data-css-w0yocm=""
-          style={
-            Object {
-              "maxWidth": "none",
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            data-css-dysqqm=""
-          >
-            Alias
-          </div>
-          <div
-            data-css-1r967oi=""
-          >
-            <div
-              data-css-ctre2o=""
-            >
-              <div
-                data-css-1okk1dp=""
-              >
-                <input
-                  data-css-1iyk6mt=""
-                  disabled={false}
-                  placeholder="Do you have a nick name?"
-                  style={
-                    Object {
-                      "maxWidth": "none",
-                      "width": "100%",
-                    }
-                  }
-                />
-              </div>
-            </div>
-          </div>
-          <div
-            data-css-o89kbw=""
-          >
-            *Optional
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-4l6uky=""
-      >
-        <div
-          data-css-141usbw=""
-        />
-      </div>
-      <div
-        data-css-4l6uky=""
-      >
-        <label
-          data-css-na8jqt=""
-          style={
-            Object {
-              "maxWidth": "none",
-              "width": "100%",
-            }
-          }
-        >
-          <div
-            data-css-9kywkh=""
-          >
-            Comment
-          </div>
-          <div
-            data-css-1ios7mb=""
-          >
-            <div
-              data-css-ctre2o=""
-            >
-              <textarea
-                data-css-1paz7u7=""
-                disabled={false}
-                placeholder="Anything else to report?"
-                style={
-                  Object {
-                    "height": 112,
-                  }
-                }
-              />
-            </div>
-          </div>
-        </label>
-      </div>
-      <div
-        data-css-4l6uky=""
-      >
-        <div
-          data-css-1cqgl9p=""
-        >
-          <div
-            data-css-7d5932=""
-          >
-            <button
-              data-css-y5dqt5=""
-              disabled={false}
-              style={Object {}}
-            >
-              <span
-                data-css-15b13by=""
-              >
-                Save
-              </span>
-            </button>
-          </div>
-          <div
-            data-css-7d5932=""
-          >
-            <button
-              data-css-1uk30vr=""
-              disabled={false}
-              style={Object {}}
-            >
-              <span
-                data-css-15b13by=""
-              >
-                Cancel
-              </span>
-            </button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Sample Form sample 1`] = `
+exports[`Storyshots Components/Form Sample 1`] = `
 <div
   style={
     Object {
-      "padding": "24px",
-      "width": "50%",
+      "border": "1px solid blue",
     }
   }
 >
   <div
     style={
       Object {
-        "border": "1px solid blue",
+        "padding": "24px",
+        "width": "50%",
       }
     }
   >
