@@ -127,8 +127,8 @@ const ScrollContainer: React.FC = props => {
 
 export const Positions: Story = () => (
   <StoryGrid style={{ gap: '128px' }}>
-    {Object.values(positionComponents).map(Comp => (
-      <Comp show={<MockToolip />}>
+    {Object.values(positionComponents).map((Comp, i) => (
+      <Comp show={<MockToolip />} key={i}>
         <Box>{`<${Comp.displayName} />`}</Box>
       </Comp>
     ))}
