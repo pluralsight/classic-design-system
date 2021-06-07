@@ -3,23 +3,26 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import EmptyState from '../index'
-import * as vars from '../../vars/index'
+import Dialog from '../index'
 import * as stories from '../__stories__/index.story'
 
-describe('EmptyState', () => {
-  it('exports sizes', () => {
-    expect(EmptyState.sizes).toEqual(vars.sizes)
-  })
-
-  it('exports compound components', () => {
-    expect(EmptyState).toHaveProperty('Actions')
-    expect(EmptyState).toHaveProperty('Caption')
-    expect(EmptyState).toHaveProperty('Heading')
-    expect(EmptyState).toHaveProperty('Illustration')
-  })
-
+describe('Dialog', () => {
   const cases = convertStoriesToJestCases(stories)
+
+  it('renders', () => {
+    const { getByTestId } = render(
+      <Dialog data-testid="undertest">Render me</Dialog>
+    )
+
+    expect(getByTestId('undertest')).toBeInTheDocument()
+  })
+
+  it('forwards ref', () => {
+    const ref = React.createRef<HTMLDivElement>()
+    render(<Dialog ref={ref}>A label</Dialog>)
+    expect(ref).not.toBeNull()
+  })
+
   describe.each(cases)('%s story', (_name, Story) => {
     it('has no axe-core violations', async () => {
       const { container } = render(<Story {...Story.args} />)
