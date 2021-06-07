@@ -30,8 +30,9 @@ export const ExportedIcons: Story = () => (
     {Object.keys(Icons).map(id => {
       const Comp = Icons[id]
       return [
-        <div>{id}</div>,
+        <div key={'div' + id}>{id}</div>,
         <Comp
+          key={'icon' + id}
           id={`icon-${id}`}
           color={Icon.colors.textIconHighOnDark}
           size="large"
