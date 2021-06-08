@@ -70,20 +70,18 @@ Colors.args = { ...defaultArgs, checked: true }
 
 export const LabelAlignment: Story = args => (
   <StoryGrid>
-    {Object.values(Switch.sizes).map(size => (
-      <>
-        {Object.values(Switch.labelAligns).map(labelAlign => (
-          <Switch
-            key={`${size}-${labelAlign}`}
-            labelAlign={labelAlign}
-            size={size}
-            {...args}
-          >
-            {size}-{labelAlign}
-          </Switch>
-        ))}
-      </>
-    ))}
+    {Object.values(Switch.sizes).map(size =>
+      Object.values(Switch.labelAligns).map(labelAlign => (
+        <Switch
+          key={`${size}-${labelAlign}`}
+          labelAlign={labelAlign}
+          size={size}
+          {...args}
+        >
+          {size}-{labelAlign}
+        </Switch>
+      ))
+    )}
   </StoryGrid>
 )
 LabelAlignment.args = { ...defaultArgs }

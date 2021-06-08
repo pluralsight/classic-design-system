@@ -142,10 +142,16 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
       onBlur && onBlur(evt)
     }
 
-    function handleClick(evt: React.MouseEvent) {
-      if (disabled || !isFunction(onClick)) return
-      evt.preventDefault()
-      onClick && onClick(!checked)
+    function handleClick(evt: React.MouseEvent | React.KeyboardEvent) {
+      if (
+        evt.type === 'click' ||
+        ('key' in evt && evt.type === 'keydown' && evt.key === ' ')
+      ) {
+        if (disabled || !isFunction(onClick)) return
+
+        evt.preventDefault()
+        onClick && onClick(!checked)
+      }
     }
 
     const handleFocus = (evt: React.FocusEvent) => {
@@ -160,10 +166,11 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
         aria-checked={checked}
         role="checkbox"
         {...styles.switch(disabled, labelAlign)}
-        {...(disabled && { tabIndex: -1 })}
+        tabIndex={disabled ? -1 : tabIndex}
         onClick={handleClick}
         onBlur={handleBlur}
         onFocus={handleFocus}
+        onKeyDown={handleClick}
         {...rest}
       >
         <Halo error={error} shape={Halo.shapes.pill} inline visible={isFocused}>

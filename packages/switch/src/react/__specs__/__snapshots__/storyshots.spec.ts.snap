@@ -10,7 +10,9 @@ exports[`Storyshots Components/Switch Basic 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onKeyDown={[Function]}
     role="checkbox"
+    tabIndex={0}
   >
     <div
       data-css-1lu7sfl=""
@@ -44,7 +46,9 @@ exports[`Storyshots Components/Switch Checked 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onKeyDown={[Function]}
     role="checkbox"
+    tabIndex={0}
   >
     <div
       data-css-1lu7sfl=""
@@ -78,7 +82,9 @@ exports[`Storyshots Components/Switch Checked Error 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onKeyDown={[Function]}
     role="checkbox"
+    tabIndex={0}
   >
     <div
       data-css-mmyfiy=""
@@ -115,7 +121,9 @@ exports[`Storyshots Components/Switch Colors 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -142,7 +150,9 @@ exports[`Storyshots Components/Switch Colors 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -169,7 +179,9 @@ exports[`Storyshots Components/Switch Colors 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -204,6 +216,7 @@ exports[`Storyshots Components/Switch Disabled 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onKeyDown={[Function]}
     role="checkbox"
     tabIndex={-1}
   >
@@ -239,6 +252,7 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onKeyDown={[Function]}
     role="checkbox"
     tabIndex={-1}
   >
@@ -274,7 +288,9 @@ exports[`Storyshots Components/Switch Error 1`] = `
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
+    onKeyDown={[Function]}
     role="checkbox"
+    tabIndex={0}
   >
     <div
       data-css-mmyfiy=""
@@ -311,7 +327,9 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -343,7 +361,9 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -375,7 +395,9 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -418,7 +440,9 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -452,7 +476,9 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -486,7 +512,9 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -520,7 +548,9 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -565,7 +595,9 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -592,7 +624,9 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
+      onKeyDown={[Function]}
       role="checkbox"
+      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
