@@ -791,6 +791,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
+          onKeyDown={[Function]}
           role="checkbox"
           style={
             Object {
@@ -798,6 +799,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               "width": "100%",
             }
           }
+          tabIndex={0}
         >
           <div
             data-css-1lu7sfl=""
