@@ -38,8 +38,8 @@
     "downshift": "^6.1.0"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^5.0.0",
-    "@pluralsight/ps-design-system-theme": "^7.0.0",
+    "@pluralsight/ps-design-system-normalize": "^5.1.2",
+    "@pluralsight/ps-design-system-theme": "^8.1.4",
     "glamor": "^2.x.x",
     "react": "^17.0.1"
   },
