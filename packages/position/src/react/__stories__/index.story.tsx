@@ -296,100 +296,63 @@ const JsStory: React.FC<JsStoryProps> = ({ positionFnName }) => {
 }
 
 export const PositionsOnEdge: Story = () => (
-  <StoryGrid style={{ gap: '128px' }}>
-    {Object.values(positionComponents).map((Comp, i) => {
-      const { displayName } = Comp
-      function Demo() {
-        const [b1hover, setb1hover] = React.useState(false)
-        const [b2hover, setb2hover] = React.useState(false)
-        const [b3hover, setb3hover] = React.useState(false)
-        const [b4hover, setb4hover] = React.useState(false)
+  <div
+    style={{
+      color: 'white',
+      position: 'relative',
+      outline: '10px solid red',
+      height: '100vh',
+      background: 'pink'
+    }}
+  >
+    <div style={{ position: 'absolute', top: 0, left: 0 }}>
+      <AboveRight when show={<Tooltip>AboveRight</Tooltip>}>
+        <InfoIcon />
+      </AboveRight>
+    </div>
 
-        return (
-          <div
-            style={{
-              display: 'grid',
-              justifyItems: 'start',
-              grid: '1fr 1fr/ 1fr 1fr',
-              width: '100%',
-              height: '100vh',
-              overflow: 'hidden'
-            }}
-          >
-            <Comp
-              when={b1hover}
-              show={
-                <Tooltip>
-                  I am some really long content, look at me go, i am so long and
-                  contentful
-                </Tooltip>
-              }
-            >
-              <InfoIcon
-                onMouseEnter={() => setb1hover(true)}
-                onMouseLeave={() => setb1hover(false)}
-                style={{ color: 'white' }}
-              >
-                Hover me
-              </InfoIcon>
-            </Comp>
-            <Comp
-              when={b2hover}
-              show={
-                <Tooltip>
-                  I am some really long content, look at me go, i am so long and
-                  contentful
-                </Tooltip>
-              }
-            >
-              <InfoIcon
-                onMouseEnter={() => setb2hover(true)}
-                onMouseLeave={() => setb2hover(false)}
-                style={{ color: 'white', justifySelf: 'end' }}
-              >
-                Hover me
-              </InfoIcon>
-            </Comp>
-            <Comp
-              when={b3hover}
-              show={
-                <Tooltip>
-                  I am some really long content, look at me go, i am so long and
-                  contentful
-                </Tooltip>
-              }
-            >
-              <InfoIcon
-                onMouseEnter={() => setb3hover(true)}
-                onMouseLeave={() => setb3hover(false)}
-                style={{ color: 'white', alignSelf: 'end' }}
-              >
-                Hover me
-              </InfoIcon>
-            </Comp>
-            <Comp
-              when={b4hover}
-              show={
-                <Tooltip>
-                  I am some really long content, look at me go, i am so long and
-                  contentful
-                </Tooltip>
-              }
-            >
-              <InfoIcon
-                style={{ color: 'white', justifySelf: 'end', alignSelf: 'end' }}
-                onMouseEnter={() => setb4hover(true)}
-                onMouseLeave={() => setb4hover(false)}
-              >
-                Hover me
-              </InfoIcon>
-            </Comp>
-          </div>
-        )
-      }
-      return <Demo key={i} />
-    })}
-  </StoryGrid>
+    <div style={{ position: 'absolute', top: 0, left: '50%' }}>
+      <Above when show={<Tooltip>Above</Tooltip>}>
+        <InfoIcon />
+      </Above>
+    </div>
+
+    <div style={{ position: 'absolute', top: 0, right: 0 }}>
+      <AboveLeft when show={<Tooltip>AboveLeft</Tooltip>}>
+        <InfoIcon />
+      </AboveLeft>
+    </div>
+
+    <div style={{ position: 'absolute', top: '50%', left: 0 }}>
+      <LeftOf when show={<Tooltip>LeftOf</Tooltip>}>
+        <InfoIcon />
+      </LeftOf>
+    </div>
+
+    <div style={{ position: 'absolute', top: '50%', right: 0 }}>
+      <RightOf when show={<Tooltip>RightOf</Tooltip>}>
+        <InfoIcon />
+      </RightOf>
+    </div>
+
+    <div style={{ position: 'absolute', bottom: 0, left: 0 }}>
+      <BelowRight when show={<Tooltip>BelowRight</Tooltip>}>
+        <InfoIcon />
+      </BelowRight>
+    </div>
+
+    <div style={{ position: 'absolute', bottom: 0, left: '50%' }}>
+      <Below when show={<Tooltip>Below</Tooltip>}>
+        <InfoIcon />
+      </Below>
+    </div>
+
+    <div style={{ position: 'absolute', bottom: 0, right: 0 }}>
+      <BelowLeft when show={<Tooltip>BelowLeft</Tooltip>}>
+        <InfoIcon />
+      </BelowLeft>
+    </div>
+  </div>
 )
 
 // TODO: make reusable

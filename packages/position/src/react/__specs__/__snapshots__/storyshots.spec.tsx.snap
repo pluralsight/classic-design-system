@@ -614,34 +614,25 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
 <div
   style={
     Object {
-      "display": "grid",
-      "gap": "128px",
-      "gridTemplateColumns": "1fr 1fr",
-      "justifyItems": "left",
+      "background": "pink",
+      "color": "white",
+      "height": "100vh",
+      "outline": "10px solid red",
+      "position": "relative",
     }
   }
 >
   <div
     style={
       Object {
-        "display": "grid",
-        "grid": "1fr 1fr/ 1fr 1fr",
-        "height": "100vh",
-        "justifyItems": "start",
-        "overflow": "hidden",
-        "width": "100%",
+        "left": 0,
+        "position": "absolute",
+        "top": 0,
       }
     }
   >
     <div
       data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
     >
       <svg
         aria-label="info icon"
@@ -661,120 +652,30 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           "visibility": "hidden",
         }
       }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
     >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <div
+        data-css-18t2vqu=""
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
       >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
+        AboveRight
+      </div>
     </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
   </div>
   <div
     style={
       Object {
-        "display": "grid",
-        "grid": "1fr 1fr/ 1fr 1fr",
-        "height": "100vh",
-        "justifyItems": "start",
-        "overflow": "hidden",
-        "width": "100%",
+        "left": "50%",
+        "position": "absolute",
+        "top": 0,
       }
     }
   >
     <div
       data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
     >
       <svg
         aria-label="info icon"
@@ -794,120 +695,30 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           "visibility": "hidden",
         }
       }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
     >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <div
+        data-css-18t2vqu=""
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
       >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
+        Above
+      </div>
     </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
   </div>
   <div
     style={
       Object {
-        "display": "grid",
-        "grid": "1fr 1fr/ 1fr 1fr",
-        "height": "100vh",
-        "justifyItems": "start",
-        "overflow": "hidden",
-        "width": "100%",
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
       }
     }
   >
     <div
       data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
     >
       <svg
         aria-label="info icon"
@@ -927,120 +738,30 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           "visibility": "hidden",
         }
       }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
     >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <div
+        data-css-18t2vqu=""
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
       >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
+        AboveLeft
+      </div>
     </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
   </div>
   <div
     style={
       Object {
-        "display": "grid",
-        "grid": "1fr 1fr/ 1fr 1fr",
-        "height": "100vh",
-        "justifyItems": "start",
-        "overflow": "hidden",
-        "width": "100%",
+        "left": 0,
+        "position": "absolute",
+        "top": "50%",
       }
     }
   >
     <div
       data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
     >
       <svg
         aria-label="info icon"
@@ -1060,120 +781,30 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           "visibility": "hidden",
         }
       }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
     >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <div
+        data-css-18t2vqu=""
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
       >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
+        LeftOf
+      </div>
     </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
   </div>
   <div
     style={
       Object {
-        "display": "grid",
-        "grid": "1fr 1fr/ 1fr 1fr",
-        "height": "100vh",
-        "justifyItems": "start",
-        "overflow": "hidden",
-        "width": "100%",
+        "position": "absolute",
+        "right": 0,
+        "top": "50%",
       }
     }
   >
     <div
       data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
     >
       <svg
         aria-label="info icon"
@@ -1193,120 +824,30 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           "visibility": "hidden",
         }
       }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
     >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <div
+        data-css-18t2vqu=""
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
       >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
+        RightOf
+      </div>
     </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
   </div>
   <div
     style={
       Object {
-        "display": "grid",
-        "grid": "1fr 1fr/ 1fr 1fr",
-        "height": "100vh",
-        "justifyItems": "start",
-        "overflow": "hidden",
-        "width": "100%",
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
       }
     }
   >
     <div
       data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
     >
       <svg
         aria-label="info icon"
@@ -1326,120 +867,30 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           "visibility": "hidden",
         }
       }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
     >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <div
+        data-css-18t2vqu=""
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
       >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
+        BelowRight
+      </div>
     </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
   </div>
   <div
     style={
       Object {
-        "display": "grid",
-        "grid": "1fr 1fr/ 1fr 1fr",
-        "height": "100vh",
-        "justifyItems": "start",
-        "overflow": "hidden",
-        "width": "100%",
+        "bottom": 0,
+        "left": "50%",
+        "position": "absolute",
       }
     }
   >
     <div
       data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
     >
       <svg
         aria-label="info icon"
@@ -1459,120 +910,30 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           "visibility": "hidden",
         }
       }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
     >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <div
+        data-css-18t2vqu=""
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
       >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
+        Below
+      </div>
     </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
   </div>
   <div
     style={
       Object {
-        "display": "grid",
-        "grid": "1fr 1fr/ 1fr 1fr",
-        "height": "100vh",
-        "justifyItems": "start",
-        "overflow": "hidden",
-        "width": "100%",
+        "bottom": 0,
+        "position": "absolute",
+        "right": 0,
       }
     }
   >
     <div
       data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-        }
-      }
     >
       <svg
         aria-label="info icon"
@@ -1592,98 +953,18 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           "visibility": "hidden",
         }
       }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
     >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
+      <div
+        data-css-18t2vqu=""
+        style={
+          Object {
+            "position": "absolute",
+          }
+        }
       >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
+        BelowLeft
+      </div>
     </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
-    <div
-      data-css-7dab2f=""
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      style={
-        Object {
-          "alignSelf": "end",
-          "color": "white",
-          "justifySelf": "end",
-        }
-      }
-    >
-      <svg
-        aria-label="info icon"
-        role="img"
-        viewBox="0 0 24 24"
-      >
-        <path
-          clipRule="evenodd"
-          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm11 4.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v5zM12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-11h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <div
-      style={
-        Object {
-          "visibility": "hidden",
-        }
-      }
-    />
   </div>
 </div>
 `;
