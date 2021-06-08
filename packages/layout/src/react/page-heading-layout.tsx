@@ -40,9 +40,9 @@ interface PageHeadingLayoutProps extends HTMLPropsFor<'div'> {
   heading: React.ReactNode
 }
 const PageHeadingLayout: React.FC<PageHeadingLayoutProps> = props => {
-  const { actions = [], heading } = props
+  const { actions = [], heading, ...rest } = props
   return (
-    <div {...styles.layout()}>
+    <div {...styles.layout()} {...rest}>
       <div {...styles.heading()}>
         <Heading size={Heading.sizes.large}>{heading}</Heading>
         {Array.isArray(actions) && actions.length > 0 && (
