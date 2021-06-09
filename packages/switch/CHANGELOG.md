@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.4...@pluralsight/ps-design-system-switch@9.1.5) (2021-06-08)
+
+
+### Bug Fixes
+
+* **switch:** make focusable and keyboard activated ([a124174](https://github.com/pluralsight/design-system/commit/a124174098fc8b587f944849dd9780af124eab07)), closes [#1765](https://github.com/pluralsight/design-system/issues/1765)
+
+
+
+
+
 ## [9.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.3...@pluralsight/ps-design-system-switch@9.1.4) (2021-05-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch

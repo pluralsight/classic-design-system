@@ -1,8 +1,6 @@
 import {
   colorsBackgroundUtility,
-  colorsBorder,
   colorsTextIcon,
-  colorsWhite,
   layout,
   motion,
   type
@@ -14,16 +12,16 @@ import * as vars from '../vars/index'
 const option = {
   display: 'inline-block',
   maxWidth: '160px',
-  height: vars.style.innerHeight,
+  height: '32px',
   overflow: 'hidden',
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',
-  lineHeight: `calc(${vars.style.innerHeight} - 1px)`,
-  fontSize: '10px',
+  lineHeight: '20px',
+  fontSize: '14px',
   fontWeight: type.fontWeight500,
   padding: `0 ${layout.spacingSmall}`,
   border: 'none',
-  borderRadius: `calc(${vars.style.innerHeight} / 2)`,
+  borderRadius: `3px`,
   cursor: 'pointer',
   transition: `all ${motion.speedNormal}`
 }
@@ -33,15 +31,13 @@ export default {
     position: 'relative',
     display: 'inline-flex',
     margin: 0,
-    padding: '2px 3px',
-    height: vars.style.outerHeight,
+    padding: '0',
+    height: '32px',
     background: colorsBackgroundUtility[25],
-    border: `1px solid ${colorsBorder.lowOnDark}`,
-    borderRadius: `calc(${vars.style.outerHeight} / 2)`,
-    overflow: 'hidden'
+    borderRadius: `3px`
   },
   [`.psds-viewtoggle.psds-theme--${themeNames.light}`]: {
-    borderColor: colorsBorder.lowOnLight
+    background: colorsBackgroundUtility[20]
   },
 
   // __option
@@ -49,12 +45,22 @@ export default {
     ...option,
     position: 'relative',
     background: 'none',
-    color: colorsTextIcon.highOnDark
+    color: colorsTextIcon.lowOnDark,
+    '&:hover, &:focus': {
+      color: colorsTextIcon.highOnDark
+    }
   },
   [`.psds-viewtoggle__option.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
+    color: colorsTextIcon.lowOnLight,
+    '&:hover, &:focus': {
+      color: colorsTextIcon.highOnLight
+    }
   },
+
   '.psds-viewtoggle__option--active': {
+    color: colorsTextIcon.highOnDark
+  },
+  [`.psds-viewtoggle__option--active.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
 
@@ -62,11 +68,11 @@ export default {
   '.psds-viewtoggle__option-bg': {
     ...option,
     position: 'absolute',
-    top: '1px',
-    background: colorsWhite
+    top: '0',
+    background: colorsBackgroundUtility[40]
   },
   [`.psds-viewtoggle__option-bg.psds-theme--${themeNames.light}`]: {
-    border: `1px solid ${colorsBorder.lowOnLight}`
+    background: colorsBackgroundUtility[30]
   },
 
   // __option-bg__spacer

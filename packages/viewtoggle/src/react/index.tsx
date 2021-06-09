@@ -43,7 +43,13 @@ const styles: { [key: string]: StyleFn } = {
         stylesheet['.psds-viewtoggle__option'],
         stylesheet[`.psds-viewtoggle__option.psds-theme--${themeName}`]
       ),
-      props.active && glamor.css(stylesheet['.psds-viewtoggle__option--active'])
+      props.active &&
+        glamor.css(
+          stylesheet['.psds-viewtoggle__option--active'],
+          stylesheet[
+            `.psds-viewtoggle__option--active.psds-theme--${themeName}`
+          ]
+        )
     ),
   list: themeName =>
     glamor.css(

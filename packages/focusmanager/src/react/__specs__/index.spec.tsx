@@ -1,8 +1,11 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import React from 'react'
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { fireEvent, render } from '@testing-library/react'
+import { axe } from 'jest-axe'
+import React from 'react'
 
 import { FocusManager } from '../index'
+import * as stories from '../__stories__/index.story'
 
 describe('FocusManager', () => {
   beforeEach(() => (document.activeElement as HTMLElement).blur())
@@ -154,6 +157,17 @@ describe('FocusManager', () => {
         })
 
         expect(links[0]).toEqual(document.activeElement)
+      })
+    })
+  })
+
+  const cases = convertStoriesToJestCases(stories)
+  describe('accessibility', () => {
+    describe.each(cases)('%s story', (_name, Story) => {
+      it('has no axe-core violations', async () => {
+        const { container } = render(<Story {...Story.args} />)
+        const results = await axe(container)
+        expect(results).toHaveNoViolations()
       })
     })
   })

@@ -1,4 +1,6 @@
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import {
@@ -11,6 +13,7 @@ import {
   LeftOf,
   RightOf
 } from '../index'
+import * as stories from '../__stories__/index.story'
 
 const components = {
   Above,
@@ -85,6 +88,17 @@ describe('Position', () => {
       )
 
       expect(ref.current).not.toBeNull()
+    })
+  })
+
+  describe('accessibility', () => {
+    const cases = convertStoriesToJestCases(stories)
+    describe.each(cases)('%s story', (_name, Story) => {
+      it('has no axe-core violations', async () => {
+        const { container } = render(<Story {...Story.args} />)
+        const results = await axe(container)
+        expect(results).toHaveNoViolations()
+      })
     })
   })
 })

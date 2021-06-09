@@ -3,6 +3,30 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@9.0.0...@pluralsight/ps-design-system-viewtoggle@9.0.1) (2021-06-08)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle
+
+
+
+
+
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@8.1.7...@pluralsight/ps-design-system-viewtoggle@9.0.0) (2021-06-03)
+
+
+### Code Refactoring
+
+* **viewtoggle:** larger text style ([8c10fa8](https://github.com/pluralsight/design-system/commit/8c10fa8d4d57bb15e405d880cc2aab875d924d74))
+
+
+### BREAKING CHANGES
+
+* **viewtoggle:** increase vertical height from 24px to 32px
+
+
+
+
+
 ## [8.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-viewtoggle@8.1.6...@pluralsight/ps-design-system-viewtoggle@8.1.7) (2021-05-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-viewtoggle

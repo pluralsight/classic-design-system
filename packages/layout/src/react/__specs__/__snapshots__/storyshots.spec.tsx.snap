@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Layout / AsideLayout aside style overrides 1`] = `
+exports[`Storyshots Components/AsideLayout Aside Style Override 1`] = `
 <div
   style={
     Object {
@@ -28,7 +28,7 @@ exports[`Storyshots Layout / AsideLayout aside style overrides 1`] = `
           }
         }
       >
-        Fixed width thing
+        Fixed width thing, overflow hidden by aside override
       </div>
     </div>
     <div
@@ -40,57 +40,63 @@ exports[`Storyshots Layout / AsideLayout aside style overrides 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / AsideLayout asidePosition: first 1`] = `
+exports[`Storyshots Components/AsideLayout Positions 1`] = `
 <div
   style={
     Object {
       "color": "white",
+      "padding": "64px",
     }
   }
 >
   <div
-    data-css-19i7kll=""
+    style={
+      Object {
+        "outline": "1px solid red",
+      }
+    }
   >
     <div
-      data-css-34rq4a=""
+      data-css-19i7kll=""
     >
-      This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
+      <div
+        data-css-34rq4a=""
+      >
+        This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
+      </div>
+      <div
+        data-css-63wt92=""
+      >
+        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+      </div>
     </div>
+  </div>
+  <div
+    style={
+      Object {
+        "outline": "1px solid red",
+      }
+    }
+  >
     <div
-      data-css-63wt92=""
+      data-css-t8ydvh=""
     >
-      This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+      <div
+        data-css-qxcmpd=""
+      >
+        This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
+      </div>
+      <div
+        data-css-63wt92=""
+      >
+        This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
+      </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Layout / AsideLayout asidePosition: last 1`] = `
-<div
-  style={
-    Object {
-      "color": "white",
-    }
-  }
->
-  <div
-    data-css-t8ydvh=""
-  >
-    <div
-      data-css-qxcmpd=""
-    >
-      This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here. This is aside stuff that goes here.
-    </div>
-    <div
-      data-css-63wt92=""
-    >
-      This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here. This is main stuff that goes here.
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layout / AsideLayout short aside content 1`] = `
+exports[`Storyshots Components/AsideLayout Short Aside Content 1`] = `
 <div
   style={
     Object {
@@ -115,7 +121,7 @@ exports[`Storyshots Layout / AsideLayout short aside content 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / AsideLayout short main content 1`] = `
+exports[`Storyshots Components/AsideLayout Short Main Content 1`] = `
 <div
   style={
     Object {
@@ -140,7 +146,7 @@ exports[`Storyshots Layout / AsideLayout short main content 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / AsideLayout wide, fixed aside content 1`] = `
+exports[`Storyshots Components/AsideLayout Wide Fixed Aside Content 1`] = `
 <div
   style={
     Object {
@@ -163,7 +169,7 @@ exports[`Storyshots Layout / AsideLayout wide, fixed aside content 1`] = `
           }
         }
       >
-        Fixed width thing
+        Fixed width thing, overflows
       </div>
     </div>
     <div
@@ -175,7 +181,315 @@ exports[`Storyshots Layout / AsideLayout wide, fixed aside content 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / EqualColumnLayout custom markup 1`] = `
+exports[`Storyshots Components/EqualColumnLayout Counts 1`] = `
+<div
+  style={
+    Object {
+      "display": "grid",
+      "gap": "64px",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-oo8nrq=""
+    >
+      <div
+        data-css-evbaaa=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        (count: 
+        two
+        ) First child
+      </div>
+      <div
+        data-css-evbaaa=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Second child
+      </div>
+      <div
+        data-css-evbaaa=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Third child
+      </div>
+      <div
+        data-css-evbaaa=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Fourth child
+      </div>
+      <div
+        data-css-evbaaa=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Fifth child
+      </div>
+      <div
+        data-css-evbaaa=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Sixth child
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-oo8nrq=""
+    >
+      <div
+        data-css-ke1y92=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        (count: 
+        three
+        ) First child
+      </div>
+      <div
+        data-css-ke1y92=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Second child
+      </div>
+      <div
+        data-css-ke1y92=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Third child
+      </div>
+      <div
+        data-css-ke1y92=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Fourth child
+      </div>
+      <div
+        data-css-ke1y92=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Fifth child
+      </div>
+      <div
+        data-css-ke1y92=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Sixth child
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-oo8nrq=""
+    >
+      <div
+        data-css-18p75qs=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        (count: 
+        four
+        ) First child
+      </div>
+      <div
+        data-css-18p75qs=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Second child
+      </div>
+      <div
+        data-css-18p75qs=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Third child
+      </div>
+      <div
+        data-css-18p75qs=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Fourth child
+      </div>
+      <div
+        data-css-18p75qs=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Fifth child
+      </div>
+      <div
+        data-css-18p75qs=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Sixth child
+      </div>
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "color": "white",
+      }
+    }
+  >
+    <div
+      data-css-oo8nrq=""
+    >
+      <div
+        data-css-nvudq=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        (count: 
+        six
+        ) First child
+      </div>
+      <div
+        data-css-nvudq=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Second child
+      </div>
+      <div
+        data-css-nvudq=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Third child
+      </div>
+      <div
+        data-css-nvudq=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Fourth child
+      </div>
+      <div
+        data-css-nvudq=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Fifth child
+      </div>
+      <div
+        data-css-nvudq=""
+        style={
+          Object {
+            "background": "#E7558B",
+          }
+        }
+      >
+        Sixth child
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EqualColumnLayout Custom Markup 1`] = `
 <div
   style={
     Object {
@@ -194,7 +508,7 @@ exports[`Storyshots Layout / EqualColumnLayout custom markup 1`] = `
     <li
       data-css-18p75qs=""
     >
-      First child
+      Renders list... First child
     </li>
     <li
       data-css-18p75qs=""
@@ -225,307 +539,7 @@ exports[`Storyshots Layout / EqualColumnLayout custom markup 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / EqualColumnLayout four 1`] = `
-<div
-  style={
-    Object {
-      "color": "white",
-    }
-  }
->
-  <div
-    data-css-oo8nrq=""
-  >
-    <div
-      data-css-18p75qs=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      First child
-    </div>
-    <div
-      data-css-18p75qs=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Second child
-    </div>
-    <div
-      data-css-18p75qs=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Third child
-    </div>
-    <div
-      data-css-18p75qs=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Fourth child
-    </div>
-    <div
-      data-css-18p75qs=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Fifth child
-    </div>
-    <div
-      data-css-18p75qs=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Sixth child
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layout / EqualColumnLayout six 1`] = `
-<div
-  style={
-    Object {
-      "color": "white",
-    }
-  }
->
-  <div
-    data-css-oo8nrq=""
-  >
-    <div
-      data-css-nvudq=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      First child
-    </div>
-    <div
-      data-css-nvudq=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Second child
-    </div>
-    <div
-      data-css-nvudq=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Third child
-    </div>
-    <div
-      data-css-nvudq=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Fourth child
-    </div>
-    <div
-      data-css-nvudq=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Fifth child
-    </div>
-    <div
-      data-css-nvudq=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Sixth child
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layout / EqualColumnLayout three 1`] = `
-<div
-  style={
-    Object {
-      "color": "white",
-    }
-  }
->
-  <div
-    data-css-oo8nrq=""
-  >
-    <div
-      data-css-ke1y92=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      First child
-    </div>
-    <div
-      data-css-ke1y92=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Second child
-    </div>
-    <div
-      data-css-ke1y92=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Third child
-    </div>
-    <div
-      data-css-ke1y92=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Fourth child
-    </div>
-    <div
-      data-css-ke1y92=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Fifth child
-    </div>
-    <div
-      data-css-ke1y92=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Sixth child
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layout / EqualColumnLayout two 1`] = `
-<div
-  style={
-    Object {
-      "color": "white",
-    }
-  }
->
-  <div
-    data-css-oo8nrq=""
-  >
-    <div
-      data-css-evbaaa=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      First child
-    </div>
-    <div
-      data-css-evbaaa=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Second child
-    </div>
-    <div
-      data-css-evbaaa=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Third child
-    </div>
-    <div
-      data-css-evbaaa=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Fourth child
-    </div>
-    <div
-      data-css-evbaaa=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Fifth child
-    </div>
-    <div
-      data-css-evbaaa=""
-      style={
-        Object {
-          "background": "#E7558B",
-        }
-      }
-    >
-      Sixth child
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layout / PageHeadingLayout default 1`] = `
+exports[`Storyshots Components/PageHeadingLayout Default 1`] = `
 <div
   data-css-f5q9fb=""
 >
@@ -542,7 +556,7 @@ exports[`Storyshots Layout / PageHeadingLayout default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / PageHeadingLayout long title 1`] = `
+exports[`Storyshots Components/PageHeadingLayout Long Title 1`] = `
 <div
   data-css-f5q9fb=""
 >
@@ -559,7 +573,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
+exports[`Storyshots Components/PageHeadingLayout Long Title With Actions 1`] = `
 <div
   data-css-f5q9fb=""
 >
@@ -597,7 +611,7 @@ exports[`Storyshots Layout / PageHeadingLayout long title w/ actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] = `
+exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions 1`] = `
 <div
   data-css-f5q9fb=""
 >
@@ -686,45 +700,7 @@ exports[`Storyshots Layout / PageHeadingLayout long titlew/ lots of actions 1`] 
 </div>
 `;
 
-exports[`Storyshots Layout / PageHeadingLayout w/ actions 1`] = `
-<div
-  data-css-f5q9fb=""
->
-  <div
-    data-css-wlfhsa=""
-  >
-    <h2
-      data-css-vetqvm=""
-    >
-      My Page
-    </h2>
-    <div
-      data-css-1cnar9w=""
-    >
-      <button
-        data-css-y5dqt5=""
-        disabled={false}
-        style={Object {}}
-      >
-        <span
-          data-css-15b13by=""
-        >
-          Wow, an action
-        </span>
-      </button>
-      <a
-        data-css-1o01808=""
-        href="https://duckduckgo.com"
-      >
-        A link
-      </a>
-    </div>
-  </div>
-  My content
-</div>
-`;
-
-exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
+exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
 <div
   data-css-f5q9fb=""
 >
@@ -813,7 +789,45 @@ exports[`Storyshots Layout / PageHeadingLayout w/ lots of actions 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / PageWidthLayout default 1`] = `
+exports[`Storyshots Components/PageHeadingLayout With Actions 1`] = `
+<div
+  data-css-f5q9fb=""
+>
+  <div
+    data-css-wlfhsa=""
+  >
+    <h2
+      data-css-vetqvm=""
+    >
+      My Page
+    </h2>
+    <div
+      data-css-1cnar9w=""
+    >
+      <button
+        data-css-y5dqt5=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          Wow, an action
+        </span>
+      </button>
+      <a
+        data-css-1o01808=""
+        href="https://duckduckgo.com"
+      >
+        A link
+      </a>
+    </div>
+  </div>
+  My content
+</div>
+`;
+
+exports[`Storyshots Components/PageWidthLayout Default 1`] = `
 <div
   data-css-60rhmp=""
   style={
@@ -827,7 +841,7 @@ exports[`Storyshots Layout / PageWidthLayout default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layout / PageWidthLayout full-bleed 1`] = `
+exports[`Storyshots Components/PageWidthLayout Full Bleed 1`] = `
 <div
   style={
     Object {

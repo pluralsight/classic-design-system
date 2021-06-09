@@ -1,6 +1,549 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots DatePicker disabled 1`] = `
+exports[`Storyshots Components/DatePicker Calendar Select With Button 1`] = `
+Array [
+  <button
+    onClick={[Function]}
+  >
+    5/13/2020
+  </button>,
+  <div
+    data-css-1xqevlv=""
+  >
+    <div
+      data-css-1cqgl9p=""
+    >
+      <div
+        data-css-1by070m=""
+      >
+        <div
+          data-css-1vc8xgt=""
+        >
+          <button
+            aria-label="Go back 1 month"
+            data-css-phznnm=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+          <div
+            data-css-fpvw2v=""
+          >
+            May
+             
+            2020
+          </div>
+          <button
+            aria-label="Go forward 1 month"
+            data-css-phznnm=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Sun
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Mon
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Tue
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Wed
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Thu
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Fri
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Sat
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-50jhqn=""
+      style={
+        Object {
+          "height": undefined,
+        }
+      }
+    >
+      <div
+        data-css-1a94b64=""
+      >
+        <div
+          data-css-1k5y6zw=""
+        >
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <button
+            aria-label="Fri May 01 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            1
+          </button>
+          <button
+            aria-label="Sat May 02 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            2
+          </button>
+          <button
+            aria-label="Sun May 03 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            3
+          </button>
+          <button
+            aria-label="Mon May 04 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            4
+          </button>
+          <button
+            aria-label="Tue May 05 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            5
+          </button>
+          <button
+            aria-label="Wed May 06 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            6
+          </button>
+          <button
+            aria-label="Thu May 07 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            7
+          </button>
+          <button
+            aria-label="Fri May 08 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            8
+          </button>
+          <button
+            aria-label="Sat May 09 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            9
+          </button>
+          <button
+            aria-label="Sun May 10 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            10
+          </button>
+          <button
+            aria-label="Mon May 11 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            11
+          </button>
+          <button
+            aria-label="Tue May 12 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            12
+          </button>
+          <button
+            aria-label="Wed May 13 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            13
+          </button>
+          <button
+            aria-label="Thu May 14 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            14
+          </button>
+          <button
+            aria-label="Fri May 15 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            15
+          </button>
+          <button
+            aria-label="Sat May 16 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            16
+          </button>
+          <button
+            aria-label="Sun May 17 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            17
+          </button>
+          <button
+            aria-label="Mon May 18 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            18
+          </button>
+          <button
+            aria-label="Tue May 19 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            19
+          </button>
+          <button
+            aria-label="Wed May 20 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            20
+          </button>
+          <button
+            aria-label="Thu May 21 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            21
+          </button>
+          <button
+            aria-label="Fri May 22 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            22
+          </button>
+          <button
+            aria-label="Sat May 23 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            23
+          </button>
+          <button
+            aria-label="Sun May 24 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            24
+          </button>
+          <button
+            aria-label="Mon May 25 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            25
+          </button>
+          <button
+            aria-label="Tue May 26 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            26
+          </button>
+          <button
+            aria-label="Wed May 27 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            27
+          </button>
+          <button
+            aria-label="Thu May 28 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            28
+          </button>
+          <button
+            aria-label="Fri May 29 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            29
+          </button>
+          <button
+            aria-label="Sat May 30 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            30
+          </button>
+          <button
+            aria-label="Sun May 31 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            role="button"
+          >
+            31
+          </button>
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
+<div
+  style={
+    Object {
+      "display": "inline-block",
+      "position": "relative",
+    }
+  }
+>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1iawjij=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onChange={[Function]}
+            placeholder="mm/dd/yyyy"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        data-css-1sdemx4=""
+      >
+        <div
+          data-css-7dab2f=""
+          onClick={[Function]}
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+        >
+          <svg
+            aria-label="calendar icon"
+            role="img"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </label>
+  <br />
+</div>
+`;
+
+exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
 <div
   style={
     Object {
@@ -69,7 +612,7 @@ exports[`Storyshots DatePicker disabled 1`] = `
 </div>
 `;
 
-exports[`Storyshots DatePicker errore 1`] = `
+exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
 <div
   style={
     Object {
@@ -156,7 +699,7 @@ exports[`Storyshots DatePicker errore 1`] = `
 </div>
 `;
 
-exports[`Storyshots DatePicker field.label 1`] = `
+exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
 <div
   style={
     Object {
@@ -222,73 +765,7 @@ exports[`Storyshots DatePicker field.label 1`] = `
 </div>
 `;
 
-exports[`Storyshots DatePicker field.subLabel 1`] = `
-<div
-  style={
-    Object {
-      "display": "inline-block",
-      "position": "relative",
-    }
-  }
->
-  <div
-    data-css-w0yocm=""
-    onClick={[Function]}
-  >
-    <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
-    >
-      <div
-        data-css-u3gl1=""
-      >
-        <div
-          data-css-16bnq5b=""
-        >
-          <div
-            data-css-7dab2f=""
-            onClick={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
-              }
-            }
-          >
-            <svg
-              aria-label="calendar icon"
-              role="img"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-              />
-            </svg>
-          </div>
-        </div>
-        <div
-          data-css-n9fe5c=""
-        >
-          <input
-            data-css-1nm5z1g=""
-            id="text-input__input-unique-id"
-            onChange={[Function]}
-            placeholder="mm/dd/yyyy"
-            value=""
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-bv851e=""
-    >
-      Field.SubLabel subLabel
-    </div>
-  </div>
-  <br />
-</div>
-`;
-
-exports[`Storyshots DatePicker prefix 1`] = `
+exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
 <div
   style={
     Object {
@@ -352,7 +829,7 @@ exports[`Storyshots DatePicker prefix 1`] = `
 </div>
 `;
 
-exports[`Storyshots DatePicker renderContainer 1`] = `
+exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
 <div
   style={
     Object {
@@ -425,7 +902,7 @@ exports[`Storyshots DatePicker renderContainer 1`] = `
 </div>
 `;
 
-exports[`Storyshots DatePicker renderTag 1`] = `
+exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
 <div
   style={
     Object {
@@ -494,7 +971,7 @@ exports[`Storyshots DatePicker renderTag 1`] = `
 </div>
 `;
 
-exports[`Storyshots DatePicker small size 1`] = `
+exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
 <div
   style={
     Object {
@@ -562,7 +1039,7 @@ exports[`Storyshots DatePicker small size 1`] = `
 </div>
 `;
 
-exports[`Storyshots DatePicker string label 1`] = `
+exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
 <div
   style={
     Object {
@@ -630,7 +1107,73 @@ exports[`Storyshots DatePicker string label 1`] = `
 </div>
 `;
 
-exports[`Storyshots DatePicker subLabel string 1`] = `
+exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
+<div
+  style={
+    Object {
+      "display": "inline-block",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <div
+      data-css-63oe3q=""
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-u3gl1=""
+      >
+        <div
+          data-css-16bnq5b=""
+        >
+          <div
+            data-css-7dab2f=""
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1nm5z1g=""
+            id="text-input__input-unique-id"
+            onChange={[Function]}
+            placeholder="mm/dd/yyyy"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-bv851e=""
+    >
+      Field.SubLabel subLabel
+    </div>
+  </div>
+  <br />
+</div>
+`;
+
+exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
 <div
   style={
     Object {
@@ -696,7 +1239,7 @@ exports[`Storyshots DatePicker subLabel string 1`] = `
 </div>
 `;
 
-exports[`Storyshots DatePicker suffix 1`] = `
+exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
 <div
   style={
     Object {
@@ -783,7 +1326,7 @@ exports[`Storyshots DatePicker suffix 1`] = `
 </div>
 `;
 
-exports[`Storyshots MultiDate Calendar 1`] = `
+exports[`Storyshots Components/DatePicker Multi Date 1`] = `
 <div
   data-css-1xqevlv=""
 >
@@ -1260,7 +1803,7 @@ exports[`Storyshots MultiDate Calendar 1`] = `
 </div>
 `;
 
-exports[`Storyshots RangeDate Calendar 1`] = `
+exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
 <div
   data-css-1xqevlv=""
   onMouseLeave={[Function]}
@@ -1769,7 +2312,7 @@ exports[`Storyshots RangeDate Calendar 1`] = `
 </div>
 `;
 
-exports[`Storyshots RangeDate Calendar: with button 1`] = `
+exports[`Storyshots Components/DatePicker Range Date Calendar With Button 1`] = `
 Array [
   <button
     onClick={[Function]}
@@ -2285,11 +2828,581 @@ Array [
 ]
 `;
 
-exports[`Storyshots RangeDate calendar: with input (display two months) 1`] = `
+exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
+<div>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      Start
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </label>
+  <label
+    data-css-w0yocm=""
+  >
+    <div
+      data-css-dysqqm=""
+    >
+      End
+    </div>
+    <div
+      data-css-1r967oi=""
+    >
+      <div
+        data-css-ctre2o=""
+      >
+        <div
+          data-css-1okk1dp=""
+        >
+          <input
+            data-css-1iyk6mt=""
+            disabled={false}
+            onChange={[Function]}
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </label>
+  <div
+    data-css-1xqevlv=""
+    onMouseLeave={[Function]}
+  >
+    <div
+      data-css-1cqgl9p=""
+    >
+      <div
+        data-css-1by070m=""
+      >
+        <div
+          data-css-1vc8xgt=""
+        >
+          <button
+            aria-label="Go back 1 month"
+            data-css-phznnm=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret left icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+          <div
+            data-css-fpvw2v=""
+          >
+            May
+             
+            2020
+          </div>
+          <button
+            aria-label="Go forward 1 month"
+            data-css-phznnm=""
+            disabled={false}
+            onClick={[Function]}
+            style={Object {}}
+          >
+            <div
+              data-css-y80vay=""
+            >
+              <div
+                data-css-7dab2f=""
+              >
+                <svg
+                  aria-label="caret right icon"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  />
+                </svg>
+              </div>
+            </div>
+            <span
+              data-css-15b13by=""
+            />
+          </button>
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Sun
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Mon
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Tue
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Wed
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Thu
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Fri
+        </div>
+        <div
+          data-css-s7dkwb=""
+        >
+          Sat
+        </div>
+      </div>
+    </div>
+    <div
+      data-css-50jhqn=""
+      style={
+        Object {
+          "height": undefined,
+        }
+      }
+    >
+      <div
+        data-css-1a94b64=""
+      >
+        <div
+          data-css-1k5y6zw=""
+        >
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <button
+            aria-label="Fri May 01 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            1
+          </button>
+          <button
+            aria-label="Sat May 02 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            2
+          </button>
+          <button
+            aria-label="Sun May 03 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            3
+          </button>
+          <button
+            aria-label="Mon May 04 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            4
+          </button>
+          <button
+            aria-label="Tue May 05 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            5
+          </button>
+          <button
+            aria-label="Wed May 06 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            6
+          </button>
+          <button
+            aria-label="Thu May 07 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            7
+          </button>
+          <button
+            aria-label="Fri May 08 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            8
+          </button>
+          <button
+            aria-label="Sat May 09 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            9
+          </button>
+          <button
+            aria-label="Sun May 10 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            10
+          </button>
+          <button
+            aria-label="Mon May 11 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            11
+          </button>
+          <button
+            aria-label="Tue May 12 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            12
+          </button>
+          <button
+            aria-label="Wed May 13 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            13
+          </button>
+          <button
+            aria-label="Thu May 14 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            14
+          </button>
+          <button
+            aria-label="Fri May 15 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            15
+          </button>
+          <button
+            aria-label="Sat May 16 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            16
+          </button>
+          <button
+            aria-label="Sun May 17 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            17
+          </button>
+          <button
+            aria-label="Mon May 18 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            18
+          </button>
+          <button
+            aria-label="Tue May 19 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            19
+          </button>
+          <button
+            aria-label="Wed May 20 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            20
+          </button>
+          <button
+            aria-label="Thu May 21 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            21
+          </button>
+          <button
+            aria-label="Fri May 22 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            22
+          </button>
+          <button
+            aria-label="Sat May 23 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            23
+          </button>
+          <button
+            aria-label="Sun May 24 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            24
+          </button>
+          <button
+            aria-label="Mon May 25 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            25
+          </button>
+          <button
+            aria-label="Tue May 26 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            26
+          </button>
+          <button
+            aria-label="Wed May 27 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            27
+          </button>
+          <button
+            aria-label="Thu May 28 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            28
+          </button>
+          <button
+            aria-label="Fri May 29 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            29
+          </button>
+          <button
+            aria-label="Sat May 30 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            30
+          </button>
+          <button
+            aria-label="Sun May 31 2020"
+            aria-pressed={false}
+            data-css-1uw46i0=""
+            disabled={false}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            role="button"
+          >
+            31
+          </button>
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+          <div
+            data-css-h18ka=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/DatePicker Range Date Calendar With Input Two Months 1`] = `
 Array [
   <label
     data-css-w0yocm=""
   >
+    <div
+      data-css-dysqqm=""
+    >
+      Start
+    </div>
     <div
       data-css-1r967oi=""
     >
@@ -2312,6 +3425,11 @@ Array [
   <label
     data-css-w0yocm=""
   >
+    <div
+      data-css-dysqqm=""
+    >
+      End
+    </div>
     <div
       data-css-1r967oi=""
     >
@@ -3241,562 +4359,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots RangeDate calendar: with input 1`] = `
-<div>
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            onChange={[Function]}
-            value=""
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1okk1dp=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            onChange={[Function]}
-            value=""
-          />
-        </div>
-      </div>
-    </div>
-  </label>
-  <div
-    data-css-1xqevlv=""
-    onMouseLeave={[Function]}
-  >
-    <div
-      data-css-1cqgl9p=""
-    >
-      <div
-        data-css-1by070m=""
-      >
-        <div
-          data-css-1vc8xgt=""
-        >
-          <button
-            aria-label="Go back 1 month"
-            data-css-phznnm=""
-            disabled={false}
-            onClick={[Function]}
-            style={Object {}}
-          >
-            <div
-              data-css-y80vay=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret left icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                  />
-                </svg>
-              </div>
-            </div>
-            <span
-              data-css-15b13by=""
-            />
-          </button>
-          <div
-            data-css-fpvw2v=""
-          >
-            May
-             
-            2020
-          </div>
-          <button
-            aria-label="Go forward 1 month"
-            data-css-phznnm=""
-            disabled={false}
-            onClick={[Function]}
-            style={Object {}}
-          >
-            <div
-              data-css-y80vay=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret right icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                  />
-                </svg>
-              </div>
-            </div>
-            <span
-              data-css-15b13by=""
-            />
-          </button>
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Sun
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Mon
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Tue
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Wed
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Thu
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Fri
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Sat
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-50jhqn=""
-      style={
-        Object {
-          "height": undefined,
-        }
-      }
-    >
-      <div
-        data-css-1a94b64=""
-      >
-        <div
-          data-css-1k5y6zw=""
-        >
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <button
-            aria-label="Fri May 01 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            1
-          </button>
-          <button
-            aria-label="Sat May 02 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            2
-          </button>
-          <button
-            aria-label="Sun May 03 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            3
-          </button>
-          <button
-            aria-label="Mon May 04 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            4
-          </button>
-          <button
-            aria-label="Tue May 05 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            5
-          </button>
-          <button
-            aria-label="Wed May 06 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            6
-          </button>
-          <button
-            aria-label="Thu May 07 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            7
-          </button>
-          <button
-            aria-label="Fri May 08 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            8
-          </button>
-          <button
-            aria-label="Sat May 09 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            9
-          </button>
-          <button
-            aria-label="Sun May 10 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            10
-          </button>
-          <button
-            aria-label="Mon May 11 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            11
-          </button>
-          <button
-            aria-label="Tue May 12 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            12
-          </button>
-          <button
-            aria-label="Wed May 13 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            13
-          </button>
-          <button
-            aria-label="Thu May 14 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            14
-          </button>
-          <button
-            aria-label="Fri May 15 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            15
-          </button>
-          <button
-            aria-label="Sat May 16 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            16
-          </button>
-          <button
-            aria-label="Sun May 17 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            17
-          </button>
-          <button
-            aria-label="Mon May 18 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            18
-          </button>
-          <button
-            aria-label="Tue May 19 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            19
-          </button>
-          <button
-            aria-label="Wed May 20 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            20
-          </button>
-          <button
-            aria-label="Thu May 21 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            21
-          </button>
-          <button
-            aria-label="Fri May 22 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            22
-          </button>
-          <button
-            aria-label="Sat May 23 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            23
-          </button>
-          <button
-            aria-label="Sun May 24 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            24
-          </button>
-          <button
-            aria-label="Mon May 25 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            25
-          </button>
-          <button
-            aria-label="Tue May 26 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            26
-          </button>
-          <button
-            aria-label="Wed May 27 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            27
-          </button>
-          <button
-            aria-label="Thu May 28 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            28
-          </button>
-          <button
-            aria-label="Fri May 29 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            29
-          </button>
-          <button
-            aria-label="Sat May 30 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            30
-          </button>
-          <button
-            aria-label="Sun May 31 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            role="button"
-          >
-            31
-          </button>
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots SingleDate calendar: date is previous month 1`] = `
+exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
 <div
   data-css-1xqevlv=""
 >
@@ -4245,7 +4808,7 @@ exports[`Storyshots SingleDate calendar: date is previous month 1`] = `
 </div>
 `;
 
-exports[`Storyshots SingleDate calendar: date is selected 1`] = `
+exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
 <div
   data-css-1xqevlv=""
 >
@@ -4720,547 +5283,4 @@ exports[`Storyshots SingleDate calendar: date is selected 1`] = `
     </div>
   </div>
 </div>
-`;
-
-exports[`Storyshots SingleDate calendar: input with dropdown 1`] = `
-<div
-  style={
-    Object {
-      "display": "inline-block",
-      "position": "relative",
-    }
-  }
->
-  <label
-    data-css-w0yocm=""
-  >
-    <div
-      data-css-1r967oi=""
-    >
-      <div
-        data-css-ctre2o=""
-      >
-        <div
-          data-css-1iawjij=""
-        >
-          <input
-            data-css-1iyk6mt=""
-            disabled={false}
-            onChange={[Function]}
-            placeholder="mm/dd/yyyy"
-            value=""
-          />
-        </div>
-      </div>
-      <div
-        data-css-1sdemx4=""
-      >
-        <div
-          data-css-7dab2f=""
-          onClick={[Function]}
-          style={
-            Object {
-              "cursor": "pointer",
-            }
-          }
-        >
-          <svg
-            aria-label="calendar icon"
-            role="img"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  </label>
-  <br />
-</div>
-`;
-
-exports[`Storyshots SingleDate calendar: with button 1`] = `
-Array [
-  <button
-    onClick={[Function]}
-  >
-    5/13/2020
-  </button>,
-  <div
-    data-css-1xqevlv=""
-  >
-    <div
-      data-css-1cqgl9p=""
-    >
-      <div
-        data-css-1by070m=""
-      >
-        <div
-          data-css-1vc8xgt=""
-        >
-          <button
-            aria-label="Go back 1 month"
-            data-css-phznnm=""
-            disabled={false}
-            onClick={[Function]}
-            style={Object {}}
-          >
-            <div
-              data-css-y80vay=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret left icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
-                  />
-                </svg>
-              </div>
-            </div>
-            <span
-              data-css-15b13by=""
-            />
-          </button>
-          <div
-            data-css-fpvw2v=""
-          >
-            May
-             
-            2020
-          </div>
-          <button
-            aria-label="Go forward 1 month"
-            data-css-phznnm=""
-            disabled={false}
-            onClick={[Function]}
-            style={Object {}}
-          >
-            <div
-              data-css-y80vay=""
-            >
-              <div
-                data-css-7dab2f=""
-              >
-                <svg
-                  aria-label="caret right icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
-                  />
-                </svg>
-              </div>
-            </div>
-            <span
-              data-css-15b13by=""
-            />
-          </button>
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Sun
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Mon
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Tue
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Wed
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Thu
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Fri
-        </div>
-        <div
-          data-css-s7dkwb=""
-        >
-          Sat
-        </div>
-      </div>
-    </div>
-    <div
-      data-css-50jhqn=""
-      style={
-        Object {
-          "height": undefined,
-        }
-      }
-    >
-      <div
-        data-css-1a94b64=""
-      >
-        <div
-          data-css-1k5y6zw=""
-        >
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <button
-            aria-label="Fri May 01 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            1
-          </button>
-          <button
-            aria-label="Sat May 02 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            2
-          </button>
-          <button
-            aria-label="Sun May 03 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            3
-          </button>
-          <button
-            aria-label="Mon May 04 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            4
-          </button>
-          <button
-            aria-label="Tue May 05 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            5
-          </button>
-          <button
-            aria-label="Wed May 06 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            6
-          </button>
-          <button
-            aria-label="Thu May 07 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            7
-          </button>
-          <button
-            aria-label="Fri May 08 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            8
-          </button>
-          <button
-            aria-label="Sat May 09 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            9
-          </button>
-          <button
-            aria-label="Sun May 10 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            10
-          </button>
-          <button
-            aria-label="Mon May 11 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            11
-          </button>
-          <button
-            aria-label="Tue May 12 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            12
-          </button>
-          <button
-            aria-label="Wed May 13 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            13
-          </button>
-          <button
-            aria-label="Thu May 14 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            14
-          </button>
-          <button
-            aria-label="Fri May 15 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            15
-          </button>
-          <button
-            aria-label="Sat May 16 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            16
-          </button>
-          <button
-            aria-label="Sun May 17 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            17
-          </button>
-          <button
-            aria-label="Mon May 18 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            18
-          </button>
-          <button
-            aria-label="Tue May 19 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            19
-          </button>
-          <button
-            aria-label="Wed May 20 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            20
-          </button>
-          <button
-            aria-label="Thu May 21 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            21
-          </button>
-          <button
-            aria-label="Fri May 22 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            22
-          </button>
-          <button
-            aria-label="Sat May 23 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            23
-          </button>
-          <button
-            aria-label="Sun May 24 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            24
-          </button>
-          <button
-            aria-label="Mon May 25 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            25
-          </button>
-          <button
-            aria-label="Tue May 26 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            26
-          </button>
-          <button
-            aria-label="Wed May 27 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            27
-          </button>
-          <button
-            aria-label="Thu May 28 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            28
-          </button>
-          <button
-            aria-label="Fri May 29 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            29
-          </button>
-          <button
-            aria-label="Sat May 30 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            30
-          </button>
-          <button
-            aria-label="Sun May 31 2020"
-            aria-pressed={false}
-            data-css-1uw46i0=""
-            disabled={false}
-            onClick={[Function]}
-            role="button"
-          >
-            31
-          </button>
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-          <div
-            data-css-h18ka=""
-          />
-        </div>
-      </div>
-    </div>
-  </div>,
-]
 `;

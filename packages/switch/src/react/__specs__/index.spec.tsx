@@ -1,5 +1,6 @@
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { fireEvent, screen, render } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import React from 'react'
 
@@ -16,12 +17,30 @@ describe('Switch', () => {
     expect(ref).not.toBeNull()
   })
 
-  describe.skip.each(cases)('%s story', (_name, Story) => {
-    it('has no axe-core violations', async () => {
-      const { container } = render(<Story {...Story.args} />)
-      const results = await axe(container)
+  describe('accessibility', () => {
+    describe.skip.each(cases)('%s story', (_name, Story) => {
+      it('has no axe-core violations', async () => {
+        const { container } = render(<Story {...Story.args} />)
+        const results = await axe(container)
 
-      expect(results).toHaveNoViolations()
+        expect(results).toHaveNoViolations()
+      })
+    })
+
+    it('is tab focusable', () => {
+      render(<Switch />)
+      const el = screen.getAllByRole('checkbox')[0]
+      userEvent.tab()
+
+      expect(el).toHaveFocus()
+    })
+
+    it('disabled is not tab focusable', () => {
+      render(<Switch disabled />)
+      const el = screen.getAllByRole('checkbox')[0]
+      userEvent.tab()
+
+      expect(el).not.toHaveFocus()
     })
   })
 

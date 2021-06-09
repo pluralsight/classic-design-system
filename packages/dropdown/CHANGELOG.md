@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.10...@pluralsight/ps-design-system-dropdown@12.1.11) (2021-06-08)
+
+
+### Bug Fixes
+
+* **dropdown:** remove undesirable css type from dropdown.item ([eb78370](https://github.com/pluralsight/design-system/commit/eb783705ffa3d6840671cbba8a03d70f4e6a4428)), closes [#1787](https://github.com/pluralsight/design-system/issues/1787)
+
+
+
+
+
 ## [12.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.9...@pluralsight/ps-design-system-dropdown@12.1.10) (2021-05-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

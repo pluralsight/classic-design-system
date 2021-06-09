@@ -1,8 +1,11 @@
+import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { fireEvent, screen } from '@testing-library/dom'
 import { render } from '@testing-library/react'
+import { axe } from 'jest-axe'
 import React from 'react'
 
 import { Menu } from '../index'
+import * as stories from '../__stories__/index.story'
 
 describe('Menu', () => {
   it('forwards ref', () => {
@@ -158,4 +161,15 @@ describe('Menu', () => {
       expect(ref.current).not.toBeNull()
     })
   })
+  // TODO: enable
+  // describe('accessibility', () => {
+  //   const cases = convertStoriesToJestCases(stories)
+  // describe.each(cases)('%s story', (_name, Story) => {
+  //   it('has no axe-core violations', async () => {
+  //     const { container } = render(<Story {...Story.args} />)
+  //     const results = await axe(container)
+  //     expect(results).toHaveNoViolations()
+  //   })
+  // })
+  // })
 })
