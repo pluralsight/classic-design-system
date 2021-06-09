@@ -85,12 +85,5 @@
     "@pluralsight/ps-design-system-typeahead": "*",
     "@pluralsight/ps-design-system-verticaltabs": "*",
     "@pluralsight/ps-design-system-viewtoggle": "*"
-  },
-  "devDependencies": {
-    "cssnano": "^5.0.5",
-    "esbuild": "^0.12.7",
-    "postcss-cli": "^8.3.1",
-    "postcss-import": "^14.0.2",
-    "postcss-preset-env": "^6.7.0"
   }
 }
