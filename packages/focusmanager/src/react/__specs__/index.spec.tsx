@@ -1,6 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
-import { fireEvent, render } from '@testing-library/react'
+import Button from '@pluralsight/ps-design-system-button'
+import { act, fireEvent, render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
 import { axe } from 'jest-axe'
 import React from 'react'
 
@@ -39,7 +41,7 @@ describe('FocusManager', () => {
         <FocusManager>
           <ul>
             <li>
-              <a href="#">first</a>
+              <a href="#">first</a>{' '}
             </li>
           </ul>
         </FocusManager>
