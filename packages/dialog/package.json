@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dialog",
-  "version": "13.1.8",
+  "version": "13.1.9",
   "description": "Design System component for dialog ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -29,7 +29,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.1.2",
-    "@pluralsight/ps-design-system-focusmanager": "^7.1.6",
+    "@pluralsight/ps-design-system-focusmanager": "^7.1.7",
     "@pluralsight/ps-design-system-util": "^9.2.1"
   },
   "peerDependencies": {

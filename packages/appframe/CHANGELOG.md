@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.10...@pluralsight/ps-design-system-appframe@5.1.11) (2021-06-10)
+
+
+### Bug Fixes
+
+* **verticaltabs:** update aria roles ([#1797](https://github.com/pluralsight/design-system/issues/1797)) ([f96c546](https://github.com/pluralsight/design-system/commit/f96c5468651a491a3ab7166200ad78daf4e90d70))
+
+
+
+
+
 ## [5.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.9...@pluralsight/ps-design-system-appframe@5.1.10) (2021-06-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-appframe
