@@ -52,7 +52,7 @@ export default function useFocusManager(
   }, [focusableNodes, ref])
 
   React.useEffect(() => {
-    let observer
+    let observer: MutationObserver | undefined
     if (canUseDOM() && node instanceof Node) {
       observer = new MutationObserver(mutationList => {
         mutationList.forEach(mutation => {
