@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@12.1.10...@pluralsight/ps-design-system-errors@12.1.11) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-errors
+
+
+
+
+
 ## [12.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@12.1.9...@pluralsight/ps-design-system-errors@12.1.10) (2021-06-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors

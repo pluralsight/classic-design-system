@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.6.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-preset@0.6.6...@pluralsight/ps-design-system-storybook-preset@0.6.7) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-storybook-preset
+
+
+
+
+
 ## [0.6.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-preset@0.6.5...@pluralsight/ps-design-system-storybook-preset@0.6.6) (2021-06-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-preset
