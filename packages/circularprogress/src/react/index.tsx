@@ -86,12 +86,21 @@ const CircularProgress = React.forwardRef<
   const dashOffset = ((100 - value) / 100) * circumference
 
   return (
-    <div ref={ref} {...styles.circularprogress(themeName, props)} {...rest}>
-      <ScreenReaderOnly role="region" aria-live="off">
+    <div
+      ref={ref}
+      {...styles.circularprogress(themeName, props)}
+      {...rest}
+      role="progressbar"
+      aria-valuemin={props.value && 0}
+      aria-valuemax={props.value && 100}
+      aria-valuenow={props.value && Math.round(props.value)}
+      aria-busy="true"
+    >
+      {/* <ScreenReaderOnly role="region" aria-live="off">
         {typeof props.value === 'undefined'
           ? 'Loading...'
           : `${value}% complete`}
-      </ScreenReaderOnly>
+      </ScreenReaderOnly> */}
       <svg
         {...styles.svg(themeName, props)}
         viewBox={`0 0 ${vars.style.width} ${vars.style.width}`}
