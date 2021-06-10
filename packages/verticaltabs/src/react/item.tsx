@@ -191,7 +191,7 @@ const Tier1Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
       <span {...wrapperProps} ref={ref as RefFor<'span'>} />
     )
   return (
-    <Tag {...styles.tier1Header()} {...rest}>
+    <Tag {...styles.tier1Header()} {...rest} aria-expanded={!collapsed}>
       {icon &&
         React.cloneElement(icon, {
           size: CaretDownIcon.sizes.medium,
@@ -203,6 +203,7 @@ const Tier1Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
 
       {collapsible && (
         <CaretDownIcon
+          aria-hidden="true"
           size={CaretDownIcon.sizes.small}
           {...styles.tierHeaderLabelIcon(null, { collapsed })}
         />

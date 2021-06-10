@@ -30,6 +30,7 @@ exports[`Storyshots Components/VerticalTabs Active Item 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -46,6 +47,7 @@ exports[`Storyshots Components/VerticalTabs Active Item 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -63,6 +65,7 @@ exports[`Storyshots Components/VerticalTabs Active Item 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -79,6 +82,7 @@ exports[`Storyshots Components/VerticalTabs Active Item 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -114,6 +118,7 @@ exports[`Storyshots Components/VerticalTabs Basic 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -130,6 +135,7 @@ exports[`Storyshots Components/VerticalTabs Basic 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -146,6 +152,7 @@ exports[`Storyshots Components/VerticalTabs Basic 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -162,6 +169,7 @@ exports[`Storyshots Components/VerticalTabs Basic 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -190,7 +198,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
         data-css-1972lph=""
       >
         <button
-          aria-label="Expand"
+          aria-expanded="false"
           data-css-h54kwj=""
           onClick={[Function]}
         >
@@ -200,6 +208,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
             Group Header
           </span>
           <div
+            aria-hidden="true"
             data-css-1gtb6c4=""
             data-css-k31qw2=""
           >
@@ -225,6 +234,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -241,6 +251,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -257,6 +268,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -273,6 +285,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -301,7 +314,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
         data-css-1972lph=""
       >
         <button
-          aria-label="Collapse"
+          aria-expanded="true"
           data-css-h54kwj=""
           onClick={[Function]}
         >
@@ -311,6 +324,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
             Group Header
           </span>
           <div
+            aria-hidden="true"
             data-css-1rikgj2=""
             data-css-k31qw2=""
           >
@@ -336,6 +350,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -352,6 +367,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -368,6 +384,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -384,6 +401,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -430,6 +448,7 @@ exports[`Storyshots Components/VerticalTabs Header 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -446,6 +465,7 @@ exports[`Storyshots Components/VerticalTabs Header 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -462,6 +482,7 @@ exports[`Storyshots Components/VerticalTabs Header 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -478,6 +499,7 @@ exports[`Storyshots Components/VerticalTabs Header 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -508,6 +530,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Active 1`] = `
         data-css-1pa08jv=""
       >
         <span
+          aria-expanded={true}
           data-css-zrqgca=""
         >
           <div
@@ -550,6 +573,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Collapsible 1`] = `
         data-css-1pa08jv=""
       >
         <button
+          aria-expanded={true}
           data-css-zrqgca=""
           onClick={[Function]}
         >
@@ -573,6 +597,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Collapsible 1`] = `
             text here
           </span>
           <div
+            aria-hidden="true"
             data-css-7bjcwq=""
             data-css-k31qw2=""
           >
@@ -606,6 +631,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Header Basic 1`] = `
         data-css-1pa08jv=""
       >
         <span
+          aria-expanded={true}
           data-css-zrqgca=""
         >
           <div
@@ -647,6 +673,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Header Button 1`] = `
         data-css-1pa08jv=""
       >
         <button
+          aria-expanded={true}
           data-css-zrqgca=""
           onClick={[Function]}
         >
@@ -689,6 +716,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Header Link 1`] = `
         data-css-1pa08jv=""
       >
         <a
+          aria-expanded={true}
           data-css-zrqgca=""
           href="href"
         >
@@ -882,6 +910,7 @@ exports[`Storyshots Components/VerticalTabs Tiers 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -944,6 +973,7 @@ exports[`Storyshots Components/VerticalTabs Tiers 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -1036,6 +1066,7 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -1098,6 +1129,7 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <div
@@ -1175,7 +1207,7 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
         data-css-1972lph=""
       >
         <button
-          aria-label="Collapse"
+          aria-expanded="true"
           data-css-h54kwj=""
           onClick={[Function]}
         >
@@ -1185,6 +1217,7 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
             Polaroid slow-carb chartreuse keytar cold-pressed salvia single-origin coffee.
           </span>
           <div
+            aria-hidden="true"
             data-css-1rikgj2=""
             data-css-k31qw2=""
           >
@@ -1210,6 +1243,7 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <span
@@ -1272,6 +1306,7 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
             data-css-1pa08jv=""
           >
             <span
+              aria-expanded={true}
               data-css-zrqgca=""
             >
               <div
@@ -1376,6 +1411,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
               >
@@ -1410,6 +1446,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
               >
@@ -1444,6 +1481,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
               data-css-1pa08jv=""
             >
               <button
+                aria-expanded={true}
                 data-css-zrqgca=""
                 onClick={[Function]}
               >
@@ -1467,6 +1505,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                   People
                 </span>
                 <div
+                  aria-hidden="true"
                   data-css-7bjcwq=""
                   data-css-k31qw2=""
                 >
@@ -1581,6 +1620,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
               >
@@ -1615,6 +1655,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
               >
@@ -1687,6 +1728,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -1708,6 +1750,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -1729,6 +1772,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -1750,6 +1794,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -1793,6 +1838,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -1828,6 +1874,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -1863,6 +1910,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -1898,6 +1946,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -1933,6 +1982,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -1990,6 +2040,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -2047,6 +2098,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -2068,6 +2120,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
               data-css-1pa08jv=""
             >
               <a
+                aria-expanded={true}
                 data-css-zrqgca=""
                 href="#"
                 onClick={[Function]}
@@ -2121,6 +2174,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
               data-css-1pa08jv=""
             >
               <span
+                aria-expanded={true}
                 data-css-zrqgca=""
               >
                 <div
@@ -2154,6 +2208,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
               data-css-1pa08jv=""
             >
               <button
+                aria-expanded={true}
                 data-css-zrqgca=""
                 onClick={[Function]}
               >
@@ -2177,6 +2232,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   Operational Reports
                 </span>
                 <div
+                  aria-hidden="true"
                   data-css-7bjcwq=""
                   data-css-k31qw2=""
                 >
@@ -2307,6 +2363,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
               data-css-1pa08jv=""
             >
               <button
+                aria-expanded={true}
                 data-css-zrqgca=""
                 onClick={[Function]}
               >
@@ -2330,6 +2387,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   Review & Collaborate
                 </span>
                 <div
+                  aria-hidden="true"
                   data-css-7bjcwq=""
                   data-css-k31qw2=""
                 >
@@ -2444,6 +2502,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
               data-css-1pa08jv=""
             >
               <button
+                aria-expanded={true}
                 data-css-zrqgca=""
                 onClick={[Function]}
               >
@@ -2467,6 +2526,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   Delivery
                 </span>
                 <div
+                  aria-hidden="true"
                   data-css-7bjcwq=""
                   data-css-k31qw2=""
                 >
@@ -2512,6 +2572,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
               data-css-1pa08jv=""
             >
               <button
+                aria-expanded={true}
                 data-css-zrqgca=""
                 onClick={[Function]}
               >
@@ -2535,6 +2596,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   Fundamentals
                 </span>
                 <div
+                  aria-hidden="true"
                   data-css-7bjcwq=""
                   data-css-k31qw2=""
                 >

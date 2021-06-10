@@ -109,13 +109,8 @@ interface CollapsibleGroupComponent
   > {}
 
 const CollapsibleGroup = React.forwardRef((props, ref) => {
-  const { children, header, startOpen, groupButtonAriaLabel, ...rest } = props
+  const { children, header, startOpen, ...rest } = props
   const [open, setOpenState] = React.useState(startOpen)
-
-  const getButtonAriaLabel = () => {
-    const prefix = open ? 'Collapse' : 'Expand'
-    return groupButtonAriaLabel ? `${prefix} ${groupButtonAriaLabel}` : prefix
-  }
 
   const toggle = () => {
     setOpenState(!open)
@@ -126,8 +121,7 @@ const CollapsibleGroup = React.forwardRef((props, ref) => {
       {React.isValidElement(header) &&
         React.cloneElement<CollapsibleGroupHeaderProps>(header as any, {
           toggle,
-          open,
-          getButtonAriaLabel
+          open
         })}
 
       <Collapsible
@@ -143,7 +137,6 @@ const CollapsibleGroup = React.forwardRef((props, ref) => {
 
 interface CollapsibleGroupHeaderProps
   extends React.HTMLAttributes<HTMLElement> {
-  getButtonAriaLabel?: () => string
   open?: boolean
   tagName?: React.ElementType | keyof JSX.IntrinsicElements
   toggle?: () => void
@@ -152,26 +145,20 @@ const CollapsibleGroupHeader = React.forwardRef<
   any,
   CollapsibleGroupHeaderProps
 >((props, ref) => {
-  const {
-    children,
-    open,
-    getButtonAriaLabel,
-    tagName: Tag = 'h2',
-    toggle,
-    ...rest
-  } = props
+  const { children, open, tagName: Tag = 'h2', toggle, ...rest } = props
   const themeName = useTheme()
 
   return (
     <Tag {...rest} {...styles.groupHeader(themeName)} ref={ref}>
       <button
         {...styles.groupButton()}
-        aria-label={getButtonAriaLabel()}
         onClick={toggle}
+        aria-expanded={open ? 'true' : 'false'}
       >
         <span {...styles.headerLabel()}>{children}</span>
 
         <CaretDownIcon
+          aria-hidden="true"
           size={CaretDownIcon.sizes.small}
           {...styles.rotatable(open)}
         />
