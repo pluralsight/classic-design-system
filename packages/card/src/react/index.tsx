@@ -173,6 +173,7 @@ const FullOverlayLink: React.FC<HTMLPropsFor<'span'>> = props => (
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
 interface ImageProps extends HTMLPropsFor<'div'> {
+  alt?: string
   src: string
 }
 const Image: React.FC<ImageProps> = props => {
@@ -181,6 +182,7 @@ const Image: React.FC<ImageProps> = props => {
     <div
       {...styles.image()}
       {...rest}
+      aria-label={rest['aria-label'] || rest.alt}
       style={{ backgroundImage: `url(${src})` }}
     />
   )
@@ -258,7 +260,15 @@ const MetaData: React.FC<MetaDataProps> = props => {
   )
 }
 
-export interface CardProps extends Record<string, unknown> {
+export interface CardProps
+  extends Omit<
+      React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLDivElement>,
+        HTMLDivElement
+      >,
+      'title'
+    >,
+    Record<string, unknown> {
   actionBar?: React.ReactElement<typeof ActionBarAction>[]
   actionBarVisible?: boolean
   bonusBar?: React.ReactNode
