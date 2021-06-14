@@ -242,6 +242,11 @@ const Tier2Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
       <span {...wrapperProps} ref={ref as RefFor<'span'>} />
     )
 
+  if (props.collapsed || hideLabels) {
+    rest['aria-hidden'] = 'true'
+    rest.tabIndex = -1
+  }
+
   return (
     <Tag {...styles.tier2Header} {...rest}>
       <span {...styles.tierHeaderLabel(null, { hideLabels })}>
