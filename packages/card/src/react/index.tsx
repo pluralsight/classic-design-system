@@ -258,7 +258,15 @@ const MetaData: React.FC<MetaDataProps> = props => {
   )
 }
 
-export interface CardProps extends Record<string, unknown> {
+export interface CardProps
+  extends Omit<
+      React.DetailedHTMLProps<
+        React.HTMLAttributes<HTMLDivElement>,
+        HTMLDivElement
+      >,
+      'title'
+    >,
+    Record<string, unknown> {
   actionBar?: React.ReactElement<typeof ActionBarAction>[]
   actionBarVisible?: boolean
   bonusBar?: React.ReactNode
