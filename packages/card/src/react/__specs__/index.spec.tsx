@@ -10,7 +10,9 @@ describe('Card', () => {
   const cases = convertStoriesToJestCases(stories)
 
   it('renders', () => {
-    const { getByTestId } = render(<Card data-testid="undertest"></Card>)
+    const { getByTestId } = render(
+      <Card image={<div />} title={<div />} data-testid="undertest"></Card>
+    )
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
