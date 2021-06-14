@@ -31,7 +31,7 @@ function Example() {
             title={<Card.Title>Advanced TypeScript</Card.Title>}
             progress={0}
             image={
-              <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+              <Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />
             }
             metadata1={['Brice Wilson', 'Advanced']}
             metadata2={['0m watched']}
@@ -48,7 +48,7 @@ function Example() {
             }
             progress={20}
             image={
-              <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+              <Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />
             }
             metadata1={['Scott Allen', 'Intermediate']}
             metadata2={['23m watched']}
@@ -79,7 +79,7 @@ function Example() {
             }
             progress={67}
             image={
-              <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+              <Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />
             }
             metadata1={['Cory House', 'Intermediate']}
             metadata2={['3h 23m watched']}
@@ -102,7 +102,7 @@ function Example() {
             metadata1={['Joe Eames', 'Intermediate']}
             metadata2={['90m watched']}
             image={
-              <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+              <Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />
             }
             size={Card.sizes.small}
           />
@@ -131,7 +131,7 @@ function Example() {
           size={Card.sizes.large}
           title={<Card.Title>Large card</Card.Title>}
           metadata1={['Jim Cooper']}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
         />
       </div>
       <div style={{ maxWidth: '320px' }}>
@@ -139,7 +139,7 @@ function Example() {
           size={Card.sizes.medium}
           title={<Card.Title>Medium card</Card.Title>}
           metadata1={['Jim Cooper']}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
         />
       </div>
       <div style={{ maxWidth: '140px' }}>
@@ -147,7 +147,7 @@ function Example() {
           size={Card.sizes.small}
           title={<Card.Title>Small card</Card.Title>}
           metadata1={['Jim Cooper']}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
         />
       </div>
     </div>
@@ -160,6 +160,8 @@ export default Example
 ### Image
 
 The image will cover the space given. This space is variable width but set height according to the `size` property.
+
+To ensure screen-readable text, always pass `aria-label` for the image description.
 
 ```typescript
 import Button from '@pluralsight/ps-design-system-button'
@@ -174,7 +176,7 @@ function Example() {
         image={
           <Card.ImageLink>
             <a href="https://google.com" target="_blank">
-              <Card.Image src="https://picsum.photos/seed/picsum/540/360" />
+              <Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />
             </a>
           </Card.ImageLink>
         }
@@ -216,14 +218,14 @@ function Example() {
         <Card
           progress={25}
           title={<Card.Title>The Card Title</Card.Title>}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
         />
       </div>
       <div style={{ width: '320px' }}>
         <Card
           progress={100}
           title={<Card.Title>The Card Title</Card.Title>}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
         />
       </div>
     </div>
@@ -254,7 +256,7 @@ function Example() {
               You By Tech Groupsoft in the Stunning Desert of British Lithuania
             </Card.Title>
           }
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
         />
       </div>
       <div style={{ width: '320px' }}>
@@ -270,7 +272,7 @@ function Example() {
               </a>
             </Card.TextLink>
           }
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
         />
       </div>
     </div>
@@ -298,7 +300,7 @@ function Example() {
           metadata1={['Simon Allardice']}
           metadata2={['Intermediate', '2h 20m', 'July 24, 1847']}
           title={<Card.Title>Card with Two Lines of Meta</Card.Title>}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
         />
       </div>
       <div style={{ width: '320px' }}>
@@ -316,7 +318,7 @@ function Example() {
             "July 24, 1847 or year thereabouts, it's unclear"
           ]}
           title={<Card.Title>Super-long Metadata</Card.Title>}
-          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+          image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
         />
       </div>
     </div>
@@ -345,7 +347,7 @@ function Example() {
         ]}
         actionBarVisible
         title={<Card.Title>Action bar locked visible</Card.Title>}
-        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
       />
     </div>
   )
@@ -369,7 +371,7 @@ function Example() {
       <Card
         tag={<Card.Tag icon={<ChannelIcon />}>Channel</Card.Tag>}
         title={<Card.Title>Icon and text on card</Card.Title>}
-        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
       />
     </div>
   )
@@ -401,7 +403,7 @@ function Example() {
         ]}
         tag={<Card.Tag icon={<ChannelIcon />}>Channel</Card.Tag>}
         title={<Card.Title>Combined with other overlays</Card.Title>}
-        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
       />
     </div>
   )
@@ -424,7 +426,7 @@ function Example() {
       <Card
         bonusBar={<div>Just bonus</div>}
         title={<Card.Title>Custom elements in lower-left</Card.Title>}
-        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" />}
+        image={<Card.Image src="https://picsum.photos/seed/picsum/540/360" aria-label="img desc" />}
       />
     </div>
   )
@@ -519,6 +521,7 @@ export default Example
 ### Card.Image
 
 <TypesTable>
+  <TypesProp name="aria-label" type="string" desc="screenreader label" />
   <TypesProp name="src" required type="string" desc="image url" />
 </TypesTable>
 
