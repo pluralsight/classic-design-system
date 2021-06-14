@@ -1,15 +1,8 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
-
-import stylesheet from '../css/index'
-
-const glamor = glamorDefault || glamorExports
-
-const styles = () => glamor.css(stylesheet[`.psds-actionmenu__ellipsis`])
-
-export const Ellipsis = React.forwardRef<HTMLSpanElement, HTMLPropsFor<'span'>>(
-  (props, ref) => <span ref={ref} {...props} {...styles()} />
+interface EllipsisProps extends React.HTMLAttributes<HTMLSpanElement> {}
+export const Ellipsis = React.forwardRef<HTMLSpanElement, EllipsisProps>(
+  (props, ref) => <span ref={ref} {...props} />
 )
 
 Ellipsis.displayName = 'ActionMenu.Ellipsis'
