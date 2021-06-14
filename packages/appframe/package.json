@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-appframe",
-  "version": "5.1.13",
+  "version": "5.1.14",
   "description": "AppFrame UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -55,7 +55,7 @@
     "@pluralsight/ps-design-system-storybook-preset": "^0.6.7",
     "@pluralsight/ps-design-system-text": "^20.1.8",
     "@pluralsight/ps-design-system-theme": "^8.1.7",
-    "@pluralsight/ps-design-system-verticaltabs": "^7.1.12",
+    "@pluralsight/ps-design-system-verticaltabs": "^7.1.13",
     "@types/body-scroll-lock": "^2.6.1"
   },
   "gitHead": "731afb7a2011669a5e7d1443df39b7ab12ac7981"
