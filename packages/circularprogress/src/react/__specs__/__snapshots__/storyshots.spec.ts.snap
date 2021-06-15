@@ -3,15 +3,11 @@
 exports[`Storyshots Components/CircularProgress Animation 1`] = `
 <div>
   <div
+    aria-busy="false"
+    aria-label="Loading"
     data-css-1ie49mc=""
+    role="progressbar"
   >
-    <div
-      aria-live="off"
-      data-css-6wu9td=""
-      role="region"
-    >
-      0% complete
-    </div>
     <svg
       data-css-r8je9y=""
       version="1.1"
@@ -30,7 +26,7 @@ exports[`Storyshots Components/CircularProgress Animation 1`] = `
         data-css-17x5ehd=""
         r={22}
         strokeDasharray="138.23007675795088 138.23007675795088"
-        strokeDashoffset={138.23007675795088}
+        strokeDashoffset={103.67255756846316}
       />
     </svg>
   </div>
@@ -49,16 +45,12 @@ exports[`Storyshots Components/CircularProgress Animation 1`] = `
 
 exports[`Storyshots Components/CircularProgress Class Name Override 1`] = `
 <div
+  aria-busy="false"
+  aria-label="Loading"
   className="someString"
   data-css-1ie49mc=""
+  role="progressbar"
 >
-  <div
-    aria-live="off"
-    data-css-6wu9td=""
-    role="region"
-  >
-    Loading...
-  </div>
   <svg
     data-css-1txt1eh=""
     version="1.1"
@@ -85,20 +77,16 @@ exports[`Storyshots Components/CircularProgress Class Name Override 1`] = `
 
 exports[`Storyshots Components/CircularProgress Style Override 1`] = `
 <div
+  aria-busy="false"
+  aria-label="Loading"
   data-css-1ie49mc=""
+  role="progressbar"
   style={
     Object {
       "outline": "1px solid red",
     }
   }
 >
-  <div
-    aria-live="off"
-    data-css-6wu9td=""
-    role="region"
-  >
-    Loading...
-  </div>
   <svg
     data-css-1txt1eh=""
     version="1.1"
@@ -139,15 +127,11 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     0
   </div>
   <div
+    aria-busy="false"
+    aria-label="Loading"
     data-css-1abx40i=""
+    role="progressbar"
   >
-    <div
-      aria-live="off"
-      data-css-6wu9td=""
-      role="region"
-    >
-      0% complete
-    </div>
     <svg
       data-css-r8je9y=""
       version="1.1"
@@ -166,20 +150,16 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         data-css-17x5ehd=""
         r={22}
         strokeDasharray="138.23007675795088 138.23007675795088"
-        strokeDashoffset={138.23007675795088}
+        strokeDashoffset={103.67255756846316}
       />
     </svg>
   </div>
   <div
+    aria-busy="false"
+    aria-label="Loading"
     data-css-1ie49mc=""
+    role="progressbar"
   >
-    <div
-      aria-live="off"
-      data-css-6wu9td=""
-      role="region"
-    >
-      0% complete
-    </div>
     <svg
       data-css-r8je9y=""
       version="1.1"
@@ -198,7 +178,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         data-css-17x5ehd=""
         r={22}
         strokeDasharray="138.23007675795088 138.23007675795088"
-        strokeDashoffset={138.23007675795088}
+        strokeDashoffset={103.67255756846316}
       />
     </svg>
   </div>
@@ -206,14 +186,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     25
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={25}
     data-css-1abx40i=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      25% complete
+      25%
     </div>
     <svg
       data-css-r8je9y=""
@@ -238,14 +223,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     </svg>
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={25}
     data-css-1ie49mc=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      25% complete
+      25%
     </div>
     <svg
       data-css-r8je9y=""
@@ -273,14 +263,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     33
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={33}
     data-css-1abx40i=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      33% complete
+      33%
     </div>
     <svg
       data-css-r8je9y=""
@@ -305,14 +300,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     </svg>
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={33}
     data-css-1ie49mc=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      33% complete
+      33%
     </div>
     <svg
       data-css-r8je9y=""
@@ -340,14 +340,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     50
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={50}
     data-css-1abx40i=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      50% complete
+      50%
     </div>
     <svg
       data-css-r8je9y=""
@@ -372,14 +377,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     </svg>
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={50}
     data-css-1ie49mc=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      50% complete
+      50%
     </div>
     <svg
       data-css-r8je9y=""
@@ -407,14 +417,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     66
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={66}
     data-css-1abx40i=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      66% complete
+      66%
     </div>
     <svg
       data-css-r8je9y=""
@@ -439,14 +454,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     </svg>
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={66}
     data-css-1ie49mc=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      66% complete
+      66%
     </div>
     <svg
       data-css-r8je9y=""
@@ -474,14 +494,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     75
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={75}
     data-css-1abx40i=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      75% complete
+      75%
     </div>
     <svg
       data-css-r8je9y=""
@@ -506,14 +531,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     </svg>
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={75}
     data-css-1ie49mc=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      75% complete
+      75%
     </div>
     <svg
       data-css-r8je9y=""
@@ -541,14 +571,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     100
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={100}
     data-css-1abx40i=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      100% complete
+      complete
     </div>
     <svg
       data-css-r8je9y=""
@@ -573,14 +608,19 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     </svg>
   </div>
   <div
+    aria-busy="false"
+    aria-label="ciruclar progress"
+    aria-valuemax={100}
+    aria-valuemin={0}
+    aria-valuenow={100}
     data-css-1ie49mc=""
+    role="progressbar"
   >
     <div
-      aria-live="off"
+      aria-live="polite"
       data-css-6wu9td=""
-      role="region"
     >
-      100% complete
+      complete
     </div>
     <svg
       data-css-r8je9y=""
@@ -608,15 +648,11 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     Indeterminate
   </div>
   <div
+    aria-busy="false"
+    aria-label="Loading"
     data-css-1abx40i=""
+    role="progressbar"
   >
-    <div
-      aria-live="off"
-      data-css-6wu9td=""
-      role="region"
-    >
-      Loading...
-    </div>
     <svg
       data-css-1txt1eh=""
       version="1.1"
@@ -640,15 +676,11 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
     </svg>
   </div>
   <div
+    aria-busy="false"
+    aria-label="Loading"
     data-css-1ie49mc=""
+    role="progressbar"
   >
-    <div
-      aria-live="off"
-      data-css-6wu9td=""
-      role="region"
-    >
-      Loading...
-    </div>
     <svg
       data-css-1txt1eh=""
       version="1.1"

@@ -235,14 +235,18 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
       data-css-1f2gu5k=""
     >
       <div
+        aria-busy="false"
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={100}
         data-css-1abx40i=""
+        role="progressbar"
       >
         <div
-          aria-live="off"
+          aria-live="polite"
           data-css-6wu9td=""
-          role="region"
         >
-          100% complete
+          complete
         </div>
         <svg
           data-css-r8je9y=""
@@ -284,14 +288,18 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
       data-css-1f2gu5k=""
     >
       <div
+        aria-busy="false"
+        aria-valuemax={100}
+        aria-valuemin={0}
+        aria-valuenow={60}
         data-css-1abx40i=""
+        role="progressbar"
       >
         <div
-          aria-live="off"
+          aria-live="polite"
           data-css-6wu9td=""
-          role="region"
         >
-          60% complete
+          60%
         </div>
         <svg
           data-css-r8je9y=""
@@ -333,15 +341,11 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
       data-css-1f2gu5k=""
     >
       <div
+        aria-busy="false"
+        aria-label="Loading"
         data-css-1abx40i=""
+        role="progressbar"
       >
-        <div
-          aria-live="off"
-          data-css-6wu9td=""
-          role="region"
-        >
-          0% complete
-        </div>
         <svg
           data-css-r8je9y=""
           version="1.1"
@@ -360,7 +364,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
             data-css-17x5ehd=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
-            strokeDashoffset={138.23007675795088}
+            strokeDashoffset={103.67255756846316}
           />
         </svg>
       </div>

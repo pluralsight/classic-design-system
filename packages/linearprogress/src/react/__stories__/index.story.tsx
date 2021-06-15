@@ -9,7 +9,9 @@ export default {
   component: LinearProgress
 } as Meta
 
-export const MinWidthNoVal: Story = () => <LinearProgress />
+export const MinWidthNoVal: Story = () => (
+  <LinearProgress aria-label="linear progress" />
+)
 
 export const FillsContainer: Story = () => (
   <div
@@ -19,7 +21,7 @@ export const FillsContainer: Story = () => (
       padding: '8px'
     }}
   >
-    <LinearProgress value={66} />
+    <LinearProgress value={66} aria-label="linear progress" />
   </div>
 )
 
@@ -29,7 +31,11 @@ export const ValuesAndSizes: Story = () => (
       (acc, value) => [
         ...acc,
         <div key={'val' + value}>{value}</div>,
-        <LinearProgress key={'line' + value} value={value} />
+        <LinearProgress
+          key={'line' + value}
+          value={value}
+          aria-label="linear progress"
+        />
       ],
       []
     )}
@@ -55,7 +61,7 @@ export const Animation: Story = () => {
       <div
         style={{ display: 'flex', flexDirection: 'column', minWidth: '300px' }}
       >
-        <LinearProgress value={value} />
+        <LinearProgress value={value} aria-label="linear progress" />
         <div style={{ color: core.colorsTextIcon.highOnDark }}>
           Value: {value}
         </div>

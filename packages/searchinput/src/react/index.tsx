@@ -56,7 +56,10 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
     )
 
     const icon = loading ? (
-      <CircularProgress size={CircularProgress.sizes.small} />
+      <CircularProgress
+        size={CircularProgress.sizes.small}
+        aria-label="searching"
+      />
     ) : (
       <SearchIcon />
     )

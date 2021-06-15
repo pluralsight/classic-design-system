@@ -35,22 +35,42 @@ const styles = {
 
 interface LinearProgressProps extends HTMLPropsFor<'div'> {
   value?: number
+  'aria-label': string
 }
 
-const LinearProgress: React.FC<LinearProgressProps> = ({ value, ...rest }) => {
+const LinearProgress: React.FC<LinearProgressProps> = ({
+  value = 0,
+  'aria-label': ariaLabel,
+  ...rest
+}) => {
   const themeName = useTheme()
+  const [busy, setBusy] = React.useState<'false' | 'true'>('false')
+  React.useEffect(() => {
+    if (value) {
+      value > 0 && setBusy('true')
+      value === 100 && setBusy('false')
+    }
+    setBusy('true')
+  }, [value])
   return (
-    <div {...styles.bg({ themeName })} {...rest}>
-      <ScreenReaderOnly role="region" aria-live="off">
-        {`${value}% complete`}
-      </ScreenReaderOnly>
+    <div
+      {...styles.bg({ themeName })}
+      {...rest}
+      role="progressbar"
+      aria-busy={busy}
+      aria-label={ariaLabel}
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-valuenow={Math.round(value)}
+    >
+      {value ? (
+        <ScreenReaderOnly aria-live={'polite'}>
+          {value < 100 ? `${value}%` : 'complete'}
+        </ScreenReaderOnly>
+      ) : null}
       <div {...styles.fg({ themeName, value })} />
     </div>
   )
-}
-
-LinearProgress.defaultProps = {
-  value: 0
 }
 
 export default LinearProgress
