@@ -134,24 +134,24 @@ const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
   }
 ) as ViewToggleComponent
 
-const ActivePillBg: React.FC<HTMLPropsFor<'div'>> = props => {
+const ActivePillBg: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
   const themeName = useTheme()
   return <div {...styles.activePillBg(themeName)} aria-hidden {...props} />
 }
 
-const List = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+const List = React.forwardRef<HTMLDivElement, HTMLPropsFor<HTMLDivElement>>(
   (props, ref) => {
     const themeName = useTheme()
     return <div ref={ref} {...styles.list(themeName)} {...props} />
   }
 )
 
-const PillBgSpacer: React.FC<HTMLPropsFor<'div'>> = props => {
+const PillBgSpacer: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
   const themeName = useTheme()
   return <div {...styles.pillBgSpacer(themeName)} {...props} />
 }
 
-interface OptionButtonProps extends HTMLPropsFor<'button'> {
+interface OptionButtonProps extends HTMLPropsFor<HTMLButtonElement> {
   active: boolean
 }
 const OptionButton = React.forwardRef<HTMLButtonElement, OptionButtonProps>(
@@ -167,10 +167,7 @@ const OptionButton = React.forwardRef<HTMLButtonElement, OptionButtonProps>(
 )
 
 interface OptionProps
-  extends Omit<
-    React.ComponentProps<typeof OptionButton>,
-    '_i' | '_onselect' | 'active'
-  > {
+  extends Omit<OptionButtonProps, '_i' | '_onselect' | 'active'> {
   _i?: number
   _onSelect?: (evt: React.MouseEvent<HTMLButtonElement>, index: number) => void
   active?: boolean
