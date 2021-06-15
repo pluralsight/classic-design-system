@@ -1532,8 +1532,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -1550,8 +1552,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -1567,8 +1571,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -1584,8 +1590,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -1601,8 +1609,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2259,8 +2269,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2276,8 +2288,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2293,8 +2307,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2310,8 +2326,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2327,8 +2345,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2344,8 +2364,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2414,8 +2436,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2431,8 +2455,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2449,8 +2475,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2466,8 +2494,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2483,8 +2513,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2553,8 +2585,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2623,8 +2657,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2640,8 +2676,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""
@@ -2657,8 +2695,10 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                   data-css-1xd3fna=""
                 >
                   <a
+                    aria-hidden="true"
                     href="#"
                     onClick={[Function]}
+                    tabIndex={-1}
                   >
                     <span
                       data-css-113cwui=""

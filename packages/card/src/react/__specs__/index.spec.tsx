@@ -10,17 +10,18 @@ describe('Card', () => {
   const cases = convertStoriesToJestCases(stories)
 
   it('renders', () => {
-    const { getByTestId } = render(<Card data-testid="undertest"></Card>)
+    const { getByTestId } = render(
+      <Card image={<div />} title={<div />} data-testid="undertest"></Card>
+    )
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
 
-  // TODO: enable and fix
-  // describe.each(cases)('%s story', (_name, Story) => {
-  //   it('has no axe-core violations', async () => {
-  //     const { container } = render(<Story {...Story.args} />)
-  //     const results = await axe(container)
-  //     expect(results).toHaveNoViolations()
-  //   })
-  // })
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+      expect(results).toHaveNoViolations()
+    })
+  })
 })

@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import { RefFor } from '@pluralsight/ps-design-system-util'
+import { canUseDOM, RefFor } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 const FOCUSABLE_SELECTORS = [
@@ -52,8 +52,25 @@ export default function useFocusManager(
   }, [focusableNodes, ref])
 
   React.useEffect(() => {
+    let observer: MutationObserver | undefined
+    if (canUseDOM() && node instanceof Node) {
+      observer = new MutationObserver(mutationList => {
+        mutationList.forEach(mutation => {
+          if (mutation.type === 'childList') {
+            const nextEls = getFocusableChildNodes(node)
+            setFocusableEls(nextEls)
+          }
+        })
+      })
+      observer.observe(node, { childList: true })
+    }
+
     const nextEls = getFocusableChildNodes(node)
     setFocusableEls(nextEls)
+
+    return () => {
+      observer?.disconnect()
+    }
   }, [node])
 
   React.useEffect(() => {

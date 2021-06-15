@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-searchinput",
-  "version": "9.1.7",
+  "version": "9.1.9",
   "description": "Searchinput UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -29,12 +29,12 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^22.1.7",
-    "@pluralsight/ps-design-system-circularprogress": "^9.1.5",
-    "@pluralsight/ps-design-system-core": "^8.1.2",
-    "@pluralsight/ps-design-system-icon": "^23.1.7",
-    "@pluralsight/ps-design-system-textinput": "^11.1.7",
-    "@pluralsight/ps-design-system-util": "^9.2.1"
+    "@pluralsight/ps-design-system-button": "^22.1.9",
+    "@pluralsight/ps-design-system-circularprogress": "^9.1.7",
+    "@pluralsight/ps-design-system-core": "^8.1.4",
+    "@pluralsight/ps-design-system-icon": "^23.1.9",
+    "@pluralsight/ps-design-system-textinput": "^11.1.9",
+    "@pluralsight/ps-design-system-util": "^9.2.3"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^5.1.2",
@@ -43,8 +43,9 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^3.1.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.6.5",
-    "@pluralsight/ps-design-system-theme": "^8.1.5"
-  }
+    "@pluralsight/ps-design-system-build": "^3.1.3",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.6.7",
+    "@pluralsight/ps-design-system-theme": "^8.1.7"
+  },
+  "gitHead": "731afb7a2011669a5e7d1443df39b7ab12ac7981"
 }

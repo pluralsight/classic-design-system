@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@13.0.4...@pluralsight/ps-design-system-carousel@13.0.5) (2021-06-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
+## [13.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@13.0.3...@pluralsight/ps-design-system-carousel@13.0.4) (2021-06-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
+## [13.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@13.0.2...@pluralsight/ps-design-system-carousel@13.0.3) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
+## [13.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@13.0.1...@pluralsight/ps-design-system-carousel@13.0.2) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-carousel
+
+
+
+
+
 ## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@13.0.0...@pluralsight/ps-design-system-carousel@13.0.1) (2021-06-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

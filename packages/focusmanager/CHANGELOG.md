@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.8...@pluralsight/ps-design-system-focusmanager@7.1.9) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [7.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.7...@pluralsight/ps-design-system-focusmanager@7.1.8) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [7.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.6...@pluralsight/ps-design-system-focusmanager@7.1.7) (2021-06-10)
+
+
+### Bug Fixes
+
+* **focusmanager:** allow detection of dynamic focuable children ([a28bdb4](https://github.com/pluralsight/design-system/commit/a28bdb44f924fa1b3d60ab5dc67dbb65b70a4738)), closes [#1715](https://github.com/pluralsight/design-system/issues/1715)
+
+
+
+
+
 ## [7.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.5...@pluralsight/ps-design-system-focusmanager@7.1.6) (2021-06-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager

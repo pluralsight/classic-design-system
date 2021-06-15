@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@12.1.6...@pluralsight/ps-design-system-link@12.1.7) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
+## [12.1.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@12.1.5...@pluralsight/ps-design-system-link@12.1.6) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-link
+
+
+
+
+
 ## [12.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@12.1.4...@pluralsight/ps-design-system-link@12.1.5) (2021-06-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-link

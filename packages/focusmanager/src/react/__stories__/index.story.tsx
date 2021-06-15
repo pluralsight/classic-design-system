@@ -1,8 +1,8 @@
+import * as Text from '@pluralsight/ps-design-system-text'
+import Button from '@pluralsight/ps-design-system-button'
 import { storiesOf } from '@storybook/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
-
-import * as Text from '@pluralsight/ps-design-system-text'
 
 import FocusManager from '../index'
 
@@ -54,3 +54,18 @@ export const NoFocusableChildren: Story = () => (
     </Text.P>
   </FocusManager>
 )
+
+export const DynamicChildren: Story = () => {
+  const [showButton, setShowButton] = React.useState(false)
+
+  React.useEffect(() => {
+    setTimeout(() => setShowButton(true), 1000)
+  }, [])
+
+  return (
+    <FocusManager trapped={true} autofocus={true}>
+      <Button>Is tabbable</Button>
+      {showButton && <Button>Is not tabbable</Button>}
+    </FocusManager>
+  )
+}
