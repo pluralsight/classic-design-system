@@ -5,14 +5,7 @@ exports[`Storyshots Components/Switch Basic 1`] = `
   data-css-yto836=""
 >
   <label
-    aria-checked={false}
     data-css-nq9iqf=""
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    role="checkbox"
-    tabIndex={0}
   >
     <div
       data-css-1lu7sfl=""
@@ -28,8 +21,13 @@ exports[`Storyshots Components/Switch Basic 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
       readOnly={true}
-      tabIndex={-1}
+      tabIndex={0}
       type="checkbox"
     />
   </label>
@@ -41,14 +39,7 @@ exports[`Storyshots Components/Switch Checked 1`] = `
   data-css-yto836=""
 >
   <label
-    aria-checked={true}
     data-css-nq9iqf=""
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    role="checkbox"
-    tabIndex={0}
   >
     <div
       data-css-1lu7sfl=""
@@ -64,8 +55,13 @@ exports[`Storyshots Components/Switch Checked 1`] = `
     <input
       checked={true}
       data-css-6wu9td=""
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
       readOnly={true}
-      tabIndex={-1}
+      tabIndex={0}
       type="checkbox"
     />
   </label>
@@ -77,14 +73,7 @@ exports[`Storyshots Components/Switch Checked Error 1`] = `
   data-css-yto836=""
 >
   <label
-    aria-checked={true}
     data-css-nq9iqf=""
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    role="checkbox"
-    tabIndex={0}
   >
     <div
       data-css-mmyfiy=""
@@ -100,8 +89,13 @@ exports[`Storyshots Components/Switch Checked Error 1`] = `
     <input
       checked={true}
       data-css-6wu9td=""
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
       readOnly={true}
-      tabIndex={-1}
+      tabIndex={0}
       type="checkbox"
     />
   </label>
@@ -116,14 +110,7 @@ exports[`Storyshots Components/Switch Colors 1`] = `
     data-css-1gfhbu8=""
   >
     <label
-      aria-checked={true}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -139,20 +126,18 @@ exports[`Storyshots Components/Switch Colors 1`] = `
       <input
         checked={true}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
     </label>
     <label
-      aria-checked={true}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -168,20 +153,18 @@ exports[`Storyshots Components/Switch Colors 1`] = `
       <input
         checked={true}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
     </label>
     <label
-      aria-checked={true}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -197,8 +180,13 @@ exports[`Storyshots Components/Switch Colors 1`] = `
       <input
         checked={true}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
     </label>
@@ -211,14 +199,7 @@ exports[`Storyshots Components/Switch Disabled 1`] = `
   data-css-yto836=""
 >
   <label
-    aria-checked={false}
     data-css-wytdm9=""
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    role="checkbox"
-    tabIndex={-1}
   >
     <div
       data-css-1lu7sfl=""
@@ -234,6 +215,10 @@ exports[`Storyshots Components/Switch Disabled 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      disabled={true}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
       readOnly={true}
       tabIndex={-1}
       type="checkbox"
@@ -247,14 +232,7 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
   data-css-yto836=""
 >
   <label
-    aria-checked={false}
     data-css-wytdm9=""
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    role="checkbox"
-    tabIndex={-1}
   >
     <div
       data-css-mmyfiy=""
@@ -270,6 +248,10 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      disabled={true}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
       readOnly={true}
       tabIndex={-1}
       type="checkbox"
@@ -283,14 +265,7 @@ exports[`Storyshots Components/Switch Error 1`] = `
   data-css-yto836=""
 >
   <label
-    aria-checked={false}
     data-css-nq9iqf=""
-    onBlur={[Function]}
-    onClick={[Function]}
-    onFocus={[Function]}
-    onKeyDown={[Function]}
-    role="checkbox"
-    tabIndex={0}
   >
     <div
       data-css-mmyfiy=""
@@ -306,8 +281,13 @@ exports[`Storyshots Components/Switch Error 1`] = `
     <input
       checked={false}
       data-css-6wu9td=""
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
       readOnly={true}
-      tabIndex={-1}
+      tabIndex={0}
       type="checkbox"
     />
   </label>
@@ -322,14 +302,7 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
     data-css-1gfhbu8=""
   >
     <label
-      aria-checked={false}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -345,8 +318,13 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       <input
         checked={false}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
       <span
@@ -356,14 +334,7 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       </span>
     </label>
     <label
-      aria-checked={false}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -379,8 +350,13 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       <input
         checked={false}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
       <span
@@ -390,14 +366,7 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       </span>
     </label>
     <label
-      aria-checked={false}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -413,8 +382,13 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       <input
         checked={false}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
       <span
@@ -435,14 +409,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
     data-css-1gfhbu8=""
   >
     <label
-      aria-checked={false}
       data-css-1u14hec=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -458,8 +425,13 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       <input
         checked={false}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
       <span
@@ -471,14 +443,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       </span>
     </label>
     <label
-      aria-checked={false}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -494,8 +459,13 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       <input
         checked={false}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
       <span
@@ -507,14 +477,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       </span>
     </label>
     <label
-      aria-checked={false}
       data-css-1u14hec=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -530,8 +493,13 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       <input
         checked={false}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
       <span
@@ -543,14 +511,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       </span>
     </label>
     <label
-      aria-checked={false}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -566,8 +527,13 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       <input
         checked={false}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
       <span
@@ -590,14 +556,7 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
     data-css-1gfhbu8=""
   >
     <label
-      aria-checked={false}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -613,20 +572,18 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
       <input
         checked={false}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
     </label>
     <label
-      aria-checked={false}
       data-css-nq9iqf=""
-      onBlur={[Function]}
-      onClick={[Function]}
-      onFocus={[Function]}
-      onKeyDown={[Function]}
-      role="checkbox"
-      tabIndex={0}
     >
       <div
         data-css-1lu7sfl=""
@@ -642,8 +599,13 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
       <input
         checked={false}
         data-css-6wu9td=""
+        disabled={false}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
         readOnly={true}
-        tabIndex={-1}
+        tabIndex={0}
         type="checkbox"
       />
     </label>

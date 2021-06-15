@@ -147,8 +147,6 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
         evt.type === 'click' ||
         ('key' in evt && evt.type === 'keydown' && evt.key === ' ')
       ) {
-        if (disabled || !isFunction(onClick)) return
-
         evt.preventDefault()
         onClick && onClick(!checked)
       }
@@ -159,18 +157,12 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
       onFocus && onFocus(evt)
     }
 
+    // TODO: support field name
     return (
       <label
         className={className}
         style={style}
-        aria-checked={checked}
-        role="checkbox"
         {...styles.switch(disabled, labelAlign)}
-        tabIndex={disabled ? -1 : tabIndex}
-        onClick={handleClick}
-        onBlur={handleBlur}
-        onFocus={handleFocus}
-        onKeyDown={handleClick}
         {...rest}
       >
         <Halo error={error} shape={Halo.shapes.pill} inline visible={isFocused}>
@@ -181,9 +173,14 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
 
         <input
           checked={checked}
+          disabled={disabled}
           readOnly
           ref={ref as RefFor<'input'>}
-          tabIndex={-1}
+          onKeyDown={handleClick}
+          onClick={disabled ? undefined : handleClick}
+          onBlur={handleBlur}
+          onFocus={handleFocus}
+          tabIndex={disabled ? -1 : tabIndex}
           type="checkbox"
           {...styles.checkbox()}
         />
