@@ -60,6 +60,9 @@ CheckedError.args = { ...defaultArgs, checked: true, error: true }
 export const DisabledError = Template.bind({})
 DisabledError.args = { ...defaultArgs, disabled: true, error: true }
 
+export const Named = Template.bind({})
+DisabledError.args = { ...defaultArgs, name: 'form-name-for-switch' }
+
 export const Colors: Story = args => (
   <StoryGrid>
     {Object.values(Switch.colors).map((color, i) => (

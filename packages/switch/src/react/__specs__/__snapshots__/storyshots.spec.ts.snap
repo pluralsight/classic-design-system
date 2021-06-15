@@ -239,10 +239,10 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
   data-css-yto836=""
 >
   <label
-    data-css-wytdm9=""
+    data-css-nq9iqf=""
   >
     <div
-      data-css-mmyfiy=""
+      data-css-1lu7sfl=""
     >
       <div
         data-css-19bj9q0=""
@@ -256,12 +256,14 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
       aria-label="Switch label"
       checked={false}
       data-css-6wu9td=""
-      disabled={true}
+      disabled={false}
+      name="form-name-for-switch"
       onBlur={[Function]}
+      onClick={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
       readOnly={true}
-      tabIndex={-1}
+      tabIndex={0}
       type="checkbox"
     />
   </label>
@@ -558,6 +560,40 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       </span>
     </label>
   </div>
+</div>
+`;
+
+exports[`Storyshots Components/Switch Named 1`] = `
+<div
+  data-css-yto836=""
+>
+  <label
+    data-css-nq9iqf=""
+  >
+    <div
+      data-css-1lu7sfl=""
+    >
+      <div
+        data-css-19bj9q0=""
+      >
+        <div
+          data-css-1o90whm=""
+        />
+      </div>
+    </div>
+    <input
+      checked={false}
+      data-css-6wu9td=""
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      readOnly={true}
+      tabIndex={0}
+      type="checkbox"
+    />
+  </label>
 </div>
 `;
 

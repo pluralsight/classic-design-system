@@ -5,7 +5,6 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
-  isFunction,
   RefForwardingComponent,
   HTMLPropsFor,
   RefFor
@@ -93,6 +92,7 @@ interface SwitchProps extends Omit<HTMLPropsFor<'label'>, 'onClick'> {
   disabled?: boolean
   error?: boolean
   labelAlign?: ValueOf<typeof vars.labelAligns>
+  name?: string
   onBlur?: React.FocusEventHandler
   onClick?: (checked: boolean) => void
   onFocus?: React.FocusEventHandler
@@ -116,6 +116,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
       disabled = false,
       error = false,
       labelAlign = vars.labelAligns.right,
+      name,
       size = vars.sizes.large,
       tabIndex = 0,
       onClick,
@@ -158,7 +159,6 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
       onFocus && onFocus(evt)
     }
 
-    // TODO: support field name
     return (
       <label
         className={className}
@@ -178,6 +178,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
           disabled={disabled}
           readOnly
           ref={ref as RefFor<'input'>}
+          name={name}
           onKeyDown={handleClick}
           onClick={disabled ? undefined : handleClick}
           onBlur={handleBlur}
