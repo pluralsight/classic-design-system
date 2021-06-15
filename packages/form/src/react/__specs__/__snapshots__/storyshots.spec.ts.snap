@@ -715,14 +715,12 @@ exports[`Storyshots Components/Form Sample 1`] = `
                   data-css-iwspcj=""
                 >
                   <div
-                    aria-checked={false}
                     data-css-fdf00s=""
-                    role="radio"
-                    tabIndex={-1}
                   />
                 </div>
               </div>
               <input
+                checked={false}
                 data-css-fplhjw=""
                 name="sample"
                 onBlur={[Function]}
@@ -749,14 +747,12 @@ exports[`Storyshots Components/Form Sample 1`] = `
                   data-css-iwspcj=""
                 >
                   <div
-                    aria-checked={false}
                     data-css-fdf00s=""
-                    role="radio"
-                    tabIndex={-1}
                   />
                 </div>
               </div>
               <input
+                checked={false}
                 data-css-fplhjw=""
                 name="sample"
                 onBlur={[Function]}
@@ -786,20 +782,13 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          aria-checked={false}
           data-css-nq9iqf=""
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          role="checkbox"
           style={
             Object {
               "maxWidth": "none",
               "width": "100%",
             }
           }
-          tabIndex={0}
         >
           <div
             data-css-1lu7sfl=""
@@ -815,8 +804,13 @@ exports[`Storyshots Components/Form Sample 1`] = `
           <input
             checked={false}
             data-css-6wu9td=""
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
             readOnly={true}
-            tabIndex={-1}
+            tabIndex={0}
             type="checkbox"
           />
           <span
