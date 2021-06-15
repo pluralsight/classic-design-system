@@ -27,6 +27,7 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
 }
 
 const defaultArgs = {
+  'aria-label': 'Switch label',
   onFocus: action('on focus'),
   onBlur: action('on blur')
 }

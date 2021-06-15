@@ -110,6 +110,7 @@ interface SwitchComponent
 const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
   (
     {
+      'aria-label': ariaLabel,
       checked = false,
       color = vars.colors.orange,
       disabled = false,
@@ -172,6 +173,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
         </Halo>
 
         <input
+          aria-label={ariaLabel}
           checked={checked}
           disabled={disabled}
           readOnly
