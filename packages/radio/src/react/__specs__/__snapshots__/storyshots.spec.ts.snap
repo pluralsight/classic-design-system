@@ -36,7 +36,7 @@ exports[`Storyshots Components/Radio Basic 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -68,7 +68,7 @@ exports[`Storyshots Components/Radio Basic 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -100,7 +100,7 @@ exports[`Storyshots Components/Radio Basic 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -178,7 +178,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -214,7 +214,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
         </div>
         <input
           checked={true}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -246,7 +246,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -307,7 +307,7 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -338,7 +338,7 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -369,7 +369,7 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -429,7 +429,7 @@ exports[`Storyshots Components/Radio Error 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -461,7 +461,7 @@ exports[`Storyshots Components/Radio Error 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -493,7 +493,7 @@ exports[`Storyshots Components/Radio Error 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -554,7 +554,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -586,7 +586,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -618,7 +618,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -669,7 +669,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -701,7 +701,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -733,7 +733,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -777,7 +777,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -809,7 +809,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -841,7 +841,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -893,7 +893,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -925,7 +925,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -957,7 +957,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1017,7 +1017,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
         </div>
         <input
           checked={true}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1049,7 +1049,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1081,7 +1081,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1138,7 +1138,7 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1170,7 +1170,7 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1202,7 +1202,7 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
         </div>
         <input
           checked={false}
-          data-css-fplhjw=""
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
