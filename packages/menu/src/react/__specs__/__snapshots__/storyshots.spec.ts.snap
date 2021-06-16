@@ -2,8 +2,9 @@
 
 exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
 <ul
+  aria-label="some label"
   data-css-rls1dj=""
-  role="menu"
+  role="listbox"
 >
   <li
     aria-selected={false}
@@ -12,7 +13,7 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="menuitem"
+    role="option"
     tabIndex={-1}
   >
     <button
@@ -32,7 +33,7 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="menuitem"
+    role="option"
     tabIndex={-1}
   >
     <button
@@ -72,7 +73,7 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="menuitem"
+    role="option"
   >
     <button
       data-css-141hx40=""
@@ -90,8 +91,9 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
 
 exports[`Storyshots Components/Menu Active Item 1`] = `
 <ul
+  aria-label="some label"
   data-css-rls1dj=""
-  role="menu"
+  role="listbox"
 >
   <li
     aria-selected={false}
@@ -100,7 +102,7 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="menuitem"
+    role="option"
     tabIndex={-1}
   >
     <button
@@ -120,7 +122,7 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="menuitem"
+    role="option"
     tabIndex={-1}
   >
     <button
@@ -141,7 +143,7 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="menuitem"
+    role="option"
   >
     <button
       data-css-141hx40=""
@@ -163,7 +165,6 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -188,7 +189,6 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -213,7 +213,6 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -246,7 +245,6 @@ exports[`Storyshots Components/Menu Divider Edge 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -277,7 +275,6 @@ exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -300,7 +297,6 @@ exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
     data-css-shsjok=""
   />
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -320,7 +316,6 @@ exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -348,7 +343,6 @@ exports[`Storyshots Components/Menu Ellipsis 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -380,7 +374,6 @@ exports[`Storyshots Components/Menu Item Disabled 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
@@ -409,7 +402,6 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -429,7 +421,6 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
@@ -450,7 +441,6 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -470,7 +460,6 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
@@ -499,7 +488,6 @@ exports[`Storyshots Components/Menu Item Disabled Multiple 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
@@ -520,7 +508,6 @@ exports[`Storyshots Components/Menu Item Disabled Multiple 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
@@ -549,7 +536,6 @@ exports[`Storyshots Components/Menu Item Link 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -579,7 +565,6 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -601,7 +586,6 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
     </a>
   </li>
   <li
-    aria-selected={false}
     data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
@@ -624,7 +608,6 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
     </a>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -646,7 +629,6 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
     </a>
   </li>
   <li
-    aria-selected={false}
     data-css-pty2be=""
     data-disabled={true}
     onBlur={[Function]}
@@ -677,7 +659,6 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -717,7 +698,6 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -757,7 +737,6 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -797,7 +776,6 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -817,7 +795,6 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -841,11 +818,11 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
 
 exports[`Storyshots Components/Menu Item With Description 1`] = `
 <ul
+  aria-label="some label"
   data-css-rls1dj=""
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -889,8 +866,9 @@ exports[`Storyshots Components/Menu Item With Description 1`] = `
 
 exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
 <ul
+  aria-label="some label"
   data-css-rls1dj=""
-  role="menu"
+  role="listbox"
 >
   <li
     aria-selected={true}
@@ -899,7 +877,7 @@ exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
     onClick={[Function]}
     onFocus={[Function]}
     onKeyDown={[Function]}
-    role="menuitem"
+    role="option"
     tabIndex={-1}
   >
     <button
@@ -952,7 +930,6 @@ exports[`Storyshots Components/Menu Long Text 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -976,7 +953,6 @@ exports[`Storyshots Components/Menu Long Text 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1008,7 +984,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1029,7 +1004,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1050,7 +1024,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1071,7 +1044,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1092,7 +1064,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1113,7 +1084,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1134,7 +1104,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1155,7 +1124,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1176,7 +1144,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1197,7 +1164,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1218,7 +1184,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1239,7 +1204,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1260,7 +1224,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1281,7 +1244,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1302,7 +1264,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1323,7 +1284,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1344,7 +1304,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1365,7 +1324,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1386,7 +1344,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1407,7 +1364,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1428,7 +1384,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1449,7 +1404,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1470,7 +1424,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1491,7 +1444,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1512,7 +1464,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1533,7 +1484,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1554,7 +1504,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1575,7 +1524,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1596,7 +1544,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1617,7 +1564,6 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1646,7 +1592,6 @@ exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1666,7 +1611,6 @@ exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1686,7 +1630,6 @@ exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1714,7 +1657,6 @@ exports[`Storyshots Components/Menu Menu Items One 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1742,7 +1684,6 @@ exports[`Storyshots Components/Menu Null Item 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1762,7 +1703,6 @@ exports[`Storyshots Components/Menu Null Item 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1790,7 +1730,6 @@ exports[`Storyshots Components/Menu On Click 1`] = `
   role="menu"
 >
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1810,7 +1749,6 @@ exports[`Storyshots Components/Menu On Click 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1830,7 +1768,6 @@ exports[`Storyshots Components/Menu On Click 1`] = `
     </button>
   </li>
   <li
-    aria-selected={false}
     data-css-12h6umw=""
     onBlur={[Function]}
     onClick={[Function]}
@@ -1884,7 +1821,6 @@ Array [
         role="menu"
       >
         <li
-          aria-selected={false}
           data-css-12h6umw=""
           onBlur={[Function]}
           onClick={[Function]}
@@ -1904,7 +1840,6 @@ Array [
           </button>
         </li>
         <li
-          aria-selected={false}
           data-css-12h6umw=""
           onBlur={[Function]}
           onClick={[Function]}
@@ -1924,7 +1859,6 @@ Array [
           </button>
         </li>
         <li
-          aria-selected={false}
           data-css-12h6umw=""
           onBlur={[Function]}
           onClick={[Function]}
@@ -1979,7 +1913,6 @@ Array [
       }
     >
       <li
-        aria-selected={false}
         data-css-12h6umw=""
         onBlur={[Function]}
         onClick={[Function]}
@@ -1999,7 +1932,6 @@ Array [
         </button>
       </li>
       <li
-        aria-selected={false}
         data-css-12h6umw=""
         onBlur={[Function]}
         onClick={[Function]}
@@ -2019,7 +1951,6 @@ Array [
         </button>
       </li>
       <li
-        aria-selected={false}
         data-css-12h6umw=""
         onBlur={[Function]}
         onClick={[Function]}

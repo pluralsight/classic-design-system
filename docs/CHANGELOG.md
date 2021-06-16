@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.8...@pluralsight/ps-design-system-docs@0.28.9) (2021-06-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.7...@pluralsight/ps-design-system-docs@0.28.8) (2021-06-16)
+
+
+### Bug Fixes
+
+* **menu:** only use aria-selected on options for role=listbox ([f69dc9d](https://github.com/pluralsight/design-system/commit/f69dc9df37f89bc57ca1b64afc5ced17cdae5887)), closes [#1783](https://github.com/pluralsight/design-system/issues/1783)
+
+
+
+
+
 ## [0.28.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.6...@pluralsight/ps-design-system-docs@0.28.7) (2021-06-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

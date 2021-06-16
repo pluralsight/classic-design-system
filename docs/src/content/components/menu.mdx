@@ -5,13 +5,37 @@ route: /components/menu
 
 import Menu from '@pluralsight/ps-design-system-menu'
 
-# Action Menu
+# Menu
 
 <Intro>Stateless Menu component</Intro>
 
 <TableOfContents {...props} />
 
 ## Examples
+
+### Accessibility
+
+The Menu has flexible ARIA roles. By default, it is a [`menu`](https://www.w3.org/TR/wai-aria-practices/#menu). But it is flexible enough to be used as a [`listbox`](https://www.w3.org/TR/wai-aria-practices/#Listbox).
+
+Use the `aria-label`, `role` and `optionRole` props to change it.
+
+```typescript
+import React from 'react'
+import Menu from '@pluralsight/ps-design-system-menu'
+function Example() {
+  return (
+    <Menu aria-label="Blanched beans" role="listbox" optionRole="option">
+      <Menu.Item>
+        Navy
+      </Menu.Item>
+      <Menu.Item active>
+        Butter
+      </Menu.Item>
+    </Menu>
+  )
+}
+export default Example
+```
 
 ### Ellipsis
 
