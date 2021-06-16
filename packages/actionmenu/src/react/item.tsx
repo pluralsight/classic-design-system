@@ -53,13 +53,13 @@ interface BaseItemProps {
 
 interface AnchorProps
   extends BaseItemProps,
-    Omit<HTMLPropsFor<'a'>, 'onClick' | 'ref'> {
+    Omit<HTMLPropsFor<HTMLAnchorElement>, 'onClick' | 'ref'> {
   ref?: RefFor<'li'>
   tagName?: 'a'
 }
 interface ButtonProps
   extends BaseItemProps,
-    Omit<HTMLPropsFor<'button'>, 'onClick' | 'ref' | 'value'> {
+    Omit<HTMLPropsFor<HTMLButtonElement>, 'onClick' | 'ref' | 'value'> {
   ref?: RefFor<'li'>
   tagName: 'button'
 }
@@ -142,18 +142,18 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
     const Wrapper: React.FC = wrapperProps =>
       isAnchor ? (
         <a
-          onClick={handleClick as React.MouseEventHandler<HTMLAnchorElement>}
+          onClick={handleClick}
           role="menuitem"
           aria-disabled={Boolean(disabled)}
-          {...(rest as HTMLPropsFor<'a'>)}
+          {...(rest as HTMLPropsFor<HTMLAnchorElement>)}
           {...wrapperProps}
         />
       ) : (
         <button
           disabled={disabled}
-          onClick={handleClick as React.MouseEventHandler<HTMLButtonElement>}
+          onClick={handleClick}
           role="menuitem"
-          {...(rest as HTMLPropsFor<'button'>)}
+          {...(rest as HTMLPropsFor<HTMLButtonElement>)}
           {...wrapperProps}
         />
       )

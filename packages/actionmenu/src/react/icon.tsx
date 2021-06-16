@@ -13,7 +13,7 @@ const styles = ({ marginLeft, marginRight }: Props) =>
     marginLeft && stylesheet[`.psds-actionmenu__icon-left`]
   )
 
-interface Props extends HTMLPropsFor<'span'> {
+interface Props extends HTMLPropsFor<HTMLSpanElement> {
   marginRight?: boolean
   marginLeft?: boolean
 }

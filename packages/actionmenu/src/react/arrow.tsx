@@ -11,7 +11,7 @@ const styles = {
   arrowSvg: () => glamor.css(stylesheet['.psds-actionmenu__item__arrow__svg'])
 }
 
-export const Arrow: React.FC<HTMLPropsFor<'div'>> = props => (
+export const Arrow: React.FC<HTMLPropsFor<HTMLDivElement>> = props => (
   <div {...styles.arrow()} {...props} data-submenu-arrow>
     <svg
       width="4"
