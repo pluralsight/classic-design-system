@@ -86,14 +86,13 @@ const CircularProgress = React.forwardRef<
 
   const dashOffset =
     ((100 - (value || defaultIndeterminateValue)) / 100) * circumference
-  const [busy, setBusy] = React.useState<'false' | 'true'>('false')
-  React.useEffect(() => {
-    if (value) {
-      value > 0 && setBusy('true')
-      value === 100 && setBusy('false')
-    }
-    setBusy('true')
-  }, [value])
+  const busy = value 
+    ? value === 100
+      ? 'false'
+      : value > 0
+        ? 'true'
+        : 'false'
+    : 'true'
   const ariaAttributes = value
     ? {
         'aria-label': ariaLabel,
