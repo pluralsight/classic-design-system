@@ -10,7 +10,7 @@ export default {
 } as Meta
 
 export const MinWidthNoVal: Story = () => (
-  <LinearProgress aria-label="linear progress" />
+  <LinearProgress aria-label="download video" />
 )
 
 export const FillsContainer: Story = () => (
@@ -21,7 +21,7 @@ export const FillsContainer: Story = () => (
       padding: '8px'
     }}
   >
-    <LinearProgress value={66} aria-label="linear progress" />
+    <LinearProgress value={66} aria-label="download video" />
   </div>
 )
 
@@ -34,7 +34,7 @@ export const ValuesAndSizes: Story = () => (
         <LinearProgress
           key={'line' + value}
           value={value}
-          aria-label="linear progress"
+          aria-label="download video"
         />
       ],
       []
@@ -61,7 +61,7 @@ export const Animation: Story = () => {
       <div
         style={{ display: 'flex', flexDirection: 'column', minWidth: '300px' }}
       >
-        <LinearProgress value={value} aria-label="linear progress" />
+        <LinearProgress value={value} aria-label="download video" />
         <div style={{ color: core.colorsTextIcon.highOnDark }}>
           Value: {value}
         </div>

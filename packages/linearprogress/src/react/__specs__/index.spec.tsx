@@ -13,7 +13,7 @@ describe('LinearProgress', () => {
     const { getByTestId } = render(
       <LinearProgress
         data-testid="mock-component"
-        aria-label="linear progress"
+        aria-label="download video"
       />
     )
 
