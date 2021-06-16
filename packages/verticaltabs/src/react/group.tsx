@@ -46,7 +46,7 @@ const styles = {
   headerLabel: () => glamor.css(stylesheet['.psds-verticaltabs__header__label'])
 }
 
-interface GroupProps extends HTMLPropsFor<'li'> {
+interface GroupProps extends HTMLPropsFor<HTMLLIElement> {
   header?: React.ReactElement<typeof GroupHeader>
   startOpen?: boolean
 }
@@ -91,7 +91,7 @@ Group.Header = GroupHeader
 Group.displayName = 'VerticalTabs.Group'
 Group.Header.displayName = 'VerticalTabs.Group.Header'
 
-interface CollapsibleGroupProps extends HTMLPropsFor<'div'> {
+interface CollapsibleGroupProps extends HTMLPropsFor<HTMLDivElement> {
   groupButtonAriaLabel?: string
   header?: React.ReactElement<typeof CollapsibleGroupHeader>
   startOpen?: boolean

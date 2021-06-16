@@ -92,7 +92,7 @@ const styles: { [key: string]: StyleFn } = {
   }
 }
 
-interface ItemProps extends HTMLPropsFor<'li'> {
+interface ItemProps extends HTMLPropsFor<HTMLLIElement> {
   active?: React.ReactNode
   collapsed?: boolean
   collapsible?: boolean
@@ -106,17 +106,21 @@ interface ItemHeaderBaseProps {
   collapsible?: boolean
   icon?: React.ReactElement
 }
-interface AnchorHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'a'> {
+interface AnchorHeaderProps
+  extends ItemHeaderBaseProps,
+    HTMLPropsFor<HTMLAnchorElement> {
   onclick?: undefined
   href?: string
 }
 interface ButtonHeaderProps
   extends ItemHeaderBaseProps,
-    HTMLPropsFor<'button'> {
+    HTMLPropsFor<HTMLButtonElement> {
   onclick?: React.MouseEventHandler
   href?: undefined
 }
-interface SpanHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'span'> {
+interface SpanHeaderProps
+  extends ItemHeaderBaseProps,
+    HTMLPropsFor<HTMLSpanElement> {
   onclick?: undefined
   href?: undefined
 }

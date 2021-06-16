@@ -14,7 +14,7 @@ const styles = {
     glamor.css(stylesheet['.psds-verticaltabs__list--collapsible'])
 }
 
-interface ListProps extends HTMLPropsFor<'ul'> {
+interface ListProps extends HTMLPropsFor<HTMLUListElement> {
   collapsed?: boolean
 }
 

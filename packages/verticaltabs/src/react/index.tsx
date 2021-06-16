@@ -17,7 +17,7 @@ const styles = {
   verticaltabs: () => glamor.css(stylesheet['.psds-verticaltabs'])
 }
 
-interface VerticalTabsProps extends HTMLPropsFor<'ul'> {
+interface VerticalTabsProps extends HTMLPropsFor<HTMLUListElement> {
   forceCollapsed?: boolean
   hideLabels?: boolean
 }
