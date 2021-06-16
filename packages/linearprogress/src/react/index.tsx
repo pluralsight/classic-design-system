@@ -44,14 +44,13 @@ const LinearProgress: React.FC<LinearProgressProps> = ({
   ...rest
 }) => {
   const themeName = useTheme()
-  const [busy, setBusy] = React.useState<'false' | 'true'>('false')
-  React.useEffect(() => {
-    if (value) {
-      value > 0 && setBusy('true')
-      value === 100 && setBusy('false')
-    }
-    setBusy('true')
-  }, [value])
+  const busy = value 
+    ? value === 100
+      ? 'false'
+      : value > 0
+        ? 'true'
+        : 'false'
+    : 'true'
   return (
     <div
       {...styles.bg({ themeName })}
