@@ -97,12 +97,7 @@ const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
             visible={isFocused}
             {...styles.halo()}
           >
-            <div
-              role="radio"
-              aria-checked={checked}
-              tabIndex={-1}
-              {...styles.circle(themeName, checked)}
-            >
+            <div {...styles.circle(themeName, checked)}>
               {checked && <div {...styles.circleInner()} />}
             </div>
           </Halo>
@@ -110,6 +105,7 @@ const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
 
         <input
           {...props}
+          checked={checked}
           onClick={disabled ? undefined : handleClick}
           onFocus={handleFocus}
           onBlur={handleBlur}
