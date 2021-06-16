@@ -29,9 +29,6 @@ describe('LinearProgress', () => {
   //   expect(ref.current).not.toBeNull()
   // })
 
-  // TODO: fix the landmark unique id problem;
-  // Likely use progressbar and aria-valuenow
-  // https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_progressbar_role
   describe.each(cases)('%s story', (_name, Story) => {
     it('has no axe-core violations', async () => {
       const { container } = render(<Story {...Story.args} />)
