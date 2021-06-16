@@ -61,12 +61,14 @@ export const DisabledError = Template.bind({})
 DisabledError.args = { ...defaultArgs, disabled: true, error: true }
 
 export const Named = Template.bind({})
-DisabledError.args = { ...defaultArgs, name: 'form-name-for-switch' }
+Named.args = { ...defaultArgs, name: 'form-name-for-switch' }
 
 export const Colors: Story = args => (
   <StoryGrid>
     {Object.values(Switch.colors).map((color, i) => (
-      <Switch key={i} color={color} {...args} />
+      <Switch key={i} color={color} {...args}>
+        {color}
+      </Switch>
     ))}
   </StoryGrid>
 )
@@ -93,7 +95,9 @@ LabelAlignment.args = { ...defaultArgs }
 export const Sizes: Story = args => (
   <StoryGrid>
     {Object.values(Switch.sizes).map((size, i) => (
-      <Switch key={i} size={size} {...args} />
+      <Switch key={i} size={size} {...args}>
+        {size}
+      </Switch>
     ))}
   </StoryGrid>
 )

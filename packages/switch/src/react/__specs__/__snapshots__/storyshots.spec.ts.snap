@@ -139,6 +139,11 @@ exports[`Storyshots Components/Switch Colors 1`] = `
         tabIndex={0}
         type="checkbox"
       />
+      <span
+        data-css-1oms9gl=""
+      >
+        blue
+      </span>
     </label>
     <label
       data-css-nq9iqf=""
@@ -167,6 +172,11 @@ exports[`Storyshots Components/Switch Colors 1`] = `
         tabIndex={0}
         type="checkbox"
       />
+      <span
+        data-css-1oms9gl=""
+      >
+        green
+      </span>
     </label>
     <label
       data-css-nq9iqf=""
@@ -195,6 +205,11 @@ exports[`Storyshots Components/Switch Colors 1`] = `
         tabIndex={0}
         type="checkbox"
       />
+      <span
+        data-css-1oms9gl=""
+      >
+        orange
+      </span>
     </label>
   </div>
 </div>
@@ -239,10 +254,10 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
   data-css-yto836=""
 >
   <label
-    data-css-nq9iqf=""
+    data-css-wytdm9=""
   >
     <div
-      data-css-1lu7sfl=""
+      data-css-mmyfiy=""
     >
       <div
         data-css-19bj9q0=""
@@ -256,14 +271,12 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
       aria-label="Switch label"
       checked={false}
       data-css-6wu9td=""
-      disabled={false}
-      name="form-name-for-switch"
+      disabled={true}
       onBlur={[Function]}
-      onClick={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
       readOnly={true}
-      tabIndex={0}
+      tabIndex={-1}
       type="checkbox"
     />
   </label>
@@ -582,9 +595,11 @@ exports[`Storyshots Components/Switch Named 1`] = `
       </div>
     </div>
     <input
+      aria-label="Switch label"
       checked={false}
       data-css-6wu9td=""
       disabled={false}
+      name="form-name-for-switch"
       onBlur={[Function]}
       onClick={[Function]}
       onFocus={[Function]}
@@ -631,6 +646,11 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
         tabIndex={0}
         type="checkbox"
       />
+      <span
+        data-css-y6ldsm=""
+      >
+        small
+      </span>
     </label>
     <label
       data-css-nq9iqf=""
@@ -659,6 +679,11 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
         tabIndex={0}
         type="checkbox"
       />
+      <span
+        data-css-1oms9gl=""
+      >
+        large
+      </span>
     </label>
   </div>
 </div>
