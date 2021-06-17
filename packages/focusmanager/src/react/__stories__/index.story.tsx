@@ -72,7 +72,7 @@ export const DynamicChildren: Story = () => {
   )
 }
 
-export function Kaiden() {
+export function DeepDynamicChildren() {
   const [showButton, setShowButton] = React.useState(false)
   React.useEffect(() => {
     setTimeout(() => setShowButton(true), 1000)

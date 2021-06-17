@@ -1,5 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/FocusManager Deep Dynamic Children 1`] = `
+Array [
+  <div
+    className="app"
+  />,
+  <div
+    aria-label="example dialog"
+    data-css-hdres9=""
+    id="psds-dialog__overlay"
+    onClick={[Function]}
+    role="region"
+  >
+    <div
+      data-css-cxpnok=""
+      onKeyUp={[Function]}
+      style={
+        Object {
+          "zIndex": 1,
+        }
+      }
+    >
+      <div
+        data-css-18nkewq=""
+      >
+        <button
+          aria-label="Close dialog"
+          data-css-1g16ras=""
+          onClick={[Function]}
+        >
+          <svg
+            aria-label="close icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+            />
+          </svg>
+        </button>
+        <h2
+          data-css-nypl32=""
+        >
+          Lorem ipsum dolor sit amet.
+        </h2>
+        <div>
+          <button
+            data-css-1sp8ths=""
+            disabled={false}
+            style={Object {}}
+          >
+            <span
+              data-css-15b13by=""
+            >
+              Is tabbable
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
 exports[`Storyshots Components/FocusManager Dynamic Children 1`] = `
 <div>
   <button
