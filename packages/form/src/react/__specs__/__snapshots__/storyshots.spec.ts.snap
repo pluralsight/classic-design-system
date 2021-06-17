@@ -721,7 +721,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               </div>
               <input
                 checked={false}
-                data-css-fplhjw=""
+                data-css-6wu9td=""
                 name="sample"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -753,7 +753,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               </div>
               <input
                 checked={false}
-                data-css-fplhjw=""
+                data-css-6wu9td=""
                 name="sample"
                 onBlur={[Function]}
                 onClick={[Function]}
