@@ -3,13 +3,13 @@
 exports[`Storyshots Components/Link Appearances 1`] = `
 <div>
   <a
-    data-css-1o01808=""
+    className="psds-link psds-link--theme--dark psds-link--appearance-default"
     href="http://duckduckgo.com"
   >
     default
   </a>
   <a
-    data-css-1f737qx=""
+    className="psds-link psds-link--theme--dark psds-link--appearance-subtle"
     href="http://duckduckgo.com"
   >
     subtle

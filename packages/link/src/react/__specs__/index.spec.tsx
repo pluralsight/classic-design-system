@@ -1,5 +1,5 @@
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
-import { screen, render } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
@@ -20,7 +20,7 @@ describe('Link', () => {
   })
 
   it('forwards ref', () => {
-    const ref = React.createRef<HTMLDivElement>()
+    const ref = React.createRef<HTMLAnchorElement>()
     render(
       <Link ref={ref}>
         <a href="#">A label</a>

@@ -62,7 +62,7 @@ exports[`Storyshots Components/Banner Child Link 1`] = `
     this is the text with an
      
     <a
-      data-css-1o01808=""
+      className="psds-link psds-link--theme--dark psds-link--appearance-default"
       href="https://duckduckgo.com"
     >
       Link component
