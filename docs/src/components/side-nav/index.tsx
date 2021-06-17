@@ -32,6 +32,17 @@ export const SideNav: React.FC<SideNavProps> = () => {
     'psds-sidenav-openheadertitles',
     headerContainingActiveHref ? [headerContainingActiveHref.header.title] : []
   )
+  React.useEffect(
+    function openGroupRepresentedInCurrentUrl() {
+      setOpenHeaderTitles([
+        ...new Set<string>([
+          ...openHeaderTitles,
+          headerContainingActiveHref.header.title
+        ])
+      ])
+    },
+    [headerContainingActiveHref]
+  )
 
   const scrollRestore = useScrollRestoration('sidenav-list')
   React.useLayoutEffect(() => {
@@ -494,7 +505,7 @@ function GithubIcon(props) {
 }
 
 function useSessionStorage<T>(key: string, initialValue: T) {
-  const [storedValue, setStoredValue] = useState(() => {
+  const [storedValue, setStoredValue] = useState<T>(() => {
     if (!canUseDOM()) return initialValue
 
     try {
