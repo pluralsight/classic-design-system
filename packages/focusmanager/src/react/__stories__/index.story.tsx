@@ -1,8 +1,10 @@
 import * as Text from '@pluralsight/ps-design-system-text'
 import Button from '@pluralsight/ps-design-system-button'
-import { storiesOf } from '@storybook/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
+
+import Dialog from '@pluralsight/ps-design-system-dialog'
+import { Heading } from '@pluralsight/ps-design-system-text'
 
 import FocusManager from '../index'
 
@@ -67,5 +69,33 @@ export const DynamicChildren: Story = () => {
       <Button>Is tabbable</Button>
       {showButton && <Button>Becomes tabbable</Button>}
     </FocusManager>
+  )
+}
+
+export function Kaiden() {
+  const [showButton, setShowButton] = React.useState(false)
+  React.useEffect(() => {
+    setTimeout(() => setShowButton(true), 1000)
+  }, [])
+  return (
+    <>
+      <div className="app"></div>
+
+      <Dialog
+        modal
+        aria-label="example dialog"
+        style={{ zIndex: 1 }}
+        onClose={() => {}}
+      >
+        <Heading>
+          <h2>Lorem ipsum dolor sit amet.</h2>
+        </Heading>
+
+        <div>
+          <Button>Is tabbable</Button>
+          {showButton && <Button>Is not tabbable</Button>}
+        </div>
+      </Dialog>
+    </>
   )
 }
