@@ -65,7 +65,7 @@ export const DynamicChildren: Story = () => {
   return (
     <FocusManager trapped={true} autofocus={true}>
       <Button>Is tabbable</Button>
-      {showButton && <Button>Is not tabbable</Button>}
+      {showButton && <Button>Becomes tabbable</Button>}
     </FocusManager>
   )
 }
