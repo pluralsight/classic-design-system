@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-theme",
-  "version": "8.1.8",
+  "version": "8.1.9",
   "description": "Design System component for theming",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -25,7 +25,7 @@
   "sideEffects": false,
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-util": "^9.2.4",
+    "@pluralsight/ps-design-system-util": "^9.2.5",
     "hoist-non-react-statics": "^3.3.0"
   },
   "peerDependencies": {
@@ -33,5 +33,5 @@
     "glamor": "^2.20.40",
     "react": "^17.0.1"
   },
-  "gitHead": "919b69dde7d89906d3420a64b37d0ebcc03128ce"
+  "gitHead": "287df3d6daa2044fe511c370ad581bfa529c67db"
 }
