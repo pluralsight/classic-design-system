@@ -1,6 +1,5 @@
 import * as Text from '@pluralsight/ps-design-system-text'
 import Button from '@pluralsight/ps-design-system-button'
-import { storiesOf } from '@storybook/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
@@ -65,7 +64,25 @@ export const DynamicChildren: Story = () => {
   return (
     <FocusManager trapped={true} autofocus={true}>
       <Button>Is tabbable</Button>
-      {showButton && <Button>Is not tabbable</Button>}
+      {showButton && <Button>Becomes tabbable</Button>}
     </FocusManager>
+  )
+}
+
+export function DeepDynamicChildren() {
+  const [showButton, setShowButton] = React.useState(false)
+  React.useEffect(() => {
+    setTimeout(() => setShowButton(true), 1000)
+  }, [])
+  return (
+    <div>
+      <div>
+        <h2>Deeper in the tree...</h2>
+        <div>
+          <Button>Is tabbable</Button>
+          {showButton && <Button>Becomes tabbable</Button>}
+        </div>
+      </div>
+    </div>
   )
 }
