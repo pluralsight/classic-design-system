@@ -1,5 +1,5 @@
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
@@ -18,9 +18,18 @@ describe('Scrollable', () => {
   })
 
   it('forwards the ref', () => {
-    const ref = React.createRef<HTMLInputElement>()
+    const ref = React.createRef<HTMLDivElement>()
     render(<Scrollable ref={ref} />)
     expect(ref).not.toBeNull()
+  })
+
+  it('calls passed onScroll handlers', () => {
+    const ref = React.createRef<HTMLDivElement>()
+    const onScroll = jest.fn()
+    render(<Scrollable ref={ref} onScroll={onScroll} />)
+    fireEvent.scroll(ref.current as Element, { target: { scrollY: 25 } })
+
+    expect(onScroll).toHaveBeenCalled()
   })
 
   describe.each(cases)('%s story', (_name, Story) => {
