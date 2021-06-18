@@ -20,9 +20,11 @@ function toggleTitle(titles: string[], title: string) {
   }
 }
 
-interface SideNavProps extends HTMLAttributes<HTMLDivElement> {}
-export const SideNav: React.FC<SideNavProps> = () => {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : ''
+interface SideNavProps extends HTMLAttributes<HTMLDivElement> {
+  location: { pathname: string }
+}
+export const SideNav: React.FC<SideNavProps> = props => {
+  const pathname = props.location.pathname
   const headerContainingActiveHref = groups.find(
     group =>
       !!group.items.find(item => new RegExp(item.href + '/?').test(pathname))
@@ -34,12 +36,14 @@ export const SideNav: React.FC<SideNavProps> = () => {
   )
   React.useEffect(
     function openGroupRepresentedInCurrentUrl() {
-      setOpenHeaderTitles([
-        ...new Set<string>([
-          ...openHeaderTitles,
-          headerContainingActiveHref.header.title
+      if (headerContainingActiveHref) {
+        setOpenHeaderTitles([
+          ...new Set<string>([
+            ...openHeaderTitles,
+            headerContainingActiveHref.header.title
+          ])
         ])
-      ])
+      }
     },
     [headerContainingActiveHref]
   )
@@ -82,11 +86,9 @@ export const SideNav: React.FC<SideNavProps> = () => {
                     }
                   >
                     {section.items.map(item => {
-                      const isActive = canUseDOM()
-                        ? new RegExp(item.href + '/?').test(
-                            window.location.pathname
-                          )
-                        : false
+                      const isActive = new RegExp(item.href + '/?').test(
+                        pathname
+                      )
                       return (
                         <VerticalTabs.Tier2
                           active={isActive}
