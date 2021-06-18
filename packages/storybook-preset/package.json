@@ -19,6 +19,7 @@
     "@pluralsight/ps-design-system-storybook-addon-theme": "^9.1.9",
     "@storybook/addon-a11y": "^6.0.21",
     "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-viewport": "^6.0.21",
     "@storybook/addons": "^6.0.21",
     "@storybook/api": "^6.0.21",
