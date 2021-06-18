@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@4.1.10...@pluralsight/ps-design-system-navuser@4.1.11) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navuser
+
+
+
+
+
+## [4.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@4.1.9...@pluralsight/ps-design-system-navuser@4.1.10) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-navuser
+
+
+
+
+
 ## [4.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navuser@4.1.8...@pluralsight/ps-design-system-navuser@4.1.9) (2021-06-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navuser

@@ -1,5 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/FocusManager Deep Dynamic Children 1`] = `
+<div>
+  <div>
+    <h2>
+      Deeper in the tree...
+    </h2>
+    <div>
+      <button
+        data-css-y5dqt5=""
+        disabled={false}
+        style={Object {}}
+      >
+        <span
+          data-css-15b13by=""
+        >
+          Is tabbable
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/FocusManager Dynamic Children 1`] = `
 <div>
   <button

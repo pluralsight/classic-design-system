@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.28.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.12...@pluralsight/ps-design-system-docs@0.28.13) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.11...@pluralsight/ps-design-system-docs@0.28.12) (2021-06-18)
+
+
+### Bug Fixes
+
+* **docs:** dialog modal imports ([fa3c201](https://github.com/pluralsight/design-system/commit/fa3c201a1a2201f77a5e3629b97b75df4b462603))
+
+
+
+
+
 ## [0.28.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.10...@pluralsight/ps-design-system-docs@0.28.11) (2021-06-16)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs
