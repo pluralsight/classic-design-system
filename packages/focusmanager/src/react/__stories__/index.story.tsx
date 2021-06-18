@@ -3,9 +3,6 @@ import Button from '@pluralsight/ps-design-system-button'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Dialog from '@pluralsight/ps-design-system-dialog'
-import { Heading } from '@pluralsight/ps-design-system-text'
-
 import FocusManager from '../index'
 
 export default {
@@ -78,24 +75,14 @@ export function DeepDynamicChildren() {
     setTimeout(() => setShowButton(true), 1000)
   }, [])
   return (
-    <>
-      <div className="app"></div>
-
-      <Dialog
-        modal
-        aria-label="example dialog"
-        style={{ zIndex: 1 }}
-        onClose={() => {}}
-      >
-        <Heading>
-          <h2>Lorem ipsum dolor sit amet.</h2>
-        </Heading>
-
+    <div>
+      <div>
+        <h2>Deeper in the tree...</h2>
         <div>
           <Button>Is tabbable</Button>
-          {showButton && <Button>Is not tabbable</Button>}
+          {showButton && <Button>Becomes tabbable</Button>}
         </div>
-      </Dialog>
-    </>
+      </div>
+    </div>
   )
 }
