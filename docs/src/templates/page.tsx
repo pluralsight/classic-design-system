@@ -33,6 +33,9 @@ interface PageProps {
       headings: Heading[]
     }
   }
+  location: {
+    pathname: string
+  }
   pageContext: {
     version: string
   }
@@ -53,7 +56,10 @@ const Page: React.FC<PageProps> = props => {
       <Helmet title={title}>
         <link rel="shortcut icon" type="image/png" href={favicon} />
       </Helmet>
-      <Frame aside={<SideNav />} hasTableOfContents={hasTableOfContents}>
+      <Frame
+        aside={<SideNav location={props.location} />}
+        hasTableOfContents={hasTableOfContents}
+      >
         <MDXRenderer
           headings={props.data.mdx.headings}
           version={props.pageContext.version}
