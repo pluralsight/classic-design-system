@@ -4,5 +4,5 @@ module.exports = {
   typescript: {
     check: true,
     reactDocgen: 'react-docgen-typescript'
-  },
+  }
 }
