@@ -86,9 +86,9 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         <button
           data-css-1cb2wrf=""
           disabled={false}
-          style={Object {}}
         >
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           >
             Asssessments
@@ -106,9 +106,9 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         <button
           data-css-1cb2wrf=""
           disabled={false}
-          style={Object {}}
         >
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           >
             Guides
@@ -126,9 +126,9 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         <button
           data-css-1cb2wrf=""
           disabled={false}
-          style={Object {}}
         >
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           >
             Interactive Courses
@@ -146,9 +146,9 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         <button
           data-css-1cb2wrf=""
           disabled={false}
-          style={Object {}}
         >
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           >
             Paths
@@ -166,9 +166,9 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         <button
           data-css-1cb2wrf=""
           disabled={false}
-          style={Object {}}
         >
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           >
             Projects
@@ -186,9 +186,9 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         <button
           data-css-1cb2wrf=""
           disabled={false}
-          style={Object {}}
         >
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           >
             Video Courses
@@ -591,9 +591,9 @@ exports[`Storyshots Components/EmptyState Combo 1`] = `
     <button
       data-css-y5dqt5=""
       disabled={false}
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Do a Thing
@@ -2654,9 +2654,9 @@ Array [
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Do a Thing
@@ -2737,9 +2737,9 @@ Array [
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Do a Thing
@@ -2832,9 +2832,9 @@ Array [
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Do a Thing
@@ -2921,9 +2921,9 @@ exports[`Storyshots Components/EmptyState Small Fixed Size Container 1`] = `
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Do a Thing

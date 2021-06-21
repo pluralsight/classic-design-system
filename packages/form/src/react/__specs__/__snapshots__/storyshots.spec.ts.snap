@@ -45,9 +45,9 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             <button
               data-css-y5dqt5=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Save
@@ -60,9 +60,9 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             <button
               data-css-1uk30vr=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Cancel
@@ -101,9 +101,9 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             <button
               data-css-y5dqt5=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Save
@@ -116,9 +116,9 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             <button
               data-css-1uk30vr=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Cancel
@@ -163,9 +163,9 @@ exports[`Storyshots Components/Form Button Row Single Button 1`] = `
             <button
               data-css-y5dqt5=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Only One
@@ -876,9 +876,9 @@ exports[`Storyshots Components/Form Sample 1`] = `
             <button
               data-css-y5dqt5=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Save
@@ -891,9 +891,9 @@ exports[`Storyshots Components/Form Sample 1`] = `
             <button
               data-css-1uk30vr=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Cancel

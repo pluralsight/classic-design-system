@@ -387,7 +387,6 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
           data-css-1dnyz38=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-4ducb0=""
@@ -407,6 +406,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -956,7 +956,6 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
         <button
           data-css-1dnyz38=""
           disabled={false}
-          style={Object {}}
         >
           <div
             data-css-4ducb0=""
@@ -976,6 +975,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>

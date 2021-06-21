@@ -185,9 +185,9 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       Click me first
@@ -205,9 +205,9 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       Then click me, first menu closes, mine opens

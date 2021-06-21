@@ -24,7 +24,6 @@ Array [
             data-css-phznnm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
           >
             <div
               data-css-y80vay=""
@@ -44,6 +43,7 @@ Array [
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -59,7 +59,6 @@ Array [
             data-css-phznnm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
           >
             <div
               data-css-y80vay=""
@@ -79,6 +78,7 @@ Array [
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -1344,7 +1344,6 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           data-css-phznnm=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-y80vay=""
@@ -1364,6 +1363,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -1379,7 +1379,6 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           data-css-phznnm=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-y80vay=""
@@ -1399,6 +1398,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -1822,7 +1822,6 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           data-css-phznnm=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-y80vay=""
@@ -1842,6 +1841,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -1857,7 +1857,6 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           data-css-phznnm=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-y80vay=""
@@ -1877,6 +1876,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -2337,7 +2337,6 @@ Array [
             data-css-phznnm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
           >
             <div
               data-css-y80vay=""
@@ -2357,6 +2356,7 @@ Array [
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -2372,7 +2372,6 @@ Array [
             data-css-phznnm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
           >
             <div
               data-css-y80vay=""
@@ -2392,6 +2391,7 @@ Array [
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -2902,7 +2902,6 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             data-css-phznnm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
           >
             <div
               data-css-y80vay=""
@@ -2922,6 +2921,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -2937,7 +2937,6 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             data-css-phznnm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
           >
             <div
               data-css-y80vay=""
@@ -2957,6 +2956,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -3467,7 +3467,6 @@ Array [
             data-css-phznnm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
           >
             <div
               data-css-y80vay=""
@@ -3487,6 +3486,7 @@ Array [
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -3554,7 +3554,6 @@ Array [
             data-css-phznnm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
           >
             <div
               data-css-y80vay=""
@@ -3574,6 +3573,7 @@ Array [
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -4377,7 +4377,6 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           data-css-phznnm=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-y80vay=""
@@ -4397,6 +4396,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -4412,7 +4412,6 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           data-css-phznnm=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-y80vay=""
@@ -4432,6 +4431,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -4826,7 +4826,6 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           data-css-phznnm=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-y80vay=""
@@ -4846,6 +4845,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -4861,7 +4861,6 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           data-css-phznnm=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-y80vay=""
@@ -4881,6 +4880,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>

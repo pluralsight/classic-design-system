@@ -30,7 +30,6 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
       <button
         data-css-1dnyz38=""
         disabled={false}
-        style={Object {}}
       >
         <div
           data-css-4ducb0=""
@@ -50,6 +49,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
           </div>
         </div>
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         />
       </button>
@@ -73,7 +73,6 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
       <button
         data-css-1dnyz38=""
         disabled={false}
-        style={Object {}}
       >
         <div
           data-css-4ducb0=""
@@ -93,6 +92,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
           </div>
         </div>
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         />
       </button>
@@ -116,7 +116,6 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
       <button
         data-css-1dnyz38=""
         disabled={false}
-        style={Object {}}
       >
         <div
           data-css-4ducb0=""
@@ -136,6 +135,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
           </div>
         </div>
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         />
       </button>
@@ -159,7 +159,6 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
       <button
         data-css-1dnyz38=""
         disabled={false}
-        style={Object {}}
       >
         <div
           data-css-4ducb0=""
@@ -179,6 +178,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
           </div>
         </div>
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         />
       </button>
@@ -278,7 +278,6 @@ exports[`Storyshots Components/Row Combo 1`] = `
     <button
       data-css-1dnyz38=""
       disabled={false}
-      style={Object {}}
     >
       <div
         data-css-4ducb0=""
@@ -298,13 +297,13 @@ exports[`Storyshots Components/Row Combo 1`] = `
         </div>
       </div>
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       />
     </button>
     <button
       data-css-1dnyz38=""
       disabled={false}
-      style={Object {}}
     >
       <div
         data-css-4ducb0=""
@@ -326,13 +325,13 @@ exports[`Storyshots Components/Row Combo 1`] = `
         </div>
       </div>
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       />
     </button>
     <button
       data-css-1dnyz38=""
       disabled={false}
-      style={Object {}}
     >
       <div
         data-css-4ducb0=""
@@ -352,6 +351,7 @@ exports[`Storyshots Components/Row Combo 1`] = `
         </div>
       </div>
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       />
     </button>
@@ -1184,7 +1184,6 @@ Array [
       <button
         data-css-1dnyz38=""
         disabled={false}
-        style={Object {}}
       >
         <div
           data-css-4ducb0=""
@@ -1204,6 +1203,7 @@ Array [
           </div>
         </div>
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         />
       </button>
@@ -1236,7 +1236,6 @@ Array [
       <button
         data-css-1dnyz38=""
         disabled={false}
-        style={Object {}}
       >
         <div
           data-css-4ducb0=""
@@ -1256,6 +1255,7 @@ Array [
           </div>
         </div>
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         />
       </button>

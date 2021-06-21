@@ -1559,7 +1559,6 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -1580,6 +1579,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -1653,7 +1653,6 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -1674,6 +1673,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -1747,7 +1747,6 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -1768,6 +1767,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -1841,7 +1841,6 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -1862,6 +1861,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -1935,7 +1935,6 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -1956,6 +1955,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -2101,7 +2101,6 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -2122,6 +2121,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -2190,7 +2190,6 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -2211,6 +2210,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -2279,7 +2279,6 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -2300,6 +2299,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -2368,7 +2368,6 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -2389,6 +2388,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
@@ -2457,7 +2457,6 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             data-css-66vnlm=""
             disabled={false}
             onClick={[Function]}
-            style={Object {}}
             title="Expand/Collapse additional content"
           >
             <div
@@ -2478,6 +2477,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               </div>
             </div>
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             />
           </button>
