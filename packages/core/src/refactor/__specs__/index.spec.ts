@@ -1,4 +1,5 @@
-import { refactorCssVars } from '..'
+import { cssVars } from '..'
+
 test('tokens', () => {
-  expect(refactorCssVars).toMatchSnapshot()
+  expect(cssVars).toMatchSnapshot()
 })
