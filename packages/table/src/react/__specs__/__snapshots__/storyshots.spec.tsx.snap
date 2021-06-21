@@ -424,11 +424,11 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               }
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Baron"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#7048C6",
@@ -484,11 +484,11 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               }
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Ignacio"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#D1487B",
@@ -544,11 +544,11 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               }
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Edwina"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#009380",
@@ -604,11 +604,11 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               }
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Devante"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#CB670B",
@@ -664,11 +664,11 @@ exports[`Storyshots Components/Table Mixed Content 1`] = `
               }
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Skylar"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#CB670B",
