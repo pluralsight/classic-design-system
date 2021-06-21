@@ -1,5 +1,6 @@
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
+import { RefFor } from '@pluralsight/ps-design-system-util'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -80,7 +81,7 @@ StyleOverride.args = { ...defaultArgs, style: { background: 'red' } }
 export const ClassNameOverride = Template.bind({})
 ClassNameOverride.args = {
   ...defaultArgs,
-  className: glamor.css({ background: 'green' })
+  className: (glamor.css({ background: 'green' }) as unknown) as string
 }
 
 export const Layouts: Story = () => (
@@ -205,7 +206,7 @@ export const ExampleAutofocus: Story = () => {
       if (ref && ref.current) ref.current.focus()
     }, [])
 
-    return <Button ref={ref}>Should be focused</Button>
+    return <Button ref={ref as RefFor<'button'>}>Should be focused</Button>
   }
 
   return <Example />
