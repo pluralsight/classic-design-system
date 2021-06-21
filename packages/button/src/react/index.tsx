@@ -98,7 +98,7 @@ const mapIconSize = (size: string) => {
   return btnToIconSizes[size] ? btnToIconSizes[size] : iconSizes.medium
 }
 
-interface RenderIconProps extends HTMLPropsFor<'div'> {
+interface IconContainerProps extends HTMLPropsFor<'div'> {
   children: React.ReactNode
   loading: boolean
   icon: React.ReactNode
@@ -109,8 +109,7 @@ interface RenderIconProps extends HTMLPropsFor<'div'> {
   iconAlign: string
 }
 
-// TODO: rename as component
-const renderIcon: React.FC<RenderIconProps> = props =>
+const IconContainer: React.FC<IconContainerProps> = props =>
   props.loading ? (
     <div
       {...styles.icon({
@@ -209,16 +208,20 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       size,
       themeName
     })
-    const iconEl = renderIcon({
-      appearance,
-      children,
-      icon,
-      iconAlign,
-      iconOnly,
-      loading,
-      size,
-      themeName
-    })
+
+    const iconEl = (
+      <IconContainer
+        appearance={appearance}
+        icon={icon}
+        iconAlign={iconAlign}
+        iconOnly={iconOnly}
+        loading={loading}
+        size={size}
+        themeName={themeName}
+      >
+        {children}
+      </IconContainer>
+    )
 
     const labelEl = (
       <span
