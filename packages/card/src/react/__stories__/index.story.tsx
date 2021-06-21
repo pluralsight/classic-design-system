@@ -39,7 +39,7 @@ const longStringsMetaData = [
 const longTitle =
   'The First Course of Our Age to Teach the Minute Waltz to an Eight Horn Fugle Hummer in Less Than the Average of the First 60 Seconds'
 
-const CardWithDefaults = (props: Partial<CardProps>) => {
+export const CardWithDefaults = (props: Partial<CardProps>) => {
   const title = props.title || <Card.Title>Card Title</Card.Title>
   const image = props.image || <Card.Image src={getImgSrc()} />
   return <Card {...props} title={title} image={image} />

@@ -732,6 +732,130 @@ exports[`Storyshots Components/Card Bonus Bar Text 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Card Card With Defaults 1`] = `
+<div
+  style={
+    Object {
+      "width": "320px",
+    }
+  }
+>
+  <div
+    data-css-1ybvkp1=""
+  >
+    <div
+      data-css-1pdjifv=""
+    >
+      <div
+        data-css-i7gti2=""
+        style={
+          Object {
+            "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+          }
+        }
+      />
+    </div>
+    <div
+      data-css-piydn8=""
+    >
+      <div
+        data-css-fvvao4=""
+      >
+        <div
+          className=""
+        >
+          <span
+            style={
+              Object {
+                "display": "block",
+                "maxHeight": "0px",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <span
+              className="shiitake-children"
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
+            >
+              Card Title
+              …
+            </span>
+            <span
+              aria-hidden="true"
+              style={
+                Object {
+                  "display": "block",
+                  "height": "0px",
+                  "overflow": "hidden",
+                  "width": "100%",
+                }
+              }
+            >
+              Card Title
+            </span>
+            <span
+              aria-hidden="true"
+              style={
+                Object {
+                  "display": "block",
+                  "left": "-20000px",
+                  "position": "absolute",
+                  "width": "100%",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  W
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  W
+                </span>
+              </span>
+              <span
+                className="shiitake-test-children"
+                style={
+                  Object {
+                    "display": "block",
+                  }
+                }
+              >
+                
+                …
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Card Everything Focusable 1`] = `
 <div
   style={

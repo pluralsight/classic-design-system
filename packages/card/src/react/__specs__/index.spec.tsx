@@ -3,14 +3,14 @@ import { screen, render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import Card from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('Card', () => {
   const cases = convertStoriesToJestCases(stories)
 
   it('renders', () => {
-    const { getByTestId } = render(<Card data-testid="undertest"></Card>)
+    const { CardWithDefaults } = stories
+    const { getByTestId } = render(<CardWithDefaults data-testid="undertest" />)
 
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
