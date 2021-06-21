@@ -1,22 +1,25 @@
-import { ScrollContext } from './scroll-handler'
-import { useRef, useContext, useLayoutEffect } from 'react'
-import { useLocation } from '@reach/router'
+// modified from https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-react-router-scroll/src/use-scroll-restoration.ts
+import React from 'react'
 
-interface IScrollRestorationProps {
+import { SessionStorage } from './session-storage'
+
+interface ScrollRestorationProps {
   ref: React.MutableRefObject<HTMLElement | undefined>
   onScroll(): void
 }
 
+const ScrollContext = React.createContext<SessionStorage>(new SessionStorage())
+ScrollContext.displayName = `ScrollContext`
+
 export function useScrollRestoration(
   identifier: string
-): IScrollRestorationProps {
-  const location = useLocation()
-  const state = useContext(ScrollContext)
-  const ref = useRef<HTMLElement>()
+): ScrollRestorationProps {
+  const state = React.useContext(ScrollContext)
+  const ref = React.useRef<HTMLElement>()
 
-  useLayoutEffect((): void => {
+  React.useLayoutEffect((): void => {
     if (ref.current) {
-      const position = state.read(location, identifier)
+      const position = state.read(identifier)
       ref.current.scrollTo(0, position || 0)
     }
   }, [])
@@ -25,7 +28,7 @@ export function useScrollRestoration(
     ref,
     onScroll(): void {
       if (ref.current) {
-        state.save(location, identifier, ref.current.scrollTop)
+        state.save(identifier, ref.current.scrollTop)
       }
     }
   }
