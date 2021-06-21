@@ -20,9 +20,11 @@ function toggleTitle(titles: string[], title: string) {
   }
 }
 
-interface SideNavProps extends HTMLAttributes<HTMLDivElement> {}
-export const SideNav: React.FC<SideNavProps> = () => {
-  const pathname = typeof window !== 'undefined' ? window.location.pathname : ''
+interface SideNavProps extends HTMLAttributes<HTMLDivElement> {
+  location: { pathname: string }
+}
+export const SideNav: React.FC<SideNavProps> = props => {
+  const pathname = props.location.pathname
   const headerContainingActiveHref = groups.find(
     group =>
       !!group.items.find(item => new RegExp(item.href + '/?').test(pathname))
@@ -31,6 +33,19 @@ export const SideNav: React.FC<SideNavProps> = () => {
   const [openHeaderTitles, setOpenHeaderTitles] = useSessionStorage<string[]>(
     'psds-sidenav-openheadertitles',
     headerContainingActiveHref ? [headerContainingActiveHref.header.title] : []
+  )
+  React.useEffect(
+    function openGroupRepresentedInCurrentUrl() {
+      if (headerContainingActiveHref) {
+        setOpenHeaderTitles([
+          ...new Set<string>([
+            ...openHeaderTitles,
+            headerContainingActiveHref.header.title
+          ])
+        ])
+      }
+    },
+    [headerContainingActiveHref]
   )
 
   const scrollRestore = useScrollRestoration('sidenav-list')
@@ -71,11 +86,9 @@ export const SideNav: React.FC<SideNavProps> = () => {
                     }
                   >
                     {section.items.map(item => {
-                      const isActive = canUseDOM()
-                        ? new RegExp(item.href + '/?').test(
-                            window.location.pathname
-                          )
-                        : false
+                      const isActive = new RegExp(item.href + '/?').test(
+                        pathname
+                      )
                       return (
                         <VerticalTabs.Tier2
                           active={isActive}
@@ -494,7 +507,7 @@ function GithubIcon(props) {
 }
 
 function useSessionStorage<T>(key: string, initialValue: T) {
-  const [storedValue, setStoredValue] = useState(() => {
+  const [storedValue, setStoredValue] = useState<T>(() => {
     if (!canUseDOM()) return initialValue
 
     try {
