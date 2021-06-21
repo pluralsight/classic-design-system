@@ -31,7 +31,7 @@ interface InternalBadgeProps {
   color: ValueOf<typeof vars.colors>
 }
 
-type BadgeProps = HTMLPropsFor<'div'> & Partial<InternalBadgeProps>
+type BadgeProps = HTMLPropsFor<HTMLDivElement> & Partial<InternalBadgeProps>
 
 interface BadgeStatics {
   appearances: typeof vars.appearances
