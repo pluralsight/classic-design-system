@@ -9,8 +9,10 @@ import index from '../index.js'
 
 const DEFAULT_INPUT_PATH = path.join('src', 'css', 'index.css')
 const DEFAULT_OUTPUT_PATHS = [
-  path.join('dist', 'index.css'),
-  path.join('dist', 'index.scss')
+  path.join('dist', 'cjs', 'css', 'index.css'),
+  path.join('dist', 'cjs', 'css', 'index.scss'),
+  path.join('dist', 'esm', 'css', 'index.css'),
+  path.join('dist', 'esm', 'css', 'index.scss')
 ]
 
 const prefix = '[postcss-compile] '

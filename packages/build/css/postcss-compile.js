@@ -4,7 +4,7 @@ const path = require('path')
 const { mkdir } = require('../fs')
 
 module.exports = async function postcssCompile(inputPath, outputPaths) {
-  await ensureDistDir()
+  await ensureDistDirStructure()
   const firstOutputPath = outputPaths[0]
 
   exec(`postcss ${inputPath} -o ${firstOutputPath}`)
@@ -17,10 +17,7 @@ function exec(cmd) {
   execSync(cmd, { stdio: 'inherit', cwd: process.cwd() })
 }
 
-async function ensureDistDir() {
-  try {
-    await mkdir(path.join(__dirname, 'dist'))
-  } catch (err) {
-    return console.error(err)
-  }
+async function ensureDistDirStructure() {
+  await mkdir(path.join('dist', 'cjs', 'css'))
+  await mkdir(path.join('dist', 'esm', 'css'))
 }
