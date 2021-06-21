@@ -39,7 +39,8 @@ const styles = {
     )
 }
 
-interface ControlProps extends Omit<HTMLPropsFor<'button'>, 'onClick'> {
+interface ControlProps
+  extends Omit<HTMLPropsFor<HTMLButtonElement>, 'onClick'> {
   direction: ValueOf<typeof vars.controlDirections>
   onClick?: (evt?: React.MouseEvent) => void
 }

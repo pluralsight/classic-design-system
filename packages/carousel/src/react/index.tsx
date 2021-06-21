@@ -37,7 +37,7 @@ const styles = {
   item: () => glamor.css(stylesheet['.psds-carousel__item'])
 }
 
-interface CarouselProps extends HTMLPropsFor<'div'> {
+interface CarouselProps extends HTMLPropsFor<HTMLDivElement> {
   children: React.ReactNode
   controlPrev?: React.ReactNode
   controlNext?: React.ReactNode
@@ -157,7 +157,7 @@ export default Carousel
 Carousel.Control = Control
 Carousel.sizes = vars.sizes
 
-interface ItemProps extends HTMLPropsFor<'li'> {
+interface ItemProps extends HTMLPropsFor<HTMLLIElement> {
   _onFocus?: (evt: React.FocusEvent) => void
 }
 
@@ -179,7 +179,7 @@ Item.displayName = 'Carousel.Item'
 Carousel.Item = Item
 
 interface TrackProps
-  extends HTMLPropsFor<'ul'>,
+  extends HTMLPropsFor<HTMLUListElement>,
     Required<Pick<UseSwipeOpts, 'onSwipeLeft' | 'onSwipeRight'>> {}
 const Track: React.FC<TrackProps> = props => {
   const ref = React.createRef<HTMLUListElement>()

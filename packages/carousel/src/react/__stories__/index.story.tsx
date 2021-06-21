@@ -19,7 +19,7 @@ export default {
 interface MockCardProps
   extends Omit<
     React.ComponentProps<typeof Card>,
-    'title' | 'actionBar' | 'image' | 'metadata1'
+    'title' | 'image' | 'metadata1'
   > {
   titleText?: string
   index?: number
