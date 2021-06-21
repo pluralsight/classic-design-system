@@ -45,7 +45,8 @@ interface ActionMenuStatics {
   tagName: typeof vars.tagName
   useMenuRef: typeof useMenuRef
 }
-interface ActionMenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
+interface ActionMenuProps
+  extends Omit<HTMLPropsFor<HTMLUListElement>, 'onClick'> {
   onClick?: (evt: React.MouseEvent, value?: React.ReactText) => void
   onClose?: () => void
   origin?: ValueOf<typeof vars.origins>
