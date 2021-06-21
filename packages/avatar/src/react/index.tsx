@@ -10,7 +10,7 @@ import stylesheet from '../css/index'
 import { sizes, widths } from '../vars/index'
 import { getColorByName, getInitials, transformSrc } from '../js/index'
 
-interface AvatarProps extends HTMLPropsFor<'div'> {
+interface AvatarProps extends HTMLPropsFor<HTMLDivElement> {
   alt?: string
   name?: string
   size?: ValueOf<typeof sizes>

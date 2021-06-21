@@ -41,11 +41,7 @@ const styles = {
     )
 }
 
-interface ItemProps
-  extends React.DetailedHTMLProps<
-    React.LiHTMLAttributes<HTMLLIElement>,
-    HTMLLIElement
-  > {
+interface ItemProps extends HTMLPropsFor<HTMLLIElement> {
   active?: boolean
   className?: string
   disabled?: boolean
@@ -60,115 +56,112 @@ interface ItemProps
   rel?: string
 }
 
-const Item = (
-  props: ItemProps,
-  forwardedRef: React.ForwardedRef<HTMLLIElement>
-) => {
-  const {
-    active,
-    children,
-    className,
-    disabled,
-    nested,
-    onClick,
-    origin,
-    tagName: Component = tagNames.a,
-    value,
-    ...rest
-  } = props
+export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
+  (props: ItemProps, forwardedRef: React.ForwardedRef<HTMLLIElement>) => {
+    const {
+      active,
+      children,
+      className,
+      disabled,
+      nested,
+      onClick,
+      origin,
+      tagName: Component = tagNames.a,
+      value,
+      ...rest
+    } = props
 
-  const { onClickContext, onClose, originContext } = React.useContext(
-    ActionMenuContext
-  )
+    const { onClickContext, onClose, originContext } = React.useContext(
+      ActionMenuContext
+    )
 
-  const ref = React.useRef<HTMLLIElement>(null)
-  React.useImperativeHandle<HTMLLIElement | null, HTMLLIElement | null>(
-    forwardedRef,
-    () => ref.current
-  )
+    const ref = React.useRef<HTMLLIElement>(null)
+    React.useImperativeHandle<HTMLLIElement | null, HTMLLIElement | null>(
+      forwardedRef,
+      () => ref.current
+    )
 
-  const subMenuRef = React.useRef<HTMLUListElement>(null)
+    const subMenuRef = React.useRef<HTMLUListElement>(null)
 
-  const [open, setOpen] = React.useState(false)
-  const hasSubMenu = Boolean(nested)
+    const [open, setOpen] = React.useState(false)
+    const hasSubMenu = Boolean(nested)
 
-  const handleKeyDown: React.KeyboardEventHandler<HTMLLIElement> = evt => {
-    if (evt.key === 'ArrowRight' && hasSubMenu) {
-      setOpen(true)
-      evt.stopPropagation()
+    const handleKeyDown: React.KeyboardEventHandler<HTMLLIElement> = evt => {
+      if (evt.key === 'ArrowRight' && hasSubMenu) {
+        setOpen(true)
+        evt.stopPropagation()
+      }
+
+      if (evt.key === 'Enter' || evt.key === 'Space') {
+        const target = evt.target as HTMLUListElement
+        const firstEl = target.firstElementChild as HTMLLIElement
+        firstEl.click()
+      }
+
+      evt.preventDefault()
     }
 
-    if (evt.key === 'Enter' || evt.key === 'Space') {
-      const target = evt.target as HTMLUListElement
-      const firstEl = target.firstElementChild as HTMLLIElement
-      firstEl.click()
+    const handleMouseOut: React.MouseEventHandler<HTMLLIElement> = () => {
+      hasSubMenu && setOpen(false)
     }
 
-    evt.preventDefault()
-  }
-
-  const handleMouseOut: React.MouseEventHandler<HTMLLIElement> = () => {
-    hasSubMenu && setOpen(false)
-  }
-
-  const handleMouseOver: React.MouseEventHandler<HTMLLIElement> = () => {
-    hasSubMenu && setOpen(true)
-  }
-
-  const handleArrowLeft: React.KeyboardEventHandler<HTMLUListElement> = evt => {
-    if (evt.key === 'ArrowLeft' && hasSubMenu) {
-      setOpen(false)
-      evt.stopPropagation()
+    const handleMouseOver: React.MouseEventHandler<HTMLLIElement> = () => {
+      hasSubMenu && setOpen(true)
     }
-  }
 
-  const handleClick = (evt: React.MouseEvent) => {
-    if (hasSubMenu) return
+    const handleArrowLeft: React.KeyboardEventHandler<HTMLUListElement> = evt => {
+      if (evt.key === 'ArrowLeft' && hasSubMenu) {
+        setOpen(false)
+        evt.stopPropagation()
+      }
+    }
 
-    onClick && onClick(evt, value)
-    onClickContext && onClickContext(evt, value)
-    onClose && onClose(evt, value) // : e.currentTarget.parentNode.focus()
-  }
+    const handleClick = (evt: React.MouseEvent) => {
+      if (hasSubMenu) return
 
-  return (
-    <li
-      {...styles.itemContainer({ active, disabled })}
-      data-disabled={disabled}
-      onKeyDown={handleKeyDown}
-      onMouseOut={handleMouseOut}
-      onMouseOver={handleMouseOver}
-      ref={ref}
-      role="none"
-      tabIndex={!disabled ? -1 : undefined}
-    >
-      <Component
-        {...styles.item({ hasSubMenu })}
-        aria-haspopup={!!nested}
-        onClick={handleClick}
-        role="menuitem"
-        aria-disabled={Boolean(disabled)}
-        {...(Component === 'button' && { disabled })}
-        {...(rest as HTMLPropsFor<HTMLAnchorElement | HTMLButtonElement>)}
+      onClick && onClick(evt, value)
+      onClickContext && onClickContext(evt, value)
+      onClose && onClose(evt, value) // : e.currentTarget.parentNode.focus()
+    }
+
+    return (
+      <li
+        {...styles.itemContainer({ active, disabled })}
+        data-disabled={disabled}
+        onKeyDown={handleKeyDown}
+        onMouseOut={handleMouseOut}
+        onMouseOver={handleMouseOver}
+        ref={ref}
+        role="none"
+        tabIndex={!disabled ? -1 : undefined}
       >
-        <span className={className} {...styles.inner()}>
-          {children}
-          {hasSubMenu && <Arrow />}
-        </span>
-      </Component>
+        <Component
+          {...styles.item({ hasSubMenu })}
+          aria-haspopup={!!nested}
+          onClick={handleClick}
+          role="menuitem"
+          aria-disabled={Boolean(disabled)}
+          {...(Component === 'button' && { disabled })}
+          {...(rest as HTMLPropsFor<HTMLAnchorElement | HTMLButtonElement>)}
+        >
+          <span className={className} {...styles.inner()}>
+            {children}
+            {hasSubMenu && <Arrow />}
+          </span>
+        </Component>
 
-      <ul
-        {...styles.nested({ origin: origin || originContext })}
-        aria-expanded={open}
-        onKeyDown={handleArrowLeft}
-        ref={subMenuRef}
-        role="menu"
-      >
-        {!disabled && nested}
-      </ul>
-    </li>
-  )
-}
-const _Item = React.forwardRef<HTMLLIElement, ItemProps>(Item)
-_Item.displayName = 'ActionMenu.Item'
+        <ul
+          {...styles.nested({ origin: origin || originContext })}
+          aria-expanded={open}
+          onKeyDown={handleArrowLeft}
+          ref={subMenuRef}
+          role="menu"
+        >
+          {!disabled && nested}
+        </ul>
+      </li>
+    )
+  }
+)
 
-export { _Item as Item }
+Item.displayName = 'ActionMenu.Item'
