@@ -69,18 +69,18 @@ const styles = {
         `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
       ]
     ),
-  icon: ({ iconAlign, iconOnly, isLoadingAndLabelOnly, size }) =>
-    glamor.css(
+  icon: ({ iconAlign, iconOnly, labelOnly, loading, size }) => {
+    return glamor.css(
       stylesheet['.psds-button__icon'],
       stylesheet[`.psds-button__icon--iconAlign-${iconAlign}`],
       stylesheet[
         `.psds-button__icon--iconAlign-${iconAlign}.psds-button--size-${size}`
       ],
-      (iconOnly || isLoadingAndLabelOnly) &&
+      (iconOnly || (loading && labelOnly)) &&
         stylesheet['.psds-button__icon--iconOnly'],
-      isLoadingAndLabelOnly &&
-        stylesheet['.psds-button__icon--loadingLabelOnly']
-    ),
+      loading && labelOnly && stylesheet['.psds-button__icon--loadingLabelOnly']
+    )
+  },
   text: (invisible?: boolean) =>
     glamor.compose(
       glamor.css(stylesheet[`.psds-button__text`]),
@@ -99,7 +99,7 @@ const mapIconSize = (size: string) => {
 }
 
 interface IconContainerProps extends HTMLPropsFor<'div'> {
-  children: React.ReactNode
+  labelOnly: boolean
   loading: boolean
   icon: React.ReactNode
   appearance: string
@@ -115,9 +115,8 @@ const IconContainer: React.FC<IconContainerProps> = props =>
       {...styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
-        // TODO: avoid new derived value. Pass hasLabel and icon from top to bottom
-        isLoadingAndLabelOnly:
-          React.Children.count(props.children) > 0 && !props.icon,
+        labelOnly: props.labelOnly,
+        loading: props.loading,
         size: props.size
       })}
     >
@@ -136,7 +135,8 @@ const IconContainer: React.FC<IconContainerProps> = props =>
       {...styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
-        isLoadingAndLabelOnly: false,
+        labelOnly: props.labelOnly,
+        loading: props.loading,
         size: props.size
       })}
     >
@@ -196,7 +196,6 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
 
     const hasLabel = React.Children.count(children) > 0
     const iconOnly = !hasLabel
-    const shouldRenderInvisibleLabel = hasLabel && loading && !icon
 
     const glamorStyle = styles.button({
       appearance,
@@ -215,18 +214,18 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
         icon={icon}
         iconAlign={iconAlign}
         iconOnly={iconOnly}
+        labelOnly={hasLabel && !icon}
         loading={loading}
         size={size}
         themeName={themeName}
-      >
-        {children}
-      </IconContainer>
+      ></IconContainer>
     )
 
+    const isLoadingAndLabelOnly = hasLabel && loading && !icon
     const labelEl = (
       <span
-        {...styles.text(shouldRenderInvisibleLabel)}
-        aria-hidden={shouldRenderInvisibleLabel}
+        {...styles.text(isLoadingAndLabelOnly)}
+        aria-hidden={isLoadingAndLabelOnly}
       >
         {children}
       </span>
