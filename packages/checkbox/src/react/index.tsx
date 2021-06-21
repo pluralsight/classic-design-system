@@ -39,7 +39,9 @@ const styles = {
     )
 }
 
-interface CheckboxProps extends HTMLPropsFor<'div'>, Record<string, unknown> {
+interface CheckboxProps
+  extends HTMLPropsFor<HTMLDivElement>,
+    Record<string, unknown> {
   checked?: boolean
   disabled?: boolean
   error?: boolean
