@@ -387,7 +387,7 @@ export const StackOfRows: Story = () => (
   </>
 )
 
-interface StoryGridProps extends HTMLPropsFor<'div'> {
+interface StoryGridProps extends HTMLPropsFor<HTMLDivElement> {
   cols?: number
 }
 const StoryGrid: React.FC<StoryGridProps> = props => {
