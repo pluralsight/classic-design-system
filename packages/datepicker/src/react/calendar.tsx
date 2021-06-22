@@ -65,7 +65,7 @@ const monthNamesShort = [
 const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 interface CalendarProps
-  extends HTMLPropsFor<'div'>,
+  extends HTMLPropsFor<HTMLDivElement>,
     Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
   slide?: ValueOf<typeof slides>
 }

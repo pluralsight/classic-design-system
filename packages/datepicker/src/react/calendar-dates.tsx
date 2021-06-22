@@ -18,10 +18,14 @@ const styles = {
   dateFiller: () => glamor.css(stylesheet['.psds-calendar__filler'])
 }
 
-interface ChildrenRenderProps extends HTMLPropsFor<'button'> {}
+interface ChildrenRenderProps
+  extends React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  > {}
 
 interface CalendarDatesProps
-  extends HTMLPropsFor<'button'>,
+  extends HTMLPropsFor<HTMLButtonElement>,
     Pick<RenderProps, 'getDateProps'> {
   children: (props: ChildrenRenderProps, dateObj: DateObj) => React.ReactNode
 }
