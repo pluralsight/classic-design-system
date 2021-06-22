@@ -61,7 +61,7 @@ export const useDrawerContext = () => {
   return context
 }
 
-interface SummaryProps extends HTMLPropsFor<'div'> {}
+interface SummaryProps extends HTMLPropsFor<HTMLDivElement> {}
 const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
   ({ children, ...rest }, ref) => {
     const themeName = useTheme()
@@ -87,7 +87,7 @@ const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
   }
 )
 
-interface DetailsProps extends HTMLPropsFor<'div'> {}
+interface DetailsProps extends HTMLPropsFor<HTMLDivElement> {}
 const Details = React.forwardRef<HTMLDivElement, DetailsProps>(
   (props, forwardedRef) => {
     const themeName = useTheme()
