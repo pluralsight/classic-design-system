@@ -17,7 +17,7 @@ const styles = {
   utility: () => glamor.css(stylesheet['.psds-navbar__utility'])
 }
 
-interface NavBarProps extends HTMLPropsFor<'div'> {
+interface NavBarProps extends HTMLPropsFor<HTMLDivElement> {
   brand?: React.ReactNode
   items?: React.ReactNode
   onMobileMenuClick?: React.MouseEventHandler

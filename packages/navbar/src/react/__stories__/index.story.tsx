@@ -128,7 +128,9 @@ export const ExampleSkills: Story<
                   icon={<BrowseIcon />}
                   selected
                   menu
-                  renderContainer={(contentProps: HTMLPropsFor<'button'>) => (
+                  renderContainer={(
+                    contentProps: HTMLPropsFor<HTMLButtonElement>
+                  ) => (
                     <button
                       {...contentProps}
                       onClick={() => setBrowseMenuOpen(!isBrowseMenuOpen)}
