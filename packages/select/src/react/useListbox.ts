@@ -32,7 +32,13 @@ interface SelectedItem {
 }
 
 export interface UseListboxProps
-  extends Omit<HTMLPropsFor<'button'>, 'onChange' | 'value'> {
+  extends Omit<
+    React.DetailedHTMLProps<
+      React.ButtonHTMLAttributes<HTMLButtonElement>,
+      HTMLButtonElement
+    >,
+    'onChange' | 'value'
+  > {
   disabled?: boolean
   error?: boolean
   onChange?: (

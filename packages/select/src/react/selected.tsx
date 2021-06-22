@@ -19,7 +19,7 @@ const styles = (placeholder: boolean, themeName: ValueOf<typeof themeNames>) =>
       )
   )
 
-interface SelectSelectedProps extends HTMLPropsFor<'label'> {
+interface SelectSelectedProps extends HTMLPropsFor<HTMLLabelElement> {
   label?: string
   placeholder: string
   selectedItem?: {

@@ -44,7 +44,7 @@ const styles = {
   warningIcon: () => glamor.css(stylesheet['.psds-select__error'])
 }
 
-interface SelectButtonProps extends HTMLPropsFor<'button'> {
+interface SelectButtonProps extends HTMLPropsFor<HTMLButtonElement> {
   disabled?: boolean
   error?: boolean
   isOpen?: boolean
