@@ -10,9 +10,9 @@ exports[`Storyshots Components/FocusManager Deep Dynamic Children 1`] = `
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Is tabbable
@@ -28,9 +28,9 @@ exports[`Storyshots Components/FocusManager Dynamic Children 1`] = `
   <button
     data-css-y5dqt5=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       Is tabbable

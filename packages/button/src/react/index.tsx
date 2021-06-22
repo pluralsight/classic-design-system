@@ -60,25 +60,32 @@ const styles = {
         ...stylesheet[`.psds-button--iconOnly.psds-button--size-${size}`]
       }
     ),
-  loading: ({ appearance, themeName }) =>
+  loading: ({ appearance, size, themeName }) =>
     glamor.css(
       stylesheet[`.psds-button__loading`]({ spin }),
+      stylesheet[`.psds-button__loading--size-${size}`],
       stylesheet[`.psds-button__loading--appearance-${appearance}`],
       stylesheet[
         `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
       ]
     ),
-  icon: ({ iconAlign, iconOnly, isLoadingWithNoText, size }) =>
-    glamor.css(
+  icon: ({ iconAlign, iconOnly, labelOnly, loading, size }) => {
+    return glamor.css(
       stylesheet['.psds-button__icon'],
       stylesheet[`.psds-button__icon--iconAlign-${iconAlign}`],
       stylesheet[
         `.psds-button__icon--iconAlign-${iconAlign}.psds-button--size-${size}`
       ],
-      (iconOnly || isLoadingWithNoText) &&
-        stylesheet['.psds-button__icon--iconOnly']
-    ),
-  text: () => glamor.css(stylesheet[`.psds-button__text`])
+      (iconOnly || (loading && labelOnly)) &&
+        stylesheet['.psds-button__icon--iconOnly'],
+      loading && labelOnly && stylesheet['.psds-button__icon--loadingLabelOnly']
+    )
+  },
+  text: (invisible?: boolean) =>
+    glamor.compose(
+      glamor.css(stylesheet[`.psds-button__text`]),
+      invisible && glamor.css(stylesheet[`.psds-button__text--invisible`])
+    )
 }
 
 const mapIconSize = (size: string) => {
@@ -91,24 +98,25 @@ const mapIconSize = (size: string) => {
   return btnToIconSizes[size] ? btnToIconSizes[size] : iconSizes.medium
 }
 
-interface RenderIconProps extends HTMLPropsFor<'div'> {
+interface IconContainerProps extends HTMLPropsFor<'div'> {
+  labelOnly: boolean
   loading: boolean
   icon: React.ReactNode
   appearance: string
   themeName: string
   size: string
   iconOnly: boolean
-  isLoadingWithNoText: boolean
   iconAlign: string
 }
 
-const renderIcon: React.FC<RenderIconProps> = props =>
+const IconContainer: React.FC<IconContainerProps> = props =>
   props.loading ? (
     <div
       {...styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
-        isLoadingWithNoText: props.isLoadingWithNoText,
+        labelOnly: props.labelOnly,
+        loading: props.loading,
         size: props.size
       })}
     >
@@ -116,6 +124,7 @@ const renderIcon: React.FC<RenderIconProps> = props =>
         <span
           {...styles.loading({
             appearance: props.appearance,
+            size: props.size,
             themeName: props.themeName
           })}
         />
@@ -126,7 +135,8 @@ const renderIcon: React.FC<RenderIconProps> = props =>
       {...styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
-        isLoadingWithNoText: props.isLoadingWithNoText,
+        labelOnly: props.labelOnly,
+        loading: props.loading,
         size: props.size
       })}
     >
@@ -179,17 +189,13 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       ...rest
     } = props
 
-    const iconOnly = React.Children.count(children) <= 0
-
     const themeName = useTheme()
 
     const ref = React.useRef<HTMLAnchorElement | HTMLButtonElement>()
     React.useImperativeHandle(forwardedRef, () => ref.current)
 
-    const nonLoadingWidth = React.useMemo(() => {
-      if (loading && ref && ref.current) return ref.current.offsetWidth
-    }, [loading, ref])
-    const isLoadingWithNoText = !!nonLoadingWidth
+    const hasLabel = React.Children.count(children) > 0
+    const iconOnly = !hasLabel
 
     const glamorStyle = styles.button({
       appearance,
@@ -201,22 +207,28 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       size,
       themeName
     })
-    const style = {
-      ...(props.style || {}),
-      ...(isLoadingWithNoText && { width: nonLoadingWidth })
-    }
-    const iconEl = renderIcon({
-      appearance,
-      icon,
-      iconAlign,
-      iconOnly,
-      isLoadingWithNoText,
-      loading,
-      size,
-      themeName
-    })
-    const labelEl = !isLoadingWithNoText && (
-      <span {...styles.text()}>{children}</span>
+
+    const iconEl = (
+      <IconContainer
+        appearance={appearance}
+        icon={icon}
+        iconAlign={iconAlign}
+        iconOnly={iconOnly}
+        labelOnly={hasLabel && !icon}
+        loading={loading}
+        size={size}
+        themeName={themeName}
+      ></IconContainer>
+    )
+
+    const isLoadingAndLabelOnly = hasLabel && loading && !icon
+    const labelEl = (
+      <span
+        {...styles.text(isLoadingAndLabelOnly)}
+        aria-hidden={isLoadingAndLabelOnly}
+      >
+        {children}
+      </span>
     )
 
     if ('href' in props && typeof props.href === 'string') {
@@ -228,7 +240,6 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
           {...glamorStyle}
           {...anchorProps}
           onClick={disabled ? undefined : anchorProps.onClick}
-          style={style}
         >
           {iconEl}
           {labelEl}
@@ -244,7 +255,6 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
           ref={ref as React.Ref<HTMLButtonElement>}
           {...glamorStyle}
           {...buttonProps}
-          style={style}
         >
           {iconEl}
           {labelEl}

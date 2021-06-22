@@ -22,9 +22,9 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       close modal
@@ -115,9 +115,9 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -133,9 +133,9 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -170,9 +170,9 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       close modal
@@ -263,9 +263,9 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -281,9 +281,9 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -318,9 +318,9 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       close modal
@@ -395,9 +395,9 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -413,9 +413,9 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -450,9 +450,9 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       close modal
@@ -542,9 +542,9 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -560,9 +560,9 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -597,9 +597,9 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       close modal
@@ -690,9 +690,9 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -708,9 +708,9 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -745,9 +745,9 @@ exports[`Storyshots Components/Dialog Modal No Focusable Child Elements 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       close modal
@@ -827,9 +827,9 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       close modal
@@ -1244,9 +1244,9 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       close modal
@@ -1661,9 +1661,9 @@ exports[`Storyshots Components/Dialog Modal Styles For 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       close modal
@@ -1754,9 +1754,9 @@ exports[`Storyshots Components/Dialog Modal Styles For 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -1772,9 +1772,9 @@ exports[`Storyshots Components/Dialog Modal Styles For 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -1855,9 +1855,9 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
       <button
         data-css-mw9m92=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Secondary CTA
@@ -1873,9 +1873,9 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
       <button
         data-css-1sp8ths=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Primary CTA
@@ -1974,9 +1974,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -1992,9 +1992,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -2056,9 +2056,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -2074,9 +2074,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -2138,9 +2138,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -2156,9 +2156,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -2220,9 +2220,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -2238,9 +2238,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -2302,9 +2302,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -2320,9 +2320,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -2384,9 +2384,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -2402,9 +2402,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA
@@ -2466,9 +2466,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-mw9m92=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Secondary CTA
@@ -2484,9 +2484,9 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           <button
             data-css-1sp8ths=""
             disabled={false}
-            style={Object {}}
           >
             <span
+              aria-hidden={false}
               data-css-15b13by=""
             >
               Primary CTA

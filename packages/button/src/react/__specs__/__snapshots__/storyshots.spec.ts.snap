@@ -7,9 +7,9 @@ exports[`Storyshots Components/Button Appearances 1`] = `
   <button
     data-css-y5dqt5=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -18,9 +18,9 @@ exports[`Storyshots Components/Button Appearances 1`] = `
   <button
     data-css-1x5ax2g=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -29,9 +29,9 @@ exports[`Storyshots Components/Button Appearances 1`] = `
   <button
     data-css-1cb2wrf=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -40,9 +40,9 @@ exports[`Storyshots Components/Button Appearances 1`] = `
   <button
     data-css-1uk30vr=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -58,9 +58,9 @@ exports[`Storyshots Components/Button Appearances Disabled 1`] = `
   <button
     data-css-1283ymw=""
     disabled={true}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -69,9 +69,9 @@ exports[`Storyshots Components/Button Appearances Disabled 1`] = `
   <button
     data-css-1ukz2bh=""
     disabled={true}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -80,9 +80,9 @@ exports[`Storyshots Components/Button Appearances Disabled 1`] = `
   <button
     data-css-1fra720=""
     disabled={true}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -91,9 +91,9 @@ exports[`Storyshots Components/Button Appearances Disabled 1`] = `
   <button
     data-css-1jpg809=""
     disabled={true}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -109,7 +109,6 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
   <button
     data-css-12bozst=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-1mgd019=""
@@ -129,6 +128,7 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -137,7 +137,6 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
   <button
     data-css-168olz2=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-1mgd019=""
@@ -157,6 +156,7 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -165,7 +165,6 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
   <button
     data-css-t8b8by=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-1mgd019=""
@@ -185,6 +184,7 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -193,7 +193,6 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
   <button
     data-css-68fqys=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-1mgd019=""
@@ -213,6 +212,7 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -226,9 +226,9 @@ exports[`Storyshots Components/Button As Link 1`] = `
   data-css-y5dqt5=""
   href="https://duckduckgo.com"
   onClick={[Function]}
-  style={Object {}}
 >
   <span
+    aria-hidden={false}
     data-css-15b13by=""
   >
     click me
@@ -241,7 +241,6 @@ exports[`Storyshots Components/Button As Link With Icon 1`] = `
   data-css-12bozst=""
   href="https://duckduckgo.com"
   onClick={[Function]}
-  style={Object {}}
 >
   <div
     data-css-1mgd019=""
@@ -261,6 +260,7 @@ exports[`Storyshots Components/Button As Link With Icon 1`] = `
     </div>
   </div>
   <span
+    aria-hidden={false}
     data-css-15b13by=""
   >
     click me
@@ -273,9 +273,9 @@ exports[`Storyshots Components/Button Basic 1`] = `
   data-css-y5dqt5=""
   disabled={false}
   onClick={[Function]}
-  style={Object {}}
 >
   <span
+    aria-hidden={false}
     data-css-15b13by=""
   >
     click me
@@ -293,9 +293,9 @@ exports[`Storyshots Components/Button Class Name Override 1`] = `
   data-css-y5dqt5=""
   disabled={false}
   onClick={[Function]}
-  style={Object {}}
 >
   <span
+    aria-hidden={false}
     data-css-15b13by=""
   >
     click me
@@ -308,9 +308,9 @@ exports[`Storyshots Components/Button Disabled 1`] = `
   data-css-1283ymw=""
   disabled={true}
   onClick={[Function]}
-  style={Object {}}
 >
   <span
+    aria-hidden={false}
     data-css-15b13by=""
   >
     click me
@@ -323,7 +323,6 @@ exports[`Storyshots Components/Button Disabled With Icon 1`] = `
   data-css-105jfs7=""
   disabled={true}
   onClick={[Function]}
-  style={Object {}}
 >
   <div
     data-css-1mgd019=""
@@ -343,6 +342,7 @@ exports[`Storyshots Components/Button Disabled With Icon 1`] = `
     </div>
   </div>
   <span
+    aria-hidden={false}
     data-css-15b13by=""
   >
     click me
@@ -354,26 +354,12 @@ exports[`Storyshots Components/Button Example Autofocus 1`] = `
 <button
   data-css-y5dqt5=""
   disabled={false}
-  style={Object {}}
 >
   <span
+    aria-hidden={false}
     data-css-15b13by=""
   >
     Should be focused
-  </span>
-</button>
-`;
-
-exports[`Storyshots Components/Button Example Loading Transition 1`] = `
-<button
-  data-css-y5dqt5=""
-  disabled={false}
-  style={Object {}}
->
-  <span
-    data-css-15b13by=""
-  >
-    Wait for it
   </span>
 </button>
 `;
@@ -385,7 +371,6 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
   <button
     data-css-12bozst=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-1mgd019=""
@@ -405,6 +390,7 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       left
@@ -413,7 +399,6 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
   <button
     data-css-dx671n=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-8b1vtw=""
@@ -433,6 +418,7 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       right
@@ -446,7 +432,6 @@ exports[`Storyshots Components/Button Icon Only 1`] = `
   data-css-j12pym=""
   disabled={false}
   onClick={[Function]}
-  style={Object {}}
 >
   <div
     data-css-y80vay=""
@@ -466,6 +451,7 @@ exports[`Storyshots Components/Button Icon Only 1`] = `
     </div>
   </div>
   <span
+    aria-hidden={false}
     data-css-15b13by=""
   />
 </button>
@@ -479,9 +465,9 @@ Array [
     <button
       data-css-vm007=""
       disabled={false}
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         fullWidth
@@ -494,9 +480,9 @@ Array [
     <button
       data-css-y5dqt5=""
       disabled={false}
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         inline
@@ -506,13 +492,52 @@ Array [
 ]
 `;
 
-exports[`Storyshots Components/Button Loading Only 1`] = `
+exports[`Storyshots Components/Button Loading Transition 1`] = `
 <button
-  aria-label="loading"
+  data-css-y5dqt5=""
+  disabled={false}
+>
+  <span
+    aria-hidden={false}
+    data-css-15b13by=""
+  >
+    Wait for it
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Loading Transition Start True 1`] = `
+<button
+  aria-label="Loading..."
   data-css-y5dqt5=""
   disabled={true}
+>
+  <div
+    data-css-4d535u=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <span
+        data-css-15l7w9e=""
+      />
+    </div>
+  </div>
+  <span
+    aria-hidden={true}
+    data-css-1arqyvm=""
+  >
+    Wait for it
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Loading With Icon 1`] = `
+<button
+  aria-label="loading"
+  data-css-12bozst=""
+  disabled={true}
   onClick={[Function]}
-  style={Object {}}
 >
   <div
     data-css-1mgd019=""
@@ -526,7 +551,35 @@ exports[`Storyshots Components/Button Loading Only 1`] = `
     </div>
   </div>
   <span
+    aria-hidden={false}
     data-css-15b13by=""
+  >
+    click me
+  </span>
+</button>
+`;
+
+exports[`Storyshots Components/Button Loading With Label No Icon 1`] = `
+<button
+  aria-label="loading"
+  data-css-y5dqt5=""
+  disabled={true}
+  onClick={[Function]}
+>
+  <div
+    data-css-4d535u=""
+  >
+    <div
+      data-css-7dab2f=""
+    >
+      <span
+        data-css-15l7w9e=""
+      />
+    </div>
+  </div>
+  <span
+    aria-hidden={true}
+    data-css-1arqyvm=""
   >
     click me
   </span>
@@ -540,9 +593,9 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   <button
     data-css-v92x0z=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       xSmall
@@ -551,9 +604,9 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   <button
     data-css-b1m7w4=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       small
@@ -562,9 +615,9 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   <button
     data-css-y5dqt5=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       medium
@@ -573,9 +626,9 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   <button
     data-css-1p8sqig=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       large
@@ -591,7 +644,6 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
   <button
     data-css-11py1ib=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-73kfkk=""
@@ -611,6 +663,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       xSmall
@@ -619,7 +672,6 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
   <button
     data-css-1ep5uzm=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-73kfkk=""
@@ -639,6 +691,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       small
@@ -647,7 +700,6 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
   <button
     data-css-12bozst=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-1mgd019=""
@@ -667,6 +719,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       medium
@@ -675,7 +728,6 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
   <button
     data-css-k62s0p=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-1mgd019=""
@@ -695,6 +747,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       large
@@ -715,6 +768,7 @@ exports[`Storyshots Components/Button Style Override 1`] = `
   }
 >
   <span
+    aria-hidden={false}
     data-css-15b13by=""
   >
     click me
@@ -727,9 +781,9 @@ Array [
   <button
     data-css-1uk30vr=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       dark
@@ -738,9 +792,9 @@ Array [
   <button
     data-css-am7l87=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       light
@@ -749,9 +803,9 @@ Array [
   <button
     data-css-1uk30vr=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       dark
@@ -767,9 +821,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-v92x0z=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -778,9 +832,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-b1m7w4=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -789,9 +843,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-y5dqt5=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -800,9 +854,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-1p8sqig=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -811,9 +865,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-uv8iir=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -822,9 +876,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-c3sd2l=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -833,9 +887,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-1x5ax2g=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -844,9 +898,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-g84eh2=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -855,9 +909,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-1char72=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -866,9 +920,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-1mpmjtf=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -877,9 +931,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-1cb2wrf=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -888,9 +942,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-iilb0c=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -899,9 +953,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-10fisbo=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -910,9 +964,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-1d3b8qh=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -921,9 +975,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-1uk30vr=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -932,9 +986,9 @@ exports[`Storyshots Components/Button Variations 1`] = `
   <button
     data-css-1b5o285=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -950,9 +1004,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-v92x0z=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -961,9 +1015,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-b1m7w4=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -972,9 +1026,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-y5dqt5=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -983,9 +1037,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-1p8sqig=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       primary
@@ -994,9 +1048,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-uv8iir=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -1005,9 +1059,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-c3sd2l=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -1016,9 +1070,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-1x5ax2g=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -1027,9 +1081,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-g84eh2=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       secondary
@@ -1038,9 +1092,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-1char72=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -1049,9 +1103,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-1mpmjtf=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -1060,9 +1114,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-1cb2wrf=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -1071,9 +1125,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-iilb0c=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       stroke
@@ -1082,9 +1136,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-10fisbo=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -1093,9 +1147,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-1d3b8qh=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -1104,9 +1158,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-1uk30vr=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -1115,9 +1169,9 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   <button
     data-css-1b5o285=""
     disabled={false}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       flat
@@ -1131,7 +1185,6 @@ exports[`Storyshots Components/Button With Icon 1`] = `
   data-css-12bozst=""
   disabled={false}
   onClick={[Function]}
-  style={Object {}}
 >
   <div
     data-css-1mgd019=""
@@ -1151,32 +1204,7 @@ exports[`Storyshots Components/Button With Icon 1`] = `
     </div>
   </div>
   <span
-    data-css-15b13by=""
-  >
-    click me
-  </span>
-</button>
-`;
-
-exports[`Storyshots Components/Button With Loading 1`] = `
-<button
-  data-css-y5dqt5=""
-  disabled={true}
-  onClick={[Function]}
-  style={Object {}}
->
-  <div
-    data-css-1mgd019=""
-  >
-    <div
-      data-css-7dab2f=""
-    >
-      <span
-        data-css-15l7w9e=""
-      />
-    </div>
-  </div>
-  <span
+    aria-hidden={false}
     data-css-15b13by=""
   >
     click me
