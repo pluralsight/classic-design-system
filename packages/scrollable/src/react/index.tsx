@@ -42,7 +42,7 @@ function areEqualProps(
   return !changed
 }
 
-interface ScrollableProps extends HTMLPropsFor<'div'> {
+interface ScrollableProps extends HTMLPropsFor<HTMLDivElement> {
   renderContent?: (
     props: renderContentProps,
     ref: React.Ref<HTMLElement>
@@ -153,14 +153,20 @@ const defaultRenderContent = (
   contentRef: React.RefCallback<HTMLElement>
 ) => <div {...contentProps} ref={contentRef} />
 
-const Outer = React.memo<HTMLPropsFor<'div'>>(function OuterComp(props) {
+const Outer = React.memo<HTMLPropsFor<HTMLDivElement>>(function OuterComp(
+  props
+) {
   return <div {...styles.outer()} {...props} />
-}, areEqualProps)
+},
+areEqualProps)
 Outer.displayName = 'Scrollable.Outer'
 
-const Inner = React.memo<HTMLPropsFor<'div'>>(function InnerComp(props) {
+const Inner = React.memo<HTMLPropsFor<HTMLDivElement>>(function InnerComp(
+  props
+) {
   return <div {...styles.inner()} {...props} />
-}, areEqualProps)
+},
+areEqualProps)
 Inner.displayName = 'Scrollable.Inner'
 
 interface HandleProps {

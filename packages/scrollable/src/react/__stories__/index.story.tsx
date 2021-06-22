@@ -11,7 +11,7 @@ import Scrollable from '../index'
 
 const glamor = glamorDefault || glamorExports
 
-const Filler: React.FC<HTMLPropsFor<'div'>> = props => (
+const Filler: React.FC<HTMLPropsFor<HTMLDivElement>> = props => (
   <div
     {...props}
     {...glamor.css({
@@ -79,7 +79,7 @@ const ScrollableWithDefaults: React.FC<
   />
 )
 
-const VanillaScroll: React.FC<HTMLPropsFor<'div'>> = props => (
+const VanillaScroll: React.FC<HTMLPropsFor<HTMLDivElement>> = props => (
   <div
     {...glamor.css({
       height: 260,
