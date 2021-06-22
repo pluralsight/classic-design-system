@@ -17,7 +17,7 @@ import stylesheet, { sizeClasses, themeClasses } from '../css/index'
 import { error } from './illustrations/index'
 import { sizes } from '../vars/index'
 
-export interface ErrorPageProps extends HTMLPropsFor<'div'> {
+export interface ErrorPageProps extends HTMLPropsFor<HTMLDivElement> {
   size?: ValueOf<typeof sizes>
   actions?: React.ReactNode
   caption?: React.ReactNode
@@ -127,25 +127,25 @@ const ErrorPage = React.forwardRef<HTMLDivElement, ErrorPageProps>(
   }
 ) as ErrorPageComponent
 
-const Actions: React.FC<HTMLPropsFor<'div'>> = props => (
+const Actions: React.FC<HTMLPropsFor<HTMLDivElement>> = props => (
   <Context.Consumer>
     {ctx => <div {...styles.actions(ctx)} {...props} />}
   </Context.Consumer>
 )
 
-const Caption: React.FC<HTMLPropsFor<'p'>> = props => (
+const Caption: React.FC<HTMLPropsFor<HTMLParagraphElement>> = props => (
   <Context.Consumer>
     {ctx => <p {...styles.caption(ctx)} {...props} />}
   </Context.Consumer>
 )
 
-const ErrorCode: React.FC<HTMLPropsFor<'p'>> = props => (
+const ErrorCode: React.FC<HTMLPropsFor<HTMLParagraphElement>> = props => (
   <Context.Consumer>
     {ctx => <p {...styles.errorCode(ctx)} {...props} />}
   </Context.Consumer>
 )
 
-interface HeadingProps extends HTMLPropsFor<'h1'> {
+interface HeadingProps extends HTMLPropsFor<HTMLHeadingElement> {
   as?: keyof Pick<JSX.IntrinsicElements, 'h1' | 'h2' | 'h3' | 'h4' | 'h5'>
 }
 
@@ -159,7 +159,7 @@ const Heading: React.FC<HeadingProps> = props => {
   )
 }
 
-interface IllustrationProps extends HTMLPropsFor<'svg'> {}
+interface IllustrationProps extends HTMLPropsFor<SVGElement> {}
 
 const Illustration: React.FC<IllustrationProps> = props => {
   const { children: custom, ...rest } = props

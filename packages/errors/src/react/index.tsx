@@ -1,13 +1,15 @@
 import Button from '@pluralsight/ps-design-system-button'
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import ErrorPage from './error-page'
 import { codes } from './codes'
 import { sizes } from '../vars/index'
 
-const Action: React.FC<HTMLPropsFor<'a'>> = ({
+const Action = ({
   href = 'https://help.pluralsight.com/help/contact-us'
+}: {
+  href?: string
 }) => <Button href={href}>Contact support</Button>
 
 export default ErrorPage
@@ -27,7 +29,11 @@ export const subComponents = ({
   errorCode: <ErrorPage.ErrorCode>{errorCode}</ErrorPage.ErrorCode>
 })
 
-interface ErrorPageProps extends HTMLPropsFor<'a'> {
+interface ErrorPageProps
+  extends React.DetailedHTMLProps<
+    React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    HTMLAnchorElement
+  > {
   size: ValueOf<typeof ErrorPage.sizes>
 }
 
