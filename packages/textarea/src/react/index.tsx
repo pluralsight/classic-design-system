@@ -80,7 +80,8 @@ export interface TextAreaStatics {
   appearances: typeof vars.appearances
 }
 
-export interface TextAreaProps extends Omit<HTMLPropsFor<'textarea'>, 'rows'> {
+export interface TextAreaProps
+  extends Omit<HTMLPropsFor<HTMLTextAreaElement>, 'rows'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean
