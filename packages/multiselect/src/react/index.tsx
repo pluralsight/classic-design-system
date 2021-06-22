@@ -305,7 +305,7 @@ MultiSelect.SubLabel = Field.SubLabel
 
 export default MultiSelect
 
-const Pills = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+const Pills = React.forwardRef<HTMLDivElement, HTMLPropsFor<HTMLDivElement>>(
   (props, ref) => {
     const { children, ...rest } = props
 
