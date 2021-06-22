@@ -47,7 +47,8 @@ const useValue = ({
   }
 }
 
-export interface RadioGroupProps extends Omit<HTMLPropsFor<'div'>, 'onChange'> {
+export interface RadioGroupProps
+  extends Omit<HTMLPropsFor<HTMLDivElement>, 'onChange'> {
   children?: React.ReactNode
   disabled?: boolean
   error?: boolean

@@ -43,7 +43,7 @@ const styles = {
 const isChecked = (a: React.ReactText, b?: React.ReactText) => a === b
 
 export interface RadioButtonProps
-  extends Omit<HTMLPropsFor<'input'>, 'onClick'> {
+  extends Omit<HTMLPropsFor<HTMLInputElement>, 'onClick'> {
   label: React.ReactNode
   onBlur?: (evt: React.FocusEvent<HTMLInputElement>) => void
   onClick?: (
