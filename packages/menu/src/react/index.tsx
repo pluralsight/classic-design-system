@@ -39,7 +39,7 @@ interface MenuStatics {
   useMenuRef: typeof useMenuRef
 }
 
-interface MenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
+interface MenuProps extends Omit<HTMLPropsFor<HTMLUListElement>, 'onClick'> {
   selectedItem?: {
     value: React.ReactText
     label: React.ReactText

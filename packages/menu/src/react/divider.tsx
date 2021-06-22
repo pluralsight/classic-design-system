@@ -8,7 +8,7 @@ const glamor = glamorDefault || glamorExports
 
 const styles = glamor.css(stylesheet['.psds-menu__divider'])
 
-export const Divider: React.FC<HTMLPropsFor<'div'>> = props => {
+export const Divider: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
   return <div {...styles} {...props} />
 }
 

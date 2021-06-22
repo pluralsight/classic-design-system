@@ -12,7 +12,7 @@ const styles = {
   icon: glamor.css(stylesheet[`.psds-menu__item-icon`]),
   filler: glamor.css(stylesheet[`.psds-menu__item-icon-filler`])
 }
-interface CheckProps extends HTMLPropsFor<'div'> {}
+interface CheckProps extends HTMLPropsFor<HTMLDivElement> {}
 
 export const Check: React.FC<CheckProps> = props => {
   const { selected } = React.useContext(ItemContext)
