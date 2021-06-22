@@ -3,7 +3,7 @@ import React from 'react'
 
 import useFocusManager from './use-focus-manager'
 
-export interface FocusManagerProps extends HTMLPropsFor<'div'> {
+export interface FocusManagerProps extends HTMLPropsFor<HTMLDivElement> {
   autofocus?: boolean
   returnFocus?: boolean
   trapped?: boolean
