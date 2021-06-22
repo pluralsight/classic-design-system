@@ -60,7 +60,7 @@ interface InternalHaloProps {
   visibleOnFocus: boolean
 }
 
-type HaloProps = HTMLPropsFor<'div'> & Partial<InternalHaloProps>
+type HaloProps = HTMLPropsFor<HTMLDivElement> & Partial<InternalHaloProps>
 
 interface HaloStatics {
   gapSizes: typeof vars.gapSizes

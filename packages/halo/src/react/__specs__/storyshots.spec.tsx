@@ -3,9 +3,10 @@ import initStoryshots from '@storybook/addon-storyshots'
 import * as path from 'path'
 import React from 'react'
 
-jest.mock('../__stories__/focusable', () => (props: HTMLPropsFor<'div'>) => (
-  <div {...props} />
-))
+jest.mock(
+  '../__stories__/focusable',
+  () => (props: HTMLPropsFor<HTMLDivElement>) => <div {...props} />
+)
 
 initStoryshots({
   configPath: path.resolve(__dirname, '../../../.storybook'),
