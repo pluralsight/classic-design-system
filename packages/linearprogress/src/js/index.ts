@@ -1,4 +1,4 @@
-export const toPercentageString = num => {
+export const toPercentageString = (num: string) => {
   try {
     return `${Math.min(parseFloat(num), 100).toFixed()}%`
   } catch (_) {
