@@ -151,13 +151,13 @@ describe('utils/primatives', () => {
   })
 
   describe('#forwardRefWithStatics', () => {
-    interface Props extends HTMLPropsFor<'div'> {}
+    interface Props extends HTMLPropsFor<HTMLDivElement> {}
     interface Statics {
       Nested: typeof Nested
     }
 
     const Nested: React.FC = props => <div {...props} />
-    const Compound = forwardRefWithStatics<Props, 'div', Statics>(
+    const Compound = forwardRefWithStatics<Props, HTMLDivElement, Statics>(
       (props, ref) => <div ref={ref} {...props} />
     )
     Compound.Nested = Nested
