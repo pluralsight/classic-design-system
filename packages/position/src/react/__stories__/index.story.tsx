@@ -55,7 +55,7 @@ const positionFns = {
   leftOf
 }
 
-const Box = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+const Box = React.forwardRef<HTMLDivElement, HTMLPropsFor<HTMLDivElement>>(
   (props, forwardedRef) => {
     const ref = React.useRef<HTMLDivElement>(null)
     /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
@@ -357,7 +357,7 @@ export const PositionsOnEdge: Story = () => (
 
 // TODO: make reusable
 //
-interface StoryGridProps extends HTMLPropsFor<'div'> {
+interface StoryGridProps extends HTMLPropsFor<HTMLDivElement> {
   cols?: number
 }
 const StoryGrid: React.FC<StoryGridProps> = props => {
