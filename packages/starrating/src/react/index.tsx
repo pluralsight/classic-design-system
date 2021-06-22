@@ -14,7 +14,7 @@ const styles = {
     glamor.css(stylesheet[`.psds-starrating__screen-reader-text`])
 }
 
-interface ScreenReaderInputProps extends HTMLPropsFor<'input'> {
+interface ScreenReaderInputProps extends HTMLPropsFor<HTMLInputElement> {
   type: string
   min: number
   max: number
@@ -26,11 +26,12 @@ const ScreenReaderInput: React.FC<ScreenReaderInputProps> = props => (
   <input {...styles.screenReaderInput()} tabIndex={-1} {...props} />
 )
 
-const ScreenReaderText: React.FC<HTMLPropsFor<'span'>> = props => (
+const ScreenReaderText: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => (
   <span {...styles.screenReaderText()} {...props} />
 )
 
-export interface StarRatingProps extends Omit<HTMLPropsFor<'div'>, 'onChange'> {
+export interface StarRatingProps
+  extends Omit<HTMLPropsFor<HTMLDivElement>, 'onChange'> {
   onChange?: (
     val: React.ReactText,
     evt: React.ChangeEvent | React.MouseEvent
