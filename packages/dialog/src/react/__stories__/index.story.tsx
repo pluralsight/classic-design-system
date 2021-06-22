@@ -74,7 +74,7 @@ export const TailPositions: Story = () => (
   </div>
 )
 
-interface ModalStoryProps extends HTMLPropsFor<'div'> {
+interface ModalStoryProps extends HTMLPropsFor<HTMLDivElement> {
   children: (
     storyProps: Record<string, unknown>,
     callbacks: Record<string, unknown>
