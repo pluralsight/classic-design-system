@@ -42,7 +42,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     setOpen(false)
   }
   const { getDateProps, ...dayzedData } = useDayzed({
-    date: selected || new Date('05/30/2020'),
+    date: selected,
     selected,
     onDateSelected
   })
