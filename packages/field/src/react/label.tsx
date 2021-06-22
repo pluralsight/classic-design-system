@@ -18,7 +18,9 @@ const styles = {
     )
 }
 
-interface LabelProps extends HTMLPropsFor<'label'> {}
+interface LabelProps extends HTMLPropsFor<HTMLLabelElement> {
+  htmlFor?: string
+}
 
 const Label = React.forwardRef<HTMLLabelElement, LabelProps>((props, ref) => {
   const { children, ...rest } = props

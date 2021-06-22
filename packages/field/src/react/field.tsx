@@ -44,7 +44,7 @@ const styles = {
 type InputElements = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
 
 export interface FieldProps
-  extends Omit<HTMLPropsFor<'div'>, 'prefix' | 'ref'> {
+  extends Omit<HTMLPropsFor<HTMLDivElement>, 'prefix' | 'ref'> {
   disabled?: boolean
   error?: boolean
   label?: React.ReactNode
@@ -156,7 +156,7 @@ const Field = forwardRefWithStatics<FieldProps, HTMLDivElement, FieldStatics>(
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
-  Omit<HTMLPropsFor<'div'>, 'ref'>
+  Omit<HTMLPropsFor<HTMLDivElement>, 'ref'>
 >((props, ref) => <div ref={ref} {...props} />)
 
 const defaultRenderTag: React.FC = props => <div {...props} />

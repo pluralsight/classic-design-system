@@ -40,7 +40,7 @@ export const SetWidthDecorator = (Story: Story) => {
 }
 
 interface PillsProps
-  extends Omit<HTMLPropsFor<'div'>, 'ref'>,
+  extends Omit<HTMLPropsFor<HTMLDivElement>, 'ref'>,
     React.RefAttributes<HTMLDivElement> {}
 
 interface PillsStatics {

@@ -11,7 +11,11 @@ const styles = {
   textArea: () => glamor.css(stylesheet['.psds-field__text-area'])
 }
 
-interface TextAreaProps extends HTMLPropsFor<'textarea'> {
+interface TextAreaProps
+  extends React.DetailedHTMLProps<
+    React.TextareaHTMLAttributes<HTMLTextAreaElement>,
+    HTMLTextAreaElement
+  > {
   renderContainer?: typeof defaultRenderContainer
 }
 
@@ -33,7 +37,7 @@ TextArea.displayName = 'Field.TextArea'
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
-  HTMLPropsFor<'div'>
+  HTMLPropsFor<HTMLDivElement>
 >((props, ref) => <div ref={ref} {...props} />)
 
 export default TextArea

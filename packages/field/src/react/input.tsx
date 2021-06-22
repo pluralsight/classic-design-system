@@ -17,40 +17,49 @@ const styles = {
     )
 }
 
-interface InputProps extends Omit<HTMLPropsFor<'input'>, 'ref'> {
+export interface FieldInputProps
+  extends Omit<
+    React.DetailedHTMLProps<
+      React.InputHTMLAttributes<HTMLInputElement>,
+      HTMLInputElement
+    >,
+    'ref'
+  > {
   renderContainer?: typeof defaultRenderContainer
   renderTag?: typeof defaultRenderTag
 }
 
-const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
-  const { size } = React.useContext(FieldContext)
-  const {
-    renderContainer = defaultRenderContainer,
-    renderTag = defaultRenderTag,
-    ...rest
-  } = props
+const Input = React.forwardRef<HTMLInputElement, FieldInputProps>(
+  (props, ref) => {
+    const { size } = React.useContext(FieldContext)
+    const {
+      renderContainer = defaultRenderContainer,
+      renderTag = defaultRenderTag,
+      ...rest
+    } = props
 
-  const containerRef = React.useRef<HTMLDivElement>(null)
-  const Container = React.useMemo(() => renderContainer, [renderContainer])
+    const containerRef = React.useRef<HTMLDivElement>(null)
+    const Container = React.useMemo(() => renderContainer, [renderContainer])
 
-  const Tag = React.useMemo(() => renderTag, [renderTag])
+    const Tag = React.useMemo(() => renderTag, [renderTag])
 
-  return (
-    <Container {...styles.container()} ref={containerRef}>
-      <Tag ref={ref} {...styles.input(size)} {...rest} />
-    </Container>
-  )
-})
+    return (
+      <Container {...styles.container()} ref={containerRef}>
+        <Tag ref={ref} {...styles.input(size)} {...rest} />
+      </Container>
+    )
+  }
+)
 Input.displayName = 'Field.Input'
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
-  HTMLPropsFor<'div'>
+  HTMLPropsFor<HTMLDivElement>
 >((props, ref) => <div ref={ref} {...props} />)
 
 const defaultRenderTag = React.forwardRef<
   HTMLInputElement,
-  HTMLPropsFor<'input'>
+  HTMLPropsFor<HTMLInputElement>
 >((props, ref) => <input ref={ref} {...props} />)
 
 export default Input

@@ -18,7 +18,7 @@ const styles = {
     )
 }
 
-interface SubLabelProps extends HTMLPropsFor<'div'> {}
+interface SubLabelProps extends HTMLPropsFor<HTMLDivElement> {}
 
 const SubLabel = React.forwardRef<HTMLDivElement, SubLabelProps>(
   (props, ref) => {
