@@ -71,7 +71,7 @@ const styles = {
   metadataDot: () => glamor.css(stylesheet['.psds-note__metadata-dot'])
 }
 
-interface NoteProps extends HTMLPropsFor<'div'> {
+interface NoteProps extends HTMLPropsFor<HTMLDivElement> {
   actionBar?: React.ReactElement<typeof Action>[]
   actionBarVisible?: boolean
   avatar?:
@@ -186,7 +186,10 @@ const Note: React.FC<NoteProps> & NoteStatics = props => {
 }
 export default Note
 
-const NoteList: React.FC<HTMLPropsFor<'ol'>> = ({ children, ...rest }) => {
+const NoteList: React.FC<HTMLPropsFor<HTMLOListElement>> = ({
+  children,
+  ...rest
+}) => {
   const themeName = useTheme()
   return (
     <ol {...styles.noteList()} {...rest}>
@@ -198,7 +201,7 @@ const NoteList: React.FC<HTMLPropsFor<'ol'>> = ({ children, ...rest }) => {
 }
 NoteList.displayName = 'Note.List'
 
-interface ActionProps extends HTMLPropsFor<'button'> {
+interface ActionProps extends HTMLPropsFor<HTMLButtonElement> {
   icon: React.ReactNode
   title: string
 }
