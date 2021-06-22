@@ -215,6 +215,33 @@ export const DatePickerSuffix: Story = () => (
   <DatePicker suffix={<HomeIcon />} label="Suffix" _uniqueId={stableUniqueId} />
 )
 
+export const DatePickerInitialValue: Story = () => {
+  const value = new Date(1999, 11, 31)
+  return (
+    <DatePicker
+      suffix={<HomeIcon />}
+      label="Controlled component, set to 31 Dec 1999"
+      value={value}
+      _uniqueId={stableUniqueId}
+    />
+  )
+}
+
+export const DatePickerChangeValue: Story = () => {
+  const [date, setDate] = React.useState(new Date(1999, 11, 31))
+  return (
+    <div>
+      <button onClick={() => setDate(new Date(2000, 0, 1))}>Go Y2K!</button>
+      <DatePicker
+        suffix={<HomeIcon />}
+        label="Controlled component, set to 31 Dec 1999"
+        value={date}
+        _uniqueId={stableUniqueId}
+      />
+    </div>
+  )
+}
+
 export const RangeDateCalendar: Story = () => {
   const [selected, setSelected] = React.useState<Date[] | undefined>()
   const { getDateProps, ...dayzedData } = useDayzed({

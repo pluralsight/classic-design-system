@@ -12,6 +12,7 @@ import { slides } from '../vars/index'
 interface DatePickerProps
   extends Omit<React.ComponentProps<typeof Field>, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
+  value?: Date
   _uniqueId?: (prefix: string) => string
 }
 
@@ -26,10 +27,14 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   subLabel,
   suffix,
   onSelect,
+  value: valueFromProps,
   _uniqueId,
   ...props
 }) => {
-  const [selected, setSelected] = React.useState<Date | undefined>()
+  const [selected, setSelected] = React.useState<Date | undefined>(
+    valueFromProps
+  )
+  React.useEffect(() => setSelected(valueFromProps), [valueFromProps])
   const [open, setOpen] = React.useState<boolean>(false)
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
     onSelect && onSelect(evt, dateObj)

@@ -543,6 +543,100 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
+<div>
+  <button
+    onClick={[Function]}
+  >
+    Go Y2K!
+  </button>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      data-css-w0yocm=""
+      onClick={[Function]}
+    >
+      <label
+        data-css-5jjrbq=""
+        htmlFor="text-input__input-unique-id"
+        id="text-input__label-unique-id"
+      >
+        Controlled component, set to 31 Dec 1999
+      </label>
+      <div
+        data-css-63oe3q=""
+        data-css-8qmpxt=""
+      >
+        <div
+          data-css-1goiqvn=""
+        >
+          <div
+            data-css-16bnq5b=""
+          >
+            <div
+              data-css-7dab2f=""
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+            >
+              <svg
+                aria-label="calendar icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            data-css-n9fe5c=""
+          >
+            <input
+              data-css-1nm5z1g=""
+              id="text-input__input-unique-id"
+              onChange={[Function]}
+              placeholder="mm/dd/yyyy"
+              value="12/31/1999"
+            />
+          </div>
+          <div
+            data-css-ugy1u5=""
+          >
+            <div
+              data-css-7dab2f=""
+            >
+              <svg
+                aria-label="home icon"
+                role="img"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                  fillRule="evenodd"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
 <div
   style={
@@ -757,6 +851,93 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
             placeholder="mm/dd/yyyy"
             value=""
           />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+</div>
+`;
+
+exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
+<div
+  style={
+    Object {
+      "display": "inline-block",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    data-css-w0yocm=""
+    onClick={[Function]}
+  >
+    <label
+      data-css-5jjrbq=""
+      htmlFor="text-input__input-unique-id"
+      id="text-input__label-unique-id"
+    >
+      Controlled component, set to 31 Dec 1999
+    </label>
+    <div
+      data-css-63oe3q=""
+      data-css-8qmpxt=""
+    >
+      <div
+        data-css-1goiqvn=""
+      >
+        <div
+          data-css-16bnq5b=""
+        >
+          <div
+            data-css-7dab2f=""
+            onClick={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+          >
+            <svg
+              aria-label="calendar icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          data-css-n9fe5c=""
+        >
+          <input
+            data-css-1nm5z1g=""
+            id="text-input__input-unique-id"
+            onChange={[Function]}
+            placeholder="mm/dd/yyyy"
+            value="12/31/1999"
+          />
+        </div>
+        <div
+          data-css-ugy1u5=""
+        >
+          <div
+            data-css-7dab2f=""
+          >
+            <svg
+              aria-label="home icon"
+              role="img"
+              viewBox="0 0 24 24"
+            >
+              <path
+                clipRule="evenodd"
+                d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                fillRule="evenodd"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
