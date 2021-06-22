@@ -23,7 +23,8 @@ export const DropdownContext = React.createContext<DropdownContextValue>({
   onMenuClick: (_evt, _value) => {}
 })
 
-interface UseDropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
+interface UseDropdownProps
+  extends Omit<HTMLPropsFor<HTMLButtonElement>, 'onChange'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   className?: string

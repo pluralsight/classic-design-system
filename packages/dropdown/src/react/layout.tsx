@@ -14,7 +14,7 @@ const styles = {
     )
 }
 
-interface DropdownLayoutProps extends HTMLPropsFor<'div'> {
+interface DropdownLayoutProps extends HTMLPropsFor<HTMLDivElement> {
   button: React.ReactNode
   disabled?: boolean
   input?: React.ReactNode

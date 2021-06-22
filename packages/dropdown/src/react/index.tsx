@@ -30,7 +30,8 @@ interface DropdownStatics {
   Selected: typeof Selected
 }
 
-interface DropdownProps extends Omit<HTMLPropsFor<'button'>, 'onChange'> {
+interface DropdownProps
+  extends Omit<HTMLPropsFor<HTMLButtonElement>, 'onChange'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   className?: string

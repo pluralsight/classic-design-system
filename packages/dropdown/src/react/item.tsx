@@ -21,7 +21,8 @@ const styles = {
     glamor.css(stylesheet['.psds-dropdown__item-selected-icon'])
 }
 
-interface DropdownItemProps extends Omit<HTMLPropsFor<'button'>, 'onClick'> {
+interface DropdownItemProps
+  extends Omit<HTMLPropsFor<HTMLButtonElement>, 'onClick'> {
   children: React.ReactText
   disabled?: boolean
   onClick?: (evt: React.MouseEvent, value: React.ReactText) => void

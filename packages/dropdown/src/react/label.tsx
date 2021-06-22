@@ -19,7 +19,7 @@ const styles = {
     )
 }
 
-interface LabelProps extends HTMLPropsFor<'label'> {
+interface LabelProps extends HTMLPropsFor<HTMLLabelElement> {
   label?: React.ReactNode
 }
 

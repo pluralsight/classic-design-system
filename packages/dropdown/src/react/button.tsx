@@ -55,7 +55,7 @@ const styles = {
   inner: () => glamor.css(stylesheet['.psds-dropdown__field-inner'])
 }
 
-interface DropdownButtonProps extends HTMLPropsFor<'button'> {
+interface DropdownButtonProps extends HTMLPropsFor<HTMLButtonElement> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean

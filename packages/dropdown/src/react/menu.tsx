@@ -28,7 +28,7 @@ const styles = {
     )
 }
 
-interface DropdownMenuProps extends HTMLPropsFor<'div'> {
+interface DropdownMenuProps extends HTMLPropsFor<HTMLDivElement> {
   inNode?: HTMLElement
   isOpen: boolean
   menu: React.ReactNode

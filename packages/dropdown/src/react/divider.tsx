@@ -10,7 +10,7 @@ const styles = {
   divider: () => glamor.css(stylesheet['.psds-dropdown__divider'])
 }
 
-export const Divider: React.FC<HTMLPropsFor<'div'>> = props => {
+export const Divider: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
   return <div {...styles.divider()} {...props} />
 }
 

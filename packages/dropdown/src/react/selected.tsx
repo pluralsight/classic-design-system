@@ -33,7 +33,7 @@ const styles = {
   }
 }
 
-interface DropdownSelectedProps extends HTMLPropsFor<'label'> {
+interface DropdownSelectedProps extends HTMLPropsFor<HTMLLabelElement> {
   appearance?: ValueOf<typeof vars.appearances>
   label?: string
   placeholder?: string
