@@ -36,13 +36,14 @@ interface ListStatics {
   Item: typeof ListItem
 }
 
-interface UnorderedListProps extends HTMLPropsFor<'ul'> {
+interface UnorderedListProps extends HTMLPropsFor<HTMLUListElement> {
   type?: ValueOf<typeof vars.listTypes>
   size?: ValueOf<typeof vars.listSizes>
   color?: ValueOf<typeof vars.textColors>
 }
 
-interface OrderedListProps extends Omit<HTMLPropsFor<'ol'>, 'type'> {
+interface OrderedListProps
+  extends Omit<HTMLPropsFor<HTMLOListElement>, 'type'> {
   type?: ValueOf<typeof vars.listTypes>
   size?: ValueOf<typeof vars.listSizes>
   color?: ValueOf<typeof vars.textColors>

@@ -30,7 +30,7 @@ interface PStatics {
   colors: typeof vars.textColors
 }
 
-interface PProps extends HTMLPropsFor<'p'> {
+interface PProps extends HTMLPropsFor<HTMLParagraphElement> {
   size?: ValueOf<typeof vars.pSizes>
   color?: ValueOf<typeof vars.textColors>
 }

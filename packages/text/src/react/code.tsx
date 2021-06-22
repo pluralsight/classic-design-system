@@ -13,7 +13,7 @@ const style = ({ themeName }: { themeName: ValueOf<typeof names> }) =>
     glamor.css(stylesheet[`.psds-text__code.psds-theme--${themeName}`])
   )
 
-const Code: React.FC<HTMLPropsFor<'code'>> = props => {
+const Code: React.FC<HTMLPropsFor<HTMLElement>> = props => {
   const themeName = useTheme()
 
   return props.children ? (
