@@ -29,7 +29,7 @@ const styles = {
   dismiss: () => glamor.css(stylesheet['.psds-navcookiebanner__dismiss'])
 }
 
-interface NavCookieBannerProps extends HTMLPropsFor<'div'> {
+interface NavCookieBannerProps extends HTMLPropsFor<HTMLDivElement> {
   cookieOptions?: CookieSetOptions
   message?: React.ReactNode
   privacyUpdatedDate?: typeof Date
