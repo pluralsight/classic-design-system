@@ -22,7 +22,7 @@ const style: { [name: string]: StyleFn } = {
     )
 }
 
-export interface IconProps extends HTMLPropsFor<'div'> {
+export interface IconProps extends HTMLPropsFor<HTMLDivElement> {
   color?: ValueOf<typeof colors>
   size?: ValueOf<typeof sizes>
 }

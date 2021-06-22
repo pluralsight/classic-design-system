@@ -28,6 +28,7 @@ export const Sizes: Story = () => (
 export const ExportedIcons: Story = () => (
   <StoryGrid>
     {Object.keys(Icons).map(id => {
+      // @ts-ignore: mapping over Icons
       const Comp = Icons[id]
       return [
         <div key={'div' + id}>{id}</div>,
