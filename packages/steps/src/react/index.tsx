@@ -118,7 +118,11 @@ interface StepsStatics {
   statuses: typeof vars.statuses
 }
 
-interface StepsProps extends HTMLPropsFor<'div'> {
+interface StepsProps
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+  > {
   counter?: boolean
   orientation?: ValueOf<typeof Steps.orientations>
   size?: ValueOf<typeof Steps.sizes>
@@ -143,13 +147,15 @@ const Steps = React.forwardRef<HTMLDivElement, StepsProps>((props, ref) => {
 
 Steps.displayName = 'Steps'
 
-interface StepProps extends HTMLPropsFor<'div'> {
+interface StepProps extends HTMLPropsFor<HTMLDivElement> {
   description?: React.ReactNode
   marker?: React.ComponentType<MarkerProps>
-  renderMarkerContainer?: (props: HTMLPropsFor<'div'>) => React.ReactElement
+  renderMarkerContainer?: (
+    props: HTMLPropsFor<HTMLDivElement>
+  ) => React.ReactElement
   status: ValueOf<typeof Steps.statuses>
 }
-const defaultMarkerContainer = (props: HTMLPropsFor<'div'>) => (
+const defaultMarkerContainer = (props: HTMLPropsFor<HTMLDivElement>) => (
   <div {...props} />
 )
 
@@ -198,7 +204,7 @@ const Step = React.forwardRef<HTMLDivElement, StepProps>((props, ref) => {
 })
 Step.displayName = 'Steps.Step'
 
-interface MarkerProps extends Omit<HTMLPropsFor<'div'>, 'ref'> {
+interface MarkerProps extends Omit<HTMLPropsFor<HTMLDivElement>, 'ref'> {
   status: ValueOf<typeof Steps.statuses>
 }
 
