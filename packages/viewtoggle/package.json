@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-viewtoggle",
-  "version": "9.0.6",
+  "version": "9.0.7",
   "description": "Design System component for view toggle ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -28,9 +28,9 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^8.2.0",
-    "@pluralsight/ps-design-system-icon": "^23.1.12",
-    "@pluralsight/ps-design-system-util": "^9.2.6"
+    "@pluralsight/ps-design-system-core": "^8.2.1",
+    "@pluralsight/ps-design-system-icon": "^23.1.13",
+    "@pluralsight/ps-design-system-util": "^9.2.7"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^5.1.2",
@@ -39,9 +39,9 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^3.2.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.0",
-    "@pluralsight/ps-design-system-theme": "^8.1.10"
+    "@pluralsight/ps-design-system-build": "^3.2.1",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.1",
+    "@pluralsight/ps-design-system-theme": "^8.1.11"
   },
   "gitHead": "287df3d6daa2044fe511c370ad581bfa529c67db"
 }
