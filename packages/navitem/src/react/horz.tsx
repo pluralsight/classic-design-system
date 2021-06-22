@@ -50,12 +50,12 @@ export const HorzLayout: React.FC = props => {
 }
 HorzLayout.displayName = 'NavItem.HorzLayout'
 
-const HorzContainer: React.FC<HTMLPropsFor<'span'>> = props => {
+const HorzContainer: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => {
   return <span {...styles.container()} {...props} />
 }
 HorzContainer.displayName = 'NavItem.HorzContainer'
 
-const HorzCaret: React.FC<HTMLPropsFor<'span'>> = props => {
+const HorzCaret: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => {
   return (
     <span {...styles.caret()} {...props}>
       <CaretDownIcon size={CaretDownIcon.sizes.small} />
@@ -70,7 +70,7 @@ const HorzIcon: React.FC<{ hasLabel: boolean }> = props => {
 }
 HorzIcon.displayName = 'NavItem.HorzIcon'
 
-const HorzLabel: React.FC<HTMLPropsFor<'span'>> = props => {
+const HorzLabel: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => {
   return <span {...styles.label()} {...props} />
 }
 HorzLabel.displayName = 'NavItem.HorzLabel'

@@ -40,7 +40,7 @@ const styles = {
     )
 }
 
-export const Bar: React.FC<HTMLPropsFor<'div'>> = props => {
+export const Bar: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
   // eslint-disable-next-line camelcase
   const { alignment, selected, UNSAFE_stylesFor } = React.useContext(Context)
 

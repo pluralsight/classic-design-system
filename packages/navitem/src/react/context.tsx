@@ -23,7 +23,7 @@ export interface ContextValue {
 
 const defaultRenderContainer = React.forwardRef<
   HTMLButtonElement,
-  HTMLPropsFor<'button'>
+  HTMLPropsFor<HTMLButtonElement>
 >((props, ref) => <button ref={ref} {...props} />)
 
 export const initialValue: ContextValue = {

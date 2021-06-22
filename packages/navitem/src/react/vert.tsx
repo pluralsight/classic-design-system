@@ -36,12 +36,12 @@ export const VertLayout: React.FC = props => {
 }
 VertLayout.displayName = 'NavItem.VertLayout'
 
-const VertContainer: React.FC<HTMLPropsFor<'span'>> = props => {
+const VertContainer: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => {
   return <span {...styles.container()} {...props} />
 }
 VertContainer.displayName = 'NavItem.VertContainer'
 
-const VertCaret: React.FC<HTMLPropsFor<'span'>> = props => {
+const VertCaret: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => {
   return (
     <span {...styles.caret()} {...props}>
       <CaretDownIcon size={CaretDownIcon.sizes.small} />
@@ -55,7 +55,7 @@ const VertIcon: React.FC = props => {
 }
 VertIcon.displayName = 'NavItem.VertIcon'
 
-const VertLabel: React.FC<HTMLPropsFor<'span'>> = props => {
+const VertLabel: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => {
   return <span {...styles.label()} {...props} />
 }
 VertLabel.displayName = 'NavItem.VertLabel'
