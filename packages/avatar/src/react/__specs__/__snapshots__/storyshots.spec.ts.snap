@@ -2,11 +2,11 @@
 
 exports[`Storyshots Components/Avatar Basic 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <div
     aria-label="Jake Trent"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -20,12 +20,11 @@ exports[`Storyshots Components/Avatar Basic 1`] = `
 
 exports[`Storyshots Components/Avatar Class Name Override 1`] = `
 <div
-  className="fakeClassName"
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium fakeClassName"
 >
   <div
     aria-label="Jake Trent"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -39,18 +38,18 @@ exports[`Storyshots Components/Avatar Class Name Override 1`] = `
 
 exports[`Storyshots Components/Avatar Gravatar Invalid 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <img
     alt="Jake Trent"
-    data-css-d7y6x2=""
+    className="psds-avatar__image"
     onError={[Function]}
     onLoad={[Function]}
     src="https://secure.gravatar.com/avatar/invalidhash?d=tmp&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
   />
   <div
     aria-label="Jake Trent"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -64,18 +63,18 @@ exports[`Storyshots Components/Avatar Gravatar Invalid 1`] = `
 
 exports[`Storyshots Components/Avatar Image Error 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <img
     alt="Jake Trent"
-    data-css-d7y6x2=""
+    className="psds-avatar__image"
     onError={[Function]}
     onLoad={[Function]}
     src="https://jaketrent.com/fake.jpg"
   />
   <div
     aria-label="Bill Dill"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#0074AB",
@@ -89,18 +88,18 @@ exports[`Storyshots Components/Avatar Image Error 1`] = `
 
 exports[`Storyshots Components/Avatar Image Flat And Long 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <img
     alt="Jake Trent"
-    data-css-d7y6x2=""
+    className="psds-avatar__image"
     onError={[Function]}
     onLoad={[Function]}
     src="https://cdn1.thr.com/sites/default/files/2019/03/chrisrocknaacp.jpg"
   />
   <div
     aria-label="Jake Trent"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -114,18 +113,18 @@ exports[`Storyshots Components/Avatar Image Flat And Long 1`] = `
 
 exports[`Storyshots Components/Avatar Image Square 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <img
     alt="Jake Trent"
-    data-css-d7y6x2=""
+    className="psds-avatar__image"
     onError={[Function]}
     onLoad={[Function]}
     src="https://gravatar.com/avatar/63a1fa126f541c0f0ecf1d74f7a40640?s=320&r=g&d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
   />
   <div
     aria-label="Jake Trent"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -139,18 +138,18 @@ exports[`Storyshots Components/Avatar Image Square 1`] = `
 
 exports[`Storyshots Components/Avatar Image Tall And Thin 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <img
     alt="Jake Trent"
-    data-css-d7y6x2=""
+    className="psds-avatar__image"
     onError={[Function]}
     onLoad={[Function]}
     src="https://akns-images.eonline.com/eol_images/Entire_Site/2010330/293.WillFerrell.tg.043010.jpg"
   />
   <div
     aria-label="Jake Trent"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -164,18 +163,18 @@ exports[`Storyshots Components/Avatar Image Tall And Thin 1`] = `
 
 exports[`Storyshots Components/Avatar Image Valid 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <img
     alt="Jake Trent"
-    data-css-d7y6x2=""
+    className="psds-avatar__image"
     onError={[Function]}
     onLoad={[Function]}
     src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
   />
   <div
     aria-label="Jake Trent"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -189,11 +188,11 @@ exports[`Storyshots Components/Avatar Image Valid 1`] = `
 
 exports[`Storyshots Components/Avatar Name Empty 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <div
     aria-label=""
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#C00F00",
@@ -207,11 +206,11 @@ exports[`Storyshots Components/Avatar Name Empty 1`] = `
 
 exports[`Storyshots Components/Avatar Name Single Char 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <div
     aria-label="x"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -225,11 +224,11 @@ exports[`Storyshots Components/Avatar Name Single Char 1`] = `
 
 exports[`Storyshots Components/Avatar Name Special Char 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <div
     aria-label="% Special Char"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -243,10 +242,10 @@ exports[`Storyshots Components/Avatar Name Special Char 1`] = `
 
 exports[`Storyshots Components/Avatar Name Undefined 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
 >
   <div
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#D1487B",
@@ -261,10 +260,10 @@ exports[`Storyshots Components/Avatar Name Undefined 1`] = `
 exports[`Storyshots Components/Avatar Sizes 1`] = `
 Array [
   <div
-    data-css-79vgce=""
+    className="psds-avatar psds-avatar--size-xSmall"
   >
     <div
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -275,10 +274,10 @@ Array [
     </div>
   </div>,
   <div
-    data-css-xthig=""
+    className="psds-avatar psds-avatar--size-small"
   >
     <div
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -289,10 +288,10 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -303,10 +302,10 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1bcvkli=""
+    className="psds-avatar psds-avatar--size-large"
   >
     <div
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -317,10 +316,10 @@ Array [
     </div>
   </div>,
   <div
-    data-css-1vdca9w=""
+    className="psds-avatar psds-avatar--size-xLarge"
   >
     <div
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -335,7 +334,7 @@ Array [
 
 exports[`Storyshots Components/Avatar Style Override 1`] = `
 <div
-  data-css-1a2nnhr=""
+  className="psds-avatar psds-avatar--size-medium"
   style={
     Object {
       "border": "3px solid red",
@@ -344,7 +343,7 @@ exports[`Storyshots Components/Avatar Style Override 1`] = `
 >
   <div
     aria-label="Jake Trent"
-    data-css-1xbr5gr=""
+    className="psds-avatar__initials"
     style={
       Object {
         "backgroundColor": "#7048C6",
@@ -359,11 +358,11 @@ exports[`Storyshots Components/Avatar Style Override 1`] = `
 exports[`Storyshots Components/Avatar Various Names 1`] = `
 <div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Anakin Skywalker"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#C00F00",
@@ -374,11 +373,11 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
     </div>
   </div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Budapest Skywalker"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -389,11 +388,11 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
     </div>
   </div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Carlos Organa"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#009380",
@@ -404,11 +403,11 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
     </div>
   </div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Dennis Pimenta"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#7048C6",
@@ -419,11 +418,11 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
     </div>
   </div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Peia Organa"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#0074AB",
@@ -434,11 +433,11 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
     </div>
   </div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Obi-Wan Kenobi"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -449,11 +448,11 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
     </div>
   </div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Uy Marley"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#D1487B",
@@ -464,11 +463,11 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
     </div>
   </div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Harry Potter"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#0074AB",
@@ -479,11 +478,11 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
     </div>
   </div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Diz Blau"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#6BA300",
@@ -494,11 +493,11 @@ exports[`Storyshots Components/Avatar Various Names 1`] = `
     </div>
   </div>
   <div
-    data-css-1a2nnhr=""
+    className="psds-avatar psds-avatar--size-medium"
   >
     <div
       aria-label="Single"
-      data-css-1xbr5gr=""
+      className="psds-avatar__initials"
       style={
         Object {
           "backgroundColor": "#7048C6",

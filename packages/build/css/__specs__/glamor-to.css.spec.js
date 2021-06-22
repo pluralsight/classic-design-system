@@ -3,8 +3,10 @@ import glamorToCss from '../glamor-to-css.js'
 describe('#glamorToCss', () => {
   it('converts a simple style to flattened css', () => {
     const style = {
-      '.a': {
-        color: 'black'
+      default: {
+        '.a': {
+          color: 'black'
+        }
       }
     }
 
@@ -15,8 +17,10 @@ describe('#glamorToCss', () => {
 
   it('does not strip values from rgba', () => {
     const style = {
-      '.a': {
-        color: 'rgba(170, 170, 170, 0.24)'
+      default: {
+        '.a': {
+          color: 'rgba(170, 170, 170, 0.24)'
+        }
       }
     }
 
@@ -27,11 +31,13 @@ describe('#glamorToCss', () => {
 
   it('converts multiple styles to css', () => {
     const style = {
-      '.first-style': {
-        color: 'black'
-      },
-      '.second-style': {
-        color: 'green'
+      default: {
+        '.first-style': {
+          color: 'black'
+        },
+        '.second-style': {
+          color: 'green'
+        }
       }
     }
 
@@ -42,11 +48,13 @@ describe('#glamorToCss', () => {
 
   it('converts a nested style to flattened css', () => {
     const style = {
-      '.a': {
-        color: 'black',
+      default: {
+        '.a': {
+          color: 'black',
 
-        '&:hover': {
-          color: 'white'
+          '&:hover': {
+            color: 'white'
+          }
         }
       }
     }
@@ -58,11 +66,13 @@ describe('#glamorToCss', () => {
 
   it('allows unique comma-delimited selectors', () => {
     const style = {
-      '.a,.b': {
-        color: 'black',
+      default: {
+        '.a,.b': {
+          color: 'black',
 
-        '&:hover': {
-          color: 'white'
+          '&:hover': {
+            color: 'white'
+          }
         }
       }
     }
@@ -74,8 +84,10 @@ describe('#glamorToCss', () => {
 
   it('converts numbers to pixel values', () => {
     const style = {
-      '.abc': {
-        fontSize: 4
+      default: {
+        '.abc': {
+          fontSize: 4
+        }
       }
     }
 
@@ -87,15 +99,17 @@ describe('#glamorToCss', () => {
   it('converts keyframes mixed with selectors', () => {
     expect(
       glamorToCss({
-        '@keyframes foo__zers': {
-          from: {
-            opacity: 0
+        default: {
+          '@keyframes foo__zers': {
+            from: {
+              opacity: 0
+            },
+            to: {
+              opacity: 1
+            }
           },
-          to: {
-            opacity: 1
-          }
-        },
-        '.amaze': { zing: 'showman' }
+          '.amaze': { zing: 'showman' }
+        }
       })
     ).toEqual(
       `@keyframes foo__zers {
@@ -112,12 +126,14 @@ describe('#glamorToCss', () => {
   it('converts function selectors for keyframe animations', () => {
     expect(
       glamorToCss({
-        '.psds-button__loading': ({ spin }) => ({
-          animation: `${
-            spin || 'psds-button__keyframes__spin'
-          } 1s linear infinite`
-        }),
-        '.other': { whiteSpace: 'nowrap' }
+        default: {
+          '.psds-button__loading': ({ spin }) => ({
+            animation: `${
+              spin || 'psds-button__keyframes__spin'
+            } 1s linear infinite`
+          }),
+          '.other': { whiteSpace: 'nowrap' }
+        }
       })
     ).toEqual(
       `.psds-button__loading {

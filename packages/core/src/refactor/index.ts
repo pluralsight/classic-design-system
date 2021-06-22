@@ -17,7 +17,7 @@ type Tokens = {
   motion: typeof motion
 } & typeof colors
 
-export const refactorCssVars = Object.entries({
+export const cssVars = Object.entries({
   breakpoints,
   layers,
   layout,
