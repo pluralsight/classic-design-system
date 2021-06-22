@@ -17,7 +17,7 @@ const styles = {
     )
 }
 
-const PageWidthLayout: React.FC<HTMLPropsFor<'div'>> = props => {
+const PageWidthLayout: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
   return (
     <div {...styles.layout()} {...props}>
       {props.children}

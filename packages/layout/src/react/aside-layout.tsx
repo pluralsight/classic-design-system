@@ -24,7 +24,7 @@ const styleLayout = (asidePosition: ValueOf<typeof vars.asidePositions>) => {
     )
   )
 }
-interface AsideLayoutProps extends HTMLPropsFor<'div'> {
+interface AsideLayoutProps extends HTMLPropsFor<HTMLDivElement> {
   main: React.ReactElement<typeof Main>
   aside: React.ReactElement<typeof Aside>
   asidePosition?: ValueOf<typeof vars.asidePositions>
@@ -68,7 +68,7 @@ const styleAside = (asidePosition: ValueOf<typeof vars.asidePositions>) => {
     )
   )
 }
-interface AsideProps extends HTMLPropsFor<'div'> {
+interface AsideProps extends HTMLPropsFor<HTMLDivElement> {
   _asidePosition?: AsideLayoutProps['asidePosition']
 }
 const Aside: React.FC<AsideProps> = props => {

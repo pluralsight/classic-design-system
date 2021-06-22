@@ -24,7 +24,7 @@ const styleColumn = (count: ValueOf<typeof vars.counts>) => {
   )
 }
 
-interface EqualColumnLayoutProps extends HTMLPropsFor<'div'> {
+interface EqualColumnLayoutProps extends HTMLPropsFor<HTMLDivElement> {
   count: ValueOf<typeof vars.counts>
 }
 interface EqualColumnLayoutStatics {

@@ -35,7 +35,7 @@ const styles = {
   layout: () => glamor.css(stylesheet['.psds-page-heading-layout'])
 }
 
-interface PageHeadingLayoutProps extends HTMLPropsFor<'div'> {
+interface PageHeadingLayoutProps extends HTMLPropsFor<HTMLDivElement> {
   actions?: React.ReactNode[]
   heading: React.ReactNode
 }
