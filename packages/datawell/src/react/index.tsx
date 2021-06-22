@@ -38,7 +38,7 @@ const styles = {
     )
 }
 
-interface DataWellProps extends HTMLPropsFor<'div'> {
+interface DataWellProps extends HTMLPropsFor<HTMLDivElement> {
   label: string
   subLabel?: React.ReactNode
 }
