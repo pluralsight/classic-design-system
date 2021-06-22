@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [22.1.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.1.10...@pluralsight/ps-design-system-button@22.1.12) (2021-06-22)
+
+
+### Bug Fixes
+
+* **button:** show loading spinner without text on load when no icon ([f8dfd96](https://github.com/pluralsight/design-system/commit/f8dfd9619615e03ab4e81693dc01197f2191b45b))
+
+
+
+
+
 ## [22.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.1.10...@pluralsight/ps-design-system-button@22.1.11) (2021-06-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

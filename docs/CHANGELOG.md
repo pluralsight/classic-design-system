@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.12...@pluralsight/ps-design-system-docs@0.29.0) (2021-06-22)
+
+
+### Features
+
+* **docs:** open sidenav group for current url ([7f40b92](https://github.com/pluralsight/design-system/commit/7f40b92faadb08ed29d39182f437c9bc1b1c0f25))
+* **docs:** style sidenav active item on initial page load ([fbdc2cb](https://github.com/pluralsight/design-system/commit/fbdc2cb1a951b9aff4a9bac414767922e172eeb1))
+
+
+
+
+
 ## [0.28.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.12...@pluralsight/ps-design-system-docs@0.28.13) (2021-06-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

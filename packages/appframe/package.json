@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-appframe",
-  "version": "5.1.18",
+  "version": "5.1.19",
   "description": "AppFrame UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -29,10 +29,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^22.1.11",
-    "@pluralsight/ps-design-system-core": "^8.1.5",
-    "@pluralsight/ps-design-system-scrollable": "^5.1.11",
-    "@pluralsight/ps-design-system-util": "^9.2.5",
+    "@pluralsight/ps-design-system-button": "^22.1.12",
+    "@pluralsight/ps-design-system-core": "^8.2.0",
+    "@pluralsight/ps-design-system-scrollable": "^5.1.12",
+    "@pluralsight/ps-design-system-util": "^9.2.6",
     "body-scroll-lock": "^3.0.3",
     "exenv": "^1.2.2",
     "focus-within": "^3.0.2"
@@ -44,18 +44,18 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^3.1.4",
+    "@pluralsight/ps-design-system-build": "^3.2.0",
     "@pluralsight/ps-design-system-button": "*",
-    "@pluralsight/ps-design-system-icon": "^23.1.11",
-    "@pluralsight/ps-design-system-layout": "^11.1.12",
-    "@pluralsight/ps-design-system-navbar": "^5.1.11",
-    "@pluralsight/ps-design-system-navbrand": "^4.1.9",
-    "@pluralsight/ps-design-system-navitem": "^5.1.11",
-    "@pluralsight/ps-design-system-navuser": "^4.1.11",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.6.9",
-    "@pluralsight/ps-design-system-text": "^20.1.10",
-    "@pluralsight/ps-design-system-theme": "^8.1.9",
-    "@pluralsight/ps-design-system-verticaltabs": "^7.1.16",
+    "@pluralsight/ps-design-system-icon": "^23.1.12",
+    "@pluralsight/ps-design-system-layout": "^11.1.13",
+    "@pluralsight/ps-design-system-navbar": "^5.1.12",
+    "@pluralsight/ps-design-system-navbrand": "^4.1.10",
+    "@pluralsight/ps-design-system-navitem": "^5.1.12",
+    "@pluralsight/ps-design-system-navuser": "^4.1.12",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.0",
+    "@pluralsight/ps-design-system-text": "^20.1.11",
+    "@pluralsight/ps-design-system-theme": "^8.1.10",
+    "@pluralsight/ps-design-system-verticaltabs": "^7.1.17",
     "@types/body-scroll-lock": "^2.6.1"
   },
   "gitHead": "287df3d6daa2044fe511c370ad581bfa529c67db"

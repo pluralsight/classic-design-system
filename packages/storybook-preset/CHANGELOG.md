@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-preset@0.6.8...@pluralsight/ps-design-system-storybook-preset@0.7.0) (2021-06-22)
+
+
+### Features
+
+* **storybook-preset:** add postcss addon ([90b2da2](https://github.com/pluralsight/design-system/commit/90b2da255155564a77ad6dedad7a01530e035334))
+
+
+
+
+
 ## [0.6.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-storybook-preset@0.6.8...@pluralsight/ps-design-system-storybook-preset@0.6.9) (2021-06-18)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-storybook-preset
