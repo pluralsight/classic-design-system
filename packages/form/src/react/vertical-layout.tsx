@@ -11,7 +11,10 @@ const styles = {
   child: () => glamor.css(stylesheet['.psds-form-vertical-layout__child'])
 }
 
-const VerticalLayout: React.FC<HTMLPropsFor<'div'>> = ({ style, ...props }) => {
+const VerticalLayout: React.FC<HTMLPropsFor<HTMLDivElement>> = ({
+  style,
+  ...props
+}) => {
   const children = React.Children.toArray(props.children).filter(child =>
     React.isValidElement(child)
   )

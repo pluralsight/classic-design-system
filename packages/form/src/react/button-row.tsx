@@ -19,7 +19,7 @@ const styles = {
 export interface ButtonRowStatics {
   aligns: typeof vars.aligns
 }
-export interface ButtonRowProps extends HTMLPropsFor<'div'> {
+export interface ButtonRowProps extends HTMLPropsFor<HTMLDivElement> {
   align?: ValueOf<typeof vars.aligns>
 }
 
