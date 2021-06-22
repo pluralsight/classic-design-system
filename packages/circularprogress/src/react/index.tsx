@@ -59,7 +59,7 @@ const styles: { [key: string]: StyleFn } = {
     )
 }
 
-interface CircularProgressProps extends HTMLPropsFor<'div'> {
+interface CircularProgressProps extends HTMLPropsFor<HTMLDivElement> {
   size?: ValueOf<typeof vars.sizes>
   value?: number
 }
