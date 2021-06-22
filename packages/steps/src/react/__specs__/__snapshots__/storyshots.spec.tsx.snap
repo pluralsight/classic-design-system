@@ -288,7 +288,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
       data-css-1f2gu5k=""
     >
       <div
-        aria-busy="false"
+        aria-busy="true"
         aria-valuemax={100}
         aria-valuemin={0}
         aria-valuenow={60}
@@ -341,7 +341,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
       data-css-1f2gu5k=""
     >
       <div
-        aria-busy="false"
+        aria-busy="true"
         aria-label="Loading"
         data-css-1abx40i=""
         role="progressbar"

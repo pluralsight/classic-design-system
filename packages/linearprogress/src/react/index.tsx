@@ -44,12 +44,12 @@ const LinearProgress: React.FC<LinearProgressProps> = ({
   ...rest
 }) => {
   const themeName = useTheme()
-  const busy = value 
+  const busy = value
     ? value === 100
       ? 'false'
       : value > 0
-        ? 'true'
-        : 'false'
+      ? 'true'
+      : 'false'
     : 'true'
   return (
     <div
@@ -64,7 +64,7 @@ const LinearProgress: React.FC<LinearProgressProps> = ({
     >
       {value ? (
         <ScreenReaderOnly aria-live={'polite'}>
-          {value < 100 ? `${value}%` : 'complete'}
+          {value < 100 ? `${Math.round(value)}%` : 'complete'}
         </ScreenReaderOnly>
       ) : null}
       <div {...styles.fg({ themeName, value })} />

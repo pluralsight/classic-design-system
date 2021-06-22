@@ -142,7 +142,7 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
       data-css-1kca8ps=""
     >
       <div
-        aria-busy="false"
+        aria-busy="true"
         aria-label="Loading"
         data-css-1abx40i=""
         role="progressbar"

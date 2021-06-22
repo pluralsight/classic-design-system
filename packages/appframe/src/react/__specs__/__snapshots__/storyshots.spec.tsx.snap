@@ -424,7 +424,9 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                           data-css-1xd3fna=""
                         >
                           <a
+                            aria-hidden="true"
                             href="#"
+                            tabIndex={-1}
                           >
                             <span
                               data-css-113cwui=""
@@ -440,7 +442,9 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                           data-css-1xd3fna=""
                         >
                           <a
+                            aria-hidden="true"
                             href="#"
+                            tabIndex={-1}
                           >
                             <span
                               data-css-113cwui=""
@@ -798,7 +802,9 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                           data-css-1xd3fna=""
                         >
                           <a
+                            aria-hidden="true"
                             href="#"
+                            tabIndex={-1}
                           >
                             <span
                               data-css-113cwui=""
@@ -814,7 +820,9 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                           data-css-1xd3fna=""
                         >
                           <a
+                            aria-hidden="true"
                             href="#"
+                            tabIndex={-1}
                           >
                             <span
                               data-css-113cwui=""
@@ -1469,7 +1477,9 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                           data-css-1xd3fna=""
                         >
                           <a
+                            aria-hidden="true"
                             href="#"
+                            tabIndex={-1}
                           >
                             <span
                               data-css-113cwui=""
@@ -1485,7 +1495,9 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                           data-css-1xd3fna=""
                         >
                           <a
+                            aria-hidden="true"
                             href="#"
+                            tabIndex={-1}
                           >
                             <span
                               data-css-113cwui=""

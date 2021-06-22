@@ -86,12 +86,12 @@ const CircularProgress = React.forwardRef<
 
   const dashOffset =
     ((100 - (value || defaultIndeterminateValue)) / 100) * circumference
-  const busy = value 
+  const busy = value
     ? value === 100
       ? 'false'
       : value > 0
-        ? 'true'
-        : 'false'
+      ? 'true'
+      : 'false'
     : 'true'
   const ariaAttributes = value
     ? {
@@ -114,7 +114,7 @@ const CircularProgress = React.forwardRef<
     >
       {value ? (
         <ScreenReaderOnly aria-live={'polite'}>
-          {value < 100 ? `${value}%` : 'complete'}
+          {value < 100 ? `${Math.round(value)}%` : 'complete'}
         </ScreenReaderOnly>
       ) : null}
 
