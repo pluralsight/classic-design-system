@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "12.1.23",
+  "version": "12.1.24",
   "description": "Design system components for form layout",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -32,8 +32,8 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^8.2.1",
-    "@pluralsight/ps-design-system-util": "^9.2.7"
+    "@pluralsight/ps-design-system-core": "^8.2.2",
+    "@pluralsight/ps-design-system-util": "^9.2.8"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^5.1.2",
@@ -42,20 +42,20 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^17.1.13",
-    "@pluralsight/ps-design-system-build": "^3.2.1",
-    "@pluralsight/ps-design-system-button": "^22.1.13",
-    "@pluralsight/ps-design-system-checkbox": "^9.1.11",
-    "@pluralsight/ps-design-system-datepicker": "^15.3.1",
-    "@pluralsight/ps-design-system-dropdown": "^12.1.17",
-    "@pluralsight/ps-design-system-radio": "^10.1.15",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.1",
-    "@pluralsight/ps-design-system-switch": "^9.1.13",
-    "@pluralsight/ps-design-system-tag": "^10.1.13",
-    "@pluralsight/ps-design-system-text": "^20.1.12",
-    "@pluralsight/ps-design-system-textarea": "^9.1.13",
-    "@pluralsight/ps-design-system-textinput": "^11.1.13",
-    "@pluralsight/ps-design-system-theme": "^8.1.11"
+    "@pluralsight/ps-design-system-actionmenu": "^17.1.14",
+    "@pluralsight/ps-design-system-build": "^3.2.2",
+    "@pluralsight/ps-design-system-button": "^22.1.14",
+    "@pluralsight/ps-design-system-checkbox": "^9.1.12",
+    "@pluralsight/ps-design-system-datepicker": "^15.3.2",
+    "@pluralsight/ps-design-system-dropdown": "^12.1.18",
+    "@pluralsight/ps-design-system-radio": "^10.1.16",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.2",
+    "@pluralsight/ps-design-system-switch": "^9.1.14",
+    "@pluralsight/ps-design-system-tag": "^10.1.14",
+    "@pluralsight/ps-design-system-text": "^20.1.13",
+    "@pluralsight/ps-design-system-textarea": "^9.1.14",
+    "@pluralsight/ps-design-system-textinput": "^11.1.14",
+    "@pluralsight/ps-design-system-theme": "^8.1.12"
   },
-  "gitHead": "4b9b1bee2be1bdf02e96c34df513e3fea082d29b"
+  "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

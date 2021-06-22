@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navuser",
-  "version": "4.1.13",
+  "version": "4.1.14",
   "description": "Navuser UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -29,10 +29,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-avatar": "^10.0.1",
-    "@pluralsight/ps-design-system-core": "^8.2.1",
-    "@pluralsight/ps-design-system-halo": "^10.1.11",
-    "@pluralsight/ps-design-system-util": "^9.2.7"
+    "@pluralsight/ps-design-system-avatar": "^10.0.2",
+    "@pluralsight/ps-design-system-core": "^8.2.2",
+    "@pluralsight/ps-design-system-halo": "^10.1.12",
+    "@pluralsight/ps-design-system-util": "^9.2.8"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^5.1.2",
@@ -41,10 +41,10 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^17.1.13",
-    "@pluralsight/ps-design-system-build": "^3.2.1",
-    "@pluralsight/ps-design-system-button": "^22.1.13",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.1"
+    "@pluralsight/ps-design-system-actionmenu": "^17.1.14",
+    "@pluralsight/ps-design-system-build": "^3.2.2",
+    "@pluralsight/ps-design-system-button": "^22.1.14",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.2"
   },
-  "gitHead": "287df3d6daa2044fe511c370ad581bfa529c67db"
+  "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

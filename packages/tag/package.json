@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tag",
-  "version": "10.1.13",
+  "version": "10.1.14",
   "description": "Design System component for tag ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -28,10 +28,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^8.2.1",
-    "@pluralsight/ps-design-system-halo": "^10.1.11",
-    "@pluralsight/ps-design-system-icon": "^23.1.13",
-    "@pluralsight/ps-design-system-util": "^9.2.7"
+    "@pluralsight/ps-design-system-core": "^8.2.2",
+    "@pluralsight/ps-design-system-halo": "^10.1.12",
+    "@pluralsight/ps-design-system-icon": "^23.1.14",
+    "@pluralsight/ps-design-system-util": "^9.2.8"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^5.1.2",
@@ -40,9 +40,9 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^3.2.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.1",
-    "@pluralsight/ps-design-system-theme": "^8.1.11"
+    "@pluralsight/ps-design-system-build": "^3.2.2",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.2",
+    "@pluralsight/ps-design-system-theme": "^8.1.12"
   },
-  "gitHead": "287df3d6daa2044fe511c370ad581bfa529c67db"
+  "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }
