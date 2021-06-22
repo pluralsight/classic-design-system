@@ -181,7 +181,7 @@ TagsInput.SubLabel = Field.SubLabel
 
 export default TagsInput
 
-const Pills = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
+const Pills = React.forwardRef<HTMLDivElement, HTMLPropsFor<HTMLDivElement>>(
   (props, ref) => {
     const { children, ...rest } = props
 
@@ -218,20 +218,19 @@ const PillAdjacentInputContainer = React.forwardRef<HTMLDivElement>(
   }
 )
 
-const PillAdjacentInput = React.forwardRef<
-  HTMLInputElement,
-  React.ComponentProps<typeof Field.Input>
->((props, ref) => {
-  return (
-    <Field.Input
-      ref={ref}
-      renderContainer={PillAdjacentInputContainer}
-      type="text"
-      {...props}
-      {...styles.input()}
-    />
-  )
-})
+const PillAdjacentInput = React.forwardRef<HTMLInputElement>(
+  (props: React.ComponentProps<typeof Field.Input>, ref) => {
+    return (
+      <Field.Input
+        ref={ref}
+        renderContainer={PillAdjacentInputContainer}
+        type="text"
+        {...props}
+        {...styles.input()}
+      />
+    )
+  }
+)
 
 const Prefix: React.FC = p => <div {...p} {...styles.prefix()} />
 
