@@ -160,7 +160,7 @@ const CollapsibleGroupHeader = React.forwardRef<
         <CaretDownIcon
           aria-hidden="true"
           size={CaretDownIcon.sizes.small}
-          {...styles.rotatable(open)}
+          {...styles.rotatable(Boolean(open))}
         />
       </button>
     </Tag>
