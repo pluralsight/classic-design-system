@@ -43,7 +43,7 @@ const styles = {
     )
   }
 }
-interface CloseButtonProps extends HTMLPropsFor<'button'> {
+interface CloseButtonProps extends HTMLPropsFor<HTMLButtonElement> {
   onClick: (evt?: React.MouseEvent) => void
   appearance: ValueOf<typeof vars.appearances>
 }
@@ -69,7 +69,7 @@ interface TooltipStatics {
   tailPositions: typeof vars.tailPositions
 }
 
-interface TooltipProps extends HTMLPropsFor<'div'> {
+interface TooltipProps extends HTMLPropsFor<HTMLDivElement> {
   appearance?: ValueOf<typeof vars.appearances>
   children: React.ReactNode
   onClose?: (evt?: React.MouseEvent) => void
