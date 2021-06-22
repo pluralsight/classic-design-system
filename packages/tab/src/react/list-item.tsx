@@ -36,13 +36,13 @@ export interface BaseListItemProps {
 }
 export interface ListItemAnchorProps
   extends BaseListItemProps,
-    Omit<HTMLPropsFor<'a'>, 'id' | 'onClick'> {
+    Omit<HTMLPropsFor<HTMLAnchorElement>, 'id' | 'onClick'> {
   href: string
   onClick?: (i: number, event: React.MouseEvent<HTMLAnchorElement>) => void
 }
 export interface ListItemButtonProps
   extends BaseListItemProps,
-    Omit<HTMLPropsFor<'button'>, 'id' | 'onClick'> {
+    Omit<HTMLPropsFor<HTMLButtonElement>, 'id' | 'onClick'> {
   href?: undefined
   onClick?: (i: number, event: React.MouseEvent<HTMLButtonElement>) => void
 }

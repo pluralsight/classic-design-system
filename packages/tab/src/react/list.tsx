@@ -50,7 +50,7 @@ interface Overflows {
   toLeft: boolean
   toRight: boolean
 }
-const List: React.FC<HTMLPropsFor<'div'>> = props => {
+const List: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
   const themeName = useTheme()
   const listRef = React.useRef<HTMLDivElement>(null)
   const { width: listWidth } = useResizeObserver(listRef)
@@ -246,7 +246,7 @@ const List: React.FC<HTMLPropsFor<'div'>> = props => {
 export default List
 
 type OverflowButtonPosition = 'left' | 'right'
-interface OverflowButtonProps extends HTMLPropsFor<'button'> {
+interface OverflowButtonProps extends HTMLPropsFor<HTMLButtonElement> {
   position: OverflowButtonPosition
 }
 const OverflowButton: React.FC<OverflowButtonProps> = props => {

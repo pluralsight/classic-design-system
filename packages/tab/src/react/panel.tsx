@@ -1,7 +1,7 @@
 import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-export interface PanelProps extends HTMLPropsFor<'div'> {
+export interface PanelProps extends HTMLPropsFor<HTMLDivElement> {
   labelledBy: string | number
 }
 const Panel: React.FC<PanelProps> = props => {
