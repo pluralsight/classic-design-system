@@ -8,65 +8,44 @@ import Badge from '@pluralsight/ps-design-system-badge'
 # Development workflow
 
 <Intro>
-  Everything you need to install, configure, and develop with the design system.
+  Installation & configuration 
 </Intro>
+
 <TableOfContents {...props} />
 
-## Use Normalize
+## Asset types
 
-Use of the Core or Components requires the existence of the Design System normalize stylesheet on the page. Install with:
+There are 3 main types of code assets that the Design System will give you as a developer:
 
-```bash startExpanded
+1. **Normalize** - A reset and base css stylesheet that is required in any app that uses the Design System components.
+2. **Core** - A collection of basic values for color, type, layout, etc.
+3. **Components** - UI Widgets
+
+## Installation
+
+### Install Normalize
+
+```bash startExpanded noRender
 npm install @pluralsight/ps-design-system-normalize
 ```
 
-Include this vanilla CSS in your application in a method appropriate for your project. For usage options, follow the Core Usage docs patterns.
+For CSS configuration options, follow the "[CSS configuration](#css-configuration)" section instructions.
 
-## JavaScript Environment Requirements
-
-Many components in the the Design System depend on features in more modern versions of ecmascript (es6 and es7). Older browsers and devices that we support do not provide these natively (e.g. IE 11) so you'll need to include a global polyfill in your bundled application, such as core-js or babel-polyfill.
-To explore features by version you can visit the [ECMAScript Compatibility Table](https://kangax.github.io/compat-table/es6/).
-
-## Use Core
-
-### Step 1: Install Core
-
-First install the dependency:
+### Install Core
 
 ```bash startExpanded
 npm install @pluralsight/ps-design-system-core
 ```
 
-Core design elements are not Components. Rather they are represented as a set of variables.
+If you use Core values via CSS custom properties, installing Core is not required because those properites are included in `:root` in Normalize. If, however, you want to import into JS and use the JS variables, you'll want to install Core separately.
 
-### Step 2: Configure Core
+For CSS configuration options, follow the "[CSS configuration](#css-configuration)" section instructions.
 
-If you write your CSS in JavaScript, no additional configuration is required. Otherwise choose how to integrate the Core variables into your CSS build process. We recommend using PostCSS.
+For usage options, follow the "[Core usage](#core-usage)" section instructions.
 
-Install any required plugins you don't have yet for PostCSS:
+### Install components
 
-```bash startExpanded
-npm install postcss-preset-env postcss-import
-```
-
-Adjust your postcss.config.js to include the required plugins:
-
-```typescript noRender startExpanded
-module.exports = {
-  plugins: {
-    'postcss-import': {},
-    'postcss-preset-env': { browsers: ['Last 2 versions', 'IE >= 11'] }
-  }
-}
-```
-
-See the [CSS Configuration](#css-configuration) section for other CSS config options if the above doesn't apply.
-
-For usage details, see the Core Usage docs.
-
-## Use Components
-
-[glamor](https://github.com/threepointone/glamor) needs to be installed exactly once per application that uses these components:
+<p><Badge color="yellow">Work in progress</Badge> We are currently converting from CSS-in-JS via Glamor to vanilla CSS.  For today, you can safely assume that [glamor](https://github.com/threepointone/glamor) is still a peer dependency and needs to be installed exactly once per application.</p>
 
 ```bash startExpanded
 npm install glamor
@@ -78,27 +57,60 @@ All components support theming and have a peer dependency on the Theme package. 
 npm install @pluralsight/ps-design-system-theme
 ```
 
-Each component is installed separately. The JavaScript is prebuilt Node modules. Assets are inlined. Find and use what you need. For example:
+Each component is installed separately. For example:
 
 ```bash startExpanded
 npm install @pluralsight/ps-design-system-button
 ```
 
-See individual component pages for usage examples.
+The JavaScript is compiled as ES5 and dual-published as CommonJS and ES Modules.
 
-For full, working project examples, see [Github](https://github.com/pluralsight/design-system/tree/master/examples).
+### Polyfills
 
-## CSS Configuration
+Pluralsight still supports IE11 and compiling to ES5 doesn't solve the issue of using JS APIs that don't exist in that browser.  You will likely want to bundle a global polyfill with your application such as `core-js`. 
+
+It will be challenging to not bloat your polyfill because what exact polyfills are needed by the Design System has not been documented well to date. For now, either including the full `core-js` or testing in IE11 is recommended.
+
+## CSS configuration
+
+### Webpack bundling
+
+You'll need to include the CSS for Design System Core and components (or at least those components that have moved from Glamor to vanilla CSS).
+
+```bash startExpanded
+npm install style-loader css-loader
+```
+
+Add a loader chain for CSS to your `webpack.config.js`. Make sure it processes CSS from the installed Design System packages by including those paths. For example:
+
+```typescript noRender startExpanded
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'node_modules', '@pluralsight'),
+        ],
+      },
+    ],
+  },
+}
+```
 
 ### PostCSS
 
-To setup your own PostCSS config to consume the CSSNext variables, you'll want install the needed dependencies for PostCSS:
+If you're using Core as CSS variables, you'll want to process your app css with PostCSS in order to give fallback values to CSS custom properties. Processing Design System component CSS with PostCSS is not needed because the CSS in components has already been processed and should be browser-ready.
+
+Install the tool dependencies:
 
 ```bash startExpanded
 npm install postcss-import postcss-preset-env
 ```
 
-Then adjust your postcss.config.js to include those plugins:
+And add a `postcss.config.js`:
 
 ```typescript noRender startExpanded
 module.exports = {
@@ -109,60 +121,38 @@ module.exports = {
 }
 ```
 
-If you use Webpack for loading CSS, you'll also need to install your loaders:
+For webpack bundling, install the extra loader: 
 
 ```bash startExpanded
-npm install style-loader css-loader postcss-loader cssnano
+npm install postcss-loader cssnano
 ```
 
-And add a module.rule to your webpack.config.js:
+And add `postcss-loader` to then end of your loader chain:
 
 ```typescript noRender startExpanded
-module: {
-  rules: [
-    {
-      test: /\.module\.css\$/,
-      include: [
-        require('path').resolve(
-          path.join('node_modules', '@pluralsight', 'ps-design-system-core')
-        )
-      ],
-      use: ['style-loader', 'css-loader', 'postcss-loader']
-    }
-  ]
-}
+use: ['style-loader', 'css-loader', 'postcss-loader'],
 ```
 
 ### Sass
 
-Sass variables are available, generated from the source variables. To use Sass, installed the required build tools, such as:
+Core publishes Sass variables. Components with vanilla CSS publish a `.scss` stylesheet (that's identical to the `.css`) but it's not what's used internal to components. You could access it from `node_modules` if desired for your use case.
+
+To use Sass, installed the required build tools, such as:
 
 ```bash startExpanded
 npm install node-sass
 ```
 
-If you use Webpack for loading CSS, you'll also need to install your loaders:
+If you use Webpack for loading CSS, you'll also need to install your additional CSS loaders:
 
 ```bash startExpanded
-npm install style-loader css-loader sass-loader
+npm install sass-loader
 ```
 
-And add a module.rule to your webpack.config.js:
+And add the loader to the chain that processes CSS:
 
 ```typescript noRender startExpanded
-module: {
-  rules: [
-    {
-      test: /\.module\.css\$/,
-      include: [
-        require('path').resolve(
-          path.join('node_modules', '@pluralsight', 'ps-design-system-core')
-        )
-      ],
-      use: ['style-loader', 'css-loader', 'sass-loader']
-    }
-  ]
-}
+use: ['style-loader', 'css-loader', 'sass-loader']
 ```
 
 ### Next.js
@@ -215,8 +205,8 @@ In `next.config.js` directly adjust postCSS configuration like so:
 npm install @pluralsight/ps-design-system-core
 ```
 
-<Badge color={Badge.colors.yellow}>Note</Badge> css variables consumed by app need
-to be added to import from field.
+<p><Badge color={Badge.colors.yellow}>Note</Badge> CSS variables consumed by app need
+to be added to import from field.</p>
 
 ```typescript noRender startExpanded
 const postcssPresetEnv = require('postcss-preset-env')
@@ -232,46 +222,40 @@ module.exports = {
       importFrom: [
         './node_modules/@pluralsight/ps-design-system-core/css/colors.module.css',
         './node_modules/@pluralsight/ps-design-system-core/css/type.module.css',
-        './node_modules/@pluralsight/ps-design-system-core/css/colors-2020.module.css'
+        // etc
       ]
     })
   ]
 }
 ```
 
-### Import Vanilla CSS
-
-Vanilla CSS utility classes are available, generated from the source variables. Use of these utility classes is not recommended for most applications.
-The up side is that no build is technically necessary.
-
 ### Configuration examples
 
 See the [examples on Github](https://github.com/pluralsight/design-system/tree/master/examples/) for config in project context.
 
-See the core usage docs for usage syntax details.
+## Core usage
 
-## Core Usage
-
-After, installation, use Core in the flavor of your choice. JavaScript or CSSNext is recommended.
+After, installation, use Core in the flavor of your choice. JavaScript or CSS are equally recommended.
 
 ### Import JavaScript
 
 ```typescript noRender startExpanded
 import * as core from '@pluralsight/ps-design-system-core'
-;<button style={{ backgroundColor: core.colorsOrange[6] }}>Click</button>
+
+<button style={{ backgroundColor: core.colorsPink[6] }}>Click</button>
 ```
 
-### Import CSSNext
+### Import CSS
 
-To use the Core variables in CSSNext:
+To use the Core variables in CSS:
 
 ```css noRender startExpanded
-@import '@pluralsight/ps-design-system-core';
-
 .mySelector {
-  color: var(--psColorsPink);
+  color: var(--psColorsPink6);
 }
 ```
+
+Importing the Core package is not required because Normalize should already be on every page.
 
 ### Import SASS
 
@@ -281,27 +265,6 @@ To use the Core variables in SASS:
 @import '~@pluralsight/ps-design-system-core/dist/index.module.scss';
 
 .mySelector {
-  color: $ps-colors-pink-base;
+  color: $ps-colors-pink6;
 }
 ```
-
-### Import Vanilla CSS
-
-In vanilla CSS, variables are not yet widely supported. Instead utility classes, generated from the original variables, are available. Include the vanilla CSS stylesheet via traditional means:
-
-```html noRender startExpanded
-<link
-  rel="stylesheet"
-  href="node_modules/@pluralsight/ps-design-system-core/dist/index.css"
-/>
-```
-
-And apply utility classes directly to the HTML elements:
-
-```html noRender startExpanded
-<div class="ps-colors-pink--color"></div>
-```
-
-### Examples
-
-See full working examples on [Github](https://github.com/pluralsight/design-system/tree/master/examples/).

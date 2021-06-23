@@ -219,7 +219,6 @@ export const DatePickerInitialValue: Story = () => {
   const value = new Date(1999, 11, 31)
   return (
     <DatePicker
-      suffix={<HomeIcon />}
       label="Controlled component, set to 31 Dec 1999"
       value={value}
       _uniqueId={stableUniqueId}
@@ -233,7 +232,6 @@ export const DatePickerChangeValue: Story = () => {
     <div>
       <button onClick={() => setDate(new Date(2000, 0, 1))}>Go Y2K!</button>
       <DatePicker
-        suffix={<HomeIcon />}
         label="Controlled component, set to 31 Dec 1999"
         value={date}
         _uniqueId={stableUniqueId}
