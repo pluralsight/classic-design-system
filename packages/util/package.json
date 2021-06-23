@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-util",
-  "version": "9.2.6",
+  "version": "9.2.8",
   "description": "Runtime dependencies for utilitarian tasks. Analogous to a lodash.",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -34,7 +34,7 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^3.2.0"
+    "@pluralsight/ps-design-system-build": "^3.2.2"
   },
-  "gitHead": "287df3d6daa2044fe511c370ad581bfa529c67db"
+  "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

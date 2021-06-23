@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.3.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.3.1...@pluralsight/ps-design-system-datepicker@15.3.2) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+## [15.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.3.0...@pluralsight/ps-design-system-datepicker@15.3.1) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-datepicker
+
+
+
+
+
+# [15.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.2.6...@pluralsight/ps-design-system-datepicker@15.3.0) (2021-06-22)
+
+
+### Features
+
+* **datepicker:** add value prop for controlled DatePicker ([2bca1e8](https://github.com/pluralsight/design-system/commit/2bca1e883aebe91be380957200f661c1b171d9ab)), closes [#1823](https://github.com/pluralsight/design-system/issues/1823)
+
+
+
+
+
 ## [15.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.2.4...@pluralsight/ps-design-system-datepicker@15.2.6) (2021-06-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

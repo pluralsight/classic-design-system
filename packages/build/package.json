@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-build",
-  "version": "3.2.0",
+  "version": "3.2.2",
   "description": "Utilities for building and configuring Design System packages",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -36,5 +36,5 @@
     "string-replace-loader": "^2.2.0",
     "style-loader": "^1.0.0"
   },
-  "gitHead": "287df3d6daa2044fe511c370ad581bfa529c67db"
+  "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }
