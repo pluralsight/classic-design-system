@@ -62,6 +62,7 @@ const styles: { [key: string]: StyleFn } = {
 interface CircularProgressProps extends HTMLPropsFor<'div'> {
   size?: ValueOf<typeof vars.sizes>
   value?: number
+  'aria-label': string
 }
 
 interface CircularProgressStatics {
@@ -80,18 +81,43 @@ const CircularProgress = React.forwardRef<
   CircularProgressProps
 >((props, ref) => {
   const defaultIndeterminateValue = 25
-  const { size, value = defaultIndeterminateValue, ...rest } = props
+  const { size, value, 'aria-label': ariaLabel, ...rest } = props
   const themeName = useTheme()
 
-  const dashOffset = ((100 - value) / 100) * circumference
-
+  const dashOffset =
+    ((100 - (value || defaultIndeterminateValue)) / 100) * circumference
+  const busy = value
+    ? value === 100
+      ? 'false'
+      : value > 0
+      ? 'true'
+      : 'false'
+    : 'true'
+  const ariaAttributes = value
+    ? {
+        'aria-label': ariaLabel,
+        'aria-valuemin': 0,
+        'aria-valuemax': 100,
+        'aria-valuenow': Math.round(value)
+      }
+    : {
+        'aria-label': 'Loading'
+      }
   return (
-    <div ref={ref} {...styles.circularprogress(themeName, props)} {...rest}>
-      <ScreenReaderOnly role="region" aria-live="off">
-        {typeof props.value === 'undefined'
-          ? 'Loading...'
-          : `${value}% complete`}
-      </ScreenReaderOnly>
+    <div
+      ref={ref}
+      {...styles.circularprogress(themeName, props)}
+      {...rest}
+      role="progressbar"
+      {...ariaAttributes}
+      aria-busy={busy}
+    >
+      {value ? (
+        <ScreenReaderOnly aria-live={'polite'}>
+          {value < 100 ? `${Math.round(value)}%` : 'complete'}
+        </ScreenReaderOnly>
+      ) : null}
+
       <svg
         {...styles.svg(themeName, props)}
         viewBox={`0 0 ${vars.style.width} ${vars.style.width}`}

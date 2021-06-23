@@ -17,14 +17,19 @@ export const ValuesAndSizes: Story = () => (
         ...acc,
         <div key={'val' + value}>{value}</div>,
         ...Object.values(CircularProgress.sizes).map(size => (
-          <CircularProgress key={size + value} value={value} size={size} />
+          <CircularProgress
+            aria-label="course loading"
+            key={size + value}
+            value={value}
+            size={size}
+          />
         ))
       ],
       []
     )}
     <div>Indeterminate</div>
     {Object.values(CircularProgress.sizes).map(size => (
-      <CircularProgress size={size} key={size} />
+      <CircularProgress aria-label="course loading" size={size} key={size} />
     ))}
   </StoryGrid>
 )
@@ -44,7 +49,7 @@ export const Animation: Story = () => {
 
     return (
       <div>
-        <CircularProgress value={value} />
+        <CircularProgress aria-label="course loading" value={value} />
 
         <div style={{ color: core.colorsTextIcon.highOnDark }}>
           Value: {value}
@@ -57,11 +62,14 @@ export const Animation: Story = () => {
 }
 
 export const StyleOverride: Story = () => (
-  <CircularProgress style={{ outline: '1px solid red' }} />
+  <CircularProgress
+    aria-label="course loading"
+    style={{ outline: '1px solid red' }}
+  />
 )
 
 export const ClassNameOverride: Story = () => (
-  <CircularProgress className="someString" />
+  <CircularProgress aria-label="course loading" className="someString" />
 )
 
 const StoryGrid: React.FC<{ cols?: number }> = props => {
