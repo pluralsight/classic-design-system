@@ -58,26 +58,18 @@ const styles = {
   }
 }
 
-export interface BaseTagProps {
+export interface TagProps
+  extends HTMLPropsFor<HTMLAnchorElement | HTMLDivElement> {
   error?: boolean
   icon?: React.ReactElement
   isPressed?: boolean
   size?: ValueOf<typeof vars.sizes>
-}
-
-interface AnchorProps extends BaseTagProps, HTMLPropsFor<'a'> {
-  href: string
-}
-interface DivProps extends BaseTagProps, HTMLPropsFor<'div'> {
-  href?: undefined
+  href?: string
+  target?: string
+  rel?: string
 }
 
 type TagElement = HTMLAnchorElement | HTMLDivElement
-type TagProps = AnchorProps | DivProps
-type TagComponent = React.ForwardRefExoticComponent<unknown> & {
-  (props: AnchorProps, ref?: RefFor<'a'>): JSX.Element
-  (props: DivProps, ref?: RefFor<'div'>): JSX.Element
-}
 
 export interface TagStatics {
   sizes: typeof vars.sizes
@@ -97,25 +89,13 @@ const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
   const isAnchor = 'href' in props
   const themeName = useTheme()
 
-  const Wrapper: React.FC = wrapperProps =>
-    isAnchor ? (
-      <a
-        href={href}
-        ref={ref as RefFor<'a'>}
-        {...(rest as HTMLPropsFor<'a'>)}
-        {...wrapperProps}
-      />
-    ) : (
-      <div
-        ref={ref as RefFor<'div'>}
-        {...(rest as HTMLPropsFor<'div'>)}
-        {...wrapperProps}
-      />
-    )
+  const Wrapper = isAnchor ? 'a' : 'div'
 
   return (
     <Halo error={error} shape={Halo.shapes.pill} inline>
       <Wrapper
+        {...rest}
+        {...(isAnchor && { href })}
         {...(isPressed && !isAnchor && { 'aria-pressed': true })}
         {...(Boolean(props.onClick) && { role: 'button', tabIndex: 0 })}
         {...styles.tag({
@@ -125,18 +105,19 @@ const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
           isPressed,
           size
         })}
+        ref={ref as any}
       >
         <Label icon={Boolean(icon)}>{children}</Label>
         {renderIcon(icon, size)}
       </Wrapper>
     </Halo>
   )
-}) as TagComponent & TagStatics
+}) as React.ForwardRefExoticComponent<TagProps> & TagStatics
 
 Tag.displayName = 'Tag'
 Tag.sizes = vars.sizes
 
-interface LabelProps extends HTMLPropsFor<'span'> {
+interface LabelProps extends HTMLPropsFor<HTMLSpanElement> {
   icon: boolean
 }
 const Label: React.FC<LabelProps> = ({ icon, ...props }) => {

@@ -1,9 +1,5 @@
 import Halo from '@pluralsight/ps-design-system-halo'
-import {
-  HTMLPropsFor,
-  RefFor,
-  forwardRefWithAs
-} from '@pluralsight/ps-design-system-util'
+import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
