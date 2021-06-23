@@ -87,7 +87,7 @@ interface SwitchStatics {
   labelAligns: typeof vars.labelAligns
 }
 
-interface SwitchProps extends Omit<HTMLPropsFor<'label'>, 'onClick'> {
+interface SwitchProps extends Omit<HTMLPropsFor<HTMLLabelElement>, 'onClick'> {
   checked?: boolean
   color?: ValueOf<typeof vars.colors>
   disabled?: boolean
