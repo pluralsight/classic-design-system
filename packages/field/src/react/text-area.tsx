@@ -32,7 +32,7 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
       </Container>
     )
   }
-)
+) as React.ForwardRefExoticComponent<TextAreaProps>
 TextArea.displayName = 'Field.TextArea'
 
 const defaultRenderContainer = React.forwardRef<

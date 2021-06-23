@@ -57,7 +57,7 @@ interface ItemProps extends HTMLPropsFor<HTMLLIElement> {
 }
 
 export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
-  (props: ItemProps, forwardedRef: React.ForwardedRef<HTMLLIElement>) => {
+  (props, forwardedRef) => {
     const {
       active,
       children,
@@ -162,6 +162,6 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
       </li>
     )
   }
-)
+) as React.ForwardRefExoticComponent<ItemProps>
 
 Item.displayName = 'ActionMenu.Item'

@@ -79,7 +79,7 @@ const Button = React.forwardRef<
       size={DSButton.sizes.small}
     />
   )
-})
+}) as React.ForwardRefExoticComponent<React.ComponentProps<typeof DSButton>>
 
 Button.displayName = 'Button'
 
