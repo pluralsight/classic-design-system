@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@3.2.1...@pluralsight/ps-design-system-build@3.2.2) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+## [3.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@3.2.0...@pluralsight/ps-design-system-build@3.2.1) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+# [3.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@3.1.3...@pluralsight/ps-design-system-build@3.2.0) (2021-06-22)
+
+
+### Bug Fixes
+
+* **build:** handle esm styles in cjs-based css build ([a7c7420](https://github.com/pluralsight/design-system/commit/a7c7420268b57f0bca6656a47c835b114472ef02))
+
+
+### Features
+
+* **build:** create compile postcss script ([b9873a3](https://github.com/pluralsight/design-system/commit/b9873a34357cb09961c66b932ce4d4993b21e9bc))
+* **build:** expose postcss-config ([26ba6be](https://github.com/pluralsight/design-system/commit/26ba6bea34ff02eea682b15068cd94a126444929))
+
+
+
+
+
+## [3.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@3.1.3...@pluralsight/ps-design-system-build@3.1.4) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+## [3.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@3.1.2...@pluralsight/ps-design-system-build@3.1.3) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
+## [3.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@3.1.1...@pluralsight/ps-design-system-build@3.1.2) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-build
+
+
+
+
+
 ## [3.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@3.1.0...@pluralsight/ps-design-system-build@3.1.1) (2021-05-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-build

@@ -3,6 +3,81 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.2.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.2.5...@pluralsight/ps-design-system-card@18.2.6) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
+## [18.2.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.2.4...@pluralsight/ps-design-system-card@18.2.5) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
+## [18.2.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.2.2...@pluralsight/ps-design-system-card@18.2.4) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
+## [18.2.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.2.2...@pluralsight/ps-design-system-card@18.2.3) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
+## [18.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.2.1...@pluralsight/ps-design-system-card@18.2.2) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
+## [18.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.2.0...@pluralsight/ps-design-system-card@18.2.1) (2021-06-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
+# [18.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.1.9...@pluralsight/ps-design-system-card@18.2.0) (2021-06-14)
+
+
+### Features
+
+* **card:** allow alt prop to Card.Image ([76a2831](https://github.com/pluralsight/design-system/commit/76a283196578c3098b48b7ed34382580b938a7ce))
+
+
+
+
+
+## [18.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.1.8...@pluralsight/ps-design-system-card@18.1.9) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
+## [18.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.1.7...@pluralsight/ps-design-system-card@18.1.8) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-card
+
+
+
+
+
 ## [18.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.1.6...@pluralsight/ps-design-system-card@18.1.7) (2021-06-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-card

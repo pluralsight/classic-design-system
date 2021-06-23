@@ -41,7 +41,9 @@ const longTitle =
 
 export const CardWithDefaults = (props: Partial<CardProps>) => {
   const title = props.title || <Card.Title>Card Title</Card.Title>
-  const image = props.image || <Card.Image src={getImgSrc()} />
+  const image = props.image || (
+    <Card.Image src={getImgSrc()} aria-label="default image" />
+  )
   return <Card {...props} title={title} image={image} />
 }
 
@@ -73,7 +75,7 @@ export const EverythingLocked: Story = () => (
     image={
       <Card.ImageLink>
         <a href="http://duckduckgo.com?q=image">
-          <Card.Image src={getImgSrc()} />
+          <Card.Image src={getImgSrc()} aria-label="image" />
         </a>
       </Card.ImageLink>
     }
@@ -119,7 +121,7 @@ export const EverythingFocusable: Story = () => (
     image={
       <Card.ImageLink>
         <a href="http://duckduckgo.com?q=image">
-          <Card.Image src={getImgSrc()} />
+          <Card.Image src={getImgSrc()} aria-label="image" />
         </a>
       </Card.ImageLink>
     }
@@ -175,7 +177,15 @@ export const TitleLongLink: Story = () => (
 
 export const Image: Story = () => (
   <CardWithDefaults
-    image={<Card.Image src={getImgSrc({ w: 400, h: 200 })} />}
+    image={
+      <Card.Image src={getImgSrc({ w: 400, h: 200 })} aria-label="image" />
+    }
+  />
+)
+
+export const ImageWithAlt: Story = () => (
+  <CardWithDefaults
+    image={<Card.Image src={getImgSrc({ w: 400, h: 200 })} alt="image" />}
   />
 )
 
@@ -184,7 +194,7 @@ export const ImageLink: Story = () => (
     image={
       <Card.ImageLink>
         <a href="http://duckduckgo.com">
-          <Card.Image src={getImgSrc({ w: 400, h: 200 })} />
+          <Card.Image src={getImgSrc({ w: 400, h: 200 })} aria-label="image" />
         </a>
       </Card.ImageLink>
     }
@@ -283,7 +293,7 @@ export const FullOverlayLinkIconLink: Story = () => (
     image={
       <Card.ImageLink>
         <a href="http://duckduckgo.com?q=image">
-          <Card.Image src={getImgSrc()} />
+          <Card.Image src={getImgSrc()} aria-label="image" />
         </a>
       </Card.ImageLink>
     }

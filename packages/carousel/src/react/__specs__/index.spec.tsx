@@ -83,12 +83,11 @@ describe('Carousel', () => {
     })
   })
 
-  // TODO: enable and fix
-  // describe.each(cases)('%s story', (_name, Story) => {
-  //   it('has no axe-core violations', async () => {
-  //     const { container } = render(<Story {...Story.args} />)
-  //     const results = await axe(container)
-  //     expect(results).toHaveNoViolations()
-  //   })
-  // })
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+      expect(results).toHaveNoViolations()
+    })
+  })
 })

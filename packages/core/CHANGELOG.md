@@ -3,6 +3,57 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.2.1...@pluralsight/ps-design-system-core@8.2.2) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+## [8.2.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.2.0...@pluralsight/ps-design-system-core@8.2.1) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+# [8.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.1.4...@pluralsight/ps-design-system-core@8.2.0) (2021-06-22)
+
+
+### Features
+
+* **core:** expose refactor module for css conversion ([ff16d92](https://github.com/pluralsight/design-system/commit/ff16d92a9cc0cc850192f2362d8364891aecec54))
+
+
+
+
+
+## [8.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.1.4...@pluralsight/ps-design-system-core@8.1.5) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+## [8.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.1.3...@pluralsight/ps-design-system-core@8.1.4) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
+## [8.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.1.2...@pluralsight/ps-design-system-core@8.1.3) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-core
+
+
+
+
+
 ## [8.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.1.1...@pluralsight/ps-design-system-core@8.1.2) (2021-05-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core

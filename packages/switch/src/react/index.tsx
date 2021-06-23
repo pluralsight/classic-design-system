@@ -5,7 +5,6 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
-  isFunction,
   RefForwardingComponent,
   HTMLPropsFor,
   RefFor
@@ -93,6 +92,7 @@ interface SwitchProps extends Omit<HTMLPropsFor<HTMLLabelElement>, 'onClick'> {
   disabled?: boolean
   error?: boolean
   labelAlign?: ValueOf<typeof vars.labelAligns>
+  name?: string
   onBlur?: React.FocusEventHandler
   onClick?: (checked: boolean) => void
   onFocus?: React.FocusEventHandler
@@ -110,11 +110,13 @@ interface SwitchComponent
 const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
   (
     {
+      'aria-label': ariaLabel,
       checked = false,
       color = vars.colors.orange,
       disabled = false,
       error = false,
       labelAlign = vars.labelAligns.right,
+      name,
       size = vars.sizes.large,
       tabIndex = 0,
       onClick,
@@ -147,8 +149,6 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
         evt.type === 'click' ||
         ('key' in evt && evt.type === 'keydown' && evt.key === ' ')
       ) {
-        if (disabled || !isFunction(onClick)) return
-
         evt.preventDefault()
         onClick && onClick(!checked)
       }
@@ -163,14 +163,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
       <label
         className={className}
         style={style}
-        aria-checked={checked}
-        role="checkbox"
         {...styles.switch(disabled, labelAlign)}
-        tabIndex={disabled ? -1 : tabIndex}
-        onClick={handleClick}
-        onBlur={handleBlur}
-        onFocus={handleFocus}
-        onKeyDown={handleClick}
         {...rest}
       >
         <Halo error={error} shape={Halo.shapes.pill} inline visible={isFocused}>
@@ -180,10 +173,17 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
         </Halo>
 
         <input
+          aria-label={ariaLabel}
           checked={checked}
+          disabled={disabled}
           readOnly
           ref={ref as RefFor<'input'>}
-          tabIndex={-1}
+          name={name}
+          onKeyDown={handleClick}
+          onClick={disabled ? undefined : handleClick}
+          onBlur={handleBlur}
+          onFocus={handleFocus}
+          tabIndex={disabled ? -1 : tabIndex}
           type="checkbox"
           {...styles.checkbox()}
         />

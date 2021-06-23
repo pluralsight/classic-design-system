@@ -54,7 +54,6 @@ describe('Drawer', () => {
     expect(contentWrapper).toHaveAttribute('aria-hidden', 'true')
   })
 
-  // TODO: fix and re-enable
   const cases = convertStoriesToJestCases(stories)
   describe.each(cases)('%s story', (_name, Story) => {
     it('has no axe-core violations', async () => {

@@ -118,13 +118,17 @@ const Scrollable = React.forwardRef<HTMLElement, ScrollableProps>(
       return glamor.css({ height, top: offset, visibility })
     }, [hidden, offset, scrollRatio])
 
+    const onScroll = combineFns<[React.UIEvent<HTMLDivElement>]>(
+      updateDimensions,
+      props.onScroll
+    )
     return (
       <Outer data-scrollable {...rest}>
         <Inner key="scrollable-wrapper">
           {renderContent(
             {
               children: props.children,
-              onScroll: updateDimensions,
+              onScroll,
               ...styles.content()
             },
             (node: HTMLElement) => (ref.current = node)

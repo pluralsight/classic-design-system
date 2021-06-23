@@ -1,12 +1,12 @@
 import {
   HTMLPropsFor,
   RefForwardingComponent,
-  ValueOf
+  ValueOf,
+  classNames
 } from '@pluralsight/ps-design-system-util'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css/index'
+import '../css/index.css'
 import { sizes, widths } from '../vars/index'
 import { getColorByName, getInitials, transformSrc } from '../js/index'
 
@@ -17,6 +17,7 @@ interface AvatarProps extends HTMLPropsFor<HTMLDivElement> {
   src?: string
 }
 
+// TODO: try simple unions
 interface AvatarStatics {
   sizes: typeof sizes
   widths: typeof widths
@@ -30,22 +31,8 @@ type AvatarComponent = RefForwardingComponent<
 
 type ImageState = 'loading' | 'error' | 'success'
 
-type StyleFn = (props: AvatarProps) => glamorExports.StyleAttribute
-
-const glamor = glamorDefault || glamorExports
-
-const styles: { [key: string]: StyleFn } = {
-  avatar: props =>
-    glamor.compose(
-      glamor.css(stylesheet['.psds-avatar']),
-      glamor.css(stylesheet[`.psds-avatar--size-${props.size}`])
-    ),
-  image: () => glamor.css(stylesheet['.psds-avatar__image']),
-  initials: () => glamor.css(stylesheet['.psds-avatar__initials'])
-}
-
 const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
-  const { alt, name, size: _size, src, ...rest } = props
+  const { alt, className, name, size, src, ...rest } = props
 
   const [imageState, setImageState] = React.useState<ImageState>('loading')
 
@@ -66,14 +53,18 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
 
   return (
     <div
-      {...styles.avatar(props)}
+      className={classNames(
+        'psds-avatar',
+        `psds-avatar--size-${size}`,
+        className
+      )}
       {...(hideFromScreenReaders && { 'aria-hidden': true })}
       {...rest}
       ref={ref}
     >
       {shouldShowImg && (
         <img
-          {...styles.image(props)}
+          className="psds-avatar__image"
           alt={alt}
           onError={handleImageLoadError}
           onLoad={handleImageLoadSuccess}
@@ -83,7 +74,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
 
       {shouldShowInitials && (
         <div
-          {...styles.initials(props)}
+          className="psds-avatar__initials"
           aria-label={name}
           style={{ backgroundColor: getColorByName(name) }}
         >

@@ -3,6 +3,136 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.29.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.29.2...@pluralsight/ps-design-system-docs@0.29.3) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.29.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.29.1...@pluralsight/ps-design-system-docs@0.29.2) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.29.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.29.0...@pluralsight/ps-design-system-docs@0.29.1) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+# [0.29.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.12...@pluralsight/ps-design-system-docs@0.29.0) (2021-06-22)
+
+
+### Features
+
+* **docs:** open sidenav group for current url ([7f40b92](https://github.com/pluralsight/design-system/commit/7f40b92faadb08ed29d39182f437c9bc1b1c0f25))
+* **docs:** style sidenav active item on initial page load ([fbdc2cb](https://github.com/pluralsight/design-system/commit/fbdc2cb1a951b9aff4a9bac414767922e172eeb1))
+
+
+
+
+
+## [0.28.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.12...@pluralsight/ps-design-system-docs@0.28.13) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.11...@pluralsight/ps-design-system-docs@0.28.12) (2021-06-18)
+
+
+### Bug Fixes
+
+* **docs:** dialog modal imports ([fa3c201](https://github.com/pluralsight/design-system/commit/fa3c201a1a2201f77a5e3629b97b75df4b462603))
+
+
+
+
+
+## [0.28.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.10...@pluralsight/ps-design-system-docs@0.28.11) (2021-06-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.9...@pluralsight/ps-design-system-docs@0.28.10) (2021-06-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.8...@pluralsight/ps-design-system-docs@0.28.9) (2021-06-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.7...@pluralsight/ps-design-system-docs@0.28.8) (2021-06-16)
+
+
+### Bug Fixes
+
+* **menu:** only use aria-selected on options for role=listbox ([f69dc9d](https://github.com/pluralsight/design-system/commit/f69dc9df37f89bc57ca1b64afc5ced17cdae5887)), closes [#1783](https://github.com/pluralsight/design-system/issues/1783)
+
+
+
+
+
+## [0.28.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.6...@pluralsight/ps-design-system-docs@0.28.7) (2021-06-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.5...@pluralsight/ps-design-system-docs@0.28.6) (2021-06-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.4...@pluralsight/ps-design-system-docs@0.28.5) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.3...@pluralsight/ps-design-system-docs@0.28.4) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
+## [0.28.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.2...@pluralsight/ps-design-system-docs@0.28.3) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-docs
+
+
+
+
+
 ## [0.28.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.28.1...@pluralsight/ps-design-system-docs@0.28.2) (2021-06-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

@@ -26,7 +26,7 @@ describe('Radio', () => {
     })
   })
 
-  describe.skip.each(cases)('%s story', (_name, Story) => {
+  describe.each(cases)('%s story', (_name, Story) => {
     it('has no axe-core violations', async () => {
       const { container } = render(<Story {...Story.args} />)
       const results = await axe(container)

@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [15.1.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.20...@pluralsight/ps-design-system-table@15.1.21) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [15.1.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.19...@pluralsight/ps-design-system-table@15.1.20) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [15.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.17...@pluralsight/ps-design-system-table@15.1.19) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [15.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.17...@pluralsight/ps-design-system-table@15.1.18) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [15.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.16...@pluralsight/ps-design-system-table@15.1.17) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [15.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.15...@pluralsight/ps-design-system-table@15.1.16) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+## [15.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.14...@pluralsight/ps-design-system-table@15.1.15) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
 ## [15.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.13...@pluralsight/ps-design-system-table@15.1.14) (2021-06-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

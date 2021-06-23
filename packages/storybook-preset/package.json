@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-storybook-preset",
-  "version": "0.6.5",
+  "version": "0.7.2",
   "description": "",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -15,10 +15,11 @@
   },
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-storybook-addon-center": "^5.1.1",
-    "@pluralsight/ps-design-system-storybook-addon-theme": "^9.1.5",
+    "@pluralsight/ps-design-system-storybook-addon-center": "^5.1.7",
+    "@pluralsight/ps-design-system-storybook-addon-theme": "^9.1.12",
     "@storybook/addon-a11y": "^6.0.21",
     "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-viewport": "^6.0.21",
     "@storybook/addons": "^6.0.21",
     "@storybook/api": "^6.0.21",
@@ -27,5 +28,6 @@
   },
   "peerDependencies": {
     "react": "*"
-  }
+  },
+  "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

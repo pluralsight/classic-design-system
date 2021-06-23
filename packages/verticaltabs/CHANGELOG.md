@@ -3,6 +3,92 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.18...@pluralsight/ps-design-system-verticaltabs@7.1.19) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [7.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.17...@pluralsight/ps-design-system-verticaltabs@7.1.18) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [7.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.15...@pluralsight/ps-design-system-verticaltabs@7.1.17) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [7.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.15...@pluralsight/ps-design-system-verticaltabs@7.1.16) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [7.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.14...@pluralsight/ps-design-system-verticaltabs@7.1.15) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [7.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.13...@pluralsight/ps-design-system-verticaltabs@7.1.14) (2021-06-14)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [7.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.12...@pluralsight/ps-design-system-verticaltabs@7.1.13) (2021-06-14)
+
+
+### Bug Fixes
+
+* **verticaltabs:** disallow focusing collapsed tier2 headers ([e9d3dfb](https://github.com/pluralsight/design-system/commit/e9d3dfbaecbb0d6ee41a50fa6cb168f443663125)), closes [#1746](https://github.com/pluralsight/design-system/issues/1746)
+
+
+
+
+
+## [7.1.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.11...@pluralsight/ps-design-system-verticaltabs@7.1.12) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [7.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.10...@pluralsight/ps-design-system-verticaltabs@7.1.11) (2021-06-10)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs
+
+
+
+
+
+## [7.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.9...@pluralsight/ps-design-system-verticaltabs@7.1.10) (2021-06-10)
+
+
+### Bug Fixes
+
+* **verticaltabs:** update aria roles ([#1797](https://github.com/pluralsight/design-system/issues/1797)) ([f96c546](https://github.com/pluralsight/design-system/commit/f96c5468651a491a3ab7166200ad78daf4e90d70))
+
+
+
+
+
 ## [7.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@7.1.8...@pluralsight/ps-design-system-verticaltabs@7.1.9) (2021-06-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs

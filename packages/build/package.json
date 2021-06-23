@@ -1,13 +1,14 @@
 {
   "name": "@pluralsight/ps-design-system-build",
-  "version": "3.1.1",
+  "version": "3.2.2",
   "description": "Utilities for building and configuring Design System packages",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
   "author": "jaketrent",
   "keywords": [],
   "bin": {
-    "build-css": "./bin/build-css.mjs"
+    "build-css": "./bin/build-css.mjs",
+    "postcss-compile": "./bin/postcss-compile.mjs"
   },
   "main": "index.js",
   "scripts": {
@@ -34,5 +35,6 @@
     "react-svg-loader": "^3.0.3",
     "string-replace-loader": "^2.2.0",
     "style-loader": "^1.0.0"
-  }
+  },
+  "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

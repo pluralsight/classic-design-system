@@ -591,9 +591,9 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Actions 1`] = `
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action
@@ -629,9 +629,9 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action
@@ -646,9 +646,9 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action
@@ -663,9 +663,9 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action
@@ -680,9 +680,9 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action
@@ -718,9 +718,9 @@ exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action
@@ -735,9 +735,9 @@ exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action
@@ -752,9 +752,9 @@ exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action
@@ -769,9 +769,9 @@ exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action
@@ -807,9 +807,9 @@ exports[`Storyshots Components/PageHeadingLayout With Actions 1`] = `
       <button
         data-css-y5dqt5=""
         disabled={false}
-        style={Object {}}
       >
         <span
+          aria-hidden={false}
           data-css-15b13by=""
         >
           Wow, an action

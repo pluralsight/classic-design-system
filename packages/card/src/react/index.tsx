@@ -176,6 +176,7 @@ const FullOverlayLink: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => (
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
 interface ImageProps extends HTMLPropsFor<HTMLDivElement> {
+  alt?: string
   src: string
 }
 const Image: React.FC<ImageProps> = props => {
@@ -184,6 +185,7 @@ const Image: React.FC<ImageProps> = props => {
     <div
       {...styles.image()}
       {...rest}
+      aria-label={rest['aria-label'] || rest.alt}
       style={{ backgroundImage: `url(${src})` }}
     />
   )

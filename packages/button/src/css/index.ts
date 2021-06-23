@@ -338,6 +338,13 @@ export default {
     width: '100%',
     margin: 0
   },
+  '.psds-button__icon--loadingLabelOnly': {
+    position: 'absolute',
+    top: 0,
+    justifyContent: 'center',
+    width: '100%',
+    margin: 0
+  },
 
   [`.psds-button__loading`]: ({ spin }: { spin: string }) => ({
     display: 'inline-block',
@@ -382,5 +389,8 @@ export default {
     alignItems: 'center',
     display: 'inline-flex',
     pointerEvents: 'none'
+  },
+  [`.psds-button__text--invisible`]: {
+    visibility: 'hidden'
   }
 }

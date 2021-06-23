@@ -15,6 +15,7 @@ exports[`Storyshots Components/Card Action Bar 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -162,6 +163,7 @@ exports[`Storyshots Components/Card Action Bar Locked Visible 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -309,6 +311,7 @@ exports[`Storyshots Components/Card Action Bar Multiple 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -475,6 +478,7 @@ exports[`Storyshots Components/Card Bonus Bar Element 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -618,6 +622,7 @@ exports[`Storyshots Components/Card Bonus Bar Text 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -747,6 +752,7 @@ exports[`Storyshots Components/Card Card With Defaults 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -877,6 +883,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
           href="http://duckduckgo.com?q=image"
         >
           <div
+            aria-label="image"
             data-css-i7gti2=""
             style={
               Object {
@@ -1157,6 +1164,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
           href="http://duckduckgo.com?q=image"
         >
           <div
+            aria-label="image"
             data-css-i7gti2=""
             style={
               Object {
@@ -1480,6 +1488,7 @@ exports[`Storyshots Components/Card Full Overlay 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -1613,6 +1622,7 @@ exports[`Storyshots Components/Card Full Overlay Link 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -1750,6 +1760,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -1912,6 +1923,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon Link 1`] = `
           href="http://duckduckgo.com?q=image"
         >
           <div
+            aria-label="image"
             data-css-i7gti2=""
             style={
               Object {
@@ -2070,6 +2082,7 @@ exports[`Storyshots Components/Card Full Overlay Locked Visible 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -2203,6 +2216,7 @@ exports[`Storyshots Components/Card Image 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="image"
         data-css-i7gti2=""
         style={
           Object {
@@ -2333,6 +2347,7 @@ exports[`Storyshots Components/Card Image Link 1`] = `
           href="http://duckduckgo.com"
         >
           <div
+            aria-label="image"
             data-css-i7gti2=""
             style={
               Object {
@@ -2342,6 +2357,132 @@ exports[`Storyshots Components/Card Image Link 1`] = `
           />
         </a>
       </span>
+    </div>
+    <div
+      data-css-piydn8=""
+    >
+      <div
+        data-css-fvvao4=""
+      >
+        <div
+          className=""
+        >
+          <span
+            style={
+              Object {
+                "display": "block",
+                "maxHeight": "0px",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <span
+              className="shiitake-children"
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
+            >
+              Card Title
+              …
+            </span>
+            <span
+              aria-hidden="true"
+              style={
+                Object {
+                  "display": "block",
+                  "height": "0px",
+                  "overflow": "hidden",
+                  "width": "100%",
+                }
+              }
+            >
+              Card Title
+            </span>
+            <span
+              aria-hidden="true"
+              style={
+                Object {
+                  "display": "block",
+                  "left": "-20000px",
+                  "position": "absolute",
+                  "width": "100%",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  W
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  W
+                </span>
+              </span>
+              <span
+                className="shiitake-test-children"
+                style={
+                  Object {
+                    "display": "block",
+                  }
+                }
+              >
+                
+                …
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Image With Alt 1`] = `
+<div
+  style={
+    Object {
+      "width": "320px",
+    }
+  }
+>
+  <div
+    data-css-1ybvkp1=""
+  >
+    <div
+      data-css-1pdjifv=""
+    >
+      <div
+        alt="image"
+        aria-label="image"
+        data-css-i7gti2=""
+        style={
+          Object {
+            "backgroundImage": "url(//picsum.photos/400/200?image=42&gravity=north)",
+          }
+        }
+      />
     </div>
     <div
       data-css-piydn8=""
@@ -2459,6 +2600,7 @@ exports[`Storyshots Components/Card Metadata Multiple 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -2603,6 +2745,7 @@ exports[`Storyshots Components/Card Metadata Single 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -2736,6 +2879,7 @@ exports[`Storyshots Components/Card Metadata Text Link 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -2877,6 +3021,7 @@ exports[`Storyshots Components/Card Metadata Text Wrapper 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -3012,6 +3157,7 @@ exports[`Storyshots Components/Card Metadata Two Lines 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -3195,6 +3341,7 @@ exports[`Storyshots Components/Card Progress 1`] = `
         data-css-1pdjifv=""
       >
         <div
+          aria-label="default image"
           data-css-i7gti2=""
           style={
             Object {
@@ -3308,6 +3455,7 @@ exports[`Storyshots Components/Card Progress 1`] = `
         data-css-1pdjifv=""
       >
         <div
+          aria-label="default image"
           data-css-i7gti2=""
           style={
             Object {
@@ -3429,6 +3577,7 @@ exports[`Storyshots Components/Card Progress 1`] = `
         data-css-1pdjifv=""
       >
         <div
+          aria-label="default image"
           data-css-i7gti2=""
           style={
             Object {
@@ -3570,6 +3719,7 @@ exports[`Storyshots Components/Card Sizes 1`] = `
           data-css-wj7e8j=""
         >
           <div
+            aria-label="default image"
             data-css-i7gti2=""
             style={
               Object {
@@ -3691,6 +3841,7 @@ exports[`Storyshots Components/Card Sizes 1`] = `
           data-css-1pdjifv=""
         >
           <div
+            aria-label="default image"
             data-css-i7gti2=""
             style={
               Object {
@@ -3812,6 +3963,7 @@ exports[`Storyshots Components/Card Sizes 1`] = `
           data-css-1s0i6cc=""
         >
           <div
+            aria-label="default image"
             data-css-i7gti2=""
             style={
               Object {
@@ -3938,6 +4090,7 @@ exports[`Storyshots Components/Card Tag Icon 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -4090,6 +4243,7 @@ exports[`Storyshots Components/Card Tag Long Multi Word 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -4242,6 +4396,7 @@ exports[`Storyshots Components/Card Tag Long Single Word 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -4402,6 +4557,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
           data-css-wj7e8j=""
         >
           <div
+            aria-label="default image"
             data-css-i7gti2=""
             style={
               Object {
@@ -4551,6 +4707,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
           data-css-1pdjifv=""
         >
           <div
+            aria-label="default image"
             data-css-i7gti2=""
             style={
               Object {
@@ -4700,6 +4857,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
           data-css-1s0i6cc=""
         >
           <div
+            aria-label="default image"
             data-css-i7gti2=""
             style={
               Object {
@@ -4854,6 +5012,7 @@ exports[`Storyshots Components/Card Tag Text 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -4987,6 +5146,7 @@ exports[`Storyshots Components/Card Title Link 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -5119,6 +5279,7 @@ exports[`Storyshots Components/Card Title Long 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -5243,6 +5404,7 @@ exports[`Storyshots Components/Card Title Long Link 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {
@@ -5375,6 +5537,7 @@ exports[`Storyshots Components/Card Title Text 1`] = `
       data-css-1pdjifv=""
     >
       <div
+        aria-label="default image"
         data-css-i7gti2=""
         style={
           Object {

@@ -4,9 +4,9 @@ const jsToCss = require('./js-to-css.js')
 
 function glamorToCss(obj) {
   return (
-    convertKeyframes(filterKeyframes(obj)) +
-    convertAnimations(filterAnimationFunctions(obj)) +
-    convertCssWithGlamor(filterNonKeyframes(obj))
+    convertKeyframes(filterKeyframes(obj.default)) +
+    convertAnimations(filterAnimationFunctions(obj.default)) +
+    convertCssWithGlamor(filterNonKeyframes(obj.default))
   )
 }
 
