@@ -22,31 +22,20 @@ const styles = {
   words: () => glamor.css(stylesheet['.psds-navuser__words'])
 }
 
-interface BaseNavUserProps {
+interface NavUserProps
+  extends HTMLPropsFor<HTMLAnchorElement | HTMLButtonElement | HTMLDivElement> {
   meta?: React.ReactNode
   name?: string
   src?: string
-}
-interface AnchorProps extends BaseNavUserProps, HTMLPropsFor<'a'> {
-  href: string
-  onClick?: React.MouseEventHandler<HTMLAnchorElement>
-}
-interface ButtonProps extends BaseNavUserProps, HTMLPropsFor<'button'> {
-  href?: undefined
-  onClick: React.MouseEventHandler<HTMLButtonElement>
-}
-interface DivProps extends BaseNavUserProps, HTMLPropsFor<'div'> {
-  href?: undefined
-  onClick?: React.MouseEventHandler<HTMLDivElement>
+  href?: string
+  target?: string
+  rel?: string
+  onClick?: React.MouseEventHandler<
+    HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
+  >
 }
 
 type NavUserElement = HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
-type NavUserProps = AnchorProps | ButtonProps | DivProps
-type NavUserComponent = React.ForwardRefExoticComponent<NavUserProps> & {
-  (props: AnchorProps, ref?: RefFor<'a'>): JSX.Element
-  (props: ButtonProps, ref?: RefFor<'button'>): JSX.Element
-  (props: DivProps, ref?: RefFor<'div'>): JSX.Element
-}
 
 const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
   (props, forwardedRef) => {
@@ -61,25 +50,15 @@ const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
     const isAnchor = 'href' in props
     const isButton = !isAnchor && 'onClick' in props
     const tagName = isAnchor ? 'a' : isButton ? 'button' : 'div'
-    const wrapperRef = isAnchor
-      ? (ref as RefFor<'a'>)
-      : isButton
-      ? (ref as RefFor<'button'>)
-      : (ref as RefFor<'div'>)
-    const wrapperRest = isAnchor
-      ? (rest as HTMLPropsFor<'a'>)
-      : isButton
-      ? (rest as HTMLPropsFor<'button'>)
-      : (rest as HTMLPropsFor<'div'>)
 
     return (
       <Halo inline gapSize={Halo.gapSizes.small}>
         {React.createElement(
           tagName,
           {
-            ref: wrapperRef,
+            ref: ref as any,
             ...styles.navUser(props),
-            ...wrapperRest
+            ...rest
           },
           <>
             <Avatar src={src} size={Avatar.sizes.xSmall} name={name} />
@@ -89,13 +68,13 @@ const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
       </Halo>
     )
   }
-) as NavUserComponent
+)
 
 NavUser.displayName = 'NavUser'
 
 export default NavUser
 
-interface WordsProps extends HTMLPropsFor<'div'> {
+interface WordsProps extends HTMLPropsFor<HTMLDivElement> {
   meta?: React.ReactNode
   name?: string
 }
