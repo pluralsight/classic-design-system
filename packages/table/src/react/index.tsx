@@ -88,7 +88,11 @@ const styles = {
   drawerInner: () => glamor.css(stylesheet['.psds-table__drawer__inner'])
 }
 
-interface TableProps extends HTMLPropsFor<'table'> {
+interface TableProps
+  extends React.DetailedHTMLProps<
+    React.TableHTMLAttributes<HTMLTableElement>,
+    HTMLTableElement
+  > {
   renderContainer?: typeof defaultRenderContainer
   scrollable?: boolean
 }
@@ -127,19 +131,20 @@ const Table = React.forwardRef<HTMLTableElement, TableProps>((props, ref) => {
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
-  HTMLPropsFor<'div'>
+  HTMLPropsFor<HTMLDivElement>
 >((props, ref) => <div ref={ref} {...props} />)
 
 const TableBody = React.forwardRef<
   HTMLTableSectionElement,
-  HTMLPropsFor<'tbody'>
+  HTMLPropsFor<HTMLTableSectionElement>
 >((props, ref) => {
   return <tbody ref={ref} {...props} />
 })
 TableBody.displayName = 'Table.Body'
 
-interface TableCellProps extends HTMLPropsFor<'td'> {
+interface TableCellProps extends HTMLPropsFor<HTMLTableCellElement> {
   align?: ValueOf<typeof alignments>
+  colSpan?: number
 }
 const TableCell = React.forwardRef<HTMLTableCellElement, TableCellProps>(
   (props, ref) => {
@@ -153,7 +158,7 @@ TableCell.displayName = 'Table.Cell'
 
 const TableHead = React.forwardRef<
   HTMLTableSectionElement,
-  HTMLPropsFor<'thead'>
+  HTMLPropsFor<HTMLTableSectionElement>
 >((props, ref) => {
   const themeName = useTheme()
 
@@ -161,7 +166,7 @@ const TableHead = React.forwardRef<
 })
 TableHead.displayName = 'Table.Head'
 
-interface TableHeaderProps extends HTMLPropsFor<'th'> {
+interface TableHeaderProps extends HTMLPropsFor<HTMLTableHeaderCellElement> {
   align?: ValueOf<typeof alignments>
   role: 'columnheader' | 'rowheader'
   scope: 'col' | 'row'
@@ -238,7 +243,7 @@ const TableHeader = React.forwardRef<
 })
 TableHeader.displayName = 'Table.Header'
 
-interface TableRowProps extends HTMLPropsFor<'tr'> {
+interface TableRowProps extends HTMLPropsFor<HTMLTableRowElement> {
   expanded?: boolean
   selected?: boolean
 }
@@ -259,7 +264,8 @@ const TableRow = React.forwardRef<HTMLTableRowElement, TableRowProps>(
 )
 TableRow.displayName = 'Table.Row'
 
-interface TableDrawerProps extends Omit<HTMLPropsFor<'tr'>, 'ref'> {
+interface TableDrawerProps
+  extends Omit<HTMLPropsFor<HTMLTableRowElement>, 'ref'> {
   expanded: boolean
   colSpan: number
   indentWithCell?: boolean

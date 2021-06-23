@@ -75,7 +75,7 @@ export const useIntersectionSentinels = (
   }, [start, end, options, onEnter, onLeave])
 }
 
-interface SentinelProps extends Omit<HTMLPropsFor<'div'>, 'ref'> {
+interface SentinelProps extends Omit<HTMLPropsFor<HTMLDivElement>, 'ref'> {
   end?: boolean
 }
 
