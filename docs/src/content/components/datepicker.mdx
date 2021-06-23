@@ -18,11 +18,30 @@ import { layout } from '@pluralsight/ps-design-system-core'
 ## DatePicker
 This is a very similar descendant of the prevous DatePicker. It is a convenience wrapper around the common case. The API is familiar but has some differences. It is a controlled component with `value`. It takes an `onSelect` prop that returns a [`dayzed.DateObj`](https://github.com/deseretdigital/dayzed/blob/ebf1de1ceb9695738895f8b08bf45ad9a894fe00/typings/dayzed.d.ts#L9-L16) each time a valid date is selected.
 
-```typescript noRender startExpanded
+```typescript
+import Button from '@pluralsight/ps-design-system-button'
 import { DatePicker } from '@pluralsight/ps-design-system-datepicker'
+import React from 'react'
 
+const Example = () => {
+  const [date, setDate] = React.useState(new Date(1999, 11, 31))
+  return (
+    <div>
+      <div>
+        <Button onClick={() => setDate(new Date(2000, 0, 1))}>Go Y2K!</Button>
+      </div>
+      <div>
+        <DatePicker
+          label="Party time"
+          onSelect={(evt, dateObj) => (setDate(dateObj.date))}
+          value={date}
+        />
+      </div>
+    </div>
+  )
+}
 
-<DatePicker onSelect={ props.onSelect} />
+export default Example
 ```
 
 <TypesTable defaultColumn={false}>
@@ -30,6 +49,11 @@ import { DatePicker } from '@pluralsight/ps-design-system-datepicker'
     name="onSelect"
     type="(evt: SyntheticEvent, selectedDate: DateObj) => void"
     desc="callback that return DateObj"
+  />
+  <TypesProp
+    name="value"
+    type="Date"
+    desc="date to set picker to"
   />
 </TypesTable>
 

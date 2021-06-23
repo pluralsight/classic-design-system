@@ -1,0 +1,7 @@
+@import '@pluralsight/ps-design-system-normalize';
+
+body {
+  color: var(--psColorsTextIconHighOnDark);
+  background: var(--psColorsBackgroundDark1);
+  padding: 1rem;
+}

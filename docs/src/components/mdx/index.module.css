@@ -1,3 +1,6 @@
+main {
+  font-size: var(--psTypeFontSize300);
+}
 main > .h1 {
   margin-top: 0;
 }
