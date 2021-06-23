@@ -5,6 +5,7 @@ const addons = {
   actions: '@storybook/addon-actions',
   a11y: '@storybook/addon-a11y',
   center: '@pluralsight/ps-design-system-storybook-addon-center',
+  postcss: '@storybook/addonn-postcss',
   theme: '@pluralsight/ps-design-system-storybook-addon-theme',
   viewport: '@storybook/addon-viewport'
 }

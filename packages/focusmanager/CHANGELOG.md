@@ -3,6 +3,49 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.14...@pluralsight/ps-design-system-focusmanager@7.1.15) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [7.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.13...@pluralsight/ps-design-system-focusmanager@7.1.14) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [7.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.10...@pluralsight/ps-design-system-focusmanager@7.1.13) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [7.1.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.10...@pluralsight/ps-design-system-focusmanager@7.1.12) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
+## [7.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.9...@pluralsight/ps-design-system-focusmanager@7.1.10) (2021-06-18)
+
+
+### Bug Fixes
+
+* **focusmanager:** detect subtree changes in child list ([b7e3539](https://github.com/pluralsight/design-system/commit/b7e3539f3a0e100ff9eb5c668fca9ffa59736068)), closes [#1715](https://github.com/pluralsight/design-system/issues/1715)
+
+
+
+
+
 ## [7.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.8...@pluralsight/ps-design-system-focusmanager@7.1.9) (2021-06-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager

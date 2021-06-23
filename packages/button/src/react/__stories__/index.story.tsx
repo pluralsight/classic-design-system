@@ -41,9 +41,6 @@ Basic.args = { ...defaultArgs }
 export const WithIcon = Template.bind({})
 WithIcon.args = { ...defaultArgs, icon: <PlaceholderIcon /> }
 
-export const WithLoading = Template.bind({})
-WithLoading.args = { ...defaultArgs, loading: true }
-
 export const AsLink = Template.bind({})
 AsLink.args = { ...defaultArgs, href: 'https://duckduckgo.com' }
 
@@ -71,8 +68,20 @@ IconOnly.args = {
   icon: <PlaceholderIcon />
 }
 
-export const LoadingOnly = Template.bind({})
-LoadingOnly.args = { ...defaultArgs, 'aria-label': 'loading', loading: true }
+export const LoadingWithIcon = Template.bind({})
+LoadingWithIcon.args = {
+  ...defaultArgs,
+  'aria-label': 'loading',
+  loading: true,
+  icon: <PlaceholderIcon />
+}
+
+export const LoadingWithLabelNoIcon = Template.bind({})
+LoadingWithLabelNoIcon.args = {
+  ...defaultArgs,
+  'aria-label': 'loading',
+  loading: true
+}
 
 export const StyleOverride = Template.bind({})
 StyleOverride.args = { ...defaultArgs, style: { background: 'red' } }
@@ -211,7 +220,7 @@ export const ExampleAutofocus: Story = () => {
   return <Example />
 }
 
-export const ExampleLoadingTransition: Story = () => {
+export const LoadingTransition: Story = () => {
   const Example: React.FC = () => {
     const [loading, setLoading] = React.useState<boolean>(false)
 
@@ -224,6 +233,28 @@ export const ExampleLoadingTransition: Story = () => {
     }, [loading])
 
     return <Button loading={loading}>Wait for it</Button>
+  }
+
+  return <Example />
+}
+
+export const LoadingTransitionStartTrue: Story = () => {
+  const Example: React.FC = () => {
+    const [loading, setLoading] = React.useState<boolean>(true)
+
+    React.useEffect(() => {
+      const timer = setInterval(() => {
+        setLoading(!loading)
+      }, 1500)
+
+      return () => clearInterval(timer)
+    }, [loading])
+
+    return (
+      <Button aria-label={loading && 'Loading...'} loading={loading}>
+        Wait for it
+      </Button>
+    )
   }
 
   return <Example />

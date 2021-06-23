@@ -1,4 +1,5 @@
 import {
+  accessibility,
   colorsBlue,
   colorsWhite,
   colorsBackgroundDark,
@@ -91,14 +92,7 @@ export default {
     background: colorsWhite
   },
 
-  '.psds-radio-button__input': {
-    opacity: 0,
-    width: 0,
-    height: 0,
-    '&:focus': {
-      outline: 'none'
-    }
-  },
+  '.psds-radio-button__input': accessibility.screenReaderOnly,
 
   '.psds-radio-button__label': {
     color: colorsTextIcon.highOnDark,

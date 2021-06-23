@@ -98,7 +98,13 @@ export const ActiveItem: Story = () => {
     }
   })
   return (
-    <Menu selectedItem={selectedItem} ref={ref as RefFor<'ul'>}>
+    <Menu
+      role="listbox"
+      optionRole="option"
+      aria-label="some label"
+      selectedItem={selectedItem}
+      ref={ref as RefFor<'ul'>}
+    >
       <Menu.Item>Not active</Menu.Item>
       <Menu.Item active value={{ value: 'active', label: 'active' }}>
         Active
@@ -124,6 +130,9 @@ export const ActiveAndSelectedItem: Story = () => {
   })
   return (
     <Menu
+      aria-label="some label"
+      role="listbox"
+      optionRole="option"
       selectedItem={selectedItem}
       useActive={useActive}
       ref={ref as RefFor<'ul'>}
@@ -141,7 +150,7 @@ export const ActiveAndSelectedItem: Story = () => {
 }
 
 export const ItemWithDescription: Story = () => (
-  <Menu>
+  <Menu aria-label="some label">
     <MenuItemWithDescription
       value="1"
       label="item"
@@ -156,7 +165,12 @@ export const ItemWithDescriptionSelected: Story = () => {
     value: '1'
   }
   return (
-    <Menu selectedItem={selectedItem}>
+    <Menu
+      role="listbox"
+      optionRole="option"
+      aria-label="some label"
+      selectedItem={selectedItem}
+    >
       <MenuItemWithDescription
         active
         value="1"

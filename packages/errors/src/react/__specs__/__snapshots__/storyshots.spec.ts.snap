@@ -75,9 +75,9 @@ exports[`Storyshots Components/Errors Custom Error Page 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support
@@ -155,9 +155,9 @@ exports[`Storyshots Components/Errors Custom Error Page 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support
@@ -249,9 +249,9 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support
@@ -330,9 +330,9 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support
@@ -404,9 +404,9 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support
@@ -485,9 +485,9 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support
@@ -559,9 +559,9 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support
@@ -640,9 +640,9 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support
@@ -847,9 +847,9 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support
@@ -928,9 +928,9 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
     <a
       data-css-y5dqt5=""
       href="https://help.pluralsight.com/help/contact-us"
-      style={Object {}}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         Contact support

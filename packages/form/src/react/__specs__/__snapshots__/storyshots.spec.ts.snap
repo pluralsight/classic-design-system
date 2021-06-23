@@ -45,9 +45,9 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             <button
               data-css-y5dqt5=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Save
@@ -60,9 +60,9 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             <button
               data-css-1uk30vr=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Cancel
@@ -101,9 +101,9 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             <button
               data-css-y5dqt5=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Save
@@ -116,9 +116,9 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             <button
               data-css-1uk30vr=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Cancel
@@ -163,9 +163,9 @@ exports[`Storyshots Components/Form Button Row Single Button 1`] = `
             <button
               data-css-y5dqt5=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Only One
@@ -715,15 +715,13 @@ exports[`Storyshots Components/Form Sample 1`] = `
                   data-css-iwspcj=""
                 >
                   <div
-                    aria-checked={false}
                     data-css-fdf00s=""
-                    role="radio"
-                    tabIndex={-1}
                   />
                 </div>
               </div>
               <input
-                data-css-fplhjw=""
+                checked={false}
+                data-css-6wu9td=""
                 name="sample"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -749,15 +747,13 @@ exports[`Storyshots Components/Form Sample 1`] = `
                   data-css-iwspcj=""
                 >
                   <div
-                    aria-checked={false}
                     data-css-fdf00s=""
-                    role="radio"
-                    tabIndex={-1}
                   />
                 </div>
               </div>
               <input
-                data-css-fplhjw=""
+                checked={false}
+                data-css-6wu9td=""
                 name="sample"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -786,20 +782,13 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          aria-checked={false}
           data-css-nq9iqf=""
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          role="checkbox"
           style={
             Object {
               "maxWidth": "none",
               "width": "100%",
             }
           }
-          tabIndex={0}
         >
           <div
             data-css-1lu7sfl=""
@@ -815,8 +804,13 @@ exports[`Storyshots Components/Form Sample 1`] = `
           <input
             checked={false}
             data-css-6wu9td=""
+            disabled={false}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
             readOnly={true}
-            tabIndex={-1}
+            tabIndex={0}
             type="checkbox"
           />
           <span
@@ -882,9 +876,9 @@ exports[`Storyshots Components/Form Sample 1`] = `
             <button
               data-css-y5dqt5=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Save
@@ -897,9 +891,9 @@ exports[`Storyshots Components/Form Sample 1`] = `
             <button
               data-css-1uk30vr=""
               disabled={false}
-              style={Object {}}
             >
               <span
+                aria-hidden={false}
                 data-css-15b13by=""
               >
                 Cancel

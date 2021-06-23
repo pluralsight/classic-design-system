@@ -34,7 +34,6 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-4ducb0=""
@@ -54,6 +53,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -113,7 +113,6 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
           data-css-ttgr6s=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-4ducb0=""
@@ -133,6 +132,7 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>
@@ -246,7 +246,6 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
           data-css-1dnyz38=""
           disabled={false}
           onClick={[Function]}
-          style={Object {}}
         >
           <div
             data-css-4ducb0=""
@@ -266,6 +265,7 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
             </div>
           </div>
           <span
+            aria-hidden={false}
             data-css-15b13by=""
           />
         </button>

@@ -30,15 +30,13 @@ exports[`Storyshots Components/Radio Basic 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -64,15 +62,13 @@ exports[`Storyshots Components/Radio Basic 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -98,15 +94,13 @@ exports[`Storyshots Components/Radio Basic 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -178,15 +172,13 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -212,10 +204,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={true}
               data-css-1w8imqn=""
-              role="radio"
-              tabIndex={-1}
             >
               <div
                 data-css-ppl1jg=""
@@ -224,7 +213,8 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={true}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -250,15 +240,13 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -313,15 +301,13 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
             data-css-rbpa8o=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -346,15 +332,13 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
             data-css-rbpa8o=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -379,15 +363,13 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
             data-css-rbpa8o=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -441,15 +423,13 @@ exports[`Storyshots Components/Radio Error 1`] = `
             data-css-mmyfiy=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -475,15 +455,13 @@ exports[`Storyshots Components/Radio Error 1`] = `
             data-css-mmyfiy=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -509,15 +487,13 @@ exports[`Storyshots Components/Radio Error 1`] = `
             data-css-mmyfiy=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -572,15 +548,13 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -606,15 +580,13 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -640,15 +612,13 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -693,15 +663,13 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -727,15 +695,13 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -761,15 +727,13 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -807,15 +771,13 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -841,15 +803,13 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -875,15 +835,13 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -929,15 +887,13 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -963,15 +919,13 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -997,15 +951,13 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1055,10 +1007,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={true}
               data-css-1w8imqn=""
-              role="radio"
-              tabIndex={-1}
             >
               <div
                 data-css-ppl1jg=""
@@ -1067,7 +1016,8 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={true}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1093,15 +1043,13 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1127,15 +1075,13 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1186,15 +1132,13 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1220,15 +1164,13 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1254,15 +1196,13 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
             data-css-iwspcj=""
           >
             <div
-              aria-checked={false}
               data-css-fdf00s=""
-              role="radio"
-              tabIndex={-1}
             />
           </div>
         </div>
         <input
-          data-css-fplhjw=""
+          checked={false}
+          data-css-6wu9td=""
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}

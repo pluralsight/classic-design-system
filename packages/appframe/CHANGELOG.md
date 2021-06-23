@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.20...@pluralsight/ps-design-system-appframe@5.1.21) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-appframe
+
+
+
+
+
+## [5.1.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.19...@pluralsight/ps-design-system-appframe@5.1.20) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-appframe
+
+
+
+
+
+## [5.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.17...@pluralsight/ps-design-system-appframe@5.1.19) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-appframe
+
+
+
+
+
+## [5.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.17...@pluralsight/ps-design-system-appframe@5.1.18) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-appframe
+
+
+
+
+
+## [5.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.16...@pluralsight/ps-design-system-appframe@5.1.17) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-appframe
+
+
+
+
+
 ## [5.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.14...@pluralsight/ps-design-system-appframe@5.1.16) (2021-06-14)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-appframe

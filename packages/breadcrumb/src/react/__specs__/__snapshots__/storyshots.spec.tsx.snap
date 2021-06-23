@@ -8,7 +8,6 @@ exports[`Storyshots Components/Breadcrumb As Button 1`] = `
     data-css-scrazl=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <div
       data-css-73kfkk=""
@@ -28,6 +27,7 @@ exports[`Storyshots Components/Breadcrumb As Button 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       Clicks once
@@ -43,7 +43,6 @@ exports[`Storyshots Components/Breadcrumb As Link 1`] = `
   <a
     data-css-scrazl=""
     href="https://duckduckgo.com"
-    style={Object {}}
   >
     <div
       data-css-73kfkk=""
@@ -63,6 +62,7 @@ exports[`Storyshots Components/Breadcrumb As Link 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       Click as link
@@ -78,7 +78,6 @@ exports[`Storyshots Components/Breadcrumb Basic 1`] = `
   <button
     data-css-scrazl=""
     disabled={false}
-    style={Object {}}
   >
     <div
       data-css-73kfkk=""
@@ -98,6 +97,7 @@ exports[`Storyshots Components/Breadcrumb Basic 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       All the things
@@ -114,7 +114,6 @@ exports[`Storyshots Components/Breadcrumb Disabled 1`] = `
     data-css-18r2msp=""
     disabled={true}
     onClick={[Function]}
-    style={Object {}}
   >
     <div
       data-css-73kfkk=""
@@ -134,6 +133,7 @@ exports[`Storyshots Components/Breadcrumb Disabled 1`] = `
       </div>
     </div>
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       Disabled

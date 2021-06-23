@@ -41,12 +41,15 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     },
     children,
     onKeyDown,
-    role,
+    role: roleFromProps,
     ...rest
   } = props
-  const { onMenuClick, selectedItem, optionRole, useActive } = React.useContext(
-    MenuContext
-  )
+  const {
+    onMenuClick,
+    selectedItem,
+    optionRole: roleFromContext,
+    useActive
+  } = React.useContext(MenuContext)
   const handleClick = (evt: React.MouseEvent | React.KeyboardEvent) => {
     onMenuClick && onMenuClick(evt as React.MouseEvent, value)
     onClick && onClick(evt as React.MouseEvent, value)
@@ -61,6 +64,15 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
   const selected = selectedItem?.value === value.value
   const listItem = React.useRef<HTMLLIElement | undefined>()
   const { active: hookActive, handleActiveState } = useActive(listItem)
+
+  const optionRole = roleFromProps || roleFromContext
+  const listboxProps =
+    optionRole === 'option'
+      ? {
+          'aria-selected': selected
+        }
+      : {}
+
   return (
     <li
       {...styles.listItem(active || hookActive, disabled || false)}
@@ -71,8 +83,8 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
       ref={listItem as RefFor<'li'>}
       onBlur={handleActiveState}
       onFocus={handleActiveState}
-      role={role || optionRole}
-      aria-selected={selected}
+      role={optionRole}
+      {...listboxProps}
     >
       <Comp
         {...styles.option()}

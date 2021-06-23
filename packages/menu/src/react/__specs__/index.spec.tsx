@@ -161,15 +161,15 @@ describe('Menu', () => {
       expect(ref.current).not.toBeNull()
     })
   })
-  // TODO: enable
-  // describe('accessibility', () => {
-  //   const cases = convertStoriesToJestCases(stories)
-  // describe.each(cases)('%s story', (_name, Story) => {
-  //   it('has no axe-core violations', async () => {
-  //     const { container } = render(<Story {...Story.args} />)
-  //     const results = await axe(container)
-  //     expect(results).toHaveNoViolations()
-  //   })
-  // })
-  // })
+
+  describe('accessibility', () => {
+    const cases = convertStoriesToJestCases(stories)
+    describe.each(cases)('%s story', (_name, Story) => {
+      it('has no axe-core violations', async () => {
+        const { container } = render(<Story {...Story.args} />)
+        const results = await axe(container)
+        expect(results).toHaveNoViolations()
+      })
+    })
+  })
 })

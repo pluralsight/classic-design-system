@@ -10,17 +10,17 @@ exports[`Storyshots Components/NavUser As Button 1`] = `
   >
     <div
       aria-hidden={true}
-      data-css-79vgce=""
+      className="psds-avatar psds-avatar--size-xSmall"
     >
       <img
-        data-css-d7y6x2=""
+        className="psds-avatar__image"
         onError={[Function]}
         onLoad={[Function]}
         src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
       />
       <div
         aria-label="Jake Trent"
-        data-css-1xbr5gr=""
+        className="psds-avatar__initials"
         style={
           Object {
             "backgroundColor": "#7048C6",
@@ -56,17 +56,17 @@ exports[`Storyshots Components/NavUser As Link 1`] = `
   >
     <div
       aria-hidden={true}
-      data-css-79vgce=""
+      className="psds-avatar psds-avatar--size-xSmall"
     >
       <img
-        data-css-d7y6x2=""
+        className="psds-avatar__image"
         onError={[Function]}
         onLoad={[Function]}
         src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
       />
       <div
         aria-label="Jake Trent"
-        data-css-1xbr5gr=""
+        className="psds-avatar__initials"
         style={
           Object {
             "backgroundColor": "#7048C6",
@@ -101,16 +101,16 @@ exports[`Storyshots Components/NavUser Avatar Only 1`] = `
   >
     <div
       aria-hidden={true}
-      data-css-79vgce=""
+      className="psds-avatar psds-avatar--size-xSmall"
     >
       <img
-        data-css-d7y6x2=""
+        className="psds-avatar__image"
         onError={[Function]}
         onLoad={[Function]}
         src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
       />
       <div
-        data-css-1xbr5gr=""
+        className="psds-avatar__initials"
         style={
           Object {
             "backgroundColor": "#D1487B",
@@ -143,17 +143,17 @@ exports[`Storyshots Components/NavUser Basic 1`] = `
   >
     <div
       aria-hidden={true}
-      data-css-79vgce=""
+      className="psds-avatar psds-avatar--size-xSmall"
     >
       <img
-        data-css-d7y6x2=""
+        className="psds-avatar__image"
         onError={[Function]}
         onLoad={[Function]}
         src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
       />
       <div
         aria-label="Jake Trent"
-        data-css-1xbr5gr=""
+        className="psds-avatar__initials"
         style={
           Object {
             "backgroundColor": "#7048C6",
@@ -185,9 +185,9 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       Click me first
@@ -205,9 +205,9 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
     data-css-y5dqt5=""
     disabled={false}
     onClick={[Function]}
-    style={Object {}}
   >
     <span
+      aria-hidden={false}
       data-css-15b13by=""
     >
       Then click me, first menu closes, mine opens
@@ -230,17 +230,17 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
     >
       <div
         aria-hidden={true}
-        data-css-79vgce=""
+        className="psds-avatar psds-avatar--size-xSmall"
       >
         <img
-          data-css-d7y6x2=""
+          className="psds-avatar__image"
           onError={[Function]}
           onLoad={[Function]}
           src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
         />
         <div
           aria-label="Then click me, same as 2nd button"
-          data-css-1xbr5gr=""
+          className="psds-avatar__initials"
           style={
             Object {
               "backgroundColor": "#B28300",
@@ -285,17 +285,17 @@ exports[`Storyshots Components/NavUser With Meta 1`] = `
   >
     <div
       aria-hidden={true}
-      data-css-79vgce=""
+      className="psds-avatar psds-avatar--size-xSmall"
     >
       <img
-        data-css-d7y6x2=""
+        className="psds-avatar__image"
         onError={[Function]}
         onLoad={[Function]}
         src="https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg?d=https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fps-cdn%2Fdesign-system%2Fassets%2Ftransparent.gif"
       />
       <div
         aria-label="Jake Trent"
-        data-css-1xbr5gr=""
+        className="psds-avatar__initials"
         style={
           Object {
             "backgroundColor": "#7048C6",

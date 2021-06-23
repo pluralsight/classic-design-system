@@ -3,6 +3,62 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.17...@pluralsight/ps-design-system-typeahead@10.0.18) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
+
+
+
+
+
+## [10.0.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.16...@pluralsight/ps-design-system-typeahead@10.0.17) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
+
+
+
+
+
+## [10.0.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.14...@pluralsight/ps-design-system-typeahead@10.0.16) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
+
+
+
+
+
+## [10.0.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.14...@pluralsight/ps-design-system-typeahead@10.0.15) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
+
+
+
+
+
+## [10.0.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.13...@pluralsight/ps-design-system-typeahead@10.0.14) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
+
+
+
+
+
+## [10.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.12...@pluralsight/ps-design-system-typeahead@10.0.13) (2021-06-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
+
+
+
+
+
+## [10.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.11...@pluralsight/ps-design-system-typeahead@10.0.12) (2021-06-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
+
+
+
+
+
 ## [10.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.10...@pluralsight/ps-design-system-typeahead@10.0.11) (2021-06-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-typeahead

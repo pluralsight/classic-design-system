@@ -1,0 +1,56 @@
+.psds-avatar {
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  border-radius: 100%;
+}
+.psds-avatar--size-xSmall {
+  width: 32px;
+  height: 32px;
+  font-size: var(--psTypeFontSize400);
+  font-weight: var(--psTypeFontWeightDefault);
+}
+.psds-avatar--size-small {
+  width: 48px;
+  height: 48px;
+  font-size: var(--psTypeFontSize600);
+  font-weight: var(--psTypeFontWeightDefault);
+}
+.psds-avatar--size-medium {
+  width: 72px;
+  height: 72px;
+  font-size: var(--psTypeFontSizeXXLarge);
+  font-weight: var(--psTypeFontWeight300);
+}
+.psds-avatar--size-large {
+  width: 96px;
+  height: 96px;
+  font-size: var(--psTypeFontSize1000);
+  font-weight: var(--psTypeFontWeight300);
+}
+.psds-avatar--size-xLarge {
+  width: 160px;
+  height: 160px;
+  font-size: var(--psTypeFontSize1200);
+  font-weight: var(--psTypeFontWeight300);
+}
+.psds-avatar__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.psds-avatar__initials {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--psColorsTextIconHighOnDark);
+  /* TODO: revert to bg util color after it exists in css vars */
+  background-color: rgb(138, 153, 168);
+}
+

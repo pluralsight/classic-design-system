@@ -3,6 +3,67 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.13...@pluralsight/ps-design-system-switch@9.1.14) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [9.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.12...@pluralsight/ps-design-system-switch@9.1.13) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [9.1.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.10...@pluralsight/ps-design-system-switch@9.1.12) (2021-06-22)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [9.1.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.10...@pluralsight/ps-design-system-switch@9.1.11) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [9.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.9...@pluralsight/ps-design-system-switch@9.1.10) (2021-06-18)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [9.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.8...@pluralsight/ps-design-system-switch@9.1.9) (2021-06-16)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-switch
+
+
+
+
+
+## [9.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.7...@pluralsight/ps-design-system-switch@9.1.8) (2021-06-16)
+
+
+### Bug Fixes
+
+* **switch:** allow form field name to pass to input ([d412be2](https://github.com/pluralsight/design-system/commit/d412be2e5935a23984b5f00466e2a8d2b2957bb1))
+* **switch:** properly label and de-dup switch in screenreader ([c21fdaa](https://github.com/pluralsight/design-system/commit/c21fdaaa970acb3f56db50b9d8cb60aa674b59af))
+* **switch:** support aria-label when no visible label ([26bc871](https://github.com/pluralsight/design-system/commit/26bc87194840aa928560e013eff4de46b3d7444d))
+
+
+
+
+
 ## [9.1.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.6...@pluralsight/ps-design-system-switch@9.1.7) (2021-06-10)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch

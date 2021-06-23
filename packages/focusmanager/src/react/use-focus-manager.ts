@@ -62,7 +62,7 @@ export default function useFocusManager(
           }
         })
       })
-      observer.observe(node, { childList: true })
+      observer.observe(node, { childList: true, subtree: true })
     }
 
     const nextEls = getFocusableChildNodes(node)

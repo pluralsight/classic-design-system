@@ -11,10 +11,10 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
     <button
       data-css-c3sd2l=""
       disabled={false}
-      style={Object {}}
       tabIndex={0}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         skip to main content
@@ -92,11 +92,11 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
               data-css-91smc8=""
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Jake"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#008F46",
@@ -217,10 +217,10 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
     <button
       data-css-c3sd2l=""
       disabled={false}
-      style={Object {}}
       tabIndex={0}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         skip to main content
@@ -298,11 +298,11 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
               data-css-91smc8=""
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Jake"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#008F46",
@@ -552,10 +552,10 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
     <button
       data-css-c3sd2l=""
       disabled={false}
-      style={Object {}}
       tabIndex={0}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         skip to main content
@@ -676,11 +676,11 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
               data-css-91smc8=""
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Jake"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#008F46",
@@ -985,10 +985,10 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
     <button
       data-css-c3sd2l=""
       disabled={false}
-      style={Object {}}
       tabIndex={0}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         skip to main content
@@ -1066,11 +1066,11 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
               data-css-91smc8=""
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Jake"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#008F46",
@@ -1227,10 +1227,10 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
     <button
       data-css-c3sd2l=""
       disabled={false}
-      style={Object {}}
       tabIndex={0}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         skip to main content
@@ -1351,11 +1351,11 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
               data-css-91smc8=""
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Jake"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#008F46",
@@ -1660,10 +1660,10 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
     <button
       data-css-c3sd2l=""
       disabled={false}
-      style={Object {}}
       tabIndex={0}
     >
       <span
+        aria-hidden={false}
         data-css-15b13by=""
       >
         skip to main content
@@ -1784,11 +1784,11 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
               data-css-91smc8=""
             >
               <div
-                data-css-79vgce=""
+                className="psds-avatar psds-avatar--size-xSmall"
               >
                 <div
                   aria-label="Jake"
-                  data-css-1xbr5gr=""
+                  className="psds-avatar__initials"
                   style={
                     Object {
                       "backgroundColor": "#008F46",
