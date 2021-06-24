@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.30.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.29.3...@pluralsight/ps-design-system-docs@0.30.0) (2021-06-24)
+
+
+### Bug Fixes
+
+* **docs:** style non-paragraph text in main content ([ed70395](https://github.com/pluralsight/design-system/commit/ed70395381117ee06d70480e2f07628c11f7f15e))
+
+
+### Features
+
+* **docs:** add value prop and example to datepicker ([fd064fb](https://github.com/pluralsight/design-system/commit/fd064fb456d25b0c40104a03ce8174a61b0d659a))
+
+
+
+
+
 ## [0.29.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.29.2...@pluralsight/ps-design-system-docs@0.29.3) (2021-06-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

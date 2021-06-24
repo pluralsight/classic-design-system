@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@9.1.12...@pluralsight/ps-design-system-circularprogress@10.0.0) (2021-06-24)
+
+
+* Bump/circular linear progress (#1831) ([2ece3b2](https://github.com/pluralsight/design-system/commit/2ece3b249f609a48bdd952a0dfbc20ab760af2b5)), closes [#1831](https://github.com/pluralsight/design-system/issues/1831)
+
+
+### BREAKING CHANGES
+
+* aria-label now required
+
+* build(linearprogress): bump to major
+* aria-label now required
+
+* build: bump to break
+
+
+
+
+
 ## [9.1.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@9.1.11...@pluralsight/ps-design-system-circularprogress@9.1.12) (2021-06-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress
