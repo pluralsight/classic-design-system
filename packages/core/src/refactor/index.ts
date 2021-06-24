@@ -26,10 +26,14 @@ export const cssVars = Object.entries({
   ...colors
 }).reduce((acc, [group, obj]) => {
   const keys: Record<string, string> = {}
-  Object.keys(obj).forEach(key => {
-    keys[key] = `var(--ps${capitalizeFirstLetter(group)}${capitalizeFirstLetter(
-      key
-    )})`
-  })
+  if (typeof obj === 'string') {
+    keys[group] = `var(--ps${capitalizeFirstLetter(group)})`
+  } else {
+    Object.keys(obj).forEach(key => {
+      keys[key] = `var(--ps${capitalizeFirstLetter(
+        group
+      )}${capitalizeFirstLetter(key)})`
+    })
+  }
   return { ...acc, [group]: { ...keys } }
 }, {}) as Tokens
