@@ -50,7 +50,10 @@ function adjustPackageJson() {
 
   pkg.scripts['build:css'] = 'postcss-compile'
   pkg.style = 'dist/esm/css/index.css'
-
+  if (pkg.peerDependencies) {
+    const { glamor, ...rest } = pkg.peerDependencies
+    pkg.peerDependencies = rest
+  }
   if (pkg.sideEffects.toString() === 'false') {
     pkg.sideEffects = ['**/*.css']
   } else {
