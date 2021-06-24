@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-steps",
-  "version": "4.1.12",
+  "version": "4.1.13",
   "description": "Steps UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.2.2",
-    "@pluralsight/ps-design-system-circularprogress": "^9.1.12",
+    "@pluralsight/ps-design-system-circularprogress": "^10.0.0",
     "@pluralsight/ps-design-system-storybook-preset": "^0.7.2"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
