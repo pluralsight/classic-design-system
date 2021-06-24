@@ -21,6 +21,10 @@ export const AppearancesAndColors: Story = () => (
   </StoryGrid>
 )
 
+export const ClassNameOverride: Story = () => (
+  <Badge className="overriddenEh">Class name in snapshot</Badge>
+)
+
 const StoryGrid: React.FC<{ cols?: number }> = props => {
   const { cols = 2, ...rest } = props
 
