@@ -24,7 +24,9 @@
     "test": "tsc --noEmit --project ./tsconfig.json && jest",
     "test:watch": "yarn test --watchAll"
   },
-  "sideEffects": false,
+  "sideEffects": [
+    "**/*.css"
+  ],
   "style": "dist/esm/css/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
