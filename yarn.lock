@@ -2272,7 +2272,7 @@
     "@types/yargs" "^15.0.0"
     chalk "^4.0.0"
 
-"@kristoferbaxter/estree-walker@2.0.2":
+"@kristoferbaxter/estree-walker@2.0.2", "@kristoferbaxter/estree-walker@^2.0.2":
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/@kristoferbaxter/estree-walker/-/estree-walker-2.0.2.tgz#a448a7b298a42c87502c8ab53038d7c0ad2a73a2"
   integrity sha512-aPFon+UXJ0758piFg/sp0tKr67675UWR9ssa39gN0ynJAY5wDQ8u57H0Z0uaeu0z1gEvLnLF8T1/rLrCZ4gFIg==
@@ -5438,6 +5438,11 @@ acorn@^8.0.4:
   version "8.0.5"
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.0.5.tgz#a3bfb872a74a6a7f661bc81b9849d9cac12601b7"
   integrity sha512-v+DieK/HJkJOpFBETDJioequtc3PfxsWMaxIdIwujtF7FEV/MAyDQLlm6/zPvr7Mix07mLh6ccVwIsloceodlg==
+
+acorn@^8.4.1:
+  version "8.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.4.1.tgz#56c36251fc7cabc7096adc18f05afe814321a28c"
+  integrity sha512-asabaBSkEKosYKMITunzX177CXxQ4Q8BSSzMTKD+FefUhipQC70gfW5SiUDhYQ3vk8G+81HqQk7Fv9OXwwn9KA==
 
 address@1.0.3:
   version "1.0.3"
@@ -16949,7 +16954,7 @@ madge@^4.0.1:
     typescript "^3.9.5"
     walkdir "^0.4.1"
 
-magic-string@0.25.7, magic-string@^0.25.1:
+magic-string@0.25.7, magic-string@^0.25.1, magic-string@^0.25.7:
   version "0.25.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
   integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
