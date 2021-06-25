@@ -1,0 +1,81 @@
+.psds-banner {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  overflow: hidden;
+  padding: var(--psLayoutSpacingXSmall) var(--psLayoutSpacingSmall);
+}
+.psds-banner--color-blue {
+  color: var(--psColorsTextIconHighOnDark);
+  background-color: var(--psColorsBlue7);
+}
+.psds-banner--color-green {
+  color: var(--psColorsTextIconHighOnDark);
+  background-color: var(--psColorsGreen8);
+}
+.psds-banner--color-yellow {
+  color: var(--psColorsTextIconHighOnLight);
+  background-color: var(--psColorsYellow6);
+}
+.psds-banner--color-red {
+  color: var(--psColorsTextIconHighOnDark);
+  background-color: var(--psColorsRed7);
+}
+:not(#fake-id-to-force-higher-specificity) .psds-banner__button {
+  background: 0 0;
+  border-color: currentColor;
+  color: currentColor;
+}
+:not(#fake-id-to-force-higher-specificity) .psds-banner__button:active,
+:not(#fake-id-to-force-higher-specificity) .psds-banner__button:focus,
+:not(#fake-id-to-force-higher-specificity) .psds-banner__button:hover {
+  /* TODO: use core var for black when raw rgb var is available */
+  background-color: rgba(0, 0, 0, 0.1);
+}
+:not(#fake-id-to-force-higher-specificity) .psds-banner__button:focus {
+  /* TODO: use core var for white when raw rgb var is available */
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.5);
+}
+.psds-banner__button--color-yellow:not(#fake-id-to-force-higher-specificity):focus {
+  /* TODO: use core var for black when raw rgb var is available */
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.psds-banner__text {
+  margin: 0 !important;
+  flex: 1;
+  text-align: center;
+  color: currentColor !important;
+  -webkit-flex: 1;
+}
+.psds-banner__text a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.psds-banner__text a:active,
+.psds-banner__text a:focus,
+.psds-banner__text a:hover {
+  color: inherit;
+  transition: all var(--psMotionSpeedNormal);
+  opacity: 0.85;
+  -webkit-transition: all var(--psMotionSpeedNormal);
+  -moz-transition: all var(--psMotionSpeedNormal);
+}
+.psds-banner__dismiss {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  background: 0 0;
+  border: none;
+  margin-left: var(--psLayoutSpacingSmall);
+  padding: 0;
+  color: currentColor;
+  cursor: pointer;
+}
+.psds-banner__dismiss:active,
+.psds-banner__dismiss:focus,
+.psds-banner__dismiss:hover {
+  outline: 0;
+  border-radius: 2px;
+  box-shadow: 0 0 0 3px currentColor;
+}
