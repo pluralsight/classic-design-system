@@ -747,11 +747,21 @@ const selectionHook = (hooks: Hooks<any>) => {
 
 const SelectionCell: React.FC<CellProps<any>> = props => {
   const { row } = props
-  return <Checkbox {...row.getToggleRowSelectedProps()} />
+  return <TableCheckbox {...row.getToggleRowSelectedProps()} />
 }
 
 const SelectionHeader: React.FC<HeaderProps<any>> = props => {
   const { getToggleAllRowsSelectedProps } = props
   const style = { width: 1 }
-  return <Checkbox {...getToggleAllRowsSelectedProps({ style })} />
+  return <TableCheckbox {...getToggleAllRowsSelectedProps({ style })} />
+}
+
+interface TableCheckboxProps
+  extends Omit<HTMLPropsFor<HTMLInputElement>, 'ref' | 'onChange'> {
+  indeterminate?: boolean
+  onChange?: (e: React.ChangeEvent<Element>) => void
+}
+const TableCheckbox: React.FC<TableCheckboxProps> = props => {
+  const { onChange, ...rest } = props
+  return <Checkbox onCheck={onChange} {...rest} />
 }
