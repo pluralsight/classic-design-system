@@ -4,7 +4,7 @@ import { axe } from 'jest-axe'
 import React from 'react'
 
 import * as stories from '../__stories__/index.story'
-import Card from '..'
+import Card from '../index'
 
 describe('Card', () => {
   const cases = convertStoriesToJestCases(stories)
