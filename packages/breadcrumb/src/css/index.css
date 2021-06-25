@@ -1,0 +1,5 @@
+.psds-breadcrumb {
+  padding-top: var(--psLayoutSpacingMedium);
+  padding-bottom: var(--psLayoutSpacingMedium);
+  line-height: 0;
+}

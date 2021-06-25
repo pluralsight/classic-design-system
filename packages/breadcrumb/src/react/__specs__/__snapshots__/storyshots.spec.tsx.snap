@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Breadcrumb As Button 1`] = `
 <div
-  data-css-nipl9k=""
+  className="psds-breadcrumb"
 >
   <button
     data-css-scrazl=""
@@ -38,7 +38,7 @@ exports[`Storyshots Components/Breadcrumb As Button 1`] = `
 
 exports[`Storyshots Components/Breadcrumb As Link 1`] = `
 <div
-  data-css-nipl9k=""
+  className="psds-breadcrumb"
 >
   <a
     data-css-scrazl=""
@@ -73,7 +73,7 @@ exports[`Storyshots Components/Breadcrumb As Link 1`] = `
 
 exports[`Storyshots Components/Breadcrumb Basic 1`] = `
 <div
-  data-css-nipl9k=""
+  className="psds-breadcrumb"
 >
   <button
     data-css-scrazl=""
@@ -108,7 +108,7 @@ exports[`Storyshots Components/Breadcrumb Basic 1`] = `
 
 exports[`Storyshots Components/Breadcrumb Disabled 1`] = `
 <div
-  data-css-nipl9k=""
+  className="psds-breadcrumb"
 >
   <button
     data-css-18r2msp=""
