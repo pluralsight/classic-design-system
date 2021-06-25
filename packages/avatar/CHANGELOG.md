@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@10.0.2...@pluralsight/ps-design-system-avatar@10.0.3) (2021-06-24)
+
+
+### Bug Fixes
+
+* **avatar:** prevent css from being tree-shaken out ([5691793](https://github.com/pluralsight/design-system/commit/5691793c064ca6f79c39253591fc289ef6486a1f))
+
+
+
+
+
 ## [10.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@10.0.1...@pluralsight/ps-design-system-avatar@10.0.2) (2021-06-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar
