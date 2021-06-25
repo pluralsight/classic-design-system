@@ -2,48 +2,54 @@
 
 exports[`Storyshots Components/Button Appearances 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-1x5ax2g=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-1cb2wrf=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-1uk30vr=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
@@ -53,48 +59,54 @@ exports[`Storyshots Components/Button Appearances 1`] = `
 
 exports[`Storyshots Components/Button Appearances Disabled 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <button
-    data-css-1283ymw=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--disabled"
     disabled={true}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-1ukz2bh=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark psds-button--disabled"
     disabled={true}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-1fra720=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark psds-button--disabled"
     disabled={true}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-1jpg809=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark psds-button--disabled"
     disabled={true}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
@@ -104,14 +116,20 @@ exports[`Storyshots Components/Button Appearances Disabled 1`] = `
 
 exports[`Storyshots Components/Button Appearances With Icon 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <button
-    data-css-12bozst=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
     disabled={false}
   >
     <div
-      data-css-1mgd019=""
+      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -129,17 +147,17 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-168olz2=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark psds-button--not-iconOnly"
     disabled={false}
   >
     <div
-      data-css-1mgd019=""
+      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -157,17 +175,17 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-t8b8by=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark psds-button--not-iconOnly"
     disabled={false}
   >
     <div
-      data-css-1mgd019=""
+      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -185,17 +203,17 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-68fqys=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark psds-button--not-iconOnly"
     disabled={false}
   >
     <div
-      data-css-1mgd019=""
+      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -213,7 +231,7 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
@@ -223,13 +241,13 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
 
 exports[`Storyshots Components/Button As Link 1`] = `
 <a
-  data-css-y5dqt5=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
   href="https://duckduckgo.com"
   onClick={[Function]}
 >
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     click me
   </span>
@@ -238,12 +256,12 @@ exports[`Storyshots Components/Button As Link 1`] = `
 
 exports[`Storyshots Components/Button As Link With Icon 1`] = `
 <a
-  data-css-12bozst=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
   href="https://duckduckgo.com"
   onClick={[Function]}
 >
   <div
-    data-css-1mgd019=""
+    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
   >
     <div
       data-css-7dab2f=""
@@ -261,7 +279,7 @@ exports[`Storyshots Components/Button As Link With Icon 1`] = `
   </div>
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     click me
   </span>
@@ -270,13 +288,13 @@ exports[`Storyshots Components/Button As Link With Icon 1`] = `
 
 exports[`Storyshots Components/Button Basic 1`] = `
 <button
-  data-css-y5dqt5=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
   disabled={false}
   onClick={[Function]}
 >
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     click me
   </span>
@@ -285,18 +303,13 @@ exports[`Storyshots Components/Button Basic 1`] = `
 
 exports[`Storyshots Components/Button Class Name Override 1`] = `
 <button
-  className={
-    Object {
-      "data-css-1wsp713": "",
-    }
-  }
-  data-css-y5dqt5=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark overriddenName"
   disabled={false}
   onClick={[Function]}
 >
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     click me
   </span>
@@ -305,13 +318,13 @@ exports[`Storyshots Components/Button Class Name Override 1`] = `
 
 exports[`Storyshots Components/Button Disabled 1`] = `
 <button
-  data-css-1283ymw=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--disabled"
   disabled={true}
   onClick={[Function]}
 >
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     click me
   </span>
@@ -320,12 +333,12 @@ exports[`Storyshots Components/Button Disabled 1`] = `
 
 exports[`Storyshots Components/Button Disabled With Icon 1`] = `
 <button
-  data-css-105jfs7=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--disabled psds-button--not-iconOnly"
   disabled={true}
   onClick={[Function]}
 >
   <div
-    data-css-1mgd019=""
+    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
   >
     <div
       data-css-7dab2f=""
@@ -343,7 +356,7 @@ exports[`Storyshots Components/Button Disabled With Icon 1`] = `
   </div>
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     click me
   </span>
@@ -352,12 +365,12 @@ exports[`Storyshots Components/Button Disabled With Icon 1`] = `
 
 exports[`Storyshots Components/Button Example Autofocus 1`] = `
 <button
-  data-css-y5dqt5=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
   disabled={false}
 >
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     Should be focused
   </span>
@@ -366,14 +379,20 @@ exports[`Storyshots Components/Button Example Autofocus 1`] = `
 
 exports[`Storyshots Components/Button Icon Alignments 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <button
-    data-css-12bozst=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
     disabled={false}
   >
     <div
-      data-css-1mgd019=""
+      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -391,17 +410,17 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       left
     </span>
   </button>
   <button
-    data-css-dx671n=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly psds-button--iconAlign-right"
     disabled={false}
   >
     <div
-      data-css-8b1vtw=""
+      className="psds-button__icon psds-button__icon--iconAlign-right psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -419,7 +438,7 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       right
     </span>
@@ -429,12 +448,12 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
 
 exports[`Storyshots Components/Button Icon Only 1`] = `
 <button
-  data-css-j12pym=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--iconOnly"
   disabled={false}
   onClick={[Function]}
 >
   <div
-    data-css-y80vay=""
+    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
   >
     <div
       data-css-7dab2f=""
@@ -452,7 +471,7 @@ exports[`Storyshots Components/Button Icon Only 1`] = `
   </div>
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   />
 </button>
 `;
@@ -460,30 +479,42 @@ exports[`Storyshots Components/Button Icon Only 1`] = `
 exports[`Storyshots Components/Button Layouts 1`] = `
 Array [
   <div
-    data-css-eska86=""
+    style={
+      Object {
+        "margin": 8,
+        "outline": "1px dashed pink",
+        "width": "400px",
+      }
+    }
   >
     <button
-      data-css-vm007=""
+      className="psds-button psds-button--layout-fullWidth psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       disabled={false}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         fullWidth
       </span>
     </button>
   </div>,
   <div
-    data-css-eska86=""
+    style={
+      Object {
+        "margin": 8,
+        "outline": "1px dashed pink",
+        "width": "400px",
+      }
+    }
   >
     <button
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       disabled={false}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         inline
       </span>
@@ -494,12 +525,12 @@ Array [
 
 exports[`Storyshots Components/Button Loading Transition 1`] = `
 <button
-  data-css-y5dqt5=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
   disabled={false}
 >
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     Wait for it
   </span>
@@ -509,23 +540,23 @@ exports[`Storyshots Components/Button Loading Transition 1`] = `
 exports[`Storyshots Components/Button Loading Transition Start True 1`] = `
 <button
   aria-label="Loading..."
-  data-css-y5dqt5=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
   disabled={true}
 >
   <div
-    data-css-4d535u=""
+    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly psds-button__icon--loadingLabelOnly"
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-15l7w9e=""
+        className="psds-button__loading psds-button__loading--size-medium psds-button__loading--appearance-primary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
     aria-hidden={true}
-    data-css-1arqyvm=""
+    className="psds-button__text psds-button__text--invisible"
   >
     Wait for it
   </span>
@@ -535,24 +566,24 @@ exports[`Storyshots Components/Button Loading Transition Start True 1`] = `
 exports[`Storyshots Components/Button Loading With Icon 1`] = `
 <button
   aria-label="loading"
-  data-css-12bozst=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
   disabled={true}
   onClick={[Function]}
 >
   <div
-    data-css-1mgd019=""
+    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-15l7w9e=""
+        className="psds-button__loading psds-button__loading--size-medium psds-button__loading--appearance-primary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     click me
   </span>
@@ -562,24 +593,24 @@ exports[`Storyshots Components/Button Loading With Icon 1`] = `
 exports[`Storyshots Components/Button Loading With Label No Icon 1`] = `
 <button
   aria-label="loading"
-  data-css-y5dqt5=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
   disabled={true}
   onClick={[Function]}
 >
   <div
-    data-css-4d535u=""
+    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly psds-button__icon--loadingLabelOnly"
   >
     <div
       data-css-7dab2f=""
     >
       <span
-        data-css-15l7w9e=""
+        className="psds-button__loading psds-button__loading--size-medium psds-button__loading--appearance-primary psds-button__loading--theme-dark"
       />
     </div>
   </div>
   <span
     aria-hidden={true}
-    data-css-1arqyvm=""
+    className="psds-button__text psds-button__text--invisible"
   >
     click me
   </span>
@@ -588,48 +619,54 @@ exports[`Storyshots Components/Button Loading With Label No Icon 1`] = `
 
 exports[`Storyshots Components/Button Sizes 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <button
-    data-css-v92x0z=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       xSmall
     </span>
   </button>
   <button
-    data-css-b1m7w4=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       small
     </span>
   </button>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       medium
     </span>
   </button>
   <button
-    data-css-1p8sqig=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       large
     </span>
@@ -639,14 +676,20 @@ exports[`Storyshots Components/Button Sizes 1`] = `
 
 exports[`Storyshots Components/Button Sizes With Icon 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <button
-    data-css-11py1ib=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
     disabled={false}
   >
     <div
-      data-css-73kfkk=""
+      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall"
     >
       <div
         data-css-1gzzcm2=""
@@ -664,17 +707,17 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       xSmall
     </span>
   </button>
   <button
-    data-css-1ep5uzm=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
     disabled={false}
   >
     <div
-      data-css-73kfkk=""
+      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small"
     >
       <div
         data-css-k31qw2=""
@@ -692,17 +735,17 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       small
     </span>
   </button>
   <button
-    data-css-12bozst=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
     disabled={false}
   >
     <div
-      data-css-1mgd019=""
+      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -720,17 +763,17 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       medium
     </span>
   </button>
   <button
-    data-css-k62s0p=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
     disabled={false}
   >
     <div
-      data-css-1mgd019=""
+      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-large"
     >
       <div
         data-css-7dab2f=""
@@ -748,7 +791,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
     </div>
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       large
     </span>
@@ -758,7 +801,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
 
 exports[`Storyshots Components/Button Style Override 1`] = `
 <button
-  data-css-y5dqt5=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
   disabled={false}
   onClick={[Function]}
   style={
@@ -769,7 +812,7 @@ exports[`Storyshots Components/Button Style Override 1`] = `
 >
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     click me
   </span>
@@ -779,34 +822,34 @@ exports[`Storyshots Components/Button Style Override 1`] = `
 exports[`Storyshots Components/Button Theme Nesting 1`] = `
 Array [
   <button
-    data-css-1uk30vr=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       dark
     </span>
   </button>,
   <button
-    data-css-am7l87=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       light
     </span>
   </button>,
   <button
-    data-css-1uk30vr=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       dark
     </span>
@@ -816,180 +859,186 @@ Array [
 
 exports[`Storyshots Components/Button Variations 1`] = `
 <div
-  data-css-1fb0si4=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr 1fr 1fr",
+    }
+  }
 >
   <button
-    data-css-v92x0z=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-b1m7w4=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-1p8sqig=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-uv8iir=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-c3sd2l=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-1x5ax2g=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-g84eh2=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-1char72=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-1mpmjtf=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-1cb2wrf=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-iilb0c=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-10fisbo=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
   </button>
   <button
-    data-css-1d3b8qh=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
   </button>
   <button
-    data-css-1uk30vr=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
   </button>
   <button
-    data-css-1b5o285=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
@@ -999,180 +1048,186 @@ exports[`Storyshots Components/Button Variations 1`] = `
 
 exports[`Storyshots Components/Button Vert Alignment 1`] = `
 <div
-  data-css-1fb0si4=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr 1fr 1fr",
+    }
+  }
 >
   <button
-    data-css-v92x0z=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-b1m7w4=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-1p8sqig=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       primary
     </span>
   </button>
   <button
-    data-css-uv8iir=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-c3sd2l=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-1x5ax2g=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-g84eh2=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       secondary
     </span>
   </button>
   <button
-    data-css-1char72=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-1mpmjtf=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-1cb2wrf=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-iilb0c=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       stroke
     </span>
   </button>
   <button
-    data-css-10fisbo=""
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
   </button>
   <button
-    data-css-1d3b8qh=""
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
   </button>
   <button
-    data-css-1uk30vr=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
   </button>
   <button
-    data-css-1b5o285=""
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       flat
     </span>
@@ -1182,12 +1237,12 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
 
 exports[`Storyshots Components/Button With Icon 1`] = `
 <button
-  data-css-12bozst=""
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
   disabled={false}
   onClick={[Function]}
 >
   <div
-    data-css-1mgd019=""
+    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
   >
     <div
       data-css-7dab2f=""
@@ -1205,7 +1260,7 @@ exports[`Storyshots Components/Button With Icon 1`] = `
   </div>
   <span
     aria-hidden={false}
-    data-css-15b13by=""
+    className="psds-button__text"
   >
     click me
   </span>

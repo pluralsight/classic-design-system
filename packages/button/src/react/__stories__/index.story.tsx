@@ -2,12 +2,9 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Button from '../index'
-
-const glamor = glamorDefault || glamorExports
 
 const defaultArgs = { children: 'click me', onClick: action('click') }
 
@@ -21,11 +18,11 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
 
   return (
     <div
-      {...glamor.css({
+      style={{
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
-      })}
+      }}
       {...rest}
     />
   )
@@ -89,7 +86,7 @@ StyleOverride.args = { ...defaultArgs, style: { background: 'red' } }
 export const ClassNameOverride = Template.bind({})
 ClassNameOverride.args = {
   ...defaultArgs,
-  className: glamor.css({ background: 'green' })
+  className: 'overriddenName'
 }
 
 export const Layouts: Story = () => (
@@ -97,11 +94,11 @@ export const Layouts: Story = () => (
     {Object.values(Button.layouts).map((layout, i) => (
       <div
         key={i}
-        {...glamor.css({
+        style={{
           outline: '1px dashed pink',
           margin: 8,
           width: '400px'
-        })}
+        }}
       >
         <Button layout={layout}>{layout}</Button>
       </div>

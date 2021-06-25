@@ -1,91 +1,56 @@
 import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
 import {
   HTMLPropsFor,
   RefFor,
-  ValueOf
+  ValueOf,
+  classNames
 } from '@pluralsight/ps-design-system-util'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css/index'
+import '../css/index.css'
 import * as vars from '../vars/index'
 
-const glamor = glamorDefault || glamorExports
-
-const spin = glamor.keyframes(
-  stylesheet['@keyframes psds-button__keyframes__spin']
-)
-
 const styles = {
-  button: ({
-    appearance,
-    disabled,
-    icon,
-    iconAlign,
-    iconOnly,
-    layout,
-    size,
-    themeName
-  }) =>
-    glamor.css(
-      stylesheet['.psds-button'],
-      stylesheet[`.psds-button--layout-${layout}`],
-      stylesheet[`.psds-button--size-${size}`],
-      stylesheet[`.psds-button--appearance-${appearance}`],
-      stylesheet[`.psds-button.psds-theme--${themeName}`],
-      stylesheet[
-        `.psds-button--appearance-${appearance}.psds-theme--${themeName}`
-      ],
-      disabled && {
-        ...stylesheet[`.psds-button--disabled`],
-        ...stylesheet[`.psds-button--disabled.psds-theme--${themeName}`],
-        ...stylesheet[
-          `.psds-button--disabled.psds-button--appearance-${appearance}`
-        ]
-      },
-      icon &&
-        !iconOnly && {
-          ...stylesheet[
-            `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly`
-          ],
-          ...stylesheet[
-            `.psds-button--iconAlign-${iconAlign}.psds-button--not-iconOnly.psds-button--size-${size}`
-          ]
-        },
+  button: (
+    { appearance, disabled, icon, iconAlign, iconOnly, layout, size },
+    themeName: ValueOf<typeof themeNames>,
+    className: string | undefined
+  ) =>
+    classNames(
+      'psds-button',
+      `psds-button--layout-${layout}`,
+      `psds-button--size-${size}`,
+      `psds-button--appearance-${appearance}`,
+      `psds-theme--${themeName}`,
+      disabled && 'psds-button--disabled',
+      icon && !iconOnly && 'psds-button--not-iconOnly',
       iconAlign === vars.iconAligns.right &&
-        stylesheet[`.psds-button--iconAlign-${iconAlign}`],
-      iconOnly && {
-        ...stylesheet[`.psds-button--iconOnly`],
-        ...stylesheet[`.psds-button--iconOnly.psds-button--size-${size}`]
-      }
+        `psds-button--iconAlign-${iconAlign}`,
+      iconOnly && `psds-button--iconOnly`,
+      className
     ),
-  loading: ({ appearance, size, themeName }) =>
-    glamor.css(
-      stylesheet[`.psds-button__loading`]({ spin }),
-      stylesheet[`.psds-button__loading--size-${size}`],
-      stylesheet[`.psds-button__loading--appearance-${appearance}`],
-      stylesheet[
-        `.psds-button__loading--appearance-${appearance}.psds-button__loading--theme-${themeName}`
-      ]
+  loading: ({ appearance, size }, themeName: ValueOf<typeof themeNames>) =>
+    classNames(
+      'psds-button__loading',
+      `psds-button__loading--size-${size}`,
+      `psds-button__loading--appearance-${appearance}`,
+      `psds-button__loading--theme-${themeName}`
     ),
-  icon: ({ iconAlign, iconOnly, labelOnly, loading, size }) => {
-    return glamor.css(
-      stylesheet['.psds-button__icon'],
-      stylesheet[`.psds-button__icon--iconAlign-${iconAlign}`],
-      stylesheet[
-        `.psds-button__icon--iconAlign-${iconAlign}.psds-button--size-${size}`
-      ],
-      (iconOnly || (loading && labelOnly)) &&
-        stylesheet['.psds-button__icon--iconOnly'],
-      loading && labelOnly && stylesheet['.psds-button__icon--loadingLabelOnly']
-    )
-  },
+
+  icon: ({ iconAlign, iconOnly, labelOnly, loading, size }) =>
+    classNames(
+      'psds-button__icon',
+      `psds-button__icon--iconAlign-${iconAlign}`,
+      `psds-button__icon--size-${size}`,
+      (iconOnly || (loading && labelOnly)) && 'psds-button__icon--iconOnly',
+      loading && labelOnly && 'psds-button__icon--loadingLabelOnly'
+    ),
   text: (invisible?: boolean) =>
-    glamor.compose(
-      glamor.css(stylesheet[`.psds-button__text`]),
-      invisible && glamor.css(stylesheet[`.psds-button__text--invisible`])
-    )
+    classNames('psds-button__text', invisible && 'psds-button__text--invisible')
 }
 
 const mapIconSize = (size: string) => {
@@ -103,7 +68,7 @@ interface IconContainerProps extends HTMLPropsFor<'div'> {
   loading: boolean
   icon: React.ReactNode
   appearance: string
-  themeName: string
+  themeName: ValueOf<typeof themeNames>
   size: string
   iconOnly: boolean
   iconAlign: string
@@ -112,7 +77,7 @@ interface IconContainerProps extends HTMLPropsFor<'div'> {
 const IconContainer: React.FC<IconContainerProps> = props =>
   props.loading ? (
     <div
-      {...styles.icon({
+      className={styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
         labelOnly: props.labelOnly,
@@ -122,17 +87,19 @@ const IconContainer: React.FC<IconContainerProps> = props =>
     >
       <Icon size={mapIconSize(props.size)}>
         <span
-          {...styles.loading({
-            appearance: props.appearance,
-            size: props.size,
-            themeName: props.themeName
-          })}
+          className={styles.loading(
+            {
+              appearance: props.appearance,
+              size: props.size
+            },
+            props.themeName
+          )}
         />
       </Icon>
     </div>
   ) : props.icon ? (
     <div
-      {...styles.icon({
+      className={styles.icon({
         iconAlign: props.iconAlign,
         iconOnly: props.iconOnly,
         labelOnly: props.labelOnly,
@@ -179,6 +146,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
   (props, forwardedRef) => {
     const {
       appearance = vars.appearances.primary,
+      className,
       children,
       disabled = false,
       icon,
@@ -197,16 +165,19 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
     const hasLabel = React.Children.count(children) > 0
     const iconOnly = !hasLabel
 
-    const glamorStyle = styles.button({
-      appearance,
-      disabled,
-      icon,
-      iconAlign,
-      iconOnly,
-      layout,
-      size,
-      themeName
-    })
+    const buttonClassNames = styles.button(
+      {
+        appearance,
+        disabled,
+        icon,
+        iconAlign,
+        iconOnly,
+        layout,
+        size
+      },
+      themeName,
+      className
+    )
 
     const iconEl = (
       <IconContainer
@@ -224,7 +195,7 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
     const isLoadingAndLabelOnly = hasLabel && loading && !icon
     const labelEl = (
       <span
-        {...styles.text(isLoadingAndLabelOnly)}
+        className={styles.text(isLoadingAndLabelOnly)}
         aria-hidden={isLoadingAndLabelOnly}
       >
         {children}
@@ -237,8 +208,8 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
       return (
         <a
           ref={ref as React.Ref<HTMLAnchorElement>}
-          {...glamorStyle}
           {...anchorProps}
+          className={buttonClassNames}
           onClick={disabled ? undefined : anchorProps.onClick}
         >
           {iconEl}
@@ -253,8 +224,8 @@ const Button = React.forwardRef<ButtonElement, ButtonProps>(
         <button
           disabled={disabled || loading}
           ref={ref as React.Ref<HTMLButtonElement>}
-          {...glamorStyle}
           {...buttonProps}
+          className={buttonClassNames}
         >
           {iconEl}
           {labelEl}
