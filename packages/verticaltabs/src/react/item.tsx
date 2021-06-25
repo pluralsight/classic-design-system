@@ -1,10 +1,12 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
+import Theme, {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import {
   ValueOf,
   combineFns,
   omit,
-  HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -21,8 +23,8 @@ type StyleFn = (
 
 const glamor = glamorDefault || glamorExports
 
-const styles: { [key: string]: StyleFn } = {
-  item: themeName => {
+const styles = {
+  item: (themeName: ValueOf<typeof themeNames>) => {
     const label = 'verticaltabs__item'
 
     return glamor.compose(
@@ -36,7 +38,10 @@ const styles: { [key: string]: StyleFn } = {
   itemIconActive: () =>
     glamor.css(stylesheet['.psds-verticaltabs__item__icon--active']),
 
-  itemTier: (themeName, props: { type: string }) => {
+  itemTier: (
+    themeName: ValueOf<typeof themeNames>,
+    props: { type?: string }
+  ) => {
     const label = `verticaltabs__${props.type}`
 
     return glamor.compose(
@@ -72,27 +77,27 @@ const styles: { [key: string]: StyleFn } = {
     )
   },
 
-  tierHeaderLabel: (_themeName, props: { hideLabels: boolean }) => {
+  tierHeaderLabel: (hideLabels: boolean) => {
     const label = `verticaltabs__header__label`
 
     return glamor.compose(
       glamor.css({ label }),
       glamor.css(stylesheet[`.psds-${label}`]),
-      props.hideLabels && glamor.css(stylesheet[`.psds-${label}--hide-labels`])
+      hideLabels && glamor.css(stylesheet[`.psds-${label}--hide-labels`])
     )
   },
-  tierHeaderLabelIcon: (_themeName, props: { collapsed: boolean }) => {
+  tierHeaderLabelIcon: (collapsed: boolean) => {
     const label = `verticaltabs__header__label__icon`
 
     return glamor.compose(
       glamor.css({ label }),
       glamor.css(stylesheet[`.psds-${label}`]),
-      props.collapsed && glamor.css(stylesheet[`.psds-${label}--collapsed`])
+      collapsed && glamor.css(stylesheet[`.psds-${label}--collapsed`])
     )
   }
 }
 
-interface ItemProps extends HTMLPropsFor<'li'> {
+interface ItemProps extends React.HTMLAttributes<HTMLLIElement> {
   active?: React.ReactNode
   collapsed?: boolean
   collapsible?: boolean
@@ -106,17 +111,21 @@ interface ItemHeaderBaseProps {
   collapsible?: boolean
   icon?: React.ReactElement
 }
-interface AnchorHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'a'> {
+interface AnchorHeaderProps
+  extends ItemHeaderBaseProps,
+    React.HTMLAttributes<HTMLAnchorElement> {
   onclick?: undefined
   href?: string
 }
 interface ButtonHeaderProps
   extends ItemHeaderBaseProps,
-    HTMLPropsFor<'button'> {
+    React.HTMLAttributes<HTMLButtonElement> {
   onclick?: React.MouseEventHandler
   href?: undefined
 }
-interface SpanHeaderProps extends ItemHeaderBaseProps, HTMLPropsFor<'span'> {
+interface SpanHeaderProps
+  extends ItemHeaderBaseProps,
+    React.HTMLAttributes<HTMLSpanElement> {
   onclick?: undefined
   href?: undefined
 }
@@ -157,12 +166,13 @@ const Item = React.forwardRef<HTMLLIElement, ItemProps>((props, ref) => {
         {...styles.itemTier(themeName, { type })}
         {...(active && { 'data-active': true })}
       >
-        {React.cloneElement(header, {
-          active,
-          collapsed,
-          collapsible,
-          ...(collapsible && { onClick: handleHeaderClick })
-        })}
+        {header &&
+          React.cloneElement(header, {
+            active,
+            collapsed,
+            collapsible,
+            ...(collapsible && { onClick: handleHeaderClick })
+          })}
       </div>
 
       {children && <ListComp collapsed={collapsed}>{children}</ListComp>}
@@ -199,13 +209,13 @@ const Tier1Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
           ...(active ? { 'data-active': true } : {})
         })}
 
-      <span {...styles.tierHeaderLabel(null, { hideLabels })}>{children}</span>
+      <span {...styles.tierHeaderLabel(hideLabels)}>{children}</span>
 
       {collapsible && (
         <CaretDownIcon
           aria-hidden="true"
           size={CaretDownIcon.sizes.small}
-          {...styles.tierHeaderLabelIcon(null, { collapsed })}
+          {...styles.tierHeaderLabelIcon(Boolean(collapsed))}
         />
       )}
     </Tag>
@@ -252,9 +262,7 @@ const Tier2Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
 
   return (
     <Tag {...styles.tier2Header} {...rest} {...hideItemProps}>
-      <span {...styles.tierHeaderLabel(null, { hideLabels })}>
-        {props.children}
-      </span>
+      <span {...styles.tierHeaderLabel(hideLabels)}>{props.children}</span>
     </Tag>
   )
 })

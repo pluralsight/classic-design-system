@@ -346,7 +346,7 @@ export default {
     margin: 0
   },
 
-  [`.psds-button__loading`]: ({ spin }) => ({
+  [`.psds-button__loading`]: ({ spin }: { spin: string }) => ({
     display: 'inline-block',
     height: 'calc(100% - 4px)',
     width: 'calc(100% - 4px)',

@@ -1,5 +1,4 @@
 import {
-  HTMLPropsFor,
   createUniversalPortal,
   useCloseOnDocumentEvents
 } from '@pluralsight/ps-design-system-util'
@@ -28,7 +27,7 @@ const styles = {
     )
 }
 
-interface DropdownMenuProps extends HTMLPropsFor<'div'> {
+interface DropdownMenuProps extends React.HTMLAttributes<HTMLDivElement> {
   inNode?: HTMLElement
   isOpen: boolean
   menu: React.ReactNode

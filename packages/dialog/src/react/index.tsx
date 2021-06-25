@@ -1,7 +1,6 @@
 import FocusManager from '@pluralsight/ps-design-system-focusmanager'
 import Theme from '@pluralsight/ps-design-system-theme'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   createUniversalPortal,
@@ -43,7 +42,9 @@ const styles = {
   overlay: () => glamor.css(stylesheet['.psds-dialog__overlay'])
 }
 
-const CloseButton: React.FC<HTMLPropsFor<'button'>> = props => (
+const CloseButton: React.FC<
+  React.HTMLAttributes<HTMLButtonElement>
+> = props => (
   <button {...styles.close()} {...props} aria-label="Close dialog">
     <svg
       aria-label="close icon"
@@ -56,7 +57,7 @@ const CloseButton: React.FC<HTMLPropsFor<'button'>> = props => (
   </button>
 )
 
-interface OverlayProps extends HTMLPropsFor<'div'> {
+interface OverlayProps extends React.HTMLAttributes<HTMLDivElement> {
   'aria-label'?: string
   disableCloseOnOverlayClick?: boolean
   onClose?: (evt: React.MouseEvent) => void
@@ -87,7 +88,7 @@ const Overlay: React.FC<OverlayProps> = ({
 export interface DialogStatics {
   tailPositions: typeof vars.tailPositions
 }
-export interface DialogProps extends HTMLPropsFor<'div'> {
+export interface DialogProps extends React.HTMLAttributes<HTMLDivElement> {
   'aria-label'?: string
   disableCloseButton?: boolean
   disableCloseOnEscape?: boolean

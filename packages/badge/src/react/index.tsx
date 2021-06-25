@@ -1,6 +1,5 @@
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
@@ -31,7 +30,8 @@ interface InternalBadgeProps {
   color: ValueOf<typeof vars.colors>
 }
 
-type BadgeProps = HTMLPropsFor<'div'> & Partial<InternalBadgeProps>
+type BadgeProps = React.HTMLAttributes<HTMLDivElement> &
+  Partial<InternalBadgeProps>
 
 interface BadgeStatics {
   appearances: typeof vars.appearances

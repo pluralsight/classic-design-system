@@ -1,5 +1,5 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -12,7 +12,7 @@ const styles = {
   icon: glamor.css(stylesheet[`.psds-menu__item-icon`]),
   filler: glamor.css(stylesheet[`.psds-menu__item-icon-filler`])
 }
-interface CheckProps extends HTMLPropsFor<'div'> {}
+interface CheckProps extends React.HTMLAttributes<HTMLDivElement> {}
 
 export const Check: React.FC<CheckProps> = props => {
   const { selected } = React.useContext(ItemContext)

@@ -1,5 +1,4 @@
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   useMenuRef
@@ -39,7 +38,8 @@ interface MenuStatics {
   useMenuRef: typeof useMenuRef
 }
 
-interface MenuProps extends Omit<HTMLPropsFor<'ul'>, 'onClick'> {
+interface MenuProps
+  extends Omit<React.HTMLAttributes<HTMLUListElement>, 'onClick'> {
   selectedItem?: {
     value: React.ReactText
     label: React.ReactText

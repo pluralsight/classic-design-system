@@ -3,7 +3,6 @@ import { breakpoints } from '@pluralsight/ps-design-system-core'
 import Scrollable from '@pluralsight/ps-design-system-scrollable'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   canUseDOM,
@@ -76,7 +75,7 @@ type RenderProp<P extends Record<string, unknown>> = (
   props: P
 ) => React.ReactNode
 
-interface AppFrameProps extends HTMLPropsFor<'div'> {
+interface AppFrameProps extends React.HTMLAttributes<HTMLDivElement> {
   onRequestSideNavClose?: () => void
   onRequestSideNavOpen?: () => void
   sidenav?: React.ReactNode | RenderProp<{ visible: boolean }>
@@ -213,7 +212,7 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
 AppFrame.displayName = 'AppFrame'
 
 // TODO: why is there a an href here?
-interface SkipBannerProps extends HTMLPropsFor<'div'> {
+interface SkipBannerProps extends React.HTMLAttributes<HTMLDivElement> {
   href: string
 }
 const SkipBanner: React.FC<SkipBannerProps> = props => {
@@ -232,7 +231,7 @@ const SkipBanner: React.FC<SkipBannerProps> = props => {
   )
 }
 
-interface SkipTargetProps extends HTMLPropsFor<'a'> {
+interface SkipTargetProps extends React.HTMLAttributes<HTMLAnchorElement> {
   id: string
 }
 const SkipTarget = React.forwardRef<HTMLAnchorElement, SkipTargetProps>(
@@ -243,12 +242,12 @@ const SkipTarget = React.forwardRef<HTMLAnchorElement, SkipTargetProps>(
 
 SkipTarget.displayName = 'SkipTarget'
 
-const Container: React.FC<HTMLPropsFor<'div'>> = props => {
+const Container: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const context = React.useContext(AppFrameContext)
   return <div {...styles.container(context.sidenavVariant)} {...props} />
 }
 
-interface SideNavProps extends HTMLPropsFor<'div'> {
+interface SideNavProps extends React.HTMLAttributes<HTMLDivElement> {
   children: AppFrameProps['sidenav']
 }
 interface SideNavStatics {
@@ -308,7 +307,7 @@ const SideNav: React.FC<SideNavProps> & SideNavStatics = props => {
 
 SideNav.variants = vars.sidenavVariants
 
-interface TopNavProps extends HTMLPropsFor<'div'> {
+interface TopNavProps extends React.HTMLAttributes<HTMLDivElement> {
   children: AppFrameProps['topnav']
 }
 

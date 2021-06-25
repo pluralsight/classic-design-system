@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -11,7 +10,10 @@ const styles = {
   child: () => glamor.css(stylesheet['.psds-form-vertical-layout__child'])
 }
 
-const VerticalLayout: React.FC<HTMLPropsFor<'div'>> = ({ style, ...props }) => {
+const VerticalLayout: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  style,
+  ...props
+}) => {
   const children = React.Children.toArray(props.children).filter(child =>
     React.isValidElement(child)
   )

@@ -3,7 +3,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -44,7 +44,7 @@ const styles = {
   warningIcon: () => glamor.css(stylesheet['.psds-select__error'])
 }
 
-interface SelectButtonProps extends HTMLPropsFor<'button'> {
+interface SelectButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   disabled?: boolean
   error?: boolean
   isOpen?: boolean

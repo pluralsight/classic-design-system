@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -17,7 +16,9 @@ const styles = {
     )
 }
 
-const PageWidthLayout: React.FC<HTMLPropsFor<'div'>> = props => {
+const PageWidthLayout: React.FC<
+  React.HTMLAttributes<HTMLDivElement>
+> = props => {
   return (
     <div {...styles.layout()} {...props}>
       {props.children}

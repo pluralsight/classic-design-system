@@ -18,7 +18,7 @@ import {
 } from '@pluralsight/ps-design-system-layout'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import * as Text from '@pluralsight/ps-design-system-text'
-import { HTMLPropsFor, useUniqueId } from '@pluralsight/ps-design-system-util'
+import { useUniqueId } from '@pluralsight/ps-design-system-util'
 
 import SearchInput from '@pluralsight/ps-design-system-searchinput'
 import { Meta, Story } from '@storybook/react/types-6-0'
@@ -756,8 +756,10 @@ const SelectionHeader: React.FC<HeaderProps<any>> = props => {
   return <TableCheckbox {...getToggleAllRowsSelectedProps({ style })} />
 }
 
-interface TableCheckboxProps extends Omit<HTMLPropsFor<'input'>, 'ref'> {
+interface TableCheckboxProps
+  extends Omit<React.HTMLAttributes<HTMLInputElement>, 'ref' | 'onChange'> {
   indeterminate?: boolean
+  onChange?: (e: React.ChangeEvent<Element>) => void
 }
 const TableCheckbox: React.FC<TableCheckboxProps> = props => {
   const { onChange, ...rest } = props

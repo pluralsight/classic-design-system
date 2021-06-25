@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import Button from '@pluralsight/ps-design-system-button'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { Meta, Story } from '@storybook/react/types-6-0'
@@ -387,7 +386,7 @@ export const StackOfRows: Story = () => (
   </>
 )
 
-interface StoryGridProps extends HTMLPropsFor<'div'> {
+interface StoryGridProps extends React.HTMLAttributes<HTMLDivElement> {
   cols?: number
 }
 const StoryGrid: React.FC<StoryGridProps> = props => {

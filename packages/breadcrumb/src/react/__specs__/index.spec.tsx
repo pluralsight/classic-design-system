@@ -35,7 +35,8 @@ describe('Breadcrumb', () => {
           Clicks once
         </Breadcrumb>
       )
-      const button = container.querySelector('button')
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+      const button = container.querySelector('button') as HTMLButtonElement
 
       fireEvent.click(button)
 

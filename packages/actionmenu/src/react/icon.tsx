@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -13,7 +12,7 @@ const styles = ({ marginLeft, marginRight }: Props) =>
     marginLeft && stylesheet[`.psds-actionmenu__icon-left`]
   )
 
-interface Props extends HTMLPropsFor<'span'> {
+interface Props extends React.HTMLAttributes<HTMLSpanElement> {
   marginRight?: boolean
   marginLeft?: boolean
 }

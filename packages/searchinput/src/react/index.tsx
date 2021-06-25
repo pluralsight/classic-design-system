@@ -76,7 +76,7 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
       />
     )
   }
-)
+) as React.ForwardRefExoticComponent<SearchInputProps>
 
 SearchInput.displayName = 'SearchInput'
 

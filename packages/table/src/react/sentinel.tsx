@@ -1,4 +1,4 @@
-import { HTMLPropsFor, canUseDOM } from '@pluralsight/ps-design-system-util'
+import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 const canUseIntersectionObserver =
@@ -75,7 +75,8 @@ export const useIntersectionSentinels = (
   }, [start, end, options, onEnter, onLeave])
 }
 
-interface SentinelProps extends Omit<HTMLPropsFor<'div'>, 'ref'> {
+interface SentinelProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'ref'> {
   end?: boolean
 }
 

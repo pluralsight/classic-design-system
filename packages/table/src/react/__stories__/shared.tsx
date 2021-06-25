@@ -1,4 +1,4 @@
-import Button from '@pluralsight/ps-design-system-button'
+import Button, { ButtonProps } from '@pluralsight/ps-design-system-button'
 import { layout } from '@pluralsight/ps-design-system-core'
 import {
   CaretDownIcon,
@@ -6,10 +6,10 @@ import {
 } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
-interface ExpandButtonProps extends React.ComponentProps<typeof Button> {
+interface ExpandButtonProps extends ButtonProps {
   expanded: boolean
 }
-export const ExpandButton: React.FC<ExpandButtonProps> = props => {
+export const ExpandButton = (props: ExpandButtonProps) => {
   const {
     appearance = 'flat',
     expanded,

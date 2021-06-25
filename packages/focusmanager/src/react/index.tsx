@@ -1,9 +1,9 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import useFocusManager from './use-focus-manager'
 
-export interface FocusManagerProps extends HTMLPropsFor<'div'> {
+export interface FocusManagerProps
+  extends React.HTMLAttributes<HTMLDivElement> {
   autofocus?: boolean
   returnFocus?: boolean
   trapped?: boolean

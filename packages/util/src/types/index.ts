@@ -1,8 +1,6 @@
 import React from 'react'
 
-export type HTMLPropsFor<
-  Tag extends keyof JSX.IntrinsicElements
-> = JSX.IntrinsicElements[Tag]
+export interface HTMLPropsFor<T> extends React.HTMLAttributes<T> {}
 
 export type RefFor<K extends keyof HTMLElementTagNameMap> = React.RefObject<
   HTMLElementTagNameMap[K]

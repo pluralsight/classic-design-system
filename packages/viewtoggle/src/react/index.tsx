@@ -1,9 +1,11 @@
-import { names, useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  names as themeNames,
+  useTheme
+} from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
   ValueOf,
   combineFns,
-  HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -13,11 +15,6 @@ import stylesheet from '../css/index'
 import * as vars from '../vars/index'
 
 const glamor = glamorDefault || glamorExports
-
-type StyleFn = (
-  themeName: ValueOf<keyof typeof names>,
-  props?: Record<string, any>
-) => glamorExports.StyleAttribute
 
 interface ViewToggleProps
   extends Omit<React.ComponentProps<typeof List>, 'onSelect'> {
@@ -35,15 +32,15 @@ interface ViewToggleComponent
     ViewToggleStatics
   > {}
 
-const styles: { [key: string]: StyleFn } = {
-  optionButton: (themeName, props) =>
+const styles = {
+  optionButton: (themeName: ValueOf<typeof themeNames>, active: boolean) =>
     glamor.compose(
       glamor.css(
         { label: 'viewtoggle__option' },
         stylesheet['.psds-viewtoggle__option'],
         stylesheet[`.psds-viewtoggle__option.psds-theme--${themeName}`]
       ),
-      props.active &&
+      active &&
         glamor.css(
           stylesheet['.psds-viewtoggle__option--active'],
           stylesheet[
@@ -51,13 +48,13 @@ const styles: { [key: string]: StyleFn } = {
           ]
         )
     ),
-  list: themeName =>
+  list: (themeName: ValueOf<typeof themeNames>) =>
     glamor.css(
       { label: 'viewtoggle' },
       stylesheet['.psds-viewtoggle'],
       stylesheet[`.psds-viewtoggle.psds-theme--${themeName}`]
     ),
-  activePillBg: themeName =>
+  activePillBg: (themeName: ValueOf<typeof themeNames>) =>
     glamor.css(
       { label: 'viewtoggle__option-bg' },
       stylesheet['.psds-viewtoggle__option-bg'],
@@ -72,7 +69,10 @@ const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
     const { children, onSelect, ...rest } = props
 
     const ref = React.useRef<HTMLDivElement>(null)
-    React.useImperativeHandle(forwardedRef, () => ref.current)
+    React.useImperativeHandle(
+      forwardedRef,
+      () => (ref.current as unknown) as HTMLDivElement
+    )
 
     const hasRenderedOnce = useHasRenderedOnce()
 
@@ -100,7 +100,8 @@ const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
       let activePillStyle = {}
       if (hasRenderedOnce && ref.current) {
         const selector = `button:nth-of-type(${activeIndex + 1})`
-        const activeNode: HTMLElement = ref.current.querySelector(selector)
+        // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+        const activeNode = ref.current.querySelector(selector) as HTMLElement
 
         if (activeNode) activePillStyle = { left: activeNode.offsetLeft }
       }
@@ -134,24 +135,25 @@ const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
   }
 ) as ViewToggleComponent
 
-const ActivePillBg: React.FC<HTMLPropsFor<'div'>> = props => {
+const ActivePillBg: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
   return <div {...styles.activePillBg(themeName)} aria-hidden {...props} />
 }
 
-const List = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-  (props, ref) => {
-    const themeName = useTheme()
-    return <div ref={ref} {...styles.list(themeName)} {...props} />
-  }
-)
-
-const PillBgSpacer: React.FC<HTMLPropsFor<'div'>> = props => {
+const List = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
   const themeName = useTheme()
-  return <div {...styles.pillBgSpacer(themeName)} {...props} />
+  return <div ref={ref} {...styles.list(themeName)} {...props} />
+})
+
+const PillBgSpacer: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
+  const themeName = useTheme()
+  return <div {...styles.pillBgSpacer()} {...props} />
 }
 
-interface OptionButtonProps extends HTMLPropsFor<'button'> {
+interface OptionButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   active: boolean
 }
 const OptionButton = React.forwardRef<HTMLButtonElement, OptionButtonProps>(
@@ -161,18 +163,15 @@ const OptionButton = React.forwardRef<HTMLButtonElement, OptionButtonProps>(
     const themeName = useTheme()
 
     return (
-      <button ref={ref} {...styles.optionButton(themeName, props)} {...rest} />
+      <button ref={ref} {...styles.optionButton(themeName, active)} {...rest} />
     )
   }
 )
 
 interface OptionProps
-  extends Omit<
-    React.ComponentProps<typeof OptionButton>,
-    '_i' | '_onselect' | 'active'
-  > {
+  extends Omit<OptionButtonProps, '_i' | '_onselect' | 'active'> {
   _i?: number
-  _onSelect?: (evt: React.MouseEvent<HTMLButtonElement>, index: number) => void
+  _onSelect?: (evt: React.MouseEvent<HTMLButtonElement>, index?: number) => void
   active?: boolean
 }
 const Option = React.forwardRef<HTMLButtonElement, OptionProps>(
@@ -180,7 +179,7 @@ const Option = React.forwardRef<HTMLButtonElement, OptionProps>(
     const { active = false, _onSelect, _i, ...rest } = props
 
     const handleClick = (evt: React.MouseEvent<HTMLButtonElement>) => {
-      _onSelect(evt, _i)
+      _onSelect && _onSelect(evt, _i)
     }
 
     return (
@@ -202,6 +201,7 @@ export default ViewToggle
 
 function findActiveIndex(els: React.ReactNode): number {
   const index = React.Children.toArray(els).findIndex(
+    // @ts-ignore: can't find type workaround for this
     (el: React.ReactElement) => el.props.active
   )
   return index >= 0 ? index : 0

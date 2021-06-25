@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -14,7 +13,7 @@ const styles = {
     )
 }
 
-interface DropdownLayoutProps extends HTMLPropsFor<'div'> {
+interface DropdownLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
   button: React.ReactNode
   disabled?: boolean
   input?: React.ReactNode

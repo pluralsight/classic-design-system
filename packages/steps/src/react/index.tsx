@@ -1,8 +1,4 @@
-import {
-  HTMLPropsFor,
-  ValueOf,
-  isString
-} from '@pluralsight/ps-design-system-util'
+import { ValueOf, isString } from '@pluralsight/ps-design-system-util'
 import {
   names as themeNames,
   useTheme
@@ -118,7 +114,11 @@ interface StepsStatics {
   statuses: typeof vars.statuses
 }
 
-interface StepsProps extends HTMLPropsFor<'div'> {
+interface StepsProps
+  extends React.DetailedHTMLProps<
+    React.HTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+  > {
   counter?: boolean
   orientation?: ValueOf<typeof Steps.orientations>
   size?: ValueOf<typeof Steps.sizes>
@@ -143,15 +143,17 @@ const Steps = React.forwardRef<HTMLDivElement, StepsProps>((props, ref) => {
 
 Steps.displayName = 'Steps'
 
-interface StepProps extends HTMLPropsFor<'div'> {
+interface StepProps extends React.HTMLAttributes<HTMLDivElement> {
   description?: React.ReactNode
   marker?: React.ComponentType<MarkerProps>
-  renderMarkerContainer?: (props: HTMLPropsFor<'div'>) => React.ReactElement
+  renderMarkerContainer?: (
+    props: React.HTMLAttributes<HTMLDivElement>
+  ) => React.ReactElement
   status: ValueOf<typeof Steps.statuses>
 }
-const defaultMarkerContainer = (props: HTMLPropsFor<'div'>) => (
-  <div {...props} />
-)
+const defaultMarkerContainer = (
+  props: React.HTMLAttributes<HTMLDivElement>
+) => <div {...props} />
 
 const Step = React.forwardRef<HTMLDivElement, StepProps>((props, ref) => {
   const {
@@ -198,7 +200,8 @@ const Step = React.forwardRef<HTMLDivElement, StepProps>((props, ref) => {
 })
 Step.displayName = 'Steps.Step'
 
-interface MarkerProps extends Omit<HTMLPropsFor<'div'>, 'ref'> {
+interface MarkerProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'ref'> {
   status: ValueOf<typeof Steps.statuses>
 }
 

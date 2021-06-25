@@ -1,5 +1,5 @@
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -30,7 +30,7 @@ interface PStatics {
   colors: typeof vars.textColors
 }
 
-interface PProps extends HTMLPropsFor<'p'> {
+interface PProps extends React.HTMLAttributes<HTMLParagraphElement> {
   size?: ValueOf<typeof vars.pSizes>
   color?: ValueOf<typeof vars.textColors>
 }

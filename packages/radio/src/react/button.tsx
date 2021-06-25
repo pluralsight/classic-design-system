@@ -1,10 +1,6 @@
 import Halo from '@pluralsight/ps-design-system-halo'
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import {
-  HTMLPropsFor,
-  combineFns,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
+import { combineFns, ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -43,7 +39,7 @@ const styles = {
 const isChecked = (a: React.ReactText, b?: React.ReactText) => a === b
 
 export interface RadioButtonProps
-  extends Omit<HTMLPropsFor<'input'>, 'onClick'> {
+  extends Omit<React.HTMLAttributes<HTMLInputElement>, 'onClick'> {
   label: React.ReactNode
   onBlur?: (evt: React.FocusEvent<HTMLInputElement>) => void
   onClick?: (

@@ -2,7 +2,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 import glamorDefault, * as glamorExports from 'glamor'
 
@@ -19,7 +19,7 @@ const styles = (placeholder: boolean, themeName: ValueOf<typeof themeNames>) =>
       )
   )
 
-interface SelectSelectedProps extends HTMLPropsFor<'label'> {
+interface SelectSelectedProps extends React.HTMLAttributes<HTMLLabelElement> {
   label?: string
   placeholder: string
   selectedItem?: {

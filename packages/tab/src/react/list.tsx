@@ -8,11 +8,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import {
-  useResizeObserver,
-  ValueOf,
-  HTMLPropsFor
-} from '@pluralsight/ps-design-system-util'
+import { useResizeObserver, ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -50,7 +46,7 @@ interface Overflows {
   toLeft: boolean
   toRight: boolean
 }
-const List: React.FC<HTMLPropsFor<'div'>> = props => {
+const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
   const listRef = React.useRef<HTMLDivElement>(null)
   const { width: listWidth } = useResizeObserver(listRef)
@@ -246,7 +242,7 @@ const List: React.FC<HTMLPropsFor<'div'>> = props => {
 export default List
 
 type OverflowButtonPosition = 'left' | 'right'
-interface OverflowButtonProps extends HTMLPropsFor<'button'> {
+interface OverflowButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   position: OverflowButtonPosition
 }
 const OverflowButton: React.FC<OverflowButtonProps> = props => {
