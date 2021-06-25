@@ -4,11 +4,7 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import {
-  HTMLPropsFor,
-  RefFor,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
+import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -59,7 +55,7 @@ const styles = {
 }
 
 export interface TagProps
-  extends HTMLPropsFor<HTMLAnchorElement | HTMLDivElement> {
+  extends React.HTMLAttributes<HTMLAnchorElement | HTMLDivElement> {
   error?: boolean
   icon?: React.ReactElement
   isPressed?: boolean
@@ -117,7 +113,7 @@ const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
 Tag.displayName = 'Tag'
 Tag.sizes = vars.sizes
 
-interface LabelProps extends HTMLPropsFor<HTMLSpanElement> {
+interface LabelProps extends React.HTMLAttributes<HTMLSpanElement> {
   icon: boolean
 }
 const Label: React.FC<LabelProps> = ({ icon, ...props }) => {

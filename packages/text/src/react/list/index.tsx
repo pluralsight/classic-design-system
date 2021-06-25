@@ -1,5 +1,5 @@
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -36,14 +36,14 @@ interface ListStatics {
   Item: typeof ListItem
 }
 
-interface UnorderedListProps extends HTMLPropsFor<HTMLUListElement> {
+interface UnorderedListProps extends React.HTMLAttributes<HTMLUListElement> {
   type?: ValueOf<typeof vars.listTypes>
   size?: ValueOf<typeof vars.listSizes>
   color?: ValueOf<typeof vars.textColors>
 }
 
 interface OrderedListProps
-  extends Omit<HTMLPropsFor<HTMLOListElement>, 'type'> {
+  extends Omit<React.HTMLAttributes<HTMLOListElement>, 'type'> {
   type?: ValueOf<typeof vars.listTypes>
   size?: ValueOf<typeof vars.listSizes>
   color?: ValueOf<typeof vars.textColors>

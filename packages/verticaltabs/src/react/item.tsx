@@ -7,7 +7,6 @@ import {
   ValueOf,
   combineFns,
   omit,
-  HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -98,7 +97,7 @@ const styles = {
   }
 }
 
-interface ItemProps extends HTMLPropsFor<HTMLLIElement> {
+interface ItemProps extends React.HTMLAttributes<HTMLLIElement> {
   active?: React.ReactNode
   collapsed?: boolean
   collapsible?: boolean
@@ -114,19 +113,19 @@ interface ItemHeaderBaseProps {
 }
 interface AnchorHeaderProps
   extends ItemHeaderBaseProps,
-    HTMLPropsFor<HTMLAnchorElement> {
+    React.HTMLAttributes<HTMLAnchorElement> {
   onclick?: undefined
   href?: string
 }
 interface ButtonHeaderProps
   extends ItemHeaderBaseProps,
-    HTMLPropsFor<HTMLButtonElement> {
+    React.HTMLAttributes<HTMLButtonElement> {
   onclick?: React.MouseEventHandler
   href?: undefined
 }
 interface SpanHeaderProps
   extends ItemHeaderBaseProps,
-    HTMLPropsFor<HTMLSpanElement> {
+    React.HTMLAttributes<HTMLSpanElement> {
   onclick?: undefined
   href?: undefined
 }

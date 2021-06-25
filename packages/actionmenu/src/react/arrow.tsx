@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -11,7 +10,7 @@ const styles = {
   arrowSvg: () => glamor.css(stylesheet['.psds-actionmenu__item__arrow__svg'])
 }
 
-export const Arrow: React.FC<HTMLPropsFor<HTMLDivElement>> = props => (
+export const Arrow: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...styles.arrow()} {...props} data-submenu-arrow>
     <svg
       width="4"

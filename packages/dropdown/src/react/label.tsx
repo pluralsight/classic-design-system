@@ -3,7 +3,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -19,7 +19,7 @@ const styles = {
     )
 }
 
-interface LabelProps extends HTMLPropsFor<HTMLLabelElement> {
+interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {
   label?: React.ReactNode
 }
 

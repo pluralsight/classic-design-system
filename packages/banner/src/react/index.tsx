@@ -2,7 +2,6 @@ import DSButton from '@pluralsight/ps-design-system-button'
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import { P } from '@pluralsight/ps-design-system-text'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
@@ -35,7 +34,8 @@ const styles: { [name: string]: StyleFn } = {
   text: () => glamor.css(stylesheet['.psds-banner__text'])
 }
 
-interface BannerProps extends Omit<HTMLPropsFor<HTMLDivElement>, 'onClick'> {
+interface BannerProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'> {
   color?: ValueOf<typeof vars.colors>
   onClick?: (evt: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
@@ -72,7 +72,9 @@ const Button = React.forwardRef<
   const color = React.useContext(ColorContext)
   return (
     <DSButton
-      {...(props as HTMLPropsFor<HTMLButtonElement | HTMLAnchorElement>)}
+      {...(props as React.HTMLAttributes<
+        HTMLButtonElement | HTMLAnchorElement
+      >)}
       {...styles.button({ color })}
       appearance={DSButton.appearances.stroke}
       ref={ref as any}

@@ -3,7 +3,6 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   RefFor,
   ValueOf,
@@ -17,7 +16,7 @@ import stylesheet, { sizeClasses, themeClasses } from '../css/index'
 import * as illustrations from './illustrations/index'
 import { illustrationNames, sizes } from '../vars/index'
 
-export interface EmptyStateProps extends HTMLPropsFor<HTMLDivElement> {
+export interface EmptyStateProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: ValueOf<typeof sizes>
   actions?: React.ReactNode
   caption?: React.ReactNode
@@ -121,19 +120,19 @@ const EmptyState = React.forwardRef<HTMLDivElement, EmptyStateProps>(
   }
 ) as EmptyStateComponent
 
-const Actions: React.FC<HTMLPropsFor<HTMLDivElement>> = props => (
+const Actions: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <Context.Consumer>
     {ctx => <div {...styles.actions(ctx)} {...props} />}
   </Context.Consumer>
 )
 
-const Caption: React.FC<HTMLPropsFor<HTMLParagraphElement>> = props => (
+const Caption: React.FC<React.HTMLAttributes<HTMLParagraphElement>> = props => (
   <Context.Consumer>
     {ctx => <p {...styles.caption(ctx)} {...props} />}
   </Context.Consumer>
 )
 
-interface HeadingProps extends HTMLPropsFor<HTMLHeadingElement> {
+interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   as?: keyof Pick<JSX.IntrinsicElements, 'h1' | 'h2' | 'h3' | 'h4' | 'h5'>
 }
 
@@ -147,7 +146,7 @@ const Heading: React.FC<HeadingProps> = props => {
   )
 }
 
-interface IllustrationProps extends HTMLPropsFor<SVGElement> {
+interface IllustrationProps extends React.HTMLAttributes<SVGElement> {
   name?: ValueOf<typeof illustrationNames>
 }
 

@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import { Heading } from '@pluralsight/ps-design-system-text'
 import React from 'react'
@@ -35,7 +34,7 @@ const styles = {
   layout: () => glamor.css(stylesheet['.psds-page-heading-layout'])
 }
 
-interface PageHeadingLayoutProps extends HTMLPropsFor<HTMLDivElement> {
+interface PageHeadingLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
   actions?: React.ReactNode[]
   heading: React.ReactNode
 }

@@ -1,4 +1,4 @@
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import {
   names as themeNames,
   useTheme
@@ -18,7 +18,7 @@ const styles = {
     )
 }
 
-interface LabelProps extends HTMLPropsFor<HTMLLabelElement> {
+interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {
   htmlFor?: string
 }
 

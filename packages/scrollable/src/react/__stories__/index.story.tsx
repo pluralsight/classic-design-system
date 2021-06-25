@@ -2,7 +2,7 @@
 
 import { layout } from '@pluralsight/ps-design-system-core'
 import { P } from '@pluralsight/ps-design-system-text'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+
 import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -11,7 +11,7 @@ import Scrollable from '../index'
 
 const glamor = glamorDefault || glamorExports
 
-const Filler: React.FC<HTMLPropsFor<HTMLDivElement>> = props => (
+const Filler: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
     {...props}
     {...glamor.css({
@@ -79,7 +79,7 @@ const ScrollableWithDefaults: React.FC<
   />
 )
 
-const VanillaScroll: React.FC<HTMLPropsFor<HTMLDivElement>> = props => (
+const VanillaScroll: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
     {...glamor.css({
       height: 260,

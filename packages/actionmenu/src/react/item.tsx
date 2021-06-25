@@ -1,8 +1,4 @@
-import {
-  HTMLPropsFor,
-  RefFor,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
+import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -41,7 +37,7 @@ const styles = {
     )
 }
 
-interface ItemProps extends HTMLPropsFor<HTMLLIElement> {
+interface ItemProps extends React.HTMLAttributes<HTMLLIElement> {
   active?: boolean
   className?: string
   disabled?: boolean
@@ -142,7 +138,9 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
           role="menuitem"
           aria-disabled={Boolean(disabled)}
           {...(Component === 'button' && { disabled })}
-          {...(rest as HTMLPropsFor<HTMLAnchorElement | HTMLButtonElement>)}
+          {...(rest as React.HTMLAttributes<
+            HTMLAnchorElement | HTMLButtonElement
+          >)}
         >
           <span className={className} {...styles.inner()}>
             {children}

@@ -2,8 +2,7 @@ import React from 'react'
 import {
   canUseDOM,
   uniqueId as defaultUniqueId,
-  ValueOf,
-  HTMLPropsFor
+  ValueOf
 } from '@pluralsight/ps-design-system-util'
 import innerText from 'react-innertext'
 
@@ -24,7 +23,7 @@ export const DropdownContext = React.createContext<DropdownContextValue>({
 })
 
 interface UseDropdownProps
-  extends Omit<HTMLPropsFor<HTMLButtonElement>, 'onChange'> {
+  extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'onChange'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   className?: string
@@ -58,7 +57,6 @@ const sortDropdownProps = ({
   subLabel,
   style,
   value,
-  css: _avoidWeirdCssPropTypeError,
   ...rest
 }: UseDropdownProps) => ({
   button: {

@@ -4,11 +4,7 @@ import {
   CaretLeftIcon,
   CaretRightIcon
 } from '@pluralsight/ps-design-system-icon'
-import {
-  HTMLPropsFor,
-  RefFor,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
+import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import Theme from '@pluralsight/ps-design-system-theme'
 import type { RenderProps } from 'dayzed'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -65,7 +61,7 @@ const monthNamesShort = [
 const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 interface CalendarProps
-  extends HTMLPropsFor<HTMLDivElement>,
+  extends React.HTMLAttributes<HTMLDivElement>,
     Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
   slide?: ValueOf<typeof slides>
 }

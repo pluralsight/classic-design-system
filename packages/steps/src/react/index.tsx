@@ -1,8 +1,4 @@
-import {
-  HTMLPropsFor,
-  ValueOf,
-  isString
-} from '@pluralsight/ps-design-system-util'
+import { ValueOf, isString } from '@pluralsight/ps-design-system-util'
 import {
   names as themeNames,
   useTheme
@@ -147,17 +143,17 @@ const Steps = React.forwardRef<HTMLDivElement, StepsProps>((props, ref) => {
 
 Steps.displayName = 'Steps'
 
-interface StepProps extends HTMLPropsFor<HTMLDivElement> {
+interface StepProps extends React.HTMLAttributes<HTMLDivElement> {
   description?: React.ReactNode
   marker?: React.ComponentType<MarkerProps>
   renderMarkerContainer?: (
-    props: HTMLPropsFor<HTMLDivElement>
+    props: React.HTMLAttributes<HTMLDivElement>
   ) => React.ReactElement
   status: ValueOf<typeof Steps.statuses>
 }
-const defaultMarkerContainer = (props: HTMLPropsFor<HTMLDivElement>) => (
-  <div {...props} />
-)
+const defaultMarkerContainer = (
+  props: React.HTMLAttributes<HTMLDivElement>
+) => <div {...props} />
 
 const Step = React.forwardRef<HTMLDivElement, StepProps>((props, ref) => {
   const {
@@ -204,7 +200,8 @@ const Step = React.forwardRef<HTMLDivElement, StepProps>((props, ref) => {
 })
 Step.displayName = 'Steps.Step'
 
-interface MarkerProps extends Omit<HTMLPropsFor<HTMLDivElement>, 'ref'> {
+interface MarkerProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'ref'> {
   status: ValueOf<typeof Steps.statuses>
 }
 

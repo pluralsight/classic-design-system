@@ -1,5 +1,4 @@
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   classNames
@@ -10,7 +9,7 @@ import '../css/index.css'
 import { sizes, widths } from '../vars/index'
 import { getColorByName, getInitials, transformSrc } from '../js/index'
 
-interface AvatarProps extends HTMLPropsFor<HTMLDivElement> {
+interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
   alt?: string
   name?: string
   size?: ValueOf<typeof sizes>

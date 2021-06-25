@@ -1,5 +1,5 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { useSelect } from 'downshift'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -34,7 +34,7 @@ const SelectField: React.FC<SelectFieldProps> = props => {
 
   const CustomFieldTag = React.forwardRef<
     HTMLDivElement,
-    HTMLPropsFor<HTMLDivElement>
+    React.HTMLAttributes<HTMLDivElement>
   >((innerProps, innerRef) => {
     return (
       <div ref={innerRef} {...innerProps}>

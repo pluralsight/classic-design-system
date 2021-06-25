@@ -1,7 +1,4 @@
-import {
-  RefForwardingComponent,
-  HTMLPropsFor
-} from '@pluralsight/ps-design-system-util'
+import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -17,7 +14,7 @@ const styles = {
   verticaltabs: () => glamor.css(stylesheet['.psds-verticaltabs'])
 }
 
-interface VerticalTabsProps extends HTMLPropsFor<HTMLUListElement> {
+interface VerticalTabsProps extends React.HTMLAttributes<HTMLUListElement> {
   forceCollapsed?: boolean
   hideLabels?: boolean
 }

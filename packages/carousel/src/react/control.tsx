@@ -8,11 +8,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import {
-  HTMLPropsFor,
-  ValueOf,
-  combineFns
-} from '@pluralsight/ps-design-system-util'
+import { ValueOf, combineFns } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -40,7 +36,7 @@ const styles = {
 }
 
 interface ControlProps
-  extends Omit<HTMLPropsFor<HTMLButtonElement>, 'onClick'> {
+  extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'onClick'> {
   direction: ValueOf<typeof vars.controlDirections>
   onClick?: (evt?: React.MouseEvent) => void
 }

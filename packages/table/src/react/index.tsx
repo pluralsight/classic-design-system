@@ -8,7 +8,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import invariant from 'invariant'
 import React from 'react'
@@ -131,18 +131,18 @@ const Table = React.forwardRef<HTMLTableElement, TableProps>((props, ref) => {
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
-  HTMLPropsFor<HTMLDivElement>
+  React.HTMLAttributes<HTMLDivElement>
 >((props, ref) => <div ref={ref} {...props} />)
 
 const TableBody = React.forwardRef<
   HTMLTableSectionElement,
-  HTMLPropsFor<HTMLTableSectionElement>
+  React.HTMLAttributes<HTMLTableSectionElement>
 >((props, ref) => {
   return <tbody ref={ref} {...props} />
 })
 TableBody.displayName = 'Table.Body'
 
-interface TableCellProps extends HTMLPropsFor<HTMLTableCellElement> {
+interface TableCellProps extends React.HTMLAttributes<HTMLTableCellElement> {
   align?: ValueOf<typeof alignments>
   colSpan?: number
 }
@@ -158,7 +158,7 @@ TableCell.displayName = 'Table.Cell'
 
 const TableHead = React.forwardRef<
   HTMLTableSectionElement,
-  HTMLPropsFor<HTMLTableSectionElement>
+  React.HTMLAttributes<HTMLTableSectionElement>
 >((props, ref) => {
   const themeName = useTheme()
 
@@ -166,7 +166,8 @@ const TableHead = React.forwardRef<
 })
 TableHead.displayName = 'Table.Head'
 
-interface TableHeaderProps extends HTMLPropsFor<HTMLTableHeaderCellElement> {
+interface TableHeaderProps
+  extends React.HTMLAttributes<HTMLTableHeaderCellElement> {
   align?: ValueOf<typeof alignments>
   role: 'columnheader' | 'rowheader'
   scope: 'col' | 'row'
@@ -243,7 +244,7 @@ const TableHeader = React.forwardRef<
 })
 TableHeader.displayName = 'Table.Header'
 
-interface TableRowProps extends HTMLPropsFor<HTMLTableRowElement> {
+interface TableRowProps extends React.HTMLAttributes<HTMLTableRowElement> {
   expanded?: boolean
   selected?: boolean
 }
@@ -265,7 +266,7 @@ const TableRow = React.forwardRef<HTMLTableRowElement, TableRowProps>(
 TableRow.displayName = 'Table.Row'
 
 interface TableDrawerProps
-  extends Omit<HTMLPropsFor<HTMLTableRowElement>, 'ref'> {
+  extends Omit<React.HTMLAttributes<HTMLTableRowElement>, 'ref'> {
   expanded: boolean
   colSpan: number
   indentWithCell?: boolean

@@ -1,5 +1,5 @@
 import Button from '@pluralsight/ps-design-system-button'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import ErrorPage from './error-page'

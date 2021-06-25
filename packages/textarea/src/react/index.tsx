@@ -7,7 +7,6 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
-  HTMLPropsFor,
   RefForwardingComponent
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -81,7 +80,7 @@ export interface TextAreaStatics {
 }
 
 export interface TextAreaProps
-  extends Omit<HTMLPropsFor<HTMLTextAreaElement>, 'rows'> {
+  extends Omit<React.HTMLAttributes<HTMLTextAreaElement>, 'rows'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean

@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -37,7 +36,7 @@ TextArea.displayName = 'Field.TextArea'
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
-  HTMLPropsFor<HTMLDivElement>
+  React.HTMLAttributes<HTMLDivElement>
 >((props, ref) => <div ref={ref} {...props} />)
 
 export default TextArea

@@ -1,4 +1,4 @@
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import { alignments } from '../vars/index'
@@ -23,7 +23,7 @@ export interface ContextValue {
 
 const defaultRenderContainer = React.forwardRef<
   HTMLButtonElement,
-  HTMLPropsFor<HTMLButtonElement>
+  React.HTMLAttributes<HTMLButtonElement>
 >((props, ref) => <button ref={ref} {...props} />)
 
 export const initialValue: ContextValue = {

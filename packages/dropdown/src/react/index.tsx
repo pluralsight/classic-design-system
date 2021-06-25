@@ -1,5 +1,4 @@
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
@@ -31,7 +30,7 @@ interface DropdownStatics {
 }
 
 interface DropdownProps
-  extends Omit<HTMLPropsFor<HTMLButtonElement>, 'onChange'> {
+  extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'onChange'> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   className?: string

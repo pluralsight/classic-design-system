@@ -1,4 +1,4 @@
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -14,7 +14,8 @@ const styles = {
     glamor.css(stylesheet[`.psds-starrating__screen-reader-text`])
 }
 
-interface ScreenReaderInputProps extends HTMLPropsFor<HTMLInputElement> {
+interface ScreenReaderInputProps
+  extends React.HTMLAttributes<HTMLInputElement> {
   type: string
   min: number
   max: number
@@ -26,12 +27,12 @@ const ScreenReaderInput: React.FC<ScreenReaderInputProps> = props => (
   <input {...styles.screenReaderInput()} tabIndex={-1} {...props} />
 )
 
-const ScreenReaderText: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => (
-  <span {...styles.screenReaderText()} {...props} />
-)
+const ScreenReaderText: React.FC<
+  React.HTMLAttributes<HTMLSpanElement>
+> = props => <span {...styles.screenReaderText()} {...props} />
 
 export interface StarRatingProps
-  extends Omit<HTMLPropsFor<HTMLDivElement>, 'onChange'> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
   onChange?: (
     val: React.ReactText,
     evt: React.ChangeEvent | React.MouseEvent

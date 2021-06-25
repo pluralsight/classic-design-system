@@ -1,4 +1,4 @@
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
@@ -42,7 +42,7 @@ const styles = {
   }
 }
 
-interface LinearProgressProps extends HTMLPropsFor<HTMLDivElement> {
+interface LinearProgressProps extends React.HTMLAttributes<HTMLDivElement> {
   value?: number
   'aria-label': string
 }

@@ -6,7 +6,6 @@ import {
   RefForwardingComponent,
   ValueOf,
   combineFns,
-  HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -136,24 +135,25 @@ const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
   }
 ) as ViewToggleComponent
 
-const ActivePillBg: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
+const ActivePillBg: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
   return <div {...styles.activePillBg(themeName)} aria-hidden {...props} />
 }
 
-const List = React.forwardRef<HTMLDivElement, HTMLPropsFor<HTMLDivElement>>(
-  (props, ref) => {
-    const themeName = useTheme()
-    return <div ref={ref} {...styles.list(themeName)} {...props} />
-  }
-)
+const List = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const themeName = useTheme()
+  return <div ref={ref} {...styles.list(themeName)} {...props} />
+})
 
-const PillBgSpacer: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
+const PillBgSpacer: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
   return <div {...styles.pillBgSpacer()} {...props} />
 }
 
-interface OptionButtonProps extends HTMLPropsFor<HTMLButtonElement> {
+interface OptionButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   active: boolean
 }
 const OptionButton = React.forwardRef<HTMLButtonElement, OptionButtonProps>(

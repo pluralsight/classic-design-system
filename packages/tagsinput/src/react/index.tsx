@@ -1,11 +1,7 @@
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
 import Tag from '@pluralsight/ps-design-system-tag'
-import {
-  HTMLPropsFor,
-  useUniqueId,
-  usePrevious
-} from '@pluralsight/ps-design-system-util'
+import { useUniqueId, usePrevious } from '@pluralsight/ps-design-system-util'
 import { useMultipleSelection } from 'downshift'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -181,17 +177,18 @@ TagsInput.SubLabel = Field.SubLabel
 
 export default TagsInput
 
-const Pills = React.forwardRef<HTMLDivElement, HTMLPropsFor<HTMLDivElement>>(
-  (props, ref) => {
-    const { children, ...rest } = props
+const Pills = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>((props, ref) => {
+  const { children, ...rest } = props
 
-    return (
-      <div ref={ref} {...rest} {...styles.pills()}>
-        {children}
-      </div>
-    )
-  }
-)
+  return (
+    <div ref={ref} {...rest} {...styles.pills()}>
+      {children}
+    </div>
+  )
+})
 
 interface PillProps extends React.ComponentProps<typeof Tag> {
   onRequestRemove: React.MouseEventHandler

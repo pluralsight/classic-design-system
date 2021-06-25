@@ -6,7 +6,6 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
-  HTMLPropsFor,
   forwardRefWithStatics
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'

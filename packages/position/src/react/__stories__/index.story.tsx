@@ -1,7 +1,7 @@
 import { InfoIcon } from '@pluralsight/ps-design-system-icon'
 import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
-import { HTMLPropsFor, usePortal } from '@pluralsight/ps-design-system-util'
+import { usePortal } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -55,35 +55,36 @@ const positionFns = {
   leftOf
 }
 
-const Box = React.forwardRef<HTMLDivElement, HTMLPropsFor<HTMLDivElement>>(
-  (props, forwardedRef) => {
-    const ref = React.useRef<HTMLDivElement>(null)
-    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
-    React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
+const Box = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>((props, forwardedRef) => {
+  const ref = React.useRef<HTMLDivElement>(null)
+  /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
+  React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
-    const selectors = glamor.css({
-      position: 'relative',
-      top: '200px',
-      left: '200px',
-      alignItems: 'center',
-      border: `4px dashed ${core.colorsPink[6]}`,
-      color: core.colorsPink[6],
-      display: 'flex',
-      fontSize: core.type.fontSize400,
-      fontWeight: core.type.fontWeight700,
-      height: '200px',
-      justifyContent: 'center',
-      textAlign: 'center',
-      width: '200px'
-    })
+  const selectors = glamor.css({
+    position: 'relative',
+    top: '200px',
+    left: '200px',
+    alignItems: 'center',
+    border: `4px dashed ${core.colorsPink[6]}`,
+    color: core.colorsPink[6],
+    display: 'flex',
+    fontSize: core.type.fontSize400,
+    fontWeight: core.type.fontWeight700,
+    height: '200px',
+    justifyContent: 'center',
+    textAlign: 'center',
+    width: '200px'
+  })
 
-    return (
-      <div {...selectors} ref={ref}>
-        {props.children}
-      </div>
-    )
-  }
-)
+  return (
+    <div {...selectors} ref={ref}>
+      {props.children}
+    </div>
+  )
+})
 
 const MockToolip = React.forwardRef<
   HTMLDivElement,
@@ -357,7 +358,7 @@ export const PositionsOnEdge: Story = () => (
 
 // TODO: make reusable
 //
-interface StoryGridProps extends HTMLPropsFor<HTMLDivElement> {
+interface StoryGridProps extends React.HTMLAttributes<HTMLDivElement> {
   cols?: number
 }
 const StoryGrid: React.FC<StoryGridProps> = props => {

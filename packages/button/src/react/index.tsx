@@ -3,7 +3,7 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -123,7 +123,7 @@ const mapIconSize = (size: ValueOf<typeof vars.sizes>) => {
   return btnToIconSizes[size] ? btnToIconSizes[size] : iconSizes.medium
 }
 
-interface IconContainerProps extends HTMLPropsFor<HTMLDivElement> {
+interface IconContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   labelOnly: boolean
   loading: boolean
   icon: React.ReactNode
@@ -268,7 +268,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
           >)
     return (
       <Component
-        {...(rest as HTMLPropsFor<HTMLAnchorElement | HTMLButtonElement>)}
+        {...(rest as React.HTMLAttributes<
+          HTMLAnchorElement | HTMLButtonElement
+        >)}
         disabled={isDisabled}
         {...glamorStyle}
         onClick={handleClick}

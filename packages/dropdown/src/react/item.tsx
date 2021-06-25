@@ -1,5 +1,5 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
-import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
+import { RefFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -22,7 +22,7 @@ const styles = {
 }
 
 interface DropdownItemProps
-  extends Omit<HTMLPropsFor<HTMLButtonElement>, 'onClick'> {
+  extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'onClick'> {
   children: React.ReactText
   disabled?: boolean
   onClick?: (evt: React.MouseEvent, value: React.ReactText) => void

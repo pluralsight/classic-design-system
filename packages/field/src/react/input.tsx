@@ -1,4 +1,4 @@
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -54,12 +54,12 @@ Input.displayName = 'Field.Input'
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
-  HTMLPropsFor<HTMLDivElement>
+  React.HTMLAttributes<HTMLDivElement>
 >((props, ref) => <div ref={ref} {...props} />)
 
 const defaultRenderTag = React.forwardRef<
   HTMLInputElement,
-  HTMLPropsFor<HTMLInputElement>
+  React.HTMLAttributes<HTMLInputElement>
 >((props, ref) => <input ref={ref} {...props} />)
 
 export default Input

@@ -1,5 +1,4 @@
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   handleMenuKeyDownEvents,
@@ -46,7 +45,7 @@ interface ActionMenuStatics {
   useMenuRef: typeof useMenuRef
 }
 interface ActionMenuProps
-  extends Omit<HTMLPropsFor<HTMLUListElement>, 'onClick'> {
+  extends Omit<React.HTMLAttributes<HTMLUListElement>, 'onClick'> {
   onClick?: (evt: React.MouseEvent, value?: React.ReactText) => void
   onClose?: () => void
   origin?: ValueOf<typeof vars.origins>

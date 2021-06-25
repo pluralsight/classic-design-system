@@ -1,7 +1,7 @@
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index'
 
@@ -13,7 +13,7 @@ const style = ({ themeName }: { themeName: ValueOf<typeof names> }) =>
     glamor.css(stylesheet[`.psds-text__code.psds-theme--${themeName}`])
   )
 
-const Code: React.FC<HTMLPropsFor<HTMLElement>> = props => {
+const Code: React.FC<React.HTMLAttributes<HTMLElement>> = props => {
   const themeName = useTheme()
 
   return props.children ? (

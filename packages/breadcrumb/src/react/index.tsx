@@ -1,6 +1,6 @@
 import Button from '@pluralsight/ps-design-system-button'
 import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -14,7 +14,7 @@ const styles = {
 
 interface BreadcrumbProps
   extends Omit<
-    HTMLPropsFor<HTMLDivElement>,
+    React.HTMLAttributes<HTMLDivElement>,
     'disabled' | 'href' | 'onClick' | 'target' | 'rel'
   > {
   disabled?: boolean

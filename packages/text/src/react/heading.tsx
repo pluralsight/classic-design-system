@@ -1,7 +1,7 @@
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import { useTheme, names } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
@@ -30,7 +30,7 @@ interface HeadingStatics {
   colors: typeof vars.textColors
 }
 
-interface HeadingProps extends HTMLPropsFor<HTMLHeadingElement> {
+interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   size?: ValueOf<typeof vars.headingSizes>
   color?: ValueOf<typeof vars.textColors>
 }

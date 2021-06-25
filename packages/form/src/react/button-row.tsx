@@ -1,4 +1,4 @@
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -19,7 +19,7 @@ const styles = {
 export interface ButtonRowStatics {
   aligns: typeof vars.aligns
 }
-export interface ButtonRowProps extends HTMLPropsFor<HTMLDivElement> {
+export interface ButtonRowProps extends React.HTMLAttributes<HTMLDivElement> {
   align?: ValueOf<typeof vars.aligns>
 }
 

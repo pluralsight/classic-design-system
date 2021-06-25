@@ -4,7 +4,6 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
@@ -38,7 +37,7 @@ const styles = {
     )
 }
 
-interface DataWellProps extends HTMLPropsFor<HTMLDivElement> {
+interface DataWellProps extends React.HTMLAttributes<HTMLDivElement> {
   label: string
   subLabel?: React.ReactNode
 }

@@ -1,5 +1,5 @@
 import Halo from '@pluralsight/ps-design-system-halo'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -35,7 +35,9 @@ const styles = {
 }
 
 interface NavBrandProps
-  extends HTMLPropsFor<HTMLAnchorElement | HTMLButtonElement | HTMLDivElement> {
+  extends React.HTMLAttributes<
+    HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
+  > {
   logo?: React.ReactNode
   wordmark?: React.ReactNode
   onClick?: React.MouseEventHandler<

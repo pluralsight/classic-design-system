@@ -2,7 +2,6 @@ import React from 'react'
 import {
   useUniqueId,
   ValueOf,
-  HTMLPropsFor,
   useCloseOnDocumentEvents,
   canUseDOM
 } from '@pluralsight/ps-design-system-util'

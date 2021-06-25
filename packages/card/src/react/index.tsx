@@ -6,7 +6,6 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   canUseDOM
@@ -140,7 +139,7 @@ const styles = {
   }
 }
 
-interface ActionBarActionProps extends HTMLPropsFor<HTMLButtonElement> {
+interface ActionBarActionProps extends React.HTMLAttributes<HTMLButtonElement> {
   disabled?: boolean
   icon?: React.ReactElement<typeof Icon>
   title: string
@@ -169,13 +168,13 @@ const ActionBarAction = React.forwardRef((props, ref) => {
 }) as ActionBarActionComponent
 ActionBarAction.displayName = 'Card.Action'
 
-const FullOverlayLink: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => (
-  <span {...styles.fullOverlayLink()} {...props} />
-)
+const FullOverlayLink: React.FC<
+  React.HTMLAttributes<HTMLSpanElement>
+> = props => <span {...styles.fullOverlayLink()} {...props} />
 
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
-interface ImageProps extends HTMLPropsFor<HTMLDivElement> {
+interface ImageProps extends React.HTMLAttributes<HTMLDivElement> {
   alt?: string
   src: string
 }
@@ -192,12 +191,12 @@ const Image: React.FC<ImageProps> = props => {
 }
 Image.displayName = 'Card.Image'
 
-const ImageLink: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => (
+const ImageLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
   <span {...styles.imageLink()} {...props} />
 )
 ImageLink.displayName = 'Card.ImageLink'
 
-interface TagProps extends HTMLPropsFor<HTMLDivElement> {
+interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
   icon?: React.ReactElement<typeof Icon>
 }
 const Tag: React.FC<TagProps> = ({ children, icon, ...rest }) => (
@@ -219,18 +218,18 @@ const Tag: React.FC<TagProps> = ({ children, icon, ...rest }) => (
 
 Tag.displayName = 'Card.Tag'
 
-const Text: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => (
+const Text: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
   <span {...props} />
 )
 Text.displayName = 'Card.Text'
 
-const TextLink: React.FC<HTMLPropsFor<HTMLSpanElement>> = props => {
+const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
   const themeName = useTheme()
   return <span {...styles.textLink(themeName)} {...props} />
 }
 TextLink.displayName = 'Card.TextLink'
 
-const Title: React.FC<HTMLPropsFor<HTMLDivElement>> = props => {
+const Title: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
   const { children, ...rest } = props
 
@@ -265,7 +264,8 @@ const MetaData: React.FC<MetaDataProps> = props => {
   )
 }
 
-export interface CardProps extends Omit<HTMLPropsFor<HTMLDivElement>, 'title'> {
+export interface CardProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {
   actionBar?: React.ReactElement<typeof ActionBarAction>[]
   actionBarVisible?: boolean
   bonusBar?: React.ReactNode

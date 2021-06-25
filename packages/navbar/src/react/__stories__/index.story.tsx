@@ -10,7 +10,6 @@ import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import NavUser from '@pluralsight/ps-design-system-navuser'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
@@ -129,7 +128,7 @@ export const ExampleSkills: Story<
                   selected
                   menu
                   renderContainer={(
-                    contentProps: HTMLPropsFor<HTMLButtonElement>
+                    contentProps: React.HTMLAttributes<HTMLButtonElement>
                   ) => (
                     <button
                       {...contentProps}

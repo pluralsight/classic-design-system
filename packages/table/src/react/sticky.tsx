@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 import invariant from 'invariant'
 
@@ -7,7 +6,7 @@ import { useOnResize, useOnScroll } from './event-hooks'
 
 export const StickyContainer = React.forwardRef<
   HTMLDivElement,
-  HTMLPropsFor<HTMLDivElement>
+  React.HTMLAttributes<HTMLDivElement>
 >((props, ref) => {
   const { children, ...rest } = props
   invariant(ref, 'ref is required')

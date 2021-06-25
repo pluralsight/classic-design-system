@@ -6,7 +6,6 @@ import {
 import {
   ValueOf,
   RefForwardingComponent,
-  HTMLPropsFor,
   RefFor
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -86,7 +85,8 @@ interface SwitchStatics {
   labelAligns: typeof vars.labelAligns
 }
 
-interface SwitchProps extends Omit<HTMLPropsFor<HTMLLabelElement>, 'onClick'> {
+interface SwitchProps
+  extends Omit<React.HTMLAttributes<HTMLLabelElement>, 'onClick'> {
   checked?: boolean
   color?: ValueOf<typeof vars.colors>
   disabled?: boolean

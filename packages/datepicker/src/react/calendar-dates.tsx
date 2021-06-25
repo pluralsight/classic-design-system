@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import type { DateObj, RenderProps } from 'dayzed'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -25,7 +24,7 @@ interface ChildrenRenderProps
   > {}
 
 interface CalendarDatesProps
-  extends HTMLPropsFor<HTMLButtonElement>,
+  extends React.HTMLAttributes<HTMLButtonElement>,
     Pick<RenderProps, 'getDateProps'> {
   children: (props: ChildrenRenderProps, dateObj: DateObj) => React.ReactNode
 }

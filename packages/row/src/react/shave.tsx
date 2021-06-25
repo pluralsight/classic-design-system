@@ -1,9 +1,9 @@
 import { type } from '@pluralsight/ps-design-system-core'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+
 import React from 'react'
 import shave from 'shave'
 
-interface ShaveProps extends HTMLPropsFor<HTMLDivElement> {
+interface ShaveProps extends React.HTMLAttributes<HTMLDivElement> {
   children: string
   character?: string
   lineHeight?: number

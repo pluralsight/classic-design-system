@@ -1,6 +1,6 @@
 import Avatar from '@pluralsight/ps-design-system-avatar'
 import Halo from '@pluralsight/ps-design-system-halo'
-import { HTMLPropsFor, RefFor } from '@pluralsight/ps-design-system-util'
+import { RefFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -23,7 +23,9 @@ const styles = {
 }
 
 interface NavUserProps
-  extends HTMLPropsFor<HTMLAnchorElement | HTMLButtonElement | HTMLDivElement> {
+  extends React.HTMLAttributes<
+    HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
+  > {
   meta?: React.ReactNode
   name?: string
   src?: string
@@ -74,7 +76,7 @@ NavUser.displayName = 'NavUser'
 
 export default NavUser
 
-interface WordsProps extends HTMLPropsFor<HTMLDivElement> {
+interface WordsProps extends React.HTMLAttributes<HTMLDivElement> {
   meta?: React.ReactNode
   name?: string
 }

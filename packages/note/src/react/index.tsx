@@ -5,7 +5,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -71,7 +71,7 @@ const styles = {
   metadataDot: () => glamor.css(stylesheet['.psds-note__metadata-dot'])
 }
 
-interface NoteProps extends HTMLPropsFor<HTMLDivElement> {
+interface NoteProps extends React.HTMLAttributes<HTMLDivElement> {
   actionBar?: React.ReactElement<typeof Action>[]
   actionBarVisible?: boolean
   avatar?:
@@ -186,7 +186,7 @@ const Note: React.FC<NoteProps> & NoteStatics = props => {
 }
 export default Note
 
-const NoteList: React.FC<HTMLPropsFor<HTMLOListElement>> = ({
+const NoteList: React.FC<React.HTMLAttributes<HTMLOListElement>> = ({
   children,
   ...rest
 }) => {
@@ -201,7 +201,7 @@ const NoteList: React.FC<HTMLPropsFor<HTMLOListElement>> = ({
 }
 NoteList.displayName = 'Note.List'
 
-interface ActionProps extends HTMLPropsFor<HTMLButtonElement> {
+interface ActionProps extends React.HTMLAttributes<HTMLButtonElement> {
   icon: React.ReactNode
   title: string
 }

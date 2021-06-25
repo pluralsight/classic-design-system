@@ -1,5 +1,5 @@
 import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -48,7 +48,7 @@ const useValue = ({
 }
 
 export interface RadioGroupProps
-  extends Omit<HTMLPropsFor<HTMLDivElement>, 'onChange'> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
   children?: React.ReactNode
   disabled?: boolean
   error?: boolean

@@ -2,11 +2,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import {
-  ValueOf,
-  HTMLPropsFor,
-  RefFor
-} from '@pluralsight/ps-design-system-util'
+import { ValueOf, RefFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -36,13 +32,13 @@ export interface BaseListItemProps {
 }
 export interface ListItemAnchorProps
   extends BaseListItemProps,
-    Omit<HTMLPropsFor<HTMLAnchorElement>, 'id' | 'onClick'> {
+    Omit<React.HTMLAttributes<HTMLAnchorElement>, 'id' | 'onClick'> {
   href: string
   onClick?: (i: number, event: React.MouseEvent<HTMLAnchorElement>) => void
 }
 export interface ListItemButtonProps
   extends BaseListItemProps,
-    Omit<HTMLPropsFor<HTMLButtonElement>, 'id' | 'onClick'> {
+    Omit<React.HTMLAttributes<HTMLButtonElement>, 'id' | 'onClick'> {
   href?: undefined
   onClick?: (i: number, event: React.MouseEvent<HTMLButtonElement>) => void
 }
