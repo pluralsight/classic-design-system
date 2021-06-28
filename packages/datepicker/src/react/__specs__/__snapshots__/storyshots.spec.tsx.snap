@@ -21,12 +21,12 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
                 data-css-7dab2f=""
@@ -56,12 +56,12 @@ Array [
           </div>
           <button
             aria-label="Go forward 1 month"
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
                 data-css-7dab2f=""
@@ -1484,12 +1484,12 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
               data-css-7dab2f=""
@@ -1519,12 +1519,12 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
               data-css-7dab2f=""
@@ -1962,12 +1962,12 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
               data-css-7dab2f=""
@@ -1997,12 +1997,12 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
               data-css-7dab2f=""
@@ -2477,12 +2477,12 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
                 data-css-7dab2f=""
@@ -2512,12 +2512,12 @@ Array [
           </div>
           <button
             aria-label="Go forward 1 month"
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
                 data-css-7dab2f=""
@@ -3042,12 +3042,12 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
         >
           <button
             aria-label="Go back 1 month"
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
                 data-css-7dab2f=""
@@ -3077,12 +3077,12 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
           </div>
           <button
             aria-label="Go forward 1 month"
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
                 data-css-7dab2f=""
@@ -3607,12 +3607,12 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
                 data-css-7dab2f=""
@@ -3694,12 +3694,12 @@ Array [
           </div>
           <button
             aria-label="Go forward 1 month"
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
                 data-css-7dab2f=""
@@ -4517,12 +4517,12 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
               data-css-7dab2f=""
@@ -4552,12 +4552,12 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
               data-css-7dab2f=""
@@ -4966,12 +4966,12 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
               data-css-7dab2f=""
@@ -5001,12 +5001,12 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
               data-css-7dab2f=""
