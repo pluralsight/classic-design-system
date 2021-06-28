@@ -73,12 +73,12 @@ exports[`Storyshots Components/Errors Custom Error Page 1`] = `
       error code: ### 
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
@@ -153,12 +153,12 @@ exports[`Storyshots Components/Errors Custom Error Page 1`] = `
       error code: ### 
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
@@ -247,12 +247,12 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
       error code: 403
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
@@ -328,12 +328,12 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
       error code: 403
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
@@ -402,12 +402,12 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
       error code: 404
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
@@ -483,12 +483,12 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
       error code: 404
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
@@ -557,12 +557,12 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
       error code: 500
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
@@ -638,12 +638,12 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
       error code: 500
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
@@ -845,12 +845,12 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
       error code: 504
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
@@ -926,12 +926,12 @@ exports[`Storyshots Components/Errors Sizes 1`] = `
       error code: 504
     </p>
     <a
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       href="https://help.pluralsight.com/help/contact-us"
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Contact support
       </span>
