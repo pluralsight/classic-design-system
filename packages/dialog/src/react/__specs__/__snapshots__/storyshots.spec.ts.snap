@@ -19,13 +19,13 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       close modal
     </span>
@@ -113,12 +113,12 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -131,12 +131,12 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -167,13 +167,13 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       close modal
     </span>
@@ -261,12 +261,12 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -279,12 +279,12 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -315,13 +315,13 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       close modal
     </span>
@@ -393,12 +393,12 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -411,12 +411,12 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -447,13 +447,13 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       close modal
     </span>
@@ -540,12 +540,12 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -558,12 +558,12 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -594,13 +594,13 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       close modal
     </span>
@@ -688,12 +688,12 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -706,12 +706,12 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -742,13 +742,13 @@ exports[`Storyshots Components/Dialog Modal No Focusable Child Elements 1`] = `
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       close modal
     </span>
@@ -824,13 +824,13 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       close modal
     </span>
@@ -1241,13 +1241,13 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       close modal
     </span>
@@ -1658,13 +1658,13 @@ exports[`Storyshots Components/Dialog Modal Styles For 1`] = `
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       close modal
     </span>
@@ -1752,12 +1752,12 @@ exports[`Storyshots Components/Dialog Modal Styles For 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -1770,12 +1770,12 @@ exports[`Storyshots Components/Dialog Modal Styles For 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -1853,12 +1853,12 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
       }
     >
       <button
-        data-css-mw9m92=""
+        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Secondary CTA
         </span>
@@ -1871,12 +1871,12 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
         }
       />
       <button
-        data-css-1sp8ths=""
+        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Primary CTA
         </span>
@@ -1972,12 +1972,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -1990,12 +1990,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -2054,12 +2054,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -2072,12 +2072,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -2136,12 +2136,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -2154,12 +2154,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -2218,12 +2218,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -2236,12 +2236,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -2300,12 +2300,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -2318,12 +2318,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -2382,12 +2382,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -2400,12 +2400,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
@@ -2464,12 +2464,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            data-css-mw9m92=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Secondary CTA
             </span>
@@ -2482,12 +2482,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            data-css-1sp8ths=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
             disabled={false}
           >
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             >
               Primary CTA
             </span>
