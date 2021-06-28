@@ -24,7 +24,9 @@ describe('Breadcrumb', () => {
       <Breadcrumb className="compose-classname"></Breadcrumb>
     )
 
-    expect(container.firstChild).toHaveClass('psds-carousel compose-classname')
+    expect(container.firstChild).toHaveClass(
+      'psds-breadcrumb compose-classname'
+    )
   })
 
   describe.each(cases)('%s story', (_name, Story) => {
