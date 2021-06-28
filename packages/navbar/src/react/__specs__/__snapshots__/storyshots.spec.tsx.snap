@@ -441,7 +441,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
         onClick={[Function]}
       >
         <div
-          className="psds-avatar psds-avatar--size-xSmall"
+          className="psds-avatar psds-avatar--size-xsmall"
         >
           <div
             aria-label="Jake"
