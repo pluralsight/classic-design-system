@@ -737,6 +737,166 @@ exports[`Storyshots Components/Card Bonus Bar Text 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Card Class Name Action 1`] = `
+<div
+  style={
+    Object {
+      "width": "320px",
+    }
+  }
+>
+  <button
+    aria-label="button"
+    className="psds-card__action-bar__button compose-class-name"
+    title="button"
+  />
+</div>
+`;
+
+exports[`Storyshots Components/Card Class Name Card 1`] = `
+<div
+  style={
+    Object {
+      "width": "320px",
+    }
+  }
+>
+  <div
+    className="psds-card compose-class-name"
+  >
+    <div
+      className="psds-card__overlays psds-card__overlays--size-medium"
+    >
+      <div
+        aria-label="default image"
+        className="psds-card__image"
+        style={
+          Object {
+            "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
+          }
+        }
+      />
+    </div>
+    <div
+      className="psds-card__title-container psds-card__title-container--size-medium"
+    >
+      <div
+        className="psds-card__title psds-card__title--theme-dark"
+      >
+        <div
+          className=""
+        >
+          <span
+            style={
+              Object {
+                "display": "block",
+                "maxHeight": "0px",
+                "overflow": "hidden",
+                "position": "relative",
+              }
+            }
+          >
+            <span
+              className="shiitake-children"
+              style={
+                Object {
+                  "display": "block",
+                  "width": "100%",
+                }
+              }
+            >
+              Card Title
+              …
+            </span>
+            <span
+              aria-hidden="true"
+              style={
+                Object {
+                  "display": "block",
+                  "height": "0px",
+                  "overflow": "hidden",
+                  "width": "100%",
+                }
+              }
+            >
+              Card Title
+            </span>
+            <span
+              aria-hidden="true"
+              style={
+                Object {
+                  "display": "block",
+                  "left": "-20000px",
+                  "position": "absolute",
+                  "width": "100%",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "display": "block",
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  W
+                </span>
+                <span
+                  style={
+                    Object {
+                      "display": "block",
+                    }
+                  }
+                >
+                  W
+                </span>
+              </span>
+              <span
+                className="shiitake-test-children"
+                style={
+                  Object {
+                    "display": "block",
+                  }
+                }
+              >
+                
+                …
+              </span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Card Class Name Image 1`] = `
+<div
+  style={
+    Object {
+      "width": "320px",
+    }
+  }
+>
+  <div
+    className="psds-card__image"
+    style={
+      Object {
+        "backgroundImage": "url(someUrl)",
+      }
+    }
+  />
+</div>
+`;
+
 exports[`Storyshots Components/Card Everything Focusable 1`] = `
 <div
   style={
