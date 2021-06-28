@@ -1556,13 +1556,13 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -1580,7 +1580,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
@@ -1650,13 +1650,13 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -1674,7 +1674,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
@@ -1744,13 +1744,13 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -1768,7 +1768,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
@@ -1838,13 +1838,13 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -1862,7 +1862,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
@@ -1932,13 +1932,13 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -1956,7 +1956,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
@@ -2098,13 +2098,13 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -2122,7 +2122,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
@@ -2187,13 +2187,13 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -2211,7 +2211,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
@@ -2276,13 +2276,13 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -2300,7 +2300,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
@@ -2365,13 +2365,13 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -2389,7 +2389,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
@@ -2454,13 +2454,13 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            data-css-66vnlm=""
+            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
           >
             <div
-              data-css-4ducb0=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall psds-button__icon--iconOnly"
             >
               <div
                 data-css-1gzzcm2=""
@@ -2478,7 +2478,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </td>
