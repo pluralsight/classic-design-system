@@ -5,12 +5,12 @@ exports[`Storyshots Components/Breadcrumb As Button 1`] = `
   className="psds-breadcrumb"
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--not-icon-only"
     disabled={false}
     onClick={[Function]}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
         data-css-k31qw2=""
@@ -41,11 +41,11 @@ exports[`Storyshots Components/Breadcrumb As Link 1`] = `
   className="psds-breadcrumb"
 >
   <a
-    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--not-icon-only"
     href="https://duckduckgo.com"
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
         data-css-k31qw2=""
@@ -76,11 +76,11 @@ exports[`Storyshots Components/Breadcrumb Basic 1`] = `
   className="psds-breadcrumb"
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
         data-css-k31qw2=""
@@ -111,12 +111,12 @@ exports[`Storyshots Components/Breadcrumb Disabled 1`] = `
   className="psds-breadcrumb"
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--disabled psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--disabled psds-button--not-icon-only"
     disabled={true}
     onClick={[Function]}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
         data-css-k31qw2=""
