@@ -182,13 +182,13 @@ exports[`Storyshots Components/NavUser Basic 1`] = `
 exports[`Storyshots Components/NavUser With Action Menu 1`] = `
 <div>
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       Click me first
     </span>
@@ -202,13 +202,13 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
   />
   <br />
   <button
-    data-css-y5dqt5=""
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
     disabled={false}
     onClick={[Function]}
   >
     <span
       aria-hidden={false}
-      data-css-15b13by=""
+      className="psds-button__text"
     >
       Then click me, first menu closes, mine opens
     </span>
