@@ -3,23 +3,23 @@
   align-items: flex-start;
   width: 100%;
   overflow: hidden;
-  padding: var(--psLayoutSpacingXSmall) var(--psLayoutSpacingSmall);
+  padding: var(--ps-layout-spacing-xsmall) var(--ps-layout-spacing-small);
 }
 .psds-banner--color-blue {
-  color: var(--psColorsTextIconHighOnDark);
-  background-color: var(--psColorsBlue7);
+  color: var(--ps-colors-text-icon-high-on-dark);
+  background-color: var(--ps-colors-blue-7);
 }
 .psds-banner--color-green {
-  color: var(--psColorsTextIconHighOnDark);
-  background-color: var(--psColorsGreen8);
+  color: var(--ps-colors-text-icon-high-on-dark);
+  background-color: var(--ps-colors-green-8);
 }
 .psds-banner--color-yellow {
-  color: var(--psColorsTextIconHighOnLight);
-  background-color: var(--psColorsYellow6);
+  color: var(--ps-colors-text-icon-high-on-light);
+  background-color: var(--ps-colors-yellow-6);
 }
 .psds-banner--color-red {
-  color: var(--psColorsTextIconHighOnDark);
-  background-color: var(--psColorsRed7);
+  color: var(--ps-colors-text-icon-high-on-dark);
+  background-color: var(--ps-colors-red-7);
 }
 :not(#fake-id-to-force-higher-specificity) .psds-banner__button {
   background: 0 0;
@@ -56,10 +56,8 @@
 .psds-banner__text a:focus,
 .psds-banner__text a:hover {
   color: inherit;
-  transition: all var(--psMotionSpeedNormal);
+  transition: all var(--ps-motion-speed-normal);
   opacity: 0.85;
-  -webkit-transition: all var(--psMotionSpeedNormal);
-  -moz-transition: all var(--psMotionSpeedNormal);
 }
 .psds-banner__dismiss {
   position: relative;
@@ -67,7 +65,7 @@
   align-items: flex-start;
   background: 0 0;
   border: none;
-  margin-left: var(--psLayoutSpacingSmall);
+  margin-left: var(--ps-layout-spacing-small);
   padding: 0;
   color: currentColor;
   cursor: pointer;
