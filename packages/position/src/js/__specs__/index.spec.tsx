@@ -524,7 +524,7 @@ describe('#edgeCases', () => {
         width: 100,
         height: 100
       })
-      expect(above(targetEl).styleFor(el)).toMatchSnapshot(position)
+      expect(above(targetEl, true).styleFor(el)).toMatchSnapshot(position)
     }
   })
   it('#aboveLeft', async () => {
@@ -535,7 +535,7 @@ describe('#edgeCases', () => {
         width: 100,
         height: 100
       })
-      expect(aboveLeft(targetEl).styleFor(el)).toMatchSnapshot(position)
+      expect(aboveLeft(targetEl, true).styleFor(el)).toMatchSnapshot(position)
     }
   })
   it('#aboveRight', async () => {
@@ -546,7 +546,7 @@ describe('#edgeCases', () => {
         width: 100,
         height: 100
       })
-      expect(aboveRight(targetEl).styleFor(el)).toMatchSnapshot(position)
+      expect(aboveRight(targetEl, true).styleFor(el)).toMatchSnapshot(position)
     }
   })
   it('#below', async () => {
@@ -557,7 +557,7 @@ describe('#edgeCases', () => {
         width: 100,
         height: 100
       })
-      expect(below(targetEl).styleFor(el)).toMatchSnapshot(position)
+      expect(below(targetEl, true).styleFor(el)).toMatchSnapshot(position)
     }
   })
   it('#belowLeft', async () => {
@@ -568,7 +568,7 @@ describe('#edgeCases', () => {
         width: 100,
         height: 100
       })
-      expect(belowLeft(targetEl).styleFor(el)).toMatchSnapshot(position)
+      expect(belowLeft(targetEl, true).styleFor(el)).toMatchSnapshot(position)
     }
   })
   it('#belowRight', async () => {
@@ -579,7 +579,7 @@ describe('#edgeCases', () => {
         width: 100,
         height: 100
       })
-      expect(belowRight(targetEl).styleFor(el)).toMatchSnapshot(position)
+      expect(belowRight(targetEl, true).styleFor(el)).toMatchSnapshot(position)
     }
   })
   it('#rightOf', async () => {
@@ -590,7 +590,7 @@ describe('#edgeCases', () => {
         width: 100,
         height: 100
       })
-      expect(rightOf(targetEl).styleFor(el)).toMatchSnapshot(position)
+      expect(rightOf(targetEl, true).styleFor(el)).toMatchSnapshot(position)
     }
   })
   it('#leftOf', async () => {
@@ -601,7 +601,7 @@ describe('#edgeCases', () => {
         width: 100,
         height: 100
       })
-      expect(leftOf(targetEl).styleFor(el)).toMatchSnapshot(position)
+      expect(leftOf(targetEl, true).styleFor(el)).toMatchSnapshot(position)
     }
   })
 })
