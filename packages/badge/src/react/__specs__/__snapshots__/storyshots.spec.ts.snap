@@ -83,11 +83,3 @@ exports[`Storyshots Components/Badge Appearances And Colors 1`] = `
   </div>
 </div>
 `;
-
-exports[`Storyshots Components/Badge Class Name Override 1`] = `
-<div
-  className="psds-badge psds-badge--apearance-default psds-badge--color-neutral psds-theme--dark overriddenEh"
->
-  Class name in snapshot
-</div>
-`;
