@@ -1,176 +1,177 @@
+/* TODO: rename files. Not modules */
 :root {
-  --psColorsBlueBase: #0084bd;
-  --psColorsBlue1: #d9f1ff;
-  --psColorsBlue2: #b9e4fd;
-  --psColorsBlue3: #8ed1f6;
-  --psColorsBlue4: #58b9eb;
-  --psColorsBlue5: #2ea0d6;
-  --psColorsBlue6: #0084bd;
-  --psColorsBlue7: #0074ab;
-  --psColorsBlue8: #006395;
-  --psColorsBlue9: #005685;
-  --psColorsBlue10: #00446b;
+  --ps-colors-blue-base: #0084bd;
+  --ps-colors-blue-1: #d9f1ff;
+  --ps-colors-blue-2: #b9e4fd;
+  --ps-colors-blue-3: #8ed1f6;
+  --ps-colors-blue-4: #58b9eb;
+  --ps-colors-blue-5: #2ea0d6;
+  --ps-colors-blue-6: #0084bd;
+  --ps-colors-blue-7: #0074ab;
+  --ps-colors-blue-8: #006395;
+  --ps-colors-blue-9: #005685;
+  --ps-colors-blue-10: #00446b;
 
-  --psColorsTealBase: #00baa5;
-  --psColorsTeal1: #d5faf5;
-  --psColorsTeal2: #affaef;
-  --psColorsTeal3: #84f0e1;
-  --psColorsTeal4: #5ce6d4;
-  --psColorsTeal5: #2fd1be;
-  --psColorsTeal6: #00baa5;
-  --psColorsTeal7: #00a894;
-  --psColorsTeal8: #009380;
-  --psColorsTeal9: #007a6a;
-  --psColorsTeal10: #006658;
+  --ps-colors-teal-base: #00baa5;
+  --ps-colors-teal-1: #d5faf5;
+  --ps-colors-teal-2: #affaef;
+  --ps-colors-teal-3: #84f0e1;
+  --ps-colors-teal-4: #5ce6d4;
+  --ps-colors-teal-5: #2fd1be;
+  --ps-colors-teal-6: #00baa5;
+  --ps-colors-teal-7: #00a894;
+  --ps-colors-teal-8: #009380;
+  --ps-colors-teal-9: #007a6a;
+  --ps-colors-teal-10: #006658;
 
-  --psColorsGreenBase: #009e52;
-  --psColorsGreen1: #d9fae5;
-  --psColorsGreen2: #adf0c8;
-  --psColorsGreen3: #82e2ab;
-  --psColorsGreen4: #57d08e;
-  --psColorsGreen5: #2bb970;
-  --psColorsGreen6: #009e52;
-  --psColorsGreen7: #008f46;
-  --psColorsGreen8: #007c3a;
-  --psColorsGreen9: #00672e;
-  --psColorsGreen10: #005724;
+  --ps-colors-green-base: #009e52;
+  --ps-colors-green-1: #d9fae5;
+  --ps-colors-green-2: #adf0c8;
+  --ps-colors-green-3: #82e2ab;
+  --ps-colors-green-4: #57d08e;
+  --ps-colors-green-5: #2bb970;
+  --ps-colors-green-6: #009e52;
+  --ps-colors-green-7: #008f46;
+  --ps-colors-green-8: #007c3a;
+  --ps-colors-green-9: #00672e;
+  --ps-colors-green-10: #005724;
 
-  --psColorsLimeBase: #8cca08;
-  --psColorsLime1: #ecffc7;
-  --psColorsLime2: #deffa3;
-  --psColorsLime3: #ccfc7a;
-  --psColorsLime4: #b8f052;
-  --psColorsLime5: #a3e029;
-  --psColorsLime6: #8cca08;
-  --psColorsLime7: #7bb600;
-  --psColorsLime8: #6ba300;
-  --psColorsLime9: #588a00;
-  --psColorsLime10: #4c7700;
+  --ps-colors-lime-base: #8cca08;
+  --ps-colors-lime-1: #ecffc7;
+  --ps-colors-lime-2: #deffa3;
+  --ps-colors-lime-3: #ccfc7a;
+  --ps-colors-lime-4: #b8f052;
+  --ps-colors-lime-5: #a3e029;
+  --ps-colors-lime-6: #8cca08;
+  --ps-colors-lime-7: #7bb600;
+  --ps-colors-lime-8: #6ba300;
+  --ps-colors-lime-9: #588a00;
+  --ps-colors-lime-10: #4c7700;
 
-  --psColorsYellowBase: #fad000;
-  --psColorsYellow1: #fffbcc;
-  --psColorsYellow2: #fff7a8;
-  --psColorsYellow3: #fff380;
-  --psColorsYellow4: #ffeb57;
-  --psColorsYellow5: #ffdf29;
-  --psColorsYellow6: #fad000;
-  --psColorsYellow7: #e2b500;
-  --psColorsYellow8: #cc9e00;
-  --psColorsYellow9: #b28300;
-  --psColorsYellow10: #946500;
+  --ps-colors-yellow-base: #fad000;
+  --ps-colors-yellow-1: #fffbcc;
+  --ps-colors-yellow-2: #fff7a8;
+  --ps-colors-yellow-3: #fff380;
+  --ps-colors-yellow-4: #ffeb57;
+  --ps-colors-yellow-5: #ffdf29;
+  --ps-colors-yellow-6: #fad000;
+  --ps-colors-yellow-7: #e2b500;
+  --ps-colors-yellow-8: #cc9e00;
+  --ps-colors-yellow-9: #b28300;
+  --ps-colors-yellow-10: #946500;
 
-  --psColorsOrangeBase: #f59127;
-  --psColorsOrange1: #ffecd1;
-  --psColorsOrange2: #ffdcad;
-  --psColorsOrange3: #ffcd8a;
-  --psColorsOrange4: #ffba61;
-  --psColorsOrange5: #ffa43e;
-  --psColorsOrange6: #f59127;
-  --psColorsOrange7: #e27a18;
-  --psColorsOrange8: #cb670b;
-  --psColorsOrange9: #b85500;
-  --psColorsOrange10: #9e4100;
+  --ps-colors-orange-base: #f59127;
+  --ps-colors-orange-1: #ffecd1;
+  --ps-colors-orange-2: #ffdcad;
+  --ps-colors-orange-3: #ffcd8a;
+  --ps-colors-orange-4: #ffba61;
+  --ps-colors-orange-5: #ffa43e;
+  --ps-colors-orange-6: #f59127;
+  --ps-colors-orange-7: #e27a18;
+  --ps-colors-orange-8: #cb670b;
+  --ps-colors-orange-9: #b85500;
+  --ps-colors-orange-10: #9e4100;
 
-  --psColorsRedBase: #d21c09;
-  --psColorsRed1: #ffd6d6;
-  --psColorsRed2: #ffb3b3;
-  --psColorsRed3: #ff8a8a;
-  --psColorsRed4: #f86968;
-  --psColorsRed5: #e94a3f;
-  --psColorsRed6: #d21c09;
-  --psColorsRed7: #c00f00;
-  --psColorsRed8: #ab0600;
-  --psColorsRed9: #920000;
-  --psColorsRed10: #750000;
+  --ps-colors-red-base: #d21c09;
+  --ps-colors-red-1: #ffd6d6;
+  --ps-colors-red-2: #ffb3b3;
+  --ps-colors-red-3: #ff8a8a;
+  --ps-colors-red-4: #f86968;
+  --ps-colors-red-5: #e94a3f;
+  --ps-colors-red-6: #d21c09;
+  --ps-colors-red-7: #c00f00;
+  --ps-colors-red-8: #ab0600;
+  --ps-colors-red-9: #920000;
+  --ps-colors-red-10: #750000;
+-
+  --ps-colors-pink-base: #e7558b;
+  --ps-colors-pink-1: #ffddeb;
+  --ps-colors-pink-2: #ffc2db;
+  --ps-colors-pink-3: #ffa3c8;
+  --ps-colors-pink-4: #ff8ab5;
+  --ps-colors-pink-5: #f66fa1;
+  --ps-colors-pink-6: #e7558b;
+  --ps-colors-pink-7: #d1487b;
+  --ps-colors-pink-8: #c13368;
+  --ps-colors-pink-9: #a22554;
+  --ps-colors-pink-10: #8a1a45;
 
-  --psColorsPinkBase: #e7558b;
-  --psColorsPink1: #ffddeb;
-  --psColorsPink2: #ffc2db;
-  --psColorsPink3: #ffa3c8;
-  --psColorsPink4: #ff8ab5;
-  --psColorsPink5: #f66fa1;
-  --psColorsPink6: #e7558b;
-  --psColorsPink7: #d1487b;
-  --psColorsPink8: #c13368;
-  --psColorsPink9: #a22554;
-  --psColorsPink10: #8a1a45;
+  --ps-colors-purple-base: #8359df;
+  --ps-colors-purple-1: #e9deff;
+  --ps-colors-purple-2: #d6c2ff;
+  --ps-colors-purple-3: #c0a3ff;
+  --ps-colors-purple-4: #a883f8;
+  --ps-colors-purple-5: #956ced;
+  --ps-colors-purple-6: #8359df;
+  --ps-colors-purple-7: #7048c6;
+  --ps-colors-purple-8: #5934ac;
+  --ps-colors-purple-9: #482592;
+  --ps-colors-purple-10: #351973;
 
-  --psColorsPurpleBase: #8359df;
-  --psColorsPurple1: #e9deff;
-  --psColorsPurple2: #d6c2ff;
-  --psColorsPurple3: #c0a3ff;
-  --psColorsPurple4: #a883f8;
-  --psColorsPurple5: #956ced;
-  --psColorsPurple6: #8359df;
-  --psColorsPurple7: #7048c6;
-  --psColorsPurple8: #5934ac;
-  --psColorsPurple9: #482592;
-  --psColorsPurple10: #351973;
+  --ps-colors-text-icon-high-on-dark: rgba(255, 255, 255, 0.95);
+  --ps-colors-text-icon-high-on-light: rgba(0, 0, 0, 0.9);
+  --ps-colors-text-icon-low-on-dark: rgba(255, 255, 255, 0.7);
+  --ps-colors-text-icon-low-on-light: rgba(0, 0, 0, 0.65);
 
-  --psColorsTextIconHighOnDark: rgba(255, 255, 255, 0.95);
-  --psColorsTextIconHighOnLight: rgba(0, 0, 0, 0.9);
-  --psColorsTextIconLowOnDark: rgba(255, 255, 255, 0.7);
-  --psColorsTextIconLowOnLight: rgba(0, 0, 0, 0.65);
+  --ps-colors-border-high-on-dark: rgba(255, 255, 255, 0.3);
+  --ps-colors-border-high-on-light: rgba(0, 0, 0, 0.3);
+  --ps-colors-border-low-on-dark: rgba(255, 255, 255, 0.15);
+  --ps-colors-border-low-on-light: rgba(0, 0, 0, 0.15);
 
-  --psColorsBorderHighOnDark: rgba(255, 255, 255, 0.3);
-  --psColorsBorderHighOnLight: rgba(0, 0, 0, 0.3);
-  --psColorsBorderLowOnDark: rgba(255, 255, 255, 0.15);
-  --psColorsBorderLowOnLight: rgba(0, 0, 0, 0.15);
+  --ps-colors-background-dark-1: #0d0f12;
+  --ps-colors-background-dark-2: #181c20;
+  --ps-colors-background-dark-3: #1e2429;
 
-  --psColorsBackgroundDark1: #0d0f12;
-  --psColorsBackgroundDark2: #181c20;
-  --psColorsBackgroundDark3: #1e2429;
+  --ps-colors-background-light-1: #f0f3f5;
+  --ps-colors-background-light-2: #f7f9fa;
+  --ps-colors-background-light-3: #ffffff;
 
-  --psColorsBackgroundLight1: #f0f3f5;
-  --psColorsBackgroundLight2: #f7f9fa;
-  --psColorsBackgroundLight3: #ffffff;
+  --ps-colors-background-utility-base: #b0b0b0;
+  --ps-colors-background-utility-10: rgba(138, 153, 168, 0.1);
+  --ps-colors-background-utility-15: rgba(138, 153, 168, 0.15);
+  --ps-colors-background-utility-20: rgba(138, 153, 168, 0.2);
+  --ps-colors-background-utility-25: rgba(138, 153, 168, 0.25);
+  --ps-colors-background-utility-30: rgba(138, 153, 168, 0.3);
+  --ps-colors-background-utility-40: rgba(138, 153, 168, 0.4);
+  --ps-colors-background-utility-60: rgba(138, 153, 168, 0.6);
 
-  --psColorsBackgroundUtilityBase: #b0b0b0;
-  --psColorsBackgroundUtility10: rgba(138, 153, 168, 0.1);
-  --psColorsBackgroundUtility15: rgba(138, 153, 168, 0.15);
-  --psColorsBackgroundUtility20: rgba(138, 153, 168, 0.2);
-  --psColorsBackgroundUtility25: rgba(138, 153, 168, 0.25);
-  --psColorsBackgroundUtility30: rgba(138, 153, 168, 0.3);
-  --psColorsBackgroundUtility40: rgba(138, 153, 168, 0.4);
-  --psColorsBackgroundUtility60: rgba(138, 153, 168, 0.6);
-
-  --psColorsGradientSkillsBackground: linear-gradient(
+  --ps-colors-gradient-skills-background: linear-gradient(
     90deg,
     #e80a89 0%,
     #f15b2a 100%
   );
-  --psColorsGradientSkillsStop0: #e80a89;
-  --psColorsGradientSkillsStop100: #f15b2a;
-  --psColorsGradientFlowBackground: linear-gradient(
+  --ps-colors-gradient-skills-stop-0: #e80a89;
+  --ps-colors-gradient-skills-stop-100: #f15b2a;
+  --ps-colors-gradient-flow-background: linear-gradient(
     90deg,
     #2968b2 0%,
     #27aae1 100%
   );
-  --psColorsGradientFlowStop0: #2968b2;
-  --psColorsGradientFlowStop100: #27aae1;
+  --ps-colors-gradient-flow-stop-0: #2968b2;
+  --ps-colors-gradient-flow-stop-100: #27aae1;
 
-  --psColorsPrimaryActionBackground: #0074ab;
-  --psColorsPrimaryActionTextDarkTheme: #2ea0d6;
-  --psColorsPrimaryActionTextLightTheme: #0074ab;
+  --ps-colors-primary-action-background: #0074ab;
+  --ps-colors-primary-action-text-dark-theme: #2ea0d6;
+  --ps-colors-primary-action-text-light-theme: #0074ab;
 
-  --psColorsStatusError: #d21c09;
-  --psColorsStatusInfo: #0084bd;
-  --psColorsStatusSuccess: #009e52;
-  --psColorsStatusWarning: #fad000;
+  --ps-colors-status-error: #d21c09;
+  --ps-colors-status-info: #0084bd;
+  --ps-colors-status-success: #009e52;
+  --ps-colors-status-warning: #fad000;
 
-  --psColorsWhite: #ffffff;
-  --psColorsBone: #f2f2f2;
+  --ps-colors-white: #ffffff;
+  --ps-colors-bone: #f2f2f2;
 
-  --psColorsCodeWhite: #f2f2f2;
-  --psColorsCodeGray: #aaaaaa;
-  --psColorsCodeRed: #f26d6d;
-  --psColorsCodeOrange: #ff9466;
-  --psColorsCodeYellow: #ffca80;
-  --psColorsCodeGreen: #b8cc7a;
-  --psColorsCodeTurquoise: #abd9c6;
-  --psColorsCodeBlue: #8ac7e6;
-  --psColorsCodePurple: #e695bd;
-  --psColorsCodeSand: #d99077;
+  --ps-colors-code-white: #f2f2f2;
+  --ps-colors-code-gray: #aaaaaa;
+  --ps-colors-code-red: #f26d6d;
+  --ps-colors-code-orange: #ff9466;
+  --ps-colors-code-yellow: #ffca80;
+  --ps-colors-code-green: #b8cc7a;
+  --ps-colors-code-turquoise: #abd9c6;
+  --ps-colors-code-blue: #8ac7e6;
+  --ps-colors-code-purple: #e695bd;
+  --ps-colors-code-sand: #d99077;
 
-  --psColorsBlack: #000000;
+  --ps-colors-black: #000000;
 }

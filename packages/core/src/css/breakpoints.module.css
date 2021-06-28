@@ -1,8 +1,7 @@
 :root {
-  /* breakpoints */
-  --psBreakpointsXSmall: 640px;
-  --psBreakpointsSmall: 768px;
-  --psBreakpointsMedium: 1024px;
-  --psBreakpointsLarge: 1280px;
-  --psBreakpointsXLarge: 1600px;
+  --ps-breakpoints-xsmall: 640px;
+  --ps-breakpoints-small: 768px;
+  --ps-breakpoints-medium: 1024px;
+  --ps-breakpoints-large: 1280px;
+  --ps-breakpoints-xlarge: 1600px;
 }
