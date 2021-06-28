@@ -438,19 +438,6 @@ exports[`Storyshots Components/Banner On Click Long Text 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Banner Style Class Name 1`] = `
-<div
-  className="psds-banner psds-banner--color-blue someClass"
->
-  <p
-    className="psds-banner__text"
-    data-css-17nixd9=""
-  >
-    Banner text
-  </p>
-</div>
-`;
-
 exports[`Storyshots Components/Banner Style Prop 1`] = `
 <div
   className="psds-banner psds-banner--color-blue"
