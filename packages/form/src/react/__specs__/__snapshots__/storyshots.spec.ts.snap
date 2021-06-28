@@ -43,12 +43,12 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-y5dqt5=""
+              className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
               disabled={false}
             >
               <span
                 aria-hidden={false}
-                data-css-15b13by=""
+                className="psds-button__text"
               >
                 Save
               </span>
@@ -58,12 +58,12 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-1uk30vr=""
+              className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
               disabled={false}
             >
               <span
                 aria-hidden={false}
-                data-css-15b13by=""
+                className="psds-button__text"
               >
                 Cancel
               </span>
@@ -99,12 +99,12 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-y5dqt5=""
+              className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
               disabled={false}
             >
               <span
                 aria-hidden={false}
-                data-css-15b13by=""
+                className="psds-button__text"
               >
                 Save
               </span>
@@ -114,12 +114,12 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-1uk30vr=""
+              className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
               disabled={false}
             >
               <span
                 aria-hidden={false}
-                data-css-15b13by=""
+                className="psds-button__text"
               >
                 Cancel
               </span>
@@ -161,12 +161,12 @@ exports[`Storyshots Components/Form Button Row Single Button 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-y5dqt5=""
+              className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
               disabled={false}
             >
               <span
                 aria-hidden={false}
-                data-css-15b13by=""
+                className="psds-button__text"
               >
                 Only One
               </span>
@@ -874,12 +874,12 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-y5dqt5=""
+              className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
               disabled={false}
             >
               <span
                 aria-hidden={false}
-                data-css-15b13by=""
+                className="psds-button__text"
               >
                 Save
               </span>
@@ -889,12 +889,12 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-7d5932=""
           >
             <button
-              data-css-1uk30vr=""
+              className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
               disabled={false}
             >
               <span
                 aria-hidden={false}
-                data-css-15b13by=""
+                className="psds-button__text"
               >
                 Cancel
               </span>
