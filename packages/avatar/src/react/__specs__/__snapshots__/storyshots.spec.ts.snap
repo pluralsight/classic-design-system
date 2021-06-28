@@ -18,24 +18,6 @@ exports[`Storyshots Components/Avatar Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Avatar Class Name Override 1`] = `
-<div
-  className="psds-avatar psds-avatar--size-medium fakeClassName"
->
-  <div
-    aria-label="Jake Trent"
-    className="psds-avatar__initials"
-    style={
-      Object {
-        "backgroundColor": "#7048C6",
-      }
-    }
-  >
-    J
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/Avatar Gravatar Invalid 1`] = `
 <div
   className="psds-avatar psds-avatar--size-medium"
