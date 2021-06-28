@@ -9,13 +9,13 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
@@ -215,13 +215,13 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
@@ -550,13 +550,13 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
@@ -983,13 +983,13 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
@@ -1225,13 +1225,13 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
@@ -1658,13 +1658,13 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
