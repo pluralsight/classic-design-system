@@ -5,8 +5,7 @@ import {
 import {
   ValueOf,
   isString,
-  useMatchMedia,
-  HTMLPropsFor
+  useMatchMedia
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -126,7 +125,14 @@ type MetadataNode =
 
 // NOTE: the `title` prop clashes with a native html attr so we're exclude
 //       it from being mistakenly used in any child component
-interface RowProps extends Omit<HTMLPropsFor<'div'>, 'title'> {
+interface RowProps
+  extends Omit<
+    React.DetailedHTMLProps<
+      React.HTMLAttributes<HTMLDivElement>,
+      HTMLDivElement
+    >,
+    'title'
+  > {
   actionBar?: React.ReactNode[] // <Button size="small" appearance="secondary" />
   actionBarVisible?: boolean
   fullOverlay?: React.ReactNode | React.ReactElement<typeof FullOverlayLink>
@@ -311,7 +317,7 @@ const FullOverlayFocusManager: React.FC<FullOverlayFocusManagerProps> = props =>
 }
 
 interface FullOverlayProps
-  extends HTMLPropsFor<'div'>,
+  extends React.HTMLAttributes<HTMLDivElement>,
     Pick<RowProps, 'fullOverlayVisible'> {
   isFocused: boolean
 }
@@ -323,13 +329,13 @@ const FullOverlay: React.FC<FullOverlayProps> = props => {
   )
 }
 
-interface FullOverlayLinkProps extends HTMLPropsFor<'span'> {}
+interface FullOverlayLinkProps extends React.HTMLAttributes<HTMLSpanElement> {}
 const FullOverlayLink: React.FC<FullOverlayLinkProps> = props => {
   return <span {...styles.fullOverlayLink()} {...props} />
 }
 FullOverlayLink.displayName = 'Row.FullOverlayLink'
 
-interface ImageProps extends HTMLPropsFor<'div'> {
+interface ImageProps extends React.HTMLAttributes<HTMLDivElement> {
   src: string
 }
 const Image: React.FC<ImageProps> = props => {
@@ -339,14 +345,14 @@ const Image: React.FC<ImageProps> = props => {
 
 Image.displayName = 'Row.Image'
 
-interface ImageLinkProps extends HTMLPropsFor<'span'> {}
+interface ImageLinkProps extends React.HTMLAttributes<HTMLSpanElement> {}
 const ImageLink: React.FC<ImageLinkProps> = props => {
   return <span {...styles.imageLink()} {...props} />
 }
 ImageLink.displayName = 'Row.ImageLink'
 
 interface MetadataProps
-  extends HTMLPropsFor<'div'>,
+  extends React.HTMLAttributes<HTMLDivElement>,
     Required<Pick<RowProps, 'size'>> {}
 const Metadata: React.FC<MetadataProps> = props => {
   const { size, ...rest } = props
@@ -355,12 +361,12 @@ const Metadata: React.FC<MetadataProps> = props => {
   return <div {...styles.metadata(themeName, { size })} {...rest} />
 }
 
-interface MetadataDatumProps extends HTMLPropsFor<'span'> {}
+interface MetadataDatumProps extends React.HTMLAttributes<HTMLSpanElement> {}
 const MetadataDatum: React.FC<MetadataDatumProps> = props => {
   return <span {...styles.metadataDatum()} {...props} />
 }
 
-interface MetadataDotProps extends HTMLPropsFor<'span'> {}
+interface MetadataDotProps extends React.HTMLAttributes<HTMLSpanElement> {}
 const MetadataDot: React.FC<MetadataDotProps> = props => {
   return (
     <span {...styles.metadataDot()} {...props} aria-hidden>
@@ -369,18 +375,18 @@ const MetadataDot: React.FC<MetadataDotProps> = props => {
   )
 }
 
-interface OverlaysProps extends HTMLPropsFor<'div'> {}
+interface OverlaysProps extends React.HTMLAttributes<HTMLDivElement> {}
 const Overlays: React.FC<OverlaysProps> = props => {
   return <div {...styles.overlays()} {...props} />
 }
 
-interface ProgressProps extends HTMLPropsFor<'div'> {}
+interface ProgressProps extends React.HTMLAttributes<HTMLDivElement> {}
 const Progress: React.FC<ProgressProps> = props => {
   return <div {...styles.progress()} {...props} />
 }
 
 interface ProgressBarProps
-  extends HTMLPropsFor<'div'>,
+  extends React.HTMLAttributes<HTMLDivElement>,
     Required<Pick<RowProps, 'progress'>> {}
 const ProgressBar: React.FC<ProgressBarProps> = props => {
   const { progress = 0, ...rest } = props
@@ -395,11 +401,11 @@ const ProgressBar: React.FC<ProgressBarProps> = props => {
   )
 }
 
-interface TextProps extends HTMLPropsFor<'span'> {}
+interface TextProps extends React.HTMLAttributes<HTMLSpanElement> {}
 const Text: React.FC<TextProps> = props => <span {...props} />
 Text.displayName = 'Row.Text'
 
-interface TextLinkProps extends HTMLPropsFor<'span'> {
+interface TextLinkProps extends React.HTMLAttributes<HTMLSpanElement> {
   children: React.ReactElement<'a'>
   truncated?: boolean
 }
@@ -430,7 +436,7 @@ const TextLink: React.FC<TextLinkProps> = props => {
 TextLink.displayName = 'Row.TextLink'
 
 interface TitleProps
-  extends HTMLPropsFor<'div'>,
+  extends React.HTMLAttributes<HTMLDivElement>,
     Required<Pick<RowProps, 'size'>> {
   truncated?: boolean
 }
@@ -465,7 +471,7 @@ const Title: React.FC<TitleProps> = props => {
 
 interface WordsProps
   extends Pick<RowProps, 'actionBar' | 'image' | 'size'>,
-    HTMLPropsFor<'div'> {}
+    React.HTMLAttributes<HTMLDivElement> {}
 const Words: React.FC<WordsProps> = props => {
   const { actionBar, image, size, ...rest } = props
   return <div {...styles.words({ actionBar, image, size })} {...rest} />

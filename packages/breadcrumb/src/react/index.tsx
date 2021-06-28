@@ -1,9 +1,6 @@
 import Button from '@pluralsight/ps-design-system-button'
 import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
-import {
-  RefForwardingComponent,
-  classNames
-} from '@pluralsight/ps-design-system-util'
+import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import '../css/index.css'
@@ -11,7 +8,7 @@ import '../css/index.css'
 interface BreadcrumbProps
   extends Omit<
     React.HTMLAttributes<HTMLDivElement>,
-    'disabled' | 'href' | 'onClick'
+    'disabled' | 'href' | 'onClick' | 'target' | 'rel'
   > {
   disabled?: boolean
   href?: string
@@ -20,15 +17,6 @@ interface BreadcrumbProps
     evt: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement, MouseEvent>
   ) => void
 }
-
-interface BreadcrumbStatics {}
-
-interface BreadcrumbComponent
-  extends RefForwardingComponent<
-    BreadcrumbProps,
-    HTMLAnchorElement | HTMLButtonElement,
-    BreadcrumbStatics
-  > {}
 
 const Breadcrumb = React.forwardRef<
   HTMLAnchorElement | HTMLButtonElement,
@@ -51,6 +39,6 @@ const Breadcrumb = React.forwardRef<
       </Button>
     </div>
   )
-}) as BreadcrumbComponent
+})
 
 export default Breadcrumb

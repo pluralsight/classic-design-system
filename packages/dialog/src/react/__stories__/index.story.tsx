@@ -5,7 +5,6 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 
 import Button from '@pluralsight/ps-design-system-button'
 import * as Text from '@pluralsight/ps-design-system-text'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import Dialog from '../index'
 
@@ -74,7 +73,7 @@ export const TailPositions: Story = () => (
   </div>
 )
 
-interface ModalStoryProps extends HTMLPropsFor<'div'> {
+interface ModalStoryProps extends React.HTMLAttributes<HTMLDivElement> {
   children: (
     storyProps: Record<string, unknown>,
     callbacks: Record<string, unknown>

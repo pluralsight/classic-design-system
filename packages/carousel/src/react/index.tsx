@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-handler-names */
 import {
   combineFns,
-  HTMLPropsFor,
   ValueOf,
   useResizeObserver
 } from '@pluralsight/ps-design-system-util'
@@ -37,7 +36,7 @@ const styles = {
   item: () => glamor.css(stylesheet['.psds-carousel__item'])
 }
 
-interface CarouselProps extends HTMLPropsFor<'div'> {
+interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode
   controlPrev?: React.ReactNode
   controlNext?: React.ReactNode
@@ -157,7 +156,7 @@ export default Carousel
 Carousel.Control = Control
 Carousel.sizes = vars.sizes
 
-interface ItemProps extends HTMLPropsFor<'li'> {
+interface ItemProps extends React.HTMLAttributes<HTMLLIElement> {
   _onFocus?: (evt: React.FocusEvent) => void
 }
 
@@ -179,7 +178,7 @@ Item.displayName = 'Carousel.Item'
 Carousel.Item = Item
 
 interface TrackProps
-  extends HTMLPropsFor<'ul'>,
+  extends React.HTMLAttributes<HTMLUListElement>,
     Required<Pick<UseSwipeOpts, 'onSwipeLeft' | 'onSwipeRight'>> {}
 const Track: React.FC<TrackProps> = props => {
   const ref = React.createRef<HTMLUListElement>()

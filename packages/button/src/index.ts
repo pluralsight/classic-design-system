@@ -1,3 +1,3 @@
-export { default } from './react/index'
+export { default, ButtonProps } from './react/index'
 export * from './vars/index'
 

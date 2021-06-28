@@ -2,7 +2,6 @@ import DSButton from '@pluralsight/ps-design-system-button'
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import { P } from '@pluralsight/ps-design-system-text'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   RefFor,
   ValueOf,
@@ -17,7 +16,8 @@ const ColorContext = React.createContext<ValueOf<typeof vars.colors>>(
   vars.colors.blue
 )
 
-interface BannerProps extends Omit<HTMLPropsFor<'div'>, 'onClick'> {
+interface BannerProps
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'> {
   color?: ValueOf<typeof vars.colors>
   onClick?: (evt: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
@@ -55,52 +55,26 @@ const Banner = React.forwardRef((props, ref) => {
   )
 }) as BannerComponent
 
-Banner.displayName = 'Banner'
-
-interface AnchorProps extends HTMLPropsFor<'a'> {
-  href: string
-}
-interface ButtonProps extends HTMLPropsFor<'button'> {
-  href?: undefined
-}
-type ButtonComponent = React.ForwardRefExoticComponent<unknown> & {
-  (props: AnchorProps, ref?: RefFor<'a'>): JSX.Element
-  (props: ButtonProps, ref?: RefFor<'button'>): JSX.Element
-}
 const Button = React.forwardRef<
   HTMLAnchorElement | HTMLButtonElement,
-  AnchorProps | ButtonProps
+  React.ComponentProps<typeof DSButton>
 >((props, ref) => {
   const { className, ...rest } = props
   const color = React.useContext(ColorContext)
-
-  return 'href' in props ? (
+  return (
     <DSButton
-      {...(rest as HTMLPropsFor<'a'>)}
+      {...(rest as React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement>)}
       appearance={DSButton.appearances.stroke}
       className={classNames(
         'psds-banner__button',
         `psds-banner__button--color-${color}`,
         className
       )}
-      href={props.href || ''}
-      ref={ref as RefFor<'a'>}
-      size={DSButton.sizes.small}
-    />
-  ) : (
-    <DSButton
-      {...(rest as HTMLPropsFor<'button'>)}
-      appearance={DSButton.appearances.stroke}
-      className={classNames(
-        'psds-banner__button',
-        `psds-banner__button--color-${color}`,
-        className
-      )}
-      ref={ref as RefFor<'button'>}
+      ref={ref as any}
       size={DSButton.sizes.small}
     />
   )
-}) as ButtonComponent
+}) as React.ForwardRefExoticComponent<React.ComponentProps<typeof DSButton>>
 
 Button.displayName = 'Button'
 

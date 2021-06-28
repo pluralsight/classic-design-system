@@ -1,8 +1,11 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
-import { useTheme } from '@pluralsight/ps-design-system-theme'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
 
 import stylesheet from '../css/index'
 import { toPercentageString } from '../js/index'
@@ -10,14 +13,20 @@ import { toPercentageString } from '../js/index'
 const glamor = glamorDefault || glamorExports
 
 const styles = {
-  bg: ({ themeName }) =>
+  bg: ({ themeName }: { themeName: ValueOf<typeof themeNames> }) =>
     glamor.compose(
       glamor.css(stylesheet['.psds-linearprogress__bg']),
       glamor.css(
         stylesheet[`.psds-linearprogress__bg.psds-theme--${themeName}`]
       )
     ),
-  fg: ({ themeName, value }) => {
+  fg: ({
+    themeName,
+    value
+  }: {
+    themeName: ValueOf<typeof themeNames>
+    value: string
+  }) => {
     const percent = toPercentageString(value)
     const isComplete = percent === '100%'
 
@@ -33,7 +42,7 @@ const styles = {
   }
 }
 
-interface LinearProgressProps extends HTMLPropsFor<'div'> {
+interface LinearProgressProps extends React.HTMLAttributes<HTMLDivElement> {
   value?: number
   'aria-label': string
 }
@@ -67,7 +76,7 @@ const LinearProgress: React.FC<LinearProgressProps> = ({
           {value < 100 ? `${Math.round(value)}%` : 'complete'}
         </ScreenReaderOnly>
       ) : null}
-      <div {...styles.fg({ themeName, value })} />
+      <div {...styles.fg({ themeName, value: `${value}` })} />
     </div>
   )
 }

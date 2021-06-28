@@ -4,7 +4,7 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -55,7 +55,7 @@ const styles = {
   inner: () => glamor.css(stylesheet['.psds-dropdown__field-inner'])
 }
 
-interface DropdownButtonProps extends HTMLPropsFor<'button'> {
+interface DropdownButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean

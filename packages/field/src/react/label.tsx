@@ -1,4 +1,4 @@
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import {
   names as themeNames,
   useTheme
@@ -18,7 +18,9 @@ const styles = {
     )
 }
 
-interface LabelProps extends HTMLPropsFor<'label'> {}
+interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {
+  htmlFor?: string
+}
 
 const Label = React.forwardRef<HTMLLabelElement, LabelProps>((props, ref) => {
   const { children, ...rest } = props

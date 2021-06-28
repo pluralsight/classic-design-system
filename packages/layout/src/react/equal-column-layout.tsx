@@ -1,4 +1,4 @@
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -24,7 +24,7 @@ const styleColumn = (count: ValueOf<typeof vars.counts>) => {
   )
 }
 
-interface EqualColumnLayoutProps extends HTMLPropsFor<'div'> {
+interface EqualColumnLayoutProps extends React.HTMLAttributes<HTMLDivElement> {
   count: ValueOf<typeof vars.counts>
 }
 interface EqualColumnLayoutStatics {

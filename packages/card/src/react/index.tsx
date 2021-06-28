@@ -6,11 +6,9 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
-  canUseDOM,
-  omit
+  canUseDOM
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
@@ -26,22 +24,25 @@ if (canUseDOM()) polyfillFocusWithin(document)
 
 const styles = {
   actionBar: ({
-    actionBarVisible: visible,
+    actionBarVisible,
     fullOverlay
-  }: Partial<CardProps>) => {
+  }: {
+    actionBarVisible?: boolean
+    fullOverlay?: boolean
+  }) => {
     const label = 'psds-card__action-bar'
 
     return glamor.compose(
       glamor.css(stylesheet[`.${label}`]),
       fullOverlay &&
-        !visible &&
+        !actionBarVisible &&
         glamor.css(
           stylesheet[`.${label}--fullOverlay.${label}--no-actionBarVisible`]
         ),
-      visible && glamor.css(stylesheet[`.${label}--actionBarVisible`])
+      actionBarVisible && glamor.css(stylesheet[`.${label}--actionBarVisible`])
     )
   },
-  actionButton: ({ disabled }: Partial<ActionBarActionProps>) => {
+  actionButton: (disabled?: boolean) => {
     const label = 'psds-card__action-bar__button'
 
     return glamor.compose(
@@ -54,12 +55,13 @@ const styles = {
 
   card: () => glamor.css(stylesheet['.psds-card']),
 
-  fullOverlay: ({ fullOverlayVisible: visible }: Partial<CardProps>) => {
+  fullOverlay: (fullOverlayVisible?: boolean) => {
     const label = 'psds-card__full-overlay'
 
     return glamor.compose(
       glamor.css(stylesheet[`.${label}`]),
-      visible && glamor.css(stylesheet[`.${label}--fullOverlayVisible`])
+      fullOverlayVisible &&
+        glamor.css(stylesheet[`.${label}--fullOverlayVisible`])
     )
   },
   fullOverlayLink: () =>
@@ -69,7 +71,7 @@ const styles = {
   imageLink: () => glamor.css(stylesheet['.psds-card__image-link']),
 
   metadata: (
-    { size }: Partial<MetaDataProps>,
+    size: ValueOf<typeof vars.sizes>,
     themeName: ValueOf<typeof themeNames>
   ) => {
     const label = 'psds-card__metadata'
@@ -83,7 +85,7 @@ const styles = {
   metadataDatum: () => glamor.css(stylesheet['.psds-card__metadata__datum']),
   metadataDot: () => glamor.css(stylesheet['.psds-card__metadata__dot']),
 
-  overlays: ({ size }: Partial<CardProps>) => {
+  overlays: (size: ValueOf<typeof vars.sizes>) => {
     const label = 'psds-card__overlays'
 
     return glamor.compose(
@@ -93,7 +95,7 @@ const styles = {
   },
 
   progress: () => glamor.css(stylesheet['.psds-card__progress']),
-  progressBar: ({ progress }: Partial<CardProps>) => {
+  progressBar: (progress: number) => {
     const label = 'psds-card__progress__bar'
     const percent = toPercentageString(progress || 0)
     const isCompleted = percent === '100%'
@@ -127,7 +129,7 @@ const styles = {
     )
   },
 
-  titleContainer: ({ size }: Partial<CardProps>) => {
+  titleContainer: (size: ValueOf<typeof vars.sizes>) => {
     const label = 'psds-card__title-container'
 
     return glamor.compose(
@@ -137,7 +139,7 @@ const styles = {
   }
 }
 
-interface ActionBarActionProps extends HTMLPropsFor<'button'> {
+interface ActionBarActionProps extends React.HTMLAttributes<HTMLButtonElement> {
   disabled?: boolean
   icon?: React.ReactElement<typeof Icon>
   title: string
@@ -154,7 +156,7 @@ const ActionBarAction = React.forwardRef((props, ref) => {
   const ariaLabel = props['aria-label'] || title
   return (
     <button
-      {...styles.actionButton(props)}
+      {...styles.actionButton(props.disabled)}
       {...rest}
       aria-label={ariaLabel}
       ref={ref}
@@ -166,13 +168,13 @@ const ActionBarAction = React.forwardRef((props, ref) => {
 }) as ActionBarActionComponent
 ActionBarAction.displayName = 'Card.Action'
 
-const FullOverlayLink: React.FC<HTMLPropsFor<'span'>> = props => (
-  <span {...styles.fullOverlayLink()} {...props} />
-)
+const FullOverlayLink: React.FC<
+  React.HTMLAttributes<HTMLSpanElement>
+> = props => <span {...styles.fullOverlayLink()} {...props} />
 
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
-interface ImageProps extends HTMLPropsFor<'div'> {
+interface ImageProps extends React.HTMLAttributes<HTMLDivElement> {
   alt?: string
   src: string
 }
@@ -189,12 +191,12 @@ const Image: React.FC<ImageProps> = props => {
 }
 Image.displayName = 'Card.Image'
 
-const ImageLink: React.FC<HTMLPropsFor<'span'>> = props => (
+const ImageLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
   <span {...styles.imageLink()} {...props} />
 )
 ImageLink.displayName = 'Card.ImageLink'
 
-interface TagProps extends HTMLPropsFor<'div'> {
+interface TagProps extends React.HTMLAttributes<HTMLDivElement> {
   icon?: React.ReactElement<typeof Icon>
 }
 const Tag: React.FC<TagProps> = ({ children, icon, ...rest }) => (
@@ -216,16 +218,18 @@ const Tag: React.FC<TagProps> = ({ children, icon, ...rest }) => (
 
 Tag.displayName = 'Card.Tag'
 
-const Text: React.FC<HTMLPropsFor<'span'>> = props => <span {...props} />
+const Text: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => (
+  <span {...props} />
+)
 Text.displayName = 'Card.Text'
 
-const TextLink: React.FC<HTMLPropsFor<'span'>> = props => {
+const TextLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
   const themeName = useTheme()
   return <span {...styles.textLink(themeName)} {...props} />
 }
 TextLink.displayName = 'Card.TextLink'
 
-const Title: React.FC<HTMLPropsFor<'div'>> = props => {
+const Title: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
   const themeName = useTheme()
   const { children, ...rest } = props
 
@@ -245,7 +249,7 @@ const MetaData: React.FC<MetaDataProps> = props => {
   const { metadata, size, ...rest } = props
   const themeName = useTheme()
   return (
-    <div {...styles.metadata(props, themeName)} {...rest}>
+    <div {...styles.metadata(size, themeName)} {...rest}>
       {metadata.map((m, i) => [
         <span key={`datum${i}`} {...styles.metadataDatum()}>
           {m}
@@ -261,14 +265,7 @@ const MetaData: React.FC<MetaDataProps> = props => {
 }
 
 export interface CardProps
-  extends Omit<
-      React.DetailedHTMLProps<
-        React.HTMLAttributes<HTMLDivElement>,
-        HTMLDivElement
-      >,
-      'title'
-    >,
-    Record<string, unknown> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'title'> {
   actionBar?: React.ReactElement<typeof ActionBarAction>[]
   actionBarVisible?: boolean
   bonusBar?: React.ReactNode
@@ -295,69 +292,58 @@ interface CardStatics {
   Title: typeof Title
 }
 const Card: React.FC<CardProps> & CardStatics = props => {
-  const htmlProps = omit<
-    CardProps,
-    [
-      'actionBar',
-      'actionBarVisible',
-      'bonusBar',
-      'fullOverlay',
-      'fullOverlayVisible',
-      'image',
-      'metadata1',
-      'metadata2',
-      'progress',
-      'size',
-      'tag',
-      'title'
-    ]
-  >(props, [
-    'actionBar',
-    'actionBarVisible',
-    'bonusBar',
-    'fullOverlay',
-    'fullOverlayVisible',
-    'image',
-    'metadata1',
-    'metadata2',
-    'progress',
-    'size',
-    'tag',
-    'title'
-  ])
-  const size = props.size || sizes.medium
+  const {
+    actionBar,
+    actionBarVisible,
+    bonusBar,
+    fullOverlay,
+    fullOverlayVisible,
+    image,
+    metadata1,
+    metadata2,
+    progress,
+    size = sizes.medium,
+    tag,
+    title,
+    ...rest
+  } = props
   return (
-    <div {...styles.card()} {...htmlProps}>
-      <div {...styles.overlays({ size })}>
-        {props.image ? props.image : null}
+    <div {...styles.card()} {...rest}>
+      <div {...styles.overlays(size)}>
+        {image || null}
 
-        {props.fullOverlay ? (
-          <div {...styles.fullOverlay(props)}>{props.fullOverlay}</div>
+        {fullOverlay ? (
+          <div {...styles.fullOverlay(fullOverlayVisible)}>{fullOverlay}</div>
         ) : null}
 
-        {Array.isArray(props.actionBar) && props.actionBar.length > 0 ? (
-          <div {...styles.actionBar(props)}>{props.actionBar}</div>
+        {Array.isArray(actionBar) && actionBar.length > 0 ? (
+          <div
+            {...styles.actionBar({
+              actionBarVisible,
+              fullOverlay: Boolean(fullOverlay)
+            })}
+          >
+            {actionBar}
+          </div>
         ) : null}
 
-        {props.bonusBar ? (
-          <div {...styles.bonusBar()}>{props.bonusBar}</div>
-        ) : null}
+        {bonusBar ? <div {...styles.bonusBar()}>{bonusBar}</div> : null}
 
-        {props.tag}
+        {tag}
 
-        {props.progress ? (
+        {progress ? (
           <div {...styles.progress()}>
             <div
-              {...styles.progressBar(props)}
-              aria-label={`${toPercentageString(props.progress)} complete`}
+              {...styles.progressBar(progress)}
+              aria-label={`${toPercentageString(progress)} complete`}
             />
           </div>
         ) : null}
       </div>
 
-      <div {...styles.titleContainer({ size })}>{props.title}</div>
-      {props.metadata1 && <MetaData size={size} metadata={props.metadata1} />}
-      {props.metadata2 && <MetaData size={size} metadata={props.metadata2} />}
+      <div {...styles.titleContainer(size)}>{title}</div>
+      {metadata1 && <MetaData size={size} metadata={metadata1} />}
+      {metadata2 && <MetaData size={size} metadata={metadata2} />}
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { colorsPink, layout } from '@pluralsight/ps-design-system-core'
 import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+
 import { Story } from '@storybook/react/types-6-0'
 import glamorDefault, * as glamorExports from 'glamor'
 
@@ -40,7 +40,7 @@ export const SetWidthDecorator = (Story: Story) => {
 }
 
 interface PillsProps
-  extends Omit<HTMLPropsFor<'div'>, 'ref'>,
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'ref'>,
     React.RefAttributes<HTMLDivElement> {}
 
 interface PillsStatics {

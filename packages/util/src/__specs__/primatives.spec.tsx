@@ -4,7 +4,6 @@ import { render, screen } from '@testing-library/react'
 import React from 'react'
 
 import {
-  HTMLPropsFor,
   forwardRefWithAs,
   forwardRefWithAsAndStatics,
   forwardRefWithStatics,
@@ -151,13 +150,13 @@ describe('utils/primatives', () => {
   })
 
   describe('#forwardRefWithStatics', () => {
-    interface Props extends HTMLPropsFor<'div'> {}
+    interface Props extends React.HTMLAttributes<HTMLDivElement> {}
     interface Statics {
       Nested: typeof Nested
     }
 
     const Nested: React.FC = props => <div {...props} />
-    const Compound = forwardRefWithStatics<Props, 'div', Statics>(
+    const Compound = forwardRefWithStatics<Props, HTMLDivElement, Statics>(
       (props, ref) => <div ref={ref} {...props} />
     )
     Compound.Nested = Nested

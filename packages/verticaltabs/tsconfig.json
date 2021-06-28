@@ -3,6 +3,7 @@
   "compilerOptions": {
     "allowJs": true,
     "rootDir": null,
-    "jsx": "react"
+    "jsx": "react",
+    "strict": true
   }
 }

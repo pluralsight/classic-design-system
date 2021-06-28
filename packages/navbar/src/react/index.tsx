@@ -1,6 +1,6 @@
 import { MenuIcon } from '@pluralsight/ps-design-system-icon'
 import NavItem from '@pluralsight/ps-design-system-navitem'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -17,7 +17,7 @@ const styles = {
   utility: () => glamor.css(stylesheet['.psds-navbar__utility'])
 }
 
-interface NavBarProps extends HTMLPropsFor<'div'> {
+interface NavBarProps extends React.HTMLAttributes<HTMLDivElement> {
   brand?: React.ReactNode
   items?: React.ReactNode
   onMobileMenuClick?: React.MouseEventHandler

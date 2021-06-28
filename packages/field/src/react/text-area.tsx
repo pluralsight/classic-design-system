@@ -1,4 +1,3 @@
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -11,7 +10,11 @@ const styles = {
   textArea: () => glamor.css(stylesheet['.psds-field__text-area'])
 }
 
-interface TextAreaProps extends HTMLPropsFor<'textarea'> {
+interface TextAreaProps
+  extends React.DetailedHTMLProps<
+    React.TextareaHTMLAttributes<HTMLTextAreaElement>,
+    HTMLTextAreaElement
+  > {
   renderContainer?: typeof defaultRenderContainer
 }
 
@@ -28,12 +31,12 @@ const TextArea = React.forwardRef<HTMLTextAreaElement, TextAreaProps>(
       </Container>
     )
   }
-)
+) as React.ForwardRefExoticComponent<TextAreaProps>
 TextArea.displayName = 'Field.TextArea'
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
-  HTMLPropsFor<'div'>
+  React.HTMLAttributes<HTMLDivElement>
 >((props, ref) => <div ref={ref} {...props} />)
 
 export default TextArea

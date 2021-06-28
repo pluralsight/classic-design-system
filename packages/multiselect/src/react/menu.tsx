@@ -1,6 +1,5 @@
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
 
 import stylesheet from '../css/index'
 
@@ -21,7 +20,8 @@ const styles = {
     )
 }
 
-interface MenuProps extends Omit<HTMLPropsFor<'ul'>, 'ref'> {
+interface MenuProps
+  extends Omit<React.HTMLAttributes<HTMLUListElement>, 'ref'> {
   open: boolean
 }
 interface MenuStatics {
@@ -36,7 +36,7 @@ const Menu = React.forwardRef<HTMLUListElement, MenuProps>((props, ref) => {
   return <ul ref={ref} {...rest} {...styles.menu({ open })} />
 }) as MenuComponent
 
-interface ItemProps extends Omit<HTMLPropsFor<'li'>, 'ref'> {
+interface ItemProps extends Omit<React.HTMLAttributes<HTMLLIElement>, 'ref'> {
   highlighted: boolean
 }
 const Item = React.forwardRef<HTMLLIElement, ItemProps>((props, ref) => {

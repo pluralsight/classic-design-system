@@ -1,7 +1,6 @@
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
@@ -59,7 +58,7 @@ const styles: { [key: string]: StyleFn } = {
     )
 }
 
-interface CircularProgressProps extends HTMLPropsFor<'div'> {
+interface CircularProgressProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: ValueOf<typeof vars.sizes>
   value?: number
   'aria-label': string

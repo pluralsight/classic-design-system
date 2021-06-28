@@ -1,7 +1,6 @@
 import Halo from '@pluralsight/ps-design-system-halo'
 import { WarningIcon } from '@pluralsight/ps-design-system-icon'
 import {
-  HTMLPropsFor,
   ValueOf,
   combineFns,
   forwardRefWithStatics
@@ -44,7 +43,7 @@ const styles = {
 type InputElements = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
 
 export interface FieldProps
-  extends Omit<HTMLPropsFor<'div'>, 'prefix' | 'ref'> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'prefix' | 'ref'> {
   disabled?: boolean
   error?: boolean
   label?: React.ReactNode
@@ -156,7 +155,7 @@ const Field = forwardRefWithStatics<FieldProps, HTMLDivElement, FieldStatics>(
 
 const defaultRenderContainer = React.forwardRef<
   HTMLDivElement,
-  Omit<HTMLPropsFor<'div'>, 'ref'>
+  Omit<React.HTMLAttributes<HTMLDivElement>, 'ref'>
 >((props, ref) => <div ref={ref} {...props} />)
 
 const defaultRenderTag: React.FC = props => <div {...props} />

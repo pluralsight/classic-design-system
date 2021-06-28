@@ -1,5 +1,4 @@
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf
 } from '@pluralsight/ps-design-system-util'
@@ -22,7 +21,7 @@ const style: { [name: string]: StyleFn } = {
     )
 }
 
-export interface IconProps extends HTMLPropsFor<'div'> {
+export interface IconProps extends React.HTMLAttributes<HTMLDivElement> {
   color?: ValueOf<typeof colors>
   size?: ValueOf<typeof sizes>
 }

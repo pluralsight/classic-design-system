@@ -1,8 +1,4 @@
-import {
-  HTMLPropsFor,
-  RefFor,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
+import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -18,7 +14,7 @@ const styles = {
   itemContainer: ({
     active,
     disabled
-  }: Pick<BaseItemProps, 'active' | 'disabled'>) =>
+  }: Pick<ItemProps, 'active' | 'disabled'>) =>
     glamor.compose(
       glamor.css(stylesheet['.psds-actionmenu__item-container']),
       disabled && glamor.css(stylesheet['.psds-actionmenu__item--disabled']),
@@ -41,7 +37,7 @@ const styles = {
     )
 }
 
-interface BaseItemProps {
+interface ItemProps extends React.HTMLAttributes<HTMLLIElement> {
   active?: boolean
   className?: string
   disabled?: boolean
@@ -49,26 +45,13 @@ interface BaseItemProps {
   onClick?: (event: React.MouseEvent, value?: React.ReactText) => void
   origin?: ValueOf<typeof origins>
   value?: React.ReactText
+  ref?: RefFor<'li'>
+  tagName?: 'a' | 'button'
+  href?: string
+  target?: string
+  rel?: string
 }
 
-interface AnchorProps
-  extends BaseItemProps,
-    Omit<HTMLPropsFor<'a'>, 'onClick' | 'ref'> {
-  ref?: RefFor<'li'>
-  tagName?: 'a'
-}
-interface ButtonProps
-  extends BaseItemProps,
-    Omit<HTMLPropsFor<'button'>, 'onClick' | 'ref' | 'value'> {
-  ref?: RefFor<'li'>
-  tagName: 'button'
-}
-
-type ItemProps = AnchorProps | ButtonProps
-type ItemComponent = React.ForwardRefExoticComponent<unknown> & {
-  (props: AnchorProps, ref?: RefFor<'li'>): JSX.Element
-  (props: ButtonProps, ref?: RefFor<'li'>): JSX.Element
-}
 export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
   (props, forwardedRef) => {
     const {
@@ -79,7 +62,7 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
       nested,
       onClick,
       origin,
-      tagName = tagNames.a,
+      tagName: Component = tagNames.a,
       value,
       ...rest
     } = props
@@ -137,27 +120,6 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
       onClose && onClose(evt, value) // : e.currentTarget.parentNode.focus()
     }
 
-    const isAnchor = tagName === 'a'
-
-    const Wrapper: React.FC = wrapperProps =>
-      isAnchor ? (
-        <a
-          onClick={handleClick as React.MouseEventHandler<HTMLAnchorElement>}
-          role="menuitem"
-          aria-disabled={Boolean(disabled)}
-          {...(rest as HTMLPropsFor<'a'>)}
-          {...wrapperProps}
-        />
-      ) : (
-        <button
-          disabled={disabled}
-          onClick={handleClick as React.MouseEventHandler<HTMLButtonElement>}
-          role="menuitem"
-          {...(rest as HTMLPropsFor<'button'>)}
-          {...wrapperProps}
-        />
-      )
-
     return (
       <li
         {...styles.itemContainer({ active, disabled })}
@@ -169,12 +131,22 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
         role="none"
         tabIndex={!disabled ? -1 : undefined}
       >
-        <Wrapper {...styles.item({ hasSubMenu })} aria-haspopup={!!nested}>
+        <Component
+          {...styles.item({ hasSubMenu })}
+          aria-haspopup={!!nested}
+          onClick={handleClick}
+          role="menuitem"
+          aria-disabled={Boolean(disabled)}
+          {...(Component === 'button' && { disabled })}
+          {...(rest as React.HTMLAttributes<
+            HTMLAnchorElement | HTMLButtonElement
+          >)}
+        >
           <span className={className} {...styles.inner()}>
             {children}
             {hasSubMenu && <Arrow />}
           </span>
-        </Wrapper>
+        </Component>
 
         <ul
           {...styles.nested({ origin: origin || originContext })}
@@ -188,6 +160,6 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
       </li>
     )
   }
-) as ItemComponent
+) as React.ForwardRefExoticComponent<ItemProps>
 
 Item.displayName = 'ActionMenu.Item'

@@ -1,5 +1,6 @@
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import Theme from '@pluralsight/ps-design-system-theme'
+import { RefFor } from '@pluralsight/ps-design-system-util'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
@@ -211,7 +212,7 @@ export const ExampleAutofocus: Story = () => {
       if (ref && ref.current) ref.current.focus()
     }, [])
 
-    return <Button ref={ref}>Should be focused</Button>
+    return <Button ref={ref as RefFor<'button'>}>Should be focused</Button>
   }
 
   return <Example />
@@ -248,7 +249,7 @@ export const LoadingTransitionStartTrue: Story = () => {
     }, [loading])
 
     return (
-      <Button aria-label={loading && 'Loading...'} loading={loading}>
+      <Button aria-label={loading ? 'Loading...' : undefined} loading={loading}>
         Wait for it
       </Button>
     )

@@ -6,7 +6,6 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
-  HTMLPropsFor,
   forwardRefWithStatics
 } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -110,7 +109,14 @@ export interface TextInputStatics {
   sizes: typeof vars.sizes
 }
 
-export interface TextInputProps extends Omit<HTMLPropsFor<'input'>, 'size'> {
+export interface TextInputProps
+  extends Omit<
+    React.DetailedHTMLProps<
+      React.InputHTMLAttributes<HTMLInputElement>,
+      HTMLInputElement
+    >,
+    'size'
+  > {
   appearance?: ValueOf<typeof vars.appearances>
   disabled?: boolean
   error?: boolean

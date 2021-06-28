@@ -34,13 +34,12 @@ exports[`Storyshots Components/Banner Button 1`] = `
        with button
        
       <button
-        className="psds-banner__button psds-banner__button--color-blue overridden"
-        data-css-1mpmjtf=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-stroke psds-theme--dark psds-banner__button psds-banner__button--color-blue overridden"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Button
         </span>
@@ -76,13 +75,12 @@ exports[`Storyshots Components/Banner Button 1`] = `
        with button
        
       <button
-        className="psds-banner__button psds-banner__button--color-green overridden"
-        data-css-1mpmjtf=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-stroke psds-theme--dark psds-banner__button psds-banner__button--color-green overridden"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Button
         </span>
@@ -118,13 +116,12 @@ exports[`Storyshots Components/Banner Button 1`] = `
        with button
        
       <button
-        className="psds-banner__button psds-banner__button--color-yellow overridden"
-        data-css-1mpmjtf=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-stroke psds-theme--dark psds-banner__button psds-banner__button--color-yellow overridden"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Button
         </span>
@@ -160,13 +157,12 @@ exports[`Storyshots Components/Banner Button 1`] = `
        with button
        
       <button
-        className="psds-banner__button psds-banner__button--color-red overridden"
-        data-css-1mpmjtf=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-stroke psds-theme--dark psds-banner__button psds-banner__button--color-red overridden"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Button
         </span>

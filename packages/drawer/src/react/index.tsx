@@ -5,12 +5,7 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import {
-  useToggle,
-  RefFor,
-  HTMLPropsFor,
-  ValueOf
-} from '@pluralsight/ps-design-system-util'
+import { useToggle, RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -61,7 +56,7 @@ export const useDrawerContext = () => {
   return context
 }
 
-interface SummaryProps extends HTMLPropsFor<'div'> {}
+interface SummaryProps extends React.HTMLAttributes<HTMLDivElement> {}
 const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
   ({ children, ...rest }, ref) => {
     const themeName = useTheme()
@@ -87,7 +82,7 @@ const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
   }
 )
 
-interface DetailsProps extends HTMLPropsFor<'div'> {}
+interface DetailsProps extends React.HTMLAttributes<HTMLDivElement> {}
 const Details = React.forwardRef<HTMLDivElement, DetailsProps>(
   (props, forwardedRef) => {
     const themeName = useTheme()

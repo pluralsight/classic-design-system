@@ -3,8 +3,7 @@ import React from 'react'
 
 import {
   RefForwardingComponent,
-  ValueOf,
-  HTMLPropsFor
+  ValueOf
 } from '@pluralsight/ps-design-system-util'
 import stylesheet from '../css/index'
 import * as vars from '../vars/index'
@@ -43,7 +42,7 @@ const styles = {
     )
   }
 }
-interface CloseButtonProps extends HTMLPropsFor<'button'> {
+interface CloseButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   onClick: (evt?: React.MouseEvent) => void
   appearance: ValueOf<typeof vars.appearances>
 }
@@ -69,7 +68,7 @@ interface TooltipStatics {
   tailPositions: typeof vars.tailPositions
 }
 
-interface TooltipProps extends HTMLPropsFor<'div'> {
+interface TooltipProps extends React.HTMLAttributes<HTMLDivElement> {
   appearance?: ValueOf<typeof vars.appearances>
   children: React.ReactNode
   onClose?: (evt?: React.MouseEvent) => void

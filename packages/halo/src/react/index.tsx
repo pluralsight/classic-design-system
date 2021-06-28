@@ -3,7 +3,6 @@ import {
   useTheme
 } from '@pluralsight/ps-design-system-theme'
 import {
-  HTMLPropsFor,
   RefForwardingComponent,
   ValueOf,
   canUseDOM
@@ -60,7 +59,8 @@ interface InternalHaloProps {
   visibleOnFocus: boolean
 }
 
-type HaloProps = HTMLPropsFor<'div'> & Partial<InternalHaloProps>
+type HaloProps = React.HTMLAttributes<HTMLDivElement> &
+  Partial<InternalHaloProps>
 
 interface HaloStatics {
   gapSizes: typeof vars.gapSizes

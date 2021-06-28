@@ -1,5 +1,11 @@
-import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { RefForwardingComponent } from '@pluralsight/ps-design-system-util'
+import {
+  useTheme,
+  names as themeNames
+} from '@pluralsight/ps-design-system-theme'
+import {
+  RefForwardingComponent,
+  ValueOf
+} from '@pluralsight/ps-design-system-util'
 import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
@@ -12,8 +18,8 @@ const style = ({
   appearance,
   themeName
 }: {
-  appearance: string
-  themeName: string
+  appearance: ValueOf<typeof appearances>
+  themeName: ValueOf<typeof themeNames>
 }) =>
   glamor.css(
     stylesheet[`.psds-link`],
@@ -36,9 +42,16 @@ interface LinkComponent
 
 const Link = React.forwardRef<HTMLAnchorElement, Props>(
   (props, forwardedRef) => {
-    const { appearance, children: _children, ...rest } = props
+    const {
+      appearance = appearances.default,
+      children: _children,
+      ...rest
+    } = props
     const ref = React.useRef<HTMLAnchorElement>()
-    React.useImperativeHandle(forwardedRef, () => ref.current)
+    React.useImperativeHandle(
+      forwardedRef,
+      () => (ref.current as unknown) as HTMLAnchorElement
+    )
     const themeName = useTheme()
 
     return React.cloneElement(
@@ -52,10 +65,6 @@ const Link = React.forwardRef<HTMLAnchorElement, Props>(
 ) as LinkComponent
 
 Link.appearances = appearances
-
-Link.defaultProps = {
-  appearance: appearances.default
-}
 
 export { appearances }
 

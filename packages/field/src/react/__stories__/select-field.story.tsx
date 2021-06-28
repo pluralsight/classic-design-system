@@ -1,5 +1,5 @@
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import { HTMLPropsFor } from '@pluralsight/ps-design-system-util'
+
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { useSelect } from 'downshift'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -32,27 +32,28 @@ const SelectField: React.FC<SelectFieldProps> = props => {
     return options.find(o => selectedItem === o.value)
   }, [options, selectedItem])
 
-  const CustomFieldTag = React.forwardRef<HTMLDivElement, HTMLPropsFor<'div'>>(
-    (innerProps, innerRef) => {
-      return (
-        <div ref={innerRef} {...innerProps}>
-          <button
-            {...getToggleButtonProps()}
-            {...glamor.css({
-              all: 'unset',
-              cursor: 'pointer',
-              alignItems: 'center',
-              display: 'flex',
-              flex: 1,
-              width: '100%'
-            })}
-          >
-            {innerProps.children}
-          </button>
-        </div>
-      )
-    }
-  )
+  const CustomFieldTag = React.forwardRef<
+    HTMLDivElement,
+    React.HTMLAttributes<HTMLDivElement>
+  >((innerProps, innerRef) => {
+    return (
+      <div ref={innerRef} {...innerProps}>
+        <button
+          {...getToggleButtonProps()}
+          {...glamor.css({
+            all: 'unset',
+            cursor: 'pointer',
+            alignItems: 'center',
+            display: 'flex',
+            flex: 1,
+            width: '100%'
+          })}
+        >
+          {innerProps.children}
+        </button>
+      </div>
+    )
+  })
 
   return (
     <>

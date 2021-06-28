@@ -55,7 +55,7 @@ export const Animation: Story = () => {
     return value
   }
 
-  const AnimationDemo = props => {
+  const AnimationDemo = () => {
     const value = useRandom()
     return (
       <div
