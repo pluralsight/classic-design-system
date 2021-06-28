@@ -21,12 +21,12 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
             >
               <div
                 data-css-7dab2f=""
@@ -44,7 +44,7 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
           <div
@@ -56,12 +56,12 @@ Array [
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
             >
               <div
                 data-css-7dab2f=""
@@ -79,7 +79,7 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </div>
@@ -1484,12 +1484,12 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
           >
             <div
               data-css-7dab2f=""
@@ -1507,7 +1507,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
         <div
@@ -1519,12 +1519,12 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
           >
             <div
               data-css-7dab2f=""
@@ -1542,7 +1542,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
       </div>
@@ -1962,12 +1962,12 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
           >
             <div
               data-css-7dab2f=""
@@ -1985,7 +1985,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
         <div
@@ -1997,12 +1997,12 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
           >
             <div
               data-css-7dab2f=""
@@ -2020,7 +2020,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
       </div>
@@ -2477,12 +2477,12 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
             >
               <div
                 data-css-7dab2f=""
@@ -2500,7 +2500,7 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
           <div
@@ -2512,12 +2512,12 @@ Array [
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
             >
               <div
                 data-css-7dab2f=""
@@ -2535,7 +2535,7 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </div>
@@ -3042,12 +3042,12 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
         >
           <button
             aria-label="Go back 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
             >
               <div
                 data-css-7dab2f=""
@@ -3065,7 +3065,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
           <div
@@ -3077,12 +3077,12 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
             >
               <div
                 data-css-7dab2f=""
@@ -3100,7 +3100,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </div>
@@ -3607,12 +3607,12 @@ Array [
         >
           <button
             aria-label="Go back 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
             >
               <div
                 data-css-7dab2f=""
@@ -3630,7 +3630,7 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
           <div
@@ -3694,12 +3694,12 @@ Array [
           </div>
           <button
             aria-label="Go forward 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
             >
               <div
                 data-css-7dab2f=""
@@ -3717,7 +3717,7 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </div>
@@ -4517,12 +4517,12 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
           >
             <div
               data-css-7dab2f=""
@@ -4540,7 +4540,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
         <div
@@ -4552,12 +4552,12 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
           >
             <div
               data-css-7dab2f=""
@@ -4575,7 +4575,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
       </div>
@@ -4966,12 +4966,12 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
       >
         <button
           aria-label="Go back 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
           >
             <div
               data-css-7dab2f=""
@@ -4989,7 +4989,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
         <div
@@ -5001,12 +5001,12 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
         </div>
         <button
           aria-label="Go forward 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--iconOnly"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
           >
             <div
               data-css-7dab2f=""
@@ -5024,7 +5024,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
       </div>
