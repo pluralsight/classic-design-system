@@ -19,6 +19,14 @@ describe('Breadcrumb', () => {
     expect(ref.current).not.toBeNull()
   })
 
+  it('composes className', () => {
+    const { container } = render(
+      <Breadcrumb className="compose-classname"></Breadcrumb>
+    )
+
+    expect(container.firstChild).toHaveClass('psds-carousel compose-classname')
+  })
+
   describe.each(cases)('%s story', (_name, Story) => {
     it('has no axe-core violations', async () => {
       const { container } = render(<Story {...Story.args} />)
