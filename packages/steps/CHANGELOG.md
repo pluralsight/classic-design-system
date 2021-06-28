@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@4.1.13...@pluralsight/ps-design-system-steps@4.1.14) (2021-06-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-steps
+
+
+
+
+
 ## [4.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@4.1.12...@pluralsight/ps-design-system-steps@4.1.13) (2021-06-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-steps

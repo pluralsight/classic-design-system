@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-table",
-  "version": "15.1.22",
+  "version": "15.1.23",
   "description": "Table UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -31,8 +31,8 @@
   "dependencies": {
     "@pluralsight/ps-design-system-collapsible": "^5.1.8",
     "@pluralsight/ps-design-system-core": "^8.2.2",
-    "@pluralsight/ps-design-system-icon": "^23.1.14",
-    "@pluralsight/ps-design-system-util": "^9.2.8",
+    "@pluralsight/ps-design-system-icon": "^23.1.15",
+    "@pluralsight/ps-design-system-util": "^9.2.9",
     "invariant": "^2.2.4"
   },
   "peerDependencies": {
@@ -42,17 +42,17 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-avatar": "^10.0.3",
+    "@pluralsight/ps-design-system-avatar": "^10.0.4",
     "@pluralsight/ps-design-system-build": "^3.2.2",
-    "@pluralsight/ps-design-system-button": "^22.1.14",
-    "@pluralsight/ps-design-system-checkbox": "^9.1.12",
-    "@pluralsight/ps-design-system-dropdown": "^12.1.18",
-    "@pluralsight/ps-design-system-emptystate": "^13.1.16",
-    "@pluralsight/ps-design-system-layout": "^11.1.15",
-    "@pluralsight/ps-design-system-screenreaderonly": "^4.1.12",
-    "@pluralsight/ps-design-system-searchinput": "^9.1.15",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.2",
-    "@pluralsight/ps-design-system-text": "^20.1.13",
+    "@pluralsight/ps-design-system-button": "^22.1.15",
+    "@pluralsight/ps-design-system-checkbox": "^9.1.13",
+    "@pluralsight/ps-design-system-dropdown": "^12.1.19",
+    "@pluralsight/ps-design-system-emptystate": "^13.1.17",
+    "@pluralsight/ps-design-system-layout": "^11.1.16",
+    "@pluralsight/ps-design-system-screenreaderonly": "^4.1.13",
+    "@pluralsight/ps-design-system-searchinput": "^9.1.16",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.3",
+    "@pluralsight/ps-design-system-text": "^20.1.14",
     "@types/faker": "^5.1.4",
     "@types/react-beautiful-dnd": "^13.0.0",
     "@types/react-table": "^7.0.25",
