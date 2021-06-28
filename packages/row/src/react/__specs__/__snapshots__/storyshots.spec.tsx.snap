@@ -28,11 +28,11 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
       data-css-1pe5xb7=""
     >
       <button
-        data-css-1dnyz38=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
         disabled={false}
       >
         <div
-          data-css-4ducb0=""
+          className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small psds-button__icon--iconOnly"
         >
           <div
             data-css-k31qw2=""
@@ -50,7 +50,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
         </div>
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         />
       </button>
     </div>
@@ -71,11 +71,11 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
       data-css-1pe5xb7=""
     >
       <button
-        data-css-1dnyz38=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
         disabled={false}
       >
         <div
-          data-css-4ducb0=""
+          className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small psds-button__icon--iconOnly"
         >
           <div
             data-css-k31qw2=""
@@ -93,7 +93,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
         </div>
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         />
       </button>
     </div>
@@ -114,11 +114,11 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
       data-css-1pe5xb7=""
     >
       <button
-        data-css-1dnyz38=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
         disabled={false}
       >
         <div
-          data-css-4ducb0=""
+          className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small psds-button__icon--iconOnly"
         >
           <div
             data-css-k31qw2=""
@@ -136,7 +136,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
         </div>
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         />
       </button>
     </div>
@@ -157,11 +157,11 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
       data-css-7zyoug=""
     >
       <button
-        data-css-1dnyz38=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
         disabled={false}
       >
         <div
-          data-css-4ducb0=""
+          className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small psds-button__icon--iconOnly"
         >
           <div
             data-css-k31qw2=""
@@ -179,7 +179,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
         </div>
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         />
       </button>
     </div>
@@ -276,11 +276,11 @@ exports[`Storyshots Components/Row Combo 1`] = `
     data-css-7b22zo=""
   >
     <button
-      data-css-1dnyz38=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
       disabled={false}
     >
       <div
-        data-css-4ducb0=""
+        className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small psds-button__icon--iconOnly"
       >
         <div
           data-css-k31qw2=""
@@ -298,15 +298,15 @@ exports[`Storyshots Components/Row Combo 1`] = `
       </div>
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       />
     </button>
     <button
-      data-css-1dnyz38=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
       disabled={false}
     >
       <div
-        data-css-4ducb0=""
+        className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small psds-button__icon--iconOnly"
       >
         <div
           data-css-k31qw2=""
@@ -326,15 +326,15 @@ exports[`Storyshots Components/Row Combo 1`] = `
       </div>
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       />
     </button>
     <button
-      data-css-1dnyz38=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
       disabled={false}
     >
       <div
-        data-css-4ducb0=""
+        className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small psds-button__icon--iconOnly"
       >
         <div
           data-css-k31qw2=""
@@ -352,7 +352,7 @@ exports[`Storyshots Components/Row Combo 1`] = `
       </div>
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       />
     </button>
   </div>
@@ -1182,11 +1182,11 @@ Array [
       data-css-7zyoug=""
     >
       <button
-        data-css-1dnyz38=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
         disabled={false}
       >
         <div
-          data-css-4ducb0=""
+          className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small psds-button__icon--iconOnly"
         >
           <div
             data-css-k31qw2=""
@@ -1204,7 +1204,7 @@ Array [
         </div>
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         />
       </button>
     </div>
@@ -1234,11 +1234,11 @@ Array [
       data-css-7zyoug=""
     >
       <button
-        data-css-1dnyz38=""
+        className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--iconOnly"
         disabled={false}
       >
         <div
-          data-css-4ducb0=""
+          className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small psds-button__icon--iconOnly"
         >
           <div
             data-css-k31qw2=""
@@ -1256,7 +1256,7 @@ Array [
         </div>
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         />
       </button>
     </div>
