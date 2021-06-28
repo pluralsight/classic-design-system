@@ -84,12 +84,12 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         }
       >
         <button
-          data-css-1cb2wrf=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
           disabled={false}
         >
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           >
             Asssessments
           </span>
@@ -104,12 +104,12 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         }
       >
         <button
-          data-css-1cb2wrf=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
           disabled={false}
         >
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           >
             Guides
           </span>
@@ -124,12 +124,12 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         }
       >
         <button
-          data-css-1cb2wrf=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
           disabled={false}
         >
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           >
             Interactive Courses
           </span>
@@ -144,12 +144,12 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         }
       >
         <button
-          data-css-1cb2wrf=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
           disabled={false}
         >
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           >
             Paths
           </span>
@@ -164,12 +164,12 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         }
       >
         <button
-          data-css-1cb2wrf=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
           disabled={false}
         >
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           >
             Projects
           </span>
@@ -184,12 +184,12 @@ exports[`Storyshots Components/EmptyState Actions With A Button 1`] = `
         }
       >
         <button
-          data-css-1cb2wrf=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
           disabled={false}
         >
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           >
             Video Courses
           </span>
@@ -589,12 +589,12 @@ exports[`Storyshots Components/EmptyState Combo 1`] = `
     data-css-aelvpu=""
   >
     <button
-      data-css-y5dqt5=""
+      className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       disabled={false}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         Do a Thing
       </span>
@@ -2652,12 +2652,12 @@ Array [
       data-css-aelvpu=""
     >
       <button
-        data-css-y5dqt5=""
+        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Do a Thing
         </span>
@@ -2735,12 +2735,12 @@ Array [
       data-css-aelvpu=""
     >
       <button
-        data-css-y5dqt5=""
+        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Do a Thing
         </span>
@@ -2830,12 +2830,12 @@ Array [
       data-css-aelvpu=""
     >
       <button
-        data-css-y5dqt5=""
+        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Do a Thing
         </span>
@@ -2919,12 +2919,12 @@ exports[`Storyshots Components/EmptyState Small Fixed Size Container 1`] = `
       data-css-aelvpu=""
     >
       <button
-        data-css-y5dqt5=""
+        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
         disabled={false}
       >
         <span
           aria-hidden={false}
-          data-css-15b13by=""
+          className="psds-button__text"
         >
           Do a Thing
         </span>
