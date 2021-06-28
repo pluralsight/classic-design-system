@@ -15,7 +15,7 @@ exports[`Storyshots Components/Note Actions Visible On Hover 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -119,7 +119,7 @@ exports[`Storyshots Components/Note Actions With Long Heading 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -493,7 +493,7 @@ exports[`Storyshots Components/Note Basic 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -581,7 +581,7 @@ exports[`Storyshots Components/Note In A List 1`] = `
         >
           <div
             aria-hidden={true}
-            className="psds-avatar psds-avatar--size-xSmall"
+            className="psds-avatar psds-avatar--size-xsmall"
           >
             <img
               className="psds-avatar__image"
@@ -660,7 +660,7 @@ exports[`Storyshots Components/Note In A List 1`] = `
         >
           <div
             aria-hidden={true}
-            className="psds-avatar psds-avatar--size-xSmall"
+            className="psds-avatar psds-avatar--size-xsmall"
           >
             <img
               className="psds-avatar__image"
@@ -739,7 +739,7 @@ exports[`Storyshots Components/Note In A List 1`] = `
         >
           <div
             aria-hidden={true}
-            className="psds-avatar psds-avatar--size-xSmall"
+            className="psds-avatar psds-avatar--size-xsmall"
           >
             <img
               className="psds-avatar__image"
@@ -823,7 +823,7 @@ exports[`Storyshots Components/Note Linked Metadata 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -915,7 +915,7 @@ exports[`Storyshots Components/Note Long Metadata 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -1055,7 +1055,7 @@ exports[`Storyshots Components/Note Single Action 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -1159,7 +1159,7 @@ exports[`Storyshots Components/Note Three Actions 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -1299,7 +1299,7 @@ exports[`Storyshots Components/Note Two Actions 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -1421,7 +1421,7 @@ exports[`Storyshots Components/Note With Action Menu 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -1533,7 +1533,7 @@ exports[`Storyshots Components/Note With H 1 Heading 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -1617,7 +1617,7 @@ exports[`Storyshots Components/Note With Heading Component 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -1707,7 +1707,7 @@ exports[`Storyshots Components/Note With Linked Avatar 1`] = `
       >
         <div
           aria-hidden={true}
-          className="psds-avatar psds-avatar--size-xSmall"
+          className="psds-avatar psds-avatar--size-xsmall"
         >
           <img
             className="psds-avatar__image"
@@ -1790,7 +1790,7 @@ exports[`Storyshots Components/Note With Linked Heading 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
