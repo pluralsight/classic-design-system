@@ -1,6 +1,4 @@
-/* TODO: rename files. Not modules */
 :root {
-  --ps-colors-blue-base: #0084bd;
   --ps-colors-blue-1: #d9f1ff;
   --ps-colors-blue-2: #b9e4fd;
   --ps-colors-blue-3: #8ed1f6;
@@ -12,7 +10,6 @@
   --ps-colors-blue-9: #005685;
   --ps-colors-blue-10: #00446b;
 
-  --ps-colors-teal-base: #00baa5;
   --ps-colors-teal-1: #d5faf5;
   --ps-colors-teal-2: #affaef;
   --ps-colors-teal-3: #84f0e1;
@@ -24,7 +21,6 @@
   --ps-colors-teal-9: #007a6a;
   --ps-colors-teal-10: #006658;
 
-  --ps-colors-green-base: #009e52;
   --ps-colors-green-1: #d9fae5;
   --ps-colors-green-2: #adf0c8;
   --ps-colors-green-3: #82e2ab;
@@ -36,7 +32,6 @@
   --ps-colors-green-9: #00672e;
   --ps-colors-green-10: #005724;
 
-  --ps-colors-lime-base: #8cca08;
   --ps-colors-lime-1: #ecffc7;
   --ps-colors-lime-2: #deffa3;
   --ps-colors-lime-3: #ccfc7a;
@@ -48,7 +43,6 @@
   --ps-colors-lime-9: #588a00;
   --ps-colors-lime-10: #4c7700;
 
-  --ps-colors-yellow-base: #fad000;
   --ps-colors-yellow-1: #fffbcc;
   --ps-colors-yellow-2: #fff7a8;
   --ps-colors-yellow-3: #fff380;
@@ -60,7 +54,6 @@
   --ps-colors-yellow-9: #b28300;
   --ps-colors-yellow-10: #946500;
 
-  --ps-colors-orange-base: #f59127;
   --ps-colors-orange-1: #ffecd1;
   --ps-colors-orange-2: #ffdcad;
   --ps-colors-orange-3: #ffcd8a;
@@ -72,7 +65,6 @@
   --ps-colors-orange-9: #b85500;
   --ps-colors-orange-10: #9e4100;
 
-  --ps-colors-red-base: #d21c09;
   --ps-colors-red-1: #ffd6d6;
   --ps-colors-red-2: #ffb3b3;
   --ps-colors-red-3: #ff8a8a;
@@ -83,8 +75,7 @@
   --ps-colors-red-8: #ab0600;
   --ps-colors-red-9: #920000;
   --ps-colors-red-10: #750000;
--
-  --ps-colors-pink-base: #e7558b;
+
   --ps-colors-pink-1: #ffddeb;
   --ps-colors-pink-2: #ffc2db;
   --ps-colors-pink-3: #ffa3c8;
@@ -96,7 +87,6 @@
   --ps-colors-pink-9: #a22554;
   --ps-colors-pink-10: #8a1a45;
 
-  --ps-colors-purple-base: #8359df;
   --ps-colors-purple-1: #e9deff;
   --ps-colors-purple-2: #d6c2ff;
   --ps-colors-purple-3: #c0a3ff;
@@ -126,7 +116,6 @@
   --ps-colors-background-light-2: #f7f9fa;
   --ps-colors-background-light-3: #ffffff;
 
-  --ps-colors-background-utility-base: #b0b0b0;
   --ps-colors-background-utility-10: rgba(138, 153, 168, 0.1);
   --ps-colors-background-utility-15: rgba(138, 153, 168, 0.15);
   --ps-colors-background-utility-20: rgba(138, 153, 168, 0.2);
