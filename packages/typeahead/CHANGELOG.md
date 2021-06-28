@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.18...@pluralsight/ps-design-system-typeahead@10.0.19) (2021-06-28)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-typeahead
+
+
+
+
+
 ## [10.0.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.17...@pluralsight/ps-design-system-typeahead@10.0.18) (2021-06-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-typeahead

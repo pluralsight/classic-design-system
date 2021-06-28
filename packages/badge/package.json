@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-badge",
-  "version": "12.1.12",
+  "version": "12.1.13",
   "description": "Design System component for badge ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -28,7 +28,7 @@
   "style": "dist/css/index.css",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.2.2",
-    "@pluralsight/ps-design-system-util": "^9.2.8"
+    "@pluralsight/ps-design-system-util": "^9.2.9"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^5.1.2",
@@ -38,8 +38,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.2.2",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.2",
-    "@pluralsight/ps-design-system-theme": "^8.1.12"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.3",
+    "@pluralsight/ps-design-system-theme": "^8.1.13"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }
