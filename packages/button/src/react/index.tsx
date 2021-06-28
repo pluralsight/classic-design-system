@@ -38,15 +38,15 @@ const styles = {
   ) =>
     classNames(
       'psds-button',
-      `psds-button--layout-${layout}`,
+      `psds-button--layout-${layout.toLowerCase()}`,
       `psds-button--size-${size}`,
       `psds-button--appearance-${appearance}`,
       `psds-theme--${themeName}`,
       disabled && 'psds-button--disabled',
-      icon && !iconOnly && 'psds-button--not-iconOnly',
+      icon && !iconOnly && 'psds-button--not-icon-only',
       iconAlign === vars.iconAligns.right &&
-        `psds-button--iconAlign-${iconAlign}`,
-      iconOnly && `psds-button--iconOnly`,
+        `psds-button--icon-align-${iconAlign}`,
+      iconOnly && `psds-button--icon-only`,
       className
     ),
   loading: (
@@ -59,7 +59,6 @@ const styles = {
       `psds-button__loading--appearance-${appearance}`,
       `psds-button__loading--theme-${themeName}`
     ),
-
   icon: ({
     iconAlign,
     iconOnly,
@@ -72,10 +71,10 @@ const styles = {
   >) =>
     classNames(
       'psds-button__icon',
-      `psds-button__icon--iconAlign-${iconAlign}`,
+      `psds-button__icon--icon-align-${iconAlign}`,
       `psds-button__icon--size-${size}`,
-      (iconOnly || (loading && labelOnly)) && 'psds-button__icon--iconOnly',
-      loading && labelOnly && 'psds-button__icon--loadingLabelOnly'
+      (iconOnly || (loading && labelOnly)) && 'psds-button__icon--icon-only',
+      loading && labelOnly && 'psds-button__icon--loading-label-only'
     ),
   text: (invisible?: boolean) =>
     classNames('psds-button__text', invisible && 'psds-button__text--invisible')

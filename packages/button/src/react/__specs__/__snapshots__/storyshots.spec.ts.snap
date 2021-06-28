@@ -125,11 +125,11 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
   }
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -153,11 +153,11 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-secondary psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -181,11 +181,11 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -209,11 +209,11 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -256,12 +256,12 @@ exports[`Storyshots Components/Button As Link 1`] = `
 
 exports[`Storyshots Components/Button As Link With Icon 1`] = `
 <a
-  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
   href="https://duckduckgo.com"
   onClick={[Function]}
 >
   <div
-    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+    className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
   >
     <div
       data-css-7dab2f=""
@@ -318,12 +318,12 @@ exports[`Storyshots Components/Button Disabled 1`] = `
 
 exports[`Storyshots Components/Button Disabled With Icon 1`] = `
 <button
-  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--disabled psds-button--not-iconOnly"
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--disabled psds-button--not-icon-only"
   disabled={true}
   onClick={[Function]}
 >
   <div
-    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+    className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
   >
     <div
       data-css-7dab2f=""
@@ -373,11 +373,11 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
   }
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -401,11 +401,11 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly psds-button--iconAlign-right"
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only psds-button--icon-align-right"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-right psds-button__icon--size-medium"
+      className="psds-button__icon psds-button__icon--icon-align-right psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -433,12 +433,12 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
 
 exports[`Storyshots Components/Button Icon Only 1`] = `
 <button
-  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--iconOnly"
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--icon-only"
   disabled={false}
   onClick={[Function]}
 >
   <div
-    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly"
+    className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
   >
     <div
       data-css-7dab2f=""
@@ -473,7 +473,7 @@ Array [
     }
   >
     <button
-      className="psds-button psds-button--layout-fullWidth psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
+      className="psds-button psds-button--layout-fullwidth psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
       disabled={false}
     >
       <span
@@ -529,7 +529,7 @@ exports[`Storyshots Components/Button Loading Transition Start True 1`] = `
   disabled={true}
 >
   <div
-    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly psds-button__icon--loadingLabelOnly"
+    className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only psds-button__icon--loading-label-only"
   >
     <div
       data-css-7dab2f=""
@@ -551,12 +551,12 @@ exports[`Storyshots Components/Button Loading Transition Start True 1`] = `
 exports[`Storyshots Components/Button Loading With Icon 1`] = `
 <button
   aria-label="loading"
-  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
   disabled={true}
   onClick={[Function]}
 >
   <div
-    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+    className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
   >
     <div
       data-css-7dab2f=""
@@ -583,7 +583,7 @@ exports[`Storyshots Components/Button Loading With Label No Icon 1`] = `
   onClick={[Function]}
 >
   <div
-    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium psds-button__icon--iconOnly psds-button__icon--loadingLabelOnly"
+    className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only psds-button__icon--loading-label-only"
   >
     <div
       data-css-7dab2f=""
@@ -670,11 +670,11 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
   }
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-xSmall"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall"
     >
       <div
         data-css-1gzzcm2=""
@@ -698,11 +698,11 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-small"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
         data-css-k31qw2=""
@@ -726,11 +726,11 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
         data-css-7dab2f=""
@@ -754,11 +754,11 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
+    className="psds-button psds-button--layout-inline psds-button--size-large psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
-      className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-large"
+      className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-large"
     >
       <div
         data-css-7dab2f=""
@@ -1222,12 +1222,12 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
 
 exports[`Storyshots Components/Button With Icon 1`] = `
 <button
-  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-iconOnly"
+  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
   disabled={false}
   onClick={[Function]}
 >
   <div
-    className="psds-button__icon psds-button__icon--iconAlign-left psds-button__icon--size-medium"
+    className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
   >
     <div
       data-css-7dab2f=""
