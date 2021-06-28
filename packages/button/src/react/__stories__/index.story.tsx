@@ -84,12 +84,6 @@ LoadingWithLabelNoIcon.args = {
 export const StyleOverride = Template.bind({})
 StyleOverride.args = { ...defaultArgs, style: { background: 'red' } }
 
-export const ClassNameOverride = Template.bind({})
-ClassNameOverride.args = {
-  ...defaultArgs,
-  className: 'overriddenName'
-}
-
 export const Layouts: Story = () => (
   <>
     {Object.values(Button.layouts).map((layout, i) => (

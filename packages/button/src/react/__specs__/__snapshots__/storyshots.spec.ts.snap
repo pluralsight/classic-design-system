@@ -301,21 +301,6 @@ exports[`Storyshots Components/Button Basic 1`] = `
 </button>
 `;
 
-exports[`Storyshots Components/Button Class Name Override 1`] = `
-<button
-  className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark overriddenName"
-  disabled={false}
-  onClick={[Function]}
->
-  <span
-    aria-hidden={false}
-    className="psds-button__text"
-  >
-    click me
-  </span>
-</button>
-`;
-
 exports[`Storyshots Components/Button Disabled 1`] = `
 <button
   className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark psds-button--disabled"
