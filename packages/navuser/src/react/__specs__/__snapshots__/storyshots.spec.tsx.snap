@@ -10,7 +10,7 @@ exports[`Storyshots Components/NavUser As Button 1`] = `
   >
     <div
       aria-hidden={true}
-      className="psds-avatar psds-avatar--size-xSmall"
+      className="psds-avatar psds-avatar--size-xsmall"
     >
       <img
         className="psds-avatar__image"
@@ -56,7 +56,7 @@ exports[`Storyshots Components/NavUser As Link 1`] = `
   >
     <div
       aria-hidden={true}
-      className="psds-avatar psds-avatar--size-xSmall"
+      className="psds-avatar psds-avatar--size-xsmall"
     >
       <img
         className="psds-avatar__image"
@@ -101,7 +101,7 @@ exports[`Storyshots Components/NavUser Avatar Only 1`] = `
   >
     <div
       aria-hidden={true}
-      className="psds-avatar psds-avatar--size-xSmall"
+      className="psds-avatar psds-avatar--size-xsmall"
     >
       <img
         className="psds-avatar__image"
@@ -143,7 +143,7 @@ exports[`Storyshots Components/NavUser Basic 1`] = `
   >
     <div
       aria-hidden={true}
-      className="psds-avatar psds-avatar--size-xSmall"
+      className="psds-avatar psds-avatar--size-xsmall"
     >
       <img
         className="psds-avatar__image"
@@ -230,7 +230,7 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
     >
       <div
         aria-hidden={true}
-        className="psds-avatar psds-avatar--size-xSmall"
+        className="psds-avatar psds-avatar--size-xsmall"
       >
         <img
           className="psds-avatar__image"
@@ -285,7 +285,7 @@ exports[`Storyshots Components/NavUser With Meta 1`] = `
   >
     <div
       aria-hidden={true}
-      className="psds-avatar psds-avatar--size-xSmall"
+      className="psds-avatar psds-avatar--size-xsmall"
     >
       <img
         className="psds-avatar__image"
