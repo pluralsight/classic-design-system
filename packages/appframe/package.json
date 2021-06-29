@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-appframe",
-  "version": "5.1.23",
+  "version": "5.1.24",
   "description": "AppFrame UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -31,7 +31,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-button": "^22.1.15",
     "@pluralsight/ps-design-system-core": "^8.2.2",
-    "@pluralsight/ps-design-system-scrollable": "^5.1.15",
+    "@pluralsight/ps-design-system-scrollable": "^5.1.16",
     "@pluralsight/ps-design-system-util": "^9.2.9",
     "body-scroll-lock": "^3.0.3",
     "exenv": "^1.2.2",
@@ -47,13 +47,13 @@
     "@pluralsight/ps-design-system-build": "^3.2.2",
     "@pluralsight/ps-design-system-button": "*",
     "@pluralsight/ps-design-system-icon": "^23.1.15",
-    "@pluralsight/ps-design-system-layout": "^11.1.16",
+    "@pluralsight/ps-design-system-layout": "^11.1.17",
     "@pluralsight/ps-design-system-navbar": "^5.1.16",
     "@pluralsight/ps-design-system-navbrand": "^4.1.13",
     "@pluralsight/ps-design-system-navitem": "^5.1.15",
     "@pluralsight/ps-design-system-navuser": "^4.1.16",
     "@pluralsight/ps-design-system-storybook-preset": "^0.7.3",
-    "@pluralsight/ps-design-system-text": "^20.1.14",
+    "@pluralsight/ps-design-system-text": "^20.1.15",
     "@pluralsight/ps-design-system-theme": "^8.1.13",
     "@pluralsight/ps-design-system-verticaltabs": "^7.1.20",
     "@types/body-scroll-lock": "^2.6.1"
