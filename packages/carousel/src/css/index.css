@@ -5,7 +5,7 @@
   z-index: 1;
   position: absolute;
   top: 50%;
-  transition: transform var(--psMotionSpeedFast) ease-in-out;
+  transition: transform var(--ps-motion-speed-fast) ease-in-out;
 }
 .psds-carousel__controls__control--prev {
   left: 0;
@@ -49,7 +49,7 @@
   cursor: pointer;
 }
 .psds-carousel__controls__control__button.psds-theme--dark {
-  color: var(--psColorsTextIconHighOnLight);
+  color: var(--ps-colors-text-icon-high-on-light);
   background: rgba(255, 255, 255, 0.6);
 }
 .psds-carousel__controls__control__button.psds-theme--dark:active,
@@ -58,7 +58,7 @@
   background: #fff;
 }
 .psds-carousel__controls__control__button.psds-theme--light {
-  color: var(--psColorsTextIconHighOnDark);
+  color: var(--ps-colors-text-icon-high-on-dark);
   background: rgba(0, 0, 0, 0.6);
 }
 .psds-carousel__controls__control__button.psds-theme--light:active,
