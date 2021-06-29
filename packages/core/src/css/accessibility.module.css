@@ -1,5 +1,4 @@
-/* TODO: rename with prefix */
-.screenreader-only {
+.psds-screenreader-only {
   position: absolute;
   width: 1px;
   height: 1px;
