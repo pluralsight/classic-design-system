@@ -267,6 +267,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
 
           <BelowLeft
             target={positionTarget}
+            clipY={true}
             show={
               <div>
                 <Menu {...getMenuProps()} open={isOpen}>

@@ -236,6 +236,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
   }, [subLabel])
   return (
     <BelowLeft
+      clipY={true}
       show={
         <div {...styles.wrapper(isOpen)}>
           <Menu
