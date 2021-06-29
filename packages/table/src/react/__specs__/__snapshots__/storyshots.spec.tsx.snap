@@ -732,7 +732,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
         >
           <div>
             <label
-              data-css-kn3wr0=""
+              className="psds-checkbox"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -740,16 +740,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 data-css-1ij5lym=""
               >
                 <input
-                  data-css-6wu9td=""
+                  className="psds-screenreader-only psds-checkbox__input"
                   readOnly={true}
                   type="checkbox"
                 />
                 <div
-                  data-css-1cfeqew=""
+                  className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
                 >
                   <svg
                     aria-label="Indeterminate Mark"
-                    data-css-ey6g07=""
+                    className="psds-checkbox__icon"
                     role="img"
                     version="1.1"
                     viewBox="0 0 16 16"
@@ -765,7 +765,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 </div>
               </div>
               <div
-                data-css-ybwuvp=""
+                className="psds-checkbox__label psds-theme--dark"
               />
             </label>
           </div>
@@ -809,7 +809,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -818,16 +818,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={false}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-gx66zw=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
               />
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -859,7 +859,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -868,16 +868,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={true}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-1cfeqew=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
               >
                 <svg
                   aria-label="Checkmark"
-                  data-css-ey6g07=""
+                  className="psds-checkbox__icon"
                   role="img"
                   version="1.1"
                   viewBox="0 0 16 16"
@@ -890,7 +890,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               </div>
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -922,7 +922,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -931,16 +931,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={false}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-gx66zw=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
               />
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -972,7 +972,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -981,16 +981,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={false}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-gx66zw=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
               />
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -1022,7 +1022,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1031,16 +1031,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={true}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-1cfeqew=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
               >
                 <svg
                   aria-label="Checkmark"
-                  data-css-ey6g07=""
+                  className="psds-checkbox__icon"
                   role="img"
                   version="1.1"
                   viewBox="0 0 16 16"
@@ -1053,7 +1053,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               </div>
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -1085,7 +1085,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1094,16 +1094,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={false}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-gx66zw=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
               />
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -1135,7 +1135,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1144,16 +1144,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={false}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-gx66zw=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
               />
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -1185,7 +1185,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1194,16 +1194,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={true}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-1cfeqew=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
               >
                 <svg
                   aria-label="Checkmark"
-                  data-css-ey6g07=""
+                  className="psds-checkbox__icon"
                   role="img"
                   version="1.1"
                   viewBox="0 0 16 16"
@@ -1216,7 +1216,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               </div>
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -1248,7 +1248,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1257,16 +1257,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={false}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-gx66zw=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
               />
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -1298,7 +1298,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
           role="gridcell"
         >
           <label
-            data-css-kn3wr0=""
+            className="psds-checkbox"
             onClick={[Function]}
             onKeyDown={[Function]}
           >
@@ -1307,16 +1307,16 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             >
               <input
                 checked={false}
-                data-css-6wu9td=""
+                className="psds-screenreader-only psds-checkbox__input"
                 readOnly={true}
                 type="checkbox"
               />
               <div
-                data-css-gx66zw=""
+                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
               />
             </div>
             <div
-              data-css-ybwuvp=""
+              className="psds-checkbox__label psds-theme--dark"
             />
           </label>
         </td>
@@ -2555,7 +2555,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
             role="gridcell"
           >
             <label
-              data-css-kn3wr0=""
+              className="psds-checkbox"
               onClick={[Function]}
               onKeyDown={[Function]}
             >
@@ -2563,16 +2563,16 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 data-css-1ij5lym=""
               >
                 <input
-                  data-css-6wu9td=""
+                  className="psds-screenreader-only psds-checkbox__input"
                   readOnly={true}
                   type="checkbox"
                 />
                 <div
-                  data-css-gx66zw=""
+                  className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                 />
               </div>
               <div
-                data-css-ybwuvp=""
+                className="psds-checkbox__label psds-theme--dark"
               />
             </label>
           </td>
@@ -2630,7 +2630,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -2638,16 +2638,16 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -2694,7 +2694,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -2702,16 +2702,16 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -2758,7 +2758,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -2766,16 +2766,16 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -2822,7 +2822,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -2830,16 +2830,16 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -2886,7 +2886,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -2894,16 +2894,16 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -2987,7 +2987,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -2995,16 +2995,16 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -3059,7 +3059,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -3067,16 +3067,16 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -3122,7 +3122,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -3130,16 +3130,16 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -3185,7 +3185,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -3193,16 +3193,16 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -3248,7 +3248,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -3256,16 +3256,16 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
@@ -3311,7 +3311,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
           >
             <div>
               <label
-                data-css-kn3wr0=""
+                className="psds-checkbox"
                 onClick={[Function]}
                 onKeyDown={[Function]}
               >
@@ -3319,16 +3319,16 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                   data-css-1ij5lym=""
                 >
                   <input
-                    data-css-6wu9td=""
+                    className="psds-screenreader-only psds-checkbox__input"
                     readOnly={true}
                     type="checkbox"
                   />
                   <div
-                    data-css-gx66zw=""
+                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
                   />
                 </div>
                 <div
-                  data-css-ybwuvp=""
+                  className="psds-checkbox__label psds-theme--dark"
                 />
               </label>
             </div>
