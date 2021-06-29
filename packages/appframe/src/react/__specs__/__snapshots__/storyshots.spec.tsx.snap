@@ -2,10 +2,10 @@
 
 exports[`Storyshots Components/AppFrame Basic 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
@@ -22,7 +22,7 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
@@ -127,10 +127,10 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -208,10 +208,10 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
 
 exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
@@ -228,7 +228,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
@@ -333,17 +333,17 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
+          className="psds-appframe__sidenav__inner"
           data-css-axmbrd=""
-          data-css-q1pa3g=""
           data-scrollable={true}
         >
           <div
@@ -520,7 +520,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -543,10 +543,10 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
 
 exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
@@ -563,7 +563,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
@@ -711,17 +711,17 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
+          className="psds-appframe__sidenav__inner"
           data-css-axmbrd=""
-          data-css-q1pa3g=""
           data-scrollable={true}
         >
           <div
@@ -898,7 +898,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -976,10 +976,10 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
 
 exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
@@ -996,7 +996,7 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
@@ -1101,17 +1101,17 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
+          className="psds-appframe__sidenav__inner"
           data-css-axmbrd=""
-          data-css-q1pa3g=""
           data-scrollable={true}
         >
           <div
@@ -1140,7 +1140,7 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -1218,10 +1218,10 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
 
 exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
@@ -1238,7 +1238,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
@@ -1386,17 +1386,17 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
+          className="psds-appframe__sidenav__inner"
           data-css-axmbrd=""
-          data-css-q1pa3g=""
           data-scrollable={true}
         >
           <div
@@ -1573,7 +1573,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -1651,10 +1651,10 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
 
 exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
@@ -1671,7 +1671,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
@@ -1819,17 +1819,17 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
+          className="psds-appframe__sidenav__inner"
           data-css-axmbrd=""
-          data-css-q1pa3g=""
           data-scrollable={true}
         >
           <div
@@ -2341,7 +2341,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
