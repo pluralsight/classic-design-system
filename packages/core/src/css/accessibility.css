@@ -1,5 +1,7 @@
 .psds-screenreader-only {
   position: absolute;
+  top: auto;
+  left: -10000px;
   width: 1px;
   height: 1px;
   padding: 0;
