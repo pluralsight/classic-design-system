@@ -32,8 +32,7 @@ export const cssVars = Object.entries({
   return { ...acc, [group]: { ...keys } }
 }, {}) as Tokens
 
-function dashify(str, options) {
-  if (typeof str !== 'string') throw new TypeError('expected a string')
+function dashify(str: string) {
   return str
     .trim()
     .replace(/([a-z])([A-Z])/g, '$1-$2')
