@@ -469,7 +469,7 @@ describe('#leftOf', () => {
   })
 })
 
-describe('#edgeCases', () => {
+describe('#edgeCases (clipY=true)', () => {
   Object.defineProperty(window, 'innerHeight', {
     writable: true,
     configurable: true,

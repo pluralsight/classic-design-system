@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`#edgeCases #above: bottomLeft 1`] = `
+exports[`#edgeCases (clipY=true) #above: bottomLeft 1`] = `
 Object {
   "left": "0px",
   "position": "absolute",
@@ -8,7 +8,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #above: bottomRight 1`] = `
+exports[`#edgeCases (clipY=true) #above: bottomRight 1`] = `
 Object {
   "left": "400px",
   "position": "absolute",
@@ -16,7 +16,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #above: topLeft 1`] = `
+exports[`#edgeCases (clipY=true) #above: topLeft 1`] = `
 Object {
   "left": "0px",
   "position": "absolute",
@@ -24,7 +24,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #above: topRight 1`] = `
+exports[`#edgeCases (clipY=true) #above: topRight 1`] = `
 Object {
   "left": "400px",
   "position": "absolute",
@@ -32,39 +32,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #aboveLeft: bottomLeft 1`] = `
-Object {
-  "left": "0px",
-  "position": "absolute",
-  "top": "372px",
-}
-`;
-
-exports[`#edgeCases #aboveLeft: bottomRight 1`] = `
-Object {
-  "left": "400px",
-  "position": "absolute",
-  "top": "372px",
-}
-`;
-
-exports[`#edgeCases #aboveLeft: topLeft 1`] = `
-Object {
-  "left": "0px",
-  "position": "absolute",
-  "top": "28px",
-}
-`;
-
-exports[`#edgeCases #aboveLeft: topRight 1`] = `
-Object {
-  "left": "400px",
-  "position": "absolute",
-  "top": "28px",
-}
-`;
-
-exports[`#edgeCases #aboveRight: bottomLeft 1`] = `
+exports[`#edgeCases (clipY=true) #aboveLeft: bottomLeft 1`] = `
 Object {
   "left": "0px",
   "position": "absolute",
@@ -72,7 +40,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #aboveRight: bottomRight 1`] = `
+exports[`#edgeCases (clipY=true) #aboveLeft: bottomRight 1`] = `
 Object {
   "left": "400px",
   "position": "absolute",
@@ -80,7 +48,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #aboveRight: topLeft 1`] = `
+exports[`#edgeCases (clipY=true) #aboveLeft: topLeft 1`] = `
 Object {
   "left": "0px",
   "position": "absolute",
@@ -88,7 +56,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #aboveRight: topRight 1`] = `
+exports[`#edgeCases (clipY=true) #aboveLeft: topRight 1`] = `
 Object {
   "left": "400px",
   "position": "absolute",
@@ -96,39 +64,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #below: bottomLeft 1`] = `
-Object {
-  "left": "0px",
-  "position": "absolute",
-  "top": "372px",
-}
-`;
-
-exports[`#edgeCases #below: bottomRight 1`] = `
-Object {
-  "left": "400px",
-  "position": "absolute",
-  "top": "372px",
-}
-`;
-
-exports[`#edgeCases #below: topLeft 1`] = `
-Object {
-  "left": "0px",
-  "position": "absolute",
-  "top": "28px",
-}
-`;
-
-exports[`#edgeCases #below: topRight 1`] = `
-Object {
-  "left": "400px",
-  "position": "absolute",
-  "top": "28px",
-}
-`;
-
-exports[`#edgeCases #belowLeft: bottomLeft 1`] = `
+exports[`#edgeCases (clipY=true) #aboveRight: bottomLeft 1`] = `
 Object {
   "left": "0px",
   "position": "absolute",
@@ -136,7 +72,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #belowLeft: bottomRight 1`] = `
+exports[`#edgeCases (clipY=true) #aboveRight: bottomRight 1`] = `
 Object {
   "left": "400px",
   "position": "absolute",
@@ -144,7 +80,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #belowLeft: topLeft 1`] = `
+exports[`#edgeCases (clipY=true) #aboveRight: topLeft 1`] = `
 Object {
   "left": "0px",
   "position": "absolute",
@@ -152,7 +88,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #belowLeft: topRight 1`] = `
+exports[`#edgeCases (clipY=true) #aboveRight: topRight 1`] = `
 Object {
   "left": "400px",
   "position": "absolute",
@@ -160,7 +96,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #belowRight: bottomLeft 1`] = `
+exports[`#edgeCases (clipY=true) #below: bottomLeft 1`] = `
 Object {
   "left": "0px",
   "position": "absolute",
@@ -168,7 +104,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #belowRight: bottomRight 1`] = `
+exports[`#edgeCases (clipY=true) #below: bottomRight 1`] = `
 Object {
   "left": "400px",
   "position": "absolute",
@@ -176,7 +112,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #belowRight: topLeft 1`] = `
+exports[`#edgeCases (clipY=true) #below: topLeft 1`] = `
 Object {
   "left": "0px",
   "position": "absolute",
@@ -184,7 +120,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #belowRight: topRight 1`] = `
+exports[`#edgeCases (clipY=true) #below: topRight 1`] = `
 Object {
   "left": "400px",
   "position": "absolute",
@@ -192,7 +128,71 @@ Object {
 }
 `;
 
-exports[`#edgeCases #leftOf: bottomLeft 1`] = `
+exports[`#edgeCases (clipY=true) #belowLeft: bottomLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases (clipY=true) #belowLeft: bottomRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases (clipY=true) #belowLeft: topLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases (clipY=true) #belowLeft: topRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases (clipY=true) #belowRight: bottomLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases (clipY=true) #belowRight: bottomRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "372px",
+}
+`;
+
+exports[`#edgeCases (clipY=true) #belowRight: topLeft 1`] = `
+Object {
+  "left": "0px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases (clipY=true) #belowRight: topRight 1`] = `
+Object {
+  "left": "400px",
+  "position": "absolute",
+  "top": "28px",
+}
+`;
+
+exports[`#edgeCases (clipY=true) #leftOf: bottomLeft 1`] = `
 Object {
   "left": "28px",
   "position": "absolute",
@@ -200,7 +200,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #leftOf: bottomRight 1`] = `
+exports[`#edgeCases (clipY=true) #leftOf: bottomRight 1`] = `
 Object {
   "left": "372px",
   "position": "absolute",
@@ -208,7 +208,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #leftOf: topLeft 1`] = `
+exports[`#edgeCases (clipY=true) #leftOf: topLeft 1`] = `
 Object {
   "left": "28px",
   "position": "absolute",
@@ -216,7 +216,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #leftOf: topRight 1`] = `
+exports[`#edgeCases (clipY=true) #leftOf: topRight 1`] = `
 Object {
   "left": "372px",
   "position": "absolute",
@@ -224,7 +224,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #rightOf: bottomLeft 1`] = `
+exports[`#edgeCases (clipY=true) #rightOf: bottomLeft 1`] = `
 Object {
   "left": "28px",
   "position": "absolute",
@@ -232,7 +232,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #rightOf: bottomRight 1`] = `
+exports[`#edgeCases (clipY=true) #rightOf: bottomRight 1`] = `
 Object {
   "left": "372px",
   "position": "absolute",
@@ -240,7 +240,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #rightOf: topLeft 1`] = `
+exports[`#edgeCases (clipY=true) #rightOf: topLeft 1`] = `
 Object {
   "left": "28px",
   "position": "absolute",
@@ -248,7 +248,7 @@ Object {
 }
 `;
 
-exports[`#edgeCases #rightOf: topRight 1`] = `
+exports[`#edgeCases (clipY=true) #rightOf: topRight 1`] = `
 Object {
   "left": "372px",
   "position": "absolute",
