@@ -55,11 +55,11 @@
   outline: 0;
   box-shadow: 0 0 0 2px var(--ps-colors-blue-8);
 }
-.psds-button--layout-fullwidth {
+.psds-button--layout-full-width {
   display: flex;
   width: 100%;
 }
-.psds-button--size-xsmall {
+.psds-button--size-x-small {
   font-size: var(--ps-type-font-size-100);
   letter-spacing: var(--ps-type-letter-spacing-looser);
   padding: 4px 8px;
