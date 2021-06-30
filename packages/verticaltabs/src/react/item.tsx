@@ -7,14 +7,14 @@ import {
   ValueOf,
   combineFns,
   omit,
-  RefFor
+  RefFor,
+  classNames
 } from '@pluralsight/ps-design-system-util'
 import React, { useEffect } from 'react'
 
 import { useHideLabels } from './context'
 import { List, CollapsibleList } from './list'
 import '../css/index.css'
-import classNames from 'classnames'
 
 const styles = {
   item: (themeName: ValueOf<typeof themeNames>) =>

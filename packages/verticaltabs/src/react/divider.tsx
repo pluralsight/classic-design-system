@@ -4,14 +4,18 @@ import React from 'react'
 
 import '../css/index.css'
 
-const Divider: React.FC = () => {
+const Divider: React.FC<React.HTMLAttributes<HTMLHRElement>> = ({
+  className,
+  ...props
+}) => {
   const themeName = useTheme()
 
   return (
     <hr
       className={classNames(
         'psds-verticaltabs__divider',
-        `psds-theme--${themeName}`
+        `psds-theme--${themeName}`,
+        className
       )}
     />
   )

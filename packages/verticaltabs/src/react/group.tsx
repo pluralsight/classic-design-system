@@ -48,7 +48,7 @@ interface GroupStatics {
 interface GroupComponent
   extends RefForwardingComponent<GroupProps, HTMLLIElement, GroupStatics> {}
 
-const Group = React.forwardRef(({ className, ...props }, ref) => {
+const Group = React.forwardRef((props, ref) => {
   const rest = omit(props as Record<string, any>, ['header', 'startOpen'])
 
   return (

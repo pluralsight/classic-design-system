@@ -49,9 +49,6 @@
   overflow: visible;
   padding: 0;
   width: 100%;
-  -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
-  -webkit-font-smoothing: inherit;
   text-decoration: none;
   height: 100%;
 }
@@ -90,7 +87,6 @@
 .psds-verticaltabs__item__icon {
   flex-shrink: 0;
   margin-right: var(--ps-layout-spacing-small);
-  -webkit-flex-shrink: 0;
 }
 .psds-verticaltabs__tier1 {
   font-size: var(--ps-type-font-size-200);
@@ -106,7 +102,6 @@
   top: 50%;
   transform: translateY(-50%);
   width: 4px;
-  -webkit-transform: translateY(-50%);
 }
 .psds-verticaltabs__tier1 > * {
   padding: var(--ps-layout-spacing-xsmall) var(--ps-layout-spacing-large);
@@ -114,8 +109,6 @@
 .psds-verticaltabs__tier1[data-active]:before {
   height: calc(100% - var(--ps-layout-spacing-xsmall));
   transition: height var(--ps-motion-speed-normal) ease-out;
-  -webkit-transition: height var(--ps-motion-speed-normal) ease-out;
-  -moz-transition: height var(--ps-motion-speed-normal) ease-out;
 }
 .psds-verticaltabs__tier1.psds-theme--light:before {
   background: var(--ps-colors-primary-action-background);
@@ -131,17 +124,9 @@
 }
 .psds-verticaltabs__tier1__header {
   align-items: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   transition: color var(--ps-motion-speed-xfast) linear;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-transition: color var(--ps-motion-speed-xfast) linear;
-  -moz-transition: color var(--ps-motion-speed-xfast) linear;
 }
 .psds-verticaltabs__tier1__header > span {
   overflow: hidden;
@@ -161,9 +146,6 @@
   transform: translateY(-50%);
   transition: height var(--ps-motion-speed-xfast) linear;
   width: 1px;
-  -webkit-transform: translateY(-50%);
-  -webkit-transition: height var(--ps-motion-speed-xfast) linear;
-  -moz-transition: height var(--ps-motion-speed-xfast) linear;
 }
 .psds-verticaltabs__tier2 > * {
   overflow: hidden;
@@ -201,25 +183,15 @@
 }
 .psds-verticaltabs__group__header {
   align-items: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   font-size: 11px;
   font-weight: var(--ps-type-font-weight-strong);
   text-transform: uppercase;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 .psds-verticaltabs__group__header > a,
 .psds-verticaltabs__group__header > button,
 .psds-verticaltabs__group__header > div {
   align-items: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   height: 100%;
   justify-content: space-between;
@@ -227,10 +199,6 @@
   text-align: left;
   text-transform: inherit;
   width: 100%;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
 }
 .psds-verticaltabs__group__header.psds-theme--light {
   color: var(--ps-colors-text-icon-low-on-light);
@@ -244,7 +212,6 @@
   white-space: nowrap;
   flex: 1;
   text-align: left;
-  -webkit-flex: 1;
 }
 .psds-verticaltabs__header__label--hide-labels {
   color: transparent;
@@ -255,16 +222,9 @@
   transform: translateX(10px) rotateZ(180deg);
   transition: -webkit-transform var(--ps-motion-speed-normal) linear,
     transform var(--ps-motion-speed-normal) linear;
-  -webkit-flex-shrink: 0;
-  -webkit-flex-grow: 0;
-  -webkit-transform: translateX(10px) rotateZ(180deg);
-  -webkit-transition: -webkit-transform var(--ps-motion-speed-normal) linear,
-    transform var(--ps-motion-speed-normal) linear;
-  -moz-transition: transform var(--ps-motion-speed-normal) linear;
 }
 .psds-verticaltabs__header__label__icon--collapsed {
   transform: translateX(10px);
-  -webkit-transform: translateX(10px);
 }
 .psds-verticaltabs__group__button {
   background: 0 0;
@@ -276,9 +236,6 @@
   overflow: visible;
   padding: 0;
   width: auto;
-  -moz-osx-font-smoothing: inherit;
-  -webkit-appearance: none;
-  -webkit-font-smoothing: inherit;
   cursor: pointer;
 }
 .psds-verticaltabs__group__button::-moz-focus-inner {
@@ -289,8 +246,6 @@
   overflow: hidden;
   transition: height var(--ps-motion-speed-normal);
   visibility: hidden;
-  -webkit-transition: height var(--ps-motion-speed-normal);
-  -moz-transition: height var(--ps-motion-speed-normal);
 }
 .psds-verticaltabs__rotatable {
   flex-shrink: 0;
@@ -298,14 +253,7 @@
   transform: translateX(10px);
   transition: -webkit-transform var(--ps-motion-speed-normal),
     transform var(--ps-motion-speed-normal);
-  -webkit-flex-shrink: 0;
-  -webkit-flex-grow: 0;
-  -webkit-transform: translateX(10px);
-  -webkit-transition: -webkit-transform var(--ps-motion-speed-normal),
-    transform var(--ps-motion-speed-normal);
-  -moz-transition: transform var(--ps-motion-speed-normal);
 }
 .psds-verticaltabs__rotatable--is-open {
   transform: translateX(10px) rotateZ(180deg);
-  -webkit-transform: translateX(10px) rotateZ(180deg);
 }
