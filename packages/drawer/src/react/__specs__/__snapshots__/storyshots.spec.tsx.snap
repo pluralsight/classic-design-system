@@ -15,7 +15,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
   </button>
   <div
     aria-expanded={false}
-    data-css-1suuvy1=""
+    className="psds-drawer__summary psds-theme--dark"
     onClick={[Function]}
     role="button"
   >
@@ -31,10 +31,10 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
       Clicking me won't toggle drawer
     </p>
     <div
-      data-css-17v14zz=""
+      className="psds-drawer__icon-slot"
     >
       <div
-        data-css-1h00rme=""
+        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -56,7 +56,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
   </div>
   <div
     aria-hidden={true}
-    data-css-1s813js=""
+    className="psds-drawer__details psds-theme--dark"
   >
     <p
       data-css-17nixd9=""
@@ -93,7 +93,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
   </button>
   <div
     aria-expanded={false}
-    data-css-1suuvy1=""
+    className="psds-drawer__summary psds-theme--dark"
     onClick={[Function]}
     role="button"
   >
@@ -109,10 +109,10 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
       Click me to open
     </p>
     <div
-      data-css-17v14zz=""
+      className="psds-drawer__icon-slot"
     >
       <div
-        data-css-1h00rme=""
+        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -134,7 +134,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
   </div>
   <div
     aria-hidden={true}
-    data-css-1s813js=""
+    className="psds-drawer__details psds-theme--dark"
   >
     <p
       data-css-17nixd9=""
@@ -161,7 +161,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
 >
   <div
     aria-expanded={true}
-    data-css-1u3wau6=""
+    className="psds-drawer__summary psds-drawer__summary.psds-drawer--isopen psds-theme--dark"
     onClick={[Function]}
     role="button"
   >
@@ -177,11 +177,11 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
       Click me to open
     </p>
     <div
-      data-css-17v14zz=""
+      className="psds-drawer__icon-slot"
     >
       <div
+        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark psds-drawer__rotatable.psds-drawer--isopen"
         data-css-7dab2f=""
-        data-css-ns6sfg=""
       >
         <svg
           aria-label="caret down icon"
@@ -202,7 +202,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
   </div>
   <div
     aria-hidden={false}
-    data-css-1s813js=""
+    className="psds-drawer__details psds-theme--dark"
   >
     <p
       data-css-17nixd9=""
@@ -229,7 +229,7 @@ exports[`Storyshots Components/Row Default 1`] = `
 >
   <div
     aria-expanded={false}
-    data-css-1suuvy1=""
+    className="psds-drawer__summary psds-theme--dark"
     onClick={[Function]}
     role="button"
   >
@@ -245,10 +245,10 @@ exports[`Storyshots Components/Row Default 1`] = `
       Click me to open
     </p>
     <div
-      data-css-17v14zz=""
+      className="psds-drawer__icon-slot"
     >
       <div
-        data-css-1h00rme=""
+        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -270,7 +270,7 @@ exports[`Storyshots Components/Row Default 1`] = `
   </div>
   <div
     aria-hidden={true}
-    data-css-1s813js=""
+    className="psds-drawer__details psds-theme--dark"
   >
     <p
       data-css-17nixd9=""
@@ -297,7 +297,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
 >
   <div
     aria-expanded={false}
-    data-css-1suuvy1=""
+    className="psds-drawer__summary psds-theme--dark"
     onClick={[Function]}
     role="button"
   >
@@ -413,10 +413,10 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
       </div>
     </div>
     <div
-      data-css-17v14zz=""
+      className="psds-drawer__icon-slot"
     >
       <div
-        data-css-1h00rme=""
+        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -438,7 +438,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
   </div>
   <div
     aria-hidden={true}
-    data-css-1s813js=""
+    className="psds-drawer__details psds-theme--dark"
   >
     <p
       data-css-17nixd9=""
@@ -466,7 +466,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
   <div>
     <div
       aria-expanded={false}
-      data-css-1suuvy1=""
+      className="psds-drawer__summary psds-theme--dark"
       onClick={[Function]}
       role="button"
     >
@@ -482,10 +482,10 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         The Drawer #1
       </p>
       <div
-        data-css-17v14zz=""
+        className="psds-drawer__icon-slot"
       >
         <div
-          data-css-1h00rme=""
+          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -507,7 +507,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-1s813js=""
+      className="psds-drawer__details psds-theme--dark"
     >
       <p
         data-css-17nixd9=""
@@ -523,7 +523,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
     </div>
     <div
       aria-expanded={false}
-      data-css-1suuvy1=""
+      className="psds-drawer__summary psds-theme--dark"
       onClick={[Function]}
       role="button"
     >
@@ -539,10 +539,10 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         The Drawer #2
       </p>
       <div
-        data-css-17v14zz=""
+        className="psds-drawer__icon-slot"
       >
         <div
-          data-css-1h00rme=""
+          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -564,7 +564,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-1s813js=""
+      className="psds-drawer__details psds-theme--dark"
     >
       <p
         data-css-17nixd9=""
@@ -580,7 +580,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
     </div>
     <div
       aria-expanded={false}
-      data-css-1suuvy1=""
+      className="psds-drawer__summary psds-theme--dark"
       onClick={[Function]}
       role="button"
     >
@@ -596,10 +596,10 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         The Drawer #1
       </p>
       <div
-        data-css-17v14zz=""
+        className="psds-drawer__icon-slot"
       >
         <div
-          data-css-1h00rme=""
+          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -621,7 +621,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-1s813js=""
+      className="psds-drawer__details psds-theme--dark"
     >
       <p
         data-css-17nixd9=""
@@ -650,7 +650,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
   <div>
     <div
       aria-expanded={false}
-      data-css-1suuvy1=""
+      className="psds-drawer__summary psds-theme--dark"
       onClick={[Function]}
       role="button"
     >
@@ -666,10 +666,10 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
         The Drawer #1
       </p>
       <div
-        data-css-17v14zz=""
+        className="psds-drawer__icon-slot"
       >
         <div
-          data-css-1h00rme=""
+          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -691,7 +691,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-1s813js=""
+      className="psds-drawer__details psds-theme--dark"
     >
       <p
         data-css-17nixd9=""
@@ -709,7 +709,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
   <div>
     <div
       aria-expanded={false}
-      data-css-1suuvy1=""
+      className="psds-drawer__summary psds-theme--dark"
       onClick={[Function]}
       role="button"
     >
@@ -725,10 +725,10 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
         The Drawer #2
       </p>
       <div
-        data-css-17v14zz=""
+        className="psds-drawer__icon-slot"
       >
         <div
-          data-css-1h00rme=""
+          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -750,7 +750,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-1s813js=""
+      className="psds-drawer__details psds-theme--dark"
     >
       <p
         data-css-17nixd9=""
@@ -768,7 +768,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
   <div>
     <div
       aria-expanded={false}
-      data-css-1suuvy1=""
+      className="psds-drawer__summary psds-theme--dark"
       onClick={[Function]}
       role="button"
     >
@@ -784,10 +784,10 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
         The Drawer #3
       </p>
       <div
-        data-css-17v14zz=""
+        className="psds-drawer__icon-slot"
       >
         <div
-          data-css-1h00rme=""
+          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -809,7 +809,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
     </div>
     <div
       aria-hidden={true}
-      data-css-1s813js=""
+      className="psds-drawer__details psds-theme--dark"
     >
       <p
         data-css-17nixd9=""
@@ -838,7 +838,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
   <div
     aria-expanded={false}
     aria-label="custom drawer header"
-    data-css-1suuvy1=""
+    className="psds-drawer__summary psds-theme--dark"
     onClick={[Function]}
     role="button"
   >
@@ -854,10 +854,10 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
       The Drawer
     </p>
     <div
-      data-css-17v14zz=""
+      className="psds-drawer__icon-slot"
     >
       <div
-        data-css-1h00rme=""
+        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -880,7 +880,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
   <div
     aria-hidden={true}
     aria-label="custom drawer body"
-    data-css-1s813js=""
+    className="psds-drawer__details psds-theme--dark"
   >
     <p
       data-css-17nixd9=""
@@ -907,7 +907,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
 >
   <div
     aria-expanded={false}
-    data-css-1suuvy1=""
+    className="psds-drawer__summary psds-theme--dark"
     onClick={[Function]}
     role="button"
   >
@@ -982,10 +982,10 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
       </div>
     </div>
     <div
-      data-css-17v14zz=""
+      className="psds-drawer__icon-slot"
     >
       <div
-        data-css-1h00rme=""
+        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -1007,7 +1007,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
   </div>
   <div
     aria-hidden={true}
-    data-css-1s813js=""
+    className="psds-drawer__details psds-theme--dark"
   >
     <p
       data-css-17nixd9=""
