@@ -52,7 +52,10 @@ describe('ActionMenu', () => {
 
   it('composes className in ActionMenu.Item', () => {
     const { container } = render(
-      <ActionMenu.Item className="compose-classname" />
+      <ActionMenu.Item
+        className="compose-classname"
+        origin={ActionMenu.origins.topLeft}
+      />
     )
 
     expect(container.querySelector('.psds-actionmenu__item-inner')).toHaveClass(
