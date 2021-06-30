@@ -1,7 +1,8 @@
 import {
   RefForwardingComponent,
   ValueOf,
-  classNames
+  classNames,
+  dashify
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
@@ -54,7 +55,7 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
     <div
       className={classNames(
         'psds-avatar',
-        `psds-avatar--size-${size.toLowerCase()}`,
+        `psds-avatar--size-${dashify(size)}`,
         className
       )}
       {...(hideFromScreenReaders && { 'aria-hidden': true })}

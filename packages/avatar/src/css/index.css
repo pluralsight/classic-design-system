@@ -5,7 +5,7 @@
   position: relative;
   border-radius: 100%;
 }
-.psds-avatar--size-xsmall {
+.psds-avatar--size-x-small {
   width: 32px;
   height: 32px;
   font-size: var(--ps-type-font-size-400);
@@ -29,7 +29,7 @@
   font-size: var(--ps-type-font-size-1000);
   font-weight: var(--ps-type-font-weight-300);
 }
-.psds-avatar--size-xlarge {
+.psds-avatar--size-x-large {
   width: 160px;
   height: 160px;
   font-size: var(--ps-type-font-size-1200);

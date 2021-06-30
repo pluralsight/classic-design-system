@@ -242,7 +242,7 @@ exports[`Storyshots Components/Avatar Name Undefined 1`] = `
 exports[`Storyshots Components/Avatar Sizes 1`] = `
 Array [
   <div
-    className="psds-avatar psds-avatar--size-xsmall"
+    className="psds-avatar psds-avatar--size-x-small"
   >
     <div
       className="psds-avatar__initials"
@@ -298,7 +298,7 @@ Array [
     </div>
   </div>,
   <div
-    className="psds-avatar psds-avatar--size-xlarge"
+    className="psds-avatar psds-avatar--size-x-large"
   >
     <div
       className="psds-avatar__initials"
