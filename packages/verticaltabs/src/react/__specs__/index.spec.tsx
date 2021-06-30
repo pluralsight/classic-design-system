@@ -16,6 +16,14 @@ describe('VerticalTabs', () => {
     expect(ref).not.toBeNull()
   })
 
+  it('composes className', () => {
+    const { container } = render(<VerticalTabs className="compose-classname" />)
+
+    expect(container.firstChild).toHaveClass(
+      'psds-verticaltabs compose-classname'
+    )
+  })
+
   describe.skip.each(cases)('%s story', (_name, Story) => {
     it('has no axe-core violations', async () => {
       const { container } = render(<Story {...Story.args} />)

@@ -1,24 +1,20 @@
-import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
-import { ValueOf } from '@pluralsight/ps-design-system-util'
-import glamorDefault, * as glamorExports from 'glamor'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import stylesheet from '../css/index'
-
-const glamor = glamorDefault || glamorExports
-
-const styles = {
-  divider: (themeName: ValueOf<typeof Theme.names>) =>
-    glamor.css(
-      stylesheet['.psds-verticaltabs__divider'],
-      stylesheet[`.psds-verticaltabs__divider.psds-theme--${themeName}`]
-    )
-}
+import '../css/index.css'
 
 const Divider: React.FC = () => {
   const themeName = useTheme()
 
-  return <hr {...styles.divider(themeName)} />
+  return (
+    <hr
+      className={classNames(
+        'psds-verticaltabs__divider',
+        `psds-theme--${themeName}`
+      )}
+    />
+  )
 }
 
 Divider.displayName = 'VerticalTabs.Divider'
