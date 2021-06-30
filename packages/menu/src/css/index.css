@@ -18,22 +18,22 @@
   opacity: 0;
   animation: psds-menu__keyframes__slide var(--ps-motion-speed-normal) forwards;
 }
-.psds-menu--origin-topleft {
+.psds-menu--origin-top-left {
   transform: translate(0, calc(-1 * var(--ps-layout-spacing-xsmall)));
   right: 0;
   top: 0;
 }
-.psds-menu--origin-bottomleft {
+.psds-menu--origin-bottom-left {
   transform: translate(0, var(--ps-layout-spacing-xsmall));
   bottom: 0;
   right: 0;
 }
-.psds-menu--origin-topright {
+.psds-menu--origin-top-right {
   transform: translate(0, calc(-1 * var(--ps-layout-spacing-xsmall)));
   left: 0;
   top: 0;
 }
-.psds-menu--origin-bottomright {
+.psds-menu--origin-bottom-right {
   transform: translate(0, var(--ps-layout-spacing-xsmall));
   left: 0;
   bottom: 0;

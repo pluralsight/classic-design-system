@@ -2,6 +2,7 @@ import {
   RefForwardingComponent,
   ValueOf,
   classNames,
+  dashify,
   useMenuRef
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
@@ -66,8 +67,7 @@ const Menu = React.forwardRef<HTMLUListElement, MenuProps>(
         {...rest}
         className={classNames(
           'psds-menu',
-          `psds-menu--origin-${origin.toLowerCase()}`,
-          'psds-menu__animation',
+          `psds-menu--origin-${dashify(origin)}`,
           className
         )}
         ref={ref}

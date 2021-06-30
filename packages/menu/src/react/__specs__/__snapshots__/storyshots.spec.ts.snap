@@ -3,7 +3,7 @@
 exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
 <ul
   aria-label="some label"
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="listbox"
 >
   <li
@@ -92,7 +92,7 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
 exports[`Storyshots Components/Menu Active Item 1`] = `
 <ul
   aria-label="some label"
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="listbox"
 >
   <li
@@ -161,7 +161,7 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
 
 exports[`Storyshots Components/Menu Custom Style Item 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -241,7 +241,7 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
 
 exports[`Storyshots Components/Menu Divider Edge 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -271,7 +271,7 @@ exports[`Storyshots Components/Menu Divider Edge 1`] = `
 
 exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -339,7 +339,7 @@ exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
 
 exports[`Storyshots Components/Menu Ellipsis 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -370,7 +370,7 @@ exports[`Storyshots Components/Menu Ellipsis 1`] = `
 
 exports[`Storyshots Components/Menu Item Disabled 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -398,7 +398,7 @@ exports[`Storyshots Components/Menu Item Disabled 1`] = `
 
 exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -484,7 +484,7 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
 
 exports[`Storyshots Components/Menu Item Disabled Multiple 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -532,7 +532,7 @@ exports[`Storyshots Components/Menu Item Disabled Multiple 1`] = `
 
 exports[`Storyshots Components/Menu Item Link 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -561,7 +561,7 @@ exports[`Storyshots Components/Menu Item Link 1`] = `
 
 exports[`Storyshots Components/Menu Item Links 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -655,7 +655,7 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
 
 exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -816,7 +816,7 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
 exports[`Storyshots Components/Menu Item With Description 1`] = `
 <ul
   aria-label="some label"
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -863,7 +863,7 @@ exports[`Storyshots Components/Menu Item With Description 1`] = `
 exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
 <ul
   aria-label="some label"
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="listbox"
 >
   <li
@@ -921,7 +921,7 @@ exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
 
 exports[`Storyshots Components/Menu Long Text 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -975,7 +975,7 @@ exports[`Storyshots Components/Menu Long Text 1`] = `
 
 exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -1583,7 +1583,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
 
 exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -1648,7 +1648,7 @@ exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
 
 exports[`Storyshots Components/Menu Menu Items One 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -1675,7 +1675,7 @@ exports[`Storyshots Components/Menu Menu Items One 1`] = `
 
 exports[`Storyshots Components/Menu Null Item 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -1721,7 +1721,7 @@ exports[`Storyshots Components/Menu Null Item 1`] = `
 
 exports[`Storyshots Components/Menu On Click 1`] = `
 <ul
-  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+  className="psds-menu psds-menu--origin-top-left"
   role="menu"
 >
   <li
@@ -1812,7 +1812,7 @@ Array [
       }
     >
       <ul
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         role="menu"
       >
         <li
@@ -1899,7 +1899,7 @@ Array [
     }
   >
     <ul
-      className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+      className="psds-menu psds-menu--origin-top-left"
       role="menu"
       style={
         Object {
