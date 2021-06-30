@@ -3,12 +3,12 @@
 exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
 <ul
   aria-label="some label"
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="listbox"
 >
   <li
     aria-selected={false}
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -17,10 +17,10 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Not active
       </div>
@@ -28,7 +28,7 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
   </li>
   <li
     aria-selected={true}
-    data-css-uzsybs=""
+    className="psds-menu__list-item psds-menu__list-item--active"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -37,14 +37,14 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Selected
         <div
-          data-css-150r72w=""
+          className="psds-menu__item-icon"
           data-css-7dab2f=""
           style={
             Object {
@@ -67,7 +67,7 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-9ndocp=""
+    className="psds-menu__list-item psds-menu__list-item--disabled psds-menu__list-item--active"
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -76,11 +76,11 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
     role="option"
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       disabled={true}
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Active disabled
       </div>
@@ -92,12 +92,12 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
 exports[`Storyshots Components/Menu Active Item 1`] = `
 <ul
   aria-label="some label"
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="listbox"
 >
   <li
     aria-selected={false}
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -106,10 +106,10 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Not active
       </div>
@@ -117,7 +117,7 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
   </li>
   <li
     aria-selected={true}
-    data-css-uzsybs=""
+    className="psds-menu__list-item psds-menu__list-item--active"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -126,10 +126,10 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Active
       </div>
@@ -137,7 +137,7 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
   </li>
   <li
     aria-selected={false}
-    data-css-9ndocp=""
+    className="psds-menu__list-item psds-menu__list-item--disabled psds-menu__list-item--active"
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -146,11 +146,11 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
     role="option"
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       disabled={true}
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Active disabled
       </div>
@@ -161,11 +161,11 @@ exports[`Storyshots Components/Menu Active Item 1`] = `
 
 exports[`Storyshots Components/Menu Custom Style Item 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -174,7 +174,7 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       style={
         Object {
           "outline": "1px solid red",
@@ -182,14 +182,14 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
       }
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         One item
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -198,7 +198,7 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       style={
         Object {
           "outline": "1px solid blue",
@@ -206,14 +206,14 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
       }
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Two item
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -222,7 +222,7 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       style={
         Object {
           "outline": "1px solid green",
@@ -230,7 +230,7 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
       }
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Three item
       </div>
@@ -241,11 +241,11 @@ exports[`Storyshots Components/Menu Custom Style Item 1`] = `
 
 exports[`Storyshots Components/Menu Divider Edge 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -254,28 +254,28 @@ exports[`Storyshots Components/Menu Divider Edge 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         One item
       </div>
     </button>
   </li>
   <div
-    data-css-shsjok=""
+    className="psds-menu__divider"
   />
 </ul>
 `;
 
 exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -284,20 +284,20 @@ exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         One item
       </div>
     </button>
   </li>
   <div
-    data-css-shsjok=""
+    className="psds-menu__divider"
   />
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -306,17 +306,17 @@ exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Two item
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -325,10 +325,10 @@ exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Three item
       </div>
@@ -339,11 +339,11 @@ exports[`Storyshots Components/Menu Divider Sandwich 1`] = `
 
 exports[`Storyshots Components/Menu Ellipsis 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -352,13 +352,13 @@ exports[`Storyshots Components/Menu Ellipsis 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         <span
-          data-css-kfg7gj=""
+          className="psds-menu__ellipsis"
         >
           One item that has text that goes on forever and onward into the universes yet to be
         </span>
@@ -370,11 +370,11 @@ exports[`Storyshots Components/Menu Ellipsis 1`] = `
 
 exports[`Storyshots Components/Menu Item Disabled 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-pty2be=""
+    className="psds-menu__list-item psds-menu__list-item--disabled"
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -383,11 +383,11 @@ exports[`Storyshots Components/Menu Item Disabled 1`] = `
     role="menuitem"
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       disabled={true}
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Single, disabled
       </div>
@@ -398,11 +398,11 @@ exports[`Storyshots Components/Menu Item Disabled 1`] = `
 
 exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -411,17 +411,17 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Enabled
       </div>
     </button>
   </li>
   <li
-    data-css-pty2be=""
+    className="psds-menu__list-item psds-menu__list-item--disabled"
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -430,18 +430,18 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
     role="menuitem"
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       disabled={true}
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Disabled
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -450,17 +450,17 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Enabled
       </div>
     </button>
   </li>
   <li
-    data-css-pty2be=""
+    className="psds-menu__list-item psds-menu__list-item--disabled"
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -469,11 +469,11 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
     role="menuitem"
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       disabled={true}
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Disabled
       </div>
@@ -484,11 +484,11 @@ exports[`Storyshots Components/Menu Item Disabled Mix 1`] = `
 
 exports[`Storyshots Components/Menu Item Disabled Multiple 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-pty2be=""
+    className="psds-menu__list-item psds-menu__list-item--disabled"
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -497,18 +497,18 @@ exports[`Storyshots Components/Menu Item Disabled Multiple 1`] = `
     role="menuitem"
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       disabled={true}
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Mult 1, disabled
       </div>
     </button>
   </li>
   <li
-    data-css-pty2be=""
+    className="psds-menu__list-item psds-menu__list-item--disabled"
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -517,11 +517,11 @@ exports[`Storyshots Components/Menu Item Disabled Multiple 1`] = `
     role="menuitem"
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
       disabled={true}
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Mult 2, disabled
       </div>
@@ -532,11 +532,11 @@ exports[`Storyshots Components/Menu Item Disabled Multiple 1`] = `
 
 exports[`Storyshots Components/Menu Item Link 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -545,12 +545,12 @@ exports[`Storyshots Components/Menu Item Link 1`] = `
     tabIndex={-1}
   >
     <a
-      data-css-141hx40=""
+      className="psds-menu__option"
       href="https://duckduckgo.com"
       target="_blank"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Links to web
       </div>
@@ -561,11 +561,11 @@ exports[`Storyshots Components/Menu Item Link 1`] = `
 
 exports[`Storyshots Components/Menu Item Links 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -574,19 +574,19 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
     tabIndex={-1}
   >
     <a
-      data-css-141hx40=""
+      className="psds-menu__option"
       href="https://duck.com"
       target="_blank"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Enabled
       </div>
     </a>
   </li>
   <li
-    data-css-pty2be=""
+    className="psds-menu__list-item psds-menu__list-item--disabled"
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -595,20 +595,20 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
     role="menuitem"
   >
     <a
-      data-css-141hx40=""
+      className="psds-menu__option"
       disabled={true}
       href="https://duck.com"
       target="_blank"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Disabled
       </div>
     </a>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -617,19 +617,19 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
     tabIndex={-1}
   >
     <a
-      data-css-141hx40=""
+      className="psds-menu__option"
       href="https://duck.com"
       target="_blank"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Enabled
       </div>
     </a>
   </li>
   <li
-    data-css-pty2be=""
+    className="psds-menu__list-item psds-menu__list-item--disabled"
     data-disabled={true}
     onBlur={[Function]}
     onClick={[Function]}
@@ -638,13 +638,13 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
     role="menuitem"
   >
     <a
-      data-css-141hx40=""
+      className="psds-menu__option"
       disabled={true}
       href="https://duck.com"
       target="_blank"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Disabled
       </div>
@@ -655,11 +655,11 @@ exports[`Storyshots Components/Menu Item Links 1`] = `
 
 exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item psds-menu__item-with-description"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -668,26 +668,25 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
-      data-css-1wqs04=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         <div
-          data-css-1v08evy=""
+          className="psds-menu__item-with-description__wrapper"
         >
           <span>
             Can view
           </span>
           <span
-            data-css-1paf77e=""
+            className="psds-menu__item-with-description__description"
           >
             View details, content and other members in the channel.
           </span>
         </div>
         <div
-          data-css-zt0o3m=""
+          className="psds-menu__item-icon-filler"
           style={
             Object {
               "marginLeft": "auto",
@@ -698,7 +697,7 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item psds-menu__item-with-description"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -707,26 +706,25 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
-      data-css-1wqs04=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         <div
-          data-css-1v08evy=""
+          className="psds-menu__item-with-description__wrapper"
         >
           <span>
             Can edit
           </span>
           <span
-            data-css-1paf77e=""
+            className="psds-menu__item-with-description__description"
           >
             Edit details, add or remove content and invite or remove members
           </span>
         </div>
         <div
-          data-css-zt0o3m=""
+          className="psds-menu__item-icon-filler"
           style={
             Object {
               "marginLeft": "auto",
@@ -737,7 +735,7 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item psds-menu__item-with-description"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -746,26 +744,25 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
-      data-css-1wqs04=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         <div
-          data-css-1v08evy=""
+          className="psds-menu__item-with-description__wrapper"
         >
           <span>
             Make owner
           </span>
           <span
-            data-css-1paf77e=""
+            className="psds-menu__item-with-description__description"
           >
             Edit details, add or remove content, invite or remove members and delete Channel
           </span>
         </div>
         <div
-          data-css-zt0o3m=""
+          className="psds-menu__item-icon-filler"
           style={
             Object {
               "marginLeft": "auto",
@@ -776,7 +773,7 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -785,17 +782,17 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Remove member
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -804,10 +801,10 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Remove member with so many lines that it goes to a second line
       </div>
@@ -819,11 +816,11 @@ exports[`Storyshots Components/Menu Item Next To Items With No Description 1`] =
 exports[`Storyshots Components/Menu Item With Description 1`] = `
 <ul
   aria-label="some label"
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item psds-menu__item-with-description"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -832,26 +829,25 @@ exports[`Storyshots Components/Menu Item With Description 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
-      data-css-1wqs04=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         <div
-          data-css-1v08evy=""
+          className="psds-menu__item-with-description__wrapper"
         >
           <span>
             item
           </span>
           <span
-            data-css-1paf77e=""
+            className="psds-menu__item-with-description__description"
           >
             some words that describe a thing that really should wrap you known
           </span>
         </div>
         <div
-          data-css-zt0o3m=""
+          className="psds-menu__item-icon-filler"
           style={
             Object {
               "marginLeft": "auto",
@@ -867,12 +863,12 @@ exports[`Storyshots Components/Menu Item With Description 1`] = `
 exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
 <ul
   aria-label="some label"
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="listbox"
 >
   <li
     aria-selected={true}
-    data-css-uzsybs=""
+    className="psds-menu__list-item psds-menu__list-item--active psds-menu__item-with-description"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -881,26 +877,25 @@ exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
-      data-css-1wqs04=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         <div
-          data-css-1v08evy=""
+          className="psds-menu__item-with-description__wrapper"
         >
           <span>
             item active
           </span>
           <span
-            data-css-1paf77e=""
+            className="psds-menu__item-with-description__description"
           >
             some words that describe a thing that really should wrap you known
           </span>
         </div>
         <div
-          data-css-150r72w=""
+          className="psds-menu__item-icon"
           data-css-7dab2f=""
           style={
             Object {
@@ -926,11 +921,11 @@ exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
 
 exports[`Storyshots Components/Menu Long Text 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -939,13 +934,13 @@ exports[`Storyshots Components/Menu Long Text 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         <span
-          data-css-kfg7gj=""
+          className="psds-menu__ellipsis"
         >
           One item that has text that goes on forever and onward into the universes yet to be
         </span>
@@ -953,7 +948,7 @@ exports[`Storyshots Components/Menu Long Text 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -962,13 +957,13 @@ exports[`Storyshots Components/Menu Long Text 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         <span
-          data-css-kfg7gj=""
+          className="psds-menu__ellipsis"
         >
           Another item that takes a long time to explain in the context of everything that is in a line.
         </span>
@@ -980,11 +975,11 @@ exports[`Storyshots Components/Menu Long Text 1`] = `
 
 exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -993,10 +988,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         0
@@ -1004,7 +999,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1013,10 +1008,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         1
@@ -1024,7 +1019,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1033,10 +1028,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         2
@@ -1044,7 +1039,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1053,10 +1048,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         3
@@ -1064,7 +1059,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1073,10 +1068,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         4
@@ -1084,7 +1079,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1093,10 +1088,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         5
@@ -1104,7 +1099,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1113,10 +1108,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         6
@@ -1124,7 +1119,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1133,10 +1128,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         7
@@ -1144,7 +1139,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1153,10 +1148,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         8
@@ -1164,7 +1159,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1173,10 +1168,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         9
@@ -1184,7 +1179,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1193,10 +1188,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         10
@@ -1204,7 +1199,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1213,10 +1208,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         11
@@ -1224,7 +1219,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1233,10 +1228,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         12
@@ -1244,7 +1239,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1253,10 +1248,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         13
@@ -1264,7 +1259,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1273,10 +1268,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         14
@@ -1284,7 +1279,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1293,10 +1288,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         15
@@ -1304,7 +1299,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1313,10 +1308,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         16
@@ -1324,7 +1319,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1333,10 +1328,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         17
@@ -1344,7 +1339,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1353,10 +1348,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         18
@@ -1364,7 +1359,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1373,10 +1368,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         19
@@ -1384,7 +1379,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1393,10 +1388,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         20
@@ -1404,7 +1399,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1413,10 +1408,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         21
@@ -1424,7 +1419,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1433,10 +1428,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         22
@@ -1444,7 +1439,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1453,10 +1448,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         23
@@ -1464,7 +1459,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1473,10 +1468,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         24
@@ -1484,7 +1479,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1493,10 +1488,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         25
@@ -1504,7 +1499,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1513,10 +1508,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         26
@@ -1524,7 +1519,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1533,10 +1528,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         27
@@ -1544,7 +1539,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1553,10 +1548,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         28
@@ -1564,7 +1559,7 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1573,10 +1568,10 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         index: 
         29
@@ -1588,11 +1583,11 @@ exports[`Storyshots Components/Menu Menu Items Lots 1`] = `
 
 exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1601,17 +1596,17 @@ exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         One item
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1620,17 +1615,17 @@ exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Two item
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1639,10 +1634,10 @@ exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Three item
       </div>
@@ -1653,11 +1648,11 @@ exports[`Storyshots Components/Menu Menu Items Multiple 1`] = `
 
 exports[`Storyshots Components/Menu Menu Items One 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1666,10 +1661,10 @@ exports[`Storyshots Components/Menu Menu Items One 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         One item
       </div>
@@ -1680,11 +1675,11 @@ exports[`Storyshots Components/Menu Menu Items One 1`] = `
 
 exports[`Storyshots Components/Menu Null Item 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1693,17 +1688,17 @@ exports[`Storyshots Components/Menu Null Item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         One item
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1712,10 +1707,10 @@ exports[`Storyshots Components/Menu Null Item 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Skip to three item
       </div>
@@ -1726,11 +1721,11 @@ exports[`Storyshots Components/Menu Null Item 1`] = `
 
 exports[`Storyshots Components/Menu On Click 1`] = `
 <ul
-  data-css-rls1dj=""
+  className="psds-menu psds-menu--origin-topleft psds-menu__animation"
   role="menu"
 >
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1739,17 +1734,17 @@ exports[`Storyshots Components/Menu On Click 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         One item
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1758,17 +1753,17 @@ exports[`Storyshots Components/Menu On Click 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         Two item
       </div>
     </button>
   </li>
   <li
-    data-css-12h6umw=""
+    className="psds-menu__list-item"
     onBlur={[Function]}
     onClick={[Function]}
     onFocus={[Function]}
@@ -1777,10 +1772,10 @@ exports[`Storyshots Components/Menu On Click 1`] = `
     tabIndex={-1}
   >
     <button
-      data-css-141hx40=""
+      className="psds-menu__option"
     >
       <div
-        data-css-fxdh11=""
+        className="psds-menu__option-inner"
       >
         TTwo item
       </div>
@@ -1817,11 +1812,11 @@ Array [
       }
     >
       <ul
-        data-css-rls1dj=""
+        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
         role="menu"
       >
         <li
-          data-css-12h6umw=""
+          className="psds-menu__list-item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1830,17 +1825,17 @@ Array [
           tabIndex={-1}
         >
           <button
-            data-css-141hx40=""
+            className="psds-menu__option"
           >
             <div
-              data-css-fxdh11=""
+              className="psds-menu__option-inner"
             >
               One item
             </div>
           </button>
         </li>
         <li
-          data-css-12h6umw=""
+          className="psds-menu__list-item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1849,17 +1844,17 @@ Array [
           tabIndex={-1}
         >
           <button
-            data-css-141hx40=""
+            className="psds-menu__option"
           >
             <div
-              data-css-fxdh11=""
+              className="psds-menu__option-inner"
             >
               Two item
             </div>
           </button>
         </li>
         <li
-          data-css-12h6umw=""
+          className="psds-menu__list-item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -1868,10 +1863,10 @@ Array [
           tabIndex={-1}
         >
           <button
-            data-css-141hx40=""
+            className="psds-menu__option"
           >
             <div
-              data-css-fxdh11=""
+              className="psds-menu__option-inner"
             >
               Three item
             </div>
@@ -1904,7 +1899,7 @@ Array [
     }
   >
     <ul
-      data-css-rls1dj=""
+      className="psds-menu psds-menu--origin-topleft psds-menu__animation"
       role="menu"
       style={
         Object {
@@ -1913,7 +1908,7 @@ Array [
       }
     >
       <li
-        data-css-12h6umw=""
+        className="psds-menu__list-item"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -1922,17 +1917,17 @@ Array [
         tabIndex={-1}
       >
         <button
-          data-css-141hx40=""
+          className="psds-menu__option"
         >
           <div
-            data-css-fxdh11=""
+            className="psds-menu__option-inner"
           >
             One item
           </div>
         </button>
       </li>
       <li
-        data-css-12h6umw=""
+        className="psds-menu__list-item"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -1941,17 +1936,17 @@ Array [
         tabIndex={-1}
       >
         <button
-          data-css-141hx40=""
+          className="psds-menu__option"
         >
           <div
-            data-css-fxdh11=""
+            className="psds-menu__option-inner"
           >
             Two item
           </div>
         </button>
       </li>
       <li
-        data-css-12h6umw=""
+        className="psds-menu__list-item"
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -1960,10 +1955,10 @@ Array [
         tabIndex={-1}
       >
         <button
-          data-css-141hx40=""
+          className="psds-menu__option"
         >
           <div
-            data-css-fxdh11=""
+            className="psds-menu__option-inner"
           >
             Three item
           </div>
