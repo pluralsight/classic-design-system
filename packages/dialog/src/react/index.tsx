@@ -3,49 +3,23 @@ import Theme from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
   ValueOf,
+  classNames,
   createUniversalPortal,
   isFunction,
-  stylesFor,
   usePortal
 } from '@pluralsight/ps-design-system-util'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-import stylesheet from '../css/index'
+import '../css/index.css'
 import * as vars from '../vars/index'
 
-const glamor = glamorDefault || glamorExports
 /* eslint-disable-next-line camelcase */
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
-
-const fade = glamor.keyframes(
-  stylesheet['@keyframes psds-dialog__keyframes__fade']
-)
-
-const styles = {
-  dialog: (modal: boolean, tailPosition?: ValueOf<typeof vars.tailPositions>) =>
-    glamor.compose(
-      glamor.css(stylesheet['.psds-dialog']({ fade })),
-      modal && glamor.css(stylesheet['.psds-dialog--modal']),
-      Boolean(tailPosition) &&
-        glamor.compose(
-          stylesheet['.psds-dialog--w-tail'],
-          stylesheet[`.psds-dialog--tailPosition-${tailPosition}`]
-        )
-    ),
-  content: (props: DialogProps) =>
-    glamor.css(
-      stylesheet['.psds-dialog__content'],
-      stylesFor('dialog__content', props) as glamorExports.StyleAttribute
-    ),
-  close: () => glamor.css(stylesheet['.psds-dialog__close']),
-  overlay: () => glamor.css(stylesheet['.psds-dialog__overlay'])
-}
 
 const CloseButton: React.FC<
   React.HTMLAttributes<HTMLButtonElement>
 > = props => (
-  <button {...styles.close()} {...props} aria-label="Close dialog">
+  <button {...props} className="psds-dialog__close" aria-label="Close dialog">
     <svg
       aria-label="close icon"
       role="img"
@@ -76,8 +50,8 @@ const Overlay: React.FC<OverlayProps> = ({
 
   return (
     <div
-      {...styles.overlay()}
       {...props}
+      className="psds-dialog__overlay"
       id={MODAL_OVERLAY_ID}
       onClick={handleOverlayClick}
       role="region"
@@ -98,8 +72,6 @@ export interface DialogProps extends React.HTMLAttributes<HTMLDivElement> {
   onClose?: (evt: React.KeyboardEvent | React.MouseEvent) => void
   tailPosition?: ValueOf<typeof vars.tailPositions>
   returnFocus?: boolean
-  // eslint-disable-next-line camelcase
-  UNSAFE_stylesFor?: Record<string, unknown>
 }
 
 export interface DialogComponent
@@ -108,6 +80,7 @@ export interface DialogComponent
 const Dialog = React.forwardRef((props, ref) => {
   const {
     children,
+    className,
     disableCloseButton = false,
     disableCloseOnEscape = false,
     disableCloseOnOverlayClick = false,
@@ -116,8 +89,6 @@ const Dialog = React.forwardRef((props, ref) => {
     modal = false,
     returnFocus = true,
     tailPosition,
-    /* eslint-disable-next-line camelcase */
-    UNSAFE_stylesFor,
     ...rest
   } = props
 
@@ -135,8 +106,14 @@ const Dialog = React.forwardRef((props, ref) => {
 
   const content = (
     <FocusManager
-      {...styles.dialog(modal, tailPosition)}
       {...rest}
+      className={classNames(
+        'psds-dialog',
+        modal && 'psds-dialog--modal',
+        typeof tailPosition !== 'undefined' &&
+          `psds-dialog--w-tail psds-dialog--tailposition-${tailPosition.toLowerCase()}`,
+        className
+      )}
       {...(closeOnEscape && { onKeyUp: handleKeyUp })}
       {...(modal && { 'aria-label': undefined })}
       autofocus={autofocus}
@@ -145,7 +122,7 @@ const Dialog = React.forwardRef((props, ref) => {
       ref={ref}
     >
       <Theme name={Theme.names.light}>
-        <div {...styles.content(props)}>
+        <div className="psds-dialog__content">
           {!disableCloseButton && isFunction(onClose) && (
             // eslint-disable-next-line react/jsx-handler-names
             <CloseButton onClick={onClose} />
