@@ -1,5 +1,9 @@
 import { dashify } from '../dashify'
 
+it('handles undefined gracefully', () => {
+  expect(dashify()).toEqual(undefined)
+})
+
 it('keeps lowercase', () => {
   expect(dashify('select')).toEqual('select')
 })

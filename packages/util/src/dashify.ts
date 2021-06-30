@@ -1,4 +1,6 @@
-export function dashify(str: string) {
+export function dashify(str?: string) {
+  if (!str) return
+
   return str
     .trim()
     .replace(/([a-z])([A-Z])/g, '$1-$2')
