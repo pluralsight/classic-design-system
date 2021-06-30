@@ -113,7 +113,7 @@ const ActivePillBg: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
 const List = React.forwardRef<
   HTMLDivElement,
   React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => {
+>(({ className, ...rest }, ref) => {
   const themeName = useTheme()
   return (
     <div
@@ -123,13 +123,13 @@ const List = React.forwardRef<
         `psds-theme--${themeName}`,
         className
       )}
-      {...props}
+      {...rest}
     />
   )
 })
 
 const PillBgSpacer: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
-  return <div className="psds-viewtoggle__option-bg__spacer" {...props} />
+  return <div {...props} className="psds-viewtoggle__option-bg__spacer" />
 }
 
 interface OptionButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
