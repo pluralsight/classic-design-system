@@ -453,7 +453,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <div
-          data-css-ottiud=""
+          className="psds-dropdown"
           style={
             Object {
               "maxWidth": "none",
@@ -462,46 +462,48 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <label>
-            <span>
+            <span
+              className="psds-dropdown__label psds-theme--dark"
+            >
               Occupation
             </span>
           </label>
           <div
-            data-css-8befsb=""
+            className="psds-dropdown__field-container"
           >
             <div
-              data-css-3ah8pf=""
+              className="psds-dropdown__field-halo"
               data-css-ctre2o=""
             >
               <div
-                data-css-ne3jjf=""
+                className="psds-dropdown__field-aligner"
               >
                 <button
                   aria-haspopup="listbox"
                   aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
-                  data-css-185vr3w=""
+                  className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
                   disabled={false}
                   id="dropdown-button-4fzzzxjyl"
                   onClick={[Function]}
                   onKeyDown={[Function]}
                 >
                   <span
-                    data-css-1m4meif=""
+                    className="psds-dropdown__field-inner"
                   >
                     <span
                       aria-hidden={true}
-                      data-css-mlkf0z=""
+                      className="psds-dropdown__button-sizer"
                     >
                       Select your occupation...
                     </span>
                     <span
-                      data-css-13czx1q=""
+                      className="psds-dropdown__placeholder psds-dropdown__placeholder--color"
                     >
                       Select your occupation...
                     </span>
                   </span>
                   <div
-                    data-css-19x2evt=""
+                    className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
                   >
                     <div
                       data-css-7dab2f=""
