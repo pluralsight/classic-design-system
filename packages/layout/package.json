@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-layout",
-  "version": "11.1.16",
+  "version": "11.1.17",
   "description": "Design system components for ui layouts",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -29,7 +29,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.2.2",
-    "@pluralsight/ps-design-system-text": "^20.1.14",
+    "@pluralsight/ps-design-system-text": "^20.1.15",
     "@pluralsight/ps-design-system-util": "^9.2.9"
   },
   "peerDependencies": {
