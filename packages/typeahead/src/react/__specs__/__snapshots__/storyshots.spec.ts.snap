@@ -51,7 +51,7 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
             id="downshift-0-toggle-button"
             onClick={[Function]}
             tabIndex={-1}
@@ -87,7 +87,7 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
     }
   >
     <div
-      data-css-gyrv08=""
+      className="psds-multi-select__wrapper"
       style={
         Object {
           "position": "absolute",
@@ -96,7 +96,7 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
     >
       <ul
         aria-labelledby="downshift-0-label"
-        data-css-1krnuz2=""
+        className="psds-multi-select__menu"
         data-css-rls1dj=""
         id="downshift-0-menu"
         onMouseLeave={[Function]}
@@ -1404,7 +1404,7 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
             id="downshift-1-toggle-button"
             onClick={[Function]}
             tabIndex={-1}
@@ -1440,7 +1440,7 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
     }
   >
     <div
-      data-css-gyrv08=""
+      className="psds-multi-select__wrapper"
       style={
         Object {
           "position": "absolute",
@@ -1449,7 +1449,7 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
     >
       <ul
         aria-labelledby="downshift-1-label"
-        data-css-1krnuz2=""
+        className="psds-multi-select__menu"
         data-css-rls1dj=""
         id="downshift-1-menu"
         onMouseLeave={[Function]}
@@ -2757,7 +2757,7 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
             id="downshift-8-toggle-button"
             onClick={[Function]}
             tabIndex={-1}
@@ -2793,7 +2793,7 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
     }
   >
     <div
-      data-css-gyrv08=""
+      className="psds-multi-select__wrapper"
       style={
         Object {
           "position": "absolute",
@@ -2802,7 +2802,7 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
     >
       <ul
         aria-labelledby="downshift-8-label"
-        data-css-1krnuz2=""
+        className="psds-multi-select__menu"
         data-css-rls1dj=""
         id="downshift-8-menu"
         onMouseLeave={[Function]}
@@ -4109,7 +4109,7 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
             id="downshift-7-toggle-button"
             onClick={[Function]}
             tabIndex={-1}
@@ -4143,7 +4143,7 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
     }
   >
     <div
-      data-css-gyrv08=""
+      className="psds-multi-select__wrapper"
       style={
         Object {
           "position": "absolute",
@@ -4152,7 +4152,7 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
     >
       <ul
         aria-labelledby="downshift-7-label"
-        data-css-1krnuz2=""
+        className="psds-multi-select__menu"
         data-css-rls1dj=""
         id="downshift-7-menu"
         onMouseLeave={[Function]}
@@ -5461,7 +5461,7 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
             id="downshift-4-toggle-button"
             onClick={[Function]}
             tabIndex={-1}
@@ -5497,7 +5497,7 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
     }
   >
     <div
-      data-css-gyrv08=""
+      className="psds-multi-select__wrapper"
       style={
         Object {
           "position": "absolute",
@@ -5506,7 +5506,7 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
     >
       <ul
         aria-labelledby="downshift-4-label"
-        data-css-1krnuz2=""
+        className="psds-multi-select__menu"
         data-css-rls1dj=""
         id="downshift-4-menu"
         onMouseLeave={[Function]}
@@ -6814,7 +6814,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
             id="downshift-5-toggle-button"
             onClick={[Function]}
             tabIndex={-1}
@@ -6869,7 +6869,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
     }
   >
     <div
-      data-css-gyrv08=""
+      className="psds-multi-select__wrapper"
       style={
         Object {
           "position": "absolute",
@@ -6878,7 +6878,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
     >
       <ul
         aria-labelledby="downshift-5-label"
-        data-css-1krnuz2=""
+        className="psds-multi-select__menu"
         data-css-rls1dj=""
         id="downshift-5-menu"
         onMouseLeave={[Function]}
@@ -8203,7 +8203,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
             id="downshift-6-toggle-button"
             onClick={[Function]}
             tabIndex={-1}
@@ -8239,7 +8239,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
     }
   >
     <div
-      data-css-gyrv08=""
+      className="psds-multi-select__wrapper"
       style={
         Object {
           "position": "absolute",
@@ -8248,7 +8248,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
     >
       <ul
         aria-labelledby="downshift-6-label"
-        data-css-1krnuz2=""
+        className="psds-multi-select__menu"
         data-css-rls1dj=""
         id="downshift-6-menu"
         onMouseLeave={[Function]}
@@ -9555,7 +9555,7 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
             id="downshift-3-toggle-button"
             onClick={[Function]}
             tabIndex={-1}
@@ -9589,7 +9589,7 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
     }
   >
     <div
-      data-css-gyrv08=""
+      className="psds-multi-select__wrapper"
       style={
         Object {
           "position": "absolute",
@@ -9598,7 +9598,7 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
     >
       <ul
         aria-labelledby="downshift-3-label"
-        data-css-1krnuz2=""
+        className="psds-multi-select__menu"
         data-css-rls1dj=""
         id="downshift-3-menu"
         onMouseLeave={[Function]}
@@ -10906,7 +10906,7 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
             id="downshift-2-toggle-button"
             onClick={[Function]}
             tabIndex={-1}
@@ -10942,7 +10942,7 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
     }
   >
     <div
-      data-css-gyrv08=""
+      className="psds-multi-select__wrapper"
       style={
         Object {
           "position": "absolute",
@@ -10951,7 +10951,7 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
     >
       <ul
         aria-labelledby="downshift-2-label"
-        data-css-1krnuz2=""
+        className="psds-multi-select__menu"
         data-css-rls1dj=""
         id="downshift-2-menu"
         onMouseLeave={[Function]}
