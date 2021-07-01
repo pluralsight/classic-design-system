@@ -213,14 +213,19 @@ const Typeahead: TypeaheadFieldComponent = props => {
     }
   }, [fieldRef])
   const Label = React.useMemo(() => {
+    const _ariaLabel = !label ? ariaLabel : undefined
     if (React.isValidElement(label)) {
       return React.cloneElement<any>(label, {
         ...getLabelProps(),
-        'aria-label': !label ? ariaLabel : undefined
+        'aria-label': _ariaLabel
       })
     }
 
-    return <Field.Label {...getLabelProps()}>{label}</Field.Label>
+    return (
+      <Field.Label {...getLabelProps()} aria-label={_ariaLabel}>
+        {label}
+      </Field.Label>
+    )
   }, [label, getLabelProps])
 
   const SubLabel = React.useMemo(() => {
