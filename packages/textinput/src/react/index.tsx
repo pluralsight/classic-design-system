@@ -83,10 +83,7 @@ const styles = {
       `psds-text-input__label`
     ),
   subLabel: (themeName: ValueOf<typeof themeNames>) =>
-    classNames(
-      'psds-text-input__sub-label',
-      `psds-text-input__sub-label.psds-theme--${themeName}`
-    )
+    classNames('psds-text-input__sub-label', `psds-theme--${themeName}`)
 }
 
 export interface TextInputStatics {
