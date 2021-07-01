@@ -175,7 +175,7 @@ const Tier1Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
       {icon &&
         React.cloneElement(icon, {
           size: CaretDownIcon.sizes.medium,
-          className: classNames(styles.itemIcon()),
+          className: classNames(styles.itemIcon(), icon.props.className),
           ...(active ? { 'data-active': true } : {})
         })}
 

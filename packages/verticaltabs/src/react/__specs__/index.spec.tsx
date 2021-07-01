@@ -36,12 +36,10 @@ describe('VerticalTabs', () => {
     )
   })
 
-  it('composes className (CollapsibleGroup)', () => {
-    const { container } = render(
-      <CollapsibleGroup className="compose-classname" />
-    )
+  it('properly passes className (CollapsibleGroup)', () => {
+    const { container } = render(<CollapsibleGroup className="classname" />)
 
-    expect(container.firstChild).toHaveClass('compose-classname')
+    expect(container.firstChild).toHaveClass('classname')
   })
 
   it('composes className (CollapsibleGroup.Header)', () => {
@@ -54,44 +52,44 @@ describe('VerticalTabs', () => {
     )
   })
 
-  it('composes className (Group)', () => {
-    const { container } = render(<Group className="compose-classname" />)
+  it('properly passes className (Group)', () => {
+    const { container } = render(<Group className="classname" />)
 
-    expect(container.firstChild).toHaveClass('compose-classname')
+    expect(container.firstChild).toHaveClass('classname')
   })
 
-  it('composes className (Group.Header)', () => {
-    const { container } = render(<Group.Header className="compose-classname" />)
+  it('properly passes className (Group.Header)', () => {
+    const { container } = render(<Group.Header className="classname" />)
 
-    expect(container.firstChild).toHaveClass('compose-classname')
+    expect(container.firstChild).toHaveClass('classname')
   })
 
-  it('composes className (Tier1)', () => {
+  it('properly passes className (Tier1)', () => {
     const { container } = render(
       <Tier1
-        className="compose-classname"
+        className="classname"
         header={<Tier1.Header>First</Tier1.Header>}
       />
     )
 
-    expect(container.firstChild).toHaveClass('compose-classname')
+    expect(container.firstChild).toHaveClass('classname')
   })
 
-  it('composes className (Tier1.Header)', () => {
-    const { container } = render(<Tier1.Header className="compose-classname" />)
+  it('properly passes className (Tier1.Header)', () => {
+    const { container } = render(<Tier1.Header className="classname" />)
 
-    expect(container.firstChild).toHaveClass('compose-classname')
+    expect(container.firstChild).toHaveClass('classname')
   })
 
-  it('composes className (Tier2)', () => {
+  it('properly passes className (Tier2)', () => {
     const { container } = render(
       <Tier2
-        className="compose-classname"
+        className="classname"
         header={<Tier2.Header>First</Tier2.Header>}
       />
     )
 
-    expect(container.firstChild).toHaveClass('compose-classname')
+    expect(container.firstChild).toHaveClass('classname')
   })
 
   it('composes className (Tier2.Header)', () => {
