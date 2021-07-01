@@ -16,7 +16,7 @@ describe('Text', () => {
       const { container } = render(<List className="compose-classname" />)
 
       expect(container.firstChild).toHaveClass(
-        'psds-text__list psds-theme--dark psds-text__list--size-medium psds-text__list--color-primary psds-text__list--type-default compose-classname'
+        'psds-text__list compose-classname'
       )
     })
 

@@ -34,19 +34,19 @@
 .psds-text__heading--color-secondary.psds-theme--dark {
   color: var(--ps-colors-text-icon-low-on-dark);
 }
-.psds-text__heading--size-xXXSmall {
+.psds-text__heading--size-xxxsmall {
   font-size: var(--ps-type-font-size-200);
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: var(--ps-type-letter-spacing-all-caps);
 }
-.psds-text__heading--size-xXSmall {
+.psds-text__heading--size-xxsmall {
   font-size: var(--ps-type-font-size-300);
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: var(--ps-type-letter-spacing-all-caps);
 }
-.psds-text__heading--size-xSmall {
+.psds-text__heading--size-xsmall {
   font-size: var(--ps-type-font-size-500);
   line-height: 28px;
 }
@@ -62,7 +62,7 @@
   font-size: var(--ps-type-font-size-800);
   line-height: 40px;
 }
-.psds-text__heading--size-xLarge {
+.psds-text__heading--size-xlarge {
   font-size: var(--ps-type-font-size-900);
   line-height: 52px;
 }
@@ -92,7 +92,7 @@
 .psds-text__label--color-secondary.psds-theme--dark {
   color: var(--ps-colors-text-icon-low-on-dark);
 }
-.psds-text__label--size-xSmall {
+.psds-text__label--size-xsmall {
   font-size: var(--ps-type-font-size-100);
   letter-spacing: var(--ps-type-letter-spacing-looser);
   line-height: 16px;

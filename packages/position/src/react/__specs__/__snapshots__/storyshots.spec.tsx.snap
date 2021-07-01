@@ -28,7 +28,7 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
       The tip
       <div
         aria-hidden={true}
-        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-bottomCenter"
+        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-bottom-center"
       />
     </div>
   </div>
@@ -49,7 +49,7 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
       The tip
       <div
         aria-hidden={true}
-        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-bottomLeft"
+        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-bottom-left"
       />
     </div>
   </div>
@@ -70,7 +70,7 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
       The tip
       <div
         aria-hidden={true}
-        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-bottomRight"
+        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-bottom-right"
       />
     </div>
   </div>
@@ -91,7 +91,7 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
       The tip
       <div
         aria-hidden={true}
-        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-topCenter"
+        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-top-center"
       />
     </div>
   </div>
@@ -112,7 +112,7 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
       The tip
       <div
         aria-hidden={true}
-        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-topLeft"
+        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-top-left"
       />
     </div>
   </div>
@@ -133,7 +133,7 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
       The tip
       <div
         aria-hidden={true}
-        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-topRight"
+        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-top-right"
       />
     </div>
   </div>
@@ -154,7 +154,7 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
       The tip
       <div
         aria-hidden={true}
-        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-leftCenter"
+        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-left-center"
       />
     </div>
   </div>
@@ -175,7 +175,7 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
       The tip
       <div
         aria-hidden={true}
-        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-rightCenter"
+        className="psds-tooltip__tail psds-tooltip__tail--appearance-basic psds-tooltip__tail--tailPosition-right-center"
       />
     </div>
   </div>

@@ -276,10 +276,10 @@ exports[`Storyshots Components/EmptyState Actions With An Input 1`] = `
           data-css-ctre2o=""
         >
           <div
-            className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--appearance-subtle psds-text-input__field--icon-align-left"
+            className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--icon-align-left"
           >
             <input
-              className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
+              className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
               disabled={false}
               placeholder="Find Something"
             />

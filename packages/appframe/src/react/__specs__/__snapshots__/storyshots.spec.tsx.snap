@@ -371,7 +371,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                     }
                   >
                     <span
-                      className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Section Header
                     </span>
@@ -749,7 +749,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                     }
                   >
                     <span
-                      className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Section Header
                     </span>
@@ -1424,7 +1424,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                     }
                   >
                     <span
-                      className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Section Header
                     </span>
@@ -1953,7 +1953,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                     }
                   >
                     <span
-                      className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Admin Tools
                     </span>
@@ -2228,7 +2228,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                     }
                   >
                     <span
-                      className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Content Tools
                     </span>

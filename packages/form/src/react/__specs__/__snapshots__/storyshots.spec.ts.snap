@@ -237,10 +237,10 @@ exports[`Storyshots Components/Form Null Children 1`] = `
               data-css-ctre2o=""
             >
               <div
-                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
               >
                 <input
-                  className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                  className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
                   disabled={false}
                   placeholder="What's your name?"
                   style={
@@ -318,10 +318,10 @@ exports[`Storyshots Components/Form Sample 1`] = `
               data-css-ctre2o=""
             >
               <div
-                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
               >
                 <input
-                  className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                  className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
                   disabled={false}
                   placeholder="What's your name?"
                   style={
@@ -360,10 +360,10 @@ exports[`Storyshots Components/Form Sample 1`] = `
               data-css-ctre2o=""
             >
               <div
-                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
               >
                 <input
-                  className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                  className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
                   disabled={false}
                   placeholder="Do you have a nick name?"
                   style={
@@ -377,7 +377,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             </div>
           </div>
           <div
-            className="psds-text-input__sub-label psds-text-input__sub-label.psds-theme--dark"
+            className="psds-text-input__sub-label psds-theme--dark"
           >
             *Optional
           </div>
@@ -407,10 +407,10 @@ exports[`Storyshots Components/Form Sample 1`] = `
               data-css-in6gqi=""
             >
               <div
-                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default psds-text-input__field--error"
+                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--error"
               >
                 <input
-                  className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                  className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
                   disabled={false}
                   style={
                     Object {
@@ -443,7 +443,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             </div>
           </div>
           <div
-            className="psds-text-input__sub-label psds-text-input__sub-label.psds-theme--dark"
+            className="psds-text-input__sub-label psds-theme--dark"
           >
             Not a valid email address
           </div>
@@ -618,10 +618,10 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 data-css-ctre2o=""
               >
                 <div
-                  className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+                  className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
                 >
                   <input
-                    className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                    className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
                     disabled={false}
                     onChange={[Function]}
                     onFocus={[Function]}

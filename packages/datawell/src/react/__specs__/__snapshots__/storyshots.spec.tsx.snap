@@ -9,7 +9,7 @@ exports[`Storyshots Components/DataWell Fixed Width Row 1`] = `
   >
     <div>
       <span
-        className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
+        className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
         data-css-1xy8nxm=""
       >
         Dog count
@@ -31,7 +31,7 @@ exports[`Storyshots Components/DataWell Fixed Width Row 1`] = `
   >
     <div>
       <span
-        className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
+        className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
         data-css-1xy8nxm=""
       >
         Cat count
@@ -51,7 +51,7 @@ exports[`Storyshots Components/DataWell Fixed Width Row 1`] = `
   >
     <div>
       <span
-        className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
+        className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
         data-css-1xy8nxm=""
       >
         Rafters on the River
@@ -71,7 +71,7 @@ exports[`Storyshots Components/DataWell Fixed Width Row 1`] = `
   >
     <div>
       <span
-        className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
+        className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
         data-css-1xy8nxm=""
       >
         Flotsam
@@ -104,7 +104,7 @@ exports[`Storyshots Components/DataWell Row 1`] = `
   >
     <div>
       <span
-        className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
+        className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
         data-css-1xy8nxm=""
       >
         Dog count
@@ -126,7 +126,7 @@ exports[`Storyshots Components/DataWell Row 1`] = `
   >
     <div>
       <span
-        className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
+        className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
         data-css-1xy8nxm=""
       >
         Cat count
@@ -146,7 +146,7 @@ exports[`Storyshots Components/DataWell Row 1`] = `
   >
     <div>
       <span
-        className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
+        className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
         data-css-1xy8nxm=""
       >
         Rafters on the River
@@ -166,7 +166,7 @@ exports[`Storyshots Components/DataWell Row 1`] = `
   >
     <div>
       <span
-        className="psds-text__label psds-text__label--size-xSmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
+        className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--strong psds-text__label--caps"
         data-css-1xy8nxm=""
       >
         Flotsam

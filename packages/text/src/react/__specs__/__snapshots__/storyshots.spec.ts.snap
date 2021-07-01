@@ -121,19 +121,6 @@ exports[`Storyshots Components/Text/Heading Basic 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Text/Heading Class Override 1`] = `
-<div
-  data-css-yto836=""
->
-  <h1
-    className="css-1ub3o27 psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
-    onClick={[Function]}
-  >
-    Heading
-  </h1>
-</div>
-`;
-
 exports[`Storyshots Components/Text/Heading Colors 1`] = `
 <div
   data-css-yto836=""
@@ -165,22 +152,22 @@ exports[`Storyshots Components/Text/Heading Sizes 1`] = `
     data-css-1cpmtjf=""
   >
     <h1
-      className="psds-text__heading psds-text__heading--size-xXXSmall psds-text__heading--color-primary psds-theme--dark"
+      className="psds-text__heading psds-text__heading--size-xxxsmall psds-text__heading--color-primary psds-theme--dark"
       onClick={[Function]}
     >
-      xXXSmall
+      xxxsmall
     </h1>
     <h1
-      className="psds-text__heading psds-text__heading--size-xXSmall psds-text__heading--color-primary psds-theme--dark"
+      className="psds-text__heading psds-text__heading--size-xxsmall psds-text__heading--color-primary psds-theme--dark"
       onClick={[Function]}
     >
-      xXSmall
+      xxsmall
     </h1>
     <h1
-      className="psds-text__heading psds-text__heading--size-xSmall psds-text__heading--color-primary psds-theme--dark"
+      className="psds-text__heading psds-text__heading--size-xsmall psds-text__heading--color-primary psds-theme--dark"
       onClick={[Function]}
     >
-      xSmall
+      xsmall
     </h1>
     <h1
       className="psds-text__heading psds-text__heading--size-small psds-text__heading--color-primary psds-theme--dark"
@@ -201,10 +188,10 @@ exports[`Storyshots Components/Text/Heading Sizes 1`] = `
       large
     </h1>
     <h1
-      className="psds-text__heading psds-text__heading--size-xLarge psds-text__heading--color-primary psds-theme--dark"
+      className="psds-text__heading psds-text__heading--size-xlarge psds-text__heading--color-primary psds-theme--dark"
       onClick={[Function]}
     >
-      xLarge
+      xlarge
     </h1>
   </div>
 </div>
@@ -478,19 +465,6 @@ exports[`Storyshots Components/Text/P Basic 1`] = `
 >
   <p
     className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
-    onClick={[Function]}
-  >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
-  </p>
-</div>
-`;
-
-exports[`Storyshots Components/Text/P Class Override 1`] = `
-<div
-  data-css-yto836=""
->
-  <p
-    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark css-1ub3o27"
     onClick={[Function]}
   >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam pharetra arcu in commodo. Cras faucibus ex id ligula aliquam, eget porta tortor efficitur. Duis eget ultrices ligula. Pellentesque laoreet massa interdum, venenatis sem pretium, efficitur enim. Vestibulum id nisi a massa tincidunt malesuada vitae non risus. Sed eget convallis libero. Nam ac libero luctus, euismod lectus eget, cursus nibh.
