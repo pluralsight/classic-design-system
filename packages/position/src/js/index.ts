@@ -1,5 +1,6 @@
 interface StyleOptions {
   bufferWidth: number
+  keepInViewport?: boolean
 }
 const defaultOptions: StyleOptions = { bufferWidth: 12 }
 
@@ -13,7 +14,7 @@ interface ClipAdjusterProps {
 type ClipAdjustment = [number, number]
 type ClipAdjuster = (
   props: ClipAdjusterProps,
-  clipY?: boolean
+  keepInViewport?: boolean
 ) => ClipAdjustment
 const clipAdjust: {
   above: ClipAdjuster
@@ -21,39 +22,42 @@ const clipAdjust: {
   leftOf: ClipAdjuster
   rightOf: ClipAdjuster
 } = {
-  above: ({ x, y, elRect, targetRect, opts }, clipY) => [
+  above: ({ x, y, elRect, targetRect, opts }) => [
     [0, x, window.innerWidth - elRect.width].sort((a, b) => a - b)[1],
-    y < 0 && !!clipY ? targetRect.bottom + opts.bufferWidth : y
+    y < 0 && !!opts.keepInViewport ? targetRect.bottom + opts.bufferWidth : y
   ],
-  below: ({ x, y, elRect, targetRect, opts }, clipY) => [
+  below: ({ x, y, elRect, targetRect, opts }) => [
     [0, x, window.innerWidth - elRect.width].sort((a, b) => a - b)[1],
-    y > window.innerHeight + window.pageYOffset && !!clipY
+    y > window.innerHeight + window.pageYOffset && !!opts.keepInViewport
       ? targetRect.top - (elRect.height + opts.bufferWidth)
       : y
   ],
-  leftOf: ({ x, y, elRect, targetRect, opts }, clipY) => [
+  leftOf: ({ x, y, elRect, targetRect, opts }) => [
     x < 0 ? targetRect.right + opts.bufferWidth : x,
     [
       0,
       y,
-      clipY ? window.innerHeight + window.pageYOffset - elRect.height : y
+      opts.keepInViewport
+        ? window.innerHeight + window.pageYOffset - elRect.height
+        : y
     ].sort((a, b) => a - b)[1]
   ],
-  rightOf: ({ x, y, elRect, targetRect, opts }, clipY) => [
+  rightOf: ({ x, y, elRect, targetRect, opts }) => [
     x > window.innerWidth
       ? targetRect.left - elRect.width - opts.bufferWidth
       : x,
     [
       0,
       y,
-      clipY ? window.innerHeight + window.pageYOffset - elRect.height : y
+      opts.keepInViewport
+        ? window.innerHeight + window.pageYOffset - elRect.height
+        : y
     ].sort((a, b) => a - b)[1]
   ]
 }
 
 export type PositionFunction = (
-  target: HTMLElement,
-  clipY?: boolean
+  target: HTMLElement
 ) => {
   styleFor: (
     el: HTMLElement | undefined,
@@ -61,7 +65,7 @@ export type PositionFunction = (
   ) => PositionStyle
 }
 
-export const above: PositionFunction = (target, clipY) => {
+export const above: PositionFunction = target => {
   return {
     styleFor(
       el: HTMLElement | undefined,
@@ -80,13 +84,13 @@ export const above: PositionFunction = (target, clipY) => {
       const y =
         window.pageYOffset + targetRect.top - elRect.height - opts.bufferWidth
       return formatOutputAsStyles(
-        ...clipAdjust.above({ x, y, targetRect, elRect, opts }, clipY)
+        ...clipAdjust.above({ x, y, targetRect, elRect, opts })
       )
     }
   }
 }
 
-export const aboveLeft: PositionFunction = (target, clipY) => {
+export const aboveLeft: PositionFunction = target => {
   return {
     styleFor(
       el: HTMLElement | undefined,
@@ -102,13 +106,13 @@ export const aboveLeft: PositionFunction = (target, clipY) => {
         window.pageYOffset + targetRect.top - elRect.height - opts.bufferWidth
 
       return formatOutputAsStyles(
-        ...clipAdjust.above({ x, y, targetRect, elRect, opts }, clipY)
+        ...clipAdjust.above({ x, y, targetRect, elRect, opts })
       )
     }
   }
 }
 
-export const aboveRight: PositionFunction = (target, clipY) => {
+export const aboveRight: PositionFunction = target => {
   return {
     styleFor(
       el: HTMLElement | undefined,
@@ -125,13 +129,13 @@ export const aboveRight: PositionFunction = (target, clipY) => {
         window.pageYOffset + targetRect.top - elRect.height - opts.bufferWidth
 
       return formatOutputAsStyles(
-        ...clipAdjust.above({ x, y, targetRect, elRect, opts }, clipY)
+        ...clipAdjust.above({ x, y, targetRect, elRect, opts })
       )
     }
   }
 }
 
-export const rightOf: PositionFunction = (target, clipY) => {
+export const rightOf: PositionFunction = target => {
   return {
     styleFor(
       el: HTMLElement | undefined,
@@ -153,13 +157,13 @@ export const rightOf: PositionFunction = (target, clipY) => {
         targetRect.height / 2 -
         elRect.height / 2
       return formatOutputAsStyles(
-        ...clipAdjust.rightOf({ x, y, targetRect, elRect, opts }, clipY)
+        ...clipAdjust.rightOf({ x, y, targetRect, elRect, opts })
       )
     }
   }
 }
 
-export const below: PositionFunction = (target, clipY) => {
+export const below: PositionFunction = target => {
   return {
     styleFor(
       el: HTMLElement | undefined,
@@ -182,13 +186,13 @@ export const below: PositionFunction = (target, clipY) => {
         opts.bufferWidth
 
       return formatOutputAsStyles(
-        ...clipAdjust.below({ x, y, targetRect, elRect, opts }, clipY)
+        ...clipAdjust.below({ x, y, targetRect, elRect, opts })
       )
     }
   }
 }
 
-export const belowLeft: PositionFunction = (target, clipY) => {
+export const belowLeft: PositionFunction = target => {
   return {
     styleFor(
       el: HTMLElement | undefined,
@@ -207,13 +211,13 @@ export const belowLeft: PositionFunction = (target, clipY) => {
         opts.bufferWidth
 
       return formatOutputAsStyles(
-        ...clipAdjust.below({ x, y, targetRect, elRect, opts }, clipY)
+        ...clipAdjust.below({ x, y, targetRect, elRect, opts })
       )
     }
   }
 }
 
-export const belowRight: PositionFunction = (target, clipY) => {
+export const belowRight: PositionFunction = target => {
   return {
     styleFor(
       el: HTMLElement | undefined,
@@ -233,13 +237,13 @@ export const belowRight: PositionFunction = (target, clipY) => {
         opts.bufferWidth
 
       return formatOutputAsStyles(
-        ...clipAdjust.below({ x, y, targetRect, elRect, opts }, clipY)
+        ...clipAdjust.below({ x, y, targetRect, elRect, opts })
       )
     }
   }
 }
 
-export const leftOf: PositionFunction = (target, clipY) => {
+export const leftOf: PositionFunction = target => {
   if (!target) throw new TypeError('target element required')
 
   return {
@@ -260,7 +264,7 @@ export const leftOf: PositionFunction = (target, clipY) => {
         targetRect.height / 2 -
         elRect.height / 2
       return formatOutputAsStyles(
-        ...clipAdjust.leftOf({ x, y, targetRect, elRect, opts }, clipY)
+        ...clipAdjust.leftOf({ x, y, targetRect, elRect, opts })
       )
     }
   }

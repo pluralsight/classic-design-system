@@ -307,49 +307,57 @@ export const PositionsOnEdge: Story = () => (
     }}
   >
     <div style={{ position: 'absolute', top: 0, left: 0 }}>
-      <AboveRight when show={<Tooltip>AboveRight</Tooltip>} clipY={true}>
+      <AboveRight
+        when
+        show={<Tooltip>AboveRight</Tooltip>}
+        keepInViewport={true}
+      >
         <InfoIcon />
       </AboveRight>
     </div>
 
     <div style={{ position: 'absolute', top: 0, left: '50%' }}>
-      <Above when show={<Tooltip>Above</Tooltip>} clipY={true}>
+      <Above when show={<Tooltip>Above</Tooltip>} keepInViewport={true}>
         <InfoIcon />
       </Above>
     </div>
 
     <div style={{ position: 'absolute', top: 0, right: 0 }}>
-      <AboveLeft when show={<Tooltip>AboveLeft</Tooltip>} clipY={true}>
+      <AboveLeft when show={<Tooltip>AboveLeft</Tooltip>} keepInViewport={true}>
         <InfoIcon />
       </AboveLeft>
     </div>
 
     <div style={{ position: 'absolute', top: '50%', left: 0 }}>
-      <LeftOf when show={<Tooltip>LeftOf</Tooltip>} clipY={true}>
+      <LeftOf when show={<Tooltip>LeftOf</Tooltip>} keepInViewport={true}>
         <InfoIcon />
       </LeftOf>
     </div>
 
     <div style={{ position: 'absolute', top: '50%', right: 0 }}>
-      <RightOf when show={<Tooltip>RightOf</Tooltip>} clipY={true}>
+      <RightOf when show={<Tooltip>RightOf</Tooltip>} keepInViewport={true}>
         <InfoIcon />
       </RightOf>
     </div>
 
     <div style={{ position: 'absolute', bottom: 0, left: 0 }}>
-      <BelowRight when show={<Tooltip>BelowRight</Tooltip>} clipY={true}>
+      <BelowRight
+        when
+        show={<Tooltip>BelowRight</Tooltip>}
+        keepInViewport={true}
+      >
         <InfoIcon />
       </BelowRight>
     </div>
 
     <div style={{ position: 'absolute', bottom: 0, left: '50%' }}>
-      <Below when show={<Tooltip>Below</Tooltip>} clipY={true}>
+      <Below when show={<Tooltip>Below</Tooltip>} keepInViewport={true}>
         <InfoIcon />
       </Below>
     </div>
 
     <div style={{ position: 'absolute', bottom: 0, right: 0 }}>
-      <BelowLeft when show={<Tooltip>BelowLeft</Tooltip>} clipY={true}>
+      <BelowLeft when show={<Tooltip>BelowLeft</Tooltip>} keepInViewport={true}>
         <InfoIcon />
       </BelowLeft>
     </div>

@@ -29,10 +29,10 @@
   "style": "dist/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^17.1.15",
     "@pluralsight/ps-design-system-core": "^8.2.2",
     "@pluralsight/ps-design-system-field": "^4.1.15",
     "@pluralsight/ps-design-system-icon": "^23.1.15",
+    "@pluralsight/ps-design-system-position": "^8.1.15",
     "@pluralsight/ps-design-system-tag": "^10.1.15",
     "@pluralsight/ps-design-system-util": "^9.2.9",
     "downshift": "^6.1.0"

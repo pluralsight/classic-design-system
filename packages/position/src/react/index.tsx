@@ -16,7 +16,7 @@ export interface PositionProps {
   show: React.FunctionComponentElement<ShowProps>
   target?: HTMLElement | React.RefObject<HTMLElement>
   when?: boolean
-  clipY?: boolean
+  keepInViewport?: boolean
 }
 
 interface ShowProps {
@@ -90,7 +90,7 @@ LeftOf.displayName = 'LeftOf'
 
 export const Position = React.forwardRef<HTMLElement, PositionProps>(
   (props, forwardedRef) => {
-    const { target, position: positionFn, clipY = false } = props
+    const { target, position: positionFn, keepInViewport = false } = props
     const inNode = props.inNode || (canUseDOM() ? document.body : undefined)
     const when = typeof props.when === 'boolean' ? props.when : true
 
@@ -127,7 +127,9 @@ export const Position = React.forwardRef<HTMLElement, PositionProps>(
           : ref.current
       if (!showRef.current || !targetNode) return
 
-      const nextStyle = positionFn(targetNode, clipY).styleFor(showRef.current)
+      const nextStyle = positionFn(targetNode).styleFor(showRef.current, {
+        keepInViewport
+      })
       setStyle(nextStyle)
       setShownOnce(true)
     }, [positionFn, target, showRef.current])

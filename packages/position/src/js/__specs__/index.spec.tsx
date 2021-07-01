@@ -515,7 +515,7 @@ describe('#edgeCases (clipY=true)', () => {
       height: 16
     }
   }
-
+  const keepInViewport = true
   it('#above', async () => {
     const { above } = positionFns
     for (const position in targets) {
@@ -524,7 +524,9 @@ describe('#edgeCases (clipY=true)', () => {
         width: 100,
         height: 100
       })
-      expect(above(targetEl, true).styleFor(el)).toMatchSnapshot(position)
+      expect(above(targetEl).styleFor(el, { keepInViewport })).toMatchSnapshot(
+        position
+      )
     }
   })
   it('#aboveLeft', async () => {
@@ -535,7 +537,9 @@ describe('#edgeCases (clipY=true)', () => {
         width: 100,
         height: 100
       })
-      expect(aboveLeft(targetEl, true).styleFor(el)).toMatchSnapshot(position)
+      expect(
+        aboveLeft(targetEl).styleFor(el, { keepInViewport })
+      ).toMatchSnapshot(position)
     }
   })
   it('#aboveRight', async () => {
@@ -546,7 +550,9 @@ describe('#edgeCases (clipY=true)', () => {
         width: 100,
         height: 100
       })
-      expect(aboveRight(targetEl, true).styleFor(el)).toMatchSnapshot(position)
+      expect(
+        aboveRight(targetEl).styleFor(el, { keepInViewport })
+      ).toMatchSnapshot(position)
     }
   })
   it('#below', async () => {
@@ -557,7 +563,9 @@ describe('#edgeCases (clipY=true)', () => {
         width: 100,
         height: 100
       })
-      expect(below(targetEl, true).styleFor(el)).toMatchSnapshot(position)
+      expect(below(targetEl).styleFor(el, { keepInViewport })).toMatchSnapshot(
+        position
+      )
     }
   })
   it('#belowLeft', async () => {
@@ -568,7 +576,9 @@ describe('#edgeCases (clipY=true)', () => {
         width: 100,
         height: 100
       })
-      expect(belowLeft(targetEl, true).styleFor(el)).toMatchSnapshot(position)
+      expect(
+        belowLeft(targetEl).styleFor(el, { keepInViewport })
+      ).toMatchSnapshot(position)
     }
   })
   it('#belowRight', async () => {
@@ -579,7 +589,9 @@ describe('#edgeCases (clipY=true)', () => {
         width: 100,
         height: 100
       })
-      expect(belowRight(targetEl, true).styleFor(el)).toMatchSnapshot(position)
+      expect(
+        belowRight(targetEl).styleFor(el, { keepInViewport })
+      ).toMatchSnapshot(position)
     }
   })
   it('#rightOf', async () => {
@@ -590,7 +602,9 @@ describe('#edgeCases (clipY=true)', () => {
         width: 100,
         height: 100
       })
-      expect(rightOf(targetEl, true).styleFor(el)).toMatchSnapshot(position)
+      expect(
+        rightOf(targetEl).styleFor(el, { keepInViewport })
+      ).toMatchSnapshot(position)
     }
   })
   it('#leftOf', async () => {
@@ -601,7 +615,9 @@ describe('#edgeCases (clipY=true)', () => {
         width: 100,
         height: 100
       })
-      expect(leftOf(targetEl, true).styleFor(el)).toMatchSnapshot(position)
+      expect(leftOf(targetEl).styleFor(el, { keepInViewport })).toMatchSnapshot(
+        position
+      )
     }
   })
 })

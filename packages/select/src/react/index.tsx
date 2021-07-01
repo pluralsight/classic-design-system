@@ -65,7 +65,7 @@ const Select = forwardRefWithStatics<
     <PositionComponents.Position
       position={PositionComponents[position]}
       when={isOpen}
-      clipY={true}
+      keepInViewport={true}
       show={
         <Menu origin={Menu.origins.topLeft} {...menuProps} {...styles}>
           {children || options.map(i => <RenderOption key={i.value} {...i} />)}
