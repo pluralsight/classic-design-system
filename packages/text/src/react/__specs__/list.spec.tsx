@@ -4,12 +4,21 @@ import { axe } from 'jest-axe'
 import React from 'react'
 
 import * as stories from '../__stories__/list.story'
+import { List } from '../index'
 
 describe('Text', () => {
   describe('List', () => {
     const cases = convertStoriesToJestCases(stories)
 
     it.todo('forwards the ref')
+
+    it('composes className', () => {
+      const { container } = render(<List className="compose-classname" />)
+
+      expect(container.firstChild).toHaveClass(
+        'psds-text__list psds-theme--dark psds-text__list--size-medium psds-text__list--color-primary psds-text__list--type-default compose-classname'
+      )
+    })
 
     it.todo('supports polymorphism')
 
