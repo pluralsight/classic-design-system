@@ -191,6 +191,70 @@ const Example: React.FC = props => {
 export default Example
 ```
 
+### Allow Offscreen
+The `allowOffscreen` property allows a developer to enable rendering content outside the viewport.
+This is useful when you want to render a tooltip open on page load and the tooltip should render below the fold.
+
+```typescript
+import React, { useState } from 'react'
+
+import Button from '@pluralsight/ps-design-system-button'
+import Tooltip from '@pluralsight/ps-design-system-tooltip'
+
+import { RightOf } from '@pluralsight/ps-design-system-position'
+
+const Example: React.FC = props => {
+  const [hovered, setHovered] = useState(true)
+
+  const hide = () => setHovered(false)
+  const show = () => setHovered(true)
+
+  return (
+    <React.Fragment>
+     <RightOf
+      allowOffscreen={true}
+      show={
+        <Tooltip tailPosition={Tooltip.tailPositions.leftCenter}>
+          Tooltip open on load
+        </Tooltip>
+      }
+      when={hovered}
+    >
+      <Button
+        appearance={Button.appearances.secondary}
+        onMouseEnter={show}
+        onMouseLeave={hide}
+      >
+        Hover me
+      </Button>
+    </RightOf>
+
+      <style jsx>{`
+        .example {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 200px;
+          outline: 2px dashed lightgrey;
+        }
+      `}</style>
+    </React.Fragment>
+  )
+}
+
+const Target = forwardRef<HTMLButtonElement>((_props, ref) => (
+  <Button
+    appearance={Button.appearances.flat}
+    disabled
+    icon={<PlaceholderIcon />}
+    title="Target"
+    ref={ref}
+  />
+))
+
+export default Example
+```
 ## Positions
 
 <IframeResizer
@@ -218,7 +282,7 @@ import {
    <TypesProp
     name="allowOffscreen"
     type="boolean"
-    desc="allow rendering of positioned element offscreen, useful when open on page load"
+    desc="allow rendering of positioned element offscreen"
     default="false"
   />
   <TypesProp
