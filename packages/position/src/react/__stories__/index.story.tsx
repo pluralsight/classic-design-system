@@ -129,7 +129,7 @@ const ScrollContainer: React.FC = props => {
 export const Positions: Story = () => (
   <StoryGrid style={{ gap: '128px' }}>
     {Object.values(positionComponents).map((Comp, i) => (
-      <Comp show={<MockToolip />} key={i}>
+      <Comp show={<MockToolip />} key={i} allowOffscreen={true}>
         <Box>{`<${Comp.displayName} />`}</Box>
       </Comp>
     ))}
@@ -195,7 +195,11 @@ export const PositionsInCustomPortal: Story = () => {
         return (
           <PortalStory key={i}>
             {({ portal }) => (
-              <Comp show={<MockToolip />} inNode={portal.current}>
+              <Comp
+                show={<MockToolip />}
+                inNode={portal.current}
+                allowOffscreen={true}
+              >
                 <Box>{name}</Box>
               </Comp>
             )}
@@ -213,7 +217,7 @@ export const Target: Story = () => (
         const ref = React.useRef<HTMLDivElement>(null)
 
         return (
-          <Comp show={<MockToolip />} target={ref}>
+          <Comp show={<MockToolip />} target={ref} allowOffscreen={true}>
             <Box>
               <div ref={ref} style={{ border: '1px solid yellow' }}>
                 {name}
@@ -280,7 +284,7 @@ const JsStory: React.FC<JsStoryProps> = ({ positionFnName }) => {
     if (!box || !tooltip) return
 
     const fn = positionFns[positionFnName]
-    const nextStyles = fn(box).styleFor(tooltip)
+    const nextStyles = fn(box).styleFor(tooltip, { allowOffscreen: true })
 
     setStyles(nextStyles)
   }, [positionFnName])
