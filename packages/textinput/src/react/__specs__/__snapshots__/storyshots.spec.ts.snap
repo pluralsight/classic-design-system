@@ -19,10 +19,10 @@ exports[`Storyshots Components/TextInput Appearances 1`] = `
         data-css-ctre2o=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -52,10 +52,10 @@ exports[`Storyshots Components/TextInput Appearances 1`] = `
         data-css-ctre2o=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--appearance-subtle"
+          className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -85,10 +85,10 @@ exports[`Storyshots Components/TextInput Appearances 1`] = `
         data-css-ctre2o=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default psds-text-input--small"
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input--small"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -118,10 +118,10 @@ exports[`Storyshots Components/TextInput Appearances 1`] = `
         data-css-ctre2o=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--appearance-subtle psds-text-input--small"
+          className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input--small"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -158,10 +158,10 @@ exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
         data-css-in6gqi=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default psds-text-input__field--error"
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--error"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -210,10 +210,10 @@ exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
         data-css-in6gqi=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--appearance-subtle psds-text-input__field--error"
+          className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--error"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -262,10 +262,10 @@ exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
         data-css-in6gqi=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default psds-text-input--small psds-text-input__field--error"
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input--small psds-text-input__field--error"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -314,10 +314,10 @@ exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
         data-css-in6gqi=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--appearance-subtle psds-text-input--small psds-text-input__field--error"
+          className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input--small psds-text-input__field--error"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -370,10 +370,10 @@ exports[`Storyshots Components/TextInput Basic 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
       >
         <input
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -409,10 +409,10 @@ exports[`Storyshots Components/TextInput Compare Disabled 1`] = `
         data-css-ctre2o=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -442,10 +442,10 @@ exports[`Storyshots Components/TextInput Compare Disabled 1`] = `
         data-css-ctre2o=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={true}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -479,10 +479,10 @@ exports[`Storyshots Components/TextInput Date Input 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
       >
         <input
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -516,10 +516,10 @@ exports[`Storyshots Components/TextInput Disabled 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
       >
         <input
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={true}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -552,10 +552,10 @@ exports[`Storyshots Components/TextInput Error 1`] = `
       data-css-in6gqi=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default psds-text-input__field--error"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--error"
       >
         <input
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -607,10 +607,10 @@ exports[`Storyshots Components/TextInput Field After 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default psds-text-input__field--w-after"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--w-after"
       >
         <input
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -656,10 +656,10 @@ exports[`Storyshots Components/TextInput Label Only 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
       >
         <input
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -687,10 +687,10 @@ exports[`Storyshots Components/TextInput Long Placeholder 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
       >
         <input
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -718,11 +718,11 @@ exports[`Storyshots Components/TextInput No Labels 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
       >
         <input
           aria-label="You need an a11y label"
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -750,10 +750,10 @@ exports[`Storyshots Components/TextInput Password Input 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
       >
         <input
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -787,10 +787,10 @@ exports[`Storyshots Components/TextInput Props Inclusion 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
       >
         <input
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -819,11 +819,11 @@ exports[`Storyshots Components/TextInput Sub Label Only 1`] = `
       data-css-ctre2o=""
     >
       <div
-        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+        className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
       >
         <input
           aria-label="You need an a11y label"
-          className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+          className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
           disabled={false}
           onBlur={[Function]}
           onFocus={[Function]}
@@ -859,10 +859,10 @@ exports[`Storyshots Components/TextInput/examples Autofocused 1`] = `
         data-css-ctre2o=""
       >
         <div
-          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onBlur={[Function]}
             onFocus={[Function]}
@@ -900,10 +900,10 @@ exports[`Storyshots Components/TextInput/examples Controlled 1`] = `
           data-css-ctre2o=""
         >
           <div
-            className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+            className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
           >
             <input
-              className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+              className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
               disabled={false}
               onBlur={[Function]}
               onChange={[Function]}
@@ -967,10 +967,10 @@ exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
           data-css-ctre2o=""
         >
           <div
-            className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+            className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
           >
             <input
-              className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+              className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
               disabled={false}
               style={
                 Object {
@@ -1004,10 +1004,10 @@ exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
           data-css-in6gqi=""
         >
           <div
-            className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default psds-text-input__field--error"
+            className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--error"
           >
             <input
-              className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+              className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
               disabled={false}
               style={
                 Object {
@@ -1060,10 +1060,10 @@ exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
           data-css-ctre2o=""
         >
           <div
-            className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--appearance-subtle"
+            className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark"
           >
             <input
-              className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
+              className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
               disabled={false}
               style={
                 Object {
@@ -1097,10 +1097,10 @@ exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
           data-css-in6gqi=""
         >
           <div
-            className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--appearance-subtle psds-text-input__field--error"
+            className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--error"
           >
             <input
-              className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
+              className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
               disabled={false}
               style={
                 Object {
@@ -1165,10 +1165,10 @@ exports[`Storyshots Components/TextInput/examples Style Right Aligned 1`] = `
             data-css-ctre2o=""
           >
             <div
-              className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--appearance-default"
+              className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
             >
               <input
-                className="psds-theme--dark psds-text-input__field-input psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
                 disabled={false}
                 placeholder="Filter"
               />

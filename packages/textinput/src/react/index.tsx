@@ -38,7 +38,6 @@ const styles = {
       'psds-text-input__field',
       `psds-text-input__field--appearance-${appearance}`,
       `psds-theme--${themeName}`,
-      `psds-text-input__field--appearance-${appearance}`,
       Boolean(fieldAfter) && `psds-text-input__field--w-after`,
       small && 'psds-text-input--small',
       Boolean(icon) && `psds-text-input__field--icon-align-${iconAlign}`,
@@ -52,7 +51,6 @@ const styles = {
   ) =>
     classNames(
       `psds-theme--${themeName}`,
-      'psds-text-input__field-input',
       `psds-text-input__field-input--appearance-${appearance}`,
       `psds-text-input__field-input`
     ),

@@ -56,9 +56,9 @@ describe('TextInput', () => {
     const { Basic } = stories
 
     it('forwards id', () => {
-      const { getByTestId } = render(<Basic id="testclass" {...Basic.args} />)
+      render(<Basic id="testid" {...Basic.args} />)
 
-      const input = document.querySelector('#testclass')
+      const input = document.querySelector('#testid')
       expect(input).toBeInTheDocument()
     })
   })
