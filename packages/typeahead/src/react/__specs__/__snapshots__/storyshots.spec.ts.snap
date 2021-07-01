@@ -96,7 +96,7 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
     >
       <ul
         aria-labelledby="downshift-0-label"
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         data-css-1krnuz2=""
         id="downshift-0-menu"
         onMouseLeave={[Function]}
@@ -1449,7 +1449,7 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
     >
       <ul
         aria-labelledby="downshift-1-label"
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         data-css-1krnuz2=""
         id="downshift-1-menu"
         onMouseLeave={[Function]}
@@ -2802,7 +2802,7 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
     >
       <ul
         aria-labelledby="downshift-8-label"
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         data-css-1krnuz2=""
         id="downshift-8-menu"
         onMouseLeave={[Function]}
@@ -4152,7 +4152,7 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
     >
       <ul
         aria-labelledby="downshift-7-label"
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         data-css-1krnuz2=""
         id="downshift-7-menu"
         onMouseLeave={[Function]}
@@ -5506,7 +5506,7 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
     >
       <ul
         aria-labelledby="downshift-4-label"
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         data-css-1krnuz2=""
         id="downshift-4-menu"
         onMouseLeave={[Function]}
@@ -6878,7 +6878,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
     >
       <ul
         aria-labelledby="downshift-5-label"
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         data-css-1krnuz2=""
         id="downshift-5-menu"
         onMouseLeave={[Function]}
@@ -8248,7 +8248,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
     >
       <ul
         aria-labelledby="downshift-6-label"
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         data-css-1krnuz2=""
         id="downshift-6-menu"
         onMouseLeave={[Function]}
@@ -9598,7 +9598,7 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
     >
       <ul
         aria-labelledby="downshift-3-label"
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         data-css-1krnuz2=""
         id="downshift-3-menu"
         onMouseLeave={[Function]}
@@ -10951,7 +10951,7 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
     >
       <ul
         aria-labelledby="downshift-2-label"
-        className="psds-menu psds-menu--origin-topleft psds-menu__animation"
+        className="psds-menu psds-menu--origin-top-left"
         data-css-1krnuz2=""
         id="downshift-2-menu"
         onMouseLeave={[Function]}
