@@ -19,7 +19,7 @@
   @media (width >= 768px) {
     padding-left: var(--asideWidth);
   }
-  @media (width >= 1280px) {
+  @media (width >= 960px) {
     padding-right: var(--metaWidth);
   }
 
