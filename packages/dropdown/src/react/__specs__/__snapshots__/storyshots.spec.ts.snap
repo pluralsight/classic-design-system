@@ -2167,6 +2167,149 @@ exports[`Storyshots Components/Dropdown Preselected Value Unknown 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Dropdown Sizes 1`] = `
+<div
+  data-css-424rvd=""
+>
+  <div>
+    <div
+      className="psds-dropdown"
+    >
+      <label>
+        <span
+          className="psds-dropdown__label psds-theme--dark"
+        >
+          Medium
+        </span>
+      </label>
+      <div
+        className="psds-dropdown__field-container"
+      >
+        <div
+          className="psds-dropdown__field-halo"
+          data-css-ctre2o=""
+        >
+          <div
+            className="psds-dropdown__field-aligner"
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                className="psds-dropdown__field-inner"
+              >
+                <span
+                  aria-hidden={true}
+                  className="psds-dropdown__button-sizer"
+                >
+                  Select one
+                </span>
+                <span
+                  className="psds-dropdown__placeholder psds-dropdown__placeholder--color"
+                >
+                  Select one
+                </span>
+              </span>
+              <div
+                className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="psds-dropdown psds-dropdown--small"
+    >
+      <label>
+        <span
+          className="psds-dropdown__label psds-theme--dark"
+        >
+          Small
+        </span>
+      </label>
+      <div
+        className="psds-dropdown__field-container"
+      >
+        <div
+          className="psds-dropdown__field-halo"
+          data-css-ctre2o=""
+        >
+          <div
+            className="psds-dropdown__field-aligner"
+          >
+            <button
+              aria-haspopup="listbox"
+              aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
+              className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
+              disabled={false}
+              id="dropdown-button-4fzzzxjyl"
+              onClick={[Function]}
+              onKeyDown={[Function]}
+            >
+              <span
+                className="psds-dropdown__field-inner"
+              >
+                <span
+                  aria-hidden={true}
+                  className="psds-dropdown__button-sizer"
+                >
+                  Select one
+                </span>
+                <span
+                  className="psds-dropdown__placeholder psds-dropdown__placeholder--color"
+                >
+                  Select one
+                </span>
+              </span>
+              <div
+                className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
+              >
+                <div
+                  data-css-7dab2f=""
+                >
+                  <svg
+                    aria-label="caret down icon"
+                    role="img"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Dropdown Stacked 1`] = `
 <div
   data-css-424rvd=""

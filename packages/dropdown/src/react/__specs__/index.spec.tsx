@@ -64,7 +64,7 @@ describe('Dropdown', () => {
       <Dropdown.Label label="someLabel" className="compose-classname" />
     )
 
-    expect(container.firstChild.firstChild).toHaveClass(
+    expect(container.firstChild?.firstChild).toHaveClass(
       'psds-dropdown__label compose-classname'
     )
   })
