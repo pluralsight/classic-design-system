@@ -194,15 +194,14 @@ Tier1Collapsible.args = { ...tier1DefaultArgs, collapsible: true }
  * Tier1HeaderTemplate
  */
 
-const Tier1HeaderTemplate: Story<
-  React.ComponentProps<typeof Tier1.Header>
-> = args => {
-  return (
-    <BaseTemplate>
-      <Tier1 header={<Tier1.Header {...args} />} />
-    </BaseTemplate>
-  )
-}
+const Tier1HeaderTemplate: Story<React.ComponentProps<typeof Tier1.Header>> =
+  args => {
+    return (
+      <BaseTemplate>
+        <Tier1 header={<Tier1.Header {...args} />} />
+      </BaseTemplate>
+    )
+  }
 
 const tier1HeaderDefaultArgs = {
   children: 'text here',
@@ -244,15 +243,14 @@ Tier2Active.args = { ...tier2DefaultArgs, active: true }
  * Tier2HeaderTemplate
  */
 
-const Tier2HeaderTemplate: Story<
-  React.ComponentProps<typeof Tier2.Header>
-> = args => {
-  return (
-    <BaseTemplate>
-      <Tier2 header={<Tier2.Header {...args} />} />
-    </BaseTemplate>
-  )
-}
+const Tier2HeaderTemplate: Story<React.ComponentProps<typeof Tier2.Header>> =
+  args => {
+    return (
+      <BaseTemplate>
+        <Tier2 header={<Tier2.Header {...args} />} />
+      </BaseTemplate>
+    )
+  }
 
 const tier2HeaderDefaultArgs = {
   children: 'text here',
