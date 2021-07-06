@@ -132,6 +132,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  background-color: transparent;
 }
 .psds-dropdown__placeholder--color {
   color: var(--ps-colors-text-icon-low-on-light);
