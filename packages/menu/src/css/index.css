@@ -42,6 +42,7 @@
   position: relative;
   transition: background var(--ps-motion-speed-xfast);
   color: var(--ps-colors-text-icon-high-on-light);
+  padding: 10px var(--ps-layout-spacing-medium);
 }
 .psds-menu__list-item:focus,
 .psds-menu__list-item:hover {
@@ -73,7 +74,6 @@
   font-weight: var(--ps-type-font-weight-500);
   cursor: pointer;
   border: none;
-  padding: 10px var(--ps-layout-spacing-medium);
   background: 0 0;
   text-decoration: none;
   outline: 0;
