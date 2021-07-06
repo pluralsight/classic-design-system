@@ -6,9 +6,8 @@ describe('useMenuKeyEvents()', () => {
   beforeAll(() => {
     Object.defineProperty(global.Element.prototype, 'innerText', {
       get() {
-        const nodes: NodeListOf<HTMLElement> = this.querySelectorAll(
-          'script,style'
-        )
+        const nodes: NodeListOf<HTMLElement> =
+          this.querySelectorAll('script,style')
 
         nodes.forEach(el => el.remove())
 
