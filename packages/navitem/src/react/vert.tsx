@@ -36,11 +36,10 @@ export const VertLayout: React.FC = props => {
 }
 VertLayout.displayName = 'NavItem.VertLayout'
 
-const VertContainer: React.FC<
-  React.HTMLAttributes<HTMLSpanElement>
-> = props => {
-  return <span {...styles.container()} {...props} />
-}
+const VertContainer: React.FC<React.HTMLAttributes<HTMLSpanElement>> =
+  props => {
+    return <span {...styles.container()} {...props} />
+  }
 VertContainer.displayName = 'NavItem.VertContainer'
 
 const VertCaret: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {
