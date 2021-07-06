@@ -34,7 +34,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+        className="psds-drawer__rotatable psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -112,7 +112,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+        className="psds-drawer__rotatable psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -161,7 +161,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
 >
   <div
     aria-expanded={true}
-    className="psds-drawer__summary psds-drawer__summary.psds-drawer--isopen psds-theme--dark"
+    className="psds-drawer__summary psds-drawer--is-open psds-theme--dark"
     onClick={[Function]}
     role="button"
   >
@@ -180,7 +180,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark psds-drawer__rotatable.psds-drawer--isopen"
+        className="psds-drawer__rotatable psds-theme--dark psds-drawer--is-open"
         data-css-7dab2f=""
       >
         <svg
@@ -248,7 +248,7 @@ exports[`Storyshots Components/Row Default 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+        className="psds-drawer__rotatable psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -416,7 +416,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+        className="psds-drawer__rotatable psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -485,7 +485,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+          className="psds-drawer__rotatable psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -542,7 +542,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+          className="psds-drawer__rotatable psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -599,7 +599,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+          className="psds-drawer__rotatable psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -669,7 +669,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+          className="psds-drawer__rotatable psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -728,7 +728,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+          className="psds-drawer__rotatable psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -787,7 +787,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+          className="psds-drawer__rotatable psds-theme--dark"
           data-css-7dab2f=""
         >
           <svg
@@ -857,7 +857,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+        className="psds-drawer__rotatable psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg
@@ -985,7 +985,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-drawer__rotatable psds-drawer__rotatable.psds-theme--dark"
+        className="psds-drawer__rotatable psds-theme--dark"
         data-css-7dab2f=""
       >
         <svg

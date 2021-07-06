@@ -1,15 +1,11 @@
 import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
 import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
-import {
-  useTheme,
-  names as themeNames
-} from '@pluralsight/ps-design-system-theme'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   classNames,
   useToggle,
-  RefFor,
-  ValueOf
+  RefFor
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
@@ -45,7 +41,7 @@ const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
       <div
         className={classNames(
           `psds-drawer__summary`,
-          isOpen && 'psds-drawer__summary.psds-drawer--isopen',
+          isOpen && 'psds-drawer--is-open',
           `psds-theme--${themeName}`,
           className
         )}
@@ -60,8 +56,8 @@ const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
           <CaretDownIcon
             className={classNames(
               'psds-drawer__rotatable',
-              `psds-drawer__rotatable.psds-theme--${themeName}`,
-              isOpen && 'psds-drawer__rotatable.psds-drawer--isopen'
+              `psds-theme--${themeName}`,
+              isOpen && 'psds-drawer--is-open'
             )}
           />
           <ScreenReaderOnly>

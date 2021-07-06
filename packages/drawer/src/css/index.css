@@ -29,10 +29,10 @@
 .psds-drawer__summary:hover {
   background: var(--ps-colors-background-utility-25);
 }
-.psds-drawer__summary.psds-drawer--isopen {
+.psds-drawer__summary.psds-drawer--is-open {
   background: var(--ps-colors-background-utility-25);
 }
-.psds-drawer__summary.psds-drawer--isopen:hover {
+.psds-drawer__summary.psds-drawer--is-open:hover {
   background: var(--ps-colors-background-utility-25);
 }
 .psds-drawer__details {
@@ -54,6 +54,6 @@
 .psds-drawer__rotatable {
   transition: transform var(--ps-motion-speed-normal);
 }
-.psds-drawer__rotatable.psds-drawer--isopen {
+.psds-drawer__rotatable.psds-drawer--is-open {
   transform: rotateZ(180deg);
 }
