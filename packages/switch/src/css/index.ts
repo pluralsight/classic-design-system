@@ -59,19 +59,22 @@ export default {
     width: '48px',
     borderRadius: '12px'
   },
-  [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.blue}`]: {
-    backgroundColor: colorsBlue[6],
-    borderColor: 'transparent'
-  },
-  [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.green}`]: {
-    backgroundColor: colorsGreen[6],
-    borderColor: 'transparent'
-  },
-  [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.orange}`]: {
-    // NOTE: temp: make orange blue until we do a breaking change to remove orange
-    backgroundColor: colorsBlue[6],
-    borderColor: 'transparent'
-  },
+  [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.blue}`]:
+    {
+      backgroundColor: colorsBlue[6],
+      borderColor: 'transparent'
+    },
+  [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.green}`]:
+    {
+      backgroundColor: colorsGreen[6],
+      borderColor: 'transparent'
+    },
+  [`.psds-switch__track--checked.psds-switch__track--color-${vars.colors.orange}`]:
+    {
+      // NOTE: temp: make orange blue until we do a breaking change to remove orange
+      backgroundColor: colorsBlue[6],
+      borderColor: 'transparent'
+    },
 
   [`.psds-switch__thumb`]: {
     backgroundColor: colorsWhite,
@@ -86,12 +89,14 @@ export default {
     height: '22px',
     width: '22px'
   },
-  [`.psds-switch__thumb--checked.psds-switch__thumb--size-${vars.sizes.small}`]: {
-    transform: 'translateX(12px)'
-  },
-  [`.psds-switch__thumb--checked.psds-switch__thumb--size-${vars.sizes.large}`]: {
-    transform: 'translateX(24px)'
-  },
+  [`.psds-switch__thumb--checked.psds-switch__thumb--size-${vars.sizes.small}`]:
+    {
+      transform: 'translateX(12px)'
+    },
+  [`.psds-switch__thumb--checked.psds-switch__thumb--size-${vars.sizes.large}`]:
+    {
+      transform: 'translateX(24px)'
+    },
 
   [`.psds-switch__label`]: {
     fontWeight: type.fontWeightDefault,
@@ -103,18 +108,22 @@ export default {
   [`.psds-switch__label--size-${vars.sizes.large}`]: {
     fontSize: type.fontSize200
   },
-  [`.psds-switch__label--size-${vars.sizes.small}.psds-switch__label--labelAlign-${vars.labelAligns.left}`]: {
-    marginRight: layout.spacingXSmall
-  },
-  [`.psds-switch__label--size-${vars.sizes.large}.psds-switch__label--labelAlign-${vars.labelAligns.left}`]: {
-    marginRight: layout.spacingMedium
-  },
-  [`.psds-switch__label--size-${vars.sizes.small}.psds-switch__label--labelAlign-${vars.labelAligns.right}`]: {
-    marginLeft: layout.spacingXSmall
-  },
-  [`.psds-switch__label--size-${vars.sizes.large}.psds-switch__label--labelAlign-${vars.labelAligns.right}`]: {
-    marginLeft: layout.spacingMedium
-  },
+  [`.psds-switch__label--size-${vars.sizes.small}.psds-switch__label--labelAlign-${vars.labelAligns.left}`]:
+    {
+      marginRight: layout.spacingXSmall
+    },
+  [`.psds-switch__label--size-${vars.sizes.large}.psds-switch__label--labelAlign-${vars.labelAligns.left}`]:
+    {
+      marginRight: layout.spacingMedium
+    },
+  [`.psds-switch__label--size-${vars.sizes.small}.psds-switch__label--labelAlign-${vars.labelAligns.right}`]:
+    {
+      marginLeft: layout.spacingXSmall
+    },
+  [`.psds-switch__label--size-${vars.sizes.large}.psds-switch__label--labelAlign-${vars.labelAligns.right}`]:
+    {
+      marginLeft: layout.spacingMedium
+    },
   [`.psds-switch__label.psds-theme--${themeNames.light}`]: {
     color: colorsTextIcon.highOnLight
   },
