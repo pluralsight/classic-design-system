@@ -82,9 +82,8 @@ const DropdownWithIcon = React.forwardRef<
   )
 })
 
-const TemplateWithIcon: Story<
-  React.ComponentProps<typeof DropdownWithIcon>
-> = args => <DropdownWithIcon {...args} />
+const TemplateWithIcon: Story<React.ComponentProps<typeof DropdownWithIcon>> =
+  args => <DropdownWithIcon {...args} />
 
 export const CustomIcon = TemplateWithIcon.bind({})
 CustomIcon.args = {

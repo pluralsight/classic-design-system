@@ -167,9 +167,10 @@ export default {
   '.psds-dropdown__placeholder--color': {
     color: colorsTextIcon.lowOnLight
   },
-  [`.psds-dropdown__field--appearance-${vars.appearances.subtle}.psds-dropdown__placeholder--color`]: {
-    color: colorsTextIcon.lowOnDark
-  },
+  [`.psds-dropdown__field--appearance-${vars.appearances.subtle}.psds-dropdown__placeholder--color`]:
+    {
+      color: colorsTextIcon.lowOnDark
+    },
   '.psds-dropdown__placeholder.psds-dropdown--small': {
     top: layout.spacingXXSmall
   },
