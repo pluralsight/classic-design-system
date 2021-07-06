@@ -3,11 +3,10 @@ import React from 'react'
 interface FeatureFlagsContextValue {
   flags: Record<string, unknown>
 }
-export const FeatureFlagsContext = React.createContext<FeatureFlagsContextValue>(
-  {
+export const FeatureFlagsContext =
+  React.createContext<FeatureFlagsContextValue>({
     flags: {}
-  }
-)
+  })
 
 export function useFeatureFlags() {
   const context = React.useContext(FeatureFlagsContext)
