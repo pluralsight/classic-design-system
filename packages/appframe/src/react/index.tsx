@@ -115,7 +115,7 @@ const AppFrame = React.forwardRef((props, forwardedRef) => {
   const ref = React.useRef<HTMLDivElement>(null)
   React.useImperativeHandle(
     forwardedRef,
-    () => (ref.current as unknown) as HTMLDivElement
+    () => ref.current as unknown as HTMLDivElement
   )
 
   const themeName = useTheme()
@@ -257,9 +257,8 @@ const SideNav: React.FC<SideNavProps> & SideNavStatics = props => {
   const { sidenavVariants: variants } = vars
   const children = props.children as SideNavProps['children']
 
-  const { closeSidenav, openSidenav, sidenavVariant } = React.useContext(
-    AppFrameContext
-  )
+  const { closeSidenav, openSidenav, sidenavVariant } =
+    React.useContext(AppFrameContext)
 
   const hoverable = sidenavVariant === variants.minimized
   const [hovered, setHovered] = React.useState(false)
@@ -313,9 +312,8 @@ interface TopNavProps extends React.HTMLAttributes<HTMLDivElement> {
 
 const TopNav: React.FC<TopNavProps> = props => {
   const children = props.children as TopNavProps['children']
-  const { closeSidenav, openSidenav, sidenavOpen } = React.useContext(
-    AppFrameContext
-  )
+  const { closeSidenav, openSidenav, sidenavOpen } =
+    React.useContext(AppFrameContext)
 
   const meta = { closeSidenav, openSidenav, sidenavOpen }
 
