@@ -57,7 +57,7 @@ const NavBrand = React.forwardRef<NavBrandElement, NavBrandProps>(
     const ref = React.useRef<NavBrandElement>(null)
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as NavBrandElement
+      () => ref.current as unknown as NavBrandElement
     )
     const isAnchor = 'href' in props
     const isButton = !isAnchor && 'onClick' in props
