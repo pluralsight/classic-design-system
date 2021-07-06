@@ -78,25 +78,28 @@ export default {
     background: colorsBackgroundDark[1],
     border: `1px solid ${colorsBorder.highOnDark}`
   },
-  [`.psds-text-input__field--appearance-${vars.appearances.subtle}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
+  [`.psds-text-input__field--appearance-${vars.appearances.subtle}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.highOnLight
+    },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.left}`]: {
     padding: `0 ${layout.spacingMedium} 0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall})`
   },
   [`.psds-text-input__field--icon-align-${vars.iconAligns.right}`]: {
     padding: `0 calc(${layout.spacingXSmall} + ${iconWidths.medium} + ${layout.spacingXSmall}) 0 ${layout.spacingMedium}`
   },
-  [`.psds-text-input__field--icon-align-${vars.iconAligns.left}.psds-text-input--small`]: {
-    padding: `0 ${layout.spacingXSmall} 0 ${
-      parseInt(layout.spacingMedium, 10) + parseInt(iconWidths.medium, 10)
-    }px`
-  },
-  [`.psds-text-input__field--icon-align-${vars.iconAligns.right}.psds-text-input--small`]: {
-    padding: `0 ${
-      parseInt(layout.spacingMedium, 10) + parseInt(iconWidths.medium, 10)
-    }px 0 ${layout.spacingXSmall}`
-  },
+  [`.psds-text-input__field--icon-align-${vars.iconAligns.left}.psds-text-input--small`]:
+    {
+      padding: `0 ${layout.spacingXSmall} 0 ${
+        parseInt(layout.spacingMedium, 10) + parseInt(iconWidths.medium, 10)
+      }px`
+    },
+  [`.psds-text-input__field--icon-align-${vars.iconAligns.right}.psds-text-input--small`]:
+    {
+      padding: `0 ${
+        parseInt(layout.spacingMedium, 10) + parseInt(iconWidths.medium, 10)
+      }px 0 ${layout.spacingXSmall}`
+    },
 
   // __field-container
   '.psds-text-input__field-container': {
