@@ -40,14 +40,16 @@ export default {
   [`.psds-text-area__field--appearance--${vars.appearances.subtle}`]: {
     '&::placeholder': { color: colorsTextIcon.lowOnDark }
   },
-  [`.psds-text-area__field--appearance-${vars.appearances.subtle}.psds-theme--${themeNames.dark}`]: {
-    background: colorsBackgroundDark[1],
-    color: colorsTextIcon.highOnDark,
-    border: `1px solid ${colorsBorder.highOnDark}`
-  },
-  [`.psds-text-area__field--appearance-${vars.appearances.subtle}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
+  [`.psds-text-area__field--appearance-${vars.appearances.subtle}.psds-theme--${themeNames.dark}`]:
+    {
+      background: colorsBackgroundDark[1],
+      color: colorsTextIcon.highOnDark,
+      border: `1px solid ${colorsBorder.highOnDark}`
+    },
+  [`.psds-text-area__field--appearance-${vars.appearances.subtle}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.highOnLight
+    },
   [`.psds-text-area__field.psds-theme--${themeNames.light}`]: {
     border: `1px solid ${colorsBorder.highOnLight}`,
 
