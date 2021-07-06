@@ -104,19 +104,20 @@ const character = (evt: KeyboardEvent) => {
   evt.preventDefault()
 }
 
-export const handleMenuKeyDownEvents: React.KeyboardEventHandler = synthetic => {
-  const evt = synthetic.nativeEvent
+export const handleMenuKeyDownEvents: React.KeyboardEventHandler =
+  synthetic => {
+    const evt = synthetic.nativeEvent
 
-  evt.key === 'ArrowDown'
-    ? downArrow(evt)
-    : evt.key === 'ArrowUp'
-    ? upArrow(evt)
-    : evt.key === 'Home'
-    ? home(evt)
-    : evt.key === 'End'
-    ? end(evt)
-    : character(evt)
-}
+    evt.key === 'ArrowDown'
+      ? downArrow(evt)
+      : evt.key === 'ArrowUp'
+      ? upArrow(evt)
+      : evt.key === 'Home'
+      ? home(evt)
+      : evt.key === 'End'
+      ? end(evt)
+      : character(evt)
+  }
 
 export const useMenuRef = () => {
   const [, setFocus] = React.useState<boolean | undefined>()
