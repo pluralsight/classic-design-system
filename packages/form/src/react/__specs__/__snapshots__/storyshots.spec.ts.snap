@@ -639,7 +639,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          data-css-kn3wr0=""
+          className="psds-checkbox"
           onClick={[Function]}
           onKeyDown={[Function]}
         >
@@ -648,7 +648,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
           >
             <input
               checked={true}
-              data-css-6wu9td=""
+              className="psds-screenreader-only psds-checkbox__input"
               readOnly={true}
               style={
                 Object {
@@ -660,11 +660,11 @@ exports[`Storyshots Components/Form Sample 1`] = `
               value="someVal"
             />
             <div
-              data-css-1cfeqew=""
+              className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
             >
               <svg
                 aria-label="Checkmark"
-                data-css-ey6g07=""
+                className="psds-checkbox__icon"
                 role="img"
                 version="1.1"
                 viewBox="0 0 16 16"
@@ -677,7 +677,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             </div>
           </div>
           <div
-            data-css-ybwuvp=""
+            className="psds-checkbox__label psds-theme--dark"
           >
             Checkbox selected
           </div>

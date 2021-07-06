@@ -33,6 +33,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     children,
     onKeyDown,
     role: roleFromProps,
+    'aria-selected': ariaSelected,
     ...rest
   } = props
   const {
@@ -60,7 +61,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
   const listboxProps =
     optionRole === 'option'
       ? {
-          'aria-selected': selected
+          'aria-selected': ariaSelected || selected
         }
       : {}
 
