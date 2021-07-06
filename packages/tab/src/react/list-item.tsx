@@ -63,10 +63,8 @@ const ListItem = React.forwardRef<ListItemElement, ListItemProps>(
         role: 'tab',
         tabIndex: -1
       },
-      <div {...styles.textWidth()} tabIndex={-1}>
-        <div {...styles.textInner()} tabIndex={-1}>
-          {children}
-        </div>
+      <div {...styles.textWidth()}>
+        <div {...styles.textInner()}>{children}</div>
         <span {...styles.bar()} />
       </div>
     )
