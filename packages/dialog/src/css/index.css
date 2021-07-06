@@ -27,7 +27,7 @@
   flex: 1 1 auto;
   overflow-y: auto;
 }
-.psds-dialog--w-tail:after {
+.psds-dialog--with-tail:after {
   background-color: var(--ps-colors-white);
   content: ' ';
   display: block;
@@ -38,31 +38,31 @@
   white-space: pre;
   width: 14px;
 }
-.psds-dialog--tailposition-topleft:after {
+.psds-dialog--tail-position-top-left:after {
   left: 14px;
   top: calc(14px / -2);
 }
-.psds-dialog--tailposition-topcenter:after {
+.psds-dialog--tail-position-top-center:after {
   left: 50%;
   top: calc(14px / -2);
   transform: translateX(-50%) rotate(45deg);
 }
-.psds-dialog--tailposition-topright:after {
+.psds-dialog--tail-position-top-right:after {
   right: 14px;
   top: calc(14px / -2);
 }
-.psds-dialog--tailposition-bottomleft:after {
+.psds-dialog--tail-position-bottom-left:after {
   bottom: calc(14px / -2);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   left: 14px;
 }
-.psds-dialog--tailposition-bottomcenter:after {
+.psds-dialog--tail-position-bottom-center:after {
   bottom: calc(14px / -2);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
 }
-.psds-dialog--tailposition-bottomright:after {
+.psds-dialog--tail-position-bottom-right:after {
   bottom: calc(14px / -2);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   right: 14px;

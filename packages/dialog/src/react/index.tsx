@@ -5,6 +5,7 @@ import {
   ValueOf,
   classNames,
   createUniversalPortal,
+  dashify,
   isFunction,
   usePortal
 } from '@pluralsight/ps-design-system-util'
@@ -111,7 +112,9 @@ const Dialog = React.forwardRef((props, ref) => {
         'psds-dialog',
         modal && 'psds-dialog--modal',
         typeof tailPosition !== 'undefined' &&
-          `psds-dialog--w-tail psds-dialog--tailposition-${tailPosition.toLowerCase()}`,
+          `psds-dialog--with-tail psds-dialog--tail-position-${dashify(
+            tailPosition
+          )}`,
         className
       )}
       {...(closeOnEscape && { onKeyUp: handleKeyUp })}

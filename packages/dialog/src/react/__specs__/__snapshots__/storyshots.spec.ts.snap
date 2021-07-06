@@ -854,7 +854,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal psds-dialog--w-tail psds-dialog--tailposition-topcenter"
+      className="psds-dialog psds-dialog--modal psds-dialog--with-tail psds-dialog--tail-position-top-center"
       onKeyUp={[Function]}
     >
       <div
@@ -1859,7 +1859,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       topLeft
     </div>
     <div
-      className="psds-dialog psds-dialog--w-tail psds-dialog--tailposition-topleft"
+      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-top-left"
     >
       <div
         className="psds-dialog__content"
@@ -1941,7 +1941,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       topCenter
     </div>
     <div
-      className="psds-dialog psds-dialog--w-tail psds-dialog--tailposition-topcenter"
+      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-top-center"
     >
       <div
         className="psds-dialog__content"
@@ -2023,7 +2023,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       topRight
     </div>
     <div
-      className="psds-dialog psds-dialog--w-tail psds-dialog--tailposition-topright"
+      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-top-right"
     >
       <div
         className="psds-dialog__content"
@@ -2105,7 +2105,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       bottomLeft
     </div>
     <div
-      className="psds-dialog psds-dialog--w-tail psds-dialog--tailposition-bottomleft"
+      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-bottom-left"
     >
       <div
         className="psds-dialog__content"
@@ -2187,7 +2187,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       bottomCenter
     </div>
     <div
-      className="psds-dialog psds-dialog--w-tail psds-dialog--tailposition-bottomcenter"
+      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-bottom-center"
     >
       <div
         className="psds-dialog__content"
@@ -2269,7 +2269,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       bottomRight
     </div>
     <div
-      className="psds-dialog psds-dialog--w-tail psds-dialog--tailposition-bottomright"
+      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-bottom-right"
     >
       <div
         className="psds-dialog__content"
