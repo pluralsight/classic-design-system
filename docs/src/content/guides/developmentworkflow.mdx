@@ -45,7 +45,9 @@ For usage options, follow the "[Core usage](#core-usage)" section instructions.
 
 ### Install components
 
-<p><Badge color="yellow">Work in progress</Badge> We are currently converting from CSS-in-JS via Glamor to vanilla CSS.  For today, you can safely assume that [glamor](https://github.com/threepointone/glamor) is still a peer dependency and needs to be installed exactly once per application.</p>
+<Badge color="yellow">Work in progress</Badge> 
+
+We are currently converting from CSS-in-JS via Glamor to vanilla CSS.  For today, you can safely assume that [glamor](https://github.com/threepointone/glamor) is still a peer dependency and needs to be installed exactly once per application.
 
 ```bash startExpanded
 npm install glamor
@@ -205,8 +207,8 @@ In `next.config.js` directly adjust postCSS configuration like so:
 npm install @pluralsight/ps-design-system-core
 ```
 
-<p><Badge color={Badge.colors.yellow}>Note</Badge> CSS variables consumed by app need
-to be added to import from field.</p>
+<Badge color={Badge.colors.yellow}>Note</Badge> CSS variables consumed by app need
+to be added to import from field.
 
 ```typescript noRender startExpanded
 const postcssPresetEnv = require('postcss-preset-env')
@@ -268,3 +270,52 @@ To use the Core variables in SASS:
   color: $ps-colors-pink6;
 }
 ```
+
+## Overriding component styles
+
+### Use the standard
+
+The Design System is meant, among other things, to provide continuity of the user experience across Pluralsight products. But sometimes it will make sense to override a visual standard. This should not be the common case. And it should be done by product designers and developers who are clear about the tradeoffs and have a clear rationale of the value that such an override would create. If the value add isn't significant, the standard should be kept.
+
+### Limit the effects of overrides
+
+Design System component CSS is not modularized. This is so that targetting and overriding become simple. But it does come with tradeoffs. In a way, it's going back to the olden days. Now the CSS for Design System components all lives in the global namespace of a web page. Thus we all need to be careful to be a good citizens and not unintentionally clobber the styles of other things. Limit the effects of your override. To do this, be as specific as possible.
+
+### Never override tag names
+
+Do not target tag names like `a`, `h1`, etc. The effect of such changes are much too broad. Leave this to the [`normalize`](#install-normalize) stylesheet.
+
+### Use a custom selector
+
+All components should allow a `className` prop to be passed so you can use your own CSS selectors. This is also true for exposed sub-components in compound component packages.
+
+Use the `className` prop to pass your own selector. Never target the CSS selectors of a component directly.
+
+```jsx startExpanded noRender
+/* good */
+<Button className="my-custom-button" />
+
+/* bad */
+// my-stylesheet.css
+.psds-button {
+  color: var(--that-old-orange-i-like);
+}
+```
+
+### Use child selectors where needed
+
+In some cases, you might want to override the styles of a child element. That element is not exposed as an exported subcomponent. The only way to target it is through the CSS selector it ships with. In this case, that's is ok, provided the child element is targeted as a child selector of a selector specific to your application.
+
+```css startExpanded noRender
+/* good */
+.my-custom-avatar .psds-avatar__initials {
+  display: none;
+}
+
+/* bad */
+.psds-avatar__initials {
+  display: none;
+}
+```
+
+Using child combinators to target direct children or traversing nodes in selectors to get to child nodes is generally discouraged. This ties you to the implementation of the internal structure, and changes to this structure are not considered changes to the public API, are not versioned as such and could thus could break at any time.
