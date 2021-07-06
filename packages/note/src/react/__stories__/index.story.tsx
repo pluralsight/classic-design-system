@@ -207,36 +207,35 @@ ActionsWithNoMeta.args = {
   metadata: []
 }
 
-export const WithActionMenu: Story<
-  React.ComponentProps<typeof Note>
-> = args => {
-  const [isOpen, setIsOpen] = React.useState<boolean>(false)
+export const WithActionMenu: Story<React.ComponentProps<typeof Note>> =
+  args => {
+    const [isOpen, setIsOpen] = React.useState<boolean>(false)
 
-  return (
-    <Note
-      {...args}
-      actionBar={[
-        <BelowLeft
-          key="1"
-          when={isOpen}
-          show={
-            <ActionMenu origin={ActionMenu.origins.topRight}>
-              <ActionMenu.Item>Edit</ActionMenu.Item>
-              <ActionMenu.Item>Delete</ActionMenu.Item>
-            </ActionMenu>
-          }
-        >
-          <Note.Action
-            icon={<PlaceholderIcon />}
-            onClick={() => setIsOpen(!isOpen)}
-            title="More"
-          />
-        </BelowLeft>
-      ]}
-      actionBarVisible
-    />
-  )
-}
+    return (
+      <Note
+        {...args}
+        actionBar={[
+          <BelowLeft
+            key="1"
+            when={isOpen}
+            show={
+              <ActionMenu origin={ActionMenu.origins.topRight}>
+                <ActionMenu.Item>Edit</ActionMenu.Item>
+                <ActionMenu.Item>Delete</ActionMenu.Item>
+              </ActionMenu>
+            }
+          >
+            <Note.Action
+              icon={<PlaceholderIcon />}
+              onClick={() => setIsOpen(!isOpen)}
+              title="More"
+            />
+          </BelowLeft>
+        ]}
+        actionBarVisible
+      />
+    )
+  }
 WithActionMenu.args = { ...defaultArgs }
 
 export const InAList: Story<React.ComponentProps<typeof Note>> = args => {
