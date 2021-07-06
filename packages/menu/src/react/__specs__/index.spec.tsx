@@ -57,16 +57,6 @@ describe('Menu', () => {
     )
   })
 
-  it('composes className in Menu.Ellipsis', () => {
-    const { container } = render(
-      <Menu.Ellipsis className="compose-classname" />
-    )
-
-    expect(container.firstChild).toHaveClass(
-      'psds-menu__ellipsis compose-classname'
-    )
-  })
-
   it('composes className in Menu.Item', () => {
     const { container } = render(<Menu.Item className="compose-classname" />)
 
