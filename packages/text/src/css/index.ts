@@ -39,18 +39,22 @@ export default {
     margin: `${layout.spacingMedium} 0`,
     fontWeight: type.fontWeightStrong
   },
-  [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-text__heading--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight
-  },
-  [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__heading--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.lowOnDark
-  },
+  [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.highOnLight
+    },
+  [`.psds-text__heading--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.lowOnLight
+    },
+  [`.psds-text__heading--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.highOnDark
+    },
+  [`.psds-text__heading--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.lowOnDark
+    },
   [`.psds-text__heading--size-${vars.headingSizes.xXXSmall}`]: {
     fontSize: type.fontSize200,
     lineHeight: '16px',
@@ -98,18 +102,22 @@ export default {
     fontFamily: type.fontFamilyCode,
     fontFeatureSettings: '"ss05" on'
   },
-  [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight
-  },
-  [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.lowOnDark
-  },
+  [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.highOnLight
+    },
+  [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.lowOnLight
+    },
+  [`.psds-text__label--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.highOnDark
+    },
+  [`.psds-text__label--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.lowOnDark
+    },
   [`.psds-text__label--size-${vars.labelSizes.xSmall}`]: {
     fontSize: type.fontSize100,
     letterSpacing: type.letterSpacingLooser,
@@ -137,18 +145,22 @@ export default {
     lineHeight: type.lineHeightExtra,
     fontWeight: type.fontWeightDefault
   },
-  [`.psds-text__list--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-text__list--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight
-  },
-  [`.psds-text__list--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__list--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.lowOnDark
-  },
+  [`.psds-text__list--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.highOnLight
+    },
+  [`.psds-text__list--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.lowOnLight
+    },
+  [`.psds-text__list--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.highOnDark
+    },
+  [`.psds-text__list--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.lowOnDark
+    },
   [`.psds-text__list--size-${vars.listSizes.small}`]: {
     fontSize: type.fontSize200,
     letterSpacing: type.letterSpacingLooser,
@@ -177,18 +189,22 @@ export default {
     margin: `${layout.spacingMedium} 0`,
     fontWeight: type.fontWeightDefault
   },
-  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight
-  },
-  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight
-  },
-  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark
-  },
-  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.lowOnDark
-  },
+  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.highOnLight
+    },
+  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.lowOnLight
+    },
+  [`.psds-text__p--color-${vars.textColors.primary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.highOnDark
+    },
+  [`.psds-text__p--color-${vars.textColors.secondary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.lowOnDark
+    },
   [`.psds-text__p--size-${vars.pSizes.small}`]: {
     fontSize: type.fontSize200,
     letterSpacing: type.letterSpacingLooser,
