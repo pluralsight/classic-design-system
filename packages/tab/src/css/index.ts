@@ -178,14 +178,16 @@ export default {
     // __span
     '&:active span, &:hover span, &:focus span, & span': listItemBarActiveActive
   },
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeNames.light}`]: {
-    // __text
-    '&:hover div, &:focus div, & div': listItemTextLightActive
-  },
-  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName}`]: {
-    // __text
-    '&:hover div, &:focus div, & div': listItemTextDefaultActive
-  },
+  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeNames.light}`]:
+    {
+      // __text
+      '&:hover div, &:focus div, & div': listItemTextLightActive
+    },
+  [`.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeDefaultName}`]:
+    {
+      // __text
+      '&:hover div, &:focus div, & div': listItemTextDefaultActive
+    },
 
   // __list-item__text
   '.psds-tab__list-item__text': {
