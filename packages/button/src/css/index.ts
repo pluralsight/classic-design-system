@@ -102,142 +102,150 @@ export default {
     padding: `12px 20px`,
     height: '48px'
   },
-  [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark,
-    background: colorsPrimaryAction.background,
-    '&:not([disabled]):hover': {
-      background: colorsBlue[8],
-      cursor: 'pointer'
+  [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.highOnDark,
+      background: colorsPrimaryAction.background,
+      '&:not([disabled]):hover': {
+        background: colorsBlue[8],
+        cursor: 'pointer'
+      },
+      '&:not([disabled]):focus': {
+        background: colorsBlue[8],
+        cursor: 'pointer'
+      },
+      '&:not([disabled]):active': {
+        background: colorsBlue[9]
+      }
     },
-    '&:not([disabled]):focus': {
-      background: colorsBlue[8],
-      cursor: 'pointer'
+  [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.highOnDark,
+      background: colorsPrimaryAction.background,
+      '&:not([disabled]):hover': {
+        background: colorsBlue[8],
+        cursor: 'pointer'
+      },
+      '&:not([disabled]):focus': {
+        background: colorsBlue[8],
+        cursor: 'pointer',
+        boxShadow: `0 0 0 2px ${colorsBlue[5]}`
+      },
+      '&:not([disabled]):focus-visible': {
+        boxShadow: `0 0 0 2px ${colorsBlue[5]}`
+      },
+      '&:not([disabled]):active': {
+        background: colorsBlue[9]
+      }
     },
-    '&:not([disabled]):active': {
-      background: colorsBlue[9]
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.primary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnDark,
-    background: colorsPrimaryAction.background,
-    '&:not([disabled]):hover': {
-      background: colorsBlue[8],
-      cursor: 'pointer'
-    },
-    '&:not([disabled]):focus': {
-      background: colorsBlue[8],
-      cursor: 'pointer',
-      boxShadow: `0 0 0 2px ${colorsBlue[5]}`
-    },
-    '&:not([disabled]):focus-visible': {
-      boxShadow: `0 0 0 2px ${colorsBlue[5]}`
-    },
-    '&:not([disabled]):active': {
-      background: colorsBlue[9]
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.highOnDark,
-    background: colorsBackgroundUtility[25],
+  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.highOnDark,
+      background: colorsBackgroundUtility[25],
 
-    '&:not([disabled]):hover': {
-      background: colorsBackgroundUtility[30]
+      '&:not([disabled]):hover': {
+        background: colorsBackgroundUtility[30]
+      },
+      '&:not([disabled]):focus': {
+        background: colorsBackgroundUtility[30]
+      },
+      '&:not([disabled]):active': {
+        background: colorsBackgroundUtility[20]
+      }
     },
-    '&:not([disabled]):focus': {
-      background: colorsBackgroundUtility[30]
-    },
-    '&:not([disabled]):active': {
-      background: colorsBackgroundUtility[20]
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnLight,
-    background: colorsBackgroundUtility[20],
+  [`.psds-button--appearance-${vars.appearances.secondary}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.highOnLight,
+      background: colorsBackgroundUtility[20],
 
-    '&:not([disabled]):hover': {
-      background: colorsBackgroundUtility[25]
+      '&:not([disabled]):hover': {
+        background: colorsBackgroundUtility[25]
+      },
+      '&:not([disabled]):focus': {
+        background: colorsBackgroundUtility[25]
+      },
+      '&:not([disabled]):active': {
+        background: colorsBackgroundUtility[30]
+      }
     },
-    '&:not([disabled]):focus': {
-      background: colorsBackgroundUtility[25]
-    },
-    '&:not([disabled]):active': {
-      background: colorsBackgroundUtility[30]
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeDefaultName}`]: {
-    border: `2px solid ${colorsPrimaryAction.background}`,
-    color: colorsPrimaryAction.textDarkTheme,
-    background: 'none',
+  [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeDefaultName}`]:
+    {
+      border: `2px solid ${colorsPrimaryAction.background}`,
+      color: colorsPrimaryAction.textDarkTheme,
+      background: 'none',
 
-    '&:not([disabled]):hover': {
-      border: `2px solid ${colorsBlue[5]}`,
-      background: transparentize(0.85, colorsPrimaryAction.textDarkTheme),
-      color: colorsBlue[4]
+      '&:not([disabled]):hover': {
+        border: `2px solid ${colorsBlue[5]}`,
+        background: transparentize(0.85, colorsPrimaryAction.textDarkTheme),
+        color: colorsBlue[4]
+      },
+      '&:not([disabled]):focus': {
+        border: `2px solid ${colorsBlue[5]}`,
+        background: transparentize(0.85, colorsPrimaryAction.textDarkTheme),
+        color: colorsBlue[4]
+      },
+      '&:not([disabled]):active': {
+        border: `2px solid ${colorsBlue[7]}`,
+        background: transparentize(0.8, colorsPrimaryAction.textDarkTheme)
+      }
     },
-    '&:not([disabled]):focus': {
-      border: `2px solid ${colorsBlue[5]}`,
-      background: transparentize(0.85, colorsPrimaryAction.textDarkTheme),
-      color: colorsBlue[4]
-    },
-    '&:not([disabled]):active': {
-      border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.8, colorsPrimaryAction.textDarkTheme)
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeNames.light}`]: {
-    border: `2px solid ${colorsPrimaryAction.background}`,
-    color: colorsPrimaryAction.textLightTheme,
-    background: 'none',
+  [`.psds-button--appearance-${vars.appearances.stroke}.psds-theme--${themeNames.light}`]:
+    {
+      border: `2px solid ${colorsPrimaryAction.background}`,
+      color: colorsPrimaryAction.textLightTheme,
+      background: 'none',
 
-    '&:not([disabled]):hover': {
-      border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.95, colorsPrimaryAction.textLightTheme),
-      color: colorsBlue[8]
+      '&:not([disabled]):hover': {
+        border: `2px solid ${colorsBlue[7]}`,
+        background: transparentize(0.95, colorsPrimaryAction.textLightTheme),
+        color: colorsBlue[8]
+      },
+      '&:not([disabled]):focus': {
+        border: `2px solid ${colorsBlue[7]}`,
+        background: transparentize(0.95, colorsPrimaryAction.textLightTheme),
+        color: colorsBlue[8]
+      },
+      '&:not([disabled]):active': {
+        border: `2px solid ${colorsBlue[8]}`,
+        background: transparentize(0.9, colorsPrimaryAction.textLightTheme)
+      }
     },
-    '&:not([disabled]):focus': {
-      border: `2px solid ${colorsBlue[7]}`,
-      background: transparentize(0.95, colorsPrimaryAction.textLightTheme),
-      color: colorsBlue[8]
-    },
-    '&:not([disabled]):active': {
-      border: `2px solid ${colorsBlue[8]}`,
-      background: transparentize(0.9, colorsPrimaryAction.textLightTheme)
-    }
-  },
   [`.psds-button--appearance-${vars.appearances.flat}`]: {
     border: 'none',
     background: 'none'
   },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]: {
-    color: colorsTextIcon.lowOnDark,
-    '&:not([disabled]):hover': {
-      background: colorsBackgroundUtility[25],
-      color: colorsTextIcon.highOnDark
+  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeDefaultName}`]:
+    {
+      color: colorsTextIcon.lowOnDark,
+      '&:not([disabled]):hover': {
+        background: colorsBackgroundUtility[25],
+        color: colorsTextIcon.highOnDark
+      },
+      '&:not([disabled]):focus': {
+        background: colorsBackgroundUtility[25],
+        color: colorsTextIcon.highOnDark
+      },
+      '&:not([disabled]):active': {
+        background: colorsBackgroundUtility[20],
+        color: colorsTextIcon.highOnDark
+      }
     },
-    '&:not([disabled]):focus': {
-      background: colorsBackgroundUtility[25],
-      color: colorsTextIcon.highOnDark
+  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.lowOnLight,
+      '&:not([disabled]):hover': {
+        background: colorsBackgroundUtility[20],
+        color: colorsTextIcon.highOnLight
+      },
+      '&:not([disabled]):focus': {
+        background: colorsBackgroundUtility[20],
+        color: colorsTextIcon.highOnLight
+      },
+      '&:not([disabled]):active': {
+        background: colorsBackgroundUtility[15],
+        color: colorsTextIcon.highOnLight
+      }
     },
-    '&:not([disabled]):active': {
-      background: colorsBackgroundUtility[20],
-      color: colorsTextIcon.highOnDark
-    }
-  },
-  [`.psds-button--appearance-${vars.appearances.flat}.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.lowOnLight,
-    '&:not([disabled]):hover': {
-      background: colorsBackgroundUtility[20],
-      color: colorsTextIcon.highOnLight
-    },
-    '&:not([disabled]):focus': {
-      background: colorsBackgroundUtility[20],
-      color: colorsTextIcon.highOnLight
-    },
-    '&:not([disabled]):active': {
-      background: colorsBackgroundUtility[15],
-      color: colorsTextIcon.highOnLight
-    }
-  },
   [`.psds-button--disabled`]: {
     opacity: '50%',
     cursor: 'not-allowed',
@@ -250,45 +258,56 @@ export default {
   [`.psds-button--disabled.psds-theme--${themeNames.light}`]: {
     opacity: 0.5
   },
-  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.primary}`]: {
-    opacity: 0.5
-  },
-  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.secondary}`]: {
-    opacity: 0.5
-  },
-  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.stroke}`]: {
-    opacity: 0.5
-  },
+  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.primary}`]:
+    {
+      opacity: 0.5
+    },
+  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.secondary}`]:
+    {
+      opacity: 0.5
+    },
+  [`.psds-button--disabled.psds-button--appearance-${vars.appearances.stroke}`]:
+    {
+      opacity: 0.5
+    },
   [`.psds-button--disabled.psds-button--appearance-${vars.appearances.flat}`]: {
     opacity: 0.5
   },
   [`.psds-button--iconAlign-${vars.iconAligns.right}`]: {
     flexDirection: 'row-reverse'
   },
-  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.xSmall}`]: {
-    paddingRight: '4px'
-  },
-  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.xSmall}`]: {
-    paddingLeft: '4px'
-  },
-  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.small}`]: {
-    paddingRight: '8px'
-  },
-  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.small}`]: {
-    paddingLeft: '8px'
-  },
-  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.medium}`]: {
-    paddingRight: '12px'
-  },
-  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.medium}`]: {
-    paddingLeft: '12px'
-  },
-  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]: {
-    paddingRight: '16px'
-  },
-  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]: {
-    paddingLeft: '16px'
-  },
+  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.xSmall}`]:
+    {
+      paddingRight: '4px'
+    },
+  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.xSmall}`]:
+    {
+      paddingLeft: '4px'
+    },
+  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.small}`]:
+    {
+      paddingRight: '8px'
+    },
+  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.small}`]:
+    {
+      paddingLeft: '8px'
+    },
+  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.medium}`]:
+    {
+      paddingRight: '12px'
+    },
+  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.medium}`]:
+    {
+      paddingLeft: '12px'
+    },
+  [`.psds-button--iconAlign-${vars.iconAligns.right}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]:
+    {
+      paddingRight: '16px'
+    },
+  [`.psds-button--iconAlign-${vars.iconAligns.left}.psds-button--not-iconOnly.psds-button--size-${vars.sizes.large}`]:
+    {
+      paddingLeft: '16px'
+    },
   [`.psds-button--iconOnly`]: {
     padding: 0
   },
@@ -317,22 +336,26 @@ export default {
     marginLeft: 0,
     marginRight: '8px'
   },
-  [`.psds-button__icon--iconAlign-${vars.iconAligns.right}.psds-button--size-${vars.sizes.xSmall}`]: {
-    marginLeft: '4px',
-    marginRight: 0
-  },
-  [`.psds-button__icon--iconAlign-${vars.iconAligns.left}.psds-button--size-${vars.sizes.xSmall}`]: {
-    marginLeft: 0,
-    marginRight: '4px'
-  },
-  [`.psds-button__icon--iconAlign-${vars.iconAligns.right}.psds-button--size-${vars.sizes.small}`]: {
-    marginLeft: '4px',
-    marginRight: 0
-  },
-  [`.psds-button__icon--iconAlign-${vars.iconAligns.left}.psds-button--size-${vars.sizes.small}`]: {
-    marginLeft: 0,
-    marginRight: '4px'
-  },
+  [`.psds-button__icon--iconAlign-${vars.iconAligns.right}.psds-button--size-${vars.sizes.xSmall}`]:
+    {
+      marginLeft: '4px',
+      marginRight: 0
+    },
+  [`.psds-button__icon--iconAlign-${vars.iconAligns.left}.psds-button--size-${vars.sizes.xSmall}`]:
+    {
+      marginLeft: 0,
+      marginRight: '4px'
+    },
+  [`.psds-button__icon--iconAlign-${vars.iconAligns.right}.psds-button--size-${vars.sizes.small}`]:
+    {
+      marginLeft: '4px',
+      marginRight: 0
+    },
+  [`.psds-button__icon--iconAlign-${vars.iconAligns.left}.psds-button--size-${vars.sizes.small}`]:
+    {
+      marginLeft: 0,
+      marginRight: '4px'
+    },
   [`.psds-button__icon--iconOnly`]: {
     justifyContent: 'center',
     width: '100%',
@@ -360,30 +383,36 @@ export default {
     borderColor: loading.trackColorOnDark,
     borderTopColor: loading.borderTopColorOnDark
   },
-  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeNames.light}`]: {
-    borderColor: loading.trackColorOnLight,
-    borderTopColor: loading.borderTopColorOnLight
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeDefaultName}`]: {
-    borderColor: loading.trackColorOnDark,
-    borderTopColor: loading.borderTopColorOnDark
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeNames.light}`]: {
-    borderColor: loading.trackColorOnLight,
-    borderTopColor: loading.borderTopColorOnStroke
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeDefaultName}`]: {
-    borderColor: loading.trackColorOnDark,
-    borderTopColor: loading.borderTopColorOnStroke
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeNames.light}`]: {
-    borderColor: loading.trackColorOnLight,
-    borderTopColor: loading.borderTopColorOnLight
-  },
-  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeDefaultName}`]: {
-    borderColor: loading.trackColorOnDark,
-    borderTopColor: loading.borderTopColorOnDark
-  },
+  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeNames.light}`]:
+    {
+      borderColor: loading.trackColorOnLight,
+      borderTopColor: loading.borderTopColorOnLight
+    },
+  [`.psds-button__loading--appearance-${vars.appearances.secondary}.psds-button__loading--theme-${themeDefaultName}`]:
+    {
+      borderColor: loading.trackColorOnDark,
+      borderTopColor: loading.borderTopColorOnDark
+    },
+  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeNames.light}`]:
+    {
+      borderColor: loading.trackColorOnLight,
+      borderTopColor: loading.borderTopColorOnStroke
+    },
+  [`.psds-button__loading--appearance-${vars.appearances.stroke}.psds-button__loading--theme-${themeDefaultName}`]:
+    {
+      borderColor: loading.trackColorOnDark,
+      borderTopColor: loading.borderTopColorOnStroke
+    },
+  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeNames.light}`]:
+    {
+      borderColor: loading.trackColorOnLight,
+      borderTopColor: loading.borderTopColorOnLight
+    },
+  [`.psds-button__loading--appearance-${vars.appearances.flat}.psds-button__loading--theme-${themeDefaultName}`]:
+    {
+      borderColor: loading.trackColorOnDark,
+      borderTopColor: loading.borderTopColorOnDark
+    },
 
   [`.psds-button__text`]: {
     alignItems: 'center',

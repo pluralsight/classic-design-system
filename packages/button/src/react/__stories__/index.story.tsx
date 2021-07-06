@@ -90,7 +90,7 @@ StyleOverride.args = { ...defaultArgs, style: { background: 'red' } }
 export const ClassNameOverride = Template.bind({})
 ClassNameOverride.args = {
   ...defaultArgs,
-  className: (glamor.css({ background: 'green' }) as unknown) as string
+  className: glamor.css({ background: 'green' }) as unknown as string
 }
 
 export const Layouts: Story = () => (
