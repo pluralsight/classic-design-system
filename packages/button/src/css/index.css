@@ -59,7 +59,7 @@
   display: flex;
   width: 100%;
 }
-.psds-button--size-x-small {
+.psds-button--size-xsmall {
   font-size: var(--ps-type-font-size-100);
   letter-spacing: var(--ps-type-letter-spacing-looser);
   padding: 4px 8px;

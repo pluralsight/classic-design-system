@@ -613,7 +613,7 @@ exports[`Storyshots Components/Button Sizes 1`] = `
   }
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-primary psds-theme--dark"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
@@ -670,7 +670,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
   }
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-primary psds-theme--dark psds-button--not-icon-only"
     disabled={false}
   >
     <div
@@ -853,7 +853,7 @@ exports[`Storyshots Components/Button Variations 1`] = `
   }
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-primary psds-theme--dark"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
@@ -897,7 +897,7 @@ exports[`Storyshots Components/Button Variations 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-secondary psds-theme--dark"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
@@ -941,7 +941,7 @@ exports[`Storyshots Components/Button Variations 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-stroke psds-theme--dark"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
@@ -985,7 +985,7 @@ exports[`Storyshots Components/Button Variations 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-flat psds-theme--dark"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
@@ -1042,7 +1042,7 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
   }
 >
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-primary psds-theme--dark"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-primary psds-theme--dark"
     disabled={false}
   >
     <span
@@ -1086,7 +1086,7 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-secondary psds-theme--dark"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-secondary psds-theme--dark"
     disabled={false}
   >
     <span
@@ -1130,7 +1130,7 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-stroke psds-theme--dark"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-stroke psds-theme--dark"
     disabled={false}
   >
     <span
@@ -1174,7 +1174,7 @@ exports[`Storyshots Components/Button Vert Alignment 1`] = `
     </span>
   </button>
   <button
-    className="psds-button psds-button--layout-inline psds-button--size-x-small psds-button--appearance-flat psds-theme--dark"
+    className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark"
     disabled={false}
   >
     <span
