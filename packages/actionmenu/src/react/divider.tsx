@@ -9,10 +9,9 @@ const styles = {
   divider: () => glamor.css(stylesheet['.psds-actionmenu__divider'])
 }
 
-export const Divider: React.FC<
-  React.HTMLAttributes<HTMLDivElement>
-> = props => {
-  return <div {...styles.divider()} {...props} />
-}
+export const Divider: React.FC<React.HTMLAttributes<HTMLDivElement>> =
+  props => {
+    return <div {...styles.divider()} {...props} />
+  }
 
 Divider.displayName = 'ActionMenu.Divider'

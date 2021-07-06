@@ -67,9 +67,8 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
       ...rest
     } = props
 
-    const { onClickContext, onClose, originContext } = React.useContext(
-      ActionMenuContext
-    )
+    const { onClickContext, onClose, originContext } =
+      React.useContext(ActionMenuContext)
 
     const ref = React.useRef<HTMLLIElement>(null)
     React.useImperativeHandle<HTMLLIElement | null, HTMLLIElement | null>(
@@ -105,12 +104,13 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
       hasSubMenu && setOpen(true)
     }
 
-    const handleArrowLeft: React.KeyboardEventHandler<HTMLUListElement> = evt => {
-      if (evt.key === 'ArrowLeft' && hasSubMenu) {
-        setOpen(false)
-        evt.stopPropagation()
+    const handleArrowLeft: React.KeyboardEventHandler<HTMLUListElement> =
+      evt => {
+        if (evt.key === 'ArrowLeft' && hasSubMenu) {
+          setOpen(false)
+          evt.stopPropagation()
+        }
       }
-    }
 
     const handleClick = (evt: React.MouseEvent) => {
       if (hasSubMenu) return
