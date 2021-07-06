@@ -157,9 +157,10 @@ export default {
       opacity: 1
     }
   },
-  '.psds-card__action-bar--fullOverlay.psds-card__action-bar--no-actionBarVisible': {
-    background: 'none'
-  },
+  '.psds-card__action-bar--fullOverlay.psds-card__action-bar--no-actionBarVisible':
+    {
+      background: 'none'
+    },
   '.psds-card__action-bar--actionBarVisible': {
     opacity: 1
   },

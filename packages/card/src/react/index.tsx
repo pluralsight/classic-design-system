@@ -168,9 +168,8 @@ const ActionBarAction = React.forwardRef((props, ref) => {
 }) as ActionBarActionComponent
 ActionBarAction.displayName = 'Card.Action'
 
-const FullOverlayLink: React.FC<
-  React.HTMLAttributes<HTMLSpanElement>
-> = props => <span {...styles.fullOverlayLink()} {...props} />
+const FullOverlayLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> =
+  props => <span {...styles.fullOverlayLink()} {...props} />
 
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
