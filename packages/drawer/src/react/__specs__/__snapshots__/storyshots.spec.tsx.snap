@@ -43,7 +43,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -121,7 +121,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -189,7 +189,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -257,7 +257,7 @@ exports[`Storyshots Components/Row Default 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -400,7 +400,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                  d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                 />
               </svg>
             </div>
@@ -425,7 +425,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -494,7 +494,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -551,7 +551,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -608,7 +608,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -678,7 +678,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -737,7 +737,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -796,7 +796,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -866,7 +866,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -969,7 +969,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                  d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                 />
               </svg>
             </div>
@@ -994,7 +994,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
