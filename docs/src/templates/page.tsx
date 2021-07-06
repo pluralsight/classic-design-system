@@ -10,7 +10,7 @@ import { SideNav } from '../components/side-nav'
 import { Heading, TableOfContents } from '../components/table-of-contents'
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       body
       frontmatter {

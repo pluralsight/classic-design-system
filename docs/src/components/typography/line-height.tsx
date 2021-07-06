@@ -22,16 +22,14 @@ const heights = [
     bgClassName: styles.textBgStandard,
     className: styles.textStandard,
     label: '24px - Standard',
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore',
     varName: 'psTypeLineHeightStandard'
   },
   {
     bgClassName: styles.textBgTight,
     className: styles.textTight,
     label: '20px - Tight',
-    text:
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis',
     varName: 'psTypeLineHeightTight'
   }
 ]
