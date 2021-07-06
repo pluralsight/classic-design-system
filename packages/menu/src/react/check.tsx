@@ -16,6 +16,9 @@ export const Check: React.FC<CheckProps> = ({ className, ...rest }) => {
       className={classNames('psds-menu__item-icon', className)}
     />
   ) : (
-    <div className="psds-menu__item-icon-filler" style={rest.style} />
+    <div
+      className={classNames('psds-menu__item-icon-filler', className)}
+      style={rest.style}
+    />
   )
 }
