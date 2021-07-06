@@ -110,7 +110,7 @@ export const Position = React.forwardRef<HTMLElement, PositionProps>(
     const innerRef = React.useRef<HTMLElement>()
     const showRef = props.show.ref || innerRef
     const showEl = cloneElementWithRef(
-      (props.show as unknown) as React.ReactHTMLElement<HTMLElement>,
+      props.show as unknown as React.ReactHTMLElement<HTMLElement>,
       innerRef,
       {
         style: { ...props.show.props.style, ...style }
