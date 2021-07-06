@@ -980,7 +980,11 @@ exports[`Storyshots Components/Row Progress 1`] = `
       >
         <div
           aria-label="67% complete"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow={66.6667}
           data-css-6fy8id=""
+          role="progressbar"
         />
       </div>
     </div>
@@ -1008,7 +1012,11 @@ exports[`Storyshots Components/Row Progress 1`] = `
       >
         <div
           aria-label="100% complete"
+          aria-valuemax="100"
+          aria-valuemin="0"
+          aria-valuenow={100}
           data-css-1gebpgk=""
+          role="progressbar"
         />
       </div>
     </div>
