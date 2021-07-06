@@ -92,7 +92,7 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
               data-css-91smc8=""
             >
               <div
-                className="psds-avatar psds-avatar--size-x-small"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -298,7 +298,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
               data-css-91smc8=""
             >
               <div
-                className="psds-avatar psds-avatar--size-x-small"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -676,7 +676,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
               data-css-91smc8=""
             >
               <div
-                className="psds-avatar psds-avatar--size-x-small"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -1066,7 +1066,7 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
               data-css-91smc8=""
             >
               <div
-                className="psds-avatar psds-avatar--size-x-small"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -1351,7 +1351,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
               data-css-91smc8=""
             >
               <div
-                className="psds-avatar psds-avatar--size-x-small"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -1784,7 +1784,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
               data-css-91smc8=""
             >
               <div
-                className="psds-avatar psds-avatar--size-x-small"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
