@@ -67,6 +67,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -421,6 +422,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -595,6 +597,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=41&gravity=north)",
@@ -769,6 +772,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -943,6 +947,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=43&gravity=north)",
@@ -1117,6 +1122,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=44&gravity=north)",
@@ -1291,6 +1297,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=45&gravity=north)",
@@ -1465,6 +1472,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=46&gravity=north)",
@@ -1639,6 +1647,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=47&gravity=north)",
@@ -1813,6 +1822,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=48&gravity=north)",
@@ -1987,6 +1997,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=49&gravity=north)",
@@ -2161,6 +2172,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=50&gravity=north)",
@@ -2335,6 +2347,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=51&gravity=north)",
@@ -2509,6 +2522,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=52&gravity=north)",
@@ -2683,6 +2697,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=53&gravity=north)",
@@ -2857,6 +2872,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=54&gravity=north)",
@@ -3031,6 +3047,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=55&gravity=north)",
@@ -3205,6 +3222,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=56&gravity=north)",
@@ -3379,6 +3397,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=57&gravity=north)",
@@ -3553,6 +3572,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=58&gravity=north)",
@@ -3727,6 +3747,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=59&gravity=north)",
@@ -3901,6 +3922,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=60&gravity=north)",
@@ -4075,6 +4097,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=61&gravity=north)",
@@ -4249,6 +4272,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=62&gravity=north)",
@@ -4423,6 +4447,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=63&gravity=north)",
@@ -4597,6 +4622,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=64&gravity=north)",
@@ -4771,6 +4797,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=65&gravity=north)",
@@ -4945,6 +4972,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=66&gravity=north)",
@@ -5119,6 +5147,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=67&gravity=north)",
@@ -5293,6 +5322,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=68&gravity=north)",
@@ -5467,6 +5497,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=69&gravity=north)",
@@ -5641,6 +5672,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=70&gravity=north)",
@@ -5815,6 +5847,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=71&gravity=north)",
@@ -5989,6 +6022,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=72&gravity=north)",
@@ -6163,6 +6197,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=73&gravity=north)",
@@ -6337,6 +6372,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=74&gravity=north)",
@@ -6511,6 +6547,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=75&gravity=north)",
@@ -6685,6 +6722,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=76&gravity=north)",
@@ -6859,6 +6897,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=77&gravity=north)",
@@ -7033,6 +7072,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=78&gravity=north)",
@@ -7207,6 +7247,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
             >
               <div
                 data-css-i7gti2=""
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=79&gravity=north)",
@@ -9496,6 +9537,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -9667,6 +9709,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=41&gravity=north)",
@@ -9838,6 +9881,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -10009,6 +10053,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=43&gravity=north)",
@@ -10180,6 +10225,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=44&gravity=north)",
@@ -10351,6 +10397,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=45&gravity=north)",
@@ -10522,6 +10569,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=46&gravity=north)",
@@ -10693,6 +10741,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=47&gravity=north)",
@@ -10864,6 +10913,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=48&gravity=north)",
@@ -11123,6 +11173,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -11294,6 +11345,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=41&gravity=north)",
@@ -11465,6 +11517,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -11636,6 +11689,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=43&gravity=north)",
@@ -11807,6 +11861,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=44&gravity=north)",
@@ -11978,6 +12033,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=45&gravity=north)",
@@ -12149,6 +12205,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=46&gravity=north)",
@@ -12320,6 +12377,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=47&gravity=north)",
@@ -12491,6 +12549,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=48&gravity=north)",
@@ -12750,6 +12809,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -12921,6 +12981,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=41&gravity=north)",
@@ -13092,6 +13153,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -13263,6 +13325,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=43&gravity=north)",
@@ -13434,6 +13497,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=44&gravity=north)",
@@ -13605,6 +13669,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=45&gravity=north)",
@@ -13776,6 +13841,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=46&gravity=north)",
@@ -13947,6 +14013,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=47&gravity=north)",
@@ -14118,6 +14185,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
               >
                 <div
                   data-css-i7gti2=""
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=48&gravity=north)",
