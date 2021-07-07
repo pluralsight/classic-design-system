@@ -539,11 +539,11 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              data-css-1aye8gw=""
+              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
               href="http://google.com"
             >
               <span
-                data-css-1997kh1=""
+                className="psds-tag__label psds-theme--dark"
               >
                 Foo
               </span>
@@ -560,11 +560,11 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              data-css-1aye8gw=""
+              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
               href="http://google.com"
             >
               <span
-                data-css-1997kh1=""
+                className="psds-tag__label psds-theme--dark"
               >
                 Bar
               </span>
@@ -581,11 +581,11 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              data-css-1aye8gw=""
+              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
               href="http://google.com"
             >
               <span
-                data-css-1997kh1=""
+                className="psds-tag__label psds-theme--dark"
               >
                 Baz
               </span>
@@ -782,7 +782,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          data-css-nq9iqf=""
+          className="psds-switch psds-switch--labelAlign-right"
           style={
             Object {
               "maxWidth": "none",
@@ -794,16 +794,16 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-1lu7sfl=""
           >
             <div
-              data-css-19bj9q0=""
+              className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
             >
               <div
-                data-css-1o90whm=""
+                className="psds-switch__thumb psds-switch__thumb--size-large"
               />
             </div>
           </div>
           <input
             checked={false}
-            data-css-6wu9td=""
+            className="psds-switch__checkbox"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -814,7 +814,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             type="checkbox"
           />
           <span
-            data-css-1oms9gl=""
+            className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
           >
             toggle
           </span>
