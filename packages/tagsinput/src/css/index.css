@@ -31,10 +31,6 @@ null.psds-tagsinput {
 }
 .psds-tagsinput__pills {
   align-items: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
@@ -45,11 +41,6 @@ null.psds-tagsinput {
     var(--ps-layout-spacing-xsmall)
     calc(var(--ps-layout-spacing-xsmall) / 2 - 1px)
     var(--ps-layout-spacing-xsmall);
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-flex: 1;
-  -webkit-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
 }
 .psds-tagsinput__pill {
   margin: 0 var(--ps-layout-spacing-xxsmall) var(--ps-layout-spacing-xxsmall) 0;
