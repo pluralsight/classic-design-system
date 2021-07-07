@@ -547,7 +547,7 @@ exports[`Storyshots Components/PageHeadingLayout Default 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-vetqvm=""
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
     >
       My Page
     </h2>
@@ -564,7 +564,7 @@ exports[`Storyshots Components/PageHeadingLayout Long Title 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-vetqvm=""
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
     >
       My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
     </h2>
@@ -581,7 +581,7 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Actions 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-vetqvm=""
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
     >
       My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
     </h2>
@@ -619,7 +619,7 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions
     data-css-wlfhsa=""
   >
     <h2
-      data-css-vetqvm=""
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
     >
       My page is here and it's long. My page is here and it's long. My page is here and it's long. My page is here and it's long.
     </h2>
@@ -708,7 +708,7 @@ exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-vetqvm=""
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
     >
       My Page
     </h2>
@@ -797,7 +797,7 @@ exports[`Storyshots Components/PageHeadingLayout With Actions 1`] = `
     data-css-wlfhsa=""
   >
     <h2
-      data-css-vetqvm=""
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
     >
       My Page
     </h2>
