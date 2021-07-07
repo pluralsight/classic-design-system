@@ -138,31 +138,31 @@ interface IllustrationStatics {
 
 const IllustrationNotFound = () => null
 
-const Illustration: React.FC<IllustrationProps> & IllustrationStatics =
-  props => {
-    const { children: custom, className, name, ...rest } = props
+const Illustration: React.FC<IllustrationProps> &
+  IllustrationStatics = props => {
+  const { children: custom, className, name, ...rest } = props
 
-    return (
-      <Context.Consumer>
-        {ctx => {
-          // @ts-ignore: necessary conditional
-          let Comp: any = illustrations[name] || IllustrationNotFound
-          const isSmall: boolean = ctx.size === sizes.small && !!Comp.small
+  return (
+    <Context.Consumer>
+      {ctx => {
+        // @ts-ignore: necessary conditional
+        let Comp: any = illustrations[name] || IllustrationNotFound
+        const isSmall: boolean = ctx.size === sizes.small && !!Comp.small
 
-          if (isSmall) Comp = Comp.small
-          if (custom) Comp = () => custom
+        if (isSmall) Comp = Comp.small
+        if (custom) Comp = () => custom
 
-          return (
-            <div
-              className={classNames('psds-emptystate__illustration', className)}
-            >
-              <Comp {...rest} />
-            </div>
-          )
-        }}
-      </Context.Consumer>
-    )
-  }
+        return (
+          <div
+            className={classNames('psds-emptystate__illustration', className)}
+          >
+            <Comp {...rest} />
+          </div>
+        )
+      }}
+    </Context.Consumer>
+  )
+}
 
 Illustration.names = illustrationNames
 
