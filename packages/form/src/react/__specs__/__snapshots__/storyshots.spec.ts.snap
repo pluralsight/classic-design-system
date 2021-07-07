@@ -202,7 +202,7 @@ exports[`Storyshots Components/Form Null Children 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
+          data-css-vetqvm=""
           style={
             Object {
               "maxWidth": "none",
@@ -217,7 +217,7 @@ exports[`Storyshots Components/Form Null Children 1`] = `
         data-css-4l6uky=""
       >
         <label
-          className="psds-text-input"
+          data-css-w0yocm=""
           style={
             Object {
               "maxWidth": "none",
@@ -226,21 +226,21 @@ exports[`Storyshots Components/Form Null Children 1`] = `
           }
         >
           <div
-            className="psds-text-input__label psds-theme--dark psds-text-input__label"
+            data-css-dysqqm=""
           >
             Name
           </div>
           <div
-            className="psds-text-input__field-container"
+            data-css-1r967oi=""
           >
             <div
               data-css-ctre2o=""
             >
               <div
-                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
+                data-css-1okk1dp=""
               >
                 <input
-                  className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                  data-css-1iyk6mt=""
                   disabled={false}
                   placeholder="What's your name?"
                   style={
@@ -283,7 +283,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <h2
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
+          data-css-vetqvm=""
           style={
             Object {
               "maxWidth": "none",
@@ -298,7 +298,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          className="psds-text-input"
+          data-css-w0yocm=""
           style={
             Object {
               "maxWidth": "none",
@@ -307,21 +307,21 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <div
-            className="psds-text-input__label psds-theme--dark psds-text-input__label"
+            data-css-dysqqm=""
           >
             Name
           </div>
           <div
-            className="psds-text-input__field-container"
+            data-css-1r967oi=""
           >
             <div
               data-css-ctre2o=""
             >
               <div
-                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
+                data-css-1okk1dp=""
               >
                 <input
-                  className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                  data-css-1iyk6mt=""
                   disabled={false}
                   placeholder="What's your name?"
                   style={
@@ -340,7 +340,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          className="psds-text-input"
+          data-css-w0yocm=""
           style={
             Object {
               "maxWidth": "none",
@@ -349,21 +349,21 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <div
-            className="psds-text-input__label psds-theme--dark psds-text-input__label"
+            data-css-dysqqm=""
           >
             Alias
           </div>
           <div
-            className="psds-text-input__field-container"
+            data-css-1r967oi=""
           >
             <div
               data-css-ctre2o=""
             >
               <div
-                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
+                data-css-1okk1dp=""
               >
                 <input
-                  className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                  data-css-1iyk6mt=""
                   disabled={false}
                   placeholder="Do you have a nick name?"
                   style={
@@ -377,7 +377,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             </div>
           </div>
           <div
-            className="psds-text-input__sub-label psds-theme--dark"
+            data-css-o89kbw=""
           >
             *Optional
           </div>
@@ -387,7 +387,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          className="psds-text-input"
+          data-css-w0yocm=""
           style={
             Object {
               "maxWidth": "none",
@@ -396,21 +396,21 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <div
-            className="psds-text-input__label psds-theme--dark psds-text-input__label"
+            data-css-dysqqm=""
           >
             Email address
           </div>
           <div
-            className="psds-text-input__field-container"
+            data-css-1r967oi=""
           >
             <div
               data-css-in6gqi=""
             >
               <div
-                className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--error"
+                data-css-1okk1dp=""
               >
                 <input
-                  className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                  data-css-1iyk6mt=""
                   disabled={false}
                   style={
                     Object {
@@ -423,7 +423,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               </div>
             </div>
             <div
-              className="psds-text-input__error"
+              data-css-1ha66tv=""
             >
               <div
                 data-css-7dab2f=""
@@ -443,7 +443,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             </div>
           </div>
           <div
-            className="psds-text-input__sub-label psds-theme--dark"
+            data-css-o89kbw=""
           >
             Not a valid email address
           </div>
@@ -606,24 +606,24 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <label
-            className="psds-text-input"
+            data-css-w0yocm=""
           >
             <div
-              className="psds-text-input__label psds-theme--dark psds-text-input__label"
+              data-css-dysqqm=""
             >
               Choose a Date
             </div>
             <div
-              className="psds-text-input__field-container"
+              data-css-1r967oi=""
             >
               <div
                 data-css-ctre2o=""
               >
                 <div
-                  className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
+                  data-css-1okk1dp=""
                 >
                   <input
-                    className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
+                    data-css-1iyk6mt=""
                     disabled={false}
                     onChange={[Function]}
                     onFocus={[Function]}
@@ -833,7 +833,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          className="psds-text-area"
+          data-css-na8jqt=""
           style={
             Object {
               "maxWidth": "none",
@@ -842,18 +842,18 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <div
-            className="psds-text-area__label psds-theme--dark"
+            data-css-9kywkh=""
           >
             Comment
           </div>
           <div
-            className="psds-text-area__field-container"
+            data-css-1ios7mb=""
           >
             <div
               data-css-ctre2o=""
             >
               <textarea
-                className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
+                data-css-1paz7u7=""
                 disabled={false}
                 placeholder="Anything else to report?"
                 style={
