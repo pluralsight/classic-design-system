@@ -494,19 +494,19 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
   }
 >
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
         data-css-ctre2o=""
       >
         <div
-          data-css-1iawjij=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--icon-align-left"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -515,7 +515,7 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
         </div>
       </div>
       <div
-        data-css-1sdemx4=""
+        className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-default psds-text-input__icon"
       >
         <div
           data-css-7dab2f=""
@@ -2974,24 +2974,24 @@ Array [
 exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
 <div>
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-text-input__label psds-theme--dark psds-text-input__label"
     >
       Start
     </div>
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
         data-css-ctre2o=""
       >
         <div
-          data-css-1okk1dp=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             value=""
@@ -3001,24 +3001,24 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
     </div>
   </label>
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-text-input__label psds-theme--dark psds-text-input__label"
     >
       End
     </div>
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
         data-css-ctre2o=""
       >
         <div
-          data-css-1okk1dp=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             value=""
@@ -3539,24 +3539,24 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
 exports[`Storyshots Components/DatePicker Range Date Calendar With Input Two Months 1`] = `
 Array [
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-text-input__label psds-theme--dark psds-text-input__label"
     >
       Start
     </div>
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
         data-css-ctre2o=""
       >
         <div
-          data-css-1okk1dp=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             value=""
@@ -3566,24 +3566,24 @@ Array [
     </div>
   </label>,
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-text-input__label psds-theme--dark psds-text-input__label"
     >
       End
     </div>
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
         data-css-ctre2o=""
       >
         <div
-          data-css-1okk1dp=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             value=""
