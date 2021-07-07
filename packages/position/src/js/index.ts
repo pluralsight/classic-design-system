@@ -1,7 +1,8 @@
 interface StyleOptions {
   bufferWidth: number
+  allowOffscreen?: boolean
 }
-const defaultOptions: StyleOptions = { bufferWidth: 12 }
+const defaultOptions: StyleOptions = { bufferWidth: 12, allowOffscreen: false }
 
 interface ClipAdjusterProps {
   x: number
@@ -11,36 +12,75 @@ interface ClipAdjusterProps {
   opts: StyleOptions
 }
 type ClipAdjustment = [number, number]
-type ClipAdjuster = (props: ClipAdjusterProps) => ClipAdjustment
+type ClipAdjuster = (
+  props: ClipAdjusterProps,
+  allowOffscreen?: boolean
+) => ClipAdjustment
 const clipAdjust: {
   above: ClipAdjuster
   below: ClipAdjuster
   leftOf: ClipAdjuster
   rightOf: ClipAdjuster
 } = {
-  above: ({ x, y, elRect, targetRect, opts }) => [
-    [0, x, window.innerWidth - elRect.width].sort((a, b) => a - b)[1],
-    y < 0 ? targetRect.bottom + opts.bufferWidth : y
+  above: ({
+    x,
+    y,
+    elRect,
+    targetRect,
+    opts: { bufferWidth, allowOffscreen }
+  }) => [
+    [0, x, !allowOffscreen ? window.innerWidth - elRect.width : x].sort(
+      (a, b) => a - b
+    )[1],
+    y < 0 && !allowOffscreen ? targetRect.bottom + bufferWidth : y
   ],
-  below: ({ x, y, elRect, targetRect, opts }) => [
-    [0, x, window.innerWidth - elRect.width].sort((a, b) => a - b)[1],
-    y > window.innerHeight + window.pageYOffset
-      ? targetRect.top - (elRect.height + opts.bufferWidth)
+  below: ({
+    x,
+    y,
+    elRect,
+    targetRect,
+    opts: { bufferWidth, allowOffscreen }
+  }) => [
+    [0, x, !allowOffscreen ? window.innerWidth - elRect.width : x].sort(
+      (a, b) => a - b
+    )[1],
+    y > window.innerHeight + window.pageYOffset && !allowOffscreen
+      ? targetRect.top - (elRect.height + bufferWidth)
       : y
   ],
-  leftOf: ({ x, y, elRect, targetRect, opts }) => [
-    x < 0 ? targetRect.right + opts.bufferWidth : x,
-    [0, y, window.innerHeight + window.pageYOffset - elRect.height].sort(
-      (a, b) => a - b
-    )[1]
+  leftOf: ({
+    x,
+    y,
+    elRect,
+    targetRect,
+    opts: { bufferWidth, allowOffscreen }
+  }) => [
+    x < 0 && !allowOffscreen ? targetRect.right + bufferWidth : x,
+    [
+      0,
+      y,
+      !allowOffscreen
+        ? window.innerHeight + window.pageYOffset - elRect.height
+        : y
+    ].sort((a, b) => a - b)[1]
   ],
-  rightOf: ({ x, y, elRect, targetRect, opts }) => [
-    x > window.innerWidth
-      ? targetRect.left - elRect.width - opts.bufferWidth
+  rightOf: ({
+    x,
+    y,
+    elRect,
+    targetRect,
+    opts: { bufferWidth, allowOffscreen }
+  }) => [
+    x > window.innerWidth && !allowOffscreen
+      ? targetRect.left - elRect.width - bufferWidth
       : x,
-    [0, y, window.innerHeight + window.pageYOffset - elRect.height].sort(
-      (a, b) => a - b
-    )[1]
+    [
+      0,
+      y,
+      !allowOffscreen
+        ? window.innerHeight + window.pageYOffset - elRect.height
+        : y
+    ].sort((a, b) => a - b)[1]
   ]
 }
 
@@ -259,7 +299,7 @@ export const leftOf: PositionFunction = target => {
 function overrideDefaultOpts(
   opts: Partial<StyleOptions> | undefined
 ): StyleOptions {
-  return { ...opts, ...defaultOptions }
+  return { ...defaultOptions, ...opts }
 }
 
 export type PositionStyle = Pick<

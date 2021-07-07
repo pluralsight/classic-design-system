@@ -16,6 +16,7 @@ export interface PositionProps {
   show: React.FunctionComponentElement<ShowProps>
   target?: HTMLElement | React.RefObject<HTMLElement>
   when?: boolean
+  allowOffscreen?: boolean
 }
 
 interface ShowProps {
@@ -88,7 +89,7 @@ export const LeftOf = React.forwardRef<
 LeftOf.displayName = 'LeftOf'
 
 export const Position = React.forwardRef<HTMLElement, PositionProps>(
-  (props, forwardedRef) => {
+  ({ allowOffscreen, ...props }, forwardedRef) => {
     const { target, position: positionFn } = props
     const inNode = props.inNode || (canUseDOM() ? document.body : undefined)
     const when = typeof props.when === 'boolean' ? props.when : true
@@ -126,7 +127,9 @@ export const Position = React.forwardRef<HTMLElement, PositionProps>(
           : ref.current
       if (!showRef.current || !targetNode) return
 
-      const nextStyle = positionFn(targetNode).styleFor(showRef.current)
+      const nextStyle = positionFn(targetNode).styleFor(showRef.current, {
+        allowOffscreen
+      })
       setStyle(nextStyle)
       setShownOnce(true)
     }, [positionFn, target, showRef.current])
