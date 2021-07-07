@@ -3,7 +3,7 @@
 exports[`Storyshots Components/Dialog Modal Default 1`] = `
 <div>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -14,7 +14,7 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
@@ -31,7 +31,7 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
     </span>
   </button>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sweet soufflé 
     <a
@@ -72,12 +72,12 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
           </svg>
         </button>
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -93,7 +93,7 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -151,7 +151,7 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
 exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
 <div>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -162,7 +162,7 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
@@ -179,7 +179,7 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
     </span>
   </button>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sweet soufflé 
     <a
@@ -220,12 +220,12 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
           </svg>
         </button>
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -241,7 +241,7 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -299,7 +299,7 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
 exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
 <div>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -310,7 +310,7 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
@@ -327,7 +327,7 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
     </span>
   </button>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sweet soufflé 
     <a
@@ -352,12 +352,12 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
         className="psds-dialog__content"
       >
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -373,7 +373,7 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -431,7 +431,7 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
 exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
 <div>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -442,7 +442,7 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
@@ -459,7 +459,7 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
     </span>
   </button>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sweet soufflé 
     <a
@@ -499,12 +499,12 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
           </svg>
         </button>
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -520,7 +520,7 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -578,7 +578,7 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
 exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
 <div>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -589,7 +589,7 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
@@ -606,7 +606,7 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
     </span>
   </button>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sweet soufflé 
     <a
@@ -647,12 +647,12 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
           </svg>
         </button>
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -668,7 +668,7 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -726,7 +726,7 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
 exports[`Storyshots Components/Dialog Modal No Focusable Child Elements 1`] = `
 <div>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -737,7 +737,7 @@ exports[`Storyshots Components/Dialog Modal No Focusable Child Elements 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
@@ -754,7 +754,7 @@ exports[`Storyshots Components/Dialog Modal No Focusable Child Elements 1`] = `
     </span>
   </button>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sweet soufflé 
     <a
@@ -795,7 +795,7 @@ exports[`Storyshots Components/Dialog Modal No Focusable Child Elements 1`] = `
           </svg>
         </button>
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
@@ -808,7 +808,7 @@ exports[`Storyshots Components/Dialog Modal No Focusable Child Elements 1`] = `
 exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
 <div>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -819,7 +819,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
@@ -836,7 +836,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
     </span>
   </button>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sweet soufflé 
     <a
@@ -877,7 +877,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
           </svg>
         </button>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -894,7 +894,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -911,7 +911,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -928,7 +928,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -945,7 +945,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -962,7 +962,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -979,7 +979,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -996,7 +996,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1013,7 +1013,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1030,7 +1030,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1047,7 +1047,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1064,7 +1064,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1081,7 +1081,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1098,7 +1098,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1115,7 +1115,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1132,7 +1132,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1149,7 +1149,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1166,7 +1166,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1183,7 +1183,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1200,7 +1200,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1225,7 +1225,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
 exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
 <div>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
     <a
@@ -1236,7 +1236,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
      wafer chupa chups.
   </p>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
   </p>
@@ -1253,7 +1253,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
     </span>
   </button>
   <p
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
   >
     Sweet soufflé 
     <a
@@ -1294,7 +1294,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
           </svg>
         </button>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1311,7 +1311,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1328,7 +1328,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1345,7 +1345,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1362,7 +1362,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1379,7 +1379,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1396,7 +1396,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1413,7 +1413,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1430,7 +1430,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1447,7 +1447,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1464,7 +1464,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1481,7 +1481,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1498,7 +1498,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1515,7 +1515,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1532,7 +1532,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1549,7 +1549,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1566,7 +1566,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1583,7 +1583,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1600,7 +1600,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1617,7 +1617,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1664,12 +1664,12 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
       </svg>
     </button>
     <h1
-      data-css-nypl32=""
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
     >
       Wowzers, a Dialog
     </h1>
     <p
-      data-css-3qevm5=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
     >
       <a
         href="#"
@@ -1685,7 +1685,7 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
        lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
     </p>
     <p
-      data-css-3qevm5=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
     >
       Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
        
@@ -1746,7 +1746,7 @@ exports[`Storyshots Components/Dialog On Close Disable Closebutton 1`] = `
     className="psds-dialog__content"
   >
     <h1
-      data-css-nypl32=""
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
     >
       Wowzers, a Dialog
     </h1>
@@ -1783,12 +1783,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
         className="psds-dialog__content"
       >
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1804,7 +1804,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -1865,12 +1865,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
         className="psds-dialog__content"
       >
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1886,7 +1886,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -1947,12 +1947,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
         className="psds-dialog__content"
       >
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -1968,7 +1968,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2029,12 +2029,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
         className="psds-dialog__content"
       >
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -2050,7 +2050,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2111,12 +2111,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
         className="psds-dialog__content"
       >
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -2132,7 +2132,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2193,12 +2193,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
         className="psds-dialog__content"
       >
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -2214,7 +2214,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2275,12 +2275,12 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
         className="psds-dialog__content"
       >
         <h1
-          data-css-nypl32=""
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           <a
             href="#"
@@ -2296,7 +2296,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          data-css-3qevm5=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
