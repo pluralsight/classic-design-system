@@ -78,6 +78,7 @@
   text-decoration: none;
   outline: 0;
   box-shadow: none;
+  padding: 0;
 }
 .psds-menu__option-inner {
   display: flex;
