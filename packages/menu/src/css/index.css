@@ -53,7 +53,7 @@
   color: var(--ps-colors-text-icon-high-on-light);
 }
 .psds-menu__item:hover:not([data-disabled]),
-.psds-menu__item:focus:not([data-disabled]),
+.psds-menu__item:focus-within:not([data-disabled]),
 .psds-menu__item--active:not([data-disabled]) {
   background: var(--ps-colors-background-utility-15);
   color: var(--ps-colors-text-icon-high-on-light);

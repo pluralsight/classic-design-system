@@ -1,6 +1,8 @@
+import polyfillFocusWithin from 'focus-within'
 import {
   RefForwardingComponent,
   ValueOf,
+  canUseDOM,
   classNames,
   dashify,
   useMenuRef
@@ -47,6 +49,9 @@ type MenuComponent = RefForwardingComponent<
   HTMLUListElement,
   MenuStatics
 >
+
+if (canUseDOM()) polyfillFocusWithin(document)
+
 const Menu = React.forwardRef<HTMLUListElement, MenuProps>(
   (
     {

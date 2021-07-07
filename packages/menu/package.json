@@ -32,7 +32,8 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^8.2.2",
-    "@pluralsight/ps-design-system-util": "^9.2.9"
+    "@pluralsight/ps-design-system-util": "^9.2.9",
+    "focus-within": "^3.0.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^5.1.2",
