@@ -20,7 +20,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
     role="button"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -59,7 +59,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
     className="psds-drawer__details psds-theme--dark"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -98,7 +98,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
     role="button"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -137,7 +137,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
     className="psds-drawer__details psds-theme--dark"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -166,7 +166,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
     role="button"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -205,7 +205,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
     className="psds-drawer__details psds-theme--dark"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -234,7 +234,7 @@ exports[`Storyshots Components/Row Default 1`] = `
     role="button"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -273,7 +273,7 @@ exports[`Storyshots Components/Row Default 1`] = `
     className="psds-drawer__details psds-theme--dark"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -441,7 +441,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
     className="psds-drawer__details psds-theme--dark"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -471,7 +471,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
       role="button"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -510,7 +510,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
       className="psds-drawer__details psds-theme--dark"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -528,7 +528,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
       role="button"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -567,7 +567,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
       className="psds-drawer__details psds-theme--dark"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -585,7 +585,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
       role="button"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -624,7 +624,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
       className="psds-drawer__details psds-theme--dark"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -655,7 +655,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
       role="button"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -694,7 +694,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
       className="psds-drawer__details psds-theme--dark"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -714,7 +714,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
       role="button"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -753,7 +753,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
       className="psds-drawer__details psds-theme--dark"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -773,7 +773,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
       role="button"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -812,7 +812,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
       className="psds-drawer__details psds-theme--dark"
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
         style={
           Object {
             "margin": 0,
@@ -843,7 +843,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
     role="button"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -883,7 +883,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
     className="psds-drawer__details psds-theme--dark"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
@@ -1010,7 +1010,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
     className="psds-drawer__details psds-theme--dark"
   >
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+      data-css-17nixd9=""
       style={
         Object {
           "margin": 0,
