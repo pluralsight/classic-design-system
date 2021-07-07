@@ -66,6 +66,8 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -421,6 +423,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -596,6 +600,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -771,6 +777,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -946,6 +954,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -1121,6 +1131,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -1296,6 +1308,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -1471,6 +1485,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -1646,6 +1662,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -1821,6 +1839,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -1996,6 +2016,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -2171,6 +2193,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -2346,6 +2370,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -2521,6 +2547,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -2696,6 +2724,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -2871,6 +2901,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -3046,6 +3078,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -3221,6 +3255,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -3396,6 +3432,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -3571,6 +3609,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -3746,6 +3786,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -3921,6 +3963,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -4096,6 +4140,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -4271,6 +4317,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -4446,6 +4494,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -4621,6 +4671,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -4796,6 +4848,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -4971,6 +5025,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -5146,6 +5202,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -5321,6 +5379,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -5496,6 +5556,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -5671,6 +5733,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -5846,6 +5910,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -6021,6 +6087,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -6196,6 +6264,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -6371,6 +6441,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -6546,6 +6618,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -6721,6 +6795,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -6896,6 +6972,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -7071,6 +7149,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -7246,6 +7326,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               data-css-1pdjifv=""
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 data-css-i7gti2=""
                 role="img"
                 style={
@@ -9536,6 +9618,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -9708,6 +9792,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -9880,6 +9966,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -10052,6 +10140,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -10224,6 +10314,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -10396,6 +10488,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -10568,6 +10662,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -10740,6 +10836,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -10912,6 +11010,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -11172,6 +11272,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -11344,6 +11446,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -11516,6 +11620,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -11688,6 +11794,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -11860,6 +11968,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -12032,6 +12142,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -12204,6 +12316,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -12376,6 +12490,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -12548,6 +12664,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -12808,6 +12926,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -12980,6 +13100,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -13152,6 +13274,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -13324,6 +13448,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -13496,6 +13622,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -13668,6 +13796,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -13840,6 +13970,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -14012,6 +14144,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
@@ -14184,6 +14318,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 data-css-1pdjifv=""
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   data-css-i7gti2=""
                   role="img"
                   style={
