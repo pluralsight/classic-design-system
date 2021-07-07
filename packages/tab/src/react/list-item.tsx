@@ -1,30 +1,8 @@
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
-import { ValueOf, RefFor } from '@pluralsight/ps-design-system-util'
-import glamorDefault, * as glamorExports from 'glamor'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { RefFor, classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import stylesheet from '../css/index'
-
-const glamor = glamorDefault || glamorExports
-
-const styles = {
-  bar: () => glamor.css(stylesheet['.psds-tab__list-item__bar']),
-  listItem: (active: boolean, themeName: ValueOf<typeof themeNames>) =>
-    glamor.css(
-      stylesheet['.psds-tab__list-item'],
-      stylesheet[`.psds-tab__list-item.psds-theme--${themeName}`],
-      active && stylesheet[`.psds-tab__list-item.psds-tab__list-item--active`],
-      active &&
-        stylesheet[
-          `.psds-tab__list-item.psds-tab__list-item--active.psds-theme--${themeName}`
-        ]
-    ),
-  textInner: () => glamor.css(stylesheet['.psds-tab__list-item__text-inner']),
-  textWidth: () => glamor.css(stylesheet['.psds-tab__list-item__text'])
-}
+import '../css/index.css'
 
 export interface BaseListItemProps {
   id: string | number
@@ -57,17 +35,21 @@ const ListItem = React.forwardRef<ListItemElement, ListItemProps>(
       'href' in props ? 'a' : 'button',
       {
         ...rest,
-        ...styles.listItem(active || false, themeName),
+        className: classNames(
+          'psds-tab__list-item',
+          `psds-theme--${themeName}`,
+          active && `psds-tab__list-item--active`
+        ),
         'aria-selected': active,
         ref,
         role: 'tab',
         tabIndex: -1
       },
-      <div {...styles.textWidth()} tabIndex={-1}>
-        <div {...styles.textInner()} tabIndex={-1}>
+      <div className={'psds-tab__list-item__text'} tabIndex={-1}>
+        <div className={'psds-tab__list-item__text-inner'} tabIndex={-1}>
           {children}
         </div>
-        <span {...styles.bar()} />
+        <span className={'psds-tab__list-item__bar'} />
       </div>
     )
   }
