@@ -28,13 +28,11 @@ describe('SearchInput', () => {
   describe('Basic story', () => {
     const { Basic } = stories
 
-    it('forwards className', () => {
-      render(
-        <Basic data-testid="undertest" className="testclass" {...Basic.args} />
-      )
+    it('forwards id', () => {
+      render(<Basic id="testid" {...Basic.args} />)
 
-      const el = screen.getByTestId('undertest')
-      expect(el).toHaveClass('testclass')
+      const input = document.querySelector('#testid')
+      expect(input).toBeInTheDocument()
     })
 
     it('focuses the input when clear button clicked', () => {

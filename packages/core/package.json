@@ -27,6 +27,7 @@
   "types": "dist/esm/index.d.ts",
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.2.2",
+    "@pluralsight/ps-design-system-util": "^9.2.9",
     "globby": "^11.0.2",
     "postcss": "^8.2.10",
     "postcss-import": "^12.0.1",
