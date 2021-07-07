@@ -68,9 +68,9 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
   return (
     <li
       className={classNames(
-        'psds-menu__list-item',
-        disabled && 'psds-menu__list-item--disabled',
-        (active || hookActive) && 'psds-menu__list-item--active',
+        'psds-menu__item',
+        disabled && 'psds-menu__item--disabled',
+        (active || hookActive) && 'psds-menu__item--active',
         className
       )}
       data-disabled={disabled}

@@ -23,13 +23,11 @@ export const MenuItemWithDescription = forwardRefWithAs<
       {...rest}
       ref={ref}
       value={{ label, value }}
-      className={classNames('psds-menu__item-with-description', className)}
+      className={className}
     >
-      <div className="psds-menu__item-with-description__wrapper">
+      <div className="psds-menu__item-description-wrapper">
         <span>{label}</span>
-        <span className="psds-menu__item-with-description__description">
-          {description}
-        </span>
+        <span className="psds-menu__item-description">{description}</span>
       </div>
       <Menu.Check style={{ marginLeft: 'auto' }} />
     </Menu.Item>

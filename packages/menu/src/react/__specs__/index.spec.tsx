@@ -61,7 +61,7 @@ describe('Menu', () => {
     const { container } = render(<Menu.Item className="compose-classname" />)
 
     expect(container.firstChild).toHaveClass(
-      'psds-menu__list-item compose-classname'
+      'psds-menu__item compose-classname'
     )
   })
 
