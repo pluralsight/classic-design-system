@@ -5,8 +5,7 @@ exports[`Storyshots Components/Banner Basic 1`] = `
   className="psds-banner psds-banner--color-blue"
 >
   <p
-    className="psds-banner__text"
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
   >
     Banner text
   </p>
@@ -27,8 +26,7 @@ exports[`Storyshots Components/Banner Button 1`] = `
     className="psds-banner psds-banner--color-blue"
   >
     <p
-      className="psds-banner__text"
-      data-css-17nixd9=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
     >
       blue
        with button
@@ -68,8 +66,7 @@ exports[`Storyshots Components/Banner Button 1`] = `
     className="psds-banner psds-banner--color-green"
   >
     <p
-      className="psds-banner__text"
-      data-css-17nixd9=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
     >
       green
        with button
@@ -109,8 +106,7 @@ exports[`Storyshots Components/Banner Button 1`] = `
     className="psds-banner psds-banner--color-yellow"
   >
     <p
-      className="psds-banner__text"
-      data-css-17nixd9=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
     >
       yellow
        with button
@@ -150,8 +146,7 @@ exports[`Storyshots Components/Banner Button 1`] = `
     className="psds-banner psds-banner--color-red"
   >
     <p
-      className="psds-banner__text"
-      data-css-17nixd9=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
     >
       red
        with button
@@ -195,8 +190,7 @@ exports[`Storyshots Components/Banner Child Anchor 1`] = `
   className="psds-banner psds-banner--color-blue"
 >
   <p
-    className="psds-banner__text"
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
   >
     this is the text with an 
     <a
@@ -214,8 +208,7 @@ exports[`Storyshots Components/Banner Child Anchor Yellow 1`] = `
   className="psds-banner psds-banner--color-yellow"
 >
   <p
-    className="psds-banner__text"
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
   >
     this is the text with an 
     <a
@@ -233,8 +226,7 @@ exports[`Storyshots Components/Banner Child Link 1`] = `
   className="psds-banner psds-banner--color-blue"
 >
   <p
-    className="psds-banner__text"
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
   >
     this is the text with an
      
@@ -262,8 +254,7 @@ exports[`Storyshots Components/Banner Colors 1`] = `
     className="psds-banner psds-banner--color-blue"
   >
     <p
-      className="psds-banner__text"
-      data-css-17nixd9=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
     >
       blue
     </p>
@@ -290,8 +281,7 @@ exports[`Storyshots Components/Banner Colors 1`] = `
     className="psds-banner psds-banner--color-green"
   >
     <p
-      className="psds-banner__text"
-      data-css-17nixd9=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
     >
       green
     </p>
@@ -318,8 +308,7 @@ exports[`Storyshots Components/Banner Colors 1`] = `
     className="psds-banner psds-banner--color-yellow"
   >
     <p
-      className="psds-banner__text"
-      data-css-17nixd9=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
     >
       yellow
     </p>
@@ -346,8 +335,7 @@ exports[`Storyshots Components/Banner Colors 1`] = `
     className="psds-banner psds-banner--color-red"
   >
     <p
-      className="psds-banner__text"
-      data-css-17nixd9=""
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
     >
       red
     </p>
@@ -378,8 +366,7 @@ exports[`Storyshots Components/Banner On Click 1`] = `
   className="psds-banner psds-banner--color-blue"
 >
   <p
-    className="psds-banner__text"
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
   >
     Banner text
   </p>
@@ -409,8 +396,7 @@ exports[`Storyshots Components/Banner On Click Long Text 1`] = `
   className="psds-banner psds-banner--color-blue"
 >
   <p
-    className="psds-banner__text"
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
   >
     this is the long text. this is the long text. this is the long text. this
   is the long text. this is the long text. this is the long text. this is
@@ -448,8 +434,7 @@ exports[`Storyshots Components/Banner Style Prop 1`] = `
   }
 >
   <p
-    className="psds-banner__text"
-    data-css-17nixd9=""
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark psds-banner__text"
   >
     Banner text
   </p>
