@@ -71,7 +71,7 @@ exports[`Storyshots Components/Note Actions Visible On Hover 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -193,7 +193,7 @@ exports[`Storyshots Components/Note Actions With Long Heading 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -240,7 +240,7 @@ exports[`Storyshots Components/Note Actions With No Author 1`] = `
       data-css-odzpq7=""
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -327,7 +327,7 @@ exports[`Storyshots Components/Note Actions With No Author Long Meta 1`] = `
       data-css-odzpq7=""
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -425,7 +425,7 @@ exports[`Storyshots Components/Note Actions With No Meta 1`] = `
       data-css-odzpq7=""
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -527,7 +527,7 @@ exports[`Storyshots Components/Note Basic 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -615,7 +615,7 @@ exports[`Storyshots Components/Note In A List 1`] = `
             </div>
           </div>
           <p
-            className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+            data-css-17nixd9=""
           >
             If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
           </p>
@@ -694,7 +694,7 @@ exports[`Storyshots Components/Note In A List 1`] = `
             </div>
           </div>
           <p
-            className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+            data-css-17nixd9=""
           >
             If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
           </p>
@@ -773,7 +773,7 @@ exports[`Storyshots Components/Note In A List 1`] = `
             </div>
           </div>
           <p
-            className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+            data-css-17nixd9=""
           >
             If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
           </p>
@@ -857,7 +857,7 @@ exports[`Storyshots Components/Note Linked Metadata 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -949,7 +949,7 @@ exports[`Storyshots Components/Note Long Metadata 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -1007,7 +1007,7 @@ exports[`Storyshots Components/Note No Author 1`] = `
       data-css-odzpq7=""
     >
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -1111,7 +1111,7 @@ exports[`Storyshots Components/Note Single Action 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -1251,7 +1251,7 @@ exports[`Storyshots Components/Note Three Actions 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -1373,7 +1373,7 @@ exports[`Storyshots Components/Note Two Actions 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -1485,7 +1485,7 @@ exports[`Storyshots Components/Note With Action Menu 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -1569,7 +1569,7 @@ exports[`Storyshots Components/Note With H 1 Heading 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -1648,14 +1648,14 @@ exports[`Storyshots Components/Note With Heading Component 1`] = `
           data-css-191rnud=""
         >
           <h3
-            className="psds-text__heading psds-text__heading--size-medium psds-text__heading--color-primary psds-theme--dark"
+            data-css-1gbfzly=""
           >
             Bob Ross
           </h3>
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -1742,7 +1742,7 @@ exports[`Storyshots Components/Note With Linked Avatar 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
@@ -1821,7 +1821,7 @@ exports[`Storyshots Components/Note With Linked Heading 1`] = `
           data-css-191rnud=""
         >
           <p
-            className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+            data-css-17nixd9=""
           >
             <a
               data-css-1f737qx=""
@@ -1833,7 +1833,7 @@ exports[`Storyshots Components/Note With Linked Heading 1`] = `
         </div>
       </div>
       <p
-        className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
+        data-css-17nixd9=""
       >
         If these lines aren't straight, your water's going to run right out of your painting and get your floor wet. At home you have unlimited time. See there, told you that would be easy. Decide where your cloud lives. Maybe he lives right in here.
       </p>
