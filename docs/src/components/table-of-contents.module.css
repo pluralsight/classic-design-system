@@ -10,7 +10,7 @@
   overflow: hidden;
   background: var(--bg);
 
-  @media (width >= 768px) {
+  @media (width >= 960px) {
     position: fixed;
     width: 240px;
     top: calc(var(--topNavHeight) + var(--psLayoutSpacingLarge));
