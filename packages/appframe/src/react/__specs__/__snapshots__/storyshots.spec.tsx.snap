@@ -378,26 +378,23 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -411,7 +408,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First Item
                             </span>
@@ -420,16 +417,16 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First SubItem
                             </span>
@@ -438,16 +435,16 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second SubItem
                             </span>
@@ -456,24 +453,21 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -487,7 +481,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second Item
                             </span>
@@ -756,26 +750,23 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -789,7 +780,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First Item
                             </span>
@@ -798,16 +789,16 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First SubItem
                             </span>
@@ -816,16 +807,16 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second SubItem
                             </span>
@@ -834,24 +825,21 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -865,7 +853,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second Item
                             </span>
@@ -1431,26 +1419,23 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -1464,7 +1449,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First Item
                             </span>
@@ -1473,16 +1458,16 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First SubItem
                             </span>
@@ -1491,16 +1476,16 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second SubItem
                             </span>
@@ -1509,24 +1494,21 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -1540,7 +1522,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second Item
                             </span>
@@ -1841,26 +1823,23 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
             >
               <div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -1876,7 +1855,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Home
                             </span>
@@ -1885,24 +1864,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -1918,7 +1894,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Browse
                             </span>
@@ -1960,26 +1936,23 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -1993,7 +1966,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Dashboard
                             </span>
@@ -2002,24 +1975,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -2033,7 +2003,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Account
                             </span>
@@ -2042,24 +2012,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -2073,7 +2040,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               People
                             </span>
@@ -2082,24 +2049,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -2113,7 +2077,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Priorities
                             </span>
@@ -2122,24 +2086,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -2153,7 +2114,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Analytics
                             </span>
@@ -2162,24 +2123,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -2193,7 +2151,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Logs
                             </span>
@@ -2235,26 +2193,23 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -2268,7 +2223,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Home
                             </span>
@@ -2277,24 +2232,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
+                              className="psds-verticaltabs__item__icon"
                               data-css-7dab2f=""
                             >
                               <svg
@@ -2308,7 +2260,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Dashboard
                             </span>

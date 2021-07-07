@@ -144,25 +144,25 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
       <div
         aria-busy="true"
         aria-label="Loading"
-        data-css-1abx40i=""
+        className="psds-circularprogress--size-small"
         role="progressbar"
       >
         <svg
-          data-css-1txt1eh=""
+          className="psds-circularprogress__svg psds-circularprogress__svg--no-value"
           version="1.1"
           viewBox="0 0 48 48"
           xmlns="http://www.w3.org/2000/svg"
         >
           <circle
+            className="psds-circularprogress__bg psds-theme--dark"
             cx="24"
             cy="24"
-            data-css-rk8c6r=""
             r={22}
           />
           <circle
+            className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
             cx="24"
             cy="24"
-            data-css-17x5ehd=""
             r={22}
             strokeDasharray="138.23007675795088 138.23007675795088"
             strokeDashoffset={103.67255756846316}
