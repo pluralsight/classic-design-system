@@ -100,17 +100,17 @@
 .psds-text__label--size-small {
   font-size: var(--ps-type-font-size-200);
   letter-spacing: var(--ps-type-letter-spacing-loose);
-  line-height: 24px;
+  line-height: 20px;
 }
 .psds-text__label--size-medium {
   font-size: var(--ps-type-font-size-300);
   letter-spacing: var(--ps-type-letter-spacing-loose);
-  line-height: 28px;
+  line-height: 20px;
 }
 .psds-text__label--size-large {
   font-size: var(--ps-type-font-size-400);
   letter-spacing: var(--ps-type-letter-spacing-none);
-  line-height: 32px;
+  line-height: 24px;
 }
 .psds-text__list {
   list-style: none;
