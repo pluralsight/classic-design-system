@@ -3365,8 +3365,8 @@ exports[`Storyshots Components/Card Progress 1`] = `
         >
           <div
             aria-label="34% complete"
-            aria-valuemax="100"
-            aria-valuemin="0"
+            aria-valuemax={100}
+            aria-valuemin={0}
             aria-valuenow={34}
             data-css-59crt4=""
             role="progressbar"
@@ -3492,8 +3492,8 @@ exports[`Storyshots Components/Card Progress 1`] = `
         >
           <div
             aria-label="100% complete"
-            aria-valuemax="100"
-            aria-valuemin="0"
+            aria-valuemax={100}
+            aria-valuemin={0}
             aria-valuenow={100}
             data-css-1gebpgk=""
             role="progressbar"
