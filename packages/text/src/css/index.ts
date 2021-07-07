@@ -118,17 +118,17 @@ export default {
   [`.psds-text__label--size-${vars.labelSizes.small}`]: {
     fontSize: type.fontSize200,
     letterSpacing: type.letterSpacingLoose,
-    lineHeight: '24px'
+    lineHeight: '20px'
   },
   [`.psds-text__label--size-${vars.labelSizes.medium}`]: {
     fontSize: type.fontSize300,
     letterSpacing: type.letterSpacingLoose,
-    lineHeight: '28px'
+    lineHeight: '20px'
   },
   [`.psds-text__label--size-${vars.labelSizes.large}`]: {
     fontSize: type.fontSize400,
     letterSpacing: type.letterSpacingNone,
-    lineHeight: '32px'
+    lineHeight: '24px'
   },
 
   [`.psds-text__list`]: {
