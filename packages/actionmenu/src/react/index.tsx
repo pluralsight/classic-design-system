@@ -2,6 +2,7 @@ import {
   RefForwardingComponent,
   ValueOf,
   classNames,
+  dashify,
   handleMenuKeyDownEvents,
   handleMenuKeyUpEvents,
   useMenuRef,
@@ -78,7 +79,7 @@ export const ActionMenu = React.forwardRef<HTMLUListElement, ActionMenuProps>(
         {...rest}
         className={classNames(
           'psds-actionmenu',
-          `psds-actionmenu--origin-${origin.toLowerCase()}`,
+          `psds-actionmenu--origin-${dashify(origin)}`,
           'psds-actionmenu__animation',
           className
         )}

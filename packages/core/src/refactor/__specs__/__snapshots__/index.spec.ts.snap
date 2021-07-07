@@ -6,8 +6,8 @@ Object {
     "large": "var(--ps-breakpoints-large)",
     "medium": "var(--ps-breakpoints-medium)",
     "small": "var(--ps-breakpoints-small)",
-    "xLarge": "var(--ps-breakpoints-x-large)",
-    "xSmall": "var(--ps-breakpoints-x-small)",
+    "xLarge": "var(--ps-breakpoints-xlarge)",
+    "xSmall": "var(--ps-breakpoints-xsmall)",
   },
   "colorsBackgroundDark": Object {
     "1": "var(--ps-colors-background-dark-1)",
