@@ -223,9 +223,9 @@ exports[`Storyshots Components/Text/Label Basic 1`] = `
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark"
     onClick={[Function]}
   >
-    <h1>
+    <span>
       Label
-    </h1>
+    </span>
   </span>
 </div>
 `;
@@ -238,9 +238,9 @@ exports[`Storyshots Components/Text/Label Caps 1`] = `
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark psds-text__label--caps"
     onClick={[Function]}
   >
-    <h1>
+    <span>
       Label
-    </h1>
+    </span>
   </span>
 </div>
 `;
@@ -253,10 +253,53 @@ exports[`Storyshots Components/Text/Label Mono 1`] = `
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark psds-text__label--mono"
     onClick={[Function]}
   >
-    <h1>
+    <span>
       Label
-    </h1>
+    </span>
   </span>
+</div>
+`;
+
+exports[`Storyshots Components/Text/Label Sizes 1`] = `
+<div
+  data-css-yto836=""
+>
+  <div
+    data-css-1cpmtjf=""
+  >
+    <span
+      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-primary psds-theme--dark"
+      onClick={[Function]}
+    >
+      <span>
+        xsmall
+      </span>
+    </span>
+    <span
+      className="psds-text__label psds-text__label--size-small psds-text__label--color-primary psds-theme--dark"
+      onClick={[Function]}
+    >
+      <span>
+        small
+      </span>
+    </span>
+    <span
+      className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark"
+      onClick={[Function]}
+    >
+      <span>
+        medium
+      </span>
+    </span>
+    <span
+      className="psds-text__label psds-text__label--size-large psds-text__label--color-primary psds-theme--dark"
+      onClick={[Function]}
+    >
+      <span>
+        large
+      </span>
+    </span>
+  </div>
 </div>
 `;
 
@@ -268,9 +311,9 @@ exports[`Storyshots Components/Text/Label Strong 1`] = `
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark psds-text__label--strong"
     onClick={[Function]}
   >
-    <h1>
+    <span>
       Label
-    </h1>
+    </span>
   </span>
 </div>
 `;
@@ -283,9 +326,9 @@ exports[`Storyshots Components/Text/Label Strong Caps 1`] = `
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark psds-text__label--strong psds-text__label--caps"
     onClick={[Function]}
   >
-    <h1>
+    <span>
       Label
-    </h1>
+    </span>
   </span>
 </div>
 `;
