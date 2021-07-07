@@ -1,9 +1,5 @@
 .psds-tag {
   position: relative;
-  display: -webkit-inline-box;
-  display: -moz-inline-box;
-  display: -ms-inline-flexbox;
-  display: -webkit-inline-flex;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -14,14 +10,6 @@
   color: var(--ps-colors-text-icon-high-on-dark);
   background-color: var(--ps-colors-background-utility-25);
   transition: background-color var(--ps-motion-speed-xfast) linear,
-    color var(--ps-motion-speed-xfast) linear;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -webkit-transition: background-color var(--ps-motion-speed-xfast) linear,
-    color var(--ps-motion-speed-xfast) linear;
-  -moz-transition: background-color var(--ps-motion-speed-xfast) linear,
     color var(--ps-motion-speed-xfast) linear;
 }
 .psds-tag.psds-theme--light {
