@@ -267,26 +267,26 @@ exports[`Storyshots Components/EmptyState Actions With An Input 1`] = `
     data-css-aelvpu=""
   >
     <label
-      className="psds-text-input"
+      data-css-w0yocm=""
     >
       <div
-        className="psds-text-input__field-container"
+        data-css-1r967oi=""
       >
         <div
           data-css-ctre2o=""
         >
           <div
-            className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--icon-align-left"
+            data-css-1c5qy71=""
           >
             <input
-              className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
+              data-css-7mw7i0=""
               disabled={false}
               placeholder="Find Something"
             />
           </div>
         </div>
         <div
-          className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-subtle psds-text-input__icon"
+          data-css-1kca8ps=""
         >
           <div
             data-css-7dab2f=""
