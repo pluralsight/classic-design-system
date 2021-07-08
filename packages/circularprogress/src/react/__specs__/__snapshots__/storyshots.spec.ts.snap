@@ -21,7 +21,7 @@ exports[`Storyshots Components/CircularProgress Animation 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -68,7 +68,7 @@ exports[`Storyshots Components/CircularProgress Style Override 1`] = `
       r={22}
     />
     <circle
-      className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+      className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
       cx="24"
       cy="24"
       r={22}
@@ -113,7 +113,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -141,7 +141,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -181,7 +181,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -218,7 +218,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -258,7 +258,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -295,7 +295,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -335,7 +335,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -372,7 +372,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -412,7 +412,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -449,7 +449,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -489,7 +489,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -526,7 +526,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -566,7 +566,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -603,7 +603,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -634,7 +634,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
@@ -662,7 +662,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         r={22}
       />
       <circle
-        className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+        className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
         cx="24"
         cy="24"
         r={22}
