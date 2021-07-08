@@ -8,7 +8,7 @@ exports[`Storyshots Components/Switch Basic 1`] = `
     className="psds-switch psds-switch--label-align-right"
   >
     <div
-      data-css-1lu7sfl=""
+      className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
     >
       <div
         className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -43,7 +43,7 @@ exports[`Storyshots Components/Switch Checked 1`] = `
     className="psds-switch psds-switch--label-align-right"
   >
     <div
-      data-css-1lu7sfl=""
+      className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
     >
       <div
         className="psds-switch__track psds-theme--dark psds-switch__track--size-large psds-switch__track--checked psds-switch__track--color-orange"
@@ -78,7 +78,7 @@ exports[`Storyshots Components/Switch Checked Error 1`] = `
     className="psds-switch psds-switch--label-align-right"
   >
     <div
-      data-css-mmyfiy=""
+      className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus"
     >
       <div
         className="psds-switch__track psds-theme--dark psds-switch__track--size-large psds-switch__track--checked psds-switch__track--color-orange"
@@ -116,7 +116,7 @@ exports[`Storyshots Components/Switch Colors 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-large psds-switch__track--checked psds-switch__track--color-blue"
@@ -149,7 +149,7 @@ exports[`Storyshots Components/Switch Colors 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-large psds-switch__track--checked psds-switch__track--color-green"
@@ -182,7 +182,7 @@ exports[`Storyshots Components/Switch Colors 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-large psds-switch__track--checked psds-switch__track--color-orange"
@@ -223,7 +223,7 @@ exports[`Storyshots Components/Switch Disabled 1`] = `
     className="psds-switch psds-switch--label-align-right psds-switch--disabled"
   >
     <div
-      data-css-1lu7sfl=""
+      className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
     >
       <div
         className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -257,7 +257,7 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
     className="psds-switch psds-switch--label-align-right psds-switch--disabled"
   >
     <div
-      data-css-mmyfiy=""
+      className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus"
     >
       <div
         className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -291,7 +291,7 @@ exports[`Storyshots Components/Switch Error 1`] = `
     className="psds-switch psds-switch--label-align-right"
   >
     <div
-      data-css-mmyfiy=""
+      className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus"
     >
       <div
         className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -329,7 +329,7 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -361,7 +361,7 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -393,7 +393,7 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -436,7 +436,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       className="psds-switch psds-switch--label-align-left"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-small"
@@ -471,7 +471,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-small"
@@ -506,7 +506,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       className="psds-switch psds-switch--label-align-left"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -541,7 +541,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -584,7 +584,7 @@ exports[`Storyshots Components/Switch Named 1`] = `
     className="psds-switch psds-switch--label-align-right"
   >
     <div
-      data-css-1lu7sfl=""
+      className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
     >
       <div
         className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
@@ -623,7 +623,7 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-small"
@@ -656,7 +656,7 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
       className="psds-switch psds-switch--label-align-right"
     >
       <div
-        data-css-1lu7sfl=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
       >
         <div
           className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
