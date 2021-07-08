@@ -13,7 +13,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
     className="psds-text-input__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <div
         className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--w-after psds-text-input__field--icon-align-left"
@@ -37,7 +37,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
           >
             <div
-              data-css-k31qw2=""
+              className="psds-icon psds-icon--size-small psds-icon--color-undefined"
             >
               <svg
                 aria-label="close icon"
@@ -61,7 +61,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
       className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-subtle psds-text-input__icon"
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
       >
         <svg
           aria-label="search icon"
@@ -93,7 +93,7 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
     className="psds-text-input__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <div
         className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--w-after psds-text-input__field--icon-align-left"
@@ -114,7 +114,7 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
           >
             <div
-              data-css-k31qw2=""
+              className="psds-icon psds-icon--size-small psds-icon--color-undefined"
             >
               <svg
                 aria-label="close icon"
@@ -178,7 +178,7 @@ exports[`Storyshots Components/SearchInput No On Clear 1`] = `
     className="psds-text-input__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <div
         className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--icon-align-left"
@@ -196,7 +196,7 @@ exports[`Storyshots Components/SearchInput No On Clear 1`] = `
       className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-subtle psds-text-input__icon"
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
       >
         <svg
           aria-label="search icon"
@@ -223,7 +223,7 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
     className="psds-text-input__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <div
         className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--w-after psds-text-input__field--icon-align-left"
@@ -244,7 +244,7 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
           >
             <div
-              data-css-k31qw2=""
+              className="psds-icon psds-icon--size-small psds-icon--color-undefined"
             >
               <svg
                 aria-label="close icon"
@@ -268,7 +268,7 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
       className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-subtle psds-text-input__icon"
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
       >
         <svg
           aria-label="search icon"
