@@ -14,8 +14,7 @@ Array [
       Choose an element
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--medium psds-field--suffix"
@@ -36,7 +35,7 @@ Array [
             className="psds-field__suffix"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -617,8 +616,7 @@ exports[`Storyshots Components/Field/TextAreaField Basic 1`] = `
     Text area label area
   </label>
   <div
-    className="psds-field__halo"
-    data-css-8qmpxt=""
+    className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
   >
     <div
       className="psds-field psds-field--medium"
@@ -656,8 +654,7 @@ exports[`Storyshots Components/Field/TextAreaField Disabled 1`] = `
     Text area label area
   </label>
   <div
-    className="psds-field__halo"
-    data-css-8qmpxt=""
+    className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
   >
     <div
       className="psds-field psds-field--medium"
@@ -696,8 +693,7 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
     Text area label area
   </label>
   <div
-    className="psds-field__halo"
-    data-css-8ff2sc=""
+    className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus psds-field__halo"
   >
     <div
       className="psds-field psds-field--medium"
@@ -716,7 +712,7 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
         className="psds-field__error-icon"
       >
         <div
-          data-css-7dab2f=""
+          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
         >
           <svg
             aria-label="warning icon"
@@ -754,8 +750,7 @@ exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
     Text area label area
   </label>
   <div
-    className="psds-field__halo"
-    data-css-8qmpxt=""
+    className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
   >
     <div
       className="psds-field psds-field--medium"
@@ -797,8 +792,7 @@ exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
       Text input label area
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--medium"
@@ -839,8 +833,7 @@ exports[`Storyshots Components/Field/TextInputField Custom Input Tag 1`] = `
       Text input label area
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--medium"
@@ -887,8 +880,7 @@ exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
       Text input label area
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--medium"
@@ -930,8 +922,7 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
       Text input label area
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8ff2sc=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--medium"
@@ -949,7 +940,7 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
           className="psds-field__error-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
           >
             <svg
               aria-label="warning icon"
@@ -991,8 +982,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
       Text input label area
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--medium psds-field--prefix"
@@ -1001,7 +991,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
           className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
           >
             <svg
               aria-label="placeholder icon"
@@ -1050,8 +1040,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
       Text input label area
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--medium psds-field--suffix"
@@ -1069,7 +1058,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
           className="psds-field__suffix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
           >
             <svg
               aria-label="placeholder icon"
@@ -1109,8 +1098,7 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
       Text input label area
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--medium psds-field--suffix"
@@ -1128,7 +1116,7 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
           className="psds-field__suffix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
           >
             <svg
               aria-label="lock icon"
@@ -1168,8 +1156,7 @@ exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
       Text input label area
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--small"
@@ -1221,8 +1208,7 @@ exports[`Storyshots Components/Field/TextInputField Style Override Display Block
           Text input label area
         </label>
         <div
-          className="psds-field__halo"
-          data-css-8qmpxt=""
+          className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
         >
           <div
             className="psds-field psds-field--medium"
@@ -1265,8 +1251,7 @@ exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
       Text input label area
     </label>
     <div
-      className="psds-field__halo"
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         className="psds-field psds-field--medium"
