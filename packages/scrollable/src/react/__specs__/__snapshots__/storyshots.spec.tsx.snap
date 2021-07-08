@@ -5,15 +5,15 @@ exports[`Storyshots Components/Scrollable Basic 1`] = `
   data-css-1gfhbu8=""
 >
   <div
+    className="psds-scrollable__outer psds-scrollable__outer--screen"
     data-css-16jsjct=""
-    data-css-axmbrd=""
     data-scrollable={true}
   >
     <div
-      data-css-1srorb2=""
+      className="psds-scrollable__inner"
     >
       <div
-        data-css-3e2h8g=""
+        className="psds-scrollable__content"
         onScroll={[Function]}
       >
         <div
@@ -58,12 +58,18 @@ exports[`Storyshots Components/Scrollable Basic 1`] = `
       </div>
     </div>
     <div
-      data-css-1ackutz=""
-      data-css-ejkno9=""
+      className="psds-scrollable__handle"
       draggable={true}
       onDrag={[Function]}
       onDragEnd={[Function]}
       onDragStart={[Function]}
+      style={
+        Object {
+          "height": "10%",
+          "top": "0%",
+          "visibility": "hidden",
+        }
+      }
     />
   </div>
   <div
@@ -117,16 +123,16 @@ exports[`Storyshots Components/Scrollable Container Padding 1`] = `
   data-css-1gfhbu8=""
 >
   <div
+    className="psds-scrollable__outer psds-scrollable__outer--screen"
     data-css-16jsjct=""
     data-css-1y16c93=""
-    data-css-axmbrd=""
     data-scrollable={true}
   >
     <div
-      data-css-1srorb2=""
+      className="psds-scrollable__inner"
     >
       <div
-        data-css-3e2h8g=""
+        className="psds-scrollable__content"
         onScroll={[Function]}
       >
         <div
@@ -171,12 +177,18 @@ exports[`Storyshots Components/Scrollable Container Padding 1`] = `
       </div>
     </div>
     <div
-      data-css-1ackutz=""
-      data-css-ejkno9=""
+      className="psds-scrollable__handle"
       draggable={true}
       onDrag={[Function]}
       onDragEnd={[Function]}
       onDragStart={[Function]}
+      style={
+        Object {
+          "height": "10%",
+          "top": "0%",
+          "visibility": "hidden",
+        }
+      }
     />
   </div>
   <div
@@ -231,15 +243,15 @@ exports[`Storyshots Components/Scrollable Content Padding 1`] = `
   data-css-1gfhbu8=""
 >
   <div
+    className="psds-scrollable__outer psds-scrollable__outer--screen"
     data-css-16jsjct=""
-    data-css-axmbrd=""
     data-scrollable={true}
   >
     <div
-      data-css-1srorb2=""
+      className="psds-scrollable__inner"
     >
       <div
-        data-css-3e2h8g=""
+        className="psds-scrollable__content"
         onScroll={[Function]}
       >
         <div
@@ -285,12 +297,18 @@ exports[`Storyshots Components/Scrollable Content Padding 1`] = `
       </div>
     </div>
     <div
-      data-css-1ackutz=""
-      data-css-ejkno9=""
+      className="psds-scrollable__handle"
       draggable={true}
       onDrag={[Function]}
       onDragEnd={[Function]}
       onDragStart={[Function]}
+      style={
+        Object {
+          "height": "10%",
+          "top": "0%",
+          "visibility": "hidden",
+        }
+      }
     />
   </div>
   <div
@@ -345,16 +363,16 @@ exports[`Storyshots Components/Scrollable Example Dynamic Sizing 1`] = `
   data-css-1gfhbu8=""
 >
   <div
+    className="psds-scrollable__outer psds-scrollable__outer--screen"
     data-css-16jsjct=""
     data-css-18kkulc=""
-    data-css-axmbrd=""
     data-scrollable={true}
   >
     <div
-      data-css-1srorb2=""
+      className="psds-scrollable__inner"
     >
       <div
-        data-css-3e2h8g=""
+        className="psds-scrollable__content"
         onScroll={[Function]}
       >
         <div
@@ -419,12 +437,18 @@ exports[`Storyshots Components/Scrollable Example Dynamic Sizing 1`] = `
       </div>
     </div>
     <div
-      data-css-1ackutz=""
-      data-css-ejkno9=""
+      className="psds-scrollable__handle"
       draggable={true}
       onDrag={[Function]}
       onDragEnd={[Function]}
       onDragStart={[Function]}
+      style={
+        Object {
+          "height": "10%",
+          "top": "0%",
+          "visibility": "hidden",
+        }
+      }
     />
   </div>
 </div>
@@ -435,15 +459,15 @@ exports[`Storyshots Components/Scrollable No Scroll Needed 1`] = `
   data-css-1gfhbu8=""
 >
   <div
+    className="psds-scrollable__outer psds-scrollable__outer--screen"
     data-css-16jsjct=""
-    data-css-axmbrd=""
     data-scrollable={true}
   >
     <div
-      data-css-1srorb2=""
+      className="psds-scrollable__inner"
     >
       <div
-        data-css-3e2h8g=""
+        className="psds-scrollable__content"
         onScroll={[Function]}
       >
         <p
@@ -454,12 +478,18 @@ exports[`Storyshots Components/Scrollable No Scroll Needed 1`] = `
       </div>
     </div>
     <div
-      data-css-1ackutz=""
-      data-css-ejkno9=""
+      className="psds-scrollable__handle"
       draggable={true}
       onDrag={[Function]}
       onDragEnd={[Function]}
       onDragStart={[Function]}
+      style={
+        Object {
+          "height": "10%",
+          "top": "0%",
+          "visibility": "hidden",
+        }
+      }
     />
   </div>
   <div
