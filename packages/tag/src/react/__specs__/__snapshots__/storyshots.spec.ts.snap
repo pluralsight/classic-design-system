@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Tag Basic 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -18,7 +18,7 @@ exports[`Storyshots Components/Tag Basic 1`] = `
 
 exports[`Storyshots Components/Tag Button 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
@@ -37,7 +37,7 @@ exports[`Storyshots Components/Tag Button 1`] = `
 
 exports[`Storyshots Components/Tag Class Name Override 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     className="css-1wsp713 psds-tag psds-theme--dark psds-tag--size-medium"
@@ -53,7 +53,7 @@ exports[`Storyshots Components/Tag Class Name Override 1`] = `
 
 exports[`Storyshots Components/Tag Error 1`] = `
 <div
-  data-css-mmyfiy=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus"
 >
   <div
     className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -69,7 +69,7 @@ exports[`Storyshots Components/Tag Error 1`] = `
 
 exports[`Storyshots Components/Tag Icon Button 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium psds-tag--icon"
@@ -83,7 +83,7 @@ exports[`Storyshots Components/Tag Icon Button 1`] = `
       hello world
     </span>
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
       onClick={[Function]}
       style={
         Object {
@@ -107,7 +107,7 @@ exports[`Storyshots Components/Tag Icon Button 1`] = `
 
 exports[`Storyshots Components/Tag Link 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <a
     className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
@@ -124,7 +124,7 @@ exports[`Storyshots Components/Tag Link 1`] = `
 
 exports[`Storyshots Components/Tag Long Text 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -140,7 +140,7 @@ exports[`Storyshots Components/Tag Long Text 1`] = `
 
 exports[`Storyshots Components/Tag Long Text With Icon 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--icon"
@@ -151,7 +151,7 @@ exports[`Storyshots Components/Tag Long Text With Icon 1`] = `
       This is the string that goes on forever and always. There really isn't an end. Wow.
     </span>
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
       onClick={[Function]}
       style={
         Object {
@@ -175,7 +175,7 @@ exports[`Storyshots Components/Tag Long Text With Icon 1`] = `
 
 exports[`Storyshots Components/Tag Pressed 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     aria-pressed={true}
@@ -192,7 +192,7 @@ exports[`Storyshots Components/Tag Pressed 1`] = `
 
 exports[`Storyshots Components/Tag Pressed Button 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     aria-pressed={true}
@@ -212,7 +212,7 @@ exports[`Storyshots Components/Tag Pressed Button 1`] = `
 
 exports[`Storyshots Components/Tag Pressed Link 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <a
     className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium psds-tag--is-pressed"
@@ -229,7 +229,7 @@ exports[`Storyshots Components/Tag Pressed Link 1`] = `
 
 exports[`Storyshots Components/Tag Pressed With Icon 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     aria-pressed={true}
@@ -241,7 +241,7 @@ exports[`Storyshots Components/Tag Pressed With Icon 1`] = `
       hello world
     </span>
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
       onClick={[Function]}
       style={
         Object {
@@ -268,7 +268,7 @@ exports[`Storyshots Components/Tag Sizes 1`] = `
   data-css-1gfhbu8=""
 >
   <div
-    data-css-1lu7sfl=""
+    className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
   >
     <div
       className="psds-tag psds-theme--dark psds-tag--size-small"
@@ -281,7 +281,7 @@ exports[`Storyshots Components/Tag Sizes 1`] = `
     </div>
   </div>
   <div
-    data-css-1lu7sfl=""
+    className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
   >
     <div
       className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -301,7 +301,7 @@ exports[`Storyshots Components/Tag Sizes With Icons 1`] = `
   data-css-1gfhbu8=""
 >
   <div
-    data-css-1lu7sfl=""
+    className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
   >
     <div
       className="psds-tag psds-theme--dark psds-tag--size-small psds-tag--icon"
@@ -312,7 +312,7 @@ exports[`Storyshots Components/Tag Sizes With Icons 1`] = `
         small
       </span>
       <div
-        data-css-k31qw2=""
+        className="psds-icon psds-icon--size-small psds-icon--color-undefined"
         onClick={[Function]}
         style={
           Object {
@@ -333,7 +333,7 @@ exports[`Storyshots Components/Tag Sizes With Icons 1`] = `
     </div>
   </div>
   <div
-    data-css-1lu7sfl=""
+    className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
   >
     <div
       className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--icon"
@@ -344,7 +344,7 @@ exports[`Storyshots Components/Tag Sizes With Icons 1`] = `
         medium
       </span>
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
         onClick={[Function]}
         style={
           Object {
@@ -369,7 +369,7 @@ exports[`Storyshots Components/Tag Sizes With Icons 1`] = `
 
 exports[`Storyshots Components/Tag Small Button 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-small"
@@ -388,7 +388,7 @@ exports[`Storyshots Components/Tag Small Button 1`] = `
 
 exports[`Storyshots Components/Tag Style Override 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -409,7 +409,7 @@ exports[`Storyshots Components/Tag Style Override 1`] = `
 
 exports[`Storyshots Components/Tag With Icon Button 1`] = `
 <div
-  data-css-1lu7sfl=""
+  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
 >
   <div
     className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium psds-tag--icon"
@@ -423,7 +423,7 @@ exports[`Storyshots Components/Tag With Icon Button 1`] = `
       hello world
     </span>
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
       onClick={[Function]}
       style={
         Object {
