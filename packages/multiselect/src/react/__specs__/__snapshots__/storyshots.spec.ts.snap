@@ -20,8 +20,8 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         data-css-1ghsi1k=""
@@ -44,7 +44,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -56,7 +56,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -84,7 +84,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -96,7 +96,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -552,7 +552,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
             data-css-3sokjq=""
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -595,8 +595,8 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
       id="downshift-6-label"
     />
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         data-css-1ghsi1k=""
@@ -619,7 +619,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -631,7 +631,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -659,7 +659,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -671,7 +671,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1133,7 +1133,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
             data-css-3sokjq=""
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -1176,8 +1176,8 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         data-css-11s0ie3=""
@@ -1200,7 +1200,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1212,7 +1212,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1240,7 +1240,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1252,7 +1252,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1709,7 +1709,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
             data-css-3sokjq=""
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -1754,8 +1754,8 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8ff2sc=""
     >
       <div
         data-css-1ghsi1k=""
@@ -1778,7 +1778,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1790,7 +1790,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1818,7 +1818,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1830,7 +1830,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -2286,7 +2286,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
             data-css-3sokjq=""
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -2304,7 +2304,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
           data-css-qrpvsu=""
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
           >
             <svg
               aria-label="warning icon"
@@ -2350,8 +2350,8 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         data-css-18bafyq=""
@@ -2364,7 +2364,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
             data-css-bjcvj0=""
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -2395,7 +2395,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -2407,7 +2407,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -2435,7 +2435,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -2447,7 +2447,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -2903,7 +2903,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
             data-css-3sokjq=""
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -2946,8 +2946,8 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
       id="downshift-2-label"
     />
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         data-css-1ghsi1k=""
@@ -2970,7 +2970,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -2982,7 +2982,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -3010,7 +3010,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -3022,7 +3022,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -3479,7 +3479,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
             data-css-3sokjq=""
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -3522,8 +3522,8 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
       React node label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         data-css-1ghsi1k=""
@@ -3546,7 +3546,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -3558,7 +3558,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -3586,7 +3586,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -3598,7 +3598,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                     Helium
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
                     onClick={[Function]}
                     style={
                       Object {
@@ -4054,7 +4054,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
             data-css-3sokjq=""
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
