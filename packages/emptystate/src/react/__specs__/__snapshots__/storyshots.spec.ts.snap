@@ -273,7 +273,7 @@ exports[`Storyshots Components/EmptyState Actions With An Input 1`] = `
         className="psds-text-input__field-container"
       >
         <div
-          data-css-ctre2o=""
+          className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
         >
           <div
             className="psds-text-input__field psds-text-input__field--appearance-subtle psds-theme--dark psds-text-input__field--icon-align-left"
@@ -289,7 +289,7 @@ exports[`Storyshots Components/EmptyState Actions With An Input 1`] = `
           className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-subtle psds-text-input__icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
           >
             <svg
               aria-label="search icon"
@@ -394,7 +394,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
         }
       >
         <div
-          data-css-1lu7sfl=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
         >
           <div
             className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -416,7 +416,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
         }
       >
         <div
-          data-css-1lu7sfl=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
         >
           <div
             className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -438,7 +438,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
         }
       >
         <div
-          data-css-1lu7sfl=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
         >
           <div
             className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -460,7 +460,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
         }
       >
         <div
-          data-css-1lu7sfl=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
         >
           <div
             className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -482,7 +482,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
         }
       >
         <div
-          data-css-1lu7sfl=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
         >
           <div
             className="psds-tag psds-theme--dark psds-tag--size-medium"
@@ -504,7 +504,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
         }
       >
         <div
-          data-css-1lu7sfl=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
         >
           <div
             className="psds-tag psds-theme--dark psds-tag--size-medium"
