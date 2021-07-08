@@ -33,7 +33,7 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
           data-css-1kfsc44=""
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-1yi1k4r=""
@@ -86,7 +86,7 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
         />
         <div>
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-91smc8=""
@@ -145,13 +145,13 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
                 className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -163,7 +163,7 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
           className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -239,7 +239,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
           data-css-1kfsc44=""
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-1yi1k4r=""
@@ -292,7 +292,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
         />
         <div>
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-91smc8=""
@@ -393,8 +393,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -466,8 +465,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -527,7 +525,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
         tabIndex={-1}
       />
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
           className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -576,7 +574,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
             data-css-ruxays=""
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <button
                 data-css-167upi1=""
@@ -589,7 +587,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                     data-css-1009u4g=""
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
                     >
                       <svg
                         aria-label="menu icon"
@@ -616,7 +614,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
           data-css-1kfsc44=""
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-1yi1k4r=""
@@ -669,7 +667,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
         />
         <div>
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-91smc8=""
@@ -770,8 +768,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -843,8 +840,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -911,13 +907,13 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
                 className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -929,7 +925,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
           className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -1005,7 +1001,7 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
           data-css-1kfsc44=""
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-1yi1k4r=""
@@ -1058,7 +1054,7 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
         />
         <div>
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-91smc8=""
@@ -1158,13 +1154,13 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
                 className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -1176,7 +1172,7 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
           className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -1255,7 +1251,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
             data-css-ruxays=""
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <button
                 data-css-167upi1=""
@@ -1268,7 +1264,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                     data-css-1009u4g=""
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
                     >
                       <svg
                         aria-label="menu icon"
@@ -1295,7 +1291,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
           data-css-1kfsc44=""
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-1yi1k4r=""
@@ -1348,7 +1344,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
         />
         <div>
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-91smc8=""
@@ -1449,8 +1445,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -1522,8 +1517,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -1590,13 +1584,13 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
                 className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -1608,7 +1602,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
           className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -1687,7 +1681,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
             data-css-ruxays=""
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <button
                 data-css-167upi1=""
@@ -1700,7 +1694,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                     data-css-1009u4g=""
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
                     >
                       <svg
                         aria-label="menu icon"
@@ -1727,7 +1721,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
           data-css-1kfsc44=""
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-1yi1k4r=""
@@ -1780,7 +1774,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
         />
         <div>
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
               data-css-91smc8=""
@@ -1858,8 +1852,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="home icon"
@@ -1897,8 +1890,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="browse icon"
@@ -1971,8 +1963,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2008,8 +1999,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2045,8 +2035,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2082,8 +2071,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2119,8 +2107,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2156,8 +2143,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2228,8 +2214,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2265,8 +2250,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-verticaltabs__item__icon"
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2333,13 +2317,13 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
                 className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -2351,7 +2335,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
           className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
