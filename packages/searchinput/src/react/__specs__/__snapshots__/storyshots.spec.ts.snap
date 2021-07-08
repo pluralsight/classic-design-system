@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/SearchInput Basic 1`] = `
 <label
-  className="psds-text-input"
+  className="psds-text-input psds-searchinput"
 >
   <div
     className="psds-text-input__label psds-theme--dark psds-text-input__label"
@@ -20,7 +20,6 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
       >
         <input
           className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
-          data-css-r2g0l1=""
           disabled={false}
           onBlur={[Function]}
           onChange={[Function]}
@@ -30,8 +29,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
           value=""
         />
         <button
-          className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
-          data-css-ttgr6s=""
+          className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--icon-only psds-searchinput-clear"
           disabled={false}
           onClick={[Function]}
         >
@@ -89,7 +87,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
 
 exports[`Storyshots Components/SearchInput Loading 1`] = `
 <label
-  className="psds-text-input"
+  className="psds-text-input psds-searchinput"
 >
   <div
     className="psds-text-input__field-container"
@@ -102,15 +100,13 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
       >
         <input
           className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
-          data-css-r2g0l1=""
           disabled={false}
           onChange={[Function]}
           type="search"
           value=""
         />
         <button
-          className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
-          data-css-ttgr6s=""
+          className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--icon-only psds-searchinput-clear"
           disabled={false}
           onClick={[Function]}
         >
@@ -176,7 +172,7 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
 
 exports[`Storyshots Components/SearchInput No On Clear 1`] = `
 <label
-  className="psds-text-input"
+  className="psds-text-input psds-searchinput"
 >
   <div
     className="psds-text-input__field-container"
@@ -189,7 +185,6 @@ exports[`Storyshots Components/SearchInput No On Clear 1`] = `
       >
         <input
           className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
-          data-css-r2g0l1=""
           disabled={false}
           onChange={[Function]}
           type="search"
@@ -222,7 +217,7 @@ exports[`Storyshots Components/SearchInput No On Clear 1`] = `
 
 exports[`Storyshots Components/SearchInput Static Value 1`] = `
 <label
-  className="psds-text-input"
+  className="psds-text-input psds-searchinput"
 >
   <div
     className="psds-text-input__field-container"
@@ -235,15 +230,13 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
       >
         <input
           className="psds-theme--dark psds-text-input__field-input--appearance-subtle psds-text-input__field-input"
-          data-css-r2g0l1=""
           disabled={false}
           onChange={[Function]}
           type="search"
           value="Set, not updated with state"
         />
         <button
-          className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
-          data-css-15xnn26=""
+          className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--icon-only psds-searchinput-clear psds-searchinput-clear--visible"
           disabled={false}
           onClick={[Function]}
         >
