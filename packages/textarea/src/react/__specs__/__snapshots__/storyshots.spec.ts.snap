@@ -14,7 +14,7 @@ Array [
       className="psds-text-area__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <textarea
           className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -46,7 +46,7 @@ Array [
       className="psds-text-area__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <textarea
           className="psds-text-area__field psds-text-area__field--appearance-subtle psds-theme--dark"
@@ -83,7 +83,7 @@ Array [
       className="psds-text-area__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <textarea
           className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -115,7 +115,7 @@ Array [
       className="psds-text-area__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <textarea
           className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -152,7 +152,7 @@ Array [
       className="psds-text-area__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <textarea
           className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -184,7 +184,7 @@ Array [
       className="psds-text-area__field-container"
     >
       <div
-        data-css-in6gqi=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus"
       >
         <textarea
           className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark psds-text-area__field--error"
@@ -201,7 +201,7 @@ Array [
         className="psds-text-area__error"
       >
         <div
-          data-css-7dab2f=""
+          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
         >
           <svg
             aria-label="warning icon"
@@ -234,7 +234,7 @@ exports[`Storyshots Components/TextArea Focus 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -277,7 +277,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
       className="psds-text-area__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <textarea
           className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -310,7 +310,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
       className="psds-text-area__field-container"
     >
       <div
-        data-css-in6gqi=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus"
       >
         <textarea
           className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark psds-text-area__field--error"
@@ -326,7 +326,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
         className="psds-text-area__error"
       >
         <div
-          data-css-7dab2f=""
+          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
         >
           <svg
             aria-label="warning icon"
@@ -359,7 +359,7 @@ exports[`Storyshots Components/TextArea Label 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -388,7 +388,7 @@ exports[`Storyshots Components/TextArea Label And Sub Label 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -422,7 +422,7 @@ exports[`Storyshots Components/TextArea Less Than Four Rows 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -451,7 +451,7 @@ exports[`Storyshots Components/TextArea More Than Four Rows 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -475,7 +475,7 @@ exports[`Storyshots Components/TextArea No Label 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -499,7 +499,7 @@ exports[`Storyshots Components/TextArea Placeholder 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -524,7 +524,7 @@ exports[`Storyshots Components/TextArea Prop Name 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -550,7 +550,7 @@ exports[`Storyshots Components/TextArea Prop On Change 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -577,7 +577,7 @@ exports[`Storyshots Components/TextArea Sub Label 1`] = `
     className="psds-text-area__field-container"
   >
     <div
-      data-css-ctre2o=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
     >
       <textarea
         className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
