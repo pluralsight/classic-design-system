@@ -114,7 +114,8 @@
 .psds-steps__marker--large {
   font-size: var(--ps-type-font-size-400);
 }
-.psds-steps__marker--completed {
+.psds-steps__marker--completed.psds-theme--dark,
+.psds-steps__marker--completed.psds-theme--light {
   color: var(--ps-colors-green-6);
 }
 .psds-steps__marker--completed:after {
