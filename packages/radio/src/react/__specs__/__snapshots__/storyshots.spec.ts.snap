@@ -26,7 +26,7 @@ exports[`Storyshots Components/Radio Basic 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -58,7 +58,7 @@ exports[`Storyshots Components/Radio Basic 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -90,7 +90,7 @@ exports[`Storyshots Components/Radio Basic 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -168,7 +168,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -200,7 +200,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -236,7 +236,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -297,8 +297,8 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
           data-css-1lxv0yd=""
         >
           <div
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline"
             data-css-iwspcj=""
-            data-css-rbpa8o=""
           >
             <div
               data-css-fdf00s=""
@@ -328,8 +328,8 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
           data-css-1lxv0yd=""
         >
           <div
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline"
             data-css-iwspcj=""
-            data-css-rbpa8o=""
           >
             <div
               data-css-fdf00s=""
@@ -359,8 +359,8 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
           data-css-1lxv0yd=""
         >
           <div
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline"
             data-css-iwspcj=""
-            data-css-rbpa8o=""
           >
             <div
               data-css-fdf00s=""
@@ -419,8 +419,8 @@ exports[`Storyshots Components/Radio Error 1`] = `
           data-css-1lxv0yd=""
         >
           <div
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus"
             data-css-iwspcj=""
-            data-css-mmyfiy=""
           >
             <div
               data-css-fdf00s=""
@@ -451,8 +451,8 @@ exports[`Storyshots Components/Radio Error 1`] = `
           data-css-1lxv0yd=""
         >
           <div
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus"
             data-css-iwspcj=""
-            data-css-mmyfiy=""
           >
             <div
               data-css-fdf00s=""
@@ -483,8 +483,8 @@ exports[`Storyshots Components/Radio Error 1`] = `
           data-css-1lxv0yd=""
         >
           <div
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus"
             data-css-iwspcj=""
-            data-css-mmyfiy=""
           >
             <div
               data-css-fdf00s=""
@@ -544,7 +544,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -576,7 +576,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -608,7 +608,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -659,7 +659,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -691,7 +691,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -723,7 +723,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -767,7 +767,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -799,7 +799,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -831,7 +831,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -883,7 +883,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -915,7 +915,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -947,7 +947,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -1003,7 +1003,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -1039,7 +1039,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -1071,7 +1071,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -1128,7 +1128,7 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -1160,7 +1160,7 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
@@ -1192,7 +1192,7 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
           data-css-1lxv0yd=""
         >
           <div
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
             data-css-iwspcj=""
           >
             <div
