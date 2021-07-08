@@ -8,7 +8,7 @@ exports[`Storyshots Components/Tag Basic 1`] = `
     className="psds-tag psds-theme--dark psds-tag--size-medium"
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -27,7 +27,7 @@ exports[`Storyshots Components/Tag Button 1`] = `
     tabIndex={0}
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -43,7 +43,7 @@ exports[`Storyshots Components/Tag Class Name Override 1`] = `
     className="css-1wsp713 psds-tag psds-theme--dark psds-tag--size-medium"
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -59,7 +59,7 @@ exports[`Storyshots Components/Tag Error 1`] = `
     className="psds-tag psds-theme--dark psds-tag--size-medium"
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -78,7 +78,7 @@ exports[`Storyshots Components/Tag Icon Button 1`] = `
     tabIndex={0}
   >
     <span
-      className="psds-tag__label psds-theme--dark psds-tag__label--icon"
+      className="psds-tag__label psds-tag__label--icon"
     >
       hello world
     </span>
@@ -114,7 +114,7 @@ exports[`Storyshots Components/Tag Link 1`] = `
     href="https://duckduckgo.com/"
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -130,7 +130,7 @@ exports[`Storyshots Components/Tag Long Text 1`] = `
     className="psds-tag psds-theme--dark psds-tag--size-medium"
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       This is the string that goes on forever and always. There really isn't an end. Wow.
     </span>
@@ -146,7 +146,7 @@ exports[`Storyshots Components/Tag Long Text With Icon 1`] = `
     className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--icon"
   >
     <span
-      className="psds-tag__label psds-theme--dark psds-tag__label--icon"
+      className="psds-tag__label psds-tag__label--icon"
     >
       This is the string that goes on forever and always. There really isn't an end. Wow.
     </span>
@@ -182,7 +182,7 @@ exports[`Storyshots Components/Tag Pressed 1`] = `
     className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--is-pressed"
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -202,7 +202,7 @@ exports[`Storyshots Components/Tag Pressed Button 1`] = `
     tabIndex={0}
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -219,7 +219,7 @@ exports[`Storyshots Components/Tag Pressed Link 1`] = `
     href="#"
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -236,7 +236,7 @@ exports[`Storyshots Components/Tag Pressed With Icon 1`] = `
     className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--icon psds-tag--is-pressed"
   >
     <span
-      className="psds-tag__label psds-theme--dark psds-tag__label--icon"
+      className="psds-tag__label psds-tag__label--icon"
     >
       hello world
     </span>
@@ -274,7 +274,7 @@ exports[`Storyshots Components/Tag Sizes 1`] = `
       className="psds-tag psds-theme--dark psds-tag--size-small"
     >
       <span
-        className="psds-tag__label psds-theme--dark"
+        className="psds-tag__label"
       >
         small
       </span>
@@ -287,7 +287,7 @@ exports[`Storyshots Components/Tag Sizes 1`] = `
       className="psds-tag psds-theme--dark psds-tag--size-medium"
     >
       <span
-        className="psds-tag__label psds-theme--dark"
+        className="psds-tag__label"
       >
         medium
       </span>
@@ -307,7 +307,7 @@ exports[`Storyshots Components/Tag Sizes With Icons 1`] = `
       className="psds-tag psds-theme--dark psds-tag--size-small psds-tag--icon"
     >
       <span
-        className="psds-tag__label psds-theme--dark psds-tag__label--icon"
+        className="psds-tag__label psds-tag__label--icon"
       >
         small
       </span>
@@ -339,7 +339,7 @@ exports[`Storyshots Components/Tag Sizes With Icons 1`] = `
       className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--icon"
     >
       <span
-        className="psds-tag__label psds-theme--dark psds-tag__label--icon"
+        className="psds-tag__label psds-tag__label--icon"
       >
         medium
       </span>
@@ -378,7 +378,7 @@ exports[`Storyshots Components/Tag Small Button 1`] = `
     tabIndex={0}
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -399,7 +399,7 @@ exports[`Storyshots Components/Tag Style Override 1`] = `
     }
   >
     <span
-      className="psds-tag__label psds-theme--dark"
+      className="psds-tag__label"
     >
       hello world
     </span>
@@ -418,7 +418,7 @@ exports[`Storyshots Components/Tag With Icon Button 1`] = `
     tabIndex={0}
   >
     <span
-      className="psds-tag__label psds-theme--dark psds-tag__label--icon"
+      className="psds-tag__label psds-tag__label--icon"
     >
       hello world
     </span>

@@ -400,7 +400,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
             className="psds-tag psds-theme--dark psds-tag--size-medium"
           >
             <span
-              className="psds-tag__label psds-theme--dark"
+              className="psds-tag__label"
             >
               Asssessments
             </span>
@@ -422,7 +422,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
             className="psds-tag psds-theme--dark psds-tag--size-medium"
           >
             <span
-              className="psds-tag__label psds-theme--dark"
+              className="psds-tag__label"
             >
               Guides
             </span>
@@ -444,7 +444,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
             className="psds-tag psds-theme--dark psds-tag--size-medium"
           >
             <span
-              className="psds-tag__label psds-theme--dark"
+              className="psds-tag__label"
             >
               Interactive Courses
             </span>
@@ -466,7 +466,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
             className="psds-tag psds-theme--dark psds-tag--size-medium"
           >
             <span
-              className="psds-tag__label psds-theme--dark"
+              className="psds-tag__label"
             >
               Paths
             </span>
@@ -488,7 +488,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
             className="psds-tag psds-theme--dark psds-tag--size-medium"
           >
             <span
-              className="psds-tag__label psds-theme--dark"
+              className="psds-tag__label"
             >
               Projects
             </span>
@@ -510,7 +510,7 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
             className="psds-tag psds-theme--dark psds-tag--size-medium"
           >
             <span
-              className="psds-tag__label psds-theme--dark"
+              className="psds-tag__label"
             >
               Video Courses
             </span>

@@ -22,8 +22,8 @@
   cursor: pointer;
   outline: 0;
 }
-.psds-tag--clickable.psds-theme--light:focus,
-.psds-tag--clickable.psds-theme--light:hover {
+.psds-theme--light:focus.psds-tag--clickable,
+.psds-theme--light:hover.psds-tag--clickable, {
   background-color: var(--ps-colors-background-utility-30);
   color: var(--ps-colors-text-icon-high-on-light);
 }
@@ -42,7 +42,8 @@
 .psds-tag--icon {
   padding-right: var(--ps-layout-spacing-xxsmall);
 }
-.psds-tag--is-pressed {
+.psds-theme--light.psds-tag--is-pressed,
+.psds-theme--dark.psds-tag--is-pressed {
   color: var(--ps-colors-text-icon-high-on-dark);
   background-color: var(--ps-colors-primary-action-background);
 }

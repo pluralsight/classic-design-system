@@ -51,7 +51,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -91,7 +91,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -626,7 +626,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -666,7 +666,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -1207,7 +1207,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -1247,7 +1247,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -1785,7 +1785,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -1825,7 +1825,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -2402,7 +2402,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -2442,7 +2442,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -2977,7 +2977,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -3017,7 +3017,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -3553,7 +3553,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -3593,7 +3593,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                   className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    className="psds-tag__label psds-theme--light psds-tag__label--icon"
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>

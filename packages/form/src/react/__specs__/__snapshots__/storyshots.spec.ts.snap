@@ -545,7 +545,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               href="http://google.com"
             >
               <span
-                className="psds-tag__label psds-theme--dark"
+                className="psds-tag__label"
               >
                 Foo
               </span>
@@ -566,7 +566,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               href="http://google.com"
             >
               <span
-                className="psds-tag__label psds-theme--dark"
+                className="psds-tag__label"
               >
                 Bar
               </span>
@@ -587,7 +587,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               href="http://google.com"
             >
               <span
-                className="psds-tag__label psds-theme--dark"
+                className="psds-tag__label"
               >
                 Baz
               </span>

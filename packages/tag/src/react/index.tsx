@@ -74,18 +74,10 @@ interface LabelProps extends React.HTMLAttributes<HTMLSpanElement> {
   icon: boolean
 }
 const Label: React.FC<LabelProps> = ({ icon, ...props }) => {
-  const themeName = useTheme()
   const label = 'psds-tag__label'
 
   return (
-    <span
-      className={classNames(
-        label,
-        `psds-theme--${themeName}`,
-        icon && `${label}--icon`
-      )}
-      {...props}
-    />
+    <span className={classNames(label, icon && `${label}--icon`)} {...props} />
   )
 }
 
