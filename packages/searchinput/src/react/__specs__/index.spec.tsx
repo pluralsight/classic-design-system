@@ -16,6 +16,15 @@ describe('SearchInput', () => {
     expect(ref).not.toBeNull()
   })
 
+  it('composes className', () => {
+    // Always forwards to Select.Button so this test for that component to
+    const { container } = render(<SearchInput className="compose-classname" />)
+
+    expect(container.firstChild).toHaveClass(
+      'compose-classname psds-searchinput'
+    )
+  })
+
   describe.each(cases)('%s story', (_name, Story) => {
     it('has no axe-core violations', async () => {
       const { container } = render(<Story {...Story.args} />)

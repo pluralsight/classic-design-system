@@ -104,7 +104,7 @@ const CircularProgress = React.forwardRef<
           cy="24"
           className={classNames(
             'psds-circularprogress__fg',
-            `psds-circularprogress__fg.psds-theme--${themeName}`
+            `psds-circularprogress__fg psds-theme--${themeName}`
           )}
           strokeDasharray={`${circumference} ${circumference}`}
           strokeDashoffset={dashOffset}
