@@ -1556,7 +1556,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
@@ -1650,7 +1650,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
@@ -1744,7 +1744,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
@@ -1838,7 +1838,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
@@ -1932,7 +1932,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
@@ -2098,7 +2098,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
@@ -2187,7 +2187,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
@@ -2276,7 +2276,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
@@ -2365,7 +2365,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"
@@ -2454,7 +2454,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
           role="gridcell"
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-xSmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
+            className="psds-button psds-button--layout-inline psds-button--size-xsmall psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
             disabled={false}
             onClick={[Function]}
             title="Expand/Collapse additional content"

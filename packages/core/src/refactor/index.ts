@@ -1,3 +1,5 @@
+import { dashify } from '@pluralsight/ps-design-system-util'
+
 import breakpoints from '../js/breakpoints'
 import layers from '../js/layers'
 import layout from '../js/layout'
@@ -31,11 +33,3 @@ export const cssVars = Object.entries({
   }
   return { ...acc, [group]: { ...keys } }
 }, {}) as Tokens
-
-function dashify(str: string) {
-  return str
-    .trim()
-    .replace(/([a-z])([A-Z])/g, '$1-$2')
-    .replace(/([a-z])([0-9]+)/g, '$1-$2')
-    .toLowerCase()
-}

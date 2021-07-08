@@ -1,4 +1,9 @@
-import { RefFor, ValueOf, classNames } from '@pluralsight/ps-design-system-util'
+import {
+  RefFor,
+  ValueOf,
+  classNames,
+  dashify
+} from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import '../css/index.css'
@@ -131,9 +136,7 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
           className={classNames(
             'psds-actionmenu',
             'psds-actionmenu__nested',
-            `psds-actionmenu--origin-${(
-              origin || originContext
-            )?.toLowerCase()}`
+            `psds-actionmenu--origin-${dashify(origin || originContext)}`
           )}
           aria-expanded={open}
           onKeyDown={handleArrowLeft}
