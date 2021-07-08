@@ -138,13 +138,12 @@ const Caption: React.FC<React.HTMLAttributes<HTMLParagraphElement>> = props => (
   </Context.Consumer>
 )
 
-const ErrorCode: React.FC<
-  React.HTMLAttributes<HTMLParagraphElement>
-> = props => (
-  <Context.Consumer>
-    {ctx => <p {...styles.errorCode(ctx)} {...props} />}
-  </Context.Consumer>
-)
+const ErrorCode: React.FC<React.HTMLAttributes<HTMLParagraphElement>> =
+  props => (
+    <Context.Consumer>
+      {ctx => <p {...styles.errorCode(ctx)} {...props} />}
+    </Context.Consumer>
+  )
 
 interface HeadingProps extends React.HTMLAttributes<HTMLHeadingElement> {
   as?: keyof Pick<JSX.IntrinsicElements, 'h1' | 'h2' | 'h3' | 'h4' | 'h5'>

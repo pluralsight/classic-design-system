@@ -143,26 +143,30 @@ export default {
       width: 0
     }
   },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topLeft}`]: {
-    ...menuOriginRight,
-    right: 0,
-    top: `calc(-1 * ${vars.style.menuPaddingVert})`
-  },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]: {
-    ...menuOriginRight,
-    bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
-    right: 0
-  },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topRight}`]: {
-    ...menuOriginLeft,
-    left: 0,
-    top: `calc(-1 * ${vars.style.menuPaddingVert})`
-  },
-  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]: {
-    ...menuOriginLeft,
-    bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
-    left: 0
-  },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topLeft}`]:
+    {
+      ...menuOriginRight,
+      right: 0,
+      top: `calc(-1 * ${vars.style.menuPaddingVert})`
+    },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomLeft}`]:
+    {
+      ...menuOriginRight,
+      bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
+      right: 0
+    },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.topRight}`]:
+    {
+      ...menuOriginLeft,
+      left: 0,
+      top: `calc(-1 * ${vars.style.menuPaddingVert})`
+    },
+  [`.psds-actionmenu__nested.psds-actionmenu--origin-${vars.origins.bottomRight}`]:
+    {
+      ...menuOriginLeft,
+      bottom: `calc(-1 * ${vars.style.menuPaddingVert})`,
+      left: 0
+    },
   '.psds-actionmenu__item': {
     label: 'action-menuitem',
     display: 'inline-block',

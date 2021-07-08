@@ -27,9 +27,10 @@ export const Skills: Story = () => {
     [mobile]
   )
 
-  const topnavItems = React.useMemo(() => (mobile ? [] : MAIN_NAV_ITEMS), [
-    mobile
-  ])
+  const topnavItems = React.useMemo(
+    () => (mobile ? [] : MAIN_NAV_ITEMS),
+    [mobile]
+  )
 
   return (
     <AppFrame

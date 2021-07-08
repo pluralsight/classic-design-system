@@ -217,7 +217,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const ref = React.useRef<HTMLButtonElement>()
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as HTMLButtonElement
+      () => ref.current as unknown as HTMLButtonElement
     )
 
     const hasLabel = React.Children.count(children) > 0

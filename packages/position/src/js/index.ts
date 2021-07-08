@@ -84,9 +84,7 @@ const clipAdjust: {
   ]
 }
 
-export type PositionFunction = (
-  target: HTMLElement
-) => {
+export type PositionFunction = (target: HTMLElement) => {
   styleFor: (
     el: HTMLElement | undefined,
     options?: Partial<StyleOptions>

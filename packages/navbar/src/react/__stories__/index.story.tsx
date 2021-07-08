@@ -92,91 +92,90 @@ DesktopOnly.args = { ...defaultArgs, onMobileMenuClick: undefined }
 export const WithSkillsBrand = Template.bind({})
 WithSkillsBrand.args = { ...defaultArgs, brand: <SkillsBrand /> }
 
-export const ExampleSkills: Story<
-  React.ComponentProps<typeof NavBar>
-> = args => {
-  const [isBrowseMenuOpen, setBrowseMenuOpen] = React.useState(false)
-  const [isProfileMenuOpen, setProfileMenuOpen] = React.useState(false)
+export const ExampleSkills: Story<React.ComponentProps<typeof NavBar>> =
+  args => {
+    const [isBrowseMenuOpen, setBrowseMenuOpen] = React.useState(false)
+    const [isProfileMenuOpen, setProfileMenuOpen] = React.useState(false)
 
-  return (
-    <NavBar
-      {...args}
-      brand={<SkillsBrand />}
-      items={
-        <>
-          <div
-            {...glamor.css({
-              display: 'inline-block',
-              marginRight: layout.spacingXXSmall
-            })}
-          >
-            <NavItem icon={<HomeIcon />}>Home</NavItem>
-          </div>
-
-          <div {...glamor.css({ display: 'inline-block' })}>
-            <BelowLeft
-              show={
-                <ActionMenu>
-                  <ActionMenu.Item>Experimental flyout</ActionMenu.Item>
-                </ActionMenu>
-              }
-              when={isBrowseMenuOpen}
+    return (
+      <NavBar
+        {...args}
+        brand={<SkillsBrand />}
+        items={
+          <>
+            <div
+              {...glamor.css({
+                display: 'inline-block',
+                marginRight: layout.spacingXXSmall
+              })}
             >
-              <div>
-                <NavItem
-                  icon={<BrowseIcon />}
-                  selected
-                  menu
-                  renderContainer={(
-                    contentProps: React.HTMLAttributes<HTMLButtonElement>
-                  ) => (
-                    <button
-                      {...contentProps}
-                      onClick={() => setBrowseMenuOpen(!isBrowseMenuOpen)}
-                    />
-                  )}
-                >
-                  Browse
-                </NavItem>
-              </div>
-            </BelowLeft>
-          </div>
-        </>
-      }
-      user={
-        <BelowRight
-          show={
-            <ActionMenu origin={ActionMenu.origins.topLeft}>
-              <ActionMenu.Item>Lame</ActionMenu.Item>
-            </ActionMenu>
-          }
-          when={isProfileMenuOpen}
-        >
-          <NavUser
-            name="Jake"
-            meta="Accenture"
-            onClick={() => setProfileMenuOpen(!isProfileMenuOpen)}
-          />
-        </BelowRight>
-      }
-      utility={
-        <>
-          <div
-            {...glamor.css({
-              display: 'inline-block',
-              marginRight: layout.spacingXXSmall
-            })}
-          >
-            <NavItem icon={<NotificationsIcon />} />
-          </div>
+              <NavItem icon={<HomeIcon />}>Home</NavItem>
+            </div>
 
-          <div {...glamor.css({ display: 'inline-block' })}>
-            <NavItem icon={<AccountIcon />} />
-          </div>
-        </>
-      }
-    />
-  )
-}
+            <div {...glamor.css({ display: 'inline-block' })}>
+              <BelowLeft
+                show={
+                  <ActionMenu>
+                    <ActionMenu.Item>Experimental flyout</ActionMenu.Item>
+                  </ActionMenu>
+                }
+                when={isBrowseMenuOpen}
+              >
+                <div>
+                  <NavItem
+                    icon={<BrowseIcon />}
+                    selected
+                    menu
+                    renderContainer={(
+                      contentProps: React.HTMLAttributes<HTMLButtonElement>
+                    ) => (
+                      <button
+                        {...contentProps}
+                        onClick={() => setBrowseMenuOpen(!isBrowseMenuOpen)}
+                      />
+                    )}
+                  >
+                    Browse
+                  </NavItem>
+                </div>
+              </BelowLeft>
+            </div>
+          </>
+        }
+        user={
+          <BelowRight
+            show={
+              <ActionMenu origin={ActionMenu.origins.topLeft}>
+                <ActionMenu.Item>Lame</ActionMenu.Item>
+              </ActionMenu>
+            }
+            when={isProfileMenuOpen}
+          >
+            <NavUser
+              name="Jake"
+              meta="Accenture"
+              onClick={() => setProfileMenuOpen(!isProfileMenuOpen)}
+            />
+          </BelowRight>
+        }
+        utility={
+          <>
+            <div
+              {...glamor.css({
+                display: 'inline-block',
+                marginRight: layout.spacingXXSmall
+              })}
+            >
+              <NavItem icon={<NotificationsIcon />} />
+            </div>
+
+            <div {...glamor.css({ display: 'inline-block' })}>
+              <NavItem icon={<AccountIcon />} />
+            </div>
+          </>
+        }
+      />
+    )
+  }
 ExampleSkills.args = { ...defaultArgs }
 ExampleSkills.parameters = { center: { disabled: true }, layout: 'fullscreen' }

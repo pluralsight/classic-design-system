@@ -132,65 +132,10 @@ export const WithRowComponent: Story = () => (
   <Drawer>
     <Drawer.Summary>
       <Row
-        actionBar={[
-          <Button
-            size={Button.sizes.small}
-            appearance={Button.appearances.flat}
-            key="iHeartCats"
-            icon={<Icon.MoreIcon />}
-          />
-        ]}
-        actionBarVisible
         image={<Row.Image src="https://cataas.com/cat" />}
         metadata1={['Kitten McCatbuns', '23 hours of cuteness']}
         size={Row.sizes.medium}
         title="Look at me! I'm a <Row />!"
-      />
-    </Drawer.Summary>
-    <Drawer.Details>
-      <DrawerBodyContent>Drawer Content here</DrawerBodyContent>
-    </Drawer.Details>
-  </Drawer>
-)
-
-export const RowComponentWithActions: Story = () => (
-  <Drawer>
-    <Drawer.Summary>
-      <Row
-        actionBar={[
-          <Button
-            size={Button.sizes.small}
-            appearance={Button.appearances.flat}
-            key="iHeartCats"
-            icon={<Icon.MoreIcon />}
-            onClick={action('action')}
-          />
-        ]}
-        actionBarVisible
-        fullOverlay={
-          <Row.FullOverlayLink>
-            <a href="https://duckduckgo.com?q=overlay">Overlay</a>
-          </Row.FullOverlayLink>
-        }
-        metadata1={[
-          <Row.TextLink key="01">
-            <a href="https://duckduckgo.com?q=cats">Kitten McCatbuns</a>
-          </Row.TextLink>,
-          '23 hours of cuteness'
-        ]}
-        image={
-          <Row.ImageLink>
-            <a href="https://duckduckgo.com?q=image">
-              <img src="https://cataas.com/cat" alt="Link text" />
-            </a>
-          </Row.ImageLink>
-        }
-        size={Row.sizes.medium}
-        title={
-          <Row.TextLink>
-            <a href="https://duckduckgo.com?q=title">I'm a Row with Actions</a>
-          </Row.TextLink>
-        }
       />
     </Drawer.Summary>
     <Drawer.Details>

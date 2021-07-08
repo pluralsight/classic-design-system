@@ -1,9 +1,9 @@
 const { promises: fs } = require('fs')
 const fg = require('fast-glob')
 const path = require('path')
-const SVGO = require('svgo')
+const { optimize, extendDefaultPlugins } = require('svgo')
 
-const svgo = new SVGO({ plugins: [{ removeXMLNS: true }] })
+const svgoOpts = { plugins: extendDefaultPlugins([{ name: 'removeXMLNS' }]) }
 
 exports.generateComponents = async ({
   src = 'src',
@@ -22,7 +22,7 @@ exports.generateComponents = async ({
         const destPath = `${dest}/${name}.${ext}`
 
         const svgString = await fs.readFile(file, 'utf8')
-        const { data } = await svgo.optimize(svgString)
+        const { data } = optimize(svgString, svgoOpts)
 
         const svgWithReactAttrs = camelCaseAttributes(data)
         const fileContents = generateComponent(name, svgWithReactAttrs, core)

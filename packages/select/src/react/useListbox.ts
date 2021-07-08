@@ -135,7 +135,7 @@ export const useListbox = (
   const buttonRef = React.useRef<HTMLButtonElement>(null)
   React.useImperativeHandle(
     forwardedRef,
-    () => (buttonRef.current as unknown) as HTMLButtonElement
+    () => buttonRef.current as unknown as HTMLButtonElement
   )
   const menuRef = useMenuRef()
   const closeMenu = () => {

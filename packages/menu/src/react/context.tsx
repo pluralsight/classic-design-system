@@ -12,9 +12,7 @@ interface MenuContextValue {
   originContext?: ValueOf<typeof origins>
   selectedItem?: SelectedItem
   optionRole: string
-  useActive: (
-    ref: React.MutableRefObject<HTMLLIElement | undefined>
-  ) => {
+  useActive: (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
     active: boolean
     handleActiveState: (event: React.FocusEvent<Element>) => void
   }
@@ -32,9 +30,8 @@ const menuInitialValue = {
   optionRole: 'menuitem'
 }
 
-export const MenuContext = React.createContext<MenuContextValue>(
-  menuInitialValue
-)
+export const MenuContext =
+  React.createContext<MenuContextValue>(menuInitialValue)
 
 interface ItemContextValue {
   selected?: boolean
@@ -42,6 +39,5 @@ interface ItemContextValue {
 
 const itemInitialValue = {}
 
-export const ItemContext = React.createContext<ItemContextValue>(
-  itemInitialValue
-)
+export const ItemContext =
+  React.createContext<ItemContextValue>(itemInitialValue)

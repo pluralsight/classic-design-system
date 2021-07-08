@@ -28,10 +28,11 @@ export default {
     '.psds-aside-layout__aside': {
       width: 'calc(25%)'
     },
-    [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.first}`]: {
-      marginBottom: 0,
-      marginRight: layout.spacingLarge
-    },
+    [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.first}`]:
+      {
+        marginBottom: 0,
+        marginRight: layout.spacingLarge
+      },
     [`.psds-aside-layout__aside--aside-position-${vars.asidePositions.last}`]: {
       marginTop: 0,
       marginLeft: layout.spacingLarge

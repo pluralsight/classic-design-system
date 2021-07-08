@@ -42,10 +42,10 @@ const VerticalTabs = React.forwardRef((props, ref) => {
     ...rest
   } = props
 
-  const contextValue = React.useMemo(() => ({ forceCollapsed, hideLabels }), [
-    forceCollapsed,
-    hideLabels
-  ])
+  const contextValue = React.useMemo(
+    () => ({ forceCollapsed, hideLabels }),
+    [forceCollapsed, hideLabels]
+  )
 
   return (
     <Context.Provider value={contextValue}>

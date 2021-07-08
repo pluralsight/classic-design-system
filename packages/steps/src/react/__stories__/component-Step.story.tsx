@@ -126,17 +126,16 @@ export const HideCounters: Story = () => {
 }
 
 export const CustomMarker: Story = () => {
-  const ProgressMarker: React.FC<
-    React.ComponentProps<typeof Steps.Marker>
-  > = props => {
-    const value = {
-      incomplete: 0,
-      current: 60,
-      completed: 100
-    }[props.status]
+  const ProgressMarker: React.FC<React.ComponentProps<typeof Steps.Marker>> =
+    props => {
+      const value = {
+        incomplete: 0,
+        current: 60,
+        completed: 100
+      }[props.status]
 
-    return <CircularProgress size="small" value={value} />
-  }
+      return <CircularProgress size="small" value={value} />
+    }
 
   return (
     <Context.Provider value={{ ...initialContext, size: 'medium' }}>

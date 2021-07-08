@@ -5,12 +5,13 @@ import * as styles from './dialog.module.css'
 interface ModalGuidelineExampleProps {
   style: Record<string, unknown>
 }
-export const ModalGuidelineExample: React.FC<ModalGuidelineExampleProps> = props => (
-  <div className={styles.example} style={props.style}>
-    <ContentGridVisual />
-    {props.children}
-  </div>
-)
+export const ModalGuidelineExample: React.FC<ModalGuidelineExampleProps> =
+  props => (
+    <div className={styles.example} style={props.style}>
+      <ContentGridVisual />
+      {props.children}
+    </div>
+  )
 
 export const ContentGridVisual = _ => (
   <div className={styles.grid}>

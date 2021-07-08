@@ -13,13 +13,13 @@ const sizes = {
   [Card.sizes.large]: { width: '540px' }
 }
 
-const ConstrainSizeDecorator = (size: keyof typeof sizes) => (
-  StoryElement: Story
-) => (
-  <div style={sizes[size]}>
-    <StoryElement />
-  </div>
-)
+const ConstrainSizeDecorator =
+  (size: keyof typeof sizes) => (StoryElement: Story) =>
+    (
+      <div style={sizes[size]}>
+        <StoryElement />
+      </div>
+    )
 
 export default {
   title: 'Components/Card',

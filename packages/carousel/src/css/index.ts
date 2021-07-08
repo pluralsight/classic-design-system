@@ -79,18 +79,20 @@ export default {
     '&:focus': { outline: 'none' },
     '&:hover': { cursor: 'pointer' }
   },
-  [`.psds-carousel__controls__control__button.psds-theme--${themeNames.dark}`]: {
-    color: colorsTextIcon.highOnLight,
-    background: 'rgba(255, 255, 255, 0.6)',
+  [`.psds-carousel__controls__control__button.psds-theme--${themeNames.dark}`]:
+    {
+      color: colorsTextIcon.highOnLight,
+      background: 'rgba(255, 255, 255, 0.6)',
 
-    '&:hover, &:focus, &:active': { background: 'white' }
-  },
-  [`.psds-carousel__controls__control__button.psds-theme--${themeNames.light}`]: {
-    color: colorsTextIcon.highOnDark,
-    background: 'rgba(0, 0, 0, 0.6)',
+      '&:hover, &:focus, &:active': { background: 'white' }
+    },
+  [`.psds-carousel__controls__control__button.psds-theme--${themeNames.light}`]:
+    {
+      color: colorsTextIcon.highOnDark,
+      background: 'rgba(0, 0, 0, 0.6)',
 
-    '&:hover, &:focus, &:active': { background: 'black' }
-  },
+      '&:hover, &:focus, &:active': { background: 'black' }
+    },
 
   '.psds-carousel__stage': {
     position: 'relative',

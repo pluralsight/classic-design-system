@@ -168,9 +168,8 @@ const ActionBarAction = React.forwardRef((props, ref) => {
 }) as ActionBarActionComponent
 ActionBarAction.displayName = 'Card.Action'
 
-const FullOverlayLink: React.FC<
-  React.HTMLAttributes<HTMLSpanElement>
-> = props => <span {...styles.fullOverlayLink()} {...props} />
+const FullOverlayLink: React.FC<React.HTMLAttributes<HTMLSpanElement>> =
+  props => <span {...styles.fullOverlayLink()} {...props} />
 
 FullOverlayLink.displayName = 'Card.FullOverlayLink'
 
@@ -185,6 +184,7 @@ const Image: React.FC<ImageProps> = props => {
       {...styles.image()}
       {...rest}
       aria-label={rest['aria-label'] || rest.alt}
+      role="img"
       style={{ backgroundImage: `url(${src})` }}
     />
   )
@@ -335,6 +335,10 @@ const Card: React.FC<CardProps> & CardStatics = props => {
           <div {...styles.progress()}>
             <div
               {...styles.progressBar(progress)}
+              role="progressbar"
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={Math.round(progress)}
               aria-label={`${toPercentageString(progress)} complete`}
             />
           </div>

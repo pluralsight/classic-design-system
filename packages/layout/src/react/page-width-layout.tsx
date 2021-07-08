@@ -16,15 +16,14 @@ const styles = {
     )
 }
 
-const PageWidthLayout: React.FC<
-  React.HTMLAttributes<HTMLDivElement>
-> = props => {
-  return (
-    <div {...styles.layout()} {...props}>
-      {props.children}
-    </div>
-  )
-}
+const PageWidthLayout: React.FC<React.HTMLAttributes<HTMLDivElement>> =
+  props => {
+    return (
+      <div {...styles.layout()} {...props}>
+        {props.children}
+      </div>
+    )
+  }
 PageWidthLayout.displayName = 'PageWidthLayout'
 
 export default PageWidthLayout

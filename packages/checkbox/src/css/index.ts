@@ -50,12 +50,13 @@ export default {
     zIndex: '-1',
     borderRadius: '2px'
   },
-  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:before .psds-checkbox__square--error.psds-theme--${themeNames.light}:before`]: {
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px'
-  },
+  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:before .psds-checkbox__square--error.psds-theme--${themeNames.light}:before`]:
+    {
+      top: '-4px',
+      left: '-4px',
+      right: '-4px',
+      bottom: '-4px'
+    },
   '.psds-checkbox__square:focus:after .psds-checkbox__square--error:after': {
     content: ' ',
     position: 'absolute',
@@ -66,12 +67,13 @@ export default {
     zIndex: '-2',
     borderRadius: '4px'
   },
-  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:after .psds-checkbox__square--error.psds-theme--${themeNames.light}:after`]: {
-    top: '-7px',
-    left: '-7px',
-    right: '-7px',
-    bottom: '-7px'
-  },
+  [`.psds-checkbox__square.psds-theme--${themeNames.light}:focus:after .psds-checkbox__square--error.psds-theme--${themeNames.light}:after`]:
+    {
+      top: '-7px',
+      left: '-7px',
+      right: '-7px',
+      bottom: '-7px'
+    },
   '.psds-checkbox__square:focus:after': {
     background: colorsBlue[6]
   },
@@ -82,30 +84,34 @@ export default {
     background: colorsBlue[6],
     border: 'none'
   },
-  '.psds-checkbox__square--active:focus:before, .psds-checkbox__square--active--error:before': {
-    top: '-1px',
-    left: '-1px',
-    right: '-1px',
-    bottom: '-1px'
-  },
-  [`.psds-checkbox__square--active.psds-theme--${themeNames.light}:focus:before, .psds-checkbox__square--active--error.psds-theme--${themeNames.light}:before`]: {
-    top: '-2px',
-    left: '-2px',
-    right: '-2px',
-    bottom: '-2px'
-  },
-  '.psds-checkbox__square--active:focus:after, .psds-checkbox__square--active--error:after': {
-    top: '-4px',
-    left: '-4px',
-    right: '-4px',
-    bottom: '-4px'
-  },
-  [`.psds-checkbox__square--active.psds-theme--${themeNames.light}:focus:after, .psds-checkbox__square--active--error.psds-theme--${themeNames.light}:after`]: {
-    top: '-5px',
-    left: '-5px',
-    right: '-5px',
-    bottom: '-5px'
-  },
+  '.psds-checkbox__square--active:focus:before, .psds-checkbox__square--active--error:before':
+    {
+      top: '-1px',
+      left: '-1px',
+      right: '-1px',
+      bottom: '-1px'
+    },
+  [`.psds-checkbox__square--active.psds-theme--${themeNames.light}:focus:before, .psds-checkbox__square--active--error.psds-theme--${themeNames.light}:before`]:
+    {
+      top: '-2px',
+      left: '-2px',
+      right: '-2px',
+      bottom: '-2px'
+    },
+  '.psds-checkbox__square--active:focus:after, .psds-checkbox__square--active--error:after':
+    {
+      top: '-4px',
+      left: '-4px',
+      right: '-4px',
+      bottom: '-4px'
+    },
+  [`.psds-checkbox__square--active.psds-theme--${themeNames.light}:focus:after, .psds-checkbox__square--active--error.psds-theme--${themeNames.light}:after`]:
+    {
+      top: '-5px',
+      left: '-5px',
+      right: '-5px',
+      bottom: '-5px'
+    },
 
   // __icon
   '.psds-checkbox__icon': {

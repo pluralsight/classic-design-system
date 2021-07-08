@@ -41,14 +41,14 @@ interface ErrorPageStatics {
   sizes: typeof sizes
 }
 
-export const ForbiddenErrorPage: React.FC<ErrorPageProps> &
-  ErrorPageStatics = ({ href, size }) => (
-  <ErrorPage
-    {...subComponents(codes[403])}
-    actions={<Action href={href} />}
-    size={size}
-  />
-)
+export const ForbiddenErrorPage: React.FC<ErrorPageProps> & ErrorPageStatics =
+  ({ href, size }) => (
+    <ErrorPage
+      {...subComponents(codes[403])}
+      actions={<Action href={href} />}
+      size={size}
+    />
+  )
 
 ForbiddenErrorPage.sizes = sizes
 

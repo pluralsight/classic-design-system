@@ -43,7 +43,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -121,7 +121,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -189,7 +189,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -257,7 +257,7 @@ exports[`Storyshots Components/Row Default 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -282,174 +282,6 @@ exports[`Storyshots Components/Row Default 1`] = `
       }
     >
       This year’s spring releases of Safari 13.1 for macOS Catalina, iPadOS, iOS, and watchOS bring a tremendous number of WebKit improvements for the web across Apple’s platforms. All of this with many more updates for improved privacy, performance, and a host of new tools for web developers. Here’s a quick look at the new WebKit enhancements available with these releases. Pointer and Mouse Events on iPadOS The latest iPadOS 13.4 brings desktop-class pointer and mouse event support to Safari and WebKit. To ensure the best experience, web developers can use feature detection and adopt Pointer Events. Since a mouse or trackpad won’t send touch events, web content should not depend on touch events. Pointer Events will specify whether a mouse/trackpad or touch generated the event. Web Animations API These releases ship with support for the Web Animations API, a web standard offering developers a JavaScript API to create, query, and control animations, including direct control of CSS Animations and CSS Transitions. It offers a convenient unified model for programmatic animations, CSS Animations and Transitions. They can all now be directly controlled to pause, resume, seek, or change speed and direction, with less manual calculation. In addition, Web Inspector has been updated to show entries for them in the Media and Animations timeline.
-    </p>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Row Row Component With Actions 1`] = `
-<div
-  style={
-    Object {
-      "padding": 48,
-    }
-  }
->
-  <div
-    aria-expanded={false}
-    data-css-1suuvy1=""
-    onClick={[Function]}
-    role="button"
-  >
-    <div
-      data-css-19vzw9x=""
-    >
-      <div
-        data-css-js3ti3=""
-      >
-        <span
-          data-css-15yq56v=""
-        >
-          <a
-            href="https://duckduckgo.com?q=image"
-          >
-            <img
-              alt="Link text"
-              src="https://cataas.com/cat"
-            />
-          </a>
-        </span>
-        <div
-          data-css-1gtggsm=""
-        >
-          <span
-            data-css-1fxa3fl=""
-            onBlur={[Function]}
-            onFocus={[Function]}
-          >
-            <a
-              href="https://duckduckgo.com?q=overlay"
-            >
-              Overlay
-            </a>
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-kxulf3=""
-      >
-        <div
-          data-css-2pesz8=""
-        >
-          <span
-            data-css-1bnk4mn=""
-          >
-            <a
-              href="https://duckduckgo.com?q=title"
-            >
-              I'm a Row with Actions
-            </a>
-          </span>
-        </div>
-        <div
-          data-css-1f22p8h=""
-        >
-          <span
-            data-css-1kcrbi9=""
-          >
-            <span
-              data-css-1bnk4mn=""
-            >
-              <a
-                href="https://duckduckgo.com?q=cats"
-              >
-                Kitten McCatbuns
-              </a>
-            </span>
-          </span>
-          <span
-            aria-hidden={true}
-            data-css-kykfz1=""
-          >
-            ·
-          </span>
-          <span
-            data-css-1kcrbi9=""
-          >
-            23 hours of cuteness
-          </span>
-        </div>
-      </div>
-      <div
-        data-css-7b22zo=""
-      >
-        <button
-          data-css-1dnyz38=""
-          disabled={false}
-          onClick={[Function]}
-        >
-          <div
-            data-css-4ducb0=""
-          >
-            <div
-              data-css-k31qw2=""
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            aria-hidden={false}
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
-    </div>
-    <div
-      data-css-17v14zz=""
-    >
-      <div
-        data-css-1h00rme=""
-        data-css-7dab2f=""
-      >
-        <svg
-          aria-label="caret down icon"
-          role="img"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
-          />
-        </svg>
-      </div>
-      <div
-        data-css-6wu9td=""
-      >
-        Collapsed
-      </div>
-    </div>
-  </div>
-  <div
-    aria-hidden={true}
-    data-css-1s813js=""
-  >
-    <p
-      data-css-17nixd9=""
-      style={
-        Object {
-          "margin": 0,
-          "padding": 20,
-        }
-      }
-    >
-      Drawer Content here
     </p>
   </div>
 </div>
@@ -494,7 +326,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -551,7 +383,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -608,7 +440,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -678,7 +510,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -737,7 +569,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -796,7 +628,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+              d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
         </div>
@@ -866,7 +698,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -950,36 +782,6 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
           </span>
         </div>
       </div>
-      <div
-        data-css-7zyoug=""
-      >
-        <button
-          data-css-1dnyz38=""
-          disabled={false}
-        >
-          <div
-            data-css-4ducb0=""
-          >
-            <div
-              data-css-k31qw2=""
-            >
-              <svg
-                aria-label="more icon"
-                role="img"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
-                />
-              </svg>
-            </div>
-          </div>
-          <span
-            aria-hidden={false}
-            data-css-15b13by=""
-          />
-        </button>
-      </div>
     </div>
     <div
       data-css-17v14zz=""
@@ -994,7 +796,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
