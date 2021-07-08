@@ -164,7 +164,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       25%
     </div>
@@ -201,7 +201,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       25%
     </div>
@@ -241,7 +241,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       33%
     </div>
@@ -278,7 +278,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       33%
     </div>
@@ -318,7 +318,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       50%
     </div>
@@ -355,7 +355,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       50%
     </div>
@@ -395,7 +395,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       66%
     </div>
@@ -432,7 +432,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       66%
     </div>
@@ -472,7 +472,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       75%
     </div>
@@ -509,7 +509,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       75%
     </div>
@@ -549,7 +549,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       complete
     </div>
@@ -586,7 +586,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
   >
     <div
       aria-live="polite"
-      data-css-6wu9td=""
+      className="psds-screenreader-only"
     >
       complete
     </div>
