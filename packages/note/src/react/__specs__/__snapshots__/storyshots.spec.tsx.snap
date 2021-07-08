@@ -55,7 +55,7 @@ exports[`Storyshots Components/Note Actions Visible On Hover 1`] = `
             title="More"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -159,7 +159,7 @@ exports[`Storyshots Components/Note Actions With Long Heading 1`] = `
             title="Bookmark"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -177,7 +177,7 @@ exports[`Storyshots Components/Note Actions With Long Heading 1`] = `
             title="More"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -275,7 +275,7 @@ exports[`Storyshots Components/Note Actions With No Author 1`] = `
             title="Bookmark"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -293,7 +293,7 @@ exports[`Storyshots Components/Note Actions With No Author 1`] = `
             title="More"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -373,7 +373,7 @@ exports[`Storyshots Components/Note Actions With No Author Long Meta 1`] = `
             title="Bookmark"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -391,7 +391,7 @@ exports[`Storyshots Components/Note Actions With No Author Long Meta 1`] = `
             title="More"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -440,7 +440,7 @@ exports[`Storyshots Components/Note Actions With No Meta 1`] = `
             title="Bookmark"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -458,7 +458,7 @@ exports[`Storyshots Components/Note Actions With No Meta 1`] = `
             title="More"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -1095,7 +1095,7 @@ exports[`Storyshots Components/Note Single Action 1`] = `
             title="More"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -1199,7 +1199,7 @@ exports[`Storyshots Components/Note Three Actions 1`] = `
             title="Bookmark"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -1217,7 +1217,7 @@ exports[`Storyshots Components/Note Three Actions 1`] = `
             title="Analytics"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -1235,7 +1235,7 @@ exports[`Storyshots Components/Note Three Actions 1`] = `
             title="More"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -1339,7 +1339,7 @@ exports[`Storyshots Components/Note Two Actions 1`] = `
             title="Bookmark"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -1357,7 +1357,7 @@ exports[`Storyshots Components/Note Two Actions 1`] = `
             title="More"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
@@ -1462,7 +1462,7 @@ exports[`Storyshots Components/Note With Action Menu 1`] = `
             title="More"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="placeholder icon"
