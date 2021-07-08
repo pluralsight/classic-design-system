@@ -1,5 +1,4 @@
-.psds-scrollable__outer,
-null.psds-scrollable__outer {
+.psds-scrollable__outer {
   display: block;
 }
 .psds-scrollable__outer--screen {

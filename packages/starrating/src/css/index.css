@@ -30,10 +30,10 @@
 .psds-starrating__star--active {
   color: var(--ps-colors-yellow-6);
 }
-.psds-starrating__star--bright.psds-theme--dark {
+.psds-starrating__star--bright-theme--dark {
   color: var(--ps-colors-text-icon-low-on-dark);
 }
-.psds-starrating__star--bright.psds-theme--light {
+.psds-starrating__star--bright-theme--light {
   color: var(--ps-colors-text-icon-low-on-light);
 }
 .psds-starrating__star--interactive {

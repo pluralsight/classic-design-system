@@ -1,9 +1,9 @@
 import {
   canUseDOM,
+  classNames,
   combineFns,
   shallowCompare,
-  useResizeObserver,
-  classNames
+  useResizeObserver
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 

@@ -97,8 +97,7 @@ const Star: React.FC<StarProp> & StarStatics = ({
       className={classNames(
         'psds-starrating__star',
         `psds-starrating__star--theme-${themeName}`,
-        `psds-theme--${themeName}`,
-        bright && `psds-starrating__star--bright`,
+        bright && `psds-starrating__star--bright-${themeName}`,
         active && 'psds-starrating__star--active',
         interactive && 'psds-starrating__star--interactive'
       )}

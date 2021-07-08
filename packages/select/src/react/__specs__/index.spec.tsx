@@ -34,7 +34,7 @@ describe('Select', () => {
     expect(ref).not.toBeNull()
   })
 
-  it('composes className for (Select/Select.Button', () => {
+  it('composes className for Select/Select.Button', () => {
     // Always forwards to Select.Button so this test for that component to
     const { container } = render(<Select className="compose-classname" />)
 
