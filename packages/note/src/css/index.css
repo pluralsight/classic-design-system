@@ -75,10 +75,10 @@
   max-width: 100%;
   min-width: 0;
 }
-.psds-note__contents :first-child {
+.psds-note__contents:first-child {
   margin-top: 0;
 }
-.psds-note__contents :last-child {
+.psds-note__contents:last-child {
   margin-bottom: 0;
 }
 .psds-note__contents.psds-theme--dark {
