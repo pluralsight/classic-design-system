@@ -48,10 +48,10 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -88,10 +88,10 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -623,10 +623,10 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -663,10 +663,10 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -1204,10 +1204,10 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -1244,10 +1244,10 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -1782,10 +1782,10 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -1822,10 +1822,10 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -2399,10 +2399,10 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -2439,10 +2439,10 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -2974,10 +2974,10 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -3014,10 +3014,10 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
@@ -3550,10 +3550,10 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Hydrogen
                   </span>
@@ -3590,10 +3590,10 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  data-css-8a12hv=""
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
-                    data-css-13bnfv4=""
+                    className="psds-tag__label psds-tag__label--icon"
                   >
                     Helium
                   </span>
