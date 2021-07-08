@@ -44,8 +44,7 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
       >
         Selected
         <div
-          className="psds-menu__item-icon"
-          data-css-7dab2f=""
+          className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-menu__item-icon"
           style={
             Object {
               "marginLeft": "auto",
@@ -895,8 +894,7 @@ exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
           </span>
         </div>
         <div
-          className="psds-menu__item-icon"
-          data-css-7dab2f=""
+          className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-menu__item-icon"
           style={
             Object {
               "marginLeft": "auto",
