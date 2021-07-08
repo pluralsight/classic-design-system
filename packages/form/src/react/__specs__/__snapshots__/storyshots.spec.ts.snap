@@ -784,7 +784,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          className="psds-switch psds-switch--labelAlign-right"
+          className="psds-switch psds-switch--label-align-right"
           style={
             Object {
               "maxWidth": "none",
@@ -816,7 +816,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             type="checkbox"
           />
           <span
-            className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
+            className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
           >
             toggle
           </span>

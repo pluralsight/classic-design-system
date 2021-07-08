@@ -50,12 +50,13 @@ const Tag = React.forwardRef<TagElement, TagProps>((props, ref) => {
         {...(isPressed && !isAnchor && { 'aria-pressed': true })}
         {...(Boolean(props.onClick) && { role: 'button', tabIndex: 0 })}
         className={classNames(
+          className,
           label,
           `psds-theme--${themeName}`,
           clickable && `${label}--clickable`,
           `${label}--size-${size}`,
           icon && `${label}--icon`,
-          isPressed && `${label}--isPressed`
+          isPressed && `${label}--is-pressed`
         )}
         ref={ref as any}
       >

@@ -96,7 +96,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
         className={classNames(
           className,
           'psds-switch',
-          `psds-switch--labelAlign-${labelAlign}`,
+          `psds-switch--label-align-${labelAlign}`,
           disabled && 'psds-switch--disabled'
         )}
         style={style}
@@ -144,7 +144,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
               'psds-switch__label',
               `psds-switch__label--size-${size}`,
 
-              `psds-switch__label--labelAlign-${labelAlign}`,
+              `psds-switch__label--label-align-${labelAlign}`,
               `psds-theme--${themeName}`
             )}
           >

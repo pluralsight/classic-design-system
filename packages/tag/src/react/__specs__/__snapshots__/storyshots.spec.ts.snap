@@ -40,7 +40,7 @@ exports[`Storyshots Components/Tag Class Name Override 1`] = `
   data-css-1lu7sfl=""
 >
   <div
-    className="psds-tag psds-theme--dark psds-tag--size-medium"
+    className="css-1wsp713 psds-tag psds-theme--dark psds-tag--size-medium"
   >
     <span
       className="psds-tag__label psds-theme--dark"
@@ -179,7 +179,7 @@ exports[`Storyshots Components/Tag Pressed 1`] = `
 >
   <div
     aria-pressed={true}
-    className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--isPressed"
+    className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--is-pressed"
   >
     <span
       className="psds-tag__label psds-theme--dark"
@@ -196,7 +196,7 @@ exports[`Storyshots Components/Tag Pressed Button 1`] = `
 >
   <div
     aria-pressed={true}
-    className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium psds-tag--isPressed"
+    className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium psds-tag--is-pressed"
     onClick={[Function]}
     role="button"
     tabIndex={0}
@@ -215,7 +215,7 @@ exports[`Storyshots Components/Tag Pressed Link 1`] = `
   data-css-1lu7sfl=""
 >
   <a
-    className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium psds-tag--isPressed"
+    className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium psds-tag--is-pressed"
     href="#"
   >
     <span
@@ -233,7 +233,7 @@ exports[`Storyshots Components/Tag Pressed With Icon 1`] = `
 >
   <div
     aria-pressed={true}
-    className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--icon psds-tag--isPressed"
+    className="psds-tag psds-theme--dark psds-tag--size-medium psds-tag--icon psds-tag--is-pressed"
   >
     <span
       className="psds-tag__label psds-theme--dark psds-tag__label--icon"

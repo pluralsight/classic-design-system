@@ -1,5 +1,4 @@
-.psds-table__container,
-null.psds-table__container {
+.psds-table__container {
   max-height: 100%;
   max-width: 100%;
   margin-bottom: var(--ps-layout-spacing-medium);
@@ -93,8 +92,7 @@ null.psds-table__container {
 .psds-table__header--sortable.psds-theme--light:hover {
   color: var(--ps-colors-text-icon-high-on-dark);
 }
-.psds-table__header__sort-icon.psds-table__header__sort-icon,
-null.psds-table__header__sort-icon.psds-table__header__sort-icon {
+.psds-table__header__sort-icon.psds-table__header__sort-icon {
   display: inline-block;
   vertical-align: inherit;
 }

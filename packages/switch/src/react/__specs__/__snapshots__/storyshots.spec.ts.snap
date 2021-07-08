@@ -5,7 +5,7 @@ exports[`Storyshots Components/Switch Basic 1`] = `
   data-css-yto836=""
 >
   <label
-    className="psds-switch psds-switch--labelAlign-right"
+    className="psds-switch psds-switch--label-align-right"
   >
     <div
       data-css-1lu7sfl=""
@@ -40,7 +40,7 @@ exports[`Storyshots Components/Switch Checked 1`] = `
   data-css-yto836=""
 >
   <label
-    className="psds-switch psds-switch--labelAlign-right"
+    className="psds-switch psds-switch--label-align-right"
   >
     <div
       data-css-1lu7sfl=""
@@ -75,7 +75,7 @@ exports[`Storyshots Components/Switch Checked Error 1`] = `
   data-css-yto836=""
 >
   <label
-    className="psds-switch psds-switch--labelAlign-right"
+    className="psds-switch psds-switch--label-align-right"
   >
     <div
       data-css-mmyfiy=""
@@ -113,7 +113,7 @@ exports[`Storyshots Components/Switch Colors 1`] = `
     data-css-1gfhbu8=""
   >
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -140,13 +140,13 @@ exports[`Storyshots Components/Switch Colors 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
       >
         blue
       </span>
     </label>
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -173,13 +173,13 @@ exports[`Storyshots Components/Switch Colors 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
       >
         green
       </span>
     </label>
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -206,7 +206,7 @@ exports[`Storyshots Components/Switch Colors 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
       >
         orange
       </span>
@@ -220,7 +220,7 @@ exports[`Storyshots Components/Switch Disabled 1`] = `
   data-css-yto836=""
 >
   <label
-    className="psds-switch psds-switch--labelAlign-right psds-switch--disabled"
+    className="psds-switch psds-switch--label-align-right psds-switch--disabled"
   >
     <div
       data-css-1lu7sfl=""
@@ -254,7 +254,7 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
   data-css-yto836=""
 >
   <label
-    className="psds-switch psds-switch--labelAlign-right psds-switch--disabled"
+    className="psds-switch psds-switch--label-align-right psds-switch--disabled"
   >
     <div
       data-css-mmyfiy=""
@@ -288,7 +288,7 @@ exports[`Storyshots Components/Switch Error 1`] = `
   data-css-yto836=""
 >
   <label
-    className="psds-switch psds-switch--labelAlign-right"
+    className="psds-switch psds-switch--label-align-right"
   >
     <div
       data-css-mmyfiy=""
@@ -326,7 +326,7 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
     data-css-1gfhbu8=""
   >
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -352,13 +352,13 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
       >
         blue
       </span>
     </label>
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -384,13 +384,13 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
       >
         green
       </span>
     </label>
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -416,7 +416,7 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
       >
         orange
       </span>
@@ -433,7 +433,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
     data-css-1gfhbu8=""
   >
     <label
-      className="psds-switch psds-switch--labelAlign-left"
+      className="psds-switch psds-switch--label-align-left"
     >
       <div
         data-css-1lu7sfl=""
@@ -460,7 +460,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-small psds-switch__label--labelAlign-left psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-small psds-switch__label--label-align-left psds-theme--dark"
       >
         small
         -
@@ -468,7 +468,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       </span>
     </label>
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -495,7 +495,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-small psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-small psds-switch__label--label-align-right psds-theme--dark"
       >
         small
         -
@@ -503,7 +503,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       </span>
     </label>
     <label
-      className="psds-switch psds-switch--labelAlign-left"
+      className="psds-switch psds-switch--label-align-left"
     >
       <div
         data-css-1lu7sfl=""
@@ -530,7 +530,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-left psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-left psds-theme--dark"
       >
         large
         -
@@ -538,7 +538,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
       </span>
     </label>
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -565,7 +565,7 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
       >
         large
         -
@@ -581,7 +581,7 @@ exports[`Storyshots Components/Switch Named 1`] = `
   data-css-yto836=""
 >
   <label
-    className="psds-switch psds-switch--labelAlign-right"
+    className="psds-switch psds-switch--label-align-right"
   >
     <div
       data-css-1lu7sfl=""
@@ -620,7 +620,7 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
     data-css-1gfhbu8=""
   >
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -647,13 +647,13 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-small psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-small psds-switch__label--label-align-right psds-theme--dark"
       >
         small
       </span>
     </label>
     <label
-      className="psds-switch psds-switch--labelAlign-right"
+      className="psds-switch psds-switch--label-align-right"
     >
       <div
         data-css-1lu7sfl=""
@@ -680,7 +680,7 @@ exports[`Storyshots Components/Switch Sizes 1`] = `
         type="checkbox"
       />
       <span
-        className="psds-switch__label psds-switch__label--size-large psds-switch__label--labelAlign-right psds-theme--dark"
+        className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
       >
         large
       </span>

@@ -48,7 +48,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -88,7 +88,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -623,7 +623,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -663,7 +663,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -1204,7 +1204,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -1244,7 +1244,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -1782,7 +1782,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -1822,7 +1822,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -2399,7 +2399,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -2439,7 +2439,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -2974,7 +2974,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -3014,7 +3014,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -3550,7 +3550,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"
@@ -3590,7 +3590,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--isPressed"
+                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
                 >
                   <span
                     className="psds-tag__label psds-theme--light psds-tag__label--icon"

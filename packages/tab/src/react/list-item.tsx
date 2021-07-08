@@ -29,13 +29,14 @@ type ListItemComponent = React.ForwardRefExoticComponent<ListItemProps> & {
 
 const ListItem = React.forwardRef<ListItemElement, ListItemProps>(
   (props, ref) => {
-    const { active, children, ...rest } = props
+    const { active, children, className, ...rest } = props
     const themeName = useTheme()
     return React.createElement(
       'href' in props ? 'a' : 'button',
       {
         ...rest,
         className: classNames(
+          className,
           'psds-tab__list-item',
           `psds-theme--${themeName}`,
           active && `psds-tab__list-item--active`

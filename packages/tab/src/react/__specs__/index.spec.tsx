@@ -17,7 +17,7 @@ describe('Tab', () => {
     expect(getByTestId('undertest')).toBeInTheDocument()
   })
 
-  it('forward className', () => {
+  it('forwards className', () => {
     const { container } = render(
       <Tab.Panel className="compose-classname" labelledBy="" />
     )
@@ -39,7 +39,7 @@ describe('Tab', () => {
     )
 
     expect(container.firstChild).toHaveClass(
-      'psds-tab__list-item psds-theme--dark'
+      'psds-tab__list-item compose-classname'
     )
   })
 

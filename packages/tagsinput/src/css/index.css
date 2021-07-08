@@ -1,5 +1,4 @@
-.psds-tagsinput,
-null.psds-tagsinput {
+.psds-tagsinput {
   min-height: 40px;
 }
 .psds-tagsinput--disabled {
@@ -7,27 +6,14 @@ null.psds-tagsinput {
 }
 .psds-tagsinput__prefix {
   align-items: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 .psds-tagsinput__suffix {
   align-items: center;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
 }
 .psds-tagsinput__pills-container {
   flex-grow: 1;
-  -webkit-flex-grow: 1;
 }
 .psds-tagsinput__pills {
   align-items: center;

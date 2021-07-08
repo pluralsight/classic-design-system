@@ -14,10 +14,10 @@
   opacity: 0.4;
   cursor: not-allowed;
 }
-.psds-switch--labelAlign-right {
+.psds-switch--label-align-right {
   flex-direction: row;
 }
-.psds-switch--labelAlign-left {
+.psds-switch--label-align-left {
   flex-direction: row-reverse;
 }
 .psds-switch__track {
@@ -80,16 +80,16 @@
 .psds-switch__label--size-large {
   font-size: var(--ps-type-font-size-200);
 }
-.psds-switch__label--size-small.psds-switch__label--labelAlign-left {
+.psds-switch__label--size-small.psds-switch__label--label-align-left {
   margin-right: var(--ps-layout-spacing-xsmall);
 }
-.psds-switch__label--size-large.psds-switch__label--labelAlign-left {
+.psds-switch__label--size-large.psds-switch__label--label-align-left {
   margin-right: var(--ps-layout-spacing-medium);
 }
-.psds-switch__label--size-small.psds-switch__label--labelAlign-right {
+.psds-switch__label--size-small.psds-switch__label--label-align-right {
   margin-left: var(--ps-layout-spacing-xsmall);
 }
-.psds-switch__label--size-large.psds-switch__label--labelAlign-right {
+.psds-switch__label--size-large.psds-switch__label--label-align-right {
   margin-left: var(--ps-layout-spacing-medium);
 }
 .psds-switch__label.psds-theme--light {

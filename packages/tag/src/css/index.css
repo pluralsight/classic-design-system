@@ -42,12 +42,12 @@
 .psds-tag--icon {
   padding-right: var(--ps-layout-spacing-xxsmall);
 }
-.psds-tag--isPressed {
+.psds-tag--is-pressed {
   color: var(--ps-colors-text-icon-high-on-dark);
   background-color: var(--ps-colors-primary-action-background);
 }
-.psds-tag--isPressed.psds-tag--clickable:focus,
-.psds-tag--isPressed.psds-tag--clickable:hover {
+.psds-tag--is-pressed.psds-tag--clickable:focus,
+.psds-tag--is-pressed.psds-tag--clickable:hover {
   background-color: var(--ps-colors-blue-5);
   color: var(--ps-colors-text-icon-high-on-dark);
 }
