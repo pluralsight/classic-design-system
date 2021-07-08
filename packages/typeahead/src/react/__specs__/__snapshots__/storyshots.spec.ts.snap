@@ -20,8 +20,8 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         aria-expanded={false}
@@ -57,7 +57,7 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -1332,8 +1332,8 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         aria-expanded={false}
@@ -1369,7 +1369,7 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -2644,8 +2644,8 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         aria-expanded={false}
@@ -2681,7 +2681,7 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -3955,8 +3955,8 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
       id="downshift-7-label"
     />
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         aria-expanded={false}
@@ -3993,7 +3993,7 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -5266,8 +5266,8 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         aria-expanded={false}
@@ -5304,7 +5304,7 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -6579,8 +6579,8 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8ff2sc=""
     >
       <div
         aria-expanded={false}
@@ -6616,7 +6616,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -6634,7 +6634,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
           data-css-qrpvsu=""
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
           >
             <svg
               aria-label="warning icon"
@@ -7910,8 +7910,8 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         aria-expanded={false}
@@ -7924,7 +7924,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
           data-css-16bnq5b=""
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
           >
             <svg
               aria-label="placeholder icon"
@@ -7964,7 +7964,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -9238,8 +9238,8 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
       id="downshift-3-label"
     />
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         aria-expanded={false}
@@ -9276,7 +9276,7 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
@@ -10549,8 +10549,8 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
       The label
     </label>
     <div
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       data-css-63oe3q=""
-      data-css-8qmpxt=""
     >
       <div
         aria-expanded={false}
@@ -10586,7 +10586,7 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
             >
               <svg
                 aria-label="caret down icon"
