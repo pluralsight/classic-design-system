@@ -6,12 +6,12 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
 >
   <label>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       Rate
     </span>
     <input
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-input"
       max={5}
       min={1}
       onChange={[Function]}
@@ -24,7 +24,7 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
   <button
     appearance="full"
     aria-label="Rate 1 Star"
-    data-css-cpere9=""
+    className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
     index={0}
     onBlur={[Function]}
     onClick={[Function]}
@@ -50,7 +50,7 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
   <button
     appearance="full"
     aria-label="Rate 2 Stars"
-    data-css-cpere9=""
+    className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
     index={1}
     onBlur={[Function]}
     onClick={[Function]}
@@ -76,7 +76,7 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
   <button
     appearance="half"
     aria-label="Rate 3 Stars"
-    data-css-cpere9=""
+    className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
     index={2}
     onBlur={[Function]}
     onClick={[Function]}
@@ -113,7 +113,7 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
           </mask>
         </defs>
         <use
-          data-css-1e3e0zp=""
+          className="psds-starrating__star__half__secondary--theme-dark"
           xlinkHref="#psds-starrating__half-star__star"
         />
         <use
@@ -126,7 +126,7 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
   <button
     appearance="full"
     aria-label="Rate 4 Stars"
-    data-css-kgei9n=""
+    className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
     index={3}
     onBlur={[Function]}
     onClick={[Function]}
@@ -152,7 +152,7 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
   <button
     appearance="full"
     aria-label="Rate 5 Stars"
-    data-css-kgei9n=""
+    className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
     index={4}
     onBlur={[Function]}
     onClick={[Function]}
@@ -176,7 +176,7 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
     </div>
   </button>
   <span
-    data-css-1wa86b5=""
+    className="psds-starrating__screen-reader-text"
   >
     This is rated 
     2.5
@@ -193,12 +193,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -211,7 +211,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -237,7 +237,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -263,7 +263,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -289,7 +289,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -315,7 +315,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -339,7 +339,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       0
@@ -350,12 +350,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -368,7 +368,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="half"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -405,7 +405,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -418,7 +418,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -444,7 +444,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -470,7 +470,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -496,7 +496,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -520,7 +520,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       0.5
@@ -531,12 +531,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -549,7 +549,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -575,7 +575,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -601,7 +601,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -627,7 +627,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -653,7 +653,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -677,7 +677,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       1
@@ -688,12 +688,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -706,7 +706,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -732,7 +732,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="half"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -769,7 +769,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -782,7 +782,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -808,7 +808,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -834,7 +834,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -858,7 +858,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       1.5
@@ -869,12 +869,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -887,7 +887,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -913,7 +913,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -939,7 +939,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -965,7 +965,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -991,7 +991,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1015,7 +1015,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       2
@@ -1026,12 +1026,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -1044,7 +1044,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1070,7 +1070,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1096,7 +1096,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="half"
       aria-label="Rate 3 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1133,7 +1133,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -1146,7 +1146,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1172,7 +1172,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1196,7 +1196,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       2.5
@@ -1207,12 +1207,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -1225,7 +1225,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1251,7 +1251,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1277,7 +1277,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1303,7 +1303,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1329,7 +1329,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1353,7 +1353,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       3
@@ -1364,12 +1364,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -1382,7 +1382,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1408,7 +1408,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1434,7 +1434,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1460,7 +1460,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="half"
       aria-label="Rate 4 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1497,7 +1497,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -1510,7 +1510,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1534,7 +1534,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       3.5
@@ -1545,12 +1545,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -1563,7 +1563,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1589,7 +1589,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1615,7 +1615,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1641,7 +1641,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1667,7 +1667,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1691,7 +1691,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       4
@@ -1702,12 +1702,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -1720,7 +1720,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1746,7 +1746,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1772,7 +1772,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1798,7 +1798,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1824,7 +1824,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="half"
       aria-label="Rate 5 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1861,7 +1861,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -1872,7 +1872,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       4.5
@@ -1883,12 +1883,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -1901,7 +1901,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1927,7 +1927,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1953,7 +1953,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -1979,7 +1979,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2005,7 +2005,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2029,7 +2029,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       5
@@ -2040,12 +2040,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -2058,7 +2058,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 1 Star"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2084,7 +2084,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 2 Stars"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2110,7 +2110,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 3 Stars"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2136,7 +2136,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 4 Stars"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2162,7 +2162,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 5 Stars"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2186,7 +2186,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
     </span>
@@ -2196,12 +2196,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -2214,7 +2214,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 1 Star"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2240,7 +2240,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 2 Stars"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2266,7 +2266,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 3 Stars"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2292,7 +2292,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 4 Stars"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2318,7 +2318,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <button
       appearance="empty"
       aria-label="Rate 5 Stars"
-      data-css-rlg7p5=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--bright psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2342,7 +2342,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
     </span>
@@ -2360,7 +2360,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2386,7 +2386,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2412,7 +2412,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2438,7 +2438,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2464,7 +2464,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2488,7 +2488,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       0
@@ -2500,7 +2500,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="half"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2537,7 +2537,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -2550,7 +2550,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2576,7 +2576,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2602,7 +2602,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2628,7 +2628,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2652,7 +2652,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       0.5
@@ -2664,7 +2664,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2690,7 +2690,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2716,7 +2716,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2742,7 +2742,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2768,7 +2768,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2792,7 +2792,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       1
@@ -2804,7 +2804,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2830,7 +2830,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="half"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2867,7 +2867,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -2880,7 +2880,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2906,7 +2906,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2932,7 +2932,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2956,7 +2956,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       1.5
@@ -2968,7 +2968,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -2994,7 +2994,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3020,7 +3020,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3046,7 +3046,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3072,7 +3072,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3096,7 +3096,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       2
@@ -3108,7 +3108,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3134,7 +3134,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3160,7 +3160,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="half"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3197,7 +3197,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -3210,7 +3210,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3236,7 +3236,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3260,7 +3260,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       2.5
@@ -3272,7 +3272,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3298,7 +3298,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3324,7 +3324,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3350,7 +3350,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3376,7 +3376,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3400,7 +3400,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       3
@@ -3412,7 +3412,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3438,7 +3438,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3464,7 +3464,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3490,7 +3490,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="half"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3527,7 +3527,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -3540,7 +3540,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3564,7 +3564,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       3.5
@@ -3576,7 +3576,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3602,7 +3602,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3628,7 +3628,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3654,7 +3654,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3680,7 +3680,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3704,7 +3704,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       4
@@ -3716,7 +3716,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3742,7 +3742,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3768,7 +3768,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3794,7 +3794,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3820,7 +3820,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="half"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3857,7 +3857,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -3868,7 +3868,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       4.5
@@ -3880,7 +3880,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3906,7 +3906,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3932,7 +3932,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3958,7 +3958,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -3984,7 +3984,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-k4u9v3=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4008,7 +4008,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       5
@@ -4020,7 +4020,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4046,7 +4046,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4072,7 +4072,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4098,7 +4098,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4124,7 +4124,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4148,7 +4148,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
     </span>
@@ -4159,7 +4159,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4185,7 +4185,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4211,7 +4211,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4237,7 +4237,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4263,7 +4263,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       appearance="full"
       aria-hidden={true}
-      data-css-11f15fs=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4287,7 +4287,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       </div>
     </span>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
     </span>
@@ -4304,12 +4304,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -4322,7 +4322,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4348,7 +4348,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="half"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4385,7 +4385,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -4398,7 +4398,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4424,7 +4424,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4450,7 +4450,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4474,7 +4474,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       1.7
@@ -4485,12 +4485,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -4503,7 +4503,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4529,7 +4529,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4555,7 +4555,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4581,7 +4581,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4607,7 +4607,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4631,7 +4631,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       2
@@ -4642,12 +4642,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -4660,7 +4660,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4686,7 +4686,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4712,7 +4712,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4738,7 +4738,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4764,7 +4764,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4788,7 +4788,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       2.2
@@ -4799,12 +4799,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -4817,7 +4817,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4843,7 +4843,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4869,7 +4869,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="half"
       aria-label="Rate 3 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4906,7 +4906,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -4919,7 +4919,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4945,7 +4945,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -4969,7 +4969,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       2.4
@@ -4980,12 +4980,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -4998,7 +4998,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5024,7 +5024,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5050,7 +5050,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="half"
       aria-label="Rate 3 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5087,7 +5087,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
             </mask>
           </defs>
           <use
-            data-css-1e3e0zp=""
+            className="psds-starrating__star__half__secondary--theme-dark"
             xlinkHref="#psds-starrating__half-star__star"
           />
           <use
@@ -5100,7 +5100,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5126,7 +5126,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5150,7 +5150,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       2.6
@@ -5161,12 +5161,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
   >
     <label>
       <span
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-text"
       >
         Rate
       </span>
       <input
-        data-css-1wa86b5=""
+        className="psds-starrating__screen-reader-input"
         max={5}
         min={1}
         onChange={[Function]}
@@ -5179,7 +5179,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 1 Star"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={0}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5205,7 +5205,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 2 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={1}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5231,7 +5231,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 3 Stars"
-      data-css-cpere9=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--active psds-starrating__star--interactive"
       index={2}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5257,7 +5257,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 4 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={3}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5283,7 +5283,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <button
       appearance="full"
       aria-label="Rate 5 Stars"
-      data-css-kgei9n=""
+      className="psds-starrating__star psds-starrating__star--theme-dark psds-theme--dark psds-starrating__star--interactive"
       index={4}
       onBlur={[Function]}
       onClick={[Function]}
@@ -5307,7 +5307,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
       </div>
     </button>
     <span
-      data-css-1wa86b5=""
+      className="psds-starrating__screen-reader-text"
     >
       This is rated 
       2.78
