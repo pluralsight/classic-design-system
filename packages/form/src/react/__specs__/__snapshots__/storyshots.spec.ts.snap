@@ -17,10 +17,10 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
     }
   >
     <div
-      data-css-63oe3q=""
+      className="psds-form-vertical-layout"
     >
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
           style={
@@ -34,13 +34,19 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
         </div>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
-          data-css-1cqgl9p=""
+          className="psds-form-button-row psds-form-button-row--align-left"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         >
           <div
-            data-css-7d5932=""
+            className="psds-form-button-row__button"
           >
             <button
               className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
@@ -55,7 +61,7 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             </button>
           </div>
           <div
-            data-css-7d5932=""
+            className="psds-form-button-row__button"
           >
             <button
               className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
@@ -73,10 +79,10 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
       </div>
     </div>
     <div
-      data-css-63oe3q=""
+      className="psds-form-vertical-layout"
     >
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
           style={
@@ -90,13 +96,19 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
         </div>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
-          data-css-5osg3l=""
+          className="psds-form-button-row psds-form-button-row--align-right"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         >
           <div
-            data-css-7d5932=""
+            className="psds-form-button-row__button"
           >
             <button
               className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
@@ -111,7 +123,7 @@ exports[`Storyshots Components/Form Button Row Aligns 1`] = `
             </button>
           </div>
           <div
-            data-css-7d5932=""
+            className="psds-form-button-row__button"
           >
             <button
               className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
@@ -149,16 +161,22 @@ exports[`Storyshots Components/Form Button Row Single Button 1`] = `
     }
   >
     <div
-      data-css-63oe3q=""
+      className="psds-form-vertical-layout"
     >
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
-          data-css-1cqgl9p=""
+          className="psds-form-button-row psds-form-button-row--align-left"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         >
           <div
-            data-css-7d5932=""
+            className="psds-form-button-row__button"
           >
             <button
               className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
@@ -196,10 +214,10 @@ exports[`Storyshots Components/Form Null Children 1`] = `
     }
   >
     <div
-      data-css-63oe3q=""
+      className="psds-form-vertical-layout"
     >
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <h2
           className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -214,7 +232,7 @@ exports[`Storyshots Components/Form Null Children 1`] = `
         </h2>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <label
           className="psds-text-input"
@@ -234,7 +252,7 @@ exports[`Storyshots Components/Form Null Children 1`] = `
             className="psds-text-input__field-container"
           >
             <div
-              data-css-ctre2o=""
+              data-css-1l13box=""
             >
               <div
                 className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -277,10 +295,10 @@ exports[`Storyshots Components/Form Sample 1`] = `
     }
   >
     <div
-      data-css-63oe3q=""
+      className="psds-form-vertical-layout"
     >
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <h2
           className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -295,7 +313,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </h2>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <label
           className="psds-text-input"
@@ -315,7 +333,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-text-input__field-container"
           >
             <div
-              data-css-ctre2o=""
+              data-css-1l13box=""
             >
               <div
                 className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -337,7 +355,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </label>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <label
           className="psds-text-input"
@@ -357,7 +375,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-text-input__field-container"
           >
             <div
-              data-css-ctre2o=""
+              data-css-1l13box=""
             >
               <div
                 className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -384,7 +402,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </label>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <label
           className="psds-text-input"
@@ -404,7 +422,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-text-input__field-container"
           >
             <div
-              data-css-in6gqi=""
+              data-css-1c2eins=""
             >
               <div
                 className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--error"
@@ -450,7 +468,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </label>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
           className="psds-dropdown"
@@ -473,7 +491,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
           >
             <div
               className="psds-dropdown__field-halo"
-              data-css-ctre2o=""
+              data-css-1l13box=""
             >
               <div
                 className="psds-dropdown__field-aligner"
@@ -527,7 +545,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </div>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
           style={
@@ -538,14 +556,14 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <div
-            data-css-1lu7sfl=""
+            data-css-ckykx7=""
           >
             <a
-              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
+              data-css-1aye8gw=""
               href="http://google.com"
             >
               <span
-                className="psds-tag__label"
+                data-css-1997kh1=""
               >
                 Foo
               </span>
@@ -559,14 +577,14 @@ exports[`Storyshots Components/Form Sample 1`] = `
             }
           />
           <div
-            data-css-1lu7sfl=""
+            data-css-ckykx7=""
           >
             <a
-              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
+              data-css-1aye8gw=""
               href="http://google.com"
             >
               <span
-                className="psds-tag__label"
+                data-css-1997kh1=""
               >
                 Bar
               </span>
@@ -580,14 +598,14 @@ exports[`Storyshots Components/Form Sample 1`] = `
             }
           />
           <div
-            data-css-1lu7sfl=""
+            data-css-ckykx7=""
           >
             <a
-              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
+              data-css-1aye8gw=""
               href="http://google.com"
             >
               <span
-                className="psds-tag__label"
+                data-css-1997kh1=""
               >
                 Baz
               </span>
@@ -596,7 +614,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </div>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
           style={
@@ -617,7 +635,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               className="psds-text-input__field-container"
             >
               <div
-                data-css-ctre2o=""
+                data-css-1l13box=""
               >
                 <div
                   className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -636,7 +654,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </div>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <label
           className="psds-checkbox"
@@ -644,7 +662,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
           onKeyDown={[Function]}
         >
           <div
-            data-css-1ij5lym=""
+            data-css-9ndspy=""
           >
             <input
               checked={true}
@@ -684,14 +702,20 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </label>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
-          data-css-141usbw=""
+          className="psds-form-divider psds-theme--dark"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         />
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
           data-css-1a26704=""
@@ -713,7 +737,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 data-css-1lxv0yd=""
               >
                 <div
-                  data-css-1lu7sfl=""
+                  data-css-ckykx7=""
                   data-css-iwspcj=""
                 >
                   <div
@@ -745,7 +769,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 data-css-1lxv0yd=""
               >
                 <div
-                  data-css-1lu7sfl=""
+                  data-css-ckykx7=""
                   data-css-iwspcj=""
                 >
                   <div
@@ -774,17 +798,23 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </div>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
-          data-css-141usbw=""
+          className="psds-form-divider psds-theme--dark"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         />
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <label
-          className="psds-switch psds-switch--label-align-right"
+          data-css-nq9iqf=""
           style={
             Object {
               "maxWidth": "none",
@@ -793,19 +823,19 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <div
-            data-css-1lu7sfl=""
+            data-css-ckykx7=""
           >
             <div
-              className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
+              data-css-19bj9q0=""
             >
               <div
-                className="psds-switch__thumb psds-switch__thumb--size-large"
+                data-css-1o90whm=""
               />
             </div>
           </div>
           <input
             checked={false}
-            className="psds-switch__checkbox"
+            data-css-6wu9td=""
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -816,21 +846,27 @@ exports[`Storyshots Components/Form Sample 1`] = `
             type="checkbox"
           />
           <span
-            className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
+            data-css-1oms9gl=""
           >
             toggle
           </span>
         </label>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
-          data-css-141usbw=""
+          className="psds-form-divider psds-theme--dark"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         />
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <label
           className="psds-text-area"
@@ -850,7 +886,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-text-area__field-container"
           >
             <div
-              data-css-ctre2o=""
+              data-css-1l13box=""
             >
               <textarea
                 className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
@@ -867,13 +903,19 @@ exports[`Storyshots Components/Form Sample 1`] = `
         </label>
       </div>
       <div
-        data-css-4l6uky=""
+        className="psds-form-vertical-layout__child"
       >
         <div
-          data-css-1cqgl9p=""
+          className="psds-form-button-row psds-form-button-row--align-left"
+          style={
+            Object {
+              "maxWidth": "none",
+              "width": "100%",
+            }
+          }
         >
           <div
-            data-css-7d5932=""
+            className="psds-form-button-row__button"
           >
             <button
               className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
@@ -888,7 +930,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             </button>
           </div>
           <div
-            data-css-7d5932=""
+            className="psds-form-button-row__button"
           >
             <button
               className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--dark"
