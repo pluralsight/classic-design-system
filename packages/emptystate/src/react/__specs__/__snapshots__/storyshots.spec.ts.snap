@@ -397,10 +397,10 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
           data-css-1lu7sfl=""
         >
           <div
-            className="psds-tag psds-theme--dark psds-tag--size-medium"
+            data-css-q4lcrt=""
           >
             <span
-              className="psds-tag__label"
+              data-css-1997kh1=""
             >
               Asssessments
             </span>
@@ -419,10 +419,10 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
           data-css-1lu7sfl=""
         >
           <div
-            className="psds-tag psds-theme--dark psds-tag--size-medium"
+            data-css-q4lcrt=""
           >
             <span
-              className="psds-tag__label"
+              data-css-1997kh1=""
             >
               Guides
             </span>
@@ -441,10 +441,10 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
           data-css-1lu7sfl=""
         >
           <div
-            className="psds-tag psds-theme--dark psds-tag--size-medium"
+            data-css-q4lcrt=""
           >
             <span
-              className="psds-tag__label"
+              data-css-1997kh1=""
             >
               Interactive Courses
             </span>
@@ -463,10 +463,10 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
           data-css-1lu7sfl=""
         >
           <div
-            className="psds-tag psds-theme--dark psds-tag--size-medium"
+            data-css-q4lcrt=""
           >
             <span
-              className="psds-tag__label"
+              data-css-1997kh1=""
             >
               Paths
             </span>
@@ -485,10 +485,10 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
           data-css-1lu7sfl=""
         >
           <div
-            className="psds-tag psds-theme--dark psds-tag--size-medium"
+            data-css-q4lcrt=""
           >
             <span
-              className="psds-tag__label"
+              data-css-1997kh1=""
             >
               Projects
             </span>
@@ -507,10 +507,10 @@ exports[`Storyshots Components/EmptyState Actions With Tags 1`] = `
           data-css-1lu7sfl=""
         >
           <div
-            className="psds-tag psds-theme--dark psds-tag--size-medium"
+            data-css-q4lcrt=""
           >
             <span
-              className="psds-tag__label"
+              data-css-1997kh1=""
             >
               Video Courses
             </span>

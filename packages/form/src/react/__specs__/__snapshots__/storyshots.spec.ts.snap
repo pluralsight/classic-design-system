@@ -541,11 +541,11 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
+              data-css-1aye8gw=""
               href="http://google.com"
             >
               <span
-                className="psds-tag__label"
+                data-css-1997kh1=""
               >
                 Foo
               </span>
@@ -562,11 +562,11 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
+              data-css-1aye8gw=""
               href="http://google.com"
             >
               <span
-                className="psds-tag__label"
+                data-css-1997kh1=""
               >
                 Bar
               </span>
@@ -583,11 +583,11 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-1lu7sfl=""
           >
             <a
-              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
+              data-css-1aye8gw=""
               href="http://google.com"
             >
               <span
-                className="psds-tag__label"
+                data-css-1997kh1=""
               >
                 Baz
               </span>
@@ -784,7 +784,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <label
-          className="psds-switch psds-switch--label-align-right"
+          data-css-nq9iqf=""
           style={
             Object {
               "maxWidth": "none",
@@ -796,16 +796,16 @@ exports[`Storyshots Components/Form Sample 1`] = `
             data-css-1lu7sfl=""
           >
             <div
-              className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
+              data-css-19bj9q0=""
             >
               <div
-                className="psds-switch__thumb psds-switch__thumb--size-large"
+                data-css-1o90whm=""
               />
             </div>
           </div>
           <input
             checked={false}
-            className="psds-switch__checkbox"
+            data-css-6wu9td=""
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -816,7 +816,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             type="checkbox"
           />
           <span
-            className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
+            data-css-1oms9gl=""
           >
             toggle
           </span>
