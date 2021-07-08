@@ -3,7 +3,11 @@ import {
   names as themeNames,
   useTheme
 } from '@pluralsight/ps-design-system-theme'
-import { ValueOf, classNames } from '@pluralsight/ps-design-system-util'
+import {
+  ValueOf,
+  classNames,
+  dashify
+} from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import '../css/index.css'
@@ -38,8 +42,8 @@ const styles = {
   ) =>
     classNames(
       'psds-button',
-      `psds-button--layout-${layout.toLowerCase()}`,
-      `psds-button--size-${size}`,
+      `psds-button--layout-${dashify(layout)}`,
+      `psds-button--size-${dashify(size)}`,
       `psds-button--appearance-${appearance}`,
       `psds-theme--${themeName}`,
       disabled && 'psds-button--disabled',

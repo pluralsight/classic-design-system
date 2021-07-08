@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/ActionMenu Active Item 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -30,7 +30,7 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -58,7 +58,7 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -86,7 +86,7 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -113,7 +113,7 @@ exports[`Storyshots Components/ActionMenu Button Open 1`] = `
 
 exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -146,7 +146,7 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -179,7 +179,7 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -212,7 +212,7 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -222,13 +222,13 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
 
 exports[`Storyshots Components/ActionMenu Disabled All 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
 >
   <ul
-    className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+    className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
     onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
@@ -256,7 +256,7 @@ exports[`Storyshots Components/ActionMenu Disabled All 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
         onKeyDown={[Function]}
         role="menu"
       />
@@ -284,7 +284,7 @@ exports[`Storyshots Components/ActionMenu Disabled All 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
         onKeyDown={[Function]}
         role="menu"
       />
@@ -295,7 +295,7 @@ exports[`Storyshots Components/ActionMenu Disabled All 1`] = `
 
 exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -324,7 +324,7 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -353,7 +353,7 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -382,7 +382,7 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -411,7 +411,7 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -421,7 +421,7 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
 
 exports[`Storyshots Components/ActionMenu Disabled Nested 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -449,7 +449,7 @@ exports[`Storyshots Components/ActionMenu Disabled Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -493,7 +493,7 @@ exports[`Storyshots Components/ActionMenu Disabled Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -503,7 +503,7 @@ exports[`Storyshots Components/ActionMenu Disabled Nested 1`] = `
 
 exports[`Storyshots Components/ActionMenu Disabled Single 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -531,7 +531,7 @@ exports[`Storyshots Components/ActionMenu Disabled Single 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -541,13 +541,13 @@ exports[`Storyshots Components/ActionMenu Disabled Single 1`] = `
 
 exports[`Storyshots Components/ActionMenu Disabled Some 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
 >
   <ul
-    className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+    className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
     onKeyDown={[Function]}
     onKeyUp={[Function]}
     role="menu"
@@ -575,7 +575,7 @@ exports[`Storyshots Components/ActionMenu Disabled Some 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
         onKeyDown={[Function]}
         role="menu"
       />
@@ -603,7 +603,7 @@ exports[`Storyshots Components/ActionMenu Disabled Some 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
         onKeyDown={[Function]}
         role="menu"
       />
@@ -631,7 +631,7 @@ exports[`Storyshots Components/ActionMenu Disabled Some 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
         onKeyDown={[Function]}
         role="menu"
       />
@@ -659,7 +659,7 @@ exports[`Storyshots Components/ActionMenu Disabled Some 1`] = `
       </a>
       <ul
         aria-expanded={false}
-        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+        className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
         onKeyDown={[Function]}
         role="menu"
       />
@@ -670,7 +670,7 @@ exports[`Storyshots Components/ActionMenu Disabled Some 1`] = `
 
 exports[`Storyshots Components/ActionMenu Divider On Edge 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -698,7 +698,7 @@ exports[`Storyshots Components/ActionMenu Divider On Edge 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -711,7 +711,7 @@ exports[`Storyshots Components/ActionMenu Divider On Edge 1`] = `
 
 exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -739,7 +739,7 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -770,7 +770,7 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -798,7 +798,7 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -808,7 +808,7 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
 
 exports[`Storyshots Components/ActionMenu Ellipses With Icon 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -859,7 +859,7 @@ exports[`Storyshots Components/ActionMenu Ellipses With Icon 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -869,7 +869,7 @@ exports[`Storyshots Components/ActionMenu Ellipses With Icon 1`] = `
 
 exports[`Storyshots Components/ActionMenu Ellipsis 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -901,7 +901,7 @@ exports[`Storyshots Components/ActionMenu Ellipsis 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -911,7 +911,7 @@ exports[`Storyshots Components/ActionMenu Ellipsis 1`] = `
 
 exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -939,7 +939,7 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -967,7 +967,7 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -995,7 +995,7 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1005,7 +1005,7 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
 
 exports[`Storyshots Components/ActionMenu Link 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -1034,7 +1034,7 @@ exports[`Storyshots Components/ActionMenu Link 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1044,7 +1044,7 @@ exports[`Storyshots Components/ActionMenu Link 1`] = `
 
 exports[`Storyshots Components/ActionMenu Long Text 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -1076,7 +1076,7 @@ exports[`Storyshots Components/ActionMenu Long Text 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1108,7 +1108,7 @@ exports[`Storyshots Components/ActionMenu Long Text 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1118,7 +1118,7 @@ exports[`Storyshots Components/ActionMenu Long Text 1`] = `
 
 exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -1147,7 +1147,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1176,7 +1176,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1205,7 +1205,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1234,7 +1234,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1263,7 +1263,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1292,7 +1292,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1321,7 +1321,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1350,7 +1350,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1379,7 +1379,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1408,7 +1408,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1437,7 +1437,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1466,7 +1466,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1495,7 +1495,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1524,7 +1524,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1553,7 +1553,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1582,7 +1582,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1611,7 +1611,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1640,7 +1640,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1669,7 +1669,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1698,7 +1698,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1727,7 +1727,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1756,7 +1756,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1785,7 +1785,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1814,7 +1814,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1843,7 +1843,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1872,7 +1872,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1901,7 +1901,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1930,7 +1930,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1959,7 +1959,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1988,7 +1988,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -1998,7 +1998,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
 
 exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -2026,7 +2026,7 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -2054,7 +2054,7 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -2082,7 +2082,7 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -2102,7 +2102,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
     }
   >
     <ul
-      className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+      className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
@@ -2148,7 +2148,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         >
@@ -2175,7 +2175,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2219,7 +2219,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
               onKeyDown={[Function]}
               role="menu"
             >
@@ -2246,7 +2246,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2274,7 +2274,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2302,7 +2302,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2335,7 +2335,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2379,7 +2379,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
               onKeyDown={[Function]}
               role="menu"
             >
@@ -2406,7 +2406,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2434,7 +2434,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2466,7 +2466,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -2483,7 +2483,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
     }
   >
     <ul
-      className="psds-actionmenu psds-actionmenu--origin-topright psds-actionmenu__animation"
+      className="psds-actionmenu psds-actionmenu--origin-top-right psds-actionmenu__animation"
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
@@ -2529,7 +2529,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
           onKeyDown={[Function]}
           role="menu"
         >
@@ -2556,7 +2556,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2600,7 +2600,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
               onKeyDown={[Function]}
               role="menu"
             >
@@ -2627,7 +2627,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2655,7 +2655,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2683,7 +2683,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2716,7 +2716,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2760,7 +2760,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
               onKeyDown={[Function]}
               role="menu"
             >
@@ -2787,7 +2787,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2815,7 +2815,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -2847,7 +2847,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topright"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-right"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -2864,7 +2864,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
     }
   >
     <ul
-      className="psds-actionmenu psds-actionmenu--origin-bottomright psds-actionmenu__animation"
+      className="psds-actionmenu psds-actionmenu--origin-bottom-right psds-actionmenu__animation"
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
@@ -2910,7 +2910,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
           onKeyDown={[Function]}
           role="menu"
         >
@@ -2937,7 +2937,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -2981,7 +2981,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
               onKeyDown={[Function]}
               role="menu"
             >
@@ -3008,7 +3008,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3036,7 +3036,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3064,7 +3064,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3097,7 +3097,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -3141,7 +3141,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
               onKeyDown={[Function]}
               role="menu"
             >
@@ -3168,7 +3168,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3196,7 +3196,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3228,7 +3228,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomright"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-right"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -3245,7 +3245,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
     }
   >
     <ul
-      className="psds-actionmenu psds-actionmenu--origin-bottomleft psds-actionmenu__animation"
+      className="psds-actionmenu psds-actionmenu--origin-bottom-left psds-actionmenu__animation"
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
@@ -3291,7 +3291,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
           onKeyDown={[Function]}
           role="menu"
         >
@@ -3318,7 +3318,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -3362,7 +3362,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
               onKeyDown={[Function]}
               role="menu"
             >
@@ -3389,7 +3389,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3417,7 +3417,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3445,7 +3445,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3478,7 +3478,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -3522,7 +3522,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
               onKeyDown={[Function]}
               role="menu"
             >
@@ -3549,7 +3549,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3577,7 +3577,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 </a>
                 <ul
                   aria-expanded={false}
-                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+                  className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
                   onKeyDown={[Function]}
                   role="menu"
                 />
@@ -3609,7 +3609,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottomleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-bottom-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -3621,7 +3621,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
 
 exports[`Storyshots Components/ActionMenu Null Item 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -3649,7 +3649,7 @@ exports[`Storyshots Components/ActionMenu Null Item 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -3677,7 +3677,7 @@ exports[`Storyshots Components/ActionMenu Null Item 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -3687,7 +3687,7 @@ exports[`Storyshots Components/ActionMenu Null Item 1`] = `
 
 exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -3715,7 +3715,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -3759,7 +3759,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     >
@@ -3786,7 +3786,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -3830,7 +3830,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         >
@@ -3857,7 +3857,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -3885,7 +3885,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -3913,7 +3913,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -3946,7 +3946,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -3990,7 +3990,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         >
@@ -4017,7 +4017,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -4045,7 +4045,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
             </a>
             <ul
               aria-expanded={false}
-              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+              className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
               onKeyDown={[Function]}
               role="menu"
             />
@@ -4077,7 +4077,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4105,7 +4105,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4133,7 +4133,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4161,7 +4161,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4189,7 +4189,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4217,7 +4217,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4245,7 +4245,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4273,7 +4273,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4301,7 +4301,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4329,7 +4329,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4357,7 +4357,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4387,7 +4387,7 @@ Array [
     }
   >
     <ul
-      className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+      className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
@@ -4420,7 +4420,7 @@ Array [
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -4448,7 +4448,7 @@ Array [
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -4476,7 +4476,7 @@ Array [
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -4527,7 +4527,7 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
       }
     >
       <ul
-        className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+        className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         role="menu"
@@ -4555,7 +4555,7 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
             onKeyDown={[Function]}
             role="menu"
           />
@@ -4583,7 +4583,7 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
             onKeyDown={[Function]}
             role="menu"
           />
@@ -4611,7 +4611,7 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
             onKeyDown={[Function]}
             role="menu"
           />
@@ -4625,7 +4625,7 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
 
 exports[`Storyshots Components/ActionMenu One Item 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -4653,7 +4653,7 @@ exports[`Storyshots Components/ActionMenu One Item 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -4695,7 +4695,7 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
       }
     >
       <ul
-        className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+        className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
         onKeyDown={[Function]}
         onKeyUp={[Function]}
         role="menu"
@@ -4723,7 +4723,7 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
             onKeyDown={[Function]}
             role="menu"
           />
@@ -4751,7 +4751,7 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
             onKeyDown={[Function]}
             role="menu"
           />
@@ -4779,7 +4779,7 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
           </a>
           <ul
             aria-expanded={false}
-            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+            className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
             onKeyDown={[Function]}
             role="menu"
           />
@@ -4818,7 +4818,7 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
     }
   >
     <ul
-      className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+      className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
       onKeyDown={[Function]}
       onKeyUp={[Function]}
       role="menu"
@@ -4851,7 +4851,7 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -4879,7 +4879,7 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -4907,7 +4907,7 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
         </a>
         <ul
           aria-expanded={false}
-          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+          className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
           onKeyDown={[Function]}
           role="menu"
         />
@@ -4919,7 +4919,7 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
 
 exports[`Storyshots Components/ActionMenu With Icons 1`] = `
 <ul
-  className="psds-actionmenu psds-actionmenu--origin-topleft psds-actionmenu__animation"
+  className="psds-actionmenu psds-actionmenu--origin-top-left psds-actionmenu__animation"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   role="menu"
@@ -4970,7 +4970,7 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -5021,7 +5021,7 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
@@ -5070,7 +5070,7 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
     </a>
     <ul
       aria-expanded={false}
-      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-topleft"
+      className="psds-actionmenu psds-actionmenu__nested psds-actionmenu--origin-top-left"
       onKeyDown={[Function]}
       role="menu"
     />
