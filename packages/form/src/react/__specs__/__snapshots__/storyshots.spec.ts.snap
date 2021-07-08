@@ -252,7 +252,7 @@ exports[`Storyshots Components/Form Null Children 1`] = `
             className="psds-text-input__field-container"
           >
             <div
-              data-css-1l13box=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
             >
               <div
                 className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -333,7 +333,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-text-input__field-container"
           >
             <div
-              data-css-1l13box=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
             >
               <div
                 className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -375,7 +375,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-text-input__field-container"
           >
             <div
-              data-css-1l13box=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
             >
               <div
                 className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -422,7 +422,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-text-input__field-container"
           >
             <div
-              data-css-1c2eins=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus"
             >
               <div
                 className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--error"
@@ -444,7 +444,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               className="psds-text-input__error"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
               >
                 <svg
                   aria-label="warning icon"
@@ -490,8 +490,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-dropdown__field-container"
           >
             <div
-              className="psds-dropdown__field-halo"
-              data-css-1l13box=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-dropdown__field-halo"
             >
               <div
                 className="psds-dropdown__field-aligner"
@@ -524,7 +523,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                     className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
                     >
                       <svg
                         aria-label="caret down icon"
@@ -556,14 +555,14 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <div
-            data-css-ckykx7=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
           >
             <a
-              data-css-1aye8gw=""
+              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
               href="http://google.com"
             >
               <span
-                data-css-1997kh1=""
+                className="psds-tag__label"
               >
                 Foo
               </span>
@@ -577,14 +576,14 @@ exports[`Storyshots Components/Form Sample 1`] = `
             }
           />
           <div
-            data-css-ckykx7=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
           >
             <a
-              data-css-1aye8gw=""
+              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
               href="http://google.com"
             >
               <span
-                data-css-1997kh1=""
+                className="psds-tag__label"
               >
                 Bar
               </span>
@@ -598,14 +597,14 @@ exports[`Storyshots Components/Form Sample 1`] = `
             }
           />
           <div
-            data-css-ckykx7=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
           >
             <a
-              data-css-1aye8gw=""
+              className="psds-tag psds-theme--dark psds-tag--clickable psds-tag--size-medium"
               href="http://google.com"
             >
               <span
-                data-css-1997kh1=""
+                className="psds-tag__label"
               >
                 Baz
               </span>
@@ -635,7 +634,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               className="psds-text-input__field-container"
             >
               <div
-                data-css-1l13box=""
+                className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
               >
                 <div
                   className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -662,7 +661,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
           onKeyDown={[Function]}
         >
           <div
-            data-css-9ndspy=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <input
               checked={true}
@@ -737,7 +736,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 data-css-1lxv0yd=""
               >
                 <div
-                  data-css-ckykx7=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
                   data-css-iwspcj=""
                 >
                   <div
@@ -769,7 +768,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 data-css-1lxv0yd=""
               >
                 <div
-                  data-css-ckykx7=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
                   data-css-iwspcj=""
                 >
                   <div
@@ -814,7 +813,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         className="psds-form-vertical-layout__child"
       >
         <label
-          data-css-nq9iqf=""
+          className="psds-switch psds-switch--label-align-right"
           style={
             Object {
               "maxWidth": "none",
@@ -823,19 +822,19 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <div
-            data-css-ckykx7=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-19bj9q0=""
+              className="psds-switch__track psds-theme--dark psds-switch__track--size-large"
             >
               <div
-                data-css-1o90whm=""
+                className="psds-switch__thumb psds-switch__thumb--size-large"
               />
             </div>
           </div>
           <input
             checked={false}
-            data-css-6wu9td=""
+            className="psds-switch__checkbox"
             disabled={false}
             onBlur={[Function]}
             onClick={[Function]}
@@ -846,7 +845,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             type="checkbox"
           />
           <span
-            data-css-1oms9gl=""
+            className="psds-switch__label psds-switch__label--size-large psds-switch__label--label-align-right psds-theme--dark"
           >
             toggle
           </span>
@@ -886,7 +885,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-text-area__field-container"
           >
             <div
-              data-css-1l13box=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
             >
               <textarea
                 className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
