@@ -437,7 +437,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
       data-css-1ij5lym=""
     >
       <button
-        data-css-6uwj3a=""
+        className="psds-navuser psds-navuser--clickable"
         onClick={[Function]}
       >
         <div
@@ -456,15 +456,15 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
           </div>
         </div>
         <div
-          data-css-1mmc9g1=""
+          className="psds-navuser__words"
         >
           <div
-            data-css-6flzpu=""
+            className="psds-navuser__name"
           >
             Jake
           </div>
           <div
-            data-css-60db85=""
+            className="psds-navuser__plan-name"
           >
             Accenture
           </div>

@@ -5,38 +5,38 @@ exports[`Storyshots Components/Radio Basic 1`] = `
   data-css-424rvd=""
 >
   <div
-    data-css-1a26704=""
+    className="psds-radio-group"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-radio-group__label psds-theme--dark"
     >
       The label
     </div>
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -46,29 +46,29 @@ exports[`Storyshots Components/Radio Basic 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -78,29 +78,29 @@ exports[`Storyshots Components/Radio Basic 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -110,14 +110,14 @@ exports[`Storyshots Components/Radio Basic 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
       </label>
     </div>
     <div
-      data-css-o89kbw=""
+      className="psds-radio-group__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -147,38 +147,38 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
   </div>
   <br />
   <div
-    data-css-1a26704=""
+    className="psds-radio-group"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-radio-group__label psds-theme--dark"
     >
       The label
     </div>
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -188,33 +188,33 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-1w8imqn=""
+              className="psds-radio-button__circle psds-theme--dark psds-radio-button__circle--checked"
             >
               <div
-                data-css-ppl1jg=""
+                className="psds-radio-button__circle-inner"
               />
             </div>
           </div>
         </div>
         <input
           checked={true}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -224,29 +224,29 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -256,14 +256,14 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
       </label>
     </div>
     <div
-      data-css-o89kbw=""
+      className="psds-radio-group__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -276,38 +276,38 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
   data-css-424rvd=""
 >
   <div
-    data-css-sz0dtt=""
+    className="psds-radio-group psds-radio-group--disabled"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-radio-group__label psds-theme--dark"
     >
       The label
     </div>
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-1qmr5cg=""
+        className="psds-radio-button psds-radio-button--disabled"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
-            data-css-iwspcj=""
+            className="psds-radio-button__halo"
             data-css-rbpa8o=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -316,29 +316,29 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-1qmr5cg=""
+        className="psds-radio-button psds-radio-button--disabled"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
-            data-css-iwspcj=""
+            className="psds-radio-button__halo"
             data-css-rbpa8o=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -347,29 +347,29 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-1qmr5cg=""
+        className="psds-radio-button psds-radio-button--disabled"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
-            data-css-iwspcj=""
+            className="psds-radio-button__halo"
             data-css-rbpa8o=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onFocus={[Function]}
@@ -378,14 +378,14 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
       </label>
     </div>
     <div
-      data-css-o89kbw=""
+      className="psds-radio-group__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -398,38 +398,38 @@ exports[`Storyshots Components/Radio Error 1`] = `
   data-css-424rvd=""
 >
   <div
-    data-css-1a26704=""
+    className="psds-radio-group"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-radio-group__label psds-theme--dark"
     >
       The label
     </div>
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
-            data-css-iwspcj=""
+            className="psds-radio-button__halo"
             data-css-mmyfiy=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -439,29 +439,29 @@ exports[`Storyshots Components/Radio Error 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
-            data-css-iwspcj=""
+            className="psds-radio-button__halo"
             data-css-mmyfiy=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -471,29 +471,29 @@ exports[`Storyshots Components/Radio Error 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
-            data-css-iwspcj=""
+            className="psds-radio-button__halo"
             data-css-mmyfiy=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -503,14 +503,14 @@ exports[`Storyshots Components/Radio Error 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
       </label>
     </div>
     <div
-      data-css-o89kbw=""
+      className="psds-radio-group__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -523,38 +523,38 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
   data-css-424rvd=""
 >
   <div
-    data-css-1a26704=""
+    className="psds-radio-group"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-radio-group__label psds-theme--dark"
     >
       The label
     </div>
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -564,29 +564,29 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -596,29 +596,29 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -628,7 +628,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
@@ -643,33 +643,33 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
   data-css-424rvd=""
 >
   <div
-    data-css-1a26704=""
+    className="psds-radio-group"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -679,29 +679,29 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -711,29 +711,29 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -743,7 +743,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
@@ -751,33 +751,33 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
     </div>
   </div>
   <div
-    data-css-1a26704=""
+    className="psds-radio-group"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -787,29 +787,29 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -819,29 +819,29 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -851,7 +851,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
@@ -867,33 +867,33 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
 >
   <div
     aria-label="You need an a11y label"
-    data-css-1a26704=""
+    className="psds-radio-group"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -903,29 +903,29 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -935,29 +935,29 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -967,7 +967,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
@@ -982,42 +982,42 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
   data-css-424rvd=""
 >
   <div
-    data-css-1a26704=""
+    className="psds-radio-group"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-radio-group__label psds-theme--dark"
     >
       The label
     </div>
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-1w8imqn=""
+              className="psds-radio-button__circle psds-theme--dark psds-radio-button__circle--checked"
             >
               <div
-                data-css-ppl1jg=""
+                className="psds-radio-button__circle-inner"
               />
             </div>
           </div>
         </div>
         <input
           checked={true}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1027,29 +1027,29 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1059,29 +1059,29 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1091,14 +1091,14 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
       </label>
     </div>
     <div
-      data-css-o89kbw=""
+      className="psds-radio-group__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -1112,33 +1112,33 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
 >
   <div
     aria-label="You need an a11y label"
-    data-css-1a26704=""
+    className="psds-radio-group"
     onBlur={[Function]}
     onFocus={[Function]}
     placeholder="Some placeholder"
     role="radiogroup"
   >
     <div
-      data-css-xp79s5=""
+      className="psds-radio-group__button-container"
     >
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1148,29 +1148,29 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
           value="red"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Red
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1180,29 +1180,29 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
           value="green"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Green
         </div>
       </label>
       <label
-        data-css-kn3wr0=""
+        className="psds-radio-button"
       >
         <div
-          data-css-1lxv0yd=""
+          className="psds-radio-button__circle-outer"
         >
           <div
+            className="psds-radio-button__halo"
             data-css-1lu7sfl=""
-            data-css-iwspcj=""
           >
             <div
-              data-css-fdf00s=""
+              className="psds-radio-button__circle psds-theme--dark"
             />
           </div>
         </div>
         <input
           checked={false}
-          data-css-6wu9td=""
+          className="psds-radio-button__input"
           name="radio-name"
           onBlur={[Function]}
           onClick={[Function]}
@@ -1212,14 +1212,14 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
           value="blue"
         />
         <div
-          data-css-nrxvu5=""
+          className="psds-radio-button__label psds-theme--dark"
         >
           Blue
         </div>
       </label>
     </div>
     <div
-      data-css-o89kbw=""
+      className="psds-radio-group__sub-label psds-theme--dark"
     >
       The sub label
     </div>

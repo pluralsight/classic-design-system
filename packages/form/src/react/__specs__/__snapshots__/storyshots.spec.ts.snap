@@ -694,7 +694,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
         data-css-4l6uky=""
       >
         <div
-          data-css-1a26704=""
+          className="psds-radio-group"
           role="radiogroup"
           style={
             Object {
@@ -704,26 +704,26 @@ exports[`Storyshots Components/Form Sample 1`] = `
           }
         >
           <div
-            data-css-xp79s5=""
+            className="psds-radio-group__button-container"
           >
             <label
-              data-css-kn3wr0=""
+              className="psds-radio-button"
             >
               <div
-                data-css-1lxv0yd=""
+                className="psds-radio-button__circle-outer"
               >
                 <div
+                  className="psds-radio-button__halo"
                   data-css-1lu7sfl=""
-                  data-css-iwspcj=""
                 >
                   <div
-                    data-css-fdf00s=""
+                    className="psds-radio-button__circle psds-theme--dark"
                   />
                 </div>
               </div>
               <input
                 checked={false}
-                data-css-6wu9td=""
+                className="psds-radio-button__input"
                 name="sample"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -733,29 +733,29 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 value="full"
               />
               <div
-                data-css-nrxvu5=""
+                className="psds-radio-button__label psds-theme--dark"
               >
                 Full-time employement
               </div>
             </label>
             <label
-              data-css-kn3wr0=""
+              className="psds-radio-button"
             >
               <div
-                data-css-1lxv0yd=""
+                className="psds-radio-button__circle-outer"
               >
                 <div
+                  className="psds-radio-button__halo"
                   data-css-1lu7sfl=""
-                  data-css-iwspcj=""
                 >
                   <div
-                    data-css-fdf00s=""
+                    className="psds-radio-button__circle psds-theme--dark"
                   />
                 </div>
               </div>
               <input
                 checked={false}
-                data-css-6wu9td=""
+                className="psds-radio-button__input"
                 name="sample"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -765,7 +765,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 value="part"
               />
               <div
-                data-css-nrxvu5=""
+                className="psds-radio-button__label psds-theme--dark"
               >
                 Part-time employement
               </div>
