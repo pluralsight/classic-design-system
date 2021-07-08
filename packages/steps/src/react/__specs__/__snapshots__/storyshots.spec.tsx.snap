@@ -297,7 +297,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
             r={22}
           />
           <circle
-            className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+            className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
             cx="24"
             cy="24"
             r={22}
@@ -351,7 +351,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
             r={22}
           />
           <circle
-            className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+            className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
             cx="24"
             cy="24"
             r={22}
@@ -396,7 +396,7 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
             r={22}
           />
           <circle
-            className="psds-circularprogress__fg psds-circularprogress__fg.psds-theme--dark"
+            className="psds-circularprogress__fg psds-circularprogress__fg psds-theme--dark"
             cx="24"
             cy="24"
             r={22}
