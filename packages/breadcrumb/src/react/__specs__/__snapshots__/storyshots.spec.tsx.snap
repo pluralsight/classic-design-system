@@ -13,7 +13,7 @@ exports[`Storyshots Components/Breadcrumb As Button 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
-        data-css-k31qw2=""
+        className="psds-icon psds-icon--size-small psds-icon--color-undefined"
       >
         <svg
           aria-label="caret left icon"
@@ -48,7 +48,7 @@ exports[`Storyshots Components/Breadcrumb As Link 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
-        data-css-k31qw2=""
+        className="psds-icon psds-icon--size-small psds-icon--color-undefined"
       >
         <svg
           aria-label="caret left icon"
@@ -83,7 +83,7 @@ exports[`Storyshots Components/Breadcrumb Basic 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
-        data-css-k31qw2=""
+        className="psds-icon psds-icon--size-small psds-icon--color-undefined"
       >
         <svg
           aria-label="caret left icon"
@@ -119,7 +119,7 @@ exports[`Storyshots Components/Breadcrumb Disabled 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
-        data-css-k31qw2=""
+        className="psds-icon psds-icon--size-small psds-icon--color-undefined"
       >
         <svg
           aria-label="caret left icon"
