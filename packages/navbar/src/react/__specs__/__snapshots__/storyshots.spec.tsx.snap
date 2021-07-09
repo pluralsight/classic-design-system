@@ -24,7 +24,7 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
               data-css-1009u4g=""
             >
               <div
-                className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="menu icon"
@@ -149,7 +149,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
               data-css-1009u4g=""
             >
               <div
-                className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="menu icon"
@@ -243,7 +243,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                 data-css-1o9ctb7=""
               >
                 <div
-                  className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                  className="psds-icon psds-icon--size-medium"
                 >
                   <svg
                     aria-label="home icon"
@@ -292,7 +292,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                   data-css-1o9ctb7=""
                 >
                   <div
-                    className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="browse icon"
@@ -316,7 +316,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                   data-css-1cbyl54=""
                 >
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                   >
                     <svg
                       aria-label="caret down icon"
@@ -368,7 +368,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                 data-css-1009u4g=""
               >
                 <div
-                  className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                  className="psds-icon psds-icon--size-medium"
                 >
                   <svg
                     aria-label="notifications icon"
@@ -410,7 +410,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                 data-css-1009u4g=""
               >
                 <div
-                  className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                  className="psds-icon psds-icon--size-medium"
                 >
                   <svg
                     aria-label="account icon"
@@ -506,7 +506,7 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
               data-css-1009u4g=""
             >
               <div
-                className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="menu icon"
