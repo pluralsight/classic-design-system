@@ -835,7 +835,7 @@ exports[`Storyshots Components/ActionMenu Ellipses With Icon 1`] = `
           className="psds-actionmenu__icon psds-actionmenu__icon-left"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="channel icon"
@@ -4946,7 +4946,7 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
           className="psds-actionmenu__icon psds-actionmenu__icon-left"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="channel icon"
@@ -4997,7 +4997,7 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
           className="psds-actionmenu__icon psds-actionmenu__icon-left"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="path icon"
@@ -5048,7 +5048,7 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
           className="psds-actionmenu__icon psds-actionmenu__icon-left"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="report icon"
