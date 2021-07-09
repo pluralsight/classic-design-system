@@ -32,7 +32,7 @@ exports[`Storyshots Components/Card Action Bar 1`] = `
           title="Bookmark"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="bookmark icon"
@@ -180,7 +180,7 @@ exports[`Storyshots Components/Card Action Bar Locked Visible 1`] = `
           title="Bookmark"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="bookmark icon"
@@ -328,7 +328,7 @@ exports[`Storyshots Components/Card Action Bar Multiple 1`] = `
           title="Bookmark"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="bookmark icon"
@@ -347,7 +347,7 @@ exports[`Storyshots Components/Card Action Bar Multiple 1`] = `
           title="More"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="more icon"
@@ -490,7 +490,7 @@ exports[`Storyshots Components/Card Bonus Bar Element 1`] = `
         className="psds-card__bonus-bar"
       >
         <div
-          className="psds-icon psds-icon--size-large psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-large"
         >
           <svg
             aria-label="channel icon"
@@ -778,7 +778,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
             href="http://duckduckgo.com?q=overlay"
           >
             <div
-              className="psds-icon psds-icon--size-large psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-large"
               style={
                 Object {
                   "color": "#FFFFFF",
@@ -809,7 +809,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
           title="Bookmark"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="bookmark icon"
@@ -828,7 +828,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
           title="Settings"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="gear icon"
@@ -849,7 +849,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
           title="More"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="more icon"
@@ -870,7 +870,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
           className="psds-card__tag__icon"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="path icon"
@@ -1059,7 +1059,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
             href="http://duckduckgo.com?q=overlay"
           >
             <div
-              className="psds-icon psds-icon--size-large psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-large"
               css={
                 Object {
                   "& svg": Object {
@@ -1092,7 +1092,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
           title="Bookmark"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="bookmark icon"
@@ -1111,7 +1111,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
           title="Settings"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="gear icon"
@@ -1132,7 +1132,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
           title="More"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="more icon"
@@ -1153,7 +1153,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
           className="psds-card__tag__icon"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="path icon"
@@ -1653,7 +1653,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon 1`] = `
             href="http://duckduckgo.com?q=overlay"
           >
             <div
-              className="psds-icon psds-icon--size-large psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-large"
               style={
                 Object {
                   "color": "#FFFFFF",
@@ -1818,7 +1818,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon Link 1`] = `
             href="http://duckduckgo.com?q=overlay"
           >
             <div
-              className="psds-icon psds-icon--size-large psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-large"
               style={
                 Object {
                   "color": "#FFFFFF",
@@ -3990,7 +3990,7 @@ exports[`Storyshots Components/Card Tag Icon 1`] = `
           className="psds-card__tag__icon"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="channel icon"
@@ -4143,7 +4143,7 @@ exports[`Storyshots Components/Card Tag Long Multi Word 1`] = `
           className="psds-card__tag__icon"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="channel icon"
@@ -4296,7 +4296,7 @@ exports[`Storyshots Components/Card Tag Long Single Word 1`] = `
           className="psds-card__tag__icon"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="channel icon"
@@ -4457,7 +4457,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
               className="psds-card__tag__icon"
             >
               <div
-                className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-small"
               >
                 <svg
                   aria-label="channel icon"
@@ -4607,7 +4607,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
               className="psds-card__tag__icon"
             >
               <div
-                className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-small"
               >
                 <svg
                   aria-label="channel icon"
@@ -4757,7 +4757,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
               className="psds-card__tag__icon"
             >
               <div
-                className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-small"
               >
                 <svg
                   aria-label="channel icon"
