@@ -1386,7 +1386,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
             First name
             <div
               aria-hidden={true}
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-table__header__sort-icon"
+              className="psds-icon psds-icon--size-medium psds-table__header__sort-icon"
             >
               <svg
                 aria-label="sort icon"
@@ -1416,7 +1416,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
             Last name
             <div
               aria-hidden={true}
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-table__header__sort-icon"
+              className="psds-icon psds-icon--size-medium psds-table__header__sort-icon"
             >
               <svg
                 aria-label="sort icon"
@@ -1446,7 +1446,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
             Email
             <div
               aria-hidden={true}
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-table__header__sort-icon"
+              className="psds-icon psds-icon--size-medium psds-table__header__sort-icon"
             >
               <svg
                 aria-label="sort icon"
@@ -1562,7 +1562,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -1653,7 +1653,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret down icon"
@@ -1744,7 +1744,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -1835,7 +1835,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -1926,7 +1926,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2089,7 +2089,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2176,7 +2176,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret down icon"
@@ -2263,7 +2263,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2350,7 +2350,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2437,7 +2437,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
