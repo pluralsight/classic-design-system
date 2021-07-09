@@ -35,7 +35,7 @@ Array [
             className="psds-field__suffix"
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -712,7 +712,7 @@ exports[`Storyshots Components/Field/TextAreaField Error 1`] = `
         className="psds-field__error-icon"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-medium"
         >
           <svg
             aria-label="warning icon"
@@ -940,7 +940,7 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
           className="psds-field__error-icon"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
@@ -991,7 +991,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
           className="psds-field__prefix"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -1058,7 +1058,7 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
           className="psds-field__suffix"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -1116,7 +1116,7 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
           className="psds-field__suffix"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="lock icon"
