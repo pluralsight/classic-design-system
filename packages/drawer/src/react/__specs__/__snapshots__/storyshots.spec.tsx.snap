@@ -47,7 +47,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
         </svg>
       </div>
       <div
-        data-css-6wu9td=""
+        className="psds-screenreader-only"
       >
         Collapsed
       </div>
@@ -124,7 +124,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
         </svg>
       </div>
       <div
-        data-css-6wu9td=""
+        className="psds-screenreader-only"
       >
         Collapsed
       </div>
@@ -191,7 +191,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
         </svg>
       </div>
       <div
-        data-css-6wu9td=""
+        className="psds-screenreader-only"
       >
         Expanded
       </div>
@@ -258,7 +258,7 @@ exports[`Storyshots Components/Row Default 1`] = `
         </svg>
       </div>
       <div
-        data-css-6wu9td=""
+        className="psds-screenreader-only"
       >
         Collapsed
       </div>
@@ -298,13 +298,13 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
     role="button"
   >
     <div
-      data-css-19vzw9x=""
+      className="psds-row psds-theme--dark"
     >
       <div
-        data-css-js3ti3=""
+        className="psds-row__overlays"
       >
         <span
-          data-css-15yq56v=""
+          className="psds-row__image-link"
         >
           <a
             href="https://duckduckgo.com?q=image"
@@ -316,10 +316,10 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
           </a>
         </span>
         <div
-          data-css-1gtggsm=""
+          className="psds-row__full-overlay"
         >
           <span
-            data-css-1fxa3fl=""
+            className="psds-row__full-overlay-link"
             onBlur={[Function]}
             onFocus={[Function]}
           >
@@ -332,13 +332,18 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
         </div>
       </div>
       <div
-        data-css-kxulf3=""
+        className="psds-row__words"
+        style={
+          Object {
+            "maxWidth": "calc(100% - (96px + 24px) - 0px)",
+          }
+        }
       >
         <div
-          data-css-2pesz8=""
+          className="psds-row__title psds-row__title--size-medium psds-row__title psds-theme--dark"
         >
           <span
-            data-css-1bnk4mn=""
+            className="psds-row__text-link psds-row__text-link psds-theme--dark"
           >
             <a
               href="https://duckduckgo.com?q=title"
@@ -348,13 +353,13 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
           </span>
         </div>
         <div
-          data-css-1f22p8h=""
+          className="psds-row__metadata psds-row__metadatapsds-theme--dark psds-row__metadata--size-medium"
         >
           <span
-            data-css-1kcrbi9=""
+            className="psds-row__metadata__datum"
           >
             <span
-              data-css-1bnk4mn=""
+              className="psds-row__text-link psds-row__text-link psds-theme--dark"
             >
               <a
                 href="https://duckduckgo.com?q=cats"
@@ -365,19 +370,19 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
           </span>
           <span
             aria-hidden={true}
-            data-css-kykfz1=""
+            className="psds-row__metadata__dot"
           >
             ·
           </span>
           <span
-            data-css-1kcrbi9=""
+            className="psds-row__metadata__datum"
           >
             23 hours of cuteness
           </span>
         </div>
       </div>
       <div
-        data-css-7b22zo=""
+        className="psds-row__action-bar psds-row__action-bar--fullOverlay psds-row__action-bar--actionBarVisible"
       >
         <button
           className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
@@ -425,7 +430,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
         </svg>
       </div>
       <div
-        data-css-6wu9td=""
+        className="psds-screenreader-only"
       >
         Collapsed
       </div>
@@ -493,7 +498,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
           </svg>
         </div>
         <div
-          data-css-6wu9td=""
+          className="psds-screenreader-only"
         >
           Collapsed
         </div>
@@ -549,7 +554,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
           </svg>
         </div>
         <div
-          data-css-6wu9td=""
+          className="psds-screenreader-only"
         >
           Collapsed
         </div>
@@ -605,7 +610,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
           </svg>
         </div>
         <div
-          data-css-6wu9td=""
+          className="psds-screenreader-only"
         >
           Collapsed
         </div>
@@ -674,7 +679,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
           </svg>
         </div>
         <div
-          data-css-6wu9td=""
+          className="psds-screenreader-only"
         >
           Collapsed
         </div>
@@ -732,7 +737,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
           </svg>
         </div>
         <div
-          data-css-6wu9td=""
+          className="psds-screenreader-only"
         >
           Collapsed
         </div>
@@ -790,7 +795,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
           </svg>
         </div>
         <div
-          data-css-6wu9td=""
+          className="psds-screenreader-only"
         >
           Collapsed
         </div>
@@ -859,7 +864,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
         </svg>
       </div>
       <div
-        data-css-6wu9td=""
+        className="psds-screenreader-only"
       >
         Collapsed
       </div>
@@ -900,46 +905,56 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
     role="button"
   >
     <div
-      data-css-19vzw9x=""
+      className="psds-row psds-theme--dark"
     >
       <div
-        data-css-js3ti3=""
+        className="psds-row__overlays"
       >
         <div
-          data-css-y8jh93=""
+          className="psds-row__image"
+          style={
+            Object {
+              "backgroundImage": "url(https://cataas.com/cat)",
+            }
+          }
         />
       </div>
       <div
-        data-css-kxulf3=""
+        className="psds-row__words"
+        style={
+          Object {
+            "maxWidth": "calc(100% - (96px + 24px) - 0px)",
+          }
+        }
       >
         <div
-          data-css-2pesz8=""
+          className="psds-row__title psds-row__title--size-medium psds-row__title psds-theme--dark"
         >
           Look at me! I'm a &lt;Row /&gt;!
         </div>
         <div
-          data-css-1f22p8h=""
+          className="psds-row__metadata psds-row__metadatapsds-theme--dark psds-row__metadata--size-medium"
         >
           <span
-            data-css-1kcrbi9=""
+            className="psds-row__metadata__datum"
           >
             Kitten McCatbuns
           </span>
           <span
             aria-hidden={true}
-            data-css-kykfz1=""
+            className="psds-row__metadata__dot"
           >
             ·
           </span>
           <span
-            data-css-1kcrbi9=""
+            className="psds-row__metadata__datum"
           >
             23 hours of cuteness
           </span>
         </div>
       </div>
       <div
-        data-css-7zyoug=""
+        className="psds-row__action-bar psds-row__action-bar--actionBarVisible"
       >
         <button
           className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-flat psds-theme--dark psds-button--icon-only"
@@ -986,7 +1001,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
         </svg>
       </div>
       <div
-        data-css-6wu9td=""
+        className="psds-screenreader-only"
       >
         Collapsed
       </div>

@@ -1833,7 +1833,7 @@ exports[`Storyshots Components/Dropdown No Labels 1`] = `
   >
     <label>
       <span
-        data-css-6wu9td=""
+        className="psds-screenreader-only"
       >
         Dropdown
       </span>
@@ -2433,7 +2433,7 @@ exports[`Storyshots Components/Dropdown Sub Label Only 1`] = `
   >
     <label>
       <span
-        data-css-6wu9td=""
+        className="psds-screenreader-only"
       >
         Dropdown
       </span>
@@ -3459,7 +3459,7 @@ exports[`Storyshots Components/Dropdown/examples Style Right Aligned 1`] = `
       >
         <label>
           <span
-            data-css-6wu9td=""
+            className="psds-screenreader-only"
           >
             Dropdown
           </span>
@@ -3551,7 +3551,7 @@ exports[`Storyshots Components/Dropdown/examples Style Viewport Bottom 1`] = `
     >
       <label>
         <span
-          data-css-6wu9td=""
+          className="psds-screenreader-only"
         >
           Dropdown
         </span>

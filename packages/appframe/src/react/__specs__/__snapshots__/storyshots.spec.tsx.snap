@@ -89,7 +89,7 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
             className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
                 className="psds-avatar psds-avatar--size-xsmall"
@@ -107,15 +107,15 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -295,7 +295,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
             className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
                 className="psds-avatar psds-avatar--size-xsmall"
@@ -313,15 +313,15 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -670,7 +670,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
             className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
                 className="psds-avatar psds-avatar--size-xsmall"
@@ -688,15 +688,15 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -1057,7 +1057,7 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
             className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
                 className="psds-avatar psds-avatar--size-xsmall"
@@ -1075,15 +1075,15 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -1347,7 +1347,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
             className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
                 className="psds-avatar psds-avatar--size-xsmall"
@@ -1365,15 +1365,15 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -1777,7 +1777,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
             className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
                 className="psds-avatar psds-avatar--size-xsmall"
@@ -1795,15 +1795,15 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
