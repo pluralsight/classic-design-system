@@ -173,7 +173,7 @@ exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
         className="psds-text-input__error"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-medium"
         >
           <svg
             aria-label="warning icon"
@@ -225,7 +225,7 @@ exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
         className="psds-text-input__error"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-medium"
         >
           <svg
             aria-label="warning icon"
@@ -277,7 +277,7 @@ exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
         className="psds-text-input__error"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-medium"
         >
           <svg
             aria-label="warning icon"
@@ -329,7 +329,7 @@ exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
         className="psds-text-input__error"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-medium"
         >
           <svg
             aria-label="warning icon"
@@ -567,7 +567,7 @@ exports[`Storyshots Components/TextInput Error 1`] = `
       className="psds-text-input__error"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="warning icon"
@@ -617,7 +617,7 @@ exports[`Storyshots Components/TextInput Field After 1`] = `
           placeholder="Some placeholder"
         />
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-medium"
         >
           <svg
             aria-label="placeholder icon"
@@ -1022,7 +1022,7 @@ exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
           className="psds-text-input__error"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
@@ -1115,7 +1115,7 @@ exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
           className="psds-text-input__error"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
