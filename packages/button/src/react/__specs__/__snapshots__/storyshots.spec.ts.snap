@@ -132,7 +132,7 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="placeholder icon"
@@ -160,7 +160,7 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="placeholder icon"
@@ -188,7 +188,7 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="placeholder icon"
@@ -216,7 +216,7 @@ exports[`Storyshots Components/Button Appearances With Icon 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="placeholder icon"
@@ -264,7 +264,7 @@ exports[`Storyshots Components/Button As Link With Icon 1`] = `
     className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
   >
     <div
-      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="placeholder icon"
@@ -326,7 +326,7 @@ exports[`Storyshots Components/Button Disabled With Icon 1`] = `
     className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
   >
     <div
-      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="placeholder icon"
@@ -380,7 +380,7 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="placeholder icon"
@@ -408,7 +408,7 @@ exports[`Storyshots Components/Button Icon Alignments 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-right psds-button__icon--size-medium"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="placeholder icon"
@@ -441,7 +441,7 @@ exports[`Storyshots Components/Button Icon Only 1`] = `
     className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
   >
     <div
-      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="placeholder icon"
@@ -532,7 +532,7 @@ exports[`Storyshots Components/Button Loading Transition Start True 1`] = `
     className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only psds-button__icon--loading-label-only"
   >
     <div
-      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+      className="psds-icon psds-icon--size-medium"
     >
       <span
         className="psds-button__loading psds-button__loading--size-medium psds-button__loading--appearance-primary psds-button__loading--theme-dark"
@@ -559,7 +559,7 @@ exports[`Storyshots Components/Button Loading With Icon 1`] = `
     className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
   >
     <div
-      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+      className="psds-icon psds-icon--size-medium"
     >
       <span
         className="psds-button__loading psds-button__loading--size-medium psds-button__loading--appearance-primary psds-button__loading--theme-dark"
@@ -586,7 +586,7 @@ exports[`Storyshots Components/Button Loading With Label No Icon 1`] = `
     className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only psds-button__icon--loading-label-only"
   >
     <div
-      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+      className="psds-icon psds-icon--size-medium"
     >
       <span
         className="psds-button__loading psds-button__loading--size-medium psds-button__loading--appearance-primary psds-button__loading--theme-dark"
@@ -677,7 +677,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall"
     >
       <div
-        className="psds-icon psds-icon--size-xSmall psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-xsmall"
       >
         <svg
           aria-label="placeholder icon"
@@ -705,7 +705,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
       <div
-        className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-small"
       >
         <svg
           aria-label="placeholder icon"
@@ -733,7 +733,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="placeholder icon"
@@ -761,7 +761,7 @@ exports[`Storyshots Components/Button Sizes With Icon 1`] = `
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-large"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="placeholder icon"
@@ -1230,7 +1230,7 @@ exports[`Storyshots Components/Button With Icon 1`] = `
     className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium"
   >
     <div
-      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="placeholder icon"
