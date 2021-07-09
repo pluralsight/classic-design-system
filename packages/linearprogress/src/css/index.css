@@ -14,8 +14,6 @@
   height: 8px;
   border-radius: 4px;
   transition: width var(--ps-motion-speed-normal) linear;
-  -webkit-transition: width var(--ps-motion-speed-normal) linear;
-  -moz-transition: width var(--ps-motion-speed-normal) linear;
 }
 .psds-theme--dark > .psds-linearprogress__fg {
   background-color: var(--ps-colors-text-icon-high-on-dark);
