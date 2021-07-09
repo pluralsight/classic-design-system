@@ -40,7 +40,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
           className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="bookmark icon"
@@ -88,7 +88,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
           className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="bookmark icon"
@@ -136,7 +136,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
           className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="bookmark icon"
@@ -184,7 +184,7 @@ exports[`Storyshots Components/Row Action Bar 1`] = `
           className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="bookmark icon"
@@ -308,7 +308,7 @@ exports[`Storyshots Components/Row Combo 1`] = `
         className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
       >
         <div
-          className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-small"
         >
           <svg
             aria-label="bookmark icon"
@@ -334,7 +334,7 @@ exports[`Storyshots Components/Row Combo 1`] = `
         className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
       >
         <div
-          className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-small"
         >
           <svg
             aria-label="gear icon"
@@ -362,7 +362,7 @@ exports[`Storyshots Components/Row Combo 1`] = `
         className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
       >
         <div
-          className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-small"
         >
           <svg
             aria-label="more icon"
@@ -1389,7 +1389,7 @@ Array [
           className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="more icon"
@@ -1446,7 +1446,7 @@ Array [
           className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="more icon"
