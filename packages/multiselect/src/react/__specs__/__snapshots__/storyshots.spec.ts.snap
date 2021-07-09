@@ -55,7 +55,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -95,7 +95,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                     Helium
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -551,7 +551,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
             data-css-3sokjq=""
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -629,7 +629,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -669,7 +669,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                     Helium
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1131,7 +1131,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
             data-css-3sokjq=""
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -1209,7 +1209,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1249,7 +1249,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                     Helium
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1706,7 +1706,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
             data-css-3sokjq=""
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -1786,7 +1786,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1826,7 +1826,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                     Helium
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -2282,7 +2282,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
             data-css-3sokjq=""
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -2300,7 +2300,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
           className="psds-field__error-icon"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
@@ -2359,7 +2359,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
             data-css-bjcvj0=""
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="placeholder icon"
@@ -2402,7 +2402,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -2442,7 +2442,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                     Helium
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -2898,7 +2898,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
             data-css-3sokjq=""
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -2976,7 +2976,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -3016,7 +3016,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                     Helium
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -3473,7 +3473,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
             data-css-3sokjq=""
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -3551,7 +3551,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                     Hydrogen
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -3591,7 +3591,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                     Helium
                   </span>
                   <div
-                    className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -4047,7 +4047,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
             data-css-3sokjq=""
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
