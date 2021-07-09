@@ -1,7 +1,8 @@
 import {
   RefForwardingComponent,
   ValueOf,
-  classNames
+  classNames,
+  dashify
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
@@ -29,8 +30,8 @@ const Icon = React.forwardRef((props, ref) => {
       {...rest}
       className={classNames(
         'psds-icon',
-        `psds-icon--size-${size}`,
-        `psds-icon--color-${color}`,
+        `psds-icon--size-${dashify(size)}`,
+        color && `psds-icon--color-${dashify(color)}`,
         className
       )}
       ref={ref}

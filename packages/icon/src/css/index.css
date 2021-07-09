@@ -7,7 +7,7 @@
   fill: currentColor;
   flex: 1;
 }
-.psds-icon--size-xSmall {
+.psds-icon--size-xsmall {
   height: 16px;
   width: 16px;
 }
@@ -23,16 +23,16 @@
   height: 48px;
   width: 48px;
 }
-.psds-icon--color-textIconHighOnDark > svg {
+.psds-icon--color-text-icon-high-on-dark > svg {
   fill: var(--ps-colors-text-icon-high-on-dark);
 }
-.psds-icon--color-textIconLowOnDark > svg {
+.psds-icon--color-text-icon-low-on-dark > svg {
   fill: var(--ps-colors-text-icon-low-on-dark);
 }
-.psds-icon--color-textIconHighOnLight > svg {
+.psds-icon--color-text-icon-high-on-light > svg {
   fill: var(--ps-colors-text-icon-high-on-light);
 }
-.psds-icon--color-textIconLowOnLight > svg {
+.psds-icon--color-text-icon-low-on-light > svg {
   fill: var(--ps-colors-text-icon-low-on-light);
 }
 .psds-icon--color-red > svg {
