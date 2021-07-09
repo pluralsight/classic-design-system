@@ -23,7 +23,6 @@ describe('LinearProgress', () => {
   it('composes className', () => {
     const { container } = render(
       <LinearProgress
-        data-testid="mock-component"
         aria-label="download video"
         className="compose-classname"
       />
