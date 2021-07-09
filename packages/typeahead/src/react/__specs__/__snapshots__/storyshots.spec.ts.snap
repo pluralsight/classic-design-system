@@ -56,7 +56,7 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
             tabIndex={-1}
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -1367,7 +1367,7 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
             tabIndex={-1}
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -2678,7 +2678,7 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
             tabIndex={-1}
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -3989,7 +3989,7 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
             tabIndex={-1}
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -5299,7 +5299,7 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
             tabIndex={-1}
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -6610,7 +6610,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
             tabIndex={-1}
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -6628,7 +6628,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
           className="psds-field__error-icon"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
@@ -7917,7 +7917,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
           className="psds-field__prefix"
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -7957,7 +7957,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
             tabIndex={-1}
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -9268,7 +9268,7 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
             tabIndex={-1}
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -10577,7 +10577,7 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
             tabIndex={-1}
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
