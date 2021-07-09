@@ -600,7 +600,7 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
@@ -638,7 +638,7 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
@@ -655,7 +655,7 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
@@ -672,7 +672,7 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
@@ -689,7 +689,7 @@ exports[`Storyshots Components/PageHeadingLayout Long Title With Lots Of Actions
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
@@ -727,7 +727,7 @@ exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
@@ -744,7 +744,7 @@ exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
@@ -761,7 +761,7 @@ exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
@@ -778,7 +778,7 @@ exports[`Storyshots Components/PageHeadingLayout Lots Of Actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
@@ -816,7 +816,7 @@ exports[`Storyshots Components/PageHeadingLayout With Actions 1`] = `
         </span>
       </button>
       <a
-        data-css-1o01808=""
+        className="psds-link psds-link--appearance-default psds-theme--dark"
         href="https://duckduckgo.com"
       >
         A link
