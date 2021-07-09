@@ -34,7 +34,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+        className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
@@ -111,7 +111,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+        className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
@@ -178,7 +178,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark psds-drawer--is-open"
+        className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark psds-drawer--is-open"
       >
         <svg
           aria-label="caret down icon"
@@ -245,7 +245,7 @@ exports[`Storyshots Components/Row Default 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+        className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
@@ -393,7 +393,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
           >
             <div
-              className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-small"
             >
               <svg
                 aria-label="more icon"
@@ -417,7 +417,7 @@ exports[`Storyshots Components/Row Row Component With Actions 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+        className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
@@ -485,7 +485,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+          className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
             aria-label="caret down icon"
@@ -541,7 +541,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+          className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
             aria-label="caret down icon"
@@ -597,7 +597,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+          className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
             aria-label="caret down icon"
@@ -666,7 +666,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+          className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
             aria-label="caret down icon"
@@ -724,7 +724,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+          className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
             aria-label="caret down icon"
@@ -782,7 +782,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
         className="psds-drawer__icon-slot"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+          className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
             aria-label="caret down icon"
@@ -851,7 +851,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+        className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
@@ -964,7 +964,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
           >
             <div
-              className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-small"
             >
               <svg
                 aria-label="more icon"
@@ -988,7 +988,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
       className="psds-drawer__icon-slot"
     >
       <div
-        className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-drawer__rotatable psds-theme--dark"
+        className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
