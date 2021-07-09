@@ -201,7 +201,7 @@ Array [
         className="psds-text-area__error"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-medium"
         >
           <svg
             aria-label="warning icon"
@@ -326,7 +326,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
         className="psds-text-area__error"
       >
         <div
-          className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+          className="psds-icon psds-icon--size-medium"
         >
           <svg
             aria-label="warning icon"
