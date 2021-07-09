@@ -393,7 +393,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -465,7 +465,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -587,7 +587,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                     data-css-1009u4g=""
                   >
                     <div
-                      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="menu icon"
@@ -768,7 +768,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -840,7 +840,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -1264,7 +1264,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                     data-css-1009u4g=""
                   >
                     <div
-                      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="menu icon"
@@ -1445,7 +1445,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -1517,7 +1517,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -1694,7 +1694,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                     data-css-1009u4g=""
                   >
                     <div
-                      className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="menu icon"
@@ -1852,7 +1852,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="home icon"
@@ -1890,7 +1890,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="browse icon"
@@ -1963,7 +1963,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -1999,7 +1999,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2035,7 +2035,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2071,7 +2071,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2107,7 +2107,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2143,7 +2143,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2214,7 +2214,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2250,7 +2250,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             href="#"
                           >
                             <div
-                              className="psds-icon psds-icon--size-medium psds-icon--color-undefined psds-verticaltabs__item__icon"
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
