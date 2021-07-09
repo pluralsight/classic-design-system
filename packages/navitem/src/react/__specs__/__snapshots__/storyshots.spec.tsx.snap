@@ -133,7 +133,7 @@ exports[`Storyshots Components/NavItem Horizontal As Link With Icon 1`] = `
           data-css-1o9ctb7=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -178,7 +178,7 @@ exports[`Storyshots Components/NavItem Horizontal Selected 1`] = `
           data-css-1o9ctb7=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -223,7 +223,7 @@ exports[`Storyshots Components/NavItem Horizontal With Icon 1`] = `
           data-css-1o9ctb7=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -268,7 +268,7 @@ exports[`Storyshots Components/NavItem Horizontal With Menu 1`] = `
           data-css-1o9ctb7=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -290,7 +290,7 @@ exports[`Storyshots Components/NavItem Horizontal With Menu 1`] = `
           data-css-1cbyl54=""
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="caret down icon"
@@ -330,7 +330,7 @@ exports[`Storyshots Components/NavItem Selected Flow Item 1`] = `
           data-css-1o9ctb7=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -375,7 +375,7 @@ exports[`Storyshots Components/NavItem Selected Skills Item 1`] = `
           data-css-1o9ctb7=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -478,7 +478,7 @@ exports[`Storyshots Components/NavItem Vertical As Link With Icon 1`] = `
           data-css-1nd5vjz=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -523,7 +523,7 @@ exports[`Storyshots Components/NavItem Vertical Selected 1`] = `
           data-css-1nd5vjz=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -568,7 +568,7 @@ exports[`Storyshots Components/NavItem Vertical With Icon 1`] = `
           data-css-1nd5vjz=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -613,7 +613,7 @@ exports[`Storyshots Components/NavItem Vertical With Menu 1`] = `
           data-css-1nd5vjz=""
         >
           <div
-            className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -635,7 +635,7 @@ exports[`Storyshots Components/NavItem Vertical With Menu 1`] = `
           data-css-mz08e=""
         >
           <div
-            className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="caret down icon"
@@ -676,7 +676,7 @@ exports[`Storyshots Components/NavItem With Action Menu 1`] = `
             data-css-1o9ctb7=""
           >
             <div
-              className="psds-icon psds-icon--size-medium psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="home icon"
@@ -701,7 +701,7 @@ exports[`Storyshots Components/NavItem With Action Menu 1`] = `
             data-css-1cbyl54=""
           >
             <div
-              className="psds-icon psds-icon--size-small psds-icon--color-undefined"
+              className="psds-icon psds-icon--size-small"
             >
               <svg
                 aria-label="caret down icon"
