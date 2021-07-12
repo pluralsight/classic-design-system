@@ -33,19 +33,19 @@ export const onClickOutside: EventHandler = (el, callback) => {
   }
 }
 
-export const useEvent: (
-  eventHander: EventHandler
-) => EventHandlerHook = eventHandler => (ref, cb = noop) => {
-  /* eslint-disable-next-line react-hooks/rules-of-hooks */
-  React.useEffect(() => {
-    if (!canUseDOM()) return noop
-    const el = ref.current
-    if (el) {
-      return eventHandler(el, cb)
-    }
-    return noop
-  }, [ref, cb])
-}
+export const useEvent: (eventHander: EventHandler) => EventHandlerHook =
+  eventHandler =>
+  (ref, cb = noop) => {
+    /* eslint-disable-next-line react-hooks/rules-of-hooks */
+    React.useEffect(() => {
+      if (!canUseDOM()) return noop
+      const el = ref.current
+      if (el) {
+        return eventHandler(el, cb)
+      }
+      return noop
+    }, [ref, cb])
+  }
 
 export const useClickOutside: EventHandlerHook = (ref, cb = noop) =>
   useEvent(onClickOutside)(ref, cb)

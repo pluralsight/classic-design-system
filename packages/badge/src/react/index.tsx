@@ -39,7 +39,7 @@ const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(
     // TODO: consider replacing with useCombinedRefs
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as HTMLDivElement
+      () => ref.current as unknown as HTMLDivElement
     )
     const themeName = useTheme()
 

@@ -44,6 +44,7 @@ const MockCard: React.FC<MockCardProps> = props => {
       ]}
       image={
         <Card.Image
+          alt="someAltLabel"
           src={`//picsum.photos/680/320?image=${
             40 + (index || 0)
           }&gravity=north`}
@@ -325,7 +326,7 @@ export const CardsInPortalsPerf: Story = () => {
           {MOCK_DATA.courses.map(course => (
             <Carousel.Item key={course.id}>
               <Card
-                image={<Card.Image src={course.image} />}
+                image={<Card.Image alt="someAltLabel" src={course.image} />}
                 metadata1={[course.author, course.level]}
                 title={<Card.Title>{course.title}</Card.Title>}
                 actionBarVisible

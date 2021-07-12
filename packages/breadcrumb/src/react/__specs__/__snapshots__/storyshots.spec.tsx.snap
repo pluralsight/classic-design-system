@@ -21,7 +21,7 @@ exports[`Storyshots Components/Breadcrumb As Button 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+            d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
           />
         </svg>
       </div>
@@ -56,7 +56,7 @@ exports[`Storyshots Components/Breadcrumb As Link 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+            d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
           />
         </svg>
       </div>
@@ -91,7 +91,7 @@ exports[`Storyshots Components/Breadcrumb Basic 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+            d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
           />
         </svg>
       </div>
@@ -127,7 +127,7 @@ exports[`Storyshots Components/Breadcrumb Disabled 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+            d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
           />
         </svg>
       </div>

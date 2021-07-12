@@ -22,9 +22,10 @@ export const useIntersectionSentinels = (
   _options?: IntersectionObserverInit
 ) => {
   const { start, end } = refs
-  const options = React.useMemo(() => ({ ...defaultOptions, _options }), [
-    _options
-  ])
+  const options = React.useMemo(
+    () => ({ ...defaultOptions, _options }),
+    [_options]
+  )
 
   const observerRef = React.useRef<IntersectionObserver>()
 

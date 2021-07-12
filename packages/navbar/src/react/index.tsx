@@ -32,7 +32,7 @@ const NavBar = React.forwardRef<HTMLDivElement, NavBarProps>(
     const ref = React.useRef<HTMLDivElement>(null)
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as HTMLDivElement
+      () => ref.current as unknown as HTMLDivElement
     )
 
     return (

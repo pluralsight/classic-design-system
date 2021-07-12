@@ -36,15 +36,17 @@ const Avatar = React.forwardRef<HTMLDivElement, AvatarProps>((props, ref) => {
 
   const [imageState, setImageState] = React.useState<ImageState>('loading')
 
-  const handleImageLoadSuccess: React.ReactEventHandler<HTMLImageElement> = evt => {
-    const pixel = evt.target as HTMLImageElement
-    const isFallbackPixel = pixel.naturalWidth === 1
-    setImageState(isFallbackPixel ? 'error' : 'success')
-  }
+  const handleImageLoadSuccess: React.ReactEventHandler<HTMLImageElement> =
+    evt => {
+      const pixel = evt.target as HTMLImageElement
+      const isFallbackPixel = pixel.naturalWidth === 1
+      setImageState(isFallbackPixel ? 'error' : 'success')
+    }
 
-  const handleImageLoadError: React.ReactEventHandler<HTMLImageElement> = () => {
-    setImageState('error')
-  }
+  const handleImageLoadError: React.ReactEventHandler<HTMLImageElement> =
+    () => {
+      setImageState('error')
+    }
 
   const shouldShowImg = src && imageState !== 'error'
   const shouldShowInitials = imageState === 'error' || imageState === 'loading'

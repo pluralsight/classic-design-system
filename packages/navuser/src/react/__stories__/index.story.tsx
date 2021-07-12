@@ -9,8 +9,7 @@ import NavUser from '../index'
 
 const defaultArgs = {
   name: 'Jake Trent',
-  src:
-    'https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg'
+  src: 'https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg'
 }
 
 export default {

@@ -1,15 +1,15 @@
 const { promises: fs } = require('fs')
 const fg = require('fast-glob')
 const path = require('path')
-const SVGO = require('svgo')
+const { optimize, extendDefaultPlugins } = require('svgo')
 
-const svgo = new SVGO({
-  plugins: [
-    { removeXMLNS: true },
-    { removeDimensions: true },
-    { removeAttrs: { attrs: '(stroke|fill)' } }
-  ]
-})
+const svgoOpts = {
+  plugins: extendDefaultPlugins([
+    { name: 'removeXMLNS' },
+    { name: 'removeDimensions' },
+    { name: 'removeAttrs', params: { attrs: '(stroke|fill)' } }
+  ])
+}
 
 const ariaLabelRegEx = /aria-label=(?:"|')([\w ]+)(?:"|')/
 
@@ -29,7 +29,7 @@ exports.cleanSvgs = async ({ src, dest = src }) => {
       files.map(async file => {
         const name = dashCaseToLower(path.basename(file, '.svg').split('.')[0])
         const svg = await fs.readFile(file, 'utf8')
-        const { data } = await svgo.optimize(svg)
+        const { data } = optimize(svg, svgoOpts)
         await fs.writeFile(file, addAria(data, name))
       })
     )

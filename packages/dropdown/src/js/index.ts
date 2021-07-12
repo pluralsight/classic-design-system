@@ -108,10 +108,10 @@ export const useDropdown = (
   const { hook, ...rest } = sortDropdownProps(props)
   const [isOpen, setOpen] = React.useState(false)
 
-  const items = React.useMemo(() => parseMenuChildren(menuId, hook.menu), [
-    menuId,
-    hook.menu
-  ])
+  const items = React.useMemo(
+    () => parseMenuChildren(menuId, hook.menu),
+    [menuId, hook.menu]
+  )
 
   const itemMatchingValueIndex = findIndexMatchingValueOrLabel(
     items,
@@ -174,7 +174,7 @@ export const useDropdown = (
   const buttonRef = React.useRef<HTMLButtonElement>(null)
   React.useImperativeHandle(
     forwardedRef,
-    () => (buttonRef.current as unknown) as HTMLButtonElement
+    () => buttonRef.current as unknown as HTMLButtonElement
   )
 
   const inNode = canUseDOM() ? document.body : undefined

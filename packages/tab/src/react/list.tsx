@@ -196,15 +196,19 @@ const List: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => {
 
           const childProps = {
             active: activeIndex === i,
-            key: (comp as React.FunctionComponentElement<
-              React.ComponentProps<typeof ListItem>
-            >).props.id,
+            key: (
+              comp as React.FunctionComponentElement<
+                React.ComponentProps<typeof ListItem>
+              >
+            ).props.id,
             onClick: (evt: React.MouseEvent) =>
               handleListItemClick(
                 i,
-                (comp as React.FunctionComponentElement<
-                  React.ComponentProps<typeof ListItem>
-                >).props.onClick as
+                (
+                  comp as React.FunctionComponentElement<
+                    React.ComponentProps<typeof ListItem>
+                  >
+                ).props.onClick as
                   | ((i: number, evt: React.MouseEvent) => void)
                   | undefined,
                 evt

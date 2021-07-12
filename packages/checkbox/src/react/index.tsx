@@ -39,7 +39,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
     const ref = React.useRef<HTMLInputElement>(null)
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as HTMLInputElement
+      () => ref.current as unknown as HTMLInputElement
     )
 
     React.useEffect(

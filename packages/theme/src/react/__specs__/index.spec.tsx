@@ -7,12 +7,11 @@ import React from 'react'
 import Theme, { defaultName, useTheme, withTheme } from '../index'
 
 describe('Theme', () => {
-  const MockComponent: React.FC<
-    React.HTMLAttributes<HTMLDivElement>
-  > = props => {
-    const themeName = useTheme()
-    return <div {...props}>{themeName}</div>
-  }
+  const MockComponent: React.FC<React.HTMLAttributes<HTMLDivElement>> =
+    props => {
+      const themeName = useTheme()
+      return <div {...props}>{themeName}</div>
+    }
 
   it('renders children', () => {
     const { getByTestId } = render(

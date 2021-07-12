@@ -43,26 +43,24 @@ const Template: Story<React.ComponentProps<typeof StarRating>> = args => (
 export const Basic = Template.bind({})
 Basic.args = { ...defaultArgs }
 
-export const Interactive: Story<
-  React.ComponentProps<typeof StarRating>
-> = args => (
-  <StoryGrid>
-    {VALUES.map((value, i) => (
-      <StarRating {...args} key={i} value={value} />
-    ))}
-  </StoryGrid>
-)
+export const Interactive: Story<React.ComponentProps<typeof StarRating>> =
+  args => (
+    <StoryGrid>
+      {VALUES.map((value, i) => (
+        <StarRating {...args} key={i} value={value} />
+      ))}
+    </StoryGrid>
+  )
 Interactive.args = { ...defaultArgs }
 
-export const NonInteractive: Story<
-  React.ComponentProps<typeof StarRating>
-> = args => (
-  <StoryGrid>
-    {VALUES.map((value, i) => (
-      <StarRating {...args} key={i} value={value} />
-    ))}
-  </StoryGrid>
-)
+export const NonInteractive: Story<React.ComponentProps<typeof StarRating>> =
+  args => (
+    <StoryGrid>
+      {VALUES.map((value, i) => (
+        <StarRating {...args} key={i} value={value} />
+      ))}
+    </StoryGrid>
+  )
 NonInteractive.args = { ...defaultArgs, onChange: undefined }
 
 export const RoundToHalfInteger: Story<

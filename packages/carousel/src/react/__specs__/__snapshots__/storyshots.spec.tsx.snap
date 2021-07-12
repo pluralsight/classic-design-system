@@ -66,6 +66,8 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -420,6 +422,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -594,6 +598,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -768,6 +774,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -942,6 +950,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -1116,6 +1126,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -1290,6 +1302,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -1464,6 +1478,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -1638,6 +1654,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -1812,6 +1830,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -1986,6 +2006,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -2160,6 +2182,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -2334,6 +2358,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -2508,6 +2534,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -2682,6 +2710,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -2856,6 +2886,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -3030,6 +3062,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -3204,6 +3238,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -3378,6 +3414,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -3552,6 +3590,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -3726,6 +3766,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -3900,6 +3942,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -4074,6 +4118,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -4248,6 +4294,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -4422,6 +4470,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -4596,6 +4646,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -4770,6 +4822,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -4944,6 +4998,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -5118,6 +5174,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -5292,6 +5350,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -5466,6 +5526,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -5640,6 +5702,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -5814,6 +5878,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -5988,6 +6054,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -6162,6 +6230,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -6336,6 +6406,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -6510,6 +6582,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -6684,6 +6758,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -6858,6 +6934,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -7032,6 +7110,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -7206,6 +7286,8 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
                 style={
                   Object {
@@ -9495,6 +9577,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -9666,6 +9750,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -9837,6 +9923,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -10008,6 +10096,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -10179,6 +10269,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -10350,6 +10442,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -10521,6 +10615,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -10692,6 +10788,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -10863,6 +10961,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -11122,6 +11222,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -11293,6 +11395,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -11464,6 +11568,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -11635,6 +11741,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -11806,6 +11914,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -11977,6 +12087,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -12148,6 +12260,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -12319,6 +12433,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -12490,6 +12606,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -12749,6 +12867,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -12920,6 +13040,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -13091,6 +13213,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -13262,6 +13386,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -13433,6 +13559,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -13604,6 +13732,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -13775,6 +13905,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -13946,6 +14078,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {
@@ -14117,6 +14251,8 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
                   style={
                     Object {

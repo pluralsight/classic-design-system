@@ -71,6 +71,7 @@ const Image: React.FC<ImageProps> = props => {
       {...rest}
       className={classNames('psds-card__image', className)}
       aria-label={rest['aria-label'] || rest.alt}
+      role="img"
       style={{ backgroundImage: `url(${src})` }}
     />
   )
@@ -282,6 +283,10 @@ const Card: React.FC<CardProps> & CardStatics = props => {
                 progress === 100 && 'psds-card__progress__bar--complete'
               )}
               style={{ width: toPercentageString(progress || 0) }}
+              role="progressbar"
+              aria-valuemin={0}
+              aria-valuemax={100}
+              aria-valuenow={Math.round(progress)}
               aria-label={`${toPercentageString(progress)} complete`}
             />
           </div>

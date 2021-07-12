@@ -137,7 +137,7 @@ export const CustomRenderOption: Story<CustomStoryArgs> = args => {
       options={items}
       placeholder={placeholder}
       position={position}
-      renderOption={(MenuItemWithDescription as unknown) as React.FC}
+      renderOption={MenuItemWithDescription as unknown as React.FC}
       value={selected}
     />
   )
@@ -146,12 +146,11 @@ CustomRenderOption.args = { ...customArgs }
 
 const defaultButtonArgs = { children: 'Hello' }
 
-const ButtonTemplate: Story<
-  React.ComponentProps<typeof Select.Button>
-> = args => {
-  const { children, ...rest } = args
-  return <Select.Button {...rest}>{children}</Select.Button>
-}
+const ButtonTemplate: Story<React.ComponentProps<typeof Select.Button>> =
+  args => {
+    const { children, ...rest } = args
+    return <Select.Button {...rest}>{children}</Select.Button>
+  }
 
 export const ButtonBasic = ButtonTemplate.bind({})
 ButtonBasic.args = { ...defaultButtonArgs }
@@ -168,22 +167,21 @@ ButtonError.args = { ...defaultButtonArgs, error: true }
 export const ButtonSmall = ButtonTemplate.bind({})
 ButtonSmall.args = { ...defaultButtonArgs, size: 'small' }
 
-export const ButtonFocused: Story<
-  React.ComponentProps<typeof Select.Button>
-> = args => {
-  const { children, ...rest } = args
-  const ref = React.useRef<HTMLButtonElement>(null)
+export const ButtonFocused: Story<React.ComponentProps<typeof Select.Button>> =
+  args => {
+    const { children, ...rest } = args
+    const ref = React.useRef<HTMLButtonElement>(null)
 
-  React.useEffect(() => {
-    if (ref.current) ref.current.focus()
-  }, [])
+    React.useEffect(() => {
+      if (ref.current) ref.current.focus()
+    }, [])
 
-  return (
-    <Select.Button ref={ref} {...rest}>
-      {children}
-    </Select.Button>
-  )
-}
+    return (
+      <Select.Button ref={ref} {...rest}>
+        {children}
+      </Select.Button>
+    )
+  }
 ButtonFocused.args = { ...defaultButtonArgs }
 
 const defaultSelectedArgs = {
@@ -191,9 +189,8 @@ const defaultSelectedArgs = {
   selectedItem: { label: 'placeholder', value: 'placeholder' }
 }
 
-const SelectedTemplate: Story<
-  React.ComponentProps<typeof Select.Selected>
-> = args => <Select.Selected {...args} />
+const SelectedTemplate: Story<React.ComponentProps<typeof Select.Selected>> =
+  args => <Select.Selected {...args} />
 
 export const SelectedPlaceholder = SelectedTemplate.bind({})
 SelectedPlaceholder.args = { ...defaultSelectedArgs }

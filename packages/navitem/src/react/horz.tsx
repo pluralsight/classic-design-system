@@ -50,11 +50,10 @@ export const HorzLayout: React.FC = props => {
 }
 HorzLayout.displayName = 'NavItem.HorzLayout'
 
-const HorzContainer: React.FC<
-  React.HTMLAttributes<HTMLSpanElement>
-> = props => {
-  return <span {...styles.container()} {...props} />
-}
+const HorzContainer: React.FC<React.HTMLAttributes<HTMLSpanElement>> =
+  props => {
+    return <span {...styles.container()} {...props} />
+  }
 HorzContainer.displayName = 'NavItem.HorzContainer'
 
 const HorzCaret: React.FC<React.HTMLAttributes<HTMLSpanElement>> = props => {

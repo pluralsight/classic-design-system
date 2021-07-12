@@ -212,30 +212,34 @@ const ActionBar: React.FC<ActionBarProps> = props => {
 interface FullOverlayFocusManagerProps
   extends Pick<RowProps, 'fullOverlay' | 'fullOverlayVisible'> {}
 
-const FullOverlayFocusManager: React.FC<FullOverlayFocusManagerProps> = props => {
-  const { fullOverlayVisible, fullOverlay } = props
+const FullOverlayFocusManager: React.FC<FullOverlayFocusManagerProps> =
+  props => {
+    const { fullOverlayVisible, fullOverlay } = props
 
-  const [isFocused, setFocused] = React.useState(false)
+    const [isFocused, setFocused] = React.useState(false)
 
-  const handleFocus: React.FocusEventHandler<HTMLDivElement> = () => {
-    setFocused(true)
+    const handleFocus: React.FocusEventHandler<HTMLDivElement> = () => {
+      setFocused(true)
+    }
+
+    const handleBlur: React.FocusEventHandler<HTMLDivElement> = () => {
+      setFocused(false)
+    }
+
+    if (!React.isValidElement(fullOverlay)) return null
+
+    return (
+      <FullOverlay
+        isFocused={isFocused}
+        fullOverlayVisible={fullOverlayVisible}
+      >
+        {React.cloneElement(fullOverlay, {
+          onFocus: handleFocus,
+          onBlur: handleBlur
+        })}
+      </FullOverlay>
+    )
   }
-
-  const handleBlur: React.FocusEventHandler<HTMLDivElement> = () => {
-    setFocused(false)
-  }
-
-  if (!React.isValidElement(fullOverlay)) return null
-
-  return (
-    <FullOverlay isFocused={isFocused} fullOverlayVisible={fullOverlayVisible}>
-      {React.cloneElement(fullOverlay, {
-        onFocus: handleFocus,
-        onBlur: handleBlur
-      })}
-    </FullOverlay>
-  )
-}
 
 interface FullOverlayProps
   extends React.HTMLAttributes<HTMLDivElement>,
@@ -376,6 +380,10 @@ const ProgressBar: React.FC<ProgressBarProps> = props => {
       )}
       style={{ ...style, width: percent }}
       {...rest}
+      role="progressbar"
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-valuenow={progress}
       aria-label={`${percent} complete`}
     />
   )

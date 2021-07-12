@@ -203,7 +203,7 @@ const Typeahead: TypeaheadFieldComponent = props => {
   const { ref: comboRef, ...comboBoxProps } = getComboboxProps()
   React.useImperativeHandle(
     comboRef,
-    () => (fieldRef.current as unknown) as HTMLDivElement
+    () => fieldRef.current as unknown as HTMLDivElement
   )
   const [width, setWidth] = React.useState<number>()
   React.useEffect(() => {

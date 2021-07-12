@@ -64,7 +64,7 @@ const Field = forwardRefWithStatics<FieldProps, HTMLDivElement, FieldStatics>(
     const containerRef = React.useRef<HTMLDivElement>(null)
     React.useImperativeHandle(
       forwardedRef,
-      () => (containerRef.current as unknown) as HTMLDivElement
+      () => containerRef.current as unknown as HTMLDivElement
     )
     const Container = React.useMemo(() => renderContainer, [renderContainer])
     const Tag = React.useMemo(() => renderTag, [renderTag])

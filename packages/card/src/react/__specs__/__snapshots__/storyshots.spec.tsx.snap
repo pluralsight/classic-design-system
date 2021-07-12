@@ -17,6 +17,7 @@ exports[`Storyshots Components/Card Action Bar 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -165,6 +166,7 @@ exports[`Storyshots Components/Card Action Bar Locked Visible 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -313,6 +315,7 @@ exports[`Storyshots Components/Card Action Bar Multiple 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -480,6 +483,7 @@ exports[`Storyshots Components/Card Bonus Bar Element 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -624,6 +628,7 @@ exports[`Storyshots Components/Card Bonus Bar Text 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -760,6 +765,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
           <div
             aria-label="image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -1041,6 +1047,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
           <div
             aria-label="image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -1365,6 +1372,7 @@ exports[`Storyshots Components/Card Full Overlay 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -1499,6 +1507,7 @@ exports[`Storyshots Components/Card Full Overlay Link 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -1637,6 +1646,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -1800,6 +1810,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon Link 1`] = `
           <div
             aria-label="image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -1959,6 +1970,7 @@ exports[`Storyshots Components/Card Full Overlay Locked Visible 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -2093,6 +2105,7 @@ exports[`Storyshots Components/Card Image 1`] = `
       <div
         aria-label="image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/400/200?image=42&gravity=north)",
@@ -2224,6 +2237,7 @@ exports[`Storyshots Components/Card Image Link 1`] = `
           <div
             aria-label="image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/400/200?image=42&gravity=north)",
@@ -2352,6 +2366,7 @@ exports[`Storyshots Components/Card Image With Alt 1`] = `
         alt="image"
         aria-label="image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/400/200?image=42&gravity=north)",
@@ -2477,6 +2492,7 @@ exports[`Storyshots Components/Card Metadata Multiple 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -2622,6 +2638,7 @@ exports[`Storyshots Components/Card Metadata Single 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -2756,6 +2773,7 @@ exports[`Storyshots Components/Card Metadata Text Link 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -2898,6 +2916,7 @@ exports[`Storyshots Components/Card Metadata Text Wrapper 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -3034,6 +3053,7 @@ exports[`Storyshots Components/Card Metadata Two Lines 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -3218,6 +3238,7 @@ exports[`Storyshots Components/Card Progress 1`] = `
         <div
           aria-label="default image"
           className="psds-card__image"
+          role="img"
           style={
             Object {
               "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -3332,6 +3353,7 @@ exports[`Storyshots Components/Card Progress 1`] = `
         <div
           aria-label="default image"
           className="psds-card__image"
+          role="img"
           style={
             Object {
               "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -3343,7 +3365,11 @@ exports[`Storyshots Components/Card Progress 1`] = `
         >
           <div
             aria-label="34% complete"
+            aria-valuemax={100}
+            aria-valuemin={0}
+            aria-valuenow={34}
             className="psds-card__progress__bar"
+            role="progressbar"
             style={
               Object {
                 "width": "34%",
@@ -3459,6 +3485,7 @@ exports[`Storyshots Components/Card Progress 1`] = `
         <div
           aria-label="default image"
           className="psds-card__image"
+          role="img"
           style={
             Object {
               "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -3470,7 +3497,11 @@ exports[`Storyshots Components/Card Progress 1`] = `
         >
           <div
             aria-label="100% complete"
+            aria-valuemax={100}
+            aria-valuemin={0}
+            aria-valuenow={100}
             className="psds-card__progress__bar psds-card__progress__bar--complete"
+            role="progressbar"
             style={
               Object {
                 "width": "100%",
@@ -3606,6 +3637,7 @@ exports[`Storyshots Components/Card Sizes 1`] = `
           <div
             aria-label="default image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -3728,6 +3760,7 @@ exports[`Storyshots Components/Card Sizes 1`] = `
           <div
             aria-label="default image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -3850,6 +3883,7 @@ exports[`Storyshots Components/Card Sizes 1`] = `
           <div
             aria-label="default image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -3977,6 +4011,7 @@ exports[`Storyshots Components/Card Tag Icon 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -4130,6 +4165,7 @@ exports[`Storyshots Components/Card Tag Long Multi Word 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -4283,6 +4319,7 @@ exports[`Storyshots Components/Card Tag Long Single Word 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -4444,6 +4481,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
           <div
             aria-label="default image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -4594,6 +4632,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
           <div
             aria-label="default image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -4744,6 +4783,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
           <div
             aria-label="default image"
             className="psds-card__image"
+            role="img"
             style={
               Object {
                 "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -4899,6 +4939,7 @@ exports[`Storyshots Components/Card Tag Text 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -5033,6 +5074,7 @@ exports[`Storyshots Components/Card Title Link 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -5166,6 +5208,7 @@ exports[`Storyshots Components/Card Title Long 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -5291,6 +5334,7 @@ exports[`Storyshots Components/Card Title Long Link 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -5424,6 +5468,7 @@ exports[`Storyshots Components/Card Title Text 1`] = `
       <div
         aria-label="default image"
         className="psds-card__image"
+        role="img"
         style={
           Object {
             "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",

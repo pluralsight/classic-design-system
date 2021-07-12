@@ -81,9 +81,10 @@ const Step = React.forwardRef<HTMLDivElement, StepProps>((props, ref) => {
     ...rest
   } = props
 
-  const MarkerContainer = React.useMemo(() => renderMarkerContainer, [
-    renderMarkerContainer
-  ])
+  const MarkerContainer = React.useMemo(
+    () => renderMarkerContainer,
+    [renderMarkerContainer]
+  )
 
   const interactive = 'onClick' in props
 
