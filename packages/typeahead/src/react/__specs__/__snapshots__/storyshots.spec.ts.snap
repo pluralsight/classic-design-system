@@ -9,36 +9,35 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="downshift-0-input"
       id="downshift-0-label"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
         aria-owns="downshift-0-menu"
-        data-css-b5kzar=""
+        className="psds-field psds-field--medium psds-field--suffix"
         role="combobox"
       >
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
             aria-autocomplete="list"
             aria-controls="downshift-0-menu"
             aria-labelledby="downshift-0-label"
             autoComplete="off"
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="downshift-0-input"
             onBlur={[Function]}
             onChange={[Function]}
@@ -48,7 +47,7 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-multi-select__caret"
@@ -57,7 +56,7 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -74,7 +73,7 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -1321,36 +1320,35 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="downshift-1-input"
       id="downshift-1-label"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
         aria-owns="downshift-1-menu"
-        data-css-b5kzar=""
+        className="psds-field psds-field--medium psds-field--suffix"
         role="combobox"
       >
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
             aria-autocomplete="both"
             aria-controls="downshift-1-menu"
             aria-labelledby="downshift-1-label"
             autoComplete="off"
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="downshift-1-input"
             onBlur={[Function]}
             onChange={[Function]}
@@ -1360,7 +1358,7 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-multi-select__caret"
@@ -1369,7 +1367,7 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -1386,7 +1384,7 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -2633,36 +2631,35 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="downshift-8-input"
       id="downshift-8-label"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
         aria-owns="downshift-8-menu"
-        data-css-b5kzar=""
+        className="psds-field psds-field--medium psds-field--suffix"
         role="combobox"
       >
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
             aria-autocomplete="list"
             aria-controls="downshift-8-menu"
             aria-labelledby="downshift-8-label"
             autoComplete="off"
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="downshift-8-input"
             onBlur={[Function]}
             onChange={[Function]}
@@ -2672,7 +2669,7 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-multi-select__caret"
@@ -2681,7 +2678,7 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -2698,7 +2695,7 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -3945,24 +3942,23 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
       aria-label="custom input tag with no label"
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="downshift-7-input"
       id="downshift-7-label"
     />
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
         aria-owns="downshift-7-menu"
-        data-css-b5kzar=""
+        className="psds-field psds-field--medium psds-field--suffix"
         role="combobox"
       >
         <input
@@ -3984,7 +3980,7 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
           value=""
         />
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-multi-select__caret"
@@ -3993,7 +3989,7 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -4010,7 +4006,7 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     />
   </div>
   <div
@@ -5255,36 +5251,35 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
   }
 >
   <div
-    data-css-h2yjsn=""
+    className="psds-field__container psds-field__container--disabled"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="downshift-4-input"
       id="downshift-4-label"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
         aria-owns="downshift-4-menu"
-        data-css-b5kzar=""
+        className="psds-field psds-field--medium psds-field--suffix"
         role="combobox"
       >
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
             aria-autocomplete="list"
             aria-controls="downshift-4-menu"
             aria-labelledby="downshift-4-label"
             autoComplete="off"
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             disabled={true}
             id="downshift-4-input"
             onBlur={[Function]}
@@ -5295,7 +5290,7 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-multi-select__caret"
@@ -5304,7 +5299,7 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -5321,7 +5316,7 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -6568,36 +6563,35 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-field__container--error"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="downshift-5-input"
       id="downshift-5-label"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8ff2sc=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
         aria-owns="downshift-5-menu"
-        data-css-b5kzar=""
+        className="psds-field psds-field--medium psds-field--suffix"
         role="combobox"
       >
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
             aria-autocomplete="list"
             aria-controls="downshift-5-menu"
             aria-labelledby="downshift-5-label"
             autoComplete="off"
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="downshift-5-input"
             onBlur={[Function]}
             onChange={[Function]}
@@ -6607,7 +6601,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-multi-select__caret"
@@ -6616,7 +6610,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -6631,10 +6625,10 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
           </div>
         </div>
         <div
-          data-css-qrpvsu=""
+          className="psds-field__error-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
@@ -6652,7 +6646,7 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -7899,32 +7893,31 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="downshift-6-input"
       id="downshift-6-label"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
         aria-owns="downshift-6-menu"
-        data-css-1goiqvn=""
+        className="psds-field psds-field--medium psds-field--prefix psds-field--suffix"
         role="combobox"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -7938,14 +7931,14 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
             aria-autocomplete="list"
             aria-controls="downshift-6-menu"
             aria-labelledby="downshift-6-label"
             autoComplete="off"
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="downshift-6-input"
             onBlur={[Function]}
             onChange={[Function]}
@@ -7955,7 +7948,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-multi-select__caret"
@@ -7964,7 +7957,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -7981,7 +7974,7 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -9228,35 +9221,34 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
       aria-label="no label story typeahead"
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="downshift-3-input"
       id="downshift-3-label"
     />
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
         aria-owns="downshift-3-menu"
-        data-css-b5kzar=""
+        className="psds-field psds-field--medium psds-field--suffix"
         role="combobox"
       >
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
             aria-autocomplete="list"
             aria-controls="downshift-3-menu"
             aria-labelledby="downshift-3-label"
             autoComplete="off"
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="downshift-3-input"
             onBlur={[Function]}
             onChange={[Function]}
@@ -9267,7 +9259,7 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-multi-select__caret"
@@ -9276,7 +9268,7 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -9293,7 +9285,7 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     />
   </div>
   <div
@@ -10538,36 +10530,35 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="downshift-2-input"
       id="downshift-2-label"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
         aria-expanded={false}
         aria-haspopup="listbox"
         aria-owns="downshift-2-menu"
-        data-css-b5kzar=""
+        className="psds-field psds-field--medium psds-field--suffix"
         role="combobox"
       >
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
             aria-autocomplete="list"
             aria-controls="downshift-2-menu"
             aria-labelledby="downshift-2-label"
             autoComplete="off"
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="downshift-2-input"
             onBlur={[Function]}
             onChange={[Function]}
@@ -10577,7 +10568,7 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-multi-select__caret"
@@ -10586,7 +10577,7 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
             tabIndex={-1}
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret down icon"
@@ -10603,7 +10594,7 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>

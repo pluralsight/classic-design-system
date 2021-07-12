@@ -737,7 +737,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               onKeyDown={[Function]}
             >
               <div
-                data-css-1ij5lym=""
+                className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
               >
                 <input
                   className="psds-screenreader-only psds-checkbox__input"
@@ -814,7 +814,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={false}
@@ -864,7 +864,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={true}
@@ -927,7 +927,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={false}
@@ -977,7 +977,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={false}
@@ -1027,7 +1027,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={true}
@@ -1090,7 +1090,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={false}
@@ -1140,7 +1140,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={false}
@@ -1190,7 +1190,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={true}
@@ -1253,7 +1253,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={false}
@@ -1303,7 +1303,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
             onKeyDown={[Function]}
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <input
                 checked={false}
@@ -1386,8 +1386,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
             First name
             <div
               aria-hidden={true}
-              className="psds-table__header__sort-icon"
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-table__header__sort-icon"
             >
               <svg
                 aria-label="sort icon"
@@ -1417,8 +1416,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
             Last name
             <div
               aria-hidden={true}
-              className="psds-table__header__sort-icon"
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-table__header__sort-icon"
             >
               <svg
                 aria-label="sort icon"
@@ -1448,8 +1446,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
             Email
             <div
               aria-hidden={true}
-              className="psds-table__header__sort-icon"
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium psds-table__header__sort-icon"
             >
               <svg
                 aria-label="sort icon"
@@ -1565,7 +1562,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -1656,7 +1653,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret down icon"
@@ -1747,7 +1744,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -1838,7 +1835,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -1929,7 +1926,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2092,7 +2089,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2179,7 +2176,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret down icon"
@@ -2266,7 +2263,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2353,7 +2350,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2440,7 +2437,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
               <div
-                data-css-1gzzcm2=""
+                className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2535,7 +2532,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
               onKeyDown={[Function]}
             >
               <div
-                data-css-1ij5lym=""
+                className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
               >
                 <input
                   className="psds-screenreader-only psds-checkbox__input"
@@ -2610,7 +2607,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -2674,7 +2671,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -2738,7 +2735,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -2802,7 +2799,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -2866,7 +2863,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -2967,7 +2964,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -3039,7 +3036,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -3102,7 +3099,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -3165,7 +3162,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -3228,7 +3225,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
@@ -3291,7 +3288,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 onKeyDown={[Function]}
               >
                 <div
-                  data-css-1ij5lym=""
+                  className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"

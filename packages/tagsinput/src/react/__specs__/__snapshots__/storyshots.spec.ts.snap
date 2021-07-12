@@ -9,22 +9,20 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-tagsinput"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="tagsinput__input-unique-id"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput"
-        data-css-gz81g2=""
+        className="psds-field psds-field--small"
         onKeyPress={[Function]}
       >
         <div
@@ -40,7 +38,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -52,7 +50,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
                     first
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -80,7 +78,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -92,7 +90,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
                     second
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -114,11 +112,10 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
               </div>
             </div>
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
@@ -132,7 +129,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -149,16 +146,14 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-tagsinput"
     onClick={[Function]}
   >
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput"
-        data-css-gz81g2=""
+        className="psds-field psds-field--small"
         onKeyPress={[Function]}
       >
         <div
@@ -174,7 +169,7 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -186,7 +181,7 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
                     first
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -214,7 +209,7 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -226,7 +221,7 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
                     second
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -248,11 +243,10 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
               </div>
             </div>
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
@@ -284,22 +278,20 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
   }
 >
   <div
-    data-css-h2yjsn=""
+    className="psds-field__container psds-field__container--disabled psds-tagsinput psds-tagsinput--disabled"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="tagsinput__input-unique-id"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput psds-tagsinput--disabled"
-        data-css-gz81g2=""
+        className="psds-field psds-field--small"
         onKeyPress={[Function]}
       >
         <div
@@ -315,7 +307,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -327,7 +319,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
                     first
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -355,7 +347,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -367,7 +359,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
                     second
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -389,11 +381,10 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
               </div>
             </div>
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 disabled={true}
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
@@ -408,7 +399,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -425,22 +416,20 @@ exports[`Storyshots Components/TagsInput Empty 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-tagsinput"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="tagsinput__input-unique-id"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput"
-        data-css-gz81g2=""
+        className="psds-field psds-field--small"
         onKeyPress={[Function]}
       >
         <div
@@ -450,11 +439,10 @@ exports[`Storyshots Components/TagsInput Empty 1`] = `
             className="psds-tagsinput__pills"
           >
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
@@ -468,7 +456,7 @@ exports[`Storyshots Components/TagsInput Empty 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -485,22 +473,20 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-field__container--error psds-tagsinput"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="tagsinput__input-unique-id"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8ff2sc=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput"
-        data-css-gz81g2=""
+        className="psds-field psds-field--small"
         onKeyPress={[Function]}
       >
         <div
@@ -516,7 +502,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -528,7 +514,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
                     first
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -556,7 +542,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -568,7 +554,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
                     second
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -590,11 +576,10 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
               </div>
             </div>
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
@@ -606,10 +591,10 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
           </div>
         </div>
         <div
-          data-css-qrpvsu=""
+          className="psds-field__error-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
@@ -627,7 +612,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -644,32 +629,30 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-tagsinput"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="tagsinput__input-unique-id"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput"
-        data-css-28vuio=""
+        className="psds-field psds-field--small psds-field--prefix"
         onKeyPress={[Function]}
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
             className="psds-tagsinput__prefix"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="placeholder icon"
@@ -696,7 +679,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -708,7 +691,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
                     first
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -736,7 +719,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -748,7 +731,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
                     second
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -770,11 +753,10 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
               </div>
             </div>
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
@@ -788,7 +770,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -805,22 +787,20 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-tagsinput"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="tagsinput__input-unique-id"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput"
-        data-css-zhibkn=""
+        className="psds-field psds-field--small psds-field--suffix"
         onKeyPress={[Function]}
       >
         <div
@@ -836,7 +816,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -848,7 +828,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
                     first
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -876,7 +856,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -888,7 +868,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
                     second
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -910,11 +890,10 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
               </div>
             </div>
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
@@ -926,13 +905,13 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
           </div>
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
             className="psds-tagsinput__suffix"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="placeholder icon"
@@ -949,7 +928,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -966,22 +945,20 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-tagsinput"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="tagsinput__input-unique-id"
     >
       The label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput"
-        data-css-gz81g2=""
+        className="psds-field psds-field--small"
         onKeyPress={[Function]}
       >
         <div
@@ -997,7 +974,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1009,7 +986,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 1
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1037,7 +1014,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1049,7 +1026,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 2
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1077,7 +1054,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1089,7 +1066,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 3
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1117,7 +1094,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1129,7 +1106,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 4
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1157,7 +1134,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1169,7 +1146,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 5
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1197,7 +1174,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1209,7 +1186,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 6
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1237,7 +1214,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1249,7 +1226,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 7
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1277,7 +1254,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1289,7 +1266,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 8
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1317,7 +1294,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1329,7 +1306,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 9
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1357,7 +1334,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1369,7 +1346,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 10
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1397,7 +1374,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1409,7 +1386,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 11
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1437,7 +1414,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1449,7 +1426,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 12
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1477,7 +1454,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1489,7 +1466,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 13
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1517,7 +1494,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1529,7 +1506,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 14
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1557,7 +1534,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1569,7 +1546,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                     Item 15
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1591,11 +1568,10 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
               </div>
             </div>
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
@@ -1609,7 +1585,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>
@@ -1626,16 +1602,14 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-tagsinput"
     onClick={[Function]}
   >
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput"
-        data-css-gz81g2=""
+        className="psds-field psds-field--small"
         onKeyPress={[Function]}
       >
         <div
@@ -1651,7 +1625,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1663,7 +1637,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
                     first
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1691,7 +1665,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1703,7 +1677,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
                     second
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1725,11 +1699,10 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
               </div>
             </div>
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
@@ -1756,22 +1729,20 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-tagsinput"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="tagsinput__input-unique-id"
     >
       React node label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        className="psds-tagsinput"
-        data-css-gz81g2=""
+        className="psds-field psds-field--small"
         onKeyPress={[Function]}
       >
         <div
@@ -1787,7 +1758,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1799,7 +1770,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
                     first
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1827,7 +1798,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
               tabIndex={-1}
             >
               <div
-                data-css-1djcb20=""
+                className="psds-halo psds-theme--light psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
               >
                 <div
                   aria-pressed={true}
@@ -1839,7 +1810,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
                     second
                   </span>
                   <div
-                    data-css-k31qw2=""
+                    className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
                       Object {
@@ -1861,11 +1832,10 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
               </div>
             </div>
             <div
-              data-css-n9fe5c=""
+              className="psds-field__input__container psds-tagsinput__input"
             >
               <input
-                className="psds-tagsinput__input"
-                data-css-1f28mdy=""
+                className="psds-field__input psds-field__input--small"
                 id="tagsinput__input-unique-id"
                 onChange={[Function]}
                 onClick={[Function]}
@@ -1879,7 +1849,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       The sub label
     </div>

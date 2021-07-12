@@ -632,7 +632,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
     }
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="info icon"
@@ -675,7 +675,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
     }
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="info icon"
@@ -718,7 +718,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
     }
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="info icon"
@@ -761,7 +761,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
     }
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="info icon"
@@ -804,7 +804,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
     }
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="info icon"
@@ -847,7 +847,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
     }
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="info icon"
@@ -890,7 +890,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
     }
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="info icon"
@@ -933,7 +933,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
     }
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="info icon"

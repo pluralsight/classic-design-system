@@ -197,8 +197,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
           </span>
           <div
             aria-hidden="true"
-            className="psds-verticaltabs__rotatable"
-            data-css-k31qw2=""
+            className="psds-icon psds-icon--size-small psds-verticaltabs__rotatable"
           >
             <svg
               aria-label="caret down icon"
@@ -309,8 +308,7 @@ exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
           </span>
           <div
             aria-hidden="true"
-            className="psds-verticaltabs__rotatable psds-verticaltabs__rotatable--is-open"
-            data-css-k31qw2=""
+            className="psds-icon psds-icon--size-small psds-verticaltabs__rotatable psds-verticaltabs__rotatable--is-open"
           >
             <svg
               aria-label="caret down icon"
@@ -507,9 +505,8 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Active 1`] = `
           className="psds-verticaltabs__tier1__header"
         >
           <div
-            className="psds-verticaltabs__item__icon"
+            className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
             data-active={true}
-            data-css-7dab2f=""
           >
             <svg
               aria-label="placeholder icon"
@@ -550,8 +547,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Collapsible 1`] = `
           onClick={[Function]}
         >
           <div
-            className="psds-verticaltabs__item__icon"
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
           >
             <svg
               aria-label="placeholder icon"
@@ -570,8 +566,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Collapsible 1`] = `
           </span>
           <div
             aria-hidden="true"
-            className="psds-verticaltabs__header__label__icon"
-            data-css-k31qw2=""
+            className="psds-icon psds-icon--size-small psds-verticaltabs__header__label__icon"
           >
             <svg
               aria-label="caret down icon"
@@ -606,8 +601,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Header Basic 1`] = `
           className="psds-verticaltabs__tier1__header"
         >
           <div
-            className="psds-verticaltabs__item__icon"
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
           >
             <svg
               aria-label="placeholder icon"
@@ -648,8 +642,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Header Button 1`] = `
           onClick={[Function]}
         >
           <div
-            className="psds-verticaltabs__item__icon"
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
           >
             <svg
               aria-label="placeholder icon"
@@ -690,8 +683,7 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Header Link 1`] = `
           href="href"
         >
           <div
-            className="psds-verticaltabs__item__icon"
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
           >
             <svg
               aria-label="placeholder icon"
@@ -1105,8 +1097,7 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
               className="psds-verticaltabs__tier1__header"
             >
               <div
-                className="psds-verticaltabs__item__icon"
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
               >
                 <svg
                   aria-label="placeholder icon"
@@ -1193,8 +1184,7 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
           </span>
           <div
             aria-hidden="true"
-            className="psds-verticaltabs__rotatable psds-verticaltabs__rotatable--is-open"
-            data-css-k31qw2=""
+            className="psds-icon psds-icon--size-small psds-verticaltabs__rotatable psds-verticaltabs__rotatable--is-open"
           >
             <svg
               aria-label="caret down icon"
@@ -1286,8 +1276,7 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
               className="psds-verticaltabs__tier1__header"
             >
               <div
-                className="psds-verticaltabs__item__icon"
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
               >
                 <svg
                   aria-label="placeholder icon"
@@ -1392,8 +1381,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                 href="#"
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1426,8 +1414,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                 href="#"
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1460,8 +1447,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1480,8 +1466,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                 </span>
                 <div
                   aria-hidden="true"
-                  className="psds-verticaltabs__header__label__icon"
-                  data-css-k31qw2=""
+                  className="psds-icon psds-icon--size-small psds-verticaltabs__header__label__icon"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -1607,8 +1592,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                 href="#"
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1641,8 +1625,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
                 href="#"
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1816,8 +1799,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1851,8 +1833,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1886,8 +1867,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1921,8 +1901,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -1956,8 +1935,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -2138,8 +2116,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                 className="psds-verticaltabs__tier1__header"
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -2172,8 +2149,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -2192,8 +2168,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                 </span>
                 <div
                   aria-hidden="true"
-                  className="psds-verticaltabs__header__label__icon"
-                  data-css-k31qw2=""
+                  className="psds-icon psds-icon--size-small psds-verticaltabs__header__label__icon"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -2337,8 +2312,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -2357,8 +2331,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                 </span>
                 <div
                   aria-hidden="true"
-                  className="psds-verticaltabs__header__label__icon"
-                  data-css-k31qw2=""
+                  className="psds-icon psds-icon--size-small psds-verticaltabs__header__label__icon"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -2484,8 +2457,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -2504,8 +2476,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                 </span>
                 <div
                   aria-hidden="true"
-                  className="psds-verticaltabs__header__label__icon"
-                  data-css-k31qw2=""
+                  className="psds-icon psds-icon--size-small psds-verticaltabs__header__label__icon"
                 >
                   <svg
                     aria-label="caret down icon"
@@ -2554,8 +2525,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                 onClick={[Function]}
               >
                 <div
-                  className="psds-verticaltabs__item__icon"
-                  data-css-7dab2f=""
+                  className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                 >
                   <svg
                     aria-label="placeholder icon"
@@ -2574,8 +2544,7 @@ exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
                 </span>
                 <div
                   aria-hidden="true"
-                  className="psds-verticaltabs__header__label__icon"
-                  data-css-k31qw2=""
+                  className="psds-icon psds-icon--size-small psds-verticaltabs__header__label__icon"
                 >
                   <svg
                     aria-label="caret down icon"

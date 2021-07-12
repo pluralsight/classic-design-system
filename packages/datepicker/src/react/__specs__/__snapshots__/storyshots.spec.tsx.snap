@@ -29,7 +29,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -64,7 +64,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -500,7 +500,7 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--icon-align-left"
@@ -518,7 +518,7 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
         className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-default psds-text-input__icon"
       >
         <div
-          data-css-7dab2f=""
+          className="psds-icon psds-icon--size-medium"
           onClick={[Function]}
           style={
             Object {
@@ -559,28 +559,27 @@ exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
     }
   >
     <div
-      data-css-w0yocm=""
+      className="psds-field__container"
       onClick={[Function]}
     >
       <label
-        data-css-5jjrbq=""
+        className="psds-field__label psds-theme--dark"
         htmlFor="text-input__input-unique-id"
         id="text-input__label-unique-id"
       >
         Controlled component, set to 31 Dec 1999
       </label>
       <div
-        data-css-63oe3q=""
-        data-css-8qmpxt=""
+        className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
       >
         <div
-          data-css-u3gl1=""
+          className="psds-field psds-field--medium psds-field--prefix"
         >
           <div
-            data-css-16bnq5b=""
+            className="psds-field__prefix"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
               onClick={[Function]}
               style={
                 Object {
@@ -600,10 +599,10 @@ exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
             </div>
           </div>
           <div
-            data-css-n9fe5c=""
+            className="psds-field__input__container"
           >
             <input
-              data-css-1nm5z1g=""
+              className="psds-field__input psds-field__input--medium"
               id="text-input__input-unique-id"
               onChange={[Function]}
               placeholder="mm/dd/yyyy"
@@ -628,28 +627,27 @@ exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
   }
 >
   <div
-    data-css-h2yjsn=""
+    className="psds-field__container psds-field__container--disabled"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Disabled
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -669,10 +667,10 @@ exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             disabled={true}
             id="text-input__input-unique-id"
             onChange={[Function]}
@@ -697,28 +695,27 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-field__container--error"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Errored
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8ff2sc=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -738,10 +735,10 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -749,10 +746,10 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
           />
         </div>
         <div
-          data-css-qrpvsu=""
+          className="psds-field__error-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
@@ -784,26 +781,25 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
     >
       Field.Label label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -823,10 +819,10 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -850,28 +846,27 @@ exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Controlled component, set to 31 Dec 1999
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -891,10 +886,10 @@ exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -918,28 +913,27 @@ exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Prefix
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="home icon"
@@ -955,10 +949,10 @@ exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -982,7 +976,7 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
     style={
       Object {
@@ -991,24 +985,23 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
     }
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       renderContainer
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1028,10 +1021,10 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1055,22 +1048,21 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       renderTag
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
         style={
           Object {
             "outline": "2px dashed orange",
@@ -1078,10 +1070,10 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
         }
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="home icon"
@@ -1097,10 +1089,10 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1124,28 +1116,27 @@ exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Small size
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-28vuio=""
+        className="psds-field psds-field--small psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1165,10 +1156,10 @@ exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1f28mdy=""
+            className="psds-field__input psds-field__input--small"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1192,28 +1183,27 @@ exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       String label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1233,10 +1223,10 @@ exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1260,21 +1250,20 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1294,10 +1283,10 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1307,7 +1296,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       Field.SubLabel subLabel
     </div>
@@ -1326,21 +1315,20 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1360,10 +1348,10 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1373,7 +1361,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       String subLabel
     </div>
@@ -1392,28 +1380,27 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Suffix
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-1goiqvn=""
+        className="psds-field psds-field--medium psds-field--prefix psds-field--suffix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1433,10 +1420,10 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1444,10 +1431,10 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="home icon"
@@ -1492,7 +1479,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -1527,7 +1514,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -1970,7 +1957,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -2005,7 +1992,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -2485,7 +2472,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -2520,7 +2507,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2985,7 +2972,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -3012,7 +2999,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -3050,7 +3037,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -3085,7 +3072,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -3550,7 +3537,7 @@ Array [
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -3577,7 +3564,7 @@ Array [
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -3615,7 +3602,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -3706,7 +3693,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -4529,7 +4516,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -4564,7 +4551,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -4978,7 +4965,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -5013,7 +5000,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"

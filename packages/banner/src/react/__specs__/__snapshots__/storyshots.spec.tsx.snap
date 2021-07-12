@@ -48,7 +48,7 @@ exports[`Storyshots Components/Banner Button 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="close icon"
@@ -88,7 +88,7 @@ exports[`Storyshots Components/Banner Button 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="close icon"
@@ -128,7 +128,7 @@ exports[`Storyshots Components/Banner Button 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="close icon"
@@ -168,7 +168,7 @@ exports[`Storyshots Components/Banner Button 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="close icon"
@@ -263,7 +263,7 @@ exports[`Storyshots Components/Banner Colors 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="close icon"
@@ -290,7 +290,7 @@ exports[`Storyshots Components/Banner Colors 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="close icon"
@@ -317,7 +317,7 @@ exports[`Storyshots Components/Banner Colors 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="close icon"
@@ -344,7 +344,7 @@ exports[`Storyshots Components/Banner Colors 1`] = `
       onClick={[Function]}
     >
       <div
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium"
       >
         <svg
           aria-label="close icon"
@@ -375,7 +375,7 @@ exports[`Storyshots Components/Banner On Click 1`] = `
     onClick={[Function]}
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="close icon"
@@ -408,7 +408,7 @@ exports[`Storyshots Components/Banner On Click Long Text 1`] = `
     onClick={[Function]}
   >
     <div
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium"
     >
       <svg
         aria-label="close icon"

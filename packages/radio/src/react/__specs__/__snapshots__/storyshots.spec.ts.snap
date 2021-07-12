@@ -26,8 +26,7 @@ exports[`Storyshots Components/Radio Basic 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -58,8 +57,7 @@ exports[`Storyshots Components/Radio Basic 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -90,8 +88,7 @@ exports[`Storyshots Components/Radio Basic 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -168,8 +165,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -200,8 +196,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark psds-radio-button__circle--checked"
@@ -236,8 +231,7 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -297,8 +291,7 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-rbpa8o=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -328,8 +321,7 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-rbpa8o=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -359,8 +351,7 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-rbpa8o=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -419,8 +410,7 @@ exports[`Storyshots Components/Radio Error 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-mmyfiy=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -451,8 +441,7 @@ exports[`Storyshots Components/Radio Error 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-mmyfiy=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -483,8 +472,7 @@ exports[`Storyshots Components/Radio Error 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-mmyfiy=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -544,8 +532,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -576,8 +563,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -608,8 +594,7 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -659,8 +644,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -691,8 +675,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -723,8 +706,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -767,8 +749,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -799,8 +780,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -831,8 +811,7 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -883,8 +862,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -915,8 +893,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -947,8 +924,7 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -1003,8 +979,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark psds-radio-button__circle--checked"
@@ -1039,8 +1014,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -1071,8 +1045,7 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -1128,8 +1101,7 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -1160,8 +1132,7 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
@@ -1192,8 +1163,7 @@ exports[`Storyshots Components/Radio Sub Label Only 1`] = `
           className="psds-radio-button__circle-outer"
         >
           <div
-            className="psds-radio-button__halo"
-            data-css-1lu7sfl=""
+            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
           >
             <div
               className="psds-radio-button__circle psds-theme--dark"
