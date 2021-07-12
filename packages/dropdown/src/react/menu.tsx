@@ -24,15 +24,8 @@ export const Menu = React.forwardRef<HTMLDivElement, DropdownMenuProps>(((
   props,
   forwardedRef
 ) => {
-  const {
-    className,
-    inNode,
-    isOpen,
-    menu,
-    menuPosition,
-    buttonRef,
-    ...rest
-  } = props
+  const { className, inNode, isOpen, menu, menuPosition, buttonRef, ...rest } =
+    props
 
   /* eslint-disable-next-line react-hooks/rules-of-hooks */
   const [adjMenuPosition, setAdjMenuPosition] = React.useState<{

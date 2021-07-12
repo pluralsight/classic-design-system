@@ -114,109 +114,63 @@ export const DesignSystem: Story<React.ComponentProps<typeof VerticalTabs>> =
             )
 
             return (
-              <VerticalTabs.Tier1
-                collapsible={section.collapsible}
-                key={sectionKey}
-                header={sectionHeader}
-              >
-                {
-                  // @ts-ignore: story
-                  section.items.map((item, itemKey) => {
-                    const active = isActive(item.id)
-                    const itemHeader = (
-                      <Tier2.Header
-                        href={item.href}
+              <React.Fragment key={groupKey}>
+                <GroupComp header={groupHeader} startOpen>
+                  {(group.sections || []).map((section, sectionKey) => {
+                    const sectionHeader = section.header && (
+                      <Tier1.Header
+                        href={section.header.href}
+                        icon={section.header.icon}
                         onClick={(evt: React.MouseEvent) =>
-                          activate(evt, item.id)
+                          activate(evt, section.id)
                         }
                       >
-                        {item.title}
-                      </Tier2.Header>
+                        {section.header.title}
+                      </Tier1.Header>
                     )
 
                     return (
-                      <Tier2
-                        active={active}
-                        header={itemHeader}
-                        key={itemKey}
-                      />
+                      <Tier1
+                        active={isActive(section.id)}
+                        collapsible={section.collapsible}
+                        key={sectionKey}
+                        header={sectionHeader}
+                      >
+                        {
+                          // @ts-ignore: story
+                          (section.items || []).map((item, itemKey) => {
+                            const itemHeader = (
+                              <Tier2.Header
+                                href={item.href}
+                                onClick={(evt: React.MouseEvent) =>
+                                  activate(evt, item.id)
+                                }
+                              >
+                                {item.title}
+                              </Tier2.Header>
+                            )
+
+                            return (
+                              <Tier2
+                                active={isActive(item.id)}
+                                header={itemHeader}
+                                key={itemKey}
+                              />
+                            )
+                          })
+                        }
+                      </Tier1>
                     )
-                  })
-                }
-              </VerticalTabs.Tier1>
+                  })}
+                </GroupComp>
+                <Divider />
+              </React.Fragment>
             )
           })}
         </VerticalTabs>
       </div>
     )
   }
-  return (
-    <div style={{ width: 240 }}>
-      <VerticalTabs {...args}>
-        {DESIGN_SYSTEM_NAV.map((group, groupKey) => {
-          const GroupComp = group.collapsible ? CollapsibleGroup : Group
-          const groupHeader = group.header && (
-            <GroupComp.Header>{group.header.title}</GroupComp.Header>
-          )
-
-          return (
-            <React.Fragment key={groupKey}>
-              <GroupComp header={groupHeader} startOpen>
-                {(group.sections || []).map((section, sectionKey) => {
-                  const sectionHeader = section.header && (
-                    <Tier1.Header
-                      href={section.header.href}
-                      icon={section.header.icon}
-                      onClick={(evt: React.MouseEvent) =>
-                        activate(evt, section.id)
-                      }
-                    >
-                      {section.header.title}
-                    </Tier1.Header>
-                  )
-
-                  return (
-                    <Tier1
-                      active={isActive(section.id)}
-                      collapsible={section.collapsible}
-                      key={sectionKey}
-                      header={sectionHeader}
-                    >
-                      {
-                        // @ts-ignore: story
-                        (section.items || []).map((item, itemKey) => {
-                          const itemHeader = (
-                            <Tier2.Header
-                              href={item.href}
-                              onClick={(evt: React.MouseEvent) =>
-                                activate(evt, item.id)
-                              }
-                            >
-                              {item.title}
-                            </Tier2.Header>
-                          )
-
-                          return (
-                            <Tier2
-                              active={isActive(item.id)}
-                              header={itemHeader}
-                              key={itemKey}
-                            />
-                          )
-                        })
-                      }
-                    </Tier1>
-                  )
-                })}
-              </GroupComp>
-              <Divider />
-            </React.Fragment>
-          )
-        })}
-      </VerticalTabs>
-    </div>
-  )
-}
 DesignSystem.args = {}
 
 export const Flow: Story<React.ComponentProps<typeof VerticalTabs>> = args => {
