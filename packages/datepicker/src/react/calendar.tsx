@@ -4,7 +4,11 @@ import {
   CaretLeftIcon,
   CaretRightIcon
 } from '@pluralsight/ps-design-system-icon'
-import { RefFor, ValueOf } from '@pluralsight/ps-design-system-util'
+import {
+  RefFor,
+  ValueOf,
+  uniqueId as defaultUniqueId
+} from '@pluralsight/ps-design-system-util'
 import Theme from '@pluralsight/ps-design-system-theme'
 import type { RenderProps } from 'dayzed'
 import glamorDefault, * as glamorExports from 'glamor'
@@ -64,11 +68,20 @@ interface CalendarProps
   extends React.HTMLAttributes<HTMLDivElement>,
     Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
   slide?: ValueOf<typeof slides>
+  uniqueId: (prefix: string) => string
 }
 
 export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
   (
-    { calendars, getBackProps, getForwardProps, children, slide, ...rest },
+    {
+      calendars,
+      getBackProps,
+      getForwardProps,
+      children,
+      slide,
+      uniqueId = defaultUniqueId,
+      ...rest
+    },
     ref
   ) => {
     const [_slide, setSlide] = React.useState<ValueOf<typeof slides>>(slide)
@@ -77,6 +90,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
     const { onClick: onForwardClick, ...forwardRest } = getForwardProps({
       calendars
     })
+    console.log(onBackClick.toString())
     const handleForwardClick = (e: React.MouseEvent) => {
       onForwardClick(e)
       setSlide(slides.forward)
@@ -103,6 +117,9 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
         return () => el.removeEventListener('animationend', updateOffset)
       }
     }, [])
+    const gridLabels = calendars.map((calendar, i) =>
+      uniqueId(`${calendar.month}_${calendar.year}`)
+    )
     if (calendars.length) {
       return (
         <div {...styles.calendar()} {...rest} ref={ref}>
@@ -128,6 +145,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                     <h2
                       key={`${calendar.month}${calendar.year}`}
                       aria-live="polite"
+                      id={gridLabels[i]}
                       {...styles.headerMonth()}
                     >
                       {monthNamesShort[calendar.month]} {calendar.year}
@@ -166,7 +184,9 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                   {...styles.dateGrid()}
                   key={`${calendar.month}${calendar.year}`}
                 >
-                  <DateContext.Provider value={calendar}>
+                  <DateContext.Provider
+                    value={{ ...calendar, 'aria-labelledby': gridLabels[i] }}
+                  >
                     {children}
                   </DateContext.Provider>
                 </div>

@@ -1,6 +1,10 @@
 import React from 'react'
 import type { Calendar } from 'dayzed'
-
+interface DateContextInterface extends Calendar {
+  'aria-labelledby': string
+}
 const initialValue = {}
-// @ts-ignore: really hate this part of context and typescript
-export const DateContext = React.createContext<Calendar>(initialValue)
+export const DateContext = React.createContext<DateContextInterface>(
+  // @ts-ignore: really hate this part of context and typescript
+  initialValue
+)

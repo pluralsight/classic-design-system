@@ -5,8 +5,8 @@ import {
   RefFor,
   uniqueId as defaultUniqueId
 } from '@pluralsight/ps-design-system-util'
-import { useDayzed, DateObj } from 'dayzed'
 import { format } from 'date-fns'
+import { useDayzed, DateObj } from 'dayzed'
 import React from 'react'
 
 import { Calendar } from './calendar'
@@ -40,6 +40,8 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   const [selected, setSelected] = React.useState<Date | undefined>(
     valueFromProps
   )
+  const [focusedDate, setFocusedDate] = React.useState<Date | undefined>()
+  const [offset, setOffset] = React.useState<number>(0)
   React.useEffect(() => setSelected(valueFromProps), [valueFromProps])
   const [open, setOpen] = React.useState<boolean>(false)
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
@@ -47,30 +49,26 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     setSelected(dateObj.date)
     setOpen(false)
   }
+  const onOffsetChanged = () => {
+    focusedDate &&
+      document
+        .querySelector<HTMLButtonElement>(
+          `[aria-label="${format(focusedDate, 'EEE LLL dd yyyy')}"]`
+        )
+        ?.focus()
+  }
   const { getDateProps, ...dayzedData } = useDayzed({
     date: selected,
     selected,
-    onDateSelected
+    onDateSelected,
+    onOffsetChanged
   })
-  const focusDate = () => {
-    !selected && setSelected(new Date())
-    const today = format(selected || new Date(), 'EEE LLL dd yyyy')
-    document
-      .querySelector<HTMLButtonElement>(`[aria-label="${today}"]`)
-      ?.focus()
-  }
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
-    if (!open) {
-      setOpen(true)
-      focusDate()
-    } else {
-      setOpen(false)
-    }
+    setOpen(!open)
   }
   const handleTextfieldKeyDown: React.KeyboardEventHandler<HTMLInputElement> = evt => {
     const key = evt.key.toLowerCase()
     ;[' ', 'enter'].includes(key) && setOpen(true)
-    focusDate()
   }
 
   const handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement> = evt => {
@@ -138,6 +136,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
           style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
           slide={slide}
           onKeyDown={handleEscapeKeyDown}
+          uniqueId={uniqueId}
         >
           <CalendarDates getDateProps={getDateProps}>
             {renderProps => {
