@@ -71,33 +71,38 @@ interface OnMultipleDatesSelected {
   onSelect?: (evt: React.SyntheticEvent, selectedDate: DateObj) => void
 }
 
-export const onRangeDateSelected =
-  ({ selected = [], setSelected, onSelect }: OnMultipleDatesSelected) =>
-  (dateObj: DateObj, evt: React.SyntheticEvent) => {
-    const { selectable, date } = dateObj
-    if (!selectable) {
-      return
-    }
-    const dateTime = date.getTime()
-    const newDates = [...selected]
-    if (selected.length) {
-      if (selected.length === 1) {
-        const firstTime = selected[0].getTime()
-        if (firstTime < dateTime) {
-          newDates.push(date)
-        } else {
-          newDates.unshift(date)
-        }
-        setSelected(newDates)
-      } else if (newDates.length === 2) {
-        setSelected([date])
-      }
-    } else {
-      newDates.push(date)
-      setSelected(newDates)
-    }
-    onSelect && onSelect(evt, dateObj)
+export const onRangeDateSelected = ({
+  selected = [],
+  setSelected,
+  onSelect
+}: OnMultipleDatesSelected) => (
+  dateObj: DateObj,
+  evt: React.SyntheticEvent
+) => {
+  const { selectable, date } = dateObj
+  if (!selectable) {
+    return
   }
+  const dateTime = date.getTime()
+  const newDates = [...selected]
+  if (selected.length) {
+    if (selected.length === 1) {
+      const firstTime = selected[0].getTime()
+      if (firstTime < dateTime) {
+        newDates.push(date)
+      } else {
+        newDates.unshift(date)
+      }
+      setSelected(newDates)
+    } else if (newDates.length === 2) {
+      setSelected([date])
+    }
+  } else {
+    newDates.push(date)
+    setSelected(newDates)
+  }
+  onSelect && onSelect(evt, dateObj)
+}
 
 const getDateIndex = (
   selected: Date[],
@@ -114,29 +119,34 @@ const getDateIndex = (
     index++
     return false
   })
-  return index as unknown as number
+  return (index as unknown) as number
 }
 
-export const onMultiDateSelected =
-  ({ selected = [], setSelected, onSelect }: OnMultipleDatesSelected) =>
-  (dateObj: DateObj, evt: React.SyntheticEvent) => {
-    const { selected: isSelected, selectable, date } = dateObj
-    if (!selectable) {
-      return
-    }
-    const newSelectedDates = selected.slice()
-    const selectedTime = date.getTime()
-    if (isSelected) {
-      const index = getDateIndex(selected, time => selectedTime === time)
-      newSelectedDates.splice(index, 1)
-    } else {
-      // Add
-      const index = getDateIndex(selected, time => selectedTime < time)
-      newSelectedDates.splice(index, 0, date)
-    }
-    setSelected(newSelectedDates)
-    onSelect && onSelect(evt, dateObj)
+export const onMultiDateSelected = ({
+  selected = [],
+  setSelected,
+  onSelect
+}: OnMultipleDatesSelected) => (
+  dateObj: DateObj,
+  evt: React.SyntheticEvent
+) => {
+  const { selected: isSelected, selectable, date } = dateObj
+  if (!selectable) {
+    return
   }
+  const newSelectedDates = selected.slice()
+  const selectedTime = date.getTime()
+  if (isSelected) {
+    const index = getDateIndex(selected, time => selectedTime === time)
+    newSelectedDates.splice(index, 1)
+  } else {
+    // Add
+    const index = getDateIndex(selected, time => selectedTime < time)
+    newSelectedDates.splice(index, 0, date)
+  }
+  setSelected(newSelectedDates)
+  onSelect && onSelect(evt, dateObj)
+}
 
 interface HandleChange<T> {
   selected?: T
@@ -177,7 +187,7 @@ export const useDateSelectChange = ({
 
     if (
       nextSelected instanceof Date &&
-      !isNaN(nextSelected as unknown as number)
+      !isNaN((nextSelected as unknown) as number)
     ) {
       let nextSlide: ValueOf<typeof slides>
       if (selected) {
@@ -232,7 +242,7 @@ export const useRangeSelectChange = ({
 
     if (
       nextSelected instanceof Date &&
-      !isNaN(nextSelected as unknown as number)
+      !isNaN((nextSelected as unknown) as number)
     ) {
       let nextSlide: ValueOf<typeof slides>
       if (selected) {

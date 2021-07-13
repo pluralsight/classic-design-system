@@ -1,6 +1,7 @@
 import Field from '@pluralsight/ps-design-system-field'
 import { ValueOf, canUseDOM, RefFor } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
+import { format } from 'date-fns'
 import React from 'react'
 
 import { Calendar } from './calendar'
@@ -46,8 +47,28 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     selected,
     onDateSelected
   })
+  const focusDate = () => {
+    !selected && setSelected(new Date())
+    const today = format(selected || new Date(), 'EEE LLL dd yyyy')
+    document
+      .querySelector<HTMLButtonElement>(`[aria-label="${today}"]`)
+      ?.focus()
+  }
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
-    setOpen(!open)
+    if (!open) {
+      setOpen(true)
+      focusDate()
+    }
+  }
+  const handleTextfieldKeyDown: React.KeyboardEventHandler<HTMLInputElement> = evt => {
+    const key = evt.key.toLowerCase()
+    ;[' ', 'enter'].includes(key) && setOpen(true)
+    focusDate()
+  }
+
+  const handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement> = evt => {
+    const key = evt.key.toLowerCase()
+    key === 'escape' && setOpen(false)
   }
   const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
   const [value, onChange] = useDateSelectChange({
@@ -86,6 +107,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         label={label}
         onChange={onChange}
         onClick={handleIconClick}
+        onKeyDown={handleTextfieldKeyDown}
         placeholder="mm/dd/yyyy"
         prefix={prefix}
         renderContainer={renderContainer}
@@ -102,6 +124,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
           {...dayzedData}
           style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
           slide={slide}
+          onKeyDown={handleEscapeKeyDown}
         >
           <CalendarDates getDateProps={getDateProps}>
             {renderProps => {
