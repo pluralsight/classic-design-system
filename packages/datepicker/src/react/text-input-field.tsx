@@ -26,12 +26,6 @@ export const TextInputField: React.FC<TextInputFieldProps> = props => {
   const labelId = uniqueId('text-input__label-')
   const inputId = uniqueId('text-input__input-')
 
-  const Prefix = React.useMemo(() => {
-    if (React.isValidElement(prefix)) return prefix
-
-    return <CalendarIcon onClick={onClick} style={{ cursor: 'pointer' }} />
-  }, [prefix])
-
   const Label = React.useMemo(() => {
     if (!label) return
     if (React.isValidElement(label)) return label
@@ -53,7 +47,11 @@ export const TextInputField: React.FC<TextInputFieldProps> = props => {
   return (
     <Field
       disabled={disabled}
-      prefix={Prefix}
+      prefix={
+        prefix || (
+          <CalendarIcon onClick={onClick} style={{ cursor: 'pointer' }} />
+        )
+      }
       label={Label}
       subLabel={SubLabel}
       {...rest}

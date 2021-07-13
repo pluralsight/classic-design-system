@@ -58,6 +58,8 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     if (!open) {
       setOpen(true)
       focusDate()
+    } else {
+      setOpen(false)
     }
   }
   const handleTextfieldKeyDown: React.KeyboardEventHandler<HTMLInputElement> = evt => {
