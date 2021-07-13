@@ -1,5 +1,10 @@
 import Field from '@pluralsight/ps-design-system-field'
-import { ValueOf, canUseDOM, RefFor } from '@pluralsight/ps-design-system-util'
+import {
+  ValueOf,
+  canUseDOM,
+  RefFor,
+  uniqueId as defaultUniqueId
+} from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
 import { format } from 'date-fns'
 import React from 'react'
@@ -29,7 +34,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   suffix,
   onSelect,
   value: valueFromProps,
-  _uniqueId,
+  _uniqueId: uniqueId = defaultUniqueId,
   ...props
 }) => {
   const [selected, setSelected] = React.useState<Date | undefined>(
@@ -97,6 +102,8 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         capture: true
       })
   }, [setOpen])
+  const labelId = uniqueId('text-input__label-')
+  const inputId = uniqueId('text-input__input-')
   return (
     <div
       style={{ display: 'inline-block', position: 'relative' }}
@@ -118,12 +125,16 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         subLabel={subLabel}
         suffix={suffix}
         value={value}
-        _uniqueId={_uniqueId}
+        labelId={labelId}
+        inputId={inputId}
       />
       <br />
       {open && (
         <Calendar
           {...dayzedData}
+          aria-modal="true"
+          aria-labelledby={labelId}
+          aria-live="polite"
           style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
           slide={slide}
           onKeyDown={handleEscapeKeyDown}

@@ -125,12 +125,13 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                     ) : (
                       <div {...styles.headerButton()} />
                     )}
-                    <div
+                    <h2
                       key={`${calendar.month}${calendar.year}`}
+                      aria-live="polite"
                       {...styles.headerMonth()}
                     >
                       {monthNamesShort[calendar.month]} {calendar.year}
-                    </div>
+                    </h2>
                     {calendars.length - 1 === i ? (
                       <Button
                         {...forwardRest}

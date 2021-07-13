@@ -47,13 +47,14 @@ Array [
               data-css-15b13by=""
             />
           </button>
-          <div
+          <h2
+            aria-live="polite"
             data-css-fpvw2v=""
           >
             May
              
             2020
-          </div>
+          </h2>
           <button
             aria-label="Go forward 1 month"
             data-css-phznnm=""
@@ -575,6 +576,7 @@ exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
       >
         <div
           data-css-u3gl1=""
+          onKeyDown={[Function]}
         >
           <div
             data-css-16bnq5b=""
@@ -644,6 +646,7 @@ exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -713,6 +716,7 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -798,6 +802,7 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -866,6 +871,7 @@ exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -934,6 +940,7 @@ exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -1003,6 +1010,7 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -1071,6 +1079,7 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
         style={
           Object {
             "outline": "2px dashed orange",
@@ -1140,6 +1149,7 @@ exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
     >
       <div
         data-css-28vuio=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -1208,6 +1218,7 @@ exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -1269,6 +1280,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -1335,6 +1347,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
     >
       <div
         data-css-u3gl1=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -1408,6 +1421,7 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
     >
       <div
         data-css-1goiqvn=""
+        onKeyDown={[Function]}
       >
         <div
           data-css-16bnq5b=""
@@ -1510,13 +1524,14 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
             data-css-15b13by=""
           />
         </button>
-        <div
+        <h2
+          aria-live="polite"
           data-css-fpvw2v=""
         >
           Jan
            
           2021
-        </div>
+        </h2>
         <button
           aria-label="Go forward 1 month"
           data-css-phznnm=""
@@ -1988,13 +2003,14 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
             data-css-15b13by=""
           />
         </button>
-        <div
+        <h2
+          aria-live="polite"
           data-css-fpvw2v=""
         >
           May
            
           2020
-        </div>
+        </h2>
         <button
           aria-label="Go forward 1 month"
           data-css-phznnm=""
@@ -2503,13 +2519,14 @@ Array [
               data-css-15b13by=""
             />
           </button>
-          <div
+          <h2
+            aria-live="polite"
             data-css-fpvw2v=""
           >
             May
              
             2020
-          </div>
+          </h2>
           <button
             aria-label="Go forward 1 month"
             data-css-phznnm=""
@@ -3068,13 +3085,14 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
               data-css-15b13by=""
             />
           </button>
-          <div
+          <h2
+            aria-live="polite"
             data-css-fpvw2v=""
           >
             May
              
             2020
-          </div>
+          </h2>
           <button
             aria-label="Go forward 1 month"
             data-css-phznnm=""
@@ -3633,13 +3651,14 @@ Array [
               data-css-15b13by=""
             />
           </button>
-          <div
+          <h2
+            aria-live="polite"
             data-css-fpvw2v=""
           >
             May
              
             2020
-          </div>
+          </h2>
           <div />
         </div>
         <div
@@ -3685,13 +3704,14 @@ Array [
           data-css-1vc8xgt=""
         >
           <div />
-          <div
+          <h2
+            aria-live="polite"
             data-css-fpvw2v=""
           >
             Jun
              
             2020
-          </div>
+          </h2>
           <button
             aria-label="Go forward 1 month"
             data-css-phznnm=""
@@ -4543,13 +4563,14 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
             data-css-15b13by=""
           />
         </button>
-        <div
+        <h2
+          aria-live="polite"
           data-css-fpvw2v=""
         >
           Apr
            
           2020
-        </div>
+        </h2>
         <button
           aria-label="Go forward 1 month"
           data-css-phznnm=""
@@ -4992,13 +5013,14 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
             data-css-15b13by=""
           />
         </button>
-        <div
+        <h2
+          aria-live="polite"
           data-css-fpvw2v=""
         >
           May
            
           2020
-        </div>
+        </h2>
         <button
           aria-label="Go forward 1 month"
           data-css-phznnm=""
