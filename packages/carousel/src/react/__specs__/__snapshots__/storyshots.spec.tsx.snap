@@ -18,7 +18,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
       hidden={true}
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Previous items"
@@ -28,7 +28,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret left icon"
@@ -36,7 +36,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
           </div>
@@ -66,7 +66,10 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -83,7 +86,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
                   title="asdf"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -91,7 +94,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -328,7 +331,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
       className="psds-carousel__controls__control psds-carousel__controls__control--next"
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Next items"
@@ -337,7 +340,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret right icon"
@@ -345,7 +348,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
           </div>
@@ -372,7 +375,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
       hidden={true}
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Previous items"
@@ -382,7 +385,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret left icon"
@@ -390,7 +393,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
           </div>
@@ -420,7 +423,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -437,7 +443,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -445,7 +451,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -594,7 +600,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=41&gravity=north)",
@@ -611,7 +620,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -619,7 +628,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -768,7 +777,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -785,7 +797,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -793,7 +805,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -942,7 +954,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=43&gravity=north)",
@@ -959,7 +974,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -967,7 +982,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -1116,7 +1131,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=44&gravity=north)",
@@ -1133,7 +1151,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -1141,7 +1159,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -1290,7 +1308,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=45&gravity=north)",
@@ -1307,7 +1328,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -1315,7 +1336,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -1464,7 +1485,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=46&gravity=north)",
@@ -1481,7 +1505,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -1489,7 +1513,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -1638,7 +1662,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=47&gravity=north)",
@@ -1655,7 +1682,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -1663,7 +1690,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -1812,7 +1839,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=48&gravity=north)",
@@ -1829,7 +1859,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -1837,7 +1867,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -1986,7 +2016,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=49&gravity=north)",
@@ -2003,7 +2036,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -2011,7 +2044,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -2160,7 +2193,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=50&gravity=north)",
@@ -2177,7 +2213,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -2185,7 +2221,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -2334,7 +2370,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=51&gravity=north)",
@@ -2351,7 +2390,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -2359,7 +2398,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -2508,7 +2547,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=52&gravity=north)",
@@ -2525,7 +2567,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -2533,7 +2575,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -2682,7 +2724,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=53&gravity=north)",
@@ -2699,7 +2744,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -2707,7 +2752,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -2856,7 +2901,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=54&gravity=north)",
@@ -2873,7 +2921,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -2881,7 +2929,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -3030,7 +3078,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=55&gravity=north)",
@@ -3047,7 +3098,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -3055,7 +3106,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -3204,7 +3255,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=56&gravity=north)",
@@ -3221,7 +3275,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -3229,7 +3283,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -3378,7 +3432,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=57&gravity=north)",
@@ -3395,7 +3452,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -3403,7 +3460,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -3552,7 +3609,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=58&gravity=north)",
@@ -3569,7 +3629,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -3577,7 +3637,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -3726,7 +3786,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=59&gravity=north)",
@@ -3743,7 +3806,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -3751,7 +3814,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -3900,7 +3963,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=60&gravity=north)",
@@ -3917,7 +3983,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -3925,7 +3991,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -4074,7 +4140,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=61&gravity=north)",
@@ -4091,7 +4160,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -4099,7 +4168,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -4248,7 +4317,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=62&gravity=north)",
@@ -4265,7 +4337,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -4273,7 +4345,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -4422,7 +4494,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=63&gravity=north)",
@@ -4439,7 +4514,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -4447,7 +4522,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -4596,7 +4671,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=64&gravity=north)",
@@ -4613,7 +4691,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -4621,7 +4699,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -4770,7 +4848,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=65&gravity=north)",
@@ -4787,7 +4868,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -4795,7 +4876,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -4944,7 +5025,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=66&gravity=north)",
@@ -4961,7 +5045,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -4969,7 +5053,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -5118,7 +5202,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=67&gravity=north)",
@@ -5135,7 +5222,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -5143,7 +5230,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -5292,7 +5379,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=68&gravity=north)",
@@ -5309,7 +5399,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -5317,7 +5407,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -5466,7 +5556,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=69&gravity=north)",
@@ -5483,7 +5576,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -5491,7 +5584,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -5640,7 +5733,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=70&gravity=north)",
@@ -5657,7 +5753,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -5665,7 +5761,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -5814,7 +5910,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=71&gravity=north)",
@@ -5831,7 +5930,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -5839,7 +5938,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -5988,7 +6087,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=72&gravity=north)",
@@ -6005,7 +6107,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -6013,7 +6115,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -6162,7 +6264,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=73&gravity=north)",
@@ -6179,7 +6284,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -6187,7 +6292,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -6336,7 +6441,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=74&gravity=north)",
@@ -6353,7 +6461,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -6361,7 +6469,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -6510,7 +6618,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=75&gravity=north)",
@@ -6527,7 +6638,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -6535,7 +6646,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -6684,7 +6795,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=76&gravity=north)",
@@ -6701,7 +6815,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -6709,7 +6823,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -6858,7 +6972,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=77&gravity=north)",
@@ -6875,7 +6992,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -6883,7 +7000,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -7032,7 +7149,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=78&gravity=north)",
@@ -7049,7 +7169,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -7057,7 +7177,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -7206,7 +7326,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               className="psds-card__overlays psds-card__overlays--size-medium"
             >
               <div
+                alt="someAltLabel"
+                aria-label="someAltLabel"
                 className="psds-card__image"
+                role="img"
                 style={
                   Object {
                     "backgroundImage": "url(//picsum.photos/680/320?image=79&gravity=north)",
@@ -7223,7 +7346,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   title="See more"
                 >
                   <div
-                    data-css-7dab2f=""
+                    className="psds-icon psds-icon--size-medium"
                   >
                     <svg
                       aria-label="more icon"
@@ -7231,7 +7354,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M6 14.5a2 2 0 110-4 2 2 0 010 4zm12 0a2 2 0 110-4 2 2 0 010 4zm-6 0a2 2 0 110-4 2 2 0 010 4z"
+                        d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
                   </div>
@@ -7370,7 +7493,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
       className="psds-carousel__controls__control psds-carousel__controls__control--next"
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Next items"
@@ -7379,7 +7502,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret right icon"
@@ -7387,7 +7510,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
           </div>
@@ -7414,7 +7537,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
       hidden={true}
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Previous items"
@@ -7430,7 +7553,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret left icon"
@@ -7438,7 +7561,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
           </div>
@@ -7755,7 +7878,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
       className="psds-carousel__controls__control psds-carousel__controls__control--next"
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Next items"
@@ -7770,7 +7893,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret right icon"
@@ -7778,7 +7901,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
           </div>
@@ -7805,7 +7928,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
       hidden={true}
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Previous items"
@@ -7815,7 +7938,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret left icon"
@@ -7823,7 +7946,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
           </div>
@@ -8158,7 +8281,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
       className="psds-carousel__controls__control psds-carousel__controls__control--next"
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Next items"
@@ -8167,7 +8290,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret right icon"
@@ -8175,7 +8298,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
           </div>
@@ -8212,7 +8335,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
         hidden={true}
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Previous items"
@@ -8222,7 +8345,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -8230,7 +8353,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -8283,7 +8406,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
         hidden={true}
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Next items"
@@ -8293,7 +8416,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -8301,7 +8424,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>
@@ -8328,7 +8451,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
         hidden={true}
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Previous items"
@@ -8338,7 +8461,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -8346,7 +8469,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -8430,7 +8553,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
         className="psds-carousel__controls__control psds-carousel__controls__control--next"
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Next items"
@@ -8439,7 +8562,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -8447,7 +8570,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>
@@ -8474,7 +8597,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
         hidden={true}
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Previous items"
@@ -8484,7 +8607,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -8492,7 +8615,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -9163,7 +9286,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
         className="psds-carousel__controls__control psds-carousel__controls__control--next"
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Next items"
@@ -9172,7 +9295,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -9180,7 +9303,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>
@@ -9208,7 +9331,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
       hidden={true}
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Previous items"
@@ -9218,7 +9341,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret left icon"
@@ -9226,7 +9349,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
           </div>
@@ -9378,7 +9501,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
       className="psds-carousel__controls__control psds-carousel__controls__control--next"
     >
       <div
-        data-css-a3m9si=""
+        className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
       >
         <button
           aria-label="Next items"
@@ -9387,7 +9510,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
         >
           <div
             aria-hidden={true}
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="caret right icon"
@@ -9395,7 +9518,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
           </div>
@@ -9447,7 +9570,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
         hidden={true}
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Previous items"
@@ -9457,7 +9580,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -9465,7 +9588,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -9495,7 +9618,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -9511,7 +9637,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -9519,7 +9645,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -9666,7 +9792,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=41&gravity=north)",
@@ -9682,7 +9811,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -9690,7 +9819,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -9837,7 +9966,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -9853,7 +9985,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -9861,7 +9993,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -10008,7 +10140,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=43&gravity=north)",
@@ -10024,7 +10159,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -10032,7 +10167,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -10179,7 +10314,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=44&gravity=north)",
@@ -10195,7 +10333,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -10203,7 +10341,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -10350,7 +10488,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=45&gravity=north)",
@@ -10366,7 +10507,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -10374,7 +10515,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -10521,7 +10662,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=46&gravity=north)",
@@ -10537,7 +10681,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -10545,7 +10689,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -10692,7 +10836,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=47&gravity=north)",
@@ -10708,7 +10855,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -10716,7 +10863,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -10863,7 +11010,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=48&gravity=north)",
@@ -10879,7 +11029,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -10887,7 +11037,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -11024,7 +11174,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
         className="psds-carousel__controls__control psds-carousel__controls__control--next"
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Next items"
@@ -11033,7 +11183,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -11041,7 +11191,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>
@@ -11074,7 +11224,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
         hidden={true}
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Previous items"
@@ -11084,7 +11234,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -11092,7 +11242,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -11122,7 +11272,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -11138,7 +11291,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -11146,7 +11299,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -11293,7 +11446,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=41&gravity=north)",
@@ -11309,7 +11465,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -11317,7 +11473,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -11464,7 +11620,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -11480,7 +11639,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -11488,7 +11647,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -11635,7 +11794,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=43&gravity=north)",
@@ -11651,7 +11813,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -11659,7 +11821,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -11806,7 +11968,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=44&gravity=north)",
@@ -11822,7 +11987,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -11830,7 +11995,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -11977,7 +12142,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=45&gravity=north)",
@@ -11993,7 +12161,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -12001,7 +12169,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -12148,7 +12316,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=46&gravity=north)",
@@ -12164,7 +12335,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -12172,7 +12343,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -12319,7 +12490,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=47&gravity=north)",
@@ -12335,7 +12509,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -12343,7 +12517,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -12490,7 +12664,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=48&gravity=north)",
@@ -12506,7 +12683,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -12514,7 +12691,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -12651,7 +12828,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
         className="psds-carousel__controls__control psds-carousel__controls__control--next"
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Next items"
@@ -12660,7 +12837,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -12668,7 +12845,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>
@@ -12701,7 +12878,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
         hidden={true}
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Previous items"
@@ -12711,7 +12888,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -12719,7 +12896,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -12749,7 +12926,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=40&gravity=north)",
@@ -12765,7 +12945,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -12773,7 +12953,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -12920,7 +13100,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=41&gravity=north)",
@@ -12936,7 +13119,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -12944,7 +13127,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -13091,7 +13274,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=42&gravity=north)",
@@ -13107,7 +13293,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -13115,7 +13301,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -13262,7 +13448,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=43&gravity=north)",
@@ -13278,7 +13467,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -13286,7 +13475,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -13433,7 +13622,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=44&gravity=north)",
@@ -13449,7 +13641,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -13457,7 +13649,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -13604,7 +13796,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=45&gravity=north)",
@@ -13620,7 +13815,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -13628,7 +13823,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -13775,7 +13970,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=46&gravity=north)",
@@ -13791,7 +13989,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -13799,7 +13997,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -13946,7 +14144,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=47&gravity=north)",
@@ -13962,7 +14163,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -13970,7 +14171,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -14117,7 +14318,10 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 className="psds-card__overlays psds-card__overlays--size-medium"
               >
                 <div
+                  alt="someAltLabel"
+                  aria-label="someAltLabel"
                   className="psds-card__image"
+                  role="img"
                   style={
                     Object {
                       "backgroundImage": "url(//picsum.photos/680/320?image=48&gravity=north)",
@@ -14133,7 +14337,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     title="Bookmark"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="bookmark icon"
@@ -14141,7 +14345,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 001-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0014 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
+                          d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
                     </div>
@@ -14278,7 +14482,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
         className="psds-carousel__controls__control psds-carousel__controls__control--next"
       >
         <div
-          data-css-a3m9si=""
+          className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--visible-on-focus"
         >
           <button
             aria-label="Next items"
@@ -14287,7 +14491,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
           >
             <div
               aria-hidden={true}
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -14295,7 +14499,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>

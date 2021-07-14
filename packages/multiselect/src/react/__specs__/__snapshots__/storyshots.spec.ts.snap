@@ -590,6 +590,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
     onClick={[Function]}
   >
     <label
+      aria-label="storybook story"
       data-css-5jjrbq=""
       htmlFor="downshift-6-input"
       id="downshift-6-label"
@@ -2941,6 +2942,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
     onClick={[Function]}
   >
     <label
+      aria-label="storybook story"
       data-css-5jjrbq=""
       htmlFor="downshift-2-input"
       id="downshift-2-label"

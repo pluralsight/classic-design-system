@@ -72,9 +72,8 @@ export const IncompleteMedium: Story = () => {
 }
 
 export const Animations: Story = () => {
-  const [status, setStatus] = React.useState<ValueOf<typeof vars.statuses>>(
-    'completed'
-  )
+  const [status, setStatus] =
+    React.useState<ValueOf<typeof vars.statuses>>('completed')
 
   const advanceStatus = () => {
     const arr = Object.values(vars.statuses)

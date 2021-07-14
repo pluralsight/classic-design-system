@@ -23,11 +23,10 @@ export interface RadioButtonProps
 const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
   ({ value, label, className, ...props }, forwardedRef) => {
     const themeName = useTheme()
-    const { checkedValue, onChange, disabled, error, name } = React.useContext(
-      RadioContext
-    )
+    const { checkedValue, onChange, disabled, error, name } =
+      React.useContext(RadioContext)
     const ref = React.useRef<HTMLInputElement>(
-      (null as unknown) as HTMLInputElement
+      null as unknown as HTMLInputElement
     )
     React.useImperativeHandle(forwardedRef, () => ref.current)
 

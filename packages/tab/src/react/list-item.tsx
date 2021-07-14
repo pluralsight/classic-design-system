@@ -46,10 +46,8 @@ const ListItem = React.forwardRef<ListItemElement, ListItemProps>(
         role: 'tab',
         tabIndex: -1
       },
-      <div className={'psds-tab__list-item__text'} tabIndex={-1}>
-        <div className={'psds-tab__list-item__text-inner'} tabIndex={-1}>
-          {children}
-        </div>
+      <div className={'psds-tab__list-item__text'}>
+        <div className={'psds-tab__list-item__text-inner'}>{children}</div>
         <span className={'psds-tab__list-item__bar'} />
       </div>
     )

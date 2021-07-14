@@ -25,7 +25,7 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
     const ref = React.useRef<HTMLInputElement | null>(null)
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as HTMLInputElement
+      () => ref.current as unknown as HTMLInputElement
     )
 
     const handleClear = (evt: React.MouseEvent) => {

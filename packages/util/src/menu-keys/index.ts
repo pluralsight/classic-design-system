@@ -127,30 +127,32 @@ const character = (evt: KeyboardEvent) => {
   }
 }
 
-export const handleMenuKeyDownEvents: React.KeyboardEventHandler<HTMLUListElement> = synthetic => {
-  const evt = synthetic.nativeEvent
+export const handleMenuKeyDownEvents: React.KeyboardEventHandler<HTMLUListElement> =
+  synthetic => {
+    const evt = synthetic.nativeEvent
 
-  evt.key === 'ArrowDown'
-    ? downArrow(evt)
-    : evt.key === 'ArrowUp'
-    ? upArrow(evt)
-    : evt.key === 'Home'
-    ? home(evt)
-    : evt.key === 'End'
-    ? end(evt)
-    : character(evt)
+    evt.key === 'ArrowDown'
+      ? downArrow(evt)
+      : evt.key === 'ArrowUp'
+      ? upArrow(evt)
+      : evt.key === 'Home'
+      ? home(evt)
+      : evt.key === 'End'
+      ? end(evt)
+      : character(evt)
 
-  evt.preventDefault()
-}
+    evt.preventDefault()
+  }
 
-export const handleMenuKeyUpEvents: React.KeyboardEventHandler<HTMLUListElement> = synthetic => {
-  const evt = synthetic.nativeEvent
+export const handleMenuKeyUpEvents: React.KeyboardEventHandler<HTMLUListElement> =
+  synthetic => {
+    const evt = synthetic.nativeEvent
 
-  evt.key === 'ArrowRight' && rightArrow(evt)
-  evt.key === 'ArrowLeft' && leftArrow(evt)
+    evt.key === 'ArrowRight' && rightArrow(evt)
+    evt.key === 'ArrowLeft' && leftArrow(evt)
 
-  evt.preventDefault()
-}
+    evt.preventDefault()
+  }
 
 export const useMenuRef = <El extends HTMLElement>(focus = false) => {
   const outer = React.createRef<El>()

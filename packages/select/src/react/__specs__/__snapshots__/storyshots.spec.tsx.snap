@@ -19,8 +19,7 @@ Array [
         Select item
       </span>
       <div
-        className="psds-select__icon psds-theme--dark"
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
@@ -28,7 +27,7 @@ Array [
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -53,8 +52,7 @@ exports[`Storyshots Components/Select Button Basic 1`] = `
   >
     Hello
     <div
-      className="psds-select__icon psds-theme--dark"
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
         aria-label="caret down icon"
@@ -62,7 +60,7 @@ exports[`Storyshots Components/Select Button Basic 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
     </div>
@@ -80,8 +78,7 @@ exports[`Storyshots Components/Select Button Disabled 1`] = `
   >
     Hello
     <div
-      className="psds-select__icon psds-theme--dark"
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
         aria-label="caret down icon"
@@ -89,7 +86,7 @@ exports[`Storyshots Components/Select Button Disabled 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
     </div>
@@ -106,8 +103,7 @@ exports[`Storyshots Components/Select Button Error 1`] = `
   >
     Hello
     <div
-      className="psds-select__icon psds-theme--dark"
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
         aria-label="caret down icon"
@@ -115,14 +111,13 @@ exports[`Storyshots Components/Select Button Error 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
     </div>
   </div>
   <div
-    className="psds-select__error"
-    data-css-7dab2f=""
+    className="psds-icon psds-icon--size-medium psds-select__error"
   >
     <svg
       aria-label="warning icon"
@@ -131,7 +126,7 @@ exports[`Storyshots Components/Select Button Error 1`] = `
     >
       <path
         clipRule="evenodd"
-        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5zm0-4h-1a.5.5 0 0 1-.5-.5V7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6.5a.5.5 0 0 1-.5.5z"
         fillRule="evenodd"
       />
     </svg>
@@ -148,8 +143,7 @@ exports[`Storyshots Components/Select Button Focused 1`] = `
   >
     Hello
     <div
-      className="psds-select__icon psds-theme--dark"
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
         aria-label="caret down icon"
@@ -157,7 +151,7 @@ exports[`Storyshots Components/Select Button Focused 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
     </div>
@@ -174,8 +168,7 @@ exports[`Storyshots Components/Select Button Is Open 1`] = `
   >
     Hello
     <div
-      className="psds-select__icon psds-theme--dark"
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
         aria-label="caret down icon"
@@ -183,7 +176,7 @@ exports[`Storyshots Components/Select Button Is Open 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
     </div>
@@ -200,8 +193,7 @@ exports[`Storyshots Components/Select Button Small 1`] = `
   >
     Hello
     <div
-      className="psds-select__icon psds-theme--dark"
-      data-css-7dab2f=""
+      className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
         aria-label="caret down icon"
@@ -209,7 +201,7 @@ exports[`Storyshots Components/Select Button Small 1`] = `
         viewBox="0 0 24 24"
       >
         <path
-          d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+          d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
     </div>
@@ -236,8 +228,7 @@ Array [
         Select item
       </span>
       <div
-        className="psds-select__icon psds-theme--dark"
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
@@ -245,7 +236,7 @@ Array [
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -280,8 +271,7 @@ Array [
         Select item
       </span>
       <div
-        className="psds-select__icon psds-theme--dark"
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
@@ -289,7 +279,7 @@ Array [
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>
@@ -324,8 +314,7 @@ Array [
         Select item
       </span>
       <div
-        className="psds-select__icon psds-theme--dark"
-        data-css-7dab2f=""
+        className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
       >
         <svg
           aria-label="caret down icon"
@@ -333,7 +322,7 @@ Array [
           viewBox="0 0 24 24"
         >
           <path
-            d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+            d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
       </div>

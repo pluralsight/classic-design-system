@@ -140,15 +140,8 @@ const Tier1: React.FC<Tier1Props> & { Header: typeof Tier1Header } = props => (
 )
 
 const Tier1Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
-  const {
-    active,
-    collapsed,
-    collapsible,
-    children,
-    icon,
-    className,
-    ...rest
-  } = props
+  const { active, collapsed, collapsible, children, icon, className, ...rest } =
+    props
   const hideLabels = useHideLabels()
   const Tag: React.FC = wrapperProps =>
     rest.href ? (

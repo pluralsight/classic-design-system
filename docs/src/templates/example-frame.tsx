@@ -8,7 +8,7 @@ import { MDXProvider } from '../components/mdx'
 import * as styles from './example-frame.module.css'
 
 export const query = graphql`
-  query($slug: String!) {
+  query ($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
       body
     }

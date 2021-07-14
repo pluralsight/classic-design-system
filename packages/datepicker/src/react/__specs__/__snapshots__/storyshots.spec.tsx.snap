@@ -29,7 +29,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -37,7 +37,7 @@ Array [
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                   />
                 </svg>
               </div>
@@ -64,7 +64,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -72,7 +72,7 @@ Array [
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
               </div>
@@ -500,7 +500,7 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--icon-align-left"
@@ -518,7 +518,7 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
         className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-default psds-text-input__icon"
       >
         <div
-          data-css-7dab2f=""
+          className="psds-icon psds-icon--size-medium"
           onClick={[Function]}
           style={
             Object {
@@ -532,7 +532,7 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
             viewBox="0 0 24 24"
           >
             <path
-              d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+              d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
             />
           </svg>
         </div>
@@ -559,28 +559,27 @@ exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
     }
   >
     <div
-      data-css-w0yocm=""
+      className="psds-field__container"
       onClick={[Function]}
     >
       <label
-        data-css-5jjrbq=""
+        className="psds-field__label psds-theme--dark"
         htmlFor="text-input__input-unique-id"
         id="text-input__label-unique-id"
       >
         Controlled component, set to 31 Dec 1999
       </label>
       <div
-        data-css-63oe3q=""
-        data-css-8qmpxt=""
+        className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
       >
         <div
-          data-css-u3gl1=""
+          className="psds-field psds-field--medium psds-field--prefix"
         >
           <div
-            data-css-16bnq5b=""
+            className="psds-field__prefix"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
               onClick={[Function]}
               style={
                 Object {
@@ -594,16 +593,16 @@ exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                  d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
                 />
               </svg>
             </div>
           </div>
           <div
-            data-css-n9fe5c=""
+            className="psds-field__input__container"
           >
             <input
-              data-css-1nm5z1g=""
+              className="psds-field__input psds-field__input--medium"
               id="text-input__input-unique-id"
               onChange={[Function]}
               placeholder="mm/dd/yyyy"
@@ -628,28 +627,27 @@ exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
   }
 >
   <div
-    data-css-h2yjsn=""
+    className="psds-field__container psds-field__container--disabled"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Disabled
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -663,16 +661,16 @@ exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             disabled={true}
             id="text-input__input-unique-id"
             onChange={[Function]}
@@ -697,28 +695,27 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-field__container--error"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Errored
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8ff2sc=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -732,16 +729,16 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -749,10 +746,10 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
           />
         </div>
         <div
-          data-css-qrpvsu=""
+          className="psds-field__error-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
@@ -761,7 +758,7 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
             >
               <path
                 clipRule="evenodd"
-                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5zm0-4h-1a.5.5 0 0 1-.5-.5V7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6.5a.5.5 0 0 1-.5.5z"
                 fillRule="evenodd"
               />
             </svg>
@@ -784,26 +781,25 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
     >
       Field.Label label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -817,16 +813,16 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -850,28 +846,27 @@ exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Controlled component, set to 31 Dec 1999
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -885,16 +880,16 @@ exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -918,28 +913,27 @@ exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Prefix
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="home icon"
@@ -948,17 +942,17 @@ exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
             >
               <path
                 clipRule="evenodd"
-                d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                d="m21 13.417.989.988a.5.5 0 0 0 .707 0l.707-.708a.5.5 0 0 0 0-.707L12.353 1.954a.5.5 0 0 0-.707 0L.61 12.99a.5.5 0 0 0 0 .707l.707.707a.5.5 0 0 0 .707 0L3 13.428v7.573a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-4a2 2 0 1 1 4 0v4a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 1 0-8 0v3H5v-8.573z"
                 fillRule="evenodd"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -982,7 +976,7 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
     style={
       Object {
@@ -991,24 +985,23 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
     }
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       renderContainer
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1022,16 +1015,16 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1055,22 +1048,21 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       renderTag
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
         style={
           Object {
             "outline": "2px dashed orange",
@@ -1078,10 +1070,10 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
         }
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="home icon"
@@ -1090,17 +1082,17 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
             >
               <path
                 clipRule="evenodd"
-                d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                d="m21 13.417.989.988a.5.5 0 0 0 .707 0l.707-.708a.5.5 0 0 0 0-.707L12.353 1.954a.5.5 0 0 0-.707 0L.61 12.99a.5.5 0 0 0 0 .707l.707.707a.5.5 0 0 0 .707 0L3 13.428v7.573a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-4a2 2 0 1 1 4 0v4a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 1 0-8 0v3H5v-8.573z"
                 fillRule="evenodd"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1124,28 +1116,27 @@ exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Small size
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-28vuio=""
+        className="psds-field psds-field--small psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1159,16 +1150,16 @@ exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1f28mdy=""
+            className="psds-field__input psds-field__input--small"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1192,28 +1183,27 @@ exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       String label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1227,16 +1217,16 @@ exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1260,21 +1250,20 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1288,16 +1277,16 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1307,7 +1296,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       Field.SubLabel subLabel
     </div>
@@ -1326,21 +1315,20 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-u3gl1=""
+        className="psds-field psds-field--medium psds-field--prefix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1354,16 +1342,16 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1373,7 +1361,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       String subLabel
     </div>
@@ -1392,28 +1380,27 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Suffix
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
-        data-css-1goiqvn=""
+        className="psds-field psds-field--medium psds-field--prefix psds-field--suffix"
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1427,16 +1414,16 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M8.5 10a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0120 21H4a1 1 0 01-1-1V4a1 1 0 011-1h2V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h8V1.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1zm4 0a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1z"
+                d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1444,10 +1431,10 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="home icon"
@@ -1456,7 +1443,7 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
             >
               <path
                 clipRule="evenodd"
-                d="M21 13.417l.989.988a.5.5 0 00.707 0l.707-.708a.5.5 0 000-.707L12.353 1.954a.5.5 0 00-.707 0L.61 12.99a.5.5 0 000 .707l.707.707a.5.5 0 00.707 0L3 13.428v7.573a1 1 0 001 1h5a1 1 0 001-1v-4a2 2 0 114 0v4a1 1 0 001 1h5a1 1 0 001-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 10-8 0v3H5v-8.573z"
+                d="m21 13.417.989.988a.5.5 0 0 0 .707 0l.707-.708a.5.5 0 0 0 0-.707L12.353 1.954a.5.5 0 0 0-.707 0L.61 12.99a.5.5 0 0 0 0 .707l.707.707a.5.5 0 0 0 .707 0L3 13.428v7.573a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-4a2 2 0 1 1 4 0v4a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-7.584zM5 11.428l7-7 7 6.991v8.582h-3v-3a4 4 0 1 0-8 0v3H5v-8.573z"
                 fillRule="evenodd"
               />
             </svg>
@@ -1492,7 +1479,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -1500,7 +1487,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -1527,7 +1514,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -1535,7 +1522,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>
@@ -1970,7 +1957,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -1978,7 +1965,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -2005,7 +1992,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -2013,7 +2000,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>
@@ -2485,7 +2472,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -2493,7 +2480,7 @@ Array [
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                   />
                 </svg>
               </div>
@@ -2520,7 +2507,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2528,7 +2515,7 @@ Array [
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
               </div>
@@ -2985,7 +2972,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -3012,7 +2999,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -3050,7 +3037,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -3058,7 +3045,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                   />
                 </svg>
               </div>
@@ -3085,7 +3072,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -3093,7 +3080,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
               </div>
@@ -3550,7 +3537,7 @@ Array [
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -3577,7 +3564,7 @@ Array [
       className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
           className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
@@ -3615,7 +3602,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -3623,7 +3610,7 @@ Array [
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                    d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                   />
                 </svg>
               </div>
@@ -3706,7 +3693,7 @@ Array [
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -3714,7 +3701,7 @@ Array [
                   viewBox="0 0 24 24"
                 >
                   <path
-                    d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                    d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
               </div>
@@ -4529,7 +4516,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -4537,7 +4524,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -4564,7 +4551,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -4572,7 +4559,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>
@@ -4978,7 +4965,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -4986,7 +4973,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M8 12l5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
+                  d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
             </div>
@@ -5013,7 +5000,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -5021,7 +5008,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M16 12l-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
+                  d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
             </div>

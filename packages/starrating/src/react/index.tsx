@@ -21,11 +21,8 @@ const ScreenReaderInput: React.FC<ScreenReaderInputProps> = props => (
   />
 )
 
-const ScreenReaderText: React.FC<
-  React.HTMLAttributes<HTMLSpanElement>
-> = props => (
-  <span className={'psds-starrating__screen-reader-text'} {...props} />
-)
+const ScreenReaderText: React.FC<React.HTMLAttributes<HTMLSpanElement>> =
+  props => <span className={'psds-starrating__screen-reader-text'} {...props} />
 
 export interface StarRatingProps
   extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
@@ -64,7 +61,7 @@ const StarRating = React.forwardRef<HTMLDivElement, StarRatingProps>(
 
     const stars = (() => {
       const hasValidRating = !Number.isNaN(
-        parseFloat((value as unknown) as string)
+        parseFloat(value as unknown as string)
       )
       const isHovering = hoverIndex !== null
 

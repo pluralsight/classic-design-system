@@ -29,7 +29,7 @@ const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
     const ref = React.useRef<NavUserElement>(null)
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as NavUserElement
+      () => ref.current as unknown as NavUserElement
     )
 
     const isAnchor = 'href' in props

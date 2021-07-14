@@ -78,8 +78,7 @@ const Details = React.forwardRef<HTMLDivElement, DetailsProps>(
     React.useImperativeHandle(
       forwardedRef,
       () =>
-        (((ref as unknown) as RefFor<'div'>)
-          .current as unknown) as HTMLDivElement
+        (ref as unknown as RefFor<'div'>).current as unknown as HTMLDivElement
     )
     return (
       <div

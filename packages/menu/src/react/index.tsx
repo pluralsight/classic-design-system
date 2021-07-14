@@ -35,9 +35,7 @@ interface MenuProps
     label: React.ReactText
   }
   optionRole?: string
-  useActive?: (
-    ref: React.MutableRefObject<HTMLLIElement | undefined>
-  ) => {
+  useActive?: (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
     active: boolean
     handleActiveState: (event: React.FocusEvent<Element>) => void
   }

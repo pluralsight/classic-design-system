@@ -17,20 +17,19 @@ import * as vars from '../vars/index'
 /* eslint-disable-next-line camelcase */
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
-const CloseButton: React.FC<
-  React.HTMLAttributes<HTMLButtonElement>
-> = props => (
-  <button {...props} className="psds-dialog__close" aria-label="Close dialog">
-    <svg
-      aria-label="close icon"
-      role="img"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12" />
-    </svg>
-  </button>
-)
+const CloseButton: React.FC<React.HTMLAttributes<HTMLButtonElement>> =
+  props => (
+    <button {...props} className="psds-dialog__close" aria-label="Close dialog">
+      <svg
+        aria-label="close icon"
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12" />
+      </svg>
+    </button>
+  )
 
 interface OverlayProps extends React.HTMLAttributes<HTMLDivElement> {
   'aria-label'?: string

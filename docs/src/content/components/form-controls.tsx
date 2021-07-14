@@ -46,7 +46,7 @@ export const CheckboxExample = () => {
     } else {
       setValues(
         omit<Record<string, unknown>, string[]>(values, [
-          (name as unknown) as string
+          name as unknown as string
         ])
       )
     }

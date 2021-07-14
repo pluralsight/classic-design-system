@@ -57,7 +57,7 @@ const NavCookieBanner = React.forwardRef<HTMLDivElement, NavCookieBannerProps>(
     const ref = React.useRef<HTMLDivElement>(null)
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as HTMLDivElement
+      () => ref.current as unknown as HTMLDivElement
     )
 
     const [cookies, setCookie] = useCookies([DISMISS_COOKIE_NAME])

@@ -48,11 +48,8 @@ export const Button = React.forwardRef<HTMLButtonElement, DropdownButtonProps>(
     const fieldContainerRef = React.useRef<HTMLDivElement>(null)
     React.useLayoutEffect(() => {
       if (!isOpen || !fieldContainerRef.current) return
-      const {
-        left,
-        bottom,
-        width
-      } = fieldContainerRef.current.getBoundingClientRect()
+      const { left, bottom, width } =
+        fieldContainerRef.current.getBoundingClientRect()
       const requestId = requestAnimationFrame(() =>
         setMenuPosition({ left, top: bottom, width })
       )

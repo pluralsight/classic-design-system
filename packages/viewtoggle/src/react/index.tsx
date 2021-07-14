@@ -32,14 +32,15 @@ const ViewToggle = React.forwardRef<HTMLDivElement, ViewToggleProps>(
     const ref = React.useRef<HTMLDivElement>(null)
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as HTMLDivElement
+      () => ref.current as unknown as HTMLDivElement
     )
 
     const hasRenderedOnce = useHasRenderedOnce()
 
-    const initialIndex = React.useMemo(() => findActiveIndex(children), [
-      children
-    ])
+    const initialIndex = React.useMemo(
+      () => findActiveIndex(children),
+      [children]
+    )
     const [activeIndex, setActiveIndex] = React.useState<number>(initialIndex)
 
     React.useEffect(() => {

@@ -34,7 +34,7 @@ const Link = React.forwardRef<HTMLAnchorElement, Props>(
     const ref = React.useRef<HTMLAnchorElement>()
     React.useImperativeHandle(
       forwardedRef,
-      () => (ref.current as unknown) as HTMLAnchorElement
+      () => ref.current as unknown as HTMLAnchorElement
     )
     const themeName = useTheme()
 

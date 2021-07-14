@@ -33,11 +33,9 @@ exports[`Storyshots Components/Tab Active Item Offscreen 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             One thing
           </div>
@@ -56,11 +54,9 @@ exports[`Storyshots Components/Tab Active Item Offscreen 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Two thing
           </div>
@@ -79,11 +75,9 @@ exports[`Storyshots Components/Tab Active Item Offscreen 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Three thing
           </div>
@@ -102,11 +96,9 @@ exports[`Storyshots Components/Tab Active Item Offscreen 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Four thing
           </div>
@@ -125,11 +117,9 @@ exports[`Storyshots Components/Tab Active Item Offscreen 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             ACTIVE thing
           </div>
@@ -148,11 +138,9 @@ exports[`Storyshots Components/Tab Active Item Offscreen 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Six thing
           </div>
@@ -171,11 +159,9 @@ exports[`Storyshots Components/Tab Active Item Offscreen 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Six thing
           </div>
@@ -194,11 +180,9 @@ exports[`Storyshots Components/Tab Active Item Offscreen 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Six thing
           </div>
@@ -238,11 +222,9 @@ Array [
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Tab 2
           </div>
@@ -288,11 +270,9 @@ exports[`Storyshots Components/Tab As Links 1`] = `
     >
       <div
         className="psds-tab__list-item__text"
-        tabIndex={-1}
       >
         <div
           className="psds-tab__list-item__text-inner"
-          tabIndex={-1}
         >
           External link
         </div>
@@ -338,11 +318,9 @@ exports[`Storyshots Components/Tab Default 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Menu 0
           </div>
@@ -361,11 +339,9 @@ exports[`Storyshots Components/Tab Default 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Menu 1
           </div>
@@ -384,11 +360,9 @@ exports[`Storyshots Components/Tab Default 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Menu 2
           </div>
@@ -407,11 +381,9 @@ exports[`Storyshots Components/Tab Default 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Menu 3
           </div>
@@ -430,11 +402,9 @@ exports[`Storyshots Components/Tab Default 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Menu 4
           </div>
@@ -522,11 +492,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 0
             </div>
@@ -545,11 +513,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 1
             </div>
@@ -568,11 +534,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 2
             </div>
@@ -591,11 +555,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 3
             </div>
@@ -614,11 +576,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 4
             </div>
@@ -637,11 +597,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 5
             </div>
@@ -660,11 +618,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 6
             </div>
@@ -683,11 +639,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 7
             </div>
@@ -706,11 +660,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 8
             </div>
@@ -729,11 +681,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 9
             </div>
@@ -790,11 +740,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 0
             </div>
@@ -813,11 +761,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 1
             </div>
@@ -836,11 +782,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 2
             </div>
@@ -859,11 +803,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 3
             </div>
@@ -882,11 +824,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 4
             </div>
@@ -905,11 +845,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 5
             </div>
@@ -928,11 +866,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 6
             </div>
@@ -951,11 +887,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 7
             </div>
@@ -974,11 +908,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 8
             </div>
@@ -997,11 +929,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 9
             </div>
@@ -1020,11 +950,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 10
             </div>
@@ -1043,11 +971,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 11
             </div>
@@ -1066,11 +992,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 12
             </div>
@@ -1089,11 +1013,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 13
             </div>
@@ -1112,11 +1034,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 14
             </div>
@@ -1135,11 +1055,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 15
             </div>
@@ -1158,11 +1076,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 16
             </div>
@@ -1181,11 +1097,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 17
             </div>
@@ -1204,11 +1118,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 18
             </div>
@@ -1227,11 +1139,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 19
             </div>
@@ -1288,11 +1198,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 0
             </div>
@@ -1311,11 +1219,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 1
             </div>
@@ -1334,11 +1240,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 2
             </div>
@@ -1357,11 +1261,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 3
             </div>
@@ -1380,11 +1282,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 4
             </div>
@@ -1403,11 +1303,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 5
             </div>
@@ -1426,11 +1324,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 6
             </div>
@@ -1449,11 +1345,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 7
             </div>
@@ -1472,11 +1366,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 8
             </div>
@@ -1495,11 +1387,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 9
             </div>
@@ -1518,11 +1408,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 10
             </div>
@@ -1541,11 +1429,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 11
             </div>
@@ -1564,11 +1450,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 12
             </div>
@@ -1587,11 +1471,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 13
             </div>
@@ -1610,11 +1492,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 14
             </div>
@@ -1633,11 +1513,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 15
             </div>
@@ -1656,11 +1534,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 16
             </div>
@@ -1679,11 +1555,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 17
             </div>
@@ -1702,11 +1576,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 18
             </div>
@@ -1725,11 +1597,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 19
             </div>
@@ -1748,11 +1618,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 20
             </div>
@@ -1771,11 +1639,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 21
             </div>
@@ -1794,11 +1660,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 22
             </div>
@@ -1817,11 +1681,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 23
             </div>
@@ -1840,11 +1702,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 24
             </div>
@@ -1863,11 +1723,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 25
             </div>
@@ -1886,11 +1744,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 26
             </div>
@@ -1909,11 +1765,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 27
             </div>
@@ -1932,11 +1786,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 28
             </div>
@@ -1955,11 +1807,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 29
             </div>
@@ -2016,11 +1866,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 0
             </div>
@@ -2039,11 +1887,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 1
             </div>
@@ -2062,11 +1908,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 2
             </div>
@@ -2085,11 +1929,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 3
             </div>
@@ -2108,11 +1950,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 4
             </div>
@@ -2131,11 +1971,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 5
             </div>
@@ -2154,11 +1992,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 6
             </div>
@@ -2177,11 +2013,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 7
             </div>
@@ -2200,11 +2034,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 8
             </div>
@@ -2223,11 +2055,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 9
             </div>
@@ -2246,11 +2076,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 10
             </div>
@@ -2269,11 +2097,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 11
             </div>
@@ -2292,11 +2118,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 12
             </div>
@@ -2315,11 +2139,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 13
             </div>
@@ -2338,11 +2160,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 14
             </div>
@@ -2361,11 +2181,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 15
             </div>
@@ -2384,11 +2202,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 16
             </div>
@@ -2407,11 +2223,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 17
             </div>
@@ -2430,11 +2244,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 18
             </div>
@@ -2453,11 +2265,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 19
             </div>
@@ -2476,11 +2286,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 20
             </div>
@@ -2499,11 +2307,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 21
             </div>
@@ -2522,11 +2328,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 22
             </div>
@@ -2545,11 +2349,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 23
             </div>
@@ -2568,11 +2370,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 24
             </div>
@@ -2591,11 +2391,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 25
             </div>
@@ -2614,11 +2412,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 26
             </div>
@@ -2637,11 +2433,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 27
             </div>
@@ -2660,11 +2454,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 28
             </div>
@@ -2683,11 +2475,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 29
             </div>
@@ -2706,11 +2496,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 30
             </div>
@@ -2729,11 +2517,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 31
             </div>
@@ -2752,11 +2538,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 32
             </div>
@@ -2775,11 +2559,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 33
             </div>
@@ -2798,11 +2580,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 34
             </div>
@@ -2821,11 +2601,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 35
             </div>
@@ -2844,11 +2622,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 36
             </div>
@@ -2867,11 +2643,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 37
             </div>
@@ -2890,11 +2664,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 38
             </div>
@@ -2913,11 +2685,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 39
             </div>
@@ -2982,11 +2752,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 0
               </div>
@@ -3005,11 +2773,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 1
               </div>
@@ -3028,11 +2794,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 2
               </div>
@@ -3051,11 +2815,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 3
               </div>
@@ -3074,11 +2836,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 4
               </div>
@@ -3097,11 +2857,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 5
               </div>
@@ -3120,11 +2878,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 6
               </div>
@@ -3143,11 +2899,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 7
               </div>
@@ -3166,11 +2920,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 8
               </div>
@@ -3189,11 +2941,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 9
               </div>
@@ -3212,11 +2962,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 10
               </div>
@@ -3235,11 +2983,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 11
               </div>
@@ -3258,11 +3004,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 12
               </div>
@@ -3281,11 +3025,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 13
               </div>
@@ -3304,11 +3046,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 14
               </div>
@@ -3327,11 +3067,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 15
               </div>
@@ -3350,11 +3088,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 16
               </div>
@@ -3373,11 +3109,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 17
               </div>
@@ -3396,11 +3130,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 18
               </div>
@@ -3419,11 +3151,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 19
               </div>
@@ -3442,11 +3172,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 20
               </div>
@@ -3465,11 +3193,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 21
               </div>
@@ -3488,11 +3214,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 22
               </div>
@@ -3511,11 +3235,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 23
               </div>
@@ -3534,11 +3256,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 24
               </div>
@@ -3557,11 +3277,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 25
               </div>
@@ -3580,11 +3298,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 26
               </div>
@@ -3603,11 +3319,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 27
               </div>
@@ -3626,11 +3340,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 28
               </div>
@@ -3649,11 +3361,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 29
               </div>
@@ -3672,11 +3382,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 30
               </div>
@@ -3695,11 +3403,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 31
               </div>
@@ -3718,11 +3424,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 32
               </div>
@@ -3741,11 +3445,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 33
               </div>
@@ -3764,11 +3466,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
           >
             <div
               className="psds-tab__list-item__text"
-              tabIndex={-1}
             >
               <div
                 className="psds-tab__list-item__text-inner"
-                tabIndex={-1}
               >
                 Menu 34
               </div>
@@ -3826,11 +3526,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 0
             </div>
@@ -3849,11 +3547,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 1
             </div>
@@ -3872,11 +3568,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 2
             </div>
@@ -3895,11 +3589,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 3
             </div>
@@ -3918,11 +3610,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 4
             </div>
@@ -3941,11 +3631,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 5
             </div>
@@ -3964,11 +3652,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 6
             </div>
@@ -4025,11 +3711,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 0
             </div>
@@ -4048,11 +3732,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 1
             </div>
@@ -4071,11 +3753,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 2
             </div>
@@ -4094,11 +3774,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 3
             </div>
@@ -4117,11 +3795,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 4
             </div>
@@ -4140,11 +3816,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 5
             </div>
@@ -4163,11 +3837,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 6
             </div>
@@ -4186,11 +3858,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 7
             </div>
@@ -4209,11 +3879,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 8
             </div>
@@ -4232,11 +3900,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 9
             </div>
@@ -4255,11 +3921,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 10
             </div>
@@ -4278,11 +3942,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 11
             </div>
@@ -4301,11 +3963,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 12
             </div>
@@ -4324,11 +3984,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 13
             </div>
@@ -4347,11 +4005,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 14
             </div>
@@ -4370,11 +4026,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 15
             </div>
@@ -4393,11 +4047,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 16
             </div>
@@ -4416,11 +4068,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 17
             </div>
@@ -4439,11 +4089,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 18
             </div>
@@ -4462,11 +4110,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 19
             </div>
@@ -4485,11 +4131,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 20
             </div>
@@ -4508,11 +4152,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 21
             </div>
@@ -4531,11 +4173,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 22
             </div>
@@ -4554,11 +4194,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 23
             </div>
@@ -4577,11 +4215,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 24
             </div>
@@ -4600,11 +4236,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 25
             </div>
@@ -4623,11 +4257,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 26
             </div>
@@ -4646,11 +4278,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 27
             </div>
@@ -4669,11 +4299,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 28
             </div>
@@ -4692,11 +4320,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 29
             </div>
@@ -4715,11 +4341,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 30
             </div>
@@ -4738,11 +4362,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 31
             </div>
@@ -4761,11 +4383,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 32
             </div>
@@ -4784,11 +4404,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 33
             </div>
@@ -4807,11 +4425,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 34
             </div>
@@ -4830,11 +4446,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 35
             </div>
@@ -4853,11 +4467,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 36
             </div>
@@ -4876,11 +4488,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 37
             </div>
@@ -4899,11 +4509,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 38
             </div>
@@ -4922,11 +4530,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 39
             </div>
@@ -4945,11 +4551,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 40
             </div>
@@ -4968,11 +4572,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 41
             </div>
@@ -4991,11 +4593,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 42
             </div>
@@ -5014,11 +4614,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 43
             </div>
@@ -5037,11 +4635,9 @@ exports[`Storyshots Components/Tab Scrolling 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Menu 44
             </div>
@@ -5109,11 +4705,9 @@ exports[`Storyshots Components/Tab Style Overrides 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Wow
           </div>
@@ -5156,11 +4750,9 @@ exports[`Storyshots Components/Tab Style Overrides 1`] = `
       >
         <div
           className="psds-tab__list-item__text"
-          tabIndex={-1}
         >
           <div
             className="psds-tab__list-item__text-inner"
-            tabIndex={-1}
           >
             Disabled look
           </div>
@@ -5204,11 +4796,9 @@ exports[`Storyshots Components/Tab Style Overrides 1`] = `
         >
           <div
             className="psds-tab__list-item__text"
-            tabIndex={-1}
           >
             <div
               className="psds-tab__list-item__text-inner"
-              tabIndex={-1}
             >
               Disabled look
             </div>
@@ -5259,11 +4849,9 @@ exports[`Storyshots Components/Tab Super Long Item 1`] = `
     >
       <div
         className="psds-tab__list-item__text"
-        tabIndex={-1}
       >
         <div
           className="psds-tab__list-item__text-inner"
-          tabIndex={-1}
         >
           This is the song that doesn't end; yes, it goes on and on, my friend; some people started singing it, not knowing what it was; and they'll continue singing it forever just because
         </div>
@@ -5282,11 +4870,9 @@ exports[`Storyshots Components/Tab Super Long Item 1`] = `
     >
       <div
         className="psds-tab__list-item__text"
-        tabIndex={-1}
       >
         <div
           className="psds-tab__list-item__text-inner"
-          tabIndex={-1}
         >
           Short
         </div>
@@ -5305,11 +4891,9 @@ exports[`Storyshots Components/Tab Super Long Item 1`] = `
     >
       <div
         className="psds-tab__list-item__text"
-        tabIndex={-1}
       >
         <div
           className="psds-tab__list-item__text-inner"
-          tabIndex={-1}
         >
           A little less ridiculous but still long
         </div>

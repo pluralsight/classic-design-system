@@ -72,15 +72,13 @@ GravatarInvalid.args = {
 export const ImageValid = Template.bind({})
 ImageValid.args = {
   ...defaultArgs,
-  src:
-    'https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg'
+  src: 'https://en.gravatar.com/userimage/8399312/b15448d840afacd0eb18102baf788255.jpeg'
 }
 
 export const ImageTallAndThin = Template.bind({})
 ImageTallAndThin.args = {
   ...defaultArgs,
-  src:
-    'https://akns-images.eonline.com/eol_images/Entire_Site/2010330/293.WillFerrell.tg.043010.jpg'
+  src: 'https://akns-images.eonline.com/eol_images/Entire_Site/2010330/293.WillFerrell.tg.043010.jpg'
 }
 
 export const ImageFlatAndLong = Template.bind({})
