@@ -4,6 +4,7 @@ import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
+import MultiSelect from '../index'
 
 import * as stories from '../__stories__/index.story'
 
@@ -43,6 +44,23 @@ describe('MultiSelectField', () => {
       const results = await axe(container)
 
       expect(results).toHaveNoViolations()
+    })
+  })
+
+  describe('MultiSelectField', () => {
+    it('composes className', () => {
+      render(
+        <MultiSelect
+          className="compose-classname"
+          onChange={(_, nextValue) => {}}
+          options={[]}
+          value={[{ value: '', label: '' }]}
+        />
+      )
+
+      const el = document.querySelector('.psds-multi-select')
+
+      expect(el).toHaveClass('compose-classname')
     })
   })
 

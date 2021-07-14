@@ -24,21 +24,21 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
+        className="psds-multi-select"
         data-css-zhibkn=""
       >
         <div
-          data-css-tgxt0u=""
+          className="psds-multi-select__pills-container"
         >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-0-menu"
-            data-css-dpj5et=""
+            className="psds-multi-select__pills"
             role="combobox"
           >
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -48,10 +48,10 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Hydrogen
                   </span>
@@ -70,7 +70,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -78,7 +78,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -88,10 +88,10 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Helium
                   </span>
@@ -110,7 +110,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -118,7 +118,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__input-container"
               data-css-n9fe5c=""
             >
               <input
@@ -126,8 +126,8 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 aria-controls="downshift-0-menu"
                 aria-labelledby="downshift-0-label"
                 autoComplete="off"
+                className="psds-multi-select__input"
                 data-css-1f28mdy=""
-                data-css-8z457z=""
                 id="downshift-0-input"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -156,14 +156,14 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
             >
               <ul
                 aria-labelledby="downshift-0-label"
-                data-css-m4jq7w=""
+                className="psds-multi-select__menu"
                 id="downshift-0-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
               >
                 <li
                   aria-selected="true"
-                  data-css-1eu691f=""
+                  className="psds-multi-select__menu__item psds-multi-select__menu__item--highlighted"
                   id="downshift-0-item-0"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -173,7 +173,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-1"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -183,7 +183,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-2"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -193,7 +193,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-3"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -203,7 +203,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-4"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -213,7 +213,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-5"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -223,7 +223,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-6"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -233,7 +233,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-7"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -243,7 +243,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-8"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -253,7 +253,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-9"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -263,7 +263,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-10"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -273,7 +273,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-11"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -283,7 +283,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-12"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -293,7 +293,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-13"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -303,7 +303,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-14"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -313,7 +313,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-15"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -323,7 +323,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-16"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -333,7 +333,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-17"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -343,7 +343,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-18"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -353,7 +353,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-19"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -363,7 +363,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-20"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -373,7 +373,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-21"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -383,7 +383,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-22"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -393,7 +393,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-23"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -403,7 +403,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-24"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -413,7 +413,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-25"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -423,7 +423,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-26"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -433,7 +433,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-27"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -443,7 +443,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-28"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -453,7 +453,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-29"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -463,7 +463,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-30"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -473,7 +473,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-31"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -483,7 +483,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-32"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -493,7 +493,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-33"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -503,7 +503,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-34"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -513,7 +513,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-35"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -523,7 +523,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-36"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -533,7 +533,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-0-item-37"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -549,7 +549,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
           >
             <div
               data-css-7dab2f=""
@@ -560,7 +560,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                 />
               </svg>
             </div>
@@ -599,21 +599,21 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
+        className="psds-multi-select"
         data-css-zhibkn=""
       >
         <div
-          data-css-tgxt0u=""
+          className="psds-multi-select__pills-container"
         >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-6-menu"
-            data-css-dpj5et=""
+            className="psds-multi-select__pills"
             role="combobox"
           >
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -623,10 +623,10 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Hydrogen
                   </span>
@@ -645,7 +645,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -653,7 +653,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -663,10 +663,10 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Helium
                   </span>
@@ -685,7 +685,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -693,7 +693,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__input-container"
               data-css-n9fe5c=""
             >
               <input
@@ -701,8 +701,8 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 aria-controls="downshift-6-menu"
                 aria-labelledby="downshift-6-label"
                 autoComplete="off"
+                className="psds-multi-select__input"
                 data-css-1f28mdy=""
-                data-css-8z457z=""
                 id="downshift-6-input"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -737,14 +737,14 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
             >
               <ul
                 aria-labelledby="downshift-6-label"
-                data-css-m4jq7w=""
+                className="psds-multi-select__menu"
                 id="downshift-6-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
               >
                 <li
                   aria-selected="true"
-                  data-css-1eu691f=""
+                  className="psds-multi-select__menu__item psds-multi-select__menu__item--highlighted"
                   id="downshift-6-item-0"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -754,7 +754,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-1"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -764,7 +764,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-2"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -774,7 +774,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-3"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -784,7 +784,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-4"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -794,7 +794,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-5"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -804,7 +804,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-6"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -814,7 +814,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-7"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -824,7 +824,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-8"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -834,7 +834,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-9"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -844,7 +844,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-10"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -854,7 +854,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-11"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -864,7 +864,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-12"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -874,7 +874,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-13"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -884,7 +884,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-14"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -894,7 +894,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-15"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -904,7 +904,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-16"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -914,7 +914,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-17"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -924,7 +924,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-18"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -934,7 +934,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-19"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -944,7 +944,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-20"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -954,7 +954,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-21"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -964,7 +964,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-22"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -974,7 +974,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-23"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -984,7 +984,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-24"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -994,7 +994,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-25"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1004,7 +1004,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-26"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1014,7 +1014,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-27"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1024,7 +1024,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-28"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1034,7 +1034,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-29"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1044,7 +1044,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-30"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1054,7 +1054,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-31"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1064,7 +1064,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-32"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1074,7 +1074,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-33"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1084,7 +1084,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-34"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1094,7 +1094,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-35"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1104,7 +1104,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-36"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1114,7 +1114,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-6-item-37"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1130,7 +1130,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
           >
             <div
               data-css-7dab2f=""
@@ -1141,7 +1141,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                 />
               </svg>
             </div>
@@ -1180,21 +1180,21 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-11s0ie3=""
+        className="psds-multi-select psds-multi-select--disabled"
         data-css-zhibkn=""
       >
         <div
-          data-css-tgxt0u=""
+          className="psds-multi-select__pills-container"
         >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-3-menu"
-            data-css-dpj5et=""
+            className="psds-multi-select__pills"
             role="combobox"
           >
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -1204,10 +1204,10 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Hydrogen
                   </span>
@@ -1226,7 +1226,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -1234,7 +1234,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -1244,10 +1244,10 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Helium
                   </span>
@@ -1266,7 +1266,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -1274,7 +1274,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__input-container"
               data-css-n9fe5c=""
             >
               <input
@@ -1282,8 +1282,8 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 aria-controls="downshift-3-menu"
                 aria-labelledby="downshift-3-label"
                 autoComplete="off"
+                className="psds-multi-select__input"
                 data-css-1f28mdy=""
-                data-css-8z457z=""
                 disabled={true}
                 id="downshift-3-input"
                 onBlur={[Function]}
@@ -1313,14 +1313,14 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
             >
               <ul
                 aria-labelledby="downshift-3-label"
-                data-css-m4jq7w=""
+                className="psds-multi-select__menu"
                 id="downshift-3-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
               >
                 <li
                   aria-selected="true"
-                  data-css-1eu691f=""
+                  className="psds-multi-select__menu__item psds-multi-select__menu__item--highlighted"
                   id="downshift-3-item-0"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1330,7 +1330,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-1"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1340,7 +1340,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-2"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1350,7 +1350,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-3"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1360,7 +1360,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-4"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1370,7 +1370,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-5"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1380,7 +1380,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-6"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1390,7 +1390,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-7"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1400,7 +1400,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-8"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1410,7 +1410,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-9"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1420,7 +1420,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-10"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1430,7 +1430,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-11"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1440,7 +1440,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-12"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1450,7 +1450,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-13"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1460,7 +1460,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-14"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1470,7 +1470,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-15"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1480,7 +1480,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-16"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1490,7 +1490,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-17"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1500,7 +1500,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-18"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1510,7 +1510,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-19"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1520,7 +1520,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-20"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1530,7 +1530,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-21"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1540,7 +1540,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-22"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1550,7 +1550,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-23"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1560,7 +1560,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-24"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1570,7 +1570,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-25"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1580,7 +1580,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-26"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1590,7 +1590,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-27"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1600,7 +1600,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-28"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1610,7 +1610,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-29"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1620,7 +1620,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-30"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1630,7 +1630,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-31"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1640,7 +1640,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-32"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1650,7 +1650,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-33"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1660,7 +1660,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-34"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1670,7 +1670,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-35"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1680,7 +1680,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-36"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1690,7 +1690,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-3-item-37"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1706,7 +1706,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
           >
             <div
               data-css-7dab2f=""
@@ -1717,7 +1717,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                 />
               </svg>
             </div>
@@ -1758,21 +1758,21 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
       data-css-8ff2sc=""
     >
       <div
-        data-css-1ghsi1k=""
+        className="psds-multi-select"
         data-css-zhibkn=""
       >
         <div
-          data-css-tgxt0u=""
+          className="psds-multi-select__pills-container"
         >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-4-menu"
-            data-css-dpj5et=""
+            className="psds-multi-select__pills"
             role="combobox"
           >
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -1782,10 +1782,10 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Hydrogen
                   </span>
@@ -1804,7 +1804,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -1812,7 +1812,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -1822,10 +1822,10 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Helium
                   </span>
@@ -1844,7 +1844,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -1852,7 +1852,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__input-container"
               data-css-n9fe5c=""
             >
               <input
@@ -1860,8 +1860,8 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 aria-controls="downshift-4-menu"
                 aria-labelledby="downshift-4-label"
                 autoComplete="off"
+                className="psds-multi-select__input"
                 data-css-1f28mdy=""
-                data-css-8z457z=""
                 id="downshift-4-input"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -1890,14 +1890,14 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
             >
               <ul
                 aria-labelledby="downshift-4-label"
-                data-css-m4jq7w=""
+                className="psds-multi-select__menu"
                 id="downshift-4-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
               >
                 <li
                   aria-selected="true"
-                  data-css-1eu691f=""
+                  className="psds-multi-select__menu__item psds-multi-select__menu__item--highlighted"
                   id="downshift-4-item-0"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1907,7 +1907,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-1"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1917,7 +1917,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-2"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1927,7 +1927,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-3"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1937,7 +1937,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-4"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1947,7 +1947,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-5"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1957,7 +1957,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-6"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1967,7 +1967,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-7"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1977,7 +1977,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-8"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1987,7 +1987,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-9"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -1997,7 +1997,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-10"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2007,7 +2007,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-11"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2017,7 +2017,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-12"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2027,7 +2027,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-13"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2037,7 +2037,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-14"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2047,7 +2047,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-15"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2057,7 +2057,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-16"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2067,7 +2067,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-17"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2077,7 +2077,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-18"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2087,7 +2087,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-19"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2097,7 +2097,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-20"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2107,7 +2107,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-21"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2117,7 +2117,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-22"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2127,7 +2127,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-23"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2137,7 +2137,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-24"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2147,7 +2147,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-25"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2157,7 +2157,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-26"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2167,7 +2167,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-27"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2177,7 +2177,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-28"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2187,7 +2187,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-29"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2197,7 +2197,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-30"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2207,7 +2207,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-31"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2217,7 +2217,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-32"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2227,7 +2227,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-33"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2237,7 +2237,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-34"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2247,7 +2247,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-35"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2257,7 +2257,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-36"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2267,7 +2267,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-4-item-37"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2283,7 +2283,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
           >
             <div
               data-css-7dab2f=""
@@ -2294,7 +2294,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                 />
               </svg>
             </div>
@@ -2313,7 +2313,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
             >
               <path
                 clipRule="evenodd"
-                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v1a.5.5 0 01-.5.5zm0-4h-1a.5.5 0 01-.5-.5V7a.5.5 0 01.5-.5h1a.5.5 0 01.5.5v6.5a.5.5 0 01-.5.5z"
+                d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 2c-4.411 0-8 3.589-8 8s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm.5 14h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5zm0-4h-1a.5.5 0 0 1-.5-.5V7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6.5a.5.5 0 0 1-.5.5z"
                 fillRule="evenodd"
               />
             </svg>
@@ -2354,14 +2354,14 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
       data-css-8qmpxt=""
     >
       <div
+        className="psds-multi-select"
         data-css-18bafyq=""
-        data-css-1ghsi1k=""
       >
         <div
           data-css-16bnq5b=""
         >
           <div
-            data-css-bjcvj0=""
+            className="psds-multi-select__prefix"
           >
             <div
               data-css-7dab2f=""
@@ -2372,24 +2372,24 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 01.9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 00.9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 00.9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 01.9.9zM11 8.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5V11h2.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5H13v2.5a.5.5 0 01-.5.5h-1a.5.5 0 01-.5-.5V13H8.5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11V8.5z"
+                  d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                 />
               </svg>
             </div>
           </div>
         </div>
         <div
-          data-css-tgxt0u=""
+          className="psds-multi-select__pills-container"
         >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-5-menu"
-            data-css-dpj5et=""
+            className="psds-multi-select__pills"
             role="combobox"
           >
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -2399,10 +2399,10 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Hydrogen
                   </span>
@@ -2421,7 +2421,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -2429,7 +2429,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -2439,10 +2439,10 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Helium
                   </span>
@@ -2461,7 +2461,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -2469,7 +2469,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__input-container"
               data-css-n9fe5c=""
             >
               <input
@@ -2477,8 +2477,8 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 aria-controls="downshift-5-menu"
                 aria-labelledby="downshift-5-label"
                 autoComplete="off"
+                className="psds-multi-select__input"
                 data-css-1f28mdy=""
-                data-css-8z457z=""
                 id="downshift-5-input"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -2507,14 +2507,14 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
             >
               <ul
                 aria-labelledby="downshift-5-label"
-                data-css-m4jq7w=""
+                className="psds-multi-select__menu"
                 id="downshift-5-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
               >
                 <li
                   aria-selected="true"
-                  data-css-1eu691f=""
+                  className="psds-multi-select__menu__item psds-multi-select__menu__item--highlighted"
                   id="downshift-5-item-0"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2524,7 +2524,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-1"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2534,7 +2534,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-2"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2544,7 +2544,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-3"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2554,7 +2554,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-4"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2564,7 +2564,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-5"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2574,7 +2574,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-6"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2584,7 +2584,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-7"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2594,7 +2594,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-8"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2604,7 +2604,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-9"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2614,7 +2614,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-10"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2624,7 +2624,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-11"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2634,7 +2634,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-12"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2644,7 +2644,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-13"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2654,7 +2654,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-14"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2664,7 +2664,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-15"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2674,7 +2674,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-16"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2684,7 +2684,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-17"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2694,7 +2694,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-18"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2704,7 +2704,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-19"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2714,7 +2714,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-20"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2724,7 +2724,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-21"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2734,7 +2734,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-22"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2744,7 +2744,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-23"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2754,7 +2754,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-24"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2764,7 +2764,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-25"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2774,7 +2774,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-26"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2784,7 +2784,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-27"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2794,7 +2794,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-28"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2804,7 +2804,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-29"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2814,7 +2814,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-30"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2824,7 +2824,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-31"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2834,7 +2834,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-32"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2844,7 +2844,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-33"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2854,7 +2854,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-34"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2864,7 +2864,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-35"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2874,7 +2874,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-36"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2884,7 +2884,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-5-item-37"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -2900,7 +2900,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
           >
             <div
               data-css-7dab2f=""
@@ -2911,7 +2911,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                 />
               </svg>
             </div>
@@ -2950,21 +2950,21 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
+        className="psds-multi-select"
         data-css-zhibkn=""
       >
         <div
-          data-css-tgxt0u=""
+          className="psds-multi-select__pills-container"
         >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-2-menu"
-            data-css-dpj5et=""
+            className="psds-multi-select__pills"
             role="combobox"
           >
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -2974,10 +2974,10 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Hydrogen
                   </span>
@@ -2996,7 +2996,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -3004,7 +3004,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -3014,10 +3014,10 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Helium
                   </span>
@@ -3036,7 +3036,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -3044,7 +3044,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__input-container"
               data-css-n9fe5c=""
             >
               <input
@@ -3052,8 +3052,8 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 aria-controls="downshift-2-menu"
                 aria-labelledby="downshift-2-label"
                 autoComplete="off"
+                className="psds-multi-select__input"
                 data-css-1f28mdy=""
-                data-css-8z457z=""
                 id="downshift-2-input"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3083,14 +3083,14 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
             >
               <ul
                 aria-labelledby="downshift-2-label"
-                data-css-m4jq7w=""
+                className="psds-multi-select__menu"
                 id="downshift-2-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
               >
                 <li
                   aria-selected="true"
-                  data-css-1eu691f=""
+                  className="psds-multi-select__menu__item psds-multi-select__menu__item--highlighted"
                   id="downshift-2-item-0"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3100,7 +3100,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-1"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3110,7 +3110,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-2"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3120,7 +3120,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-3"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3130,7 +3130,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-4"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3140,7 +3140,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-5"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3150,7 +3150,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-6"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3160,7 +3160,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-7"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3170,7 +3170,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-8"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3180,7 +3180,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-9"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3190,7 +3190,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-10"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3200,7 +3200,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-11"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3210,7 +3210,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-12"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3220,7 +3220,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-13"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3230,7 +3230,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-14"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3240,7 +3240,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-15"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3250,7 +3250,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-16"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3260,7 +3260,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-17"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3270,7 +3270,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-18"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3280,7 +3280,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-19"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3290,7 +3290,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-20"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3300,7 +3300,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-21"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3310,7 +3310,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-22"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3320,7 +3320,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-23"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3330,7 +3330,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-24"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3340,7 +3340,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-25"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3350,7 +3350,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-26"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3360,7 +3360,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-27"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3370,7 +3370,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-28"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3380,7 +3380,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-29"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3390,7 +3390,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-30"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3400,7 +3400,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-31"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3410,7 +3410,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-32"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3420,7 +3420,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-33"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3430,7 +3430,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-34"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3440,7 +3440,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-35"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3450,7 +3450,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-36"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3460,7 +3460,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-2-item-37"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3476,7 +3476,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
           >
             <div
               data-css-7dab2f=""
@@ -3487,7 +3487,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                 />
               </svg>
             </div>
@@ -3526,21 +3526,21 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
       data-css-8qmpxt=""
     >
       <div
-        data-css-1ghsi1k=""
+        className="psds-multi-select"
         data-css-zhibkn=""
       >
         <div
-          data-css-tgxt0u=""
+          className="psds-multi-select__pills-container"
         >
           <div
             aria-expanded={false}
             aria-haspopup="listbox"
             aria-owns="downshift-1-menu"
-            data-css-dpj5et=""
+            className="psds-multi-select__pills"
             role="combobox"
           >
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -3550,10 +3550,10 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Hydrogen
                   </span>
@@ -3572,7 +3572,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -3580,7 +3580,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__pill"
               onClick={[Function]}
               onKeyDown={[Function]}
               tabIndex={-1}
@@ -3590,10 +3590,10 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               >
                 <div
                   aria-pressed={true}
-                  className="psds-tag psds-theme--light psds-tag--size-small psds-tag--icon psds-tag--is-pressed"
+                  data-css-8a12hv=""
                 >
                   <span
-                    className="psds-tag__label psds-tag__label--icon"
+                    data-css-13bnfv4=""
                   >
                     Helium
                   </span>
@@ -3612,7 +3612,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                       viewBox="0 0 24 24"
                     >
                       <path
-                        d="M17.646 7.056l-.702-.702a.5.5 0 00-.708 0L12 10.59 7.764 6.354a.5.5 0 00-.708 0l-.702.702a.5.5 0 000 .708L10.59 12l-4.236 4.236a.5.5 0 000 .707l.702.703a.5.5 0 00.708 0L12 13.41l4.236 4.236a.5.5 0 00.708 0l.702-.703a.5.5 0 000-.707L13.41 12l4.236-4.236a.5.5 0 000-.708z"
+                        d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
                   </div>
@@ -3620,7 +3620,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               </div>
             </div>
             <div
-              data-css-12qnym0=""
+              className="psds-multi-select__input-container"
               data-css-n9fe5c=""
             >
               <input
@@ -3628,8 +3628,8 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 aria-controls="downshift-1-menu"
                 aria-labelledby="downshift-1-label"
                 autoComplete="off"
+                className="psds-multi-select__input"
                 data-css-1f28mdy=""
-                data-css-8z457z=""
                 id="downshift-1-input"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -3658,14 +3658,14 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
             >
               <ul
                 aria-labelledby="downshift-1-label"
-                data-css-m4jq7w=""
+                className="psds-multi-select__menu"
                 id="downshift-1-menu"
                 onMouseLeave={[Function]}
                 role="listbox"
               >
                 <li
                   aria-selected="true"
-                  data-css-1eu691f=""
+                  className="psds-multi-select__menu__item psds-multi-select__menu__item--highlighted"
                   id="downshift-1-item-0"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3675,7 +3675,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-1"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3685,7 +3685,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-2"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3695,7 +3695,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-3"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3705,7 +3705,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-4"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3715,7 +3715,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-5"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3725,7 +3725,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-6"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3735,7 +3735,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-7"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3745,7 +3745,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-8"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3755,7 +3755,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-9"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3765,7 +3765,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-10"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3775,7 +3775,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-11"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3785,7 +3785,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-12"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3795,7 +3795,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-13"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3805,7 +3805,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-14"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3815,7 +3815,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-15"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3825,7 +3825,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-16"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3835,7 +3835,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-17"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3845,7 +3845,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-18"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3855,7 +3855,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-19"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3865,7 +3865,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-20"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3875,7 +3875,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-21"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3885,7 +3885,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-22"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3895,7 +3895,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-23"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3905,7 +3905,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-24"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3915,7 +3915,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-25"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3925,7 +3925,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-26"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3935,7 +3935,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-27"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3945,7 +3945,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-28"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3955,7 +3955,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-29"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3965,7 +3965,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-30"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3975,7 +3975,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-31"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3985,7 +3985,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-32"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -3995,7 +3995,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-33"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -4005,7 +4005,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-34"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -4015,7 +4015,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-35"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -4025,7 +4025,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-36"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -4035,7 +4035,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 </li>
                 <li
                   aria-selected="false"
-                  data-css-5lqn8l=""
+                  className="psds-multi-select__menu__item"
                   id="downshift-1-item-37"
                   onClick={[Function]}
                   onMouseMove={[Function]}
@@ -4051,7 +4051,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
           data-css-ugy1u5=""
         >
           <div
-            data-css-3sokjq=""
+            className="psds-multi-select__caret"
           >
             <div
               data-css-7dab2f=""
@@ -4062,7 +4062,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
                 viewBox="0 0 24 24"
               >
                 <path
-                  d="M12 15.41l-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                  d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                 />
               </svg>
             </div>

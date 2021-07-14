@@ -1,0 +1,54 @@
+.psds-navbrand {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  padding: var(--psLayoutSpacingXSmall);
+  border-radius: 2px;
+  height: 40px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+}
+.psds-navbrand--clickable {
+  cursor: pointer;
+  background: 0 0;
+  border: none;
+  text-decoration: none;
+}
+.psds-navbrand--clickable:focus,
+.psds-navbrand--clickable:hover {
+  background: rgba([object Object], 0.15);
+}
+.psds-navbrand--clickable:focus {
+  outline: 0;
+}
+.psds-navbrand--clickable:active {
+  background: rgba([object Object], 0.25);
+}
+.psds-navbrand__logo {
+  height: 24px;
+  width: 24px;
+}
+.psds-navbrand__logo svg {
+  height: 100%;
+  width: 100%;
+}
+.psds-navbrand__wordmark {
+  display: none;
+  line-height: 0;
+  color: [object Object];
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+@media (min-width: 1200px) {
+  .psds-navbrand__logo--wordmark {
+    margin-right: var(--psLayoutSpacingXSmall);
+  }
+  .psds-navbrand__wordmark {
+    display: block;
+  }
+}
