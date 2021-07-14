@@ -2,29 +2,29 @@
 
 exports[`Storyshots Components/NavBar Basic 1`] = `
 <div
-  data-css-tuvdh3=""
+  className="psds-navbar"
 >
   <div
-    data-css-1qn6dtd=""
+    className="psds-navbar__mobile-menu"
   >
     <span
-      data-css-ruxays=""
+      data-css-efz14v=""
     >
       <div
-        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+        data-css-1ij5lym=""
       >
         <button
-          data-css-167upi1=""
+          data-css-jn57tt=""
           onClick={[Function]}
         >
           <span
-            data-css-50rv4t=""
+            data-css-1rwzp6s=""
           >
             <span
               data-css-1009u4g=""
             >
               <div
-                className="psds-icon psds-icon--size-medium"
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="menu icon"
@@ -48,7 +48,7 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
     </span>
   </div>
   <div
-    data-css-1kfsc44=""
+    className="psds-navbar__brand"
   >
     <div
       data-css-v7pgy0=""
@@ -57,7 +57,7 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
     </div>
   </div>
   <div
-    data-css-1ns9ldv=""
+    className="psds-navbar__items"
   >
     <div
       data-css-v7pgy0=""
@@ -66,7 +66,7 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
     </div>
   </div>
   <div
-    data-css-jgr69u=""
+    className="psds-navbar__utility"
   >
     <div
       data-css-v7pgy0=""
@@ -74,7 +74,9 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
       Utility
     </div>
   </div>
-  <div>
+  <div
+    className="psds-navbar__user"
+  >
     <div
       data-css-v7pgy0=""
     >
@@ -86,10 +88,10 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
 
 exports[`Storyshots Components/NavBar Desktop Only 1`] = `
 <div
-  data-css-tuvdh3=""
+  className="psds-navbar"
 >
   <div
-    data-css-1kfsc44=""
+    className="psds-navbar__brand"
   >
     <div
       data-css-v7pgy0=""
@@ -98,7 +100,7 @@ exports[`Storyshots Components/NavBar Desktop Only 1`] = `
     </div>
   </div>
   <div
-    data-css-1ns9ldv=""
+    className="psds-navbar__items"
   >
     <div
       data-css-v7pgy0=""
@@ -107,7 +109,7 @@ exports[`Storyshots Components/NavBar Desktop Only 1`] = `
     </div>
   </div>
   <div
-    data-css-jgr69u=""
+    className="psds-navbar__utility"
   >
     <div
       data-css-v7pgy0=""
@@ -115,7 +117,9 @@ exports[`Storyshots Components/NavBar Desktop Only 1`] = `
       Utility
     </div>
   </div>
-  <div>
+  <div
+    className="psds-navbar__user"
+  >
     <div
       data-css-v7pgy0=""
     >
@@ -127,29 +131,29 @@ exports[`Storyshots Components/NavBar Desktop Only 1`] = `
 
 exports[`Storyshots Components/NavBar Example Skills 1`] = `
 <div
-  data-css-tuvdh3=""
+  className="psds-navbar"
 >
   <div
-    data-css-1qn6dtd=""
+    className="psds-navbar__mobile-menu"
   >
     <span
-      data-css-ruxays=""
+      data-css-efz14v=""
     >
       <div
-        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+        data-css-1ij5lym=""
       >
         <button
-          data-css-167upi1=""
+          data-css-jn57tt=""
           onClick={[Function]}
         >
           <span
-            data-css-50rv4t=""
+            data-css-1rwzp6s=""
           >
             <span
               data-css-1009u4g=""
             >
               <div
-                className="psds-icon psds-icon--size-medium"
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="menu icon"
@@ -173,16 +177,16 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
     </span>
   </div>
   <div
-    data-css-1kfsc44=""
+    className="psds-navbar__brand"
   >
     <div
-      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+      data-css-1ij5lym=""
     >
       <div
-        data-css-1yi1k4r=""
+        data-css-2jt98h=""
       >
         <div
-          data-css-1yppk9l=""
+          data-css-r8gg0x=""
         >
           <svg
             aria-hidden={true}
@@ -214,7 +218,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
           </svg>
         </div>
         <div
-          data-css-1b9xv68=""
+          data-css-1hpzsz5=""
         >
           SKILLS
         </div>
@@ -222,28 +226,28 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
     </div>
   </div>
   <div
-    data-css-1ns9ldv=""
+    className="psds-navbar__items"
   >
     <div
       data-css-1gxezh7=""
     >
       <span
-        data-css-ruxays=""
+        data-css-efz14v=""
       >
         <div
-          className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+          data-css-1ij5lym=""
         >
           <button
-            data-css-167upi1=""
+            data-css-jn57tt=""
           >
             <span
-              data-css-50rv4t=""
+              data-css-1rwzp6s=""
             >
               <span
-                data-css-1o9ctb7=""
+                data-css-47tufd=""
               >
                 <div
-                  className="psds-icon psds-icon--size-medium"
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="home icon"
@@ -259,7 +263,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                 </div>
               </span>
               <span
-                data-css-1c3u483=""
+                data-css-cllsto=""
               >
                 Home
               </span>
@@ -276,23 +280,23 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
     >
       <div>
         <span
-          data-css-ruxays=""
+          data-css-efz14v=""
         >
           <div
-            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+            data-css-1ij5lym=""
           >
             <button
-              data-css-8y1zv3=""
+              data-css-afs2pw=""
               onClick={[Function]}
             >
               <span
-                data-css-5vea0s=""
+                data-css-1u49jll=""
               >
                 <span
-                  data-css-1o9ctb7=""
+                  data-css-47tufd=""
                 >
                   <div
-                    className="psds-icon psds-icon--size-medium"
+                    data-css-7dab2f=""
                   >
                     <svg
                       aria-label="browse icon"
@@ -308,15 +312,15 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                   </div>
                 </span>
                 <span
-                  data-css-1c3u483=""
+                  data-css-cllsto=""
                 >
                   Browse
                 </span>
                 <span
-                  data-css-1cbyl54=""
+                  data-css-di4gcb=""
                 >
                   <div
-                    className="psds-icon psds-icon--size-small"
+                    data-css-k31qw2=""
                   >
                     <svg
                       aria-label="caret down icon"
@@ -333,7 +337,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
             </button>
           </div>
           <div
-            data-css-1qafynz=""
+            data-css-3004k=""
           />
         </span>
       </div>
@@ -347,28 +351,28 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
     </div>
   </div>
   <div
-    data-css-jgr69u=""
+    className="psds-navbar__utility"
   >
     <div
       data-css-1gxezh7=""
     >
       <span
-        data-css-ruxays=""
+        data-css-efz14v=""
       >
         <div
-          className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+          data-css-1ij5lym=""
         >
           <button
-            data-css-167upi1=""
+            data-css-jn57tt=""
           >
             <span
-              data-css-50rv4t=""
+              data-css-1rwzp6s=""
             >
               <span
                 data-css-1009u4g=""
               >
                 <div
-                  className="psds-icon psds-icon--size-medium"
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="notifications icon"
@@ -395,22 +399,22 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
       data-css-w0yocm=""
     >
       <span
-        data-css-ruxays=""
+        data-css-efz14v=""
       >
         <div
-          className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+          data-css-1ij5lym=""
         >
           <button
-            data-css-167upi1=""
+            data-css-jn57tt=""
           >
             <span
-              data-css-50rv4t=""
+              data-css-1rwzp6s=""
             >
               <span
                 data-css-1009u4g=""
               >
                 <div
-                  className="psds-icon psds-icon--size-medium"
+                  data-css-7dab2f=""
                 >
                   <svg
                     aria-label="account icon"
@@ -432,16 +436,18 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
       </span>
     </div>
   </div>
-  <div>
+  <div
+    className="psds-navbar__user"
+  >
     <div
-      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+      data-css-1ij5lym=""
     >
       <button
-        className="psds-navuser psds-navuser--clickable"
+        data-css-6uwj3a=""
         onClick={[Function]}
       >
         <div
-          className="psds-avatar psds-avatar--size-xsmall"
+          className="psds-avatar psds-avatar--size-xSmall"
         >
           <div
             aria-label="Jake"
@@ -456,15 +462,15 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
           </div>
         </div>
         <div
-          className="psds-navuser__words"
+          data-css-1mmc9g1=""
         >
           <div
-            className="psds-navuser__name"
+            data-css-6flzpu=""
           >
             Jake
           </div>
           <div
-            className="psds-navuser__plan-name"
+            data-css-60db85=""
           >
             Accenture
           </div>
@@ -484,29 +490,29 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
 
 exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
 <div
-  data-css-tuvdh3=""
+  className="psds-navbar"
 >
   <div
-    data-css-1qn6dtd=""
+    className="psds-navbar__mobile-menu"
   >
     <span
-      data-css-ruxays=""
+      data-css-efz14v=""
     >
       <div
-        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+        data-css-1ij5lym=""
       >
         <button
-          data-css-167upi1=""
+          data-css-jn57tt=""
           onClick={[Function]}
         >
           <span
-            data-css-50rv4t=""
+            data-css-1rwzp6s=""
           >
             <span
               data-css-1009u4g=""
             >
               <div
-                className="psds-icon psds-icon--size-medium"
+                data-css-7dab2f=""
               >
                 <svg
                   aria-label="menu icon"
@@ -530,16 +536,16 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
     </span>
   </div>
   <div
-    data-css-1kfsc44=""
+    className="psds-navbar__brand"
   >
     <div
-      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
+      data-css-1ij5lym=""
     >
       <div
-        data-css-1yi1k4r=""
+        data-css-2jt98h=""
       >
         <div
-          data-css-1yppk9l=""
+          data-css-r8gg0x=""
         >
           <svg
             aria-hidden={true}
@@ -571,7 +577,7 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
           </svg>
         </div>
         <div
-          data-css-1b9xv68=""
+          data-css-1hpzsz5=""
         >
           SKILLS
         </div>
@@ -579,7 +585,7 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
     </div>
   </div>
   <div
-    data-css-1ns9ldv=""
+    className="psds-navbar__items"
   >
     <div
       data-css-v7pgy0=""
@@ -588,7 +594,7 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
     </div>
   </div>
   <div
-    data-css-jgr69u=""
+    className="psds-navbar__utility"
   >
     <div
       data-css-v7pgy0=""
@@ -596,7 +602,9 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
       Utility
     </div>
   </div>
-  <div>
+  <div
+    className="psds-navbar__user"
+  >
     <div
       data-css-v7pgy0=""
     >
