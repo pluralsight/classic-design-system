@@ -68,7 +68,7 @@ interface CalendarProps
   extends React.HTMLAttributes<HTMLDivElement>,
     Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
   slide?: ValueOf<typeof slides>
-  uniqueId: (prefix: string) => string
+  uniqueId?: (prefix: string) => string
 }
 
 export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(

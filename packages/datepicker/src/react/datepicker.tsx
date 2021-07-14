@@ -61,20 +61,23 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     date: selected,
     selected,
     onDateSelected,
-    onOffsetChanged
+    onOffsetChanged,
+    offset
   })
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
     setOpen(!open)
   }
-  const handleTextfieldKeyDown: React.KeyboardEventHandler<HTMLInputElement> = evt => {
-    const key = evt.key.toLowerCase()
-    ;[' ', 'enter'].includes(key) && setOpen(true)
-  }
+  const handleTextfieldKeyDown: React.KeyboardEventHandler<HTMLInputElement> =
+    evt => {
+      const key = evt.key.toLowerCase()
+      ;[' ', 'enter'].includes(key) && setOpen(true)
+    }
 
-  const handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement> = evt => {
-    const key = evt.key.toLowerCase()
-    key === 'escape' && setOpen(false)
-  }
+  const handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement> =
+    evt => {
+      const key = evt.key.toLowerCase()
+      key === 'escape' && setOpen(false)
+    }
   const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
   const [value, onChange] = useDateSelectChange({
     selected,
@@ -138,7 +141,11 @@ export const DatePicker: React.FC<DatePickerProps> = ({
           onKeyDown={handleEscapeKeyDown}
           uniqueId={uniqueId}
         >
-          <CalendarDates getDateProps={getDateProps}>
+          <CalendarDates
+            getDateProps={getDateProps}
+            setOffset={setOffset}
+            setFocusedDate={setFocusedDate}
+          >
             {renderProps => {
               return <button {...renderProps} />
             }}
