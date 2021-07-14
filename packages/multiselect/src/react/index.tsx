@@ -40,6 +40,7 @@ type MultiSelectFieldComponent = React.FC<MultiSelectFieldProps> &
 
 const MultiSelect: MultiSelectFieldComponent = props => {
   const {
+    'aria-label': ariaLabel,
     disabled,
     filterFn = simpleTextFilter,
     label,
@@ -158,11 +159,19 @@ const MultiSelect: MultiSelectFieldComponent = props => {
   )
 
   const Label = React.useMemo(() => {
+    const _ariaLabel = !label ? ariaLabel : undefined
     if (React.isValidElement(label)) {
-      return React.cloneElement<any>(label, { ...getLabelProps() })
+      return React.cloneElement<any>(label, {
+        ...getLabelProps(),
+        'aria-label': _ariaLabel
+      })
     }
 
-    return <Field.Label {...getLabelProps()}>{label}</Field.Label>
+    return (
+      <Field.Label {...getLabelProps()} aria-label={_ariaLabel}>
+        {label}
+      </Field.Label>
+    )
   }, [label, getLabelProps])
 
   const SubLabel = React.useMemo(() => {

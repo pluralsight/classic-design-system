@@ -101,7 +101,7 @@ describe('MultiSelectField', () => {
       userEvent.tab()
 
       expect(input).not.toHaveFocus()
-      expect(menu).not.toBeVisible()
+      expect(menu).not.toHaveClass('psds-multi-select__menu--open')
     })
 
     it('closes the menu when esc pressed', async () => {
@@ -117,7 +117,7 @@ describe('MultiSelectField', () => {
       userEvent.type(input, '{esc}')
 
       expect(input).toHaveFocus()
-      expect(menu).not.toBeVisible()
+      expect(menu).not.toHaveClass('psds-multi-select__menu--open')
     })
 
     it('opens the menu when alt+down pressed', async () => {
