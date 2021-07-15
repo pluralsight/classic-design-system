@@ -5,7 +5,7 @@ exports[`Storyshots Components/NavItem As Link 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <a
       className="psds-navitem__button"
@@ -34,7 +34,7 @@ exports[`Storyshots Components/NavItem Basic 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       className="psds-navitem__button"
@@ -62,7 +62,7 @@ exports[`Storyshots Components/NavItem Horizontal 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       className="psds-navitem__button"
@@ -90,7 +90,7 @@ exports[`Storyshots Components/NavItem Horizontal As Link 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <a
       className="psds-navitem__button"
@@ -119,7 +119,7 @@ exports[`Storyshots Components/NavItem Horizontal As Link With Icon 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <a
       className="psds-navitem__button"
@@ -133,7 +133,7 @@ exports[`Storyshots Components/NavItem Horizontal As Link With Icon 1`] = `
           className="psds-navitem__horz-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -165,7 +165,7 @@ exports[`Storyshots Components/NavItem Horizontal Selected 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       className="psds-navitem__button psds-navitem__button--selected"
@@ -178,7 +178,7 @@ exports[`Storyshots Components/NavItem Horizontal Selected 1`] = `
           className="psds-navitem__horz-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -210,7 +210,7 @@ exports[`Storyshots Components/NavItem Horizontal With Icon 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       className="psds-navitem__button"
@@ -223,7 +223,7 @@ exports[`Storyshots Components/NavItem Horizontal With Icon 1`] = `
           className="psds-navitem__horz-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -255,7 +255,7 @@ exports[`Storyshots Components/NavItem Horizontal With Menu 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       className="psds-navitem__button"
@@ -268,7 +268,7 @@ exports[`Storyshots Components/NavItem Horizontal With Menu 1`] = `
           className="psds-navitem__horz-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -290,7 +290,7 @@ exports[`Storyshots Components/NavItem Horizontal With Menu 1`] = `
           className="psds-navitem__horz-caret"
         >
           <div
-            data-css-k31qw2=""
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="caret down icon"
@@ -317,7 +317,7 @@ exports[`Storyshots Components/NavItem Selected Flow Item 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       UNSAFE_stylesFor={
@@ -337,7 +337,7 @@ exports[`Storyshots Components/NavItem Selected Flow Item 1`] = `
           className="psds-navitem__horz-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -369,7 +369,7 @@ exports[`Storyshots Components/NavItem Selected Skills Item 1`] = `
   className="psds-navitem__horz-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       UNSAFE_stylesFor={
@@ -389,7 +389,7 @@ exports[`Storyshots Components/NavItem Selected Skills Item 1`] = `
           className="psds-navitem__horz-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -421,7 +421,7 @@ exports[`Storyshots Components/NavItem Vertical 1`] = `
   className="psds-navitem__vert-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       className="psds-navitem__button"
@@ -449,7 +449,7 @@ exports[`Storyshots Components/NavItem Vertical As Link 1`] = `
   className="psds-navitem__vert-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <a
       className="psds-navitem__button"
@@ -478,7 +478,7 @@ exports[`Storyshots Components/NavItem Vertical As Link With Icon 1`] = `
   className="psds-navitem__vert-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <a
       className="psds-navitem__button"
@@ -492,7 +492,7 @@ exports[`Storyshots Components/NavItem Vertical As Link With Icon 1`] = `
           className="psds-navitem__vert-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -524,7 +524,7 @@ exports[`Storyshots Components/NavItem Vertical Selected 1`] = `
   className="psds-navitem__vert-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       className="psds-navitem__button psds-navitem__button--selected"
@@ -537,7 +537,7 @@ exports[`Storyshots Components/NavItem Vertical Selected 1`] = `
           className="psds-navitem__vert-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -569,7 +569,7 @@ exports[`Storyshots Components/NavItem Vertical With Icon 1`] = `
   className="psds-navitem__vert-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       className="psds-navitem__button"
@@ -582,7 +582,7 @@ exports[`Storyshots Components/NavItem Vertical With Icon 1`] = `
           className="psds-navitem__vert-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -614,7 +614,7 @@ exports[`Storyshots Components/NavItem Vertical With Menu 1`] = `
   className="psds-navitem__vert-container"
 >
   <div
-    data-css-1ij5lym=""
+    className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
   >
     <button
       className="psds-navitem__button"
@@ -627,7 +627,7 @@ exports[`Storyshots Components/NavItem Vertical With Menu 1`] = `
           className="psds-navitem__vert-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="placeholder icon"
@@ -649,7 +649,7 @@ exports[`Storyshots Components/NavItem Vertical With Menu 1`] = `
           className="psds-navitem__vert-caret"
         >
           <div
-            data-css-k31qw2=""
+            className="psds-icon psds-icon--size-small"
           >
             <svg
               aria-label="caret down icon"
@@ -677,7 +677,7 @@ exports[`Storyshots Components/NavItem With Action Menu 1`] = `
     className="psds-navitem__horz-container"
   >
     <div
-      data-css-1ij5lym=""
+      className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
     >
       <button
         className="psds-navitem__button"
@@ -690,7 +690,7 @@ exports[`Storyshots Components/NavItem With Action Menu 1`] = `
             className="psds-navitem__horz-icon"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="home icon"
@@ -715,7 +715,7 @@ exports[`Storyshots Components/NavItem With Action Menu 1`] = `
             className="psds-navitem__horz-caret"
           >
             <div
-              data-css-k31qw2=""
+              className="psds-icon psds-icon--size-small"
             >
               <svg
                 aria-label="caret down icon"
