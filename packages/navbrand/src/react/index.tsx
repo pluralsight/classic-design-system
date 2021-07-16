@@ -59,7 +59,8 @@ const Logo: React.FC = props => (
   <div
     className={classNames(
       'psds-navbrand__logo',
-      Boolean(props.children) && 'psds-navbrand__logo--wordmark'
+      React.Children.count(props.children) > 0 &&
+        'psds-navbrand__logo--wordmark'
     )}
     {...props}
   />

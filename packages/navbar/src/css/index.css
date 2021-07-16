@@ -1,24 +1,28 @@
-.psds-navbar {;
+.psds-navbar {
   display: flex;
   align-items: center;
   width: 100%;
   height: 56px;
-  padding: var(--psLayoutSpacingXSmall);
-  background: var(--psColorsBackgroundDark2);
-  border-bottom: 1px solid var(--psColorsBackgroundDark3);
+  padding: var(--ps-layout-spacing-xsmall);
+  background: var(--ps-colors-background-dark-2);
+  border-bottom: 1px solid var(--ps-colors-background-dark-3);
   box-shadow: rgba(0, 0, 0, 0.5) 0 0 8px 0;
 }
+
 .psds-navbar__brand {
-  margin-right: var(--psLayoutSpacingMedium);
+  margin-right: var(--ps-layout-spacing-medium);
 }
+
 .psds-navbar__items {
   flex: 1;
-  margin-right: var(--psLayoutSpacingLarge);
+  margin-right: var(--ps-layout-spacing-large);
 }
+
 .psds-navbar__mobile-menu {
-  margin-right: var(--psLayoutSpacingXXSmall);
+  margin-right: var(--ps-layout-spacing-xxsmall);
 }
+
 .psds-navbar__utility {
   margin-left: auto;
-  margin-right: var(--psLayoutSpacingXXSmall);
+  margin-right: var(--ps-layout-spacing-xxsmall);
 }
