@@ -17,6 +17,7 @@ import React from 'react'
 import { DateContext } from './context'
 import stylesheet from '../css/index'
 import { slides } from '../vars/index'
+import { useKeyEvents } from './use-key-events'
 
 const glamor = glamorDefault || glamorExports
 
@@ -69,6 +70,7 @@ interface CalendarProps
     Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
   slide?: ValueOf<typeof slides>
   uniqueId?: (prefix: string) => string
+  selected?: Date
 }
 
 export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
@@ -80,6 +82,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
       children,
       slide,
       uniqueId = defaultUniqueId,
+      selected = new Date(),
       ...rest
     },
     ref
@@ -90,7 +93,6 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
     const { onClick: onForwardClick, ...forwardRest } = getForwardProps({
       calendars
     })
-    console.log(onBackClick.toString())
     const handleForwardClick = (e: React.MouseEvent) => {
       onForwardClick(e)
       setSlide(slides.forward)
@@ -120,6 +122,13 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
     const gridLabels = calendars.map((calendar, i) =>
       uniqueId(`${calendar.month}_${calendar.year}`)
     )
+    const months = calendars?.map(calendar => calendar.month)
+    const dayKeyHandlers = useKeyEvents({
+      selected,
+      months,
+      handleForwardClick,
+      handleBackClick
+    })
     if (calendars.length) {
       return (
         <div {...styles.calendar()} {...rest} ref={ref}>
@@ -185,7 +194,11 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                   key={`${calendar.month}${calendar.year}`}
                 >
                   <DateContext.Provider
-                    value={{ ...calendar, 'aria-labelledby': gridLabels[i] }}
+                    value={{
+                      ...calendar,
+                      'aria-labelledby': gridLabels[i],
+                      dayKeyHandlers
+                    }}
                   >
                     {children}
                   </DateContext.Provider>

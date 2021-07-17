@@ -5,7 +5,6 @@ import {
   RefFor,
   uniqueId as defaultUniqueId
 } from '@pluralsight/ps-design-system-util'
-import { format } from 'date-fns'
 import { useDayzed, DateObj } from 'dayzed'
 import React from 'react'
 
@@ -40,8 +39,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   const [selected, setSelected] = React.useState<Date | undefined>(
     valueFromProps
   )
-  const [focusedDate, setFocusedDate] = React.useState<Date | undefined>()
-  const [offset, setOffset] = React.useState<number>(0)
+
   React.useEffect(() => setSelected(valueFromProps), [valueFromProps])
   const [open, setOpen] = React.useState<boolean>(false)
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
@@ -49,20 +47,10 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     setSelected(dateObj.date)
     setOpen(false)
   }
-  const onOffsetChanged = () => {
-    focusedDate &&
-      document
-        .querySelector<HTMLButtonElement>(
-          `[aria-label="${format(focusedDate, 'EEE LLL dd yyyy')}"]`
-        )
-        ?.focus()
-  }
   const { getDateProps, ...dayzedData } = useDayzed({
     date: selected,
     selected,
-    onDateSelected,
-    onOffsetChanged,
-    offset
+    onDateSelected
   })
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
     setOpen(!open)
@@ -140,12 +128,9 @@ export const DatePicker: React.FC<DatePickerProps> = ({
           slide={slide}
           onKeyDown={handleEscapeKeyDown}
           uniqueId={uniqueId}
+          selected={selected}
         >
-          <CalendarDates
-            getDateProps={getDateProps}
-            setOffset={setOffset}
-            setFocusedDate={setFocusedDate}
-          >
+          <CalendarDates getDateProps={getDateProps}>
             {renderProps => {
               return <button {...renderProps} />
             }}
