@@ -122,12 +122,12 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
     const gridLabels = calendars.map((calendar, i) =>
       uniqueId(`${calendar.month}_${calendar.year}`)
     )
-    const months = calendars?.map(calendar => calendar.month)
+
     const dayKeyHandlers = useKeyEvents({
       selected,
-      months,
-      handleForwardClick,
-      handleBackClick
+      calendars,
+      getBackProps,
+      getForwardProps
     })
     if (calendars.length) {
       return (

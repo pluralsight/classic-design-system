@@ -1,18 +1,29 @@
 import React from 'react'
-import { format, endOfWeek, startOfWeek, add, sub, getMonth } from 'date-fns'
+import { GetBackForwardPropsOptions, Calendar } from 'dayzed'
+import {
+  format,
+  endOfWeek,
+  startOfWeek,
+  add,
+  sub,
+  getMonth,
+  getDay,
+  setDay,
+  isSameMonth
+} from 'date-fns'
 import { useDebounceCallback } from '@pluralsight/ps-design-system-util'
 
 interface UseKeyEvents {
   selected: Date
-  months: number[]
-  handleForwardClick: React.MouseEventHandler<HTMLButtonElement>
-  handleBackClick: React.MouseEventHandler<HTMLButtonElement>
+  calendars: Calendar[]
+  getBackProps: (data: GetBackForwardPropsOptions) => Record<string, any>
+  getForwardProps: (data: GetBackForwardPropsOptions) => Record<string, any>
 }
 export const useKeyEvents = ({
   selected,
-  months,
-  handleForwardClick,
-  handleBackClick
+  calendars,
+  getBackProps,
+  getForwardProps
 }: UseKeyEvents) => {
   const [focusedDate, setFocusedDate] = React.useState<Date | undefined>(
     selected
@@ -31,7 +42,10 @@ export const useKeyEvents = ({
   React.useEffect(() => {
     focusNext()
   }, [focusedDate, focusNext])
-
+  const moveMonthForward = getForwardProps({ calendars }).onClick
+  const moveMonthBackward = getBackProps({ calendars }).onClick
+  const moveYearForward = getForwardProps({ calendars, offset: 12 }).onClick
+  const moveYearBackward = getBackProps({ calendars, offset: 12 }).onClick
   const dayKeyHandlers = (
     date: Date,
     dateProps: {
@@ -52,12 +66,14 @@ export const useKeyEvents = ({
               days: shift
             })
       setFocusedDate(nextDate)
+      const months = calendars?.map(calendar => calendar.month) as number[]
+
       if (!months.includes(getMonth(nextDate))) {
         dir === 1
-          ? handleForwardClick(
+          ? moveMonthForward(
               evt as unknown as React.MouseEvent<HTMLButtonElement>
             )
-          : handleBackClick(
+          : moveMonthBackward(
               evt as unknown as React.MouseEvent<HTMLButtonElement>
             )
       }
@@ -66,16 +82,55 @@ export const useKeyEvents = ({
       const nextDate = dir === -1 ? startOfWeek(date) : endOfWeek(date)
       setFocusedDate(nextDate)
     }
+    const nextMonthYearDate = ({
+      dayOfWeek,
+      shiftKey,
+      dir
+    }: {
+      dayOfWeek: 0 | 1 | 2 | 3 | 4 | 5 | 6
+      shiftKey: boolean
+      dir: 1 | -1
+    }) => {
+      const getDateFunc = dir === 1 ? add : sub
+      const getDateArg = shiftKey ? { years: 1 } : { months: 1 }
+      const calculatedDate = getDateFunc(date, getDateArg)
+      const calculatedDayOfWeek = setDay(calculatedDate, dayOfWeek)
+      return isSameMonth(calculatedDate, calculatedDayOfWeek)
+        ? calculatedDayOfWeek
+        : dir === 1
+        ? sub(calculatedDayOfWeek, {
+            days: 7
+          })
+        : add(calculatedDayOfWeek, {
+            days: 7
+          })
+    }
+    const handleMonthYearShift = (
+      dir: 1 | -1,
+      shiftKey: boolean,
+      evt: React.KeyboardEvent<HTMLButtonElement>
+    ) => {
+      const _evt = evt as unknown as React.MouseEvent<HTMLButtonElement>
+      const dayOfWeek = getDay(date)
+      setFocusedDate(nextMonthYearDate({ dir, shiftKey, dayOfWeek }))
+      if (dir === 1) {
+        shiftKey ? moveYearForward(_evt) : moveMonthForward(_evt)
+      }
+      if (dir === -1) {
+        shiftKey ? moveYearBackward(_evt) : moveMonthBackward(_evt)
+      }
+    }
     const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> =
       evt => {
-        const key = evt.key.toLowerCase()
-        ;[' ', 'enter'].includes(key) && dateProps.onClick(evt)(evt)
-        key === 'arrowup' && handleDayShift(-1, 7, evt)
-        key === 'arrowdown' && handleDayShift(1, 7, evt)
-        key === 'arrowleft' && handleDayShift(-1, 1, evt)
-        key === 'arrowright' && handleDayShift(1, 1, evt)
-        key === 'home' && handleWeekEndStartFocus(-1)
-        key === 'end' && handleWeekEndStartFocus(1)
+        const { key, shiftKey } = evt
+        key === 'ArrowUp' && handleDayShift(-1, 7, evt)
+        key === 'ArrowDown' && handleDayShift(1, 7, evt)
+        key === 'ArrowLeft' && handleDayShift(-1, 1, evt)
+        key === 'ArrowRight' && handleDayShift(1, 1, evt)
+        key === 'Home' && handleWeekEndStartFocus(-1)
+        key === 'End' && handleWeekEndStartFocus(1)
+        key === 'PageUp' && handleMonthYearShift(-1, shiftKey, evt)
+        key === 'PageDown' && handleMonthYearShift(-1, shiftKey, evt)
       }
     return handleKeyDown
   }
