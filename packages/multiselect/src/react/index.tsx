@@ -322,26 +322,29 @@ const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   )
 })
 
-const PillAdjacentInputContainer = React.forwardRef<HTMLDivElement>(
-  (props, ref) => {
-    return (
-      <div
-        ref={ref}
-        {...props}
-        className={'psds-multi-select__input-container'}
-      />
-    )
-  }
-)
+const PillAdjacentInputContainer = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLAttributes<HTMLDivElement>
+>(({ className, ...rest }, ref) => {
+  return (
+    <div
+      ref={ref}
+      {...rest}
+      className={classNames('psds-multi-select__input-container', className)}
+    />
+  )
+})
 
-const PillAdjacentInput = React.forwardRef<HTMLInputElement>((props, ref) => {
+const PillAdjacentInput = React.forwardRef<
+  HTMLInputElement,
+  React.HTMLAttributes<HTMLInputElement>
+>(({ className, ...rest }, ref) => {
   return (
     <Field.Input
       ref={ref}
       renderContainer={PillAdjacentInputContainer}
       type="text"
-      {...props}
-      className={'psds-multi-select__input'}
+      {...rest}
     />
   )
 })

@@ -116,7 +116,7 @@ exports[`Storyshots Components/MultiSelect Basic 1`] = `
               </div>
             </div>
             <div
-              className="psds-multi-select__input-container"
+              className="psds-multi-select__input-container psds-field__input__container"
             >
               <input
                 aria-autocomplete="list"
@@ -688,7 +688,7 @@ exports[`Storyshots Components/MultiSelect Custom Input Tag 1`] = `
               </div>
             </div>
             <div
-              className="psds-multi-select__input-container"
+              className="psds-multi-select__input-container psds-field__input__container"
             >
               <input
                 aria-autocomplete="list"
@@ -1265,7 +1265,7 @@ exports[`Storyshots Components/MultiSelect Disabled 1`] = `
               </div>
             </div>
             <div
-              className="psds-multi-select__input-container"
+              className="psds-multi-select__input-container psds-field__input__container"
             >
               <input
                 aria-autocomplete="list"
@@ -1839,7 +1839,7 @@ exports[`Storyshots Components/MultiSelect Error 1`] = `
               </div>
             </div>
             <div
-              className="psds-multi-select__input-container"
+              className="psds-multi-select__input-container psds-field__input__container"
             >
               <input
                 aria-autocomplete="list"
@@ -2452,7 +2452,7 @@ exports[`Storyshots Components/MultiSelect Icon Prefix 1`] = `
               </div>
             </div>
             <div
-              className="psds-multi-select__input-container"
+              className="psds-multi-select__input-container psds-field__input__container"
             >
               <input
                 aria-autocomplete="list"
@@ -3024,7 +3024,7 @@ exports[`Storyshots Components/MultiSelect No Labels 1`] = `
               </div>
             </div>
             <div
-              className="psds-multi-select__input-container"
+              className="psds-multi-select__input-container psds-field__input__container"
             >
               <input
                 aria-autocomplete="list"
@@ -3596,7 +3596,7 @@ exports[`Storyshots Components/MultiSelect React Node Label 1`] = `
               </div>
             </div>
             <div
-              className="psds-multi-select__input-container"
+              className="psds-multi-select__input-container psds-field__input__container"
             >
               <input
                 aria-autocomplete="list"

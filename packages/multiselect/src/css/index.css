@@ -79,11 +79,8 @@
   margin: calc(4px / 2);
 }
 
-.psds-multi-select__input {
+.psds-multi-select__input-container input {
   min-height: 24px;
   min-width: 50px;
 }
 
-.psds-multi-select__input:disabled {
-  background: 0 0;
-}
