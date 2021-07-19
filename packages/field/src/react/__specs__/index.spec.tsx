@@ -1,4 +1,7 @@
-import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
+import {
+  classNames,
+  convertStoriesToJestCases
+} from '@pluralsight/ps-design-system-util'
 import { screen } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
@@ -17,6 +20,33 @@ describe('Field', () => {
 
     expect(container.firstChild).toHaveClass(
       'psds-field__input__container compose-classname'
+    )
+  })
+
+  it('composes className in Field.Input with renderContainer', () => {
+    const ContainerWithClassName = React.forwardRef<HTMLDivElement>(
+      ({ className, ...rest }, ref) => {
+        return (
+          <div
+            ref={ref}
+            {...rest}
+            className={classNames(
+              'compose-classname-from-rendercontainer',
+              className
+            )}
+          />
+        )
+      }
+    )
+    const { container } = render(
+      <Field.Input
+        className="compose-classname"
+        renderContainer={ContainerWithClassName}
+      />
+    )
+
+    expect(container.firstChild).toHaveClass(
+      'psds-field__input__container compose-classname compose-classname-from-rendercontainer'
     )
   })
 
