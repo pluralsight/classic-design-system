@@ -1,16 +1,6 @@
 import React from 'react'
 import { GetBackForwardPropsOptions, Calendar } from 'dayzed'
-import {
-  format,
-  endOfWeek,
-  startOfWeek,
-  add,
-  sub,
-  getMonth,
-  getDay,
-  setDay,
-  isSameMonth
-} from 'date-fns'
+import { format, endOfWeek, startOfWeek, add, sub, getMonth } from 'date-fns'
 import { useDebounceCallback } from '@pluralsight/ps-design-system-util'
 
 interface UseKeyEvents {
@@ -46,12 +36,7 @@ export const useKeyEvents = ({
   const moveMonthBackward = getBackProps({ calendars }).onClick
   const moveYearForward = getForwardProps({ calendars, offset: 12 }).onClick
   const moveYearBackward = getBackProps({ calendars, offset: 12 }).onClick
-  const dayKeyHandlers = (
-    date: Date,
-    dateProps: {
-      [x: string]: any
-    }
-  ) => {
+  const dayKeyHandlers = (date: Date) => {
     const handleDayShift = (
       dir: 1 | -1,
       shift: 1 | 7,
@@ -82,37 +67,15 @@ export const useKeyEvents = ({
       const nextDate = dir === -1 ? startOfWeek(date) : endOfWeek(date)
       setFocusedDate(nextDate)
     }
-    const nextMonthYearDate = ({
-      dayOfWeek,
-      shiftKey,
-      dir
-    }: {
-      dayOfWeek: 0 | 1 | 2 | 3 | 4 | 5 | 6
-      shiftKey: boolean
-      dir: 1 | -1
-    }) => {
-      const getDateFunc = dir === 1 ? add : sub
-      const getDateArg = shiftKey ? { years: 1 } : { months: 1 }
-      const calculatedDate = getDateFunc(date, getDateArg)
-      const calculatedDayOfWeek = setDay(calculatedDate, dayOfWeek)
-      return isSameMonth(calculatedDate, calculatedDayOfWeek)
-        ? calculatedDayOfWeek
-        : dir === 1
-        ? sub(calculatedDayOfWeek, {
-            days: 7
-          })
-        : add(calculatedDayOfWeek, {
-            days: 7
-          })
-    }
     const handleMonthYearShift = (
       dir: 1 | -1,
       shiftKey: boolean,
       evt: React.KeyboardEvent<HTMLButtonElement>
     ) => {
       const _evt = evt as unknown as React.MouseEvent<HTMLButtonElement>
-      const dayOfWeek = getDay(date)
-      setFocusedDate(nextMonthYearDate({ dir, shiftKey, dayOfWeek }))
+      const args = shiftKey ? { years: 1 } : { months: 1 }
+      const nextDate = dir === 1 ? add(date, args) : sub(date, args)
+      setFocusedDate(nextDate)
       if (dir === 1) {
         shiftKey ? moveYearForward(_evt) : moveMonthForward(_evt)
       }
