@@ -112,7 +112,8 @@ export default {
       borderRadius: '50%',
       border: `2px solid ${colorsBlue[6]}`,
       background: colorsBlue[2],
-      color: colorsTextIcon.highOnLight
+      color: colorsTextIcon.highOnLight,
+      outline: 'none'
     },
     [`&:hover`]: {
       borderRadius: '50%',
