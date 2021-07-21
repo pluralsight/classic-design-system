@@ -93,7 +93,7 @@ export const useKeyEvents = ({
         key === 'Home' && handleWeekEndStartFocus(-1)
         key === 'End' && handleWeekEndStartFocus(1)
         key === 'PageUp' && handleMonthYearShift(-1, shiftKey, evt)
-        key === 'PageDown' && handleMonthYearShift(-1, shiftKey, evt)
+        key === 'PageDown' && handleMonthYearShift(1, shiftKey, evt)
       }
     return handleKeyDown
   }
