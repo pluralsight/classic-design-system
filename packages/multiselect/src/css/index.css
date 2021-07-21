@@ -77,9 +77,10 @@
 
 .psds-multi-select__input-container {
   margin: calc(4px / 2);
+  flex: 1;
 }
 
-.psds-multi-select__input {
+.psds-multi-select__input-container>.psds-field__input {
   min-height: 24px;
   min-width: 50px;
 }

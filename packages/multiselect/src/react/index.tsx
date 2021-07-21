@@ -341,7 +341,6 @@ const PillAdjacentInput = React.forwardRef<HTMLInputElement>((props, ref) => {
       renderContainer={PillAdjacentInputContainer}
       type="text"
       {...props}
-      className={'psds-multi-select__input'}
     />
   )
 })
