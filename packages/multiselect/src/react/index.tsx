@@ -244,7 +244,7 @@ const MultiSelect: MultiSelectFieldComponent = props => {
             </Pill>
           ))}
 
-          <PillAdjacentInput
+          <Field.Input
             {...inputProps}
             disabled={disabled}
             onChange={handleInputChange}
@@ -319,29 +319,6 @@ const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
         {children}
       </Tag>
     </div>
-  )
-})
-
-const PillAdjacentInputContainer = React.forwardRef<HTMLDivElement>(
-  (props, ref) => {
-    return (
-      <div
-        ref={ref}
-        {...props}
-        className={'psds-multi-select__input-container'}
-      />
-    )
-  }
-)
-
-const PillAdjacentInput = React.forwardRef<HTMLInputElement>((props, ref) => {
-  return (
-    <Field.Input
-      ref={ref}
-      renderContainer={PillAdjacentInputContainer}
-      type="text"
-      {...props}
-    />
   )
 })
 
