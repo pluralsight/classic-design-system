@@ -107,9 +107,9 @@ describe('ActionMenu', () => {
           </ActionMenu.Item>
         </ActionMenu>
       )
-      const el = getByRole('menuitem')
+      const el = getByRole('menuitem').firstChild
 
-      expect(el.tagName.toLowerCase()).toEqual('button')
+      expect((el as HTMLElement).tagName.toLowerCase()).toEqual('button')
       expect(ref.current).not.toBeNull()
     })
 
@@ -123,9 +123,9 @@ describe('ActionMenu', () => {
           </ActionMenu.Item>
         </ActionMenu>
       )
-      const el = getByRole('menuitem')
+      const el = document.querySelector('button')
 
-      expect(el.getAttribute('disabled')).toEqual('')
+      expect(el?.getAttribute('disabled')).toEqual('')
       expect(ref.current).not.toBeNull()
     })
 
@@ -139,9 +139,9 @@ describe('ActionMenu', () => {
           </ActionMenu.Item>
         </ActionMenu>
       )
-      const el = getByRole('menuitem')
+      const el = document.querySelector('a')
 
-      expect(el.getAttribute('aria-disabled')).toEqual('true')
+      expect(el?.getAttribute('aria-disabled')).toEqual('true')
       expect(ref.current).not.toBeNull()
     })
 
@@ -168,11 +168,11 @@ describe('ActionMenu', () => {
   })
 
   // TODO: fix issues and enable
-  // describe.each(cases)('%s story', (_name, Story) => {
-  //   it('has no axe-core violations', async () => {
-  //     const { container } = render(<Story {...Story.args} />)
-  //     const results = await axe(container)
-  //     expect(results).toHaveNoViolations()
-  //   })
-  // })
+  describe.each(cases)('%s story', (_name, Story) => {
+    it('has no axe-core violations', async () => {
+      const { container } = render(<Story {...Story.args} />)
+      const results = await axe(container)
+      expect(results).toHaveNoViolations()
+    })
+  })
 })

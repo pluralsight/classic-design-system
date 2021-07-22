@@ -328,21 +328,17 @@ export const DisabledSingle: Story = () => (
 
 export const DisabledAll: Story = () => (
   <ActionMenu>
-    <ActionMenu>
-      <ActionMenu.Item disabled>Mult 1, disabled</ActionMenu.Item>
-      <ActionMenu.Item disabled>Mult 2, disabled</ActionMenu.Item>
-    </ActionMenu>
+    <ActionMenu.Item disabled>Mult 1, disabled</ActionMenu.Item>
+    <ActionMenu.Item disabled>Mult 2, disabled</ActionMenu.Item>
   </ActionMenu>
 )
 
 export const DisabledSome: Story = () => (
   <ActionMenu>
-    <ActionMenu>
-      <ActionMenu.Item>Enabled</ActionMenu.Item>
-      <ActionMenu.Item disabled>Disabled</ActionMenu.Item>
-      <ActionMenu.Item>Enabled</ActionMenu.Item>
-      <ActionMenu.Item disabled>Disabled</ActionMenu.Item>
-    </ActionMenu>
+    <ActionMenu.Item>Enabled</ActionMenu.Item>
+    <ActionMenu.Item disabled>Disabled</ActionMenu.Item>
+    <ActionMenu.Item>Enabled</ActionMenu.Item>
+    <ActionMenu.Item disabled>Disabled</ActionMenu.Item>
   </ActionMenu>
 )
 

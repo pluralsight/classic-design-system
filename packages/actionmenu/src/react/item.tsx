@@ -128,14 +128,13 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
         onMouseOut={handleMouseOut}
         onMouseOver={handleMouseOver}
         ref={ref}
-        role="none"
+        role="menuitem"
         tabIndex={!disabled ? -1 : undefined}
       >
         <Component
           {...styles.item({ hasSubMenu })}
           aria-haspopup={!!nested}
           onClick={handleClick}
-          role="menuitem"
           aria-disabled={Boolean(disabled)}
           {...(Component === 'button' && { disabled })}
           {...(rest as React.HTMLAttributes<
@@ -148,15 +147,17 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
           </span>
         </Component>
 
-        <ul
-          {...styles.nested({ origin: origin || originContext })}
-          aria-expanded={open}
-          onKeyDown={handleArrowLeft}
-          ref={subMenuRef}
-          role="menu"
-        >
-          {!disabled && nested}
-        </ul>
+        {nested && (
+          <ul
+            {...styles.nested({ origin: origin || originContext })}
+            aria-expanded={open}
+            onKeyDown={handleArrowLeft}
+            ref={subMenuRef}
+            role="menu"
+          >
+            {!disabled && nested}
+          </ul>
+        )}
       </li>
     )
   }
