@@ -12,7 +12,7 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -20,7 +20,6 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -28,19 +27,13 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
         Not active
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1r25exq=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -48,7 +41,6 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -56,12 +48,6 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
         Active (styled w/o :focus)
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-anhzz3=""
@@ -69,14 +55,13 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
   >
     <a
       aria-disabled={true}
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -84,12 +69,6 @@ exports[`Storyshots Components/ActionMenu Active Item 1`] = `
         Active disabled
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -123,7 +102,7 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -131,7 +110,6 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
       style={
         Object {
           "outline": "1px solid red",
@@ -144,19 +122,13 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
         One item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -164,7 +136,6 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
       style={
         Object {
           "outline": "1px solid blue",
@@ -177,19 +148,13 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
         Two item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -197,7 +162,6 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
       style={
         Object {
           "outline": "1px solid green",
@@ -210,12 +174,6 @@ exports[`Storyshots Components/ActionMenu Custom Styles 1`] = `
         Three item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -227,69 +185,48 @@ exports[`Storyshots Components/ActionMenu Disabled All 1`] = `
   onKeyUp={[Function]}
   role="menu"
 >
-  <ul
-    data-css-rls1dj=""
+  <li
+    data-css-1kq0e2p=""
+    data-disabled={true}
     onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    role="menu"
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    role="menuitem"
   >
-    <li
-      data-css-1kq0e2p=""
-      data-disabled={true}
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      role="none"
+    <a
+      aria-disabled={true}
+      aria-haspopup={false}
+      data-css-1v7ok0h=""
+      onClick={[Function]}
     >
-      <a
-        aria-disabled={true}
-        aria-haspopup={false}
-        data-css-1v7ok0h=""
-        onClick={[Function]}
-        role="menuitem"
+      <span
+        data-css-fxdh11=""
       >
-        <span
-          data-css-fxdh11=""
-        >
-          Mult 1, disabled
-        </span>
-      </a>
-      <ul
-        aria-expanded={false}
-        data-css-kfdt74=""
-        onKeyDown={[Function]}
-        role="menu"
-      />
-    </li>
-    <li
-      data-css-1kq0e2p=""
-      data-disabled={true}
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      role="none"
+        Mult 1, disabled
+      </span>
+    </a>
+  </li>
+  <li
+    data-css-1kq0e2p=""
+    data-disabled={true}
+    onKeyDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    role="menuitem"
+  >
+    <a
+      aria-disabled={true}
+      aria-haspopup={false}
+      data-css-1v7ok0h=""
+      onClick={[Function]}
     >
-      <a
-        aria-disabled={true}
-        aria-haspopup={false}
-        data-css-1v7ok0h=""
-        onClick={[Function]}
-        role="menuitem"
+      <span
+        data-css-fxdh11=""
       >
-        <span
-          data-css-fxdh11=""
-        >
-          Mult 2, disabled
-        </span>
-      </a>
-      <ul
-        aria-expanded={false}
-        data-css-kfdt74=""
-        onKeyDown={[Function]}
-        role="menu"
-      />
-    </li>
-  </ul>
+        Mult 2, disabled
+      </span>
+    </a>
+  </li>
 </ul>
 `;
 
@@ -305,7 +242,7 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -314,7 +251,6 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
       data-css-1v7ok0h=""
       href="https://duck.com"
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -322,12 +258,6 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
         Enabled
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1kq0e2p=""
@@ -335,7 +265,7 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
   >
     <a
       aria-disabled={true}
@@ -343,7 +273,6 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
       data-css-1v7ok0h=""
       href="https://duck.com"
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -351,19 +280,13 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
         Disabled
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -372,7 +295,6 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
       data-css-1v7ok0h=""
       href="https://duck.com"
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -380,12 +302,6 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
         Enabled
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1kq0e2p=""
@@ -393,7 +309,7 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
   >
     <a
       aria-disabled={true}
@@ -401,7 +317,6 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
       data-css-1v7ok0h=""
       href="https://duck.com"
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -409,12 +324,6 @@ exports[`Storyshots Components/ActionMenu Disabled Links 1`] = `
         Disabled
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -431,7 +340,7 @@ exports[`Storyshots Components/ActionMenu Disabled Nested 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -439,7 +348,6 @@ exports[`Storyshots Components/ActionMenu Disabled Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -447,12 +355,6 @@ exports[`Storyshots Components/ActionMenu Disabled Nested 1`] = `
         Enabled
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1kq0e2p=""
@@ -460,14 +362,13 @@ exports[`Storyshots Components/ActionMenu Disabled Nested 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
   >
     <a
       aria-disabled={true}
       aria-haspopup={true}
       data-css-1osbtyv=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -514,14 +415,13 @@ exports[`Storyshots Components/ActionMenu Disabled Single 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
   >
     <a
       aria-disabled={true}
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -529,12 +429,6 @@ exports[`Storyshots Components/ActionMenu Disabled Single 1`] = `
         Single, disabled
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -546,125 +440,90 @@ exports[`Storyshots Components/ActionMenu Disabled Some 1`] = `
   onKeyUp={[Function]}
   role="menu"
 >
-  <ul
-    data-css-rls1dj=""
+  <li
+    data-css-1vqdttp=""
     onKeyDown={[Function]}
-    onKeyUp={[Function]}
-    role="menu"
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    role="menuitem"
+    tabIndex={-1}
   >
-    <li
-      data-css-1vqdttp=""
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      role="none"
-      tabIndex={-1}
+    <a
+      aria-disabled={false}
+      aria-haspopup={false}
+      data-css-1v7ok0h=""
+      onClick={[Function]}
     >
-      <a
-        aria-disabled={false}
-        aria-haspopup={false}
-        data-css-1v7ok0h=""
-        onClick={[Function]}
-        role="menuitem"
+      <span
+        data-css-fxdh11=""
       >
-        <span
-          data-css-fxdh11=""
-        >
-          Enabled
-        </span>
-      </a>
-      <ul
-        aria-expanded={false}
-        data-css-kfdt74=""
-        onKeyDown={[Function]}
-        role="menu"
-      />
-    </li>
-    <li
-      data-css-1kq0e2p=""
-      data-disabled={true}
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      role="none"
+        Enabled
+      </span>
+    </a>
+  </li>
+  <li
+    data-css-1kq0e2p=""
+    data-disabled={true}
+    onKeyDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    role="menuitem"
+  >
+    <a
+      aria-disabled={true}
+      aria-haspopup={false}
+      data-css-1v7ok0h=""
+      onClick={[Function]}
     >
-      <a
-        aria-disabled={true}
-        aria-haspopup={false}
-        data-css-1v7ok0h=""
-        onClick={[Function]}
-        role="menuitem"
+      <span
+        data-css-fxdh11=""
       >
-        <span
-          data-css-fxdh11=""
-        >
-          Disabled
-        </span>
-      </a>
-      <ul
-        aria-expanded={false}
-        data-css-kfdt74=""
-        onKeyDown={[Function]}
-        role="menu"
-      />
-    </li>
-    <li
-      data-css-1vqdttp=""
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      role="none"
-      tabIndex={-1}
+        Disabled
+      </span>
+    </a>
+  </li>
+  <li
+    data-css-1vqdttp=""
+    onKeyDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    role="menuitem"
+    tabIndex={-1}
+  >
+    <a
+      aria-disabled={false}
+      aria-haspopup={false}
+      data-css-1v7ok0h=""
+      onClick={[Function]}
     >
-      <a
-        aria-disabled={false}
-        aria-haspopup={false}
-        data-css-1v7ok0h=""
-        onClick={[Function]}
-        role="menuitem"
+      <span
+        data-css-fxdh11=""
       >
-        <span
-          data-css-fxdh11=""
-        >
-          Enabled
-        </span>
-      </a>
-      <ul
-        aria-expanded={false}
-        data-css-kfdt74=""
-        onKeyDown={[Function]}
-        role="menu"
-      />
-    </li>
-    <li
-      data-css-1kq0e2p=""
-      data-disabled={true}
-      onKeyDown={[Function]}
-      onMouseOut={[Function]}
-      onMouseOver={[Function]}
-      role="none"
+        Enabled
+      </span>
+    </a>
+  </li>
+  <li
+    data-css-1kq0e2p=""
+    data-disabled={true}
+    onKeyDown={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    role="menuitem"
+  >
+    <a
+      aria-disabled={true}
+      aria-haspopup={false}
+      data-css-1v7ok0h=""
+      onClick={[Function]}
     >
-      <a
-        aria-disabled={true}
-        aria-haspopup={false}
-        data-css-1v7ok0h=""
-        onClick={[Function]}
-        role="menuitem"
+      <span
+        data-css-fxdh11=""
       >
-        <span
-          data-css-fxdh11=""
-        >
-          Disabled
-        </span>
-      </a>
-      <ul
-        aria-expanded={false}
-        data-css-kfdt74=""
-        onKeyDown={[Function]}
-        role="menu"
-      />
-    </li>
-  </ul>
+        Disabled
+      </span>
+    </a>
+  </li>
 </ul>
 `;
 
@@ -680,7 +539,7 @@ exports[`Storyshots Components/ActionMenu Divider On Edge 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -688,7 +547,6 @@ exports[`Storyshots Components/ActionMenu Divider On Edge 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -696,12 +554,6 @@ exports[`Storyshots Components/ActionMenu Divider On Edge 1`] = `
         One item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <div
     data-css-shsjok=""
@@ -721,7 +573,7 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -729,7 +581,6 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -737,12 +588,6 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
         One item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <div
     data-css-shsjok=""
@@ -752,7 +597,7 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -760,7 +605,6 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -768,19 +612,13 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
         Two item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -788,7 +626,6 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -796,12 +633,6 @@ exports[`Storyshots Components/ActionMenu Divider Sandwiched 1`] = `
         Three item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -818,7 +649,7 @@ exports[`Storyshots Components/ActionMenu Ellipses With Icon 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -826,7 +657,6 @@ exports[`Storyshots Components/ActionMenu Ellipses With Icon 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -857,12 +687,6 @@ exports[`Storyshots Components/ActionMenu Ellipses With Icon 1`] = `
         </span>
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -879,7 +703,7 @@ exports[`Storyshots Components/ActionMenu Ellipsis 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -887,7 +711,6 @@ exports[`Storyshots Components/ActionMenu Ellipsis 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -899,12 +722,6 @@ exports[`Storyshots Components/ActionMenu Ellipsis 1`] = `
         </span>
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -921,7 +738,7 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -929,7 +746,6 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -937,19 +753,13 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
         One item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -957,7 +767,6 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -965,19 +774,13 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
         Two item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -985,7 +788,6 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -993,12 +795,6 @@ exports[`Storyshots Components/ActionMenu Focus On Mount 1`] = `
         Three item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -1015,7 +811,7 @@ exports[`Storyshots Components/ActionMenu Link 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1024,7 +820,6 @@ exports[`Storyshots Components/ActionMenu Link 1`] = `
       data-css-1v7ok0h=""
       href="https://duckduckgo.com"
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1032,12 +827,6 @@ exports[`Storyshots Components/ActionMenu Link 1`] = `
         Links to web
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -1054,7 +843,7 @@ exports[`Storyshots Components/ActionMenu Long Text 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1062,7 +851,6 @@ exports[`Storyshots Components/ActionMenu Long Text 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1074,19 +862,13 @@ exports[`Storyshots Components/ActionMenu Long Text 1`] = `
         </span>
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1094,7 +876,6 @@ exports[`Storyshots Components/ActionMenu Long Text 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1106,12 +887,6 @@ exports[`Storyshots Components/ActionMenu Long Text 1`] = `
         </span>
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -1128,7 +903,7 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1136,7 +911,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1145,19 +919,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         0
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1165,7 +933,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1174,19 +941,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         1
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1194,7 +955,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1203,19 +963,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         2
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1223,7 +977,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1232,19 +985,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         3
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1252,7 +999,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1261,19 +1007,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         4
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1281,7 +1021,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1290,19 +1029,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         5
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1310,7 +1043,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1319,19 +1051,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         6
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1339,7 +1065,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1348,19 +1073,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         7
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1368,7 +1087,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1377,19 +1095,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         8
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1397,7 +1109,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1406,19 +1117,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         9
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1426,7 +1131,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1435,19 +1139,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         10
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1455,7 +1153,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1464,19 +1161,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         11
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1484,7 +1175,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1493,19 +1183,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         12
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1513,7 +1197,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1522,19 +1205,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         13
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1542,7 +1219,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1551,19 +1227,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         14
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1571,7 +1241,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1580,19 +1249,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         15
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1600,7 +1263,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1609,19 +1271,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         16
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1629,7 +1285,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1638,19 +1293,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         17
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1658,7 +1307,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1667,19 +1315,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         18
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1687,7 +1329,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1696,19 +1337,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         19
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1716,7 +1351,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1725,19 +1359,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         20
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1745,7 +1373,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1754,19 +1381,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         21
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1774,7 +1395,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1783,19 +1403,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         22
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1803,7 +1417,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1812,19 +1425,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         23
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1832,7 +1439,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1841,19 +1447,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         24
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1861,7 +1461,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1870,19 +1469,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         25
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1890,7 +1483,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1899,19 +1491,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         26
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1919,7 +1505,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1928,19 +1513,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         27
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1948,7 +1527,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1957,19 +1535,13 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         28
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -1977,7 +1549,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -1986,12 +1557,6 @@ exports[`Storyshots Components/ActionMenu Lots Of Items 1`] = `
         29
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -2008,7 +1573,7 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -2016,7 +1581,6 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -2024,19 +1588,13 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
         One item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -2044,7 +1602,6 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -2052,19 +1609,13 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
         Two item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -2072,7 +1623,6 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -2080,12 +1630,6 @@ exports[`Storyshots Components/ActionMenu Multiple Items 1`] = `
         Three item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -2112,7 +1656,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -2120,7 +1664,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
           aria-haspopup={true}
           data-css-1osbtyv=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -2157,7 +1700,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2165,7 +1708,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2173,19 +1715,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 Nest 1
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2193,7 +1729,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={true}
               data-css-1osbtyv=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2228,7 +1763,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2236,7 +1771,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2244,19 +1778,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-1
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-kfdt74=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2264,7 +1792,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2272,19 +1799,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-2
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-kfdt74=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2292,7 +1813,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2300,12 +1820,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-3
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-kfdt74=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
             </ul>
           </li>
@@ -2317,7 +1831,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2325,7 +1839,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2333,19 +1846,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 Nest 3
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2353,7 +1860,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={true}
               data-css-1osbtyv=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2388,7 +1894,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2396,7 +1902,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2404,19 +1909,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 2-1
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-kfdt74=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2424,7 +1923,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2432,12 +1930,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 2-2
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-kfdt74=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
             </ul>
           </li>
@@ -2448,7 +1940,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -2456,7 +1948,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -2464,12 +1955,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             Two
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-kfdt74=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
     </ul>
   </div>
@@ -2493,7 +1978,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -2501,7 +1986,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
           aria-haspopup={true}
           data-css-1osbtyv=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -2538,7 +2022,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2546,7 +2030,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2554,19 +2037,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 Nest 1
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-137dxab=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2574,7 +2051,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={true}
               data-css-1osbtyv=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2609,7 +2085,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2617,7 +2093,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2625,19 +2100,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-1
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-137dxab=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2645,7 +2114,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2653,19 +2121,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-2
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-137dxab=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2673,7 +2135,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2681,12 +2142,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-3
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-137dxab=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
             </ul>
           </li>
@@ -2698,7 +2153,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2706,7 +2161,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2714,19 +2168,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 Nest 3
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-137dxab=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2734,7 +2182,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={true}
               data-css-1osbtyv=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2769,7 +2216,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2777,7 +2224,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2785,19 +2231,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 2-1
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-137dxab=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2805,7 +2245,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -2813,12 +2252,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 2-2
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-137dxab=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
             </ul>
           </li>
@@ -2829,7 +2262,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -2837,7 +2270,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -2845,12 +2277,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             Two
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-137dxab=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
     </ul>
   </div>
@@ -2874,7 +2300,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -2882,7 +2308,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
           aria-haspopup={true}
           data-css-1osbtyv=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -2919,7 +2344,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2927,7 +2352,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2935,19 +2359,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 Nest 1
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-12ufft3=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -2955,7 +2373,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={true}
               data-css-1osbtyv=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -2990,7 +2407,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -2998,7 +2415,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3006,19 +2422,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-1
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-12ufft3=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -3026,7 +2436,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3034,19 +2443,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-2
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-12ufft3=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -3054,7 +2457,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3062,12 +2464,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-3
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-12ufft3=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
             </ul>
           </li>
@@ -3079,7 +2475,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -3087,7 +2483,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -3095,19 +2490,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 Nest 3
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-12ufft3=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -3115,7 +2504,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={true}
               data-css-1osbtyv=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -3150,7 +2538,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -3158,7 +2546,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3166,19 +2553,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 2-1
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-12ufft3=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -3186,7 +2567,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3194,12 +2574,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 2-2
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-12ufft3=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
             </ul>
           </li>
@@ -3210,7 +2584,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -3218,7 +2592,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -3226,12 +2599,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             Two
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-12ufft3=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
     </ul>
   </div>
@@ -3255,7 +2622,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -3263,7 +2630,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
           aria-haspopup={true}
           data-css-1osbtyv=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -3300,7 +2666,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -3308,7 +2674,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -3316,19 +2681,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 Nest 1
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-1245q9i=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -3336,7 +2695,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={true}
               data-css-1osbtyv=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -3371,7 +2729,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -3379,7 +2737,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3387,19 +2744,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-1
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-1245q9i=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -3407,7 +2758,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3415,19 +2765,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-2
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-1245q9i=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -3435,7 +2779,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3443,12 +2786,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 1-3
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-1245q9i=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
             </ul>
           </li>
@@ -3460,7 +2797,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -3468,7 +2805,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -3476,19 +2812,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 Nest 3
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-1245q9i=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -3496,7 +2826,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
               aria-haspopup={true}
               data-css-1osbtyv=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -3531,7 +2860,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -3539,7 +2868,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3547,19 +2875,13 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 2-1
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-1245q9i=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
               <li
                 data-css-1vqdttp=""
                 onKeyDown={[Function]}
                 onMouseOut={[Function]}
                 onMouseOver={[Function]}
-                role="none"
+                role="menuitem"
                 tabIndex={-1}
               >
                 <a
@@ -3567,7 +2889,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                   aria-haspopup={false}
                   data-css-1v7ok0h=""
                   onClick={[Function]}
-                  role="menuitem"
                 >
                   <span
                     data-css-fxdh11=""
@@ -3575,12 +2896,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
                     Nest nest 2-2
                   </span>
                 </a>
-                <ul
-                  aria-expanded={false}
-                  data-css-1245q9i=""
-                  onKeyDown={[Function]}
-                  role="menu"
-                />
               </li>
             </ul>
           </li>
@@ -3591,7 +2906,7 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -3599,7 +2914,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -3607,12 +2921,6 @@ exports[`Storyshots Components/ActionMenu Nested Menu 1`] = `
             Two
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-1245q9i=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
     </ul>
   </div>
@@ -3631,7 +2939,7 @@ exports[`Storyshots Components/ActionMenu Null Item 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -3639,7 +2947,6 @@ exports[`Storyshots Components/ActionMenu Null Item 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -3647,19 +2954,13 @@ exports[`Storyshots Components/ActionMenu Null Item 1`] = `
         One item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -3667,7 +2968,6 @@ exports[`Storyshots Components/ActionMenu Null Item 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -3675,12 +2975,6 @@ exports[`Storyshots Components/ActionMenu Null Item 1`] = `
         Skip to three item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -3697,7 +2991,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -3705,7 +2999,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -3713,19 +3006,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         0
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -3733,7 +3020,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={true}
       data-css-1osbtyv=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -3768,7 +3054,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -3776,7 +3062,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -3784,19 +3069,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
             1-1
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-kfdt74=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
       <li
         data-css-1vqdttp=""
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -3804,7 +3083,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
           aria-haspopup={true}
           data-css-1osbtyv=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -3839,7 +3117,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -3847,7 +3125,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -3855,19 +3132,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
                 1-2-1
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -3875,7 +3146,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -3883,19 +3153,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
                 1-2-2
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -3903,7 +3167,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -3911,12 +3174,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
                 1-2-3
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
         </ul>
       </li>
@@ -3928,7 +3185,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -3936,7 +3193,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -3944,19 +3200,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
             1-3
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-kfdt74=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
       <li
         data-css-1vqdttp=""
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -3964,7 +3214,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
           aria-haspopup={true}
           data-css-1osbtyv=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -3999,7 +3248,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -4007,7 +3256,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -4015,19 +3263,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
                 1-4-1
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
           <li
             data-css-1vqdttp=""
             onKeyDown={[Function]}
             onMouseOut={[Function]}
             onMouseOver={[Function]}
-            role="none"
+            role="menuitem"
             tabIndex={-1}
           >
             <a
@@ -4035,7 +3277,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
               aria-haspopup={false}
               data-css-1v7ok0h=""
               onClick={[Function]}
-              role="menuitem"
             >
               <span
                 data-css-fxdh11=""
@@ -4043,12 +3284,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
                 1-4-2
               </span>
             </a>
-            <ul
-              aria-expanded={false}
-              data-css-kfdt74=""
-              onKeyDown={[Function]}
-              role="menu"
-            />
           </li>
         </ul>
       </li>
@@ -4059,7 +3294,7 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4067,7 +3302,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4075,19 +3309,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         2
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4095,7 +3323,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4103,19 +3330,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         3
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4123,7 +3344,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4131,19 +3351,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         4
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4151,7 +3365,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4159,19 +3372,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         5
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4179,7 +3386,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4187,19 +3393,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         6
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4207,7 +3407,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4215,19 +3414,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         7
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4235,7 +3428,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4243,19 +3435,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         8
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4263,7 +3449,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4271,19 +3456,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         9
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4291,7 +3470,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4299,19 +3477,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         10
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4319,7 +3491,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4327,19 +3498,13 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         11
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4347,7 +3512,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4355,12 +3519,6 @@ exports[`Storyshots Components/ActionMenu On Click Nested 1`] = `
         12
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -4402,7 +3560,7 @@ Array [
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -4410,7 +3568,6 @@ Array [
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -4418,19 +3575,13 @@ Array [
             One item
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-kfdt74=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
       <li
         data-css-1vqdttp=""
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -4438,7 +3589,6 @@ Array [
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -4446,19 +3596,13 @@ Array [
             Two item
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-kfdt74=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
       <li
         data-css-1vqdttp=""
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -4466,7 +3610,6 @@ Array [
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -4474,12 +3617,6 @@ Array [
             Three item
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-kfdt74=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
     </ul>
   </div>,
@@ -4537,7 +3674,7 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
           onKeyDown={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
-          role="none"
+          role="menuitem"
           tabIndex={-1}
         >
           <a
@@ -4545,7 +3682,6 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
             aria-haspopup={false}
             data-css-1v7ok0h=""
             onClick={[Function]}
-            role="menuitem"
           >
             <span
               data-css-fxdh11=""
@@ -4553,19 +3689,13 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
               One item
             </span>
           </a>
-          <ul
-            aria-expanded={false}
-            data-css-kfdt74=""
-            onKeyDown={[Function]}
-            role="menu"
-          />
         </li>
         <li
           data-css-1vqdttp=""
           onKeyDown={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
-          role="none"
+          role="menuitem"
           tabIndex={-1}
         >
           <a
@@ -4573,7 +3703,6 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
             aria-haspopup={false}
             data-css-1v7ok0h=""
             onClick={[Function]}
-            role="menuitem"
           >
             <span
               data-css-fxdh11=""
@@ -4581,19 +3710,13 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
               Two item
             </span>
           </a>
-          <ul
-            aria-expanded={false}
-            data-css-kfdt74=""
-            onKeyDown={[Function]}
-            role="menu"
-          />
         </li>
         <li
           data-css-1vqdttp=""
           onKeyDown={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
-          role="none"
+          role="menuitem"
           tabIndex={-1}
         >
           <a
@@ -4601,7 +3724,6 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
             aria-haspopup={false}
             data-css-1v7ok0h=""
             onClick={[Function]}
-            role="menuitem"
           >
             <span
               data-css-fxdh11=""
@@ -4609,12 +3731,6 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
               Three item
             </span>
           </a>
-          <ul
-            aria-expanded={false}
-            data-css-kfdt74=""
-            onKeyDown={[Function]}
-            role="menu"
-          />
         </li>
       </ul>
     </div>
@@ -4635,7 +3751,7 @@ exports[`Storyshots Components/ActionMenu One Item 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4643,7 +3759,6 @@ exports[`Storyshots Components/ActionMenu One Item 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4651,12 +3766,6 @@ exports[`Storyshots Components/ActionMenu One Item 1`] = `
         One item
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
@@ -4705,7 +3814,7 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
           onKeyDown={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
-          role="none"
+          role="menuitem"
           tabIndex={-1}
         >
           <a
@@ -4713,7 +3822,6 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
             aria-haspopup={false}
             data-css-1v7ok0h=""
             onClick={[Function]}
-            role="menuitem"
           >
             <span
               data-css-fxdh11=""
@@ -4721,19 +3829,13 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
               One item
             </span>
           </a>
-          <ul
-            aria-expanded={false}
-            data-css-kfdt74=""
-            onKeyDown={[Function]}
-            role="menu"
-          />
         </li>
         <li
           data-css-1vqdttp=""
           onKeyDown={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
-          role="none"
+          role="menuitem"
           tabIndex={-1}
         >
           <a
@@ -4741,7 +3843,6 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
             aria-haspopup={false}
             data-css-1v7ok0h=""
             onClick={[Function]}
-            role="menuitem"
           >
             <span
               data-css-fxdh11=""
@@ -4749,19 +3850,13 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
               Two item
             </span>
           </a>
-          <ul
-            aria-expanded={false}
-            data-css-kfdt74=""
-            onKeyDown={[Function]}
-            role="menu"
-          />
         </li>
         <li
           data-css-1vqdttp=""
           onKeyDown={[Function]}
           onMouseOut={[Function]}
           onMouseOver={[Function]}
-          role="none"
+          role="menuitem"
           tabIndex={-1}
         >
           <a
@@ -4769,7 +3864,6 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
             aria-haspopup={false}
             data-css-1v7ok0h=""
             onClick={[Function]}
-            role="menuitem"
           >
             <span
               data-css-fxdh11=""
@@ -4777,12 +3871,6 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
               Three item
             </span>
           </a>
-          <ul
-            aria-expanded={false}
-            data-css-kfdt74=""
-            onKeyDown={[Function]}
-            role="menu"
-          />
         </li>
       </ul>
     </div>
@@ -4833,7 +3921,7 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -4841,7 +3929,6 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -4849,19 +3936,13 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
             One item
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-kfdt74=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
       <li
         data-css-1vqdttp=""
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -4869,7 +3950,6 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -4877,19 +3957,13 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
             Two item
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-kfdt74=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
       <li
         data-css-1vqdttp=""
         onKeyDown={[Function]}
         onMouseOut={[Function]}
         onMouseOver={[Function]}
-        role="none"
+        role="menuitem"
         tabIndex={-1}
       >
         <a
@@ -4897,7 +3971,6 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
           aria-haspopup={false}
           data-css-1v7ok0h=""
           onClick={[Function]}
-          role="menuitem"
         >
           <span
             data-css-fxdh11=""
@@ -4905,12 +3978,6 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
             Three item
           </span>
         </a>
-        <ul
-          aria-expanded={false}
-          data-css-kfdt74=""
-          onKeyDown={[Function]}
-          role="menu"
-        />
       </li>
     </ul>
   </div>
@@ -4929,7 +3996,7 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4937,7 +4004,6 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -4968,19 +4034,13 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
         </span>
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -4988,7 +4048,6 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -5019,19 +4078,13 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
         </span>
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
   <li
     data-css-1vqdttp=""
     onKeyDown={[Function]}
     onMouseOut={[Function]}
     onMouseOver={[Function]}
-    role="none"
+    role="menuitem"
     tabIndex={-1}
   >
     <a
@@ -5039,7 +4092,6 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
       aria-haspopup={false}
       data-css-1v7ok0h=""
       onClick={[Function]}
-      role="menuitem"
     >
       <span
         data-css-fxdh11=""
@@ -5068,12 +4120,6 @@ exports[`Storyshots Components/ActionMenu With Icons 1`] = `
         </span>
       </span>
     </a>
-    <ul
-      aria-expanded={false}
-      data-css-kfdt74=""
-      onKeyDown={[Function]}
-      role="menu"
-    />
   </li>
 </ul>
 `;
