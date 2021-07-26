@@ -11,7 +11,7 @@ import styles from './styles.module.css'
 const CODESANDBOX_CSS_FILE = `
 html,
 body {
-  background: var(--psColorsBackgroundDark2);
+  background: var(--ps-colors-background-dark-2);
 }
 `
 const CODESANDBOX_INDEX_FILE = `
