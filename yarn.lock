@@ -11783,13 +11783,6 @@ gatsby-plugin-express@^1.1.6:
   dependencies:
     "@reach/router" "^1.2.1"
 
-gatsby-plugin-glamor@^2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-glamor/-/gatsby-plugin-glamor-2.10.0.tgz#2122213be2db37613d44e73e04728c99e16fe8ba"
-  integrity sha512-ljyP11B2g4zjNhMXaltANTqkORU9WSG/7Q6xnfQBrlJ96TUXZh5mZ+a2/rxBKpupoACikDsKuLyPL4Qtq5QsWg==
-  dependencies:
-    "@babel/runtime" "^7.12.5"
-
 gatsby-plugin-mdx@^1.10.1:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.10.1.tgz#44d175b8f339955ca2119b73c9ac55ec2a2f1c6f"

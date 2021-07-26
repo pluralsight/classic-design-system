@@ -45,12 +45,10 @@ For usage options, follow the "[Core usage](#core-usage)" section instructions.
 
 ### Install components
 
-<Badge color="yellow">Work in progress</Badge> 
-
-We are currently converting from CSS-in-JS via Glamor to vanilla CSS.  For today, you can safely assume that [glamor](https://github.com/threepointone/glamor) is still a peer dependency and needs to be installed exactly once per application.
+All components are built on React as a UI framework. Install it as a peer dependency along with the appropriate renderer.
 
 ```bash startExpanded
-npm install glamor
+npm install react react-dom
 ```
 
 All components support theming and have a peer dependency on the Theme package. Install with:
@@ -77,7 +75,7 @@ It will be challenging to not bloat your polyfill because what exact polyfills a
 
 ### Webpack bundling
 
-You'll need to include the CSS for Design System Core and components (or at least those components that have moved from Glamor to vanilla CSS).
+You'll need to include the CSS for Design System Core and components.
 
 ```bash startExpanded
 npm install style-loader css-loader
@@ -159,77 +157,7 @@ use: ['style-loader', 'css-loader', 'sass-loader']
 
 ### Next.js
 
-To avoid flashes of unstyled content when doing SSR with `next.js` the following is necessary:
-
-Add `glamor/server` to the `\_document.js`:
-
-```bash startExpanded
-npm install glamor
-```
-
-```typescript noRender startExpanded
-import Document, { Html, Head, Main, NextScript } from 'next/document'
-import { renderStatic } from 'glamor/server'
-class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const page = ctx.renderPage()
-    const styles = renderStatic(() => page.html || page.errorHtml)
-    const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps, ...page, ...styles }
-  }
-  constructor(props) {
-    super(props)
-    const { __NEXT_DATA__, ids } = props
-    if (ids) {
-      __NEXT_DATA__.ids = this.props.ids
-    }
-  }
-  render() {
-    return (
-      <Html lang="en-US">
-        <Head>
-          <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    )
-  }
-}
-export default MyDocument
-```
-
-In `next.config.js` directly adjust postCSS configuration like so:
-
-```bash startExpanded
-npm install @pluralsight/ps-design-system-core
-```
-
-<Badge color={Badge.colors.yellow}>Note</Badge> CSS variables consumed by app need
-to be added to import from field.
-
-```typescript noRender startExpanded
-const postcssPresetEnv = require('postcss-preset-env')
-module.exports = {
-  plugins: [
-    require('postcss-import')(),
-    postcssPresetEnv({
-      stage: 2,
-      features: {
-        'nesting-rules': true
-      },
-      browsers: ['Last 2 versions', 'IE >= 11'],
-      importFrom: [
-        './node_modules/@pluralsight/ps-design-system-core/css/colors.module.css',
-        './node_modules/@pluralsight/ps-design-system-core/css/type.module.css',
-        // etc
-      ]
-    })
-  ]
-}
-```
+The latest version of Next.js should handle CSS natively. No additional configuration is required.
 
 ### Configuration examples
 

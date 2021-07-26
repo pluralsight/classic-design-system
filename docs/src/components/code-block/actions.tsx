@@ -81,7 +81,6 @@ export const CodeSandboxAction: React.FC<CodeSandboxActionProps> = props => {
         '@pluralsight/ps-design-system-normalize': 'latest',
         '@pluralsight/ps-design-system-theme': 'latest',
         '@babel/runtime': 'latest',
-        glamor: 'latest',
         invariant: 'latest'
       }}
       gitInfo={gitInfo}
