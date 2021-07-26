@@ -2,16 +2,14 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { action } from '@storybook/addon-actions'
 import { DecoratorFn } from '@storybook/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import VerticalTabs from '../index'
 
-const glamor = glamorDefault || glamorExports
 const { CollapsibleGroup, Group, Tier1, Tier2 } = VerticalTabs
 
 const ConstrainWidthDecorator: DecoratorFn = storyFn => (
-  <div {...glamor.css({ height: '100%', width: '240px' })}>{storyFn()}</div>
+  <div style={{ height: '100%', width: '240px' }}>{storyFn()}</div>
 )
 
 export default {
