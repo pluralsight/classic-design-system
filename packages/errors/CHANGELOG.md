@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@12.1.18...@pluralsight/ps-design-system-errors@13.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **errors:** convert to vanilla css; remove glamor; dashify ([bdeb947](https://github.com/pluralsight/design-system/commit/bdeb9478cbbb0100fa806f1faf5ace74065f8199)), closes [#1892](https://github.com/pluralsight/design-system/issues/1892)
+
+
+### BREAKING CHANGES
+
+* **errors:** convert styles to vanilla css; requires bundling
+* **errors:** dashify css selectors
+
+
+
+
+
 ## [12.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@12.1.17...@pluralsight/ps-design-system-errors@12.1.18) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-errors

@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@9.1.13...@pluralsight/ps-design-system-checkbox@10.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **checkbox:** convert to vanilla css; remove glamor; dashify ([46d4716](https://github.com/pluralsight/design-system/commit/46d4716044c58a8db8e9fe612d42cadfc2fcc5e4)), closes [#1859](https://github.com/pluralsight/design-system/issues/1859)
+
+
+### BREAKING CHANGES
+
+* **checkbox:** convert styles to vanilla css; requires bundling
+* **checkbox:** dashify css selectors
+* **checkbox:** move passed className prop to parent node (label)
+
+
+
+
+
 ## [9.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@9.1.12...@pluralsight/ps-design-system-checkbox@9.1.13) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox

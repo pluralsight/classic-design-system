@@ -3,6 +3,149 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.24...@pluralsight/ps-design-system-appframe@6.0.0) (2021-07-26)
+
+
+* css/navitem-multiselect (#1936) ([8eb3953](https://github.com/pluralsight/design-system/commit/8eb3953c10dcf42f7af67b55c39e65f35c137075)), closes [#1936](https://github.com/pluralsight/design-system/issues/1936)
+* css/screenreaderonly-navuser (#1915) ([60209c8](https://github.com/pluralsight/design-system/commit/60209c80755525b7b353966f5e82f710a1beb3b2)), closes [#1915](https://github.com/pluralsight/design-system/issues/1915)
+* css/steps-scrollable (#1914) ([1b700fa](https://github.com/pluralsight/design-system/commit/1b700fa6fb20ef42cdcf54c19c1b15956441b798)), closes [#1914](https://github.com/pluralsight/design-system/issues/1914)
+* css/viewtoggle-typeahead (#1868) ([78fd75f](https://github.com/pluralsight/design-system/commit/78fd75f5f251ad3d9663cc92a85a1bce9e3ef440)), closes [#1868](https://github.com/pluralsight/design-system/issues/1868)
+
+
+### Code Refactoring
+
+* **appframe:** convert to vanilla css; remove glamor; dashify ([f8c2702](https://github.com/pluralsight/design-system/commit/f8c270202071dd4fb95ea5e92d5e2a44738813c9)), closes [#1856](https://github.com/pluralsight/design-system/issues/1856)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(linearprogress): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: snapshots and cleanup
+
+* fix: cleanup
+
+* refactor: css convert
+
+* feat(multiselect): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navbar): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navbrand): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navcookiebanner): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navitem): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: snapshots and lint:fix
+
+* fix: dashify css
+
+* fix(multiselect): styling fix with concerns
+
+* fix(multiselect): use css old school like
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(row): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(radio): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(note): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navuser): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: update snapshots
+
+* test: lint fix
+
+* fix(note): psuedoselector fix
+
+* test: update snapshots
+
+* test: update snapshots
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(starrating): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(select): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(searchinput): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(scrollable): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test(appframe): update snapshot wdue to new searchinput css
+
+* fix: pr change request from jake
+
+* fix(circularprogress):  className attr value
+
+* fix(steps): completed class selectivity
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(verticaltabs): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(typeahead): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test(verticaltabs): adds composes className tests for sub components
+
+* fix(viewtoggle): commit change requests
+
+* test: lint fix
+
+* test(typeahead): update snapshots
+
+* fix(verticaltabs): remove remaining vendor prefixes
+
+* fix(menu): allows menu item to uses aria-selected val from downshift
+
+* fix(typeahead): a11y fallback to aria-label
+
+* fix(verticaltabs): commit change requests
+* **appframe:** convert styles to vanilla css; requires bundling
+* **appframe:** dashify css selectors
+
+
+
+
+
 ## [5.1.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@5.1.23...@pluralsight/ps-design-system-appframe@5.1.24) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-appframe

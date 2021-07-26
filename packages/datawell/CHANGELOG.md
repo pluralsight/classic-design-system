@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@6.1.15...@pluralsight/ps-design-system-datawell@7.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **datawell:** convert to vanilla css; remove glamor; dashify ([00df173](https://github.com/pluralsight/design-system/commit/00df173d5d845205fe9753ce0fc635d0509e0bdd)), closes [#1866](https://github.com/pluralsight/design-system/issues/1866)
+
+
+### BREAKING CHANGES
+
+* **datawell:** convert styles to vanilla css; requires bundling
+* **datawell:** dashify css selectors
+
+
+
+
+
 ## [6.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@6.1.14...@pluralsight/ps-design-system-datawell@6.1.15) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datawell
