@@ -269,116 +269,216 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
 <div
   data-css-424rvd=""
 >
-  <div
-    className="psds-radio-group psds-radio-group--disabled"
-    onBlur={[Function]}
-    onFocus={[Function]}
-    placeholder="Some placeholder"
-    role="radiogroup"
-  >
+  <div>
     <div
-      className="psds-radio-group__label psds-theme--dark"
+      className="psds-radio-group psds-radio-group--disabled"
+      role="radiogroup"
     >
-      The label
+      <div
+        className="psds-radio-group__label psds-theme--dark"
+      >
+        Group disabled
+      </div>
+      <div
+        className="psds-radio-group__button-container"
+      >
+        <label
+          className="psds-radio-button psds-radio-button--disabled"
+        >
+          <div
+            className="psds-radio-button__circle-outer"
+          >
+            <div
+              className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
+            >
+              <div
+                className="psds-radio-button__circle psds-theme--dark"
+              />
+            </div>
+          </div>
+          <input
+            checked={false}
+            className="psds-radio-button__input"
+            name="someName"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            readOnly={true}
+            type="radio"
+            value="red"
+          />
+          <div
+            className="psds-radio-button__label psds-theme--dark"
+          >
+            Red
+          </div>
+        </label>
+        <label
+          className="psds-radio-button psds-radio-button--disabled"
+        >
+          <div
+            className="psds-radio-button__circle-outer"
+          >
+            <div
+              className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
+            >
+              <div
+                className="psds-radio-button__circle psds-theme--dark"
+              />
+            </div>
+          </div>
+          <input
+            checked={false}
+            className="psds-radio-button__input"
+            name="someName"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            readOnly={true}
+            type="radio"
+            value="green"
+          />
+          <div
+            className="psds-radio-button__label psds-theme--dark"
+          >
+            Green
+          </div>
+        </label>
+        <label
+          className="psds-radio-button psds-radio-button--disabled"
+        >
+          <div
+            className="psds-radio-button__circle-outer"
+          >
+            <div
+              className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
+            >
+              <div
+                className="psds-radio-button__circle psds-theme--dark"
+              />
+            </div>
+          </div>
+          <input
+            checked={false}
+            className="psds-radio-button__input"
+            name="someName"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            readOnly={true}
+            type="radio"
+            value="blue"
+          />
+          <div
+            className="psds-radio-button__label psds-theme--dark"
+          >
+            Blue
+          </div>
+        </label>
+      </div>
     </div>
     <div
-      className="psds-radio-group__button-container"
+      className="psds-radio-group"
+      role="radiogroup"
     >
-      <label
-        className="psds-radio-button psds-radio-button--disabled"
+      <div
+        className="psds-radio-group__label psds-theme--dark"
       >
-        <div
-          className="psds-radio-button__circle-outer"
+        Individual button disabled
+      </div>
+      <div
+        className="psds-radio-group__button-container"
+      >
+        <label
+          className="psds-radio-button"
         >
           <div
-            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
+            className="psds-radio-button__circle-outer"
           >
             <div
-              className="psds-radio-button__circle psds-theme--dark"
-            />
+              className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
+            >
+              <div
+                className="psds-radio-button__circle psds-theme--dark"
+              />
+            </div>
           </div>
-        </div>
-        <input
-          checked={false}
-          className="psds-radio-button__input"
-          name="radio-name"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          readOnly={true}
-          type="radio"
-          value="red"
-        />
-        <div
-          className="psds-radio-button__label psds-theme--dark"
-        >
-          Red
-        </div>
-      </label>
-      <label
-        className="psds-radio-button psds-radio-button--disabled"
-      >
-        <div
-          className="psds-radio-button__circle-outer"
+          <input
+            checked={false}
+            className="psds-radio-button__input"
+            name="anotherName"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            readOnly={true}
+            type="radio"
+            value="red"
+          />
+          <div
+            className="psds-radio-button__label psds-theme--dark"
+          >
+            Red
+          </div>
+        </label>
+        <label
+          className="psds-radio-button psds-radio-button--disabled"
         >
           <div
-            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
+            className="psds-radio-button__circle-outer"
           >
             <div
-              className="psds-radio-button__circle psds-theme--dark"
-            />
+              className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
+            >
+              <div
+                className="psds-radio-button__circle psds-theme--dark"
+              />
+            </div>
           </div>
-        </div>
-        <input
-          checked={false}
-          className="psds-radio-button__input"
-          name="radio-name"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          readOnly={true}
-          type="radio"
-          value="green"
-        />
-        <div
-          className="psds-radio-button__label psds-theme--dark"
-        >
-          Green
-        </div>
-      </label>
-      <label
-        className="psds-radio-button psds-radio-button--disabled"
-      >
-        <div
-          className="psds-radio-button__circle-outer"
+          <input
+            checked={false}
+            className="psds-radio-button__input"
+            name="anotherName"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            readOnly={true}
+            type="radio"
+            value="green"
+          />
+          <div
+            className="psds-radio-button__label psds-theme--dark"
+          >
+            Green
+          </div>
+        </label>
+        <label
+          className="psds-radio-button"
         >
           <div
-            className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-radio-button__halo"
+            className="psds-radio-button__circle-outer"
           >
             <div
-              className="psds-radio-button__circle psds-theme--dark"
-            />
+              className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus psds-radio-button__halo"
+            >
+              <div
+                className="psds-radio-button__circle psds-theme--dark"
+              />
+            </div>
           </div>
-        </div>
-        <input
-          checked={false}
-          className="psds-radio-button__input"
-          name="radio-name"
-          onBlur={[Function]}
-          onFocus={[Function]}
-          readOnly={true}
-          type="radio"
-          value="blue"
-        />
-        <div
-          className="psds-radio-button__label psds-theme--dark"
-        >
-          Blue
-        </div>
-      </label>
-    </div>
-    <div
-      className="psds-radio-group__sub-label psds-theme--dark"
-    >
-      The sub label
+          <input
+            checked={false}
+            className="psds-radio-button__input"
+            name="anotherName"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            readOnly={true}
+            type="radio"
+            value="blue"
+          />
+          <div
+            className="psds-radio-button__label psds-theme--dark"
+          >
+            Blue
+          </div>
+        </label>
+      </div>
     </div>
   </div>
 </div>

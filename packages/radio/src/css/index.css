@@ -32,6 +32,7 @@
   cursor: pointer;
 }
 .psds-radio-button--disabled {
+  opacity: 0.5;
   cursor: not-allowed;
 }
 .psds-radio-button__halo {
@@ -58,7 +59,8 @@
   background: var(--ps-colors-background-light-3);
   border-color: var(--ps-colors-text-icon-low-on-light);
 }
-.psds-radio-button__circle--checked, .psds-radio-button__circle--checked.psds-theme--light {
+.psds-radio-button__circle--checked,
+.psds-radio-button__circle--checked.psds-theme--light {
   border-color: var(--ps-colors-blue-6);
   background: var(--ps-colors-blue-6);
 }

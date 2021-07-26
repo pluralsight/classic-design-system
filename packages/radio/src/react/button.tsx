@@ -10,6 +10,7 @@ const isChecked = (a: React.ReactText, b?: React.ReactText) => a === b
 
 export interface RadioButtonProps
   extends Omit<React.HTMLAttributes<HTMLInputElement>, 'onClick'> {
+  disabled?: boolean
   label: React.ReactNode
   onBlur?: (evt: React.FocusEvent<HTMLInputElement>) => void
   onClick?: (
@@ -21,14 +22,23 @@ export interface RadioButtonProps
 }
 
 const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
-  ({ value, label, className, ...props }, forwardedRef) => {
+  (
+    { className, disabled: disabledButton, value, label, ...props },
+    forwardedRef
+  ) => {
     const themeName = useTheme()
-    const { checkedValue, onChange, disabled, error, name } =
-      React.useContext(RadioContext)
+    const {
+      checkedValue,
+      onChange,
+      disabled: disabledGroup,
+      error,
+      name
+    } = React.useContext(RadioContext)
     const ref = React.useRef<HTMLInputElement>(
       null as unknown as HTMLInputElement
     )
     React.useImperativeHandle(forwardedRef, () => ref.current)
+    const disabled = disabledButton || disabledGroup
 
     const [isFocused, setFocus] = React.useState(false)
 

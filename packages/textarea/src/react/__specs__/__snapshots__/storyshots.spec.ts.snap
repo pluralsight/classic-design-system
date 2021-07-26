@@ -19,6 +19,7 @@ Array [
         <textarea
           className="psds-text-area__field psds-text-area__field--appearance-default psds-theme--dark"
           disabled={false}
+          maxLength={23}
           placeholder="Some placeholder"
           style={
             Object {
