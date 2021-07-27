@@ -35,7 +35,7 @@
     "tiny-hashes": "^1.0.1"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^5.1.2",
+    "@pluralsight/ps-design-system-normalize": "^6.0.0",
     "react": "^17.0.1"
   },
   "devDependencies": {
