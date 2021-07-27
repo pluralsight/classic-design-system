@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-errors",
-  "version": "13.0.0",
+  "version": "13.0.1",
   "description": "Design system components for errors",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.2.2",
-    "@pluralsight/ps-design-system-normalize": "^5.1.9",
+    "@pluralsight/ps-design-system-normalize": "^5.1.10",
     "@pluralsight/ps-design-system-storybook-preset": "^0.7.4",
     "@pluralsight/ps-design-system-theme": "^8.1.14"
   },

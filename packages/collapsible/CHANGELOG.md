@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@5.1.8...@pluralsight/ps-design-system-collapsible@5.1.9) (2021-07-27)
+
+
+### Bug Fixes
+
+* **collapible:** fix tsc by explicit undefined arg to promise.resolve ([9fbd4a5](https://github.com/pluralsight/design-system/commit/9fbd4a5fb49962a30110585f39f45e1516569ec9))
+
+
+
+
+
 ## [5.1.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-collapsible@5.1.7...@pluralsight/ps-design-system-collapsible@5.1.8) (2021-06-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-collapsible
