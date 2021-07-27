@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@6.0.0...@pluralsight/ps-design-system-scrollable@6.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **scrollable:** set normalize peerDependency to 6.0.0 ([631f073](https://github.com/pluralsight/design-system/commit/631f0734a989e874cda3be01bc41858b3ed44888))
+
+
+
+
+
 # [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@5.1.16...@pluralsight/ps-design-system-scrollable@6.0.0) (2021-07-26)
 
 

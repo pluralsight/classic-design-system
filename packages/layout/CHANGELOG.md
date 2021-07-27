@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@12.0.0...@pluralsight/ps-design-system-layout@12.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **layout:** set normalize peerDependency to 6.0.0 ([b51bae7](https://github.com/pluralsight/design-system/commit/b51bae7757cbc164f57c29d8f8693132a625c64b))
+
+
+
+
+
 # [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@11.1.17...@pluralsight/ps-design-system-layout@12.0.0) (2021-07-26)
 
 

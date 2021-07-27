@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@11.0.0...@pluralsight/ps-design-system-radio@11.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **radio:** set normalize peerDependency to 6.0.0 ([f9d9a36](https://github.com/pluralsight/design-system/commit/f9d9a36c5dd5034bae0f64b4baef0d8ad497d97d))
+
+
+
+
+
 # [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@10.1.17...@pluralsight/ps-design-system-radio@11.0.0) (2021-07-26)
 
 

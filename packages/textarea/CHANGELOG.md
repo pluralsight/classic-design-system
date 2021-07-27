@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.1.16...@pluralsight/ps-design-system-textarea@9.1.17) (2021-07-27)
+
+
+### Bug Fixes
+
+* **textarea:** set normalize peerDependency to 6.0.0 ([9dbf255](https://github.com/pluralsight/design-system/commit/9dbf25503868034d4dad7a517e4499f6bdac75ab))
+
+
+
+
+
 ## [9.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.1.15...@pluralsight/ps-design-system-textarea@9.1.16) (2021-07-26)
 
 

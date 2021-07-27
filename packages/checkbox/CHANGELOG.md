@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@10.0.0...@pluralsight/ps-design-system-checkbox@10.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **checkbox:** set normalize peerDependency to 6.0.0 ([019b0f3](https://github.com/pluralsight/design-system/commit/019b0f3bc34420dfbc7d6d14962a92770c886e2b))
+
+
+
+
+
 # [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@9.1.13...@pluralsight/ps-design-system-checkbox@10.0.0) (2021-07-26)
 
 

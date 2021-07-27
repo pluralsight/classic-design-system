@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@16.0.0...@pluralsight/ps-design-system-datepicker@16.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **datepicker:** set normalize peerDependency to 6.0.0 ([981c24d](https://github.com/pluralsight/design-system/commit/981c24d7818d8e66ed7a90afbe20486148c63ff1))
+
+
+
+
+
 # [16.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.3.4...@pluralsight/ps-design-system-datepicker@16.0.0) (2021-07-26)
 
 
