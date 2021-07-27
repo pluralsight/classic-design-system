@@ -69,9 +69,9 @@
 html {
   box-sizing: border-box;
   text-size-adjust: 100%;
-  font-family: var(--ps-type-font-family);
+  font-family: var(--psTypeFontFamily);
   font-size: 0.875em;
-  font-weight: var(--ps-type-font-weight-regular);
+  font-weight: var(--psTypeFontWeightRegular);
   line-height: 1.71429; /* calc(var(--ps-type-line-height-standard) / var(--ps-type-font-size-small)); */
   font-feature-settings: 'tnum' on, 'lnum' on;
 }
@@ -108,14 +108,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--ps-type-font-weight-regular);
+  font-weight: var(--psTypeFontWeightRegular);
 }
 
 ul,
 ol,
 dd {
-  margin-left: var(--ps-layout-spacing-large);
-  line-height: var(--ps-type-line-height-standard);
+  margin-left: var(--psLayoutSpacingLarge);
+  line-height: var(--psTypeLineHeightStandard);
 }
 
 ul,
