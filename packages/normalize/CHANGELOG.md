@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@5.1.9...@pluralsight/ps-design-system-normalize@5.1.10) (2021-07-27)
+
+
+### Bug Fixes
+
+* **normalize:** revert core back to camelCase variables ([66bb6f3](https://github.com/pluralsight/design-system/commit/66bb6f35543a27781b904c6eccf2f6fe4acf9245)), closes [#1947](https://github.com/pluralsight/design-system/issues/1947)
+
+
+
+
+
 ## [5.1.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@5.1.8...@pluralsight/ps-design-system-normalize@5.1.9) (2021-07-26)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-normalize

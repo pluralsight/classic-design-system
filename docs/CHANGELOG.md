@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.31.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.31.0...@pluralsight/ps-design-system-docs@0.31.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **docs:** dashify css var references ([7d4699f](https://github.com/pluralsight/design-system/commit/7d4699f4a56cfc27d55b929d92d2dd9539dc2666))
+
+
+
+
+
 # [0.31.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.30.2...@pluralsight/ps-design-system-docs@0.31.0) (2021-07-26)
 
 
