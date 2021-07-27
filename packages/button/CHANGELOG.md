@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.1.15...@pluralsight/ps-design-system-button@23.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **button:** convert to vanilla css; remove glamor ([1053012](https://github.com/pluralsight/design-system/commit/105301200a3bb2c166ecdcb6469c13a8f4ac4f6b)), closes [#1842](https://github.com/pluralsight/design-system/issues/1842)
+* **button:** dashify css ([1ca160b](https://github.com/pluralsight/design-system/commit/1ca160b7ae26f382f4ee5925229de2993d15684c))
+
+
+### BREAKING CHANGES
+
+* **button:** dashify css selectors
+* **button:** convert styles to vanilla css; requires bundling
+
+
+
+
+
 ## [22.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@22.1.14...@pluralsight/ps-design-system-button@22.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-button

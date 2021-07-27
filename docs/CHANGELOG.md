@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.31.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.30.2...@pluralsight/ps-design-system-docs@0.31.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* **docs:** don't allow table of contents to overlay content on mobile ([5936cdc](https://github.com/pluralsight/design-system/commit/5936cdc3c71f36ebbcc82c6caf118ac46ba047bc)), closes [#1822](https://github.com/pluralsight/design-system/issues/1822)
+
+
+### Features
+
+* **docs:** add section on overriding css ([b0f40db](https://github.com/pluralsight/design-system/commit/b0f40dbd519cc1bc3debaa777e9812bf9265ce17)), closes [#1843](https://github.com/pluralsight/design-system/issues/1843)
+* **tooltip:** allowOffscreen rendering ([#1889](https://github.com/pluralsight/design-system/issues/1889)) ([60515ea](https://github.com/pluralsight/design-system/commit/60515eaa8e090bdba67b8be7be684d57d5b4cbba))
+
+
+
+
+
 ## [0.30.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.30.1...@pluralsight/ps-design-system-docs@0.30.2) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

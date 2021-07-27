@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.21...@pluralsight/ps-design-system-select@4.0.0) (2021-07-26)
+
+
+* css/steps-scrollable (#1914) ([1b700fa](https://github.com/pluralsight/design-system/commit/1b700fa6fb20ef42cdcf54c19c1b15956441b798)), closes [#1914](https://github.com/pluralsight/design-system/issues/1914)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(starrating): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(select): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(searchinput): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(scrollable): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test(appframe): update snapshot wdue to new searchinput css
+
+* fix: pr change request from jake
+
+* fix(circularprogress):  className attr value
+
+* fix(steps): completed class selectivity
+
+
+
+
+
 ## [3.0.21](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.20...@pluralsight/ps-design-system-select@3.0.21) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-select

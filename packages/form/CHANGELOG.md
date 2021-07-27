@@ -3,6 +3,54 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.1.27...@pluralsight/ps-design-system-form@13.0.0) (2021-07-26)
+
+
+* css/screenreaderonly-navuser (#1915) ([60209c8](https://github.com/pluralsight/design-system/commit/60209c80755525b7b353966f5e82f710a1beb3b2)), closes [#1915](https://github.com/pluralsight/design-system/issues/1915)
+
+
+### Code Refactoring
+
+* **form:** convert to vanilla css; remove glamor; dashify ([77c147f](https://github.com/pluralsight/design-system/commit/77c147f8bd90e4a2ae110cce5ee1d100a1711170)), closes [#1924](https://github.com/pluralsight/design-system/issues/1924)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(row): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(radio): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(note): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navuser): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: update snapshots
+
+* test: lint fix
+
+* fix(note): psuedoselector fix
+
+* test: update snapshots
+
+* test: update snapshots
+* **form:** convert styles to vanilla css; requires bundling
+* **form:** dashify css selectors
+
+
+
+
+
 ## [12.1.27](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@12.1.26...@pluralsight/ps-design-system-form@12.1.27) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

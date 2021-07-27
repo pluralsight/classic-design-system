@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@11.1.17...@pluralsight/ps-design-system-layout@12.0.0) (2021-07-26)
+
+
+* css/link-linearprogress (#1931) ([dd3296c](https://github.com/pluralsight/design-system/commit/dd3296ca7b4212927383a06536959a443c37aad5)), closes [#1931](https://github.com/pluralsight/design-system/issues/1931)
+
+
+### Code Refactoring
+
+* **layout:** convert to vanilla css; remove glamor; dashify ([862d951](https://github.com/pluralsight/design-system/commit/862d951ed7368598f3f8613c6a8f5f2b5e19444f)), closes [#1927](https://github.com/pluralsight/design-system/issues/1927)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(linearprogress): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: snapshots and cleanup
+
+* fix: cleanup
+* **layout:** convert styles to vanilla css; requires bundling
+* **layout:** dashify css selectors
+
+
+
+
+
 ## [11.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-layout@11.1.16...@pluralsight/ps-design-system-layout@11.1.17) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-layout

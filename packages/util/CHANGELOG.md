@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.2.9...@pluralsight/ps-design-system-util@9.3.0) (2021-07-26)
+
+
+### Features
+
+* **util:** add dashify function ([51688e7](https://github.com/pluralsight/design-system/commit/51688e7385cf66780cc1b27598ca0c2a6edf7ef7))
+
+
+
+
+
 ## [9.2.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.2.8...@pluralsight/ps-design-system-util@9.2.9) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util

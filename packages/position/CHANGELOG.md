@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@8.1.15...@pluralsight/ps-design-system-position@8.2.0) (2021-07-26)
+
+
+### Features
+
+* **tooltip:** allowOffscreen rendering ([#1889](https://github.com/pluralsight/design-system/issues/1889)) ([60515ea](https://github.com/pluralsight/design-system/commit/60515eaa8e090bdba67b8be7be684d57d5b4cbba))
+
+
+
+
+
 ## [8.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@8.1.14...@pluralsight/ps-design-system-position@8.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-position

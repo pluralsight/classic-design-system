@@ -3,6 +3,60 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-menu@3.0.19...@pluralsight/ps-design-system-menu@4.0.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* **menu:** focus style on menu item ([b9feff1](https://github.com/pluralsight/design-system/commit/b9feff17e9b7712ff3be46410f5b06238af9f81f))
+* **menu:** normalize padding around list item ([794f689](https://github.com/pluralsight/design-system/commit/794f6893951eba6142b2a9b5cc7f87b48f48e5ce))
+
+
+### Code Refactoring
+
+* **menu:** cleanup BEM naming on .psds-menu__item ([3e88be3](https://github.com/pluralsight/design-system/commit/3e88be360a13d25b6473373aa4bf1b175a59001d))
+* **menu:** convert to vanilla css; remove glamor; dashify ([61836a0](https://github.com/pluralsight/design-system/commit/61836a0614a2bc1a8215fde2d9fb1017de5308e2)), closes [#1880](https://github.com/pluralsight/design-system/issues/1880)
+
+
+* css/viewtoggle-typeahead (#1868) ([78fd75f](https://github.com/pluralsight/design-system/commit/78fd75f5f251ad3d9663cc92a85a1bce9e3ef440)), closes [#1868](https://github.com/pluralsight/design-system/issues/1868)
+
+
+### BREAKING CHANGES
+
+* **menu:** selector name changes to .psds-menu__item and related
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(verticaltabs): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(typeahead): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test(verticaltabs): adds composes className tests for sub components
+
+* fix(viewtoggle): commit change requests
+
+* test: lint fix
+
+* test(typeahead): update snapshots
+
+* fix(verticaltabs): remove remaining vendor prefixes
+
+* fix(menu): allows menu item to uses aria-selected val from downshift
+
+* fix(typeahead): a11y fallback to aria-label
+
+* fix(verticaltabs): commit change requests
+* **menu:** convert styles to vanilla css; requires bundling
+* **menu:** dashify css selectors
+
+
+
+
+
 ## [3.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-menu@3.0.18...@pluralsight/ps-design-system-menu@3.0.19) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-menu

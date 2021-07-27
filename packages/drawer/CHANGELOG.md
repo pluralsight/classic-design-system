@@ -3,6 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@11.1.18...@pluralsight/ps-design-system-drawer@12.0.0) (2021-07-26)
+
+
+* css/screenreaderonly-navuser (#1915) ([60209c8](https://github.com/pluralsight/design-system/commit/60209c80755525b7b353966f5e82f710a1beb3b2)), closes [#1915](https://github.com/pluralsight/design-system/issues/1915)
+
+
+### Bug Fixes
+
+* **drawer:** dont nest interactive components for accessibility ([a7f3dbb](https://github.com/pluralsight/design-system/commit/a7f3dbb4fa12fe6d7eec07a482d8e962235cde4b))
+
+
+### Code Refactoring
+
+* **drawer:** convert to vanilla css; remove glamor; dashify ([c3cd1d6](https://github.com/pluralsight/design-system/commit/c3cd1d637e854ef94e83e82b6c012c036270c643)), closes [#1871](https://github.com/pluralsight/design-system/issues/1871)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(row): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(radio): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(note): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navuser): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: update snapshots
+
+* test: lint fix
+
+* fix(note): psuedoselector fix
+
+* test: update snapshots
+
+* test: update snapshots
+* **drawer:** convert styles to vanilla css; requires bundling
+* **drawer:** dashify css selectors
+
+
+
+
+
 ## [11.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@11.1.17...@pluralsight/ps-design-system-drawer@11.1.18) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer

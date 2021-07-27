@@ -3,6 +3,53 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@13.1.18...@pluralsight/ps-design-system-dialog@14.0.0) (2021-07-26)
+
+
+* css/viewtoggle-typeahead (#1868) ([78fd75f](https://github.com/pluralsight/design-system/commit/78fd75f5f251ad3d9663cc92a85a1bce9e3ef440)), closes [#1868](https://github.com/pluralsight/design-system/issues/1868)
+
+
+### Code Refactoring
+
+* **dialog:** convert to vanilla css; remove glamor; dashify ([00625d1](https://github.com/pluralsight/design-system/commit/00625d1299330468bcddb8f8c1cb1c04a8c7072c)), closes [#1869](https://github.com/pluralsight/design-system/issues/1869)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(verticaltabs): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(typeahead): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test(verticaltabs): adds composes className tests for sub components
+
+* fix(viewtoggle): commit change requests
+
+* test: lint fix
+
+* test(typeahead): update snapshots
+
+* fix(verticaltabs): remove remaining vendor prefixes
+
+* fix(menu): allows menu item to uses aria-selected val from downshift
+
+* fix(typeahead): a11y fallback to aria-label
+
+* fix(verticaltabs): commit change requests
+* **dialog:** convert styles to vanilla css; requires bundling
+* **dialog:** dashify css selectors
+* **dialog:** remove UNSAFE_stylesFor prop
+
+
+
+
+
 ## [13.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@13.1.17...@pluralsight/ps-design-system-dialog@13.1.18) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

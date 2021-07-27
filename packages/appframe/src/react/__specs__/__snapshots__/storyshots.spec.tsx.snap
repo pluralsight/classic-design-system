@@ -2,44 +2,44 @@
 
 exports[`Storyshots Components/AppFrame Basic 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
       <div
-        data-css-tuvdh3=""
+        className="psds-navbar"
       >
         <div
-          data-css-1kfsc44=""
+          className="psds-navbar__brand"
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-1yi1k4r=""
+              className="psds-navbrand"
             >
               <div
-                data-css-1yppk9l=""
+                className="psds-navbrand__logo psds-navbrand__logo--wordmark"
               >
                 <svg
                   aria-hidden={true}
@@ -71,7 +71,7 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
                 </svg>
               </div>
               <div
-                data-css-1b9xv68=""
+                className="psds-navbrand__wordmark"
               >
                 SKILLS
               </div>
@@ -79,20 +79,22 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
           </div>
         </div>
         <div
-          data-css-1ns9ldv=""
+          className="psds-navbar__items"
         />
         <div
-          data-css-jgr69u=""
+          className="psds-navbar__utility"
         />
-        <div>
+        <div
+          className="psds-navbar__user"
+        >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
-                className="psds-avatar psds-avatar--size-xSmall"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -107,15 +109,15 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -127,10 +129,10 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -145,16 +147,16 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
-                data-css-vetqvm=""
+                className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
               >
                 Page title
               </h3>
@@ -163,40 +165,40 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Cupcake ipsum dolor sit amet. Sweet gummi bears dragée. Pie dragée cotton candy candy canes bear claw apple pie. Dessert apple pie caramels carrot cake bear claw sweet donut. Croissant chocolate bear claw jelly chocolate candy pie pudding caramels. Cake muffin candy liquorice liquorice tiramisu powder pie dragée. Danish soufflé sweet apple pie cupcake tart. Danish cookie oat cake tiramisu lemon drops pie apple pie cake cotton candy. Pudding brownie jujubes. Chocolate bar biscuit liquorice candy jelly-o tiramisu icing muffin sweet roll. Jelly candy canes chocolate dragée. Danish biscuit sugar plum cake. Cotton candy soufflé muffin gummi bears.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Sweet roll sweet roll cotton candy marshmallow lemon drops caramels sweet roll toffee. Bear claw powder ice cream topping wafer cake tootsie roll. Lemon drops pudding dessert toffee fruitcake toffee. Icing marzipan cake pastry biscuit liquorice chupa chups sesame snaps. Biscuit muffin donut. Marshmallow carrot cake icing icing dragée jujubes lemon drops. Danish cheesecake sesame snaps. Sweet sugar plum fruitcake tootsie roll. Fruitcake jelly-o soufflé muffin cheesecake pie apple pie jelly powder. Cake dragée danish muffin dragée soufflé marzipan croissant danish. Soufflé chupa chups cake biscuit icing pastry cake danish danish. Icing cotton candy oat cake chocolate macaroon tiramisu sweet dragée cake. Ice cream carrot cake lemon drops. Jelly sweet wafer liquorice brownie sesame snaps halvah apple pie jelly-o.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Tootsie roll dragée apple pie. Pie cake toffee caramels gummies chupa chups carrot cake chupa chups. Jelly-o fruitcake macaroon chocolate. Brownie lollipop sugar plum gummies marshmallow muffin bonbon carrot cake. Pudding powder lemon drops halvah. Icing cupcake pastry chupa chups danish sweet bear claw sugar plum. Chupa chups wafer donut lollipop. Sweet roll croissant cake chocolate cake croissant pastry toffee. Chocolate cake liquorice halvah pastry danish candy canes. Apple pie pastry topping sesame snaps cupcake liquorice icing chocolate bar brownie. Chocolate cake sesame snaps cake gummies cupcake pastry jujubes fruitcake. Muffin fruitcake soufflé macaroon danish. Dessert chocolate marshmallow sesame snaps donut toffee ice cream sugar plum dragée.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>
@@ -208,44 +210,44 @@ exports[`Storyshots Components/AppFrame Basic 1`] = `
 
 exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
       <div
-        data-css-tuvdh3=""
+        className="psds-navbar"
       >
         <div
-          data-css-1kfsc44=""
+          className="psds-navbar__brand"
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-1yi1k4r=""
+              className="psds-navbrand"
             >
               <div
-                data-css-1yppk9l=""
+                className="psds-navbrand__logo psds-navbrand__logo--wordmark"
               >
                 <svg
                   aria-hidden={true}
@@ -277,7 +279,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                 </svg>
               </div>
               <div
-                data-css-1b9xv68=""
+                className="psds-navbrand__wordmark"
               >
                 SKILLS
               </div>
@@ -285,20 +287,22 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
           </div>
         </div>
         <div
-          data-css-1ns9ldv=""
+          className="psds-navbar__items"
         />
         <div
-          data-css-jgr69u=""
+          className="psds-navbar__utility"
         />
-        <div>
+        <div
+          className="psds-navbar__user"
+        >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
-                className="psds-avatar psds-avatar--size-xSmall"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -313,15 +317,15 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -333,24 +337,23 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
-          data-css-axmbrd=""
-          data-css-q1pa3g=""
+          className="psds-appframe__sidenav__inner psds-scrollable__outer psds-scrollable__outer--screen"
           data-scrollable={true}
         >
           <div
-            data-css-1srorb2=""
+            className="psds-scrollable__inner"
           >
             <div
-              data-css-3e2h8g=""
+              className="psds-scrollable__content"
               onScroll={[Function]}
             >
               <div>
@@ -371,34 +374,30 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                     }
                   >
                     <span
-                      data-css-v1s45p=""
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Section Header
                     </span>
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -411,7 +410,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First Item
                             </span>
@@ -420,16 +419,16 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First SubItem
                             </span>
@@ -438,16 +437,16 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second SubItem
                             </span>
@@ -456,25 +455,21 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -487,7 +482,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second Item
                             </span>
@@ -509,18 +504,24 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
             </div>
           </div>
           <div
-            data-css-1ackutz=""
-            data-css-ejkno9=""
+            className="psds-scrollable__handle"
             draggable={true}
             onDrag={[Function]}
             onDragEnd={[Function]}
             onDragStart={[Function]}
+            style={
+              Object {
+                "height": "10%",
+                "top": "0%",
+                "visibility": "hidden",
+              }
+            }
           />
         </div>
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -528,10 +529,10 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
         tabIndex={-1}
       />
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Cupcake ipsum dolor sit amet. Sweet gummi bears dragée. Pie dragée cotton candy candy canes bear claw apple pie.
         </p>
@@ -543,54 +544,54 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
 
 exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
       <div
-        data-css-tuvdh3=""
+        className="psds-navbar"
       >
         <div
-          data-css-1qn6dtd=""
+          className="psds-navbar__mobile-menu"
         >
           <span
-            data-css-ruxays=""
+            className="psds-navitem__horz-container"
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <button
-                data-css-167upi1=""
+                className="psds-navitem__button"
                 onClick={[Function]}
               >
                 <span
-                  data-css-50rv4t=""
+                  className="psds-navitem__horz-layout"
                 >
                   <span
-                    data-css-1009u4g=""
+                    className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="menu icon"
@@ -609,21 +610,21 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
               </button>
             </div>
             <div
-              data-css-1pig4yn=""
+              className="psds-navitem__bar psds-navitem__horz-bar"
             />
           </span>
         </div>
         <div
-          data-css-1kfsc44=""
+          className="psds-navbar__brand"
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-1yi1k4r=""
+              className="psds-navbrand"
             >
               <div
-                data-css-1yppk9l=""
+                className="psds-navbrand__logo psds-navbrand__logo--wordmark"
               >
                 <svg
                   aria-hidden={true}
@@ -655,7 +656,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                 </svg>
               </div>
               <div
-                data-css-1b9xv68=""
+                className="psds-navbrand__wordmark"
               >
                 SKILLS
               </div>
@@ -663,20 +664,22 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
           </div>
         </div>
         <div
-          data-css-1ns9ldv=""
+          className="psds-navbar__items"
         />
         <div
-          data-css-jgr69u=""
+          className="psds-navbar__utility"
         />
-        <div>
+        <div
+          className="psds-navbar__user"
+        >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
-                className="psds-avatar psds-avatar--size-xSmall"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -691,15 +694,15 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -711,24 +714,23 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
-          data-css-axmbrd=""
-          data-css-q1pa3g=""
+          className="psds-appframe__sidenav__inner psds-scrollable__outer psds-scrollable__outer--screen"
           data-scrollable={true}
         >
           <div
-            data-css-1srorb2=""
+            className="psds-scrollable__inner"
           >
             <div
-              data-css-3e2h8g=""
+              className="psds-scrollable__content"
               onScroll={[Function]}
             >
               <div>
@@ -749,34 +751,30 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                     }
                   >
                     <span
-                      data-css-v1s45p=""
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Section Header
                     </span>
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -789,7 +787,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First Item
                             </span>
@@ -798,16 +796,16 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First SubItem
                             </span>
@@ -816,16 +814,16 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second SubItem
                             </span>
@@ -834,25 +832,21 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -865,7 +859,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second Item
                             </span>
@@ -887,18 +881,24 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
             </div>
           </div>
           <div
-            data-css-1ackutz=""
-            data-css-ejkno9=""
+            className="psds-scrollable__handle"
             draggable={true}
             onDrag={[Function]}
             onDragEnd={[Function]}
             onDragStart={[Function]}
+            style={
+              Object {
+                "height": "10%",
+                "top": "0%",
+                "visibility": "hidden",
+              }
+            }
           />
         </div>
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -913,16 +913,16 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
-                data-css-vetqvm=""
+                className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
               >
                 Page title
               </h3>
@@ -931,40 +931,40 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Cupcake ipsum dolor sit amet. Sweet gummi bears dragée. Pie dragée cotton candy candy canes bear claw apple pie. Dessert apple pie caramels carrot cake bear claw sweet donut. Croissant chocolate bear claw jelly chocolate candy pie pudding caramels. Cake muffin candy liquorice liquorice tiramisu powder pie dragée. Danish soufflé sweet apple pie cupcake tart. Danish cookie oat cake tiramisu lemon drops pie apple pie cake cotton candy. Pudding brownie jujubes. Chocolate bar biscuit liquorice candy jelly-o tiramisu icing muffin sweet roll. Jelly candy canes chocolate dragée. Danish biscuit sugar plum cake. Cotton candy soufflé muffin gummi bears.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Sweet roll sweet roll cotton candy marshmallow lemon drops caramels sweet roll toffee. Bear claw powder ice cream topping wafer cake tootsie roll. Lemon drops pudding dessert toffee fruitcake toffee. Icing marzipan cake pastry biscuit liquorice chupa chups sesame snaps. Biscuit muffin donut. Marshmallow carrot cake icing icing dragée jujubes lemon drops. Danish cheesecake sesame snaps. Sweet sugar plum fruitcake tootsie roll. Fruitcake jelly-o soufflé muffin cheesecake pie apple pie jelly powder. Cake dragée danish muffin dragée soufflé marzipan croissant danish. Soufflé chupa chups cake biscuit icing pastry cake danish danish. Icing cotton candy oat cake chocolate macaroon tiramisu sweet dragée cake. Ice cream carrot cake lemon drops. Jelly sweet wafer liquorice brownie sesame snaps halvah apple pie jelly-o.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Tootsie roll dragée apple pie. Pie cake toffee caramels gummies chupa chups carrot cake chupa chups. Jelly-o fruitcake macaroon chocolate. Brownie lollipop sugar plum gummies marshmallow muffin bonbon carrot cake. Pudding powder lemon drops halvah. Icing cupcake pastry chupa chups danish sweet bear claw sugar plum. Chupa chups wafer donut lollipop. Sweet roll croissant cake chocolate cake croissant pastry toffee. Chocolate cake liquorice halvah pastry danish candy canes. Apple pie pastry topping sesame snaps cupcake liquorice icing chocolate bar brownie. Chocolate cake sesame snaps cake gummies cupcake pastry jujubes fruitcake. Muffin fruitcake soufflé macaroon danish. Dessert chocolate marshmallow sesame snaps donut toffee ice cream sugar plum dragée.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>
@@ -976,44 +976,44 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
 
 exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
       <div
-        data-css-tuvdh3=""
+        className="psds-navbar"
       >
         <div
-          data-css-1kfsc44=""
+          className="psds-navbar__brand"
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-1yi1k4r=""
+              className="psds-navbrand"
             >
               <div
-                data-css-1yppk9l=""
+                className="psds-navbrand__logo psds-navbrand__logo--wordmark"
               >
                 <svg
                   aria-hidden={true}
@@ -1045,7 +1045,7 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
                 </svg>
               </div>
               <div
-                data-css-1b9xv68=""
+                className="psds-navbrand__wordmark"
               >
                 SKILLS
               </div>
@@ -1053,20 +1053,22 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
           </div>
         </div>
         <div
-          data-css-1ns9ldv=""
+          className="psds-navbar__items"
         />
         <div
-          data-css-jgr69u=""
+          className="psds-navbar__utility"
         />
-        <div>
+        <div
+          className="psds-navbar__user"
+        >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
-                className="psds-avatar psds-avatar--size-xSmall"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -1081,15 +1083,15 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -1101,24 +1103,23 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
-          data-css-axmbrd=""
-          data-css-q1pa3g=""
+          className="psds-appframe__sidenav__inner psds-scrollable__outer psds-scrollable__outer--screen"
           data-scrollable={true}
         >
           <div
-            data-css-1srorb2=""
+            className="psds-scrollable__inner"
           >
             <div
-              data-css-3e2h8g=""
+              className="psds-scrollable__content"
               onScroll={[Function]}
             >
               <div>
@@ -1129,18 +1130,24 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
             </div>
           </div>
           <div
-            data-css-1ackutz=""
-            data-css-ejkno9=""
+            className="psds-scrollable__handle"
             draggable={true}
             onDrag={[Function]}
             onDragEnd={[Function]}
             onDragStart={[Function]}
+            style={
+              Object {
+                "height": "10%",
+                "top": "0%",
+                "visibility": "hidden",
+              }
+            }
           />
         </div>
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -1155,16 +1162,16 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
-                data-css-vetqvm=""
+                className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
               >
                 Page title
               </h3>
@@ -1173,40 +1180,40 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Cupcake ipsum dolor sit amet. Sweet gummi bears dragée. Pie dragée cotton candy candy canes bear claw apple pie. Dessert apple pie caramels carrot cake bear claw sweet donut. Croissant chocolate bear claw jelly chocolate candy pie pudding caramels. Cake muffin candy liquorice liquorice tiramisu powder pie dragée. Danish soufflé sweet apple pie cupcake tart. Danish cookie oat cake tiramisu lemon drops pie apple pie cake cotton candy. Pudding brownie jujubes. Chocolate bar biscuit liquorice candy jelly-o tiramisu icing muffin sweet roll. Jelly candy canes chocolate dragée. Danish biscuit sugar plum cake. Cotton candy soufflé muffin gummi bears.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Sweet roll sweet roll cotton candy marshmallow lemon drops caramels sweet roll toffee. Bear claw powder ice cream topping wafer cake tootsie roll. Lemon drops pudding dessert toffee fruitcake toffee. Icing marzipan cake pastry biscuit liquorice chupa chups sesame snaps. Biscuit muffin donut. Marshmallow carrot cake icing icing dragée jujubes lemon drops. Danish cheesecake sesame snaps. Sweet sugar plum fruitcake tootsie roll. Fruitcake jelly-o soufflé muffin cheesecake pie apple pie jelly powder. Cake dragée danish muffin dragée soufflé marzipan croissant danish. Soufflé chupa chups cake biscuit icing pastry cake danish danish. Icing cotton candy oat cake chocolate macaroon tiramisu sweet dragée cake. Ice cream carrot cake lemon drops. Jelly sweet wafer liquorice brownie sesame snaps halvah apple pie jelly-o.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Tootsie roll dragée apple pie. Pie cake toffee caramels gummies chupa chups carrot cake chupa chups. Jelly-o fruitcake macaroon chocolate. Brownie lollipop sugar plum gummies marshmallow muffin bonbon carrot cake. Pudding powder lemon drops halvah. Icing cupcake pastry chupa chups danish sweet bear claw sugar plum. Chupa chups wafer donut lollipop. Sweet roll croissant cake chocolate cake croissant pastry toffee. Chocolate cake liquorice halvah pastry danish candy canes. Apple pie pastry topping sesame snaps cupcake liquorice icing chocolate bar brownie. Chocolate cake sesame snaps cake gummies cupcake pastry jujubes fruitcake. Muffin fruitcake soufflé macaroon danish. Dessert chocolate marshmallow sesame snaps donut toffee ice cream sugar plum dragée.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>
@@ -1218,54 +1225,54 @@ exports[`Storyshots Components/AppFrame Side Nav Scrolling 1`] = `
 
 exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
       <div
-        data-css-tuvdh3=""
+        className="psds-navbar"
       >
         <div
-          data-css-1qn6dtd=""
+          className="psds-navbar__mobile-menu"
         >
           <span
-            data-css-ruxays=""
+            className="psds-navitem__horz-container"
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <button
-                data-css-167upi1=""
+                className="psds-navitem__button"
                 onClick={[Function]}
               >
                 <span
-                  data-css-50rv4t=""
+                  className="psds-navitem__horz-layout"
                 >
                   <span
-                    data-css-1009u4g=""
+                    className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="menu icon"
@@ -1284,21 +1291,21 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
               </button>
             </div>
             <div
-              data-css-1pig4yn=""
+              className="psds-navitem__bar psds-navitem__horz-bar"
             />
           </span>
         </div>
         <div
-          data-css-1kfsc44=""
+          className="psds-navbar__brand"
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-1yi1k4r=""
+              className="psds-navbrand"
             >
               <div
-                data-css-1yppk9l=""
+                className="psds-navbrand__logo psds-navbrand__logo--wordmark"
               >
                 <svg
                   aria-hidden={true}
@@ -1330,7 +1337,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                 </svg>
               </div>
               <div
-                data-css-1b9xv68=""
+                className="psds-navbrand__wordmark"
               >
                 SKILLS
               </div>
@@ -1338,20 +1345,22 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
           </div>
         </div>
         <div
-          data-css-1ns9ldv=""
+          className="psds-navbar__items"
         />
         <div
-          data-css-jgr69u=""
+          className="psds-navbar__utility"
         />
-        <div>
+        <div
+          className="psds-navbar__user"
+        >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
-                className="psds-avatar psds-avatar--size-xSmall"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -1366,15 +1375,15 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -1386,24 +1395,23 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
-          data-css-axmbrd=""
-          data-css-q1pa3g=""
+          className="psds-appframe__sidenav__inner psds-scrollable__outer psds-scrollable__outer--screen"
           data-scrollable={true}
         >
           <div
-            data-css-1srorb2=""
+            className="psds-scrollable__inner"
           >
             <div
-              data-css-3e2h8g=""
+              className="psds-scrollable__content"
               onScroll={[Function]}
             >
               <div>
@@ -1424,34 +1432,30 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                     }
                   >
                     <span
-                      data-css-v1s45p=""
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Section Header
                     </span>
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -1464,7 +1468,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First Item
                             </span>
@@ -1473,16 +1477,16 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               First SubItem
                             </span>
@@ -1491,16 +1495,16 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                       </li>
                       <li>
                         <div
-                          data-css-1pa08jv=""
-                          data-css-1xd3fna=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier2 psds-theme--dark"
                         >
                           <a
                             aria-hidden="true"
+                            className="psds-verticaltabs__tier2__header"
                             href="#"
                             tabIndex={-1}
                           >
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second SubItem
                             </span>
@@ -1509,25 +1513,21 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -1540,7 +1540,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Second Item
                             </span>
@@ -1562,18 +1562,24 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
             </div>
           </div>
           <div
-            data-css-1ackutz=""
-            data-css-ejkno9=""
+            className="psds-scrollable__handle"
             draggable={true}
             onDrag={[Function]}
             onDragEnd={[Function]}
             onDragStart={[Function]}
+            style={
+              Object {
+                "height": "10%",
+                "top": "0%",
+                "visibility": "hidden",
+              }
+            }
           />
         </div>
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -1588,16 +1594,16 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
-                data-css-vetqvm=""
+                className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
               >
                 Page title
               </h3>
@@ -1606,40 +1612,40 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Cupcake ipsum dolor sit amet. Sweet gummi bears dragée. Pie dragée cotton candy candy canes bear claw apple pie. Dessert apple pie caramels carrot cake bear claw sweet donut. Croissant chocolate bear claw jelly chocolate candy pie pudding caramels. Cake muffin candy liquorice liquorice tiramisu powder pie dragée. Danish soufflé sweet apple pie cupcake tart. Danish cookie oat cake tiramisu lemon drops pie apple pie cake cotton candy. Pudding brownie jujubes. Chocolate bar biscuit liquorice candy jelly-o tiramisu icing muffin sweet roll. Jelly candy canes chocolate dragée. Danish biscuit sugar plum cake. Cotton candy soufflé muffin gummi bears.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Sweet roll sweet roll cotton candy marshmallow lemon drops caramels sweet roll toffee. Bear claw powder ice cream topping wafer cake tootsie roll. Lemon drops pudding dessert toffee fruitcake toffee. Icing marzipan cake pastry biscuit liquorice chupa chups sesame snaps. Biscuit muffin donut. Marshmallow carrot cake icing icing dragée jujubes lemon drops. Danish cheesecake sesame snaps. Sweet sugar plum fruitcake tootsie roll. Fruitcake jelly-o soufflé muffin cheesecake pie apple pie jelly powder. Cake dragée danish muffin dragée soufflé marzipan croissant danish. Soufflé chupa chups cake biscuit icing pastry cake danish danish. Icing cotton candy oat cake chocolate macaroon tiramisu sweet dragée cake. Ice cream carrot cake lemon drops. Jelly sweet wafer liquorice brownie sesame snaps halvah apple pie jelly-o.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Tootsie roll dragée apple pie. Pie cake toffee caramels gummies chupa chups carrot cake chupa chups. Jelly-o fruitcake macaroon chocolate. Brownie lollipop sugar plum gummies marshmallow muffin bonbon carrot cake. Pudding powder lemon drops halvah. Icing cupcake pastry chupa chups danish sweet bear claw sugar plum. Chupa chups wafer donut lollipop. Sweet roll croissant cake chocolate cake croissant pastry toffee. Chocolate cake liquorice halvah pastry danish candy canes. Apple pie pastry topping sesame snaps cupcake liquorice icing chocolate bar brownie. Chocolate cake sesame snaps cake gummies cupcake pastry jujubes fruitcake. Muffin fruitcake soufflé macaroon danish. Dessert chocolate marshmallow sesame snaps donut toffee ice cream sugar plum dragée.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>
@@ -1651,54 +1657,54 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
 
 exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
 <div
-  data-css-2p2lwl=""
+  className="psds-appframe psds-theme--dark"
 >
   <div
-    data-css-teuamr=""
+    className="psds-appframe__skip-banner"
     href="#ps-appframe--skip-target"
   >
     <button
-      data-css-c3sd2l=""
+      className="psds-button psds-button--layout-inline psds-button--size-small psds-button--appearance-secondary psds-theme--dark"
       disabled={false}
       tabIndex={0}
     >
       <span
         aria-hidden={false}
-        data-css-15b13by=""
+        className="psds-button__text"
       >
         skip to main content
       </span>
     </button>
   </div>
   <div
-    data-css-1oxt2bx=""
+    className="psds-appframe__topnav"
     id="ps-appframe--topnav"
   >
     <div>
       <div
-        data-css-tuvdh3=""
+        className="psds-navbar"
       >
         <div
-          data-css-1qn6dtd=""
+          className="psds-navbar__mobile-menu"
         >
           <span
-            data-css-ruxays=""
+            className="psds-navitem__horz-container"
           >
             <div
-              data-css-1ij5lym=""
+              className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
             >
               <button
-                data-css-167upi1=""
+                className="psds-navitem__button"
                 onClick={[Function]}
               >
                 <span
-                  data-css-50rv4t=""
+                  className="psds-navitem__horz-layout"
                 >
                   <span
-                    data-css-1009u4g=""
+                    className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
                   >
                     <div
-                      data-css-7dab2f=""
+                      className="psds-icon psds-icon--size-medium"
                     >
                       <svg
                         aria-label="menu icon"
@@ -1717,21 +1723,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
               </button>
             </div>
             <div
-              data-css-1pig4yn=""
+              className="psds-navitem__bar psds-navitem__horz-bar"
             />
           </span>
         </div>
         <div
-          data-css-1kfsc44=""
+          className="psds-navbar__brand"
         >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-1yi1k4r=""
+              className="psds-navbrand"
             >
               <div
-                data-css-1yppk9l=""
+                className="psds-navbrand__logo psds-navbrand__logo--wordmark"
               >
                 <svg
                   aria-hidden={true}
@@ -1763,7 +1769,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                 </svg>
               </div>
               <div
-                data-css-1b9xv68=""
+                className="psds-navbrand__wordmark"
               >
                 SKILLS
               </div>
@@ -1771,20 +1777,22 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
           </div>
         </div>
         <div
-          data-css-1ns9ldv=""
+          className="psds-navbar__items"
         />
         <div
-          data-css-jgr69u=""
+          className="psds-navbar__utility"
         />
-        <div>
+        <div
+          className="psds-navbar__user"
+        >
           <div
-            data-css-1ij5lym=""
+            className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--inline psds-halo--visible-on-focus"
           >
             <div
-              data-css-91smc8=""
+              className="psds-navuser"
             >
               <div
-                className="psds-avatar psds-avatar--size-xSmall"
+                className="psds-avatar psds-avatar--size-xsmall"
               >
                 <div
                   aria-label="Jake"
@@ -1799,15 +1807,15 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                 </div>
               </div>
               <div
-                data-css-1mmc9g1=""
+                className="psds-navuser__words"
               >
                 <div
-                  data-css-6flzpu=""
+                  className="psds-navuser__name"
                 >
                   Jake
                 </div>
                 <div
-                  data-css-60db85=""
+                  className="psds-navuser__plan-name"
                 >
                   Accenture
                 </div>
@@ -1819,49 +1827,44 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
     </div>
   </div>
   <div
-    data-css-1lvztem=""
+    className="psds-appframe__container psds-appframe__container--closed"
   >
     <div
-      data-css-1429j9j=""
+      className="psds-appframe__sidenav psds-appframe__sidenav--closed"
     >
       <div
-        data-css-1srorb2=""
+        className="psds-appframe__sidenav__overflow-mask"
       >
         <div
-          data-css-axmbrd=""
-          data-css-q1pa3g=""
+          className="psds-appframe__sidenav__inner psds-scrollable__outer psds-scrollable__outer--screen"
           data-scrollable={true}
         >
           <div
-            data-css-1srorb2=""
+            className="psds-scrollable__inner"
           >
             <div
-              data-css-3e2h8g=""
+              className="psds-scrollable__content"
               onScroll={[Function]}
             >
               <div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="home icon"
@@ -1876,7 +1879,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Home
                             </span>
@@ -1885,25 +1888,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="browse icon"
@@ -1918,7 +1917,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Browse
                             </span>
@@ -1953,34 +1952,30 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                     }
                   >
                     <span
-                      data-css-v1s45p=""
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Admin Tools
                     </span>
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -1993,7 +1988,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Dashboard
                             </span>
@@ -2002,25 +1997,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2033,7 +2024,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Account
                             </span>
@@ -2042,25 +2033,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2073,7 +2060,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               People
                             </span>
@@ -2082,25 +2069,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2113,7 +2096,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Priorities
                             </span>
@@ -2122,25 +2105,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2153,7 +2132,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Analytics
                             </span>
@@ -2162,25 +2141,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2193,7 +2168,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Logs
                             </span>
@@ -2228,34 +2203,30 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                     }
                   >
                     <span
-                      data-css-v1s45p=""
+                      className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-secondary psds-theme--dark psds-text__label--caps"
                     >
                       Content Tools
                     </span>
                   </h2>
                 </div>
                 <ul
-                  data-css-15hj73r=""
+                  className="psds-verticaltabs"
                 >
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2268,7 +2239,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Home
                             </span>
@@ -2277,25 +2248,21 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                       </li>
                     </ul>
                   </li>
-                  <li
-                    data-css-1268me8=""
-                  >
+                  <li>
                     <ul
-                      data-css-gkw1j5=""
+                      className="psds-verticaltabs__list"
                     >
                       <li>
                         <div
-                          data-css-1dfha3z=""
-                          data-css-1pa08jv=""
+                          className="psds-verticaltabs__item psds-theme--dark psds-verticaltabs__tier1 psds-theme--dark"
                         >
                           <a
                             aria-expanded={true}
-                            data-css-zrqgca=""
+                            className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
                             <div
-                              data-css-1kqp8s2=""
-                              data-css-7dab2f=""
+                              className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
                                 aria-label="placeholder icon"
@@ -2308,7 +2275,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                               </svg>
                             </div>
                             <span
-                              data-css-113cwui=""
+                              className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
                               Dashboard
                             </span>
@@ -2330,18 +2297,24 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
             </div>
           </div>
           <div
-            data-css-1ackutz=""
-            data-css-ejkno9=""
+            className="psds-scrollable__handle"
             draggable={true}
             onDrag={[Function]}
             onDragEnd={[Function]}
             onDragStart={[Function]}
+            style={
+              Object {
+                "height": "10%",
+                "top": "0%",
+                "visibility": "hidden",
+              }
+            }
           />
         </div>
       </div>
     </div>
     <main
-      data-css-1ixsor8=""
+      className="psds-appframe__content"
     >
       <a
         id="ps-appframe--skip-target"
@@ -2356,16 +2329,16 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
         }
       >
         <div
-          data-css-60rhmp=""
+          className="psds-page-width-layout"
         >
           <div
-            data-css-f5q9fb=""
+            className="psds-page-heading-layout"
           >
             <div
-              data-css-wlfhsa=""
+              className="psds-page-heading-layout__heading"
             >
               <h3
-                data-css-vetqvm=""
+                className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
               >
                 Page title
               </h3>
@@ -2374,40 +2347,40 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
         </div>
       </div>
       <div
-        data-css-60rhmp=""
+        className="psds-page-width-layout"
       >
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Cupcake ipsum dolor sit amet. Sweet gummi bears dragée. Pie dragée cotton candy candy canes bear claw apple pie. Dessert apple pie caramels carrot cake bear claw sweet donut. Croissant chocolate bear claw jelly chocolate candy pie pudding caramels. Cake muffin candy liquorice liquorice tiramisu powder pie dragée. Danish soufflé sweet apple pie cupcake tart. Danish cookie oat cake tiramisu lemon drops pie apple pie cake cotton candy. Pudding brownie jujubes. Chocolate bar biscuit liquorice candy jelly-o tiramisu icing muffin sweet roll. Jelly candy canes chocolate dragée. Danish biscuit sugar plum cake. Cotton candy soufflé muffin gummi bears.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Sweet roll sweet roll cotton candy marshmallow lemon drops caramels sweet roll toffee. Bear claw powder ice cream topping wafer cake tootsie roll. Lemon drops pudding dessert toffee fruitcake toffee. Icing marzipan cake pastry biscuit liquorice chupa chups sesame snaps. Biscuit muffin donut. Marshmallow carrot cake icing icing dragée jujubes lemon drops. Danish cheesecake sesame snaps. Sweet sugar plum fruitcake tootsie roll. Fruitcake jelly-o soufflé muffin cheesecake pie apple pie jelly powder. Cake dragée danish muffin dragée soufflé marzipan croissant danish. Soufflé chupa chups cake biscuit icing pastry cake danish danish. Icing cotton candy oat cake chocolate macaroon tiramisu sweet dragée cake. Ice cream carrot cake lemon drops. Jelly sweet wafer liquorice brownie sesame snaps halvah apple pie jelly-o.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Tootsie roll dragée apple pie. Pie cake toffee caramels gummies chupa chups carrot cake chupa chups. Jelly-o fruitcake macaroon chocolate. Brownie lollipop sugar plum gummies marshmallow muffin bonbon carrot cake. Pudding powder lemon drops halvah. Icing cupcake pastry chupa chups danish sweet bear claw sugar plum. Chupa chups wafer donut lollipop. Sweet roll croissant cake chocolate cake croissant pastry toffee. Chocolate cake liquorice halvah pastry danish candy canes. Apple pie pastry topping sesame snaps cupcake liquorice icing chocolate bar brownie. Chocolate cake sesame snaps cake gummies cupcake pastry jujubes fruitcake. Muffin fruitcake soufflé macaroon danish. Dessert chocolate marshmallow sesame snaps donut toffee ice cream sugar plum dragée.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Marzipan lollipop jelly-o soufflé macaroon tart danish tart dessert. Chupa chups lemon drops lemon drops jujubes dragée dessert. Wafer chupa chups gummi bears sugar plum gummies. Powder topping apple pie danish sweet roll. Pudding toffee brownie. Tootsie roll lemon drops sweet macaroon jelly-o oat cake muffin chocolate. Wafer chocolate danish cookie cookie danish. Chocolate jelly-o gingerbread fruitcake croissant wafer lollipop bonbon macaroon. Carrot cake candy dessert. Brownie gummies topping sweet roll jelly sesame snaps croissant marshmallow caramels. Candy canes jelly-o jelly beans chupa chups tiramisu cupcake cake tart. Biscuit brownie chocolate bar danish candy canes donut liquorice. Muffin cake jelly beans muffin powder gingerbread toffee. Gingerbread topping toffee chupa chups sweet roll.
         </p>
         <p
-          data-css-17nixd9=""
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Jelly beans gingerbread dessert macaroon candy canes. Candy liquorice carrot cake chocolate bar pastry dessert caramels danish. Donut apple pie tart dragée sesame snaps chocolate tootsie roll jelly-o sugar plum. Chocolate cake sesame snaps jelly beans. Gummies pudding gummies. Jelly-o topping biscuit cookie halvah pudding gingerbread toffee cake. Sesame snaps topping icing jelly cake donut macaroon candy canes jelly beans. Tiramisu pie pie. Cake gingerbread pastry topping jujubes apple pie pie. Jelly beans marshmallow chocolate cake chocolate cake biscuit danish dessert. Halvah biscuit macaroon. Sugar plum pie gummi bears gummies pastry.
         </p>

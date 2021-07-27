@@ -3,6 +3,59 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@2.1.15...@pluralsight/ps-design-system-multiselect@3.0.0) (2021-07-26)
+
+
+* css/navitem-multiselect (#1936) ([8eb3953](https://github.com/pluralsight/design-system/commit/8eb3953c10dcf42f7af67b55c39e65f35c137075)), closes [#1936](https://github.com/pluralsight/design-system/issues/1936)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(linearprogress): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: snapshots and cleanup
+
+* fix: cleanup
+
+* refactor: css convert
+
+* feat(multiselect): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navbar): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navbrand): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navcookiebanner): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navitem): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: snapshots and lint:fix
+
+* fix: dashify css
+
+* fix(multiselect): styling fix with concerns
+
+* fix(multiselect): use css old school like
+
+
+
+
+
 ## [2.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-multiselect@2.1.14...@pluralsight/ps-design-system-multiselect@2.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-multiselect
