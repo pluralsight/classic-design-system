@@ -46,7 +46,7 @@ export const waitForHeightTransitionToEnd = async (el: HTMLElement) => {
       function transitionEnd(event) {
         if (event.propertyName === 'height') {
           el.removeEventListener('transitionend', transitionEnd, false)
-          resolve()
+          resolve(undefined)
         }
       },
       false
