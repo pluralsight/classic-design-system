@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@11.0.0...@pluralsight/ps-design-system-avatar@11.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **avatar:** set normalize peerDependency to 6.0.0 ([21b4d7a](https://github.com/pluralsight/design-system/commit/21b4d7ac8b54fff72be524deb1de0c5f0d480d40))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@10.0.4...@pluralsight/ps-design-system-avatar@11.0.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* **avatar:** remove glamor peerDependency from css ver of pkg ([67f0ece](https://github.com/pluralsight/design-system/commit/67f0ecea2e884a659d27cabc889c066ccdff9a5e))
+
+
+### Code Refactoring
+
+* **avatar:** dashify css ([e826a2b](https://github.com/pluralsight/design-system/commit/e826a2be3260403a330257a512a9abec4329d5ba))
+
+
+### BREAKING CHANGES
+
+* **avatar:** dashify css selectors
+
+
+
+
+
 ## [10.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@10.0.3...@pluralsight/ps-design-system-avatar@10.0.4) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-avatar

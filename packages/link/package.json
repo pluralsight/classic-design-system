@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-link",
-  "version": "12.1.13",
+  "version": "13.0.1",
   "description": "Design System component for link/anchor ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -17,30 +17,31 @@
   "scripts": {
     "build": "run-s build:esm build:cjs build:css",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
-    "build:css": "build-css --useGlamor -i dist/cjs/css/index.js",
+    "build:css": "postcss-compile",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
     "build:watch": "yarn build:esm --watch",
     "storybook": "start-storybook -p 6006 -s ./dist",
     "test": "jest",
     "test:watch": "yarn test --watchAll"
   },
-  "sideEffects": false,
-  "style": "dist/index.css",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "style": "dist/esm/css/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^8.2.2",
-    "@pluralsight/ps-design-system-util": "^9.2.9"
+    "@pluralsight/ps-design-system-core": "^9.0.0",
+    "@pluralsight/ps-design-system-util": "^9.3.0"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^5.1.2",
+    "@pluralsight/ps-design-system-normalize": "^6.0.0",
     "@pluralsight/ps-design-system-theme": "^8.1.4",
-    "glamor": "^2.20.40",
     "react": "^17.0.1"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.2.2",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.3",
-    "@pluralsight/ps-design-system-theme": "^8.1.13"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.5",
+    "@pluralsight/ps-design-system-theme": "^8.1.15"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

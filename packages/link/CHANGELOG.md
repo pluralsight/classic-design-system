@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@13.0.0...@pluralsight/ps-design-system-link@13.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **link:** set normalize peerDependency to 6.0.0 ([dcd99c6](https://github.com/pluralsight/design-system/commit/dcd99c6643f700cf647671614e91606d1a368279))
+
+
+
+
+
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@12.1.13...@pluralsight/ps-design-system-link@13.0.0) (2021-07-26)
+
+
+* css/link-linearprogress (#1931) ([dd3296c](https://github.com/pluralsight/design-system/commit/dd3296ca7b4212927383a06536959a443c37aad5)), closes [#1931](https://github.com/pluralsight/design-system/issues/1931)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(linearprogress): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: snapshots and cleanup
+
+* fix: cleanup
+
+
+
+
+
 ## [12.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-link@12.1.12...@pluralsight/ps-design-system-link@12.1.13) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-link

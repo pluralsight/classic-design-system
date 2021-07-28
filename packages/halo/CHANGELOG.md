@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@11.0.0...@pluralsight/ps-design-system-halo@11.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **halo:** set normalize peerDependency to 6.0.0 ([91aae3d](https://github.com/pluralsight/design-system/commit/91aae3db393539f6e8ddfac8e0d19015f87e7756))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@10.1.13...@pluralsight/ps-design-system-halo@11.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **halo:** convert to vanilla css; remove glamor; dashify ([a441454](https://github.com/pluralsight/design-system/commit/a441454969be61f46d9c0d2d13eb27bb88a9c28e)), closes [#1925](https://github.com/pluralsight/design-system/issues/1925)
+
+
+### BREAKING CHANGES
+
+* **halo:** convert styles to vanilla css; requires bundling
+* **halo:** dashify css selectors
+
+
+
+
+
 ## [10.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@10.1.12...@pluralsight/ps-design-system-halo@10.1.13) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-halo

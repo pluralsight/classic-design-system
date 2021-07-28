@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@18.1.16...@pluralsight/ps-design-system-tab@18.1.17) (2021-07-27)
+
+
+### Bug Fixes
+
+* **tab:** set normalize peerDependency to 6.0.0 ([537fc72](https://github.com/pluralsight/design-system/commit/537fc72312db943f99c13de4c03ddce96bb872ab))
+
+
+
+
+
+## [18.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@18.1.15...@pluralsight/ps-design-system-tab@18.1.16) (2021-07-26)
+
+
+### Bug Fixes
+
+* **tab:** don't make divs inside tab focusable ([2c30f0f](https://github.com/pluralsight/design-system/commit/2c30f0f2ca108b58344b17bb7045daa020f4942e))
+
+
+
+
+
 ## [18.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tab@18.1.14...@pluralsight/ps-design-system-tab@18.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tab

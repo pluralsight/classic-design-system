@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@6.0.0...@pluralsight/ps-design-system-navitem@6.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **navitem:** set normalize peerDependency to 6.0.0 ([fc0b8a2](https://github.com/pluralsight/design-system/commit/fc0b8a27d06db4eb7e86ceaf7126e00c60994d6e))
+
+
+
+
+
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@5.1.15...@pluralsight/ps-design-system-navitem@6.0.0) (2021-07-26)
+
+
+* css/navitem-multiselect (#1936) ([8eb3953](https://github.com/pluralsight/design-system/commit/8eb3953c10dcf42f7af67b55c39e65f35c137075)), closes [#1936](https://github.com/pluralsight/design-system/issues/1936)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(linearprogress): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: snapshots and cleanup
+
+* fix: cleanup
+
+* refactor: css convert
+
+* feat(multiselect): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navbar): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navbrand): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navcookiebanner): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navitem): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: snapshots and lint:fix
+
+* fix: dashify css
+
+* fix(multiselect): styling fix with concerns
+
+* fix(multiselect): use css old school like
+
+
+
+
+
 ## [5.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@5.1.14...@pluralsight/ps-design-system-navitem@5.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navitem

@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [19.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@19.0.0...@pluralsight/ps-design-system-card@19.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **card:** set normalize peerDependency to 6.0.0 ([8e3cb26](https://github.com/pluralsight/design-system/commit/8e3cb266c9f186687366c2837da8037247cf2f88))
+
+
+
+
+
+# [19.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.2.7...@pluralsight/ps-design-system-card@19.0.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* **card:** put aria-label on elements with proper roles ([6a9678e](https://github.com/pluralsight/design-system/commit/6a9678e0e72e1fedf23b68ea008efd071ab98cfd))
+
+
+### Code Refactoring
+
+* **card:** convert to vanilla css; remove glamor ([5af9229](https://github.com/pluralsight/design-system/commit/5af9229e6af4536878294a5ad88467f771534b7c)), closes [#1846](https://github.com/pluralsight/design-system/issues/1846)
+* **card:** dashify css ([da93bf2](https://github.com/pluralsight/design-system/commit/da93bf2aa2b5a583f4e28ee4a13a7addeef7fa29))
+
+
+### BREAKING CHANGES
+
+* **card:** dashify css selectors
+* **card:** convert styles to vanilla css; requires bundling
+
+
+
+
+
 ## [18.2.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-card@18.2.6...@pluralsight/ps-design-system-card@18.2.7) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-card

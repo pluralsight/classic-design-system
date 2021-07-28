@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@12.0.0...@pluralsight/ps-design-system-breadcrumb@12.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **breadcrumb:** set normalize peerDependency to 6.0.0 ([a6a5e2f](https://github.com/pluralsight/design-system/commit/a6a5e2f270c3b27f9b7966b54faffa71d00ccba7))
+
+
+
+
+
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@11.1.15...@pluralsight/ps-design-system-breadcrumb@12.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **breadcrumb:** convert to vanilla css; remove glamor ([a7760c6](https://github.com/pluralsight/design-system/commit/a7760c667204ab2cc63a4915dc49df2528904984)), closes [#1841](https://github.com/pluralsight/design-system/issues/1841)
+* **breadcrumb:** dashify css ([5f7c340](https://github.com/pluralsight/design-system/commit/5f7c340d11aa51119ebc608162a09b59482e26c0))
+
+
+### BREAKING CHANGES
+
+* **breadcrumb:** dashify css selectors
+* **breadcrumb:** convert styles to vanilla css; requires bundling
+
+
+
+
+
 ## [11.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-breadcrumb@11.1.14...@pluralsight/ps-design-system-breadcrumb@11.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-breadcrumb

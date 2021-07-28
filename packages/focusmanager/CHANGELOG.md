@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.18...@pluralsight/ps-design-system-focusmanager@7.1.19) (2021-07-27)
+
+
+### Bug Fixes
+
+* **focusmanager:** set normalize peerDependency to 6.0.0 ([6f83661](https://github.com/pluralsight/design-system/commit/6f83661a0b68ed3382d1372ea85be1ed7a8b3918))
+
+
+
+
+
+## [7.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.17...@pluralsight/ps-design-system-focusmanager@7.1.18) (2021-07-26)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
+
+
+
+
+
 ## [7.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.16...@pluralsight/ps-design-system-focusmanager@7.1.17) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager

@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.1.16...@pluralsight/ps-design-system-textinput@11.1.17) (2021-07-27)
+
+
+### Bug Fixes
+
+* **textinput:** set normalize peerDependency to 6.0.0 ([7f2f693](https://github.com/pluralsight/design-system/commit/7f2f69380a0a520cf4b4a367ef88c4b8462640e3))
+
+
+
+
+
+## [11.1.16](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.1.15...@pluralsight/ps-design-system-textinput@11.1.16) (2021-07-26)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-textinput
+
+
+
+
+
 ## [11.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.1.14...@pluralsight/ps-design-system-textinput@11.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput

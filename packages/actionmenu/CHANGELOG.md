@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@18.0.0...@pluralsight/ps-design-system-actionmenu@18.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **actionmenu:** set normalize peerDependency to 6.0.0 ([5d55ed7](https://github.com/pluralsight/design-system/commit/5d55ed78a8b5162a7e8a5f7b4a33ce90d0e37f1e))
+
+
+
+
+
+# [18.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@17.1.15...@pluralsight/ps-design-system-actionmenu@18.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **actionmenu:** convert to vanilla css; remove glamor; dashify ([ed2009f](https://github.com/pluralsight/design-system/commit/ed2009faa022051ebc14a8220cc3a9c84708b71d)), closes [#1857](https://github.com/pluralsight/design-system/issues/1857)
+
+
+### BREAKING CHANGES
+
+* **actionmenu:** convert styles to vanilla css; requires bundling
+* **actionmenu:** dashify css selectors
+
+
+
+
+
 ## [17.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-actionmenu@17.1.14...@pluralsight/ps-design-system-actionmenu@17.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-actionmenu

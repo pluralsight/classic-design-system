@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-core",
-  "version": "8.2.2",
+  "version": "9.0.0",
   "description": "Collection of Core design elements for the Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -19,13 +19,15 @@
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "node ./build/index.mjs",
     "build:esm": "tsc --project tsconfig.build.json --module es2015 --target es5 --outDir dist/esm",
-    "test": "tsc --noEmit --project ./tsconfig.json && jest"
+    "test": "tsc --noEmit --project ./tsconfig.json && jest",
+    "test:watch": "yarn test --watchAll"
   },
   "sideEffects": false,
   "style": "dist/css/index.css",
   "types": "dist/esm/index.d.ts",
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.2.2",
+    "@pluralsight/ps-design-system-util": "^9.3.0",
     "globby": "^11.0.2",
     "postcss": "^8.2.10",
     "postcss-import": "^12.0.1",

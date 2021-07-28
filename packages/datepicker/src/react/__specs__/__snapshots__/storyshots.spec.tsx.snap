@@ -8,28 +8,28 @@ Array [
     5/13/2020
   </button>,
   <div
-    data-css-1xqevlv=""
+    className="psds-calendar"
   >
     <div
-      data-css-1cqgl9p=""
+      className="psds-calendar__header-wrapper"
     >
       <div
-        data-css-1by070m=""
+        className="psds-calendar__header"
       >
         <div
-          data-css-1vc8xgt=""
+          className="psds-calendar__month"
         >
           <button
             aria-label="Go back 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -44,13 +44,18 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
+<<<<<<< HEAD
           <h2
             aria-live="polite"
             data-css-fpvw2v=""
             id="4_2020i58i07gli"
+=======
+          <div
+            className="psds-calendar__header-month"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           >
             May
              
@@ -58,15 +63,15 @@ Array [
           </h2>
           <button
             aria-label="Go forward 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -81,49 +86,49 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sun
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Mon
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Tue
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Wed
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Thu
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Fri
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sat
         </div>
       </div>
     </div>
     <div
-      data-css-50jhqn=""
+      className="psds-calendar__date-grid"
       style={
         Object {
           "height": undefined,
@@ -131,31 +136,35 @@ Array [
       }
     >
       <div
-        data-css-1a94b64=""
+        className="psds-calendar__grid-slide"
       >
         <div
-          data-css-1k5y6zw=""
+          className="psds-calendar__date-grid"
         >
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <button
             aria-label="Fri May 01 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -168,7 +177,11 @@ Array [
             aria-label="Sat May 02 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -181,7 +194,11 @@ Array [
             aria-label="Sun May 03 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -194,7 +211,11 @@ Array [
             aria-label="Mon May 04 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -207,7 +228,11 @@ Array [
             aria-label="Tue May 05 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -220,7 +245,11 @@ Array [
             aria-label="Wed May 06 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -233,7 +262,11 @@ Array [
             aria-label="Thu May 07 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -246,7 +279,11 @@ Array [
             aria-label="Fri May 08 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -259,7 +296,11 @@ Array [
             aria-label="Sat May 09 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -272,7 +313,11 @@ Array [
             aria-label="Sun May 10 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -285,7 +330,11 @@ Array [
             aria-label="Mon May 11 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -298,7 +347,11 @@ Array [
             aria-label="Tue May 12 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -311,7 +364,11 @@ Array [
             aria-label="Wed May 13 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -324,7 +381,11 @@ Array [
             aria-label="Thu May 14 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -337,7 +398,11 @@ Array [
             aria-label="Fri May 15 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -350,7 +415,11 @@ Array [
             aria-label="Sat May 16 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -363,7 +432,11 @@ Array [
             aria-label="Sun May 17 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -376,7 +449,11 @@ Array [
             aria-label="Mon May 18 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -389,7 +466,11 @@ Array [
             aria-label="Tue May 19 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -402,7 +483,11 @@ Array [
             aria-label="Wed May 20 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -415,7 +500,11 @@ Array [
             aria-label="Thu May 21 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -428,7 +517,11 @@ Array [
             aria-label="Fri May 22 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -441,7 +534,11 @@ Array [
             aria-label="Sat May 23 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -454,7 +551,11 @@ Array [
             aria-label="Sun May 24 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -467,7 +568,11 @@ Array [
             aria-label="Mon May 25 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -480,7 +585,11 @@ Array [
             aria-label="Tue May 26 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -493,7 +602,11 @@ Array [
             aria-label="Wed May 27 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -506,7 +619,11 @@ Array [
             aria-label="Thu May 28 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -519,7 +636,11 @@ Array [
             aria-label="Fri May 29 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -532,7 +653,11 @@ Array [
             aria-label="Sat May 30 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -545,7 +670,11 @@ Array [
             aria-label="Sun May 31 2020"
             aria-labelledby="4_2020i58i07gli"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -555,22 +684,22 @@ Array [
             31
           </button>
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
         </div>
       </div>
@@ -589,19 +718,19 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
   }
 >
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
-          data-css-1iawjij=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark psds-text-input__field--icon-align-left"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -610,10 +739,10 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
         </div>
       </div>
       <div
-        data-css-1sdemx4=""
+        className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-default psds-text-input__icon"
       >
         <div
-          data-css-7dab2f=""
+          className="psds-icon psds-icon--size-medium"
           onClick={[Function]}
           style={
             Object {
@@ -654,29 +783,32 @@ exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
     }
   >
     <div
-      data-css-w0yocm=""
+      className="psds-field__container"
       onClick={[Function]}
     >
       <label
-        data-css-5jjrbq=""
+        className="psds-field__label psds-theme--dark"
         htmlFor="text-input__input-unique-id"
         id="text-input__label-unique-id"
       >
         Controlled component, set to 31 Dec 1999
       </label>
       <div
-        data-css-63oe3q=""
-        data-css-8qmpxt=""
+        className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
       >
         <div
+<<<<<<< HEAD
           data-css-u3gl1=""
           onKeyDown={[Function]}
+=======
+          className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
         >
           <div
-            data-css-16bnq5b=""
+            className="psds-field__prefix"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
               onClick={[Function]}
               style={
                 Object {
@@ -696,10 +828,10 @@ exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
             </div>
           </div>
           <div
-            data-css-n9fe5c=""
+            className="psds-field__input__container"
           >
             <input
-              data-css-1nm5z1g=""
+              className="psds-field__input psds-field__input--medium"
               id="text-input__input-unique-id"
               onChange={[Function]}
               placeholder="mm/dd/yyyy"
@@ -724,29 +856,32 @@ exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
   }
 >
   <div
-    data-css-h2yjsn=""
+    className="psds-field__container psds-field__container--disabled"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Disabled
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -766,10 +901,10 @@ exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             disabled={true}
             id="text-input__input-unique-id"
             onChange={[Function]}
@@ -794,29 +929,32 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container psds-field__container--error"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Errored
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8ff2sc=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--error psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -836,10 +974,10 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -847,10 +985,10 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
           />
         </div>
         <div
-          data-css-qrpvsu=""
+          className="psds-field__error-icon"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="warning icon"
@@ -882,27 +1020,30 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
     >
       Field.Label label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -922,10 +1063,10 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -949,29 +1090,32 @@ exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Controlled component, set to 31 Dec 1999
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -991,10 +1135,10 @@ exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1018,29 +1162,32 @@ exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Prefix
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="home icon"
@@ -1056,10 +1203,10 @@ exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1083,7 +1230,7 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
     style={
       Object {
@@ -1092,25 +1239,28 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
     }
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       renderContainer
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1130,10 +1280,10 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1157,23 +1307,26 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       renderTag
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
         style={
           Object {
             "outline": "2px dashed orange",
@@ -1181,10 +1334,10 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
         }
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="home icon"
@@ -1200,10 +1353,10 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1227,29 +1380,32 @@ exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Small size
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-28vuio=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--small psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1269,10 +1425,10 @@ exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1f28mdy=""
+            className="psds-field__input psds-field__input--small"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1296,29 +1452,32 @@ exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       String label
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1338,10 +1497,10 @@ exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1365,22 +1524,25 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1400,10 +1562,10 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1413,7 +1575,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       Field.SubLabel subLabel
     </div>
@@ -1432,22 +1594,25 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-u3gl1=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1467,10 +1632,10 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1480,7 +1645,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
       </div>
     </div>
     <div
-      data-css-bv851e=""
+      className="psds-field__sub-label psds-theme--dark"
     >
       String subLabel
     </div>
@@ -1499,29 +1664,32 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
   }
 >
   <div
-    data-css-w0yocm=""
+    className="psds-field__container"
     onClick={[Function]}
   >
     <label
-      data-css-5jjrbq=""
+      className="psds-field__label psds-theme--dark"
       htmlFor="text-input__input-unique-id"
       id="text-input__label-unique-id"
     >
       Suffix
     </label>
     <div
-      data-css-63oe3q=""
-      data-css-8qmpxt=""
+      className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
     >
       <div
+<<<<<<< HEAD
         data-css-1goiqvn=""
         onKeyDown={[Function]}
+=======
+        className="psds-field psds-field--medium psds-field--prefix psds-field--suffix"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
       >
         <div
-          data-css-16bnq5b=""
+          className="psds-field__prefix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
               Object {
@@ -1541,10 +1709,10 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
           </div>
         </div>
         <div
-          data-css-n9fe5c=""
+          className="psds-field__input__container"
         >
           <input
-            data-css-1nm5z1g=""
+            className="psds-field__input psds-field__input--medium"
             id="text-input__input-unique-id"
             onChange={[Function]}
             placeholder="mm/dd/yyyy"
@@ -1552,10 +1720,10 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
           />
         </div>
         <div
-          data-css-ugy1u5=""
+          className="psds-field__suffix"
         >
           <div
-            data-css-7dab2f=""
+            className="psds-icon psds-icon--size-medium"
           >
             <svg
               aria-label="home icon"
@@ -1579,28 +1747,28 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
 
 exports[`Storyshots Components/DatePicker Multi Date 1`] = `
 <div
-  data-css-1xqevlv=""
+  className="psds-calendar"
 >
   <div
-    data-css-1cqgl9p=""
+    className="psds-calendar__header-wrapper"
   >
     <div
-      data-css-1by070m=""
+      className="psds-calendar__header"
     >
       <div
-        data-css-1vc8xgt=""
+        className="psds-calendar__month"
       >
         <button
           aria-label="Go back 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -1615,13 +1783,18 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
+<<<<<<< HEAD
         <h2
           aria-live="polite"
           data-css-fpvw2v=""
           id="0_2021886d840j3"
+=======
+        <div
+          className="psds-calendar__header-month"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
         >
           Jan
            
@@ -1629,15 +1802,15 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
         </h2>
         <button
           aria-label="Go forward 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -1652,49 +1825,49 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Sun
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Mon
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Tue
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Wed
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Thu
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Fri
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Sat
       </div>
     </div>
   </div>
   <div
-    data-css-50jhqn=""
+    className="psds-calendar__date-grid"
     style={
       Object {
         "height": undefined,
@@ -1702,31 +1875,35 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
     }
   >
     <div
-      data-css-1a94b64=""
+      className="psds-calendar__grid-slide"
     >
       <div
-        data-css-1k5y6zw=""
+        className="psds-calendar__date-grid"
       >
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <button
           aria-label="Fri Jan 01 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={true}
+<<<<<<< HEAD
           data-css-1gtf91o=""
+=======
+          className="psds-calendar__date psds-calendar__date--selected"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1739,7 +1916,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sat Jan 02 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1752,7 +1933,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sun Jan 03 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1765,7 +1950,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Mon Jan 04 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1778,7 +1967,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Tue Jan 05 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={true}
+<<<<<<< HEAD
           data-css-1gtf91o=""
+=======
+          className="psds-calendar__date psds-calendar__date--selected"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1791,7 +1984,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Wed Jan 06 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1804,7 +2001,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Thu Jan 07 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1817,7 +2018,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Fri Jan 08 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1830,7 +2035,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sat Jan 09 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1843,7 +2052,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sun Jan 10 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1856,7 +2069,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Mon Jan 11 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1869,7 +2086,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Tue Jan 12 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1882,7 +2103,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Wed Jan 13 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1895,7 +2120,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Thu Jan 14 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1908,7 +2137,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Fri Jan 15 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1921,7 +2154,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sat Jan 16 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1934,7 +2171,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sun Jan 17 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1947,7 +2188,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Mon Jan 18 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1960,7 +2205,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Tue Jan 19 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1973,7 +2222,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Wed Jan 20 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1986,7 +2239,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Thu Jan 21 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -1999,7 +2256,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Fri Jan 22 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2012,7 +2273,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sat Jan 23 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2025,7 +2290,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sun Jan 24 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2038,7 +2307,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Mon Jan 25 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2051,7 +2324,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Tue Jan 26 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2064,7 +2341,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Wed Jan 27 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2077,7 +2358,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Thu Jan 28 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2090,7 +2375,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Fri Jan 29 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2103,7 +2392,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sat Jan 30 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2116,7 +2409,11 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           aria-label="Sun Jan 31 2021"
           aria-labelledby="0_2021886d840j3"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2126,22 +2423,22 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           31
         </button>
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
       </div>
     </div>
@@ -2151,29 +2448,29 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
 
 exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
 <div
-  data-css-1xqevlv=""
+  className="psds-calendar"
   onMouseLeave={[Function]}
 >
   <div
-    data-css-1cqgl9p=""
+    className="psds-calendar__header-wrapper"
   >
     <div
-      data-css-1by070m=""
+      className="psds-calendar__header"
     >
       <div
-        data-css-1vc8xgt=""
+        className="psds-calendar__month"
       >
         <button
           aria-label="Go back 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -2188,13 +2485,18 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
+<<<<<<< HEAD
         <h2
           aria-live="polite"
           data-css-fpvw2v=""
           id="4_2020g1er00gl5"
+=======
+        <div
+          className="psds-calendar__header-month"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
         >
           May
            
@@ -2202,15 +2504,15 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
         </h2>
         <button
           aria-label="Go forward 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -2225,49 +2527,49 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Sun
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Mon
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Tue
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Wed
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Thu
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Fri
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Sat
       </div>
     </div>
   </div>
   <div
-    data-css-50jhqn=""
+    className="psds-calendar__date-grid"
     style={
       Object {
         "height": undefined,
@@ -2275,31 +2577,35 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
     }
   >
     <div
-      data-css-1a94b64=""
+      className="psds-calendar__grid-slide"
     >
       <div
-        data-css-1k5y6zw=""
+        className="psds-calendar__date-grid"
       >
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <button
           aria-label="Fri May 01 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2313,7 +2619,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sat May 02 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2327,7 +2637,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sun May 03 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2341,7 +2655,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Mon May 04 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2355,7 +2673,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Tue May 05 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2369,7 +2691,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Wed May 06 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2383,7 +2709,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Thu May 07 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2397,7 +2727,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Fri May 08 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2411,7 +2745,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sat May 09 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2425,7 +2763,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sun May 10 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2439,7 +2781,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Mon May 11 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2453,7 +2799,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Tue May 12 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2467,7 +2817,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Wed May 13 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2481,7 +2835,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Thu May 14 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2495,7 +2853,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Fri May 15 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2509,7 +2871,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sat May 16 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2523,7 +2889,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sun May 17 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2537,7 +2907,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Mon May 18 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2551,7 +2925,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Tue May 19 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2565,7 +2943,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Wed May 20 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2579,7 +2961,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Thu May 21 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2593,7 +2979,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Fri May 22 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2607,7 +2997,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sat May 23 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2621,7 +3015,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sun May 24 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2635,7 +3033,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Mon May 25 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2649,7 +3051,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Tue May 26 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2663,7 +3069,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Wed May 27 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2677,7 +3087,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Thu May 28 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2691,7 +3105,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Fri May 29 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2705,7 +3123,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sat May 30 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2719,7 +3141,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           aria-label="Sun May 31 2020"
           aria-labelledby="4_2020g1er00gl5"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -2730,22 +3156,22 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           31
         </button>
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
       </div>
     </div>
@@ -2761,29 +3187,29 @@ Array [
     5/13/2020 - 05/30/2020
   </button>,
   <div
-    data-css-1xqevlv=""
+    className="psds-calendar"
     onMouseLeave={[Function]}
   >
     <div
-      data-css-1cqgl9p=""
+      className="psds-calendar__header-wrapper"
     >
       <div
-        data-css-1by070m=""
+        className="psds-calendar__header"
       >
         <div
-          data-css-1vc8xgt=""
+          className="psds-calendar__month"
         >
           <button
             aria-label="Go back 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -2798,13 +3224,18 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
+<<<<<<< HEAD
           <h2
             aria-live="polite"
             data-css-fpvw2v=""
             id="4_20207opu8nx0k"
+=======
+          <div
+            className="psds-calendar__header-month"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           >
             May
              
@@ -2812,15 +3243,15 @@ Array [
           </h2>
           <button
             aria-label="Go forward 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -2835,49 +3266,49 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sun
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Mon
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Tue
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Wed
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Thu
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Fri
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sat
         </div>
       </div>
     </div>
     <div
-      data-css-50jhqn=""
+      className="psds-calendar__date-grid"
       style={
         Object {
           "height": undefined,
@@ -2885,31 +3316,35 @@ Array [
       }
     >
       <div
-        data-css-1a94b64=""
+        className="psds-calendar__grid-slide"
       >
         <div
-          data-css-1k5y6zw=""
+          className="psds-calendar__date-grid"
         >
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <button
             aria-label="Fri May 01 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -2923,7 +3358,11 @@ Array [
             aria-label="Sat May 02 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -2937,7 +3376,11 @@ Array [
             aria-label="Sun May 03 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -2951,7 +3394,11 @@ Array [
             aria-label="Mon May 04 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -2965,7 +3412,11 @@ Array [
             aria-label="Tue May 05 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -2979,7 +3430,11 @@ Array [
             aria-label="Wed May 06 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -2993,7 +3448,11 @@ Array [
             aria-label="Thu May 07 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3007,7 +3466,11 @@ Array [
             aria-label="Fri May 08 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3021,7 +3484,11 @@ Array [
             aria-label="Sat May 09 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3035,7 +3502,11 @@ Array [
             aria-label="Sun May 10 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3049,7 +3520,11 @@ Array [
             aria-label="Mon May 11 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3063,7 +3538,11 @@ Array [
             aria-label="Tue May 12 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3077,7 +3556,11 @@ Array [
             aria-label="Wed May 13 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3091,7 +3574,11 @@ Array [
             aria-label="Thu May 14 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3105,7 +3592,11 @@ Array [
             aria-label="Fri May 15 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3119,7 +3610,11 @@ Array [
             aria-label="Sat May 16 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3133,7 +3628,11 @@ Array [
             aria-label="Sun May 17 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3147,7 +3646,11 @@ Array [
             aria-label="Mon May 18 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3161,7 +3664,11 @@ Array [
             aria-label="Tue May 19 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3175,7 +3682,11 @@ Array [
             aria-label="Wed May 20 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3189,7 +3700,11 @@ Array [
             aria-label="Thu May 21 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3203,7 +3718,11 @@ Array [
             aria-label="Fri May 22 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3217,7 +3736,11 @@ Array [
             aria-label="Sat May 23 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3231,7 +3754,11 @@ Array [
             aria-label="Sun May 24 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3245,7 +3772,11 @@ Array [
             aria-label="Mon May 25 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3259,7 +3790,11 @@ Array [
             aria-label="Tue May 26 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3273,7 +3808,11 @@ Array [
             aria-label="Wed May 27 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3287,7 +3826,11 @@ Array [
             aria-label="Thu May 28 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3301,7 +3844,11 @@ Array [
             aria-label="Fri May 29 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3315,7 +3862,11 @@ Array [
             aria-label="Sat May 30 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3329,7 +3880,11 @@ Array [
             aria-label="Sun May 31 2020"
             aria-labelledby="4_20207opu8nx0k"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3340,22 +3895,22 @@ Array [
             31
           </button>
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
         </div>
       </div>
@@ -3367,24 +3922,24 @@ Array [
 exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
 <div>
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-text-input__label psds-theme--dark psds-text-input__label"
     >
       Start
     </div>
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
-          data-css-1okk1dp=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             value=""
@@ -3394,24 +3949,24 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
     </div>
   </label>
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-text-input__label psds-theme--dark psds-text-input__label"
     >
       End
     </div>
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
-          data-css-1okk1dp=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             value=""
@@ -3421,29 +3976,29 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
     </div>
   </label>
   <div
-    data-css-1xqevlv=""
+    className="psds-calendar"
     onMouseLeave={[Function]}
   >
     <div
-      data-css-1cqgl9p=""
+      className="psds-calendar__header-wrapper"
     >
       <div
-        data-css-1by070m=""
+        className="psds-calendar__header"
       >
         <div
-          data-css-1vc8xgt=""
+          className="psds-calendar__month"
         >
           <button
             aria-label="Go back 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -3458,13 +4013,18 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
+<<<<<<< HEAD
           <h2
             aria-live="polite"
             data-css-fpvw2v=""
             id="4_202000srf64cv"
+=======
+          <div
+            className="psds-calendar__header-month"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           >
             May
              
@@ -3472,15 +4032,15 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
           </h2>
           <button
             aria-label="Go forward 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -3495,49 +4055,49 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sun
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Mon
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Tue
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Wed
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Thu
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Fri
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sat
         </div>
       </div>
     </div>
     <div
-      data-css-50jhqn=""
+      className="psds-calendar__date-grid"
       style={
         Object {
           "height": undefined,
@@ -3545,31 +4105,35 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
       }
     >
       <div
-        data-css-1a94b64=""
+        className="psds-calendar__grid-slide"
       >
         <div
-          data-css-1k5y6zw=""
+          className="psds-calendar__date-grid"
         >
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <button
             aria-label="Fri May 01 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3583,7 +4147,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sat May 02 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3597,7 +4165,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sun May 03 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3611,7 +4183,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Mon May 04 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3625,7 +4201,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Tue May 05 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3639,7 +4219,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Wed May 06 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3653,7 +4237,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Thu May 07 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3667,7 +4255,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Fri May 08 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3681,7 +4273,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sat May 09 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3695,7 +4291,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sun May 10 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3709,7 +4309,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Mon May 11 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3723,7 +4327,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Tue May 12 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3737,7 +4345,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Wed May 13 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3751,7 +4363,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Thu May 14 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3765,7 +4381,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Fri May 15 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3779,7 +4399,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sat May 16 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3793,7 +4417,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sun May 17 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3807,7 +4435,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Mon May 18 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3821,7 +4453,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Tue May 19 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3835,7 +4471,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Wed May 20 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3849,7 +4489,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Thu May 21 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3863,7 +4507,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Fri May 22 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3877,7 +4525,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sat May 23 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3891,7 +4543,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sun May 24 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3905,7 +4561,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Mon May 25 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3919,7 +4579,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Tue May 26 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3933,7 +4597,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Wed May 27 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3947,7 +4615,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Thu May 28 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3961,7 +4633,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Fri May 29 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3975,7 +4651,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sat May 30 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -3989,7 +4669,11 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             aria-label="Sun May 31 2020"
             aria-labelledby="4_202000srf64cv"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4000,22 +4684,22 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             31
           </button>
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
         </div>
       </div>
@@ -4027,24 +4711,24 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
 exports[`Storyshots Components/DatePicker Range Date Calendar With Input Two Months 1`] = `
 Array [
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-text-input__label psds-theme--dark psds-text-input__label"
     >
       Start
     </div>
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
-          data-css-1okk1dp=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             value=""
@@ -4054,24 +4738,24 @@ Array [
     </div>
   </label>,
   <label
-    data-css-w0yocm=""
+    className="psds-text-input"
   >
     <div
-      data-css-dysqqm=""
+      className="psds-text-input__label psds-theme--dark psds-text-input__label"
     >
       End
     </div>
     <div
-      data-css-1r967oi=""
+      className="psds-text-input__field-container"
     >
       <div
-        data-css-ctre2o=""
+        className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
       >
         <div
-          data-css-1okk1dp=""
+          className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
         >
           <input
-            data-css-1iyk6mt=""
+            className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
             disabled={false}
             onChange={[Function]}
             value=""
@@ -4081,29 +4765,29 @@ Array [
     </div>
   </label>,
   <div
-    data-css-1xqevlv=""
+    className="psds-calendar"
     onMouseLeave={[Function]}
   >
     <div
-      data-css-1cqgl9p=""
+      className="psds-calendar__header-wrapper"
     >
       <div
-        data-css-1by070m=""
+        className="psds-calendar__header"
       >
         <div
-          data-css-1vc8xgt=""
+          className="psds-calendar__month"
         >
           <button
             aria-label="Go back 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret left icon"
@@ -4118,67 +4802,87 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
+<<<<<<< HEAD
           <h2
             aria-live="polite"
             data-css-fpvw2v=""
             id="4_2020a2qvbpbvm"
+=======
+          <div
+            className="psds-calendar__header-month"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           >
             May
              
             2020
+<<<<<<< HEAD
           </h2>
           <div />
+=======
+          </div>
+          <div
+            className="psds-calendar__header-button"
+          />
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sun
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Mon
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Tue
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Wed
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Thu
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Fri
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sat
         </div>
       </div>
       <div
-        data-css-1by070m=""
+        className="psds-calendar__header"
       >
         <div
-          data-css-1vc8xgt=""
+          className="psds-calendar__month"
         >
+<<<<<<< HEAD
           <div />
           <h2
             aria-live="polite"
             data-css-fpvw2v=""
             id="5_20200p415qwnn"
+=======
+          <div
+            className="psds-calendar__header-button"
+          />
+          <div
+            className="psds-calendar__header-month"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           >
             Jun
              
@@ -4186,15 +4890,15 @@ Array [
           </h2>
           <button
             aria-label="Go forward 1 month"
-            data-css-phznnm=""
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
             disabled={false}
             onClick={[Function]}
           >
             <div
-              data-css-y80vay=""
+              className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
               <div
-                data-css-7dab2f=""
+                className="psds-icon psds-icon--size-medium"
               >
                 <svg
                   aria-label="caret right icon"
@@ -4209,49 +4913,49 @@ Array [
             </div>
             <span
               aria-hidden={false}
-              data-css-15b13by=""
+              className="psds-button__text"
             />
           </button>
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sun
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Mon
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Tue
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Wed
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Thu
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Fri
         </div>
         <div
-          data-css-s7dkwb=""
+          className="psds-calendar__weekday-header"
         >
           Sat
         </div>
       </div>
     </div>
     <div
-      data-css-50jhqn=""
+      className="psds-calendar__date-grid"
       style={
         Object {
           "height": undefined,
@@ -4259,31 +4963,35 @@ Array [
       }
     >
       <div
-        data-css-1a94b64=""
+        className="psds-calendar__grid-slide"
       >
         <div
-          data-css-1k5y6zw=""
+          className="psds-calendar__date-grid"
         >
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <button
             aria-label="Fri May 01 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4297,7 +5005,11 @@ Array [
             aria-label="Sat May 02 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4311,7 +5023,11 @@ Array [
             aria-label="Sun May 03 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4325,7 +5041,11 @@ Array [
             aria-label="Mon May 04 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4339,7 +5059,11 @@ Array [
             aria-label="Tue May 05 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4353,7 +5077,11 @@ Array [
             aria-label="Wed May 06 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4367,7 +5095,11 @@ Array [
             aria-label="Thu May 07 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4381,7 +5113,11 @@ Array [
             aria-label="Fri May 08 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4395,7 +5131,11 @@ Array [
             aria-label="Sat May 09 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4409,7 +5149,11 @@ Array [
             aria-label="Sun May 10 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4423,7 +5167,11 @@ Array [
             aria-label="Mon May 11 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4437,7 +5185,11 @@ Array [
             aria-label="Tue May 12 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4451,7 +5203,11 @@ Array [
             aria-label="Wed May 13 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4465,7 +5221,11 @@ Array [
             aria-label="Thu May 14 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4479,7 +5239,11 @@ Array [
             aria-label="Fri May 15 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4493,7 +5257,11 @@ Array [
             aria-label="Sat May 16 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4507,7 +5275,11 @@ Array [
             aria-label="Sun May 17 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4521,7 +5293,11 @@ Array [
             aria-label="Mon May 18 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4535,7 +5311,11 @@ Array [
             aria-label="Tue May 19 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4549,7 +5329,11 @@ Array [
             aria-label="Wed May 20 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4563,7 +5347,11 @@ Array [
             aria-label="Thu May 21 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4577,7 +5365,11 @@ Array [
             aria-label="Fri May 22 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4591,7 +5383,11 @@ Array [
             aria-label="Sat May 23 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4605,7 +5401,11 @@ Array [
             aria-label="Sun May 24 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4619,7 +5419,11 @@ Array [
             aria-label="Mon May 25 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4633,7 +5437,11 @@ Array [
             aria-label="Tue May 26 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4647,7 +5455,11 @@ Array [
             aria-label="Wed May 27 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4661,7 +5473,11 @@ Array [
             aria-label="Thu May 28 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4675,7 +5491,11 @@ Array [
             aria-label="Fri May 29 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4689,7 +5509,11 @@ Array [
             aria-label="Sat May 30 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4703,7 +5527,11 @@ Array [
             aria-label="Sun May 31 2020"
             aria-labelledby="4_2020a2qvbpbvm"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4714,35 +5542,39 @@ Array [
             31
           </button>
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
         </div>
         <div
-          data-css-1k5y6zw=""
+          className="psds-calendar__date-grid"
         >
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <button
             aria-label="Mon Jun 01 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4756,7 +5588,11 @@ Array [
             aria-label="Tue Jun 02 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4770,7 +5606,11 @@ Array [
             aria-label="Wed Jun 03 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4784,7 +5624,11 @@ Array [
             aria-label="Thu Jun 04 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4798,7 +5642,11 @@ Array [
             aria-label="Fri Jun 05 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4812,7 +5660,11 @@ Array [
             aria-label="Sat Jun 06 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4826,7 +5678,11 @@ Array [
             aria-label="Sun Jun 07 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4840,7 +5696,11 @@ Array [
             aria-label="Mon Jun 08 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4854,7 +5714,11 @@ Array [
             aria-label="Tue Jun 09 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4868,7 +5732,11 @@ Array [
             aria-label="Wed Jun 10 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4882,7 +5750,11 @@ Array [
             aria-label="Thu Jun 11 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4896,7 +5768,11 @@ Array [
             aria-label="Fri Jun 12 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4910,7 +5786,11 @@ Array [
             aria-label="Sat Jun 13 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4924,7 +5804,11 @@ Array [
             aria-label="Sun Jun 14 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4938,7 +5822,11 @@ Array [
             aria-label="Mon Jun 15 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4952,7 +5840,11 @@ Array [
             aria-label="Tue Jun 16 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4966,7 +5858,11 @@ Array [
             aria-label="Wed Jun 17 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4980,7 +5876,11 @@ Array [
             aria-label="Thu Jun 18 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -4994,7 +5894,11 @@ Array [
             aria-label="Fri Jun 19 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5008,7 +5912,11 @@ Array [
             aria-label="Sat Jun 20 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5022,7 +5930,11 @@ Array [
             aria-label="Sun Jun 21 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5036,7 +5948,11 @@ Array [
             aria-label="Mon Jun 22 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5050,7 +5966,11 @@ Array [
             aria-label="Tue Jun 23 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5064,7 +5984,11 @@ Array [
             aria-label="Wed Jun 24 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5078,7 +6002,11 @@ Array [
             aria-label="Thu Jun 25 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5092,7 +6020,11 @@ Array [
             aria-label="Fri Jun 26 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5106,7 +6038,11 @@ Array [
             aria-label="Sat Jun 27 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5120,7 +6056,11 @@ Array [
             aria-label="Sun Jun 28 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5134,7 +6074,11 @@ Array [
             aria-label="Mon Jun 29 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5148,7 +6092,11 @@ Array [
             aria-label="Tue Jun 30 2020"
             aria-labelledby="5_20200p415qwnn"
             aria-pressed={false}
+<<<<<<< HEAD
             data-css-vzsgfy=""
+=======
+            className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
             disabled={false}
             onClick={[Function]}
             onKeyDown={[Function]}
@@ -5159,16 +6107,16 @@ Array [
             30
           </button>
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
           <div
-            data-css-h18ka=""
+            className="psds-calendar__filler"
           />
         </div>
       </div>
@@ -5179,28 +6127,28 @@ Array [
 
 exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
 <div
-  data-css-1xqevlv=""
+  className="psds-calendar"
 >
   <div
-    data-css-1cqgl9p=""
+    className="psds-calendar__header-wrapper"
   >
     <div
-      data-css-1by070m=""
+      className="psds-calendar__header"
     >
       <div
-        data-css-1vc8xgt=""
+        className="psds-calendar__month"
       >
         <button
           aria-label="Go back 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -5215,13 +6163,18 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
+<<<<<<< HEAD
         <h2
           aria-live="polite"
           data-css-fpvw2v=""
           id="3_20203h6x6lspf"
+=======
+        <div
+          className="psds-calendar__header-month"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
         >
           Apr
            
@@ -5229,15 +6182,15 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
         </h2>
         <button
           aria-label="Go forward 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -5252,49 +6205,49 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Sun
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Mon
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Tue
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Wed
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Thu
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Fri
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Sat
       </div>
     </div>
   </div>
   <div
-    data-css-50jhqn=""
+    className="psds-calendar__date-grid"
     style={
       Object {
         "height": undefined,
@@ -5302,25 +6255,29 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
     }
   >
     <div
-      data-css-1a94b64=""
+      className="psds-calendar__grid-slide"
     >
       <div
-        data-css-1k5y6zw=""
+        className="psds-calendar__date-grid"
       >
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <button
           aria-label="Wed Apr 01 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5333,7 +6290,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Thu Apr 02 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5346,7 +6307,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Fri Apr 03 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5359,7 +6324,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Sat Apr 04 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5372,7 +6341,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Sun Apr 05 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5385,7 +6358,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Mon Apr 06 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5398,7 +6375,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Tue Apr 07 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5411,7 +6392,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Wed Apr 08 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5424,7 +6409,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Thu Apr 09 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5437,7 +6426,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Fri Apr 10 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5450,7 +6443,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Sat Apr 11 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5463,7 +6460,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Sun Apr 12 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5476,7 +6477,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Mon Apr 13 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5489,7 +6494,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Tue Apr 14 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5502,7 +6511,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Wed Apr 15 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5515,7 +6528,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Thu Apr 16 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5528,7 +6545,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Fri Apr 17 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5541,7 +6562,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Sat Apr 18 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5554,7 +6579,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Sun Apr 19 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5567,7 +6596,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Mon Apr 20 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5580,7 +6613,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Tue Apr 21 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5593,7 +6630,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Wed Apr 22 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5606,7 +6647,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Thu Apr 23 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5619,7 +6664,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Fri Apr 24 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5632,7 +6681,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Sat Apr 25 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5645,7 +6698,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Sun Apr 26 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5658,7 +6715,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Mon Apr 27 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5671,7 +6732,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Tue Apr 28 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5684,7 +6749,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Wed Apr 29 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5697,7 +6766,11 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           aria-label="Thu Apr 30 2020"
           aria-labelledby="3_20203h6x6lspf"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5707,10 +6780,10 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           30
         </button>
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
       </div>
     </div>
@@ -5720,28 +6793,28 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
 
 exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
 <div
-  data-css-1xqevlv=""
+  className="psds-calendar"
 >
   <div
-    data-css-1cqgl9p=""
+    className="psds-calendar__header-wrapper"
   >
     <div
-      data-css-1by070m=""
+      className="psds-calendar__header"
     >
       <div
-        data-css-1vc8xgt=""
+        className="psds-calendar__month"
       >
         <button
           aria-label="Go back 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret left icon"
@@ -5756,13 +6829,18 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
+<<<<<<< HEAD
         <h2
           aria-live="polite"
           data-css-fpvw2v=""
           id="4_2020ctubmtrsl"
+=======
+        <div
+          className="psds-calendar__header-month"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
         >
           May
            
@@ -5770,15 +6848,15 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
         </h2>
         <button
           aria-label="Go forward 1 month"
-          data-css-phznnm=""
+          className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-flat psds-theme--light psds-button--icon-only psds-calendar__header-button"
           disabled={false}
           onClick={[Function]}
         >
           <div
-            data-css-y80vay=""
+            className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
             <div
-              data-css-7dab2f=""
+              className="psds-icon psds-icon--size-medium"
             >
               <svg
                 aria-label="caret right icon"
@@ -5793,49 +6871,49 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           </div>
           <span
             aria-hidden={false}
-            data-css-15b13by=""
+            className="psds-button__text"
           />
         </button>
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Sun
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Mon
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Tue
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Wed
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Thu
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Fri
       </div>
       <div
-        data-css-s7dkwb=""
+        className="psds-calendar__weekday-header"
       >
         Sat
       </div>
     </div>
   </div>
   <div
-    data-css-50jhqn=""
+    className="psds-calendar__date-grid"
     style={
       Object {
         "height": undefined,
@@ -5843,31 +6921,35 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
     }
   >
     <div
-      data-css-1a94b64=""
+      className="psds-calendar__grid-slide"
     >
       <div
-        data-css-1k5y6zw=""
+        className="psds-calendar__date-grid"
       >
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <button
           aria-label="Fri May 01 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5880,7 +6962,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sat May 02 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5893,7 +6979,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sun May 03 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5906,7 +6996,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Mon May 04 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5919,7 +7013,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Tue May 05 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5932,7 +7030,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Wed May 06 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5945,7 +7047,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Thu May 07 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5958,7 +7064,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Fri May 08 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5971,7 +7081,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sat May 09 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5984,7 +7098,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sun May 10 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -5997,7 +7115,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Mon May 11 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6010,7 +7132,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Tue May 12 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6023,7 +7149,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Wed May 13 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={true}
+<<<<<<< HEAD
           data-css-1gtf91o=""
+=======
+          className="psds-calendar__date psds-calendar__date--selected"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6036,7 +7166,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Thu May 14 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6049,7 +7183,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Fri May 15 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6062,7 +7200,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sat May 16 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6075,7 +7217,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sun May 17 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6088,7 +7234,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Mon May 18 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6101,7 +7251,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Tue May 19 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6114,7 +7268,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Wed May 20 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6127,7 +7285,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Thu May 21 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6140,7 +7302,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Fri May 22 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6153,7 +7319,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sat May 23 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6166,7 +7336,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sun May 24 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6179,7 +7353,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Mon May 25 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6192,7 +7370,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Tue May 26 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6205,7 +7387,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Wed May 27 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6218,7 +7404,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Thu May 28 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6231,7 +7421,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Fri May 29 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6244,7 +7438,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sat May 30 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6257,7 +7455,11 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           aria-label="Sun May 31 2020"
           aria-labelledby="4_2020ctubmtrsl"
           aria-pressed={false}
+<<<<<<< HEAD
           data-css-vzsgfy=""
+=======
+          className="psds-calendar__date"
+>>>>>>> 2d211bdb1e623887df40a2802e8e500a5edc0686
           disabled={false}
           onClick={[Function]}
           onKeyDown={[Function]}
@@ -6267,22 +7469,22 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           31
         </button>
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
         <div
-          data-css-h18ka=""
+          className="psds-calendar__filler"
         />
       </div>
     </div>

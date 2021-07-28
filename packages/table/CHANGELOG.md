@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@16.0.1...@pluralsight/ps-design-system-table@16.0.2) (2021-07-27)
+
+
+### Bug Fixes
+
+* **table:** set normalize peerDependency to 6.0.0 ([0c100db](https://github.com/pluralsight/design-system/commit/0c100dbaa9db95454f5c70897268e5ea8f0456c6))
+
+
+
+
+
+## [16.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@16.0.0...@pluralsight/ps-design-system-table@16.0.1) (2021-07-27)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-table
+
+
+
+
+
+# [16.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.24...@pluralsight/ps-design-system-table@16.0.0) (2021-07-26)
+
+
+* css/screenreaderonly-navuser (#1915) ([60209c8](https://github.com/pluralsight/design-system/commit/60209c80755525b7b353966f5e82f710a1beb3b2)), closes [#1915](https://github.com/pluralsight/design-system/issues/1915)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(row): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(radio): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(note): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navuser): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: update snapshots
+
+* test: lint fix
+
+* fix(note): psuedoselector fix
+
+* test: update snapshots
+
+* test: update snapshots
+
+
+
+
+
 ## [15.1.24](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@15.1.23...@pluralsight/ps-design-system-table@15.1.24) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

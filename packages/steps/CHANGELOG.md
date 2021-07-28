@@ -3,6 +3,85 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@5.0.0...@pluralsight/ps-design-system-steps@5.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **steps:** set normalize peerDependency to 6.0.0 ([d9c1a7e](https://github.com/pluralsight/design-system/commit/d9c1a7e75de9e4c30a125510776994c0fe103cb1))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@4.1.14...@pluralsight/ps-design-system-steps@5.0.0) (2021-07-26)
+
+
+* css/screenreaderonly-navuser (#1915) ([60209c8](https://github.com/pluralsight/design-system/commit/60209c80755525b7b353966f5e82f710a1beb3b2)), closes [#1915](https://github.com/pluralsight/design-system/issues/1915)
+* css/steps-scrollable (#1914) ([1b700fa](https://github.com/pluralsight/design-system/commit/1b700fa6fb20ef42cdcf54c19c1b15956441b798)), closes [#1914](https://github.com/pluralsight/design-system/issues/1914)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(row): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(radio): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(note): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navuser): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: update snapshots
+
+* test: lint fix
+
+* fix(note): psuedoselector fix
+
+* test: update snapshots
+
+* test: update snapshots
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(starrating): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(select): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(searchinput): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(scrollable): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test(appframe): update snapshot wdue to new searchinput css
+
+* fix: pr change request from jake
+
+* fix(circularprogress):  className attr value
+
+* fix(steps): completed class selectivity
+
+
+
+
+
 ## [4.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@4.1.13...@pluralsight/ps-design-system-steps@4.1.14) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-steps

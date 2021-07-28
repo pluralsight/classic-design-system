@@ -3,6 +3,48 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@11.0.0...@pluralsight/ps-design-system-banner@11.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **banner:** set normalize peerDependency to 6.0.0 ([0443127](https://github.com/pluralsight/design-system/commit/0443127445cc47ea293e32d8b5a8c78ae15f5cfa))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@10.1.17...@pluralsight/ps-design-system-banner@11.0.0) (2021-07-26)
+
+
+* css/link-linearprogress (#1931) ([dd3296c](https://github.com/pluralsight/design-system/commit/dd3296ca7b4212927383a06536959a443c37aad5)), closes [#1931](https://github.com/pluralsight/design-system/issues/1931)
+
+
+### Code Refactoring
+
+* **banner:** convert to vanilla css; remove glamor ([19dbc38](https://github.com/pluralsight/design-system/commit/19dbc3810e522d2bfd6f66d89322212b0b60ef06)), closes [#1834](https://github.com/pluralsight/design-system/issues/1834)
+* **banner:** dashify css ([01ee8ba](https://github.com/pluralsight/design-system/commit/01ee8bac9d27da09968afaa7941c49cf3fcf0a31))
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(linearprogress): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: snapshots and cleanup
+
+* fix: cleanup
+* **banner:** dashify css selectors
+* **banner:** convert styles to vanilla css; requires bundling
+
+
+
+
+
 ## [10.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-banner@10.1.16...@pluralsight/ps-design-system-banner@10.1.17) (2021-06-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-banner

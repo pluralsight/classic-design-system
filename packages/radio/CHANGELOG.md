@@ -3,6 +3,63 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@11.0.0...@pluralsight/ps-design-system-radio@11.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **radio:** set normalize peerDependency to 6.0.0 ([f9d9a36](https://github.com/pluralsight/design-system/commit/f9d9a36c5dd5034bae0f64b4baef0d8ad497d97d))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@10.1.17...@pluralsight/ps-design-system-radio@11.0.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* **radio:** style disabled individual radio buttons ([49b621b](https://github.com/pluralsight/design-system/commit/49b621bd738c8c9d626d7e9c6aaa1d307d47bf96))
+
+
+* css/screenreaderonly-navuser (#1915) ([60209c8](https://github.com/pluralsight/design-system/commit/60209c80755525b7b353966f5e82f710a1beb3b2)), closes [#1915](https://github.com/pluralsight/design-system/issues/1915)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(row): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(radio): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(note): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navuser): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: update snapshots
+
+* test: lint fix
+
+* fix(note): psuedoselector fix
+
+* test: update snapshots
+
+* test: update snapshots
+
+
+
+
+
 ## [10.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@10.1.16...@pluralsight/ps-design-system-radio@10.1.17) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio

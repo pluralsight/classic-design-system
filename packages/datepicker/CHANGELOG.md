@@ -3,6 +3,41 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [16.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@16.0.0...@pluralsight/ps-design-system-datepicker@16.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **datepicker:** set normalize peerDependency to 6.0.0 ([981c24d](https://github.com/pluralsight/design-system/commit/981c24d7818d8e66ed7a90afbe20486148c63ff1))
+
+
+
+
+
+# [16.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.3.4...@pluralsight/ps-design-system-datepicker@16.0.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* **datepicker:** resolve dependency errors ([5d7b020](https://github.com/pluralsight/design-system/commit/5d7b020c6d01b6eebb320e06010899fc951b38ad))
+
+
+### Code Refactoring
+
+* **datepicker:** convert to vanilla css; remove glamor; dashify ([1d92755](https://github.com/pluralsight/design-system/commit/1d92755df18067041464e9f3a448d9d9899cc903)), closes [#1857](https://github.com/pluralsight/design-system/issues/1857)
+
+
+### BREAKING CHANGES
+
+* **datepicker:** convert styles to vanilla css; requires bundling
+* **datepicker:** dashify css selectors
+* **datepicker:** useIsInRange returns a string for className; requires
+merging
+
+
+
+
+
 ## [15.3.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@15.3.3...@pluralsight/ps-design-system-datepicker@15.3.4) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-datepicker

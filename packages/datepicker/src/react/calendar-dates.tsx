@@ -1,22 +1,9 @@
+import { classNames } from '@pluralsight/ps-design-system-util'
 import type { DateObj, RenderProps } from 'dayzed'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
+import '../css/index.css'
 import { DateContext } from './context'
-
-import stylesheet from '../css/index'
-
-const glamor = glamorDefault || glamorExports
-
-const styles = {
-  calendarDate: (selected: boolean, today: boolean) =>
-    glamor.css(
-      stylesheet['.psds-calendar__date'],
-      selected && stylesheet['.psds-calendar__date--selected'],
-      today && stylesheet['.psds-calendar__date--today']
-    ),
-  dateFiller: () => glamor.css(stylesheet['.psds-calendar__filler'])
-}
 
 interface ChildrenRenderProps
   extends React.DetailedHTMLProps<
@@ -39,6 +26,7 @@ interface CalendarDatesProps
 export const CalendarDates: React.FC<CalendarDatesProps> = ({
   getDateProps,
   children,
+  className,
   ...rest
 }) => {
   const calendar = React.useContext(DateContext)
@@ -48,7 +36,12 @@ export const CalendarDates: React.FC<CalendarDatesProps> = ({
         return week.map((dateObj, index) => {
           const key = `${calendar.month}${calendar.year}${weekIndex}${index}`
           if (!dateObj) {
-            return <div key={key} {...styles.dateFiller()} />
+            return (
+              <div
+                key={key}
+                className={classNames('psds-calendar__filler', className)}
+              />
+            )
           }
           const { date, selected, selectable, today } = dateObj
           const dateProps = getDateProps({
@@ -63,7 +56,12 @@ export const CalendarDates: React.FC<CalendarDatesProps> = ({
               disabled: !selectable,
               onKeyDown: handleKeyDown,
               tabIndex: selected ? 0 : -1,
-              ...styles.calendarDate(selected, today),
+              className: classNames(
+                'psds-calendar__date',
+                selected && 'psds-calendar__date--selected',
+                today && 'psds-calendar__date--today',
+                className
+              ),
               ...dateProps,
               ...rest
             },

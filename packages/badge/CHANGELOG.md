@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@13.0.0...@pluralsight/ps-design-system-badge@13.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **badge:** set normalize peerDependency to 6.0.0 ([4c6c5e0](https://github.com/pluralsight/design-system/commit/4c6c5e0559fc984ec775204ae3de0afcb4c0a361))
+
+
+
+
+
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@12.1.13...@pluralsight/ps-design-system-badge@13.0.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* **avatar:** remove glamor peerDependency from css ver of pkg ([67f0ece](https://github.com/pluralsight/design-system/commit/67f0ecea2e884a659d27cabc889c066ccdff9a5e))
+
+
+### Code Refactoring
+
+* **badge:** convert to vanilla css; remove glamor ([552dd9a](https://github.com/pluralsight/design-system/commit/552dd9a3cbac7298ad1ec904b4e6b1c7078c3bfd))
+* **badge:** dashify css ([9419898](https://github.com/pluralsight/design-system/commit/9419898a0baa4cebaedf492485238dc438edbe00))
+
+
+### BREAKING CHANGES
+
+* **badge:** dashify css selectors
+* **badge:** convert styles to vanilla css; requires bundling
+
+
+
+
+
 ## [12.1.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@12.1.12...@pluralsight/ps-design-system-badge@12.1.13) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-badge

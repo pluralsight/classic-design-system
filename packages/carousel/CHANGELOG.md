@@ -3,6 +3,35 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@14.0.0...@pluralsight/ps-design-system-carousel@14.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **carousel:** set normalize peerDependency to 6.0.0 ([32af912](https://github.com/pluralsight/design-system/commit/32af9129cf40e4976a0dee4d282c5faaf47692ba))
+
+
+
+
+
+# [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@13.0.11...@pluralsight/ps-design-system-carousel@14.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **carousel:** convert to vanilla css; remove glamor ([0882a5f](https://github.com/pluralsight/design-system/commit/0882a5f4c237882a8dce8cbf02c4a88929ca20ca)), closes [#1847](https://github.com/pluralsight/design-system/issues/1847)
+* **carousel:** dashify css ([a9add42](https://github.com/pluralsight/design-system/commit/a9add42ef112eac21e56051fb229e9faf16a81f4))
+
+
+### BREAKING CHANGES
+
+* **carousel:** dashify css selectors
+* **carousel:** convert styles to vanilla css; requires bundling
+
+
+
+
+
 ## [13.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@13.0.10...@pluralsight/ps-design-system-carousel@13.0.11) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

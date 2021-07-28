@@ -3,6 +3,56 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@11.0.0...@pluralsight/ps-design-system-typeahead@11.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **typeahead:** set normalize peerDependency to 6.0.0 ([0981a83](https://github.com/pluralsight/design-system/commit/0981a83a52d4f9c4d2f9d83b7ba71094737dbcba))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.19...@pluralsight/ps-design-system-typeahead@11.0.0) (2021-07-26)
+
+
+* css/viewtoggle-typeahead (#1868) ([78fd75f](https://github.com/pluralsight/design-system/commit/78fd75f5f251ad3d9663cc92a85a1bce9e3ef440)), closes [#1868](https://github.com/pluralsight/design-system/issues/1868)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(verticaltabs): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(typeahead): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test(verticaltabs): adds composes className tests for sub components
+
+* fix(viewtoggle): commit change requests
+
+* test: lint fix
+
+* test(typeahead): update snapshots
+
+* fix(verticaltabs): remove remaining vendor prefixes
+
+* fix(menu): allows menu item to uses aria-selected val from downshift
+
+* fix(typeahead): a11y fallback to aria-label
+
+* fix(verticaltabs): commit change requests
+
+
+
+
+
 ## [10.0.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@10.0.18...@pluralsight/ps-design-system-typeahead@10.0.19) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-typeahead

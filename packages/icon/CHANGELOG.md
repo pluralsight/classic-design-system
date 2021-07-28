@@ -3,6 +3,34 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [24.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@24.0.0...@pluralsight/ps-design-system-icon@24.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **icon:** set normalize peerDependency to 6.0.0 ([47724b1](https://github.com/pluralsight/design-system/commit/47724b11d522da51bf46b2bdad89941dab319ef7))
+
+
+
+
+
+# [24.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@23.1.15...@pluralsight/ps-design-system-icon@24.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **icon:** convert to vanilla css; remove glamor; dashify ([4ea54d6](https://github.com/pluralsight/design-system/commit/4ea54d6a37fb637b9b0c715ae61490c56ed736dc)), closes [#1926](https://github.com/pluralsight/design-system/issues/1926)
+
+
+### BREAKING CHANGES
+
+* **icon:** convert styles to vanilla css; requires bundling
+* **icon:** dashify css selectors
+
+
+
+
+
 ## [23.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@23.1.14...@pluralsight/ps-design-system-icon@23.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

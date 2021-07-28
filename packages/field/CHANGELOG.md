@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@5.0.0...@pluralsight/ps-design-system-field@5.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **field:** set normalize peerDependency to 6.0.0 ([3bbf72b](https://github.com/pluralsight/design-system/commit/3bbf72b29df200a7d6c6dafcba0f3430cf9090f8))
+
+
+
+
+
+# [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@4.1.15...@pluralsight/ps-design-system-field@5.0.0) (2021-07-26)
+
+
+### Code Refactoring
+
+* **field:** convert to vanilla css; remove glamor; dashify ([2bb3d09](https://github.com/pluralsight/design-system/commit/2bb3d0992620cc7a2c75d80b05716df4ff0fa950)), closes [#1922](https://github.com/pluralsight/design-system/issues/1922)
+
+
+### BREAKING CHANGES
+
+* **field:** convert styles to vanilla css; requires bundling
+* **field:** dashify css selectors
+* **field:** move className composition to parent nodes for all
+components
+* **field:** re-type renderTag as
+React.FC<React.HTMLAttributes<HTMLElement>>
+
+
+
+
+
 ## [4.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@4.1.14...@pluralsight/ps-design-system-field@4.1.15) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-field

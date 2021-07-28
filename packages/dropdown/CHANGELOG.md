@@ -3,6 +3,71 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.0...@pluralsight/ps-design-system-dropdown@13.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **dropdown:** set normalize peerDependency to 6.0.0 ([af3ccc0](https://github.com/pluralsight/design-system/commit/af3ccc018399a10ea0d4acf43233ee3f0f2f0584))
+
+
+
+
+
+# [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.19...@pluralsight/ps-design-system-dropdown@13.0.0) (2021-07-26)
+
+
+* css/screenreaderonly-navuser (#1915) ([60209c8](https://github.com/pluralsight/design-system/commit/60209c80755525b7b353966f5e82f710a1beb3b2)), closes [#1915](https://github.com/pluralsight/design-system/issues/1915)
+
+
+### Bug Fixes
+
+* **dropdown:** make inner background transparent when appearance is subtle ([16e51cc](https://github.com/pluralsight/design-system/commit/16e51cc4824fb1c1f1828aa009af0c9951a30061))
+
+
+### Code Refactoring
+
+* **dropdown:** convert to vanilla css; remove glamor; dashify ([0f70e31](https://github.com/pluralsight/design-system/commit/0f70e31cb47f7de134a2f122e27fdc1cc82ce788)), closes [#1873](https://github.com/pluralsight/design-system/issues/1873)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(row): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(radio): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(note): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navuser): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: update snapshots
+
+* test: lint fix
+
+* fix(note): psuedoselector fix
+
+* test: update snapshots
+
+* test: update snapshots
+* **dropdown:** convert styles to vanilla css; requires bundling
+* **dropdown:** dashify css selectors
+* **dropdown:** move className compose to Dropdown.Button parent node
+
+
+
+
+
 ## [12.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.18...@pluralsight/ps-design-system-dropdown@12.1.19) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

@@ -3,6 +3,92 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@11.0.0...@pluralsight/ps-design-system-circularprogress@11.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **circularprogress:** set normalize peerDependency to 6.0.0 ([e94cf58](https://github.com/pluralsight/design-system/commit/e94cf58c32bfec70c5d6b2353f5e26ff6516bb55))
+
+
+
+
+
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@10.0.1...@pluralsight/ps-design-system-circularprogress@11.0.0) (2021-07-26)
+
+
+* css/screenreaderonly-navuser (#1915) ([60209c8](https://github.com/pluralsight/design-system/commit/60209c80755525b7b353966f5e82f710a1beb3b2)), closes [#1915](https://github.com/pluralsight/design-system/issues/1915)
+* css/steps-scrollable (#1914) ([1b700fa](https://github.com/pluralsight/design-system/commit/1b700fa6fb20ef42cdcf54c19c1b15956441b798)), closes [#1914](https://github.com/pluralsight/design-system/issues/1914)
+
+
+### Code Refactoring
+
+* **circularprogress:** convert to vanilla css; remove glamor; dashify ([67ee8fb](https://github.com/pluralsight/design-system/commit/67ee8fb5a91f658ea8077e507e62b669a84b3be6)), closes [#1865](https://github.com/pluralsight/design-system/issues/1865)
+
+
+### BREAKING CHANGES
+
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(row): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(radio): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(note): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(navuser): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test: update snapshots
+
+* test: lint fix
+
+* fix(note): psuedoselector fix
+
+* test: update snapshots
+
+* test: update snapshots
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(starrating): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(select): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(searchinput): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* feat(scrollable): convert to vanilla css
+* convert styles to vanilla css; requires bundling
+* dashify css selectors
+
+* test(appframe): update snapshot wdue to new searchinput css
+
+* fix: pr change request from jake
+
+* fix(circularprogress):  className attr value
+
+* fix(steps): completed class selectivity
+* **circularprogress:** convert styles to vanilla css; requires bundling
+* **circularprogress:** dashify css selectors
+
+
+
+
+
 ## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@10.0.0...@pluralsight/ps-design-system-circularprogress@10.0.1) (2021-06-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress

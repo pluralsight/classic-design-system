@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.2.2...@pluralsight/ps-design-system-core@9.0.0) (2021-07-26)
+
+
+### Bug Fixes
+
+* **core:** make css screenreader-only actually invisible ([c0c24d6](https://github.com/pluralsight/design-system/commit/c0c24d61a10c994920aa63ddd3d24e51eb23944e))
+
+
+### Code Refactoring
+
+* **core:** dashify all css vars ([4d13dc6](https://github.com/pluralsight/design-system/commit/4d13dc698146c1042355e8f10e4d784594931137))
+* **core:** don't treat css as modules ([dc9a188](https://github.com/pluralsight/design-system/commit/dc9a188e72d8da604ccd3ac7bd4c703ee910f69e))
+* **core:** prefix the screenreader-only selector ([b3bd969](https://github.com/pluralsight/design-system/commit/b3bd969845e08bffb65023e76f7cf3b6736174ce))
+* **core:** sync css color vars with js color vars ([8db2f89](https://github.com/pluralsight/design-system/commit/8db2f890971c70f34a49b8fa05dc3d89a35bb5df)), closes [#1817](https://github.com/pluralsight/design-system/issues/1817)
+
+
+### BREAKING CHANGES
+
+* **core:** css is no longer in modules. Was misleading.
+* **core:** .screenreader-only is now .psds-screenreader-only
+* **core:** remove css color vars that didn't exist in js
+* **core:** dashify all css custom property names
+
+
+
+
+
 ## [8.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-core@8.2.1...@pluralsight/ps-design-system-core@8.2.2) (2021-06-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-core
