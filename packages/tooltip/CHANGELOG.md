@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.1.15](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@8.1.14...@pluralsight/ps-design-system-tooltip@8.1.15) (2021-07-27)
+
+
+### Bug Fixes
+
+* **tooltip:** set normalize peerDependency to 6.0.0 ([83fdc86](https://github.com/pluralsight/design-system/commit/83fdc864b8906ce4098f8ab6cafddc6fb63f4412))
+
+
+
+
+
 ## [8.1.14](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tooltip@8.1.13...@pluralsight/ps-design-system-tooltip@8.1.14) (2021-07-26)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-tooltip

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@5.0.0...@pluralsight/ps-design-system-navbrand@5.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **navbrand:** set normalize peerDependency to 6.0.0 ([6c02c5e](https://github.com/pluralsight/design-system/commit/6c02c5ef78f110df1d0a9c3f98bcc954f6ed254f))
+
+
+
+
+
 # [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbrand@4.1.13...@pluralsight/ps-design-system-navbrand@5.0.0) (2021-07-26)
 
 

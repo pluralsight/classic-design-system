@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@5.1.10...@pluralsight/ps-design-system-normalize@6.0.0) (2021-07-27)
+
+
+### Code Refactoring
+
+* **normalize:** use core@9.0.0 dashified css custom properties ([16fba2c](https://github.com/pluralsight/design-system/commit/16fba2c3524ed2197fdb7f49a800901a0dd76de4))
+
+
+### BREAKING CHANGES
+
+* **normalize:** use core@9.0.0 dashified css custom properties
+* **normalize:** replace camelCase :root{} variables with dashified
+version
+
+
+
+
+
 ## [5.1.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@5.1.9...@pluralsight/ps-design-system-normalize@5.1.10) (2021-07-27)
 
 

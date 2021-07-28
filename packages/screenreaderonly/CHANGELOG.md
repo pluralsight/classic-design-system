@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@5.0.0...@pluralsight/ps-design-system-screenreaderonly@5.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **screenreaderonly:** set normalize peerDependency to 6.0.0 ([0473799](https://github.com/pluralsight/design-system/commit/0473799975ed830b229f52e0eee08eaced7513d3))
+
+
+
+
+
 # [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-screenreaderonly@4.1.13...@pluralsight/ps-design-system-screenreaderonly@5.0.0) (2021-07-26)
 
 

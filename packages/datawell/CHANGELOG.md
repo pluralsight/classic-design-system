@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@7.0.0...@pluralsight/ps-design-system-datawell@7.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **datawell:** set normalize peerDependency to 6.0.0 ([5cbef2f](https://github.com/pluralsight/design-system/commit/5cbef2f3266dcfc7c06647af2e1426affa2ea1e7))
+
+
+
+
+
 # [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@6.1.15...@pluralsight/ps-design-system-datawell@7.0.0) (2021-07-26)
 
 

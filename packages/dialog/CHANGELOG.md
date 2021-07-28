@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@14.0.0...@pluralsight/ps-design-system-dialog@14.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **dialog:** set normalize peerDependency to 6.0.0 ([34f9b74](https://github.com/pluralsight/design-system/commit/34f9b744d39d40d1960e2434b5c653c07ef6f059))
+
+
+
+
+
 # [14.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@13.1.18...@pluralsight/ps-design-system-dialog@14.0.0) (2021-07-26)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@5.0.0...@pluralsight/ps-design-system-field@5.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **field:** set normalize peerDependency to 6.0.0 ([3bbf72b](https://github.com/pluralsight/design-system/commit/3bbf72b29df200a7d6c6dafcba0f3430cf9090f8))
+
+
+
+
+
 # [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-field@4.1.15...@pluralsight/ps-design-system-field@5.0.0) (2021-07-26)
 
 

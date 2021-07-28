@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@4.0.0...@pluralsight/ps-design-system-select@4.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **select:** set normalize peerDependency to 6.0.0 ([88689dd](https://github.com/pluralsight/design-system/commit/88689ddd1d371e39c87d7b9154108c576343824d))
+
+
+
+
+
 # [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@3.0.21...@pluralsight/ps-design-system-select@4.0.0) (2021-07-26)
 
 

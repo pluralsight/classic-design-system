@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.0...@pluralsight/ps-design-system-dropdown@13.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **dropdown:** set normalize peerDependency to 6.0.0 ([af3ccc0](https://github.com/pluralsight/design-system/commit/af3ccc018399a10ea0d4acf43233ee3f0f2f0584))
+
+
+
+
+
 # [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@12.1.19...@pluralsight/ps-design-system-dropdown@13.0.0) (2021-07-26)
 
 

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@8.0.1...@pluralsight/ps-design-system-verticaltabs@8.0.2) (2021-07-27)
+
+
+### Bug Fixes
+
+* **verticaltabs:** set normalize peerDependency to 6.0.0 ([eccf05b](https://github.com/pluralsight/design-system/commit/eccf05bd8028fa41f11a3436739073066bb86256))
+
+
+
+
+
 ## [8.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@8.0.0...@pluralsight/ps-design-system-verticaltabs@8.0.1) (2021-07-27)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-verticaltabs

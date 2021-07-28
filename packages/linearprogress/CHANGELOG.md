@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@10.0.0...@pluralsight/ps-design-system-linearprogress@10.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **linearprogress:** set normalize peerDependency to 6.0.0 ([ae7afc1](https://github.com/pluralsight/design-system/commit/ae7afc147acd2d06aeb91629b5041544bd049c1a))
+
+
+
+
+
 # [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-linearprogress@9.0.1...@pluralsight/ps-design-system-linearprogress@10.0.0) (2021-07-26)
 
 

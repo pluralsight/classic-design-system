@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [24.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@24.0.0...@pluralsight/ps-design-system-icon@24.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **icon:** set normalize peerDependency to 6.0.0 ([47724b1](https://github.com/pluralsight/design-system/commit/47724b11d522da51bf46b2bdad89941dab319ef7))
+
+
+
+
+
 # [24.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@23.1.15...@pluralsight/ps-design-system-icon@24.0.0) (2021-07-26)
 
 
