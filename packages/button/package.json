@@ -9,6 +9,9 @@
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
+    "react.d.ts",
+    "react.mjs",
+    "styles.css",
     "src/*",
     "dist/*",
     "!src/*/__stories__/*",
@@ -25,6 +28,7 @@
     "test:watch": "yarn test --watchAll"
   },
   "sideEffects": [
+    "src/index.ts",
     "**/*.css"
   ],
   "style": "dist/esm/css/index.css",
@@ -36,7 +40,7 @@
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^6.0.0",
-    "@pluralsight/ps-design-system-theme": "^8.1.4",
+    "@pluralsight/ps-design-system-theme": "^8.1.15",
     "react": "^17.0.1"
   },
   "devDependencies": {

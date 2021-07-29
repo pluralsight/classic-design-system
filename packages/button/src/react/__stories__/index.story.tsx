@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Button from '../index'
+import Button from '../../index'
 
 const defaultArgs = { children: 'click me', onClick: action('click') }
 
