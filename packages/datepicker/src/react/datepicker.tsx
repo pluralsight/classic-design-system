@@ -47,11 +47,6 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     setSelected(dateObj.date)
     setOpen(false)
   }
-  const { getDateProps, ...dayzedData } = useDayzed({
-    date: selected,
-    selected,
-    onDateSelected
-  })
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
     setOpen(!open)
   }
@@ -67,7 +62,6 @@ export const DatePicker: React.FC<DatePickerProps> = ({
       key === 'escape' && setOpen(false)
     }
   const handleFocus: React.FocusEventHandler<HTMLInputElement> = evt => {
-    console.log({ evt, open })
     open && setOpen(false)
   }
   const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
@@ -124,24 +118,58 @@ export const DatePicker: React.FC<DatePickerProps> = ({
       />
       <br />
       {open && (
-        <Calendar
-          {...dayzedData}
-          aria-modal="true"
-          aria-labelledby={labelId}
-          aria-live="polite"
-          style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
-          slide={slide}
-          onKeyDown={handleEscapeKeyDown}
-          uniqueId={uniqueId}
+        <CalendarWrapper
           selected={selected}
-        >
-          <CalendarDates getDateProps={getDateProps}>
-            {renderProps => {
-              return <button {...renderProps} />
-            }}
-          </CalendarDates>
-        </Calendar>
+          onDateSelected={onDateSelected}
+          labelId={labelId}
+          slide={slide}
+          handleEscapeKeyDown={handleEscapeKeyDown}
+          uniqueId={uniqueId}
+        />
       )}
     </div>
+  )
+}
+
+interface CalendarWrapperProps {
+  selected?: Date
+  onDateSelected: (dateObj: DateObj, evt: React.SyntheticEvent) => void
+  labelId: string
+  slide: ValueOf<typeof slides>
+  handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement>
+  uniqueId: (prefix: string) => string
+}
+
+const CalendarWrapper: React.FC<CalendarWrapperProps> = ({
+  selected,
+  onDateSelected,
+  labelId,
+  slide,
+  handleEscapeKeyDown,
+  uniqueId
+}) => {
+  const { getDateProps, ...dayzedData } = useDayzed({
+    date: selected,
+    selected,
+    onDateSelected
+  })
+  return (
+    <Calendar
+      {...dayzedData}
+      aria-modal="true"
+      aria-labelledby={labelId}
+      aria-live="polite"
+      style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
+      slide={slide}
+      onKeyDown={handleEscapeKeyDown}
+      uniqueId={uniqueId}
+      selected={selected}
+    >
+      <CalendarDates getDateProps={getDateProps}>
+        {renderProps => {
+          return <button {...renderProps} />
+        }}
+      </CalendarDates>
+    </Calendar>
   )
 }

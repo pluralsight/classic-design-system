@@ -32,6 +32,9 @@ export const useKeyEvents = ({
   React.useEffect(() => {
     focusNext()
   }, [focusedDate, focusNext])
+  React.useEffect(() => {
+    focusNext()
+  }, [selected])
   const moveMonthForward = getForwardProps({ calendars }).onClick
   const moveMonthBackward = getBackProps({ calendars }).onClick
   const moveYearForward = getForwardProps({ calendars, offset: 12 }).onClick
