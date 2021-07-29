@@ -64,13 +64,21 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
     const { onClick: onForwardClick, ...forwardRest } = getForwardProps({
       calendars
     })
-    const handleForwardClick = (e: React.MouseEvent) => {
+    const { dayKeyHandlers, headerButtonCallback } = useKeyEvents({
+      selected,
+      calendars,
+      getBackProps,
+      getForwardProps
+    })
+    const handleForwardClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       onForwardClick(e)
       setSlide(slides.forward)
+      headerButtonCallback(e, 1)
     }
-    const handleBackClick = (e: React.MouseEvent) => {
+    const handleBackClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       onBackClick(e)
       setSlide(slides.backward)
+      headerButtonCallback(e, -1)
     }
     const animationRef = React.useRef<HTMLDivElement>()
     React.useEffect(() => {
@@ -94,12 +102,6 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
       uniqueId(`${calendar.month}_${calendar.year}`)
     )
 
-    const dayKeyHandlers = useKeyEvents({
-      selected,
-      calendars,
-      getBackProps,
-      getForwardProps
-    })
     if (calendars.length) {
       return (
         <div

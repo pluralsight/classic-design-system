@@ -97,6 +97,18 @@ export const useKeyEvents = ({
       }
     return handleKeyDown
   }
-
-  return dayKeyHandlers
+  const headerButtonCallback = (
+    evt: React.MouseEvent<HTMLButtonElement>,
+    dir: 1 | -1
+  ) => {
+    if (focusedDate) {
+      const nextDate =
+        dir === 1
+          ? add(focusedDate, { months: 1 })
+          : sub(focusedDate, { months: 1 })
+      setFocusedDate(nextDate)
+      dir === 1 ? moveMonthForward(evt) : moveMonthBackward(evt)
+    }
+  }
+  return { dayKeyHandlers, headerButtonCallback }
 }

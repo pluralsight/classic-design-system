@@ -66,6 +66,10 @@ export const DatePicker: React.FC<DatePickerProps> = ({
       const key = evt.key.toLowerCase()
       key === 'escape' && setOpen(false)
     }
+  const handleFocus: React.FocusEventHandler<HTMLInputElement> = evt => {
+    console.log({ evt, open })
+    open && setOpen(false)
+  }
   const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
   const [value, onChange] = useDateSelectChange({
     selected,
@@ -106,6 +110,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         onChange={onChange}
         onClick={handleIconClick}
         onKeyDown={handleTextfieldKeyDown}
+        onFocus={handleFocus}
         placeholder="mm/dd/yyyy"
         prefix={prefix}
         renderContainer={renderContainer}

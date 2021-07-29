@@ -16,6 +16,7 @@ export const TextInputField: React.FC<TextInputFieldProps> = props => {
     label,
     onChange,
     onClick,
+    onFocus,
     placeholder,
     prefix,
     subLabel,
@@ -59,6 +60,7 @@ export const TextInputField: React.FC<TextInputFieldProps> = props => {
         disabled={disabled}
         id={inputId}
         onChange={onChange}
+        onFocus={onFocus}
         placeholder={placeholder}
         value={value}
       />
