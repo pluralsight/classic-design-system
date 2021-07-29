@@ -107,13 +107,12 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
         onMouseOut={handleMouseOut}
         onMouseOver={handleMouseOver}
         ref={ref}
-        role="none"
+        role="menuitem"
         tabIndex={!disabled ? -1 : undefined}
       >
         <Component
           aria-haspopup={!!nested}
           onClick={handleClick}
-          role="menuitem"
           aria-disabled={Boolean(disabled)}
           {...(Component === 'button' && { disabled })}
           {...(rest as React.HTMLAttributes<
@@ -132,19 +131,21 @@ export const Item = React.forwardRef<HTMLLIElement, ItemProps>(
           </span>
         </Component>
 
-        <ul
-          className={classNames(
-            'psds-actionmenu',
-            'psds-actionmenu__nested',
-            `psds-actionmenu--origin-${dashify(origin || originContext)}`
-          )}
-          aria-expanded={open}
-          onKeyDown={handleArrowLeft}
-          ref={subMenuRef}
-          role="menu"
-        >
-          {!disabled && nested}
-        </ul>
+        {nested && (
+          <ul
+            className={classNames(
+              'psds-actionmenu',
+              'psds-actionmenu__nested',
+              `psds-actionmenu--origin-${dashify(origin || originContext)}`
+            )}
+            aria-expanded={open}
+            onKeyDown={handleArrowLeft}
+            ref={subMenuRef}
+            {...(!disabled && { role: 'menu' })}
+          >
+            {!disabled && nested}
+          </ul>
+        )}
       </li>
     )
   }
