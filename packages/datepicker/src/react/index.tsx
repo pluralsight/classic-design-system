@@ -4,7 +4,7 @@ export {
   useIsInRange,
   onRangeDateSelected,
   onMultiDateSelected,
-  useDateSelectChange,
-  useRangeSelectChange
+  handleDateSelectChange,
+  handleRangeSelectChange
 } from './utils'
 export { DatePicker } from './datepicker'

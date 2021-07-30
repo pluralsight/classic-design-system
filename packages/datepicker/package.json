@@ -34,6 +34,7 @@
     "@pluralsight/ps-design-system-button": "^23.0.1",
     "@pluralsight/ps-design-system-core": "^9.0.0",
     "@pluralsight/ps-design-system-field": "^5.0.1",
+    "@pluralsight/ps-design-system-focusmanager": "^7.1.19",
     "@pluralsight/ps-design-system-icon": "^24.0.1",
     "@pluralsight/ps-design-system-textinput": "^11.1.17",
     "@pluralsight/ps-design-system-util": "^9.3.0",

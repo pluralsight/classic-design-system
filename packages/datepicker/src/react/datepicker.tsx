@@ -1,18 +1,17 @@
 import Field from '@pluralsight/ps-design-system-field'
 import {
-  ValueOf,
   canUseDOM,
   RefFor,
   uniqueId as defaultUniqueId
 } from '@pluralsight/ps-design-system-util'
+import { format } from 'date-fns'
 import { useDayzed, DateObj } from 'dayzed'
 import React from 'react'
 
 import { Calendar } from './calendar'
 import { CalendarDates } from './calendar-dates'
 import { TextInputField } from './text-input-field'
-import { useDateSelectChange } from './utils'
-import { slides } from '../vars/index'
+import { handleDateSelectChange } from './utils'
 
 interface DatePickerProps
   extends Omit<React.ComponentProps<typeof Field>, 'onSelect'> {
@@ -42,9 +41,14 @@ export const DatePicker: React.FC<DatePickerProps> = ({
 
   React.useEffect(() => setSelected(valueFromProps), [valueFromProps])
   const [open, setOpen] = React.useState<boolean>(false)
+  const [value, setValue] = React.useState<string>('')
+
+  const dateFormat = 'MM/dd/yyyy'
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
+    const nextSelected = dateObj.date
     onSelect && onSelect(evt, dateObj)
-    setSelected(dateObj.date)
+    setSelected(nextSelected)
+    setValue(format(nextSelected, dateFormat))
     setOpen(false)
   }
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
@@ -64,12 +68,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   const handleFocus: React.FocusEventHandler<HTMLInputElement> = evt => {
     open && setOpen(false)
   }
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [value, onChange] = useDateSelectChange({
-    selected,
-    setSlide,
-    setSelected
-  })
+
   const ref = React.useRef<HTMLDivElement | undefined>()
   React.useEffect(() => {
     if (!canUseDOM()) return () => {}
@@ -91,6 +90,16 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   }, [setOpen])
   const labelId = uniqueId('text-input__label-')
   const inputId = uniqueId('text-input__input-')
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setValue(nextValue)
+    handleDateSelectChange({
+      selected,
+      setSelected,
+      value: nextValue,
+      dateFormat
+    })
+  }
   return (
     <div
       style={{ display: 'inline-block', position: 'relative' }}
@@ -101,7 +110,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         disabled={disabled}
         error={error}
         label={label}
-        onChange={onChange}
+        onChange={handleChange}
         onClick={handleIconClick}
         onKeyDown={handleTextfieldKeyDown}
         onFocus={handleFocus}
@@ -122,7 +131,6 @@ export const DatePicker: React.FC<DatePickerProps> = ({
           selected={selected}
           onDateSelected={onDateSelected}
           labelId={labelId}
-          slide={slide}
           handleEscapeKeyDown={handleEscapeKeyDown}
           uniqueId={uniqueId}
         />
@@ -135,7 +143,6 @@ interface CalendarWrapperProps {
   selected?: Date
   onDateSelected: (dateObj: DateObj, evt: React.SyntheticEvent) => void
   labelId: string
-  slide: ValueOf<typeof slides>
   handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement>
   uniqueId: (prefix: string) => string
 }
@@ -144,7 +151,6 @@ const CalendarWrapper: React.FC<CalendarWrapperProps> = ({
   selected,
   onDateSelected,
   labelId,
-  slide,
   handleEscapeKeyDown,
   uniqueId
 }) => {
@@ -156,11 +162,11 @@ const CalendarWrapper: React.FC<CalendarWrapperProps> = ({
   return (
     <Calendar
       {...dayzedData}
+      trapped={true}
       aria-modal="true"
       aria-labelledby={labelId}
       aria-live="polite"
       style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
-      slide={slide}
       onKeyDown={handleEscapeKeyDown}
       uniqueId={uniqueId}
       selected={selected}

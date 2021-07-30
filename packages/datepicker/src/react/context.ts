@@ -2,6 +2,7 @@ import React from 'react'
 import type { Calendar } from 'dayzed'
 interface DateContextInterface extends Calendar {
   'aria-labelledby': string
+  focusable?: Date
   dayKeyHandlers: (
     date: Date,
     dateObj: {

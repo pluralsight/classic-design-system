@@ -1,5 +1,6 @@
 import { classNames } from '@pluralsight/ps-design-system-util'
 import type { DateObj, RenderProps } from 'dayzed'
+import { isSameDay } from 'date-fns'
 import React from 'react'
 
 import '../css/index.css'
@@ -48,6 +49,8 @@ export const CalendarDates: React.FC<CalendarDatesProps> = ({
             dateObj
           })
           const handleKeyDown = calendar.dayKeyHandlers(date, dateObj)
+          const focusable =
+            calendar.focusable && isSameDay(calendar.focusable, date)
           return children(
             {
               key,
@@ -55,7 +58,7 @@ export const CalendarDates: React.FC<CalendarDatesProps> = ({
               children: date.getDate(),
               disabled: !selectable,
               onKeyDown: handleKeyDown,
-              tabIndex: selected ? 0 : -1,
+              tabIndex: selected || focusable ? 0 : -1,
               className: classNames(
                 'psds-calendar__date',
                 selected && 'psds-calendar__date--selected',

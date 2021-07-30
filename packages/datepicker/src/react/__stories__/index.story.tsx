@@ -1,10 +1,11 @@
 import Field from '@pluralsight/ps-design-system-field'
 import { HomeIcon, CalendarIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput from '@pluralsight/ps-design-system-textinput'
-import { ValueOf, classNames } from '@pluralsight/ps-design-system-util'
+import { classNames } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 import { DateObj, useDayzed } from 'dayzed'
+import { format } from 'date-fns'
 
 import {
   Calendar,
@@ -13,10 +14,9 @@ import {
   useIsInRange,
   onRangeDateSelected,
   onMultiDateSelected,
-  useDateSelectChange,
-  useRangeSelectChange
+  handleDateSelectChange,
+  handleRangeSelectChange
 } from '../index'
-import { slides } from '../../vars/index'
 
 export default {
   title: 'Components/DatePicker',
@@ -99,7 +99,9 @@ export const CalendarWithInput: Story = () => {
   const [selected, setSelected] = React.useState<Date | undefined>()
   const [open, setOpen] = React.useState<boolean>(false)
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
-    setSelected(dateObj.date)
+    const nextSelected = dateObj.date
+    setSelected(nextSelected)
+    setValue(format(nextSelected, dateFormat))
     setOpen(false)
   }
   const { getDateProps, ...dayzedData } = useDayzed({
@@ -110,16 +112,23 @@ export const CalendarWithInput: Story = () => {
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
     setOpen(!open)
   }
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [value, onChange] = useDateSelectChange({
-    selected,
-    setSlide,
-    setSelected
-  })
+  const [value, setValue] = React.useState<string>('')
+
+  const dateFormat = 'MM/dd/yyyy'
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setValue(nextValue)
+    handleDateSelectChange({
+      selected,
+      setSelected,
+      value: nextValue,
+      dateFormat
+    })
+  }
   return (
     <div style={{ display: 'inline-block', position: 'relative' }}>
       <TextInput
-        onChange={onChange}
+        onChange={handleChange}
         value={value}
         placeholder="mm/dd/yyyy"
         icon={
@@ -134,7 +143,6 @@ export const CalendarWithInput: Story = () => {
         <Calendar
           {...dayzedData}
           style={{ position: 'absolute', marginTop: 4 }}
-          slide={slide}
           tabIndex={0}
         >
           <CalendarDates getDateProps={getDateProps}>
@@ -304,30 +312,48 @@ export const RangeDateCalendarWithButton: Story = () => {
 
 export const RangeDateCalendarWithInput: Story = () => {
   const [selected, setSelected] = React.useState<Date[] | undefined>()
+  const [startValue, setStartValue] = React.useState<string>('')
+  const [endValue, setEndValue] = React.useState<string>('')
   const { getDateProps, ...dayzedData } = useDayzed({
     selected,
-    onDateSelected: onRangeDateSelected({ selected, setSelected }),
+    onDateSelected: onRangeDateSelected({
+      selected,
+      setSelected,
+      setStartValue,
+      setEndValue
+    }),
     date: new Date('05/30/2020')
   })
   const { onMouseLeave, onMouseEnter, isInRange } = useIsInRange(selected)
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [startValue, onStartChange] = useRangeSelectChange({
-    start: true,
-    selected,
-    setSlide,
-    setSelected
-  })
-  const [endValue, onEndChange] = useRangeSelectChange({
-    start: false,
-    selected,
-    setSlide,
-    setSelected
-  })
+  const dateFormat = 'MM/dd/yyyy'
+  const onStartChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setStartValue(nextValue)
+    handleRangeSelectChange({
+      dateFormat,
+      selected,
+      setSelected,
+      start: true,
+      value: nextValue
+    })
+  }
+
+  const onEndChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setEndValue(nextValue)
+    handleRangeSelectChange({
+      dateFormat,
+      selected,
+      setSelected,
+      start: false,
+      value: nextValue
+    })
+  }
   return (
     <div>
       <TextInput label="Start" onChange={onStartChange} value={startValue} />
       <TextInput label="End" onChange={onEndChange} value={endValue} />
-      <Calendar {...dayzedData} onMouseLeave={onMouseLeave} slide={slide}>
+      <Calendar {...dayzedData} onMouseLeave={onMouseLeave}>
         <CalendarDates getDateProps={getDateProps}>
           {(renderProps, dateObj) => {
             return (
@@ -349,31 +375,49 @@ export const RangeDateCalendarWithInput: Story = () => {
 
 export const RangeDateCalendarWithInputTwoMonths: Story = () => {
   const [selected, setSelected] = React.useState<Date[] | undefined>()
+  const [startValue, setStartValue] = React.useState<string>('')
+  const [endValue, setEndValue] = React.useState<string>('')
   const { getDateProps, ...dayzedData } = useDayzed({
     monthsToDisplay: 2,
     selected,
-    onDateSelected: onRangeDateSelected({ selected, setSelected }),
+    onDateSelected: onRangeDateSelected({
+      selected,
+      setSelected,
+      setStartValue,
+      setEndValue
+    }),
     date: new Date('05/30/2020')
   })
   const { onMouseLeave, onMouseEnter, isInRange } = useIsInRange(selected)
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [startValue, onStartChange] = useRangeSelectChange({
-    start: true,
-    selected,
-    setSlide,
-    setSelected
-  })
-  const [endValue, onEndChange] = useRangeSelectChange({
-    start: false,
-    selected,
-    setSlide,
-    setSelected
-  })
+  const dateFormat = 'MM/dd/yyyy'
+  const onStartChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setStartValue(nextValue)
+    handleRangeSelectChange({
+      dateFormat,
+      selected,
+      setSelected,
+      start: true,
+      value: nextValue
+    })
+  }
+
+  const onEndChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setEndValue(nextValue)
+    handleRangeSelectChange({
+      dateFormat,
+      selected,
+      setSelected,
+      start: false,
+      value: nextValue
+    })
+  }
   return (
     <>
       <TextInput label="Start" onChange={onStartChange} value={startValue} />
       <TextInput label="End" onChange={onEndChange} value={endValue} />
-      <Calendar {...dayzedData} onMouseLeave={onMouseLeave} slide={slide}>
+      <Calendar {...dayzedData} onMouseLeave={onMouseLeave}>
         <CalendarDates getDateProps={getDateProps}>
           {(renderProps, dateObj) => {
             return (

@@ -13,9 +13,8 @@ import {
   useIsInRange,
   onRangeDateSelected,
   onMultiDateSelected,
-  useDateSelectChange,
-  useRangeSelectChange,
-  DatePicker
+  handleDateSelectChange,
+  handleRangeSelectChange
 } from '..'
 import * as stories from '../__stories__/index.story'
 
@@ -283,19 +282,23 @@ test('onMultiDateSelected: selectable (toggle test)', () => {
 test('useDateSelectChange', () => {
   const { result } = renderHook(() => {
     const [selected, setSelected] = React.useState<Date | undefined>()
-    const [slide, setSlide] = React.useState<
-      'forward' | 'backward' | undefined
-    >()
-    const [value, onChange] = useDateSelectChange({
-      setSelected,
-      selected,
-      setSlide
-    })
-    return { selected, slide, value, onChange }
+    const [value, setValue] = React.useState<string>('')
+
+    const dateFormat = 'MM/dd/yyyy'
+    const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+      const nextValue = evt.target.value
+      setValue(nextValue)
+      handleDateSelectChange({
+        selected,
+        setSelected,
+        value: nextValue,
+        dateFormat
+      })
+    }
+    return { selected, value, onChange }
   })
   expect(result.current.value).toBe('')
   expect(result.current.selected).toBe(undefined)
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onChange({
       target: { value: '1/10' }
@@ -303,7 +306,6 @@ test('useDateSelectChange', () => {
   })
   expect(result.current.value).toBe('1/10')
   expect(result.current.selected).toBe(undefined)
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onChange({
       target: { value: '01/10/2020' }
@@ -313,7 +315,6 @@ test('useDateSelectChange', () => {
   expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('01/10/2020'))
   )
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onChange({
       target: { value: '08/10/2020' }
@@ -323,7 +324,6 @@ test('useDateSelectChange', () => {
   expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('08/10/2020'))
   )
-  expect(result.current.slide).toBe('forward')
   act(() => {
     result.current.onChange({
       target: { value: '03/10/2020' }
@@ -333,7 +333,6 @@ test('useDateSelectChange', () => {
   expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('03/10/2020'))
   )
-  expect(result.current.slide).toBe('backward')
   act(() => {
     result.current.onChange({
       target: { value: '13/10/2020' }
@@ -343,7 +342,6 @@ test('useDateSelectChange', () => {
   expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('03/10/2020'))
   )
-  expect(result.current.slide).toBeUndefined()
   act(() => {
     result.current.onChange({
       target: { value: '03/11/2020' }
@@ -353,23 +351,25 @@ test('useDateSelectChange', () => {
   expect(formatISO(result.current.selected!)).toBe(
     formatISO(new Date('03/11/2020'))
   )
-  expect(result.current.slide).toBe(undefined)
 })
 
 test('useDateSelectChange: custom date format', () => {
   const { result } = renderHook(() => {
     const [selected, setSelected] = React.useState<Date | undefined>()
-    const [slide, setSlide] = React.useState<
-      'forward' | 'backward' | undefined
-    >()
     const dateFormat = 'yyyy-MM-dd'
-    const [value, onChange] = useDateSelectChange({
-      setSelected,
-      selected,
-      setSlide,
-      dateFormat
-    })
-    return { selected, slide, value, onChange }
+
+    const [value, setValue] = React.useState<string>('')
+    const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+      const nextValue = evt.target.value
+      setValue(nextValue)
+      handleDateSelectChange({
+        selected,
+        setSelected,
+        value: nextValue,
+        dateFormat
+      })
+    }
+    return { selected, value, onChange }
   })
   act(() => {
     result.current.onChange({
@@ -392,24 +392,34 @@ test('useDateSelectChange: custom date format', () => {
 test('useRangeSelectChange', () => {
   const { result } = renderHook(() => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
-    const [slide, setSlide] = React.useState<
-      'forward' | 'backward' | undefined
-    >()
-    const [startValue, onStartChange] = useRangeSelectChange({
-      start: true,
-      setSelected,
-      selected,
-      setSlide
-    })
-    const [endValue, onEndChange] = useRangeSelectChange({
-      start: false,
-      setSelected,
-      selected,
-      setSlide
-    })
+    const [startValue, setStartValue] = React.useState<string>('')
+    const [endValue, setEndValue] = React.useState<string>('')
+    const dateFormat = 'MM/dd/yyyy'
+    const onStartChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+      const nextValue = evt.target.value
+      setStartValue(nextValue)
+      handleRangeSelectChange({
+        dateFormat,
+        selected,
+        setSelected,
+        start: true,
+        value: nextValue
+      })
+    }
+
+    const onEndChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+      const nextValue = evt.target.value
+      setEndValue(nextValue)
+      handleRangeSelectChange({
+        dateFormat,
+        selected,
+        setSelected,
+        start: false,
+        value: nextValue
+      })
+    }
     return {
       selected,
-      slide,
       startValue,
       onStartChange,
       endValue,
@@ -419,7 +429,6 @@ test('useRangeSelectChange', () => {
   expect(result.current.startValue).toBe('')
   expect(result.current.endValue).toBe('')
   expect(result.current.selected).toBe(undefined)
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onEndChange({
       target: { value: '03/11' }
@@ -428,7 +437,6 @@ test('useRangeSelectChange', () => {
   expect(result.current.startValue).toBe('')
   expect(result.current.endValue).toBe('03/11')
   expect(result.current.selected).toBe(undefined)
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onStartChange({
       target: { value: '03/01' }
@@ -437,7 +445,6 @@ test('useRangeSelectChange', () => {
   expect(result.current.startValue).toBe('03/01')
   expect(result.current.endValue).toBe('03/11')
   expect(result.current.selected).toBe(undefined)
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onStartChange({
       target: { value: '03/01' }
@@ -451,7 +458,6 @@ test('useRangeSelectChange', () => {
   expect(result.current.startValue).toBe('03/01')
   expect(result.current.endValue).toBe('03/11/2021')
   expect(result.current.selected).toStrictEqual([])
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onStartChange({
       target: { value: '03/01/2020' }
@@ -467,7 +473,6 @@ test('useRangeSelectChange', () => {
   )
   expect(result.current.startValue).toBe('03/01/2020')
   expect(result.current.endValue).toBe('03/11')
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onEndChange({
       target: { value: '03/11/2020' }
@@ -480,7 +485,6 @@ test('useRangeSelectChange', () => {
   )
   expect(result.current.startValue).toBe('03/01/2020')
   expect(result.current.endValue).toBe('03/11/2020')
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onStartChange({
       target: { value: '03/05/2020' }
@@ -498,7 +502,6 @@ test('useRangeSelectChange', () => {
   )
   expect(result.current.startValue).toBe('03/05/2020')
   expect(result.current.endValue).toBe('03/21/2020')
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onEndChange({
       target: { value: '05/21/2020' }
@@ -511,7 +514,6 @@ test('useRangeSelectChange', () => {
   )
   expect(result.current.startValue).toBe('03/05/2020')
   expect(result.current.endValue).toBe('05/21/2020')
-  expect(result.current.slide).toBe('forward')
   act(() => {
     result.current.onStartChange({
       target: { value: '02/05/2020' }
@@ -524,7 +526,6 @@ test('useRangeSelectChange', () => {
   )
   expect(result.current.startValue).toBe('02/05/2020')
   expect(result.current.endValue).toBe('05/21/2020')
-  expect(result.current.slide).toBe('backward')
 })
 
 describe('accessibility', () => {
@@ -541,27 +542,34 @@ describe('accessibility', () => {
 test('useRangeSelectChange: custom date format', () => {
   const { result } = renderHook(() => {
     const [selected, setSelected] = React.useState<Date[] | undefined>()
-    const [slide, setSlide] = React.useState<
-      'forward' | 'backward' | undefined
-    >()
     const dateFormat = 'yyyy-MM-dd'
-    const [startValue, onStartChange] = useRangeSelectChange({
-      start: true,
-      setSelected,
-      selected,
-      setSlide,
-      dateFormat
-    })
-    const [endValue, onEndChange] = useRangeSelectChange({
-      start: false,
-      setSelected,
-      selected,
-      setSlide,
-      dateFormat
-    })
+    const [startValue, setStartValue] = React.useState<string>('')
+    const [endValue, setEndValue] = React.useState<string>('')
+    const onStartChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+      const nextValue = evt.target.value
+      setStartValue(nextValue)
+      handleRangeSelectChange({
+        dateFormat,
+        selected,
+        setSelected,
+        start: true,
+        value: nextValue
+      })
+    }
+
+    const onEndChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+      const nextValue = evt.target.value
+      setEndValue(nextValue)
+      handleRangeSelectChange({
+        dateFormat,
+        selected,
+        setSelected,
+        start: false,
+        value: nextValue
+      })
+    }
     return {
       selected,
-      slide,
       startValue,
       onStartChange,
       endValue,
@@ -581,7 +589,6 @@ test('useRangeSelectChange: custom date format', () => {
   expect(result.current.startValue).toBe('03/01/2021')
   expect(result.current.endValue).toBe('03/11/2021')
   expect(result.current.selected).toStrictEqual(undefined)
-  expect(result.current.slide).toBe(undefined)
   act(() => {
     result.current.onStartChange({
       target: { value: '2021-03-01' }

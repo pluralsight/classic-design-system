@@ -10,8 +10,10 @@ import {
   uniqueId as defaultUniqueId,
   classNames
 } from '@pluralsight/ps-design-system-util'
+import FocusManager from '@pluralsight/ps-design-system-focusmanager'
 import Theme from '@pluralsight/ps-design-system-theme'
 import type { RenderProps } from 'dayzed'
+import { format } from 'date-fns'
 import React from 'react'
 
 import '../css/index.css'
@@ -38,9 +40,11 @@ const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 interface CalendarProps
   extends React.HTMLAttributes<HTMLDivElement>,
     Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
-  slide?: ValueOf<typeof slides>
   uniqueId?: (prefix: string) => string
   selected?: Date
+  autofocus?: boolean
+  trapped?: boolean
+  returnFocus?: boolean
 }
 
 export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
@@ -51,33 +55,49 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
       getBackProps,
       getForwardProps,
       children,
-      slide,
       uniqueId = defaultUniqueId,
       selected = new Date(),
+      autofocus = false,
+      trapped = false,
+      returnFocus = false,
       ...rest
     },
     ref
   ) => {
-    const [_slide, setSlide] = React.useState<ValueOf<typeof slides>>(slide)
+    const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
     const [height, setHeight] = React.useState<number | undefined>()
+    const [focusable, setFocusable] = React.useState<Date | undefined>(selected)
     const { onClick: onBackClick, ...backRest } = getBackProps({ calendars })
     const { onClick: onForwardClick, ...forwardRest } = getForwardProps({
       calendars
     })
+    const focusNext = () => {
+      focusable &&
+        document
+          .querySelector<HTMLButtonElement>(
+            `[aria-label="${format(focusable, 'EEE LLL dd yyyy')}"]`
+          )
+          ?.focus()
+    }
+    React.useEffect(() => {
+      focusNext()
+    })
     const { dayKeyHandlers, headerButtonCallback } = useKeyEvents({
-      selected,
+      focusNext,
       calendars,
       getBackProps,
-      getForwardProps
+      getForwardProps,
+      setSlide,
+      setFocusable,
+      focusable
     })
     const handleForwardClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       onForwardClick(e)
-      setSlide(slides.forward)
       headerButtonCallback(e, 1)
+      e.currentTarget.focus()
     }
     const handleBackClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       onBackClick(e)
-      setSlide(slides.backward)
       headerButtonCallback(e, -1)
     }
     const animationRef = React.useRef<HTMLDivElement>()
@@ -87,7 +107,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
         const { height } = el.getBoundingClientRect()
         setHeight(height)
       }
-    }, [_slide, slide])
+    }, [slide])
     React.useEffect(() => {
       const el = animationRef.current
       if (el) {
@@ -104,7 +124,10 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
 
     if (calendars.length) {
       return (
-        <div
+        <FocusManager
+          autofocus={autofocus}
+          trapped={trapped}
+          returnFocus={returnFocus}
           {...rest}
           className={classNames('psds-calendar', className)}
           ref={ref}
@@ -130,7 +153,6 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                     )}
                     <h2
                       key={`${calendar.month}${calendar.year}`}
-                      aria-live="polite"
                       id={gridLabels[i]}
                       className="psds-calendar__header-month"
                     >
@@ -164,8 +186,8 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
             <div
               className={classNames(
                 'psds-calendar__grid-slide',
-                _slide === 'forward' && 'psds-calendar__grid-slide--forward',
-                _slide === 'backward' && 'psds-calendar__grid-slide--backward'
+                slide === 'forward' && 'psds-calendar__grid-slide--forward',
+                slide === 'backward' && 'psds-calendar__grid-slide--backward'
               )}
               ref={animationRef as RefFor<'div'>}
             >
@@ -178,7 +200,8 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                     value={{
                       ...calendar,
                       'aria-labelledby': gridLabels[i],
-                      dayKeyHandlers
+                      dayKeyHandlers,
+                      focusable
                     }}
                   >
                     {children}
@@ -187,7 +210,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
               ))}
             </div>
           </div>
-        </div>
+        </FocusManager>
       )
     }
     return null

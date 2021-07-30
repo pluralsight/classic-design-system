@@ -1,40 +1,27 @@
 import React from 'react'
 import { GetBackForwardPropsOptions, Calendar } from 'dayzed'
-import { format, endOfWeek, startOfWeek, add, sub, getMonth } from 'date-fns'
-import { useDebounceCallback } from '@pluralsight/ps-design-system-util'
+import { endOfWeek, startOfWeek, add, sub, getMonth } from 'date-fns'
+import { ValueOf } from '@pluralsight/ps-design-system-util'
+import { slides } from '../vars/index'
 
 interface UseKeyEvents {
-  selected: Date
   calendars: Calendar[]
   getBackProps: (data: GetBackForwardPropsOptions) => Record<string, any>
   getForwardProps: (data: GetBackForwardPropsOptions) => Record<string, any>
+  setSlide: React.Dispatch<React.SetStateAction<ValueOf<typeof slides>>>
+  setFocusable: React.Dispatch<React.SetStateAction<Date | undefined>>
+  focusable?: Date
+  focusNext: (this: void, ...args: any[]) => void
 }
 export const useKeyEvents = ({
-  selected,
+  focusNext,
   calendars,
   getBackProps,
-  getForwardProps
+  getForwardProps,
+  setSlide,
+  setFocusable,
+  focusable
 }: UseKeyEvents) => {
-  const [focusedDate, setFocusedDate] = React.useState<Date | undefined>(
-    selected
-  )
-  const updateFocused = () => {
-    focusedDate &&
-      document
-        .querySelector<HTMLButtonElement>(
-          `[aria-label="${format(focusedDate, 'EEE LLL dd yyyy')}"]`
-        )
-        ?.focus()
-  }
-
-  const focusNext = useDebounceCallback(updateFocused, 100)
-
-  React.useEffect(() => {
-    focusNext()
-  }, [focusedDate, focusNext])
-  React.useEffect(() => {
-    focusNext()
-  }, [selected])
   const moveMonthForward = getForwardProps({ calendars }).onClick
   const moveMonthBackward = getBackProps({ calendars }).onClick
   const moveYearForward = getForwardProps({ calendars, offset: 12 }).onClick
@@ -53,7 +40,7 @@ export const useKeyEvents = ({
           : sub(date, {
               days: shift
             })
-      setFocusedDate(nextDate)
+      setFocusable(nextDate)
       const months = calendars?.map(calendar => calendar.month) as number[]
 
       if (!months.includes(getMonth(nextDate))) {
@@ -65,10 +52,12 @@ export const useKeyEvents = ({
               evt as unknown as React.MouseEvent<HTMLButtonElement>
             )
       }
+      focusNext()
     }
     const handleWeekEndStartFocus = (dir: 1 | -1) => {
       const nextDate = dir === -1 ? startOfWeek(date) : endOfWeek(date)
-      setFocusedDate(nextDate)
+      setFocusable(nextDate)
+      focusNext()
     }
     const handleMonthYearShift = (
       dir: 1 | -1,
@@ -78,13 +67,16 @@ export const useKeyEvents = ({
       const _evt = evt as unknown as React.MouseEvent<HTMLButtonElement>
       const args = shiftKey ? { years: 1 } : { months: 1 }
       const nextDate = dir === 1 ? add(date, args) : sub(date, args)
-      setFocusedDate(nextDate)
+      setFocusable(nextDate)
       if (dir === 1) {
         shiftKey ? moveYearForward(_evt) : moveMonthForward(_evt)
+        setSlide(slides.forward)
       }
       if (dir === -1) {
         shiftKey ? moveYearBackward(_evt) : moveMonthBackward(_evt)
+        setSlide(slides.backward)
       }
+      focusNext()
     }
     const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> =
       evt => {
@@ -104,14 +96,25 @@ export const useKeyEvents = ({
     evt: React.MouseEvent<HTMLButtonElement>,
     dir: 1 | -1
   ) => {
-    if (focusedDate) {
+    if (focusable) {
       const nextDate =
         dir === 1
-          ? add(focusedDate, { months: 1 })
-          : sub(focusedDate, { months: 1 })
-      setFocusedDate(nextDate)
-      dir === 1 ? moveMonthForward(evt) : moveMonthBackward(evt)
+          ? add(focusable, { months: 1 })
+          : sub(focusable, { months: 1 })
+      setFocusable(nextDate)
+      if (dir === 1) {
+        moveMonthForward(evt)
+        setSlide(slides.forward)
+      }
+      if (dir === -1) {
+        moveMonthBackward(evt)
+        setSlide(slides.backward)
+      }
     }
   }
-  return { dayKeyHandlers, headerButtonCallback }
+  return {
+    dayKeyHandlers,
+    headerButtonCallback,
+    focusNext
+  }
 }

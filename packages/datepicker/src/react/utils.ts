@@ -1,11 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import { ValueOf, classNames } from '@pluralsight/ps-design-system-util'
-import { differenceInCalendarMonths, format, parse, isMatch } from 'date-fns'
+import { classNames } from '@pluralsight/ps-design-system-util'
+import { parse, isMatch, format } from 'date-fns'
 import type { DateObj } from 'dayzed'
 import React from 'react'
 
 import '../css/index.css'
-import { slides } from '../vars/index'
 
 export const useIsInRange = (selected: Date[] = []) => {
   const [hoveredDate, setHoveredDate] = React.useState<Date | undefined>()
@@ -54,14 +53,24 @@ export const useIsInRange = (selected: Date[] = []) => {
   return { onMouseLeave, onMouseEnter, isInRange }
 }
 
-interface OnMultipleDatesSelected {
+interface OnRangeDateSelected {
+  dateFormat?: string
   setSelected: (arr: Date[]) => void
   selected?: Date[]
   onSelect?: (evt: React.SyntheticEvent, selectedDate: DateObj) => void
+  setEndValue?: React.Dispatch<React.SetStateAction<string>>
+  setStartValue?: React.Dispatch<React.SetStateAction<string>>
 }
 
 export const onRangeDateSelected =
-  ({ selected = [], setSelected, onSelect }: OnMultipleDatesSelected) =>
+  ({
+    selected = [],
+    setSelected,
+    onSelect,
+    dateFormat = 'MM/dd/yyyy',
+    setEndValue,
+    setStartValue
+  }: OnRangeDateSelected) =>
   (dateObj: DateObj, evt: React.SyntheticEvent) => {
     const { selectable, date } = dateObj
     if (!selectable) {
@@ -78,12 +87,18 @@ export const onRangeDateSelected =
           newDates.unshift(date)
         }
         setSelected(newDates)
+        setStartValue && setStartValue(format(newDates[0], dateFormat))
+        setEndValue && setEndValue(format(newDates[1], dateFormat))
       } else if (newDates.length === 2) {
         setSelected([date])
+        setStartValue && setStartValue(format(date, dateFormat))
+        setEndValue && setEndValue('')
       }
     } else {
       newDates.push(date)
       setSelected(newDates)
+      setStartValue && setStartValue(format(newDates[0], dateFormat))
+      setEndValue && setEndValue(format(newDates[1], dateFormat))
     }
     onSelect && onSelect(evt, dateObj)
   }
@@ -107,7 +122,11 @@ const getDateIndex = (
 }
 
 export const onMultiDateSelected =
-  ({ selected = [], setSelected, onSelect }: OnMultipleDatesSelected) =>
+  ({
+    selected = [],
+    setSelected,
+    onSelect
+  }: Omit<OnRangeDateSelected, 'setEndValue' | 'setStartValue'>) =>
   (dateObj: DateObj, evt: React.SyntheticEvent) => {
     const { selected: isSelected, selectable, date } = dateObj
     if (!selectable) {
@@ -128,115 +147,63 @@ export const onMultiDateSelected =
   }
 
 interface HandleChange<T> {
-  selected?: T
-  setSlide: React.Dispatch<React.SetStateAction<ValueOf<typeof slides>>>
-  setSelected: React.Dispatch<React.SetStateAction<T | undefined>>
   dateFormat?: string
+  selected?: T
+  setSelected: React.Dispatch<React.SetStateAction<T | undefined>>
+  value: string
 }
 
-export const useDateSelectChange = ({
+export const handleDateSelectChange = ({
   selected,
-  setSlide,
   setSelected,
+  value,
   dateFormat = 'MM/dd/yyyy'
-}: HandleChange<Date>): [
-  string,
-  (event: React.ChangeEvent<HTMLInputElement>) => void
-] => {
-  const [value, setValue] = React.useState<string>(
-    selected ? format(selected, dateFormat) : ''
-  )
-  React.useEffect(() => {
-    selected ? setValue(format(selected, dateFormat)) : ''
-  }, [selected])
-  const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
-    const nextValue = evt.target.value
-    setValue(nextValue)
-    let fulldate = false
-    try {
-      fulldate = isMatch(nextValue, dateFormat)
-    } catch (err) {
-      if (!(err instanceof RangeError)) {
-        throw err
-      }
-    }
-    const nextSelected = fulldate
-      ? parse(nextValue, dateFormat, new Date())
-      : selected
-
-    if (
-      nextSelected instanceof Date &&
-      !isNaN(nextSelected as unknown as number)
-    ) {
-      let nextSlide: ValueOf<typeof slides>
-      if (selected) {
-        nextSlide =
-          differenceInCalendarMonths(nextSelected, selected) > 0
-            ? 'forward'
-            : differenceInCalendarMonths(nextSelected, selected) < 0
-            ? 'backward'
-            : undefined
-      }
-      setSelected(nextSelected)
-      setSlide(nextSlide)
+}: HandleChange<Date>): void => {
+  let fulldate = false
+  try {
+    fulldate = isMatch(value, dateFormat)
+  } catch (err) {
+    if (!(err instanceof RangeError)) {
+      throw err
     }
   }
-  return [value, onChange]
+  const nextSelected = fulldate
+    ? parse(value, dateFormat, new Date())
+    : selected
+  setSelected(nextSelected)
 }
+
 interface HandleRangeChange extends HandleChange<Date[]> {
   start: boolean
 }
 
-export const useRangeSelectChange = ({
+export const handleRangeSelectChange = ({
   start,
   selected = [],
-  setSlide,
+  value,
   setSelected,
   dateFormat = 'MM/dd/yyyy'
-}: HandleRangeChange): [
-  string,
-  (event: React.ChangeEvent<HTMLInputElement>) => void
-] => {
-  const _selected = start ? selected[0] : selected[1]
-  const [value, setValue] = React.useState<string>(
-    _selected ? format(_selected, dateFormat) : ''
-  )
-  React.useEffect(() => {
-    _selected ? setValue(format(_selected, dateFormat)) : ''
-  }, [_selected])
-  const onChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
-    const nextValue = evt.target.value
-    setValue(nextValue)
-    let fulldate = false
-    try {
-      fulldate = isMatch(nextValue, dateFormat)
-    } catch (err) {
-      if (!(err instanceof RangeError)) {
-        throw err
-      }
-    }
-    const nextSelected = fulldate
-      ? parse(nextValue, dateFormat, new Date())
-      : selected
-
-    if (
-      nextSelected instanceof Date &&
-      !isNaN(nextSelected as unknown as number)
-    ) {
-      let nextSlide: ValueOf<typeof slides>
-      if (selected) {
-        !selected[0] && setSelected([])
-        start && setSelected([nextSelected, selected[1]].filter(Boolean))
-        selected[0] && !start && setSelected([selected[0], nextSelected])
-        nextSlide =
-          differenceInCalendarMonths(nextSelected, _selected) > 0
-            ? slides.forward
-            : differenceInCalendarMonths(nextSelected, _selected) < 0
-            ? slides.backward
-            : slides.undefined
-      }
-      setSlide(nextSlide)
+}: HandleRangeChange): void => {
+  let fulldate = false
+  try {
+    fulldate = isMatch(value, dateFormat)
+  } catch (err) {
+    if (!(err instanceof RangeError)) {
+      throw err
     }
   }
-  return [value, onChange]
+  const nextSelected = fulldate
+    ? parse(value, dateFormat, new Date())
+    : selected
+
+  if (
+    nextSelected instanceof Date &&
+    !isNaN(nextSelected as unknown as number)
+  ) {
+    if (selected) {
+      !selected[0] && setSelected([])
+      start && setSelected([nextSelected, selected[1]].filter(Boolean))
+      selected[0] && !start && setSelected([selected[0], nextSelected])
+    }
+  }
 }
