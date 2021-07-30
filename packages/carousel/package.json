@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-carousel",
-  "version": "14.0.1",
+  "version": "14.0.2",
   "description": "Carousel UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -43,7 +43,7 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^18.0.1",
+    "@pluralsight/ps-design-system-actionmenu": "^18.0.2",
     "@pluralsight/ps-design-system-build": "^3.2.2",
     "@pluralsight/ps-design-system-card": "^19.0.1",
     "@pluralsight/ps-design-system-position": "^8.2.1",
