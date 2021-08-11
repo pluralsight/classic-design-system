@@ -860,7 +860,12 @@ exports[`Storyshots Components/TextInput Sub Label Only 1`] = `
 
 exports[`Storyshots Components/TextInput/examples Autofocused 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-text-input"
@@ -900,7 +905,12 @@ exports[`Storyshots Components/TextInput/examples Autofocused 1`] = `
 
 exports[`Storyshots Components/TextInput/examples Controlled 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div>
     <label
@@ -941,7 +951,11 @@ exports[`Storyshots Components/TextInput/examples Controlled 1`] = `
     <br />
     <br />
     <div
-      data-css-c8tnxo=""
+      style={
+        Object {
+          "color": "rgba(255, 255, 255, 0.70)",
+        }
+      }
     >
       <span>
         Current value: 
@@ -954,7 +968,12 @@ exports[`Storyshots Components/TextInput/examples Controlled 1`] = `
 
 exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     style={
@@ -1156,7 +1175,12 @@ exports[`Storyshots Components/TextInput/examples Style Full Width 1`] = `
 
 exports[`Storyshots Components/TextInput/examples Style Right Aligned 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     style={
