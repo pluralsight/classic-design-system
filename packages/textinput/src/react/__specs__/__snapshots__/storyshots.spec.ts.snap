@@ -2,7 +2,13 @@
 
 exports[`Storyshots Components/TextInput Appearances 1`] = `
 <div
-  data-css-1cpmtjf=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr",
+    }
+  }
 >
   <label
     className="psds-text-input"
@@ -141,7 +147,13 @@ exports[`Storyshots Components/TextInput Appearances 1`] = `
 
 exports[`Storyshots Components/TextInput Appearances With Error 1`] = `
 <div
-  data-css-1cpmtjf=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr",
+    }
+  }
 >
   <label
     className="psds-text-input"
@@ -392,7 +404,13 @@ exports[`Storyshots Components/TextInput Basic 1`] = `
 
 exports[`Storyshots Components/TextInput Compare Disabled 1`] = `
 <div
-  data-css-1cpmtjf=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr",
+    }
+  }
 >
   <label
     className="psds-text-input"
