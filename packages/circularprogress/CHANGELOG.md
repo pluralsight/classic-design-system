@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@11.0.0...@pluralsight/ps-design-system-circularprogress@11.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **circularprogress:** set normalize peerDependency to 6.0.0 ([e94cf58](https://github.com/pluralsight/design-system/commit/e94cf58c32bfec70c5d6b2353f5e26ff6516bb55))
+
+
+
+
+
 # [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@10.0.1...@pluralsight/ps-design-system-circularprogress@11.0.0) (2021-07-26)
 
 

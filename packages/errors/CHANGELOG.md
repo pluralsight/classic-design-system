@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@13.0.2...@pluralsight/ps-design-system-errors@13.0.3) (2021-07-29)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-errors
+
+
+
+
+
+## [13.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@13.0.1...@pluralsight/ps-design-system-errors@13.0.2) (2021-07-27)
+
+
+### Bug Fixes
+
+* **errors:** set normalize peerDependency to 6.0.0 ([896d6ba](https://github.com/pluralsight/design-system/commit/896d6ba9c7e8e3138b4f84b213e74dd261bac523))
+
+
+
+
+
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@13.0.0...@pluralsight/ps-design-system-errors@13.0.1) (2021-07-27)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-errors
+
+
+
+
+
 # [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-errors@12.1.18...@pluralsight/ps-design-system-errors@13.0.0) (2021-07-26)
 
 

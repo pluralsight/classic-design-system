@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-verticaltabs",
-  "version": "8.0.0",
+  "version": "8.0.2",
   "description": "Verticaltab UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -28,20 +28,20 @@
   "style": "dist/esm/css/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-collapsible": "^5.1.8",
+    "@pluralsight/ps-design-system-collapsible": "^5.1.9",
     "@pluralsight/ps-design-system-core": "^9.0.0",
-    "@pluralsight/ps-design-system-icon": "^24.0.0",
+    "@pluralsight/ps-design-system-icon": "^24.0.1",
     "@pluralsight/ps-design-system-util": "^9.3.0"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^5.1.2",
+    "@pluralsight/ps-design-system-normalize": "^6.0.0",
     "@pluralsight/ps-design-system-theme": "^8.1.4",
     "react": "^17.0.1"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.2.2",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.4",
-    "@pluralsight/ps-design-system-theme": "^8.1.14"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.5",
+    "@pluralsight/ps-design-system-theme": "^8.1.15"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@13.0.0...@pluralsight/ps-design-system-badge@13.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **badge:** set normalize peerDependency to 6.0.0 ([4c6c5e0](https://github.com/pluralsight/design-system/commit/4c6c5e0559fc984ec775204ae3de0afcb4c0a361))
+
+
+
+
+
 # [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-badge@12.1.13...@pluralsight/ps-design-system-badge@13.0.0) (2021-07-26)
 
 

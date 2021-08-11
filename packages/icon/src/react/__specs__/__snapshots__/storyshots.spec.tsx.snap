@@ -316,6 +316,23 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
     </svg>
   </div>
   <div>
+    AtSymbolIcon
+  </div>
+  <div
+    className="psds-icon psds-icon--size-large psds-icon--color-text-icon-high-on-dark"
+    id="icon-AtSymbolIcon"
+  >
+    <svg
+      aria-label="at symbol icon"
+      role="img"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h4.75a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25H12c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
+      />
+    </svg>
+  </div>
+  <div>
     AuthorKitIcon
   </div>
   <div
@@ -2422,6 +2439,23 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
         clipRule="evenodd"
         d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10a9.987 9.987 0 0 0 8.142-4.193c.06-.084.133-.193.219-.324a.5.5 0 0 0-.168-.704l-.866-.505a.5.5 0 0 0-.67.158A7.989 7.989 0 0 1 12 20a8 8 0 1 1 5.657-13.657l-.803.803a.5.5 0 0 0 .353.854H20.5a.5.5 0 0 0 .5-.5V4.207a.5.5 0 0 0-.854-.353l-1.075 1.075A9.969 9.969 0 0 0 12 2zM8.63 15.6h1.71V9.003H9.089l-1.908.549.333 1.359 1.116-.27V15.6zm5.377.126c-1.845 0-3.006-1.521-3.006-3.384 0-1.881 1.179-3.42 3.024-3.42 1.827 0 2.997 1.521 2.997 3.384 0 1.881-1.179 3.42-3.015 3.42zm.018-1.539c.756 0 1.242-.774 1.242-1.845v-.018c0-1.071-.513-1.863-1.26-1.863-.756 0-1.251.765-1.251 1.845v.018c0 1.08.504 1.863 1.269 1.863z"
         fillRule="evenodd"
+      />
+    </svg>
+  </div>
+  <div>
+    SlackIcon
+  </div>
+  <div
+    className="psds-icon psds-icon--size-large psds-icon--color-text-icon-high-on-dark"
+    id="icon-SlackIcon"
+  >
+    <svg
+      aria-label="slack icon"
+      role="img"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M6 15a2 2 0 1 1-2-2h2v2zm1 0a2 2 0 0 1 4 0v5a2 2 0 0 1-4 0v-5zm2-8a2 2 0 1 1 2-2v2H9zm0 1a2 2 0 0 1 0 4H4a2 2 0 1 1 0-4h5zm8 2a2 2 0 1 1 2 2h-2v-2zm-1 0a2 2 0 0 1-4 0V5a2 2 0 1 1 4 0v5zm-2 8a2 2 0 1 1-2 2v-2h2zm0-1a2 2 0 0 1 0-4h5a2 2 0 0 1 0 4h-5z"
       />
     </svg>
   </div>

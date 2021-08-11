@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-focusmanager",
-  "version": "7.1.18",
+  "version": "7.1.19",
   "description": "FocusManager UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -27,14 +27,14 @@
   "sideEffects": false,
   "types": "dist/esm/index.d.ts",
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^5.1.2",
+    "@pluralsight/ps-design-system-normalize": "^6.0.0",
     "react": "^17.0.1"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^3.2.2",
-    "@pluralsight/ps-design-system-button": "^23.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.4",
-    "@pluralsight/ps-design-system-text": "^20.1.16"
+    "@pluralsight/ps-design-system-button": "^23.0.1",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.5",
+    "@pluralsight/ps-design-system-text": "^20.1.17"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@11.0.0...@pluralsight/ps-design-system-halo@11.0.1) (2021-07-27)
+
+
+### Bug Fixes
+
+* **halo:** set normalize peerDependency to 6.0.0 ([91aae3d](https://github.com/pluralsight/design-system/commit/91aae3db393539f6e8ddfac8e0d19015f87e7756))
+
+
+
+
+
 # [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@10.1.13...@pluralsight/ps-design-system-halo@11.0.0) (2021-07-26)
 
 
