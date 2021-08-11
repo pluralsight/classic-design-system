@@ -103,3 +103,30 @@ CustomFilterFunction.args = {
   ...defaultArgs,
   filterFunction
 }
+
+export const Autofocus: Story = () => {
+  const ref = React.createRef<HTMLInputElement>()
+
+  React.useEffect(() => {
+    if (ref.current) ref.current.focus()
+  })
+
+  const options = React.useMemo(() => periodicElements, [])
+  const [value, setValue] = React.useState<string>()
+  return (
+    <Typeahead
+      ref={ref}
+      onChange={(
+        evt: React.ChangeEvent<HTMLInputElement> | null,
+        selectedItem?: {
+          label: React.ReactText
+          value?: React.ReactText
+        }
+      ) => {
+        setValue(evt?.target.value || '')
+      }}
+      options={options}
+      value={value}
+    />
+  )
+}
