@@ -28,7 +28,6 @@
   "types": "dist/esm/index.d.ts",
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^5.1.2",
-    "glamor": "^2.x.x",
     "react": "^17.0.1"
   },
   "devDependencies": {
