@@ -1,20 +1,17 @@
 import * as core from '@pluralsight/ps-design-system-core'
 import { useMatchMedia } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Steps from '../index'
 import { useStoryData } from './shared'
-
-const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Steps/horizontal',
   component: Steps,
   decorators: [
     StoryFn => (
-      <div {...glamor.css({ padding: core.layout.spacingMedium })}>
+      <div style={{ padding: core.layout.spacingMedium }}>
         <StoryFn />
       </div>
     )

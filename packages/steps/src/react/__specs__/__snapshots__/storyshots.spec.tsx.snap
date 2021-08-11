@@ -2,7 +2,11 @@
 
 exports[`Storyshots Components/Steps/Marker Animations 1`] = `
 <div
-  data-css-103e380=""
+  style={
+    Object {
+      "counterReset": "line-number 2",
+    }
+  }
 >
   <div
     className="psds-theme--dark psds-steps__marker psds-steps__marker--large psds-steps__marker--completed psds-steps__marker--hide-counter"
@@ -39,7 +43,11 @@ exports[`Storyshots Components/Steps/Marker Animations 1`] = `
 
 exports[`Storyshots Components/Steps/Marker Completed Large 1`] = `
 <div
-  data-css-103e380=""
+  style={
+    Object {
+      "counterReset": "line-number 2",
+    }
+  }
 >
   <div
     className="psds-theme--dark psds-steps__marker psds-steps__marker--large psds-steps__marker--completed psds-steps__marker--hide-counter"
@@ -76,7 +84,11 @@ exports[`Storyshots Components/Steps/Marker Completed Large 1`] = `
 
 exports[`Storyshots Components/Steps/Marker Completed Medium 1`] = `
 <div
-  data-css-103e380=""
+  style={
+    Object {
+      "counterReset": "line-number 2",
+    }
+  }
 >
   <div
     className="psds-theme--dark psds-steps__marker psds-steps__marker--medium psds-steps__marker--completed psds-steps__marker--hide-counter"
@@ -113,7 +125,11 @@ exports[`Storyshots Components/Steps/Marker Completed Medium 1`] = `
 
 exports[`Storyshots Components/Steps/Marker Current Large 1`] = `
 <div
-  data-css-103e380=""
+  style={
+    Object {
+      "counterReset": "line-number 2",
+    }
+  }
 >
   <div
     className="psds-theme--dark psds-steps__marker psds-steps__marker--large psds-steps__marker--current psds-steps__marker--hide-counter"
@@ -150,7 +166,11 @@ exports[`Storyshots Components/Steps/Marker Current Large 1`] = `
 
 exports[`Storyshots Components/Steps/Marker Current Medium 1`] = `
 <div
-  data-css-103e380=""
+  style={
+    Object {
+      "counterReset": "line-number 2",
+    }
+  }
 >
   <div
     className="psds-theme--dark psds-steps__marker psds-steps__marker--medium psds-steps__marker--current psds-steps__marker--hide-counter"
@@ -187,7 +207,11 @@ exports[`Storyshots Components/Steps/Marker Current Medium 1`] = `
 
 exports[`Storyshots Components/Steps/Marker Incomplete Large 1`] = `
 <div
-  data-css-103e380=""
+  style={
+    Object {
+      "counterReset": "line-number 2",
+    }
+  }
 >
   <div
     className="psds-theme--dark psds-steps__marker psds-steps__marker--large psds-steps__marker--incomplete psds-steps__marker--hide-counter"
@@ -224,7 +248,11 @@ exports[`Storyshots Components/Steps/Marker Incomplete Large 1`] = `
 
 exports[`Storyshots Components/Steps/Marker Incomplete Medium 1`] = `
 <div
-  data-css-103e380=""
+  style={
+    Object {
+      "counterReset": "line-number 2",
+    }
+  }
 >
   <div
     className="psds-theme--dark psds-steps__marker psds-steps__marker--medium psds-steps__marker--incomplete psds-steps__marker--hide-counter"
@@ -261,7 +289,12 @@ exports[`Storyshots Components/Steps/Marker Incomplete Medium 1`] = `
 
 exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--medium psds-steps__step--completed"
@@ -421,7 +454,12 @@ exports[`Storyshots Components/Steps/Step Custom Marker 1`] = `
 
 exports[`Storyshots Components/Steps/Step Hide Counters 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--medium psds-steps__step--completed"
@@ -569,7 +607,12 @@ exports[`Storyshots Components/Steps/Step Hide Counters 1`] = `
 
 exports[`Storyshots Components/Steps/Step Large 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--large psds-steps__step--completed"
@@ -623,7 +666,12 @@ exports[`Storyshots Components/Steps/Step Large 1`] = `
 
 exports[`Storyshots Components/Steps/Step Large Description 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--large psds-steps__step--completed"
@@ -684,7 +732,12 @@ exports[`Storyshots Components/Steps/Step Large Description 1`] = `
 
 exports[`Storyshots Components/Steps/Step Large Interactive 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--large psds-steps__step--completed psds-steps__step--interactive"
@@ -746,7 +799,12 @@ exports[`Storyshots Components/Steps/Step Large Interactive 1`] = `
 
 exports[`Storyshots Components/Steps/Step Large Long Title 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--large psds-steps__step--completed"
@@ -800,7 +858,12 @@ exports[`Storyshots Components/Steps/Step Large Long Title 1`] = `
 
 exports[`Storyshots Components/Steps/Step Medium 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--medium psds-steps__step--completed"
@@ -854,7 +917,12 @@ exports[`Storyshots Components/Steps/Step Medium 1`] = `
 
 exports[`Storyshots Components/Steps/Step Medium Description 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--medium psds-steps__step--completed"
@@ -915,7 +983,12 @@ exports[`Storyshots Components/Steps/Step Medium Description 1`] = `
 
 exports[`Storyshots Components/Steps/Step Medium Interactive 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--medium psds-steps__step--completed psds-steps__step--interactive"
@@ -977,7 +1050,12 @@ exports[`Storyshots Components/Steps/Step Medium Interactive 1`] = `
 
 exports[`Storyshots Components/Steps/Step Medium Long Title 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps__step psds-theme--dark psds-steps__step--vertical psds-steps__step--medium psds-steps__step--completed"
@@ -1031,7 +1109,12 @@ exports[`Storyshots Components/Steps/Step Medium Long Title 1`] = `
 
 exports[`Storyshots Components/Steps/examples Wizard 1`] = `
 <div
-  data-css-1wckvg7=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 1000,
+    }
+  }
 >
   <div
     className="psds-steps psds-theme--dark psds-steps--horizontal"
@@ -1186,10 +1269,22 @@ exports[`Storyshots Components/Steps/examples Wizard 1`] = `
     </div>
   </div>
   <div
-    data-css-o4qfb1=""
+    style={
+      Object {
+        "backgroundColor": "black",
+        "color": "white",
+        "outline": "1px dashed pink",
+        "padding": 40,
+      }
+    }
   >
     <p
-      data-css-1k9fqjs=""
+      style={
+        Object {
+          "margin": 20,
+          "textAlign": "center",
+        }
+      }
     >
       <button
         disabled={true}
@@ -1232,7 +1327,11 @@ exports[`Storyshots Components/Steps/examples Wizard 1`] = `
 
 exports[`Storyshots Components/Steps/horizontal Basic 1`] = `
 <div
-  data-css-1y16c93=""
+  style={
+    Object {
+      "padding": "16px",
+    }
+  }
 >
   <div
     className="psds-steps psds-theme--dark psds-steps--horizontal"
@@ -1391,7 +1490,11 @@ exports[`Storyshots Components/Steps/horizontal Basic 1`] = `
 
 exports[`Storyshots Components/Steps/horizontal Interactive 1`] = `
 <div
-  data-css-1y16c93=""
+  style={
+    Object {
+      "padding": "16px",
+    }
+  }
 >
   <div
     className="psds-steps psds-theme--dark psds-steps--horizontal"
@@ -1553,7 +1656,11 @@ exports[`Storyshots Components/Steps/horizontal Interactive 1`] = `
 
 exports[`Storyshots Components/Steps/horizontal Medium 1`] = `
 <div
-  data-css-1y16c93=""
+  style={
+    Object {
+      "padding": "16px",
+    }
+  }
 >
   <div
     className="psds-steps psds-theme--dark psds-steps--horizontal"
@@ -1712,7 +1819,11 @@ exports[`Storyshots Components/Steps/horizontal Medium 1`] = `
 
 exports[`Storyshots Components/Steps/horizontal Responsive 1`] = `
 <div
-  data-css-1y16c93=""
+  style={
+    Object {
+      "padding": "16px",
+    }
+  }
 >
   <div
     className="psds-steps psds-theme--dark psds-steps--vertical"
@@ -2120,7 +2231,12 @@ exports[`Storyshots Components/Steps/vertical Basic 1`] = `
 
 exports[`Storyshots Components/Steps/vertical In Fixed Container 1`] = `
 <div
-  data-css-12c8fh6=""
+  style={
+    Object {
+      "padding": "16px",
+      "width": 300,
+    }
+  }
 >
   <div
     className="psds-steps psds-theme--dark psds-steps--vertical"
