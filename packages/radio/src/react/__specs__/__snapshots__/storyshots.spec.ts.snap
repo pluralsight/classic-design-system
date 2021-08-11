@@ -2,7 +2,12 @@
 
 exports[`Storyshots Components/Radio Basic 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     className="psds-radio-group"
@@ -124,7 +129,12 @@ exports[`Storyshots Components/Radio Basic 1`] = `
 
 exports[`Storyshots Components/Radio Controlled 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     style={
@@ -267,7 +277,12 @@ exports[`Storyshots Components/Radio Controlled 1`] = `
 
 exports[`Storyshots Components/Radio Disabled 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div>
     <div
@@ -486,7 +501,12 @@ exports[`Storyshots Components/Radio Disabled 1`] = `
 
 exports[`Storyshots Components/Radio Error 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     className="psds-radio-group"
@@ -608,7 +628,12 @@ exports[`Storyshots Components/Radio Error 1`] = `
 
 exports[`Storyshots Components/Radio Label Only 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     className="psds-radio-group"
@@ -725,7 +750,12 @@ exports[`Storyshots Components/Radio Label Only 1`] = `
 
 exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     className="psds-radio-group"
@@ -942,7 +972,12 @@ exports[`Storyshots Components/Radio Multiple Stacked 1`] = `
 
 exports[`Storyshots Components/Radio No Labels 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     aria-label="You need an a11y label"
@@ -1055,7 +1090,12 @@ exports[`Storyshots Components/Radio No Labels 1`] = `
 
 exports[`Storyshots Components/Radio Pre Selected 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     className="psds-radio-group"
@@ -1181,7 +1221,12 @@ exports[`Storyshots Components/Radio Pre Selected 1`] = `
 
 exports[`Storyshots Components/Radio Sub Label Only 1`] = `
 <div
-  data-css-424rvd=""
+  style={
+    Object {
+      "height": "100vh",
+      "padding": "24px",
+    }
+  }
 >
   <div
     aria-label="You need an a11y label"

@@ -51,7 +51,17 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
     className="psds-navbar__brand"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       Brand
     </div>
@@ -60,7 +70,17 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
     className="psds-navbar__items"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       Items
     </div>
@@ -69,7 +89,17 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
     className="psds-navbar__utility"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       Utility
     </div>
@@ -78,7 +108,17 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
     className="psds-navbar__user"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       User
     </div>
@@ -94,7 +134,17 @@ exports[`Storyshots Components/NavBar Desktop Only 1`] = `
     className="psds-navbar__brand"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       Brand
     </div>
@@ -103,7 +153,17 @@ exports[`Storyshots Components/NavBar Desktop Only 1`] = `
     className="psds-navbar__items"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       Items
     </div>
@@ -112,7 +172,17 @@ exports[`Storyshots Components/NavBar Desktop Only 1`] = `
     className="psds-navbar__utility"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       Utility
     </div>
@@ -121,7 +191,17 @@ exports[`Storyshots Components/NavBar Desktop Only 1`] = `
     className="psds-navbar__user"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       User
     </div>
@@ -229,7 +309,12 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
     className="psds-navbar__items"
   >
     <div
-      data-css-1gxezh7=""
+      style={
+        Object {
+          "display": "inline-block",
+          "marginRight": "4px",
+        }
+      }
     >
       <span
         className="psds-navitem__horz-container"
@@ -276,7 +361,11 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
       </span>
     </div>
     <div
-      data-css-w0yocm=""
+      style={
+        Object {
+          "display": "inline-block",
+        }
+      }
     >
       <div>
         <span
@@ -354,7 +443,12 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
     className="psds-navbar__utility"
   >
     <div
-      data-css-1gxezh7=""
+      style={
+        Object {
+          "display": "inline-block",
+          "marginRight": "4px",
+        }
+      }
     >
       <span
         className="psds-navitem__horz-container"
@@ -396,7 +490,11 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
       </span>
     </div>
     <div
-      data-css-w0yocm=""
+      style={
+        Object {
+          "display": "inline-block",
+        }
+      }
     >
       <span
         className="psds-navitem__horz-container"
@@ -588,7 +686,17 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
     className="psds-navbar__items"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       Items
     </div>
@@ -597,7 +705,17 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
     className="psds-navbar__utility"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       Utility
     </div>
@@ -606,7 +724,17 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
     className="psds-navbar__user"
   >
     <div
-      data-css-v7pgy0=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "2px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "height": "100%",
+          "justifyContent": "center",
+          "padding": "0 16px",
+        }
+      }
     >
       User
     </div>

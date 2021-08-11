@@ -1,22 +1,13 @@
-import { HTMLPropsFor, ValueOf } from '@pluralsight/ps-design-system-util'
-import { names as themeNames, useTheme } from '@pluralsight/ps-design-system-theme'
-import { compose, css } from 'glamor'
+import { HTMLPropsFor, ValueOf, classNames } from '@pluralsight/ps-design-system-util'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
 import React, { forwardRef } from 'react'
 
 import stylesheet from '../css'
 
 interface {{pascalCase name}}Props extends HTMLPropsFor<'div'> {}
 
-const styles  = {
-  {{camelCase name}}: (themeName: ValueOf<typeof themeNames>) =>
-    compose(
-      css(stylesheet['.psds-{{kebabCase name}}']),
-      css(stylesheet[`.psds-{{kebabCase name}}.psds-theme--${themeName}`])
-    )
-}
-
 const {{pascalCase name}} = forwardRef((props, forwardedRef) => {
-  const { ...rest } = props
+  const { className, ...rest } = props
   const themeName = useTheme()
 
   const ref = React.useRef<HTMLDivElement>(null)
@@ -25,8 +16,8 @@ const {{pascalCase name}} = forwardRef((props, forwardedRef) => {
   return (
     <div
       ref={ref}
-      {...styles.{{camelCase name}}(themeName)}
       {...rest}
+      className={classNames('psds-{{name}}', className)}
     />
   )
 })

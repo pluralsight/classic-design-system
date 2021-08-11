@@ -23,10 +23,19 @@ Array [
           aria-expanded={false}
           aria-haspopup="listbox"
           aria-labelledby="downshift-0-label downshift-0-toggle-button"
-          data-css-1xqnm3u=""
           id="downshift-0-toggle-button"
           onClick={[Function]}
           onKeyDown={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "all": "unset",
+              "cursor": "pointer",
+              "display": "flex",
+              "flex": 1,
+              "width": "100%",
+            }
+          }
         >
           <span>
             Do something
@@ -80,11 +89,15 @@ Array [
     >
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-0"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Hydrogen
@@ -93,11 +106,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-1"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Helium
@@ -106,11 +123,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-2"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Lithium
@@ -119,11 +140,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-3"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Beryllium
@@ -132,11 +157,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-4"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Boron
@@ -145,11 +174,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-5"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Carbon
@@ -158,11 +191,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-6"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Nitrogren
@@ -171,11 +208,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-7"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Oxygen
@@ -184,11 +225,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-8"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Fluorine
@@ -197,11 +242,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-9"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Neon
@@ -210,11 +259,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-10"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Sodium
@@ -223,11 +276,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-11"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Magnesium
@@ -236,11 +293,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-12"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Aluminum
@@ -249,11 +310,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-13"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Silicon
@@ -262,11 +327,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-14"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Phosphorus
@@ -275,11 +344,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-15"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Sulfur
@@ -288,11 +361,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-16"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Chlorine
@@ -301,11 +378,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-17"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Argon
@@ -314,11 +395,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-18"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Potassium
@@ -327,11 +412,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-19"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Calcium
@@ -340,11 +429,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-20"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Scandium
@@ -353,11 +446,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-21"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Titanium
@@ -366,11 +463,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-22"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Vanadium
@@ -379,11 +480,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-23"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Chromium
@@ -392,11 +497,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-24"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Manganese
@@ -405,11 +514,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-25"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Iron
@@ -418,11 +531,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-26"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Cobalt
@@ -431,11 +548,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-27"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Nickel
@@ -444,11 +565,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-28"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Copper
@@ -457,11 +582,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-29"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Zinc
@@ -470,11 +599,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-30"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Gallium
@@ -483,11 +616,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-31"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Germanium
@@ -496,11 +633,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-32"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Arsenic
@@ -509,11 +650,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-33"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Selenium
@@ -522,11 +667,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-34"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Bromine
@@ -535,11 +684,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-35"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Krypton
@@ -548,11 +701,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-36"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Rubidium
@@ -561,11 +718,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-37"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Strontium
@@ -574,11 +735,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-38"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Yttrium
@@ -587,11 +752,15 @@ Array [
       </li>
       <li
         aria-selected="false"
-        data-css-1gkxtmt=""
         id="downshift-0-item-39"
         onClick={[Function]}
         onMouseMove={[Function]}
         role="option"
+        style={
+          Object {
+            "backgroundColor": "",
+          }
+        }
       >
         <span>
           Zirconium
@@ -778,7 +947,11 @@ exports[`Storyshots Components/Field/TextAreaField With Placeholder 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
     className="psds-field__container"
@@ -819,7 +992,11 @@ exports[`Storyshots Components/Field/TextInputField Basic 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Custom Input Tag 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
     className="psds-field__container"
@@ -866,7 +1043,11 @@ exports[`Storyshots Components/Field/TextInputField Custom Input Tag 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
     className="psds-field__container psds-field__container--disabled"
@@ -908,7 +1089,11 @@ exports[`Storyshots Components/Field/TextInputField Disabled 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Error 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
     className="psds-field__container psds-field__container--error"
@@ -968,7 +1153,11 @@ exports[`Storyshots Components/Field/TextInputField Error 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
     className="psds-field__container"
@@ -1026,7 +1215,11 @@ exports[`Storyshots Components/Field/TextInputField Icon Prefix 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
     className="psds-field__container"
@@ -1084,7 +1277,11 @@ exports[`Storyshots Components/Field/TextInputField Icon Suffix 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
     className="psds-field__container"
@@ -1142,7 +1339,11 @@ exports[`Storyshots Components/Field/TextInputField Password Type 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
     className="psds-field__container"
@@ -1183,13 +1384,25 @@ exports[`Storyshots Components/Field/TextInputField Size Small 1`] = `
 
 exports[`Storyshots Components/Field/TextInputField Style Override Display Block 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
-    data-css-nz1bk1=""
+    style={
+      Object {
+        "outline": "2px dashed #E7558B",
+      }
+    }
   >
     <div
-      data-css-pifd7f=""
+      style={
+        Object {
+          "width": "400px",
+        }
+      }
     >
       <div
         className="psds-field__container"
@@ -1237,7 +1450,11 @@ exports[`Storyshots Components/Field/TextInputField Style Override Display Block
 
 exports[`Storyshots Components/Field/TextInputField With Placeholder 1`] = `
 <div
-  data-css-z8g6as=""
+  style={
+    Object {
+      "maxWidth": "400px",
+    }
+  }
 >
   <div
     className="psds-field__container"

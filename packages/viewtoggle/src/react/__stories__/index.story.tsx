@@ -1,11 +1,8 @@
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import ViewToggle from '../index'
-
-const glamor = glamorDefault || glamorExports
 
 const defaultArgs = {
   onSelect: action('on select')
@@ -146,12 +143,12 @@ export const ExampleDynamicOptions: Story = () => {
       </ViewToggle>
 
       <div
-        {...glamor.css({
+        style={{
           alignItems: 'center',
           display: 'flex',
           justifyContent: 'center',
           margin: '10px auto'
-        })}
+        }}
       >
         <button disabled={count <= 1} onClick={remove}>
           remove

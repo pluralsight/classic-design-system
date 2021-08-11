@@ -9,16 +9,13 @@ import {
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { DecoratorFn } from '@storybook/react'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Dropdown from '../index'
 import { DropdownContext, useDropdown } from '../../js/index'
 
-const glamor = glamorDefault || glamorExports
-
 const PaddingDecorator: DecoratorFn = storyFn => (
-  <div {...glamor.css({ height: '100vh', padding: layout.spacingLarge })}>
+  <div style={{ height: '100vh', padding: layout.spacingLarge }}>
     {storyFn()}
   </div>
 )
@@ -54,19 +51,17 @@ const DropdownWithIcon = React.forwardRef<
       button={
         <Dropdown.Button {...dropdownProps.button}>
           <div
-            {...glamor.css({
+            style={{
               alignItems: 'center',
               display: 'flex',
               height: '100%',
               marginRight: 8
-            })}
+            }}
           >
             {icon}
           </div>
 
-          <div
-            {...glamor.css({ height: '100%', position: 'relative', flex: 1 })}
-          >
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
             <Dropdown.Selected {...dropdownProps.selected} />
           </div>
         </Dropdown.Button>

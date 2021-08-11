@@ -188,7 +188,6 @@ Here are some examples of building more complicated fields using the [downshift]
 ### Tags Field
 
 ```typescript
-import { css } from 'glamor'
 import React, { useMemo } from 'react'
 
 import { layout } from '@pluralsight/ps-design-system-core'
@@ -202,7 +201,7 @@ const GUTTER_SIZE = 2
 
 interface Props extends ComponentProps<typeof Field> {}
 const TagField: React.FC<Props> = (props) => {
-  const { disabled, ...rest } = props
+  const { disabled, placeholder, ...rest } = props
 
   const options = useMemo(() => [
     { label: 'Hydrogen', value: 'H' },
@@ -327,7 +326,7 @@ const TagField: React.FC<Props> = (props) => {
 }
 
 const RenderTagNoPadding: React.FC = p => (
-  <div {...p} {...css({ padding: 0 })} />
+  <div {...p} style={{ padding: 0 }} />
 )
 
 const Pills = forwardRef((props, ref) => {
@@ -345,7 +344,7 @@ const Pills = forwardRef((props, ref) => {
   }
 
   return (
-    <div ref={ref} {...rest} {...css(styles)}>
+    <div ref={ref} {...rest} style={styles}>
       {children}
     </div>
   )
@@ -360,7 +359,7 @@ const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   const styles = { margin: `calc(${GUTTER_SIZE}px / 2)` }
 
   return (
-    <div ref={ref} {...rest} {...css(styles)}>
+    <div ref={ref} {...rest} style={styles}>
       <Tag
         icon={<CloseIcon onClick={onRequestRemove} />}
         isPressed
@@ -379,7 +378,7 @@ const CustomInput = forwardRef<HTMLInputElement, React.ComponentProps<typeof Fie
         <div
           ref={r}
           {...p}
-          {...css({ margin: `calc(${GUTTER_SIZE}px / 2)` })}
+          style={{ margin: `calc(${GUTTER_SIZE}px / 2)` }}
         />
       )),
     []
@@ -391,7 +390,7 @@ const CustomInput = forwardRef<HTMLInputElement, React.ComponentProps<typeof Fie
       renderContainer={Container}
       type="text"
       {...props}
-      {...css({ minWidth: 50 })}
+      style={{ minWidth: 50 }}
     />
   )
 })

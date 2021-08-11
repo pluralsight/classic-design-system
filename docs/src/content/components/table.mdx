@@ -1031,7 +1031,6 @@ import { colorsTextIcon } from '@pluralsight/ps-design-system-core'
 import Table from '@pluralsight/ps-design-system-table'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 
-import { before, css } from 'glamor'
 import React from 'react'
 import { DragDropContext, DraggableProvided, DraggableStateSnapshot, DropResult, Droppable, DroppableProvided, Draggable } from 'react-beautiful-dnd'
 
@@ -1138,28 +1137,31 @@ const Handle: React.FC = props => {
     })
   )
 
-  const style = css(
-    {
-      color: dark ? colorsTextIcon.lowOnDark : colorsTextIcon.lowOnLight,
-      cursor: 'grab',
-      display: 'inline-block',
-      height: (size + gutter) * rows,
-      position: 'relative',
-      width: (size + gutter) * cols
-    },
-    before({
-      backgroundColor: 'currentColor',
-      boxShadow: shadow.toString(),
-      content: ' ',
-      height: size,
-      left: gutter,
-      position: 'absolute',
-      top: gutter,
-      width: size
-    })
+  return (
+    <>
+      <div {...props} className="handle" />
+      <style jsx>{`
+        .handle {
+          color: ${dark ? colorsTextIcon.lowOnDark : colorsTextIcon.lowOnLight};
+          cursor: grab;
+          display: inline-block;
+          height: ${(size + gutter) * rows}px;
+          position: relative;
+          width: ${(size + gutter) * cols}px;
+        }
+        .handle:before {
+          background-color: currentColor;
+          box-shadow: ${shadow.toString()};
+          content: ' ';
+          height: ${size}px;
+          left: ${gutter}px;
+          position: absolute;
+          top: ${gutter}px;
+          width: ${size}px;
+        }
+      `}</style>
+    </>
   )
-
-  return <div {...props} {...style} />
 }
 
 const reorder = (list: unknown[], startIndex: number, endIndex: number): any[] => {

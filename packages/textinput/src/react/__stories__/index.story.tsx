@@ -1,12 +1,9 @@
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import TextInput from '../index'
-
-const glamor = glamorDefault || glamorExports
 
 const defaultArgs = {
   onFocus: action('on focus'),
@@ -26,11 +23,11 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
 
   return (
     <div
-      {...glamor.css({
+      style={{
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
-      })}
+      }}
       {...rest}
     />
   )

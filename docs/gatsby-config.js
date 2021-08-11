@@ -58,10 +58,6 @@ module.exports = {
       options: {}
     },
     {
-      resolve: 'gatsby-plugin-glamor',
-      options: {}
-    },
-    {
       resolve: 'gatsby-plugin-styled-jsx',
       options: {}
     },

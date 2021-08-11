@@ -186,7 +186,13 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
 
 exports[`Storyshots Components/StarRating Interactive 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     onClick={[Function]}
@@ -2352,7 +2358,13 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
 
 exports[`Storyshots Components/StarRating Non Interactive 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     onClick={[Function]}
@@ -4297,7 +4309,13 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
 
 exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     onClick={[Function]}

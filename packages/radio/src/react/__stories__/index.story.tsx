@@ -2,15 +2,12 @@ import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { DecoratorFn } from '@storybook/react'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Radio from '../index'
 
-const glamor = glamorDefault || glamorExports
-
 const PaddingDecorator: DecoratorFn = storyFn => (
-  <div {...glamor.css({ height: '100vh', padding: layout.spacingLarge })}>
+  <div style={{ height: '100vh', padding: layout.spacingLarge }}>
     {storyFn()}
   </div>
 )
