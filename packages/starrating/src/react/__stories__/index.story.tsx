@@ -1,22 +1,19 @@
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import StarRating from '../index'
-
-const glamor = glamorDefault || glamorExports
 
 const StoryGrid: React.FC<{ cols?: number }> = props => {
   const { cols = 2, ...rest } = props
 
   return (
     <div
-      {...glamor.css({
+      style={{
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
-      })}
+      }}
       {...rest}
     />
   )
