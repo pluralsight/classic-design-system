@@ -242,22 +242,46 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -273,22 +297,46 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -304,22 +352,46 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7585,22 +7657,46 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7618,22 +7714,46 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7651,22 +7771,46 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7684,22 +7828,46 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7717,22 +7885,46 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7750,22 +7942,46 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7783,22 +7999,46 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7816,22 +8056,46 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7849,22 +8113,46 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -7972,22 +8260,46 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -8007,22 +8319,46 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -8042,22 +8378,46 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -8077,22 +8437,46 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -8112,22 +8496,46 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -8147,22 +8555,46 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -8182,22 +8614,46 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -8217,22 +8673,46 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -8252,22 +8732,46 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -8377,22 +8881,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8493,22 +9021,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8525,22 +9077,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8639,22 +9215,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8670,22 +9270,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8701,22 +9325,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8732,22 +9380,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8763,22 +9435,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8794,22 +9490,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8825,22 +9545,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8856,22 +9600,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8887,22 +9655,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8918,22 +9710,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8949,22 +9765,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -8980,22 +9820,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9011,22 +9875,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9042,22 +9930,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9073,22 +9985,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9104,22 +10040,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9135,22 +10095,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9166,22 +10150,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9197,22 +10205,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9228,22 +10260,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9259,22 +10315,46 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             }
           >
             <div
-              data-css-qv4hlw=""
+              style={
+                Object {
+                  "alignItems": "center",
+                  "background": "pink",
+                  "display": "flex",
+                  "flexDirection": "column",
+                  "height": "150px",
+                  "justifyContent": "center",
+                  "position": "relative",
+                }
+              }
             >
                
               <button
-                data-css-1kybs28=""
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Button
               </button>
               <p
-                data-css-1hmiaa7=""
+                style={
+                  Object {
+                    "padding": 10,
+                    "textAlign": "center",
+                    "width": "100%",
+                  }
+                }
               >
                 non focusable /tabIndex text
               </p>
               <a
-                data-css-1kybs28=""
                 href="https://duckduckgo.com/"
+                style={
+                  Object {
+                    "flex": "none",
+                  }
+                }
               >
                 Link
               </a>
@@ -9373,22 +10453,46 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -9406,22 +10510,46 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -9439,22 +10567,46 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -9472,22 +10624,46 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
           }
         >
           <div
-            data-css-qv4hlw=""
+            style={
+              Object {
+                "alignItems": "center",
+                "background": "pink",
+                "display": "flex",
+                "flexDirection": "column",
+                "height": "150px",
+                "justifyContent": "center",
+                "position": "relative",
+              }
+            }
           >
              
             <button
-              data-css-1kybs28=""
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Button
             </button>
             <p
-              data-css-1hmiaa7=""
+              style={
+                Object {
+                  "padding": 10,
+                  "textAlign": "center",
+                  "width": "100%",
+                }
+              }
             >
               non focusable /tabIndex text
             </p>
             <a
-              data-css-1kybs28=""
               href="https://duckduckgo.com/"
+              style={
+                Object {
+                  "flex": "none",
+                }
+              }
             >
               Link
             </a>
@@ -9527,7 +10703,14 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
     </div>
   </div>
   <div
-    data-css-18ma6i3=""
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "justifyContent": "center",
+        "margin": "10px auto",
+      }
+    }
   >
     <button
       disabled={false}
