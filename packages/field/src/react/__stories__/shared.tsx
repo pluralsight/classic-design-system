@@ -3,13 +3,10 @@ import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 
 import { Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 
 import Field from '../index'
 
 import React from 'react'
-
-const glamor = glamorDefault || glamorExports
 
 const variables = {
   pills: { gutter: 2 }
@@ -17,7 +14,7 @@ const variables = {
 
 export const ConstrainWidthDecorator = (Story: Story) => {
   return (
-    <div {...glamor.css({ maxWidth: '400px' })}>
+    <div style={{ maxWidth: '400px' }}>
       <Story />
     </div>
   )
@@ -25,7 +22,7 @@ export const ConstrainWidthDecorator = (Story: Story) => {
 
 export const OutlineDecorator = (Story: Story) => {
   return (
-    <div {...glamor.css({ outline: `2px dashed ${colorsPink[6]}` })}>
+    <div style={{ outline: `2px dashed ${colorsPink[6]}` }}>
       <Story />
     </div>
   )
@@ -33,7 +30,7 @@ export const OutlineDecorator = (Story: Story) => {
 
 export const SetWidthDecorator = (Story: Story) => {
   return (
-    <div {...glamor.css({ width: '400px' })}>
+    <div style={{ width: '400px' }}>
       <Story />
     </div>
   )
@@ -52,19 +49,21 @@ export const Pills = React.forwardRef<HTMLDivElement, PillsProps>(
   (props, ref) => {
     const { children, ...rest } = props
 
-    const styles = {
-      alignItems: 'center',
-      display: 'flex',
-      flex: 1,
-      flexWrap: 'wrap',
-      maxHeight: 75,
-      overflowY: 'scroll',
-      padding: `${layout.spacingXSmall}`,
-      width: '100%'
-    }
-
     return (
-      <div ref={ref} {...rest} {...glamor.css(styles)}>
+      <div
+        ref={ref}
+        {...rest}
+        style={{
+          alignItems: 'center',
+          display: 'flex',
+          flex: 1,
+          flexWrap: 'wrap',
+          maxHeight: 75,
+          overflowY: 'scroll',
+          padding: `${layout.spacingXSmall}`,
+          width: '100%'
+        }}
+      >
         {children}
       </div>
     )
@@ -77,12 +76,14 @@ interface PillProps extends React.ComponentProps<typeof Tag> {
 const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   const { children, onRequestRemove, ...rest } = props
 
-  const styles = {
-    margin: `calc(${variables.pills.gutter}px / 2)`
-  }
-
   return (
-    <div ref={ref} {...rest} {...glamor.css(styles)}>
+    <div
+      ref={ref}
+      {...rest}
+      style={{
+        margin: `calc(${variables.pills.gutter}px / 2)`
+      }}
+    >
       <Tag
         icon={<CloseIcon onClick={onRequestRemove} />}
         isPressed
@@ -105,7 +106,7 @@ const PillAdjacentInput = React.forwardRef<
         <div
           ref={r}
           {...p}
-          {...glamor.css({ margin: `calc(${variables.pills.gutter}px / 2)` })}
+          style={{ margin: `calc(${variables.pills.gutter}px / 2)` }}
         />
       )),
     []
@@ -117,7 +118,7 @@ const PillAdjacentInput = React.forwardRef<
       renderContainer={Container}
       type="text"
       {...props}
-      {...glamor.css({ minWidth: 50 })}
+      style={{ minWidth: 50 }}
     />
   )
 })
