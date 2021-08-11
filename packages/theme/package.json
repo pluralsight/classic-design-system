@@ -30,7 +30,6 @@
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^5.1.2",
-    "glamor": "^2.20.40",
     "react": "^17.0.1"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
