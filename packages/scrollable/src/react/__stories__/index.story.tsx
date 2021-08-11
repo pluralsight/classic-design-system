@@ -4,21 +4,12 @@ import { layout } from '@pluralsight/ps-design-system-core'
 import { P } from '@pluralsight/ps-design-system-text'
 
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Scrollable from '../index'
 
-const glamor = glamorDefault || glamorExports
-
 const Filler: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
-  <div
-    {...props}
-    {...glamor.css({
-      '& > p': { marginBottom: 10 },
-      '& > p:last-child': { marginBottom: 0 }
-    })}
-  >
+  <div {...props}>
     <P>
       There's not a thing in the world wrong with washing your brush. With
       practice comes confidence. Don't be afraid to make these big decisions.
@@ -70,25 +61,27 @@ const ScrollableWithDefaults: React.FC<
   Partial<React.ComponentProps<typeof Scrollable>>
 > = props => (
   <Scrollable
-    {...glamor.css({
+    {...props}
+    style={{
       height: 260,
       outline: '1px dashed pink',
-      width: 500
-    })}
-    {...props}
+      width: 500,
+      ...props.style
+    }}
   />
 )
 
 const VanillaScroll: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
-    {...glamor.css({
+    {...props}
+    style={{
       height: 260,
       outline: '1px dashed lightblue',
       overflowX: 'auto',
-      overflowY: 'none',
-      width: 500
-    })}
-    {...props}
+      overflowY: 'hidden',
+      width: 500,
+      ...props.style
+    }}
   />
 )
 
@@ -97,11 +90,11 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
 
   return (
     <div
-      {...glamor.css({
+      style={{
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
-      })}
+      }}
       {...rest}
     />
   )
@@ -132,13 +125,13 @@ Basic.args = { ...defaultArgs }
 export const ContainerPadding = Template.bind({})
 ContainerPadding.args = {
   ...defaultArgs,
-  ...glamor.css({ padding: layout.spacingMedium })
+  style: { padding: layout.spacingMedium }
 }
 
 export const ContentPadding = Template.bind({})
 ContentPadding.args = {
   ...defaultArgs,
-  children: <Filler {...glamor.css({ padding: layout.spacingMedium })} />
+  children: <Filler style={{ padding: layout.spacingMedium }} />
 }
 
 export const NoScrollNeeded = Template.bind({})
@@ -161,12 +154,12 @@ export const ExampleDynamicSizing: Story = () => {
   }
 
   return (
-    <ScrollableWithDefaults {...glamor.css({ height })}>
-      <div {...glamor.css({ position: 'relative', paddingTop: 50 })}>
-        <Filler {...glamor.css({ padding: layout.spacingMedium })} />
+    <ScrollableWithDefaults style={{ height }}>
+      <div style={{ position: 'relative', paddingTop: 50 }}>
+        <Filler style={{ padding: layout.spacingMedium }} />
 
         <div
-          {...glamor.css({
+          style={{
             alignItems: 'center',
             display: 'flex',
             height: 50,
@@ -175,7 +168,7 @@ export const ExampleDynamicSizing: Story = () => {
             position: 'absolute',
             top: 0,
             width: '100%'
-          })}
+          }}
         >
           <button disabled={height <= initialHeight} onClick={collapse}>
             collapse

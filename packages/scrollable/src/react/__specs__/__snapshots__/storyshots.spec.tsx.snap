@@ -2,12 +2,24 @@
 
 exports[`Storyshots Components/Scrollable Basic 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     className="psds-scrollable__outer psds-scrollable__outer--screen"
-    data-css-16jsjct=""
     data-scrollable={true}
+    style={
+      Object {
+        "height": 260,
+        "outline": "1px dashed pink",
+        "width": 500,
+      }
+    }
   >
     <div
       className="psds-scrollable__inner"
@@ -16,9 +28,7 @@ exports[`Storyshots Components/Scrollable Basic 1`] = `
         className="psds-scrollable__content"
         onScroll={[Function]}
       >
-        <div
-          data-css-83b6zj=""
-        >
+        <div>
           <p
             className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
           >
@@ -73,11 +83,17 @@ exports[`Storyshots Components/Scrollable Basic 1`] = `
     />
   </div>
   <div
-    data-css-1tfmk30=""
+    style={
+      Object {
+        "height": 260,
+        "outline": "1px dashed lightblue",
+        "overflowX": "auto",
+        "overflowY": "hidden",
+        "width": 500,
+      }
+    }
   >
-    <div
-      data-css-83b6zj=""
-    >
+    <div>
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
       >
@@ -120,13 +136,25 @@ exports[`Storyshots Components/Scrollable Basic 1`] = `
 
 exports[`Storyshots Components/Scrollable Container Padding 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     className="psds-scrollable__outer psds-scrollable__outer--screen"
-    data-css-16jsjct=""
-    data-css-1y16c93=""
     data-scrollable={true}
+    style={
+      Object {
+        "height": 260,
+        "outline": "1px dashed pink",
+        "padding": "16px",
+        "width": 500,
+      }
+    }
   >
     <div
       className="psds-scrollable__inner"
@@ -135,9 +163,7 @@ exports[`Storyshots Components/Scrollable Container Padding 1`] = `
         className="psds-scrollable__content"
         onScroll={[Function]}
       >
-        <div
-          data-css-83b6zj=""
-        >
+        <div>
           <p
             className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
           >
@@ -192,12 +218,18 @@ exports[`Storyshots Components/Scrollable Container Padding 1`] = `
     />
   </div>
   <div
-    data-css-1tfmk30=""
-    data-css-1y16c93=""
+    style={
+      Object {
+        "height": 260,
+        "outline": "1px dashed lightblue",
+        "overflowX": "auto",
+        "overflowY": "hidden",
+        "padding": "16px",
+        "width": 500,
+      }
+    }
   >
-    <div
-      data-css-83b6zj=""
-    >
+    <div>
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
       >
@@ -240,12 +272,24 @@ exports[`Storyshots Components/Scrollable Container Padding 1`] = `
 
 exports[`Storyshots Components/Scrollable Content Padding 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     className="psds-scrollable__outer psds-scrollable__outer--screen"
-    data-css-16jsjct=""
     data-scrollable={true}
+    style={
+      Object {
+        "height": 260,
+        "outline": "1px dashed pink",
+        "width": 500,
+      }
+    }
   >
     <div
       className="psds-scrollable__inner"
@@ -255,8 +299,11 @@ exports[`Storyshots Components/Scrollable Content Padding 1`] = `
         onScroll={[Function]}
       >
         <div
-          data-css-1y16c93=""
-          data-css-83b6zj=""
+          style={
+            Object {
+              "padding": "16px",
+            }
+          }
         >
           <p
             className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -312,11 +359,22 @@ exports[`Storyshots Components/Scrollable Content Padding 1`] = `
     />
   </div>
   <div
-    data-css-1tfmk30=""
+    style={
+      Object {
+        "height": 260,
+        "outline": "1px dashed lightblue",
+        "overflowX": "auto",
+        "overflowY": "hidden",
+        "width": 500,
+      }
+    }
   >
     <div
-      data-css-1y16c93=""
-      data-css-83b6zj=""
+      style={
+        Object {
+          "padding": "16px",
+        }
+      }
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -360,13 +418,24 @@ exports[`Storyshots Components/Scrollable Content Padding 1`] = `
 
 exports[`Storyshots Components/Scrollable Example Dynamic Sizing 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     className="psds-scrollable__outer psds-scrollable__outer--screen"
-    data-css-16jsjct=""
-    data-css-18kkulc=""
     data-scrollable={true}
+    style={
+      Object {
+        "height": 300,
+        "outline": "1px dashed pink",
+        "width": 500,
+      }
+    }
   >
     <div
       className="psds-scrollable__inner"
@@ -376,11 +445,19 @@ exports[`Storyshots Components/Scrollable Example Dynamic Sizing 1`] = `
         onScroll={[Function]}
       >
         <div
-          data-css-1g8berk=""
+          style={
+            Object {
+              "paddingTop": 50,
+              "position": "relative",
+            }
+          }
         >
           <div
-            data-css-1y16c93=""
-            data-css-83b6zj=""
+            style={
+              Object {
+                "padding": "16px",
+              }
+            }
           >
             <p
               className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -419,7 +496,18 @@ exports[`Storyshots Components/Scrollable Example Dynamic Sizing 1`] = `
             </p>
           </div>
           <div
-            data-css-1fr3949=""
+            style={
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "height": 50,
+                "justifyContent": "center",
+                "left": 0,
+                "position": "absolute",
+                "top": 0,
+                "width": "100%",
+              }
+            }
           >
             <button
               disabled={true}
@@ -456,12 +544,24 @@ exports[`Storyshots Components/Scrollable Example Dynamic Sizing 1`] = `
 
 exports[`Storyshots Components/Scrollable No Scroll Needed 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     className="psds-scrollable__outer psds-scrollable__outer--screen"
-    data-css-16jsjct=""
     data-scrollable={true}
+    style={
+      Object {
+        "height": 260,
+        "outline": "1px dashed pink",
+        "width": 500,
+      }
+    }
   >
     <div
       className="psds-scrollable__inner"
@@ -493,7 +593,15 @@ exports[`Storyshots Components/Scrollable No Scroll Needed 1`] = `
     />
   </div>
   <div
-    data-css-1tfmk30=""
+    style={
+      Object {
+        "height": 260,
+        "outline": "1px dashed lightblue",
+        "overflowX": "auto",
+        "overflowY": "hidden",
+        "width": 500,
+      }
+    }
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
