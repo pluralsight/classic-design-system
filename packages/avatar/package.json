@@ -11,6 +11,7 @@
   "files": [
     "react.d.ts",
     "react.mjs",
+    "react.js",
     "styles.css",
     "src/*",
     "dist/*",
