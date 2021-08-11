@@ -1,13 +1,10 @@
 import { PageWidthLayout } from '@pluralsight/ps-design-system-layout'
 import { P } from '@pluralsight/ps-design-system-text'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import AppFrame from '../index'
 import { MockContent, SideNav, TopNav } from './shared'
-
-const glamor = glamorDefault || glamorExports
 
 const defaultArgs = { children: <MockContent />, topnav: <TopNav /> }
 
@@ -28,9 +25,7 @@ SideNavScrolling.args = {
   ...defaultArgs,
   sidenav: (
     <SideNav sections={[]}>
-      <div
-        {...glamor.css({ border: '1px dashed red', margin: 40, height: 2000 })}
-      />
+      <div style={{ border: '1px dashed red', margin: 40, height: 2000 }} />
     </SideNav>
   )
 }
