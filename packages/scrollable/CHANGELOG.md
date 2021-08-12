@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@6.0.1...@pluralsight/ps-design-system-scrollable@6.0.2) (2021-08-12)
+
+
+### Bug Fixes
+
+* **scrollable:** rm glamor references ([bbe0b49](https://github.com/pluralsight/design-system/commit/bbe0b49b6fa98fc709a31646a76e65f821412461))
+
+
+
+
+
 ## [6.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@6.0.0...@pluralsight/ps-design-system-scrollable@6.0.1) (2021-07-27)
 
 

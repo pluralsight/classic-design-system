@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@11.0.1...@pluralsight/ps-design-system-avatar@11.1.0) (2021-08-12)
+
+
+### Bug Fixes
+
+* **avatar:** add react.js to files list in package.json ([ff7554a](https://github.com/pluralsight/design-system/commit/ff7554ac37bc5a36781e776c191eff9ef53b7b70))
+* **avatar:** support storybook cjs in /react import ([6ed42fb](https://github.com/pluralsight/design-system/commit/6ed42fbef8f2fadb96a22b18cc37b82aed6f4993))
+
+
+### Features
+
+* **avatar:** allow separate import for react and css ([5838fea](https://github.com/pluralsight/design-system/commit/5838fea6ef59f5a4eb1cc9badfe6bc2e901c4191))
+
+
+
+
+
 ## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@11.0.0...@pluralsight/ps-design-system-avatar@11.0.1) (2021-07-27)
 
 

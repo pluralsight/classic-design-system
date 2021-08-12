@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-tagsinput",
-  "version": "2.1.17",
+  "version": "2.1.18",
   "description": "TagsInput UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -31,11 +31,11 @@
   "style": "dist/esm/css/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^9.0.0",
-    "@pluralsight/ps-design-system-field": "^5.0.1",
-    "@pluralsight/ps-design-system-icon": "^24.0.1",
-    "@pluralsight/ps-design-system-tag": "^10.1.17",
-    "@pluralsight/ps-design-system-util": "^9.3.0",
+    "@pluralsight/ps-design-system-core": "^9.0.1",
+    "@pluralsight/ps-design-system-field": "^5.0.2",
+    "@pluralsight/ps-design-system-icon": "^24.1.0",
+    "@pluralsight/ps-design-system-tag": "^10.1.18",
+    "@pluralsight/ps-design-system-util": "^9.3.1",
     "downshift": "^6.1.0"
   },
   "peerDependencies": {
@@ -43,8 +43,8 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-build": "^3.2.2",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.5"
+    "@pluralsight/ps-design-system-build": "^4.0.0",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.6"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

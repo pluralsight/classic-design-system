@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@10.1.17...@pluralsight/ps-design-system-tag@10.1.18) (2021-08-12)
+
+
+### Bug Fixes
+
+* **tag:** rm glamor references ([3d60636](https://github.com/pluralsight/design-system/commit/3d60636ff87045cdcb311c9c48357338aa73be90))
+
+
+
+
+
 ## [10.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-tag@10.1.16...@pluralsight/ps-design-system-tag@10.1.17) (2021-07-27)
 
 

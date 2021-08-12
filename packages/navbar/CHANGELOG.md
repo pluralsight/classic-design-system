@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@6.0.2...@pluralsight/ps-design-system-navbar@6.0.3) (2021-08-12)
+
+
+### Bug Fixes
+
+* **navbar:** rm glamor references ([e158a37](https://github.com/pluralsight/design-system/commit/e158a37219bf272c15b72b6fcc038826b3609110))
+
+
+
+
+
 ## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navbar@6.0.1...@pluralsight/ps-design-system-navbar@6.0.2) (2021-07-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navbar

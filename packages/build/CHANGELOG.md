@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@3.2.2...@pluralsight/ps-design-system-build@4.0.0) (2021-08-12)
+
+
+### Code Refactoring
+
+* **build:** remove glamor and css building scripts ([4de1f6c](https://github.com/pluralsight/design-system/commit/4de1f6cebd9cfaec917e49acbed3604ecc8419fd))
+
+
+### BREAKING CHANGES
+
+* **build:** remove glamorToCss, jsToCss, build-css script
+
+
+
+
+
 ## [3.2.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-build@3.2.1...@pluralsight/ps-design-system-build@3.2.2) (2021-06-22)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-build

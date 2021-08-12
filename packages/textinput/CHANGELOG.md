@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.1.17...@pluralsight/ps-design-system-textinput@11.1.18) (2021-08-12)
+
+
+### Bug Fixes
+
+* **textinput:** rm glamor references ([79582e6](https://github.com/pluralsight/design-system/commit/79582e6fb29c923edb005e586b6ef21a963c59c4))
+
+
+
+
+
 ## [11.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.1.16...@pluralsight/ps-design-system-textinput@11.1.17) (2021-07-27)
 
 

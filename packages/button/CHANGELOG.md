@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [23.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@23.0.1...@pluralsight/ps-design-system-button@23.1.0) (2021-08-12)
+
+
+### Bug Fixes
+
+* **button:** add react.js to files list in package.json ([65fe1e9](https://github.com/pluralsight/design-system/commit/65fe1e91edcdf1cf34e3edabb073e65681b1742e))
+* **button:** support storybook cjs in /react import ([735a870](https://github.com/pluralsight/design-system/commit/735a8702ea77b1af0a2139a623c2ca8a55ccd6cf))
+
+
+### Features
+
+* **button:** allow separate import for react and css ([139ce21](https://github.com/pluralsight/design-system/commit/139ce210756ce223ad08060b2e7d18b5e20ec468))
+
+
+
+
+
 ## [23.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@23.0.0...@pluralsight/ps-design-system-button@23.0.1) (2021-07-27)
 
 

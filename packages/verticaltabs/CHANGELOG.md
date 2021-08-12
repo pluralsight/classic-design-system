@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [8.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@8.0.2...@pluralsight/ps-design-system-verticaltabs@8.0.3) (2021-08-12)
+
+
+### Bug Fixes
+
+* **verticaltabs:** rm glamor references ([8c3ac10](https://github.com/pluralsight/design-system/commit/8c3ac1083b254cba263af07ef8b83bcbe0ede9d0))
+
+
+
+
+
 ## [8.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-verticaltabs@8.0.1...@pluralsight/ps-design-system-verticaltabs@8.0.2) (2021-07-27)
 
 

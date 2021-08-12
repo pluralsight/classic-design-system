@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [24.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@24.0.1...@pluralsight/ps-design-system-icon@24.1.0) (2021-08-12)
+
+
+### Bug Fixes
+
+* **icon:** add react.js to files list in package.json ([2c08bae](https://github.com/pluralsight/design-system/commit/2c08bae00e19941fa76f3c237749a599df0ec17d))
+* **icon:** support storybook cjs in /react import ([4da5930](https://github.com/pluralsight/design-system/commit/4da5930bef4e7b2e20a204dd0e24c09d7d569948))
+
+
+### Features
+
+* **icon:** add at-symbol and slack icons ([0cf3c69](https://github.com/pluralsight/design-system/commit/0cf3c69e90bb9bdbc318dfe9178699091b437840))
+* **icon:** allow separate import for react and css ([e386e44](https://github.com/pluralsight/design-system/commit/e386e442c14573e8aea87faf6e1b6fab00a94bf9))
+
+
+
+
+
 ## [24.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@24.0.0...@pluralsight/ps-design-system-icon@24.0.1) (2021-07-27)
 
 

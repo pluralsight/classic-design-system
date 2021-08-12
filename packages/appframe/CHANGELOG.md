@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@6.0.3...@pluralsight/ps-design-system-appframe@6.0.4) (2021-08-12)
+
+
+### Bug Fixes
+
+* **appframe:** rm glamor references ([df2a50f](https://github.com/pluralsight/design-system/commit/df2a50fa635c8a339c64abdb8aff2ab4f82c523f))
+
+
+
+
+
 ## [6.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-appframe@6.0.2...@pluralsight/ps-design-system-appframe@6.0.3) (2021-07-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-appframe

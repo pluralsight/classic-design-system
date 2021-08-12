@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.1.20](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.19...@pluralsight/ps-design-system-focusmanager@7.1.20) (2021-08-12)
+
+
+### Bug Fixes
+
+* **focusmanager:** rm glamor references ([35e3039](https://github.com/pluralsight/design-system/commit/35e303919d4de986d1856300df0d13bb7e6d77d4))
+
+
+
+
+
 ## [7.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.18...@pluralsight/ps-design-system-focusmanager@7.1.19) (2021-07-27)
 
 

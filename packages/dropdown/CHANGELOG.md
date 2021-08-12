@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.1...@pluralsight/ps-design-system-dropdown@13.0.2) (2021-08-12)
+
+
+### Bug Fixes
+
+* **dropdown:** rm glamor references ([c30aa6c](https://github.com/pluralsight/design-system/commit/c30aa6c8f59033db557783b2ec132ddf4fd05e5d))
+
+
+
+
+
 ## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.0...@pluralsight/ps-design-system-dropdown@13.0.1) (2021-07-27)
 
 

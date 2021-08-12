@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@14.0.2...@pluralsight/ps-design-system-carousel@14.0.3) (2021-08-12)
+
+
+### Bug Fixes
+
+* **carousel:** rm glamor references ([cdaf619](https://github.com/pluralsight/design-system/commit/cdaf6192d626526cc763bfca3a29bfdbccf66f2f))
+
+
+
+
+
 ## [14.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-carousel@14.0.1...@pluralsight/ps-design-system-carousel@14.0.2) (2021-07-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-carousel

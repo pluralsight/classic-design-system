@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@11.0.1...@pluralsight/ps-design-system-typeahead@11.1.0) (2021-08-12)
+
+
+### Features
+
+* **typeahead:** add forwardRef to the HTMLInputElement ([5d27ef2](https://github.com/pluralsight/design-system/commit/5d27ef257db3512d88dca1b91f8fec85a3cc682d))
+
+
+
+
+
 ## [11.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@11.0.0...@pluralsight/ps-design-system-typeahead@11.0.1) (2021-07-27)
 
 
