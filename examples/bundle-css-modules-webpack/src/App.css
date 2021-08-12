@@ -5,3 +5,7 @@ body {
   background: var(--psColorsBackgroundDark1);
   padding: 1rem;
 }
+
+.header {
+  color: rebeccapurple
+}

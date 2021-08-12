@@ -10,6 +10,20 @@ module.exports = {
     clean: true,
     publicPath: '/',
   },
+  // optimization: {
+  //   splitChunks: {
+  //     cacheGroups: {
+  //       styles: {
+  //         name: "styles",
+  //         type: "css/mini-extract",
+  //         // For webpack@4
+  //         // test: /\.css$/,
+  //         chunks: "all",
+  //         enforce: true,
+  //       },
+  //     },
+  //   },
+  // },
   plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
@@ -17,20 +31,22 @@ module.exports = {
       {
         test: /\.css/,
         sideEffects: true, // temp test until sideeffects added to avatar
-        use: [MiniCssExtractPlugin.loader, {
-          loader: 'css-loader',
-          options: {
-            modules: {
-              mode: (resourcePath) => {
-                if (resourcePath.includes('@pluralsight/ps-design-system')) {
-                  return "global";
-                }
-                return "local";
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: (resourcePath) => {
+                  if (resourcePath.includes('@pluralsight/ps-design-system')) {
+                    return "global";
+                  }
+                  return "local";
+                },
+                localIdentName: '[local]__[hash:base64:5]',
               },
-              localIdentName: '[local]__[hash:base64:5]',
             },
-          },
-        }, 'postcss-loader'],
+          }, 'postcss-loader'],
         include: [
           path.resolve(__dirname, 'src'),
           path.resolve(__dirname, 'node_modules', '@pluralsight'),
