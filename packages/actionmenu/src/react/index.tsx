@@ -38,7 +38,7 @@ interface ActionMenuProps
   onClose?: () => void
   origin?: ValueOf<typeof vars.origins>
 }
-type ActionMenuComponent = RefForwardingComponent<
+export type ActionMenuComponent = RefForwardingComponent<
   ActionMenuProps,
   HTMLUListElement,
   ActionMenuStatics

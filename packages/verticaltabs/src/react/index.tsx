@@ -23,7 +23,7 @@ interface VerticalTabsStatics {
   Tier2: typeof Tier2
 }
 
-interface VerticalTabsComponents
+export interface VerticalTabsComponents
   extends RefForwardingComponent<
     VerticalTabsProps,
     HTMLUListElement,

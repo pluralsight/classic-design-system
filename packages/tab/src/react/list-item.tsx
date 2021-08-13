@@ -22,7 +22,7 @@ export interface ListItemButtonProps
 }
 type ListItemElement = HTMLButtonElement | HTMLAnchorElement
 type ListItemProps = ListItemAnchorProps | ListItemButtonProps
-type ListItemComponent = React.ForwardRefExoticComponent<ListItemProps> & {
+export type ListItemComponent = React.ForwardRefExoticComponent<ListItemProps> & {
   (props: ListItemAnchorProps, ref?: RefFor<'a'>): JSX.Element
   (props: ListItemButtonProps, ref?: RefFor<'button'>): JSX.Element
 }

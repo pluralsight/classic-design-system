@@ -33,7 +33,7 @@ interface EmptyStateStatics {
   sizes: typeof sizes
 }
 
-interface EmptyStateComponent
+export interface EmptyStateComponent
   extends RefForwardingComponent<
     EmptyStateProps,
     HTMLDivElement,

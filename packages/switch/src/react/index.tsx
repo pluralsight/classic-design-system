@@ -32,7 +32,7 @@ interface SwitchProps
   tabIndex?: number
 }
 
-interface SwitchComponent
+export interface SwitchComponent
   extends RefForwardingComponent<
     SwitchProps,
     HTMLInputElement | HTMLLabelElement,

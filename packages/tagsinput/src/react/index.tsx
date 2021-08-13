@@ -34,7 +34,7 @@ interface TagsInputStatics {
   SubLabel: typeof Field.SubLabel
 }
 
-type TagsInputComponent = React.FC<TagsInputProps> & TagsInputStatics
+export type TagsInputComponent = React.FC<TagsInputProps> & TagsInputStatics
 
 const TagsInput: TagsInputComponent = props => {
   const {

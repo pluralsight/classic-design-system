@@ -66,7 +66,7 @@ interface AppFrameStatics {
   TopNav: typeof TopNav
 }
 
-interface AppFrameComponent
+export interface AppFrameComponent
   extends RefForwardingComponent<
     AppFrameProps,
     HTMLDivElement,

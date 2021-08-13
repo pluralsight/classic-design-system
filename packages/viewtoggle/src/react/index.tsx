@@ -18,7 +18,7 @@ interface ViewToggleStatics {
   Option: typeof Option
 }
 
-interface ViewToggleComponent
+export interface ViewToggleComponent
   extends RefForwardingComponent<
     ViewToggleProps,
     HTMLDivElement,

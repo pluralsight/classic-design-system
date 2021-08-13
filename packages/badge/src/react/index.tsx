@@ -22,7 +22,7 @@ interface BadgeStatics {
   colors: typeof vars.colors
 }
 
-interface BadgeComponent
+export interface BadgeComponent
   extends RefForwardingComponent<BadgeProps, HTMLDivElement, BadgeStatics> {}
 
 const Badge = React.forwardRef<HTMLDivElement, BadgeProps>(

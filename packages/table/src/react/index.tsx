@@ -28,7 +28,7 @@ interface TableStatics {
   Row: typeof TableRow
   alignments: typeof alignments
 }
-type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
+export type TableComponent = React.ForwardRefExoticComponent<TableProps> & TableStatics
 
 const Table = React.forwardRef<HTMLTableElement, TableProps>((props, ref) => {
   const {

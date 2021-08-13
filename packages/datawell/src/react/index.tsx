@@ -15,7 +15,7 @@ interface DataWellProps extends React.HTMLAttributes<HTMLDivElement> {
 
 interface DataWellStatics {}
 
-interface DataWellComponent
+export interface DataWellComponent
   extends RefForwardingComponent<
     DataWellProps,
     HTMLDivElement,

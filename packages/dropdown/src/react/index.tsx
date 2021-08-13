@@ -48,7 +48,7 @@ interface DropdownProps
   uniqueId?: (prefix: string) => string
   value?: React.ReactText
 }
-interface DropdownComponent
+export interface DropdownComponent
   extends RefForwardingComponent<
     DropdownProps,
     HTMLButtonElement,

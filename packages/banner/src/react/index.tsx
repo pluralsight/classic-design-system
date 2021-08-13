@@ -27,7 +27,7 @@ interface BannerStatics {
   colors: typeof vars.colors
 }
 
-interface BannerComponent
+export interface BannerComponent
   extends RefForwardingComponent<BannerProps, HTMLDivElement, BannerStatics> {}
 
 const Banner = React.forwardRef((props, ref) => {

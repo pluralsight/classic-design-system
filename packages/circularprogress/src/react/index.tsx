@@ -23,7 +23,7 @@ interface CircularProgressStatics {
   sizes: typeof vars.sizes
 }
 
-interface CircularProgressComponent
+export interface CircularProgressComponent
   extends RefForwardingComponent<
     CircularProgressProps,
     HTMLDivElement,

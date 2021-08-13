@@ -67,7 +67,7 @@ interface TooltipProps extends React.HTMLAttributes<HTMLDivElement> {
   tailPosition?: ValueOf<typeof vars.tailPositions>
 }
 
-interface TooltipComponent
+export interface TooltipComponent
   extends RefForwardingComponent<
     TooltipProps,
     HTMLDivElement,

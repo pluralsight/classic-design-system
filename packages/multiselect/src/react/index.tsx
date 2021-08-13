@@ -35,7 +35,7 @@ interface MultiSelectFieldStatics {
   SubLabel: typeof Field.SubLabel
 }
 
-type MultiSelectFieldComponent = React.FC<MultiSelectFieldProps> &
+export type MultiSelectFieldComponent = React.FC<MultiSelectFieldProps> &
   MultiSelectFieldStatics
 
 const MultiSelect: MultiSelectFieldComponent = props => {

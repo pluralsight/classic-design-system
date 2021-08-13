@@ -36,7 +36,7 @@ interface CarouselStatics {
   sizes: typeof vars.sizes
 }
 
-type CarouselComponent = React.FC<CarouselProps> & CarouselStatics
+export type CarouselComponent = React.FC<CarouselProps> & CarouselStatics
 
 const Carousel: CarouselComponent = ({
   className,

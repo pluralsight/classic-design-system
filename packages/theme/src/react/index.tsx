@@ -10,7 +10,7 @@ export const ThemeContext = React.createContext<ValueOf<Names>>(defaultName)
 
 type ThemeProps = { name?: ValueOf<Names> }
 type ThemeStatics = { defaultName: typeof defaultName; names: Names }
-type ThemeComponent = React.FC<ThemeProps> & ThemeStatics
+export type ThemeComponent = React.FC<ThemeProps> & ThemeStatics
 
 const Theme: ThemeComponent = props => {
   const { name = defaultName } = props

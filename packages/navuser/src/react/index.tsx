@@ -20,7 +20,7 @@ interface NavUserProps
   >
 }
 
-type NavUserElement = HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
+export type NavUserElement = HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
 
 const NavUser = React.forwardRef<NavUserElement, NavUserProps>(
   (props, forwardedRef) => {

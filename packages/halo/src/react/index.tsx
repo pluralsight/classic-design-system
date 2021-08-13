@@ -30,7 +30,7 @@ interface HaloStatics {
   shapes: typeof vars.shapes
 }
 
-type HaloComponent = RefForwardingComponent<
+export type HaloComponent = RefForwardingComponent<
   HaloProps,
   HTMLDivElement,
   HaloStatics

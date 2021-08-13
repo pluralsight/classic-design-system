@@ -18,7 +18,7 @@ interface NavBrandProps
   rel?: string
 }
 
-type NavBrandElement = HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
+export type NavBrandElement = HTMLAnchorElement | HTMLButtonElement | HTMLDivElement
 
 const NavBrand = React.forwardRef<NavBrandElement, NavBrandProps>(
   (props, forwardedRef) => {

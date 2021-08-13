@@ -22,7 +22,7 @@ interface AvatarStatics {
   widths: typeof widths
 }
 
-type AvatarComponent = RefForwardingComponent<
+export type AvatarComponent = RefForwardingComponent<
   AvatarProps,
   HTMLDivElement,
   AvatarStatics
