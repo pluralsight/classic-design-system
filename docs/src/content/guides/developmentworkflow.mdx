@@ -102,6 +102,40 @@ module.exports = {
 }
 ```
 
+With CSS Modules
+```
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' }
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: (resourcePath) => {
+                  if (resourcePath.includes('@pluralsight/ps-design-system')) {
+                    return "global";
+                  }
+                  return "local";
+                },
+                localIdentName: '[local]__[hash:base64:5]',
+              },
+            },
+          }
+        ],
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'node_modules', '@pluralsight'),
+        ],
+      },
+    ],
+  },
+}
+```
+
 ### PostCSS
 
 If you're using Core as CSS variables, you'll want to process your app css with PostCSS in order to give fallback values to CSS custom properties. Processing Design System component CSS with PostCSS is not needed because the CSS in components has already been processed and should be browser-ready.
