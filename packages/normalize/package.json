@@ -7,6 +7,10 @@
   "author": "jaketrent",
   "keywords": [],
   "main": "dist/index.css",
+  "files": [
+    "dist/*",
+    "!postcss.config.js"
+  ],
   "scripts": {
     "build": "postcss css/index.css --dir dist"
   },
