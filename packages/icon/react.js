@@ -1,7 +1,3 @@
-// export * from './dist/esm/react/icons/index.js'
-// export { default } from './dist/esm/react/index.js'
-// export * from './dist/esm/vars/index.js'
-
 module.exports = require('./dist/cjs/react/index.js')
 
 const vars = require('./dist/cjs/vars/index.js')
