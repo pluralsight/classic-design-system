@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@6.0.2...@pluralsight/ps-design-system-normalize@6.0.3) (2021-08-23)
+
+
+### Bug Fixes
+
+* **normalize:** exclude postcss.config.js from node_modules ([b1293a6](https://github.com/pluralsight/design-system/commit/b1293a65a94f0344e80c4fc8564e795d23b550b3))
+
+
+
+
+
 ## [6.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@6.0.1...@pluralsight/ps-design-system-normalize@6.0.2) (2021-08-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-normalize

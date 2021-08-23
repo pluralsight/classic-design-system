@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-menu",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "description": "Menu UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -42,8 +42,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-icon": "^24.1.0",
-    "@pluralsight/ps-design-system-position": "^8.2.2",
+    "@pluralsight/ps-design-system-icon": "^24.1.1",
+    "@pluralsight/ps-design-system-position": "^8.2.3",
     "@pluralsight/ps-design-system-storybook-preset": "^0.7.6"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"

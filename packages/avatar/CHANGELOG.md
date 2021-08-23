@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@11.1.0...@pluralsight/ps-design-system-avatar@11.1.1) (2021-08-23)
+
+
+### Bug Fixes
+
+* **avatar:** prevent styles treeshaken by adjusting export pattern ([fd0109b](https://github.com/pluralsight/design-system/commit/fd0109bac2a623e68d202b02927e9b7251af26ba))
+
+
+
+
+
 # [11.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@11.0.1...@pluralsight/ps-design-system-avatar@11.1.0) (2021-08-12)
 
 

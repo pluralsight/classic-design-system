@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [23.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@23.1.0...@pluralsight/ps-design-system-button@23.1.1) (2021-08-23)
+
+
+### Bug Fixes
+
+* **button:** prevent styles treeshaken by adjusting export pattern ([f7d3d40](https://github.com/pluralsight/design-system/commit/f7d3d408e59a1a8c69609e7571a0bf28b01c33f9))
+
+
+
+
+
 # [23.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@23.0.1...@pluralsight/ps-design-system-button@23.1.0) (2021-08-12)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-form",
-  "version": "13.0.3",
+  "version": "13.0.4",
   "description": "Design system components for form layout",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -43,19 +43,19 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^18.0.3",
+    "@pluralsight/ps-design-system-actionmenu": "^18.0.4",
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-button": "^23.1.0",
+    "@pluralsight/ps-design-system-button": "^23.1.1",
     "@pluralsight/ps-design-system-checkbox": "^10.0.2",
-    "@pluralsight/ps-design-system-datepicker": "^16.0.2",
-    "@pluralsight/ps-design-system-dropdown": "^13.0.2",
-    "@pluralsight/ps-design-system-radio": "^11.0.2",
+    "@pluralsight/ps-design-system-datepicker": "^16.0.3",
+    "@pluralsight/ps-design-system-dropdown": "^13.0.3",
+    "@pluralsight/ps-design-system-radio": "^11.0.3",
     "@pluralsight/ps-design-system-storybook-preset": "^0.7.6",
     "@pluralsight/ps-design-system-switch": "^9.1.18",
-    "@pluralsight/ps-design-system-tag": "^10.1.18",
+    "@pluralsight/ps-design-system-tag": "^10.1.19",
     "@pluralsight/ps-design-system-text": "^20.1.18",
-    "@pluralsight/ps-design-system-textarea": "^9.1.18",
-    "@pluralsight/ps-design-system-textinput": "^11.1.18",
+    "@pluralsight/ps-design-system-textarea": "^9.1.19",
+    "@pluralsight/ps-design-system-textinput": "^11.1.19",
     "@pluralsight/ps-design-system-theme": "^8.1.16"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"

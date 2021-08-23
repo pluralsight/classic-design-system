@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-datepicker",
-  "version": "16.0.2",
+  "version": "16.0.3",
   "description": "Design system components for date picker",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -31,11 +31,11 @@
   "style": "dist/esm/css/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-button": "^23.1.0",
+    "@pluralsight/ps-design-system-button": "^23.1.1",
     "@pluralsight/ps-design-system-core": "^9.0.1",
-    "@pluralsight/ps-design-system-field": "^5.0.2",
-    "@pluralsight/ps-design-system-icon": "^24.1.0",
-    "@pluralsight/ps-design-system-textinput": "^11.1.18",
+    "@pluralsight/ps-design-system-field": "^5.0.3",
+    "@pluralsight/ps-design-system-icon": "^24.1.1",
+    "@pluralsight/ps-design-system-textinput": "^11.1.19",
     "@pluralsight/ps-design-system-util": "^9.3.1",
     "arrow-keys-react": "^1.0.6",
     "date-fns": "^2.16.1",

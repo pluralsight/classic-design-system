@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [24.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@24.1.0...@pluralsight/ps-design-system-icon@24.1.1) (2021-08-23)
+
+
+### Bug Fixes
+
+* **icon:** prevent styles treeshaken by adjusting export pattern ([2105404](https://github.com/pluralsight/design-system/commit/2105404e167cafeb4ad6d294970a1479b517eeeb))
+
+
+
+
+
 # [24.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@24.0.1...@pluralsight/ps-design-system-icon@24.1.0) (2021-08-12)
 
 

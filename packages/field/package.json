@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-field",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "Field UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -38,7 +38,7 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^9.0.1",
     "@pluralsight/ps-design-system-halo": "^11.0.2",
-    "@pluralsight/ps-design-system-icon": "^24.1.0",
+    "@pluralsight/ps-design-system-icon": "^24.1.1",
     "@pluralsight/ps-design-system-util": "^9.3.1"
   },
   "peerDependencies": {
@@ -48,9 +48,9 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-button": "^23.1.0",
+    "@pluralsight/ps-design-system-button": "^23.1.1",
     "@pluralsight/ps-design-system-storybook-preset": "^0.7.6",
-    "@pluralsight/ps-design-system-tag": "^10.1.18",
+    "@pluralsight/ps-design-system-tag": "^10.1.19",
     "downshift": "^6.1.0"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
