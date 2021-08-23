@@ -6,7 +6,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import Button from '@pluralsight/ps-design-system-button'
 import * as Text from '@pluralsight/ps-design-system-text'
 
-import Dialog from '../index'
+import Dialog from '../../index'
 
 const closeAction = action('close')
 const openAction = action('open')
