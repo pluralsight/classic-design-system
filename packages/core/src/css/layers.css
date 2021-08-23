@@ -5,3 +5,12 @@
   --ps-layers-dropdown: 1000;
   --ps-layers-skip-to-content-banner: 1600;
 }
+
+/* DEPRECATED */
+:root {
+  --psLayersMain: 0;
+  --psLayersGlobalSidenav: 930;
+  --psLayersGlobalTopnav: 950;
+  --psLayersDropdown: 1000;
+  --psLayersSkipToContentBanner: 1600;
+}

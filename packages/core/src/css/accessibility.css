@@ -1,3 +1,4 @@
+.screenreader-only, /* DEPRECATED */
 .psds-screenreader-only {
   position: absolute;
   top: auto;

@@ -7,3 +7,14 @@
   --ps-layout-spacing-xlarge: 48px;
   --ps-layout-spacing-xxLarge: 64px;
 }
+
+/* DEPRECATED */
+:root {
+  --psLayoutSpacingXXSmall: 4px;
+  --psLayoutSpacingXSmall: 8px;
+  --psLayoutSpacingSmall: 12px;
+  --psLayoutSpacingMedium: 16px;
+  --psLayoutSpacingLarge: 24px;
+  --psLayoutSpacingXLarge: 48px;
+  --psLayoutSpacingXXLarge: 64px;
+}
