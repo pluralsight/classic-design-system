@@ -9,7 +9,6 @@ import {
 import { useMultipleSelection } from 'downshift'
 import React from 'react'
 
-import '../css/index.css'
 import { Option } from './types'
 
 export { Option }
