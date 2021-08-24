@@ -7,8 +7,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
-
 let BLANK_IMAGE: HTMLImageElement | undefined
 if (canUseDOM()) {
   BLANK_IMAGE = new Image(0, 0)

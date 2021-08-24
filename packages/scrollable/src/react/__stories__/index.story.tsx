@@ -6,7 +6,7 @@ import { P } from '@pluralsight/ps-design-system-text'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Scrollable from '../index'
+import Scrollable from '../../index'
 
 const Filler: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div {...props}>
