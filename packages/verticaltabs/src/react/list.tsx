@@ -3,7 +3,6 @@ import React from 'react'
 
 import { useForceCollapsed } from './context'
 import { classNames } from '@pluralsight/ps-design-system-util'
-import '../css/index.css'
 
 interface ListProps extends React.HTMLAttributes<HTMLUListElement> {
   collapsed?: boolean

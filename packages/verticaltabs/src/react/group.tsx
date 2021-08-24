@@ -13,7 +13,6 @@ import {
 import React from 'react'
 
 import { List } from './list'
-import '../css/index.css'
 
 const styles = {
   groupHeader: (themeName: ValueOf<typeof themeNames>) =>

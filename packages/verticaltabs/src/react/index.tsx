@@ -8,7 +8,6 @@ import Context from './context'
 import Divider from './divider'
 import { Group, CollapsibleGroup } from './group'
 import { Tier1, Tier2 } from './item'
-import '../css/index.css'
 
 interface VerticalTabsProps extends React.HTMLAttributes<HTMLUListElement> {
   forceCollapsed?: boolean

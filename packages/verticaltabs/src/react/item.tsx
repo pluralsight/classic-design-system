@@ -14,7 +14,6 @@ import React, { useEffect } from 'react'
 
 import { useHideLabels } from './context'
 import { List, CollapsibleList } from './list'
-import '../css/index.css'
 
 const styles = {
   item: (themeName: ValueOf<typeof themeNames>) =>

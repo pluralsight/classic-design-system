@@ -4,7 +4,7 @@ import { DecoratorFn } from '@storybook/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import VerticalTabs from '../index'
+import VerticalTabs from '../../index'
 
 const { CollapsibleGroup, Group, Tier1, Tier2 } = VerticalTabs
 
