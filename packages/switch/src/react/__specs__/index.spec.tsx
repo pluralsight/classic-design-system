@@ -19,7 +19,6 @@ describe('Switch', () => {
 
   it('composes className', () => {
     const { container } = render(<Switch className="compose-classname" />)
-    console.log(container.firstChild)
     expect(container.firstChild).toHaveClass('compose-classname psds-switch')
   })
 
