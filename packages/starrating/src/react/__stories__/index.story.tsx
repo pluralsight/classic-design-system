@@ -2,7 +2,7 @@ import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import StarRating from '../index'
+import StarRating from '../../index'
 
 const StoryGrid: React.FC<{ cols?: number }> = props => {
   const { cols = 2, ...rest } = props

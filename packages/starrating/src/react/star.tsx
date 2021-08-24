@@ -10,8 +10,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
-
 const APPEARANCES = keyMirror('empty', 'half', 'full')
 
 const HalfStarIcon = ({ size }: { size: ValueOf<typeof Icon.sizes> }) => {
