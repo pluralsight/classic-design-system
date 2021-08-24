@@ -1,0 +1,5 @@
+export { default as Code } from './dist/esm/react/code'
+export { default as Heading } from './dist/esm/react/heading'
+export { default as Label } from './dist/esm/react/label'
+export { default as List } from './dist/esm/react/list/index'
+export { default as P } from './dist/esm/react/p'
