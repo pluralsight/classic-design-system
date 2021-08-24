@@ -37,7 +37,7 @@ import {
   useTable
 } from 'react-table'
 
-import Table from '../index'
+import Table from '../../index'
 
 import { generateNestedUserRows, generateUserRows } from './seed'
 import { FlexContainer, HorzSpacer } from './shared'

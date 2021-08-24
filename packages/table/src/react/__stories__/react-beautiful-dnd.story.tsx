@@ -18,7 +18,7 @@ import {
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Table from '../index'
+import Table from '../../index'
 import { generateUser } from './seed'
 
 export default {

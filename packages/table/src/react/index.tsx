@@ -9,7 +9,6 @@ import { ValueOf, classNames } from '@pluralsight/ps-design-system-util'
 import invariant from 'invariant'
 import React from 'react'
 
-import '../css/index.css'
 import { alignments, sorts } from '../vars/index'
 interface TableProps
   extends React.DetailedHTMLProps<

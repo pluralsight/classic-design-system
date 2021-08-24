@@ -4,7 +4,7 @@ import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Table from '../index'
+import Table from '../../index'
 import { generateUser } from './seed'
 import { FlexContainer, HorzSpacer } from './shared'
 

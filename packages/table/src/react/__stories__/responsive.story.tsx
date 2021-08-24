@@ -2,7 +2,7 @@ import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Table from '../index'
+import Table from '../../index'
 
 import { generateUser } from './seed'
 import { OutlineBox } from './shared'
