@@ -8,7 +8,7 @@ import {
 import React from 'react'
 
 import ConditionalWrap from './conditional-wrap'
-import '../css/index.css'
+
 import { toPercentageString } from '../js/index'
 import Shave from './shave'
 import * as vars from '../vars/index'

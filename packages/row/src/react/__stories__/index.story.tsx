@@ -3,7 +3,7 @@ import * as Icon from '@pluralsight/ps-design-system-icon'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Row from '../index'
+import Row from '../../index'
 
 export default {
   title: 'Components/Row',
