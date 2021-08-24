@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Tag from '../index'
+import Tag from '../../index'
 
 const defaultArgs = { children: 'hello world' }
 
