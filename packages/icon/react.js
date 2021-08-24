@@ -19,5 +19,4 @@ const __exportStar = function (m, exports) {
 
 __exportStar(require('./dist/cjs/react/icons/index.js'), module.exports)
 
-const vars = require('./dist/cjs/vars/index.js')
-Object.keys(vars).forEach(key => __createBinding(module.exports, vars, key))
+__exportStar(require('./dist/cjs/vars/index.js'), module.exports)
