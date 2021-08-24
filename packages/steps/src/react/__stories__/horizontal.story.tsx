@@ -3,7 +3,7 @@ import { useMatchMedia } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Steps from '../index'
+import Steps from '../../index'
 import { useStoryData } from './shared'
 
 export default {
