@@ -3,7 +3,7 @@ import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
 
 import { periodicElements } from '../__fixtures__/options'
-import Typeahead, { TypeaheadFilterFunction } from '../index'
+import Typeahead, { TypeaheadFilterFunction } from '../../index'
 
 const SetWidthDecorator = (Story: Story) => {
   return (

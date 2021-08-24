@@ -11,8 +11,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import Menu, { MenuItemProps } from '@pluralsight/ps-design-system-menu'
 
-import '../css/index.css'
-
 const defaultRenderOption = forwardRefWithAs<MenuItemProps, 'button'>(
   (props, ref) => {
     const { value } = props
