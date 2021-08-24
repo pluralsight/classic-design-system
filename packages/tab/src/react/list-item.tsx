@@ -2,8 +2,6 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { RefFor, classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
-
 export interface BaseListItemProps {
   id: string | number
   active?: boolean

@@ -11,7 +11,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
 import ListItem from './list-item'
 
 const slideAnimationLength = parseInt(motion.speedFast) + 10
