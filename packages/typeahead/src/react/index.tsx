@@ -1,15 +1,15 @@
 import { useCombobox } from 'downshift'
 import React from 'react'
 
-import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
-import Field from '@pluralsight/ps-design-system-field'
+import { CaretDownIcon } from '@pluralsight/ps-design-system-icon/react'
+import Field from '@pluralsight/ps-design-system-field/react'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import {
   canUseDOM,
   classNames,
   forwardRefWithAs
 } from '@pluralsight/ps-design-system-util'
-import Menu, { MenuItemProps } from '@pluralsight/ps-design-system-menu'
+import Menu, { MenuItemProps } from '@pluralsight/ps-design-system-menu/react'
 
 const defaultRenderOption = forwardRefWithAs<MenuItemProps, 'button'>(
   (props, ref) => {

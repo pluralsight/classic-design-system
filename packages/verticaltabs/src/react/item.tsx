@@ -2,7 +2,7 @@ import {
   useTheme,
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
-import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import { CaretDownIcon } from '@pluralsight/ps-design-system-icon/react'
 import {
   ValueOf,
   combineFns,

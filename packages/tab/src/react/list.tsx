@@ -3,7 +3,7 @@ import { motion } from '@pluralsight/ps-design-system-core'
 import {
   CaretRightIcon,
   CaretLeftIcon
-} from '@pluralsight/ps-design-system-icon'
+} from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   useResizeObserver,

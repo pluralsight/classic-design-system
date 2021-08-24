@@ -1,4 +1,7 @@
-import { WarningIcon, CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import {
+  WarningIcon,
+  CaretDownIcon
+} from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { classNames, ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'

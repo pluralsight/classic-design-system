@@ -3,7 +3,7 @@ import {
   SortAscIcon,
   SortDescIcon,
   SortIcon
-} from '@pluralsight/ps-design-system-icon'
+} from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, classNames } from '@pluralsight/ps-design-system-util'
 import invariant from 'invariant'

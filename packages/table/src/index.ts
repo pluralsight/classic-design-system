@@ -1,3 +1,4 @@
+import '@pluralsight/ps-design-system-icon/styles.css'
 import './css/index.css'
 import Table from './react/index'
 export default Table

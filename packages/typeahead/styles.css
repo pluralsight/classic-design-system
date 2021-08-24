@@ -1,1 +1,4 @@
-@import "./dist/esm/css/index.css" ;
+@import "@pluralsight/ps-design-system-icon/styles.css";
+@import "@pluralsight/ps-design-system-field/styles.css";
+@import "@pluralsight/ps-design-system-menu/styles.css";
+@import "./dist/esm/css/index.css";

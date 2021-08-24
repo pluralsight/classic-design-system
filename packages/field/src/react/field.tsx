@@ -9,7 +9,6 @@ import {
 import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import React from 'react'
 
-import '../css/field.css'
 import { FieldContext } from './context'
 import Input from './input'
 import Label from './label'

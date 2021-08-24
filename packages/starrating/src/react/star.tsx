@@ -1,7 +1,7 @@
 import Icon, {
   StarFillIcon,
   StarIcon
-} from '@pluralsight/ps-design-system-icon'
+} from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,

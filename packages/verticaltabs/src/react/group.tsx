@@ -3,7 +3,7 @@ import {
   names as themeNames
 } from '@pluralsight/ps-design-system-theme'
 import Collapsible from '@pluralsight/ps-design-system-collapsible'
-import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import { CaretDownIcon } from '@pluralsight/ps-design-system-icon/react'
 import {
   RefForwardingComponent,
   ValueOf,

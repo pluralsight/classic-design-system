@@ -1,10 +1,6 @@
-import {
-  classNames,
-  forwardRefWithAs
-} from '@pluralsight/ps-design-system-util'
+import { forwardRefWithAs } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
 import Menu, { MenuItemProps } from './index'
 
 interface MenuItemWithDescriptionProps extends Omit<MenuItemProps, 'value'> {

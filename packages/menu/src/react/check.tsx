@@ -1,8 +1,7 @@
-import { CheckIcon } from '@pluralsight/ps-design-system-icon'
+import { CheckIcon } from '@pluralsight/ps-design-system-icon/react'
 import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
 import { ItemContext } from './context'
 
 interface CheckProps extends React.HTMLAttributes<HTMLDivElement> {}

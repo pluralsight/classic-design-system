@@ -1,6 +1,6 @@
-import { CloseIcon } from '@pluralsight/ps-design-system-icon'
-import Field from '@pluralsight/ps-design-system-field'
-import Tag from '@pluralsight/ps-design-system-tag'
+import { CloseIcon } from '@pluralsight/ps-design-system-icon/react'
+import Field from '@pluralsight/ps-design-system-field/react'
+import Tag from '@pluralsight/ps-design-system-tag/react'
 import {
   useUniqueId,
   usePrevious,

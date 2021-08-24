@@ -5,7 +5,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
 import { MenuContext, ItemContext, SelectedItem } from './context'
 
 export interface MenuItemProps {

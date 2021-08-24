@@ -4,7 +4,7 @@ import {
   forwardRefWithAs,
   forwardRefWithStatics
 } from '@pluralsight/ps-design-system-util'
-import Menu from '@pluralsight/ps-design-system-menu'
+import Menu from '@pluralsight/ps-design-system-menu/react'
 import React from 'react'
 
 import { Button } from './button'
