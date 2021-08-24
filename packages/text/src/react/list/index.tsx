@@ -3,7 +3,6 @@ import { ValueOf, classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import ListItem from './list-item'
-import '../../css/index.css'
 import * as vars from '../../vars/index'
 
 const styles = ({

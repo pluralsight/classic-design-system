@@ -2,7 +2,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
 import { PaddingDecorator } from './shared'
-import { Code, P } from '../index'
+import { Code, P } from '../../index'
 
 export default {
   title: 'Components/Text/Code',

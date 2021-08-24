@@ -2,8 +2,6 @@ import React from 'react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { classNames } from '@pluralsight/ps-design-system-util'
 
-import '../css/index.css'
-
 const Code: React.FC<React.HTMLAttributes<HTMLElement>> = ({
   className,
   children,

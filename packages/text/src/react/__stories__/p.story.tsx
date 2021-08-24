@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
 import { PaddingDecorator, StoryGrid } from './shared'
-import { P } from '../index'
+import { P } from '../../index'
 
 export default {
   title: 'Components/Text/P',

@@ -4,7 +4,7 @@ import { axe } from 'jest-axe'
 import React from 'react'
 
 import * as stories from '../__stories__/p.story'
-import { P } from '../index'
+import { P } from '../../index'
 
 describe('Text', () => {
   describe('P', () => {

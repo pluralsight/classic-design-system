@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
 import { PaddingDecorator, StoryGrid } from './shared'
-import { Label } from '../index'
+import { Label } from '../../index'
 
 export default {
   title: 'Components/Text/Label',

@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
 import { PaddingDecorator, StoryGrid } from './shared'
-import { Heading } from '../index'
+import { Heading } from '../../index'
 
 export default {
   title: 'Components/Text/Heading',
