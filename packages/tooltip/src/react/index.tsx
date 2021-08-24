@@ -5,7 +5,6 @@ import {
   ValueOf,
   classNames
 } from '@pluralsight/ps-design-system-util'
-import '../css/index.css'
 import * as vars from '../vars/index'
 
 const styles = {
