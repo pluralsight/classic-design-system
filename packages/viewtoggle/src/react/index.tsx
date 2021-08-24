@@ -6,7 +6,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
 import * as vars from '../vars/index'
 
 interface ViewToggleProps

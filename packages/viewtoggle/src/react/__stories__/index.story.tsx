@@ -2,8 +2,9 @@ import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import ViewToggle from '../index'
+import ViewToggle from '../../index'
 
+console.log({ ViewToggle })
 const defaultArgs = {
   onSelect: action('on select')
 }
