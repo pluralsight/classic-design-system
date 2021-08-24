@@ -12,8 +12,6 @@ import { Selected } from './selected'
 import { useListbox, UseListboxProps } from './useListbox'
 import * as vars from '../vars/index'
 
-import '../css/index.css'
-
 interface DefaultRenderOptionProps {
   value: React.ReactText
   label: React.ReactText

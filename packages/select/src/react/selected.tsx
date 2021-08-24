@@ -2,7 +2,6 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
 interface SelectSelectedProps extends React.HTMLAttributes<HTMLLabelElement> {
   label?: string
   placeholder: string
