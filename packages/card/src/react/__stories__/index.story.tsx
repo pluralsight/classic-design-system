@@ -4,7 +4,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import * as core from '@pluralsight/ps-design-system-core'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 
-import Card, { CardProps } from '../index'
+import Card, { CardProps } from '../../index'
 // import { StoryFn } from '@storybook/addons'
 
 const sizes = {

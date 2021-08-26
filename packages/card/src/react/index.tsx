@@ -1,7 +1,7 @@
 // TODO: remove when IE desupported
 import polyfillFocusWithin from 'focus-within'
 
-import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
+import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import {
   names as themeNames,
   useTheme
@@ -15,7 +15,6 @@ import {
 import React from 'react'
 import Shiitake from 'shiitake'
 
-import '../css/index.css'
 import { toPercentageString } from '../js/index'
 import * as vars from '../vars/index'
 
