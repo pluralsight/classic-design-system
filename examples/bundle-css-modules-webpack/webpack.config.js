@@ -10,27 +10,13 @@ module.exports = {
     clean: true,
     publicPath: '/',
   },
-  // optimization: {
-  //   splitChunks: {
-  //     cacheGroups: {
-  //       styles: {
-  //         name: "styles",
-  //         type: "css/mini-extract",
-  //         // For webpack@4
-  //         // test: /\.css$/,
-  //         chunks: "all",
-  //         enforce: true,
-  //       },
-  //     },
-  //   },
-  // },
   plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       { test: /\.js$/, use: [{ loader: 'babel-loader' }] },
       {
         test: /\.css/,
-        sideEffects: true, // temp test until sideeffects added to avatar
+        sideEffects: true,
         use: [
           MiniCssExtractPlugin.loader,
           {
