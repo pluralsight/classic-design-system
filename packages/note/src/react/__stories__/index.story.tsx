@@ -10,15 +10,12 @@ import { Heading, P } from '@pluralsight/ps-design-system-text'
 import { action } from '@storybook/addon-actions'
 import { DecoratorFn } from '@storybook/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Note from '../index'
 
-const glamor = glamorDefault || glamorExports
-
 const ConstrainWidthDecorator: DecoratorFn = storyFn => (
-  <div {...glamor.css({ padding: layout.spacingLarge })}>{storyFn()}</div>
+  <div style={{ padding: layout.spacingLarge }}>{storyFn()}</div>
 )
 
 export default {

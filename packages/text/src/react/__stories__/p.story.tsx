@@ -1,13 +1,10 @@
 import { colorsPink, colorsBlue } from '@pluralsight/ps-design-system-core'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { PaddingDecorator, StoryGrid } from './shared'
 import { P } from '../index'
-
-const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Text/P',

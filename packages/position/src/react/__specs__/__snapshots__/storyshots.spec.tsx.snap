@@ -13,7 +13,23 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
 >
   <div>
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       above
     </div>
@@ -34,7 +50,23 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
   </div>
   <div>
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       aboveLeft
     </div>
@@ -55,7 +87,23 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
   </div>
   <div>
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       aboveRight
     </div>
@@ -76,7 +124,23 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
   </div>
   <div>
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       below
     </div>
@@ -97,7 +161,23 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
   </div>
   <div>
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       belowLeft
     </div>
@@ -118,7 +198,23 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
   </div>
   <div>
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       belowRight
     </div>
@@ -139,7 +235,23 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
   </div>
   <div>
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       rightOf
     </div>
@@ -160,7 +272,23 @@ exports[`Storyshots Components/Position Javascript Positions 1`] = `
   </div>
   <div>
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       leftOf
     </div>
@@ -194,7 +322,23 @@ exports[`Storyshots Components/Position Positions 1`] = `
   }
 >
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     &lt;Above /&gt;
   </div>
@@ -217,7 +361,23 @@ exports[`Storyshots Components/Position Positions 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     &lt;AboveLeft /&gt;
   </div>
@@ -240,7 +400,23 @@ exports[`Storyshots Components/Position Positions 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     &lt;AboveRight /&gt;
   </div>
@@ -263,7 +439,23 @@ exports[`Storyshots Components/Position Positions 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     &lt;Below /&gt;
   </div>
@@ -286,7 +478,23 @@ exports[`Storyshots Components/Position Positions 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     &lt;BelowLeft /&gt;
   </div>
@@ -309,7 +517,23 @@ exports[`Storyshots Components/Position Positions 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     &lt;BelowRight /&gt;
   </div>
@@ -332,7 +556,23 @@ exports[`Storyshots Components/Position Positions 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     &lt;LeftOf /&gt;
   </div>
@@ -355,7 +595,23 @@ exports[`Storyshots Components/Position Positions 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     &lt;RightOf /&gt;
   </div>
@@ -392,10 +648,34 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
   }
 >
   <div
-    data-css-yact98=""
+    style={
+      Object {
+        "border": "4px dashed #F59127",
+        "color": "rgba(255, 255, 255, 0.95)",
+        "height": 500,
+        "padding": 20,
+        "width": 500,
+      }
+    }
   >
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       &lt;Above /&gt;
     </div>
@@ -419,10 +699,34 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
     </div>
   </div>
   <div
-    data-css-yact98=""
+    style={
+      Object {
+        "border": "4px dashed #F59127",
+        "color": "rgba(255, 255, 255, 0.95)",
+        "height": 500,
+        "padding": 20,
+        "width": 500,
+      }
+    }
   >
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       &lt;AboveLeft /&gt;
     </div>
@@ -446,10 +750,34 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
     </div>
   </div>
   <div
-    data-css-yact98=""
+    style={
+      Object {
+        "border": "4px dashed #F59127",
+        "color": "rgba(255, 255, 255, 0.95)",
+        "height": 500,
+        "padding": 20,
+        "width": 500,
+      }
+    }
   >
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       &lt;AboveRight /&gt;
     </div>
@@ -473,10 +801,34 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
     </div>
   </div>
   <div
-    data-css-yact98=""
+    style={
+      Object {
+        "border": "4px dashed #F59127",
+        "color": "rgba(255, 255, 255, 0.95)",
+        "height": 500,
+        "padding": 20,
+        "width": 500,
+      }
+    }
   >
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       &lt;Below /&gt;
     </div>
@@ -500,10 +852,34 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
     </div>
   </div>
   <div
-    data-css-yact98=""
+    style={
+      Object {
+        "border": "4px dashed #F59127",
+        "color": "rgba(255, 255, 255, 0.95)",
+        "height": 500,
+        "padding": 20,
+        "width": 500,
+      }
+    }
   >
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       &lt;BelowLeft /&gt;
     </div>
@@ -527,10 +903,34 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
     </div>
   </div>
   <div
-    data-css-yact98=""
+    style={
+      Object {
+        "border": "4px dashed #F59127",
+        "color": "rgba(255, 255, 255, 0.95)",
+        "height": 500,
+        "padding": 20,
+        "width": 500,
+      }
+    }
   >
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       &lt;BelowRight /&gt;
     </div>
@@ -554,10 +954,34 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
     </div>
   </div>
   <div
-    data-css-yact98=""
+    style={
+      Object {
+        "border": "4px dashed #F59127",
+        "color": "rgba(255, 255, 255, 0.95)",
+        "height": 500,
+        "padding": 20,
+        "width": 500,
+      }
+    }
   >
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       &lt;LeftOf /&gt;
     </div>
@@ -581,10 +1005,34 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
     </div>
   </div>
   <div
-    data-css-yact98=""
+    style={
+      Object {
+        "border": "4px dashed #F59127",
+        "color": "rgba(255, 255, 255, 0.95)",
+        "height": 500,
+        "padding": 20,
+        "width": 500,
+      }
+    }
   >
     <div
-      data-css-5116is=""
+      style={
+        Object {
+          "alignItems": "center",
+          "border": "4px dashed #E7558B",
+          "color": "#E7558B",
+          "display": "flex",
+          "fontSize": "18px",
+          "fontWeight": 700,
+          "height": "200px",
+          "justifyContent": "center",
+          "left": "200px",
+          "position": "relative",
+          "textAlign": "center",
+          "top": "200px",
+          "width": "200px",
+        }
+      }
     >
       &lt;RightOf /&gt;
     </div>
@@ -971,13 +1419,45 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
 
 exports[`Storyshots Components/Position Scrollable Container 1`] = `
 <div
-  data-css-1h4s9im=""
+  style={
+    Object {
+      "border": "4px dashed #F59127",
+      "color": "rgba(255, 255, 255, 0.95)",
+      "height": 500,
+      "overflow": "scroll",
+      "padding": 20,
+      "width": 500,
+    }
+  }
 >
   <div
-    data-css-916a33=""
+    style={
+      Object {
+        "border": "1px dashed rgba(0, 0, 0, 0.30)",
+        "height": 200,
+        "margin": "20px 0",
+        "opacity": 0.4,
+      }
+    }
   />
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     target
   </div>
@@ -1000,7 +1480,14 @@ exports[`Storyshots Components/Position Scrollable Container 1`] = `
     </div>
   </div>
   <div
-    data-css-916a33=""
+    style={
+      Object {
+        "border": "1px dashed rgba(0, 0, 0, 0.30)",
+        "height": 200,
+        "margin": "20px 0",
+        "opacity": 0.4,
+      }
+    }
   />
 </div>
 `;
@@ -1008,7 +1495,23 @@ exports[`Storyshots Components/Position Scrollable Container 1`] = `
 exports[`Storyshots Components/Position Shown Element Keeps Ref 1`] = `
 Array [
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     Tooltip is pink
   </div>,
@@ -1051,7 +1554,23 @@ Array [
 exports[`Storyshots Components/Position Shown Element Keeps Style Prop 1`] = `
 Array [
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     Tooltip is pink
   </div>,
@@ -1089,7 +1608,23 @@ exports[`Storyshots Components/Position Target 1`] = `
   }
 >
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     <div
       style={
@@ -1120,7 +1655,23 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     <div
       style={
@@ -1151,7 +1702,23 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     <div
       style={
@@ -1182,7 +1749,23 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     <div
       style={
@@ -1213,7 +1796,23 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     <div
       style={
@@ -1244,7 +1843,23 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     <div
       style={
@@ -1275,7 +1890,23 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     <div
       style={
@@ -1306,7 +1937,23 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
-    data-css-5116is=""
+    style={
+      Object {
+        "alignItems": "center",
+        "border": "4px dashed #E7558B",
+        "color": "#E7558B",
+        "display": "flex",
+        "fontSize": "18px",
+        "fontWeight": 700,
+        "height": "200px",
+        "justifyContent": "center",
+        "left": "200px",
+        "position": "relative",
+        "textAlign": "center",
+        "top": "200px",
+        "width": "200px",
+      }
+    }
   >
     <div
       style={

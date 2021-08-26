@@ -5,7 +5,6 @@ import {
 } from '@pluralsight/ps-design-system-layout'
 import * as Text from '@pluralsight/ps-design-system-text'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import glamorDefault, * as glamorExports from 'glamor'
 import {
   DragDropContext,
   DraggableProvided,
@@ -21,8 +20,6 @@ import React from 'react'
 
 import Table from '../index'
 import { generateUser } from './seed'
-
-const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Table/react-beautiful-dnd',
@@ -132,43 +129,21 @@ export const Basic: Story = () => {
 const Handle: React.FC = props => {
   const dark = useTheme() === 'dark'
 
-  const cols = 2
-  const gutter = 2
-  const rows = 4
-  const size = 2
-
-  const matrix = new Array(rows).fill(new Array(cols).fill(null))
-  const shadow = matrix.map((c, i: number) =>
-    c.map((_r: any, j: number) => {
-      const x = j * size + j * gutter
-      const y = i * size + i * gutter
-
-      return `${x}px ${y}px`
-    })
+  return (
+    <div
+      {...props}
+      style={{
+        backgroundColor: dark
+          ? colorsTextIcon.lowOnDark
+          : colorsTextIcon.lowOnLight,
+        cursor: 'grab',
+        display: 'inline-block',
+        height: '16px',
+        width: '10px',
+        position: 'relative'
+      }}
+    />
   )
-
-  const style = glamor.css(
-    {
-      color: dark ? colorsTextIcon.lowOnDark : colorsTextIcon.lowOnLight,
-      cursor: 'grab',
-      display: 'inline-block',
-      height: (size + gutter) * rows,
-      position: 'relative',
-      width: (size + gutter) * cols
-    },
-    glamor.before({
-      backgroundColor: 'currentColor',
-      boxShadow: shadow.toString(),
-      content: ' ',
-      height: size,
-      left: gutter,
-      position: 'absolute',
-      top: gutter,
-      width: size
-    })
-  )
-
-  return <div {...props} {...style} />
 }
 
 interface DraggableRowProps extends React.ComponentProps<typeof Table.Row> {

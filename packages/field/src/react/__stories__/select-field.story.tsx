@@ -2,13 +2,10 @@ import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { useSelect } from 'downshift'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { Option, periodicElements } from '../__fixtures__/options'
 import Field from '../index'
-
-const glamor = glamorDefault || glamorExports
 
 interface SelectFieldProps extends React.ComponentProps<typeof Field> {
   options: Option[]
@@ -40,14 +37,14 @@ const SelectField: React.FC<SelectFieldProps> = props => {
       <div ref={innerRef} {...innerProps}>
         <button
           {...getToggleButtonProps()}
-          {...glamor.css({
+          style={{
             all: 'unset',
             cursor: 'pointer',
             alignItems: 'center',
             display: 'flex',
             flex: 1,
             width: '100%'
-          })}
+          }}
         >
           {innerProps.children}
         </button>
@@ -90,9 +87,9 @@ const SelectField: React.FC<SelectFieldProps> = props => {
               <li
                 key={`menu-option-${index}`}
                 {...getItemProps({ item, index })}
-                {...glamor.css({
+                style={{
                   backgroundColor: highlightedIndex === index ? 'blue' : ''
-                })}
+                }}
               >
                 <span>{option?.label} </span>
               </li>

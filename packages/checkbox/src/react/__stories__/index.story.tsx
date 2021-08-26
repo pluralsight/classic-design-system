@@ -1,13 +1,12 @@
 import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { DecoratorFn } from '@storybook/react'
-import { css } from 'glamor'
 import React from 'react'
 
 import Checkbox from '../index'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
-  <div {...css({ padding: layout.spacingLarge })}>{storyFn()}</div>
+  <div style={{ padding: layout.spacingLarge }}>{storyFn()}</div>
 )
 
 const defaultArgs = {
@@ -77,7 +76,7 @@ export const ExampleStateDemo: Story = () => {
 
   return (
     <div>
-      <div {...css({ color: colorsTextIcon.highOnDark })}>
+      <div style={{ color: colorsTextIcon.highOnDark }}>
         Checked: {colorNames.map(name => `${name}: ${values[name]}`).join('; ')}
       </div>
 

@@ -1,23 +1,21 @@
 import { DecoratorFn } from '@storybook/react'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import { ADMIN_TOOLS_NAV, DESIGN_SYSTEM_NAV, FLOW_NAV } from './fixtures'
 
 import VerticalTabs from '../index'
 
-const glamor = glamorDefault || glamorExports
 const { CollapsibleGroup, Divider, Group, Tier1, Tier2 } = VerticalTabs
 
 const FlexDecorator: DecoratorFn = storyFn => (
   <div
-    {...glamor.css({
+    style={{
       display: 'flex',
       height: '100%',
       justifyContent: 'start',
       width: '100%'
-    })}
+    }}
   >
     {storyFn()}
   </div>

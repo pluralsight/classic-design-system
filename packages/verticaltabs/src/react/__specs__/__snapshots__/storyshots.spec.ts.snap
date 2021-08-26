@@ -2,7 +2,12 @@
 
 exports[`Storyshots Components/VerticalTabs Active Item 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -95,7 +100,12 @@ exports[`Storyshots Components/VerticalTabs Active Item 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Basic 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -176,7 +186,12 @@ exports[`Storyshots Components/VerticalTabs Basic 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -287,7 +302,12 @@ exports[`Storyshots Components/VerticalTabs Collapsible 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -398,7 +418,12 @@ exports[`Storyshots Components/VerticalTabs Collapsible Start Open 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Header 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -490,7 +515,12 @@ exports[`Storyshots Components/VerticalTabs Header 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 1 Active 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -532,7 +562,12 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Active 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 1 Collapsible 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -587,7 +622,12 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Collapsible 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 1 Header Basic 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -627,7 +667,12 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Header Basic 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 1 Header Button 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -668,7 +713,12 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Header Button 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 1 Header Link 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -709,7 +759,12 @@ exports[`Storyshots Components/VerticalTabs Tier 1 Header Link 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 2 Active 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -736,7 +791,12 @@ exports[`Storyshots Components/VerticalTabs Tier 2 Active 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 2 Basic 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -762,7 +822,12 @@ exports[`Storyshots Components/VerticalTabs Tier 2 Basic 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 2 Header Basic 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -789,7 +854,12 @@ exports[`Storyshots Components/VerticalTabs Tier 2 Header Basic 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 2 Header Button 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -817,7 +887,12 @@ exports[`Storyshots Components/VerticalTabs Tier 2 Header Button 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tier 2 Header Link 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -845,7 +920,12 @@ exports[`Storyshots Components/VerticalTabs Tier 2 Header Link 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Tiers 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -1003,7 +1083,12 @@ exports[`Storyshots Components/VerticalTabs Tiers 1`] = `
 
 exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
 <div
-  data-css-b1z6un=""
+  style={
+    Object {
+      "height": "100%",
+      "width": "240px",
+    }
+  }
 >
   <ul
     className="psds-verticaltabs"
@@ -1353,7 +1438,14 @@ exports[`Storyshots Components/VerticalTabs Truncated 1`] = `
 
 exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
 <div
-  data-css-25w6jn=""
+  style={
+    Object {
+      "display": "flex",
+      "height": "100%",
+      "justifyContent": "start",
+      "width": "100%",
+    }
+  }
 >
   <div
     onMouseEnter={[Function]}
@@ -1657,7 +1749,14 @@ exports[`Storyshots Components/VerticalTabs/Examples Admin Tools 1`] = `
 
 exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
 <div
-  data-css-25w6jn=""
+  style={
+    Object {
+      "display": "flex",
+      "height": "100%",
+      "justifyContent": "start",
+      "width": "100%",
+    }
+  }
 >
   <div
     style={
@@ -2089,7 +2188,14 @@ exports[`Storyshots Components/VerticalTabs/Examples Design System 1`] = `
 
 exports[`Storyshots Components/VerticalTabs/Examples Flow 1`] = `
 <div
-  data-css-25w6jn=""
+  style={
+    Object {
+      "display": "flex",
+      "height": "100%",
+      "justifyContent": "start",
+      "width": "100%",
+    }
+  }
 >
   <div
     onMouseEnter={[Function]}

@@ -2,7 +2,11 @@
 
 exports[`Storyshots Components/Switch Basic 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-switch psds-switch--label-align-right"
@@ -37,7 +41,11 @@ exports[`Storyshots Components/Switch Basic 1`] = `
 
 exports[`Storyshots Components/Switch Checked 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-switch psds-switch--label-align-right"
@@ -72,7 +80,11 @@ exports[`Storyshots Components/Switch Checked 1`] = `
 
 exports[`Storyshots Components/Switch Checked Error 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-switch psds-switch--label-align-right"
@@ -107,10 +119,20 @@ exports[`Storyshots Components/Switch Checked Error 1`] = `
 
 exports[`Storyshots Components/Switch Colors 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1gfhbu8=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr 1fr",
+      }
+    }
   >
     <label
       className="psds-switch psds-switch--label-align-right"
@@ -217,7 +239,11 @@ exports[`Storyshots Components/Switch Colors 1`] = `
 
 exports[`Storyshots Components/Switch Disabled 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-switch psds-switch--label-align-right psds-switch--disabled"
@@ -251,7 +277,11 @@ exports[`Storyshots Components/Switch Disabled 1`] = `
 
 exports[`Storyshots Components/Switch Disabled Error 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-switch psds-switch--label-align-right psds-switch--disabled"
@@ -285,7 +315,11 @@ exports[`Storyshots Components/Switch Disabled Error 1`] = `
 
 exports[`Storyshots Components/Switch Error 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-switch psds-switch--label-align-right"
@@ -320,10 +354,20 @@ exports[`Storyshots Components/Switch Error 1`] = `
 
 exports[`Storyshots Components/Switch Example State Demo 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1gfhbu8=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr 1fr",
+      }
+    }
   >
     <label
       className="psds-switch psds-switch--label-align-right"
@@ -427,10 +471,20 @@ exports[`Storyshots Components/Switch Example State Demo 1`] = `
 
 exports[`Storyshots Components/Switch Label Alignment 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1gfhbu8=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr 1fr",
+      }
+    }
   >
     <label
       className="psds-switch psds-switch--label-align-left"
@@ -578,7 +632,11 @@ exports[`Storyshots Components/Switch Label Alignment 1`] = `
 
 exports[`Storyshots Components/Switch Named 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-switch psds-switch--label-align-right"
@@ -614,10 +672,20 @@ exports[`Storyshots Components/Switch Named 1`] = `
 
 exports[`Storyshots Components/Switch Sizes 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1gfhbu8=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr 1fr",
+      }
+    }
   >
     <label
       className="psds-switch psds-switch--label-align-right"

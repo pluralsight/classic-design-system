@@ -2,7 +2,11 @@
 
 exports[`Storyshots Components/Checkbox Basic 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-checkbox"
@@ -34,7 +38,11 @@ exports[`Storyshots Components/Checkbox Basic 1`] = `
 
 exports[`Storyshots Components/Checkbox Checked 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-checkbox"
@@ -80,7 +88,11 @@ exports[`Storyshots Components/Checkbox Checked 1`] = `
 
 exports[`Storyshots Components/Checkbox Checked Error 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-checkbox"
@@ -126,7 +138,11 @@ exports[`Storyshots Components/Checkbox Checked Error 1`] = `
 
 exports[`Storyshots Components/Checkbox Checked Indeterminate 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-checkbox"
@@ -175,7 +191,11 @@ exports[`Storyshots Components/Checkbox Checked Indeterminate 1`] = `
 
 exports[`Storyshots Components/Checkbox Disabled 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-checkbox psds-checkbox--disabled"
@@ -208,7 +228,11 @@ exports[`Storyshots Components/Checkbox Disabled 1`] = `
 
 exports[`Storyshots Components/Checkbox Error 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-checkbox"
@@ -240,11 +264,19 @@ exports[`Storyshots Components/Checkbox Error 1`] = `
 
 exports[`Storyshots Components/Checkbox Example State Demo 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div>
     <div
-      data-css-1ez0qa4=""
+      style={
+        Object {
+          "color": "rgba(255, 255, 255, 0.95)",
+        }
+      }
     >
       Checked: 
       
@@ -333,7 +365,11 @@ exports[`Storyshots Components/Checkbox Example State Demo 1`] = `
 
 exports[`Storyshots Components/Checkbox Indeterminate 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <label
     className="psds-checkbox"

@@ -210,7 +210,14 @@ Array [
     </button>
   </div>,
   <div
-    data-css-18ma6i3=""
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "justifyContent": "center",
+        "margin": "10px auto",
+      }
+    }
   >
     <button
       disabled={false}

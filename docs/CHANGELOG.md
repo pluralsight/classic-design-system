@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.31.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.31.5...@pluralsight/ps-design-system-docs@0.31.6) (2021-08-23)
+
+
+### Bug Fixes
+
+* **docs:** downgrade and lock version on avatar, button, icon for css problem ([2fba67b](https://github.com/pluralsight/design-system/commit/2fba67b2a44b3892869aceadc61b711df1dd2b03))
+
+
+
+
+
+## [0.31.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.31.4...@pluralsight/ps-design-system-docs@0.31.5) (2021-08-12)
+
+
+### Bug Fixes
+
+* **docs:** rm glamor references ([434592d](https://github.com/pluralsight/design-system/commit/434592d71edc6d9009b8117a5fb64af2a2c5edfe))
+
+
+
+
+
 ## [0.31.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.31.3...@pluralsight/ps-design-system-docs@0.31.4) (2021-07-29)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs

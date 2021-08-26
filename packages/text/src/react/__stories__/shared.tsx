@@ -1,12 +1,9 @@
 import { layout } from '@pluralsight/ps-design-system-core'
 import { DecoratorFn } from '@storybook/react'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
-const glamor = glamorDefault || glamorExports
-
 export const PaddingDecorator: DecoratorFn = storyFn => (
-  <div {...glamor.css({ padding: layout.spacingLarge })}>{storyFn()}</div>
+  <div style={{ padding: layout.spacingLarge }}>{storyFn()}</div>
 )
 
 export const StoryGrid: React.FC<{ cols?: number }> = props => {
@@ -14,11 +11,11 @@ export const StoryGrid: React.FC<{ cols?: number }> = props => {
 
   return (
     <div
-      {...glamor.css({
+      style={{
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
-      })}
+      }}
       {...rest}
     />
   )

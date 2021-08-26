@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [7.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@7.0.1...@pluralsight/ps-design-system-datawell@7.0.2) (2021-08-12)
+
+
+### Bug Fixes
+
+* **datawell:** rm glamor references ([0df301a](https://github.com/pluralsight/design-system/commit/0df301a11bc46aedfaa6c39aab6b27c8986676cc))
+
+
+
+
+
 ## [7.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datawell@7.0.0...@pluralsight/ps-design-system-datawell@7.0.1) (2021-07-27)
 
 

@@ -35,22 +35,6 @@ exports[`Storyshots Components/Tag Button 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tag Class Name Override 1`] = `
-<div
-  className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
->
-  <div
-    className="css-1wsp713 psds-tag psds-theme--dark psds-tag--size-medium"
-  >
-    <span
-      className="psds-tag__label"
-    >
-      hello world
-    </span>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/Tag Error 1`] = `
 <div
   className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--error psds-halo--visible-on-focus"
@@ -265,7 +249,13 @@ exports[`Storyshots Components/Tag Pressed With Icon 1`] = `
 
 exports[`Storyshots Components/Tag Sizes 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
@@ -298,7 +288,13 @@ exports[`Storyshots Components/Tag Sizes 1`] = `
 
 exports[`Storyshots Components/Tag Sizes With Icons 1`] = `
 <div
-  data-css-1gfhbu8=""
+  style={
+    Object {
+      "display": "grid",
+      "gap": "20px",
+      "gridTemplateColumns": "1fr 1fr",
+    }
+  }
 >
   <div
     className="psds-halo psds-theme--dark psds-halo--shape-pill psds-halo--gap-size-default psds-halo--inline psds-halo--visible-on-focus"
