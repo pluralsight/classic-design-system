@@ -1,5 +1,4 @@
-import '@pluralsight/ps-design-system-core/dist/css/accessibility.css'
-import Halo from '@pluralsight/ps-design-system-halo'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   classNames,
@@ -7,8 +6,6 @@ import {
   isFunction
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
-
-import '../css/index.css'
 
 interface CheckboxProps
   extends React.HTMLAttributes<HTMLDivElement>,

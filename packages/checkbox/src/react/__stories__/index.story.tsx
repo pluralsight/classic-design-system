@@ -3,7 +3,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import { DecoratorFn } from '@storybook/react'
 import React from 'react'
 
-import Checkbox from '../index'
+import Checkbox from '../../index'
 
 const PaddingDecorator: DecoratorFn = storyFn => (
   <div style={{ padding: layout.spacingLarge }}>{storyFn()}</div>
