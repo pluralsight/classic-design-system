@@ -1,1 +1,1 @@
-export { default } from './react/index'
+module.exports = require('./dist/cjs/react/index.js')

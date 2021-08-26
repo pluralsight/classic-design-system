@@ -1,6 +1,5 @@
 import React from 'react'
-import { TextInputProps } from '@pluralsight/ps-design-system-textinput'
-import '../css/index.css'
+import { TextInputProps } from '@pluralsight/ps-design-system-textinput/react'
 export interface SearchInputProps extends TextInputProps {
   loading?: boolean
   onClear?: (evt?: React.MouseEvent) => void

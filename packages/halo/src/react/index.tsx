@@ -8,7 +8,6 @@ import {
 import polyfillFocusWithin from 'focus-within'
 import React from 'react'
 
-import '../css/index.css'
 import * as vars from '../vars/index'
 
 if (canUseDOM()) polyfillFocusWithin(document)
