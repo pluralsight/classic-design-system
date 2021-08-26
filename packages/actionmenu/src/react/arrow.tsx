@@ -1,8 +1,6 @@
 import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
-
 export const Arrow: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
   className,
   ...rest

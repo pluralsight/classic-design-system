@@ -1,8 +1,6 @@
 import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
-
 interface Props extends React.HTMLAttributes<HTMLSpanElement> {
   marginRight?: boolean
   marginLeft?: boolean

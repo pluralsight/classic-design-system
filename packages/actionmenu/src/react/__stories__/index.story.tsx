@@ -7,7 +7,7 @@ import { action } from '@storybook/addon-actions'
 import React from 'react'
 
 import * as vars from '../../index'
-import ActionMenu from '../index'
+import ActionMenu from '../../index'
 
 export default {
   title: 'Components/ActionMenu',
