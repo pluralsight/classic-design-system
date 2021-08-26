@@ -1,2 +1,3 @@
 @import "@pluralsight/ps-design-system-icon/styles.css";
+@import "@pluralsight/ps-design-system-halo/styles.css";
 @import "./dist/esm/css/index.css";

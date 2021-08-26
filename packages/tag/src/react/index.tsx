@@ -1,4 +1,4 @@
-import Halo from '@pluralsight/ps-design-system-halo'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { ValueOf, classNames } from '@pluralsight/ps-design-system-util'

@@ -1,4 +1,4 @@
-import Halo from '@pluralsight/ps-design-system-halo'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
