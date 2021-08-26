@@ -1,9 +1,7 @@
-import Button from '@pluralsight/ps-design-system-button'
-import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon'
+import Button from '@pluralsight/ps-design-system-button/react'
+import { CaretLeftIcon } from '@pluralsight/ps-design-system-icon/react'
 import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
-
-import '../css/index.css'
 
 interface BreadcrumbProps
   extends Omit<
