@@ -5,7 +5,7 @@ import { BelowRight } from '@pluralsight/ps-design-system-position'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Carousel, { Item } from '../index'
+import Carousel, { Item } from '../../index'
 import * as vars from '../../vars/index'
 
 export default {

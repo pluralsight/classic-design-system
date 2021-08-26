@@ -7,7 +7,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
 import CarouselContext from './context'
 import { Control } from './control'
 import {
@@ -154,7 +153,7 @@ export default Carousel
 Carousel.Control = Control
 Carousel.sizes = vars.sizes
 
-interface ItemProps extends React.HTMLAttributes<HTMLLIElement> {
+export interface ItemProps extends React.HTMLAttributes<HTMLLIElement> {
   _onFocus?: (evt: React.FocusEvent) => void
 }
 

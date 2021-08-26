@@ -1,9 +1,9 @@
-import Halo from '@pluralsight/ps-design-system-halo'
+import Halo from '@pluralsight/ps-design-system-halo/react'
 import {
   CaretLeftIcon,
   CaretRightIcon,
   sizes as iconSizes
-} from '@pluralsight/ps-design-system-icon'
+} from '@pluralsight/ps-design-system-icon/react'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
@@ -12,7 +12,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
 import CarouselContext from './context'
 import * as vars from '../vars/index'
 
