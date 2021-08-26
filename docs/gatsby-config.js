@@ -55,7 +55,18 @@ module.exports = {
     },
     {
       resolve: 'gatsby-plugin-postcss',
-      options: {}
+      options: {
+        postCssPlugins: [
+          require('postcss-import'),
+          require('postcss-preset-env')({
+            browsers: 'last 2 versions',
+            features: {
+              'nesting-rules': true
+            },
+            stage: 1
+          })
+        ]
+      }
     },
     {
       resolve: 'gatsby-plugin-styled-jsx',
