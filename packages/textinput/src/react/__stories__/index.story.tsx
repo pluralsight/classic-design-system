@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import TextInput from '../index'
+import TextInput from '../../index'
 
 const defaultArgs = {
   onFocus: action('on focus'),

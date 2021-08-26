@@ -1,6 +1,6 @@
 import { layout, type } from '@pluralsight/ps-design-system-core'
-import Halo from '@pluralsight/ps-design-system-halo'
-import { WarningIcon } from '@pluralsight/ps-design-system-icon'
+import Halo from '@pluralsight/ps-design-system-halo/react'
+import { WarningIcon } from '@pluralsight/ps-design-system-icon/react'
 import {
   useTheme,
   names as themeNames
@@ -12,7 +12,6 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/index.css'
 import * as vars from '../vars/index'
 
 const calcRowsPxHeight = (rows: React.ReactText) => {
