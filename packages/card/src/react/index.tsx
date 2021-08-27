@@ -1,7 +1,9 @@
 // TODO: remove when IE desupported
 import polyfillFocusWithin from 'focus-within'
 
-import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon/react'
+import Icon, {
+  sizes as iconSizes
+} from '@pluralsight/ps-design-system-icon/react'
 import {
   names as themeNames,
   useTheme
