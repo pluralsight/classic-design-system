@@ -2,7 +2,6 @@ import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import { FieldContext } from './context'
-import '../css/input.css'
 
 export interface FieldInputProps
   extends Omit<

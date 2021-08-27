@@ -2,7 +2,6 @@ import { classNames } from '@pluralsight/ps-design-system-util'
 import type { DateObj, RenderProps } from 'dayzed'
 import React from 'react'
 
-import '../css/index.css'
 import { DateContext } from './context'
 
 interface ChildrenRenderProps

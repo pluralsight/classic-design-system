@@ -1,15 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import Button from '@pluralsight/ps-design-system-button'
+import Button from '@pluralsight/ps-design-system-button/react'
 import {
   CaretLeftIcon,
   CaretRightIcon
-} from '@pluralsight/ps-design-system-icon'
+} from '@pluralsight/ps-design-system-icon/react'
 import { RefFor, ValueOf, classNames } from '@pluralsight/ps-design-system-util'
 import Theme from '@pluralsight/ps-design-system-theme'
 import type { RenderProps } from 'dayzed'
 import React from 'react'
 
-import '../css/index.css'
 import { DateContext } from './context'
 import { slides } from '../vars/index'
 

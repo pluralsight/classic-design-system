@@ -10,7 +10,7 @@ import {
 } from './shared'
 
 import { sizes } from '../../vars/index'
-import Field from '../index'
+import Field from '../../index'
 
 interface TextInputFieldProps extends React.ComponentProps<typeof Field> {
   placeholder?: string

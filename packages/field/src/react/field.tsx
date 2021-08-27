@@ -1,5 +1,5 @@
-import Halo from '@pluralsight/ps-design-system-halo'
-import { WarningIcon } from '@pluralsight/ps-design-system-icon'
+import Halo from '@pluralsight/ps-design-system-halo/react'
+import { WarningIcon } from '@pluralsight/ps-design-system-icon/react'
 import {
   ValueOf,
   classNames,
@@ -9,7 +9,6 @@ import {
 import Theme, { names as themeNames } from '@pluralsight/ps-design-system-theme'
 import React from 'react'
 
-import '../css/field.css'
 import { FieldContext } from './context'
 import Input from './input'
 import Label from './label'

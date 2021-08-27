@@ -5,7 +5,7 @@ import { useSelect } from 'downshift'
 import React from 'react'
 
 import { Option, periodicElements } from '../__fixtures__/options'
-import Field from '../index'
+import Field from '../../index'
 
 interface SelectFieldProps extends React.ComponentProps<typeof Field> {
   options: Option[]

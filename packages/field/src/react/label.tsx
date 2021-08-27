@@ -2,8 +2,6 @@ import { classNames } from '@pluralsight/ps-design-system-util'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import React from 'react'
 
-import '../css/label.css'
-
 interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {
   htmlFor?: string
 }

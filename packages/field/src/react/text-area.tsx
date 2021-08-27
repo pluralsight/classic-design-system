@@ -1,8 +1,6 @@
 import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import '../css/text-area.css'
-
 interface TextAreaProps
   extends React.DetailedHTMLProps<
     React.TextareaHTMLAttributes<HTMLTextAreaElement>,
