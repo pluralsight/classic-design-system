@@ -15,7 +15,7 @@ import {
   onMultiDateSelected,
   useDateSelectChange,
   useRangeSelectChange
-} from '../index'
+} from '../../index'
 import { slides } from '../../vars/index'
 
 export default {

@@ -1,4 +1,5 @@
-import Field from '@pluralsight/ps-design-system-field'
+import type { FieldProps } from '@pluralsight/ps-design-system-field'
+
 import { ValueOf, canUseDOM, RefFor } from '@pluralsight/ps-design-system-util'
 import { useDayzed, DateObj } from 'dayzed'
 import React from 'react'
@@ -10,7 +11,7 @@ import { useDateSelectChange } from './utils'
 import { slides } from '../vars/index'
 
 interface DatePickerProps
-  extends Omit<React.ComponentProps<typeof Field>, 'onSelect'> {
+  extends Omit<FieldProps, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
   value?: Date
   _uniqueId?: (prefix: string) => string
