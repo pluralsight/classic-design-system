@@ -1,3 +1,5 @@
+import '@pluralsight/ps-design-system-icon/styles.css'
+import '@pluralsight/ps-design-system-halo/styles.css'
 import './css/field.css'
 import './css/input.css'
 import './css/label.css'

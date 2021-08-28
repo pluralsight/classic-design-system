@@ -1,7 +1,7 @@
 import { forwardRefWithAs } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
-import Menu, { MenuItemProps } from './index'
+import Menu, { MenuItemProps } from '../index'
 
 interface MenuItemWithDescriptionProps extends Omit<MenuItemProps, 'value'> {
   label: React.ReactText

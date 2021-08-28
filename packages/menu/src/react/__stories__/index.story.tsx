@@ -5,7 +5,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import { action } from '@storybook/addon-actions'
 import React from 'react'
 
-import Menu from '../index'
+import Menu from '../../index'
 import { MenuItemWithDescription } from '../ItemWithDescription'
 
 export default {
