@@ -68,7 +68,6 @@ export const SideNav: React.FC<SideNavProps> = props => {
           <VerticalTabs>
             <VerticalTabs.Group>
               {groups.map(section => {
-                const isOpen = openHeaderTitles.includes(section.header.title)
                 return (
                   <VerticalTabs.Tier1
                     header={
@@ -76,8 +75,6 @@ export const SideNav: React.FC<SideNavProps> = props => {
                         {section.header.title}
                       </VerticalTabs.Tier1.Header>
                     }
-                    collapsible
-                    collapsed={!isOpen}
                     key={section.header.title}
                     onClick={() =>
                       setOpenHeaderTitles(
@@ -239,30 +236,46 @@ const groups = [
     },
     items: [
       {
-        href: '/components/nav',
-        title: 'Global navigation'
+        href: '/components/actionmenu',
+        title: 'Action Menu'
       },
       {
         href: '/components/breadcrumb',
         title: 'Breadcrumb'
       },
       {
-        href: '/components/tab',
-        title: 'Horizontal tabs'
+        href: '/components/drawer',
+        title: 'Drawer'
       },
       {
-        href: '/components/verticaltabs',
-        title: 'Vertical tabs'
+        href: '/components/nav',
+        title: 'Global navigation'
+      },
+      {
+        href: '/components/link',
+        title: 'Link'
+      },
+      {
+        href: '/components/menu',
+        title: 'Menu'
       },
       {
         href: '/components/steps',
         title: 'Steps'
+      },
+      {
+        href: '/components/tab',
+        title: 'Tabs (Horizontal)'
+      },
+      {
+        href: '/components/verticaltabs',
+        title: 'Tabs (Vertical)'
       }
     ]
   },
   {
     header: {
-      title: 'Actions'
+      title: 'Inputs'
     },
     items: [
       {
@@ -270,79 +283,60 @@ const groups = [
         title: 'Button'
       },
       {
-        href: '/components/link',
-        title: 'Link'
-      },
-      {
-        href: '/components/tag',
-        title: 'Tag'
-      },
-      {
-        href: '/components/viewtoggle',
-        title: 'View toggle'
-      },
-      {
-        href: '/components/actionmenu',
-        title: 'Action Menu'
-      }
-    ]
-  },
-  {
-    header: {
-      title: 'Form inputs'
-    },
-    items: [
-      {
-        href: '/components/field',
-        title: 'Field'
-      },
-      {
-        href: '/components/textinput',
-        title: 'Text Input'
-      },
-      {
-        href: '/components/searchinput',
-        title: 'Search Input'
-      },
-      {
-        href: '/components/textarea',
-        title: 'Text Area'
-      },
-      {
-        href: '/components/dropdown',
-        title: 'Dropdown'
-      },
-      {
-        href: '/components/tagsinput',
-        title: 'Tags Input'
-      },
-      {
-        href: '/components/multiselect',
-        title: 'Multi Select'
-      },
-      {
-        href: '/components/typeahead',
-        title: 'Typeahead'
+        href: '/components/checkbox',
+        title: 'Checkbox'
       },
       {
         href: '/components/datepicker',
         title: 'Date picker'
       },
       {
-        href: '/components/checkbox',
-        title: 'Checkbox'
+        href: '/components/dropdown',
+        title: 'Dropdown'
+      },
+      {
+        href: '/components/field',
+        title: 'Field'
+      },
+      {
+        href: '/components/form',
+        title: 'Form'
+      },
+      {
+        href: '/components/multiselect',
+        title: 'Multi Select'
       },
       {
         href: '/components/radio',
         title: 'Radio'
       },
       {
+        href: '/components/searchinput',
+        title: 'Search Input'
+      },
+      {
         href: '/components/switch',
         title: 'Switch'
       },
       {
-        href: '/components/form',
-        title: 'Form'
+        href: '/components/tagsinput',
+        title: 'Tags Input'
+      },
+      {
+        href: '/components/textarea',
+        title: 'Text Area'
+      },
+      {
+        href: '/components/textinput',
+        title: 'Text Input'
+      },
+      {
+        href: '/components/typeahead',
+        title: 'Typeahead'
+      },
+      {
+        href: '/components/viewtoggle',
+        title: 'View toggle'
       }
     ]
   },
@@ -352,8 +346,8 @@ const groups = [
     },
     items: [
       {
-        href: '/components/row',
-        title: 'Row'
+        href: '/components/avatar',
+        title: 'Avatar'
       },
       {
         href: '/components/card',
@@ -364,32 +358,28 @@ const groups = [
         title: 'Carousel'
       },
       {
-        href: '/components/table',
-        title: 'Table'
-      },
-      {
-        href: '/components/drawer',
-        title: 'Drawer'
-      },
-      {
         href: '/components/datawell',
         title: 'Data well'
-      },
-      {
-        href: '/components/note',
-        title: 'Note'
-      },
-      {
-        href: '/components/avatar',
-        title: 'Avatar'
       },
       {
         href: '/components/icon',
         title: 'Icon'
       },
       {
-        href: '/components/menu',
-        title: 'Menu'
+        href: '/components/note',
+        title: 'Note'
+      },
+      {
+        href: '/components/row',
+        title: 'Row'
+      },
+      {
+        href: '/components/table',
+        title: 'Table'
+      },
+      {
+        href: '/components/tag',
+        title: 'Tag'
       }
     ]
   },
@@ -403,24 +393,8 @@ const groups = [
         title: 'Badge'
       },
       {
-        href: '/components/tooltip',
-        title: 'Tooltip'
-      },
-      {
         href: '/components/banner',
         title: 'Banner'
-      },
-      {
-        href: '/components/circularprogress',
-        title: 'Circular progress'
-      },
-      {
-        href: '/components/linearprogress',
-        title: 'Linear progress'
-      },
-      {
-        href: '/components/starrating',
-        title: 'Star rating'
       },
       {
         href: '/components/dialog',
@@ -433,6 +407,22 @@ const groups = [
       {
         href: '/components/errors',
         title: 'Error pages'
+      },
+      {
+        href: '/components/circularprogress',
+        title: 'Progress (Circular)'
+      },
+      {
+        href: '/components/linearprogress',
+        title: 'Progress (Linear)'
+      },
+      {
+        href: '/components/starrating',
+        title: 'Star rating'
+      },
+      {
+        href: '/components/tooltip',
+        title: 'Tooltip'
       }
     ]
   },
@@ -442,8 +432,8 @@ const groups = [
     },
     items: [
       {
-        href: '/components/theme',
-        title: 'Theme'
+        href: '/components/featureflags',
+        title: 'Feature flags'
       },
       {
         href: '/components/position',
@@ -458,8 +448,8 @@ const groups = [
         title: 'Scrollable'
       },
       {
-        href: '/components/featureflags',
-        title: 'Feature flags'
+        href: '/components/theme',
+        title: 'Theme'
       }
     ]
   },
