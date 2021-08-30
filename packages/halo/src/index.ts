@@ -1,5 +1,2 @@
-import './css/index.css'
-import Halo from './react/index'
-
-export default Halo
+export { default } from './react/index'
 export * from './vars/index'

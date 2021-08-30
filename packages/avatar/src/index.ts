@@ -1,6 +1,3 @@
-import './css/index.css'
-import Avatar from './react/index'
-
-export default Avatar
+export { default } from './react/index'
 export * from './vars/index'
 export * from './js/index'

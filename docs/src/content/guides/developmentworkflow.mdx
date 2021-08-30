@@ -192,6 +192,25 @@ use: ['style-loader', 'css-loader', 'sass-loader']
 ### Next.js
 
 The latest version of Next.js should handle CSS natively. No additional configuration is required.
+Versions 10 and 11 of Next.js have a [restriction on import CSS from node_modules](). This has had a lot of [community pushback](https://github.com/vercel/next.js/issues/19936#issuecomment-878465841) and there's a current [RFC](https://github.com/vercel/next.js/discussions/27953) to change it.
+
+In the meantime, you'll need to work around the restriction by using this [library](https://github.com/bem/next-global-css):
+
+```
+npm install next-global-css
+```
+
+And editing your `next.config.js`:
+
+```
+const { withGlobalCss } = require('next-global-css')
+
+const withConfig = withGlobalCss()
+
+module.exports = withConfig({
+  /* Next.js config options here */
+})
+```
 
 ### Configuration examples
 
