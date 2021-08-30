@@ -1,6 +1,4 @@
-import Icon, {
-  sizes as iconSizes
-} from '@pluralsight/ps-design-system-icon'
+import Icon, { sizes as iconSizes } from '@pluralsight/ps-design-system-icon'
 import {
   names as themeNames,
   useTheme
