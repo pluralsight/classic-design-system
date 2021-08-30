@@ -1,3 +1,1 @@
-import SearchInput from './react/index'
-
-export default SearchInput
+export { default } from './react/index'
