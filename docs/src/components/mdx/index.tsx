@@ -1,5 +1,7 @@
 import { MDXProvider as BaseProvider } from '@mdx-js/react'
+import Button from '@pluralsight/ps-design-system-button'
 import Badge from '@pluralsight/ps-design-system-badge'
+import { CheckCircleFillIcon, ExternalLinkIcon } from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
@@ -20,8 +22,11 @@ const components = {
   a: A,
   A,
   Badge,
+  Button,
   blockquote: BlockQuote,
+  CheckCircleFillIcon,
   code: CodeBlock,
+  ExternalLinkIcon,
   Guideline,
   h1: H1,
   h2: H2,
