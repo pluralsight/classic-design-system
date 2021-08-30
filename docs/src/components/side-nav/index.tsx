@@ -159,16 +159,16 @@ const groups = [
         title: 'Iconography'
       },
       {
-        href: '/core/typography',
-        title: 'Typography'
-      },
-      {
         href: '/core/motion',
         title: 'Motion'
       },
       {
         href: '/core/spacing',
         title: 'Spacing'
+      },
+      {
+        href: '/core/typography',
+        title: 'Typography'
       },
       {
         href: '/core/voice',
@@ -209,6 +209,10 @@ const groups = [
     },
     items: [
       {
+        href: '/components/text-code',
+        title: 'Code'
+      },
+      {
         href: '/components/text-heading',
         title: 'Heading'
       },
@@ -217,16 +221,12 @@ const groups = [
         title: 'Label'
       },
       {
-        href: '/components/text-paragraph',
-        title: 'Paragraph'
-      },
-      {
         href: '/components/text-list',
         title: 'List'
       },
       {
-        href: '/components/text-code',
-        title: 'Code'
+        href: '/components/text-paragraph',
+        title: 'Paragraph'
       }
     ]
   },
