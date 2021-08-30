@@ -1,4 +1,3 @@
-import './css/index.css'
 import Avatar from './react/index'
 
 export default Avatar
