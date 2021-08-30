@@ -1,4 +1,2 @@
-import Dialog from './react/index'
-
-export default Dialog
+export { default } from './react/index'
 export * from './vars/index'
