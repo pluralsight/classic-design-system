@@ -4,6 +4,7 @@ import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   classNames,
+  generateId,
   useToggle,
   RefFor
 } from '@pluralsight/ps-design-system-util'
@@ -12,12 +13,16 @@ import React from 'react'
 import '../css/index.css'
 
 interface DrawerContextValue {
+  detailId: string
   isOpen: boolean
   onToggle: () => unknown
+  summaryId: string
 }
 const initialValue = {
+  detailId: '',
   isOpen: false,
-  onToggle: () => {}
+  onToggle: () => {},
+  summaryId: ''
 }
 
 const DrawerContext = React.createContext<DrawerContextValue>(initialValue)
@@ -32,13 +37,13 @@ export const useDrawerContext = () => {
   return context
 }
 
-interface SummaryProps extends React.HTMLAttributes<HTMLDivElement> {}
-const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
+interface SummaryProps extends React.HTMLAttributes<HTMLButtonElement> {}
+const Summary = React.forwardRef<HTMLButtonElement, SummaryProps>(
   ({ children, className, ...rest }, ref) => {
     const themeName = useTheme()
-    const { isOpen, onToggle } = useDrawerContext()
+    const { summaryId, detailId, isOpen, onToggle } = useDrawerContext()
     return (
-      <div
+      <button
         className={classNames(
           `psds-drawer__summary`,
           isOpen && 'psds-drawer--is-open',
@@ -47,8 +52,9 @@ const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
         )}
         onClick={onToggle}
         ref={ref}
-        role="button"
         aria-expanded={isOpen}
+        id={summaryId}
+        aria-controls={detailId}
         {...rest}
       >
         {children}
@@ -64,7 +70,7 @@ const Summary = React.forwardRef<HTMLDivElement, SummaryProps>(
             {isOpen ? 'Expanded' : 'Collapsed'}
           </ScreenReaderOnly>
         </div>
-      </div>
+      </button>
     )
   }
 )
@@ -73,7 +79,7 @@ interface DetailsProps extends React.HTMLAttributes<HTMLDivElement> {}
 const Details = React.forwardRef<HTMLDivElement, DetailsProps>(
   ({ className, ...rest }, forwardedRef) => {
     const themeName = useTheme()
-    const { isOpen } = useDrawerContext()
+    const { summaryId, detailId, isOpen } = useDrawerContext()
     const { 'aria-hidden': ariaHidden, ref } = useCollapsible(isOpen)
     React.useImperativeHandle(
       forwardedRef,
@@ -83,6 +89,9 @@ const Details = React.forwardRef<HTMLDivElement, DetailsProps>(
     return (
       <div
         aria-hidden={ariaHidden}
+        aria-labelledby={summaryId}
+        id={detailId}
+        role="region"
         ref={ref}
         {...rest}
         className={classNames(
@@ -110,7 +119,9 @@ const Drawer: React.FC<DrawerProps> & DrawerStatics = ({
   isOpen,
   onToggle
 }) => {
-  const value = useToggle({ isOpen, onToggle })
+  const summaryId = React.useMemo(() => generateId('psds-drawer-summary-'), [])
+  const detailId = React.useMemo(() => generateId('psds-drawer-detail-'), [])
+  const value = { ...useToggle({ isOpen, onToggle }), summaryId, detailId }
   return (
     <DrawerContext.Provider value={value}>{children}</DrawerContext.Provider>
   )

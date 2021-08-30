@@ -3,7 +3,8 @@
   color: var(--ps-colors-text-icon-low-on-light);
 }
 .psds-drawer__summary.psds-theme--light:active,
-.psds-drawer__summary.psds-theme--light:hover {
+.psds-drawer__summary.psds-theme--light:hover,
+.psds-drawer__summary.psds-theme--light:focus {
   color: var(--ps-colors-text-icon-high-on-light);
 }
 .psds-drawer__summary.psds-theme--dark {
@@ -11,7 +12,8 @@
   color: var(--ps-colors-text-icon-low-on-dark);
 }
 .psds-drawer__summary.psds-theme--dark:active,
-.psds-drawer__summary.psds-theme--dark:hover {
+.psds-drawer__summary.psds-theme--dark:hover,
+.psds-drawer__summary.psds-theme--dark:focus {
   color: var(--ps-colors-text-icon-high-on-dark);
 }
 .psds-drawer__summary {
@@ -26,13 +28,15 @@
   transition: all var(--ps-motion-speed-normal);
   padding: var(--ps-layout-spacing-small) var(--ps-layout-spacing-medium);
 }
-.psds-drawer__summary:hover {
+.psds-drawer__summary:hover,
+.psds-drawer__summary:focus {
   background: var(--ps-colors-background-utility-25);
 }
 .psds-drawer__summary.psds-drawer--is-open {
   background: var(--ps-colors-background-utility-25);
 }
-.psds-drawer__summary.psds-drawer--is-open:hover {
+.psds-drawer__summary.psds-drawer--is-open:hover,
+.psds-drawer__summary.psds-drawer--is-open:focus {
   background: var(--ps-colors-background-utility-25);
 }
 .psds-drawer__details {
