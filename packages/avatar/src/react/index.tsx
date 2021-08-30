@@ -6,6 +6,7 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
+import '../css/index.css'
 import { sizes, widths } from '../vars/index'
 import { getColorByName, getInitials, transformSrc } from '../js/index'
 

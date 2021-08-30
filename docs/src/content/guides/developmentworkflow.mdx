@@ -100,6 +100,40 @@ module.exports = {
 }
 ```
 
+With CSS Modules
+```
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' }
+          {
+            loader: 'css-loader',
+            options: {
+              modules: {
+                mode: (resourcePath) => {
+                  if (resourcePath.includes('@pluralsight/ps-design-system')) {
+                    return "global";
+                  }
+                  return "local";
+                },
+                localIdentName: '[local]__[hash:base64:5]',
+              },
+            },
+          }
+        ],
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'node_modules', '@pluralsight'),
+        ],
+      },
+    ],
+  },
+}
+```
+
 ### PostCSS
 
 If you're using Core as CSS variables, you'll want to process your app css with PostCSS in order to give fallback values to CSS custom properties. Processing Design System component CSS with PostCSS is not needed because the CSS in components has already been processed and should be browser-ready.
@@ -158,6 +192,25 @@ use: ['style-loader', 'css-loader', 'sass-loader']
 ### Next.js
 
 The latest version of Next.js should handle CSS natively. No additional configuration is required.
+Versions 10 and 11 of Next.js have a [restriction on import CSS from node_modules](). This has had a lot of [community pushback](https://github.com/vercel/next.js/issues/19936#issuecomment-878465841) and there's a current [RFC](https://github.com/vercel/next.js/discussions/27953) to change it.
+
+In the meantime, you'll need to work around the restriction by using this [library](https://github.com/bem/next-global-css):
+
+```
+npm install next-global-css
+```
+
+And editing your `next.config.js`:
+
+```
+const { withGlobalCss } = require('next-global-css')
+
+const withConfig = withGlobalCss()
+
+module.exports = withConfig({
+  /* Next.js config options here */
+})
+```
 
 ### Configuration examples
 
