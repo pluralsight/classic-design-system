@@ -1,5 +1,2 @@
-import TextArea from './react/index'
-
-export default TextArea
-
+export { default } from './react/index'
 export * from './vars/index'
