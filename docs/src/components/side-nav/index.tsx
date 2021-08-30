@@ -186,20 +186,20 @@ const groups = [
         title: 'App frame'
       },
       {
-        href: '/components/layout-page-heading',
-        title: 'Page heading'
-      },
-      {
-        href: '/components/layout-page-width',
-        title: 'Page width'
-      },
-      {
         href: '/components/layout-aside',
         title: 'Aside'
       },
       {
         href: '/components/layout-column',
         title: 'Column'
+      },
+      {
+        href: '/components/layout-page-heading',
+        title: 'Page heading'
+      },
+      {
+        href: '/components/layout-page-width',
+        title: 'Page width'
       }
     ]
   },
