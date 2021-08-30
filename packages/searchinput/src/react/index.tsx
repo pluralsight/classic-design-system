@@ -1,12 +1,14 @@
 import React from 'react'
 
-import Button from '@pluralsight/ps-design-system-button/react'
-import CircularProgress from '@pluralsight/ps-design-system-circularprogress/react'
-import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon/react'
+import Button from '@pluralsight/ps-design-system-button'
+import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
+import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput, {
   TextInputProps
-} from '@pluralsight/ps-design-system-textinput/react'
+} from '@pluralsight/ps-design-system-textinput'
 import { RefFor, classNames } from '@pluralsight/ps-design-system-util'
+
+import '../css/index.css'
 
 export interface SearchInputProps extends TextInputProps {
   loading?: boolean
