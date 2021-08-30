@@ -1,4 +1,3 @@
-import './css/index.css'
 import Icon from './react/index'
 
 export default Icon

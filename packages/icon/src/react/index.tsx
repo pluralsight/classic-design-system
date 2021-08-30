@@ -6,6 +6,7 @@ import {
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
+import '../css/index.css'
 import { colors, sizes } from '../vars'
 
 export interface IconProps extends React.HTMLAttributes<HTMLDivElement> {
