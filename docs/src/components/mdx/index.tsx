@@ -28,7 +28,6 @@ const components = {
   Button,
   blockquote: BlockQuote,
   CheckCircleFillIcon,
-  WarningFilledIcon,
   code: CodeBlock,
   Guideline,
   h1: H1,
@@ -44,7 +43,8 @@ const components = {
   TypesProp: Types.Prop,
   TypesEnum: Types.Enum,
   ul: Ul,
-  Usage
+  Usage,
+  WarningFilledIcon
 }
 
 export const MDXProvider: React.FC = props => (
