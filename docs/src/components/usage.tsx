@@ -24,6 +24,7 @@ export const Usage: React.FC<UsageProps> = props => {
             appearance="secondary"
             href={`https://github.com/pluralsight/design-system/blob/master/packages/${props.packageName}`}
             target="_blank"
+            rel="noreferrer"
             size="small"
             icon={<SocialGithubIcon />}
           >
@@ -35,6 +36,7 @@ export const Usage: React.FC<UsageProps> = props => {
             appearance="secondary"
             href={`https://github.com/pluralsight/design-system/blob/master/packages/${props.packageName}/CHANGELOG.md`}
             target="_blank"
+            rel="noreferrer"
             size="small"
             icon={<ListIcon />}
           >
@@ -46,6 +48,7 @@ export const Usage: React.FC<UsageProps> = props => {
             appearance="secondary"
             href={`https://bundlephobia.com/package/@pluralsight/ps-design-system-${props.packageName}`}
             target="_blank"
+            rel="noreferrer"
             size="small"
             icon={<ExternalLinkIcon />}
           >
@@ -57,6 +60,7 @@ export const Usage: React.FC<UsageProps> = props => {
             appearance="secondary"
             href={`${props.figmaUrl}`}
             target="_blank"
+            rel="noreferrer"
             size="small"
             icon={
               <Icon>
