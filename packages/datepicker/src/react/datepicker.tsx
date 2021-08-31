@@ -9,7 +9,7 @@ import { useDayzed, DateObj } from 'dayzed'
 import React from 'react'
 
 import { Calendar } from './calendar'
-import { CalendarDates } from './calendar-dates'
+import { CalendarDay, CalendarDayProps } from './calendar-day'
 import { TextInputField } from './text-input-field'
 import { handleDateSelectChange } from './utils'
 
@@ -148,20 +148,26 @@ interface CalendarWrapperProps {
 }
 
 const CalendarWrapper: React.FC<CalendarWrapperProps> = ({
-  selected,
+  selected = new Date(),
   onDateSelected,
   labelId,
   handleEscapeKeyDown,
   uniqueId
 }) => {
-  const { getDateProps, ...dayzedData } = useDayzed({
-    date: selected,
-    selected,
-    onDateSelected
-  })
+  console.log(
+    useDayzed({
+      date: selected,
+      selected,
+      onDateSelected
+    })
+  )
   return (
     <Calendar
-      {...dayzedData}
+      {...useDayzed({
+        date: selected,
+        selected,
+        onDateSelected
+      })}
       trapped={true}
       aria-modal="true"
       aria-labelledby={labelId}
@@ -171,11 +177,7 @@ const CalendarWrapper: React.FC<CalendarWrapperProps> = ({
       uniqueId={uniqueId}
       selected={selected}
     >
-      <CalendarDates getDateProps={getDateProps}>
-        {renderProps => {
-          return <button {...renderProps} />
-        }}
-      </CalendarDates>
+      {(props: CalendarDayProps) => <CalendarDay {...props} />}
     </Calendar>
   )
 }

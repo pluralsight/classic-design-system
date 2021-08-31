@@ -3,7 +3,6 @@ import * as core from '@pluralsight/ps-design-system-core'
 import Tooltip from '@pluralsight/ps-design-system-tooltip'
 import { usePortal } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import {
@@ -26,8 +25,6 @@ import {
   LeftOf,
   RightOf
 } from '../index'
-
-const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Position'
@@ -63,24 +60,25 @@ const Box = React.forwardRef<
   /* eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion */
   React.useImperativeHandle(forwardedRef, () => ref.current as HTMLDivElement)
 
-  const selectors = glamor.css({
-    position: 'relative',
-    top: '200px',
-    left: '200px',
-    alignItems: 'center',
-    border: `4px dashed ${core.colorsPink[6]}`,
-    color: core.colorsPink[6],
-    display: 'flex',
-    fontSize: core.type.fontSize400,
-    fontWeight: core.type.fontWeight700,
-    height: '200px',
-    justifyContent: 'center',
-    textAlign: 'center',
-    width: '200px'
-  })
-
   return (
-    <div {...selectors} ref={ref}>
+    <div
+      style={{
+        position: 'relative',
+        top: '200px',
+        left: '200px',
+        alignItems: 'center',
+        border: `4px dashed ${core.colorsPink[6]}`,
+        color: core.colorsPink[6],
+        display: 'flex',
+        fontSize: core.type.fontSize400,
+        fontWeight: core.type.fontWeight700,
+        height: '200px',
+        justifyContent: 'center',
+        textAlign: 'center',
+        width: '200px'
+      }}
+      ref={ref}
+    >
       {props.children}
     </div>
   )
@@ -102,26 +100,27 @@ const MockToolip = React.forwardRef<
 })
 
 const ScrollContainer: React.FC = props => {
-  const containerSelectors = glamor.css({
-    border: `4px dashed ${core.colorsOrange[6]}`,
-    color: core.colorsTextIcon.highOnDark,
-    height: 500,
-    overflow: 'scroll',
-    padding: 20,
-    width: 500
-  })
-  const shimSelectors = glamor.css({
+  const shimSelectors = {
     border: `1px dashed ${core.colorsBorder.highOnLight}`,
     height: 200,
     margin: '20px 0',
     opacity: 0.4
-  })
+  }
 
   return (
-    <div {...containerSelectors}>
-      <div {...shimSelectors} />
+    <div
+      style={{
+        border: `4px dashed ${core.colorsOrange[6]}`,
+        color: core.colorsTextIcon.highOnDark,
+        height: 500,
+        overflow: 'scroll',
+        padding: 20,
+        width: 500
+      }}
+    >
+      <div style={shimSelectors} />
       {props.children}
-      <div {...shimSelectors} />
+      <div style={shimSelectors} />
     </div>
   )
 }
@@ -171,14 +170,18 @@ export const PositionsInCustomPortal: Story = () => {
         const name = `<${Comp.displayName} />`
 
         const Outer: React.FC = props => {
-          const selectors = glamor.css({
-            border: `4px dashed ${core.colorsOrange[6]}`,
-            color: core.colorsTextIcon.highOnDark,
-            height: 500,
-            padding: 20,
-            width: 500
-          })
-          return <div {...props} {...selectors} />
+          return (
+            <div
+              {...props}
+              style={{
+                border: `4px dashed ${core.colorsOrange[6]}`,
+                color: core.colorsTextIcon.highOnDark,
+                height: 500,
+                padding: 20,
+                width: 500
+              }}
+            />
+          )
         }
 
         interface PortalStoryProps {

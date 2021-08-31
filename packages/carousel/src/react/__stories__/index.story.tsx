@@ -3,13 +3,10 @@ import Card from '@pluralsight/ps-design-system-card'
 import * as Icon from '@pluralsight/ps-design-system-icon'
 import { BelowRight } from '@pluralsight/ps-design-system-position'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Carousel, { Item } from '../index'
 import * as vars from '../../vars/index'
-
-const glamor = glamorDefault || glamorExports
 
 export default {
   title: 'Components/Carousel',
@@ -62,7 +59,7 @@ const MockCard: React.FC<MockCardProps> = props => {
 
 const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
   <div
-    {...glamor.css({
+    style={{
       alignItems: 'center',
       background: 'pink',
       display: 'flex',
@@ -70,15 +67,15 @@ const MockItem: React.FC<React.HTMLAttributes<HTMLDivElement>> = props => (
       height: '150px',
       justifyContent: 'center',
       position: 'relative'
-    })}
+    }}
     {...props}
   >
     {' '}
-    <button {...glamor.css({ flex: 'none' })}>Button</button>
-    <p {...glamor.css({ width: '100%', textAlign: 'center', padding: 10 })}>
+    <button style={{ flex: 'none' }}>Button</button>
+    <p style={{ width: '100%', textAlign: 'center', padding: 10 }}>
       non focusable /tabIndex text
     </p>
-    <a href="https://duckduckgo.com/" {...glamor.css({ flex: 'none' })}>
+    <a href="https://duckduckgo.com/" style={{ flex: 'none' }}>
       Link
     </a>
     {props.children}
@@ -146,12 +143,12 @@ export const ItemsDynamic: Story = () => {
         </Carousel>
 
         <div
-          {...glamor.css({
+          style={{
             alignItems: 'center',
             display: 'flex',
             justifyContent: 'center',
             margin: '10px auto'
-          })}
+          }}
         >
           <button disabled={count <= 1} onClick={remove}>
             remove

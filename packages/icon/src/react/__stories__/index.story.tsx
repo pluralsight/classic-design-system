@@ -1,8 +1,7 @@
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 
-import Icon from '../index'
-import * as Icons from '../icons'
+import Icon, { icons } from '../../index'
 
 export default {
   title: 'Components/Icon',
@@ -12,7 +11,7 @@ export default {
 export const Colors: Story = () => (
   <div>
     {Object.values(Icon.colors).map(color => (
-      <Icons.CheckIcon key={color} color={Icon.colors[color]} />
+      <icons.CheckIcon key={color} color={Icon.colors[color]} />
     ))}
   </div>
 )
@@ -20,16 +19,16 @@ export const Colors: Story = () => (
 export const Sizes: Story = () => (
   <div>
     {Object.values(Icon.sizes).map(size => (
-      <Icons.CheckIcon key={size} size={Icon.sizes[size]} />
+      <icons.CheckIcon key={size} size={Icon.sizes[size]} />
     ))}
   </div>
 )
 
 export const ExportedIcons: Story = () => (
   <StoryGrid>
-    {Object.keys(Icons).map(id => {
-      // @ts-ignore: mapping over Icons
-      const Comp = Icons[id]
+    {Object.keys(icons).map(id => {
+      // @ts-ignore: mapping over icons
+      const Comp = icons[id]
       return [
         <div key={'div' + id}>{id}</div>,
         <Comp
@@ -44,7 +43,7 @@ export const ExportedIcons: Story = () => (
 )
 
 export const CustomProps: Story = () => (
-  <Icons.CheckIcon
+  <icons.CheckIcon
     color={Icon.colors.textIconHighOnDark}
     aria-label="completed"
   />

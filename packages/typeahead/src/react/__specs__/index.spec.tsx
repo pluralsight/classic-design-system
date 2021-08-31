@@ -5,6 +5,8 @@ import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
+import { periodicElements } from '../__fixtures__/options'
+import TypeAhead from '../index'
 import * as stories from '../__stories__/index.story'
 
 jest.mock('@pluralsight/ps-design-system-position', () => {
@@ -35,6 +37,25 @@ describe('TypeaheadField', () => {
 
   afterEach(() => {
     raf.mockRestore()
+  })
+
+  it('forwards ref', () => {
+    const ref = React.createRef<HTMLInputElement>()
+    render(
+      <TypeAhead
+        ref={ref}
+        onChange={(
+          evt: React.ChangeEvent<HTMLInputElement> | null,
+          selectedItem?: {
+            label: React.ReactText
+            value?: React.ReactText
+          }
+        ) => {}}
+        options={[]}
+        value={undefined}
+      />
+    )
+    expect(ref).not.toBeNull()
   })
 
   // TODO: Re-enable when #1894 merges

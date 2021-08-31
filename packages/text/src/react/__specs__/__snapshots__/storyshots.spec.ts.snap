@@ -2,7 +2,11 @@
 
 exports[`Storyshots Components/Text/Code Empty 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <p
     className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -15,7 +19,11 @@ exports[`Storyshots Components/Text/Code Empty 1`] = `
 
 exports[`Storyshots Components/Text/Code Ends Single Line 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <p
     className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -32,7 +40,11 @@ exports[`Storyshots Components/Text/Code Ends Single Line 1`] = `
 
 exports[`Storyshots Components/Text/Code Lead Single Line 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <p
     className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -49,7 +61,11 @@ exports[`Storyshots Components/Text/Code Lead Single Line 1`] = `
 
 exports[`Storyshots Components/Text/Code Line Wrap 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <p
     className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -67,7 +83,11 @@ exports[`Storyshots Components/Text/Code Line Wrap 1`] = `
 
 exports[`Storyshots Components/Text/Code Maintains Whitespace 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <code
     className="psds-text__code psds-theme--dark"
@@ -79,7 +99,11 @@ exports[`Storyshots Components/Text/Code Maintains Whitespace 1`] = `
 
 exports[`Storyshots Components/Text/Code Middle Of Paragraph 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <p
     className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -98,7 +122,11 @@ exports[`Storyshots Components/Text/Code Middle Of Paragraph 1`] = `
 
 exports[`Storyshots Components/Text/Code Standalone 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <code
     className="psds-text__code psds-theme--dark"
@@ -110,7 +138,11 @@ exports[`Storyshots Components/Text/Code Standalone 1`] = `
 
 exports[`Storyshots Components/Text/Heading Basic 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <h1
     className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -123,10 +155,20 @@ exports[`Storyshots Components/Text/Heading Basic 1`] = `
 
 exports[`Storyshots Components/Text/Heading Colors 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1cpmtjf=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr",
+      }
+    }
   >
     <h1
       className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -146,10 +188,20 @@ exports[`Storyshots Components/Text/Heading Colors 1`] = `
 
 exports[`Storyshots Components/Text/Heading Sizes 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1cpmtjf=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr",
+      }
+    }
   >
     <h1
       className="psds-text__heading psds-text__heading--size-xxxsmall psds-text__heading--color-primary psds-theme--dark"
@@ -199,7 +251,11 @@ exports[`Storyshots Components/Text/Heading Sizes 1`] = `
 
 exports[`Storyshots Components/Text/Heading Style Override 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <h1
     className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
@@ -217,7 +273,11 @@ exports[`Storyshots Components/Text/Heading Style Override 1`] = `
 
 exports[`Storyshots Components/Text/Label Basic 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <span
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark"
@@ -232,7 +292,11 @@ exports[`Storyshots Components/Text/Label Basic 1`] = `
 
 exports[`Storyshots Components/Text/Label Caps 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <span
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark psds-text__label--caps"
@@ -247,7 +311,11 @@ exports[`Storyshots Components/Text/Label Caps 1`] = `
 
 exports[`Storyshots Components/Text/Label Mono 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <span
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark psds-text__label--mono"
@@ -262,10 +330,20 @@ exports[`Storyshots Components/Text/Label Mono 1`] = `
 
 exports[`Storyshots Components/Text/Label Sizes 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1cpmtjf=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr",
+      }
+    }
   >
     <span
       className="psds-text__label psds-text__label--size-xsmall psds-text__label--color-primary psds-theme--dark"
@@ -305,7 +383,11 @@ exports[`Storyshots Components/Text/Label Sizes 1`] = `
 
 exports[`Storyshots Components/Text/Label Strong 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <span
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark psds-text__label--strong"
@@ -320,7 +402,11 @@ exports[`Storyshots Components/Text/Label Strong 1`] = `
 
 exports[`Storyshots Components/Text/Label Strong Caps 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <span
     className="psds-text__label psds-text__label--size-medium psds-text__label--color-primary psds-theme--dark psds-text__label--strong psds-text__label--caps"
@@ -335,7 +421,11 @@ exports[`Storyshots Components/Text/Label Strong Caps 1`] = `
 
 exports[`Storyshots Components/Text/List Basic 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <ul
     className="psds-text__list psds-theme--dark psds-text__list--size-medium psds-text__list--color-primary psds-text__list--type-default"
@@ -362,10 +452,20 @@ exports[`Storyshots Components/Text/List Basic 1`] = `
 
 exports[`Storyshots Components/Text/List Sizes 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1cpmtjf=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr",
+      }
+    }
   >
     <ul
       className="psds-text__list psds-theme--dark psds-text__list--size-small psds-text__list--color-primary psds-text__list--type-default"
@@ -433,10 +533,20 @@ exports[`Storyshots Components/Text/List Sizes 1`] = `
 
 exports[`Storyshots Components/Text/List Types 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1cpmtjf=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr",
+      }
+    }
   >
     <ul
       className="psds-text__list psds-theme--dark psds-text__list--size-medium psds-text__list--color-primary psds-text__list--type-default"
@@ -504,7 +614,11 @@ exports[`Storyshots Components/Text/List Types 1`] = `
 
 exports[`Storyshots Components/Text/P Basic 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <p
     className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -517,10 +631,20 @@ exports[`Storyshots Components/Text/P Basic 1`] = `
 
 exports[`Storyshots Components/Text/P Colors 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1cpmtjf=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr",
+      }
+    }
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -540,10 +664,20 @@ exports[`Storyshots Components/Text/P Colors 1`] = `
 
 exports[`Storyshots Components/Text/P Sizes 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <div
-    data-css-1cpmtjf=""
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr",
+      }
+    }
   >
     <p
       className="psds-text__p psds-text__p--size-small psds-text__p--color-primary psds-theme--dark"
@@ -569,7 +703,11 @@ exports[`Storyshots Components/Text/P Sizes 1`] = `
 
 exports[`Storyshots Components/Text/P Style Override 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <p
     className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -587,7 +725,11 @@ exports[`Storyshots Components/Text/P Style Override 1`] = `
 
 exports[`Storyshots Components/Text/P With Em 1`] = `
 <div
-  data-css-yto836=""
+  style={
+    Object {
+      "padding": "24px",
+    }
+  }
 >
   <p
     className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"

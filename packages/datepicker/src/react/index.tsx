@@ -1,5 +1,5 @@
 export { Calendar } from './calendar'
-export { CalendarDates } from './calendar-dates'
+export { CalendarDay, CalendarDayProps } from './calendar-day'
 export {
   useIsInRange,
   onRangeDateSelected,

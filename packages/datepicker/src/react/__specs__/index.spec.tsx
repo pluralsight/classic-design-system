@@ -9,7 +9,8 @@ import React from 'react'
 
 import {
   Calendar,
-  CalendarDates,
+  CalendarDay,
+  CalendarDayProps,
   useIsInRange,
   onRangeDateSelected,
   onMultiDateSelected,
@@ -20,17 +21,16 @@ import * as stories from '../__stories__/index.story'
 
 it('Calendar: composes className', () => {
   const Test = () => {
-    const { getDateProps, ...dayzedData } = useDayzed({
-      date: new Date('05/30/2020'),
-      selected: new Date('05/13/2020'),
-      onDateSelected: (dateObj: DateObj, evt: React.SyntheticEvent) => {}
-    })
-
     return (
-      <Calendar {...dayzedData} className="compose-classname">
-        <CalendarDates getDateProps={getDateProps}>
-          {renderProps => <button {...renderProps} />}
-        </CalendarDates>
+      <Calendar
+        {...useDayzed({
+          date: new Date('05/30/2020'),
+          selected: new Date('05/13/2020'),
+          onDateSelected: (dateObj: DateObj, evt: React.SyntheticEvent) => {}
+        })}
+        className="compose-classname"
+      >
+        {(props: CalendarDayProps) => <CalendarDay {...props} />}
       </Calendar>
     )
   }
@@ -42,20 +42,15 @@ it('Calendar: composes className', () => {
 
 it('CalendarDates: composes className', () => {
   const Test = () => {
-    const { getDateProps, ...dayzedData } = useDayzed({
-      date: new Date('05/30/2020'),
-      selected: new Date('05/13/2020'),
-      onDateSelected: (dateObj: DateObj, evt: React.SyntheticEvent) => {}
-    })
-
     return (
-      <Calendar {...dayzedData}>
-        <CalendarDates
-          getDateProps={getDateProps}
-          className="compose-classname"
-        >
-          {renderProps => <button {...renderProps} />}
-        </CalendarDates>
+      <Calendar
+        {...useDayzed({
+          date: new Date('05/30/2020'),
+          selected: new Date('05/13/2020'),
+          onDateSelected: (dateObj: DateObj, evt: React.SyntheticEvent) => {}
+        })}
+      >
+        {(props: CalendarDayProps) => <CalendarDay {...props} />}
       </Calendar>
     )
   }

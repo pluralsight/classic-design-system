@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
+import React from 'react'
 import Button from '@pluralsight/ps-design-system-button'
 import {
   CaretLeftIcon,
@@ -8,18 +9,17 @@ import {
   RefFor,
   ValueOf,
   uniqueId as defaultUniqueId,
-  classNames
+  classNames,
+  debounce
 } from '@pluralsight/ps-design-system-util'
 import FocusManager from '@pluralsight/ps-design-system-focusmanager'
 import Theme from '@pluralsight/ps-design-system-theme'
 import type { RenderProps } from 'dayzed'
-import { format } from 'date-fns'
-import React from 'react'
+import { add, sub } from 'date-fns'
 
 import '../css/index.css'
-import { DateContext } from './context'
 import { slides } from '../vars/index'
-import { useKeyEvents } from './use-key-events'
+import { CalendarDayProps } from './calendar-day'
 
 const monthNamesShort = [
   'Jan',
@@ -39,12 +39,20 @@ const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
 interface CalendarProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    Pick<RenderProps, 'calendars' | 'getBackProps' | 'getForwardProps'> {
+    RenderProps {
   uniqueId?: (prefix: string) => string
   selected?: Date
   autofocus?: boolean
   trapped?: boolean
   returnFocus?: boolean
+  children: (props: CalendarDayProps) => React.ReactNode
+}
+
+const focusForwardMonthButton = (context: HTMLDivElement) => {
+  context.querySelector<HTMLButtonElement>('#forward-month')?.focus()
+}
+const focusBackwardMonthButton = (context: HTMLDivElement) => {
+  context.querySelector<HTMLButtonElement>('#backward-month')?.focus()
 }
 
 export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
@@ -60,45 +68,38 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
       autofocus = false,
       trapped = false,
       returnFocus = false,
+      getDateProps,
       ...rest
     },
     ref
   ) => {
     const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
     const [height, setHeight] = React.useState<number | undefined>()
-    const [focusable, setFocusable] = React.useState<Date | undefined>(selected)
+    const [focusable, setFocusable] = React.useState<Date>(selected)
+    const [monthButtonClicked, setMonthButtonClicked] =
+      React.useState<boolean>(false)
     const { onClick: onBackClick, ...backRest } = getBackProps({ calendars })
     const { onClick: onForwardClick, ...forwardRest } = getForwardProps({
       calendars
     })
-    const focusNext = () => {
-      focusable &&
-        document
-          .querySelector<HTMLButtonElement>(
-            `[aria-label="${format(focusable, 'EEE LLL dd yyyy')}"]`
-          )
-          ?.focus()
-    }
-    React.useEffect(() => {
-      focusNext()
-    })
-    const { dayKeyHandlers, headerButtonCallback } = useKeyEvents({
-      focusNext,
-      calendars,
-      getBackProps,
-      getForwardProps,
-      setSlide,
-      setFocusable,
-      focusable
-    })
+    const headerRef = React.useRef<HTMLDivElement>(null)
     const handleForwardClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       onForwardClick(e)
-      headerButtonCallback(e, 1)
-      e.currentTarget.focus()
+      const nextDate = add(focusable, { months: 1 })
+      setFocusable(nextDate)
+      setSlide(slides.forward)
+      setMonthButtonClicked(true)
+      const header = headerRef.current
+      header && debounce(100, focusForwardMonthButton)(header)
     }
     const handleBackClick = (e: React.MouseEvent<HTMLButtonElement>) => {
       onBackClick(e)
-      headerButtonCallback(e, -1)
+      const nextDate = sub(focusable, { months: 1 })
+      setFocusable(nextDate)
+      setSlide(slides.backward)
+      setMonthButtonClicked(true)
+      const header = headerRef.current
+      header && debounce(100, focusBackwardMonthButton)(header)
     }
     const animationRef = React.useRef<HTMLDivElement>()
     React.useEffect(() => {
@@ -132,7 +133,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
           className={classNames('psds-calendar', className)}
           ref={ref}
         >
-          <div className="psds-calendar__header-wrapper">
+          <div className="psds-calendar__header-wrapper" ref={headerRef}>
             {calendars.map((calendar, i) => (
               <div
                 key={`${calendar.month}${calendar.year}`}
@@ -144,6 +145,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                       <Button
                         {...backRest}
                         className="psds-calendar__header-button"
+                        id="backward-month"
                         onClick={handleBackClick}
                         icon={<CaretLeftIcon />}
                         appearance={Button.appearances.flat}
@@ -161,6 +163,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                     {calendars.length - 1 === i ? (
                       <Button
                         {...forwardRest}
+                        id="forward-month"
                         className="psds-calendar__header-button"
                         onClick={handleForwardClick}
                         icon={<CaretRightIcon />}
@@ -196,16 +199,38 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                   className="psds-calendar__date-grid"
                   key={`${calendar.month}${calendar.year}`}
                 >
-                  <DateContext.Provider
-                    value={{
-                      ...calendar,
-                      'aria-labelledby': gridLabels[i],
-                      dayKeyHandlers,
-                      focusable
-                    }}
-                  >
-                    {children}
-                  </DateContext.Provider>
+                  {calendar.weeks.map((week, weekIndex) => {
+                    return week.map((dateObj, index) => {
+                      const key = `${calendar.month}${calendar.year}${weekIndex}${index}`
+                      if (!dateObj) {
+                        return (
+                          <div
+                            key={key}
+                            className={classNames(
+                              'psds-calendar__filler',
+                              className
+                            )}
+                          />
+                        )
+                      }
+                      const dateProps = getDateProps({
+                        dateObj
+                      })
+                      return children({
+                        dateObj,
+                        dateProps,
+                        'aria-labelledby': gridLabels[i],
+                        calendars,
+                        focusable,
+                        getBackProps,
+                        getForwardProps,
+                        monthButtonClicked,
+                        setFocusable,
+                        setMonthButtonClicked,
+                        setSlide
+                      })
+                    })
+                  })}
                 </div>
               ))}
             </div>

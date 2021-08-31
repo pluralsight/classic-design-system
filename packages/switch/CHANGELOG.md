@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.18](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.17...@pluralsight/ps-design-system-switch@9.1.18) (2021-08-12)
+
+
+### Bug Fixes
+
+* **switch:** rm glamor references ([91d7f4b](https://github.com/pluralsight/design-system/commit/91d7f4b2d2ea7efff8032f032fcf77321c5fa6ce))
+
+
+
+
+
 ## [9.1.17](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.16...@pluralsight/ps-design-system-switch@9.1.17) (2021-07-27)
 
 

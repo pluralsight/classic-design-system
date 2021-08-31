@@ -1,12 +1,9 @@
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Tag from '../index'
-
-const glamor = glamorDefault || glamorExports
 
 const defaultArgs = { children: 'hello world' }
 
@@ -20,11 +17,11 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
 
   return (
     <div
-      {...glamor.css({
+      style={{
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' ')
-      })}
+      }}
       {...rest}
     />
   )
@@ -128,9 +125,3 @@ export const SizesWithIcons: Story = () => (
 
 export const StyleOverride = Template.bind({})
 StyleOverride.args = { ...defaultArgs, style: { background: 'red' } }
-
-export const ClassNameOverride = Template.bind({})
-ClassNameOverride.args = {
-  ...defaultArgs,
-  className: glamor.css({ background: 'green' }).toString()
-}

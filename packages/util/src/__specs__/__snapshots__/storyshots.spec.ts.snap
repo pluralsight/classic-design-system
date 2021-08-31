@@ -2,10 +2,16 @@
 
 exports[`Storyshots Utils/useMenuKeyEvents Basic 1`] = `
 <ul
-  data-css-11fqjac=""
   data-testid="root-menu"
   onKeyDown={[Function]}
   onKeyUp={[Function]}
+  style={
+    Object {
+      "& :focus": Object {
+        "outline": "1px solid violet",
+      },
+    }
+  }
 >
   <li
     data-testid="root-list-item-0"

@@ -64,7 +64,6 @@ import { useDayzed } from 'dayzed'
 import { format } from 'date-fns'
 
 import * as downshift from 'downshift'
-import * as glamor from 'glamor'
 import React from 'react'
 import * as reactBeautifulDnd from 'react-beautiful-dnd'
 import * as reactTable from 'react-table'
@@ -150,7 +149,6 @@ export const PACKAGE_MAP: PackageMap = {
   dayzed: { useDayzed },
   'date-fns': { format },
   downshift: { ...omit(downshift, ['default']) },
-  glamor: { ...glamor },
   react: { React, ...React },
   'react-beautiful-dnd': { ...reactBeautifulDnd },
   'react-router-dom': { Router, withRouter },

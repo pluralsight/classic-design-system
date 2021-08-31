@@ -13,16 +13,13 @@ import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import NavBar from '../index'
 
-const glamor = glamorDefault || glamorExports
-
 const Filler: React.FC = props => (
   <div
-    {...glamor.css({
+    style={{
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
@@ -30,7 +27,7 @@ const Filler: React.FC = props => (
       height: '100%',
       border: `2px dashed ${colorsPink[6]}`,
       padding: `0 ${layout.spacingMedium}`
-    })}
+    }}
     {...props}
   />
 )
@@ -104,15 +101,15 @@ export const ExampleSkills: Story<React.ComponentProps<typeof NavBar>> =
         items={
           <>
             <div
-              {...glamor.css({
+              style={{
                 display: 'inline-block',
                 marginRight: layout.spacingXXSmall
-              })}
+              }}
             >
               <NavItem icon={<HomeIcon />}>Home</NavItem>
             </div>
 
-            <div {...glamor.css({ display: 'inline-block' })}>
+            <div style={{ display: 'inline-block' }}>
               <BelowLeft
                 show={
                   <ActionMenu>
@@ -161,15 +158,15 @@ export const ExampleSkills: Story<React.ComponentProps<typeof NavBar>> =
         utility={
           <>
             <div
-              {...glamor.css({
+              style={{
                 display: 'inline-block',
                 marginRight: layout.spacingXXSmall
-              })}
+              }}
             >
               <NavItem icon={<NotificationsIcon />} />
             </div>
 
-            <div {...glamor.css({ display: 'inline-block' })}>
+            <div style={{ display: 'inline-block' }}>
               <NavItem icon={<AccountIcon />} />
             </div>
           </>

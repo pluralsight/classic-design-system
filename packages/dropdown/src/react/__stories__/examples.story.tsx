@@ -1,15 +1,12 @@
 import { colorsTextIcon, layout } from '@pluralsight/ps-design-system-core'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { DecoratorFn } from '@storybook/react'
-import glamorDefault, * as glamorExports from 'glamor'
 import React from 'react'
 
 import Dropdown from '../index'
 
-const glamor = glamorDefault || glamorExports
-
 const PaddingDecorator: DecoratorFn = storyFn => (
-  <div {...glamor.css({ height: '100vh', padding: layout.spacingLarge })}>
+  <div style={{ height: '100vh', padding: layout.spacingLarge }}>
     {storyFn()}
   </div>
 )
@@ -60,7 +57,7 @@ export const Controlled: Story = args => {
       <br />
       <br />
 
-      <div {...glamor.css({ color: colorsTextIcon.lowOnDark })}>
+      <div style={{ color: colorsTextIcon.lowOnDark }}>
         <span>Current value: {value}</span>
         <br />
 
