@@ -34,7 +34,7 @@ function Example() {
         </Row.TextLink>
         progress={0}
         image={
-          <Row.Image src="https://pluralsight.imgix.net/course-images/angular-2-getting-started-update-v1.jpg" />
+          <Row.Image src="/img/course1.jpg" />
         }
         metadata1={[
           <Row.TextLink><a href="#">Deborah Kurata</a></Row.TextLink>,
@@ -68,7 +68,7 @@ function Example() {
         </Row.TextLink>}
         progress={20}
         image={
-          <Row.Image src="https://pluralsight.imgix.net/course-images/csharp-fundamentals-dev-v1.png" />
+          <Row.Image src="/img/course2.jpg" />
         }
         metadata1={[
           <Row.TextLink><a href="#">Scott Allen</a></Row.TextLink>,
@@ -106,7 +106,7 @@ function Example() {
         }
         progress={67}
         image={
-          <Row.Image src="https://pluralsight.imgix.net/course-images/angular-fundamentals-v1.jpg" />
+          <Row.Image src="/img/course3.jpg" />
         }
         metadata1={[
           <Row.TextLink><a href="#">Joe Eames, Jim Cooper</a></Row.TextLink>,
@@ -150,7 +150,7 @@ function Example() {
           'Dec 11, 2019'
         ]}
         image={
-          <Row.Image src="https://pluralsight.imgix.net/course-images/getting-started-python-core-v1.png" />
+          <Row.Image src="/img/course4.jpg" />
         }
         actionBar={[
           <Button
@@ -190,7 +190,7 @@ function Example() {
         title="Medium Row"
         metadata1={['Jim Cooper']}
         image={
-          <Row.Image src="https://pluralsight.imgix.net/course-images/angular-2-getting-started-update-v1.jpg" />
+          <Row.Image src="/img/course1.jpg" />
         }
       />
       <Row
@@ -198,33 +198,8 @@ function Example() {
         title="Small Row"
         metadata1={['Jim Cooper']}
         image={
-          <Row.Image src="https://pluralsight.imgix.net/course-images/angular-2-getting-started-update-v1.jpg" />
+          <Row.Image src="/img/course2.jpg" />
         }
-      />
-    </>
-  )
-}
-export default Example
-```
-
-### Image
-
-The image will cover the image area given. Image dimensions outside of this space will be clipped.
-
-```typescript
-import Row from '@pluralsight/ps-design-system-row'
-import Button from '@pluralsight/ps-design-system-button'
-
-function Example() {
-  return (
-    <>
-      <Row
-        image={<Row.Image src="http://via.placeholder.com/350x150" />}
-        title="Wide image"
-      />
-      <Row
-        image={<Row.Image src="http://via.placeholder.com/200x400" />}
-        title="Tall image"
       />
     </>
   )
@@ -246,22 +221,22 @@ function Example() {
       <Row
         progress={0}
         title="0% progress"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course1.jpg" />}
       />
       <Row
         progress={25}
         title="25% progress"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course2.jpg" />}
       />
       <Row
         progress={66.6666667}
         title="6.6666667% progress"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course3.jpg" />}
       />
       <Row
         progress={100}
         title="100% progress"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course4.jpg" />}
       />
     </>
   )
@@ -288,11 +263,11 @@ function Example() {
             <a>Linked Title</a>
           </Row.TextLink>
         }
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course1.jpg" />}
       />
       <Row
         title="Untruncated Super Long Title of the Technology of the Century as Brought to You By Tech Groupsoft in the Stunning Desert of British Lithuania"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course2.jpg" />}
       />
       <Row
         title={
@@ -305,7 +280,7 @@ function Example() {
           </Row.TextLink>
         }
         titleTruncated
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course3.jpg" />}
       />
     </>
   )
@@ -331,13 +306,13 @@ function Example() {
       <Row
         metadata1={['Simon Allardice']}
         title="Row Title"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course1.jpg" />}
       />
       <Row
         metadata1={['Simon Allardice']}
         metadata2={['Intermediate', '2h 20m', 'July 24, 1847']}
         title="Row with Two Lines of Meta"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course2.jpg" />}
       />
       <Row
         metadata1={[
@@ -353,7 +328,7 @@ function Example() {
           "July 24, 1847 or year thereabouts, it's unclear"
         ]}
         title="Super-long Metadata"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course3.jpg" />}
       />
     </>
   )
@@ -383,7 +358,7 @@ function Example() {
           />
         ]}
         title="Action bar appears on hover"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course1.jpg" />}
       />
       <Row
         actionBar={[
@@ -401,7 +376,7 @@ function Example() {
           />
         ]}
         title="Multiple actions"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course2.jpg" />}
       />
       <Row
         actionBar={[
@@ -420,7 +395,7 @@ function Example() {
         ]}
         actionBarVisible
         title="Action bar locked visible"
-        image={<Row.Image src="https://picsum.photos/seed/picsum/192/144" />}
+        image={<Row.Image src="/img/course3.jpg" />}
       />
     </>
   )
