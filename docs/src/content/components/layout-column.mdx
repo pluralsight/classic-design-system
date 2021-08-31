@@ -59,7 +59,7 @@ const Example: React.FC = props => {
 
 const BlueBox: React.FC = props => (
   <React.Fragment>
-    <div className="bluebox" {...props} />
+    <div {...props} className={'bluebox ' + props.className} />
 
     <style jsx>{`
       .bluebox {
