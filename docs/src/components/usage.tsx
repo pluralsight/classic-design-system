@@ -1,6 +1,5 @@
 import React from 'react'
 
-import { A } from './mdx/links'
 import Button from '@pluralsight/ps-design-system-button'
 import {
   SocialGithubIcon,
@@ -51,6 +50,17 @@ export const Usage: React.FC<UsageProps> = props => {
             icon={<ExternalLinkIcon />}
           >
             NPM
+          </Button>
+        </li>
+        <li>
+          <Button
+            appearance="secondary"
+            href={`https://bundlephobia.com/package/@pluralsight/ps-design-system-${props.packageName}`}
+            target="_blank"
+            size="small"
+            icon={<ExternalLinkIcon />}
+          >
+            Bundle size
           </Button>
         </li>
         <li>
