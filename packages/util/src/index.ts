@@ -23,7 +23,7 @@ export { parseToRgb } from './parse-to-rgb'
 export { shallowCompare } from './shallow-compare'
 export { capitalize } from './string'
 export * from './styles'
-export { uniqueId } from './unique-id'
+export * from './unique-id'
 
 export {
   onClickOutside,
