@@ -46,9 +46,12 @@ export default function useFocusManager(
   )
 
   React.useEffect(() => {
-    if (focusableNodes.length === 0)
-      (ref.current as HTMLDivElement).setAttribute('tabindex', '0')
-    else (ref.current as HTMLDivElement).removeAttribute('tabindex')
+    const el = ref.current as HTMLDivElement
+    if (focusableNodes.length === 0) {
+      el && el.setAttribute('tabindex', '0')
+    } else {
+      el && el.removeAttribute('tabindex')
+    }
   }, [focusableNodes, ref])
 
   React.useEffect(() => {

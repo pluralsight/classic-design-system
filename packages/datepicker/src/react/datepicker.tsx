@@ -2,7 +2,7 @@ import Field from '@pluralsight/ps-design-system-field'
 import {
   canUseDOM,
   RefFor,
-  uniqueId as defaultUniqueId
+  generateId
 } from '@pluralsight/ps-design-system-util'
 import { format } from 'date-fns'
 import { useDayzed, DateObj } from 'dayzed'
@@ -17,7 +17,6 @@ interface DatePickerProps
   extends Omit<React.ComponentProps<typeof Field>, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
   value?: Date
-  _uniqueId?: (prefix: string) => string
 }
 
 export const DatePicker: React.FC<DatePickerProps> = ({
@@ -32,7 +31,6 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   suffix,
   onSelect,
   value: valueFromProps,
-  _uniqueId: uniqueId = defaultUniqueId,
   ...props
 }) => {
   const [selected, setSelected] = React.useState<Date | undefined>(
@@ -88,8 +86,8 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         capture: true
       })
   }, [setOpen])
-  const labelId = uniqueId('text-input__label-')
-  const inputId = uniqueId('text-input__input-')
+  const labelId = generateId('psds-datepicker-text-input__label-')
+  const inputId = generateId('psds-datepicker-text-input__input-')
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
     const nextValue = evt.target.value
     setValue(nextValue)
@@ -132,7 +130,6 @@ export const DatePicker: React.FC<DatePickerProps> = ({
           onDateSelected={onDateSelected}
           labelId={labelId}
           handleEscapeKeyDown={handleEscapeKeyDown}
-          uniqueId={uniqueId}
         />
       )}
     </div>
@@ -144,23 +141,14 @@ interface CalendarWrapperProps {
   onDateSelected: (dateObj: DateObj, evt: React.SyntheticEvent) => void
   labelId: string
   handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement>
-  uniqueId: (prefix: string) => string
 }
 
 const CalendarWrapper: React.FC<CalendarWrapperProps> = ({
   selected = new Date(),
   onDateSelected,
   labelId,
-  handleEscapeKeyDown,
-  uniqueId
+  handleEscapeKeyDown
 }) => {
-  console.log(
-    useDayzed({
-      date: selected,
-      selected,
-      onDateSelected
-    })
-  )
   return (
     <Calendar
       {...useDayzed({
@@ -174,7 +162,6 @@ const CalendarWrapper: React.FC<CalendarWrapperProps> = ({
       aria-live="polite"
       style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
       onKeyDown={handleEscapeKeyDown}
-      uniqueId={uniqueId}
       selected={selected}
     >
       {(props: CalendarDayProps) => <CalendarDay {...props} />}

@@ -8,11 +8,11 @@ import {
 import {
   RefFor,
   ValueOf,
-  uniqueId as defaultUniqueId,
   classNames,
-  debounce
+  debounce,
+  generateId
 } from '@pluralsight/ps-design-system-util'
-import FocusManager from '@pluralsight/ps-design-system-focusmanager'
+import { useFocusManager } from '@pluralsight/ps-design-system-focusmanager'
 import Theme from '@pluralsight/ps-design-system-theme'
 import type { RenderProps } from 'dayzed'
 import { add, sub } from 'date-fns'
@@ -40,7 +40,6 @@ const weekdayNamesShort = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 interface CalendarProps
   extends React.HTMLAttributes<HTMLDivElement>,
     RenderProps {
-  uniqueId?: (prefix: string) => string
   selected?: Date
   autofocus?: boolean
   trapped?: boolean
@@ -63,7 +62,6 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
       getBackProps,
       getForwardProps,
       children,
-      uniqueId = defaultUniqueId,
       selected = new Date(),
       autofocus = false,
       trapped = false,
@@ -71,7 +69,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
       getDateProps,
       ...rest
     },
-    ref
+    forwarededRef
   ) => {
     const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
     const [height, setHeight] = React.useState<number | undefined>()
@@ -120,124 +118,131 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
       }
     }, [])
     const gridLabels = calendars.map((calendar, i) =>
-      uniqueId(`${calendar.month}_${calendar.year}`)
+      generateId(`psds-datepicker-grid--${calendar.month}/${calendar.year}-`)
     )
 
-    if (calendars.length) {
-      return (
-        <FocusManager
-          autofocus={autofocus}
-          trapped={trapped}
-          returnFocus={returnFocus}
-          {...rest}
-          className={classNames('psds-calendar', className)}
-          ref={ref}
-        >
-          <div className="psds-calendar__header-wrapper" ref={headerRef}>
-            {calendars.map((calendar, i) => (
-              <div
-                key={`${calendar.month}${calendar.year}`}
-                className="psds-calendar__header"
-              >
-                <Theme name={Theme.names.light}>
-                  <div className="psds-calendar__month">
-                    {i === 0 ? (
-                      <Button
-                        {...backRest}
-                        className="psds-calendar__header-button"
-                        id="backward-month"
-                        onClick={handleBackClick}
-                        icon={<CaretLeftIcon />}
-                        appearance={Button.appearances.flat}
-                      />
-                    ) : (
-                      <div className="psds-calendar__header-button" />
-                    )}
-                    <h2
-                      key={`${calendar.month}${calendar.year}`}
-                      id={gridLabels[i]}
-                      className="psds-calendar__header-month"
-                    >
-                      {monthNamesShort[calendar.month]} {calendar.year}
-                    </h2>
-                    {calendars.length - 1 === i ? (
-                      <Button
-                        {...forwardRest}
-                        id="forward-month"
-                        className="psds-calendar__header-button"
-                        onClick={handleForwardClick}
-                        icon={<CaretRightIcon />}
-                        appearance={Button.appearances.flat}
-                      />
-                    ) : (
-                      <div className="psds-calendar__header-button" />
-                    )}
-                  </div>
-                </Theme>
-                {weekdayNamesShort.map(weekday => (
-                  <div
-                    key={`${calendar.month}${calendar.year}${weekday}`}
-                    className="psds-calendar__weekday-header"
-                  >
-                    {weekday}
-                  </div>
-                ))}
-              </div>
-            ))}
-          </div>
-          <div style={{ height }} className="psds-calendar__date-grid">
+    const ref = React.useRef<HTMLDivElement>(null)
+    // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
+    React.useImperativeHandle(
+      forwarededRef,
+      () => ref.current as HTMLDivElement
+    )
+
+    useFocusManager(ref, {
+      autofocus: autofocus,
+      returnFocus: returnFocus,
+      trapped: trapped
+    })
+    return calendars.length ? (
+      <div
+        {...rest}
+        className={classNames('psds-calendar', className)}
+        ref={ref}
+      >
+        <div className="psds-calendar__header-wrapper" ref={headerRef}>
+          {calendars.map((calendar, i) => (
             <div
-              className={classNames(
-                'psds-calendar__grid-slide',
-                slide === 'forward' && 'psds-calendar__grid-slide--forward',
-                slide === 'backward' && 'psds-calendar__grid-slide--backward'
-              )}
-              ref={animationRef as RefFor<'div'>}
+              key={`${calendar.month}${calendar.year}`}
+              className="psds-calendar__header"
             >
-              {calendars.map((calendar, i) => (
+              <Theme name={Theme.names.light}>
+                <div className="psds-calendar__month">
+                  {i === 0 ? (
+                    <Button
+                      {...backRest}
+                      className="psds-calendar__header-button"
+                      id="backward-month"
+                      onClick={handleBackClick}
+                      icon={<CaretLeftIcon />}
+                      appearance={Button.appearances.flat}
+                    />
+                  ) : (
+                    <div className="psds-calendar__header-button" />
+                  )}
+                  <h2
+                    key={`${calendar.month}${calendar.year}`}
+                    id={gridLabels[i]}
+                    className="psds-calendar__header-month"
+                  >
+                    {monthNamesShort[calendar.month]} {calendar.year}
+                  </h2>
+                  {calendars.length - 1 === i ? (
+                    <Button
+                      {...forwardRest}
+                      id="forward-month"
+                      className="psds-calendar__header-button"
+                      onClick={handleForwardClick}
+                      icon={<CaretRightIcon />}
+                      appearance={Button.appearances.flat}
+                    />
+                  ) : (
+                    <div className="psds-calendar__header-button" />
+                  )}
+                </div>
+              </Theme>
+              {weekdayNamesShort.map(weekday => (
                 <div
-                  className="psds-calendar__date-grid"
-                  key={`${calendar.month}${calendar.year}`}
+                  key={`${calendar.month}${calendar.year}${weekday}`}
+                  className="psds-calendar__weekday-header"
                 >
-                  {calendar.weeks.map((week, weekIndex) => {
-                    return week.map((dateObj, index) => {
-                      const key = `${calendar.month}${calendar.year}${weekIndex}${index}`
-                      if (!dateObj) {
-                        return (
-                          <div
-                            key={key}
-                            className={classNames(
-                              'psds-calendar__filler',
-                              className
-                            )}
-                          />
-                        )
-                      }
-                      const dateProps = getDateProps({
-                        dateObj
-                      })
-                      return children({
-                        dateObj,
-                        dateProps,
-                        'aria-labelledby': gridLabels[i],
-                        calendars,
-                        focusable,
-                        getBackProps,
-                        getForwardProps,
-                        monthButtonClicked,
-                        setFocusable,
-                        setMonthButtonClicked,
-                        setSlide
-                      })
-                    })
-                  })}
+                  {weekday}
                 </div>
               ))}
             </div>
+          ))}
+        </div>
+        <div style={{ height }} className="psds-calendar__date-grid">
+          <div
+            className={classNames(
+              'psds-calendar__grid-slide',
+              slide === 'forward' && 'psds-calendar__grid-slide--forward',
+              slide === 'backward' && 'psds-calendar__grid-slide--backward'
+            )}
+            ref={animationRef as RefFor<'div'>}
+          >
+            {calendars.map((calendar, i) => (
+              <div
+                className="psds-calendar__date-grid"
+                key={`${calendar.month}${calendar.year}`}
+              >
+                {calendar.weeks.map((week, weekIndex) => {
+                  return week.map((dateObj, index) => {
+                    const key = `${calendar.month}${calendar.year}${weekIndex}${index}`
+                    if (!dateObj) {
+                      return (
+                        <div
+                          key={key}
+                          className={classNames(
+                            'psds-calendar__filler',
+                            className
+                          )}
+                        />
+                      )
+                    }
+                    const dateProps = getDateProps({
+                      dateObj
+                    })
+                    return children({
+                      key,
+                      dateObj,
+                      dateProps,
+                      'aria-labelledby': gridLabels[i],
+                      calendars,
+                      focusable,
+                      getBackProps,
+                      getForwardProps,
+                      monthButtonClicked,
+                      setFocusable,
+                      setMonthButtonClicked,
+                      setSlide
+                    })
+                  })
+                })}
+              </div>
+            ))}
           </div>
-        </FocusManager>
-      )
-    }
-    return null
+        </div>
+      </div>
+    ) : null
   }
 )

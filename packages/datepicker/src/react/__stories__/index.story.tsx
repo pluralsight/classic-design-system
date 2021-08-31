@@ -145,29 +145,22 @@ export const CalendarWithInput: Story = () => {
   )
 }
 
-const stableUniqueId = (prefix: string) => prefix + 'unique-id'
-
 export const DatePickerDisabled: Story = () => (
-  <DatePicker disabled label="Disabled" _uniqueId={stableUniqueId} />
+  <DatePicker disabled label="Disabled" />
 )
 
-export const DatePickerError: Story = () => (
-  <DatePicker error label="Errored" _uniqueId={stableUniqueId} />
-)
+export const DatePickerError: Story = () => <DatePicker error label="Errored" />
 
 export const DatePickerStringLabel: Story = () => (
-  <DatePicker label="String label" _uniqueId={stableUniqueId} />
+  <DatePicker label="String label" />
 )
 
 export const DatePickerFieldLabel: Story = () => (
-  <DatePicker
-    label={<Field.Label>Field.Label label</Field.Label>}
-    _uniqueId={stableUniqueId}
-  />
+  <DatePicker label={<Field.Label>Field.Label label</Field.Label>} />
 )
 
 export const DatePickerPrefix: Story = () => (
-  <DatePicker prefix={<HomeIcon />} label="Prefix" _uniqueId={stableUniqueId} />
+  <DatePicker prefix={<HomeIcon />} label="Prefix" />
 )
 
 export const DatePickerRenderContainer: Story = () => (
@@ -176,7 +169,6 @@ export const DatePickerRenderContainer: Story = () => (
     renderContainer={React.forwardRef((props, ref) => (
       <div ref={ref} {...props} style={{ outline: '2px dashed orange' }} />
     ))}
-    _uniqueId={stableUniqueId}
   />
 )
 
@@ -187,27 +179,25 @@ export const DatePickerRenderTag: Story = () => (
     renderTag={props => (
       <div {...props} style={{ outline: '2px dashed orange' }} />
     )}
-    _uniqueId={stableUniqueId}
   />
 )
 
 export const DatePickerSmallSize: Story = () => (
-  <DatePicker label="Small size" size="small" _uniqueId={stableUniqueId} />
+  <DatePicker label="Small size" size="small" />
 )
 
 export const DatePickerSubLabelString: Story = () => (
-  <DatePicker subLabel="String subLabel" _uniqueId={stableUniqueId} />
+  <DatePicker subLabel="String subLabel" />
 )
 
 export const DatePickerSubLabelField: Story = () => (
   <DatePicker
     subLabel={<Field.SubLabel>Field.SubLabel subLabel</Field.SubLabel>}
-    _uniqueId={stableUniqueId}
   />
 )
 
 export const DatePickerSuffix: Story = () => (
-  <DatePicker suffix={<HomeIcon />} label="Suffix" _uniqueId={stableUniqueId} />
+  <DatePicker suffix={<HomeIcon />} label="Suffix" />
 )
 
 export const DatePickerInitialValue: Story = () => {
@@ -216,7 +206,6 @@ export const DatePickerInitialValue: Story = () => {
     <DatePicker
       label="Controlled component, set to 31 Dec 1999"
       value={value}
-      _uniqueId={stableUniqueId}
     />
   )
 }
@@ -229,7 +218,6 @@ export const DatePickerChangeValue: Story = () => {
       <DatePicker
         label="Controlled component, set to 31 Dec 1999"
         value={date}
-        _uniqueId={stableUniqueId}
       />
     </div>
   )

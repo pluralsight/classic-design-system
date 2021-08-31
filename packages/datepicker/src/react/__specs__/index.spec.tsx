@@ -44,13 +44,16 @@ it('CalendarDates: composes className', () => {
   const Test = () => {
     return (
       <Calendar
+        className="compose-classname"
         {...useDayzed({
           date: new Date('05/30/2020'),
           selected: new Date('05/13/2020'),
           onDateSelected: (dateObj: DateObj, evt: React.SyntheticEvent) => {}
         })}
       >
-        {(props: CalendarDayProps) => <CalendarDay {...props} />}
+        {(props: CalendarDayProps) => (
+          <CalendarDay {...props} className="compose-classname" />
+        )}
       </Calendar>
     )
   }

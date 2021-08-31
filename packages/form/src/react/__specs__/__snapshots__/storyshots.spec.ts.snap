@@ -618,38 +618,68 @@ exports[`Storyshots Components/Form Sample 1`] = `
         <div
           style={
             Object {
-              "position": "relative",
+              "maxWidth": "none",
+              "width": "100%",
             }
           }
         >
-          <label
-            className="psds-text-input"
+          <div
+            className="psds-field__container"
+            onClick={[Function]}
           >
-            <div
-              className="psds-text-input__label psds-theme--dark psds-text-input__label"
+            <label
+              className="psds-field__label psds-theme--dark"
+              htmlFor="psds-datepicker-text-input__input-1"
+              id="psds-datepicker-text-input__label-0"
             >
-              Choose a Date
-            </div>
+              String label
+            </label>
             <div
-              className="psds-text-input__field-container"
+              className="psds-halo psds-theme--light psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus psds-field__halo"
             >
               <div
-                className="psds-halo psds-theme--dark psds-halo--shape-default psds-halo--gap-size-small psds-halo--visible-on-focus"
+                className="psds-field psds-field--medium psds-field--prefix"
+                onKeyDown={[Function]}
               >
                 <div
-                  className="psds-text-input__field psds-text-input__field--appearance-default psds-theme--dark"
+                  className="psds-field__prefix"
+                >
+                  <div
+                    className="psds-icon psds-icon--size-medium"
+                    onClick={[Function]}
+                    style={
+                      Object {
+                        "cursor": "pointer",
+                      }
+                    }
+                  >
+                    <svg
+                      aria-label="calendar icon"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  className="psds-field__input__container"
                 >
                   <input
-                    className="psds-theme--dark psds-text-input__field-input--appearance-default psds-text-input__field-input"
-                    disabled={false}
+                    className="psds-field__input psds-field__input--medium"
+                    id="psds-datepicker-text-input__input-1"
                     onChange={[Function]}
                     onFocus={[Function]}
+                    placeholder="mm/dd/yyyy"
                     value=""
                   />
                 </div>
               </div>
             </div>
-          </label>
+          </div>
+          <br />
         </div>
       </div>
       <div

@@ -1,12 +1,7 @@
 import Button from '@pluralsight/ps-design-system-button'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import * as core from '@pluralsight/ps-design-system-core'
-import {
-  Calendar,
-  CalendarDates,
-  useDateSelectChange,
-  slides
-} from '@pluralsight/ps-design-system-datepicker'
+import { DatePicker } from '@pluralsight/ps-design-system-datepicker'
 import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Radio from '@pluralsight/ps-design-system-radio'
 import Switch from '@pluralsight/ps-design-system-switch'
@@ -51,55 +46,6 @@ const useInputClientRect = (
   }, [inputRef])
   return menuPosition
 }
-const DatePicker = ({ label }: { label: string }) => {
-  const [selected, setSelected] = React.useState<Date | undefined>()
-  const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
-    setSelected(dateObj.date)
-  }
-  const { getDateProps, ...dayzedData } = useDayzed({
-    date: selected || new Date('05/30/2020'),
-    selected,
-    onDateSelected
-  })
-  const inputRef = React.useRef<HTMLInputElement | undefined>(undefined)
-  const [open, setOpen] = React.useState<boolean>(false)
-  const onFocus: React.FocusEventHandler<HTMLInputElement> = evt => {
-    if (evt.target === inputRef.current) {
-      setOpen(true)
-    }
-  }
-  const menuPosition = useInputClientRect(inputRef)
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [value, onChange] = useDateSelectChange({
-    selected,
-    setSlide,
-    setSelected
-  })
-  return (
-    <div style={{ position: 'relative' }}>
-      <TextInput
-        ref={inputRef as RefFor<'input'>}
-        onChange={onChange}
-        value={value}
-        onFocus={onFocus}
-        label={label}
-      />
-      {open && (
-        <Calendar
-          {...dayzedData}
-          style={{ position: 'fixed', ...menuPosition }}
-          slide={slide}
-        >
-          <CalendarDates getDateProps={getDateProps}>
-            {renderProps => {
-              return <button {...renderProps} />
-            }}
-          </CalendarDates>
-        </Calendar>
-      )}
-    </div>
-  )
-}
 
 export const Sample: Story = () => (
   <Form.VerticalLayout>
@@ -143,7 +89,7 @@ export const Sample: Story = () => (
       <Tag href="http://google.com">Baz</Tag>
     </div>
 
-    <DatePicker label="Choose a Date" />
+    <DatePicker label="String label" />
 
     <Checkbox checked label="Checkbox selected" value="someVal" />
 
