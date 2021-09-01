@@ -1,5 +1,10 @@
 import { MDXProvider as BaseProvider } from '@mdx-js/react'
+import Button from '@pluralsight/ps-design-system-button'
 import Badge from '@pluralsight/ps-design-system-badge'
+import {
+  CheckCircleFillIcon,
+  WarningFilledIcon
+} from '@pluralsight/ps-design-system-icon'
 import * as Text from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
@@ -20,7 +25,9 @@ const components = {
   a: A,
   A,
   Badge,
+  Button,
   blockquote: BlockQuote,
+  CheckCircleFillIcon,
   code: CodeBlock,
   Guideline,
   h1: H1,
@@ -36,7 +43,8 @@ const components = {
   TypesProp: Types.Prop,
   TypesEnum: Types.Enum,
   ul: Ul,
-  Usage
+  Usage,
+  WarningFilledIcon
 }
 
 export const MDXProvider: React.FC = props => (
