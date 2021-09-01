@@ -99,6 +99,20 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
       const header = headerRef.current
       header && debounce(100, focusBackwardMonthButton)(header)
     }
+    const handleKeyDown: React.KeyboardEventHandler<HTMLButtonElement> =
+      evt => {
+        const { key } = evt
+        if (key === 'Enter' || key === ' ') {
+          evt.currentTarget.id === 'backward-month'
+            ? handleBackClick(
+                evt as unknown as React.MouseEvent<HTMLButtonElement>
+              )
+            : handleForwardClick(
+                evt as unknown as React.MouseEvent<HTMLButtonElement>
+              )
+        }
+        evt.preventDefault()
+      }
     const animationRef = React.useRef<HTMLDivElement>()
     React.useEffect(() => {
       const el = animationRef.current
@@ -153,6 +167,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                       className="psds-calendar__header-button"
                       id="backward-month"
                       onClick={handleBackClick}
+                      onKeyDown={handleKeyDown}
                       icon={<CaretLeftIcon />}
                       appearance={Button.appearances.flat}
                     />
@@ -172,6 +187,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
                       id="forward-month"
                       className="psds-calendar__header-button"
                       onClick={handleForwardClick}
+                      onKeyDown={handleKeyDown}
                       icon={<CaretRightIcon />}
                       appearance={Button.appearances.flat}
                     />
