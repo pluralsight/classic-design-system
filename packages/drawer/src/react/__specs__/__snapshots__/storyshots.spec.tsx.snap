@@ -13,11 +13,12 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
   >
     toggle drawer
   </button>
-  <div
+  <button
+    aria-controls="psds-drawer-detail-5"
     aria-expanded={false}
     className="psds-drawer__summary psds-theme--dark"
+    id="psds-drawer-summary-4"
     onClick={[Function]}
-    role="button"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -52,10 +53,13 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
         Collapsed
       </div>
     </div>
-  </div>
+  </button>
   <div
     aria-hidden={true}
+    aria-labelledby="psds-drawer-summary-4"
     className="psds-drawer__details psds-theme--dark"
+    id="psds-drawer-detail-5"
+    role="region"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -90,11 +94,12 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
   >
     close
   </button>
-  <div
+  <button
+    aria-controls="psds-drawer-detail-7"
     aria-expanded={false}
     className="psds-drawer__summary psds-theme--dark"
+    id="psds-drawer-summary-6"
     onClick={[Function]}
-    role="button"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -129,10 +134,13 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
         Collapsed
       </div>
     </div>
-  </div>
+  </button>
   <div
     aria-hidden={true}
+    aria-labelledby="psds-drawer-summary-6"
     className="psds-drawer__details psds-theme--dark"
+    id="psds-drawer-detail-7"
+    role="region"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -157,11 +165,12 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
     }
   }
 >
-  <div
+  <button
+    aria-controls="psds-drawer-detail-3"
     aria-expanded={true}
     className="psds-drawer__summary psds-drawer--is-open psds-theme--dark"
+    id="psds-drawer-summary-2"
     onClick={[Function]}
-    role="button"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -196,10 +205,13 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
         Expanded
       </div>
     </div>
-  </div>
+  </button>
   <div
     aria-hidden={false}
+    aria-labelledby="psds-drawer-summary-2"
     className="psds-drawer__details psds-theme--dark"
+    id="psds-drawer-detail-3"
+    role="region"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -224,11 +236,12 @@ exports[`Storyshots Components/Row Default 1`] = `
     }
   }
 >
-  <div
+  <button
+    aria-controls="psds-drawer-detail-1"
     aria-expanded={false}
     className="psds-drawer__summary psds-theme--dark"
+    id="psds-drawer-summary-0"
     onClick={[Function]}
-    role="button"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -263,10 +276,13 @@ exports[`Storyshots Components/Row Default 1`] = `
         Collapsed
       </div>
     </div>
-  </div>
+  </button>
   <div
     aria-hidden={true}
+    aria-labelledby="psds-drawer-summary-0"
     className="psds-drawer__details psds-theme--dark"
+    id="psds-drawer-detail-1"
+    role="region"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -292,11 +308,12 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
   }
 >
   <div>
-    <div
+    <button
+      aria-controls="psds-drawer-detail-11"
       aria-expanded={false}
       className="psds-drawer__summary psds-theme--dark"
+      id="psds-drawer-summary-10"
       onClick={[Function]}
-      role="button"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -331,10 +348,13 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
           Collapsed
         </div>
       </div>
-    </div>
+    </button>
     <div
       aria-hidden={true}
+      aria-labelledby="psds-drawer-summary-10"
       className="psds-drawer__details psds-theme--dark"
+      id="psds-drawer-detail-11"
+      role="region"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -348,11 +368,12 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         Drawer Content here
       </p>
     </div>
-    <div
+    <button
+      aria-controls="psds-drawer-detail-13"
       aria-expanded={false}
       className="psds-drawer__summary psds-theme--dark"
+      id="psds-drawer-summary-12"
       onClick={[Function]}
-      role="button"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -387,10 +408,13 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
           Collapsed
         </div>
       </div>
-    </div>
+    </button>
     <div
       aria-hidden={true}
+      aria-labelledby="psds-drawer-summary-12"
       className="psds-drawer__details psds-theme--dark"
+      id="psds-drawer-detail-13"
+      role="region"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -404,11 +428,12 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
         Drawer Content here
       </p>
     </div>
-    <div
+    <button
+      aria-controls="psds-drawer-detail-15"
       aria-expanded={false}
       className="psds-drawer__summary psds-theme--dark"
+      id="psds-drawer-summary-14"
       onClick={[Function]}
-      role="button"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -443,10 +468,13 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
           Collapsed
         </div>
       </div>
-    </div>
+    </button>
     <div
       aria-hidden={true}
+      aria-labelledby="psds-drawer-summary-14"
       className="psds-drawer__details psds-theme--dark"
+      id="psds-drawer-detail-15"
+      role="region"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -473,11 +501,12 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
   }
 >
   <div>
-    <div
+    <button
+      aria-controls="psds-drawer-detail-17"
       aria-expanded={false}
       className="psds-drawer__summary psds-theme--dark"
+      id="psds-drawer-summary-16"
       onClick={[Function]}
-      role="button"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -512,10 +541,13 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
           Collapsed
         </div>
       </div>
-    </div>
+    </button>
     <div
       aria-hidden={true}
+      aria-labelledby="psds-drawer-summary-16"
       className="psds-drawer__details psds-theme--dark"
+      id="psds-drawer-detail-17"
+      role="region"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -531,11 +563,12 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
     </div>
   </div>
   <div>
-    <div
+    <button
+      aria-controls="psds-drawer-detail-19"
       aria-expanded={false}
       className="psds-drawer__summary psds-theme--dark"
+      id="psds-drawer-summary-18"
       onClick={[Function]}
-      role="button"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -570,10 +603,13 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
           Collapsed
         </div>
       </div>
-    </div>
+    </button>
     <div
       aria-hidden={true}
+      aria-labelledby="psds-drawer-summary-18"
       className="psds-drawer__details psds-theme--dark"
+      id="psds-drawer-detail-19"
+      role="region"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -589,11 +625,12 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
     </div>
   </div>
   <div>
-    <div
+    <button
+      aria-controls="psds-drawer-detail-21"
       aria-expanded={false}
       className="psds-drawer__summary psds-theme--dark"
+      id="psds-drawer-summary-20"
       onClick={[Function]}
-      role="button"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -628,10 +665,13 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
           Collapsed
         </div>
       </div>
-    </div>
+    </button>
     <div
       aria-hidden={true}
+      aria-labelledby="psds-drawer-summary-20"
       className="psds-drawer__details psds-theme--dark"
+      id="psds-drawer-detail-21"
+      role="region"
     >
       <p
         className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -657,12 +697,13 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
     }
   }
 >
-  <div
+  <button
+    aria-controls="psds-drawer-detail-23"
     aria-expanded={false}
     aria-label="custom drawer header"
     className="psds-drawer__summary psds-theme--dark"
+    id="psds-drawer-summary-22"
     onClick={[Function]}
-    role="button"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -697,11 +738,14 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
         Collapsed
       </div>
     </div>
-  </div>
+  </button>
   <div
     aria-hidden={true}
     aria-label="custom drawer body"
+    aria-labelledby="psds-drawer-summary-22"
     className="psds-drawer__details psds-theme--dark"
+    id="psds-drawer-detail-23"
+    role="region"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
@@ -726,11 +770,12 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
     }
   }
 >
-  <div
+  <button
+    aria-controls="psds-drawer-detail-9"
     aria-expanded={false}
     className="psds-drawer__summary psds-theme--dark"
+    id="psds-drawer-summary-8"
     onClick={[Function]}
-    role="button"
   >
     <div
       className="psds-row psds-theme--dark"
@@ -804,10 +849,13 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
         Collapsed
       </div>
     </div>
-  </div>
+  </button>
   <div
     aria-hidden={true}
+    aria-labelledby="psds-drawer-summary-8"
     className="psds-drawer__details psds-theme--dark"
+    id="psds-drawer-detail-9"
+    role="region"
   >
     <p
       className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
