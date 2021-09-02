@@ -5,9 +5,17 @@ route: /components/actionmenu
 
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
 
-# Action Menu
+# Action menu
 
-<Intro>Used to perform an action, or to navigate from a list of options</Intro>
+<Intro>Used to perform an action, or to navigate from a list of options.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10241%3A3"
+  install="npm install @pluralsight/ps-design-system-actionmenu"
+  import="import ActionMenu from '@pluralsight/ps-design-system-actionmenu'"
+  packageName="actionmenu"
+  version={props.version}
+/>
 
 <TableOfContents {...props} />
 
@@ -20,7 +28,11 @@ Use `ActionMenu.Icon` to add context and recognition to action menu items.
 ```typescript
 import React from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-actionmenu'
-import { PencilIcon, ChannelIcon, PlayIcon } from '@pluralsight/ps-design-system-icon'
+import {
+  PencilIcon,
+  ChannelIcon,
+  PlayIcon
+} from '@pluralsight/ps-design-system-icon'
 
 function Example() {
   return (
@@ -232,14 +244,17 @@ function Example() {
 export default Example
 ```
 
-## Usage & Types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-actionmenu"
-  import="import ActionMenu from '@pluralsight/ps-design-system-actionmenu'"
-  packageName="actionmenu"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#menu" target="_blank" rel="noreferrer">Menu</A>
+
+## Props
 
 ### ActionMenu
 

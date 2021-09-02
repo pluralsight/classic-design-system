@@ -7,11 +7,25 @@ import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 
 # Vertical tabs
 
+<Intro>
+  Used for creating expanding and collapsing vertical navigation menus.
+</Intro>
+
+<Usage
+  figmaUrl=""
+  install="npm install @pluralsight/ps-design-system-verticaltabs"
+  import="import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'"
+  packageName="verticaltabs"
+  version={props.version}
+/>
+
 <TableOfContents {...props} />
 
-## In-app example
+## Examples
 
-```typescript 
+### App side nav
+
+```typescript
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import { PlaceholderIcon } from '@pluralsight/ps-design-system-icon'
 import React from 'react'
@@ -212,7 +226,7 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-## Tiers as links
+### Tiers as links
 
 ```typescript
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
@@ -243,7 +257,7 @@ function Example() {
 export default Example
 ```
 
-## Tiers as buttons
+### Tiers as buttons
 
 ```typescript
 import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
@@ -274,7 +288,7 @@ function Example() {
 export default Example
 ```
 
-## Tiers w/React Router
+### Tiers w/React Router
 
 Many users of this component are using it in conjunction with `react-router`. If you'd like to do the same and use `VerticalTabs.Tier1` or `VerticalTabs.Tier2` to trigger `react-router` links, you can follow this pattern.
 
@@ -319,7 +333,7 @@ function Example() {
 export default Example
 ```
 
-## Start collapsed
+### Start collapsed
 
 Each `VerticalTabs.Tier1` item can start collapsed if the `collapse` and `collapsible` prop are both set.
 
@@ -334,11 +348,11 @@ const EXAMPLE_NAV = [
     collapsed: true,
     header: {
       icon: <PlaceholderIcon />,
-      title: "Starts collapsed"
+      title: 'Starts collapsed'
     },
     items: [
       {
-        title: "See me after opening"
+        title: 'See me after opening'
       }
     ]
   },
@@ -346,12 +360,12 @@ const EXAMPLE_NAV = [
     collapsible: true,
     header: {
       icon: <PlaceholderIcon />,
-      title: "Starts open"
+      title: 'Starts open'
     },
     items: [
       {
-        href: "#",
-        title: "See me on load"
+        href: '#',
+        title: 'See me on load'
       }
     ]
   }
@@ -392,14 +406,17 @@ const Example: React.FC = () => {
 export default Example
 ```
 
-## Usage & types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-verticaltabs"
-  import="import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'"
-  packageName="verticaltabs"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#disclosure" target="_blank" rel="noreferrer">Disclosure</A>
+
+## Props
 
 ### VerticalTabs
 
@@ -518,18 +535,9 @@ export default Example
 ### VerticalTabs.Tier1.Header
 
 <TypesTable>
-  <TypesProp
-    name="children"
-    type="string"
-    desc="header text"
-  />
-  <TypesProp
-    name="icon"
-    type="Icon"
-    desc="Icon component"
-  />
+  <TypesProp name="children" type="string" desc="header text" />
+  <TypesProp name="icon" type="Icon" desc="Icon component" />
 </TypesTable>
-
 
 ### VerticalTabs.Tier2
 
@@ -549,10 +557,5 @@ export default Example
 ### VerticalTabs.Tier2.Header
 
 <TypesTable>
-  <TypesProp
-    name="children"
-    type="string"
-    desc="header text"
-  />
+  <TypesProp name="children" type="string" desc="header text" />
 </TypesTable>
-
