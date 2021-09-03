@@ -12,6 +12,14 @@ import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'
   orient and move up a hierarchy.
 </Intro>
 
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10235%3A29932"
+  install="npm install @pluralsight/ps-design-system-breadcrumb"
+  import="import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'"
+  packageName="breadcrumb"
+  version={props.version}
+/>
+
 <TableOfContents {...props} />
 
 ## Examples
@@ -45,14 +53,17 @@ Breadcrumbs should be written in sentence case, except for proper nouns or produ
   dont={<Breadcrumb>All The Things</Breadcrumb>}
 />
 
-## Usage & Types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-breadcrumb"
-  import="import Breadcrumb from '@pluralsight/ps-design-system-breadcrumb'"
-  packageName="breadcrumb"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#link" target="_blank" rel="noreferrer">Link</A>
+
+## Props
 
 <TypesTable>
   <TypesProp name="children" type="React.ReactNode" desc="textual label" />

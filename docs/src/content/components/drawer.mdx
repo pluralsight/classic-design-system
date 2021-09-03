@@ -7,6 +7,16 @@ import Drawer from '@pluralsight/ps-design-system-drawer'
 
 # Drawer
 
+<Intro>Use for expanding and collapsing content.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10241%3A1"
+  install="npm install @pluralsight/ps-design-system-drawer"
+  import="import Drawer from '@pluralsight/ps-design-system-drawer'"
+  packageName="drawer"
+  version={props.version}
+/>
+
 <TableOfContents {...props} />
 
 ## Examples
@@ -101,11 +111,16 @@ const ExampleDrawerDetails = () => (
 ```
 
 ### Drawer subcomponents
+
 Styles can be overridden with inline styles or by passing it a new className to either node
+
 **Drawer.Summary**
+
 - Default display is `inline-flex`.
   - To center align a child to the right pass it `margin-left: auto` style.
+
 **Drawer.Details**
+
 - Default display is `block`
 
 ```typescript
@@ -150,8 +165,9 @@ const PinkBox = props => (
 ```
 
 ### Custom layout
-If you wish to for example customize the header or body 
-you can make use of the useDrawerContext hook to provide your own 
+
+If you wish to for example customize the header or body
+you can make use of the useDrawerContext hook to provide your own
 Drawer sub-components.
 
 ```typescript
@@ -163,7 +179,9 @@ const CustomSummary = ({ children }) => {
   const { isOpen, onToggle } = useDrawerContext()
   return (
     <Heading size={Heading.sizes.medium}>
-      <h2 onClick={onToggle} style={{marginBottom: 0, paddingBottom: 16}}>{children}</h2>
+      <h2 onClick={onToggle} style={{ marginBottom: 0, paddingBottom: 16 }}>
+        {children}
+      </h2>
     </Heading>
   )
 }
@@ -180,23 +198,22 @@ function Example() {
 }
 
 export default Example
-
 ```
 
 ### Controlled mount drawer open (AKA startOpen)
 
 When there is a need to modify/observe open state or hook into onToggle callback it's best to use the
-Drawer as a controlled component. The Drawer only takes two props which allow one to take control of 
+Drawer as a controlled component. The Drawer only takes two props which allow one to take control of
 toggle microinteraction, (**onToggle**, **isOpen**).
 
 ```typescript
 import Drawer from '@pluralsight/ps-design-system-drawer'
-import {P} from '@pluralsight/ps-design-system-text'
+import { P } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
 const Example = () => {
   const [open, setOpen] = useState(true)
-  const handleToggle = (e) => {
+  const handleToggle = e => {
     /** custom logic **/
     setOpen(!open)
   }
@@ -217,14 +234,14 @@ export default Example
 
 ### Controlled prevent clicking on `<Drawer.Summary />` from opening `<Drawer />`
 
-```typescript 
+```typescript
 import Drawer from '@pluralsight/ps-design-system-drawer'
-import {P} from '@pluralsight/ps-design-system-text'
+import { P } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
 const Example = () => {
   const [open, setOpen] = useState(false)
-  const handleToggle = (e) => {
+  const handleToggle = e => {
     /** custom logic **/
     setOpen(!open)
   }
@@ -233,7 +250,9 @@ const Example = () => {
       <button onClick={handleToggle}>toggle drawer</button>
       <Drawer isOpen={open}>
         <Drawer.Summary>
-          <P style={{ padding: '10px 0', margin: 0 }}>Clicking me won't toggle drawer</P>
+          <P style={{ padding: '10px 0', margin: 0 }}>
+            Clicking me won't toggle drawer
+          </P>
         </Drawer.Summary>
         <Drawer.Details>
           <P style={{ padding: '10px 0', margin: 0 }}>Drawer Content here</P>
@@ -243,19 +262,23 @@ const Example = () => {
   )
 }
 
- export default Example
+export default Example
 ```
 
-## Usage & Types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-drawer"
-  import="import Drawer from '@pluralsight/ps-design-system-drawer'"
-  packageName="drawer"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#disclosure" target="_blank" rel="noreferrer">Disclosure</A>
+
+## Props
 
 ### Drawer
+
 <TypesTable>
   <TypesProp
     name="children"
