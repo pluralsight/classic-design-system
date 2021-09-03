@@ -18,7 +18,7 @@ import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'
 
 <TableOfContents {...props} />
 
-## Reference design
+## Full nav example
 
 This is an example of how the navigation components can be used together to create a global navigation system for your product experience that is consistent with other global navigation bars across Pluralsight&rsquo;s apps.
 
@@ -103,7 +103,7 @@ function MyLogo() {
 }
 ```
 
-### Global navigation guidelines
+**Global navigation guidelines**
 
 To ensure consistency when navigating across product experiences with different global navigation:
 
@@ -112,9 +112,9 @@ To ensure consistency when navigating across product experiences with different 
 - The brand, utility, and user elements should always be in the same place to ensure consistency across products. Brand on the left, utility and user on the right.
 - The items visible to a user in the product switcher should be the same across all products.
 
-## Nav bar
+## Nav components
 
-### Example
+### NavBar
 
 The nav bar component is the container of the global navigation. It’s 56px tall and should be fluid and sticky to the left/top/right of the browser viewport.
 
@@ -156,9 +156,8 @@ function Example() {
 export default Example
 ```
 
-### Nav bar usage & types
-
 <Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10262%3A377"
   install="npm install @pluralsight/ps-design-system-navbar"
   import="import NavBar from '@pluralsight/ps-design-system-navbar'"
   packageName="navbar"
@@ -193,17 +192,12 @@ export default Example
   />
 </TypesTable>
 
-## Nav item
-
-### Examples
+### NavItem
 
 The nav item component is for creating links to pages or as action triggers. A horizontal variant can be used with or without an icon. The vertical variant always requires an icon. The icon-only variant can also be used for very recognizable icons/actions when a label is unecessary.
 
 ```typescript themeName=dark
-import {
-  colorsBackgroundDark,
-  layout
-} from '@pluralsight/ps-design-system-core'
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import NavItem from '@pluralsight/ps-design-system-navitem'
 import React from 'react'
@@ -266,14 +260,13 @@ function Example() {
 export default Example
 ```
 
-### Nav item guidelines
+**NavItem guidelines**
 
 - Be prudent with the nav items and the the number you use. Try to keep it to about about 2-5. Organize the items well, use short yet descriptive labels, and use grouping with dropdown menus if you need more items than will fit.
 - Use icon only nav items when the icon clearly represents what the nav item is or does. Use tooltips with icon only nav items.
 
-### Nav item usage & types
-
 <Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10262%3A377"
   install="npm install @pluralsight/ps-design-system-navitem"
   import="import NavItem from '@pluralsight/ps-design-system-navitem'"
   packageName="navitem"
@@ -307,17 +300,12 @@ export default Example
   />
 </TypesTable>
 
-## Nav brand
-
-### Examples
+### NavBrand
 
 The nav brand component creates a consistent use of branding for the icon and logo of an app. It is intended to always be placed at the left end of the nav bar.
 
 ```typescript themeName=dark
-import {
-  colorsBackgroundDark,
-  layout
-} from '@pluralsight/ps-design-system-core'
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import React from 'react'
@@ -363,10 +351,7 @@ function MyLogo() {
 The `wordmark` in the NavBrand can be any `ReactNode`, including an svg that might be helpful for consistent branding.
 
 ```typescript themeName=dark
-import {
-  colorsBackgroundDark,
-  layout
-} from '@pluralsight/ps-design-system-core'
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import { HomeIcon } from '@pluralsight/ps-design-system-icon'
 import NavBrand from '@pluralsight/ps-design-system-navbrand'
 import React from 'react'
@@ -429,13 +414,12 @@ const FlowWordmark: React.FC = () => {
 ```
 
 
-### Nav brand guidelines
+**NavBrand guidelines**
 
 - Use the nav brand component to provide consistency between experiences.
 
-### Nav brand usage & types
-
 <Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10262%3A377"
   install="npm install @pluralsight/ps-design-system-navbrand"
   import="import NavBrand from '@pluralsight/ps-design-system-navbrand'"
   packageName="navbrand"
@@ -448,17 +432,12 @@ const FlowWordmark: React.FC = () => {
   <TypesProp name="wordmark" type="React.ReactNode" desc="brand logo" />
 </TypesTable>
 
-## Nav user
-
-### Examples
+### NavUser
 
 The nav user component is for actions & settings related to the user. It is intended to always be placed at the right end of the nav bar. For wider screens, text can be displayed for the user’s name and a meta item (such as a plan name) or only a name. When the screen is narrow, the text will be dropped.
 
 ```typescript themeName=dark
-import {
-  colorsBackgroundDark,
-  layout
-} from '@pluralsight/ps-design-system-core'
+import { colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
 import NavUser from '@pluralsight/ps-design-system-navuser'
 import React from 'react'
 
@@ -482,9 +461,8 @@ function Example() {
 export default Example
 ```
 
-### Nav user usage & types
-
 <Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10262%3A377"
   install="npm install @pluralsight/ps-design-system-navuser"
   import="import NavUser from '@pluralsight/ps-design-system-navuser'"
   packageName="navuser"
@@ -498,9 +476,7 @@ export default Example
   <TypesProp name="src" type="string" desc="user profile image url" />
 </TypesTable>
 
-## Nav cookie banner
-
-### Example
+### NavCookieBanner
 
 The nav cookie banner is common nav element that should be present on the page in order to comply with laws requiring notice that cookies are used in our product. It will be affixed to the bottom/left of the app frame.
 
@@ -525,9 +501,8 @@ function Example() {
 export default Example
 ```
 
-### Nav cookiebanner usage & types
-
 <Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10262%3A377"
   install="npm install @pluralsight/ps-design-system-navcookiebanner"
   import="import NavCookieBanner from '@pluralsight/ps-design-system-navcookiebanner'"
   packageName="navcookiebanner"
@@ -550,3 +525,14 @@ export default Example
     desc="date of last terms update"
   />
 </TypesTable>
+
+## Accessibility
+
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#aria_lh_navigation" target="_blank" rel="noreferrer">Navigation (role)</A>, <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#link" target="_blank" rel="noreferrer">Link</A>, <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#menubutton" target="_blank" rel="noreferrer">Menu Button</A>
+

@@ -190,8 +190,8 @@ const groups = [
         title: 'Aside'
       },
       {
-        href: '/components/layout-column',
-        title: 'Column'
+        href: '/components/layout-equal-column',
+        title: 'Equal column'
       },
       {
         href: '/components/layout-page-heading',

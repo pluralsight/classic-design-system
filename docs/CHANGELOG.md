@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.32.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.31.6...@pluralsight/ps-design-system-docs@0.32.0) (2021-09-03)
+
+
+### Bug Fixes
+
+* **docs:** make gatsby-postcss use postcss plugins ([2052a11](https://github.com/pluralsight/design-system/commit/2052a11e92a45da7c867e4052f569a94104fb699))
+
+
+### Features
+
+* **docs:** dropdown a11y section placeholder ([e1591f4](https://github.com/pluralsight/design-system/commit/e1591f49105771bbe1dd91b72809d8d72a471411))
+* **docs:** enable components for mdx-based a11y summary ([db2d1d5](https://github.com/pluralsight/design-system/commit/db2d1d57aee7fea6ed360ad510fd4d3300b9b95c))
+
+
+
+
+
 ## [0.31.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.31.5...@pluralsight/ps-design-system-docs@0.31.6) (2021-08-23)
 
 

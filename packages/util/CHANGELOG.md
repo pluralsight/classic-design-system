@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.3.1...@pluralsight/ps-design-system-util@9.4.0) (2021-09-03)
+
+
+### Features
+
+* **util:** add generateId based on counter ([8a3ca71](https://github.com/pluralsight/design-system/commit/8a3ca7189e1fead9a14619bb3e13a3c846a0e654))
+
+
+
+
+
 ## [9.3.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@9.3.0...@pluralsight/ps-design-system-util@9.3.1) (2021-08-12)
 
 

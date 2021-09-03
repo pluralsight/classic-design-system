@@ -5,6 +5,18 @@ route: /components/layout-page-heading
 
 # Page heading layout
 
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=11195%3A26707"
+  install="npm install @pluralsight/ps-design-system-layout"
+  import="import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout"
+  packageName="layout"
+  version={props.version}
+/>
+
+<TableOfContents {...props} />
+
+## Example
+
 Start your layout with this default template of, `PageHeadingLayout` nested in
 `PageWidthLayout`, to achieve standard outer spacing and title style.
 
@@ -56,14 +68,7 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-## Usage & types
-
-<Usage
-  install="npm install @pluralsight/ps-design-system-layout"
-  import="import { PageHeadingLayout } from '@pluralsight/ps-design-system-layout"
-  packageName="layout"
-  version={props.version}
-/>
+## Props
 
 <TypesTable>
   <TypesProp

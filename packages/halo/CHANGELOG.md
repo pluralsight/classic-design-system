@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@11.0.2...@pluralsight/ps-design-system-halo@12.0.0) (2021-09-03)
+
+
+### Code Refactoring
+
+* **halo:** remove separate style and react imports ([e145635](https://github.com/pluralsight/design-system/commit/e1456357e11afeede5455a2aad8730926e1365d4)), closes [#1977](https://github.com/pluralsight/design-system/issues/1977)
+
+
+### Features
+
+* **halo:** allow separate import for react and css ([fb64978](https://github.com/pluralsight/design-system/commit/fb6497864c8e836e45f1f7971b99afd2fb83ffbc))
+
+
+### BREAKING CHANGES
+
+* **halo:** Remove /styles.css and /react imports
+
+
+
+
+
 ## [11.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-halo@11.0.1...@pluralsight/ps-design-system-halo@11.0.2) (2021-08-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-halo

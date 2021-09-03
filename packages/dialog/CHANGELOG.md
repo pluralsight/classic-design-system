@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [15.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@14.0.3...@pluralsight/ps-design-system-dialog@15.0.0) (2021-09-03)
+
+
+### Code Refactoring
+
+* **dialog:** remove separate style and react imports ([67acb36](https://github.com/pluralsight/design-system/commit/67acb36d5ffd80e3a4848cd60be1761f55c0888f)), closes [#1977](https://github.com/pluralsight/design-system/issues/1977)
+
+
+### Features
+
+* **dialog:** allow separate import for react and css ([18fa7ac](https://github.com/pluralsight/design-system/commit/18fa7ac318eea3677b955275315c6fd6db382d71))
+
+
+### BREAKING CHANGES
+
+* **dialog:** Remove /styles.css and /react imports
+
+
+
+
+
 ## [14.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dialog@14.0.2...@pluralsight/ps-design-system-dialog@14.0.3) (2021-08-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dialog

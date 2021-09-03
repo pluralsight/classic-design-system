@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.1.19...@pluralsight/ps-design-system-textarea@10.0.0) (2021-09-03)
+
+
+### Code Refactoring
+
+* **textarea:** remove separate style and react imports ([65f78e3](https://github.com/pluralsight/design-system/commit/65f78e30a27c2f0ac331902b996a43db7b5cd56c)), closes [#1977](https://github.com/pluralsight/design-system/issues/1977)
+
+
+### Features
+
+* **textarea:** allow separate import for react and css ([ffba2e3](https://github.com/pluralsight/design-system/commit/ffba2e3e6fce443472667d9873259073f4a34819))
+
+
+### BREAKING CHANGES
+
+* **textarea:** Remove /styles.css and /react imports
+
+
+
+
+
 ## [9.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textarea@9.1.18...@pluralsight/ps-design-system-textarea@9.1.19) (2021-08-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textarea

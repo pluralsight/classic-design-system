@@ -7,6 +7,16 @@ import Dropdown from '@pluralsight/ps-design-system-dropdown'
 
 # Dropdown
 
+<Intro>A form input for making a single selection from a list of items.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10235%3A29996"
+  install="npm install @pluralsight/ps-design-system-dropdown"
+  import="import Dropdown from '@pluralsight/ps-design-system-dropdown'"
+  packageName="dropdown"
+  version={props.version}
+/>
+
 <TableOfContents {...props} />
 
 ## Examples
@@ -16,7 +26,6 @@ import Dropdown from '@pluralsight/ps-design-system-dropdown'
 ```typescript
 import React from 'react'
 import ActionMenu from '@pluralsight/ps-design-system-dropdown'
-import Dropdown from '@pluralsight/ps-design-system-dropdown'
 import Button from '@pluralsight/ps-design-system-button'
 import { layout } from '@pluralsight/ps-design-system-core'
 
@@ -29,7 +38,6 @@ function Example() {
   const [value, setValue] = React.useState(options[1].value)
   return (
     <div className="example-flex-column">
-      <Button onClick={() => setValue('beg')}>Set Beginner</Button>
       <Dropdown
         label="Level"
         placeholder="Select"
@@ -42,6 +50,15 @@ function Example() {
         value={value}
       />
       <div>Selected: {value}</div>
+      <div>
+        <Button
+          appearance="secondary"
+          size="xSmall"
+          onClick={() => setValue('beg')}
+        >
+          Set Beginner
+        </Button>
+      </div>
     </div>
   )
 }
@@ -103,7 +120,7 @@ const Comp = () => (
 export default Comp
 ```
 
-### Smaller dropdowns in tables
+### Sizes
 
 For table rows, step down to the `small` size.
 
@@ -181,42 +198,6 @@ const Comp = () => (
 export default Comp
 ```
 
-### Menu scrolling
-
-The dropdown component menu has a max height of 400px and will scroll for content needing more vertical space.
-
-```typescript
-import React from 'react'
-import Dropdown from '@pluralsight/ps-design-system-dropdown'
-
-const Example = () => (
-  <Dropdown
-    label="Max height example"
-    menu={
-       <>
-          <Dropdown.Item>One item</Dropdown.Item>
-          <Dropdown.Item>Two item</Dropdown.Item>
-          <Dropdown.Item>Three item</Dropdown.Item>
-          <Dropdown.Item>Four item</Dropdown.Item>
-          <Dropdown.Item>Five item</Dropdown.Item>
-          <Dropdown.Item>Six item</Dropdown.Item>
-          <Dropdown.Item>Seven item</Dropdown.Item>
-          <Dropdown.Item>Eight item</Dropdown.Item>
-          <Dropdown.Item>Nine item</Dropdown.Item>
-          <Dropdown.Item>Ten item</Dropdown.Item>
-          <Dropdown.Item>Eleven item</Dropdown.Item>
-          <Dropdown.Item>Twelve item</Dropdown.Item>
-          <Dropdown.Item>Thirteen item</Dropdown.Item>
-          <Dropdown.Item>Fourteen item</Dropdown.Item>
-          <Dropdown.Item>Fifteen item</Dropdown.Item>
-        </>
-    }
-  />
-)
-
-export default Example
-```
-
 ### Customizing with icon
 
 ```typescript
@@ -229,31 +210,32 @@ interface DropdownWithIconProps extends HTMLAttributes<HTMLButtonElement> {
   menu: React.ReactNode
 }
 
-const DropdownWithIcon = React.forwardRef<HTMLButtonElement, DropdownWithIconProps>(
-  ({ icon, ...props }, forwardedRef) => {
-    const allProps = useDropdown(props, forwardedRef)
-    return (
-      <Dropdown.Layout
-        {...allProps.layout}
-        label={<Dropdown.Label {...allProps.label} />}
-        menu={
-          <DropdownContext.Provider {...allProps.value}>
-            <Dropdown.Menu {...allProps.menu} />
-          </DropdownContext.Provider>
-        }
-        subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
-        button={
-          <Dropdown.Button {...allProps.button}>
-            {icon}
-            <div style={{ height: '100%', position: 'relative', flex: 1 }}>
-              <Dropdown.Selected {...allProps.selected} />
-            </div>
-          </Dropdown.Button>
-        }
-      />
-    )
-  }
-)
+const DropdownWithIcon = React.forwardRef<
+  HTMLButtonElement,
+  DropdownWithIconProps
+>(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
 function Example() {
   return (
     <DropdownWithIcon
@@ -281,39 +263,41 @@ import React, { HTMLAttributes } from 'react'
 import Dropdown, { useDropdown } from '@pluralsight/ps-design-system-dropdown'
 import { CalendarIcon } from '@pluralsight/ps-design-system-icon'
 
-interface DropdownWithIconProps extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
+interface DropdownWithIconProps
+  extends Omit<HTMLAttributes<HTMLButtonElement>, 'onChange'> {
   icon: React.ReactNode
   onChange?: (e: React.MouseEvent, value: React.ReactText) => void
   menu: React.ReactNode
 }
 
-const DropdownWithIcon = React.forwardRef<HTMLButtonElement, DropdownWithIconProps>(
-  ({ icon, ...props }, forwardedRef) => {
-    const allProps = useDropdown(props, forwardedRef)
-    return (
-      <Dropdown.Layout
-        {...allProps.layout}
-        label={<Dropdown.Label {...allProps.label} />}
-        menu={
-          <DropdownContext.Provider {...allProps.value}>
-            <Dropdown.Menu {...allProps.menu} />
-          </DropdownContext.Provider>
-        }
-        subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
-        button={
-          <Dropdown.Button {...allProps.button}>
-            {icon}
-            <div style={{ height: '100%', position: 'relative', flex: 1 }}>
-              <Dropdown.Selected {...allProps.selected} />
-            </div>
-          </Dropdown.Button>
-        }
-      />
-    )
-  }
-)
+const DropdownWithIcon = React.forwardRef<
+  HTMLButtonElement,
+  DropdownWithIconProps
+>(({ icon, ...props }, forwardedRef) => {
+  const allProps = useDropdown(props, forwardedRef)
+  return (
+    <Dropdown.Layout
+      {...allProps.layout}
+      label={<Dropdown.Label {...allProps.label} />}
+      menu={
+        <DropdownContext.Provider {...allProps.value}>
+          <Dropdown.Menu {...allProps.menu} />
+        </DropdownContext.Provider>
+      }
+      subLabel={<Dropdown.SubLabel {...allProps.subLabel} />}
+      button={
+        <Dropdown.Button {...allProps.button}>
+          {icon}
+          <div style={{ height: '100%', position: 'relative', flex: 1 }}>
+            <Dropdown.Selected {...allProps.selected} />
+          </div>
+        </Dropdown.Button>
+      }
+    />
+  )
+})
 function Example() {
-  const [selected, setSelected] = React.useState<null| string>()
+  const [selected, setSelected] = React.useState<null | string>()
   const values = {
     channel: {
       value: 'channel',
@@ -359,14 +343,52 @@ function Example() {
 export default Example
 ```
 
-## Usage & Types
+### Menu scrolling
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-dropdown"
-  import="import Dropdown from '@pluralsight/ps-design-system-dropdown'"
-  packageName="dropdown"
-  version={props.version}
-/>
+The dropdown component menu has a max height of 400px and will scroll for content needing more vertical space.
+
+```typescript
+import React from 'react'
+import Dropdown from '@pluralsight/ps-design-system-dropdown'
+
+const Example = () => (
+  <Dropdown
+    label="Max height example"
+    menu={
+      <>
+        <Dropdown.Item>One item</Dropdown.Item>
+        <Dropdown.Item>Two item</Dropdown.Item>
+        <Dropdown.Item>Three item</Dropdown.Item>
+        <Dropdown.Item>Four item</Dropdown.Item>
+        <Dropdown.Item>Five item</Dropdown.Item>
+        <Dropdown.Item>Six item</Dropdown.Item>
+        <Dropdown.Item>Seven item</Dropdown.Item>
+        <Dropdown.Item>Eight item</Dropdown.Item>
+        <Dropdown.Item>Nine item</Dropdown.Item>
+        <Dropdown.Item>Ten item</Dropdown.Item>
+        <Dropdown.Item>Eleven item</Dropdown.Item>
+        <Dropdown.Item>Twelve item</Dropdown.Item>
+        <Dropdown.Item>Thirteen item</Dropdown.Item>
+        <Dropdown.Item>Fourteen item</Dropdown.Item>
+        <Dropdown.Item>Fifteen item</Dropdown.Item>
+      </>
+    }
+  />
+)
+
+export default Example
+```
+
+## Accessibility
+
+**Partially WCAG 2.1 AA Compliant**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests. <br />
+<WarningFilledIcon color="red" size="xSmall" /> No manual audit.
+
+Adheres to the WAI-ARIA <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#Listbox" target="_blank" rel="noreferrer">Listbox</A> pattern.
+
+## Props
 
 ### Dropdown
 

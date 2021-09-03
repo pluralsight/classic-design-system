@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@11.0.2...@pluralsight/ps-design-system-circularprogress@12.0.0) (2021-09-03)
+
+
+### Code Refactoring
+
+* **circularprogress:** remove separate style and react imports ([2a71e97](https://github.com/pluralsight/design-system/commit/2a71e978bb5c8588a6b8f159eb58d50cdb771da0)), closes [#1977](https://github.com/pluralsight/design-system/issues/1977)
+
+
+### Features
+
+* **circularprogress:** allow separate import for react and css ([c3e6a3a](https://github.com/pluralsight/design-system/commit/c3e6a3a96559ba1e2bcb06d2e67f20da642e76bc))
+
+
+### BREAKING CHANGES
+
+* **circularprogress:** Remove /styles.css and /react imports
+
+
+
+
+
 ## [11.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@11.0.1...@pluralsight/ps-design-system-circularprogress@11.0.2) (2021-08-12)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress

@@ -7,7 +7,18 @@ import Steps from '@pluralsight/ps-design-system-steps'
 
 # Steps
 
-<Intro>Use the Steps component to display sequential navigation. A step will display an incremental counter and may have a title and description.</Intro>
+<Intro>
+  Use the Steps component to display sequential navigation. A step will display
+  an incremental counter and may have a title and description.
+</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=11787%3A47920"
+  install="npm install @pluralsight/ps-design-system-steps"
+  import="import Badge from '@pluralsight/ps-design-system-steps'"
+  packageName="steps"
+  version={props.version}
+/>
 
 <TableOfContents {...props} />
 
@@ -24,9 +35,7 @@ import Steps from '@pluralsight/ps-design-system-steps'
 function Example() {
   return (
     <Steps orientation="vertical">
-      <Steps.Step status={Steps.statuses.completed}>
-        Finished
-      </Steps.Step>
+      <Steps.Step status={Steps.statuses.completed}>Finished</Steps.Step>
 
       <Steps.Step
         description="An optional description to provide more detail about this step."
@@ -35,9 +44,7 @@ function Example() {
         In Progress
       </Steps.Step>
 
-      <Steps.Step status={Steps.statuses.incomplete}>
-        Waiting
-      </Steps.Step>
+      <Steps.Step status={Steps.statuses.incomplete}>Waiting</Steps.Step>
     </Steps>
   )
 }
@@ -52,9 +59,7 @@ import Steps from '@pluralsight/ps-design-system-steps'
 function Example() {
   return (
     <Steps orientation="horizontal">
-      <Steps.Step status={Steps.statuses.completed}>
-        Finished
-      </Steps.Step>
+      <Steps.Step status={Steps.statuses.completed}>Finished</Steps.Step>
 
       <Steps.Step
         description="An options description to provide more detail about this step."
@@ -63,9 +68,7 @@ function Example() {
         In Progress
       </Steps.Step>
 
-      <Steps.Step status={Steps.statuses.incomplete}>
-        Waiting
-      </Steps.Step>
+      <Steps.Step status={Steps.statuses.incomplete}>Waiting</Steps.Step>
     </Steps>
   )
 }
@@ -97,7 +100,6 @@ function Example() {
 
 export default Example
 ```
-
 
 ### Step status
 
@@ -131,9 +133,7 @@ import Steps from '@pluralsight/ps-design-system-steps'
 function Example() {
   return (
     <Steps counter={false} orientation="horizontal" size="medium">
-      <Steps.Step status={Steps.statuses.completed}>
-        Finished
-      </Steps.Step>
+      <Steps.Step status={Steps.statuses.completed}>Finished</Steps.Step>
 
       <Steps.Step
         description="An optional description to provide more detail about this step."
@@ -142,9 +142,7 @@ function Example() {
         In Progress
       </Steps.Step>
 
-      <Steps.Step status={Steps.statuses.incomplete}>
-        Waiting
-      </Steps.Step>
+      <Steps.Step status={Steps.statuses.incomplete}>Waiting</Steps.Step>
     </Steps>
   )
 }
@@ -161,7 +159,7 @@ import React from 'react'
 import Steps from '@pluralsight/ps-design-system-steps'
 
 function Example() {
- const { steps, select } = useData()
+  const { steps, select } = useData()
 
   return (
     <Steps orientation="vertical">
@@ -179,8 +177,9 @@ function Example() {
   )
 }
 
-function useData(){
-  const description = 'An optional description to provide more detail about this step.'
+function useData() {
+  const description =
+    'An optional description to provide more detail about this step.'
   const { statuses } = Steps
 
   const [steps, setSteps] = React.useState([
@@ -191,17 +190,25 @@ function useData(){
     { description, title: 'Review', status: statuses.incomplete }
   ])
 
-  const select = React.useCallback((nextStep) => {
-    const curIndex = steps.indexOf(nextStep)
-    if (curIndex < 0) return
+  const select = React.useCallback(
+    nextStep => {
+      const curIndex = steps.indexOf(nextStep)
+      if (curIndex < 0) return
 
-    setSteps(prev => prev.map((step, index) => ({
-      ...step,
-      status: index === curIndex
-        ? 'current'
-        : index < curIndex ? 'completed' : 'incomplete'
-    })))
-  }, [steps])
+      setSteps(prev =>
+        prev.map((step, index) => ({
+          ...step,
+          status:
+            index === curIndex
+              ? 'current'
+              : index < curIndex
+              ? 'completed'
+              : 'incomplete'
+        }))
+      )
+    },
+    [steps]
+  )
 
   return { steps, select }
 }
@@ -209,16 +216,17 @@ function useData(){
 export default Example
 ```
 
+## Accessibility
 
+**WCAG 2.1 AA Compliance**
 
-## Usage & types
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-steps"
-  import="import Badge from '@pluralsight/ps-design-system-steps'"
-  packageName="steps"
-  version={props.version}
-/>
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#disclosure" target="_blank" rel="noreferrer">Disclosure</A>
+
+## Props
 
 ### Steps
 
@@ -245,11 +253,7 @@ export default Example
 
 <TypesTable>
   <TypesProp name="description" type="string" />
-  <TypesProp
-    desc="custom marker"
-    name="marker"
-    type="Marker"
-  />
+  <TypesProp desc="custom marker" name="marker" type="Marker" />
   <TypesProp
     default="(p) => <div {...p} />"
     desc="render prop for custom marker container"
@@ -263,4 +267,3 @@ export default Example
     type={<TypesEnum enum={Steps.statuses} />}
   />
 </TypesTable>
-

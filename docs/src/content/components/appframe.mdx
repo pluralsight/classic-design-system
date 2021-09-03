@@ -3,6 +3,8 @@ name: App frame
 route: /components/appframe
 ---
 
+import AppFrame from '@pluralsight/ps-design-system-appframe'
+
 # App frame
 
 <Intro>
@@ -10,9 +12,17 @@ route: /components/appframe
   navigation components.
 </Intro>
 
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web-Components?node-id=13897%3A39503"
+  install="npm install @pluralsight/ps-design-system-appframe"
+  import="import AppFrame from '@pluralsight/ps-design-system-appframe'"
+  packageName="appframe"
+  version={props.version}
+/>
+
 <TableOfContents {...props} />
 
-## Examples
+## Example
 
 ```typescript noRender
 <AppFrame topnav={<TopNav />} sidenav={<CustomSideNav />}>
@@ -58,14 +68,7 @@ A reference implementation of the Skills nav is available on [codesandbox](https
   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 />
 
-## Usage & types
-
-<Usage
-  install="npm install @pluralsight/ps-design-system-appframe"
-  import="import AppFrame from '@pluralsight/ps-design-system-appframe'"
-  packageName="appframe"
-  version={props.version}
-/>
+## Props
 
 <TypesTable>
   <TypesProp name="children" type="React.ReactNode" />

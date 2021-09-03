@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.1.19...@pluralsight/ps-design-system-textinput@12.0.0) (2021-09-03)
+
+
+### Code Refactoring
+
+* **textinput:** remove separate style and react imports ([dc645be](https://github.com/pluralsight/design-system/commit/dc645bee89a37c2917d41279a852116acf696682)), closes [#1977](https://github.com/pluralsight/design-system/issues/1977)
+
+
+### Features
+
+* **textinput:** allow separate import for react and css ([63f4c16](https://github.com/pluralsight/design-system/commit/63f4c16bc6b31a7dd2adb57bca2cc5cacadc08fd))
+
+
+### BREAKING CHANGES
+
+* **textinput:** Remove /styles.css and /react imports
+
+
+
+
+
 ## [11.1.19](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-textinput@11.1.18...@pluralsight/ps-design-system-textinput@11.1.19) (2021-08-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-textinput
