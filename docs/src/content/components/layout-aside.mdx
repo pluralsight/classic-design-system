@@ -1,13 +1,25 @@
 ---
-name: Aside layout
+name: Aside
 route: /components/layout-aside
 ---
 
 import { AsideLayout } from '@pluralsight/ps-design-system-layout'
 
-# Aside layout
+# Aside
 
-Use this layout for any 1/4, 3/4-proportioned layouts.
+<Intro>Use for 1/4, 3/4-proportioned layouts.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web-Components?node-id=13885%3A38972"
+  install="npm install @pluralsight/ps-design-system-layout"
+  import="import { AsideLayout } from '@pluralsight/ps-design-system-layout'"
+  packageName="layout"
+  version={props.version}
+/>
+
+<TableOfContents {...props} />
+
+## Example
 
 ```typescript
 import { colorsBlue, colorsTextIcon, type, layout } from '@pluralsight/ps-design-system-core'
@@ -74,14 +86,7 @@ const BlueBox: React.FC = props => (
 export default Example
 ```
 
-## Usage & types
-
-<Usage
-  install="npm install @pluralsight/ps-design-system-layout"
-  import="import { AsideLayout } from '@pluralsight/ps-design-system-layout'"
-  packageName="layout"
-  version={props.version}
-/>
+## Props
 
 <TypesTable>
   <TypesProp

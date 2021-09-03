@@ -1,15 +1,27 @@
 ---
-name: Column layouts
-route: /components/layout-column
+name: Equal column
+route: /components/layout-equal-column-layout
 ---
 
 import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'
 
-# Column layouts
+# Equal column
+
+<Intro>
+  Layout content in equal column widths with responsive breakpoints.
+</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web-Components?node-id=13885%3A38934"
+  install="npm install @pluralsight/ps-design-system-layout"
+  import="import { EqualColumnLayout } from '@pluralsight/ps-design-system-layout'"
+  packageName="layout"
+  version={props.version}
+/>
 
 <TableOfContents {...props} />
 
-## Equal column layout
+## Example
 
 This layout will provide a set number of columns for an arbitrary number of
 items. If more items than columns are provided, they will flow into rows.
@@ -59,7 +71,7 @@ const Example: React.FC = props => {
 
 const BlueBox: React.FC = props => (
   <React.Fragment>
-    <div className="bluebox" {...props} />
+    <div {...props} className={'bluebox ' + props.className} />
 
     <style jsx>{`
       .bluebox {
@@ -78,14 +90,7 @@ const BlueBox: React.FC = props => (
 export default Example
 ```
 
-## Usage & types
-
-<Usage
-  install="npm install @pluralsight/ps-design-system-layout"
-  import="import { AsideLayout } from '@pluralsight/ps-design-system-layout'"
-  packageName="layout"
-  version={props.version}
-/>
+## Props
 
 <TypesTable>
   <TypesProp

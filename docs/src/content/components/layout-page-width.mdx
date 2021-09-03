@@ -1,16 +1,27 @@
 ---
-name: Page width layout
+name: Page width
 route: /components/layout-page-width
 ---
 
-# Page width layout
+# Page width
 
-This layout will help you consistently match the max width of the site and the
-standard margins.
+<Intro>
+  This layout will help you consistently match the max width of the site and the
+  standard margins and it supports full-bleed backgrounds.
+</Intro>
 
-We anticipate this will be used to support full-bleed background layouts, where
-the background might run to the edge of the viewport, but the content should
-still be constrained.
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web-Components?node-id=13885%3A38915"
+  install="npm install @pluralsight/ps-design-system-layout"
+  import="import { PageWidthLayout } from '@pluralsight/ps-design-system-layout"
+  packageName="layout"
+  version={props.version}
+/>
+<TableOfContents {...props} />
+
+## Example
+
+Maintain standard margins and max-width with or without a full-bleed background.
 
 ```typescript
 import { colorsPink, colorsPurple, layout } from '@pluralsight/ps-design-system-core'
@@ -55,14 +66,7 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-## Usage & types
-
-<Usage
-  install="npm install @pluralsight/ps-design-system-layout"
-  import="import { PageWidthLayout } from '@pluralsight/ps-design-system-layout"
-  packageName="layout"
-  version={props.version}
-/>
+## Props
 
 <TypesTable>
   <TypesProp name="children" type="React.ReactNode" desc="content" required />
