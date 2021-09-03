@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@10.0.3...@pluralsight/ps-design-system-searchinput@11.0.0) (2021-09-03)
+
+
+### Bug Fixes
+
+* **searchinput:** fix bad css import path ([220b2ca](https://github.com/pluralsight/design-system/commit/220b2ca0d299f1741a2d0d5424eb13c060ca97cc))
+* **searchinput:** mistype export ([810e2f5](https://github.com/pluralsight/design-system/commit/810e2f5d8618f33c2c282a541fc31d23d7656713))
+
+
+### Code Refactoring
+
+* **searchinput:** remove separate style and react imports ([428fa71](https://github.com/pluralsight/design-system/commit/428fa717f3c09b5712c45dc4a5b7737754b5ccd8)), closes [#1977](https://github.com/pluralsight/design-system/issues/1977)
+
+
+### Features
+
+* **searchinput:** allow separate import for react and css ([2ef9df8](https://github.com/pluralsight/design-system/commit/2ef9df8f43230d99de0b5ceb3cbd5e5a06f2247e))
+
+
+### BREAKING CHANGES
+
+* **searchinput:** Remove /styles.css and /react imports
+
+
+
+
+
 ## [10.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-searchinput@10.0.2...@pluralsight/ps-design-system-searchinput@10.0.3) (2021-08-23)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-searchinput

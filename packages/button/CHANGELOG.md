@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [24.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@23.1.1...@pluralsight/ps-design-system-button@24.0.0) (2021-09-03)
+
+
+### Bug Fixes
+
+* **button:** complete root react.d.ts definition ([b4740f2](https://github.com/pluralsight/design-system/commit/b4740f28516a628edd89bf929e0429b096fcd536))
+* **button:** lint ([3a2fc5d](https://github.com/pluralsight/design-system/commit/3a2fc5d077b298f33e105ea1c979a07822233a27))
+
+
+### Code Refactoring
+
+* **button:** remove separate style and react imports ([0620d8a](https://github.com/pluralsight/design-system/commit/0620d8ade01d65272b448a6f80e3663bad0faf0e)), closes [#1977](https://github.com/pluralsight/design-system/issues/1977)
+
+
+### BREAKING CHANGES
+
+* **button:** Remove /styles.css and /react imports
+
+
+
+
+
 ## [23.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-button@23.1.0...@pluralsight/ps-design-system-button@23.1.1) (2021-08-23)
 
 

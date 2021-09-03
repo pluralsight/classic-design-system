@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [25.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@24.1.1...@pluralsight/ps-design-system-icon@25.0.0) (2021-09-03)
+
+
+### Bug Fixes
+
+* **icon:** complete root react.d.ts definition ([7f4964d](https://github.com/pluralsight/design-system/commit/7f4964d9ca0f85e7cfd1100e13afdfadfa9af8ef))
+* **icon:** update /react export for named icons ([096957c](https://github.com/pluralsight/design-system/commit/096957c0877616a91ddd43ee43ae3e6c4328242c))
+
+
+### Code Refactoring
+
+* **icon:** remove separate style and react imports ([7059dda](https://github.com/pluralsight/design-system/commit/7059dda51330737ac99054f67ca41dad2f54a763)), closes [#1977](https://github.com/pluralsight/design-system/issues/1977)
+
+
+### BREAKING CHANGES
+
+* **icon:** Remove /styles.css and /react imports
+
+
+
+
+
 ## [24.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@24.1.0...@pluralsight/ps-design-system-icon@24.1.1) (2021-08-23)
 
 

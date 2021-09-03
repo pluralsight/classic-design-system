@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [12.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@11.1.1...@pluralsight/ps-design-system-avatar@12.0.0) (2021-09-03)
+
+
+### Code Refactoring
+
+* **avatar:** remove separate style and react imports ([718baf4](https://github.com/pluralsight/design-system/commit/718baf4a3a9cba2b02011d52c736cdf2475c75c0)), closes [#1977](https://github.com/pluralsight/design-system/issues/1977)
+
+
+### BREAKING CHANGES
+
+* **avatar:** Remove /styles.css and /react imports
+
+
+
+
+
 ## [11.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-avatar@11.1.0...@pluralsight/ps-design-system-avatar@11.1.1) (2021-08-23)
 
 
