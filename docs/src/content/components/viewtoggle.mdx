@@ -7,9 +7,21 @@ import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'
 
 # View toggle
 
+<Intro>View toggle is for switching between 1-3 views of content.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10235%3A29980"
+  install="npm install @pluralsight/ps-design-system-viewtoggle"
+  import="import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'"
+  packageName="viewtoggle"
+  version={props.version}
+/>
+
 <TableOfContents {...props} />
 
-## Toggling
+## Examples
+
+### Toggling
 
 View toggles are used when there are just a couple options to switch between. Use a `Tab` component when more options exist.
 
@@ -29,7 +41,7 @@ function Example() {
 export default Example
 ```
 
-## More options
+### More options
 
 Make a toggle with up to 3 options.
 
@@ -50,7 +62,7 @@ function Example() {
 export default Example
 ```
 
-## Long labels
+### Long labels
 
 View toggles are used when there are just a couple options to switch between. Use a `Tab` component when more options exist.
 
@@ -71,15 +83,17 @@ function Example() {
 
 export default Example
 ```
+## Accessibility
 
-## Usage & types
+**WCAG 2.1 AA Compliance**
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-viewtoggle"
-  import="import ViewToggle from '@pluralsight/ps-design-system-viewtoggle'"
-  packageName="viewtoggle"
-  version={props.version}
-/>
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#tabpanel" target="_blank" rel="noreferrer">Tabs</A>
+
+## Props
 
 ### ViewToggle
 
