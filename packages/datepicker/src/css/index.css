@@ -19,8 +19,7 @@
 }
 
 .psds-calendar {
-  padding: 24px;
-  max-height: 360px;
+  padding: 24px 24px 12px;
   background-color: var(--ps-colors-white);
   color: var(--ps-colors-text-icon-high-on-light);
   display: inline-flex;
@@ -89,6 +88,7 @@
   z-index: 1;
   position: relative;
   width: 280px;
+  height: 280px;
 }
 
 .psds-calendar__date-grid:not(:last-child) {

@@ -37,12 +37,18 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     valueFromProps
   )
 
+  const ref = React.useRef<HTMLDivElement | undefined>()
   React.useEffect(() => setSelected(valueFromProps), [valueFromProps])
   const [open, setOpen] = React.useState<boolean>(false)
   const [value, setValue] = React.useState<string>('')
 
+  const focusInput = () => {
+    const wrapper = ref.current
+    wrapper && wrapper.querySelector('input')?.focus()
+  }
   const dateFormat = 'MM/dd/yyyy'
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
+    focusInput()
     const nextSelected = dateObj.date
     onSelect && onSelect(evt, dateObj)
     setSelected(nextSelected)
@@ -50,6 +56,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     setOpen(false)
   }
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
+    open && focusInput()
     setOpen(!open)
   }
   const handleTextfieldKeyDown: React.KeyboardEventHandler<HTMLInputElement> =
@@ -61,13 +68,18 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   const handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement> =
     evt => {
       const key = evt.key.toLowerCase()
-      key === 'escape' && setOpen(false)
+      if (key === 'escape') {
+        focusInput()
+        setOpen(false)
+      }
     }
   const handleFocus: React.FocusEventHandler<HTMLInputElement> = evt => {
-    open && setOpen(false)
+    if (open) {
+      focusInput()
+      setOpen(false)
+    }
   }
 
-  const ref = React.useRef<HTMLDivElement | undefined>()
   React.useEffect(() => {
     if (!canUseDOM()) return () => {}
 
@@ -75,6 +87,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
       if (evt.target instanceof HTMLElement) {
         // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
         if ((ref.current as HTMLDivElement).contains(evt.target)) return
+        focusInput()
         setOpen(false)
       }
     }
