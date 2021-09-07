@@ -110,8 +110,8 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
             : handleForwardClick(
                 evt as unknown as React.MouseEvent<HTMLButtonElement>
               )
+          evt.preventDefault()
         }
-        evt.preventDefault()
       }
     const animationRef = React.useRef<HTMLDivElement>()
     React.useEffect(() => {

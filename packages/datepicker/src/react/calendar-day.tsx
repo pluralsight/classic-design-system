@@ -106,7 +106,6 @@ export const CalendarDay: React.FC<CalendarDayProps> = ({
     if (monthButtonClicked) {
       setMonthButtonClicked(false)
     }
-    evt.preventDefault()
   }
   const ref = React.useRef<HTMLButtonElement>(null)
   React.useEffect(() => {
@@ -128,7 +127,7 @@ export const CalendarDay: React.FC<CalendarDayProps> = ({
       {...dateProps}
       ref={ref}
       disabled={!selectable}
-      tabIndex={selected || isSameDay(focusable, date) ? 0 : -1}
+      tabIndex={selected || isSameDay(focusable, date) ? undefined : -1}
       className={classNames(
         'psds-calendar__date',
         selected && 'psds-calendar__date--selected',
