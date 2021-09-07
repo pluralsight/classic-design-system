@@ -1737,7 +1737,6 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
-          tabIndex={0}
         >
           1
         </button>
@@ -1789,7 +1788,6 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
-          tabIndex={0}
         >
           5
         </button>
@@ -6055,7 +6053,6 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           onClick={[Function]}
           onKeyDown={[Function]}
           role="button"
-          tabIndex={0}
         >
           13
         </button>

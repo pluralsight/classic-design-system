@@ -5,6 +5,16 @@ route: /components/radio
 
 # Radio
 
+<Intro>Radio buttons allow users to select a single option from a list of mutually exclusive options.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web-Components?node-id=13432%3A551"
+  install="npm install @pluralsight/ps-design-system-radio"
+  import="import Radio from '@pluralsight/ps-design-system-radio'"
+  packageName="radio"
+  version={props.version}
+/>
+
 <TableOfContents {...props} />
 
 ## Examples
@@ -114,14 +124,17 @@ const Comp = () => (
 export default Comp
 ```
 
-## Usage & Types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-radio"
-  import="import Radio from '@pluralsight/ps-design-system-radio'"
-  packageName="radio"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#radiobutton" target="_blank" rel="noreferrer">Radio Group</A>
+
+## Props
 
 ### Radio.Group
 

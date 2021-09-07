@@ -7,6 +7,16 @@ import TextArea from '@pluralsight/ps-design-system-textarea'
 
 # Text area
 
+<Intro>A text area lets a user input a longer amount of text than a standard text field.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web-Components?node-id=11313%3A14"
+  install="npm install @pluralsight/ps-design-system-textarea"
+  import="import TextArea from '@pluralsight/ps-design-system-textarea'"
+  packageName="textarea"
+  version={props.version}
+/>
+
 <TableOfContents {...props} />
 
 ## Examples
@@ -36,7 +46,7 @@ export default Comp
 
 ### Appearance
 
-For a more subtle look in the dark theme, use `subtle` appearance. So subtle. 
+For a more subtle look in the dark theme, use `subtle` appearance. So subtle.
 
 ```typescript
 import React from 'react'
@@ -93,14 +103,15 @@ const Comp = () => (
 export default Comp
 ```
 
-## Usage & Types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-textarea"
-  import="import TextArea from '@pluralsight/ps-design-system-textarea'"
-  packageName="textarea"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+## Props
 
 <TypesTable>
   <TypesProp

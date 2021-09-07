@@ -7,13 +7,21 @@ import TagsInput from '@pluralsight/ps-design-system-tagsinput'
 
 # Tags Input
 
-<TableOfContents {...props} />
-
 <Intro>
   The TagsInput wrapper component can be used when an input supports combining
   multiple values in a single form field. The component is a complete form
   control supporting labels, errors and disabled states.
 </Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10235%3A30028"
+  install="npm install @pluralsight/ps-design-system-tagsinput"
+  import="import TagsInput from '@pluralsight/ps-design-system-tagsinput'"
+  packageName="tagsinput"
+  version={props.version}
+/>
+
+<TableOfContents {...props} />
 
 
 ## Examples
@@ -200,18 +208,21 @@ const Comp = () => (
 export default Comp
 ```
 
-## Advanced customization
+### Advanced customization
 
 > The `TagsInput` component is a convenience wrapper for common usecases. If you need advanced customization, please explore building your own wrapper using the `Field` and `Tag` components.
 
-## Usage & Types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-tagsinput"
-  import="import TagsInput from '@pluralsight/ps-design-system-tagsinput'"
-  packageName="tagsinput"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#combobox" target="_blank" rel="noreferrer">Combobox</A>, <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#Listbox" target="_blank" rel="noreferrer">Listbox</A>
+
+## Props
 
 <TypesTable>
   <TypesProp name="disabled" type="boolean" />
