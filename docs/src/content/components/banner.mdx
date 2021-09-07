@@ -7,11 +7,19 @@ import Banner from '@pluralsight/ps-design-system-banner'
 
 # Banner
 
-## Examples
-
 <TableOfContents {...props} />
 
-### Color
+<Intro>Banners show pressing and high-signal messages, such as system alerts. They are meant to be noticed and prompt users to take action.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10235%3A29931"
+  install="npm install @pluralsight/ps-design-system-banner"
+  import="import Banner from '@pluralsight/ps-design-system-banner'"
+  packageName="banner"
+  version={props.version}
+/>
+
+## Examples
 
 Banners come in 4 colors. Banner colors change based on message displayed.
 
@@ -33,14 +41,15 @@ function Example() {
 export default Example
 ```
 
-## Usage & Types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-banner"
-  import="import Banner from '@pluralsight/ps-design-system-banner'"
-  packageName="banner"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+## Props
 
 ### Banner
 

@@ -9,6 +9,16 @@ import Card from '@pluralsight/ps-design-system-card'
 
 <TableOfContents {...props} />
 
+<Intro>A card is a summary representation of a piece of content and typically is used in a horizontal row or grid of related content.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10235%3A29844"
+  install="npm install @pluralsight/ps-design-system-card"
+  import="import Avatar from '@pluralsight/ps-design-system-card'"
+  packageName="card"
+  version={props.version}
+/>
+
 ## Examples
 
 ### In-app example
@@ -435,14 +445,15 @@ function Example() {
 export default Example
 ```
 
-## Usage & Types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-card"
-  import="import Avatar from '@pluralsight/ps-design-system-card'"
-  packageName="card"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+## Props
 
 ### Card
 

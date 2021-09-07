@@ -10,6 +10,14 @@ import IconCommonSet from './icon-common-set'
 
 <TableOfContents {...props} />
 
+<Usage
+  figmaUrl="https://www.figma.com/file/HVFUT0XlrkfsTMde6PMWLITj/PSDS---Icons"
+  install="npm install @pluralsight/ps-design-system-icon"
+  import="import Icon from '@pluralsight/ps-design-system-icon'"
+  packageName="icon"
+  version={props.version}
+/>
+
 ## Examples
 
 ### Size
@@ -143,15 +151,14 @@ const Comp = () => (
 
 export default Comp
 ```
+## Accessibility
 
-## Usage & Types
+**WCAG 2.1 AA Compliance**
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-icon"
-  import="import Icon from '@pluralsight/ps-design-system-icon'"
-  packageName="icon"
-  version={props.version}
-/>
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+## Props
 
 <TypesTable>
   <TypesProp

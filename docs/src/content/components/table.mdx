@@ -9,6 +9,16 @@ import Table from '@pluralsight/ps-design-system-table'
 
 <TableOfContents {...props} />
 
+<Intro>Tables are containers for displaying information. They allow users to quickly scan, sort, compare, and take action on large amounts of data.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10235%3A29842"
+  install="npm install @pluralsight/ps-design-system-table"
+  import="import Table from '@pluralsight/ps-design-system-table'"
+  packageName="table"
+  version={props.version}
+/>
+
 ## Examples
 
 ### Basic table
@@ -1175,14 +1185,15 @@ const reorder = (list: unknown[], startIndex: number, endIndex: number): any[] =
 export default Example
 ```
 
-## Usage & types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-table"
-  import="import Table from '@pluralsight/ps-design-system-table'"
-  packageName="table"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+## Props
 
 ### Table
 
