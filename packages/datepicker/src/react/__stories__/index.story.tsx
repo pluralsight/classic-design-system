@@ -53,7 +53,7 @@ export const SingleDatePreviousMonth: Story = () => {
   return (
     <Calendar
       {...useDayzed({
-        // date: new Date('04/10/2020'),
+        date: new Date('06/13/2020'),
         selected,
         onDateSelected
       })}
