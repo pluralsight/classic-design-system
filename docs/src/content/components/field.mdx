@@ -13,6 +13,14 @@ import Field from '@pluralsight/ps-design-system-field'
   The Field suite of components provide the basic building blocks for creating various form controls. These components are provided with the expectation they can be used to create consistent Design System forms.
 </Intro>
 
+<Usage
+  install="npm install @pluralsight/ps-design-system-field"
+  import="import Field from '@pluralsight/ps-design-system-field'"
+  packageName="field"
+  version={props.version}
+/>
+
+
 ## Examples
 
 ### Text input field
@@ -181,11 +189,11 @@ const Example = () => <TextAreaField />
 export default Example
 ```
 
-## Advanced examples integrating downshift
+### Advanced examples integrating downshift
 
 Here are some examples of building more complicated fields using the [downshift](https://github.com/downshift-js/downshift) headless library.
 
-### Tags Field
+#### Tags Field
 
 ```typescript
 import React, { useMemo } from 'react'
@@ -401,15 +409,15 @@ const Example = () => <TagField />
 export default Example
 ```
 
+## Accessibility
 
-## Usage & types
+**WCAG 2.1 AA Compliance**
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-field"
-  import="import Field from '@pluralsight/ps-design-system-field'"
-  packageName="field"
-  version={props.version}
-/>
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+## Props
 
 ### Field
 

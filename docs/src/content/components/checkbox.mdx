@@ -7,6 +7,18 @@ route: /components/checkbox
 
 <TableOfContents {...props} />
 
+<Intro>
+  Use to allow users to select multiple items from a list of individual items.
+</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web-Components?node-id=13432%3A559"
+  install="npm install @pluralsight/ps-design-system-checkbox"
+  import="import Checkbox from '@pluralsight/ps-design-system-checkbox'"
+  packageName="checkbox"
+  version={props.version}
+/>
+
 ## Examples
 
 ### Checked
@@ -165,14 +177,17 @@ class Comp extends React.Component {
 export default Comp
 ```
 
-## Usage & Types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-checkbox"
-  import="import Checkbox from '@pluralsight/ps-design-system-checkbox'"
-  packageName="checkbox"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#checkbox" target="_blank" rel="noreferrer">Checkbox</A>
+
+## Props
 
 <TypesTable>
   <TypesProp
