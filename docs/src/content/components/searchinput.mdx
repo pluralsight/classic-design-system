@@ -12,9 +12,20 @@ import Theme from '@pluralsight/ps-design-system-theme'
 
 # Search Input
 
-## Examples
+<Intro>A text input specific for search.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web-Components?node-id=13432%3A528"
+  install="npm install @pluralsight/ps-design-system-searchinput"
+  import="import SearchInput from '@pluralsight/ps-design-system-searchinput'"
+  packageName="searchinput"
+  version={props.version}
+/>
 
 <TableOfContents {...props} />
+
+## Examples
+
 
 ### Loading
 
@@ -39,11 +50,11 @@ Providing a `onClear` prop will display a close icon.
 import React from 'react'
 import SearchInput from '@pluralsight/ps-design-system-searchinput'
 
-const Comp = () => { 
+const Comp = () => {
   const [value, setValue] = React.useState('')
   return <SearchInput
     onClear={() => setValue('')}
-    placeholder="Searching for?" 
+    placeholder="Searching for?"
     value={value}
     onChange={(evt: React.ChangeEvent<HTMLInputElement>) => {
       setValue(evt.target.value)
@@ -119,14 +130,17 @@ Use consistent theming to encourage visual hierarchy
   }
 />
 
-## Usage & types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-searchinput"
-  import="import SearchInput from '@pluralsight/ps-design-system-searchinput'"
-  packageName="searchinput"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#aria_lh_search" target="_blank" rel="noreferrer">Search (landmark)</A>
+
+## Props
 
 <TypesTable>
   <TypesProp name="label" type="string" desc="non-standard above-field label" />

@@ -7,9 +7,21 @@ import Typeahead from '@pluralsight/ps-design-system-typeahead'
 
 # Typeahead
 
+<Intro>Typeahead combines a text entry with a picker menu, allowing users to filter longer lists to only the selections matching a query.</Intro>
+
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10235%3A30028"
+  install="npm install @pluralsight/ps-design-system-typeahead"
+  import="import VerticalTabs from '@pluralsight/ps-design-system-typeahead'"
+  packageName="typeahead"
+  version={props.version}
+/>
+
 <TableOfContents {...props} />
 
-## In-app example
+## Examples
+
+### In-app example
 
 ```typescript
 import Typeahead from '@pluralsight/ps-design-system-typeahead'
@@ -26,24 +38,7 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-## Appearance
-
-For a more subtle look, use `subtle` appearance. So subtle.
-
-```typescript startExpanded=false
-import Typeahead from '@pluralsight/ps-design-system-typeahead'
-import React from 'react'
-const options = [{label: 'Beginner', value: 'Beginner'}, {label: 'Intermediate', value: 'Intermediate'}, {label: 'Advanced', value: 'Advanced'}]
-const Example: React.FC = props => {
-  return (
-    <Typeahead appearance={Typeahead.appearances.subtle} placeholder="Select a Level"  options={options}/>
-  )
-}
-
-export default Example
-```
-
-## Size
+### Sizes
 
 The small typeahead is ideal for usage within table rows otherwise use the default, medium size typeahead, in forms for example.
 
@@ -63,7 +58,7 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-## Custom filterFunction
+### Custom filterFunction
 
 The typeahead allows you to pass in a custom filter function that does not use the default String.includes method
 
@@ -89,14 +84,17 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-## Usage & types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-typeahead"
-  import="import VerticalTabs from '@pluralsight/ps-design-system-typeahead'"
-  packageName="typeahead"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#combobox" target="_blank" rel="noreferrer">Combobox</A>, <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#Listbox" target="_blank" rel="noreferrer">Listbox</A>
+
+## Props
 
 ### Typeahead
 
