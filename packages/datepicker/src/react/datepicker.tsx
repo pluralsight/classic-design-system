@@ -169,9 +169,9 @@ const CalendarWrapper: React.FC<CalendarWrapperProps> = ({
         selected,
         onDateSelected
       })}
-      autofocus={true}
+      autofocus={false}
       trapped={true}
-      returnFocus={true}
+      returnFocus={false}
       aria-modal="true"
       aria-labelledby={labelId}
       aria-live="polite"

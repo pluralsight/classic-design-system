@@ -12,7 +12,7 @@ import {
   debounce,
   generateId
 } from '@pluralsight/ps-design-system-util'
-import { useFocusManager } from '@pluralsight/ps-design-system-focusmanager'
+import FocusManager from '@pluralsight/ps-design-system-focusmanager'
 import Theme from '@pluralsight/ps-design-system-theme'
 import type { RenderProps } from 'dayzed'
 import { add, sub } from 'date-fns'
@@ -142,16 +142,14 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
       () => ref.current as HTMLDivElement
     )
 
-    useFocusManager(ref, {
-      autofocus: autofocus,
-      returnFocus: returnFocus,
-      trapped: trapped
-    })
     return calendars.length ? (
-      <div
+      <FocusManager
         {...rest}
         className={classNames('psds-calendar', className)}
-        ref={ref}
+        ref={forwarededRef}
+        autofocus={autofocus}
+        trapped={trapped}
+        returnFocus={returnFocus}
       >
         <div className="psds-calendar__header-wrapper" ref={headerRef}>
           {calendars.map((calendar, i) => (
@@ -258,7 +256,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
             ))}
           </div>
         </div>
-      </div>
+      </FocusManager>
     ) : null
   }
 )
