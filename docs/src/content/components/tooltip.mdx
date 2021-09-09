@@ -9,17 +9,27 @@ import { TooltipGuideline } from '../../components/guidelines/tooltip'
 
 # Tooltip
 
+<TableOfContents {...props} />
+
 <Intro>
   The purpose of a tooltip is to provide context and explain the function of a
   user interface element or feature. The content of a tooltip is limited to
   styled text. If more customization is necessary, consider the{' '}
-  <A href="/components/dialog">Dialog</A> component which builds on the patterns
+  <A href="../dialog">Dialog</A> component which builds on the patterns
   of the tooltip.
 </Intro>
 
-<TableOfContents {...props} />
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10232%3A2"
+  install="npm install @pluralsight/ps-design-system-tooltip"
+  import="import Tooltip from '@pluralsight/ps-design-system-tooltip"
+  packageName="tooltip"
+  version={props.version}
+/>
 
-## In-app example
+## Examples
+
+### Triggers
 
 Tooltips can appear automatically, or be triggered by hover, focus, tap or click.
 
@@ -88,7 +98,7 @@ const Example: React.FC = () => {
 export default Example
 ```
 
-## Appearance
+### Appearance
 
 Tooltips come in 2 styles. Defaults to basic.
 
@@ -106,7 +116,7 @@ const Example: React.FC = () => (
 export default Example
 ```
 
-## Tail
+### Tail
 
 Tooltips can be shown with or without a tail (a directional indicator). To make the tail appear, use a `Tooltip.tailPositions` option.
 
@@ -140,7 +150,7 @@ const Example: React.FC = () => (
 export default Example
 ```
 
-## Close button
+### Close button
 
 Tooltips may be persistent until a user interaction closes them. For a close button in the top-right corner of the tooltip, provide a onClose callback.
 
@@ -197,14 +207,17 @@ Use `accent` appearance to gain user attention in cases such onboarding, introdu
   }
 />
 
-## Usage & types
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-tooltip"
-  import="import Tooltip from '@pluralsight/ps-design-system-tooltip"
-  packageName="tooltip"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
+
+WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#tooltip" target="_blank" rel="noreferrer">Tooltip</A>
+
+## Props
 
 <TypesTable>
   <TypesProp

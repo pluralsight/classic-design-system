@@ -13,6 +13,19 @@ import IframeResizer from 'iframe-resizer-react'
 
 <TableOfContents {...props} />
 
+<Usage
+  install="npm install @pluralsight/ps-design-system-position"
+  import={`
+import {
+  Above, AboveLeft, AboveRight,
+  Below, BelowLeft, BelowRight,
+  LeftOf, RightOf
+} from '@pluralsight/ps-design-system-position'
+`}
+  packageName="position"
+  version={props.version}
+/>
+
 ## Examples
 
 ### Using the React component
@@ -255,7 +268,7 @@ const Target = forwardRef<HTMLButtonElement>((_props, ref) => (
 
 export default Example
 ```
-## Positions
+### Positions
 
 <IframeResizer
   frameborder="0"
@@ -263,20 +276,7 @@ export default Example
   style={{ width: '1px', minWidth: '100%' }}
 />
 
-## Usage & types
-
-<Usage
-  install="npm install @pluralsight/ps-design-system-position"
-  import={`
-import {
-  Above, AboveLeft, AboveRight,
-  Below, BelowLeft, BelowRight,
-  LeftOf, RightOf
-} from '@pluralsight/ps-design-system-position'
-`}
-  packageName="position"
-  version={props.version}
-/>
+## Props
 
 <TypesTable>
    <TypesProp
