@@ -5,13 +5,20 @@ route: /components/featureflags
 
 # Feature flags
 
+<TableOfContents {...props} />
+
 <Intro>
   We favor the use of feature flags when a UI change should be released
   uniformly across the product. This allows teams to independently develop and
   deploy.
 </Intro>
 
-<TableOfContents {...props} />
+<Usage
+  install="npm install @pluralsight/ps-design-system-featureflags"
+  import="import FeatureFlags from '@pluralsight/ps-design-system-featureflags'"
+  packageName="featureflags"
+  version={props.version}
+/>
 
 ## Examples
 
@@ -98,14 +105,7 @@ const ComponentUsingFlags: React.FC<HTMLAttributes<
 export default Example
 ```
 
-## Usage & types
-
-<Usage
-  install="npm install @pluralsight/ps-design-system-featureflags"
-  import="import FeatureFlags from '@pluralsight/ps-design-system-featureflags'"
-  packageName="featureflags"
-  version={props.version}
-/>
+## Props
 
 <TypesTable>
   <TypesProp
