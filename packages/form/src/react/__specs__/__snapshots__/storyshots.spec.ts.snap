@@ -707,7 +707,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
               value="someVal"
             />
             <div
-              className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
+              className="psds-checkbox__square psds-theme--dark psds-checkbox__square--active"
             >
               <svg
                 aria-label="Checkmark"
