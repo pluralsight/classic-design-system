@@ -7,22 +7,9 @@ import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 
 # Screen reader only
 
+<Intro>Use when you need to hide elements visually, but it needs to be read by screen reader.</Intro>
+
 <TableOfContents {...props} />
-
-## Examples
-
-```typescript noRender startExpanded
-import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
-import React from 'react'
-
-const Example: React.FC = props => {
-  return <ScreenReaderOnly>content only for screen readers</ScreenReaderOnly>
-}
-
-export default Example
-```
-
-## Usage
 
 <Usage
   install="npm install @pluralsight/ps-design-system-screenreaderonly"
@@ -30,3 +17,21 @@ export default Example
   packageName="screenreaderonly"
   version={props.version}
 />
+
+## Examples
+
+```typescript
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
+import React from 'react'
+
+const Example: React.FC = () => (
+    <div>
+      <p>
+        What comes once in a minute, twice in a moment, but never in a thousand years?
+        <ScreenReaderOnly>The letter M</ScreenReaderOnly>
+      </p>
+    </div>
+)
+
+export default Example
+```

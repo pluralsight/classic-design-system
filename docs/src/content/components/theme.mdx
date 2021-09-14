@@ -9,6 +9,17 @@ import Theme from '@pluralsight/ps-design-system-theme'
 
 <TableOfContents {...props} />
 
+<Intro>
+  The Theme component can change the theme (dark/light) for a page or subset of themeable components.
+</Intro>
+
+<Usage
+  install="npm install @pluralsight/ps-design-system-theme"
+  import="import Theme from '@pluralsight/ps-design-system-theme'"
+  packageName="theme"
+  version={props.version}
+/>
+
 ## Examples
 
 ```typescript noRender startExpanded
@@ -30,18 +41,7 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-The product is mostly presented within a "dark" interface theme. This is the
-default, but the `Theme` component can change that for a page or subset of
-themeable components.
-
-## Usage & types
-
-<Usage
-  install="npm install @pluralsight/ps-design-system-theme"
-  import="import Theme from '@pluralsight/ps-design-system-theme'"
-  packageName="theme"
-  version={props.version}
-/>
+## Props
 
 <TypesTable>
   <TypesProp

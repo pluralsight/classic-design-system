@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react/types-6-0'
 
 import Button from '@pluralsight/ps-design-system-button'
+import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import * as Text from '@pluralsight/ps-design-system-text'
 
 import Dialog from '../../index'
@@ -203,6 +204,54 @@ export const ModalOverflowYWithTail: Story = () => (
           </Text.P>
         ))}
       </MockDialog>
+    )}
+  </ModalStory>
+)
+
+export const FocusOnHeading: Story = () => (
+  <ModalStory>
+    {props => (
+      <Dialog {...props}>
+        <Text.Heading>
+          <h2 tabIndex={0}>Heading should receive focus</h2>
+        </Text.Heading>
+
+        <Text.P>
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon
+          drops tiramisu. Cotton candy powder oat cake toffee{' '}
+          <a href="#">cotton candy</a> muffin soufflé marshmallow biscuit.
+        </Text.P>
+
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <Button appearance={Button.appearances.stroke}>Secondary CTA</Button>
+          <span style={{ marginLeft: 10 }} />
+          <Button>Primary CTA</Button>
+        </div>
+      </Dialog>
+    )}
+  </ModalStory>
+)
+
+export const FocusOnHiddenHeading: Story = () => (
+  <ModalStory>
+    {props => (
+      <Dialog {...props}>
+        <ScreenReaderOnly>
+          <h2 tabIndex={0}>Heading should receive focus</h2>
+        </ScreenReaderOnly>
+
+        <Text.P>
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon
+          drops tiramisu. Cotton candy powder oat cake toffee{' '}
+          <a href="#">cotton candy</a> muffin soufflé marshmallow biscuit.
+        </Text.P>
+
+        <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <Button appearance={Button.appearances.stroke}>Secondary CTA</Button>
+          <span style={{ marginLeft: 10 }} />
+          <Button>Primary CTA</Button>
+        </div>
+      </Dialog>
     )}
   </ModalStory>
 )
