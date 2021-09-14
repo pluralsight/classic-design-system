@@ -9,7 +9,17 @@ import Scrollable from '@pluralsight/ps-design-system-scrollable'
 
 <TableOfContents {...props} />
 
-## Default example
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/PSDS-Web-Components?node-id=12381%3A44"
+  install="npm install @pluralsight/ps-design-system-scrollable"
+  import="import Scrollable from '@pluralsight/ps-design-system-scrollable'"
+  packageName="scrollable"
+  version={props.version}
+/>
+
+## Examples
+
+### Default example
 
 To style the scrollbar simply replace your block level element with the
 `Scrollable` component.
@@ -73,7 +83,7 @@ const Example: React.FC = props => {
 export default Example
 ```
 
-## Customize content html with render prop
+### Customize content html with render prop
 
 Instead of rendering the default `div`, you can render with your own semantic markup.
 
@@ -84,7 +94,7 @@ import React from 'react'
 
 const Example: React.FC = props => {
   return (
-    <Scrollable 
+    <Scrollable
       renderContent={(contentProps, contentRef) => <aside {...contentProps} ref={contentRef} />}
       style={{ height: 164, outline: '1px dashed pink' }}
     >
@@ -141,14 +151,7 @@ export default Example
 
 
 
-## Usage & types
-
-<Usage
-  install="npm install @pluralsight/ps-design-system-scrollable"
-  import="import Scrollable from '@pluralsight/ps-design-system-scrollable'"
-  packageName="scrollable"
-  version={props.version}
-/>
+## Props
 
 <TypesTable>
   <TypesProp name="renderContent" type="(props: { children: React.ReactNode, onScroll: React.UIEventHandler, [cssSelector: string]: '' }, ref: React.Ref) => React.ReactNode" default="Renders as a div" desc="Scrollable content render prop" />

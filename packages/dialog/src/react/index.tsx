@@ -125,12 +125,11 @@ const Dialog = React.forwardRef((props, ref) => {
     >
       <Theme name={Theme.names.light}>
         <div className="psds-dialog__content">
+          {children}
           {!disableCloseButton && isFunction(onClose) && (
             // eslint-disable-next-line react/jsx-handler-names
             <CloseButton onClick={onClose} />
           )}
-
-          {children}
         </div>
       </Theme>
     </FocusManager>

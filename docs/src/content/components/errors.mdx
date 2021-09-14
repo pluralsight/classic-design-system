@@ -7,12 +7,27 @@ import ErrorPage from '@pluralsight/ps-design-system-errors'
 
 # Error pages
 
+<TableOfContents {...props} />
+
 <Intro>
   Error page components are meant to be full-page, layout components. These
   pages are standardized throughout the product experience.
 </Intro>
 
-<TableOfContents {...props} />
+<Usage
+  figmaUrl="https://www.figma.com/file/YsTklBecdddy9RZ3HXddIseD/?node-id=10241%3A15"
+  install="npm install @pluralsight/ps-design-system-errors"
+  import={`
+import ErrorPage, {
+  ForbiddenErrorPage,
+  NotFoundErrorPage,
+  InternalServerErrorPage,
+  ServiceUnavailableErrorPage
+} from '@pluralsight/ps-design-system-errors'"
+  `}
+  packageName="errors"
+  version={props.version}
+/>
 
 ## Examples
 
@@ -31,7 +46,7 @@ function Example() {
 export default Example
 ```
 
-#### Types
+** Props **
 
 <TypesTable>
   <TypesProp
@@ -64,7 +79,7 @@ function Example() {
 export default Example
 ```
 
-#### Types
+** Props **
 
 <TypesTable>
   <TypesProp
@@ -97,7 +112,7 @@ function Example() {
 export default Example
 ```
 
-#### Types
+** Props **
 
 <TypesTable>
   <TypesProp
@@ -129,7 +144,8 @@ function Example() {
 
 export default Example
 ```
-#### Types
+
+** Props **
 
 <TypesTable>
    <TypesProp
@@ -155,7 +171,7 @@ function Example() {
 export default Example
 ```
 
-#### Types
+** Props **
 
 <TypesTable>
   <TypesProp
@@ -173,7 +189,7 @@ export default Example
   />
 </TypesTable>
 
-### Size small  
+### Size small
 To display a small ErrorPage you can set the size prop to small like so.
 
 ```typescript
@@ -211,7 +227,7 @@ function Example() {
 export default Example
 ```
 
-#### Types: ErrorPage
+** Props **
 
 <TypesTable>
    <TypesProp
@@ -247,8 +263,7 @@ export default Example
   />
 </TypesTable>
 
-
-#### Types: ErrorPage.Illustration
+### ErrorPage.Illustration
 
 <TypesTable>
    <TypesProp
@@ -258,18 +273,10 @@ export default Example
   />
 </TypesTable>
 
-## Usage
+## Accessibility
 
-<Usage
-  install="npm install @pluralsight/ps-design-system-errors"
-  import={`
-import ErrorPage, {
-  ForbiddenErrorPage,
-  NotFoundErrorPage,
-  InternalServerErrorPage,
-  ServiceUnavailableErrorPage
-} from '@pluralsight/ps-design-system-errors'"
-  `}
-  packageName="errors"
-  version={props.version}
-/>
+**WCAG 2.1 AA Compliance**
+
+<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<br />
+<WarningFilledIcon color="red" size="xSmall" /> Manual audit
