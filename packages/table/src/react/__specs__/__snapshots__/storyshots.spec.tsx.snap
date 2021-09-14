@@ -745,7 +745,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                   type="checkbox"
                 />
                 <div
-                  className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
+                  className="psds-checkbox__square psds-theme--dark psds-checkbox__square--active"
                 >
                   <svg
                     aria-label="Indeterminate Mark"
@@ -823,7 +823,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                className="psds-checkbox__square psds-theme--dark"
               />
             </div>
             <div
@@ -873,7 +873,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
+                className="psds-checkbox__square psds-theme--dark psds-checkbox__square--active"
               >
                 <svg
                   aria-label="Checkmark"
@@ -936,7 +936,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                className="psds-checkbox__square psds-theme--dark"
               />
             </div>
             <div
@@ -986,7 +986,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                className="psds-checkbox__square psds-theme--dark"
               />
             </div>
             <div
@@ -1036,7 +1036,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
+                className="psds-checkbox__square psds-theme--dark psds-checkbox__square--active"
               >
                 <svg
                   aria-label="Checkmark"
@@ -1099,7 +1099,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                className="psds-checkbox__square psds-theme--dark"
               />
             </div>
             <div
@@ -1149,7 +1149,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                className="psds-checkbox__square psds-theme--dark"
               />
             </div>
             <div
@@ -1199,7 +1199,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark psds-checkbox__square--active"
+                className="psds-checkbox__square psds-theme--dark psds-checkbox__square--active"
               >
                 <svg
                   aria-label="Checkmark"
@@ -1262,7 +1262,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                className="psds-checkbox__square psds-theme--dark"
               />
             </div>
             <div
@@ -1312,7 +1312,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
                 type="checkbox"
               />
               <div
-                className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                className="psds-checkbox__square psds-theme--dark"
               />
             </div>
             <div
@@ -2540,7 +2540,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                   type="checkbox"
                 />
                 <div
-                  className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                  className="psds-checkbox__square psds-theme--dark"
                 />
               </div>
               <div
@@ -2615,7 +2615,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -2679,7 +2679,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -2743,7 +2743,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -2807,7 +2807,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -2871,7 +2871,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -2972,7 +2972,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -3044,7 +3044,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -3107,7 +3107,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -3170,7 +3170,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -3233,7 +3233,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div
@@ -3296,7 +3296,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                     type="checkbox"
                   />
                   <div
-                    className="psds-checkbox__square psds-checkbox__square.psds-theme--dark"
+                    className="psds-checkbox__square psds-theme--dark"
                   />
                 </div>
                 <div

@@ -115,7 +115,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
           <div
             className={classNames(
               'psds-checkbox__square',
-              `psds-checkbox__square.psds-theme--${themeName}`,
+              `psds-theme--${themeName}`,
               (checked || indeterminate) && 'psds-checkbox__square--active'
             )}
           >
