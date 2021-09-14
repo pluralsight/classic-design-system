@@ -47,7 +47,8 @@
   background: var(--ps-colors-background-utility-25);
 }
 
-.psds-drawer__summary>* {
+.psds-drawer__summary>*,
+.psds-drawer__summary>.psds-row {
   border-top: none
 }
 
