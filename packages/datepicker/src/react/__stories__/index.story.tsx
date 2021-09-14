@@ -1,22 +1,22 @@
 import Field from '@pluralsight/ps-design-system-field'
 import { HomeIcon, CalendarIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput from '@pluralsight/ps-design-system-textinput'
-import { ValueOf, classNames } from '@pluralsight/ps-design-system-util'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 import { DateObj, useDayzed } from 'dayzed'
+import { format } from 'date-fns'
 
 import {
   Calendar,
-  CalendarDates,
+  CalendarDay,
+  CalendarDayProps,
   DatePicker,
   useIsInRange,
   onRangeDateSelected,
   onMultiDateSelected,
-  useDateSelectChange,
-  useRangeSelectChange
+  handleDateSelectChange,
+  handleRangeSelectChange
 } from '../index'
-import { slides } from '../../vars/index'
 
 export default {
   title: 'Components/DatePicker',
@@ -30,16 +30,15 @@ export const SingleDateSelectedDate: Story = () => {
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
     setSelected(dateObj.date)
   }
-  const { getDateProps, ...dayzedData } = useDayzed({
-    date: selected || new Date('05/30/2020'),
-    selected,
-    onDateSelected
-  })
   return (
-    <Calendar {...dayzedData}>
-      <CalendarDates getDateProps={getDateProps}>
-        {renderProps => <button {...renderProps} />}
-      </CalendarDates>
+    <Calendar
+      {...useDayzed({
+        date: selected || new Date('05/30/2020'),
+        selected,
+        onDateSelected
+      })}
+    >
+      {(props: CalendarDayProps) => <CalendarDay {...props} />}
     </Calendar>
   )
 }
@@ -51,18 +50,15 @@ export const SingleDatePreviousMonth: Story = () => {
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
     setSelected(dateObj.date)
   }
-  const { getDateProps, ...dayzedData } = useDayzed({
-    date: new Date('04/10/2020'),
-    selected,
-    onDateSelected
-  })
   return (
-    <Calendar {...dayzedData}>
-      <CalendarDates getDateProps={getDateProps}>
-        {renderProps => {
-          return <button {...renderProps} />
-        }}
-      </CalendarDates>
+    <Calendar
+      {...useDayzed({
+        date: new Date('06/13/2020'),
+        selected,
+        onDateSelected
+      })}
+    >
+      {(props: CalendarDayProps) => <CalendarDay {...props} />}
     </Calendar>
   )
 }
@@ -72,11 +68,6 @@ export const CalendarSelectWithButton: Story = () => {
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
     setSelected(dateObj.date)
   }
-  const { getDateProps, ...dayzedData } = useDayzed({
-    date: selected || new Date('05/30/2020'),
-    selected,
-    onDateSelected
-  })
 
   const handleClick = () => {
     setSelected(new Date('05/13/2020'))
@@ -84,12 +75,14 @@ export const CalendarSelectWithButton: Story = () => {
   return (
     <>
       <button onClick={handleClick}>5/13/2020</button>
-      <Calendar {...dayzedData}>
-        <CalendarDates getDateProps={getDateProps}>
-          {renderProps => {
-            return <button {...renderProps} />
-          }}
-        </CalendarDates>
+      <Calendar
+        {...useDayzed({
+          date: selected || new Date('05/30/2020'),
+          selected,
+          onDateSelected
+        })}
+      >
+        {(props: CalendarDayProps) => <CalendarDay {...props} />}
       </Calendar>
     </>
   )
@@ -99,10 +92,12 @@ export const CalendarWithInput: Story = () => {
   const [selected, setSelected] = React.useState<Date | undefined>()
   const [open, setOpen] = React.useState<boolean>(false)
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
-    setSelected(dateObj.date)
+    const nextSelected = dateObj.date
+    setSelected(nextSelected)
+    setValue(format(nextSelected, dateFormat))
     setOpen(false)
   }
-  const { getDateProps, ...dayzedData } = useDayzed({
+  const dayzedData = useDayzed({
     date: selected || new Date('05/30/2020'),
     selected,
     onDateSelected
@@ -110,16 +105,23 @@ export const CalendarWithInput: Story = () => {
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
     setOpen(!open)
   }
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [value, onChange] = useDateSelectChange({
-    selected,
-    setSlide,
-    setSelected
-  })
+  const [value, setValue] = React.useState<string>('')
+
+  const dateFormat = 'MM/dd/yyyy'
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setValue(nextValue)
+    handleDateSelectChange({
+      selected,
+      setSelected,
+      value: nextValue,
+      dateFormat
+    })
+  }
   return (
     <div style={{ display: 'inline-block', position: 'relative' }}>
       <TextInput
-        onChange={onChange}
+        onChange={handleChange}
         value={value}
         placeholder="mm/dd/yyyy"
         icon={
@@ -134,43 +136,31 @@ export const CalendarWithInput: Story = () => {
         <Calendar
           {...dayzedData}
           style={{ position: 'absolute', marginTop: 4 }}
-          slide={slide}
           tabIndex={0}
         >
-          <CalendarDates getDateProps={getDateProps}>
-            {renderProps => {
-              return <button {...renderProps} />
-            }}
-          </CalendarDates>
+          {(props: CalendarDayProps) => <CalendarDay {...props} />}
         </Calendar>
       )}
     </div>
   )
 }
 
-const stableUniqueId = (prefix: string) => prefix + 'unique-id'
-
 export const DatePickerDisabled: Story = () => (
-  <DatePicker disabled label="Disabled" _uniqueId={stableUniqueId} />
+  <DatePicker disabled label="Disabled" />
 )
 
-export const DatePickerError: Story = () => (
-  <DatePicker error label="Errored" _uniqueId={stableUniqueId} />
-)
+export const DatePickerError: Story = () => <DatePicker error label="Errored" />
 
 export const DatePickerStringLabel: Story = () => (
-  <DatePicker label="String label" _uniqueId={stableUniqueId} />
+  <DatePicker label="String label" />
 )
 
 export const DatePickerFieldLabel: Story = () => (
-  <DatePicker
-    label={<Field.Label>Field.Label label</Field.Label>}
-    _uniqueId={stableUniqueId}
-  />
+  <DatePicker label={<Field.Label>Field.Label label</Field.Label>} />
 )
 
 export const DatePickerPrefix: Story = () => (
-  <DatePicker prefix={<HomeIcon />} label="Prefix" _uniqueId={stableUniqueId} />
+  <DatePicker prefix={<HomeIcon />} label="Prefix" />
 )
 
 export const DatePickerRenderContainer: Story = () => (
@@ -179,7 +169,6 @@ export const DatePickerRenderContainer: Story = () => (
     renderContainer={React.forwardRef((props, ref) => (
       <div ref={ref} {...props} style={{ outline: '2px dashed orange' }} />
     ))}
-    _uniqueId={stableUniqueId}
   />
 )
 
@@ -190,27 +179,25 @@ export const DatePickerRenderTag: Story = () => (
     renderTag={props => (
       <div {...props} style={{ outline: '2px dashed orange' }} />
     )}
-    _uniqueId={stableUniqueId}
   />
 )
 
 export const DatePickerSmallSize: Story = () => (
-  <DatePicker label="Small size" size="small" _uniqueId={stableUniqueId} />
+  <DatePicker label="Small size" size="small" />
 )
 
 export const DatePickerSubLabelString: Story = () => (
-  <DatePicker subLabel="String subLabel" _uniqueId={stableUniqueId} />
+  <DatePicker subLabel="String subLabel" />
 )
 
 export const DatePickerSubLabelField: Story = () => (
   <DatePicker
     subLabel={<Field.SubLabel>Field.SubLabel subLabel</Field.SubLabel>}
-    _uniqueId={stableUniqueId}
   />
 )
 
 export const DatePickerSuffix: Story = () => (
-  <DatePicker suffix={<HomeIcon />} label="Suffix" _uniqueId={stableUniqueId} />
+  <DatePicker suffix={<HomeIcon />} label="Suffix" />
 )
 
 export const DatePickerInitialValue: Story = () => {
@@ -219,7 +206,6 @@ export const DatePickerInitialValue: Story = () => {
     <DatePicker
       label="Controlled component, set to 31 Dec 1999"
       value={value}
-      _uniqueId={stableUniqueId}
     />
   )
 }
@@ -232,7 +218,6 @@ export const DatePickerChangeValue: Story = () => {
       <DatePicker
         label="Controlled component, set to 31 Dec 1999"
         value={date}
-        _uniqueId={stableUniqueId}
       />
     </div>
   )
@@ -240,39 +225,32 @@ export const DatePickerChangeValue: Story = () => {
 
 export const RangeDateCalendar: Story = () => {
   const [selected, setSelected] = React.useState<Date[] | undefined>()
-  const { getDateProps, ...dayzedData } = useDayzed({
-    selected,
-    onDateSelected: onRangeDateSelected({ selected, setSelected }),
-    date: new Date('05/30/2020')
-  })
   const { onMouseLeave, onMouseEnter, isInRange } = useIsInRange(selected)
   return (
-    <Calendar {...dayzedData} onMouseLeave={onMouseLeave}>
-      <CalendarDates getDateProps={getDateProps}>
-        {(renderProps, dateObj) => {
-          return (
-            <button
-              {...renderProps}
-              className={classNames(
-                renderProps.className,
-                isInRange(dateObj.date)
-              )}
-              onMouseEnter={() => onMouseEnter(dateObj.date)}
-            />
-          )
-        }}
-      </CalendarDates>
+    <Calendar
+      {...useDayzed({
+        selected,
+        onDateSelected: onRangeDateSelected({ selected, setSelected }),
+        date: new Date('05/30/2020')
+      })}
+      onMouseLeave={onMouseLeave}
+    >
+      {(props: CalendarDayProps) => {
+        const { dateObj } = props
+        return (
+          <CalendarDay
+            {...props}
+            className={isInRange(dateObj.date)}
+            onMouseEnter={() => onMouseEnter(dateObj.date)}
+          />
+        )
+      }}
     </Calendar>
   )
 }
 
 export const RangeDateCalendarWithButton: Story = () => {
   const [selected, setSelected] = React.useState<Date[]>([])
-  const { getDateProps, ...dayzedData } = useDayzed({
-    selected,
-    onDateSelected: onRangeDateSelected({ selected, setSelected }),
-    date: new Date('05/30/2020')
-  })
   const { onMouseLeave, onMouseEnter, isInRange } = useIsInRange(selected)
 
   const handleClick = () => {
@@ -281,22 +259,24 @@ export const RangeDateCalendarWithButton: Story = () => {
   return (
     <>
       <button onClick={handleClick}>5/13/2020 - 05/30/2020</button>
-      <Calendar {...dayzedData} onMouseLeave={onMouseLeave}>
-        <CalendarDates getDateProps={getDateProps}>
-          {(renderProps, dateObj) => {
-            const { selectable } = dateObj
-            return (
-              <button
-                {...renderProps}
-                className={classNames(
-                  renderProps.className,
-                  isInRange(dateObj.date)
-                )}
-                onMouseEnter={() => onMouseEnter(dateObj.date)}
-              />
-            )
-          }}
-        </CalendarDates>
+      <Calendar
+        {...useDayzed({
+          selected,
+          onDateSelected: onRangeDateSelected({ selected, setSelected }),
+          date: new Date('05/30/2020')
+        })}
+        onMouseLeave={onMouseLeave}
+      >
+        {(props: CalendarDayProps) => {
+          const { dateObj } = props
+          return (
+            <CalendarDay
+              {...props}
+              className={isInRange(dateObj.date)}
+              onMouseEnter={() => onMouseEnter(dateObj.date)}
+            />
+          )
+        }}
       </Calendar>
     </>
   )
@@ -304,44 +284,60 @@ export const RangeDateCalendarWithButton: Story = () => {
 
 export const RangeDateCalendarWithInput: Story = () => {
   const [selected, setSelected] = React.useState<Date[] | undefined>()
-  const { getDateProps, ...dayzedData } = useDayzed({
-    selected,
-    onDateSelected: onRangeDateSelected({ selected, setSelected }),
-    date: new Date('05/30/2020')
-  })
+  const [startValue, setStartValue] = React.useState<string>('')
+  const [endValue, setEndValue] = React.useState<string>('')
   const { onMouseLeave, onMouseEnter, isInRange } = useIsInRange(selected)
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [startValue, onStartChange] = useRangeSelectChange({
-    start: true,
-    selected,
-    setSlide,
-    setSelected
-  })
-  const [endValue, onEndChange] = useRangeSelectChange({
-    start: false,
-    selected,
-    setSlide,
-    setSelected
-  })
+  const dateFormat = 'MM/dd/yyyy'
+  const onStartChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setStartValue(nextValue)
+    handleRangeSelectChange({
+      dateFormat,
+      selected,
+      setSelected,
+      start: true,
+      value: nextValue
+    })
+  }
+
+  const onEndChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setEndValue(nextValue)
+    handleRangeSelectChange({
+      dateFormat,
+      selected,
+      setSelected,
+      start: false,
+      value: nextValue
+    })
+  }
   return (
     <div>
       <TextInput label="Start" onChange={onStartChange} value={startValue} />
       <TextInput label="End" onChange={onEndChange} value={endValue} />
-      <Calendar {...dayzedData} onMouseLeave={onMouseLeave} slide={slide}>
-        <CalendarDates getDateProps={getDateProps}>
-          {(renderProps, dateObj) => {
-            return (
-              <button
-                {...renderProps}
-                className={classNames(
-                  renderProps.className,
-                  isInRange(dateObj.date)
-                )}
-                onMouseEnter={() => onMouseEnter(dateObj.date)}
-              />
-            )
-          }}
-        </CalendarDates>
+      <Calendar
+        {...useDayzed({
+          selected,
+          onDateSelected: onRangeDateSelected({
+            selected,
+            setSelected,
+            setStartValue,
+            setEndValue
+          }),
+          date: new Date('05/30/2020')
+        })}
+        onMouseLeave={onMouseLeave}
+      >
+        {(props: CalendarDayProps) => {
+          const { dateObj } = props
+          return (
+            <CalendarDay
+              {...props}
+              className={isInRange(dateObj.date)}
+              onMouseEnter={() => onMouseEnter(dateObj.date)}
+            />
+          )
+        }}
       </Calendar>
     </div>
   )
@@ -349,45 +345,61 @@ export const RangeDateCalendarWithInput: Story = () => {
 
 export const RangeDateCalendarWithInputTwoMonths: Story = () => {
   const [selected, setSelected] = React.useState<Date[] | undefined>()
-  const { getDateProps, ...dayzedData } = useDayzed({
-    monthsToDisplay: 2,
-    selected,
-    onDateSelected: onRangeDateSelected({ selected, setSelected }),
-    date: new Date('05/30/2020')
-  })
+  const [startValue, setStartValue] = React.useState<string>('')
+  const [endValue, setEndValue] = React.useState<string>('')
   const { onMouseLeave, onMouseEnter, isInRange } = useIsInRange(selected)
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [startValue, onStartChange] = useRangeSelectChange({
-    start: true,
-    selected,
-    setSlide,
-    setSelected
-  })
-  const [endValue, onEndChange] = useRangeSelectChange({
-    start: false,
-    selected,
-    setSlide,
-    setSelected
-  })
+  const dateFormat = 'MM/dd/yyyy'
+  const onStartChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setStartValue(nextValue)
+    handleRangeSelectChange({
+      dateFormat,
+      selected,
+      setSelected,
+      start: true,
+      value: nextValue
+    })
+  }
+
+  const onEndChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setEndValue(nextValue)
+    handleRangeSelectChange({
+      dateFormat,
+      selected,
+      setSelected,
+      start: false,
+      value: nextValue
+    })
+  }
   return (
     <>
       <TextInput label="Start" onChange={onStartChange} value={startValue} />
       <TextInput label="End" onChange={onEndChange} value={endValue} />
-      <Calendar {...dayzedData} onMouseLeave={onMouseLeave} slide={slide}>
-        <CalendarDates getDateProps={getDateProps}>
-          {(renderProps, dateObj) => {
-            return (
-              <button
-                {...renderProps}
-                className={classNames(
-                  renderProps.className,
-                  isInRange(dateObj.date)
-                )}
-                onMouseEnter={() => onMouseEnter(dateObj.date)}
-              />
-            )
-          }}
-        </CalendarDates>
+      <Calendar
+        {...useDayzed({
+          monthsToDisplay: 2,
+          selected,
+          onDateSelected: onRangeDateSelected({
+            selected,
+            setSelected,
+            setStartValue,
+            setEndValue
+          }),
+          date: new Date('05/30/2020')
+        })}
+        onMouseLeave={onMouseLeave}
+      >
+        {(props: CalendarDayProps) => {
+          const { dateObj } = props
+          return (
+            <CalendarDay
+              {...props}
+              className={isInRange(dateObj.date)}
+              onMouseEnter={() => onMouseEnter(dateObj.date)}
+            />
+          )
+        }}
       </Calendar>
     </>
   )
@@ -400,18 +412,15 @@ export const MultiDate: Story = () => {
     initialDate,
     initialDate2
   ])
-  const { getDateProps, ...dayzedData } = useDayzed({
-    selected,
-    onDateSelected: onMultiDateSelected({ selected, setSelected }),
-    date: initialDate
-  })
   return (
-    <Calendar {...dayzedData}>
-      <CalendarDates getDateProps={getDateProps}>
-        {renderProps => {
-          return <button {...renderProps} />
-        }}
-      </CalendarDates>
+    <Calendar
+      {...useDayzed({
+        selected,
+        onDateSelected: onMultiDateSelected({ selected, setSelected }),
+        date: initialDate
+      })}
+    >
+      {(props: CalendarDayProps) => <CalendarDay {...props} />}
     </Calendar>
   )
 }

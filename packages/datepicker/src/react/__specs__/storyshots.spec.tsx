@@ -5,8 +5,7 @@ jest.mock(
   '@pluralsight/ps-design-system-util',
   () =>
     ({
-      ...jest.requireActual('@pluralsight/ps-design-system-util'),
-      useUniqueId: jest.fn().mockImplementation(prefix => prefix + 'unique-id')
+      ...jest.requireActual('@pluralsight/ps-design-system-util')
     } as typeof jest)
 )
 

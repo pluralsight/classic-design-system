@@ -1,10 +1,10 @@
 export { Calendar } from './calendar'
-export { CalendarDates } from './calendar-dates'
+export { CalendarDay, CalendarDayProps } from './calendar-day'
 export {
   useIsInRange,
   onRangeDateSelected,
   onMultiDateSelected,
-  useDateSelectChange,
-  useRangeSelectChange
+  handleDateSelectChange,
+  handleRangeSelectChange
 } from './utils'
 export { DatePicker } from './datepicker'

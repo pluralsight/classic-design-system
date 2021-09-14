@@ -1,19 +1,22 @@
 import Field from '@pluralsight/ps-design-system-field'
-import { ValueOf, canUseDOM, RefFor } from '@pluralsight/ps-design-system-util'
+import {
+  canUseDOM,
+  RefFor,
+  generateId
+} from '@pluralsight/ps-design-system-util'
+import { format } from 'date-fns'
 import { useDayzed, DateObj } from 'dayzed'
 import React from 'react'
 
 import { Calendar } from './calendar'
-import { CalendarDates } from './calendar-dates'
+import { CalendarDay, CalendarDayProps } from './calendar-day'
 import { TextInputField } from './text-input-field'
-import { useDateSelectChange } from './utils'
-import { slides } from '../vars/index'
+import { handleDateSelectChange } from './utils'
 
 interface DatePickerProps
   extends Omit<React.ComponentProps<typeof Field>, 'onSelect'> {
   onSelect?: (evt: React.SyntheticEvent, dateObj: DateObj) => void
   value?: Date
-  _uniqueId?: (prefix: string) => string
 }
 
 export const DatePicker: React.FC<DatePickerProps> = ({
@@ -28,34 +31,55 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   suffix,
   onSelect,
   value: valueFromProps,
-  _uniqueId,
   ...props
 }) => {
   const [selected, setSelected] = React.useState<Date | undefined>(
     valueFromProps
   )
+
+  const ref = React.useRef<HTMLDivElement | undefined>()
   React.useEffect(() => setSelected(valueFromProps), [valueFromProps])
   const [open, setOpen] = React.useState<boolean>(false)
+  const [value, setValue] = React.useState<string>('')
+
+  const focusInput = () => {
+    const wrapper = ref.current
+    wrapper && wrapper.querySelector('input')?.focus()
+  }
+  const dateFormat = 'MM/dd/yyyy'
   const onDateSelected = (dateObj: DateObj, evt: React.SyntheticEvent) => {
+    focusInput()
+    const nextSelected = dateObj.date
     onSelect && onSelect(evt, dateObj)
-    setSelected(dateObj.date)
+    setSelected(nextSelected)
+    setValue(format(nextSelected, dateFormat))
     setOpen(false)
   }
-  const { getDateProps, ...dayzedData } = useDayzed({
-    date: selected,
-    selected,
-    onDateSelected
-  })
   const handleIconClick: React.MouseEventHandler<HTMLDivElement> = evt => {
+    open && focusInput()
     setOpen(!open)
   }
-  const [slide, setSlide] = React.useState<ValueOf<typeof slides>>()
-  const [value, onChange] = useDateSelectChange({
-    selected,
-    setSlide,
-    setSelected
-  })
-  const ref = React.useRef<HTMLDivElement | undefined>()
+  const handleTextfieldKeyDown: React.KeyboardEventHandler<HTMLInputElement> =
+    evt => {
+      const key = evt.key.toLowerCase()
+      ;[' ', 'enter'].includes(key) && setOpen(true)
+    }
+
+  const handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement> =
+    evt => {
+      const key = evt.key.toLowerCase()
+      if (key === 'escape') {
+        focusInput()
+        setOpen(false)
+      }
+    }
+  const handleFocus: React.FocusEventHandler<HTMLInputElement> = evt => {
+    if (open) {
+      focusInput()
+      setOpen(false)
+    }
+  }
+
   React.useEffect(() => {
     if (!canUseDOM()) return () => {}
 
@@ -63,6 +87,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
       if (evt.target instanceof HTMLElement) {
         // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
         if ((ref.current as HTMLDivElement).contains(evt.target)) return
+        focusInput()
         setOpen(false)
       }
     }
@@ -74,6 +99,18 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         capture: true
       })
   }, [setOpen])
+  const labelId = generateId('psds-datepicker-text-input__label-')
+  const inputId = generateId('psds-datepicker-text-input__input-')
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
+    const nextValue = evt.target.value
+    setValue(nextValue)
+    handleDateSelectChange({
+      selected,
+      setSelected,
+      value: nextValue,
+      dateFormat
+    })
+  }
   return (
     <div
       style={{ display: 'inline-block', position: 'relative' }}
@@ -84,8 +121,10 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         disabled={disabled}
         error={error}
         label={label}
-        onChange={onChange}
+        onChange={handleChange}
         onClick={handleIconClick}
+        onKeyDown={handleTextfieldKeyDown}
+        onFocus={handleFocus}
         placeholder="mm/dd/yyyy"
         prefix={prefix}
         renderContainer={renderContainer}
@@ -94,22 +133,53 @@ export const DatePicker: React.FC<DatePickerProps> = ({
         subLabel={subLabel}
         suffix={suffix}
         value={value}
-        _uniqueId={_uniqueId}
+        labelId={labelId}
+        inputId={inputId}
       />
       <br />
       {open && (
-        <Calendar
-          {...dayzedData}
-          style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
-          slide={slide}
-        >
-          <CalendarDates getDateProps={getDateProps}>
-            {renderProps => {
-              return <button {...renderProps} />
-            }}
-          </CalendarDates>
-        </Calendar>
+        <CalendarWrapper
+          selected={selected}
+          onDateSelected={onDateSelected}
+          labelId={labelId}
+          handleEscapeKeyDown={handleEscapeKeyDown}
+        />
       )}
     </div>
+  )
+}
+
+interface CalendarWrapperProps {
+  selected?: Date
+  onDateSelected: (dateObj: DateObj, evt: React.SyntheticEvent) => void
+  labelId: string
+  handleEscapeKeyDown: React.KeyboardEventHandler<HTMLInputElement>
+}
+
+const CalendarWrapper: React.FC<CalendarWrapperProps> = ({
+  selected = new Date(),
+  onDateSelected,
+  labelId,
+  handleEscapeKeyDown
+}) => {
+  return (
+    <Calendar
+      {...useDayzed({
+        date: selected,
+        selected,
+        onDateSelected
+      })}
+      autofocus={false}
+      trapped={true}
+      returnFocus={false}
+      aria-modal="true"
+      aria-labelledby={labelId}
+      aria-live="polite"
+      style={{ position: 'absolute', zIndex: 1, marginTop: 4 }}
+      onKeyDown={handleEscapeKeyDown}
+      selected={selected}
+    >
+      {(props: CalendarDayProps) => <CalendarDay {...props} />}
+    </Calendar>
   )
 }
