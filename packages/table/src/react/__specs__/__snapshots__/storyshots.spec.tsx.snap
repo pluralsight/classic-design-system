@@ -1495,6 +1495,188 @@ exports[`Storyshots Components/Table Sorting 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Table Style Override 1`] = `
+<div
+  className="psds-theme--dark psds-table__container"
+>
+  <table
+    className="psds-table psds-theme--dark"
+    role="grid"
+  >
+    <thead
+      className="psds-table__head psds-theme--dark"
+    >
+      <tr
+        className="psds-theme--dark psds-table__row"
+        role="row"
+      >
+        <th
+          className="psds-theme--dark psds-table__header psds-table__header--align-left"
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            First name
+          </div>
+        </th>
+        <th
+          className="psds-theme--dark psds-table__header psds-table__header--align-left"
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Last name
+          </div>
+        </th>
+        <th
+          className="psds-theme--dark psds-table__header psds-table__header--align-left"
+          role="columnheader"
+          scope="col"
+        >
+          <div>
+            Email
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="css-t21l3w"
+    >
+      <tr
+        className="psds-theme--dark psds-table__row"
+        role="row"
+      >
+        <th
+          className="psds-theme--dark psds-table__header psds-table__header--align-left"
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            Frederick
+          </div>
+        </th>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Lindgren
+        </td>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Jaycee_Rice@yahoo.com
+        </td>
+      </tr>
+      <tr
+        className="psds-theme--dark psds-table__row"
+        role="row"
+      >
+        <th
+          className="psds-theme--dark psds-table__header psds-table__header--align-left"
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            Gerard
+          </div>
+        </th>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Frami
+        </td>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Cicero_Hartmann90@gmail.com
+        </td>
+      </tr>
+      <tr
+        className="psds-theme--dark psds-table__row"
+        role="row"
+      >
+        <th
+          className="psds-theme--dark psds-table__header psds-table__header--align-left"
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            Virgie
+          </div>
+        </th>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Satterfield
+        </td>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Ron54@hotmail.com
+        </td>
+      </tr>
+      <tr
+        className="psds-theme--dark psds-table__row"
+        role="row"
+      >
+        <th
+          className="psds-theme--dark psds-table__header psds-table__header--align-left"
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            Eino
+          </div>
+        </th>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Homenick
+        </td>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Delta_Yost13@hotmail.com
+        </td>
+      </tr>
+      <tr
+        className="psds-theme--dark psds-table__row"
+        role="row"
+      >
+        <th
+          className="psds-theme--dark psds-table__header psds-table__header--align-left"
+          role="rowheader"
+          scope="row"
+        >
+          <div>
+            Luella
+          </div>
+        </th>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Kirlin
+        </td>
+        <td
+          className="psds-table__cell psds-table__cell--align-left"
+          role="gridcell"
+        >
+          Addison_Bins@hotmail.com
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
 <div
   className="psds-theme--dark psds-table__container"
@@ -2631,28 +2813,28 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
             title="Full name"
           >
             <div>
-              Frederick
+              Otilia
                
-              Lindgren
+              Collins
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Frederick
+            Otilia
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Lindgren
+            Collins
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Jaycee_Rice@yahoo.com
+            Seamus.Hettinger46@yahoo.com
           </td>
         </tr>
         <tr
@@ -2695,28 +2877,28 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
             title="Full name"
           >
             <div>
-              Gerard
+              Baby
                
-              Frami
+              Mayert
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Gerard
+            Baby
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Frami
+            Mayert
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Cicero_Hartmann90@gmail.com
+            Karianne24@yahoo.com
           </td>
         </tr>
         <tr
@@ -2759,28 +2941,28 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
             title="Full name"
           >
             <div>
-              Virgie
+              Aisha
                
-              Satterfield
+              VonRueden
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Virgie
+            Aisha
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Satterfield
+            VonRueden
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Ron54@hotmail.com
+            Mitchel.Parker@gmail.com
           </td>
         </tr>
         <tr
@@ -2823,28 +3005,28 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
             title="Full name"
           >
             <div>
-              Eino
+              Lynn
                
-              Homenick
+              Runolfsdottir
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Eino
+            Lynn
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Homenick
+            Runolfsdottir
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Delta_Yost13@hotmail.com
+            Vivienne.Jenkins@hotmail.com
           </td>
         </tr>
         <tr
@@ -2887,28 +3069,28 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
             title="Full name"
           >
             <div>
-              Luella
+              Viva
                
-              Kirlin
+              Sipes
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Luella
+            Viva
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Kirlin
+            Sipes
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Addison_Bins@hotmail.com
+            Haven2@hotmail.com
           </td>
         </tr>
       </tbody>
@@ -3059,28 +3241,28 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
             scope="row"
           >
             <div>
-              Otilia
+              Hollis
                
-              Collins
+              Johns
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Otilia
+            Hollis
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Collins
+            Johns
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Seamus.Hettinger46@yahoo.com
+            Serena_Hamill@gmail.com
           </td>
         </tr>
         <tr
@@ -3122,28 +3304,28 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
             scope="row"
           >
             <div>
-              Baby
+              Tianna
                
-              Mayert
+              Gislason
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Baby
+            Tianna
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Mayert
+            Gislason
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Karianne24@yahoo.com
+            Leone.Turcotte67@yahoo.com
           </td>
         </tr>
         <tr
@@ -3185,28 +3367,28 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
             scope="row"
           >
             <div>
-              Aisha
+              Elza
                
-              VonRueden
+              Hegmann
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Aisha
+            Elza
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            VonRueden
+            Hegmann
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Mitchel.Parker@gmail.com
+            Leila_Nolan94@hotmail.com
           </td>
         </tr>
         <tr
@@ -3248,28 +3430,28 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
             scope="row"
           >
             <div>
-              Lynn
+              Virgie
                
-              Runolfsdottir
+              Fay
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Lynn
+            Virgie
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Runolfsdottir
+            Fay
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Vivienne.Jenkins@hotmail.com
+            Annabell.Stracke71@gmail.com
           </td>
         </tr>
         <tr
@@ -3311,28 +3493,28 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
             scope="row"
           >
             <div>
-              Viva
+              Lempi
                
-              Sipes
+              Emmerich
             </div>
           </th>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Viva
+            Lempi
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Sipes
+            Emmerich
           </td>
           <td
             className="psds-table__cell psds-table__cell--align-left"
             role="gridcell"
           >
-            Haven2@hotmail.com
+            Nicola46@gmail.com
           </td>
         </tr>
       </tbody>
