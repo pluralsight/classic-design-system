@@ -3,6 +3,7 @@ import Checkbox from '@pluralsight/ps-design-system-checkbox'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
+import { css, cx } from '@emotion/css'
 
 import Table from '../index'
 import { generateUser } from './seed'
@@ -266,6 +267,47 @@ export const RowSelection: Story = () => {
             </Table.Row>
           )
         })}
+      </Table.Body>
+    </Table>
+  )
+}
+
+export const StyleOverride: Story = () => {
+  const data = new Array(5).fill(null).map(() => generateUser())
+
+  return (
+    <Table>
+      <Table.Head>
+        <Table.Row>
+          <Table.Header role="columnheader" scope="col">
+            First name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Last name
+          </Table.Header>
+          <Table.Header role="columnheader" scope="col">
+            Email
+          </Table.Header>
+        </Table.Row>
+      </Table.Head>
+
+      <Table.Body
+        className={css`
+          .psds-table__row:hover > td,
+          .psds-table__row:hover > th {
+            background-color: inherit;
+          }
+        `}
+      >
+        {data.map((user, i) => (
+          <Table.Row key={i}>
+            <Table.Header role="rowheader" scope="row">
+              {user.firstName}
+            </Table.Header>
+            <Table.Cell>{user.lastName}</Table.Cell>
+            <Table.Cell>{user.email}</Table.Cell>
+          </Table.Row>
+        ))}
       </Table.Body>
     </Table>
   )
