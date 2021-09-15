@@ -3,6 +3,46 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [11.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@10.0.3...@pluralsight/ps-design-system-checkbox@11.0.0) (2021-09-15)
+
+
+* fix/drawer-checkbox-css (#1993) ([7c52db1](https://github.com/pluralsight/design-system/commit/7c52db168a2a1daaf11dbde2e005c9d9dc8c7e16)), closes [#1993](https://github.com/pluralsight/design-system/issues/1993)
+
+
+### BREAKING CHANGES
+
+* useRangeSelectChange  useDateSelectChange removed
+Hooks have been removed in facor of callback functions:
+handleDateSelectChange & handleRangeSelectChange
+
+* feat(focusmanager): export useFocusManager hook for better composability
+
+* test(datepicker): use hook instead of FocusManager
+
+* docs: update datepicker docs
+
+* feat(datepicker): key events for month buttons
+
+* fix(datepicker): datepicker focus on close and height set on grid
+
+* test(datepicker): update story so that snapshots stay consitent with new functionality
+
+* fix(datepicker): focus trap fix
+
+* fix(datepicker): focus trap tuning
+
+* fix(checkbox): fix className in jsx and selectivity in css
+
+* fix(drawer): update styles to remove border and fix docs
+
+* fix(drawer): we really need a seperate component for layout/borders
+
+Co-authored-by: Brian Sweeting <brian-sweeting@pluralsight.com>
+
+
+
+
+
 ## [10.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-checkbox@10.0.2...@pluralsight/ps-design-system-checkbox@10.0.3) (2021-09-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-checkbox

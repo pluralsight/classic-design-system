@@ -3,6 +3,42 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [8.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.22...@pluralsight/ps-design-system-focusmanager@8.0.0) (2021-09-15)
+
+
+### Features
+
+* autoselect current date or selected date ([#1933](https://github.com/pluralsight/design-system/issues/1933)) ([d50d5f6](https://github.com/pluralsight/design-system/commit/d50d5f6c9e9fa2bea777302c9bd5fc68efd777c9))
+
+
+### BREAKING CHANGES
+
+* useRangeSelectChange  useDateSelectChange removed
+Hooks have been removed in facor of callback functions:
+handleDateSelectChange & handleRangeSelectChange
+
+* feat(focusmanager): export useFocusManager hook for better composability
+
+* test(datepicker): use hook instead of FocusManager
+
+* docs: update datepicker docs
+
+* feat(datepicker): key events for month buttons
+
+* fix(datepicker): datepicker focus on close and height set on grid
+
+* test(datepicker): update story so that snapshots stay consitent with new functionality
+
+* fix(datepicker): focus trap fix
+
+* fix(datepicker): focus trap tuning
+
+Co-authored-by: Brian Sweeting <brian-sweeting@pluralsight.com>
+
+
+
+
+
 ## [7.1.22](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-focusmanager@7.1.21...@pluralsight/ps-design-system-focusmanager@7.1.22) (2021-09-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-focusmanager
