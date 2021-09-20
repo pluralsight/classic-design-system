@@ -32,7 +32,7 @@ export const IconCommonSet: React.FC<Props> = () => (
           <Comp size={Icon.sizes.medium} />
           <div
             style={{
-              fontSize: core.type.fontSizeXSmall,
+              fontSize: core.type.fontSize100,
               marginTop: core.layout.spacingXSmall
             }}
           >
