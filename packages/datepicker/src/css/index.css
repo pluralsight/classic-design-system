@@ -79,7 +79,7 @@
   width: 40px;
   height: 32px;
   color: var(--ps-colors-text-icon-low-on-light);
-  font-weight: var(--ps-type-font-weight-book);
+  font-weight: var(--ps-type-font-weight-default);
 }
 
 .psds-calendar__date-grid {
