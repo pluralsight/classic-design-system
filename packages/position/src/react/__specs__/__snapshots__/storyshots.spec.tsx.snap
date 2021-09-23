@@ -343,9 +343,10 @@ exports[`Storyshots Components/Position Positions 1`] = `
     &lt;Above /&gt;
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -382,9 +383,10 @@ exports[`Storyshots Components/Position Positions 1`] = `
     &lt;AboveLeft /&gt;
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -421,9 +423,10 @@ exports[`Storyshots Components/Position Positions 1`] = `
     &lt;AboveRight /&gt;
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -460,9 +463,10 @@ exports[`Storyshots Components/Position Positions 1`] = `
     &lt;Below /&gt;
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -499,9 +503,10 @@ exports[`Storyshots Components/Position Positions 1`] = `
     &lt;BelowLeft /&gt;
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -538,9 +543,10 @@ exports[`Storyshots Components/Position Positions 1`] = `
     &lt;BelowRight /&gt;
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -577,9 +583,10 @@ exports[`Storyshots Components/Position Positions 1`] = `
     &lt;LeftOf /&gt;
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -616,9 +623,10 @@ exports[`Storyshots Components/Position Positions 1`] = `
     &lt;RightOf /&gt;
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -680,9 +688,10 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
       &lt;Above /&gt;
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -731,9 +740,10 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
       &lt;AboveLeft /&gt;
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -782,9 +792,10 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
       &lt;AboveRight /&gt;
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -833,9 +844,10 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
       &lt;Below /&gt;
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -884,9 +896,10 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
       &lt;BelowLeft /&gt;
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -935,9 +948,10 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
       &lt;BelowRight /&gt;
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -986,9 +1000,10 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
       &lt;LeftOf /&gt;
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1037,9 +1052,10 @@ exports[`Storyshots Components/Position Positions In Custom Portal 1`] = `
       &lt;RightOf /&gt;
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1095,9 +1111,10 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       </svg>
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1138,9 +1155,10 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       </svg>
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1181,9 +1199,10 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       </svg>
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1224,9 +1243,10 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       </svg>
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1267,9 +1287,10 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       </svg>
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1310,9 +1331,10 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       </svg>
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1353,9 +1375,10 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       </svg>
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1396,9 +1419,10 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       </svg>
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     >
@@ -1462,9 +1486,10 @@ exports[`Storyshots Components/Position Scrollable Container 1`] = `
     target
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1516,9 +1541,10 @@ Array [
     Tooltip is pink
   </div>,
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1575,9 +1601,10 @@ Array [
     Tooltip is pink
   </div>,
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1637,9 +1664,10 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1684,9 +1712,10 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1731,9 +1760,10 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1778,9 +1808,10 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1825,9 +1856,10 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1872,9 +1904,10 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1919,9 +1952,10 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1966,9 +2000,10 @@ exports[`Storyshots Components/Position Target 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >

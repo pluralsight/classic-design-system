@@ -160,7 +160,10 @@ export const Position = React.forwardRef<HTMLElement, PositionProps>(
             )}
 
         {createUniversalPortal(
-          <div style={{ visibility: shownOnce ? 'visible' : 'hidden' }}>
+          <div
+            style={{ display: shownOnce ? 'initial' : 'none' }}
+            aria-live="polite"
+          >
             {when && showEl}
           </div>,
           inNode

@@ -1532,9 +1532,10 @@ exports[`Storyshots Components/Note With Action Menu 1`] = `
             </div>
           </button>
           <div
+            aria-live="polite"
             style={
               Object {
-                "visibility": "hidden",
+                "display": "none",
               }
             }
           />

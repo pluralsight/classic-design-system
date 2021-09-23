@@ -81,9 +81,10 @@ exports[`Storyshots Components/ActionMenu Button Open 1`] = `
     toggle
   </button>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   />
@@ -3537,9 +3538,10 @@ Array [
     click to show
   </div>,
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -3649,9 +3651,10 @@ exports[`Storyshots Components/ActionMenu On Close Toggles 1`] = `
     anchor
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -3789,9 +3792,10 @@ exports[`Storyshots Components/ActionMenu Position Below Left 1`] = `
     anchor
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -3898,9 +3902,10 @@ exports[`Storyshots Components/ActionMenu Position Below Right 1`] = `
     anchor
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
