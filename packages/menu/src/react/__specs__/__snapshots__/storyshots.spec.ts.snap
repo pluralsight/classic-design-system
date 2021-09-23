@@ -1796,9 +1796,10 @@ Array [
     anchor
   </div>,
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1890,9 +1891,10 @@ Array [
     anchor
   </div>,
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >

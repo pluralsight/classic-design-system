@@ -431,9 +431,10 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
         </span>
       </div>
       <div
+        aria-live="polite"
         style={
           Object {
-            "visibility": "hidden",
+            "display": "none",
           }
         }
       />
@@ -576,9 +577,10 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
       </button>
     </div>
     <div
+      aria-live="polite"
       style={
         Object {
-          "visibility": "hidden",
+          "display": "none",
         }
       }
     />
