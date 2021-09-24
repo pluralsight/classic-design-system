@@ -100,9 +100,10 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -529,9 +530,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -706,9 +708,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -883,9 +886,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -1060,9 +1064,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -1237,9 +1242,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -1414,9 +1420,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -1591,9 +1598,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -1768,9 +1776,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -1945,9 +1954,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -2122,9 +2132,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -2299,9 +2310,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -2476,9 +2488,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -2653,9 +2666,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -2830,9 +2844,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -3007,9 +3022,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -3184,9 +3200,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -3361,9 +3378,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -3538,9 +3556,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -3715,9 +3734,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -3892,9 +3912,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -4069,9 +4090,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -4246,9 +4268,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -4423,9 +4446,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -4600,9 +4624,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -4777,9 +4802,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -4954,9 +4980,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -5131,9 +5158,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -5308,9 +5336,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -5485,9 +5514,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -5662,9 +5692,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -5839,9 +5870,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -6016,9 +6048,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -6193,9 +6226,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -6370,9 +6404,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -6547,9 +6582,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -6724,9 +6760,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -6901,9 +6938,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -7078,9 +7116,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -7255,9 +7294,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />
@@ -7432,9 +7472,10 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   </div>
                 </button>
                 <div
+                  aria-live="polite"
                   style={
                     Object {
-                      "visibility": "hidden",
+                      "display": "none",
                     }
                   }
                 />

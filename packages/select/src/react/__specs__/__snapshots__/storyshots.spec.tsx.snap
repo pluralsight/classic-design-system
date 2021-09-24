@@ -34,9 +34,10 @@ Array [
     </div>
   </button>,
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   />,
@@ -243,9 +244,10 @@ Array [
     </div>
   </button>,
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   />,
@@ -286,9 +288,10 @@ Array [
     </div>
   </button>,
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   />,
@@ -329,9 +332,10 @@ Array [
     </div>
   </button>,
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   />,

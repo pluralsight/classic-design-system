@@ -3164,6 +3164,14 @@
     fast-glob "^3.1.0"
     svgo "^2.3.1"
 
+"@pluralsight/ps-design-system-util@^9.3.0", "@pluralsight/ps-design-system-util@^9.3.1":
+  version "9.4.0"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-9.4.0.tgz#5acfe3b8b3f646567b75ff81b428dd616b1afeb3"
+  integrity sha512-vfjIhP+6ddOR2/6rx4XkaCK6uTaAojA4BZdceG3FkQB3UnnhF+nQ4NmJQ3zjd8hRB2m1dRvMBQyHbSEAZb2NMg==
+  dependencies:
+    exenv "^1.2.2"
+    resize-observer-polyfill "^1.5.1"
+
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.1", "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz#1eec460596d200c0236bf195b078a5d1df89b766"
