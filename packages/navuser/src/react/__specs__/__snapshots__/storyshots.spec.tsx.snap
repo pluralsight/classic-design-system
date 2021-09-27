@@ -194,9 +194,10 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
     </span>
   </button>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   />
@@ -214,9 +215,10 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
     </span>
   </button>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   />
@@ -267,9 +269,10 @@ exports[`Storyshots Components/NavUser With Action Menu 1`] = `
     </button>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   />

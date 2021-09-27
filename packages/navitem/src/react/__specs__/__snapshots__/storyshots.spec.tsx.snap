@@ -736,9 +736,10 @@ exports[`Storyshots Components/NavItem With Action Menu 1`] = `
     />
   </span>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   />

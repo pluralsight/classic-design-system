@@ -75,9 +75,10 @@ exports[`Storyshots Components/Typeahead Autofocus 1`] = `
     />
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -1386,9 +1387,10 @@ exports[`Storyshots Components/Typeahead Basic 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -2697,9 +2699,10 @@ exports[`Storyshots Components/Typeahead Both Input And Auto Complete 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -4008,9 +4011,10 @@ exports[`Storyshots Components/Typeahead Custom Filter Function 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -5317,9 +5321,10 @@ exports[`Storyshots Components/Typeahead Custom Input Tag 1`] = `
     />
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -6629,9 +6634,10 @@ exports[`Storyshots Components/Typeahead Disabled 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -7959,9 +7965,10 @@ exports[`Storyshots Components/Typeahead Error 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -9287,9 +9294,10 @@ exports[`Storyshots Components/Typeahead Icon Prefix 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -10596,9 +10604,10 @@ exports[`Storyshots Components/Typeahead No Labels 1`] = `
     />
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >
@@ -11907,9 +11916,10 @@ exports[`Storyshots Components/Typeahead React Node Label 1`] = `
     </div>
   </div>
   <div
+    aria-live="polite"
     style={
       Object {
-        "visibility": "hidden",
+        "display": "none",
       }
     }
   >

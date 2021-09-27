@@ -48,7 +48,8 @@
 }
 
 .psds-drawer__summary>*,
-.psds-drawer__summary>.psds-row {
+.psds-drawer__summary>.psds-row,
+.psds-drawer__summary>.psds-row.psds-theme--light {
   border-top: none
 }
 
