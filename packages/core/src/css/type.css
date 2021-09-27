@@ -3,16 +3,6 @@
   --ps-type-font-family: 'PS TT Commons Roman', 'Gotham SSm A', 'Gotham SSm B', Arial, sans-serif;
   --ps-type-font-family-code: 'DM Mono', 'Source Code Pro', monospace;
 
-  /* font size (deprecated) */
-  --ps-type-font-size-gigantic: 60px;
-  --ps-type-font-size-jumbo: 48px;
-  --ps-type-font-size-xxlarge: 36px;
-  --ps-type-font-size-xlarge: 30px;
-  --ps-type-font-size-large: 24px;
-  --ps-type-font-size-medium: 18px;
-  --ps-type-font-size-small: 14px;
-  --ps-type-font-size-xsmall: 12px;
-
   /* font size */
   --ps-type-font-size-base: 16px;
   --ps-type-font-size-1200: 88px;
@@ -28,16 +18,6 @@
   --ps-type-font-size-200: 14px;
   --ps-type-font-size-100: 12px;
 
-  /* letter spacing (deprecated) */
-  --ps-type-letter-spacing-gigantic: -1px;
-  --ps-type-letter-spacing-jumbo: -0.72px;
-  --ps-type-letter-spacing-xxlarge: -0.54px;
-  --ps-type-letter-spacing-xlarge: -0.45px;
-  --ps-type-letter-spacing-large: 0.36px;
-  --ps-type-letter-spacing-medium: 0;
-  --ps-type-letter-spacing-small: 0;
-  --ps-type-letter-spacing-xsmall: 0;
-
   /* letter spacing */
   --ps-type-letter-spacing-tighter: -0.025em;
   --ps-type-letter-spacing-tight: -0.01em;
@@ -45,18 +25,6 @@
   --ps-type-letter-spacing-loose: 0.01em;
   --ps-type-letter-spacing-looser: 0.025em;
   --ps-type-letter-spacing-all-caps: 0.08em;
-
-  /* font weight (deprecated) */
-  --ps-type-font-weight-black: 900;
-  --ps-type-font-weight-xbold: 800;
-  --ps-type-font-weight-bold: 700;
-  --ps-type-font-weight-demi-bold: 600;
-  --ps-type-font-weight-medium: 500;
-  --ps-type-font-weight-regular: 400;
-  --ps-type-font-weight-book: 400;
-  --ps-type-font-weight-light: 300;
-  --ps-type-font-weight-xlight: 200;
-  --ps-type-font-weight-thin: 100;
 
   /* font weight */
   --ps-type-font-weight-default: 400;

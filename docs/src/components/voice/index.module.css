@@ -40,7 +40,7 @@
   &::after {
     color: var(--ps-colors-background-utility-25);
     font-family: Georgia, serif;
-    font-size: var(--ps-type-font-size-gigantic);
+    font-size: var(--ps-type-font-size-1000);
     line-height: 1em;
     position: absolute;
   }

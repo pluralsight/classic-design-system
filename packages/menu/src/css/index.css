@@ -121,6 +121,6 @@
   line-height: 16px;
   font-size: var(--ps-type-font-size-100);
   color: var(--ps-colors-text-icon-low-on-light);
-  font-weight: var(--ps-type-font-weight-regular);
+  font-weight: var(--ps-type-font-weight-default);
   padding-top: var(--ps-layout-spacing-xxsmall);
 }

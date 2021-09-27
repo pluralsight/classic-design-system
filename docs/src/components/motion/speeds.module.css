@@ -13,28 +13,28 @@
 }
 .icon {
   grid-area: icon;
-  font-size: var(--ps-type-font-size-gigantic);
-  letter-spacing: var(--ps-type-letter-spacing-gigantic);
+  font-size: var(--ps-type-font-size-1000);
+  letter-spacing: var(--ps-type-letter-spacing-tight);
   line-height: 1em;
 }
 .labels {
   grid-area: labels;
   color: var(--app-colors-text-icon-low);
-  font-size: var(--ps-type-font-size-xsmall);
+  font-size: var(--ps-type-font-size-100);
 }
 .title {
-  font-weight: var(--ps-type-font-weight-book);
+  font-weight: var(--ps-type-font-weight-regular);
   text-transform: uppercase;
 }
 .time {
-  font-weight: var(--ps-type-font-weight-bold);
+  font-weight: var(--ps-type-font-weight-strong);
 }
 .vars {
   grid-area: vars;
   display: flex;
   flex-direction: column-reverse;
-  font-size: var(--ps-type-font-size-xsmall);
-  font-weight: var(--ps-type-font-weight-medium);
+  font-size: var(--ps-type-font-size-100);
+  font-weight: var(--ps-type-font-weight-strong);
 }
 .vars code {
   color: var(--ps-colors-pink-6);
