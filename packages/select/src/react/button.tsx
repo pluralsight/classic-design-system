@@ -1,4 +1,4 @@
-import { WarningIcon, CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import { ExclamationPointTriangleIcon, CaretDownIcon } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { classNames, ValueOf } from '@pluralsight/ps-design-system-util'
 import React from 'react'
@@ -56,7 +56,7 @@ export const Button = React.forwardRef<HTMLButtonElement, SelectButtonProps>(
             )}
           />
         </div>
-        {error && <WarningIcon className={'psds-select__error'} />}
+        {error && <ExclamationPointTriangleIcon className={'psds-select__error'} />}
       </button>
     )
   }
