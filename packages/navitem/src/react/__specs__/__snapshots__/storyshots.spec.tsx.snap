@@ -141,7 +141,8 @@ exports[`Storyshots Components/NavItem Horizontal As Link With Icon 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -186,7 +187,8 @@ exports[`Storyshots Components/NavItem Horizontal Selected 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -231,7 +233,8 @@ exports[`Storyshots Components/NavItem Horizontal With Icon 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -276,7 +279,8 @@ exports[`Storyshots Components/NavItem Horizontal With Menu 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -298,7 +302,7 @@ exports[`Storyshots Components/NavItem Horizontal With Menu 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                d="m11.646 15.056-4.292-4.292a.5.5 0 0 1 0-.708l.703-.703a.5.5 0 0 1 .707 0L12 12.58l3.236-3.227a.5.5 0 0 1 .707 0l.703.703a.5.5 0 0 1 0 .708l-4.292 4.292a.5.5 0 0 1-.708 0z"
               />
             </svg>
           </div>
@@ -345,7 +349,8 @@ exports[`Storyshots Components/NavItem Selected Flow Item 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -397,7 +402,8 @@ exports[`Storyshots Components/NavItem Selected Skills Item 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -500,7 +506,8 @@ exports[`Storyshots Components/NavItem Vertical As Link With Icon 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -545,7 +552,8 @@ exports[`Storyshots Components/NavItem Vertical Selected 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -590,7 +598,8 @@ exports[`Storyshots Components/NavItem Vertical With Icon 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -635,7 +644,8 @@ exports[`Storyshots Components/NavItem Vertical With Menu 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
+                d="M14 12a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 3H4a1 1 0 0 0-1 1v4h2V5h3V3zm2 2V3h4v2h-4zm9 3V5h-3V3h4a1 1 0 0 1 1 1v4h-2zm0 6v-4h2v4h-2zm-3 5h3v-3h2v4a1 1 0 0 1-1 1h-4v-2zm-6 0h4v2h-4v-2zm-5-3v3h3v2H4a1 1 0 0 1-1-1v-4h2zm0-6v4H3v-4h2z"
+                fillOpacity=".95"
               />
             </svg>
           </div>
@@ -657,7 +667,7 @@ exports[`Storyshots Components/NavItem Vertical With Menu 1`] = `
               viewBox="0 0 24 24"
             >
               <path
-                d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
+                d="m11.646 15.056-4.292-4.292a.5.5 0 0 1 0-.708l.703-.703a.5.5 0 0 1 .707 0L12 12.58l3.236-3.227a.5.5 0 0 1 .707 0l.703.703a.5.5 0 0 1 0 .708l-4.292 4.292a.5.5 0 0 1-.708 0z"
               />
             </svg>
           </div>
