@@ -47,21 +47,21 @@ A tag may contain an icon, consistently placed on the right. An icon may also
 receive on `onClick` prop in this position.
 
 ```typescript
-import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import { XIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import React from 'react'
 
 const Example: React.FC = props => {
   return (
     <div className="example-grid--col-3">
-      <Tag icon={<CloseIcon />}>With Icon</Tag>
+      <Tag icon={<XIcon />}>With Icon</Tag>
 
-      <Tag icon={<CloseIcon />} size={Tag.sizes.small}>
+      <Tag icon={<XIcon />} size={Tag.sizes.small}>
         With Icon
       </Tag>
 
       <Tag
-        icon={<CloseIcon onClick={_ => alert('icon clicked')} />}
+        icon={<XIcon onClick={_ => alert('icon clicked')} />}
         size={Tag.sizes.small}
       >
         With Icon
@@ -136,7 +136,7 @@ export default Example
 
 **WCAG 2.1 AA Compliance**
 
-<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<CheckCircleFilledIcon color="green" size="xSmall" /> 100% axe-core tests
 <br />
 <WarningFilledIcon color="red" size="xSmall" /> Manual audit
 

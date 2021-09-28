@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import { layout } from '@pluralsight/ps-design-system-core'
-import { CloseIcon, CaretRightIcon } from '@pluralsight/ps-design-system-icon'
+import { XIcon, CaretRightIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 import Switch from '@pluralsight/ps-design-system-switch'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
@@ -30,7 +30,7 @@ export const TagExample = () => {
             margin: `0 ${layout.spacingXSmall} ${layout.spacingXSmall} 0`
           }}
         >
-          <Tag icon={<CloseIcon onClick={handleClick(tag)} />}>{tag}</Tag>
+          <Tag icon={<XIcon onClick={handleClick(tag)} />}>{tag}</Tag>
         </div>
       ))}
     </div>

@@ -199,7 +199,7 @@ Here are some examples of building more complicated fields using the [downshift]
 import React, { useMemo } from 'react'
 
 import { layout } from '@pluralsight/ps-design-system-core'
-import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import { XIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 
 import Field from '@pluralsight/ps-design-system-field'
@@ -369,7 +369,7 @@ const Pill = forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   return (
     <div ref={ref} {...rest} style={styles}>
       <Tag
-        icon={<CloseIcon onClick={onRequestRemove} />}
+        icon={<XIcon onClick={onRequestRemove} />}
         isPressed
         size={Tag.sizes.small}
       >
@@ -413,7 +413,7 @@ export default Example
 
 **WCAG 2.1 AA Compliance**
 
-<CheckCircleFillIcon color="green" size="xSmall" /> 100% axe-core tests
+<CheckCircleFilledIcon color="green" size="xSmall" /> 100% axe-core tests
 <br />
 <WarningFilledIcon color="red" size="xSmall" /> Manual audit
 
