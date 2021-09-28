@@ -1,4 +1,4 @@
-import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import { XIcon } from '@pluralsight/ps-design-system-icon'
 import { classNames } from '@pluralsight/ps-design-system-util'
 
 import React from 'react'
@@ -84,7 +84,7 @@ const NavCookieBanner = React.forwardRef<HTMLDivElement, NavCookieBannerProps>(
           aria-label="close"
           onClick={dismiss}
         >
-          <CloseIcon />
+          <XIcon />
         </button>
       </div>
     )
