@@ -1,7 +1,7 @@
 import { useCollapsible } from '@pluralsight/ps-design-system-collapsible'
 import {
-  SortAscIcon,
-  SortDescIcon,
+  SortAscendingIcon,
+  SortDescendingIcon,
   SortIcon
 } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
@@ -169,8 +169,8 @@ const TableHeader = React.forwardRef<
 
   const Icon = React.useMemo(() => {
     const options = {
-      ascending: SortAscIcon,
-      descending: SortDescIcon,
+      ascending: SortAscendingIcon,
+      descending: SortDescendingIcon,
       none: SortIcon
     }
 
