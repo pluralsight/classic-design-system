@@ -2,8 +2,7 @@ This is currently not working as automatically as we'd like. If there is another
 
 ## To Produce New Svgs
 
-1. Draw SVGs in Sketch in the same file as the other icons (see Dmitry for file)
-1. Export with the [svgo](https://github.com/BohemianCoding/svgo-compressor) plugin. It doesn't seem to make a ton of difference (xlink is used either way, and that's unfortunate)
+1. Export 24x24 SVG files from Figma
 
 ## To Add New Icon Svgs
 
