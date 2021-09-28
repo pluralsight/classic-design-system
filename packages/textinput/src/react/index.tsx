@@ -1,5 +1,5 @@
 import Halo from '@pluralsight/ps-design-system-halo'
-import { WarningIcon } from '@pluralsight/ps-design-system-icon'
+import { ExclamationPointTriangleIcon } from '@pluralsight/ps-design-system-icon'
 import {
   useTheme,
   names as themeNames
@@ -181,7 +181,7 @@ const TextInput = forwardRefWithStatics<
 
           {error && (
             <div className={styles.error()}>
-              <WarningIcon />
+              <ExclamationPointTriangleIcon />
             </div>
           )}
         </div>
