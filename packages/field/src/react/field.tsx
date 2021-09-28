@@ -1,5 +1,5 @@
 import Halo from '@pluralsight/ps-design-system-halo'
-import { WarningIcon } from '@pluralsight/ps-design-system-icon'
+import { ExclamationPointTriangleIcon } from '@pluralsight/ps-design-system-icon'
 import {
   ValueOf,
   classNames,
@@ -123,7 +123,7 @@ const Field = forwardRefWithStatics<FieldProps, HTMLDivElement, FieldStatics>(
 
                 {error && (
                   <div className="psds-field__error-icon">
-                    <WarningIcon />
+                    <ExclamationPointTriangleIcon />
                   </div>
                 )}
               </Tag>
