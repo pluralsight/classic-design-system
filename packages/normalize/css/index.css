@@ -71,7 +71,7 @@ html {
   text-size-adjust: 100%;
   font-family: var(--ps-type-font-family);
   font-size: 0.875em;
-  font-weight: var(--ps-type-font-weight-regular);
+  font-weight: var(--ps-type-font-weight-default);
   line-height: 1.71429; /* calc(var(--ps-type-line-height-standard) / var(--ps-type-font-size-small)); */
   font-feature-settings: 'tnum' on, 'lnum' on;
 }
@@ -108,7 +108,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--ps-type-font-weight-regular);
+  font-weight: var(--ps-type-font-weight-default);
 }
 
 ul,

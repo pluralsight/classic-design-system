@@ -65,7 +65,7 @@
 .label {
   margin-top: var(--ps-layout-spacing-small);
   color: var(--app-colors-text-icon-low);
-  font-weight: var(--ps-type-font-weight-medium);
+  font-weight: var(--ps-type-font-weight-strong);
 }
 .varName {
   margin-top: var(--ps-layout-spacing-small);
