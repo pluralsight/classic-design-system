@@ -1,5 +1,5 @@
 import DSButton from '@pluralsight/ps-design-system-button'
-import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import { XIcon } from '@pluralsight/ps-design-system-icon'
 import { P } from '@pluralsight/ps-design-system-text'
 import {
   RefForwardingComponent,
@@ -47,7 +47,7 @@ const Banner = React.forwardRef((props, ref) => {
         <P className="psds-banner__text">{props.children}</P>
         {props.onClick && (
           <button className="psds-banner__dismiss" onClick={onClick}>
-            <CloseIcon />
+            <XIcon />
           </button>
         )}
       </div>
