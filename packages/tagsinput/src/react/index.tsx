@@ -1,4 +1,4 @@
-import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import { XIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
 import Tag from '@pluralsight/ps-design-system-tag'
 import {
@@ -187,7 +187,7 @@ const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
   return (
     <div ref={ref} {...rest} className={'psds-tagsinput__pill'}>
       <Tag
-        icon={<CloseIcon onClick={onRequestRemove} />}
+        icon={<XIcon onClick={onRequestRemove} />}
         isPressed
         size={Tag.sizes.small}
       >
