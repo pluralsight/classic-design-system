@@ -37,12 +37,12 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
       className="psds-icon psds-icon--size-small"
     >
       <svg
-        aria-label="star fill icon"
+        aria-label="star filled icon"
         role="img"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+          d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
         />
       </svg>
     </div>
@@ -63,12 +63,12 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
       className="psds-icon psds-icon--size-small"
     >
       <svg
-        aria-label="star fill icon"
+        aria-label="star filled icon"
         role="img"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+          d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
         />
       </svg>
     </div>
@@ -139,12 +139,12 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
       className="psds-icon psds-icon--size-small"
     >
       <svg
-        aria-label="star fill icon"
+        aria-label="star filled icon"
         role="img"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+          d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
         />
       </svg>
     </div>
@@ -165,12 +165,12 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
       className="psds-icon psds-icon--size-small"
     >
       <svg
-        aria-label="star fill icon"
+        aria-label="star filled icon"
         role="img"
         viewBox="0 0 24 24"
       >
         <path
-          d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+          d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
         />
       </svg>
     </div>
@@ -230,12 +230,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -256,12 +256,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -282,12 +282,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -308,12 +308,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -334,12 +334,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -437,12 +437,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -463,12 +463,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -489,12 +489,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -515,12 +515,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -568,12 +568,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -594,12 +594,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -620,12 +620,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -646,12 +646,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -672,12 +672,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -725,12 +725,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -801,12 +801,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -827,12 +827,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -853,12 +853,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -906,12 +906,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -932,12 +932,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -958,12 +958,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -984,12 +984,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1010,12 +1010,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1063,12 +1063,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1089,12 +1089,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1165,12 +1165,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1191,12 +1191,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1244,12 +1244,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1270,12 +1270,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1296,12 +1296,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1322,12 +1322,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1348,12 +1348,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1401,12 +1401,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1427,12 +1427,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1453,12 +1453,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1529,12 +1529,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1582,12 +1582,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1608,12 +1608,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1634,12 +1634,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1660,12 +1660,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1686,12 +1686,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1739,12 +1739,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1765,12 +1765,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1791,12 +1791,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1817,12 +1817,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1920,12 +1920,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1946,12 +1946,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1972,12 +1972,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -1998,12 +1998,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2024,12 +2024,12 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2082,7 +2082,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2108,7 +2110,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2134,7 +2138,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2160,7 +2166,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2186,7 +2194,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2238,7 +2248,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2264,7 +2276,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2290,7 +2304,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2316,7 +2332,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2342,7 +2360,9 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
+            clipRule="evenodd"
+            d="m2.253 9.905 5.463 3.947L5.49 20.53a.5.5 0 0 0 .767.563l5.745-4.146 5.74 4.146a.5.5 0 0 0 .767-.564l-2.225-6.676 5.463-3.947A.5.5 0 0 0 21.454 9h-6.782l-2.198-6.58a.5.5 0 0 0-.948 0L9.33 9H2.546a.5.5 0 0 0-.293.905zm6.413 7.106 1.294-3.882-3.086-2.23h3.825L12 7l1.303 3.9h3.822l-3.086 2.23 1.293 3.879-3.33-2.406z"
+            fillRule="evenodd"
           />
         </svg>
       </div>
@@ -2385,12 +2405,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2411,12 +2431,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2437,12 +2457,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2463,12 +2483,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2489,12 +2509,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2575,12 +2595,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2601,12 +2621,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2627,12 +2647,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2653,12 +2673,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2689,12 +2709,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2715,12 +2735,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2741,12 +2761,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2767,12 +2787,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2793,12 +2813,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2829,12 +2849,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2905,12 +2925,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2931,12 +2951,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2957,12 +2977,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -2993,12 +3013,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3019,12 +3039,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3045,12 +3065,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3071,12 +3091,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3097,12 +3117,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3133,12 +3153,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3159,12 +3179,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3235,12 +3255,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3261,12 +3281,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3297,12 +3317,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3323,12 +3343,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3349,12 +3369,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3375,12 +3395,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3401,12 +3421,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3437,12 +3457,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3463,12 +3483,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3489,12 +3509,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3565,12 +3585,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3601,12 +3621,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3627,12 +3647,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3653,12 +3673,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3679,12 +3699,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3705,12 +3725,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3741,12 +3761,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3767,12 +3787,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3793,12 +3813,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3819,12 +3839,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3905,12 +3925,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3931,12 +3951,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3957,12 +3977,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -3983,12 +4003,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4009,12 +4029,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4045,12 +4065,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4071,12 +4091,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4097,12 +4117,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4123,12 +4143,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4149,12 +4169,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4184,12 +4204,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4210,12 +4230,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4236,12 +4256,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4262,12 +4282,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4288,12 +4308,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4353,12 +4373,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4429,12 +4449,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4455,12 +4475,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4481,12 +4501,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4534,12 +4554,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4560,12 +4580,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4586,12 +4606,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4612,12 +4632,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4638,12 +4658,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4691,12 +4711,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4717,12 +4737,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4743,12 +4763,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4769,12 +4789,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4795,12 +4815,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4848,12 +4868,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4874,12 +4894,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4950,12 +4970,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -4976,12 +4996,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -5029,12 +5049,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -5055,12 +5075,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -5131,12 +5151,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -5157,12 +5177,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -5210,12 +5230,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -5236,12 +5256,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -5262,12 +5282,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -5288,12 +5308,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
@@ -5314,12 +5334,12 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
         className="psds-icon psds-icon--size-small"
       >
         <svg
-          aria-label="star fill icon"
+          aria-label="star filled icon"
           role="img"
           viewBox="0 0 24 24"
         >
           <path
-            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+            d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .949 0L14.673 9h6.781a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.147a.5.5 0 0 1-.767-.564z"
           />
         </svg>
       </div>
