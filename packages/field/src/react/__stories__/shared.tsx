@@ -1,5 +1,5 @@
 import { colorsPink, layout } from '@pluralsight/ps-design-system-core'
-import { CloseIcon } from '@pluralsight/ps-design-system-icon'
+import { XIcon } from '@pluralsight/ps-design-system-icon'
 import Tag from '@pluralsight/ps-design-system-tag'
 
 import { Story } from '@storybook/react/types-6-0'
@@ -85,7 +85,7 @@ const Pill = React.forwardRef<HTMLDivElement, PillProps>((props, ref) => {
       }}
     >
       <Tag
-        icon={<CloseIcon onClick={onRequestRemove} />}
+        icon={<XIcon onClick={onRequestRemove} />}
         isPressed
         size={Tag.sizes.small}
       >
