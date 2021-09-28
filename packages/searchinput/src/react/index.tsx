@@ -2,7 +2,7 @@ import React from 'react'
 
 import Button from '@pluralsight/ps-design-system-button'
 import CircularProgress from '@pluralsight/ps-design-system-circularprogress'
-import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
+import { XIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput, {
   TextInputProps
 } from '@pluralsight/ps-design-system-textinput'
@@ -41,7 +41,7 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
           isClearBtnVisible && 'psds-searchinput-clear--visible'
         )}
         appearance={Button.appearances.flat}
-        icon={<CloseIcon />}
+        icon={<XIcon />}
         size={Button.sizes.small}
       />
     )
