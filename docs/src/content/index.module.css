@@ -60,7 +60,7 @@
   }
 
   & a {
-    font-weight: var(--ps-type-font-weight-medium);
+    font-weight: var(--ps-type-font-weight-strong);
   }
 
   @media (width >= 768px) {

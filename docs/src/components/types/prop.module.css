@@ -11,7 +11,7 @@
 }
 .nameCode {
   color: var(--name-color);
-  font-weight: var(--ps-type-font-weight-bold);
+  font-weight: var(--ps-type-font-weight-strong);
 }
 .typeCode {
   color: var(--type-color);

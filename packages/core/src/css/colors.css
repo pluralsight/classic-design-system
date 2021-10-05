@@ -124,18 +124,14 @@
   --ps-colors-background-utility-40: rgba(138, 153, 168, 0.4);
   --ps-colors-background-utility-60: rgba(138, 153, 168, 0.6);
 
-  --ps-colors-gradient-skills-background: linear-gradient(
-    90deg,
-    #e80a89 0%,
-    #f15b2a 100%
-  );
+  --ps-colors-gradient-skills-background: linear-gradient(90deg,
+      #e80a89 0%,
+      #f15b2a 100%);
   --ps-colors-gradient-skills-stop-0: #e80a89;
   --ps-colors-gradient-skills-stop-100: #f15b2a;
-  --ps-colors-gradient-flow-background: linear-gradient(
-    90deg,
-    #2968b2 0%,
-    #27aae1 100%
-  );
+  --ps-colors-gradient-flow-background: linear-gradient(90deg,
+      #2968b2 0%,
+      #27aae1 100%);
   --ps-colors-gradient-flow-stop-0: #2968b2;
   --ps-colors-gradient-flow-stop-100: #27aae1;
 
