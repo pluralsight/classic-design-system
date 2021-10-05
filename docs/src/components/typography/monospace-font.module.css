@@ -1,7 +1,7 @@
 .box {
   font-size: var(--ps-type-font-size-large);
   line-height: var(--ps-type-line-height-extra);
-  font-weight: var(--ps-type-font-weight-book);
+  font-weight: var(--ps-type-font-weight-regular);
 }
 .glyphs {
   font-family: var(--ps-type-font-family-code);
@@ -13,9 +13,9 @@
   composes: glyphs;
   padding: var(--ps-layout-spacing-large);
   font-family: var(--ps-type-font-family-code);
-  font-weight: var(--ps-type-font-weight-regular);
-  font-size: var(--ps-type-font-size-gigantic);
-  letter-spacing: var(--ps-type-letter-spacing-gigantic);
+  font-weight: var(--ps-type-font-weight-default);
+  font-size: var(--ps-type-font-size-1000);
+  letter-spacing: var(--ps-type-letter-spacing-tight);
 }
 .fontLabel {
   color: var(--app-colors-text-icon-low);
