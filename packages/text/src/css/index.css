@@ -35,13 +35,13 @@
   color: var(--ps-colors-text-icon-low-on-dark);
 }
 .psds-text__heading--size-xxxsmall {
-  font-size: var(--ps-type-font-size-200);
+  font-size: var(--ps-type-font-size-100);
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: var(--ps-type-letter-spacing-all-caps);
 }
 .psds-text__heading--size-xxsmall {
-  font-size: var(--ps-type-font-size-300);
+  font-size: var(--ps-type-font-size-200);
   line-height: 20px;
   text-transform: uppercase;
   letter-spacing: var(--ps-type-letter-spacing-all-caps);

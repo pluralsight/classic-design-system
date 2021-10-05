@@ -49,7 +49,7 @@
 }
 .psds-errorpage__heading {
   margin-bottom: var(--ps-layout-spacing-large);
-  letter-spacing: var(--ps-type-letter-spacing-large);
+  letter-spacing: var(--ps-type-letter-spacing-loose);
   font-weight: var(--ps-type-font-weight-default);
   max-width: 500px;
 }

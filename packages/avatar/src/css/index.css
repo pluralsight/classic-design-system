@@ -5,36 +5,42 @@
   position: relative;
   border-radius: 100%;
 }
+
 .psds-avatar--size-xsmall {
   width: 32px;
   height: 32px;
   font-size: var(--ps-type-font-size-400);
   font-weight: var(--ps-type-font-weight-default);
 }
+
 .psds-avatar--size-small {
   width: 48px;
   height: 48px;
   font-size: var(--ps-type-font-size-600);
   font-weight: var(--ps-type-font-weight-default);
 }
+
 .psds-avatar--size-medium {
   width: 72px;
   height: 72px;
-  font-size: var(--ps-type-font-size-xxlarge);
+  font-size: var(--ps-type-font-size-800);
   font-weight: var(--ps-type-font-weight300);
 }
+
 .psds-avatar--size-large {
   width: 96px;
   height: 96px;
   font-size: var(--ps-type-font-size-1000);
   font-weight: var(--ps-type-font-weight-300);
 }
+
 .psds-avatar--size-xlarge {
   width: 160px;
   height: 160px;
   font-size: var(--ps-type-font-size-1200);
   font-weight: var(--ps-type-font-weight-300);
 }
+
 .psds-avatar__image {
   position: absolute;
   top: 0;
@@ -43,6 +49,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 .psds-avatar__initials {
   width: auto;
   height: 100%;
