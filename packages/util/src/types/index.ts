@@ -1,7 +1,5 @@
 import React from 'react'
 
-export interface HTMLPropsFor<T> extends React.HTMLAttributes<T> {}
-
 export type RefFor<K extends keyof HTMLElementTagNameMap> = React.RefObject<
   HTMLElementTagNameMap[K]
 >
