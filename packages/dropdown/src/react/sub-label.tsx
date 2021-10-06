@@ -1,10 +1,10 @@
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { HTMLPropsFor, classNames } from '@pluralsight/ps-design-system-util'
+import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import '../css/index.css'
 
-interface SubLabelProps extends HTMLPropsFor<HTMLDivElement> {
+interface SubLabelProps extends React.HTMLAttributes<HTMLDivElement> {
   subLabel?: React.ReactNode
 }
 
