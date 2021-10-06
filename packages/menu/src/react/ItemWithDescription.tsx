@@ -1,7 +1,4 @@
-import {
-  classNames,
-  forwardRefWithAs
-} from '@pluralsight/ps-design-system-util'
+import { forwardRefWithAs } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import '../css/index.css'
@@ -17,12 +14,13 @@ export const MenuItemWithDescription = forwardRefWithAs<
   MenuItemWithDescriptionProps,
   'button'
 >((props, ref) => {
-  const { className, label, value, description, ...rest } = props
+  const { className, value, label, description, ...rest } = props
   return (
     <Menu.Item
       {...rest}
       ref={ref}
-      value={{ label, value }}
+      value={value}
+      label={label}
       className={className}
     >
       <div className="psds-menu__item-description-wrapper">

@@ -13,7 +13,8 @@ export interface MenuItemProps {
   disabled?: boolean
   onClick?: (evt: React.MouseEvent, selectedItem: SelectedItem) => void
   isSelected?: boolean
-  value?: SelectedItem
+  value?: React.ReactText
+  label?: React.ReactText
   onItemBlur?: React.FocusEventHandler
   onItemFocus?: React.FocusEventHandler
   onKeyDown?: React.KeyboardEventHandler
@@ -26,10 +27,8 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     className,
     disabled,
     onClick,
-    value = {
-      value: '',
-      label: ''
-    },
+    value = '',
+    label = '',
     children,
     onKeyDown,
     role: roleFromProps,
@@ -43,8 +42,8 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     useActive
   } = React.useContext(MenuContext)
   const handleClick = (evt: React.MouseEvent | React.KeyboardEvent) => {
-    onMenuClick && onMenuClick(evt as React.MouseEvent, value)
-    onClick && onClick(evt as React.MouseEvent, value)
+    onMenuClick && onMenuClick(evt as React.MouseEvent, { value, label })
+    onClick && onClick(evt as React.MouseEvent, { value, label })
   }
   const handleKeyDown: React.KeyboardEventHandler = evt => {
     if (evt.key === 'Enter') {
@@ -53,7 +52,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     }
     onKeyDown && onKeyDown(evt)
   }
-  const selected = selectedItem?.value === value.value
+  const selected = selectedItem?.value === value
   const listItem = React.useRef<HTMLDivElement | undefined>()
   const { active: hookActive, handleActiveState } = useActive(listItem)
 

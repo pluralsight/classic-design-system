@@ -93,7 +93,7 @@ export const ActiveItem: Story = () => {
   }
   React.useEffect(() => {
     if (ref?.current) {
-      const li = ref.current.querySelectorAll('li')[1]
+      const li = ref.current.querySelectorAll('div')[1]
       li.focus()
     }
   })
@@ -106,7 +106,7 @@ export const ActiveItem: Story = () => {
       ref={ref as RefFor<'div'>}
     >
       <Menu.Item>Not active</Menu.Item>
-      <Menu.Item active value={{ value: 'active', label: 'active' }}>
+      <Menu.Item active value="active" label="active">
         Active
       </Menu.Item>
       <Menu.Item active disabled>
@@ -124,7 +124,7 @@ export const ActiveAndSelectedItem: Story = () => {
   }
   React.useEffect(() => {
     if (ref?.current) {
-      const li = ref.current.querySelectorAll('li')[1]
+      const li = ref.current.querySelectorAll('div')[1]
       li.focus()
     }
   })
@@ -138,7 +138,7 @@ export const ActiveAndSelectedItem: Story = () => {
       ref={ref as RefFor<'div'>}
     >
       <Menu.Item>Not active</Menu.Item>
-      <Menu.Item active value={{ value: 'active', label: 'active' }}>
+      <Menu.Item active value="active" label="active">
         Selected
         <Menu.Check style={{ marginLeft: 'auto' }} />
       </Menu.Item>
@@ -227,9 +227,13 @@ const handleClick = (_e: unknown, value: unknown) => {
 
 export const OnClick: Story = () => (
   <Menu onClick={handleClick}>
-    <Menu.Item value={{ label: 'One item', value: 'one' }}>One item</Menu.Item>
-    <Menu.Item value={{ label: 'Two item', value: 'two' }}>Two item</Menu.Item>
-    <Menu.Item value={{ label: 'Two item', value: 'three' }}>
+    <Menu.Item label="One item" value="one">
+      One item
+    </Menu.Item>
+    <Menu.Item label="Two item" value="two">
+      Two item
+    </Menu.Item>
+    <Menu.Item label="Two item" value="three">
       TTwo item
     </Menu.Item>
   </Menu>
