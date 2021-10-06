@@ -54,7 +54,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
     onKeyDown && onKeyDown(evt)
   }
   const selected = selectedItem?.value === value.value
-  const listItem = React.useRef<HTMLLIElement | undefined>()
+  const listItem = React.useRef<HTMLDivElement | undefined>()
   const { active: hookActive, handleActiveState } = useActive(listItem)
 
   const optionRole = roleFromProps || roleFromContext
@@ -66,7 +66,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
       : {}
 
   return (
-    <li
+    <div
       className={classNames(
         'psds-menu__item',
         disabled && 'psds-menu__item--disabled',
@@ -77,16 +77,16 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
       tabIndex={!disabled ? -1 : undefined}
       onKeyDown={handleKeyDown}
       onClick={handleClick}
-      ref={listItem as RefFor<'li'>}
+      ref={listItem as RefFor<'div'>}
       onBlur={handleActiveState}
       onFocus={handleActiveState}
-      role={optionRole}
       {...listboxProps}
     >
       <Comp
         className="psds-menu__option"
         disabled={disabled}
         ref={ref as RefFor<typeof Comp>}
+        role={optionRole}
         {...rest}
       >
         <div className="psds-menu__option-inner">
@@ -95,7 +95,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
           </ItemContext.Provider>
         </div>
       </Comp>
-    </li>
+    </div>
   )
 })
 

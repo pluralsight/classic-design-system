@@ -232,17 +232,19 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
 
       return <Field.SubLabel>{subLabel}</Field.SubLabel>
     }, [subLabel])
+    const hasSubLabel = Boolean(subLabel)
     return (
       <BelowLeft
         show={
           <div
             className={classNames(
-              'psds-multi-select__wrapper',
-              isOpen && 'psds-multi-select__wrapper--open'
+              'psds-typeahead__wrapper',
+              isOpen && 'psds-typeahead__wrapper--open',
+              hasSubLabel && 'psds-typeahead__wrapper--with-sub-label'
             )}
           >
             <Menu
-              className="psds-multi-select__menu"
+              className={'psds-typeahead__menu'}
               selectedItem={activeItem}
               {...getMenuProps({}, { suppressRefError: true })}
               style={{ width: width || 'auto' }}
@@ -257,7 +259,6 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
                     label: 'No results found',
                     value: 'No results found'
                   }}
-                  role="option"
                 />
               )}
               {inputItems.map((option, index) => (
@@ -308,7 +309,7 @@ Typeahead.sizes = Field.sizes
 export default Typeahead
 
 const CaretSuffix = forwardRefWithAs((props, ref) => (
-  <div {...props} className="psds-multi-select__caret" ref={ref}>
+  <div {...props} className="psds-typeahead__caret" ref={ref}>
     <CaretDownIcon />
   </div>
 ))

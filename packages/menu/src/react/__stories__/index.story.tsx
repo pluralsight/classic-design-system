@@ -13,7 +13,7 @@ export default {
   component: Menu
 } as Meta
 
-const useActive = (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
+const useActive = (ref: React.MutableRefObject<HTMLDivElement | undefined>) => {
   const [active, setActive] = React.useState(false)
   const handleActiveState = React.useCallback(() => {
     ref.current && setActive(document.activeElement === ref.current)
@@ -86,7 +86,7 @@ export const NullItem: Story = () => (
 )
 
 export const ActiveItem: Story = () => {
-  const ref = React.useRef<HTMLUListElement>()
+  const ref = React.useRef<HTMLDivElement>()
   const selectedItem = {
     label: 'Active',
     value: 'active'
@@ -103,7 +103,7 @@ export const ActiveItem: Story = () => {
       optionRole="option"
       aria-label="some label"
       selectedItem={selectedItem}
-      ref={ref as RefFor<'ul'>}
+      ref={ref as RefFor<'div'>}
     >
       <Menu.Item>Not active</Menu.Item>
       <Menu.Item active value={{ value: 'active', label: 'active' }}>
@@ -117,7 +117,7 @@ export const ActiveItem: Story = () => {
 }
 
 export const ActiveAndSelectedItem: Story = () => {
-  const ref = React.useRef<HTMLUListElement>()
+  const ref = React.useRef<HTMLDivElement>()
   const selectedItem = {
     label: 'Active',
     value: 'active'
@@ -135,7 +135,7 @@ export const ActiveAndSelectedItem: Story = () => {
       optionRole="option"
       selectedItem={selectedItem}
       useActive={useActive}
-      ref={ref as RefFor<'ul'>}
+      ref={ref as RefFor<'div'>}
     >
       <Menu.Item>Not active</Menu.Item>
       <Menu.Item active value={{ value: 'active', label: 'active' }}>

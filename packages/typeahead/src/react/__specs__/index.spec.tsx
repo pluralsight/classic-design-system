@@ -59,7 +59,7 @@ describe('TypeaheadField', () => {
   })
 
   // TODO: Re-enable when #1894 merges
-  describe.skip.each(cases)('%s story', (_name, Story) => {
+  describe.each(cases)('%s story', (_name, Story) => {
     it('should pass an basic axe a11y audit', async () => {
       const { container } = render(<Story {...Story.args} />)
       const results = await axe(container)

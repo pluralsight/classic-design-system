@@ -1,17 +1,25 @@
-.psds-multi-select__caret {
+.psds-typeahead__caret {
   align-items: center;
   display: flex;
   cursor: pointer;
 }
-.psds-multi-select__menu {
+
+.psds-typeahead__menu {
   max-height: 400px;
   max-width: 320px;
   min-width: 160px;
   overflow-y: auto;
 }
-.psds-multi-select__wrapper {
+
+.psds-typeahead__wrapper {
   display: none;
 }
-.psds-multi-select__wrapper--open {
+
+.psds-typeahead__wrapper--open {
   display: inline-block;
+}
+
+
+.psds-typeahead__wrapper--with-sub-label {
+  transform: translateY(-28px);
 }
