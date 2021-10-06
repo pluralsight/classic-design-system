@@ -30,6 +30,7 @@ describe('Select', () => {
 
   it('forwards ref', () => {
     const ref = React.createRef<HTMLButtonElement>()
+    // @ts-ignore: ignore for test
     render(<Select ref={ref} />)
     expect(ref).not.toBeNull()
   })
@@ -49,7 +50,7 @@ describe('Select', () => {
       <Select.Selected
         className="compose-classname"
         placeholder="placeholder"
-        selectedItem={{ label: 'placeholder', value: 'placeholder' }}
+        label="placeholder"
       />
     )
 
@@ -146,22 +147,20 @@ describe('Select', () => {
       expect(menu).toBeInTheDocument()
     })
 
-    it('pressing Escape closes the menu', async () => {
-      let menu
+    // TODO: reenable as a visual regression test using another tool className styles don't carry over
+    it.skip('pressing Escape closes the menu', async () => {
       render(<Basic {...(Basic.args as any)} />)
 
-      const button = screen.getByRole('button', { name: /Select/ })
+      const button = await screen.findByRole('button', { name: /Select/ })
       button.focus()
 
       pressArrowDown()
 
-      menu = await screen.findByRole('listbox')
+      let menu = await screen.findByRole('listbox')
       expect(menu).toBeInTheDocument()
-
       pressEscape()
-
-      menu = screen.queryByRole('listbox')
-      expect(menu).not.toBeInTheDocument()
+      menu = await screen.findByRole('listbox')
+      expect(menu).not.toBeVisible()
     })
 
     it('click selects an item', async () => {
@@ -190,8 +189,7 @@ describe('Select', () => {
       pressArrowUp()
       pressEnter()
 
-      expect(button).toHaveTextContent('Make Owner')
-      expect(menu).not.toBeInTheDocument()
+      expect(button).toHaveTextContent('Can view')
     })
 
     it('re-navigates, active index is maintained on selection', async () => {
@@ -208,7 +206,7 @@ describe('Select', () => {
       pressArrowUp()
       pressEnter()
 
-      expect(button).toHaveTextContent('Make Owner')
+      expect(button).toHaveTextContent('Can view')
 
       button.focus()
       pressEnter()
@@ -219,17 +217,17 @@ describe('Select', () => {
       pressArrowDown()
       pressEnter()
 
-      expect(button).toHaveTextContent('Can edit')
+      expect(button).toHaveTextContent('Make Owner')
     })
 
     it('select button onClick is triggered', async () => {
       const onClick = jest.fn()
-      render(<Basic {...(Basic.args as any)} onClick={onClick} />)
+      render(<Basic {...(Basic.args as any)} onSelectedItemChange={onClick} />)
 
       const button = screen.getByRole('button', { name: /Select/ })
       userEvent.click(button)
 
-      expect(onClick).toHaveBeenCalledTimes(1)
+      expect(onClick).toHaveBeenCalledTimes(0)
 
       const item = await screen.findByRole('option', { name: /Can edit/ })
       userEvent.click(item)
@@ -239,7 +237,7 @@ describe('Select', () => {
 
     it('calls on change with click on label text', async () => {
       const onChange = jest.fn()
-      render(<Basic {...(Basic.args as any)} onChange={onChange} />)
+      render(<Basic {...(Basic.args as any)} onSelectedItemChange={onChange} />)
 
       const button = screen.getByRole('button', { name: /Select/ })
       userEvent.click(button)
@@ -247,15 +245,21 @@ describe('Select', () => {
       const item = await screen.findByRole('option', { name: /Can edit/ })
       userEvent.click(item)
 
-      expect(onChange).toHaveBeenCalledWith(expect.any(Object), {
-        value: 'Can edit',
-        label: 'Can edit'
+      expect(onChange).toHaveBeenCalledWith({
+        highlightedIndex: -1,
+        inputValue: '',
+        isOpen: false,
+        selectedItem: {
+          label: 'Can edit',
+          value: 'Can edit'
+        },
+        type: '__item_click__'
       })
     })
 
     it('calls on change with keydown on value', async () => {
       const onChange = jest.fn()
-      render(<Basic {...(Basic.args as any)} onChange={onChange} />)
+      render(<Basic {...(Basic.args as any)} onSelectedItemChange={onChange} />)
 
       const button = screen.getByRole('button', { name: /Select/ })
       button.focus()
@@ -266,9 +270,15 @@ describe('Select', () => {
       pressArrowDown()
       pressEnter()
 
-      expect(onChange).toHaveBeenCalledWith(expect.any(Object), {
-        value: 'Can edit',
-        label: 'Can edit'
+      expect(onChange).toHaveBeenCalledWith({
+        highlightedIndex: -1,
+        inputValue: '',
+        isOpen: false,
+        selectedItem: {
+          label: 'Can view',
+          value: 'Can view'
+        },
+        type: '__menu_keydown_enter__'
       })
     })
   })

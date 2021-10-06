@@ -100,7 +100,6 @@ const CustomMenuItemTemplate: Story<CustomStoryArgs> = args => {
       onClick={args.onClick}
       placeholder={args.placeholder}
       position={args.position}
-      value={selected}
     >
       {items.map(item => (
         <MenuItemWithDescription {...item} key={item.value} />
@@ -138,7 +137,6 @@ export const CustomRenderOption: Story<CustomStoryArgs> = args => {
       placeholder={placeholder}
       position={position}
       renderOption={MenuItemWithDescription as unknown as React.FC}
-      value={selected}
     />
   )
 }
@@ -198,5 +196,5 @@ SelectedPlaceholder.args = { ...defaultSelectedArgs }
 export const SelectedSelected = SelectedTemplate.bind({})
 SelectedSelected.args = {
   ...defaultSelectedArgs,
-  selectedItem: { label: 'selected', value: 'selected' }
+  label: 'selected'
 }

@@ -15,10 +15,10 @@ import '../css/index.css'
 
 const defaultRenderOption = forwardRefWithAs<MenuItemProps, 'button'>(
   (props, ref) => {
-    const { value } = props
+    const { label } = props
     return (
       <Menu.Item {...props} ref={ref}>
-        {value && value.label}
+        {label && label}
         <Menu.Check style={{ marginLeft: 'auto' }} />
       </Menu.Item>
     )
@@ -255,16 +255,14 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
                   key={`menu-option-empty-label`}
                   name="No results found"
                   active={false}
-                  value={{
-                    label: 'No results found',
-                    value: 'No results found'
-                  }}
+                  label="No results found"
+                  value="No results found"
                 />
               )}
               {inputItems.map((option, index) => (
                 <RenderOption
                   key={`menu-option-${index}`}
-                  value={option}
+                  {...option}
                   role="option"
                   active={highlightedIndex === index}
                   {...getItemProps({ item: option, index })}

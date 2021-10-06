@@ -58,7 +58,6 @@ describe('TypeaheadField', () => {
     expect(ref).not.toBeNull()
   })
 
-  // TODO: Re-enable when #1894 merges
   describe.each(cases)('%s story', (_name, Story) => {
     it('should pass an basic axe a11y audit', async () => {
       const { container } = render(<Story {...Story.args} />)
@@ -91,7 +90,7 @@ describe('TypeaheadField', () => {
       expect(menu).toBeInTheDocument()
     })
 
-    // TODO: reenable
+    // TODO: reenable as a visual regression test using another tool className styles don't carry over
     it.skip('should close the menu when input loses focus', async () => {
       render(<Basic {...(Basic.args as any)} />)
       const input = await screen.findByRole('textbox')
@@ -106,7 +105,7 @@ describe('TypeaheadField', () => {
       expect(menu).not.toBeVisible()
     })
 
-    // TODO: reenable
+    // TODO: reenable as a visual regression test using another tool className styles don't carry over
     it.skip('should close the menu when esc pressed', async () => {
       render(<Basic {...(Basic.args as any)} />)
       const input = await screen.findByRole('textbox')

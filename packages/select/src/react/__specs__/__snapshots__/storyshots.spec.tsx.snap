@@ -3,12 +3,14 @@
 exports[`Storyshots Components/Select Basic 1`] = `
 Array [
   <button
+    aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="select-button-4fzzzxjyl"
+    aria-labelledby="downshift-0-label downshift-0-toggle-button"
     className="psds-select__button psds-theme--dark"
-    id="select-button-4fzzzxjyl"
+    id="downshift-0-toggle-button"
     onClick={[Function]}
     onKeyDown={[Function]}
+    type="button"
   >
     <div
       className="psds-select__button-inner"
@@ -40,7 +42,118 @@ Array [
         "display": "none",
       }
     }
-  />,
+  >
+    <div
+      className="psds-select__menu-wrapper"
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      <div
+        aria-labelledby="downshift-0-label"
+        className="psds-menu psds-menu--origin-top-left psds-select__menu"
+        id="downshift-0-menu"
+        onBlur={[Function]}
+        onKeyDown={[Function]}
+        onMouseLeave={[Function]}
+        role="listbox"
+        tabIndex={-1}
+      >
+        <div
+          aria-selected="false"
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            id="downshift-0-item-0"
+            onMouseMove={[Function]}
+            role="option"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              Can view
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          aria-selected="false"
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            id="downshift-0-item-1"
+            onMouseMove={[Function]}
+            role="option"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              Can edit
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          aria-selected="false"
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            id="downshift-0-item-2"
+            onMouseMove={[Function]}
+            role="option"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              Make Owner
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
 ]
 `;
 
@@ -213,12 +326,14 @@ exports[`Storyshots Components/Select Button Small 1`] = `
 exports[`Storyshots Components/Select Custom Menu Item 1`] = `
 Array [
   <button
+    aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="select-button-4fzzzxjyl"
+    aria-labelledby="downshift-1-label downshift-1-toggle-button"
     className="psds-select__button psds-theme--dark"
-    id="select-button-4fzzzxjyl"
+    id="downshift-1-toggle-button"
     onClick={[Function]}
     onKeyDown={[Function]}
+    type="button"
   >
     <div
       className="psds-select__button-inner"
@@ -250,19 +365,183 @@ Array [
         "display": "none",
       }
     }
-  />,
+  >
+    <div
+      className="psds-select__menu-wrapper"
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      <div
+        aria-labelledby="downshift-1-label"
+        className="psds-menu psds-menu--origin-top-left psds-select__menu"
+        id="downshift-1-menu"
+        onBlur={[Function]}
+        onKeyDown={[Function]}
+        onMouseLeave={[Function]}
+        role="listbox"
+        tabIndex={-1}
+      >
+        <div
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            role="menuitem"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              <div
+                className="psds-menu__item-description-wrapper"
+              >
+                <span>
+                  Can view
+                </span>
+                <span
+                  className="psds-menu__item-description"
+                >
+                  View details, content and other members in the channel.
+                </span>
+              </div>
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            role="menuitem"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              <div
+                className="psds-menu__item-description-wrapper"
+              >
+                <span>
+                  Can edit
+                </span>
+                <span
+                  className="psds-menu__item-description"
+                >
+                  Edit details, add or remove content and invite or remove members
+                </span>
+              </div>
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            role="menuitem"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              <div
+                className="psds-menu__item-description-wrapper"
+              >
+                <span>
+                  Make Owner
+                </span>
+                <span
+                  className="psds-menu__item-description"
+                >
+                  Edit details, add or remove content, invite or remove members
+                </span>
+              </div>
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          className="psds-menu__divider"
+        />
+        <div
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            role="menuitem"
+            style={
+              Object {
+                "color": "#D21C09",
+              }
+            }
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              Remove Member
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
 ]
 `;
 
 exports[`Storyshots Components/Select Custom Render Option 1`] = `
 Array [
   <button
+    aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="select-button-4fzzzxjyl"
+    aria-labelledby="downshift-3-label downshift-3-toggle-button"
     className="psds-select__button psds-theme--dark"
-    id="select-button-4fzzzxjyl"
+    id="downshift-3-toggle-button"
     onClick={[Function]}
     onKeyDown={[Function]}
+    type="button"
   >
     <div
       className="psds-select__button-inner"
@@ -294,19 +573,165 @@ Array [
         "display": "none",
       }
     }
-  />,
+  >
+    <div
+      className="psds-select__menu-wrapper"
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      <div
+        aria-labelledby="downshift-3-label"
+        className="psds-menu psds-menu--origin-top-left psds-select__menu"
+        id="downshift-3-menu"
+        onBlur={[Function]}
+        onKeyDown={[Function]}
+        onMouseLeave={[Function]}
+        role="listbox"
+        tabIndex={-1}
+      >
+        <div
+          aria-selected="false"
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            id="downshift-3-item-0"
+            onMouseMove={[Function]}
+            role="option"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              <div
+                className="psds-menu__item-description-wrapper"
+              >
+                <span>
+                  Can view
+                </span>
+                <span
+                  className="psds-menu__item-description"
+                >
+                  View details, content and other members in the channel.
+                </span>
+              </div>
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          aria-selected="false"
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            id="downshift-3-item-1"
+            onMouseMove={[Function]}
+            role="option"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              <div
+                className="psds-menu__item-description-wrapper"
+              >
+                <span>
+                  Can edit
+                </span>
+                <span
+                  className="psds-menu__item-description"
+                >
+                  Edit details, add or remove content and invite or remove members
+                </span>
+              </div>
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          aria-selected="false"
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            id="downshift-3-item-2"
+            onMouseMove={[Function]}
+            role="option"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              <div
+                className="psds-menu__item-description-wrapper"
+              >
+                <span>
+                  Make Owner
+                </span>
+                <span
+                  className="psds-menu__item-description"
+                >
+                  Edit details, add or remove content, invite or remove members
+                </span>
+              </div>
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
 ]
 `;
 
 exports[`Storyshots Components/Select Position Below Left 1`] = `
 Array [
   <button
+    aria-expanded={false}
     aria-haspopup="listbox"
-    aria-labelledby="select-button-4fzzzxjyl"
+    aria-labelledby="downshift-2-label downshift-2-toggle-button"
     className="psds-select__button psds-theme--dark"
-    id="select-button-4fzzzxjyl"
+    id="downshift-2-toggle-button"
     onClick={[Function]}
     onKeyDown={[Function]}
+    type="button"
   >
     <div
       className="psds-select__button-inner"
@@ -338,7 +763,169 @@ Array [
         "display": "none",
       }
     }
-  />,
+  >
+    <div
+      className="psds-select__menu-wrapper"
+      style={
+        Object {
+          "position": "absolute",
+        }
+      }
+    >
+      <div
+        aria-labelledby="downshift-2-label"
+        className="psds-menu psds-menu--origin-top-left psds-select__menu"
+        id="downshift-2-menu"
+        onBlur={[Function]}
+        onKeyDown={[Function]}
+        onMouseLeave={[Function]}
+        role="listbox"
+        tabIndex={-1}
+      >
+        <div
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            role="menuitem"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              <div
+                className="psds-menu__item-description-wrapper"
+              >
+                <span>
+                  Can view
+                </span>
+                <span
+                  className="psds-menu__item-description"
+                >
+                  View details, content and other members in the channel.
+                </span>
+              </div>
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            role="menuitem"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              <div
+                className="psds-menu__item-description-wrapper"
+              >
+                <span>
+                  Can edit
+                </span>
+                <span
+                  className="psds-menu__item-description"
+                >
+                  Edit details, add or remove content and invite or remove members
+                </span>
+              </div>
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            role="menuitem"
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              <div
+                className="psds-menu__item-description-wrapper"
+              >
+                <span>
+                  Make Owner
+                </span>
+                <span
+                  className="psds-menu__item-description"
+                >
+                  Edit details, add or remove content, invite or remove members
+                </span>
+              </div>
+              <div
+                className="psds-menu__item-icon-filler"
+                style={
+                  Object {
+                    "marginLeft": "auto",
+                  }
+                }
+              />
+            </div>
+          </button>
+        </div>
+        <div
+          className="psds-menu__divider"
+        />
+        <div
+          className="psds-menu__item"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          tabIndex={-1}
+        >
+          <button
+            className="psds-menu__option"
+            role="menuitem"
+            style={
+              Object {
+                "color": "#D21C09",
+              }
+            }
+          >
+            <div
+              className="psds-menu__option-inner"
+            >
+              Remove Member
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
 ]
 `;
 
