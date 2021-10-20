@@ -48,8 +48,8 @@ const HalfStarIcon = ({ size }: { size: ValueOf<typeof Icon.sizes> }) => {
 
 interface StarProp
   extends Omit<
-    React.HTMLAttributes<HTMLSpanElement & HTMLButtonElement>,
-    'onClick' | 'onEnter' | 'onLeave'
+  React.HTMLAttributes<HTMLSpanElement & HTMLButtonElement>,
+  'onClick' | 'onEnter' | 'onLeave'
   > {
   active?: boolean
   appearance: ValueOf<typeof APPEARANCES>
@@ -102,7 +102,7 @@ const Star: React.FC<StarProp> & StarStatics = ({
         interactive && 'psds-starrating__star--interactive'
       )}
       {...props}
-      title={label}
+      title={interactive ? label : undefined}
       onBlur={handleLeave}
       onClick={handleClicked}
       onFocus={handleEnter}
