@@ -38,6 +38,7 @@ const StarRating = React.forwardRef<HTMLDivElement, StarRatingProps>(
   ({ starCount = 5, value, onChange, ...props }, ref) => {
     const [hoverIndex, setHoverIndex] = React.useState<null | number>(null)
     const isInteractive = !!onChange
+    const staticLabel = `This is rated ${value || 0}`
 
     const handleInputChanged = (evt: React.ChangeEvent<HTMLInputElement>) => {
       if (!isInteractive) return
@@ -114,7 +115,7 @@ const StarRating = React.forwardRef<HTMLDivElement, StarRatingProps>(
     })()
 
     return (
-      <div {...props} ref={ref}>
+      <div title={isInteractive ? undefined : staticLabel} {...props} ref={ref}>
         {isInteractive && (
           <label>
             <ScreenReaderText>Rate</ScreenReaderText>
@@ -131,7 +132,7 @@ const StarRating = React.forwardRef<HTMLDivElement, StarRatingProps>(
 
         {stars}
 
-        <ScreenReaderText>This is rated {value}</ScreenReaderText>
+        <ScreenReaderText>{staticLabel}</ScreenReaderText>
       </div>
     )
   }
