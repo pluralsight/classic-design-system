@@ -40,16 +40,80 @@ describe('Checkbox', () => {
       expect(screen.getByRole('checkbox')).toHaveProperty('checked', false)
     })
 
+    it('toggles the checked attr', () => {
+      const onCheck = jest.fn()
+
+      const name = 'input-name'
+      const value = 'input-value'
+
+      const { rerender } = render(
+        <Basic
+          {...Basic.args}
+          checked
+          name={name}
+          onCheck={onCheck}
+          value={value}
+        />
+      )
+      expect(screen.getByRole('checkbox')).toHaveProperty('checked', true)
+
+      rerender(
+        <Basic
+          {...Basic.args}
+          checked={false}
+          name={name}
+          onCheck={onCheck}
+          value={value}
+        />
+      )
+      expect(screen.getByRole('checkbox')).toHaveProperty('checked', false)
+    })
+
+    it('toggles the indeterminate attr', () => {
+      const onCheck = jest.fn()
+
+      const name = 'input-name'
+      const value = 'input-value'
+
+      const { rerender } = render(
+        <Basic
+          {...Basic.args}
+          indeterminate
+          name={name}
+          onCheck={onCheck}
+          value={value}
+        />
+      )
+      expect(screen.getByRole('checkbox')).toHaveProperty('indeterminate', true)
+
+      rerender(
+        <Basic
+          {...Basic.args}
+          indeterminate={false}
+          name={name}
+          onCheck={onCheck}
+          value={value}
+        />
+      )
+      expect(screen.getByRole('checkbox')).toHaveProperty(
+        'indeterminate',
+        false
+      )
+    })
+
     it('calls onCheck when clicked', () => {
       const onCheck = jest.fn()
+
+      const name = 'input-name'
+      const value = 'input-value'
 
       render(
         <Basic
           {...Basic.args}
           checked
-          name="input-name"
+          name={name}
           onCheck={onCheck}
-          value="input-value"
+          value={value}
         />
       )
 
@@ -59,8 +123,8 @@ describe('Checkbox', () => {
       expect(onCheck).toHaveBeenCalledWith(
         expect.anything(),
         false,
-        'input-value',
-        'input-name'
+        value,
+        name
       )
     })
   })
@@ -102,6 +166,25 @@ describe('Checkbox', () => {
       fireEvent.click(input)
 
       expect(onCheck).not.toHaveBeenCalled()
+    })
+  })
+
+  describe('ExampleStateDemo story', () => {
+    const { ExampleStateDemo } = stories
+
+    it('should toggle checked prop with input clicked', () => {
+      render(<ExampleStateDemo {...ExampleStateDemo.args} />)
+      const red = screen.getByLabelText('Red') as HTMLInputElement
+
+      expect(red.checked).toBeFalsy()
+
+      fireEvent.click(red)
+
+      expect(red.checked).toBeTruthy()
+
+      fireEvent.click(red)
+
+      expect(red.checked).toBeFalsy()
     })
   })
 })
