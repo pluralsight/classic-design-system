@@ -32,19 +32,19 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Background - Dark 1',
-        var: 'psColorsBackgroundDark1',
+        var: '--ps-colors-background-dark-1',
         js: 'colorsBackgroundDark[1]',
         hex: core.colorsBackgroundDark[1]
       },
       {
         name: 'Background - Dark 2',
-        var: 'psColorsBackgroundDark2',
+        var: '--ps-colors-background-dark-2',
         js: 'colorsBackgroundDark[2]',
         hex: core.colorsBackgroundDark[2]
       },
       {
         name: 'Background - Dark 3',
-        var: 'psColorsBackgroundDark3',
+        var: '--ps-colors-background-dark-3',
         js: 'colorsBackgroundDark[3]',
         hex: core.colorsBackgroundDark[3]
       }
@@ -55,19 +55,19 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Background - Light 1',
-        var: 'psColorsBackgroundLight1',
+        var: '--ps-colors-background-light-1',
         js: 'colorsBackgroundLight[1]',
         hex: core.colorsBackgroundLight[1]
       },
       {
         name: 'Background - Light 2',
-        var: 'psColorsBackgroundLight2',
+        var: '--ps-colors-background-light-2',
         js: 'colorsBackgroundLight[2]',
         hex: core.colorsBackgroundLight[2]
       },
       {
         name: 'Background - Light 3',
-        var: 'psColorsBackgroundLight3',
+        var: '--ps-colors-background-light-3',
         js: 'colorsBackgroundLight[3]',
         hex: core.colorsBackgroundLight[3],
         border: core.colorsBorder.lowOnLight
@@ -79,7 +79,7 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Utility',
-        var: 'psColorsBackgroundUtilityCsv',
+        var: '--ps-colors-background-utility-csv',
         js: 'colorsBackgroundUtilityCsv',
         bg: `rgb(${core.colorsBackgroundUtilityCsv})`,
         hex: 'N/A (138,153,168)'
@@ -91,19 +91,19 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Utility-25',
-        var: 'psColorsBackgroundUtility25',
+        var: '--ps-colors-background-utility-25',
         js: 'colorsBackgroundUtility[25]',
         hex: core.colorsBackgroundUtility[25]
       },
       {
         name: 'Utility-30',
-        var: 'psColorsBackgroundUtility30',
+        var: '--ps-colors-background-utility-30',
         js: 'colorsBackgroundUtility[30]',
         hex: core.colorsBackgroundUtility[30]
       },
       {
         name: 'Utility-40',
-        var: 'psColorsBackgroundUtility40',
+        var: '--ps-colors-background-utility-40',
         js: 'colorsBackgroundUtility[40]',
         hex: core.colorsBackgroundUtility[40]
       }
@@ -115,19 +115,19 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Utility-25',
-        var: 'psColorsBackgroundUtility25',
+        var: '--ps-colors-background-utility-25',
         js: 'colorsBackgroundUtility[25]',
         hex: core.colorsBackgroundUtility[25]
       },
       {
         name: 'Utility-30',
-        var: 'psColorsBackgroundUtility30',
+        var: '--ps-colors-background-utility-30',
         js: 'colorsBackgroundUtility[30]',
         hex: core.colorsBackgroundUtility[30]
       },
       {
         name: 'Utility-40',
-        var: 'psColorsBackgroundUtility40',
+        var: '--ps-colors-background-utility-40',
         js: 'colorsBackgroundUtility[40]',
         hex: core.colorsBackgroundUtility[40]
       }
@@ -137,7 +137,7 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Primary Action - Background',
-        var: 'psColorsPrimaryActionBackground',
+        var: '--ps-colors-primar-action-background',
         js: 'colorsPrimaryAction.background',
         hex: core.colorsPrimaryAction.background
       }
@@ -147,7 +147,7 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Primary Action Text - On Dark',
-        var: 'psColorsPrimaryActionTextDarkTheme',
+        var: '--ps-colors-primar-action-text-dark-theme',
         js: 'colorsPrimaryAction.textDarkTheme',
         hex: core.colorsPrimaryAction.textDarkTheme,
         bg: core.colorsBackgroundDark[1],
@@ -155,7 +155,7 @@ const colors: Record<string, SubCategory> = {
       },
       {
         name: 'Primary Action Text - On Light',
-        var: 'psColorsPrimaryActionTextLightTheme',
+        var: '--ps-colors-primar-action-text-light-theme',
         js: 'colorsPrimaryAction.textLightTheme',
         hex: core.colorsPrimaryAction.textLightTheme,
         border: core.colorsBorder.lowOnLight,
@@ -168,26 +168,26 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Status - Success',
-        var: 'psColorsStatusSuccess',
+        var: '--ps-colors-status-success',
         js: 'colorsStatus.success',
         hex: core.colorsStatus.success
       },
       {
         name: 'Status - Warning',
-        var: 'psColorsStatusWarning',
+        var: '--ps-colors-status-warning',
         js: 'colorsStatus.warning',
         hex: core.colorsStatus.warning,
         fg: core.colorsTextIcon.highOnLight
       },
       {
         name: 'Status - Error',
-        var: 'psColorsStatusError',
+        var: '--ps-colors-status-error',
         js: 'colorsStatus.error',
         hex: core.colorsStatus.error
       },
       {
         name: 'Status - Info',
-        var: 'psColorsStatusInfo',
+        var: '--ps-colors-status-info',
         js: 'colorsStatus.info',
         hex: core.colorsStatus.info
       }
@@ -199,14 +199,14 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Text & Icons - On Dark - High Contrast',
-        var: 'psColorsTextIconHighOnDark',
+        var: '--ps-colors-text-icon-high-on-dark',
         js: 'colorsTextIcon.highOnDark',
         hex: '#FFFFFF, 95% opacity',
         fg: core.colorsTextIcon.highOnDark
       },
       {
         name: 'Text & Icons - On Dark - Low Contrast',
-        var: 'psColorsTextIconLowOnDark',
+        var: '--ps-colors-text-icon-low-on-dark',
         js: 'colorsTextIcon.lowOnDark',
         hex: '#FFFFFF, 65% opacity',
         fg: core.colorsTextIcon.lowOnDark
@@ -220,14 +220,14 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Text & Icons - On Light - High Contrast',
-        var: 'psColorsTextIconHighOnLight',
+        var: '--ps-colors-text-icon-high-on-light',
         js: 'colorsTextIcon.highOnLight',
         hex: '#000000, 95% opacity',
         fg: core.colorsTextIcon.highOnLight
       },
       {
         name: 'Text & Icons - On Light - Low Contrast',
-        var: 'psColorsTextIconLowOnLight',
+        var: '--ps-colors-text-icon-low-on-light',
         js: 'colorsTextIcon.lowOnLight',
         hex: '#000000, 55% opacity',
         fg: core.colorsTextIcon.lowOnLight
@@ -239,7 +239,7 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Border - On Dark - High Contrast',
-        var: 'psColorsBorderHighOnDark',
+        var: '--ps-colors-border-high-on-dark',
         hex: '#FFFFFF, 30% opacity',
         js: 'colorsBorder.highOnDark',
         fg: core.colorsTextIcon.highOnDark,
@@ -247,7 +247,7 @@ const colors: Record<string, SubCategory> = {
       },
       {
         name: 'Border - On Dark - Low Contrast',
-        var: 'psColorsBorderLowOnDark',
+        var: '--ps-colors-border-low-on-dark',
         hex: '#FFFFFF, 15% opacity',
         js: 'colorsBorder.lowOnDark',
         fg: core.colorsTextIcon.lowOnDark,
@@ -261,7 +261,7 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Border - On Light - High Contrast',
-        var: 'psColorsBorderHighOnLight',
+        var: '--ps-colors-border-high-on-light',
         hex: '#000000, 30% opacity',
         js: 'colorsBorder.highOnLight',
         fg: core.colorsTextIcon.highOnLight,
@@ -269,7 +269,7 @@ const colors: Record<string, SubCategory> = {
       },
       {
         name: 'Border - On Light - Low Contrast',
-        var: 'psColorsBorderLowOnLight',
+        var: '--ps-colors-border-low-on-light',
         hex: '#000000, 15% opacity',
         js: 'colorsBorder.lowOnLight',
         fg: core.colorsTextIcon.lowOnLight,
@@ -281,14 +281,14 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Brand Gradient - Skills',
-        var: 'psColorsGradientSkillsBackground',
+        var: '--ps-colors-gradient-skills-background',
         js: 'colorsGradient.skillsBackground',
         hex: `${core.colorsGradient.skillsStop0} to ${core.colorsGradient.skillsStop100}`,
         bg: core.colorsGradient.skillsBackground
       },
       {
         name: 'Brand Gradient - Flow',
-        var: 'psColorsGradientFlowBackground',
+        var: '--ps-colors-gradient-flow-background',
         js: 'colorsGradient.flowBackground',
         hex: `${core.colorsGradient.flowStop0} to ${core.colorsGradient.flowStop100}`,
         bg: core.colorsGradient.flowBackground
@@ -300,56 +300,56 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Code - White',
-        var: 'psColorsCodeWhite',
+        var: '--ps-colors-code-white',
         js: 'colorsCode.white',
         hex: core.colorsCode.white,
         border: core.colorsBorder.lowOnLight
       },
       {
         name: 'Code - Gray',
-        var: 'psColorsCodeGray',
+        var: '--ps-colors-code-gray',
         js: 'colorsCode.gray',
         hex: core.colorsCode.gray
       },
       {
         name: 'Code - Orange',
-        var: 'psColorsCodeOrange',
+        var: '--ps-colors-code-orange',
         js: 'colorsCode.orange',
         hex: core.colorsCode.orange
       },
       {
         name: 'Code - Yellow',
-        var: 'psColorsCodeYellow',
+        var: '--ps-colors-code-yellow',
         js: 'colorsCode.yellow',
         hex: core.colorsCode.yellow
       },
       {
         name: 'Code - Green',
-        var: 'psColorsCodeGreen',
+        var: '--ps-colors-code-green',
         js: 'colorsCode.green',
         hex: core.colorsCode.green
       },
       {
         name: 'Code - Turquoise',
-        var: 'psColorsCodeTurquoise',
+        var: '--ps-colors-code-turquoise',
         js: 'colorsCode.turquoise',
         hex: core.colorsCode.turquoise
       },
       {
         name: 'Code - Blue',
-        var: 'psColorsCodeBlue',
+        var: '--ps-colors-code-blue',
         js: 'colorsCode.blue',
         hex: core.colorsCode.blue
       },
       {
         name: 'Code - Purple',
-        var: 'psColorsCodePurple',
+        var: '--ps-colors-code-purple',
         js: 'colorsCode.purple',
         hex: core.colorsCode.purple
       },
       {
         name: 'Code - Sand',
-        var: 'psColorsCodeSand',
+        var: '--ps-colors-code-sand',
         js: 'colorsCode.sand',
         hex: core.colorsCode.sand
       }
@@ -359,13 +359,13 @@ const colors: Record<string, SubCategory> = {
     colors: [
       {
         name: 'Black',
-        var: 'psColorsBlack',
+        var: '--ps-colors-black',
         js: 'colorsBlack',
         hex: core.colorsBlack
       },
       {
         name: 'White',
-        var: 'psColorsWhite',
+        var: '--ps-colors-white',
         js: 'colorsWhite',
         hex: core.colorsWhite,
         fg: core.colorsTextIcon.highOnLight,
@@ -528,7 +528,7 @@ function formatAllColorSubCategory({
       .filter(key => Number.isInteger(key))
       .map(key => ({
         name: name + ' ' + key,
-        var: 'psColors' + name + key,
+        var: '--ps-colors-' + name.toLowerCase() + '-' + key,
         hex: color[key],
         js: `colors${name}[${key}]`,
         fg:
