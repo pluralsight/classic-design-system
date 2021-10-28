@@ -3,6 +3,40 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [7.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@6.0.5...@pluralsight/ps-design-system-normalize@7.0.0) (2021-10-28)
+
+
+### core
+
+* remove deprecated vars ([#1998](https://github.com/pluralsight/design-system/issues/1998)) ([c1b80e5](https://github.com/pluralsight/design-system/commit/c1b80e56d72878972330139df3103ede6eefd5e7))
+
+
+### BREAKING CHANGES
+
+* if this breaks your feature see #1998 PR for including old core vars
+
+* refactor(docs): replace deprecated core type var references
+
+* refactor(datepicker): replace deprecated core type var references
+
+* refactor(errors): replace deprecated core type var references
+
+* refactor(menu): replace deprecated core type var references
+
+* refactor(normalize): replace deprecated core type var references
+
+* test(core): update snapshots
+
+* fix(avatar): update font variable
+
+* refactor(core): prettier mod
+
+Co-authored-by: Edward Irby <edward-irby@pluralsight.com>
+
+
+
+
+
 ## [6.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-normalize@6.0.4...@pluralsight/ps-design-system-normalize@6.0.5) (2021-09-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-normalize

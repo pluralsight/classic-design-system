@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@6.0.6...@pluralsight/ps-design-system-navitem@6.0.7) (2021-10-28)
+
+
+### Bug Fixes
+
+* **position:** fix scroll jank caused by the position  component ([#2002](https://github.com/pluralsight/design-system/issues/2002)) ([2598b6c](https://github.com/pluralsight/design-system/commit/2598b6c3fb3278717a4d3e883c3831a6440ff9e4))
+
+
+
+
+
 ## [6.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navitem@6.0.5...@pluralsight/ps-design-system-navitem@6.0.6) (2021-09-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navitem
