@@ -3140,6 +3140,11 @@
     "@pluralsight/ps-design-system-icon" "^24.0.1"
     "@pluralsight/ps-design-system-util" "^9.3.0"
 
+"@pluralsight/ps-design-system-core@^9.0.0", "@pluralsight/ps-design-system-core@^9.0.1":
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-core/-/ps-design-system-core-9.0.3.tgz#8995388c4f732a9821b5298cc0464d6f0b39df05"
+  integrity sha512-1xEfnkV8JLZYE1g5wYA+uxz31tIBzKhIQrflEJ1cWKvdBdTnnW2bQaWwHBhTfUeF6fijnG9CRgOhM9LoWsdfqQ==
+
 "@pluralsight/ps-design-system-icon@24.0.1":
   version "24.0.1"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-icon/-/ps-design-system-icon-24.0.1.tgz#c47b6440fcadc41374081008662693bfc05b542d"
