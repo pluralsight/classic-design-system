@@ -154,7 +154,7 @@
     "jest-environment-jsdom-sixteen": "^1.0.3",
     "jest-prop-type-error": "^1.1.0",
     "jest-watch-typeahead": "^0.6.1",
-    "lerna": "^3.22.0",
+    "lerna": "^4.0.0",
     "link-parent-bin": "^1.0.2",
     "lint-staged": "^10.5.3",
     "madge": "^4.0.1",
