@@ -19,7 +19,7 @@ const defaultRenderOption = forwardRefWithAs<MenuItemProps, 'button'>(
     return (
       <Menu.Item {...props} ref={ref}>
         {label && label}
-        <Menu.Check style={{ marginLeft: 'auto' }} />
+        {props.active && <Menu.Check style={{ marginLeft: 'auto' }} />}
       </Menu.Item>
     )
   }
@@ -35,6 +35,7 @@ export type TypeaheadFilterFunction = (
   label: React.ReactText
   value: React.ReactText
 }[]
+
 interface TypeaheadFieldProps
   extends Omit<
     React.ComponentProps<typeof Field>,
@@ -73,13 +74,14 @@ const defaultFilterFunc = (
     value: React.ReactText
   }[],
   inputValue?: string
-) =>
-  options.filter(({ label }: { label: React.ReactText }) =>
+) => {
+  return options.filter(({ label }: { label: React.ReactText }) =>
     `${label}`
       .toLowerCase()
       // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
       .includes((inputValue || '').toLowerCase())
   )
+}
 
 const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
   (props, forwardedRef) => {
@@ -103,7 +105,9 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
     const [searchTerm, setSearchTerm] = React.useState<
       React.ReactText | undefined
     >(value || '')
-    const [inputItems, setInputItems] = React.useState(options)
+    const [inputItems, setInputItems] = React.useState(() => options)
+    const [width, setWidth] = React.useState<number>()
+
     const {
       closeMenu,
       getToggleButtonProps,
@@ -119,7 +123,7 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
     } = useCombobox({
       defaultHighlightedIndex: 0,
       items: inputItems,
-      stateReducer(state, actionAndChanges) {
+      stateReducer(_, actionAndChanges) {
         const { type, changes } = actionAndChanges
         // this prevents the menu from being closed when the user selects an item with 'Enter' or mouse
         switch (type) {
@@ -156,10 +160,12 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
         setInputItems(filterFunction(options, inputValue))
       }
     })
+
     React.useEffect(() => {
       onChange && onChange(null, activeItem || undefined)
     }, [activeItem, onChange])
-    const { value: inputValue, ...inputProps } = getInputProps({
+
+    const inputProps = getInputProps({
       ref: forwardedRef,
       onKeyDown: (evt: React.KeyboardEvent<HTMLInputElement>) => {
         if (!canUseDOM()) return
@@ -196,15 +202,24 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
       },
       [isOpen, inputProps.id]
     )
+
     const RenderOption = React.useMemo(() => renderOption, [renderOption])
     const RenderInput = React.useMemo(() => renderInputTag, [renderInputTag])
     const fieldRef = React.useRef<HTMLDivElement>(null)
     const { ref: comboRef, ...comboBoxProps } = getComboboxProps()
+
+    const SubLabel = React.useMemo(() => {
+      if (React.isValidElement(subLabel)) return subLabel
+      return <Field.SubLabel>{subLabel}</Field.SubLabel>
+    }, [subLabel])
+
+    const hasSubLabel = Boolean(subLabel)
+
     React.useImperativeHandle(
       comboRef,
       () => fieldRef.current as unknown as HTMLDivElement
     )
-    const [width, setWidth] = React.useState<number>()
+
     React.useEffect(() => {
       const field = fieldRef.current
       if (field) {
@@ -227,12 +242,6 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
       )
     }, [label, ariaLabel, getLabelProps])
 
-    const SubLabel = React.useMemo(() => {
-      if (React.isValidElement(subLabel)) return subLabel
-
-      return <Field.SubLabel>{subLabel}</Field.SubLabel>
-    }, [subLabel])
-    const hasSubLabel = Boolean(subLabel)
     return (
       <BelowLeft
         show={
@@ -251,20 +260,19 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
             >
               {inputItems.length < 1 && (
                 <RenderOption
+                  active={false}
                   id={`menu-option-empty-label`}
                   key={`menu-option-empty-label`}
-                  name="No results found"
-                  active={false}
                   label="No results found"
-                  value="No results found"
+                  name="No results found"
                 />
               )}
               {inputItems.map((option, index) => (
                 <RenderOption
-                  key={`menu-option-${index}`}
                   {...option}
-                  role="option"
                   active={highlightedIndex === index}
+                  key={`menu-option-${index}`}
+                  role="option"
                   {...getItemProps({ item: option, index })}
                 />
               ))}
