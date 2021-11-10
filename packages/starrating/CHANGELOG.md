@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@11.0.5...@pluralsight/ps-design-system-starrating@11.0.6) (2021-10-28)
+
+
+### Bug Fixes
+
+* **starrating:** fixes non-interactive hover copy ([5c4932c](https://github.com/pluralsight/design-system/commit/5c4932c77ac244d0897851ec8a7ede76943428cf))
+* **starrating:** update snapshots ([a8d69c9](https://github.com/pluralsight/design-system/commit/a8d69c941ab2656bd9b8450f0d358425f84fd779))
+
+
+
+
+
 ## [11.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@11.0.4...@pluralsight/ps-design-system-starrating@11.0.5) (2021-09-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-starrating

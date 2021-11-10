@@ -102,7 +102,7 @@ const Star: React.FC<StarProp> & StarStatics = ({
         interactive && 'psds-starrating__star--interactive'
       )}
       {...props}
-      title={label}
+      title={interactive ? label : undefined}
       onBlur={handleLeave}
       onClick={handleClicked}
       onFocus={handleEnter}

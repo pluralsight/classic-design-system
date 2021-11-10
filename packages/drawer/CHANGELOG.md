@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@13.0.0...@pluralsight/ps-design-system-drawer@13.0.1) (2021-10-28)
+
+
+### Bug Fixes
+
+* **drawer:** border-top on row on light-theme removed ([#2003](https://github.com/pluralsight/design-system/issues/2003)) ([348aa76](https://github.com/pluralsight/design-system/commit/348aa760329268317432e0e8647441c1e30faac4))
+
+
+
+
+
 # [13.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@12.0.5...@pluralsight/ps-design-system-drawer@13.0.0) (2021-09-15)
 
 

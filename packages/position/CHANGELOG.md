@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@9.0.0...@pluralsight/ps-design-system-position@9.0.1) (2021-10-28)
+
+
+### Bug Fixes
+
+* **position:** fix scroll jank caused by the position  component ([#2002](https://github.com/pluralsight/design-system/issues/2002)) ([2598b6c](https://github.com/pluralsight/design-system/commit/2598b6c3fb3278717a4d3e883c3831a6440ff9e4))
+
+
+
+
+
 # [9.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-position@8.2.4...@pluralsight/ps-design-system-position@9.0.0) (2021-09-15)
 
 

@@ -178,8 +178,7 @@ exports[`Storyshots Components/StarRating Basic 1`] = `
   <span
     className="psds-starrating__screen-reader-text"
   >
-    This is rated 
-    2.5
+    This is rated 2.5
   </span>
 </div>
 `;
@@ -347,8 +346,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      0
+      This is rated 0
     </span>
   </div>
   <div
@@ -528,8 +526,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      0.5
+      This is rated 0.5
     </span>
   </div>
   <div
@@ -685,8 +682,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      1
+      This is rated 1
     </span>
   </div>
   <div
@@ -866,8 +862,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      1.5
+      This is rated 1.5
     </span>
   </div>
   <div
@@ -1023,8 +1018,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      2
+      This is rated 2
     </span>
   </div>
   <div
@@ -1204,8 +1198,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      2.5
+      This is rated 2.5
     </span>
   </div>
   <div
@@ -1361,8 +1354,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      3
+      This is rated 3
     </span>
   </div>
   <div
@@ -1542,8 +1534,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      3.5
+      This is rated 3.5
     </span>
   </div>
   <div
@@ -1699,8 +1690,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      4
+      This is rated 4
     </span>
   </div>
   <div
@@ -1880,8 +1870,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      4.5
+      This is rated 4.5
     </span>
   </div>
   <div
@@ -2037,8 +2026,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      5
+      This is rated 5
     </span>
   </div>
   <div
@@ -2194,7 +2182,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
+      This is rated 0
     </span>
   </div>
   <div
@@ -2350,7 +2338,7 @@ exports[`Storyshots Components/StarRating Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
+      This is rated 0
     </span>
   </div>
 </div>
@@ -2368,6 +2356,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
 >
   <div
     onClick={[Function]}
+    title="This is rated 0"
   >
     <span
       appearance="full"
@@ -2379,7 +2368,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2405,7 +2393,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2431,7 +2418,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2457,7 +2443,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2483,7 +2468,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2502,12 +2486,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      0
+      This is rated 0
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 0.5"
   >
     <span
       appearance="half"
@@ -2519,7 +2503,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2569,7 +2552,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2595,7 +2577,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2621,7 +2602,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2647,7 +2627,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2666,12 +2645,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      0.5
+      This is rated 0.5
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 1"
   >
     <span
       appearance="full"
@@ -2683,7 +2662,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2709,7 +2687,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2735,7 +2712,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2761,7 +2737,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2787,7 +2762,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2806,12 +2780,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      1
+      This is rated 1
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 1.5"
   >
     <span
       appearance="full"
@@ -2823,7 +2797,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2849,7 +2822,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2899,7 +2871,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2925,7 +2896,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2951,7 +2921,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -2970,12 +2939,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      1.5
+      This is rated 1.5
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 2"
   >
     <span
       appearance="full"
@@ -2987,7 +2956,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3013,7 +2981,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3039,7 +3006,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3065,7 +3031,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3091,7 +3056,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3110,12 +3074,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      2
+      This is rated 2
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 2.5"
   >
     <span
       appearance="full"
@@ -3127,7 +3091,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3153,7 +3116,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3179,7 +3141,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3229,7 +3190,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3255,7 +3215,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3274,12 +3233,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      2.5
+      This is rated 2.5
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 3"
   >
     <span
       appearance="full"
@@ -3291,7 +3250,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3317,7 +3275,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3343,7 +3300,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3369,7 +3325,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3395,7 +3350,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3414,12 +3368,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      3
+      This is rated 3
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 3.5"
   >
     <span
       appearance="full"
@@ -3431,7 +3385,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3457,7 +3410,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3483,7 +3435,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3509,7 +3460,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3559,7 +3509,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3578,12 +3527,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      3.5
+      This is rated 3.5
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 4"
   >
     <span
       appearance="full"
@@ -3595,7 +3544,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3621,7 +3569,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3647,7 +3594,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3673,7 +3619,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3699,7 +3644,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3718,12 +3662,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      4
+      This is rated 4
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 4.5"
   >
     <span
       appearance="full"
@@ -3735,7 +3679,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3761,7 +3704,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3787,7 +3729,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3813,7 +3754,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3839,7 +3779,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3882,12 +3821,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      4.5
+      This is rated 4.5
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 5"
   >
     <span
       appearance="full"
@@ -3899,7 +3838,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3925,7 +3863,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3951,7 +3888,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -3977,7 +3913,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4003,7 +3938,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4022,12 +3956,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      5
+      This is rated 5
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 0"
   >
     <span
       appearance="full"
@@ -4039,7 +3973,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4065,7 +3998,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4091,7 +4023,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4117,7 +4048,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4143,7 +4073,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4162,11 +4091,12 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
+      This is rated 0
     </span>
   </div>
   <div
     onClick={[Function]}
+    title="This is rated 0"
   >
     <span
       appearance="full"
@@ -4178,7 +4108,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 1 Star"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4204,7 +4133,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 2 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4230,7 +4158,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 3 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4256,7 +4183,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 4 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4282,7 +4208,6 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
       onFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
-      title="Rate 5 Stars"
     >
       <div
         className="psds-icon psds-icon--size-small"
@@ -4301,7 +4226,7 @@ exports[`Storyshots Components/StarRating Non Interactive 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
+      This is rated 0
     </span>
   </div>
 </div>
@@ -4494,8 +4419,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      1.7
+      This is rated 1.7
     </span>
   </div>
   <div
@@ -4651,8 +4575,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      2
+      This is rated 2
     </span>
   </div>
   <div
@@ -4808,8 +4731,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      2.2
+      This is rated 2.2
     </span>
   </div>
   <div
@@ -4989,8 +4911,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      2.4
+      This is rated 2.4
     </span>
   </div>
   <div
@@ -5170,8 +5091,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      2.6
+      This is rated 2.6
     </span>
   </div>
   <div
@@ -5327,8 +5247,7 @@ exports[`Storyshots Components/StarRating Round To Half Integer 1`] = `
     <span
       className="psds-starrating__screen-reader-text"
     >
-      This is rated 
-      2.78
+      This is rated 2.78
     </span>
   </div>
 </div>
