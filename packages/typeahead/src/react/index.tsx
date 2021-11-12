@@ -1,7 +1,7 @@
 import { useCombobox } from 'downshift'
 import React from 'react'
 
-import { CaretDownIcon } from '@pluralsight/ps-design-system-icon'
+import { CaretDownIcon, CheckIcon } from '@pluralsight/ps-design-system-icon'
 import Field from '@pluralsight/ps-design-system-field'
 import { BelowLeft } from '@pluralsight/ps-design-system-position'
 import {
@@ -13,23 +13,35 @@ import Menu, { MenuItemProps } from '@pluralsight/ps-design-system-menu'
 
 import '../css/index.css'
 
-const defaultRenderOption = forwardRefWithAs<MenuItemProps, 'button'>(
+interface RenderOptionProps extends MenuItemProps {
+  selected?: boolean
+}
+
+const defaultRenderOption = forwardRefWithAs<RenderOptionProps, 'button'>(
   (props, ref) => {
     const { label } = props
     return (
       <Menu.Item {...props} ref={ref}>
         {label && label}
-        {props.active && <Menu.Check style={{ marginLeft: 'auto' }} />}
+        {props.selected && (
+          <CheckIcon
+            color={CheckIcon.colors.blue}
+            style={{ marginLeft: 'auto' }}
+          />
+        )}
+        {/* <Menu.Check selected={props.selected} style={{ marginLeft: 'auto' }} /> */}
       </Menu.Item>
     )
   }
 )
 
+interface OptionItem {
+  label: React.ReactText
+  value: React.ReactText
+}
+
 export type TypeaheadFilterFunction = (
-  options: {
-    label: React.ReactText
-    value: React.ReactText
-  }[],
+  options: OptionItem[],
   inputValue?: string | undefined
 ) => {
   label: React.ReactText
@@ -49,10 +61,7 @@ interface TypeaheadFieldProps
       value?: React.ReactText
     }
   ) => void
-  options: {
-    label: React.ReactText
-    value: React.ReactText
-  }[]
+  options: OptionItem[]
   placeholder?: string
   renderInputTag?: React.ComponentProps<typeof Field.Input>['renderTag']
   subLabel?: string | React.ReactNode
@@ -68,18 +77,9 @@ interface TypeaheadFieldStatics {
   sizes: typeof Field.sizes
 }
 
-const defaultFilterFunc = (
-  options: {
-    label: React.ReactText
-    value: React.ReactText
-  }[],
-  inputValue?: string
-) => {
+const defaultFilterFunc = (options: OptionItem[], inputValue = '') => {
   return options.filter(({ label }: { label: React.ReactText }) =>
-    `${label}`
-      .toLowerCase()
-      // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
-      .includes((inputValue || '').toLowerCase())
+    `${label}`.toLowerCase().includes(inputValue.toLowerCase())
   )
 }
 
@@ -161,10 +161,6 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
       }
     })
 
-    React.useEffect(() => {
-      onChange && onChange(null, activeItem || undefined)
-    }, [activeItem, onChange])
-
     const inputProps = getInputProps({
       ref: forwardedRef,
       onKeyDown: (evt: React.KeyboardEvent<HTMLInputElement>) => {
@@ -187,45 +183,11 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
       }
     })
 
-    React.useLayoutEffect(
-      function keepInputInView() {
-        if (!isOpen) return
-
-        const el = document.getElementById(inputProps.id)
-        if (!el?.scrollIntoView) return
-
-        el.scrollIntoView({
-          behavior: 'smooth',
-          block: 'nearest',
-          inline: 'nearest'
-        })
-      },
-      [isOpen, inputProps.id]
-    )
-
     const RenderOption = React.useMemo(() => renderOption, [renderOption])
     const RenderInput = React.useMemo(() => renderInputTag, [renderInputTag])
     const fieldRef = React.useRef<HTMLDivElement>(null)
     const { ref: comboRef, ...comboBoxProps } = getComboboxProps()
 
-    const SubLabel = React.useMemo(() => {
-      if (React.isValidElement(subLabel)) return subLabel
-      return <Field.SubLabel>{subLabel}</Field.SubLabel>
-    }, [subLabel])
-
-    const hasSubLabel = Boolean(subLabel)
-
-    React.useImperativeHandle(
-      comboRef,
-      () => fieldRef.current as unknown as HTMLDivElement
-    )
-
-    React.useEffect(() => {
-      const field = fieldRef.current
-      if (field) {
-        setWidth(field.getBoundingClientRect().width)
-      }
-    }, [fieldRef])
     const Label = React.useMemo(() => {
       const _ariaLabel = !label ? ariaLabel : undefined
       if (React.isValidElement(label)) {
@@ -241,6 +203,45 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
         </Field.Label>
       )
     }, [label, ariaLabel, getLabelProps])
+
+    const SubLabel = React.useMemo(() => {
+      if (React.isValidElement(subLabel)) return subLabel
+      return <Field.SubLabel>{subLabel}</Field.SubLabel>
+    }, [subLabel])
+
+    const hasSubLabel = Boolean(subLabel)
+
+    React.useImperativeHandle(
+      comboRef,
+      () => fieldRef.current as unknown as HTMLDivElement
+    )
+
+    React.useEffect(() => {
+      onChange && onChange(null, activeItem || undefined)
+    }, [activeItem, onChange])
+
+    React.useEffect(() => {
+      const field = fieldRef.current
+      if (field) {
+        setWidth(field.getBoundingClientRect().width)
+      }
+    }, [fieldRef])
+
+    React.useLayoutEffect(
+      function keepInputInView() {
+        if (!isOpen) return
+
+        const el = document.getElementById(inputProps.id)
+        if (!el?.scrollIntoView) return
+
+        el.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'nearest'
+        })
+      },
+      [isOpen, inputProps.id]
+    )
 
     return (
       <BelowLeft
@@ -273,6 +274,7 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
                   active={highlightedIndex === index}
                   key={`menu-option-${index}`}
                   role="option"
+                  selected={activeItem?.label === option.label}
                   {...getItemProps({ item: option, index })}
                 />
               ))}

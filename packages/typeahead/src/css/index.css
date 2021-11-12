@@ -13,12 +13,12 @@
 
 .psds-typeahead__wrapper {
   display: none;
+  transform: translateY(-10px);
 }
 
 .psds-typeahead__wrapper--open {
   display: inline-block;
 }
-
 
 .psds-typeahead__wrapper--with-sub-label {
   transform: translateY(-28px);

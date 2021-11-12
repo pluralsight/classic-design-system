@@ -7,8 +7,10 @@ import { ItemContext } from './context'
 
 interface CheckProps extends React.HTMLAttributes<HTMLDivElement> {}
 
-export const Check: React.FC<CheckProps> = ({ className, ...rest }) => {
+export const Check: React.FC<CheckProps> = props => {
+  const { className, ...rest } = props
   const { selected } = React.useContext(ItemContext)
+
   return selected ? (
     // @ts-ignore: ignore icon type
     <CheckIcon

@@ -1,11 +1,10 @@
 import { Story } from '@storybook/react/types-6-0'
-import { screen, findByText, getByText } from '@testing-library/dom'
+import { screen, findByText } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import { periodicElements } from '../__fixtures__/options'
 import TypeAhead from '../index'
 import * as stories from '../__stories__/index.story'
 
