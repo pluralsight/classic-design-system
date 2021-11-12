@@ -51,7 +51,7 @@ Array [
         }
       }
     >
-      <ul
+      <div
         aria-labelledby="downshift-0-label"
         className="psds-menu psds-menu--origin-top-left psds-select__menu"
         id="downshift-0-menu"
@@ -61,130 +61,97 @@ Array [
         role="listbox"
         tabIndex={-1}
       >
-        <li
+        <div
           aria-selected="false"
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="option"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
             id="downshift-0-item-0"
-            label="Can view"
             onMouseMove={[Function]}
+            role="option"
           >
             <div
               className="psds-menu__option-inner"
             >
               Can view
               <div
-                className="psds-icon psds-icon--size-medium psds-menu__item-icon"
+                className="psds-menu__item-icon-filler"
                 style={
                   Object {
                     "marginLeft": "auto",
                   }
                 }
-              >
-                <svg
-                  aria-label="check icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
-                  />
-                </svg>
-              </div>
+              />
             </div>
           </button>
-        </li>
-        <li
+        </div>
+        <div
           aria-selected="false"
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="option"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
             id="downshift-0-item-1"
-            label="Can edit"
             onMouseMove={[Function]}
+            role="option"
           >
             <div
               className="psds-menu__option-inner"
             >
               Can edit
               <div
-                className="psds-icon psds-icon--size-medium psds-menu__item-icon"
+                className="psds-menu__item-icon-filler"
                 style={
                   Object {
                     "marginLeft": "auto",
                   }
                 }
-              >
-                <svg
-                  aria-label="check icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
-                  />
-                </svg>
-              </div>
+              />
             </div>
           </button>
-        </li>
-        <li
+        </div>
+        <div
           aria-selected="false"
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="option"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
             id="downshift-0-item-2"
-            label="Make Owner"
             onMouseMove={[Function]}
+            role="option"
           >
             <div
               className="psds-menu__option-inner"
             >
               Make Owner
               <div
-                className="psds-icon psds-icon--size-medium psds-menu__item-icon"
+                className="psds-menu__item-icon-filler"
                 style={
                   Object {
                     "marginLeft": "auto",
                   }
                 }
-              >
-                <svg
-                  aria-label="check icon"
-                  role="img"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
-                  />
-                </svg>
-              </div>
+              />
             </div>
           </button>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>,
 ]
@@ -407,7 +374,7 @@ Array [
         }
       }
     >
-      <ul
+      <div
         aria-labelledby="downshift-1-label"
         className="psds-menu psds-menu--origin-top-left psds-select__menu"
         id="downshift-1-menu"
@@ -417,17 +384,17 @@ Array [
         role="listbox"
         tabIndex={-1}
       >
-        <li
+        <div
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="menuitem"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
+            role="menuitem"
           >
             <div
               className="psds-menu__option-inner"
@@ -454,18 +421,18 @@ Array [
               />
             </div>
           </button>
-        </li>
-        <li
+        </div>
+        <div
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="menuitem"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
+            role="menuitem"
           >
             <div
               className="psds-menu__option-inner"
@@ -492,18 +459,18 @@ Array [
               />
             </div>
           </button>
-        </li>
-        <li
+        </div>
+        <div
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="menuitem"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
+            role="menuitem"
           >
             <div
               className="psds-menu__option-inner"
@@ -530,21 +497,21 @@ Array [
               />
             </div>
           </button>
-        </li>
+        </div>
         <div
           className="psds-menu__divider"
         />
-        <li
+        <div
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="menuitem"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
+            role="menuitem"
             style={
               Object {
                 "color": "#D21C09",
@@ -557,8 +524,8 @@ Array [
               Remove Member
             </div>
           </button>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>,
 ]
@@ -615,7 +582,7 @@ Array [
         }
       }
     >
-      <ul
+      <div
         aria-labelledby="downshift-3-label"
         className="psds-menu psds-menu--origin-top-left psds-select__menu"
         id="downshift-3-menu"
@@ -625,20 +592,20 @@ Array [
         role="listbox"
         tabIndex={-1}
       >
-        <li
+        <div
           aria-selected="false"
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="option"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
             id="downshift-3-item-0"
             onMouseMove={[Function]}
+            role="option"
           >
             <div
               className="psds-menu__option-inner"
@@ -665,21 +632,21 @@ Array [
               />
             </div>
           </button>
-        </li>
-        <li
+        </div>
+        <div
           aria-selected="false"
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="option"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
             id="downshift-3-item-1"
             onMouseMove={[Function]}
+            role="option"
           >
             <div
               className="psds-menu__option-inner"
@@ -706,21 +673,21 @@ Array [
               />
             </div>
           </button>
-        </li>
-        <li
+        </div>
+        <div
           aria-selected="false"
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="option"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
             id="downshift-3-item-2"
             onMouseMove={[Function]}
+            role="option"
           >
             <div
               className="psds-menu__option-inner"
@@ -747,8 +714,8 @@ Array [
               />
             </div>
           </button>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>,
 ]
@@ -805,7 +772,7 @@ Array [
         }
       }
     >
-      <ul
+      <div
         aria-labelledby="downshift-2-label"
         className="psds-menu psds-menu--origin-top-left psds-select__menu"
         id="downshift-2-menu"
@@ -815,17 +782,17 @@ Array [
         role="listbox"
         tabIndex={-1}
       >
-        <li
+        <div
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="menuitem"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
+            role="menuitem"
           >
             <div
               className="psds-menu__option-inner"
@@ -852,18 +819,18 @@ Array [
               />
             </div>
           </button>
-        </li>
-        <li
+        </div>
+        <div
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="menuitem"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
+            role="menuitem"
           >
             <div
               className="psds-menu__option-inner"
@@ -890,18 +857,18 @@ Array [
               />
             </div>
           </button>
-        </li>
-        <li
+        </div>
+        <div
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="menuitem"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
+            role="menuitem"
           >
             <div
               className="psds-menu__option-inner"
@@ -928,21 +895,21 @@ Array [
               />
             </div>
           </button>
-        </li>
+        </div>
         <div
           className="psds-menu__divider"
         />
-        <li
+        <div
           className="psds-menu__item"
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
-          role="menuitem"
           tabIndex={-1}
         >
           <button
             className="psds-menu__option"
+            role="menuitem"
             style={
               Object {
                 "color": "#D21C09",
@@ -955,8 +922,8 @@ Array [
               Remove Member
             </div>
           </button>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   </div>,
 ]
