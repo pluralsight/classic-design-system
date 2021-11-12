@@ -17,11 +17,11 @@ interface RenderOptionProps extends MenuItemProps {
   selected?: boolean
 }
 
-const defaultRenderOption = forwardRefWithAs<RenderOptionProps, 'button'>(
+const defaultRenderOption = forwardRefWithAs<RenderOptionProps, 'div'>(
   (props, ref) => {
     const { label } = props
     return (
-      <Menu.Item {...props} ref={ref}>
+      <Menu.Item {...props} as="div" ref={ref}>
         {label && label}
         {props.selected && (
           <CheckIcon
@@ -29,7 +29,6 @@ const defaultRenderOption = forwardRefWithAs<RenderOptionProps, 'button'>(
             style={{ marginLeft: 'auto' }}
           />
         )}
-        {/* <Menu.Check selected={props.selected} style={{ marginLeft: 'auto' }} /> */}
       </Menu.Item>
     )
   }
@@ -265,7 +264,6 @@ const Typeahead = React.forwardRef<HTMLInputElement, TypeaheadFieldProps>(
                   id={`menu-option-empty-label`}
                   key={`menu-option-empty-label`}
                   label="No results found"
-                  name="No results found"
                 />
               )}
               {inputItems.map((option, index) => (

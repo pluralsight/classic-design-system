@@ -57,11 +57,10 @@ describe('TypeaheadField', () => {
     expect(ref).not.toBeNull()
   })
 
-  describe.each(cases)('%s story', (_name, Story) => {
+  describe.each(cases)('Typeahead %s story', (_name, Story) => {
     it('should pass an basic axe a11y audit', async () => {
       const { container } = render(<Story {...Story.args} />)
       const results = await axe(container)
-
       expect(results).toHaveNoViolations()
     })
   })
