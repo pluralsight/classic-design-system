@@ -12,14 +12,14 @@ interface MenuContextValue {
   originContext?: ValueOf<typeof origins>
   selectedItem?: SelectedItem
   optionRole: string
-  useActive: (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
+  useActive: (ref: React.MutableRefObject<HTMLDivElement | undefined>) => {
     active: boolean
     handleActiveState: (event: React.FocusEvent<Element>) => void
   }
 }
 
 export const defaultUseActive = (
-  ref: React.MutableRefObject<HTMLLIElement | undefined>
+  ref: React.MutableRefObject<HTMLDivElement | undefined>
 ) => ({
   active: false,
   handleActiveState: (event: React.FocusEvent<Element>) => {}

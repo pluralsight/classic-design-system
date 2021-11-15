@@ -13,7 +13,7 @@ export default {
   component: Menu
 } as Meta
 
-const useActive = (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
+const useActive = (ref: React.MutableRefObject<HTMLDivElement | undefined>) => {
   const [active, setActive] = React.useState(false)
   const handleActiveState = React.useCallback(() => {
     ref.current && setActive(document.activeElement === ref.current)
@@ -86,14 +86,14 @@ export const NullItem: Story = () => (
 )
 
 export const ActiveItem: Story = () => {
-  const ref = React.useRef<HTMLUListElement>()
+  const ref = React.useRef<HTMLDivElement>()
   const selectedItem = {
     label: 'Active',
     value: 'active'
   }
   React.useEffect(() => {
     if (ref?.current) {
-      const li = ref.current.querySelectorAll('li')[1]
+      const li = ref.current.querySelectorAll('div')[1]
       li.focus()
     }
   })
@@ -103,10 +103,10 @@ export const ActiveItem: Story = () => {
       optionRole="option"
       aria-label="some label"
       selectedItem={selectedItem}
-      ref={ref as RefFor<'ul'>}
+      ref={ref as RefFor<'div'>}
     >
       <Menu.Item>Not active</Menu.Item>
-      <Menu.Item active value={{ value: 'active', label: 'active' }}>
+      <Menu.Item active value="active" label="active">
         Active
       </Menu.Item>
       <Menu.Item active disabled>
@@ -117,14 +117,14 @@ export const ActiveItem: Story = () => {
 }
 
 export const ActiveAndSelectedItem: Story = () => {
-  const ref = React.useRef<HTMLUListElement>()
+  const ref = React.useRef<HTMLDivElement>()
   const selectedItem = {
     label: 'Active',
     value: 'active'
   }
   React.useEffect(() => {
     if (ref?.current) {
-      const li = ref.current.querySelectorAll('li')[1]
+      const li = ref.current.querySelectorAll('div')[1]
       li.focus()
     }
   })
@@ -135,10 +135,10 @@ export const ActiveAndSelectedItem: Story = () => {
       optionRole="option"
       selectedItem={selectedItem}
       useActive={useActive}
-      ref={ref as RefFor<'ul'>}
+      ref={ref as RefFor<'div'>}
     >
       <Menu.Item>Not active</Menu.Item>
-      <Menu.Item active value={{ value: 'active', label: 'active' }}>
+      <Menu.Item active value="active" label="active">
         Selected
         <Menu.Check style={{ marginLeft: 'auto' }} />
       </Menu.Item>
@@ -227,9 +227,13 @@ const handleClick = (_e: unknown, value: unknown) => {
 
 export const OnClick: Story = () => (
   <Menu onClick={handleClick}>
-    <Menu.Item value={{ label: 'One item', value: 'one' }}>One item</Menu.Item>
-    <Menu.Item value={{ label: 'Two item', value: 'two' }}>Two item</Menu.Item>
-    <Menu.Item value={{ label: 'Two item', value: 'three' }}>
+    <Menu.Item label="One item" value="one">
+      One item
+    </Menu.Item>
+    <Menu.Item label="Two item" value="two">
+      Two item
+    </Menu.Item>
+    <Menu.Item label="Two item" value="three">
       TTwo item
     </Menu.Item>
   </Menu>

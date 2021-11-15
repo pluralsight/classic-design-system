@@ -33,7 +33,8 @@
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^10.0.0",
     "@pluralsight/ps-design-system-menu": "^5.0.0",
-    "@pluralsight/ps-design-system-util": "^10.0.1"
+    "@pluralsight/ps-design-system-util": "^10.0.1",
+    "downshift": "^6.1.2"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^6.0.0",

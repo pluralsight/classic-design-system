@@ -12,39 +12,49 @@
   border: 1px solid var(--ps-colors-border-high-on-light);
   padding: 0 var(--ps-layout-spacing-small) 0 var(--ps-layout-spacing-medium);
 }
+
 .psds-select__button:focus {
   border-radius: 3px;
   border: 3px solid var(--ps-colors-status-info);
 }
+
 .psds-select__button:disabled {
   cursor: not-allowed;
   opacity: 50%;
 }
+
 .psds-select__button--error {
   border-radius: 3px;
   border: 3px solid var(--ps-colors-status-error);
 }
+
 .psds-select__button--error:focus {
   border-color: var(--ps-colors-status-error);
 }
+
 .psds-select__button--small {
   height: 32px;
   padding: 0 var(--ps-layout-spacing-xsmall);
 }
+
 .psds-select__button.psds-theme--light {
   background: var(--ps-colors-background-light-3);
   color: var(--ps-colors-text-icon-high-on-light);
 }
+
 .psds-select__button.psds-theme--dark {
   background: var(--ps-colors-background-utility-25);
   color: var(--ps-colors-text-icon-high-on-dark);
 }
+
 .psds-select__button--is-open.psds-theme--light {
   background: var(--ps-colors-background-light-2);
 }
+
 .psds-select__button--is-open.psds-theme--dark {
   background: var(--ps-colors-background-utility-40);
 }
+
 .psds-select__button-inner {
   display: inline-flex;
   align-items: center;
@@ -55,6 +65,7 @@
   line-height: var(--ps-type-line-height-standard);
   font-weight: var(--ps-type-font-weight-default);
 }
+
 .psds-select__error {
   position: absolute;
   right: 0;
@@ -65,29 +76,44 @@
   color: var(--ps-colors-status-error);
   margin-left: var(--ps-layout-spacing-xsmall);
 }
+
 .psds-select__selected {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
 .psds-select__placeholder.psds-theme--light {
   color: var(--ps-colors-text-icon-low-on-light);
 }
+
 .psds-select__placeholder.psds-theme--dark {
   color: var(--ps-colors-text-icon-low-on-dark);
 }
+
 .psds-select__icon {
   margin-left: var(--ps-layout-spacing-xsmall);
   display: flex;
   align-items: center;
 }
+
 .psds-select__icon.psds-theme--light {
   color: var(--ps-colors-text-icon-low-on-light);
 }
+
 .psds-select__icon.psds-theme--dark {
   color: var(--ps-colors-text-icon-low-on-dark);
 }
+
 .psds-select__menu {
   z-index: var(--ps-layers-global-dropdown);
+}
+
+.psds-select__menu-wrapper {
+  display: none;
+}
+
+.psds-select__menu-wrapper--open {
+  display: inline-block;
 }

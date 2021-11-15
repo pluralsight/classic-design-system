@@ -10,7 +10,7 @@ import * as stories from '../__stories__/index.story'
 
 describe('Menu', () => {
   it('forwards ref', () => {
-    const refToForward = React.createRef<HTMLUListElement>()
+    const refToForward = React.createRef<HTMLDivElement>()
 
     render(
       <Menu ref={refToForward}>
@@ -70,18 +70,15 @@ describe('Menu', () => {
 
     render(
       <Menu onClick={handleClick}>
-        <Menu.Item value={{ value: 'one', label: 'One item' }}>
+        <Menu.Item value="one" label="One item">
           One item
         </Menu.Item>
 
-        <Menu.Item
-          value={{ value: 'two', label: 'Two item' }}
-          data-testid="undertest"
-        >
+        <Menu.Item value="two" label="Two item" data-testid="undertest">
           Two item
         </Menu.Item>
 
-        <Menu.Item value={{ value: 'three', label: 'Three item' }}></Menu.Item>
+        <Menu.Item value="three" label="Three item"></Menu.Item>
       </Menu>
     )
 
@@ -99,18 +96,15 @@ describe('Menu', () => {
 
     render(
       <Menu onClick={handleClick}>
-        <Menu.Item value={{ value: 'one', label: 'One item' }}>
+        <Menu.Item value="one" label="One item">
           One item
         </Menu.Item>
 
-        <Menu.Item
-          value={{ value: 'one', label: 'Two item' }}
-          data-testid="undertest"
-        >
+        <Menu.Item value="one" label="Two item" data-testid="undertest">
           Two item
         </Menu.Item>
 
-        <Menu.Item value={{ value: 'one', label: 'Three item' }}>
+        <Menu.Item value="one" label="Three item">
           Three item
         </Menu.Item>
       </Menu>
@@ -136,7 +130,7 @@ describe('Menu', () => {
       )
       const el = screen.queryByRole('menu')
       // @ts-ignore: testing
-      expect(el.tagName.toLowerCase()).toEqual('ul')
+      expect(el.tagName.toLowerCase()).toEqual('div')
       expect(ref.current).not.toBeNull()
     })
 
@@ -151,7 +145,6 @@ describe('Menu', () => {
         </Menu>
       )
       const el = screen.getByRole('menuitem')
-        .firstElementChild as HTMLAnchorElement
 
       expect(el.tagName.toLowerCase()).toEqual('a')
       expect(ref.current).not.toBeNull()
@@ -168,7 +161,6 @@ describe('Menu', () => {
         </Menu>
       )
       const el = screen.getByRole('menuitem')
-        .firstElementChild as HTMLButtonElement
 
       expect(el.getAttribute('disabled')).toEqual('')
       expect(ref.current).not.toBeNull()
@@ -184,7 +176,6 @@ describe('Menu', () => {
         </Menu>
       )
       const el = screen.getByRole('menuitem')
-        .firstElementChild as HTMLAnchorElement
 
       expect(el.getAttribute('disabled')).toEqual('')
       expect(ref.current).not.toBeNull()
@@ -200,7 +191,6 @@ describe('Menu', () => {
         </Menu>
       )
       const el = screen.getByRole('menuitem')
-        .firstElementChild as HTMLAnchorElement
 
       expect(el.tagName.toLowerCase()).toEqual('a')
       expect(ref.current).not.toBeNull()

@@ -29,13 +29,13 @@ interface MenuStatics {
 }
 
 interface MenuProps
-  extends Omit<React.HTMLAttributes<HTMLUListElement>, 'onClick'> {
+  extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onClick'> {
   selectedItem?: {
     value: React.ReactText
     label: React.ReactText
   }
   optionRole?: string
-  useActive?: (ref: React.MutableRefObject<HTMLLIElement | undefined>) => {
+  useActive?: (ref: React.MutableRefObject<HTMLDivElement | undefined>) => {
     active: boolean
     handleActiveState: (event: React.FocusEvent<Element>) => void
   }
@@ -44,13 +44,13 @@ interface MenuProps
 }
 type MenuComponent = RefForwardingComponent<
   MenuProps,
-  HTMLUListElement,
+  HTMLDivElement,
   MenuStatics
 >
 
 if (canUseDOM()) polyfillFocusWithin(document)
 
-const Menu = React.forwardRef<HTMLUListElement, MenuProps>(
+const Menu = React.forwardRef<HTMLDivElement, MenuProps>(
   (
     {
       className,
@@ -66,7 +66,7 @@ const Menu = React.forwardRef<HTMLUListElement, MenuProps>(
     ref
   ) => {
     return (
-      <ul
+      <div
         {...rest}
         className={classNames(
           'psds-menu',
@@ -86,7 +86,7 @@ const Menu = React.forwardRef<HTMLUListElement, MenuProps>(
         >
           {children}
         </MenuContext.Provider>
-      </ul>
+      </div>
     )
   }
 ) as MenuComponent

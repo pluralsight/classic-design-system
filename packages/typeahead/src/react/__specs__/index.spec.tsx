@@ -1,11 +1,10 @@
 import { Story } from '@storybook/react/types-6-0'
-import { screen, findByText, getByText } from '@testing-library/dom'
+import { screen, findByText } from '@testing-library/dom'
 import userEvent from '@testing-library/user-event'
 import { render } from '@testing-library/react'
 import { axe } from 'jest-axe'
 import React from 'react'
 
-import { periodicElements } from '../__fixtures__/options'
 import TypeAhead from '../index'
 import * as stories from '../__stories__/index.story'
 
@@ -58,12 +57,10 @@ describe('TypeaheadField', () => {
     expect(ref).not.toBeNull()
   })
 
-  // TODO: Re-enable when #1894 merges
-  describe.skip.each(cases)('%s story', (_name, Story) => {
+  describe.each(cases)('Typeahead %s story', (_name, Story) => {
     it('should pass an basic axe a11y audit', async () => {
       const { container } = render(<Story {...Story.args} />)
       const results = await axe(container)
-
       expect(results).toHaveNoViolations()
     })
   })
@@ -91,7 +88,7 @@ describe('TypeaheadField', () => {
       expect(menu).toBeInTheDocument()
     })
 
-    // TODO: reenable
+    // TODO: reenable as a visual regression test using another tool className styles don't carry over
     it.skip('should close the menu when input loses focus', async () => {
       render(<Basic {...(Basic.args as any)} />)
       const input = await screen.findByRole('textbox')
@@ -106,7 +103,7 @@ describe('TypeaheadField', () => {
       expect(menu).not.toBeVisible()
     })
 
-    // TODO: reenable
+    // TODO: reenable as a visual regression test using another tool className styles don't carry over
     it.skip('should close the menu when esc pressed', async () => {
       render(<Basic {...(Basic.args as any)} />)
       const input = await screen.findByRole('textbox')

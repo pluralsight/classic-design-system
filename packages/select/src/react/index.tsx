@@ -1,41 +1,40 @@
 import * as PositionComponents from '@pluralsight/ps-design-system-position'
 import {
+  classNames,
   ValueOf,
   forwardRefWithAs,
   forwardRefWithStatics
 } from '@pluralsight/ps-design-system-util'
-import Menu from '@pluralsight/ps-design-system-menu'
+import Menu, { MenuItemProps } from '@pluralsight/ps-design-system-menu'
 import React from 'react'
 
 import { Button } from './button'
 import { Selected } from './selected'
-import { useListbox, UseListboxProps } from './useListbox'
+import { useSelect } from 'downshift'
 import * as vars from '../vars/index'
 
 import '../css/index.css'
 
-interface DefaultRenderOptionProps {
-  value: React.ReactText
-  label: React.ReactText
-}
+const defaultRenderOption = forwardRefWithAs<MenuItemProps, 'button'>(
+  (props, ref) => {
+    const { label } = props
+    return (
+      <Menu.Item {...props} ref={ref}>
+        {label && label}
+        <Menu.Check style={{ marginLeft: 'auto' }} />
+      </Menu.Item>
+    )
+  }
+)
 
-const defaultRenderOption = forwardRefWithAs<
-  DefaultRenderOptionProps,
-  'button'
->((props, ref) => {
-  const { value, label } = props
-  return (
-    <Menu.Item value={{ value, label }} ref={ref}>
-      {label}
-      <Menu.Check />
-    </Menu.Item>
-  )
-})
-
-interface SelectProps extends UseListboxProps {
+interface SelectProps
+  extends Omit<React.HTMLAttributes<HTMLButtonElement>, 'placeholder'> {
   options?: Array<{ value: React.ReactText; label: React.ReactText }>
   position?: ValueOf<typeof vars.positions>
   renderOption?: React.FC
+  initialSelectedItem?: { value: React.ReactText; label: React.ReactText }
+  placeholder?: string
+  onSelectedItemChange?: (changes: Record<string, any>) => void
 }
 
 const Select = forwardRefWithStatics<
@@ -48,30 +47,53 @@ const Select = forwardRefWithStatics<
     position = 'belowLeft',
     renderOption = defaultRenderOption,
     children,
+    initialSelectedItem,
+    onSelectedItemChange,
+    placeholder = '',
     ...rest
   } = props
-  const { buttonProps, selectedProps, menuProps, isOpen } = useListbox(
-    rest,
-    ref
-  )
 
   const RenderOption = React.useMemo(() => renderOption, [renderOption])
+  const {
+    isOpen,
+    selectedItem,
+    getToggleButtonProps,
+    getLabelProps, // To-DO: refactor to use field component
+    getMenuProps,
+    highlightedIndex,
+    getItemProps
+  } = useSelect({ items: options, initialSelectedItem, onSelectedItemChange })
   return (
     <PositionComponents.Position
       position={PositionComponents[position]}
-      when={isOpen}
       show={
-        <Menu
-          origin={Menu.origins.topLeft}
-          {...menuProps}
-          className={'psds-select__menu'}
+        <div
+          className={classNames(
+            'psds-select__menu-wrapper',
+            isOpen && 'psds-select__menu-wrapper--open'
+          )}
         >
-          {children || options.map(i => <RenderOption key={i.value} {...i} />)}
-        </Menu>
+          <Menu
+            origin={Menu.origins.topLeft}
+            selectedItem={selectedItem}
+            className={'psds-select__menu'}
+            {...getMenuProps({}, { suppressRefError: true })}
+          >
+            {children ||
+              options.map((item, index) => (
+                <RenderOption
+                  {...item}
+                  key={item.value}
+                  active={highlightedIndex === index}
+                  {...getItemProps({ item, index })}
+                />
+              ))}
+          </Menu>
+        </div>
       }
     >
-      <Button {...buttonProps}>
-        <Selected {...selectedProps} />
+      <Button type="button" {...rest} {...getToggleButtonProps({ ref })}>
+        <Selected {...selectedItem} placeholder={placeholder} />
       </Button>
     </PositionComponents.Position>
   )
@@ -83,10 +105,6 @@ interface SelectStatics {
   positions: typeof vars.positions
   sizes: typeof vars.sizes
 }
-
-export { useListbox } from './useListbox'
-export type { UseListboxProps } from './useListbox'
-export { useMenuRef } from './menuKeyEvents'
 
 Select.Button = Button
 Select.Selected = Selected

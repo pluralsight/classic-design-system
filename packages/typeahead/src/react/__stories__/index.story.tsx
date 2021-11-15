@@ -116,6 +116,7 @@ export const Autofocus: Story = () => {
   return (
     <Typeahead
       ref={ref}
+      aria-label="label"
       onChange={(
         evt: React.ChangeEvent<HTMLInputElement> | null,
         selectedItem?: {
