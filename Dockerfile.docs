@@ -1,4 +1,4 @@
-FROM node:17-alpine3.13 as build
+FROM node:17.0.1-alpine as build
 
 ENV NODE_ENV=production
 
@@ -20,7 +20,7 @@ WORKDIR /usr/src/app/docs
 RUN yarn install --production=false --pure-lockfile --non-interactive --network-timeout 100000
 RUN yarn build
 
-FROM node:17-alpine3.13 as app
+FROM node:17.0.1-alpine as app
 
 ARG NEW_RELIC_APP_NAME=DesignSystemDocs::Production
 ENV NEW_RELIC_APP_NAME $NEW_RELIC_APP_NAME
