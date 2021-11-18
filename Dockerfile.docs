@@ -3,7 +3,7 @@ FROM node:17.0.1-alpine as build
 ENV NODE_ENV=production
 
 ## Install build toolchain, install node deps and compile native add-ons
-RUN apk add --no-cache python make g++
+RUN apk --no-cache --virtual build-dependencies add python3 make g++
 
 RUN mkdir -p /usr/src/app
 RUN mkdir -p /usr/src/app/packages
