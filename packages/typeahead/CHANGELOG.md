@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.1.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@11.1.4...@pluralsight/ps-design-system-typeahead@11.1.5) (2021-11-18)
+
+
+### Bug Fixes
+
+* **select:** update menu item api and comments on skipped tests ([d43b459](https://github.com/pluralsight/design-system/commit/d43b45983ad61c0877e0c404e8c3d7f973d2af69))
+* **typeahead:** fix nested interactive a11y bug ([8328384](https://github.com/pluralsight/design-system/commit/832838477bcb1634f0fbfecc36768ced73bc3a81))
+* **typeahead:** only show check when selected ([8074cfb](https://github.com/pluralsight/design-system/commit/8074cfb6d2b1ac9a070a9386ff77689cf2afc508))
+
+
+
+
+
 ## [11.1.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-typeahead@11.1.3...@pluralsight/ps-design-system-typeahead@11.1.4) (2021-10-28)
 
 

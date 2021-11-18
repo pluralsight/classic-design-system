@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@4.0.6...@pluralsight/ps-design-system-select@4.0.7) (2021-11-18)
+
+
+### Bug Fixes
+
+* **select:** update menu item api and comments on skipped tests ([d43b459](https://github.com/pluralsight/design-system/commit/d43b45983ad61c0877e0c404e8c3d7f973d2af69))
+
+
+
+
+
 ## [4.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-select@4.0.5...@pluralsight/ps-design-system-select@4.0.6) (2021-10-28)
 
 

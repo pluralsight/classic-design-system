@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-menu@5.0.0...@pluralsight/ps-design-system-menu@6.0.0) (2021-11-18)
+
+
+### Bug Fixes
+
+* **menu:** menu item interface modified ([ebf8600](https://github.com/pluralsight/design-system/commit/ebf860063cc9b2b9939d6388a9617f6efa5e4e9a))
+* **typeahead:** fix nested interactive a11y bug ([8328384](https://github.com/pluralsight/design-system/commit/832838477bcb1634f0fbfecc36768ced73bc3a81))
+* **typeahead:** only show check when selected ([8074cfb](https://github.com/pluralsight/design-system/commit/8074cfb6d2b1ac9a070a9386ff77689cf2afc508))
+
+
+### BREAKING CHANGES
+
+* **menu:** value prop is now spliut into value and label props
+
+
+
+
+
 # [5.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-menu@4.0.5...@pluralsight/ps-design-system-menu@5.0.0) (2021-10-28)
 
 

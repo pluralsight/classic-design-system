@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.35.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.34.0...@pluralsight/ps-design-system-docs@0.35.0) (2021-11-18)
+
+
+### Bug Fixes
+
+* **menu:** menu item interface modified ([ebf8600](https://github.com/pluralsight/design-system/commit/ebf860063cc9b2b9939d6388a9617f6efa5e4e9a))
+
+
+### BREAKING CHANGES
+
+* **menu:** value prop is now spliut into value and label props
+
+
+
+
+
 # [0.34.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.33.0...@pluralsight/ps-design-system-docs@0.34.0) (2021-10-28)
 
 
