@@ -1,0 +1,32 @@
+on: [push]
+
+jobs:
+  lint-js:
+    runs-on: ubuntu-latest
+    name: 💅 Check for JS errors
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: rm -rf examples && rm -rf testbed-a11y
+      - run: yarn install
+      - run: yarn lint:ci
+
+  lint-deps:
+    runs-on: ubuntu-latest
+    name: 🧐 Check for circular deps errors
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: rm -rf examples && rm -rf testbed-a11y
+      - run: yarn install
+      - run: yarn deps:check:circular
+
+  lint-danger:
+    runs-on: ubuntu-latest
+    name: ⚡️ Check for Danger errors
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: rm -rf examples && rm -rf testbed-a11y
+      - run: yarn install
+      - run: yarn danger:ci

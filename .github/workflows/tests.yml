@@ -1,0 +1,14 @@
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+    name: 🧪 Run unit tests
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: yarn install
+      - run: yarn test:ci
