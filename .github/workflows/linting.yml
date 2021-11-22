@@ -21,12 +21,16 @@ jobs:
       - run: yarn install
       - run: yarn deps:check:circular
 
-  lint-danger:
-    runs-on: ubuntu-latest
-    name: ⚡️ Check for Danger errors
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - run: rm -rf examples && rm -rf testbed-a11y
-      - run: yarn install
-      - run: yarn danger:ci
+  # TODO: Uncomment when have secret
+
+  # lint-danger:
+  #   runs-on: ubuntu-latest
+  #   name: ⚡️ Check for Danger errors
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-node@v2
+  #       env:
+  #         GITHUB_TOKEN: ${{secrets.GITHUB_DANGER_TOKEN}}
+  #     - run: rm -rf examples && rm -rf testbed-a11y
+  #     - run: yarn install
+  #     - run: yarn danger:ci
