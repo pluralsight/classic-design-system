@@ -21,6 +21,9 @@ export interface RadioButtonProps
   value: React.ReactText
 }
 
+/* eslint-disable-next-line */
+const noop = () => {}
+
 const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
   (
     { className, disabled: disabledButton, value, label, ...props },
@@ -94,10 +97,10 @@ const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
           {...props}
           checked={checked}
           onClick={disabled ? undefined : handleClick}
+          onChange={noop}
           onFocus={handleFocus}
           onBlur={handleBlur}
           type="radio"
-          readOnly
           name={name}
           ref={ref}
           value={value}
