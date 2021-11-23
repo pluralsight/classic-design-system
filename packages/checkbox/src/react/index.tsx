@@ -30,6 +30,9 @@ interface CheckboxProps
   value: string | number
 }
 
+/* eslint-disable-next-line */
+const noop = () => {}
+
 const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   (props, forwardedRef) => {
     const { checked, disabled, indeterminate, name, value, onCheck } = props
@@ -101,7 +104,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
             ref={ref}
             type="checkbox"
             checked={checked}
-            readOnly
+            onChange={noop}
             className="psds-screenreader-only psds-checkbox__input"
             {...omit(props, [
               'className',
