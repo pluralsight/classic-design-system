@@ -741,7 +741,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               >
                 <input
                   className="psds-screenreader-only psds-checkbox__input"
-                  readOnly={true}
+                  onChange={[Function]}
                   type="checkbox"
                 />
                 <div
@@ -819,7 +819,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={false}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -869,7 +869,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={true}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -932,7 +932,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={false}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -982,7 +982,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={false}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -1032,7 +1032,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={true}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -1095,7 +1095,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={false}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -1145,7 +1145,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={false}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -1195,7 +1195,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={true}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -1258,7 +1258,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={false}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -1308,7 +1308,7 @@ exports[`Storyshots Components/Table Row Selection 1`] = `
               <input
                 checked={false}
                 className="psds-screenreader-only psds-checkbox__input"
-                readOnly={true}
+                onChange={[Function]}
                 type="checkbox"
               />
               <div
@@ -2718,7 +2718,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
               >
                 <input
                   className="psds-screenreader-only psds-checkbox__input"
-                  readOnly={true}
+                  onChange={[Function]}
                   type="checkbox"
                 />
                 <div
@@ -2793,7 +2793,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -2857,7 +2857,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -2921,7 +2921,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -2985,7 +2985,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -3049,7 +3049,7 @@ exports[`Storyshots Components/Table/responsive Horizontal Scroll 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -3150,7 +3150,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -3222,7 +3222,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -3285,7 +3285,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -3348,7 +3348,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -3411,7 +3411,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div
@@ -3474,7 +3474,7 @@ exports[`Storyshots Components/Table/responsive Sticky Row Header 1`] = `
                 >
                   <input
                     className="psds-screenreader-only psds-checkbox__input"
-                    readOnly={true}
+                    onChange={[Function]}
                     type="checkbox"
                   />
                   <div

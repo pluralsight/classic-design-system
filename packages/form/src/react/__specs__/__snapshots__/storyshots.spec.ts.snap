@@ -696,7 +696,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             <input
               checked={true}
               className="psds-screenreader-only psds-checkbox__input"
-              readOnly={true}
+              onChange={[Function]}
               style={
                 Object {
                   "maxWidth": "none",
@@ -778,9 +778,9 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 className="psds-radio-button__input"
                 name="sample"
                 onBlur={[Function]}
+                onChange={[Function]}
                 onClick={[Function]}
                 onFocus={[Function]}
-                readOnly={true}
                 type="radio"
                 value="full"
               />
@@ -809,9 +809,9 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 className="psds-radio-button__input"
                 name="sample"
                 onBlur={[Function]}
+                onChange={[Function]}
                 onClick={[Function]}
                 onFocus={[Function]}
-                readOnly={true}
                 type="radio"
                 value="part"
               />
