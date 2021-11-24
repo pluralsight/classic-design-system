@@ -1,0 +1,23 @@
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  packages-build:
+    runs-on: ubuntu-latest
+    name: 🚀 Packages can successfully build
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: yarn install
+      - run: yarn build
+
+  docs-build:
+    runs-on: ubuntu-latest
+    name: 🚀 Docs can successfully build
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: yarn install
+      - run: yarn build:docs
