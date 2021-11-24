@@ -16,9 +16,11 @@ jobs:
   docs-build:
     runs-on: ubuntu-latest
     name: 🚀 Docs can successfully build
+    defaults:
+      run:
+        working-directory: docs
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - run: yarn install
       - run: yarn build:gatsby
-        working-directory: docs
