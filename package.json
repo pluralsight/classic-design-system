@@ -29,7 +29,6 @@
     "build": "lerna run build --ignore @pluralsight/ps-design-system-docs",
     "build:docs": "cd docs && yarn build:gatsby",
     "clean": "del '{,!(node_modules)/}**/dist'",
-    "danger:ci": "danger ci --failOnErrors",
     "deps:check:circular": "madge --exclude '^dist.*' --circular packages",
     "docs": "cd docs/ && yarn start:dev",
     "generate": "plop",

@@ -24,11 +24,9 @@ jobs:
   lint-danger:
     runs-on: ubuntu-latest
     name: ⚡️ Check for Danger errors
-    env:
-      GITHUB_TOKEN: ${{secrets.DANGER_GITHUB_API_TOKEN}}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
       - uses: danger/danger-js@10.7.1
-      - run: yarn install
-      - run: yarn danger:ci
+        env:
+          GITHUB_TOKEN: ${{secrets.DANGER_GITHUB_API_TOKEN}}
