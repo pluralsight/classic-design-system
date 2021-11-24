@@ -6,7 +6,7 @@ import {
   omit,
   isFunction
 } from '@pluralsight/ps-design-system-util'
-import React from 'react'
+import React, { SyntheticEvent } from 'react'
 
 import '../css/index.css'
 
@@ -19,6 +19,7 @@ interface CheckboxProps
   indeterminate?: boolean
   label: React.ReactNode
   name?: string
+  onChange?: (evt: SyntheticEvent) => void
   onCheck?: (
     evt:
       | React.KeyboardEvent<HTMLLabelElement>
@@ -29,9 +30,6 @@ interface CheckboxProps
   ) => void
   value: string | number
 }
-
-/* eslint-disable-next-line */
-const noop = () => {}
 
 const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   (props, forwardedRef) => {
@@ -104,7 +102,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
             ref={ref}
             type="checkbox"
             checked={checked}
-            onChange={noop}
+            onChange={props.onChange}
             className="psds-screenreader-only psds-checkbox__input"
             {...omit(props, [
               'className',

@@ -1,7 +1,7 @@
 import Halo from '@pluralsight/ps-design-system-halo'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
 import { combineFns, classNames } from '@pluralsight/ps-design-system-util'
-import React from 'react'
+import React, { SyntheticEvent } from 'react'
 
 import { RadioContext } from './context'
 import '../css/index.css'
@@ -13,6 +13,7 @@ export interface RadioButtonProps
   disabled?: boolean
   label: React.ReactNode
   onBlur?: (evt: React.FocusEvent<HTMLInputElement>) => void
+  onChange?: (evt: SyntheticEvent) => void
   onClick?: (
     evt: React.MouseEvent<HTMLInputElement>,
     val?: React.ReactText
@@ -20,9 +21,6 @@ export interface RadioButtonProps
   onFocus?: (evt: React.FocusEvent<HTMLInputElement>) => void
   value: React.ReactText
 }
-
-/* eslint-disable-next-line */
-const noop = () => {}
 
 const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
   (
@@ -96,8 +94,8 @@ const Button = React.forwardRef<HTMLInputElement, RadioButtonProps>(
         <input
           {...props}
           checked={checked}
+          onChange={props.onChange}
           onClick={disabled ? undefined : handleClick}
-          onChange={noop}
           onFocus={handleFocus}
           onBlur={handleBlur}
           type="radio"

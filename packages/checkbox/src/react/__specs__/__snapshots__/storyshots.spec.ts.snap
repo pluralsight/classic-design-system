@@ -19,7 +19,6 @@ exports[`Storyshots Components/Checkbox Basic 1`] = `
       <input
         className="psds-screenreader-only psds-checkbox__input"
         name="colorRed"
-        onChange={[Function]}
         type="checkbox"
         value="red"
       />
@@ -56,7 +55,6 @@ exports[`Storyshots Components/Checkbox Checked 1`] = `
         checked={true}
         className="psds-screenreader-only psds-checkbox__input"
         name="colorRed"
-        onChange={[Function]}
         type="checkbox"
         value="red"
       />
@@ -106,7 +104,6 @@ exports[`Storyshots Components/Checkbox Checked Error 1`] = `
         checked={true}
         className="psds-screenreader-only psds-checkbox__input"
         name="colorRed"
-        onChange={[Function]}
         type="checkbox"
         value="red"
       />
@@ -156,7 +153,6 @@ exports[`Storyshots Components/Checkbox Checked Indeterminate 1`] = `
         checked={true}
         className="psds-screenreader-only psds-checkbox__input"
         name="colorRed"
-        onChange={[Function]}
         type="checkbox"
         value="red"
       />
@@ -209,7 +205,6 @@ exports[`Storyshots Components/Checkbox Disabled 1`] = `
         className="psds-screenreader-only psds-checkbox__input"
         disabled={true}
         name="colorRed"
-        onChange={[Function]}
         type="checkbox"
         value="red"
       />
@@ -245,7 +240,6 @@ exports[`Storyshots Components/Checkbox Error 1`] = `
       <input
         className="psds-screenreader-only psds-checkbox__input"
         name="colorRed"
-        onChange={[Function]}
         type="checkbox"
         value="red"
       />
@@ -293,7 +287,6 @@ exports[`Storyshots Components/Checkbox Example State Demo 1`] = `
           checked={false}
           className="psds-screenreader-only psds-checkbox__input"
           name="colorRed"
-          onChange={[Function]}
           type="checkbox"
           value="red"
         />
@@ -319,7 +312,6 @@ exports[`Storyshots Components/Checkbox Example State Demo 1`] = `
           checked={false}
           className="psds-screenreader-only psds-checkbox__input"
           name="colorGreen"
-          onChange={[Function]}
           type="checkbox"
           value="green"
         />
@@ -345,7 +337,6 @@ exports[`Storyshots Components/Checkbox Example State Demo 1`] = `
           checked={false}
           className="psds-screenreader-only psds-checkbox__input"
           name="colorBlue"
-          onChange={[Function]}
           type="checkbox"
           value="blue"
         />
@@ -382,7 +373,6 @@ exports[`Storyshots Components/Checkbox Indeterminate 1`] = `
       <input
         className="psds-screenreader-only psds-checkbox__input"
         name="colorRed"
-        onChange={[Function]}
         type="checkbox"
         value="red"
       />
