@@ -1,7 +1,7 @@
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   unit-tests:
@@ -10,5 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - run: yarn install
-      - run: yarn test:ci
+      # TODO: Uncomment after moving to Yarn 2, Yarn 1 does not cache deps
+      # correctly, resulting in failing GH Action due to dep management
+      # - run: yarn install
+      # - run: yarn test:ci

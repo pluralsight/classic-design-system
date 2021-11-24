@@ -1,7 +1,7 @@
 on:
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   packages-build:
@@ -13,11 +13,16 @@ jobs:
       - run: yarn install
       - run: yarn build
 
-  docs-build:
-    runs-on: ubuntu-latest
-    name: 🚀 Docs can successfully build
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-      - run: yarn install
-      - run: yarn build:docs
+  # TODO: Figure out how to test docs build
+
+  # docs-build:
+  #   runs-on: ubuntu-latest
+  #   name: 🚀 Docs can successfully build
+  #   defaults:
+  #     run:
+  #       working-directory: docs
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-node@v2
+  #     - run: yarn install
+  #     - run: yarn build:gatsby
