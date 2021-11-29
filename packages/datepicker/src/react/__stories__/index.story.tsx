@@ -1,6 +1,7 @@
 import Field from '@pluralsight/ps-design-system-field'
 import { HomeIcon, CalendarIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput from '@pluralsight/ps-design-system-textinput'
+import Button from '@pluralsight/ps-design-system-button'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import React from 'react'
 import { DateObj, useDayzed } from 'dayzed'
@@ -22,6 +23,27 @@ export default {
   title: 'Components/DatePicker',
   component: DatePicker
 } as Meta
+
+export const Example = () => {
+  const [date, setDate] = React.useState(new Date(1999, 11, 31))
+  return (
+    <div>
+      <div>
+        <TextInput />
+      </div>
+      <div>
+        <Button onClick={() => setDate(new Date(2000, 0, 1))}>Go Y2K!</Button>
+      </div>
+      <div>
+        <DatePicker
+          label="Party time"
+          onSelect={(evt, dateObj) => setDate(dateObj.date)}
+          value={date}
+        />
+      </div>
+    </div>
+  )
+}
 
 export const SingleDateSelectedDate: Story = () => {
   const [selected, setSelected] = React.useState<Date | undefined>(

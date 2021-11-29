@@ -87,18 +87,20 @@ export const DatePicker: React.FC<DatePickerProps> = ({
       if (evt.target instanceof HTMLElement) {
         // eslint-disable-next-line @typescript-eslint/no-unnecessary-type-assertion
         if ((ref.current as HTMLDivElement).contains(evt.target)) return
-        focusInput()
         setOpen(false)
       }
     }
+
     document.addEventListener('click', handleClickOutsideMenu, {
       capture: true
     })
+
     return () =>
       document.removeEventListener('click', handleClickOutsideMenu, {
         capture: true
       })
   }, [setOpen])
+
   const labelId = generateId('psds-datepicker-text-input__label-')
   const inputId = generateId('psds-datepicker-text-input__input-')
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = evt => {
@@ -111,6 +113,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
       dateFormat
     })
   }
+
   return (
     <div
       style={{ display: 'inline-block', position: 'relative' }}
