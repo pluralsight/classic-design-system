@@ -29,7 +29,10 @@ export const Example = () => {
   return (
     <div>
       <div>
-        <TextInput />
+        <label>
+          test
+          <TextInput name="test" placeholder="test" />
+        </label>
       </div>
       <div>
         <Button onClick={() => setDate(new Date(2000, 0, 1))}>Go Y2K!</Button>
