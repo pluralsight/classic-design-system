@@ -37,7 +37,7 @@ export const Button = React.forwardRef<HTMLButtonElement, DropdownButtonProps>(
       className,
       disabled,
       error,
-      isOpen,
+      isOpen = false,
       onClick,
       setMenuPosition,
       ...rest
@@ -46,6 +46,7 @@ export const Button = React.forwardRef<HTMLButtonElement, DropdownButtonProps>(
   ) => {
     const themeName = useTheme()
     const fieldContainerRef = React.useRef<HTMLDivElement>(null)
+
     React.useLayoutEffect(() => {
       if (!isOpen || !fieldContainerRef.current) return
       const { left, bottom, width } =
@@ -55,6 +56,7 @@ export const Button = React.forwardRef<HTMLButtonElement, DropdownButtonProps>(
       )
       return () => cancelAnimationFrame(requestId)
     }, [fieldContainerRef, isOpen, setMenuPosition])
+
     return (
       <div
         className={classNames('psds-dropdown__field-container', className)}
@@ -68,6 +70,7 @@ export const Button = React.forwardRef<HTMLButtonElement, DropdownButtonProps>(
           <div className="psds-dropdown__field-aligner">
             <button
               {...rest}
+              aria-expanded={isOpen}
               className={classNames(
                 'psds-dropdown__field',
                 `psds-dropdown__field--appearance-${appearance}`,

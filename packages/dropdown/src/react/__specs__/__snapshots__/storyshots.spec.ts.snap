@@ -38,6 +38,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -104,6 +105,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-subtle psds-theme--dark"
@@ -170,6 +172,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -236,6 +239,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-subtle psds-theme--dark"
@@ -324,6 +328,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark psds-dropdown__field-error"
@@ -409,6 +414,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-subtle psds-theme--dark psds-dropdown__field-error"
@@ -494,6 +500,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark psds-dropdown__field-error"
@@ -579,6 +586,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-subtle psds-theme--dark psds-dropdown__field-error"
@@ -677,6 +685,7 @@ exports[`Storyshots Components/Dropdown Basic 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -771,6 +780,7 @@ exports[`Storyshots Components/Dropdown Compare Disabled 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -842,6 +852,7 @@ exports[`Storyshots Components/Dropdown Compare Disabled 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -934,6 +945,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -1000,6 +1012,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark psds-dropdown__field-error"
@@ -1085,6 +1098,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-subtle psds-theme--dark"
@@ -1151,6 +1165,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-subtle psds-theme--dark psds-dropdown__field-error"
@@ -1249,6 +1264,7 @@ exports[`Storyshots Components/Dropdown Disabled 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -1333,6 +1349,7 @@ exports[`Storyshots Components/Dropdown Disabled Items 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -1418,6 +1435,7 @@ exports[`Storyshots Components/Dropdown Error 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark psds-dropdown__field-error"
@@ -1522,6 +1540,7 @@ exports[`Storyshots Components/Dropdown Label Only 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -1602,6 +1621,7 @@ exports[`Storyshots Components/Dropdown List With Divider 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -1687,6 +1707,7 @@ exports[`Storyshots Components/Dropdown List With Icons 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -1772,6 +1793,7 @@ exports[`Storyshots Components/Dropdown Long Placeholder 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -1857,6 +1879,7 @@ exports[`Storyshots Components/Dropdown Max Height 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -1942,6 +1965,7 @@ exports[`Storyshots Components/Dropdown No Labels 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-label="You need an a11y label"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
@@ -2023,6 +2047,7 @@ exports[`Storyshots Components/Dropdown Preselected By Label 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -2108,6 +2133,7 @@ exports[`Storyshots Components/Dropdown Preselected Value 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -2193,6 +2219,7 @@ exports[`Storyshots Components/Dropdown Preselected Value Unknown 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -2279,6 +2306,7 @@ exports[`Storyshots Components/Dropdown Sizes 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -2345,6 +2373,7 @@ exports[`Storyshots Components/Dropdown Sizes 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -2425,6 +2454,7 @@ exports[`Storyshots Components/Dropdown Stacked 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -2493,6 +2523,7 @@ exports[`Storyshots Components/Dropdown Stacked 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -2572,6 +2603,7 @@ exports[`Storyshots Components/Dropdown Sub Label Only 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-label="You need an a11y label"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
@@ -2658,6 +2690,7 @@ exports[`Storyshots Components/Dropdown Super Long Item Label 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -2743,6 +2776,7 @@ exports[`Storyshots Components/Dropdown/advanced Custom Icon 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-undefined psds-theme--dark"
@@ -2861,6 +2895,7 @@ exports[`Storyshots Components/Dropdown/advanced Dynamic Custom Icon 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-undefined psds-theme--dark"
@@ -2981,6 +3016,7 @@ exports[`Storyshots Components/Dropdown/examples Autofocused 1`] = `
           className="psds-dropdown__field-aligner"
         >
           <button
+            aria-expanded={false}
             aria-haspopup="listbox"
             aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
             className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -3065,6 +3101,7 @@ exports[`Storyshots Components/Dropdown/examples Controlled 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -3175,6 +3212,7 @@ exports[`Storyshots Components/Dropdown/examples Style Fixed Width 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -3243,6 +3281,7 @@ exports[`Storyshots Components/Dropdown/examples Style Fixed Width 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -3336,6 +3375,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -3404,6 +3444,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark psds-dropdown__field-error"
@@ -3491,6 +3532,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-subtle psds-theme--dark"
@@ -3559,6 +3601,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-subtle psds-theme--dark psds-dropdown__field-error"
@@ -3668,6 +3711,7 @@ exports[`Storyshots Components/Dropdown/examples Style Right Aligned 1`] = `
               className="psds-dropdown__field-aligner"
             >
               <button
+                aria-expanded={false}
                 aria-haspopup="listbox"
                 aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
                 className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -3765,6 +3809,7 @@ exports[`Storyshots Components/Dropdown/examples Style Viewport Bottom 1`] = `
             className="psds-dropdown__field-aligner"
           >
             <button
+              aria-expanded={false}
               aria-haspopup="listbox"
               aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
               className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
