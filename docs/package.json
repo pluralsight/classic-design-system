@@ -4,9 +4,6 @@
   "description": "Reference site",
   "license": "Apache-2.0",
   "private": true,
-  "engines": {
-    "node": "14.18.1 || ^15.9.0 || ^17.0.1"
-  },
   "scripts": {
     "build": "npm-run-all -s build:gatsby build:server build:assets",
     "build:assets": "copyfiles --up 1 ./src/**/*.{html,json} dist",
