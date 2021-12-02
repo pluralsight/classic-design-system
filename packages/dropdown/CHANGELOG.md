@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.6...@pluralsight/ps-design-system-dropdown@13.0.7) (2021-12-02)
+
+
+### Bug Fixes
+
+* **dropdown:** add missing a11y attr for button ([93e1533](https://github.com/pluralsight/design-system/commit/93e1533c19ddb0793e58b8250ad29ed513c8c09c))
+
+
+
+
+
 ## [13.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.5...@pluralsight/ps-design-system-dropdown@13.0.6) (2021-10-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@11.0.6...@pluralsight/ps-design-system-radio@11.0.7) (2021-12-02)
+
+
+### Bug Fixes
+
+* **checkbox:** add optional onChange prop for better flexibility ([5c13c26](https://github.com/pluralsight/design-system/commit/5c13c266da536f77864da09894d06a51f7a24ecc))
+* **radio:** remove readOnly attribute from input ([0dbd99f](https://github.com/pluralsight/design-system/commit/0dbd99f1f3070cc9899341eb6fdeb1ea2e2acb6e))
+
+
+
+
+
 ## [11.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-radio@11.0.5...@pluralsight/ps-design-system-radio@11.0.6) (2021-10-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-radio

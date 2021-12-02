@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [14.0.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@14.0.1...@pluralsight/ps-design-system-form@14.0.2) (2021-12-02)
+
+
+### Bug Fixes
+
+* **checkbox:** add optional onChange prop for better flexibility ([5c13c26](https://github.com/pluralsight/design-system/commit/5c13c266da536f77864da09894d06a51f7a24ecc))
+
+
+
+
+
 ## [14.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-form@14.0.0...@pluralsight/ps-design-system-form@14.0.1) (2021-10-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-form

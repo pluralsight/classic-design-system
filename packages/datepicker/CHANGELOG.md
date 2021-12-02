@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [18.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@18.0.0...@pluralsight/ps-design-system-datepicker@18.0.1) (2021-12-02)
+
+
+### Bug Fixes
+
+* **datepicker:** remove focus onMount & update ([5c42b51](https://github.com/pluralsight/design-system/commit/5c42b51181734c4f1bac04ab450659a3d9a4c02e))
+
+
+
+
+
 # [18.0.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-datepicker@17.0.0...@pluralsight/ps-design-system-datepicker@18.0.0) (2021-10-28)
 
 

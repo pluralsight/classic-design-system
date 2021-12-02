@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.35.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.35.0...@pluralsight/ps-design-system-docs@0.35.1) (2021-12-02)
+
+
+### Bug Fixes
+
+* update engines to include GH action version ([2926d16](https://github.com/pluralsight/design-system/commit/2926d16b76cfa3082a69481412ecc462ed47e066))
+* update engines to include old node and use it in CI configs ([a719230](https://github.com/pluralsight/design-system/commit/a7192305eb99f1603c94ddc01c171bb7449f9ad7))
+
+
+
+
+
 # [0.35.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.34.0...@pluralsight/ps-design-system-docs@0.35.0) (2021-11-18)
 
 
