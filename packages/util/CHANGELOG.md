@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [10.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@10.0.1...@pluralsight/ps-design-system-util@10.1.0) (2021-12-06)
+
+
+### Features
+
+* **util:** add deprecation helper ([678d4f1](https://github.com/pluralsight/design-system/commit/678d4f1ad2f6e7bec738df00250e4d3f95a1bbe1))
+
+
+
+
+
 ## [10.0.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@10.0.0...@pluralsight/ps-design-system-util@10.0.1) (2021-10-28)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-util
