@@ -1,20 +1,29 @@
-## Instructions
+## PR Checklist
 
-- fill in title: format of "<package name>: short description"
-- label: attach bug or enhancement request label
+Please check if your PR fulfills the following requirements:
 
-### What You're Solving
+- [ ] Tests for the changes have been added (for bug fixes / features)
 
-- Any links to #57 related issues
-- Explanation of the purpose of the code
+## PR Type
 
-### Design Decisions
+What kind of change does this PR introduce?
 
-- Why you made certain design decisions
-- Anything to watch out for
-- Any input you're seeking related to the design
-- Tradeoffs you conciously made
+<!-- Please check the one that applies to this PR using "x". -->
 
-### How to Verify
+- [ ] Bugfix
+- [ ] Feature
+- [ ] Code style update (formatting, local variables)
+- [ ] Refactoring (no functional changes, no api changes)
+- [ ] Build related changes
+- [ ] CI related changes
+- [ ] Documentation content changes
+- [ ] infrastructure changes
+- [ ] Other... Please describe:
 
-- Steps needed to independently verify additions
+## What is the current behavior?
+
+<!-- Please describe the current behavior that you are modifying, or link to a relevant issue. -->
+
+## What is the new behavior?
+
+## Other information
