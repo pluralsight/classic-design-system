@@ -78,7 +78,8 @@ export { LocationIcon } from './LocationIcon.dist'
 export { LockFillIcon } from './LockFillIcon.dist'
 export { LockIcon } from './LockIcon.dist'
 export { MegaphoneIcon } from './MegaphoneIcon.dist'
-export { MenuCloseIcon } from './MenuCloseIcon.dist'
+export { MenuArrowLeftIcon } from './MenuArrowLeftIcon.dist'
+export { MenuArrowRightIcon } from './MenuArrowRightIcon.dist'
 export { MenuIcon } from './MenuIcon.dist'
 export { MicIcon } from './MicIcon.dist'
 export { MoreIcon } from './MoreIcon.dist'
@@ -163,3 +164,7 @@ export { WarningIcon } from './WarningIcon.dist'
 export { WindowIcon } from './WindowIcon.dist'
 export { XCircleFillIcon } from './XCircleFillIcon.dist'
 export { XCircleIcon } from './XCircleIcon.dist'
+
+// DEPRECATED
+
+export { MenuCloseIcon } from './MenuCloseIcon_DEPRECATED.dist'
