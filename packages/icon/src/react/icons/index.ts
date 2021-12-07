@@ -30,7 +30,7 @@ export { ChannelAddIcon } from './ChannelAddIcon.dist'
 export { ChannelIcon } from './ChannelIcon.dist'
 export { ChatAltFillIcon } from './ChatAltFillIcon.dist'
 export { ChatAltIcon } from './ChatAltIcon.dist'
-export { ChatFillIcon } from './ChatFillIcon.dist'
+export { ChatFilledIcon } from './ChatFilledIcon.dist'
 export { ChatIcon } from './ChatIcon.dist'
 export { CheckCircleFillIcon } from './CheckCircleFillIcon.dist'
 export { CheckCircleIcon } from './CheckCircleIcon.dist'
@@ -167,5 +167,6 @@ export { XCircleIcon } from './XCircleIcon.dist'
 
 // DEPRECATED
 
-export { MenuCloseIcon } from './MenuCloseIcon_DEPRECATED.dist'
+export { ChatFillIcon } from './ChatFillIcon_DEPRECATED.dist'
 export { CloseCaptionedFillIcon } from './CloseCaptionedFillIcon_DEPRECATED.dist'
+export { MenuCloseIcon } from './MenuCloseIcon_DEPRECATED.dist'
