@@ -84,7 +84,7 @@ export const ExampleStateDemo: Story = () => {
         checked={checked('colorRed')}
         label="Red"
         name="colorRed"
-        onCheck={handleCheck}
+        onChange={handleCheck}
         value="red"
       />
 
@@ -92,7 +92,7 @@ export const ExampleStateDemo: Story = () => {
         checked={checked('colorGreen')}
         label="Green"
         name="colorGreen"
-        onCheck={handleCheck}
+        onChange={handleCheck}
         value="green"
       />
 
@@ -100,7 +100,7 @@ export const ExampleStateDemo: Story = () => {
         checked={checked('colorBlue')}
         label="Blue"
         name="colorBlue"
-        onCheck={handleCheck}
+        onChange={handleCheck}
         value="blue"
       />
     </div>
