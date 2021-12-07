@@ -37,7 +37,7 @@ export { CheckCircleIcon } from './CheckCircleIcon.dist'
 export { CheckIcon } from './CheckIcon.dist'
 export { ClockIcon } from './ClockIcon.dist'
 export { ClockWarningIcon } from './ClockWarningIcon.dist'
-export { CloseCaptionedFillIcon } from './CloseCaptionedFillIcon.dist'
+export { CloseCaptionedFilledIcon } from './CloseCaptionedFilledIcon.dist'
 export { CloseCaptionedIcon } from './CloseCaptionedIcon.dist'
 export { CloseIcon } from './CloseIcon.dist'
 export { CloudIcon } from './CloudIcon.dist'
@@ -168,3 +168,4 @@ export { XCircleIcon } from './XCircleIcon.dist'
 // DEPRECATED
 
 export { MenuCloseIcon } from './MenuCloseIcon_DEPRECATED.dist'
+export { CloseCaptionedFillIcon } from './CloseCaptionedFillIcon_DEPRECATED.dist'
