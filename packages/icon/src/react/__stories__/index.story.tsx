@@ -29,15 +29,23 @@ export const ExportedIcons: Story = () => (
     {Object.keys(icons).map(id => {
       // @ts-ignore: mapping over icons
       const Comp = icons[id]
-      return [
-        <div key={'div' + id}>{id}</div>,
-        <Comp
+      return (
+        <div
           key={'icon' + id}
-          id={`icon-${id}`}
-          color={Icon.colors.textIconHighOnDark}
-          size="large"
-        />
-      ]
+          style={{
+            alignItems: 'center',
+            display: 'flex',
+            flexDirection: 'column'
+          }}
+        >
+          <Comp
+            id={`icon-${id}`}
+            color={Icon.colors.textIconHighOnDark}
+            size="medium"
+          />
+          <div key={'div' + id}>{id}</div>
+        </div>
+      )
     })}
   </StoryGrid>
 )
@@ -62,7 +70,7 @@ const CustomSvgIcon: React.FC<unknown> = props => (
 )
 
 const StoryGrid: React.FC<{ cols?: number }> = props => {
-  const { cols = 2, ...rest } = props
+  const { cols = 6, ...rest } = props
 
   return (
     <div
@@ -70,7 +78,7 @@ const StoryGrid: React.FC<{ cols?: number }> = props => {
         display: 'grid',
         gap: '20px',
         gridTemplateColumns: Array(cols).fill('1fr').join(' '),
-        justifyItems: 'left'
+        justifyItems: 'center'
       }}
       {...rest}
     />
