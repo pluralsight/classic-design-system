@@ -10,6 +10,17 @@ import React, { SyntheticEvent } from 'react'
 
 import '../css/index.css'
 
+type ChangeFn = (
+  evt:
+    | React.KeyboardEvent<HTMLLabelElement>
+    | React.MouseEvent<HTMLLabelElement, MouseEvent>,
+  checked: boolean,
+  value: React.ReactText,
+  name: string | undefined
+) => void
+
+type DefaultChangeFn = (evt: SyntheticEvent) => void
+
 interface CheckboxProps
   extends React.HTMLAttributes<HTMLDivElement>,
     Record<string, unknown> {
@@ -19,21 +30,15 @@ interface CheckboxProps
   indeterminate?: boolean
   label: React.ReactNode
   name?: string
-  onChange?: (evt: SyntheticEvent) => void
-  onCheck?: (
-    evt:
-      | React.KeyboardEvent<HTMLLabelElement>
-      | React.MouseEvent<HTMLLabelElement, MouseEvent>,
-    checked: boolean,
-    value: React.ReactText,
-    name: string | undefined
-  ) => void
+  onChange?: DefaultChangeFn
+  onCheck?: ChangeFn
   value: string | number
 }
 
 const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
   (props, forwardedRef) => {
-    const { checked, disabled, indeterminate, name, value, onCheck } = props
+    const { checked, disabled, indeterminate, name, value, onCheck, onChange } =
+      props
 
     const themeName = useTheme()
 
@@ -56,7 +61,16 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
         | React.MouseEvent<HTMLLabelElement>
         | React.KeyboardEvent<HTMLLabelElement>
     ) => {
-      if (onCheck && isFunction(onCheck)) onCheck(evt, !checked, value, name)
+      const changeFn = onChange as ChangeFn
+
+      if (onChange) {
+        changeFn(evt, !checked, value, name)
+        return
+      }
+
+      if (onCheck && isFunction(onCheck)) {
+        onCheck(evt, !checked, value, name)
+      }
     }
 
     const handleClick: React.MouseEventHandler<HTMLLabelElement> = evt => {
@@ -102,7 +116,7 @@ const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
             ref={ref}
             type="checkbox"
             checked={checked}
-            onChange={props.onChange}
+            onChange={handleClick as DefaultChangeFn}
             className="psds-screenreader-only psds-checkbox__input"
             {...omit(props, [
               'className',
