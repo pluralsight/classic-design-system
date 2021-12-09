@@ -18,6 +18,7 @@
     "!src/*/__specs__/*"
   ],
   "scripts": {
+    "prebuild": "rm -rf src/react/icons",
     "build": "run-s build:svg build:cjs build:esm build:css copy:svg",
     "build:cjs": "tsc --project tsconfig.build.json --module commonjs --target es5 --outDir dist/cjs",
     "build:css": "postcss-compile",

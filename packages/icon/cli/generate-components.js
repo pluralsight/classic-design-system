@@ -22,6 +22,8 @@ exports.generateComponents = async ({
     const names = await Promise.all(
       files.map(async file => {
         const name = parseComponentName(file)
+        const rawName = name.split('_')[0]
+        const importName = `${rawName.split('.')[0]}Icon`
         const destPath = `${dest}/${name}.${ext}`
         const svgString = await fs.readFile(file, 'utf8')
         const { data } = optimize(svgString, svgoOpts)
@@ -30,7 +32,7 @@ exports.generateComponents = async ({
 
         await fs.writeFile(destPath, fileContents)
 
-        return name
+        return { importName, path: name }
       })
     )
 
@@ -46,10 +48,10 @@ const generateComponent = (componentName, svgString, core) => {
   return getComponentTemplate(baseImport, componentName, svgString)
 }
 
-const generateManifest = (fileNames, ext = 'dist.tsx') => {
+const generateManifest = fileNames => {
   return [...fileNames]
-    .sort((a, b) => a.localeCompare(b))
-    .map(n => `export { ${n} } from './${n}.${ext.split('.').slice(0, -1)}'`)
+    .sort((a, b) => a.importName.localeCompare(b.importName))
+    .map(name => `export { ${name.importName} } from './${name.path}.dist'`)
     .join('\n')
     .concat('\n')
 }
@@ -68,8 +70,7 @@ const dashToPascalCase = str => {
   return camelStr.charAt(0).toUpperCase() + camelStr.slice(1)
 }
 
-const parseComponentName = (file, suffix = 'Icon') => {
+const parseComponentName = file => {
   const fileName = path.basename(file, '.svg').split('.')[0]
-
-  return `${dashToPascalCase(fileName)}.icon`
+  return `${dashToPascalCase(fileName)}`
 }
