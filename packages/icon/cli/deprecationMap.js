@@ -3,6 +3,7 @@ const deprecationMap = {
   ChatAltFillIcon: 'ChatAltFilledIcon',
   CheckCircleFillIcon: 'CheckCircleFilledIcon',
   CloseCaptionedFillIcon: 'CloseCaptionedFilledIcon',
+  MenuCloseIcon: 'MenuArrowRightIcon',
   PlusCircleFillIcon: 'PlusCircleFilledIcon',
   StarFillIcon: 'StarFilledIcon',
   ThumbDownFillIcon: 'ThumbDownFilledIcon',
