@@ -25,6 +25,7 @@ exports.generateComponents = async ({
         const { data } = optimize(svgString, svgoOpts)
 
         const svgWithReactAttrs = camelCaseAttributes(data)
+        // TODO: Fix this to remove deprecated and add deprecated syntax
         const fileContents = generateComponent(name, svgWithReactAttrs, core)
 
         await fs.writeFile(destPath, fileContents)
@@ -46,7 +47,6 @@ const generateComponent = (componentName, svgString, core) => {
 
   return `
 import React, { forwardRef } from 'react'
-
 import Icon, { IconComponent } from '${baseImport}'
 
 const ${componentName} = forwardRef((props, ref) => {
@@ -62,7 +62,6 @@ const ${componentName} = forwardRef((props, ref) => {
 }) as IconComponent
 
 ${componentName}.displayName = "${componentName}"
-
 ${componentName}.colors = Icon.colors
 ${componentName}.sizes = Icon.sizes
 
