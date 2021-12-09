@@ -18,7 +18,7 @@ const {
   '--clean': clean
 } = args
 
-const { generateComponents } = require('../cli/generate-components')
-const { cleanSvgs } = require('../cli/clean-svgs')
+const { generateComponents } = require('../cli/generate-components.js')
+const { cleanSvgs } = require('../cli/clean-svgs.js')
 !clean && generateComponents({ dest, src, ext, core: extra.includes('core') })
 clean && cleanSvgs({ dest, src })
