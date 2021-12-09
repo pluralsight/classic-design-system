@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [25.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@25.0.3...@pluralsight/ps-design-system-icon@25.1.0) (2021-12-09)
+
+
+### Features
+
+* **icon:** add deprecation message to template ([c3aa4e3](https://github.com/pluralsight/design-system/commit/c3aa4e360362247e6d66d9d9240801c977dd58ac))
+* **icon:** add deprecation Node code ([7aa37ab](https://github.com/pluralsight/design-system/commit/7aa37ab62a3430469dae3c10bbd5322420e16e86))
+* **icon:** add MenuArrow${Right,Left}Icon ([9650d40](https://github.com/pluralsight/design-system/commit/9650d409af93b6fd3c18b302960bdecce20e6ef9))
+* **icon:** add new deprecated icons .svg ([66e57e5](https://github.com/pluralsight/design-system/commit/66e57e54c2a3407151205138a40b602a05935009))
+* **icon:** clean up node scripts ([e909806](https://github.com/pluralsight/design-system/commit/e90980694d6960eeb06a0d1866ef85c29d502c3a))
+* **icon:** create final working templates ([ab13580](https://github.com/pluralsight/design-system/commit/ab13580bde0e60350711e404d8597dbfd20851c3))
+
+
+### Reverts
+
+* **icon:** update index.ts to match what originally was ([10d0b37](https://github.com/pluralsight/design-system/commit/10d0b37aa01ca82dbee8678d9686cde22deef65d))
+
+
+
+
+
 ## [25.0.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@25.0.2...@pluralsight/ps-design-system-icon@25.0.3) (2021-12-06)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon
