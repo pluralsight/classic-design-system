@@ -496,6 +496,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 className="psds-dropdown__field-aligner"
               >
                 <button
+                  aria-expanded={false}
                   aria-haspopup="listbox"
                   aria-labelledby="dropdown-button-4fzzzxjyl dropdown-label-4fzzzxjyl"
                   className="psds-dropdown__field psds-dropdown__field--appearance-default psds-theme--dark"
@@ -696,7 +697,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             <input
               checked={true}
               className="psds-screenreader-only psds-checkbox__input"
-              readOnly={true}
+              onChange={[Function]}
               style={
                 Object {
                   "maxWidth": "none",
@@ -780,7 +781,6 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 onBlur={[Function]}
                 onClick={[Function]}
                 onFocus={[Function]}
-                readOnly={true}
                 type="radio"
                 value="full"
               />
@@ -811,7 +811,6 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 onBlur={[Function]}
                 onClick={[Function]}
                 onFocus={[Function]}
-                readOnly={true}
                 type="radio"
                 value="part"
               />
