@@ -1,8 +1,11 @@
+/* eslint-disable @typescript-eslint/restrict-plus-operands */
+/* eslint-disable @typescript-eslint/restrict-template-expressions */
+
 const { promises: fs } = require('fs')
 const fg = require('fast-glob')
 const path = require('path')
 const { optimize, extendDefaultPlugins } = require('svgo')
-
+const { getComponentTemplate } = require('./componentTemplate.js')
 const svgoOpts = { plugins: extendDefaultPlugins([{ name: 'removeXMLNS' }]) }
 
 exports.generateComponents = async ({
@@ -20,12 +23,9 @@ exports.generateComponents = async ({
       files.map(async file => {
         const name = parseComponentName(file)
         const destPath = `${dest}/${name}.${ext}`
-
         const svgString = await fs.readFile(file, 'utf8')
         const { data } = optimize(svgString, svgoOpts)
-
         const svgWithReactAttrs = camelCaseAttributes(data)
-        // TODO: Fix this to remove deprecated and add deprecated syntax
         const fileContents = generateComponent(name, svgWithReactAttrs, core)
 
         await fs.writeFile(destPath, fileContents)
@@ -42,31 +42,8 @@ exports.generateComponents = async ({
 }
 
 const generateComponent = (componentName, svgString, core) => {
-  const regex = />/
   const baseImport = core ? '..' : '@pluralsight/ps-design-system-icon'
-
-  return `
-import React, { forwardRef } from 'react'
-import Icon, { IconComponent } from '${baseImport}'
-
-const ${componentName} = forwardRef((props, ref) => {
-  const { 'aria-label': ariaLabel, ...rest } = props
-  return (
-    <Icon {...rest} ref={ref}>
-      ${svgString.replace(
-        regex,
-        "role='img' {...(ariaLabel && { 'aria-label': ariaLabel })}>"
-      )}
-    </Icon>
-  )
-}) as IconComponent
-
-${componentName}.displayName = "${componentName}"
-${componentName}.colors = Icon.colors
-${componentName}.sizes = Icon.sizes
-
-export { ${componentName}  }
-`
+  return getComponentTemplate(baseImport, componentName, svgString)
 }
 
 const generateManifest = (fileNames, ext = 'dist.tsx') => {
@@ -94,5 +71,5 @@ const dashToPascalCase = str => {
 const parseComponentName = (file, suffix = 'Icon') => {
   const fileName = path.basename(file, '.svg').split('.')[0]
 
-  return dashToPascalCase(fileName) + suffix
+  return `${dashToPascalCase(fileName)}.icon`
 }

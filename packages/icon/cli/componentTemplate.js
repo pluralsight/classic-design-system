@@ -27,7 +27,7 @@ function getDeprecationHook(name) {
   `
 }
 
-function getComponentBlock(name, replaceFn, deprecated = false) {
+function getComponentBlock(name, svgString, deprecated = false) {
   const regex = />/
 
   return `
@@ -38,7 +38,7 @@ function getComponentBlock(name, replaceFn, deprecated = false) {
 
     return (
       <Icon {...rest} ref={ref}>
-        ${replaceFn(
+        ${svgString.replace(
           regex,
           "role='img' {...(ariaLabel && { 'aria-label': ariaLabel })}>"
         )}
@@ -48,7 +48,7 @@ function getComponentBlock(name, replaceFn, deprecated = false) {
   `
 }
 
-function getComponentTemplate(baseImport, fileName, replaceFn) {
+function getComponentTemplate(baseImport, fileName, svgString) {
   const componentName = fileName.split('_')[0]
   const isDeprecated = fileName.includes('DEPRECATED')
 
@@ -58,7 +58,7 @@ function getComponentTemplate(baseImport, fileName, replaceFn) {
 
   ${getImports(baseImport, isDeprecated)}
 
-  ${getComponentBlock(componentName, replaceFn, isDeprecated)}
+  ${getComponentBlock(componentName, svgString, isDeprecated)}
 
   ${componentName}.displayName = "${componentName}"
   ${componentName}.colors = Icon.colors
