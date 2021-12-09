@@ -72,5 +72,5 @@ const dashToPascalCase = str => {
 
 const parseComponentName = file => {
   const fileName = path.basename(file, '.svg').split('.')[0]
-  return `${dashToPascalCase(fileName)}`
+  return dashToPascalCase(fileName)
 }
