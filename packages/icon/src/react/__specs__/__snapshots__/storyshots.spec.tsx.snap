@@ -1009,10 +1009,39 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <div
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-ChatAltFilledIcon"
+    >
+      <svg
+        aria-label="chat alt filled icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M6.414 23.64A.25.25 0 0 1 6 23.451V18H3a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1h-8.1l-6.486 5.64z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div>
+      ChatAltFilledIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ChatAltFillIcon"
     >
       <svg
-        aria-label="chat icon"
+        aria-label="chat alt fill icon"
         role="img"
         viewBox="0 0 24 24"
       >
@@ -1157,6 +1186,33 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <div
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-CheckCircleFilledIcon"
+    >
+      <svg
+        aria-label="check circle filled icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm5.354-.354-.708.708a.5.5 0 0 0 0 .707l3 3a.5.5 0 0 0 .708 0l7-7a.5.5 0 0 0 0-.707l-.708-.708a.5.5 0 0 0-.707 0L10 13.586l-1.94-1.94a.5.5 0 0 0-.706 0z"
+        />
+      </svg>
+    </div>
+    <div>
+      CheckCircleFilledIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CheckCircleFillIcon"
     >
       <svg
@@ -1283,6 +1339,33 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
     </div>
     <div>
       ClockWarningIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-CloseCaptionedFilledIcon"
+    >
+      <svg
+        aria-label="close captioned filled icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M2 3h20a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm6.524 13.132c1.485 0 2.365-.528 3.157-1.375l-1.078-1.089c-.605.55-1.144.902-2.024.902-1.32 0-2.233-1.1-2.233-2.42 0-1.342.935-2.42 2.233-2.42.77 0 1.375.33 1.969.869l1.078-1.243c-.715-.704-1.584-1.188-3.036-1.188-2.365 0-4.015 1.793-4.015 3.982 0 2.233 1.683 3.982 3.949 3.982zm7.898 0c1.485 0 2.365-.528 3.157-1.375l-1.078-1.089c-.605.55-1.144.902-2.024.902-1.32 0-2.233-1.1-2.233-2.42 0-1.342.935-2.42 2.233-2.42.77 0 1.375.33 1.969.869l1.078-1.243c-.715-.704-1.584-1.188-3.036-1.188-2.365 0-4.015 1.793-4.015 3.982 0 2.233 1.683 3.982 3.949 3.982z"
+        />
+      </svg>
+    </div>
+    <div>
+      CloseCaptionedFilledIcon
     </div>
   </div>
   <div
@@ -2487,6 +2570,63 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <div
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-MenuArrowLeftIcon"
+    >
+      <svg
+        aria-label="menu arrow left icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M5.824 5H21.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H5.824l.94.939a.5.5 0 0 1 0 .707l-.708.707a.5.5 0 0 1-.707 0l-3-3a.5.5 0 0 1 0-.707l3-3a.5.5 0 0 1 .707 0l.708.707a.5.5 0 0 1 0 .707zM8.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm13 6h-18a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h18a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
+        />
+      </svg>
+    </div>
+    <div>
+      MenuArrowLeftIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-MenuArrowRightIcon"
+    >
+      <svg
+        aria-label="menu arrow right icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M18.176 5H2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h15.676l-.94.939a.5.5 0 0 0 0 .707l.708.707a.5.5 0 0 0 .707 0l3-3a.5.5 0 0 0 0-.707l-3-3a.5.5 0 0 0-.707 0l-.708.707a.5.5 0 0 0 0 .707l.94.94zM15.5 11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h13zm-13 6h18a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-18a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div>
+      MenuArrowRightIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-MenuCloseIcon"
     >
       <svg
@@ -3074,6 +3214,35 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
     </div>
     <div>
       PlayIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-PlusCircleFilledIcon"
+    >
+      <svg
+        aria-label="plus circle filled icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm.5 5a.5.5 0 0 1 .5.5V11h3.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v3.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H7.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V7.5a.5.5 0 0 1 .5-.5h1z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div>
+      PlusCircleFilledIcon
     </div>
   </div>
   <div
@@ -4079,6 +4248,33 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <div
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-StarFilledIcon"
+    >
+      <svg
+        aria-label="star filled icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
+        />
+      </svg>
+    </div>
+    <div>
+      StarFilledIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-StarFillIcon"
     >
       <svg
@@ -4326,6 +4522,34 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <div
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-ThumbDownFilledIcon"
+    >
+      <svg
+        aria-label="thumb down filled icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M16.02 15.202c-.632.101-1.13.226-1.42.298-1.288.368-2.76 1.424-3 2.8-.187 1.072-.183 2.211-.18 2.941v.243C11.42 22.906 11 23 10 23c-.578 0-1.502-.128-2.3-1.016-.665-.739-1.04-1.484-1.04-2.884 0-.883.052-1.712.2-2.407.073-.341-.18-.693-.53-.693H3.8C2.3 16 1 14.7 1 13.2c0-.53.156-.982.261-1.287L1.3 11.8l-.034-.1C1.16 11.394 1 10.927 1 10.3c0-.627.16-1.094.266-1.4l.034-.1C1.1 8.4 1 8 1 7.3c0-1.2.7-1.9 1-2.2v-.3C2 3.2 3.2 2 4.8 2H9c2.7 0 4.3.6 5.9 1.2l.3.1c.062.062.353.162.873.324A1 1 0 0 1 17 3h4a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-4a1 1 0 0 1-.98-.798zM20 14h-2V5h2v9z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div>
+      ThumbDownFilledIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ThumbDownFillIcon"
     >
       <svg
@@ -4369,6 +4593,34 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
     </div>
     <div>
       ThumbDownIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-ThumbUpFilledIcon"
+    >
+      <svg
+        aria-label="thumb up filled icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7.98 8.798A16.146 16.146 0 0 0 9.4 8.5c1.288-.368 2.76-1.424 3-2.8.187-1.072.183-2.211.18-2.941v-.243C12.58 1.094 13 1 14 1c.578 0 1.502.129 2.3 1.016.665.739 1.04 1.484 1.04 2.884 0 .883-.052 1.712-.2 2.407-.073.341.18.693.53.693h2.53c1.5 0 2.8 1.3 2.8 2.8 0 .53-.156.982-.261 1.287l-.039.113.034.1c.105.306.266.773.266 1.4 0 .627-.16 1.094-.266 1.4l-.034.1c.2.4.3.8.3 1.5 0 1.2-.7 1.9-1 2.2v.3c0 1.6-1.2 2.8-2.8 2.8H15c-2.7 0-4.3-.6-5.9-1.2l-.3-.1c-.062-.062-.353-.162-.873-.324A1 1 0 0 1 7 21H3a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1h4a1 1 0 0 1 .98.798zM4 10h2v9H4v-9z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div>
+      ThumbUpFilledIcon
     </div>
   </div>
   <div
@@ -4865,6 +5117,35 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
     </div>
     <div>
       WindowIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-XCircleFilledIcon"
+    >
+      <svg
+        aria-label="x circle filled icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          clipRule="evenodd"
+          d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm13.889-2.475L13.414 12l2.475 2.475a.5.5 0 0 1 0 .707l-.707.707a.5.5 0 0 1-.707 0L12 13.414 9.525 15.89a.5.5 0 0 1-.707 0l-.707-.707a.5.5 0 0 1 0-.707L10.586 12 8.11 9.525a.5.5 0 0 1 0-.707l.707-.707a.5.5 0 0 1 .707 0L12 10.586l2.475-2.475a.5.5 0 0 1 .707 0l.707.707a.5.5 0 0 1 0 .707z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div>
+      XCircleFilledIcon
     </div>
   </div>
   <div
