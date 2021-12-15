@@ -5,6 +5,7 @@ const path = require('path')
 const remarkSlug = require('remark-slug')
 
 module.exports = {
+  pathPrefix: '/design-system',
   flags: {
     DEV_SSR: true,
     FAST_DEV: true,
