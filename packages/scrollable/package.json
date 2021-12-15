@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-scrollable",
-  "version": "6.0.7",
+  "version": "6.0.8",
   "description": "Scrollable UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -35,13 +35,13 @@
     "@pluralsight/ps-design-system-util": "^10.1.1"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^6.0.0",
-    "react": "^17.0.1"
+    "@pluralsight/ps-design-system-normalize": "*",
+    "react": "*"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.11",
-    "@pluralsight/ps-design-system-text": "^20.1.23"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.12",
+    "@pluralsight/ps-design-system-text": "^20.1.24"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }
