@@ -1,7 +1,7 @@
 import { Heading, Label } from '@pluralsight/ps-design-system-text'
 import React from 'react'
 
-import { A, P, Ul } from '../components/mdx'
+import { A, P } from '../components/mdx'
 import * as styles from './index.module.css'
 
 export const HomePage: React.FC = () => {
@@ -28,7 +28,7 @@ export const HomePage: React.FC = () => {
           <Heading size={Heading.sizes.small}>
             <h2>Design</h2>
           </Heading>
-          <P size={P.sizes.normal}>
+          <P size={P.sizes.medium}>
             Learn how to use the design system Figma libraries.
           </P>
           <Label strong>
@@ -39,7 +39,7 @@ export const HomePage: React.FC = () => {
           <Heading size={Heading.sizes.small}>
             <h2>Develop</h2>
           </Heading>
-          <P size={P.sizes.normal}>
+          <P size={P.sizes.medium}>
             Everything you need to get up and running with the code.
           </P>
           <Label strong>
@@ -50,7 +50,7 @@ export const HomePage: React.FC = () => {
           <Heading size={Heading.sizes.small}>
             <h2>Contribute</h2>
           </Heading>
-          <P size={P.sizes.normal}>
+          <P size={P.sizes.medium}>
             Learn how you can contribute to the design system.
           </P>
           <Label strong>

@@ -1,9 +1,6 @@
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
-import {
-  names as themeNames,
-  useTheme
-} from '@pluralsight/ps-design-system-theme'
-import { ValueOf, classNames } from '@pluralsight/ps-design-system-util'
+import { useTheme } from '@pluralsight/ps-design-system-theme'
+import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import '../css/index.css'

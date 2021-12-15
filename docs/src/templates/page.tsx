@@ -7,7 +7,7 @@ import { MDXProvider } from '../components/mdx'
 import favicon from './favicon.png'
 import { Frame } from '../components/frame'
 import { SideNav } from '../components/side-nav'
-import { Heading, TableOfContents } from '../components/table-of-contents'
+import { Heading } from '../components/table-of-contents'
 
 export const query = graphql`
   query ($slug: String!) {

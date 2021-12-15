@@ -110,71 +110,61 @@ export default Comp
 ### In-app
 
 ```typescript
-import React from 'react'
+import React, { useState } from 'react'
 import Checkbox from '@pluralsight/ps-design-system-checkbox'
-import { layout, type, colorsTextIcon, colorsBackgroundLight } from '@pluralsight/ps-design-system-core'
 
-class Comp extends React.Component {
-  constructor() {
-    super()
-    this.state = { values: {} }
-    this.handleCheck = this.handleCheck.bind(this)
+function InAppExample() {
+  const [values, setValues] = useState([])
+
+  function checked(name) {
+    return values.includes(name)
   }
-  handleCheck(evt, checked, value, name) {
-    if (checked) {
-      this.setState({ values: { ...this.state.values, [name]: value } })
-    } else {
-      const { [name]: omit, ...values } = this.state.values
-      this.setState({ values })
-    }
+
+  function handleCheck(evt, checked, value, name) {
+    setValues(prev => {
+      if (checked) {
+        return [...prev, name]
+      }
+      return prev.filter(checkedItem => checkedItem !== name)
+    })
   }
-  render() {
-    const features = Object.keys(this.state.values)
-    const checked = name => features.indexOf(name) > -1
-    return (
-      <div className="example-grid--col-2">
-        <div>
-          <Checkbox
-            onCheck={this.handleCheck}
-            name="demo"
-            value="yes"
-            label="Has demo?"
-            checked={checked('demo')}
-          />
-          <Checkbox
-            onCheck={this.handleCheck}
-            name="assessment"
-            value="of-course"
-            label="Has assessment?"
-            checked={checked('assessment')}
-          />
-          <Checkbox
-            onCheck={this.handleCheck}
-            name="slides"
-            value="who-doesnt"
-            label="Has slides?"
-            checked={checked('slides')}
-          />
-        </div>
-        <div
-          style={{
-            padding: layout.spacingLarge,
-            fontSize: type.fontSize400,
-            color: colorsTextIcon.lowOnLight,
-            background: colorsBackgroundLight[2],
-            borderRadius: 12
-          }}
-        >
-          Checked:{' '}
-          {features
-            .map(name => name + ': ' + this.state.values[name])
-            .join(', ')}
-        </div>
+
+  return (
+    <div className="example-grid--col-2">
+      <div>
+        <Checkbox
+          onChange={handleCheck}
+          name="demo"
+          value="yes"
+          label="Has demo?"
+          checked={checked('demo')}
+        />
+        <Checkbox
+          onChange={handleCheck}
+          name="assessment"
+          value="of-course"
+          label="Has assessment?"
+          checked={checked('assessment')}
+        />
+        <Checkbox
+          onChange={handleCheck}
+          name="slides"
+          value="who-doesnt"
+          label="Has slides?"
+          checked={checked('slides')}
+        />
       </div>
-    )
-  }
+      <div>
+        Checked:{' '}
+        {values.map(checked => (
+          <p key={checked}>{checked}</p>
+        ))}
+      </div>
+    </div>
+  )
 }
-export default Comp
+
+export default InAppExample
 ```
 
 ## Accessibility
@@ -219,7 +209,12 @@ WAI-ARIA Patterns: <A href="https://www.w3.org/TR/wai-aria-practices-1.2/#checkb
   <TypesProp
     name="onCheck"
     type="(Event, checked: boolean, value: any, name: string) => void"
-    desc="triggers on check toggle"
+    desc="(optional) triggers on check toggle"
+  />
+  <TypesProp
+    name="onChange"
+    type="(Event, checked: boolean, value: any, name: string) => void"
+    desc="(required) triggers on check toggle"
   />
   <TypesProp
     name="value"
