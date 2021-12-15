@@ -38,9 +38,9 @@
     "element-closest": "^3.0.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^6.0.0",
-    "@pluralsight/ps-design-system-theme": "^8.1.4",
-    "react": "^17.0.1"
+    "@pluralsight/ps-design-system-normalize": "*",
+    "@pluralsight/ps-design-system-theme": "*",
+    "react": "*"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",

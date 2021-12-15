@@ -29,8 +29,8 @@
     "hoist-non-react-statics": "^3.3.0"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^6.0.0",
-    "react": "^17.0.1"
+    "@pluralsight/ps-design-system-normalize": "*",
+    "react": "*"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }
