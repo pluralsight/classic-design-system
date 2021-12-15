@@ -1,0 +1,19 @@
+on:
+  push:
+    paths:
+      - 'docs/**'
+    branches:
+      - master
+
+jobs:
+  gh-release:
+    runs-on: ubuntu-latest
+    name: 🚀 Release to GitHub Pages
+    steps:
+      - uses: actions/checkout@v2.4.0
+      - uses: enriikke/gatsby-gh-pages-action@v2.2.0
+        with:
+          access-token: ${{ secrets.GH_PAGES_TOKEN }}
+          deploy-branch: gh-pages
+          git-config-name: gh-bot
+          working-dir: docs
