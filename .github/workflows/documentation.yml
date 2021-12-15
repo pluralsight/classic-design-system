@@ -21,7 +21,6 @@ jobs:
         with:
           access-token: ${{ secrets.GH_PAGES_TOKEN }}
           deploy-branch: gh-pages
-          gatsby-args: --prefix-paths
           skip-publish: true
 
   gh-release:
@@ -37,7 +36,6 @@ jobs:
         with:
           access-token: ${{ secrets.GH_PAGES_TOKEN }}
           deploy-branch: 'gh-pages'
-          gatsby-args: --prefix-paths
           git-config-name: 'gh-bot'
           working-dir: 'docs'
       - run: |
