@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-typeahead",
-  "version": "11.1.8",
+  "version": "11.1.9",
   "description": "Typeahead UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -31,21 +31,21 @@
   "style": "dist/esm/css/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-field": "^5.0.9",
-    "@pluralsight/ps-design-system-icon": "^25.1.1",
-    "@pluralsight/ps-design-system-menu": "^6.0.3",
-    "@pluralsight/ps-design-system-position": "^9.0.4",
+    "@pluralsight/ps-design-system-field": "^5.0.10",
+    "@pluralsight/ps-design-system-icon": "^25.1.2",
+    "@pluralsight/ps-design-system-menu": "^6.0.4",
+    "@pluralsight/ps-design-system-position": "^9.0.5",
     "@pluralsight/ps-design-system-util": "^10.1.1",
     "downshift": "^6.1.2"
   },
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^6.0.0",
-    "@pluralsight/ps-design-system-theme": "^8.1.4",
-    "react": "^17.0.1"
+    "@pluralsight/ps-design-system-normalize": "*",
+    "@pluralsight/ps-design-system-theme": "*",
+    "react": "*"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.11"
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.12"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }
