@@ -37,16 +37,9 @@ module.exports = {
         },
         gatsbyRemarkPlugins: [
           {
-            resolve: 'gatsby-remark-inline-codesandbox',
+            resolve: 'remark-codesandbox/gatsby',
             options: {
-              mode: 'iframe',
-              customTemplates: {
-                default: {
-                  extends: `file:${path.resolve('./src/sandboxes/default/')}`,
-                  entry: 'src/example.tsx',
-                  query: { fontsize: 12, hidenavigation: 1, theme: 'dark' }
-                }
-              }
+              mode: 'iframe'
             }
           }
         ],

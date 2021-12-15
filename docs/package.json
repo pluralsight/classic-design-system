@@ -150,6 +150,7 @@
     "prism-react-renderer": "^1.2.0",
     "prismjs": "^1.23.0",
     "react-copy-to-clipboard": "^5.0.3",
+    "remark-codesandbox": "^0.10.0",
     "ts-node": "^9.1.1",
     "typescript-plugin-css-modules": "^3.2.0"
   }
