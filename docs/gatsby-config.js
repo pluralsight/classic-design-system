@@ -39,7 +39,17 @@ module.exports = {
           {
             resolve: 'remark-codesandbox/gatsby',
             options: {
-              mode: 'iframe'
+              customTemplates: {
+                extends: `file:${path.resolve('./src/sandboxes/default/')}`,
+                entry: 'src/example.tsx',
+                query: { fontsize: 12, hidenavigation: 1, theme: 'dark' }
+              },
+              mode: 'iframe',
+              query: {
+                fontsize: 12,
+                hidenavigation: 1,
+                theme: 'dark'
+              }
             }
           }
         ],
