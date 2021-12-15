@@ -27,8 +27,8 @@
   "sideEffects": false,
   "types": "dist/esm/index.d.ts",
   "peerDependencies": {
-    "@pluralsight/ps-design-system-normalize": "^6.0.0",
-    "react": "^17.0.1"
+    "@pluralsight/ps-design-system-normalize": "*",
+    "react": "*"
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",
