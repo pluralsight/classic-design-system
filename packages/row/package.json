@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-row",
-  "version": "16.0.9",
+  "version": "16.0.10",
   "description": "Design System component for row ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -40,10 +40,10 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-button": "^24.0.5",
-    "@pluralsight/ps-design-system-icon": "^25.1.1",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.11",
-    "@pluralsight/ps-design-system-theme": "^8.1.21"
+    "@pluralsight/ps-design-system-button": "^24.0.6",
+    "@pluralsight/ps-design-system-icon": "^25.1.2",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.12",
+    "@pluralsight/ps-design-system-theme": "^8.1.22"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }

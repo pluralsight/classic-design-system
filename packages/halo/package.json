@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-halo",
-  "version": "12.0.4",
+  "version": "12.0.5",
   "description": "Design System component for halo ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -43,8 +43,8 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.11",
-    "@pluralsight/ps-design-system-theme": "^8.1.21",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.12",
+    "@pluralsight/ps-design-system-theme": "^8.1.22",
     "@types/focus-within": "^1.0.0"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
