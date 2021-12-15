@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.9...@pluralsight/ps-design-system-dropdown@13.0.10) (2021-12-15)
+
+
+### Bug Fixes
+
+* add missing deps to core, dropdown, and util packages ([63fc0ca](https://github.com/pluralsight/design-system/commit/63fc0ca361b122844c1546573e2ee92db7eec677))
+
+
+
+
+
 ## [13.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.8...@pluralsight/ps-design-system-dropdown@13.0.9) (2021-12-09)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

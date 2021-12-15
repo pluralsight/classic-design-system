@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-navbar",
-  "version": "6.0.9",
+  "version": "6.0.10",
   "description": "Navbar UI Component for the Pluralsight Design System",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -31,10 +31,10 @@
   "style": "dist/esm/css/index.css",
   "types": "dist/esm/index.d.ts",
   "dependencies": {
-    "@pluralsight/ps-design-system-core": "^10.0.1",
-    "@pluralsight/ps-design-system-icon": "^25.1.0",
-    "@pluralsight/ps-design-system-navitem": "^6.0.9",
-    "@pluralsight/ps-design-system-util": "^10.1.0"
+    "@pluralsight/ps-design-system-core": "^10.0.2",
+    "@pluralsight/ps-design-system-icon": "^25.1.1",
+    "@pluralsight/ps-design-system-navitem": "^6.0.10",
+    "@pluralsight/ps-design-system-util": "^10.1.1"
   },
   "peerDependencies": {
     "@pluralsight/ps-design-system-normalize": "^6.0.0",
@@ -42,13 +42,13 @@
     "react": "^17.0.1"
   },
   "devDependencies": {
-    "@pluralsight/ps-design-system-actionmenu": "^18.0.9",
+    "@pluralsight/ps-design-system-actionmenu": "^18.0.10",
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-navbrand": "^5.0.6",
+    "@pluralsight/ps-design-system-navbrand": "^5.0.7",
     "@pluralsight/ps-design-system-navitem": "*",
-    "@pluralsight/ps-design-system-navuser": "^5.0.9",
-    "@pluralsight/ps-design-system-position": "^9.0.3",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.10"
+    "@pluralsight/ps-design-system-navuser": "^5.0.10",
+    "@pluralsight/ps-design-system-position": "^9.0.4",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.11"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"
 }
