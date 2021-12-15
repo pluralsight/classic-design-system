@@ -7,6 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'yarn'
       - run: rm -rf examples && rm -rf testbed-a11y
       - run: yarn install
       - run: yarn lint:ci
@@ -17,6 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'yarn'
       - run: rm -rf examples && rm -rf testbed-a11y
       - run: yarn install
       - run: yarn deps:check:circular
@@ -27,6 +33,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'yarn'
       - uses: danger/danger-js@10.7.1
         env:
           GITHUB_TOKEN: ${{secrets.DANGER_GITHUB_API_TOKEN}}
