@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v2.4.0
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+          access-token: ${{ secrets.GH_PAGES_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
           skip-publish: true
@@ -35,7 +35,7 @@ jobs:
       - uses: actions/checkout@v2.4.0
       - uses: enriikke/gatsby-gh-pages-action@v2
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
+          access-token: ${{ secrets.GH_PAGES_TOKEN }}
           deploy-branch: 'gh-pages'
           gatsby-args: --prefix-paths
           git-config-name: 'gh-bot'
