@@ -7,17 +7,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs
 
-
-
-
-
 ## [0.35.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.35.4...@pluralsight/ps-design-system-docs@0.35.5) (2021-12-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-docs
-
-
-
-
 
 ## [0.35.4](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-docs@0.35.3...@pluralsight/ps-design-system-docs@0.35.4) (2021-12-15)
 
