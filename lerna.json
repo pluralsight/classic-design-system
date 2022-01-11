@@ -1,14 +1,13 @@
 {
-  "packages": ["docs", "./packages/*", "./examples/*"],
+  "packages": ["./packages/*"],
   "command": {
     "version": {
       "allowBranch": "master",
       "conventionalCommits": true,
-      "ignore": ["docs", "./examples/*"],
       "message": "build: publish"
     }
   },
-  "version": "independent",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "version": "independent"
 }
