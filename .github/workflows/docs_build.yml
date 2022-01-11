@@ -1,9 +1,4 @@
 on:
-  push:
-    paths:
-      - 'docs/**'
-    branches:
-      - master
   pull_request:
     paths:
       - 'docs/**'
@@ -12,7 +7,6 @@ on:
 
 jobs:
   docs-build:
-    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     name: 👷‍♀️ Docs successfully build
     steps:

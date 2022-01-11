@@ -4,15 +4,9 @@ on:
       - 'docs/**'
     branches:
       - master
-  pull_request:
-    paths:
-      - 'docs/**'
-    branches:
-      - master
 
 jobs:
   gh-release:
-    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     name: 🚀 Release to GitHub Pages
     steps:
