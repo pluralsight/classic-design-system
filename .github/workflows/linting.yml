@@ -27,6 +27,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - uses: danger/danger-js@10.7.1
+      - uses: danger/danger-js@10.8.0
         env:
           GITHUB_TOKEN: ${{secrets.DANGER_GITHUB_API_TOKEN}}
