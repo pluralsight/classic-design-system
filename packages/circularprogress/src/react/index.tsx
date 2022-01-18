@@ -45,7 +45,7 @@ const CircularProgress = React.forwardRef<
   const themeName = useTheme()
 
   const dashOffset =
-    ((100 - (value || defaultIndeterminateValue)) / 100) * circumference
+    ((100 - (value ?? defaultIndeterminateValue)) / 100) * circumference
   const busy = value
     ? value === 100
       ? 'false'
