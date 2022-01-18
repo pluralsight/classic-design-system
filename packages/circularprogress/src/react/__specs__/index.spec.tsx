@@ -1,7 +1,7 @@
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { axe } from 'jest-axe'
 import React from 'react'
-import { render, screen, within } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
 import CircularProgress, { circumference } from '../index'
 import * as stories from '../__stories__/index.story'
