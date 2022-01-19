@@ -11,7 +11,7 @@ import '../css/index.css'
 import * as vars from '../vars/index'
 
 const radius = vars.style.width / 2 - vars.style.strokeWidth / 2
-const circumference = 2 * Math.PI * radius
+export const circumference = 2 * Math.PI * radius
 
 interface CircularProgressProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: ValueOf<typeof vars.sizes>
@@ -45,7 +45,7 @@ const CircularProgress = React.forwardRef<
   const themeName = useTheme()
 
   const dashOffset =
-    ((100 - (value || defaultIndeterminateValue)) / 100) * circumference
+    ((100 - (value ?? defaultIndeterminateValue)) / 100) * circumference
   const busy = value
     ? value === 100
       ? 'false'

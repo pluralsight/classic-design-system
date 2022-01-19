@@ -1,9 +1,9 @@
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
 import { axe } from 'jest-axe'
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
-import CircularProgress from '../index'
+import CircularProgress, { circumference } from '../index'
 import * as stories from '../__stories__/index.story'
 
 describe('CircularProgress', () => {
@@ -36,6 +36,27 @@ describe('CircularProgress', () => {
     expect(container.firstChild).toHaveClass(
       'psds-circularprogress--size-medium compose-classname'
     )
+  })
+
+  it('displays zero correctly', () => {
+    render(
+      <CircularProgress
+        value={0}
+        aria-label="0% complete"
+        data-testid="zero-test"
+      />
+    )
+
+    // Get the SVG path to test
+    const el = screen
+      .getByTestId('zero-test')
+      .querySelector('.psds-circularprogress__fg')
+
+    // Get the attribute value to test
+    const dashoffset = el?.getAttribute('stroke-dashoffset') ?? ''
+
+    // Test the values after type conversion
+    expect(parseFloat(dashoffset)).toEqual(circumference)
   })
 
   describe.each(cases)('%s story', (_name, Story) => {

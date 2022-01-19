@@ -26,7 +26,7 @@ exports[`Storyshots Components/CircularProgress Animation 1`] = `
         cy="24"
         r={22}
         strokeDasharray="138.23007675795088 138.23007675795088"
-        strokeDashoffset={103.67255756846316}
+        strokeDashoffset={138.23007675795088}
       />
     </svg>
   </div>
@@ -118,7 +118,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         cy="24"
         r={22}
         strokeDasharray="138.23007675795088 138.23007675795088"
-        strokeDashoffset={103.67255756846316}
+        strokeDashoffset={138.23007675795088}
       />
     </svg>
   </div>
@@ -146,7 +146,7 @@ exports[`Storyshots Components/CircularProgress Values And Sizes 1`] = `
         cy="24"
         r={22}
         strokeDasharray="138.23007675795088 138.23007675795088"
-        strokeDashoffset={103.67255756846316}
+        strokeDashoffset={138.23007675795088}
       />
     </svg>
   </div>
