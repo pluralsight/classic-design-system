@@ -225,10 +225,18 @@ export const useDropdown = (
           evt: Event
         ) => {
           if (
-            !(evt.target instanceof HTMLElement) ||
-            !ref.current?.contains(evt.target)
-          )
+            !(
+              evt.target instanceof HTMLElement ||
+              evt.target instanceof SVGElement
+            ) ||
+            !(
+              ref.current?.contains(evt.target as Node) ||
+              evt.target === buttonRef.current ||
+              buttonRef.current?.contains(evt.target as Node)
+            )
+          ) {
             setOpen(false)
+          }
         },
         onMenuClick: handleMenuItemClick,
         selectedItem
