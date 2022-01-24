@@ -7,6 +7,7 @@ import React from 'react'
 import Dropdown from '../index'
 
 import * as stories from '../__stories__/index.story'
+import * as examples from '../__stories__/examples.story'
 
 const pressArrowDown = (el = document?.activeElement) => {
   fireEvent.keyDown(el as HTMLElement, { key: 'ArrowDown', code: 'ArrowDown' })
@@ -160,6 +161,21 @@ describe('Dropdown', () => {
 
       const menu = screen.getByRole('listbox')
       expect(menu).toBeInTheDocument()
+    })
+
+    it('caret down click closes other open menus', () => {
+      const { StyleFixedWidth } = examples
+      render(<StyleFixedWidth {...StyleFixedWidth.args} />)
+
+      const caretDowns = screen.getAllByRole('img', { name: 'caret down icon' })
+      userEvent.click(caretDowns[0])
+
+      const menus1 = screen.getAllByRole('listbox')
+      expect(menus1.length).toEqual(1)
+
+      userEvent.click(caretDowns[1])
+      const menus2 = screen.getAllByRole('listbox')
+      expect(menus2.length).toEqual(1)
     })
 
     it('items are selectable by mouse click', () => {

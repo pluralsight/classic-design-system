@@ -110,7 +110,7 @@ export const onGlobalEventsClose: EventHandler = (el, callback) => {
   if (!canUseDOM()) return noop
 
   const handleClickOutsideMenu = (evt: MouseEvent) => {
-    if (evt.target instanceof HTMLElement) {
+    if (evt.target instanceof HTMLElement || evt.target instanceof SVGElement) {
       if (el.contains(evt.target)) return
       callback(evt)
     }
