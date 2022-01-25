@@ -139,6 +139,18 @@ describe('Dropdown', () => {
       expect(menu).toBeInTheDocument()
     })
 
+    it('subsequent button click closes the open menu', () => {
+      render(<Basic {...Basic.args} placeholder="Select" />)
+
+      const button = screen.getByRole('button', { name: /Select/ })
+      userEvent.click(button)
+
+      const menu = screen.queryByRole('listbox')
+      expect(menu).toBeInTheDocument()
+      userEvent.click(button)
+      expect(menu).not.toBeInTheDocument()
+    })
+
     it('caret down click opens the menu', () => {
       render(<Basic {...Basic.args} />)
 
