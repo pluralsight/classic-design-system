@@ -6,7 +6,7 @@ import { CloseIcon, SearchIcon } from '@pluralsight/ps-design-system-icon'
 import TextInput, {
   TextInputProps
 } from '@pluralsight/ps-design-system-textinput'
-import { RefFor, classNames } from '@pluralsight/ps-design-system-util'
+import { classNames } from '@pluralsight/ps-design-system-util'
 
 import '../css/index.css'
 
@@ -61,7 +61,7 @@ const SearchInput = React.forwardRef<HTMLInputElement, SearchInputProps>(
         appearance={TextInput.appearances.subtle}
         fieldAfter={clearBtn}
         icon={icon}
-        ref={ref as RefFor<'input'>}
+        ref={ref as React.RefObject<HTMLInputElement>}
         {...rest}
         type="search"
       />

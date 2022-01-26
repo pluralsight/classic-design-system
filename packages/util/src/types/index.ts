@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * @deprecated
+ */
 export type RefFor<K extends keyof HTMLElementTagNameMap> = React.RefObject<
   HTMLElementTagNameMap[K]
 >

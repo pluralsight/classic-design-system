@@ -4,7 +4,6 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
-  RefFor,
   ValueOf,
   classNames,
   useResizeObserver
@@ -84,7 +83,7 @@ const EmptyState = React.forwardRef<HTMLDivElement, EmptyStateProps>(
             !hasRenderedOnce && 'psds-emptystate--hidden',
             className
           )}
-          ref={ref as RefFor<'div'>}
+          ref={ref as React.RefObject<HTMLDivElement>}
         >
           {illustration}
           {heading}

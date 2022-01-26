@@ -6,7 +6,6 @@ import {
   CaretRightIcon
 } from '@pluralsight/ps-design-system-icon'
 import {
-  RefFor,
   ValueOf,
   classNames,
   debounce,
@@ -212,7 +211,7 @@ export const Calendar = React.forwardRef<HTMLDivElement, CalendarProps>(
               slide === 'forward' && 'psds-calendar__grid-slide--forward',
               slide === 'backward' && 'psds-calendar__grid-slide--backward'
             )}
-            ref={animationRef as RefFor<'div'>}
+            ref={animationRef as React.RefObject<HTMLDivElement>}
           >
             {calendars.map((calendar, i) => (
               <div
