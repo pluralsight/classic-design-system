@@ -31,12 +31,12 @@ export const Quote: React.FC<QuoteProps> = props => {
     if (typeof child === 'string') return child
   }).join(' ')
 
-  const className = cx({
+  const className = cx(props.className, {
     [styles.quote]: true,
     [styles.small]: innerText.length > 50
   })
 
-  return <blockquote className={className} {...props} />
+  return <blockquote {...props} className={className} />
 }
 
 export const QuoteList: React.FC<HTMLAttributes<HTMLUListElement>> = props => (
