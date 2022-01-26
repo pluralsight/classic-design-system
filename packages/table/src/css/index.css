@@ -114,7 +114,7 @@
 }
 
 .psds-table__header--sortable.psds-theme--light:hover {
-  color: var(--ps-colors-text-icon-high-on-dark);
+  color: var(--ps-colors-text-icon-high-on-light);
 }
 
 .psds-table__header__sort-icon.psds-table__header__sort-icon {
