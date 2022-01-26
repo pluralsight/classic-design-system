@@ -68,9 +68,9 @@ export default Example
 
 Calendar is a top-level component for creating a calendar. When used in concert with the [`useDayzed`](https://github.com/deseretdigital/dayzed) hook, it takes all returned props except `getDateProps`
 
-```typescript noRender 
+```typescript noRender
 import { useDayzed } from 'dayzed'
-import { Calendar } from '@pluralsight/ps-design-system-datepicker' 
+import { Calendar } from '@pluralsight/ps-design-system-datepicker'
 
 return (
   <Calendar {...useDayzed({
@@ -85,7 +85,7 @@ return (
 
 CalendarDay is to be used as a renderProp to pass through date props to each Calendar grid button
 
-```typescript noRender 
+```typescript noRender
 import { useDayzed } from 'dayzed'
 import { CalendarDayProps,  CalendarDay, Calendar} from '@pluralsight/ps-design-system-datepicker'
 
@@ -121,7 +121,7 @@ The `useIsInRange` hook is used for every date picker.
 
 The hook will return an object with these properties:
 **Returns:** an object
- 
+
 <TypesTable defaultColumn={false}>
   <TypesProp
     name="onMouseEnter"
@@ -143,7 +143,7 @@ The hook will return an object with these properties:
   />
 </TypesTable>
 
-```typescript noRender 
+```typescript noRender
 import { useDayzed } from 'dayzed'
 import {
   Calendar,
@@ -178,7 +178,7 @@ return (
 
 ### onRangeDateSelected
 
-The `onRangeDateSelected` hook is a helper which returns a function to pass to the `useDayzed` hook in the `onDateSelected` parameter. 
+The `onRangeDateSelected` hook is a helper which returns a function to pass to the `useDayzed` hook in the `onDateSelected` parameter.
 
 **Parameters**: an object
 
@@ -206,7 +206,7 @@ Pass the return value directly to `onDateSelect` as seen in the example below.
 
 Please refer to the dayzed typings for information on the shape of the [`dayzed.DateObj` interface](https://github.com/deseretdigital/dayzed/blob/ebf1de1ceb9695738895f8b08bf45ad9a894fe00/typings/dayzed.d.ts#L9-L16).
 
-```typescript noRender 
+```typescript noRender
 import { useDayzed, DateObj } from 'dayzed'
 import {
   Calendar,
@@ -221,7 +221,7 @@ const [selected, setSelected] = React.useState<Date[] | undefined>()
 const { onMouseLeave, onMouseEnter, isInRange } = useIsInRange(selected)
 
 return (
-  <Calendar 
+  <Calendar
     {... useDayzed({
       selected,
       onDateSelected: onRangeDateSelected({
@@ -230,7 +230,7 @@ return (
         // onSelect (optional)
       }),
       // ...rest of config
-    })} 
+    })}
     onMouseLeave={onMouseLeave}
   >
     {(props: CalendarDayProps) => {
@@ -249,7 +249,7 @@ return (
 
 ### onMultiDateSelected
 
-The `onMultiDateSelected` hook is similar to the `onRangeDateSelected` hook, except that it is used for date pickers where discrete dates are being selected.  It is a helper which returns a function to pass to the `useDayzed` hook in the `onDateSelected` parameter. 
+The `onMultiDateSelected` hook is similar to the `onRangeDateSelected` hook, except that it is used for date pickers where discrete dates are being selected.  It is a helper which returns a function to pass to the `useDayzed` hook in the `onDateSelected` parameter.
 
 **Parameters**: an object
 
@@ -275,7 +275,7 @@ The `onMultiDateSelected` hook is similar to the `onRangeDateSelected` hook, exc
 
 Pass the return value directly to `onDateSelected` as seen in the example below.
 
-```typescript noRender 
+```typescript noRender
 import { useDayzed, DateObj } from 'dayzed'
 import {
   Calendar,
@@ -351,7 +351,7 @@ return (
   />
 </TypesTable>
 
-```typescript noRender 
+```typescript noRender
 import { useDayzed, DateObj } from 'dayzed'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import TextInput from '@pluralsight/ps-design-system-textinput'
@@ -377,7 +377,7 @@ const [selected, setSelected] = React.useState<Date | undefined>()
 return (
   <>
     <TextInput
-      ref={inputRef as RefFor<'input'>}
+      ref={inputRef as React.RefObject<HTMLInputElement>}
       onChange={handleChange}
       value={value}
     />
@@ -394,7 +394,7 @@ return (
 
 ### handleRangeSelectChange
 
-`handleRangeSelectChange` is like the `handleDateSelectChange` hook except it's designed to work with two inputs representing the start and end of a date range. 
+`handleRangeSelectChange` is like the `handleDateSelectChange` hook except it's designed to work with two inputs representing the start and end of a date range.
 
 **Parameters:** an object
 
@@ -451,7 +451,7 @@ return (
 
 Two calls to the hook as usual, with one being used for an input for the start date and another for the input of the end date.
 
-```typescript noRender 
+```typescript noRender
 import { useDayzed, DateObj } from 'dayzed'
 import { ValueOf } from '@pluralsight/ps-design-system-util'
 import TextInput from '@pluralsight/ps-design-system-textinput'
@@ -500,7 +500,7 @@ return (
     <Calendar
       {... useDayzed({
         // ...rest of config
-      })} 
+      })}
       onMouseLeave={onMouseLeave}
     >
       {(props: CalendarDayProps) => {
@@ -524,11 +524,11 @@ return (
 
 For this first example, here are steps that to be considered when determining how to configure a date picker. Most other examples don't have these steps but should be similar. Learn this example well first in order to understand the rest more easily.
 
-1. Create a new state object & setter `selected: Date` and `setSelected: React.Dispatch<React.SetStateAction<Date | undefined>>` then optionally set the intial date. 
+1. Create a new state object & setter `selected: Date` and `setSelected: React.Dispatch<React.SetStateAction<Date | undefined>>` then optionally set the intial date.
 2. Create an `onDateSelected` callback that will update the selected state when a calendar date is clicked along with any side effects desired.
 3. Pass `selected`, `setSelected`, and `onDateSelected` to the `useDayzed` hook from the dayzed library along with any other [dayzed props](https://github.com/deseretdigital/dayzed#props) desired.
 
-```typescript 
+```typescript
 import { useDayzed, DateObj } from 'dayzed'
 import { format } from 'date-fns'
 import { colorsBackgroundLight, type, colorsTextIcon, colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
@@ -608,7 +608,7 @@ with any side effects desired using the `onSelect` argument.
 hook from the dayzed library along with any other [dayzed props](https://github.com/deseretdigital/dayzed#props) desired.
 pattern to apply styles and handlers to buttons that represent individual dates in a month.
 4. Import and setup `useIsInRange` hook and pass the return to `Calendar`, `CalendarDay` as shown below
-```typescript 
+```typescript
 import { useDayzed, DateObj } from 'dayzed'
 import { format } from 'date-fns'
 import { colorsBackgroundLight, type, colorsTextIcon, colorsBackgroundDark, layout } from '@pluralsight/ps-design-system-core'
@@ -811,13 +811,13 @@ export default Example
 
 This guide is to migrate the old DatePicker to a single datepicker using the new components and functions using a custom setup. This is useful when one needs to grab ref or handle unique logic.
 
-1. Create a new state object & setter `selected: Date` and `setSelected: React.Dispatch<React.SetStateAction<Date | undefined>>` then optionally set the initial date. 
-1. Create a new state object & setter `open: boolean` and `setOpen: React.Dispatch<React.SetStateAction<boolean>>` then set it to false. 
+1. Create a new state object & setter `selected: Date` and `setSelected: React.Dispatch<React.SetStateAction<Date | undefined>>` then optionally set the initial date.
+1. Create a new state object & setter `open: boolean` and `setOpen: React.Dispatch<React.SetStateAction<boolean>>` then set it to false.
 2. Create an `onDateSelected` callback that will update the selected and open states when a calendar date is clicked along with any side effects desired.
 3. Pass `selected`, `setSelected`, and `onDateSelected` to the `useDayzed` hook from the dayzed library along with any other [dayzed props](https://github.com/deseretdigital/dayzed#props) desired.
 4. Create a handleIconClick callback to be passed to CalendarIcon and will toggle the open state when clicked.
 5. Create a new state object & setter `open: boolean` and `setOpen: React.Dispatch<React.SetStateAction<boolean>>`.
-6. Use the `handleChange` callback and pass it `dateFormat`, `selected`, `setSelected`, and `value` to manipulate the calendar using an input as demonstrated below. 
+6. Use the `handleChange` callback and pass it `dateFormat`, `selected`, `setSelected`, and `value` to manipulate the calendar using an input as demonstrated below.
 
 ```typescript
 import { useDayzed, DateObj } from 'dayzed'

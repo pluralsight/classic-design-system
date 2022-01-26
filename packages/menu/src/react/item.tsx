@@ -1,5 +1,4 @@
 import {
-  RefFor,
   classNames,
   forwardRefWithAs
 } from '@pluralsight/ps-design-system-util'
@@ -76,7 +75,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
       tabIndex={!disabled ? -1 : undefined}
       onKeyDown={handleKeyDown}
       onClick={handleClick}
-      ref={listItem as RefFor<'div'>}
+      ref={listItem as React.RefObject<HTMLDivElement>}
       onBlur={handleActiveState}
       onFocus={handleActiveState}
       {...listboxProps}
@@ -84,7 +83,7 @@ export const Item = forwardRefWithAs<MenuItemProps, 'button'>((props, ref) => {
       <Comp
         className="psds-menu__option"
         disabled={disabled}
-        ref={ref as RefFor<typeof Comp>}
+        ref={ref as React.RefObject<HTMLButtonElement>}
         role={optionRole}
         {...rest}
       >

@@ -4,7 +4,6 @@ import {
 } from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
-  RefFor,
   ValueOf,
   classNames,
   useResizeObserver
@@ -87,7 +86,7 @@ const ErrorPage = React.forwardRef<HTMLDivElement, ErrorPageProps>(
             !hasRenderedOnce && 'psds-errorpage--hidden',
             className
           )}
-          ref={ref as RefFor<'div'>}
+          ref={ref as React.RefObject<HTMLDivElement>}
         >
           {illustration}
           {heading}

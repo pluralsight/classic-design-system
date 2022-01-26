@@ -1,9 +1,5 @@
 import Field from '@pluralsight/ps-design-system-field'
-import {
-  canUseDOM,
-  RefFor,
-  generateId
-} from '@pluralsight/ps-design-system-util'
+import { canUseDOM, generateId } from '@pluralsight/ps-design-system-util'
 import { format } from 'date-fns'
 import { useDayzed, DateObj } from 'dayzed'
 import React from 'react'
@@ -118,7 +114,7 @@ export const DatePicker: React.FC<DatePickerProps> = ({
     <div
       style={{ display: 'inline-block', position: 'relative' }}
       {...props}
-      ref={ref as RefFor<'div'>}
+      ref={ref as React.RefObject<HTMLDivElement>}
     >
       <TextInputField
         disabled={disabled}

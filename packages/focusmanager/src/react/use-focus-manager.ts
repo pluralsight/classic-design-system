@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
-import { canUseDOM, RefFor } from '@pluralsight/ps-design-system-util'
+import { canUseDOM } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 const FOCUSABLE_SELECTORS = [
@@ -16,7 +16,7 @@ const FOCUSABLE_SELECTORS = [
 ]
 
 export default function useFocusManager(
-  ref: RefFor<'div'>,
+  ref: React.RefObject<HTMLDivElement>,
   {
     autofocus,
     returnFocus,

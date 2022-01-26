@@ -3,7 +3,6 @@ import { CloseIcon } from '@pluralsight/ps-design-system-icon'
 import { P } from '@pluralsight/ps-design-system-text'
 import {
   RefForwardingComponent,
-  RefFor,
   ValueOf,
   classNames
 } from '@pluralsight/ps-design-system-util'

@@ -1,5 +1,4 @@
 import {
-  RefFor,
   ValueOf,
   classNames,
   dashify
@@ -20,7 +19,7 @@ interface ItemProps extends React.HTMLAttributes<HTMLLIElement> {
   onClick?: (event: React.MouseEvent, value?: React.ReactText) => void
   origin?: ValueOf<typeof origins>
   value?: React.ReactText
-  ref?: RefFor<'li'>
+  ref?: React.RefObject<HTMLLIElement>
   tagName?: 'a' | 'button'
   href?: string
   target?: string

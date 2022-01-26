@@ -3,7 +3,6 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   ValueOf,
   RefForwardingComponent,
-  RefFor,
   classNames
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
@@ -127,7 +126,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
           checked={checked}
           disabled={disabled}
           readOnly
-          ref={ref as RefFor<'input'>}
+          ref={ref as React.RefObject<HTMLInputElement>}
           name={name}
           onKeyDown={handleClick}
           onClick={disabled ? undefined : handleClick}

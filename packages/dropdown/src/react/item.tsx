@@ -1,5 +1,5 @@
 import { CheckIcon } from '@pluralsight/ps-design-system-icon'
-import { RefFor, classNames } from '@pluralsight/ps-design-system-util'
+import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import '../css/index.css'
@@ -59,7 +59,7 @@ export const Item = React.forwardRef<HTMLButtonElement, DropdownItemProps>(
         onKeyDown={handleKeyDown}
         role="option"
         aria-selected={isSelected}
-        ref={ref as RefFor<'button'>}
+        ref={ref as React.RefObject<HTMLButtonElement>}
         tabIndex={-1}
         {...rest}
         className={classNames(
