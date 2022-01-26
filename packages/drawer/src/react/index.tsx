@@ -5,8 +5,7 @@ import { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   classNames,
   generateId,
-  useToggle,
-  RefFor
+  useToggle
 } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
@@ -84,7 +83,8 @@ const Details = React.forwardRef<HTMLDivElement, DetailsProps>(
     React.useImperativeHandle(
       forwardedRef,
       () =>
-        (ref as unknown as RefFor<'div'>).current as unknown as HTMLDivElement
+        (ref as unknown as React.RefObject<HTMLDivElement>)
+          .current as unknown as HTMLDivElement
     )
     return (
       <div

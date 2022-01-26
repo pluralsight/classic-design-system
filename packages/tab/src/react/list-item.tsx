@@ -1,5 +1,5 @@
 import { useTheme } from '@pluralsight/ps-design-system-theme'
-import { RefFor, classNames } from '@pluralsight/ps-design-system-util'
+import { classNames } from '@pluralsight/ps-design-system-util'
 import React from 'react'
 
 import '../css/index.css'
@@ -23,8 +23,14 @@ export interface ListItemButtonProps
 type ListItemElement = HTMLButtonElement | HTMLAnchorElement
 type ListItemProps = ListItemAnchorProps | ListItemButtonProps
 type ListItemComponent = React.ForwardRefExoticComponent<ListItemProps> & {
-  (props: ListItemAnchorProps, ref?: RefFor<'a'>): JSX.Element
-  (props: ListItemButtonProps, ref?: RefFor<'button'>): JSX.Element
+  (
+    props: ListItemAnchorProps,
+    ref?: React.RefObject<HTMLAnchorElement>
+  ): JSX.Element
+  (
+    props: ListItemButtonProps,
+    ref?: React.RefObject<HTMLButtonElement>
+  ): JSX.Element
 }
 
 const ListItem = React.forwardRef<ListItemElement, ListItemProps>(

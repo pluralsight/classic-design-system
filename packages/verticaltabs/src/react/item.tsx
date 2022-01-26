@@ -7,7 +7,6 @@ import {
   ValueOf,
   combineFns,
   omit,
-  RefFor,
   classNames
 } from '@pluralsight/ps-design-system-util'
 import React, { useEffect } from 'react'
@@ -147,19 +146,19 @@ const Tier1Header = React.forwardRef<any, ItemHeaderProps>((props, ref) => {
     rest.href ? (
       <a
         {...wrapperProps}
-        ref={ref as RefFor<'a'>}
+        ref={ref as React.RefObject<HTMLAnchorElement>}
         className={classNames(styles.tier1Header(), className)}
       />
     ) : rest.onClick ? (
       <button
         {...wrapperProps}
-        ref={ref as RefFor<'button'>}
+        ref={ref as React.RefObject<HTMLButtonElement>}
         className={classNames(styles.tier1Header(), className)}
       />
     ) : (
       <span
         {...wrapperProps}
-        ref={ref as RefFor<'span'>}
+        ref={ref as React.RefObject<HTMLSpanElement>}
         className={classNames(styles.tier1Header(), className)}
       />
     )
@@ -211,19 +210,19 @@ const Tier2Header = React.forwardRef<any, ItemHeaderProps>(
       rest.href ? (
         <a
           {...wrapperProps}
-          ref={ref as RefFor<'a'>}
+          ref={ref as React.RefObject<HTMLAnchorElement>}
           className={classNames(styles.tier2Header(), className)}
         />
       ) : rest.onClick ? (
         <button
           {...wrapperProps}
-          ref={ref as RefFor<'button'>}
+          ref={ref as React.RefObject<HTMLButtonElement>}
           className={classNames(styles.tier2Header(), className)}
         />
       ) : (
         <span
           {...wrapperProps}
-          ref={ref as RefFor<'span'>}
+          ref={ref as React.RefObject<HTMLSpanElement>}
           className={classNames(styles.tier2Header(), className)}
         />
       )

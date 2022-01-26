@@ -1,5 +1,4 @@
 import * as core from '@pluralsight/ps-design-system-core'
-import { RefFor } from '@pluralsight/ps-design-system-util'
 import { BelowLeft, BelowRight } from '@pluralsight/ps-design-system-position'
 import { Meta, Story } from '@storybook/react/types-6-0'
 import { action } from '@storybook/addon-actions'
@@ -103,7 +102,7 @@ export const ActiveItem: Story = () => {
       optionRole="option"
       aria-label="some label"
       selectedItem={selectedItem}
-      ref={ref as RefFor<'div'>}
+      ref={ref as React.RefObject<HTMLDivElement>}
     >
       <Menu.Item>Not active</Menu.Item>
       <Menu.Item active value="active" label="active">
@@ -135,7 +134,7 @@ export const ActiveAndSelectedItem: Story = () => {
       optionRole="option"
       selectedItem={selectedItem}
       useActive={useActive}
-      ref={ref as RefFor<'div'>}
+      ref={ref as React.RefObject<HTMLDivElement>}
     >
       <Menu.Item>Not active</Menu.Item>
       <Menu.Item active value="active" label="active">
