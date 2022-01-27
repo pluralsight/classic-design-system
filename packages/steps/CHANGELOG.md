@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [5.0.9](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@5.0.8...@pluralsight/ps-design-system-steps@5.0.9) (2022-01-27)
+
+
+### Bug Fixes
+
+* **dropdown:** [#2012](https://github.com/pluralsight/design-system/issues/2012) - update outdated snapshot ([15653b6](https://github.com/pluralsight/design-system/commit/15653b697630d84b74f22940c31f05ce223cc949))
+
+
+
+
+
 ## [5.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-steps@5.0.7...@pluralsight/ps-design-system-steps@5.0.8) (2021-12-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-steps

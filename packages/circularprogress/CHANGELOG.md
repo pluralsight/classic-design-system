@@ -3,6 +3,21 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [12.0.6](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@12.0.5...@pluralsight/ps-design-system-circularprogress@12.0.6) (2022-01-27)
+
+
+### Bug Fixes
+
+* **circularprogress:** add test for 0 value ([24ff16f](https://github.com/pluralsight/design-system/commit/24ff16f83bfb309b3bc26d821f83e120bba9a18a))
+* **circularprogress:** export circumference value for testing ([ae42d77](https://github.com/pluralsight/design-system/commit/ae42d776791fa7b049fd616a48994027fa70ff9a))
+* **circularprogress:** fixes [#2051](https://github.com/pluralsight/design-system/issues/2051) - allow zero ([e999955](https://github.com/pluralsight/design-system/commit/e999955dc39c47ce1e0f2fd4580b02e46a59b741))
+* **circularprogress:** remove unused reference ([7f1274a](https://github.com/pluralsight/design-system/commit/7f1274a9622780d16e211e61ae66ad9f5abb4d5b))
+* **circularprogress:** update jest snapshot ([f3305cd](https://github.com/pluralsight/design-system/commit/f3305cd68f526b9b1090c47fc5cdd4ec710016a8))
+
+
+
+
+
 ## [12.0.5](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-circularprogress@12.0.4...@pluralsight/ps-design-system-circularprogress@12.0.5) (2021-12-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-circularprogress

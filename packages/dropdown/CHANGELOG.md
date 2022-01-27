@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.0.13](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.12...@pluralsight/ps-design-system-dropdown@13.0.13) (2022-01-27)
+
+
+### Bug Fixes
+
+* **dropdown:** [#1609](https://github.com/pluralsight/design-system/issues/1609) - add unit test for bug ([cf86a96](https://github.com/pluralsight/design-system/commit/cf86a9688f93e1df2205c9e67bb80c3e3eb28e80))
+* **dropdown:** [#2012](https://github.com/pluralsight/design-system/issues/2012) - add unit test for bug ([baa0cb1](https://github.com/pluralsight/design-system/commit/baa0cb1e5245abb839ba3e86601c5922e1220037))
+* **dropdown:** closes [#1609](https://github.com/pluralsight/design-system/issues/1609) - don't apply outside menu interaction to button beloning to same dropdown ([b94cba9](https://github.com/pluralsight/design-system/commit/b94cba964bc904fa2230e4bf2e673cd2df2a87dd))
+
+
+
+
+
 ## [13.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.0.11...@pluralsight/ps-design-system-dropdown@13.0.12) (2021-12-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown

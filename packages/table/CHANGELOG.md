@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [17.0.8](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@17.0.7...@pluralsight/ps-design-system-table@17.0.8) (2022-01-27)
+
+
+### Bug Fixes
+
+* **table:** closes [#2065](https://github.com/pluralsight/design-system/issues/2065) - correct light theme sortable table header hover color ([a57caa5](https://github.com/pluralsight/design-system/commit/a57caa5f0e3ea9867e8057f85e765e3b1b4f6dc5))
+
+
+
+
+
 ## [17.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-table@17.0.6...@pluralsight/ps-design-system-table@17.0.7) (2021-12-15)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-table

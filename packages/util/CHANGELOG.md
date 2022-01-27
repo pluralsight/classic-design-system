@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [10.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@10.1.1...@pluralsight/ps-design-system-util@10.1.2) (2022-01-27)
+
+
+### Bug Fixes
+
+* **dropdown:** [#2012](https://github.com/pluralsight/design-system/issues/2012) - also check for svg ([69c3a6b](https://github.com/pluralsight/design-system/commit/69c3a6bcaf885bd08ecb610c27ed1305762ad635))
+
+
+
+
+
 ## [10.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-util@10.1.0...@pluralsight/ps-design-system-util@10.1.1) (2021-12-15)
 
 
