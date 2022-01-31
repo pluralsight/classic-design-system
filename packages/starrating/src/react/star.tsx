@@ -1,5 +1,5 @@
 import Icon, {
-  StarFillIcon,
+  StarFilledIcon,
   StarIcon
 } from '@pluralsight/ps-design-system-icon'
 import { useTheme } from '@pluralsight/ps-design-system-theme'
@@ -111,7 +111,7 @@ const Star: React.FC<StarProp> & StarStatics = ({
       {...(interactive ? { 'aria-label': label } : { 'aria-hidden': true })}
     >
       {props.appearance === APPEARANCES.full && (
-        <StarFillIcon size={iconSize} />
+        <StarFilledIcon size={iconSize} />
       )}
 
       {props.appearance === APPEARANCES.empty && <StarIcon size={iconSize} />}

@@ -4197,7 +4197,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       id="icon-SortAscIcon"
     >
       <svg
-        aria-label="sort desc icon"
+        aria-label="sort ascending icon"
         role="img"
         viewBox="0 0 24 24"
       >
