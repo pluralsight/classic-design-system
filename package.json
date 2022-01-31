@@ -42,6 +42,7 @@
     "start:circularprogress": "yarn workspace @pluralsight/ps-design-system-circularprogress run storybook",
     "start:dropdown": "yarn workspace @pluralsight/ps-design-system-dropdown run storybook",
     "start:table": "yarn workspace @pluralsight/ps-design-system-table run storybook",
+    "start:icon": "yarn workspace @pluralsight/ps-design-system-icon run storybook",
     "test": "jest",
     "test:ci": "jest --ci"
   },
