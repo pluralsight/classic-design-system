@@ -3196,6 +3196,35 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <div
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-PlayCircleFilledIcon"
+    >
+      <svg
+        aria-label="play circle filled icon"
+        role="img"
+        viewBox="0 0 20 20"
+      >
+        <path
+          clipRule="evenodd"
+          d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm8.389 3.74 5.299-3.532a.25.25 0 0 0 0-.416l-5.3-3.533A.25.25 0 0 0 8 6.467v7.066a.25.25 0 0 0 .389.208z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div>
+      PlayCircleFilledIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PlayCircleIcon"
     >
       <svg
@@ -3964,6 +3993,33 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <div
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-SocialFacebookAltIcon"
+    >
+      <svg
+        aria-label="facebook icon"
+        role="img"
+        viewBox="0 0 12 20"
+      >
+        <path
+          d="M3.831 20v-8.75H.656V7.625h3.175V4.862C3.831 1.725 5.694 0 8.556 0c1.363 0 2.788.237 2.788.237v3.088H9.769c-1.55 0-2.038.962-2.038 1.95v2.35h3.475l-.562 3.625H7.73V20h-3.9z"
+        />
+      </svg>
+    </div>
+    <div>
+      SocialFacebookAltIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialFacebookIcon"
     >
       <svg
@@ -4051,6 +4107,33 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <div
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-SocialLinkedinAltIcon"
+    >
+      <svg
+        aria-label="linkedin icon"
+        role="img"
+        viewBox="0 0 18 18"
+      >
+        <path
+          d="M0 2.277a2.277 2.277 0 1 1 4.553 0 2.277 2.277 0 0 1-4.553 0zM18 18h-3.857v-6.667c0-1.042-.935-1.886-1.977-1.886a1.887 1.887 0 0 0-1.887 1.886V18H6.43V6.429h3.85v1.76c.63-1.057 2-1.761 3.145-1.761 2.431 0 4.576 1.97 4.576 4.402V18zM0 18h3.857V6.429H0z"
+        />
+      </svg>
+    </div>
+    <div>
+      SocialLinkedinAltIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialLinkedinIcon"
     >
       <svg
@@ -4067,6 +4150,33 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
     </div>
     <div>
       SocialLinkedinIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-SocialMediumAltIcon"
+    >
+      <svg
+        aria-label="medium icon"
+        role="img"
+        viewBox="0 0 20 12"
+      >
+        <path
+          d="M11.281 6c0 3.137-2.525 5.68-5.64 5.68S0 9.136 0 6 2.525.32 5.64.32c3.116 0 5.641 2.544 5.641 5.68zm6.189 0c0 2.952-1.264 5.347-2.821 5.347-1.558 0-2.82-2.395-2.82-5.347S13.091.653 14.649.653c1.557 0 2.82 2.394 2.82 5.347zM20 6c0 2.645-.444 4.79-.992 4.79s-.992-2.145-.992-4.79.444-4.79.992-4.79S20 3.355 20 6z"
+        />
+      </svg>
+    </div>
+    <div>
+      SocialMediumAltIcon
     </div>
   </div>
   <div
@@ -5115,6 +5225,65 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
     </div>
     <div>
       WarningIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-WarningTriangleFilledIcon"
+    >
+      <svg
+        aria-label="warning triangle filled icon"
+        role="img"
+        viewBox="0 0 22 19"
+      >
+        <path
+          d="M12 12.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5zm0 3a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5zM.434 18.25a.5.5 0 0 0 .433.75h20.266a.5.5 0 0 0 .433-.75L11.433.747a.5.5 0 0 0-.866 0z"
+        />
+      </svg>
+    </div>
+    <div>
+      WarningTriangleFilledIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-WarningTriangleIcon"
+    >
+      <svg
+        aria-label="warning triangle icon"
+        role="img"
+        viewBox="0 0 22 19"
+      >
+        <path
+          d="M12 12.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5zm0 3a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+        />
+        <path
+          clipRule="evenodd"
+          d="M.867 19a.5.5 0 0 1-.433-.75L10.567.747a.5.5 0 0 1 .866 0L21.566 18.25a.5.5 0 0 1-.433.75zm2.602-2L11 3.992 18.531 17H3.47z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div>
+      WarningTriangleIcon
     </div>
   </div>
   <div
