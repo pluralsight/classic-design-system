@@ -3,6 +3,26 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [25.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@25.1.3...@pluralsight/ps-design-system-icon@25.2.0) (2022-02-03)
+
+
+### Bug Fixes
+
+* **icon:** [#2074](https://github.com/pluralsight/design-system/issues/2074) - add ILX icon ([f94835d](https://github.com/pluralsight/design-system/commit/f94835d3c763d1659935a2b2e265f0c0a7616286))
+* **icon:** [#2074](https://github.com/pluralsight/design-system/issues/2074) - update snapshot with new icon ([561d70f](https://github.com/pluralsight/design-system/commit/561d70f1886d22b5626b23fce55f7fcaa03fe120))
+* **icon:** [#2075](https://github.com/pluralsight/design-system/issues/2075) - Update test snapshot for new label ([801caf6](https://github.com/pluralsight/design-system/commit/801caf63f905769efe39d7613859866dc31b686f))
+* **icon:** closes [#2075](https://github.com/pluralsight/design-system/issues/2075) - correct asc sort icon label ([4a12ae5](https://github.com/pluralsight/design-system/commit/4a12ae555877e65dd0eaef9470e2c5f8cb5c119c))
+
+
+### Features
+
+* **icon:** [#2063](https://github.com/pluralsight/design-system/issues/2063) - update snapshot test with new icons ([2d8036d](https://github.com/pluralsight/design-system/commit/2d8036d64548de7a3a20fdd07838c9975089e4dd))
+* **icon:** closes [#2063](https://github.com/pluralsight/design-system/issues/2063) - add requested missing icons ([05d33d8](https://github.com/pluralsight/design-system/commit/05d33d84119302015cef1d39e4bfeca0a8f17103))
+
+
+
+
+
 ## [25.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@25.1.2...@pluralsight/ps-design-system-icon@25.1.3) (2022-01-27)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-icon

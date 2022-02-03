@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [11.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@11.0.11...@pluralsight/ps-design-system-starrating@11.0.12) (2022-02-03)
+
+
+### Bug Fixes
+
+* **starrating:** [#2072](https://github.com/pluralsight/design-system/issues/2072) - update snapshot with icon change ([f921259](https://github.com/pluralsight/design-system/commit/f9212591fab7f4a471833675b1c5932335c57a4d))
+* **starrating:** closes [#2072](https://github.com/pluralsight/design-system/issues/2072) - switch to correct (non-deprecated) icon ([b3f2f8f](https://github.com/pluralsight/design-system/commit/b3f2f8fc9a336696449c48662c0b159580aeaad1))
+
+
+
+
+
 ## [11.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-starrating@11.0.10...@pluralsight/ps-design-system-starrating@11.0.11) (2022-01-27)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-starrating
