@@ -17,7 +17,7 @@ import {
 import { CodeBlockContext } from './context'
 import { Editor } from './editor'
 import { Preview } from './preview'
-import styles from './styles.module.css'
+import * as styles from './styles.module.css'
 
 export interface ExampleData {
   code: string

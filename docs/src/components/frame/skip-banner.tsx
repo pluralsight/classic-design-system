@@ -1,7 +1,7 @@
 import React, { HTMLAttributes } from 'react'
 import Button from '@pluralsight/ps-design-system-button'
 
-import styles from './skip-banner.module.css'
+import * as styles from './skip-banner.module.css'
 
 interface SkipBannerProps extends HTMLAttributes<HTMLDivElement> {
   href: string

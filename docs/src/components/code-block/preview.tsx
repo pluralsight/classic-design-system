@@ -7,7 +7,7 @@ import React, { HTMLAttributes, useContext } from 'react'
 import { LiveError, LiveProvider, LivePreview } from 'react-live'
 
 import { CodeBlockContext } from './context'
-import styles from './styles.module.css'
+import * as styles from './styles.module.css'
 import { mapPackageNameToScopes } from './package-map'
 
 const SUPPORTED_LANGUAGES: Language[] = [
