@@ -28,6 +28,25 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   }
 }
 
+/**
+ * @see https://www.gatsbyjs.com/docs/creating-and-modifying-pages/#removing-trailing-slashes
+ */
+// Replacing '/' would result in empty string which is invalid
+const replacePath = path => (path === `/` ? path : path.replace(/\/$/, ``))
+// Implement the Gatsby API “onCreatePage”. This is
+// called after every page is created.
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions
+  const oldPage = Object.assign({}, page)
+  // Remove trailing slash unless page is /
+  page.path = replacePath(page.path)
+  if (page.path !== oldPage.path) {
+    // Replace old page with new page
+    deletePage(oldPage)
+    createPage(page)
+  }
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   const result = await graphql(`
@@ -57,7 +76,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   result.data.allMdx.edges.forEach(({ node }) => {
     createPage({
-      path: node.fields.slug,
+      path: replacePath(node.fields.slug),
       component: chooseTemplate(node.fields.slug),
       context: {
         slug: node.fields.slug,
