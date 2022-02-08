@@ -11,7 +11,7 @@
   "dependencies": {
     "date-fns": "^2.28.0",
     "dayzed": "^3.2.2",
-    "downshift": "^6.1.2",
+    "downshift": "^6.1.7",
     "exenv": "^1.2.2",
     "focus-within": "^3.0.2",
     "glamor": "^2.20.40",
