@@ -155,7 +155,7 @@
     "jest-prop-type-error": "^1.1.0",
     "jest-watch-typeahead": "^0.6.1",
     "lerna": "^4.0.0",
-    "link-parent-bin": "^1.0.2",
+    "link-parent-bin": "^2.0.0",
     "lint-staged": "^10.5.3",
     "madge": "^4.0.1",
     "mutation-observer": "^1.0.3",
