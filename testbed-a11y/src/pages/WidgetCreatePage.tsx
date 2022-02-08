@@ -11,7 +11,7 @@ import TextInput from '@pluralsight/ps-design-system-textinput'
 import { Heading, Label, P } from '@pluralsight/ps-design-system-text'
 import { FC, MouseEventHandler, useMemo, useState } from 'react'
 
-import styles from './WidgetCreatePage.module.css'
+import * as styles from './WidgetCreatePage.module.css'
 
 interface Step {
   id: number

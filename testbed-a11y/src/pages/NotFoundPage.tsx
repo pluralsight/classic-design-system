@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { NotFoundErrorPage } from '@pluralsight/ps-design-system-errors'
 
-import styles from './NotFoundPage.module.css'
+import * as styles from './NotFoundPage.module.css'
 
 export const NotFoundPage: FC = props => {
   return (

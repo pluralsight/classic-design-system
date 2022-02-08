@@ -3,7 +3,7 @@ import Button from '@pluralsight/ps-design-system-button'
 import { FC, MouseEventHandler } from 'react'
 import { useHistory } from 'react-router-dom'
 
-import styles from './WidgetsPage.module.css'
+import * as styles from './WidgetsPage.module.css'
 
 export const WidgetsPage: FC = props => {
   const history = useHistory()
