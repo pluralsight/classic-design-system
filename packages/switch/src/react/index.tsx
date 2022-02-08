@@ -5,7 +5,7 @@ import {
   RefForwardingComponent,
   classNames
 } from '@pluralsight/ps-design-system-util'
-import React from 'react'
+import React, { SyntheticEvent } from 'react'
 
 import '../css/index.css'
 import * as vars from '../vars/index'
@@ -15,6 +15,8 @@ interface SwitchStatics {
   sizes: typeof vars.sizes
   labelAligns: typeof vars.labelAligns
 }
+
+type DefaultChangeFn = (evt: SyntheticEvent) => void
 
 interface SwitchProps
   extends Omit<React.HTMLAttributes<HTMLLabelElement>, 'onClick'> {
@@ -26,6 +28,7 @@ interface SwitchProps
   name?: string
   onBlur?: React.FocusEventHandler
   onClick?: (checked: boolean) => void
+  onChange?: DefaultChangeFn
   onFocus?: React.FocusEventHandler
   size?: ValueOf<typeof vars.sizes>
   tabIndex?: number
@@ -33,10 +36,10 @@ interface SwitchProps
 
 interface SwitchComponent
   extends RefForwardingComponent<
-    SwitchProps,
-    HTMLInputElement | HTMLLabelElement,
-    SwitchStatics
-  > {}
+  SwitchProps,
+  HTMLInputElement | HTMLLabelElement,
+  SwitchStatics
+  > { }
 
 const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
   (
@@ -51,6 +54,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
       size = vars.sizes.large,
       tabIndex = 0,
       onClick,
+      onChange,
       onBlur,
       onFocus,
       children,
@@ -108,7 +112,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
               `psds-theme--${themeName}`,
               `psds-switch__track--size-${size}`,
               checked &&
-                `psds-switch__track--checked psds-switch__track--color-${color}`
+              `psds-switch__track--checked psds-switch__track--color-${color}`
             )}
           >
             <div
@@ -125,11 +129,11 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
           aria-label={ariaLabel}
           checked={checked}
           disabled={disabled}
-          readOnly
           ref={ref as React.RefObject<HTMLInputElement>}
           name={name}
           onKeyDown={handleClick}
           onClick={disabled ? undefined : handleClick}
+          onChange={disabled ? undefined : handleClick as DefaultChangeFn}
           onBlur={handleBlur}
           onFocus={handleFocus}
           tabIndex={disabled ? -1 : tabIndex}
