@@ -16,7 +16,7 @@ import cx from 'classnames'
 import { MouseEventHandler, FC, Fragment, useMemo } from 'react'
 import { useHistory, useRouteMatch } from 'react-router-dom'
 
-import styles from './Chrome.module.css'
+import * as styles from './Chrome.module.css'
 
 interface Header {
   icon: any

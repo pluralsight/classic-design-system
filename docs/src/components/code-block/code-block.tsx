@@ -5,7 +5,7 @@ import { Language } from 'prism-react-renderer'
 
 import { CodeBlockContext } from './context'
 import { ExamplesSwitcher, Example, parseCode } from './examples'
-import styles from './styles.module.css'
+import * as styles from './styles.module.css'
 
 interface CodeBlockProps extends HTMLAttributes<HTMLDivElement> {
   children: string
