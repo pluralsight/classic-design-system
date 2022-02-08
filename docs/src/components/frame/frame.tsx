@@ -10,7 +10,7 @@ import React, {
 import { useCookies } from 'react-cookie'
 
 import { Aside } from './aside'
-import styles from './frame.module.css'
+import * as styles from './frame.module.css'
 import { Header } from './header'
 import { SkipBanner, SkipTarget } from './skip-banner'
 
