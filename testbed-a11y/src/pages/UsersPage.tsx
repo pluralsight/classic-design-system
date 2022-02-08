@@ -10,7 +10,7 @@ import faker from 'faker'
 import { MouseEvent, FC, useEffect, useMemo, useState } from 'react'
 import { Column, useTable, useSortBy } from 'react-table'
 
-import styles from './UsersPage.module.css'
+import * as styles from './UsersPage.module.css'
 
 interface User {
   firstName: string
