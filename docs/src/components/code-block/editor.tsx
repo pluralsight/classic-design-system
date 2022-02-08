@@ -6,7 +6,7 @@ import Highlight, { defaultProps } from 'prism-react-renderer'
 import React, { useContext, MouseEvent } from 'react'
 
 import { CodeBlockContext } from './context'
-import styles from './styles.module.css'
+import * as styles from './styles.module.css'
 import { darkTheme, lightTheme } from './theme'
 
 interface EditorProps {

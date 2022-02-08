@@ -5,7 +5,7 @@ import Carousel from '@pluralsight/ps-design-system-carousel'
 
 import React, { useMemo } from 'react'
 
-import styles from './App.css'
+import * as styles from './App.css'
 
 const randomInt = (max = 100) => Math.floor(Math.random() * Math.floor(max))
 
