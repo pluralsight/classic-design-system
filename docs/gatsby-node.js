@@ -2,8 +2,8 @@ const childProcess = require('child_process')
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const path = require('path')
 
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
+exports.onCreateWebpackConfig = ({ actions, stage, plugins }) => {
+  const commonConfig = {
     node: {
       fs: 'empty'
     },
@@ -13,7 +13,21 @@ exports.onCreateWebpackConfig = ({ actions }) => {
         fs: false
       }
     }
-  })
+  }
+
+  if (stage === 'build-javascript' || stage === 'develop') {
+    actions.setWebpackConfig({
+      ...commonConfig,
+      plugins: [
+        plugins.provide({
+          process: 'process/browser',
+          Buffer: ['buffer', 'Buffer']
+        })
+      ]
+    })
+  } else {
+    actions.setWebpackConfig(commonConfig)
+  }
 }
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
