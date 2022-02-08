@@ -20,7 +20,7 @@
     "next": "^10.0.0",
     "next-transpile-modules": "^6.4.0",
     "react": "17.0.1",
-    "react-cookie": "^4.0.3",
+    "react-cookie": "^4.1.1",
     "react-dom": "17.0.1",
     "react-innertext": "^1.1.5",
     "resize-observer-polyfill": "^1.5.1",
