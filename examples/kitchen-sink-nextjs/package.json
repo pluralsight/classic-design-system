@@ -17,7 +17,7 @@
     "glamor": "^2.20.40",
     "hoist-non-react-statics": "^3.3.2",
     "invariant": "^2.2.4",
-    "next": "^10.0.0",
+    "next": "^10.2.3",
     "next-transpile-modules": "^6.4.0",
     "react": "17.0.1",
     "react-cookie": "^4.0.3",
