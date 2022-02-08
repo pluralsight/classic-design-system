@@ -17,7 +17,7 @@ import { Heading } from '@pluralsight/ps-design-system-text'
 import faker from 'faker'
 import { FC, useMemo, useState } from 'react'
 
-import styles from './ProfilePage.module.css'
+import * as styles from './ProfilePage.module.css'
 
 type FormFieldType =
   | 'checkbox'
