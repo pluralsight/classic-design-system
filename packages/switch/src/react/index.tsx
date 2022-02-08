@@ -36,10 +36,10 @@ interface SwitchProps
 
 interface SwitchComponent
   extends RefForwardingComponent<
-  SwitchProps,
-  HTMLInputElement | HTMLLabelElement,
-  SwitchStatics
-  > { }
+    SwitchProps,
+    HTMLInputElement | HTMLLabelElement,
+    SwitchStatics
+  > {}
 
 const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
   (
@@ -133,7 +133,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
           name={name}
           onKeyDown={handleClick}
           onClick={disabled ? undefined : handleClick}
-          onChange={disabled ? undefined : handleClick as DefaultChangeFn}
+          onChange={disabled ? undefined : (handleClick as DefaultChangeFn)}
           onBlur={handleBlur}
           onFocus={handleFocus}
           tabIndex={disabled ? -1 : tabIndex}
