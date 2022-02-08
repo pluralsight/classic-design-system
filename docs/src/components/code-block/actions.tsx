@@ -6,7 +6,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 import pkg from '../../../package.json'
 import usePrevious from '../../hooks/use-previous'
-import styles from './styles.module.css'
+import * as styles from './styles.module.css'
 
 const CODESANDBOX_CSS_FILE = `
 html,

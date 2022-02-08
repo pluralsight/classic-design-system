@@ -17,7 +17,7 @@ import {
 import { CodeBlockContext } from './context'
 import { Editor } from './editor'
 import { Preview } from './preview'
-import styles from './styles.module.css'
+import * as styles from './styles.module.css'
 
 export interface ExampleData {
   code: string
@@ -125,8 +125,7 @@ export function parseCode(
   delimiter = '\n\n===\n\n'
 ): ExampleData[] {
   return code.split(delimiter).map((str: string, index) => {
-    const { content = '', data = {} } = frontmatter(str)
-    const code = content.trim()
+    const { data = {} } = frontmatter(str)
 
     const description = data.description || ''
     const title = data.title || `Example #${index}`

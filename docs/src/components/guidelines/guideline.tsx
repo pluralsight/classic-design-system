@@ -45,9 +45,7 @@ export const Guideline: React.FC<GuidelineProps> = props => {
         {props.dont}
 
         <div className={styles.badgeWrapper}>
-          <Badge color={Badge.colors.red} className={styles.badge}>
-            Don't
-          </Badge>
+          <Badge color={Badge.colors.red}>Don't</Badge>
         </div>
       </div>
     </Layout>
