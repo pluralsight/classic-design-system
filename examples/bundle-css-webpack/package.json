@@ -20,9 +20,9 @@
     "webpack-dev-middleware": "^3.7.3"
   },
   "dependencies": {
-    "@pluralsight/ps-design-system-avatar": "10.0.1",
+    "@pluralsight/ps-design-system-avatar": "10.0.4",
     "@pluralsight/ps-design-system-button": "22.1.13",
-    "@pluralsight/ps-design-system-normalize": "^5.1.7",
+    "@pluralsight/ps-design-system-normalize": "^5.1.10",
     "glamor": "^2.20.40",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

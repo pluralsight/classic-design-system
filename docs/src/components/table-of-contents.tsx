@@ -21,7 +21,7 @@ export const TableOfContents: React.FC<TableOfContentsProps> = props => {
   return (
     <nav className={styles.toc}>
       <Heading size={Heading.sizes.xXXSmall} color={Heading.colors.secondary}>
-        <h4 className={styles.title}>Contents</h4>
+        <h4>Contents</h4>
       </Heading>
       <VerticalTabs>
         {props.headings

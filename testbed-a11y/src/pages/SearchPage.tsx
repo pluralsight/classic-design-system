@@ -13,7 +13,7 @@ import faker from 'faker'
 import { FC, useMemo, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
-import styles from './SearchPage.module.css'
+import * as styles from './SearchPage.module.css'
 
 interface Course {
   author: string
