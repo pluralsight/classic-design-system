@@ -8,7 +8,7 @@ import VerticalTabs from '@pluralsight/ps-design-system-verticaltabs'
 import { Link, navigate } from 'gatsby'
 import React, { HTMLAttributes, useState } from 'react'
 
-import styles from './index.module.css'
+import * as styles from './index.module.css'
 import { useScrollRestoration } from './use-scroll-restoration'
 
 function toggleTitle(titles: string[], title: string) {
