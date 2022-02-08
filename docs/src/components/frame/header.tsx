@@ -4,7 +4,7 @@ import React, { HTMLAttributes } from 'react'
 import Button from '@pluralsight/ps-design-system-button'
 import { MenuIcon, ThemeIcon } from '@pluralsight/ps-design-system-icon'
 
-import styles from './header.module.css'
+import * as styles from './header.module.css'
 
 interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
   onMenuButtonClick: React.MouseEventHandler<HTMLButtonElement>
