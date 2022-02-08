@@ -81,6 +81,7 @@
     "@pluralsight/ps-design-system-util": "^10.1.0",
     "@pluralsight/ps-design-system-verticaltabs": "^8.0.11",
     "@pluralsight/ps-design-system-viewtoggle": "^10.0.10",
+    "assert": "^2.0.0",
     "body-parser": "^1.19.0",
     "bunyan": "^1.8.15",
     "dotenv": "^8.2.0",

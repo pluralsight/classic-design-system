@@ -9,6 +9,7 @@ exports.onCreateWebpackConfig = ({ actions, stage, plugins }) => {
     },
     resolve: {
       fallback: {
+        assert: require.resolve('assert/'),
         path: require.resolve('path-browserify'),
         fs: false
       }
