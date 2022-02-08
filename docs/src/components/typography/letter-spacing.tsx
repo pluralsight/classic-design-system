@@ -53,10 +53,10 @@ export const LetterSpacing = () => (
         >
           Antidisestablishmentarianism
         </div>
-        <div className={styles.letterSpacingLabel}>
+        <div>
           {w.label} ({w.value})
         </div>
-        <div className={styles.letterSpacingLabels}>
+        <div>
           <div>
             CSS:{' '}
             <code className={styles.letterSpacingVariable}>{w.varNameCSS}</code>
