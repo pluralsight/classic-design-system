@@ -4,7 +4,7 @@ import React, { HTMLAttributes, useRef } from 'react'
 import useOnClickOutside from '../../hooks/use-on-click-outside'
 import useOnEscape from '../../hooks/use-on-escape'
 
-import styles from './aside.module.css'
+import * as styles from './aside.module.css'
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   onRequestClose: () => void
