@@ -153,9 +153,6 @@ b {
 }
 
 @media (width >= 1280px) {
-  /* .function {
-    flex-direction: row;
-  } */
   .label {
     display: flex;
     flex-direction: column;
