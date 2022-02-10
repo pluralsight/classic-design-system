@@ -28,7 +28,6 @@ interface SwitchProps
   name?: string
   onBlur?: React.FocusEventHandler
   onClick?: (checked: boolean) => void
-  onChange?: DefaultChangeFn
   onFocus?: React.FocusEventHandler
   size?: ValueOf<typeof vars.sizes>
   tabIndex?: number
@@ -54,7 +53,6 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
       size = vars.sizes.large,
       tabIndex = 0,
       onClick,
-      onChange,
       onBlur,
       onFocus,
       children,
