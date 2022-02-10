@@ -112,7 +112,7 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
               `psds-theme--${themeName}`,
               `psds-switch__track--size-${size}`,
               checked &&
-              `psds-switch__track--checked psds-switch__track--color-${color}`
+                `psds-switch__track--checked psds-switch__track--color-${color}`
             )}
           >
             <div
