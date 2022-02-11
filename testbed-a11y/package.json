@@ -62,7 +62,7 @@
     "@types/jest": "^26.0.15",
     "@types/node": "^12.20.42",
     "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.0",
+    "@types/react-dom": "^17.0.11",
     "classnames": "^2.2.6",
     "exenv": "^1.2.2",
     "faker": "^5.4.0",
