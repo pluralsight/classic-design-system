@@ -1483,14 +1483,14 @@
     "@pluralsight/ps-design-system-text" "^19.0.0"
     "@pluralsight/ps-design-system-util" "^8.0.0"
 
-"@pluralsight/ps-design-system-breadcrumb@^10.0.3":
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-breadcrumb/-/ps-design-system-breadcrumb-10.0.3.tgz#542395605cb8c9ab8f588c66adea117a2787d838"
-  integrity sha512-MJELI5TAvPzZY5mmFRaF9oVGBy5KLWpyJRrydl0fj5AYksiHdP1dV4vEn8dpFIZTtNW5ttfz6nBUOJTvx/Yp6w==
+"@pluralsight/ps-design-system-breadcrumb@^10.0.9":
+  version "10.0.9"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-breadcrumb/-/ps-design-system-breadcrumb-10.0.9.tgz#75628e37e7ee407f0d7009757ef314b750603fff"
+  integrity sha512-ruc3IMiMw3bZCzsXRL6NClDIh4oZ1j6Pra6ZuO29sjZY0hsakja87ANxWG7/gCGItowXTaJ9m8w54FXpRfnDqQ==
   dependencies:
-    "@pluralsight/ps-design-system-button" "^21.0.3"
-    "@pluralsight/ps-design-system-core" "^6.9.2"
-    "@pluralsight/ps-design-system-icon" "^21.0.3"
+    "@pluralsight/ps-design-system-button" "^21.0.8"
+    "@pluralsight/ps-design-system-core" "^7.0.0"
+    "@pluralsight/ps-design-system-icon" "^22.0.0"
 
 "@pluralsight/ps-design-system-button@^21.0.3":
   version "21.0.3"
@@ -1509,6 +1509,15 @@
     "@pluralsight/ps-design-system-core" "^6.9.3"
     "@pluralsight/ps-design-system-icon" "^21.0.4"
     "@pluralsight/ps-design-system-util" "^7.2.1"
+
+"@pluralsight/ps-design-system-button@^21.0.8":
+  version "21.0.8"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-button/-/ps-design-system-button-21.0.8.tgz#9f9e9668ac32f884da22d56db3ad135868a973ac"
+  integrity sha512-gu+fYKGStrkI85s2hBfHtoIWawlY96wgNQKoKfxSQzfUkDQkXijoCiJtLEoUW+7dDXvTuSu2Vypl+sYR2fAuvw==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^7.0.0"
+    "@pluralsight/ps-design-system-icon" "^22.0.0"
+    "@pluralsight/ps-design-system-util" "^8.0.0"
 
 "@pluralsight/ps-design-system-card@^16.0.4":
   version "16.0.4"
@@ -2099,17 +2108,18 @@
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
 
-"@testing-library/jest-dom@^5.11.4":
-  version "5.11.9"
-  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.11.9.tgz#e6b3cd687021f89f261bd53cbe367041fbd3e975"
-  integrity sha512-Mn2gnA9d1wStlAIT2NU8J15LNob0YFBVjs2aEQ3j8rsfRQo+lAs7/ui1i2TGaJjapLmuNPLTsrm+nPjmZDwpcQ==
+"@testing-library/jest-dom@^5.16.1":
+  version "5.16.2"
+  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-5.16.2.tgz#f329b36b44aa6149cd6ced9adf567f8b6aa1c959"
+  integrity sha512-6ewxs1MXWwsBFZXIk4nKKskWANelkdUehchEOokHsN8X7c2eKXGw+77aRV63UU8f/DTSVUPLaGxdrj4lN7D/ug==
   dependencies:
     "@babel/runtime" "^7.9.2"
     "@types/testing-library__jest-dom" "^5.9.1"
-    aria-query "^4.2.2"
+    aria-query "^5.0.0"
     chalk "^3.0.0"
     css "^3.0.0"
     css.escape "^1.5.1"
+    dom-accessibility-api "^0.5.6"
     lodash "^4.17.15"
     redent "^3.0.0"
 
@@ -2309,10 +2319,10 @@
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.4.tgz#15925414e0ad2cd765bfef58842f7e26a7accb24"
   integrity sha512-1HcDas8SEj4z1Wc696tH56G8OlRaH/sqZOynNNB+HF0WOeXPaxTtbYzJY2oEfiUxjSKjhCKr+MvR7dCHcEelug==
 
-"@types/react-dom@^17.0.0":
-  version "17.0.1"
-  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.1.tgz#d92d77d020bfb083e07cc8e0ac9f933599a4d56a"
-  integrity sha512-yIVyopxQb8IDZ7SOHeTovurFq+fXiPICa+GV3gp0Xedsl+MwQlMLKmvrnEjFbQxjliH5YVAEWFh975eVNmKj7Q==
+"@types/react-dom@^17.0.11":
+  version "17.0.11"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.11.tgz#e1eadc3c5e86bdb5f7684e00274ae228e7bcc466"
+  integrity sha512-f96K3k+24RaLGVu/Y2Ng3e1EbZ8/cVJvypZWd7cy0ofCBaf2lcM46xNhycMZ2xGwbBjRql7hOlZ+e2WlJ5MH3Q==
   dependencies:
     "@types/react" "*"
 
@@ -2882,6 +2892,11 @@ aria-query@^4.2.2:
   dependencies:
     "@babel/runtime" "^7.10.2"
     "@babel/runtime-corejs3" "^7.10.2"
+
+aria-query@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/aria-query/-/aria-query-5.0.0.tgz#210c21aaf469613ee8c9a62c7f86525e058db52c"
+  integrity sha512-V+SM7AbUwJ+EBnB8+DXs0hPZHO0W6pqBcc0dW90OwtVG02PswOu/teuARoLQjdDOH+t9pJgGnW5/Qmouf3gPJg==
 
 arity-n@^1.0.4:
   version "1.0.4"
@@ -4719,6 +4734,11 @@ dom-accessibility-api@^0.5.4:
   version "0.5.4"
   resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.4.tgz#b06d059cdd4a4ad9a79275f9d414a5c126241166"
   integrity sha512-TvrjBckDy2c6v6RLxPv5QXOnU+SmF9nBII5621Ve5fu6Z/BDrENurBEvlC1f44lKEUVqOpK4w9E5Idc5/EgkLQ==
+
+dom-accessibility-api@^0.5.6:
+  version "0.5.11"
+  resolved "https://registry.yarnpkg.com/dom-accessibility-api/-/dom-accessibility-api-0.5.11.tgz#79d5846c4f90eba3e617d9031e921de9324f84ed"
+  integrity sha512-7X6GvzjYf4yTdRKuCVScV+aA9Fvh5r8WzWrXBH9w82ZWB/eYDMGCnazoC/YAqAzUJWHzLOnZqr46K3iEyUhUvw==
 
 dom-converter@^0.2:
   version "0.2.0"
