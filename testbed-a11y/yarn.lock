@@ -1472,16 +1472,16 @@
     "@pluralsight/ps-design-system-util" "^7.2.1"
     tiny-hashes "^1.0.1"
 
-"@pluralsight/ps-design-system-banner@^9.0.4":
-  version "9.0.4"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-banner/-/ps-design-system-banner-9.0.4.tgz#1110016bfe151348ecb0e62335ab789a4dd69a06"
-  integrity sha512-rO+FS9NFweCY9I+umd3kel0yWQZ8fwHPhaYvaFnYr0NQCVa2/MtJdN1bZhV9Gs/HbxquiiYR02tTcYgwadW83Q==
+"@pluralsight/ps-design-system-banner@^9.0.9":
+  version "9.0.9"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-banner/-/ps-design-system-banner-9.0.9.tgz#a31d96f1407777db96d495610bf66d2e9cf669da"
+  integrity sha512-DHAaX9TYfLb8L9r4urJgVbKRfZ2rg7n/DMIHKc4S4WfZ3FiLcbrimNkK/DYrwruHa+4PnKC+hQHFf+UXrxLwfQ==
   dependencies:
-    "@pluralsight/ps-design-system-core" "^6.9.3"
-    "@pluralsight/ps-design-system-icon" "^21.0.4"
-    "@pluralsight/ps-design-system-link" "^11.1.4"
-    "@pluralsight/ps-design-system-text" "^18.2.0"
-    "@pluralsight/ps-design-system-util" "^7.2.1"
+    "@pluralsight/ps-design-system-core" "^7.0.0"
+    "@pluralsight/ps-design-system-icon" "^22.0.0"
+    "@pluralsight/ps-design-system-link" "^11.1.8"
+    "@pluralsight/ps-design-system-text" "^19.0.0"
+    "@pluralsight/ps-design-system-util" "^8.0.0"
 
 "@pluralsight/ps-design-system-breadcrumb@^10.0.9":
   version "10.0.9"
@@ -1678,13 +1678,13 @@
     "@pluralsight/ps-design-system-text" "^18.1.3"
     "@pluralsight/ps-design-system-util" "^7.2.0"
 
-"@pluralsight/ps-design-system-link@^11.1.4":
-  version "11.1.4"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-link/-/ps-design-system-link-11.1.4.tgz#aaa7f87acab46c2e77004ce285fa42bdedf84fb6"
-  integrity sha512-n+EKiCgdRa0LC75+nlHm5cErmfi2PiVr4+teDHiNzPTaXPPJYmoU4saKbO4Qa0/2hDPCo2iq/cc/95m6yR31Xw==
+"@pluralsight/ps-design-system-link@^11.1.8":
+  version "11.1.8"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-link/-/ps-design-system-link-11.1.8.tgz#3770b35867d76c99656da81b4e046cb24c50dab3"
+  integrity sha512-mWLewRBiLL7YEefld+cmUUYGeWBMHhyCVR8t31THbzhG+MkOEKv1vdp8HfUeFKmRDdL7xERKCJvLbsZQoGxJwQ==
   dependencies:
-    "@pluralsight/ps-design-system-core" "^6.9.3"
-    "@pluralsight/ps-design-system-util" "^7.2.1"
+    "@pluralsight/ps-design-system-core" "^7.0.0"
+    "@pluralsight/ps-design-system-util" "^8.0.0"
 
 "@pluralsight/ps-design-system-multiselect@^1.2.2":
   version "1.2.2"
@@ -1842,13 +1842,13 @@
     "@pluralsight/ps-design-system-core" "^6.9.2"
     "@pluralsight/ps-design-system-util" "^7.2.0"
 
-"@pluralsight/ps-design-system-text@^18.2.0":
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-text/-/ps-design-system-text-18.2.0.tgz#6f7d87c3e76c1fb9cc665cfc15d56cc736b41c83"
-  integrity sha512-1rceDVSyms0GA1QI4AYqbx1UPzzKqT5gyJtWwmY/5b94tZWAsKarcUvvDPKfOVJsIBSqOupA7DjSADWhW3jLFA==
+"@pluralsight/ps-design-system-text@^19.0.0":
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-text/-/ps-design-system-text-19.0.0.tgz#5b189d870f3756fb7a6f53ddcc5414e812f9f599"
+  integrity sha512-FAvdfrmmF5+rBRXOZjz05vIHuyMkrnyGmSL3ulyR7xIrNrgSUzzd/7ALTkuD/rcD1aHkU1Y0h4wujIZZlbfouA==
   dependencies:
-    "@pluralsight/ps-design-system-core" "^6.9.3"
-    "@pluralsight/ps-design-system-util" "^7.2.1"
+    "@pluralsight/ps-design-system-core" "^7.0.0"
+    "@pluralsight/ps-design-system-util" "^8.0.0"
 
 "@pluralsight/ps-design-system-textarea@^8.1.5":
   version "8.1.5"
