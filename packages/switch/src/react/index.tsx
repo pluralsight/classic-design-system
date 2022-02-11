@@ -5,7 +5,7 @@ import {
   RefForwardingComponent,
   classNames
 } from '@pluralsight/ps-design-system-util'
-import React from 'react'
+import React, { SyntheticEvent } from 'react'
 
 import '../css/index.css'
 import * as vars from '../vars/index'
@@ -15,6 +15,8 @@ interface SwitchStatics {
   sizes: typeof vars.sizes
   labelAligns: typeof vars.labelAligns
 }
+
+type DefaultChangeFn = (evt: SyntheticEvent) => void
 
 interface SwitchProps
   extends Omit<React.HTMLAttributes<HTMLLabelElement>, 'onClick'> {
@@ -125,11 +127,11 @@ const Switch = React.forwardRef<HTMLInputElement, SwitchProps>(
           aria-label={ariaLabel}
           checked={checked}
           disabled={disabled}
-          readOnly
           ref={ref as React.RefObject<HTMLInputElement>}
           name={name}
           onKeyDown={handleClick}
           onClick={disabled ? undefined : handleClick}
+          onChange={disabled ? undefined : (handleClick as DefaultChangeFn)}
           onBlur={handleBlur}
           onFocus={handleFocus}
           tabIndex={disabled ? -1 : tabIndex}
