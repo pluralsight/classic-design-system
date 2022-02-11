@@ -1483,14 +1483,14 @@
     "@pluralsight/ps-design-system-text" "^18.2.0"
     "@pluralsight/ps-design-system-util" "^7.2.1"
 
-"@pluralsight/ps-design-system-breadcrumb@^10.0.3":
-  version "10.0.3"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-breadcrumb/-/ps-design-system-breadcrumb-10.0.3.tgz#542395605cb8c9ab8f588c66adea117a2787d838"
-  integrity sha512-MJELI5TAvPzZY5mmFRaF9oVGBy5KLWpyJRrydl0fj5AYksiHdP1dV4vEn8dpFIZTtNW5ttfz6nBUOJTvx/Yp6w==
+"@pluralsight/ps-design-system-breadcrumb@^10.0.9":
+  version "10.0.9"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-breadcrumb/-/ps-design-system-breadcrumb-10.0.9.tgz#75628e37e7ee407f0d7009757ef314b750603fff"
+  integrity sha512-ruc3IMiMw3bZCzsXRL6NClDIh4oZ1j6Pra6ZuO29sjZY0hsakja87ANxWG7/gCGItowXTaJ9m8w54FXpRfnDqQ==
   dependencies:
-    "@pluralsight/ps-design-system-button" "^21.0.3"
-    "@pluralsight/ps-design-system-core" "^6.9.2"
-    "@pluralsight/ps-design-system-icon" "^21.0.3"
+    "@pluralsight/ps-design-system-button" "^21.0.8"
+    "@pluralsight/ps-design-system-core" "^7.0.0"
+    "@pluralsight/ps-design-system-icon" "^22.0.0"
 
 "@pluralsight/ps-design-system-button@^21.0.3":
   version "21.0.3"
@@ -1509,6 +1509,15 @@
     "@pluralsight/ps-design-system-core" "^6.9.3"
     "@pluralsight/ps-design-system-icon" "^21.0.4"
     "@pluralsight/ps-design-system-util" "^7.2.1"
+
+"@pluralsight/ps-design-system-button@^21.0.8":
+  version "21.0.8"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-button/-/ps-design-system-button-21.0.8.tgz#9f9e9668ac32f884da22d56db3ad135868a973ac"
+  integrity sha512-gu+fYKGStrkI85s2hBfHtoIWawlY96wgNQKoKfxSQzfUkDQkXijoCiJtLEoUW+7dDXvTuSu2Vypl+sYR2fAuvw==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^7.0.0"
+    "@pluralsight/ps-design-system-icon" "^22.0.0"
+    "@pluralsight/ps-design-system-util" "^8.0.0"
 
 "@pluralsight/ps-design-system-card@^16.0.4":
   version "16.0.4"
@@ -1555,6 +1564,11 @@
   version "6.9.3"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-core/-/ps-design-system-core-6.9.3.tgz#b2d7dca17e684441c57f11b02b94de7401dde01c"
   integrity sha512-tIf3PD9nTu4rI4A2sRGT66Lz3w6cD93IAQzRaThoWTbmpIqmWTh7JszjJCLPeK3U/WpT7fXTkAteU+A/B6bQ5A==
+
+"@pluralsight/ps-design-system-core@^7.0.0":
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-core/-/ps-design-system-core-7.0.0.tgz#c47519b7ce00b3c3143bffa69ea4352ff76217bb"
+  integrity sha512-hAl4rkZF6v7MNgvrwePyMYGh9II8ITmNWx7iTKuUt4mX5SHuJCPGwiphY1TsNU+9ON56PReKZRBAdm/8ZDDxgA==
 
 "@pluralsight/ps-design-system-datepicker@^14.1.0":
   version "14.1.0"
@@ -1640,6 +1654,17 @@
   dependencies:
     "@pluralsight/ps-design-system-core" "^6.9.3"
     "@pluralsight/ps-design-system-util" "^7.2.1"
+    arg "^4.1.1"
+    fast-glob "^3.1.0"
+    svgo "^1.3.2"
+
+"@pluralsight/ps-design-system-icon@^22.0.0":
+  version "22.0.0"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-icon/-/ps-design-system-icon-22.0.0.tgz#8f7adfe1e769b12d582a24eb5803e53826bc09de"
+  integrity sha512-30kmwUDjWKPmSb80ZJf7kM5vn1uw4PVnp+A33WNWISqtKmO0jiRkicIirp5bfQ7SjF6t6jvGp4yS00ZngVx+Og==
+  dependencies:
+    "@pluralsight/ps-design-system-core" "^7.0.0"
+    "@pluralsight/ps-design-system-util" "^8.0.0"
     arg "^4.1.1"
     fast-glob "^3.1.0"
     svgo "^1.3.2"
@@ -1882,6 +1907,14 @@
   version "7.2.2"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-7.2.2.tgz#67d5071d31bf6ad723ce94a933c4bd8e6983d438"
   integrity sha512-jjWGpvMFSxsqXp/xK0HgDmKtn+6gPU8xUKILQd0brpf/bDF8UgrLm+b00y/IDOdd1brTx3Pbg/XEUiJ3aww0Eg==
+  dependencies:
+    exenv "^1.2.2"
+    resize-observer-polyfill "^1.5.1"
+
+"@pluralsight/ps-design-system-util@^8.0.0":
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-8.0.0.tgz#118709fc8c906844e27926f043c978a79249c221"
+  integrity sha512-wYMKEgz1zDjffTxti2WJeg/a6gwhHqwNG1bpbwWGL53kkFn5SQNQjdfWAlXVbz6icKeTgRpG/Yqz45lQ8nQNTQ==
   dependencies:
     exenv "^1.2.2"
     resize-observer-polyfill "^1.5.1"
