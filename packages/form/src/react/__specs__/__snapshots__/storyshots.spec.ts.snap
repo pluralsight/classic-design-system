@@ -864,10 +864,10 @@ exports[`Storyshots Components/Form Sample 1`] = `
             className="psds-switch__checkbox"
             disabled={false}
             onBlur={[Function]}
+            onChange={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
-            readOnly={true}
             tabIndex={0}
             type="checkbox"
           />
