@@ -116,7 +116,7 @@ export const SideNav: React.FC<SideNavProps> = props => {
           icon={<GithubIcon />}
           appearance={Button.appearances.secondary}
           size={Button.sizes.small}
-          href="https://github.com/pluralsight/design-system/issues/new"
+          href="https://github.com/pluralsight/design-system/issues/new/choose"
         >
           Submit an issue
         </Button>
