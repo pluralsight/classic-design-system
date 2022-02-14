@@ -1,7 +1,0 @@
-{
-  "imports": {
-    "@pluralsight/ps-design-system-icon": "./@pluralsight/ps-design-system-icon.js",
-    "react": "./react.js",
-    "react-dom": "./react-dom.js"
-  }
-}
