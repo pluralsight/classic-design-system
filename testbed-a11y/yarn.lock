@@ -1805,14 +1805,14 @@
     "@pluralsight/ps-design-system-core" "^6.9.3"
     "@pluralsight/ps-design-system-util" "^7.2.1"
 
-"@pluralsight/ps-design-system-tab@^17.1.4":
-  version "17.1.4"
-  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-tab/-/ps-design-system-tab-17.1.4.tgz#190c1b2dc9ee207dd32f7430cd7160064cbc9587"
-  integrity sha512-FtkqtYOCiosomr5tkaPQjgiobwOwKndzexYWPXUtZm3c7NTCSO8hkTIEvgE2JgH/OUVsBm468miaEP2Se0sKaA==
+"@pluralsight/ps-design-system-tab@^17.1.9":
+  version "17.1.9"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-tab/-/ps-design-system-tab-17.1.9.tgz#52f7fc2635050684f6e019e8cd3d4516cbbf39f3"
+  integrity sha512-3PjZy8PpSOxokW29pmRmjJjzJrF4zrH0G29q8YAPDWY01xqPgNzK966pbBUDKsl2JDJ7+JM71d8o+Mqqn0+E8Q==
   dependencies:
-    "@pluralsight/ps-design-system-core" "^6.9.2"
-    "@pluralsight/ps-design-system-icon" "^21.0.3"
-    "@pluralsight/ps-design-system-util" "^7.2.0"
+    "@pluralsight/ps-design-system-core" "^7.0.0"
+    "@pluralsight/ps-design-system-icon" "^22.0.0"
+    "@pluralsight/ps-design-system-util" "^8.0.0"
 
 "@pluralsight/ps-design-system-table@^13.1.0":
   version "13.1.0"
