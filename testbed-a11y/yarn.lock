@@ -1887,6 +1887,14 @@
     "@pluralsight/ps-design-system-util" "^7.2.1"
     hoist-non-react-statics "^3.3.0"
 
+"@pluralsight/ps-design-system-theme@^7.1.8":
+  version "7.1.8"
+  resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-theme/-/ps-design-system-theme-7.1.8.tgz#761faa03242c1873023b96a5e8098711fdaf886b"
+  integrity sha512-0vzaZWVsqjOB1bcYiUuX8/rK23nqT3V8OOXkO0nd/JY4vS4ObiXxwddS3N0kbVsyK5esNWfRCSoqWZCwAvgdgA==
+  dependencies:
+    "@pluralsight/ps-design-system-util" "^8.0.0"
+    hoist-non-react-statics "^3.3.0"
+
 "@pluralsight/ps-design-system-util@^7.2.0":
   version "7.2.0"
   resolved "https://registry.yarnpkg.com/@pluralsight/ps-design-system-util/-/ps-design-system-util-7.2.0.tgz#11bfed182f97c2782404d3e682c19272beefd76f"
