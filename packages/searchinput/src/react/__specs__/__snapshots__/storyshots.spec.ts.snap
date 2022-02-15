@@ -36,7 +36,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-small"
             >
               <svg
@@ -48,7 +48,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
                   d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -60,7 +60,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
     <div
       className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-subtle psds-text-input__icon"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-medium"
       >
         <svg
@@ -74,7 +74,7 @@ exports[`Storyshots Components/SearchInput Basic 1`] = `
             fillRule="evenodd"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </div>
   <div
@@ -113,7 +113,7 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-small"
             >
               <svg
@@ -125,7 +125,7 @@ exports[`Storyshots Components/SearchInput Loading 1`] = `
                   d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -195,7 +195,7 @@ exports[`Storyshots Components/SearchInput No On Clear 1`] = `
     <div
       className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-subtle psds-text-input__icon"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-medium"
       >
         <svg
@@ -209,7 +209,7 @@ exports[`Storyshots Components/SearchInput No On Clear 1`] = `
             fillRule="evenodd"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </div>
 </label>
@@ -243,7 +243,7 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-small"
             >
               <svg
@@ -255,7 +255,7 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
                   d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -267,7 +267,7 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
     <div
       className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-subtle psds-text-input__icon"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-medium"
       >
         <svg
@@ -281,7 +281,7 @@ exports[`Storyshots Components/SearchInput Static Value 1`] = `
             fillRule="evenodd"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </div>
 </label>

@@ -49,7 +49,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
                   >
                     first
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -67,7 +67,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -89,7 +89,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
                   >
                     second
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -107,7 +107,7 @@ exports[`Storyshots Components/TagsInput Basic 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -180,7 +180,7 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
                   >
                     first
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -198,7 +198,7 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -220,7 +220,7 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
                   >
                     second
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -238,7 +238,7 @@ exports[`Storyshots Components/TagsInput Custom Input Tag 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -318,7 +318,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
                   >
                     first
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -336,7 +336,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -358,7 +358,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
                   >
                     second
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -376,7 +376,7 @@ exports[`Storyshots Components/TagsInput Disabled 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -513,7 +513,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
                   >
                     first
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -531,7 +531,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -553,7 +553,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
                   >
                     second
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -571,7 +571,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -593,7 +593,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
         <div
           className="psds-field__error-icon"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -607,7 +607,7 @@ exports[`Storyshots Components/TagsInput Error 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -651,7 +651,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
           <div
             className="psds-tagsinput__prefix"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -663,7 +663,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                 />
               </svg>
-            </div>
+            </span>
           </div>
         </div>
         <div
@@ -690,7 +690,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
                   >
                     first
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -708,7 +708,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -730,7 +730,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
                   >
                     second
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -748,7 +748,7 @@ exports[`Storyshots Components/TagsInput Icon Prefix 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -827,7 +827,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
                   >
                     first
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -845,7 +845,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -867,7 +867,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
                   >
                     second
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -885,7 +885,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -910,7 +910,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
           <div
             className="psds-tagsinput__suffix"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -922,7 +922,7 @@ exports[`Storyshots Components/TagsInput Icon Suffix 1`] = `
                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                 />
               </svg>
-            </div>
+            </span>
           </div>
         </div>
       </div>
@@ -985,7 +985,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 1
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1003,7 +1003,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1025,7 +1025,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 2
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1043,7 +1043,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1065,7 +1065,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 3
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1083,7 +1083,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1105,7 +1105,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 4
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1123,7 +1123,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1145,7 +1145,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 5
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1163,7 +1163,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1185,7 +1185,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 6
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1203,7 +1203,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1225,7 +1225,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 7
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1243,7 +1243,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1265,7 +1265,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 8
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1283,7 +1283,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1305,7 +1305,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 9
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1323,7 +1323,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1345,7 +1345,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 10
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1363,7 +1363,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1385,7 +1385,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 11
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1403,7 +1403,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1425,7 +1425,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 12
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1443,7 +1443,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1465,7 +1465,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 13
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1483,7 +1483,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1505,7 +1505,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 14
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1523,7 +1523,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1545,7 +1545,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                   >
                     Item 15
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1563,7 +1563,7 @@ exports[`Storyshots Components/TagsInput Multiple Lines 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1636,7 +1636,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
                   >
                     first
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1654,7 +1654,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1676,7 +1676,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
                   >
                     second
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1694,7 +1694,7 @@ exports[`Storyshots Components/TagsInput No Labels 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1769,7 +1769,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
                   >
                     first
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1787,7 +1787,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>
@@ -1809,7 +1809,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
                   >
                     second
                   </span>
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                     onClick={[Function]}
                     style={
@@ -1827,7 +1827,7 @@ exports[`Storyshots Components/TagsInput React Node Label 1`] = `
                         d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </div>
             </div>

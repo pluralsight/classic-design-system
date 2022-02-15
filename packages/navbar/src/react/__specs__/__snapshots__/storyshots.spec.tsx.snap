@@ -23,7 +23,7 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
             <span
               className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -37,7 +37,7 @@ exports[`Storyshots Components/NavBar Basic 1`] = `
                     fillRule="evenodd"
                   />
                 </svg>
-              </div>
+              </span>
             </span>
           </span>
         </button>
@@ -232,7 +232,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
             <span
               className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -246,7 +246,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                     fillRule="evenodd"
                   />
                 </svg>
-              </div>
+              </span>
             </span>
           </span>
         </button>
@@ -331,7 +331,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
               <span
                 className="psds-navitem__horz-icon"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -345,7 +345,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                       fillRule="evenodd"
                     />
                   </svg>
-                </div>
+                </span>
               </span>
               <span
                 className="psds-navitem__horz-label"
@@ -384,7 +384,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                 <span
                   className="psds-navitem__horz-icon"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -398,7 +398,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                         fillRule="evenodd"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </span>
                 <span
                   className="psds-navitem__horz-label"
@@ -408,7 +408,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                 <span
                   className="psds-navitem__horz-caret"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-small"
                   >
                     <svg
@@ -420,7 +420,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                         d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </span>
               </span>
             </button>
@@ -466,7 +466,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
               <span
                 className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -480,7 +480,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                       fillRule="evenodd"
                     />
                   </svg>
-                </div>
+                </span>
               </span>
             </span>
           </button>
@@ -512,7 +512,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
               <span
                 className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -524,7 +524,7 @@ exports[`Storyshots Components/NavBar Example Skills 1`] = `
                       d="M20 2c1.103 0 2 .898 2 2v16c0 1.103-.897 2-2 2H4c-1.103 0-2-.897-2-2V4c0-1.102.897-2 2-2h16zm-4 18h4.001L20 4h-4v3h-2V4h-4v8H8V4H4v16h4v-3h2v3h4v-8h2v8zM6 13h6v3H6v-3zm6-5h6v3h-6V8z"
                     />
                   </svg>
-                </div>
+                </span>
               </span>
             </span>
           </button>
@@ -611,7 +611,7 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
             <span
               className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -625,7 +625,7 @@ exports[`Storyshots Components/NavBar With Skills Brand 1`] = `
                     fillRule="evenodd"
                   />
                 </svg>
-              </div>
+              </span>
             </span>
           </span>
         </button>

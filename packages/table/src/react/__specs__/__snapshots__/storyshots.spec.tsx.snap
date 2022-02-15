@@ -1384,7 +1384,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
         >
           <div>
             First name
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium psds-table__header__sort-icon"
             >
@@ -1397,7 +1397,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
                   d="M11.646 5.354a.5.5 0 0 1 .708 0l4.292 4.292a.5.5 0 0 1 0 .708l-.703.703a.5.5 0 0 1-.707 0L12 7.83l-3.236 3.227a.5.5 0 0 1-.707 0l-.703-.703a.5.5 0 0 1 0-.708l4.292-4.292zm0 13.292-4.292-4.292a.5.5 0 0 1 0-.708l.703-.703a.5.5 0 0 1 .707 0L12 16.17l3.236-3.227a.5.5 0 0 1 .707 0l.703.703a.5.5 0 0 1 0 .708l-4.292 4.292a.5.5 0 0 1-.708 0z"
                 />
               </svg>
-            </div>
+            </span>
           </div>
         </th>
         <th
@@ -1414,7 +1414,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
         >
           <div>
             Last name
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium psds-table__header__sort-icon"
             >
@@ -1427,7 +1427,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
                   d="M11.646 5.354a.5.5 0 0 1 .708 0l4.292 4.292a.5.5 0 0 1 0 .708l-.703.703a.5.5 0 0 1-.707 0L12 7.83l-3.236 3.227a.5.5 0 0 1-.707 0l-.703-.703a.5.5 0 0 1 0-.708l4.292-4.292zm0 13.292-4.292-4.292a.5.5 0 0 1 0-.708l.703-.703a.5.5 0 0 1 .707 0L12 16.17l3.236-3.227a.5.5 0 0 1 .707 0l.703.703a.5.5 0 0 1 0 .708l-4.292 4.292a.5.5 0 0 1-.708 0z"
                 />
               </svg>
-            </div>
+            </span>
           </div>
         </th>
         <th
@@ -1444,7 +1444,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
         >
           <div>
             Email
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium psds-table__header__sort-icon"
             >
@@ -1457,7 +1457,7 @@ exports[`Storyshots Components/Table Sorting 1`] = `
                   d="M11.646 5.354a.5.5 0 0 1 .708 0l4.292 4.292a.5.5 0 0 1 0 .708l-.703.703a.5.5 0 0 1-.707 0L12 7.83l-3.236 3.227a.5.5 0 0 1-.707 0l-.703-.703a.5.5 0 0 1 0-.708l4.292-4.292zm0 13.292-4.292-4.292a.5.5 0 0 1 0-.708l.703-.703a.5.5 0 0 1 .707 0L12 16.17l3.236-3.227a.5.5 0 0 1 .707 0l.703.703a.5.5 0 0 1 0 .708l-4.292 4.292a.5.5 0 0 1-.708 0z"
                 />
               </svg>
-            </div>
+            </span>
           </div>
         </th>
       </tr>
@@ -1743,7 +1743,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -1755,7 +1755,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -1834,7 +1834,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -1846,7 +1846,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
                     d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -1925,7 +1925,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -1937,7 +1937,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -2016,7 +2016,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -2028,7 +2028,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -2107,7 +2107,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -2119,7 +2119,7 @@ exports[`Storyshots Components/Table/drawer Left Indented 1`] = `
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -2270,7 +2270,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -2282,7 +2282,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -2357,7 +2357,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -2369,7 +2369,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
                     d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -2444,7 +2444,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -2456,7 +2456,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -2531,7 +2531,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -2543,7 +2543,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -2618,7 +2618,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-xSmall psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-xsmall"
               >
                 <svg
@@ -2630,7 +2630,7 @@ exports[`Storyshots Components/Table/drawer Right Not Indented 1`] = `
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}

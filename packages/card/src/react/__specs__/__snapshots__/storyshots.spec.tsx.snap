@@ -32,7 +32,7 @@ exports[`Storyshots Components/Card Action Bar 1`] = `
           className="psds-card__action-bar__button"
           title="Bookmark"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -44,7 +44,7 @@ exports[`Storyshots Components/Card Action Bar 1`] = `
                 d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -181,7 +181,7 @@ exports[`Storyshots Components/Card Action Bar Locked Visible 1`] = `
           className="psds-card__action-bar__button"
           title="Bookmark"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -193,7 +193,7 @@ exports[`Storyshots Components/Card Action Bar Locked Visible 1`] = `
                 d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -330,7 +330,7 @@ exports[`Storyshots Components/Card Action Bar Multiple 1`] = `
           className="psds-card__action-bar__button"
           title="Bookmark"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -342,14 +342,14 @@ exports[`Storyshots Components/Card Action Bar Multiple 1`] = `
                 d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
               />
             </svg>
-          </div>
+          </span>
         </button>
         <button
           aria-label="More"
           className="psds-card__action-bar__button"
           title="More"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -361,7 +361,7 @@ exports[`Storyshots Components/Card Action Bar Multiple 1`] = `
                 d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -493,7 +493,7 @@ exports[`Storyshots Components/Card Bonus Bar Element 1`] = `
       <div
         className="psds-card__bonus-bar"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-large"
         >
           <svg
@@ -507,7 +507,7 @@ exports[`Storyshots Components/Card Bonus Bar Element 1`] = `
               fillRule="evenodd"
             />
           </svg>
-        </div>
+        </span>
       </div>
     </div>
     <div
@@ -783,7 +783,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
           <a
             href="http://duckduckgo.com?q=overlay"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-large"
               style={
                 Object {
@@ -802,7 +802,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
                   fillRule="evenodd"
                 />
               </svg>
-            </div>
+            </span>
           </a>
         </span>
       </div>
@@ -814,7 +814,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
           className="psds-card__action-bar__button"
           title="Bookmark"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -826,14 +826,14 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
                 d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
               />
             </svg>
-          </div>
+          </span>
         </button>
         <button
           aria-label="Settings"
           className="psds-card__action-bar__button"
           title="Settings"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -847,14 +847,14 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </button>
         <button
           aria-label="More"
           className="psds-card__action-bar__button"
           title="More"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -866,7 +866,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
                 d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
       <div
@@ -875,7 +875,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
         <div
           className="psds-card__tag__icon"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-small"
           >
             <svg
@@ -889,7 +889,7 @@ exports[`Storyshots Components/Card Everything Focusable 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <span
           className="psds-card__tag__text"
@@ -1065,7 +1065,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
           <a
             href="http://duckduckgo.com?q=overlay"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-large"
               css={
                 Object {
@@ -1086,7 +1086,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
                   fillRule="evenodd"
                 />
               </svg>
-            </div>
+            </span>
           </a>
         </span>
       </div>
@@ -1098,7 +1098,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
           className="psds-card__action-bar__button"
           title="Bookmark"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -1110,14 +1110,14 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
                 d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
               />
             </svg>
-          </div>
+          </span>
         </button>
         <button
           aria-label="Settings"
           className="psds-card__action-bar__button"
           title="Settings"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -1131,14 +1131,14 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </button>
         <button
           aria-label="More"
           className="psds-card__action-bar__button"
           title="More"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -1150,7 +1150,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
                 d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
       <div
@@ -1159,7 +1159,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
         <div
           className="psds-card__tag__icon"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-small"
           >
             <svg
@@ -1173,7 +1173,7 @@ exports[`Storyshots Components/Card Everything Locked 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <span
           className="psds-card__tag__text"
@@ -1662,7 +1662,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon 1`] = `
           <a
             href="http://duckduckgo.com?q=overlay"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-large"
               style={
                 Object {
@@ -1681,7 +1681,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon 1`] = `
                   fillRule="evenodd"
                 />
               </svg>
-            </div>
+            </span>
           </a>
         </span>
       </div>
@@ -1828,7 +1828,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon Link 1`] = `
           <a
             href="http://duckduckgo.com?q=overlay"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-large"
               style={
                 Object {
@@ -1847,7 +1847,7 @@ exports[`Storyshots Components/Card Full Overlay Link Icon Link 1`] = `
                   fillRule="evenodd"
                 />
               </svg>
-            </div>
+            </span>
           </a>
         </span>
       </div>
@@ -4024,7 +4024,7 @@ exports[`Storyshots Components/Card Tag Icon 1`] = `
         <div
           className="psds-card__tag__icon"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-small"
           >
             <svg
@@ -4038,7 +4038,7 @@ exports[`Storyshots Components/Card Tag Icon 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <span
           className="psds-card__tag__text"
@@ -4178,7 +4178,7 @@ exports[`Storyshots Components/Card Tag Long Multi Word 1`] = `
         <div
           className="psds-card__tag__icon"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-small"
           >
             <svg
@@ -4192,7 +4192,7 @@ exports[`Storyshots Components/Card Tag Long Multi Word 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <span
           className="psds-card__tag__text"
@@ -4332,7 +4332,7 @@ exports[`Storyshots Components/Card Tag Long Single Word 1`] = `
         <div
           className="psds-card__tag__icon"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-small"
           >
             <svg
@@ -4346,7 +4346,7 @@ exports[`Storyshots Components/Card Tag Long Single Word 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <span
           className="psds-card__tag__text"
@@ -4494,7 +4494,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
             <div
               className="psds-card__tag__icon"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-small"
               >
                 <svg
@@ -4508,7 +4508,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
                     fillRule="evenodd"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               className="psds-card__tag__text"
@@ -4645,7 +4645,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
             <div
               className="psds-card__tag__icon"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-small"
               >
                 <svg
@@ -4659,7 +4659,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
                     fillRule="evenodd"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               className="psds-card__tag__text"
@@ -4796,7 +4796,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
             <div
               className="psds-card__tag__icon"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-small"
               >
                 <svg
@@ -4810,7 +4810,7 @@ exports[`Storyshots Components/Card Tag Sizes 1`] = `
                     fillRule="evenodd"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               className="psds-card__tag__text"

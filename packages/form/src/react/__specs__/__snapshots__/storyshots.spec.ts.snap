@@ -443,7 +443,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
             <div
               className="psds-text-input__error"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -457,7 +457,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                     fillRule="evenodd"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </div>
           <div
@@ -523,7 +523,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                   <div
                     className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -536,7 +536,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                           d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </div>
                 </button>
               </div>
@@ -645,7 +645,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                 <div
                   className="psds-field__prefix"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                     onClick={[Function]}
                     style={
@@ -663,7 +663,7 @@ exports[`Storyshots Components/Form Sample 1`] = `
                         d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
                 <div
                   className="psds-field__input__container"

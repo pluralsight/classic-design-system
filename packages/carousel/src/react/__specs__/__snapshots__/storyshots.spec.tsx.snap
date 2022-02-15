@@ -26,7 +26,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
           onClick={[Function]}
           tabIndex={-1}
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -39,7 +39,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
                 d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -85,7 +85,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
                   onClick={[Function]}
                   title="asdf"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -97,7 +97,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -411,7 +411,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
           className="psds-carousel__controls__control__button psds-theme--dark"
           onClick={[Function]}
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -424,7 +424,7 @@ exports[`Storyshots Components/Carousel Action Menu In Portal 1`] = `
                 d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -456,7 +456,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
           onClick={[Function]}
           tabIndex={-1}
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -469,7 +469,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                 d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -515,7 +515,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -527,7 +527,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -693,7 +693,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -705,7 +705,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -871,7 +871,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -883,7 +883,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -1049,7 +1049,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -1061,7 +1061,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -1227,7 +1227,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -1239,7 +1239,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -1405,7 +1405,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -1417,7 +1417,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -1583,7 +1583,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -1595,7 +1595,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -1761,7 +1761,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -1773,7 +1773,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -1939,7 +1939,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -1951,7 +1951,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -2117,7 +2117,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -2129,7 +2129,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -2295,7 +2295,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -2307,7 +2307,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -2473,7 +2473,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -2485,7 +2485,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -2651,7 +2651,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -2663,7 +2663,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -2829,7 +2829,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -2841,7 +2841,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -3007,7 +3007,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -3019,7 +3019,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -3185,7 +3185,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -3197,7 +3197,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -3363,7 +3363,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -3375,7 +3375,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -3541,7 +3541,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -3553,7 +3553,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -3719,7 +3719,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -3731,7 +3731,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -3897,7 +3897,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -3909,7 +3909,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -4075,7 +4075,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -4087,7 +4087,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -4253,7 +4253,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -4265,7 +4265,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -4431,7 +4431,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -4443,7 +4443,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -4609,7 +4609,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -4621,7 +4621,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -4787,7 +4787,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -4799,7 +4799,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -4965,7 +4965,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -4977,7 +4977,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -5143,7 +5143,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -5155,7 +5155,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -5321,7 +5321,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -5333,7 +5333,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -5499,7 +5499,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -5511,7 +5511,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -5677,7 +5677,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -5689,7 +5689,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -5855,7 +5855,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -5867,7 +5867,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -6033,7 +6033,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -6045,7 +6045,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -6211,7 +6211,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -6223,7 +6223,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -6389,7 +6389,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -6401,7 +6401,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -6567,7 +6567,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -6579,7 +6579,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -6745,7 +6745,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -6757,7 +6757,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -6923,7 +6923,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -6935,7 +6935,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -7101,7 +7101,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -7113,7 +7113,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -7279,7 +7279,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -7291,7 +7291,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -7457,7 +7457,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                   onClick={[Function]}
                   title="See more"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -7469,7 +7469,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                         d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </button>
                 <div
                   aria-live="polite"
@@ -7613,7 +7613,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
           className="psds-carousel__controls__control__button psds-theme--dark"
           onClick={[Function]}
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -7626,7 +7626,7 @@ exports[`Storyshots Components/Carousel Cards In Portals Perf 1`] = `
                 d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -7664,7 +7664,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
           }
           tabIndex={-1}
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -7677,7 +7677,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
                 d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -8220,7 +8220,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
             }
           }
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -8233,7 +8233,7 @@ exports[`Storyshots Components/Carousel Controls Override 1`] = `
                 d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -8265,7 +8265,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           onClick={[Function]}
           tabIndex={-1}
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -8278,7 +8278,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
                 d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -8833,7 +8833,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
           className="psds-carousel__controls__control__button psds-theme--dark"
           onClick={[Function]}
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -8846,7 +8846,7 @@ exports[`Storyshots Components/Carousel Item Style Override 1`] = `
                 d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -8888,7 +8888,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             onClick={[Function]}
             tabIndex={-1}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -8901,7 +8901,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -8983,7 +8983,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             onClick={[Function]}
             tabIndex={-1}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -8996,7 +8996,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -9028,7 +9028,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             onClick={[Function]}
             tabIndex={-1}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -9041,7 +9041,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -9177,7 +9177,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             className="psds-carousel__controls__control__button psds-theme--dark"
             onClick={[Function]}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -9190,7 +9190,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -9222,7 +9222,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             onClick={[Function]}
             tabIndex={-1}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -9235,7 +9235,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -10414,7 +10414,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
             className="psds-carousel__controls__control__button psds-theme--dark"
             onClick={[Function]}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -10427,7 +10427,7 @@ exports[`Storyshots Components/Carousel Items Count 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -10460,7 +10460,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
           onClick={[Function]}
           tabIndex={-1}
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -10473,7 +10473,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
                 d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -10725,7 +10725,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
           className="psds-carousel__controls__control__button psds-theme--dark"
           onClick={[Function]}
         >
-          <div
+          <span
             aria-hidden={true}
             className="psds-icon psds-icon--size-medium"
           >
@@ -10738,7 +10738,7 @@ exports[`Storyshots Components/Carousel Items Dynamic 1`] = `
                 d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
               />
             </svg>
-          </div>
+          </span>
         </button>
       </div>
     </div>
@@ -10802,7 +10802,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
             onClick={[Function]}
             tabIndex={-1}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -10815,7 +10815,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -10860,7 +10860,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -10872,7 +10872,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -11034,7 +11034,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -11046,7 +11046,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -11208,7 +11208,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -11220,7 +11220,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -11382,7 +11382,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -11394,7 +11394,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -11556,7 +11556,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -11568,7 +11568,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -11730,7 +11730,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -11742,7 +11742,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -11904,7 +11904,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -11916,7 +11916,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -12078,7 +12078,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -12090,7 +12090,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -12252,7 +12252,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -12264,7 +12264,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -12405,7 +12405,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
             className="psds-carousel__controls__control__button psds-theme--dark"
             onClick={[Function]}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -12418,7 +12418,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -12456,7 +12456,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
             onClick={[Function]}
             tabIndex={-1}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -12469,7 +12469,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -12514,7 +12514,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -12526,7 +12526,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -12688,7 +12688,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -12700,7 +12700,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -12862,7 +12862,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -12874,7 +12874,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -13036,7 +13036,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -13048,7 +13048,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -13210,7 +13210,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -13222,7 +13222,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -13384,7 +13384,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -13396,7 +13396,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -13558,7 +13558,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -13570,7 +13570,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -13732,7 +13732,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -13744,7 +13744,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -13906,7 +13906,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -13918,7 +13918,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -14059,7 +14059,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
             className="psds-carousel__controls__control__button psds-theme--dark"
             onClick={[Function]}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -14072,7 +14072,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -14110,7 +14110,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
             onClick={[Function]}
             tabIndex={-1}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -14123,7 +14123,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>
@@ -14168,7 +14168,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -14180,7 +14180,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -14342,7 +14342,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -14354,7 +14354,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -14516,7 +14516,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -14528,7 +14528,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -14690,7 +14690,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -14702,7 +14702,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -14864,7 +14864,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -14876,7 +14876,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -15038,7 +15038,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -15050,7 +15050,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -15212,7 +15212,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -15224,7 +15224,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -15386,7 +15386,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -15398,7 +15398,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -15560,7 +15560,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                     className="psds-card__action-bar__button"
                     title="Bookmark"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -15572,7 +15572,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -15713,7 +15713,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
             className="psds-carousel__controls__control__button psds-theme--dark"
             onClick={[Function]}
           >
-            <div
+            <span
               aria-hidden={true}
               className="psds-icon psds-icon--size-medium"
             >
@@ -15726,7 +15726,7 @@ exports[`Storyshots Components/Carousel Sizes 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </button>
         </div>
       </div>

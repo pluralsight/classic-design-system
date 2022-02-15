@@ -22,7 +22,7 @@ exports[`Storyshots Components/NavCookieBanner Basic 1`] = `
     className="psds-navcookiebanner__dismiss"
     onClick={[Function]}
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -34,7 +34,7 @@ exports[`Storyshots Components/NavCookieBanner Basic 1`] = `
           d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
         />
       </svg>
-    </div>
+    </span>
   </button>
 </div>
 `;
@@ -55,7 +55,7 @@ exports[`Storyshots Components/NavCookieBanner Custom Message 1`] = `
     className="psds-navcookiebanner__dismiss"
     onClick={[Function]}
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -67,7 +67,7 @@ exports[`Storyshots Components/NavCookieBanner Custom Message 1`] = `
           d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
         />
       </svg>
-    </div>
+    </span>
   </button>
 </div>
 `;

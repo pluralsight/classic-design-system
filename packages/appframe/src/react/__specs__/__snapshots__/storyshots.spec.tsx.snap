@@ -396,7 +396,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -408,7 +408,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -468,7 +468,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -480,7 +480,7 @@ exports[`Storyshots Components/AppFrame Example Short Content 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -590,7 +590,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                   <span
                     className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -604,7 +604,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </span>
                 </span>
               </button>
@@ -773,7 +773,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -785,7 +785,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -845,7 +845,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -857,7 +857,7 @@ exports[`Storyshots Components/AppFrame Side Nav Controlled 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -1277,7 +1277,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                   <span
                     className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -1291,7 +1291,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </span>
                 </span>
               </button>
@@ -1460,7 +1460,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -1472,7 +1472,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -1532,7 +1532,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -1544,7 +1544,7 @@ exports[`Storyshots Components/AppFrame Side Nav Uncontrolled 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -1709,7 +1709,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                   <span
                     className="psds-navitem__horz-icon psds-navitem__horz-icon--icon-only"
                   >
-                    <div
+                    <span
                       className="psds-icon psds-icon--size-medium"
                     >
                       <svg
@@ -1723,7 +1723,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                           fillRule="evenodd"
                         />
                       </svg>
-                    </div>
+                    </span>
                   </span>
                 </span>
               </button>
@@ -1869,7 +1869,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -1883,7 +1883,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   fillRule="evenodd"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -1907,7 +1907,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -1921,7 +1921,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   fillRule="evenodd"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -1980,7 +1980,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -1992,7 +1992,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -2016,7 +2016,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -2028,7 +2028,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -2052,7 +2052,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -2064,7 +2064,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -2088,7 +2088,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -2100,7 +2100,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -2124,7 +2124,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -2136,7 +2136,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -2160,7 +2160,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -2172,7 +2172,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -2231,7 +2231,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -2243,7 +2243,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >
@@ -2267,7 +2267,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                             className="psds-verticaltabs__tier1__header"
                             href="#"
                           >
-                            <div
+                            <span
                               className="psds-icon psds-icon--size-medium psds-verticaltabs__item__icon"
                             >
                               <svg
@@ -2279,7 +2279,7 @@ exports[`Storyshots Components/AppFrame/Examples Skills 1`] = `
                                   d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                                 />
                               </svg>
-                            </div>
+                            </span>
                             <span
                               className="psds-verticaltabs__header__label psds-verticaltabs__header__label--hide-labels"
                             >

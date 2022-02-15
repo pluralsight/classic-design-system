@@ -20,7 +20,7 @@ Array [
       >
         Select item
       </span>
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
       >
         <svg
@@ -32,7 +32,7 @@ Array [
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </button>,
   <div
@@ -165,7 +165,7 @@ exports[`Storyshots Components/Select Button Basic 1`] = `
     className="psds-select__button-inner"
   >
     Hello
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
@@ -177,7 +177,7 @@ exports[`Storyshots Components/Select Button Basic 1`] = `
           d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
-    </div>
+    </span>
   </div>
 </button>
 `;
@@ -191,7 +191,7 @@ exports[`Storyshots Components/Select Button Disabled 1`] = `
     className="psds-select__button-inner"
   >
     Hello
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
@@ -203,7 +203,7 @@ exports[`Storyshots Components/Select Button Disabled 1`] = `
           d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
-    </div>
+    </span>
   </div>
 </button>
 `;
@@ -216,7 +216,7 @@ exports[`Storyshots Components/Select Button Error 1`] = `
     className="psds-select__button-inner"
   >
     Hello
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
@@ -228,9 +228,9 @@ exports[`Storyshots Components/Select Button Error 1`] = `
           d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
-    </div>
+    </span>
   </div>
-  <div
+  <span
     className="psds-icon psds-icon--size-medium psds-select__error"
   >
     <svg
@@ -244,7 +244,7 @@ exports[`Storyshots Components/Select Button Error 1`] = `
         fillRule="evenodd"
       />
     </svg>
-  </div>
+  </span>
 </button>
 `;
 
@@ -256,7 +256,7 @@ exports[`Storyshots Components/Select Button Focused 1`] = `
     className="psds-select__button-inner"
   >
     Hello
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
@@ -268,7 +268,7 @@ exports[`Storyshots Components/Select Button Focused 1`] = `
           d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
-    </div>
+    </span>
   </div>
 </button>
 `;
@@ -281,7 +281,7 @@ exports[`Storyshots Components/Select Button Is Open 1`] = `
     className="psds-select__button-inner"
   >
     Hello
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
@@ -293,7 +293,7 @@ exports[`Storyshots Components/Select Button Is Open 1`] = `
           d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
-    </div>
+    </span>
   </div>
 </button>
 `;
@@ -306,7 +306,7 @@ exports[`Storyshots Components/Select Button Small 1`] = `
     className="psds-select__button-inner"
   >
     Hello
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
     >
       <svg
@@ -318,7 +318,7 @@ exports[`Storyshots Components/Select Button Small 1`] = `
           d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
-    </div>
+    </span>
   </div>
 </button>
 `;
@@ -343,7 +343,7 @@ Array [
       >
         Select item
       </span>
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
       >
         <svg
@@ -355,7 +355,7 @@ Array [
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </button>,
   <div
@@ -551,7 +551,7 @@ Array [
       >
         Select item
       </span>
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
       >
         <svg
@@ -563,7 +563,7 @@ Array [
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </button>,
   <div
@@ -741,7 +741,7 @@ Array [
       >
         Select item
       </span>
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-select__icon psds-theme--dark"
       >
         <svg
@@ -753,7 +753,7 @@ Array [
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
     </div>
   </button>,
   <div

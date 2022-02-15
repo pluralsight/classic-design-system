@@ -65,7 +65,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -78,7 +78,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -132,7 +132,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-subtle psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -145,7 +145,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -199,7 +199,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -212,7 +212,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -266,7 +266,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-subtle psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -279,7 +279,7 @@ exports[`Storyshots Components/Dropdown Appearances 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -355,7 +355,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -368,7 +368,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -376,7 +376,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
         <div
           className="psds-dropdown__error"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -390,7 +390,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -441,7 +441,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-subtle psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -454,7 +454,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -462,7 +462,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
         <div
           className="psds-dropdown__error"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -476,7 +476,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -527,7 +527,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -540,7 +540,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -548,7 +548,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
         <div
           className="psds-dropdown__error"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -562,7 +562,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -613,7 +613,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-subtle psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -626,7 +626,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -634,7 +634,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
         <div
           className="psds-dropdown__error"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -648,7 +648,7 @@ exports[`Storyshots Components/Dropdown Appearances With Error 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -714,7 +714,7 @@ exports[`Storyshots Components/Dropdown Basic 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -727,7 +727,7 @@ exports[`Storyshots Components/Dropdown Basic 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -807,7 +807,7 @@ exports[`Storyshots Components/Dropdown Compare Disabled 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -820,7 +820,7 @@ exports[`Storyshots Components/Dropdown Compare Disabled 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -878,7 +878,7 @@ exports[`Storyshots Components/Dropdown Compare Disabled 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -891,7 +891,7 @@ exports[`Storyshots Components/Dropdown Compare Disabled 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -972,7 +972,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -985,7 +985,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -1039,7 +1039,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -1052,7 +1052,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -1060,7 +1060,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
         <div
           className="psds-dropdown__error"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -1074,7 +1074,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -1125,7 +1125,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-subtle psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -1138,7 +1138,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -1192,7 +1192,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-subtle psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -1205,7 +1205,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -1213,7 +1213,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
         <div
           className="psds-dropdown__error"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -1227,7 +1227,7 @@ exports[`Storyshots Components/Dropdown Compare Gaps 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -1292,7 +1292,7 @@ exports[`Storyshots Components/Dropdown Disabled 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -1305,7 +1305,7 @@ exports[`Storyshots Components/Dropdown Disabled 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -1378,7 +1378,7 @@ exports[`Storyshots Components/Dropdown Disabled Items 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -1391,7 +1391,7 @@ exports[`Storyshots Components/Dropdown Disabled Items 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -1464,7 +1464,7 @@ exports[`Storyshots Components/Dropdown Error 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -1477,7 +1477,7 @@ exports[`Storyshots Components/Dropdown Error 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -1485,7 +1485,7 @@ exports[`Storyshots Components/Dropdown Error 1`] = `
       <div
         className="psds-dropdown__error"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium"
         >
           <svg
@@ -1499,7 +1499,7 @@ exports[`Storyshots Components/Dropdown Error 1`] = `
               fillRule="evenodd"
             />
           </svg>
-        </div>
+        </span>
       </div>
     </div>
     <div
@@ -1569,7 +1569,7 @@ exports[`Storyshots Components/Dropdown Label Only 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -1582,7 +1582,7 @@ exports[`Storyshots Components/Dropdown Label Only 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -1650,7 +1650,7 @@ exports[`Storyshots Components/Dropdown List With Divider 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -1663,7 +1663,7 @@ exports[`Storyshots Components/Dropdown List With Divider 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -1736,7 +1736,7 @@ exports[`Storyshots Components/Dropdown List With Icons 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -1749,7 +1749,7 @@ exports[`Storyshots Components/Dropdown List With Icons 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -1822,7 +1822,7 @@ exports[`Storyshots Components/Dropdown Long Placeholder 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -1835,7 +1835,7 @@ exports[`Storyshots Components/Dropdown Long Placeholder 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -1908,7 +1908,7 @@ exports[`Storyshots Components/Dropdown Max Height 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -1921,7 +1921,7 @@ exports[`Storyshots Components/Dropdown Max Height 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -1995,7 +1995,7 @@ exports[`Storyshots Components/Dropdown No Labels 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2008,7 +2008,7 @@ exports[`Storyshots Components/Dropdown No Labels 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -2076,7 +2076,7 @@ exports[`Storyshots Components/Dropdown Preselected By Label 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2089,7 +2089,7 @@ exports[`Storyshots Components/Dropdown Preselected By Label 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -2162,7 +2162,7 @@ exports[`Storyshots Components/Dropdown Preselected Value 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2175,7 +2175,7 @@ exports[`Storyshots Components/Dropdown Preselected Value 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -2248,7 +2248,7 @@ exports[`Storyshots Components/Dropdown Preselected Value Unknown 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2261,7 +2261,7 @@ exports[`Storyshots Components/Dropdown Preselected Value Unknown 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -2333,7 +2333,7 @@ exports[`Storyshots Components/Dropdown Sizes 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -2346,7 +2346,7 @@ exports[`Storyshots Components/Dropdown Sizes 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -2400,7 +2400,7 @@ exports[`Storyshots Components/Dropdown Sizes 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -2413,7 +2413,7 @@ exports[`Storyshots Components/Dropdown Sizes 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -2481,7 +2481,7 @@ exports[`Storyshots Components/Dropdown Stacked 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -2494,7 +2494,7 @@ exports[`Storyshots Components/Dropdown Stacked 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -2550,7 +2550,7 @@ exports[`Storyshots Components/Dropdown Stacked 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -2563,7 +2563,7 @@ exports[`Storyshots Components/Dropdown Stacked 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -2633,7 +2633,7 @@ exports[`Storyshots Components/Dropdown Sub Label Only 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2646,7 +2646,7 @@ exports[`Storyshots Components/Dropdown Sub Label Only 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -2719,7 +2719,7 @@ exports[`Storyshots Components/Dropdown Super Long Item Label 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2732,7 +2732,7 @@ exports[`Storyshots Components/Dropdown Super Long Item Label 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -2799,7 +2799,7 @@ exports[`Storyshots Components/Dropdown/advanced Custom Icon 1`] = `
                   }
                 }
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -2811,7 +2811,7 @@ exports[`Storyshots Components/Dropdown/advanced Custom Icon 1`] = `
                       d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
               <div
                 style={
@@ -2838,7 +2838,7 @@ exports[`Storyshots Components/Dropdown/advanced Custom Icon 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-undefined psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2851,7 +2851,7 @@ exports[`Storyshots Components/Dropdown/advanced Custom Icon 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -2918,7 +2918,7 @@ exports[`Storyshots Components/Dropdown/advanced Dynamic Custom Icon 1`] = `
                   }
                 }
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -2932,7 +2932,7 @@ exports[`Storyshots Components/Dropdown/advanced Dynamic Custom Icon 1`] = `
                       fillRule="evenodd"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
               <div
                 style={
@@ -2959,7 +2959,7 @@ exports[`Storyshots Components/Dropdown/advanced Dynamic Custom Icon 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-undefined psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2972,7 +2972,7 @@ exports[`Storyshots Components/Dropdown/advanced Dynamic Custom Icon 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -3043,7 +3043,7 @@ exports[`Storyshots Components/Dropdown/examples Autofocused 1`] = `
             <div
               className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -3056,7 +3056,7 @@ exports[`Storyshots Components/Dropdown/examples Autofocused 1`] = `
                     d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
           </button>
         </div>
@@ -3128,7 +3128,7 @@ exports[`Storyshots Components/Dropdown/examples Controlled 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -3141,7 +3141,7 @@ exports[`Storyshots Components/Dropdown/examples Controlled 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -3239,7 +3239,7 @@ exports[`Storyshots Components/Dropdown/examples Style Fixed Width 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -3252,7 +3252,7 @@ exports[`Storyshots Components/Dropdown/examples Style Fixed Width 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -3308,7 +3308,7 @@ exports[`Storyshots Components/Dropdown/examples Style Fixed Width 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -3321,7 +3321,7 @@ exports[`Storyshots Components/Dropdown/examples Style Fixed Width 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -3398,7 +3398,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -3411,7 +3411,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -3467,7 +3467,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -3480,7 +3480,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -3488,7 +3488,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
         <div
           className="psds-dropdown__error"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -3502,7 +3502,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -3555,7 +3555,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-subtle psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -3568,7 +3568,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -3624,7 +3624,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-subtle psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -3637,7 +3637,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>
@@ -3645,7 +3645,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
         <div
           className="psds-dropdown__error"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -3659,7 +3659,7 @@ exports[`Storyshots Components/Dropdown/examples Style Full Width 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -3738,7 +3738,7 @@ exports[`Storyshots Components/Dropdown/examples Style Right Aligned 1`] = `
                 <div
                   className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
                 >
-                  <div
+                  <span
                     className="psds-icon psds-icon--size-medium"
                   >
                     <svg
@@ -3751,7 +3751,7 @@ exports[`Storyshots Components/Dropdown/examples Style Right Aligned 1`] = `
                         d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                       />
                     </svg>
-                  </div>
+                  </span>
                 </div>
               </button>
             </div>
@@ -3836,7 +3836,7 @@ exports[`Storyshots Components/Dropdown/examples Style Viewport Bottom 1`] = `
               <div
                 className="psds-dropdown__icon psds-dropdown__icon--appearance-default psds-theme--dark"
               >
-                <div
+                <span
                   className="psds-icon psds-icon--size-medium"
                 >
                   <svg
@@ -3849,7 +3849,7 @@ exports[`Storyshots Components/Dropdown/examples Style Viewport Bottom 1`] = `
                       d="M11.6464 15.0565L7.35354 10.7636C7.15828 10.5683 7.15828 10.2518 7.35354 10.0565L8.05692 9.35311C8.25199 9.15804 8.5682 9.15782 8.76354 9.35262L12 12.5801L15.2364 9.35262C15.4318 9.15782 15.748 9.15804 15.943 9.35311L16.6464 10.0565C16.8417 10.2518 16.8417 10.5683 16.6464 10.7636L12.3535 15.0565C12.1583 15.2518 11.8417 15.2518 11.6464 15.0565Z"
                     />
                   </svg>
-                </div>
+                </span>
               </div>
             </button>
           </div>

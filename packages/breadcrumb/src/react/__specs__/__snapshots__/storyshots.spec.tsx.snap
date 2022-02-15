@@ -12,7 +12,7 @@ exports[`Storyshots Components/Breadcrumb As Button 1`] = `
     <div
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-small"
       >
         <svg
@@ -24,7 +24,7 @@ exports[`Storyshots Components/Breadcrumb As Button 1`] = `
             d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
           />
         </svg>
-      </div>
+      </span>
     </div>
     <span
       aria-hidden={false}
@@ -47,7 +47,7 @@ exports[`Storyshots Components/Breadcrumb As Link 1`] = `
     <div
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-small"
       >
         <svg
@@ -59,7 +59,7 @@ exports[`Storyshots Components/Breadcrumb As Link 1`] = `
             d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
           />
         </svg>
-      </div>
+      </span>
     </div>
     <span
       aria-hidden={false}
@@ -82,7 +82,7 @@ exports[`Storyshots Components/Breadcrumb Basic 1`] = `
     <div
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-small"
       >
         <svg
@@ -94,7 +94,7 @@ exports[`Storyshots Components/Breadcrumb Basic 1`] = `
             d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
           />
         </svg>
-      </div>
+      </span>
     </div>
     <span
       aria-hidden={false}
@@ -118,7 +118,7 @@ exports[`Storyshots Components/Breadcrumb Disabled 1`] = `
     <div
       className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-small"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-small"
       >
         <svg
@@ -130,7 +130,7 @@ exports[`Storyshots Components/Breadcrumb Disabled 1`] = `
             d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
           />
         </svg>
-      </div>
+      </span>
     </div>
     <span
       aria-hidden={false}
