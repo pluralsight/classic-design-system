@@ -26,7 +26,7 @@ const Icon = React.forwardRef((props, ref) => {
   const { className, size = sizes.medium, color, ...rest } = props
 
   return (
-    <div
+    <span
       {...rest}
       className={classNames(
         'psds-icon',
