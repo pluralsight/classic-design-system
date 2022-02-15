@@ -43,7 +43,7 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
         className="psds-menu__option-inner"
       >
         Selected
-        <div
+        <span
           className="psds-icon psds-icon--size-medium psds-menu__item-icon"
           style={
             Object {
@@ -60,7 +60,7 @@ exports[`Storyshots Components/Menu Active And Selected Item 1`] = `
               d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
             />
           </svg>
-        </div>
+        </span>
       </div>
     </button>
   </div>
@@ -893,7 +893,7 @@ exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
             some words that describe a thing that really should wrap you known
           </span>
         </div>
-        <div
+        <span
           className="psds-icon psds-icon--size-medium psds-menu__item-icon"
           style={
             Object {
@@ -910,7 +910,7 @@ exports[`Storyshots Components/Menu Item With Description Selected 1`] = `
               d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
             />
           </svg>
-        </div>
+        </span>
       </div>
     </button>
   </div>

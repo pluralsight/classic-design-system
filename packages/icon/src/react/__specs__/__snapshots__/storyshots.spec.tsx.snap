@@ -2,7 +2,7 @@
 
 exports[`Storyshots Components/Icon Colors 1`] = `
 <div>
-  <div
+  <span
     className="psds-icon psds-icon--size-medium psds-icon--color-blue"
   >
     <svg
@@ -14,8 +14,8 @@ exports[`Storyshots Components/Icon Colors 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-medium psds-icon--color-green"
   >
     <svg
@@ -27,8 +27,8 @@ exports[`Storyshots Components/Icon Colors 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-medium psds-icon--color-red"
   >
     <svg
@@ -40,8 +40,8 @@ exports[`Storyshots Components/Icon Colors 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
   >
     <svg
@@ -53,8 +53,8 @@ exports[`Storyshots Components/Icon Colors 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-light"
   >
     <svg
@@ -66,8 +66,8 @@ exports[`Storyshots Components/Icon Colors 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-low-on-dark"
   >
     <svg
@@ -79,8 +79,8 @@ exports[`Storyshots Components/Icon Colors 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-low-on-light"
   >
     <svg
@@ -92,8 +92,8 @@ exports[`Storyshots Components/Icon Colors 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-medium psds-icon--color-yellow"
   >
     <svg
@@ -105,12 +105,12 @@ exports[`Storyshots Components/Icon Colors 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
+  </span>
 </div>
 `;
 
 exports[`Storyshots Components/Icon Custom Icon 1`] = `
-<div
+<span
   className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
 >
   <svg
@@ -122,11 +122,11 @@ exports[`Storyshots Components/Icon Custom Icon 1`] = `
       d="M20 2c1.103 0 2 .898 2 2v16c0 1.103-.897 2-2 2H4c-1.103 0-2-.897-2-2V4c0-1.102.897-2 2-2h16zm-4 18h4.001L20 4h-4v3h-2V4h-4v8H8V4H4v16h4v-3h2v3h4v-8h2v8zM6 13h6v3H6v-3zm6-5h6v3h-6V8z"
     />
   </svg>
-</div>
+</span>
 `;
 
 exports[`Storyshots Components/Icon Custom Props 1`] = `
-<div
+<span
   className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
 >
   <svg
@@ -138,7 +138,7 @@ exports[`Storyshots Components/Icon Custom Props 1`] = `
       d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
     />
   </svg>
-</div>
+</span>
 `;
 
 exports[`Storyshots Components/Icon Exported Icons 1`] = `
@@ -161,7 +161,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-AccountIcon"
     >
@@ -174,7 +174,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M20 2c1.103 0 2 .898 2 2v16c0 1.103-.897 2-2 2H4c-1.103 0-2-.897-2-2V4c0-1.102.897-2 2-2h16zm-4 18h4.001L20 4h-4v3h-2V4h-4v8H8V4H4v16h4v-3h2v3h4v-8h2v8zM6 13h6v3H6v-3zm6-5h6v3h-6V8z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       AccountIcon
     </div>
@@ -188,7 +188,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-AnalyticsIcon"
     >
@@ -203,7 +203,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       AnalyticsIcon
     </div>
@@ -217,7 +217,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ArrowDownIcon"
     >
@@ -232,7 +232,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ArrowDownIcon
     </div>
@@ -246,7 +246,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ArrowDownRightIcon"
     >
@@ -259,7 +259,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M5.177 6.587a.25.25 0 0 1 0-.354l1.056-1.056a.25.25 0 0 1 .354 0L17 15.59V9.25a.25.25 0 0 1 .25-.25h1.5a.25.25 0 0 1 .25.25V19H9.25a.25.25 0 0 1-.25-.25v-1.5a.25.25 0 0 1 .25-.25h6.34L5.177 6.587z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ArrowDownRightIcon
     </div>
@@ -273,7 +273,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ArrowLeftIcon"
     >
@@ -288,7 +288,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ArrowLeftIcon
     </div>
@@ -302,7 +302,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ArrowRightIcon"
     >
@@ -317,7 +317,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ArrowRightIcon
     </div>
@@ -331,7 +331,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ArrowUpIcon"
     >
@@ -346,7 +346,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ArrowUpIcon
     </div>
@@ -360,7 +360,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ArrowUpRightIcon"
     >
@@ -373,7 +373,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M5.177 17.767a.25.25 0 0 1 0-.354L15.59 7H9.25A.25.25 0 0 1 9 6.75v-1.5A.25.25 0 0 1 9.25 5H19v9.75a.25.25 0 0 1-.25.25h-1.5a.25.25 0 0 1-.25-.25V8.41L6.587 18.823a.25.25 0 0 1-.354 0l-1.056-1.056z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ArrowUpRightIcon
     </div>
@@ -387,7 +387,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ArticleIcon"
     >
@@ -400,7 +400,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M4 5.25A.25.25 0 0 1 4.25 5h15.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25H4.25A.25.25 0 0 1 4 6.75v-1.5zm0 4A.25.25 0 0 1 4.25 9h15.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25H4.25a.25.25 0 0 1-.25-.25v-1.5zm0 4a.25.25 0 0 1 .25-.25h15.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25H4.25a.25.25 0 0 1-.25-.25v-1.5zm0 4a.25.25 0 0 1 .25-.25h11.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25H4.25a.25.25 0 0 1-.25-.25v-1.5z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ArticleIcon
     </div>
@@ -414,7 +414,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-AtSymbolIcon"
     >
@@ -427,7 +427,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10h4.75a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25H12c-4.34 0-8-3.66-8-8s3.66-8 8-8 8 3.66 8 8v1.43c0 .79-.71 1.57-1.5 1.57s-1.5-.78-1.5-1.57V12c0-2.76-2.24-5-5-5s-5 2.24-5 5 2.24 5 5 5c1.38 0 2.64-.56 3.54-1.47.65.89 1.77 1.47 2.96 1.47 1.97 0 3.5-1.6 3.5-3.57V12c0-5.52-4.48-10-10-10zm0 13c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       AtSymbolIcon
     </div>
@@ -441,7 +441,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-AuthorKitIcon"
     >
@@ -456,7 +456,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       AuthorKitIcon
     </div>
@@ -470,7 +470,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-AuthorsNestIcon"
     >
@@ -485,7 +485,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       AuthorsNestIcon
     </div>
@@ -499,7 +499,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-BellIcon"
     >
@@ -514,7 +514,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       BellIcon
     </div>
@@ -528,7 +528,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-BellRungIcon"
     >
@@ -543,7 +543,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       BellRungIcon
     </div>
@@ -557,7 +557,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-BookmarkFillIcon"
     >
@@ -570,7 +570,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM19 8h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       BookmarkFillIcon
     </div>
@@ -584,7 +584,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-BookmarkIcon"
     >
@@ -597,7 +597,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M17.501 2H9C6.794 2 5 3.795 5 6v17l5.5-6 5.5 6V10h4a1 1 0 0 0 1-1V6c0-2.205-1.292-4-3.499-4zM14 6v12l-3.5-4L7 18V6c0-1.104.897-2 2-2h5.536A3.99 3.99 0 0 0 14 6zm5 2h-3V6c0-1.104.398-2 1.501-2C18.603 4 19 4.896 19 6v2z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       BookmarkIcon
     </div>
@@ -611,7 +611,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-BriefcaseIcon"
     >
@@ -626,7 +626,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       BriefcaseIcon
     </div>
@@ -640,7 +640,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-BrowseIcon"
     >
@@ -655,7 +655,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       BrowseIcon
     </div>
@@ -669,7 +669,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-BuildingIcon"
     >
@@ -684,7 +684,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       BuildingIcon
     </div>
@@ -698,7 +698,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CalendarIcon"
     >
@@ -711,7 +711,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CalendarIcon
     </div>
@@ -725,7 +725,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CaretAltDownIcon"
     >
@@ -740,7 +740,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CaretAltDownIcon
     </div>
@@ -754,7 +754,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CaretAltLeftIcon"
     >
@@ -769,7 +769,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CaretAltLeftIcon
     </div>
@@ -783,7 +783,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CaretAltRightIcon"
     >
@@ -798,7 +798,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CaretAltRightIcon
     </div>
@@ -812,7 +812,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CaretAltUpIcon"
     >
@@ -827,7 +827,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CaretAltUpIcon
     </div>
@@ -841,7 +841,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CaretDownIcon"
     >
@@ -854,7 +854,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CaretDownIcon
     </div>
@@ -868,7 +868,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CaretLeftIcon"
     >
@@ -881,7 +881,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CaretLeftIcon
     </div>
@@ -895,7 +895,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CaretRightIcon"
     >
@@ -908,7 +908,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CaretRightIcon
     </div>
@@ -922,7 +922,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CaretUpIcon"
     >
@@ -935,7 +935,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="m12 9-5 5 1.41 1.41L12 11.83l3.59 3.58L17 14"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CaretUpIcon
     </div>
@@ -949,7 +949,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ChannelAddIcon"
     >
@@ -964,7 +964,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ChannelAddIcon
     </div>
@@ -978,7 +978,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ChannelIcon"
     >
@@ -993,7 +993,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ChannelIcon
     </div>
@@ -1007,7 +1007,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ChatAltFilledIcon"
     >
@@ -1022,7 +1022,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ChatAltFilledIcon
     </div>
@@ -1036,7 +1036,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ChatAltFillIcon"
     >
@@ -1051,7 +1051,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ChatAltFillIcon
     </div>
@@ -1065,7 +1065,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ChatAltIcon"
     >
@@ -1080,7 +1080,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ChatAltIcon
     </div>
@@ -1094,7 +1094,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ChatFilledIcon"
     >
@@ -1109,7 +1109,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ChatFilledIcon
     </div>
@@ -1123,7 +1123,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ChatFillIcon"
     >
@@ -1138,7 +1138,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ChatFillIcon
     </div>
@@ -1152,7 +1152,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ChatIcon"
     >
@@ -1170,7 +1170,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ChatIcon
     </div>
@@ -1184,7 +1184,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CheckCircleFilledIcon"
     >
@@ -1197,7 +1197,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm5.354-.354-.708.708a.5.5 0 0 0 0 .707l3 3a.5.5 0 0 0 .708 0l7-7a.5.5 0 0 0 0-.707l-.708-.708a.5.5 0 0 0-.707 0L10 13.586l-1.94-1.94a.5.5 0 0 0-.706 0z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CheckCircleFilledIcon
     </div>
@@ -1211,7 +1211,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CheckCircleFillIcon"
     >
@@ -1224,7 +1224,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm5.354-.354-.708.708a.5.5 0 0 0 0 .707l3 3a.5.5 0 0 0 .708 0l7-7a.5.5 0 0 0 0-.707l-.708-.708a.5.5 0 0 0-.707 0L10 13.586l-1.94-1.94a.5.5 0 0 0-.706 0z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CheckCircleFillIcon
     </div>
@@ -1238,7 +1238,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CheckCircleIcon"
     >
@@ -1253,7 +1253,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CheckCircleIcon
     </div>
@@ -1267,7 +1267,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CheckIcon"
     >
@@ -1280,7 +1280,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CheckIcon
     </div>
@@ -1294,7 +1294,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ClockIcon"
     >
@@ -1307,7 +1307,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M11.513 7h1a.5.5 0 0 1 .5.5v4.078l2.9 2.9a.5.5 0 0 1 0 .706l-.707.708a.5.5 0 0 1-.708 0l-3.485-3.486V7.5a.5.5 0 0 1 .5-.5zM2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm2 0c0 4.411 3.589 8 8 8s8-3.589 8-8-3.589-8-8-8-8 3.589-8 8z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ClockIcon
     </div>
@@ -1321,7 +1321,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ClockWarningIcon"
     >
@@ -1336,7 +1336,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ClockWarningIcon
     </div>
@@ -1350,7 +1350,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CloseCaptionedFilledIcon"
     >
@@ -1363,7 +1363,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M2 3h20a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm6.524 13.132c1.485 0 2.365-.528 3.157-1.375l-1.078-1.089c-.605.55-1.144.902-2.024.902-1.32 0-2.233-1.1-2.233-2.42 0-1.342.935-2.42 2.233-2.42.77 0 1.375.33 1.969.869l1.078-1.243c-.715-.704-1.584-1.188-3.036-1.188-2.365 0-4.015 1.793-4.015 3.982 0 2.233 1.683 3.982 3.949 3.982zm7.898 0c1.485 0 2.365-.528 3.157-1.375l-1.078-1.089c-.605.55-1.144.902-2.024.902-1.32 0-2.233-1.1-2.233-2.42 0-1.342.935-2.42 2.233-2.42.77 0 1.375.33 1.969.869l1.078-1.243c-.715-.704-1.584-1.188-3.036-1.188-2.365 0-4.015 1.793-4.015 3.982 0 2.233 1.683 3.982 3.949 3.982z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CloseCaptionedFilledIcon
     </div>
@@ -1377,7 +1377,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CloseCaptionedFillIcon"
     >
@@ -1390,7 +1390,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M2 3h20a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm6.524 13.132c1.485 0 2.365-.528 3.157-1.375l-1.078-1.089c-.605.55-1.144.902-2.024.902-1.32 0-2.233-1.1-2.233-2.42 0-1.342.935-2.42 2.233-2.42.77 0 1.375.33 1.969.869l1.078-1.243c-.715-.704-1.584-1.188-3.036-1.188-2.365 0-4.015 1.793-4.015 3.982 0 2.233 1.683 3.982 3.949 3.982zm7.898 0c1.485 0 2.365-.528 3.157-1.375l-1.078-1.089c-.605.55-1.144.902-2.024.902-1.32 0-2.233-1.1-2.233-2.42 0-1.342.935-2.42 2.233-2.42.77 0 1.375.33 1.969.869l1.078-1.243c-.715-.704-1.584-1.188-3.036-1.188-2.365 0-4.015 1.793-4.015 3.982 0 2.233 1.683 3.982 3.949 3.982z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CloseCaptionedFillIcon
     </div>
@@ -1404,7 +1404,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CloseCaptionedIcon"
     >
@@ -1419,7 +1419,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CloseCaptionedIcon
     </div>
@@ -1433,7 +1433,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CloseIcon"
     >
@@ -1446,7 +1446,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="m17.646 7.056-.702-.702a.5.5 0 0 0-.708 0L12 10.59 7.764 6.354a.5.5 0 0 0-.708 0l-.702.702a.5.5 0 0 0 0 .708L10.59 12l-4.236 4.236a.5.5 0 0 0 0 .707l.702.703a.5.5 0 0 0 .708 0L12 13.41l4.236 4.236a.5.5 0 0 0 .708 0l.702-.703a.5.5 0 0 0 0-.707L13.41 12l4.236-4.236a.5.5 0 0 0 0-.708z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CloseIcon
     </div>
@@ -1460,7 +1460,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CloudIcon"
     >
@@ -1473,7 +1473,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h.71C7.37 7.69 9.48 6 12 6c3.04 0 5.5 2.46 5.5 5.5v.5H19c1.66 0 3 1.34 3 3s-1.34 3-3 3z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CloudIcon
     </div>
@@ -1487,7 +1487,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CloudOffIcon"
     >
@@ -1500,7 +1500,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M19.35 10.04A7.49 7.49 0 0 0 12 4c-1.48 0-2.85.43-4.01 1.17l1.46 1.46a5.497 5.497 0 0 1 8.05 4.87v.5H19c1.66 0 3 1.34 3 3 0 1.13-.64 2.11-1.56 2.62l1.45 1.45C23.16 18.16 24 16.68 24 15c0-2.64-2.05-4.78-4.65-4.96zM3.177 5.093a.25.25 0 0 0 0 .354L5.75 8.01C2.56 8.15 0 10.77 0 14c0 3.31 2.69 6 6 6h11.73l1.823 1.823a.25.25 0 0 0 .354 0l.916-.916a.25.25 0 0 0 0-.354L4.447 4.177a.25.25 0 0 0-.354 0l-.916.916zM7.73 10l8 8H6c-2.21 0-4-1.79-4-4s1.79-4 4-4h1.73z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CloudOffIcon
     </div>
@@ -1514,7 +1514,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CodeBrandedIcon"
     >
@@ -1529,7 +1529,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CodeBrandedIcon
     </div>
@@ -1543,7 +1543,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CodeIcon"
     >
@@ -1557,7 +1557,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CodeIcon
     </div>
@@ -1571,7 +1571,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ConnectionWarningIcon"
     >
@@ -1586,7 +1586,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ConnectionWarningIcon
     </div>
@@ -1600,7 +1600,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CopyIcon"
     >
@@ -1618,7 +1618,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M16.5 2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H5v13.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V3a1 1 0 0 1 1-1h12.5z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CopyIcon
     </div>
@@ -1632,7 +1632,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CoursesIcon"
     >
@@ -1647,7 +1647,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CoursesIcon
     </div>
@@ -1661,7 +1661,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CurriculumIcon"
     >
@@ -1684,7 +1684,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M7 20.8V19h2v.5a.5.5 0 0 0 .5.5H19V6h-1V4h2.177c.454 0 .823.537.823 1.2v15.6c0 .663-.369 1.2-.823 1.2H7.824C7.369 22 7 21.463 7 20.8z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       CurriculumIcon
     </div>
@@ -1698,7 +1698,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-DashboardIcon"
     >
@@ -1711,7 +1711,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M16.5 2h5a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-5a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-14 12h6a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5zm9 0h10a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5zm-9-12h11a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zM4 10h8V4H4v6zm14 0h2V4h-2v6zM4 20h3v-4H4v4zm9 0h7v-4h-7v4z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       DashboardIcon
     </div>
@@ -1725,7 +1725,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-DesktopIcon"
     >
@@ -1740,7 +1740,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       DesktopIcon
     </div>
@@ -1754,7 +1754,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-DownloadIcon"
     >
@@ -1770,7 +1770,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M3.5 15a.5.5 0 0 0-.5.5V20a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-4.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V19H5v-3.5a.5.5 0 0 0-.5-.5z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       DownloadIcon
     </div>
@@ -1784,7 +1784,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-EnvelopeArrowIcon"
     >
@@ -1799,7 +1799,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       EnvelopeArrowIcon
     </div>
@@ -1813,7 +1813,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-EnvelopeIcon"
     >
@@ -1826,7 +1826,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M5.414 6 12 12.586 18.586 6H5.414zM20 7.414l-7.646 7.647a.5.5 0 0 1-.708 0L4 7.414V18h16V7.414zM3 4h18a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       EnvelopeIcon
     </div>
@@ -1840,7 +1840,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ExternalLinkIcon"
     >
@@ -1853,7 +1853,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M14.5 3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3.09l-8.476 8.476a.5.5 0 0 0 0 .708l.702.702a.5.5 0 0 0 .708 0L19 6.41V9.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-6a.5.5 0 0 0-.5-.5h-6zM18 18H6V6h3.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5V18z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ExternalLinkIcon
     </div>
@@ -1867,7 +1867,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-EyeIcon"
     >
@@ -1882,7 +1882,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       EyeIcon
     </div>
@@ -1896,7 +1896,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-EyeOffIcon"
     >
@@ -1911,7 +1911,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       EyeOffIcon
     </div>
@@ -1925,7 +1925,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-FileIcon"
     >
@@ -1938,7 +1938,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M17.174 9 13 4.826V9h4.174zM18 20v-9h-6.5a.5.5 0 0 1-.5-.5V4H6v16h12zM5 22a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h7.798a.5.5 0 0 1 .354.146l6.702 6.704a.5.5 0 0 1 .146.353V21a1 1 0 0 1-1 1H5z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       FileIcon
     </div>
@@ -1952,7 +1952,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-FilterIcon"
     >
@@ -1967,7 +1967,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       FilterIcon
     </div>
@@ -1981,7 +1981,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-FullscreenExitIcon"
     >
@@ -1996,7 +1996,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       FullscreenExitIcon
     </div>
@@ -2010,7 +2010,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-FullscreenIcon"
     >
@@ -2025,7 +2025,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       FullscreenIcon
     </div>
@@ -2039,7 +2039,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-GearIcon"
     >
@@ -2054,7 +2054,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       GearIcon
     </div>
@@ -2068,7 +2068,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-GlobeIcon"
     >
@@ -2083,7 +2083,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       GlobeIcon
     </div>
@@ -2097,7 +2097,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-HandIcon"
     >
@@ -2116,7 +2116,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="m20.856 3.356-.712-.712a.5.5 0 0 0-.707 0l-6.644 6.649 1.414 1.414 6.65-6.644a.5.5 0 0 0 0-.707z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       HandIcon
     </div>
@@ -2130,7 +2130,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-HelpIcon"
     >
@@ -2145,7 +2145,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       HelpIcon
     </div>
@@ -2159,7 +2159,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-HistoryIcon"
     >
@@ -2174,7 +2174,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       HistoryIcon
     </div>
@@ -2188,7 +2188,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-HomeAdminToolsIcon"
     >
@@ -2201,7 +2201,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M11.994 14.076c-1.314 0-2.383-1.11-2.383-2.476 0-1.366 1.069-2.476 2.383-2.476s2.382 1.11 2.382 2.476c0 1.366-1.068 2.476-2.382 2.476zm-4.467 4.952a.296.296 0 0 1-.298-.295v-.294c0-2.083 1.96-3.538 4.765-3.538 2.805 0 4.765 1.455 4.765 3.538v.294a.296.296 0 0 1-.298.295H7.527zm13.043-5.53v7.512c0 .547-.426.99-.953.99H4.37c-.526 0-.953-.443-.953-.99v-7.5l-.93.966a.464.464 0 0 1-.674 0l-.673-.7a.51.51 0 0 1 0-.7L11.657 2.145a.464.464 0 0 1 .674 0l10.53 10.93a.51.51 0 0 1 0 .701l-.675.7a.464.464 0 0 1-.673 0l-.943-.977zm-1.905-1.978-6.671-6.924-6.67 6.933v8.49h13.34V11.52z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       HomeAdminToolsIcon
     </div>
@@ -2215,7 +2215,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-HomeContentToolsIcon"
     >
@@ -2228,7 +2228,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M20.889 3C21.503 3 22 3.576 22 4.286v15.428c0 .71-.497 1.286-1.111 1.286H19v-2h.997l.002-10H4v10h1v2H3.111C2.497 21 2 20.424 2 19.714V4.286C2 3.576 2.497 3 3.111 3H20.89zM6 7H4V5h2v2zm2-2v2h2V5H8zm4 2h8V5h-8v2zm-4 9.862V20.5a.5.5 0 0 0 .5.5H11v-2c0-.547.426-1 1-1a.99.99 0 0 1 1 1v2h2.5a.5.5 0 0 0 .5-.5v-3.633h1a.5.5 0 0 0 .5-.5v-.019a.495.495 0 0 0-.156-.36c-.845-.796-3.967-3.702-5.007-4.671a.499.499 0 0 0-.681.001l-4.997 4.668a.5.5 0 0 0-.159.365v.014a.5.5 0 0 0 .502.5L8 16.862z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       HomeContentToolsIcon
     </div>
@@ -2242,7 +2242,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-HomeIcon"
     >
@@ -2257,7 +2257,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       HomeIcon
     </div>
@@ -2271,7 +2271,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-IlxIcon"
     >
@@ -2284,7 +2284,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M21 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0zm-2.581 11.485s1.601-.91 2.344-1.281a.428.428 0 0 0-.023-.777l-6.643-2.847a.429.429 0 0 0-.562.562l2.847 6.644a.429.429 0 0 0 .776.023c.37-.74 1.26-2.324 1.26-2.324zM3 3.809a.5.5 0 0 1 .724-.447l6.382 3.19a.5.5 0 0 1 0 .895l-6.382 3.191A.5.5 0 0 1 3 10.191zM4 14a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       IlxIcon
     </div>
@@ -2298,7 +2298,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-InfoIcon"
     >
@@ -2313,7 +2313,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       InfoIcon
     </div>
@@ -2327,7 +2327,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-InteractiveIcon"
     >
@@ -2340,7 +2340,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M22 10.054h-2.025V5.997H3.996V17.98h8.051V20H3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h18a1 1 0 0 1 1 1v5.054zm-3.346 5.178 3.199 3.199a.503.503 0 0 1 0 .71l-.711.712a.503.503 0 0 1-.71 0l-3.2-3.2-.937 1.875a.503.503 0 0 1-.911-.027l-3.343-7.8a.503.503 0 0 1 .66-.66l7.8 3.343a.503.503 0 0 1 .027.911l-1.874.937z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       InteractiveIcon
     </div>
@@ -2354,7 +2354,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-IqIcon"
     >
@@ -2369,7 +2369,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       IqIcon
     </div>
@@ -2383,7 +2383,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-LabsIcon"
     >
@@ -2404,7 +2404,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M10.277 20.266a21.675 21.675 0 0 1-2.585-1.663c-1.76.237-2.693-.205-3.07-.642-.313-.365-.572-1.124-.26-2.409a18.915 18.915 0 0 1-1.622-2.107c-1.011 2.354-1.024 4.545.199 5.966 1.433 1.665 4.232 1.883 7.338.855z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       LabsIcon
     </div>
@@ -2418,7 +2418,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-LinkIcon"
     >
@@ -2433,7 +2433,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       LinkIcon
     </div>
@@ -2447,7 +2447,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ListIcon"
     >
@@ -2462,7 +2462,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ListIcon
     </div>
@@ -2476,7 +2476,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-LocationIcon"
     >
@@ -2491,7 +2491,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       LocationIcon
     </div>
@@ -2505,7 +2505,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-LockFillIcon"
     >
@@ -2520,7 +2520,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       LockFillIcon
     </div>
@@ -2534,7 +2534,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-LockIcon"
     >
@@ -2547,7 +2547,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M13.5 15.5a1.5 1.5 0 1 1-3.001 0 1.5 1.5 0 0 1 3.001 0M17 8v2c1.103 0 2 .897 2 2v7c0 1.104-.897 2-2 2H7c-1.103 0-2-.896-2-2v-7c0-1.103.897-2 2-2V8c0-2.756 2.243-5 5-5s5 2.244 5 5zM7 19h10.001L17 12H7v7zM9 8v2h6V8c0-1.653-1.346-3-3-3S9 6.348 9 8z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       LockIcon
     </div>
@@ -2561,7 +2561,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-MegaphoneIcon"
     >
@@ -2581,7 +2581,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillOpacity=".95"
         />
       </svg>
-    </div>
+    </span>
     <div>
       MegaphoneIcon
     </div>
@@ -2595,7 +2595,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-MenuArrowLeftIcon"
     >
@@ -2609,7 +2609,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M5.824 5H21.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H5.824l.94.939a.5.5 0 0 1 0 .707l-.708.707a.5.5 0 0 1-.707 0l-3-3a.5.5 0 0 1 0-.707l3-3a.5.5 0 0 1 .707 0l.708.707a.5.5 0 0 1 0 .707zM8.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm13 6h-18a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h18a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       MenuArrowLeftIcon
     </div>
@@ -2623,7 +2623,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-MenuArrowRightIcon"
     >
@@ -2638,7 +2638,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       MenuArrowRightIcon
     </div>
@@ -2652,7 +2652,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-MenuCloseIcon"
     >
@@ -2667,7 +2667,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       MenuCloseIcon
     </div>
@@ -2681,7 +2681,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-MenuIcon"
     >
@@ -2696,7 +2696,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       MenuIcon
     </div>
@@ -2710,7 +2710,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-MicIcon"
     >
@@ -2725,7 +2725,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       MicIcon
     </div>
@@ -2739,7 +2739,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-MoreIcon"
     >
@@ -2752,7 +2752,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M6 14.5a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm-6 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       MoreIcon
     </div>
@@ -2766,7 +2766,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-MoveIcon"
     >
@@ -2781,7 +2781,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       MoveIcon
     </div>
@@ -2795,7 +2795,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-NextIcon"
     >
@@ -2810,7 +2810,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       NextIcon
     </div>
@@ -2824,7 +2824,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-NoteIcon"
     >
@@ -2839,7 +2839,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       NoteIcon
     </div>
@@ -2853,7 +2853,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-NotificationsIcon"
     >
@@ -2868,7 +2868,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       NotificationsIcon
     </div>
@@ -2882,7 +2882,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-NotificationsNewIcon"
     >
@@ -2897,7 +2897,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       NotificationsNewIcon
     </div>
@@ -2911,7 +2911,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ObjectiveIcon"
     >
@@ -2926,7 +2926,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ObjectiveIcon
     </div>
@@ -2940,7 +2940,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-OrgIcon"
     >
@@ -2953,7 +2953,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M21 16.159v-2.184c0-1.654-1.346-3-3-3h-5v-3h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h6v3H6c-1.654 0-3 1.346-3 3v2.184a2.996 2.996 0 0 0-2 2.816c0 1.654 1.346 3 3 3s3-1.346 3-3a2.996 2.996 0 0 0-2-2.816v-2.184c0-.551.449-1 1-1h5v3.184a2.996 2.996 0 0 0-2 2.816c0 1.654 1.346 3 3 3s3-1.346 3-3a2.996 2.996 0 0 0-2-2.816v-3.184h5c.552 0 1 .449 1 1v2.184a2.996 2.996 0 0 0-2 2.816c0 1.654 1.346 3 3 3s3-1.346 3-3a2.995 2.995 0 0 0-2-2.816zM6 3.975h12v2H6v-2zm-2 16a1.001 1.001 0 0 1 0-2 1.001 1.001 0 0 1 0 2zm8 0a1.001 1.001 0 0 1 0-2 1.001 1.001 0 0 1 0 2zm8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       OrgIcon
     </div>
@@ -2967,7 +2967,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PaperclipIcon"
     >
@@ -2983,7 +2983,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PaperclipIcon
     </div>
@@ -2997,7 +2997,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PathIcon"
     >
@@ -3012,7 +3012,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PathIcon
     </div>
@@ -3026,7 +3026,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PauseIcon"
     >
@@ -3041,7 +3041,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PauseIcon
     </div>
@@ -3055,7 +3055,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PencilIcon"
     >
@@ -3068,7 +3068,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M5.276 15.862 5 19l3.14-.275 8.085-8.086-2.863-2.863-8.086 8.086zM17.64 9.225l.767-.767a2 2 0 0 0 .592-1.431 2 2 0 0 0-.593-1.433 1.996 1.996 0 0 0-1.43-.591c-.545 0-1.048.208-1.433.593l-.766.766 2.863 2.863zm-.665-6.222c1.076 0 2.086.418 2.845 1.177A3.997 3.997 0 0 1 21 7.027a4 4 0 0 1-1.179 2.846L9.411 20.282a.995.995 0 0 1-.464.263l-4.705.427a1.002 1.002 0 0 1-1.213-1.213l.427-4.704a.998.998 0 0 1 .263-.464L14.13 4.18a3.997 3.997 0 0 1 2.845-1.179z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PencilIcon
     </div>
@@ -3082,7 +3082,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PeopleIcon"
     >
@@ -3095,7 +3095,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M20.371 19.059A3.483 3.483 0 0 0 21.5 16.5c0-1.93-1.57-3.5-3.5-3.5s-3.5 1.57-3.5 3.5c0 1.013.439 1.918 1.129 2.559C14.151 19.593 13 20.62 13 22h2c0-.598 1.413-1.357 3-1.357s3 .76 3 1.357h2c0-1.38-1.151-2.407-2.629-2.941zM18 15c.827 0 1.5.673 1.5 1.5S18.827 18 18 18s-1.5-.673-1.5-1.5.673-1.5 1.5-1.5zm-9.629 4.059C9.849 19.593 11 20.62 11 22H9c0-.598-1.413-1.357-3-1.357S3 21.402 3 22H1c0-1.38 1.151-2.407 2.629-2.941A3.483 3.483 0 0 1 2.5 16.5C2.5 14.57 4.07 13 6 13s3.5 1.57 3.5 3.5a3.483 3.483 0 0 1-1.129 2.559zM6 15c-.827 0-1.5.673-1.5 1.5S5.173 18 6 18s1.5-.673 1.5-1.5S6.827 15 6 15zm9-4c0-.598-1.413-1.357-3-1.357S9 10.402 9 11H7c0-1.38 1.151-2.407 2.629-2.941A3.481 3.481 0 0 1 8.5 5.5C8.5 3.57 10.07 2 12 2s3.5 1.57 3.5 3.5a3.481 3.481 0 0 1-1.129 2.559C15.849 8.593 17 9.62 17 11h-2zm-3-7c-.827 0-1.5.673-1.5 1.5S11.173 7 12 7s1.5-.673 1.5-1.5S12.827 4 12 4z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PeopleIcon
     </div>
@@ -3109,7 +3109,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PhoneDownIcon"
     >
@@ -3124,7 +3124,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PhoneDownIcon
     </div>
@@ -3138,7 +3138,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PhoneIcon"
     >
@@ -3153,7 +3153,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PhoneIcon
     </div>
@@ -3167,7 +3167,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PlaceholderIcon"
     >
@@ -3180,7 +3180,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M17 3h-2v2h2V3zm-4 0v2h-2V3h2zM9 3v2H7V3h2zM5 3v2H3V3.9a.9.9 0 0 1 .9-.9H5zM3 9V7h2v2H3zm0 2v2h2v-2H3zm0 6v-2h2v2H3zm0 2v1.1a.9.9 0 0 0 .9.9H5v-2H3zm4 0v2h2v-2H7zm4 0v2h2v-2h-2zm4 0v2h2v-2h-2zm4 0v2h1.1a.9.9 0 0 0 .9-.9V19h-2zm2-4h-2v2h2v-2zm0-4v2h-2v-2h2zm0-2V7h-2v2h2zm0-5.1V5h-2V3h1.1a.9.9 0 0 1 .9.9zM11 8.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h2.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v2.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H8.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V8.5z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PlaceholderIcon
     </div>
@@ -3194,7 +3194,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PlayCircleFilledIcon"
     >
@@ -3209,7 +3209,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PlayCircleFilledIcon
     </div>
@@ -3223,7 +3223,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PlayCircleIcon"
     >
@@ -3238,7 +3238,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PlayCircleIcon
     </div>
@@ -3252,7 +3252,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PlayIcon"
     >
@@ -3267,7 +3267,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PlayIcon
     </div>
@@ -3281,7 +3281,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PlusCircleFilledIcon"
     >
@@ -3296,7 +3296,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PlusCircleFilledIcon
     </div>
@@ -3310,7 +3310,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PlusCircleFillIcon"
     >
@@ -3325,7 +3325,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PlusCircleFillIcon
     </div>
@@ -3339,7 +3339,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PlusCircleIcon"
     >
@@ -3352,7 +3352,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M13 11h3.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H13v3.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H7.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11zm-1-9c5.52 0 10 4.48 10 10s-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2zm0 18c4.41 0 8-3.59 8-8s-3.59-8-8-8-8 3.59-8 8 3.59 8 8 8z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PlusCircleIcon
     </div>
@@ -3366,7 +3366,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PlusIcon"
     >
@@ -3379,7 +3379,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M18.5 13H13v5.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5V13H5.5a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5H11V5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V11h5.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PlusIcon
     </div>
@@ -3393,7 +3393,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PodcastIcon"
     >
@@ -3408,7 +3408,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PodcastIcon
     </div>
@@ -3422,7 +3422,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-PreviousIcon"
     >
@@ -3437,7 +3437,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       PreviousIcon
     </div>
@@ -3451,7 +3451,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ProjectIcon"
     >
@@ -3464,7 +3464,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM7 12a5 5 0 0 1 6.496-4.772.22.22 0 0 1 .09.365l-2.996 2.996 2.828 2.828 2.987-2.986a.224.224 0 0 1 .373.092 5 5 0 0 1-6.605 6.132l-2.237 2.237a8 8 0 1 0-2.828-2.828l2.236-2.237A4.987 4.987 0 0 1 7 12z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ProjectIcon
     </div>
@@ -3478,7 +3478,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-QNAIcon"
     >
@@ -3496,7 +3496,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       QNAIcon
     </div>
@@ -3510,7 +3510,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-QuestionFilledIcon"
     >
@@ -3525,7 +3525,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       QuestionFilledIcon
     </div>
@@ -3539,7 +3539,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-QuestionIcon"
     >
@@ -3554,7 +3554,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       QuestionIcon
     </div>
@@ -3568,7 +3568,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-RedoIcon"
     >
@@ -3581,7 +3581,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M12 22a9.994 9.994 0 0 0 8.53-4.777.481.481 0 0 0-.189-.673l-.878-.48a.525.525 0 0 0-.692.192 8 8 0 1 1-.203-8.83l-1.714 1.714a.5.5 0 0 0 .353.854H21.5a.5.5 0 0 0 .5-.5V5.207a.5.5 0 0 0-.854-.353L20 6a9.985 9.985 0 0 0-8-4C6.477 2 2 6.477 2 12s4.477 10 10 10z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       RedoIcon
     </div>
@@ -3595,7 +3595,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ReloadIcon"
     >
@@ -3608,7 +3608,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="m5.432 16.568 1.714-1.714A.5.5 0 0 0 6.793 14H2.5a.5.5 0 0 0-.5.5v4.293a.5.5 0 0 0 .854.353L4 18a9.985 9.985 0 0 0 8 4 9.994 9.994 0 0 0 8.53-4.778.481.481 0 0 0-.189-.672l-.878-.48a.525.525 0 0 0-.692.192A7.994 7.994 0 0 1 12 20a7.99 7.99 0 0 1-6.568-3.432zM3.47 6.778a.481.481 0 0 0 .189.672l.878.48a.525.525 0 0 0 .692-.192A7.994 7.994 0 0 1 11.999 4a7.99 7.99 0 0 1 6.57 3.432l-1.715 1.714a.5.5 0 0 0 .353.854H21.5a.5.5 0 0 0 .5-.5V5.207a.5.5 0 0 0-.854-.353L20 6a9.985 9.985 0 0 0-8-4 9.994 9.994 0 0 0-8.53 4.778z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ReloadIcon
     </div>
@@ -3622,7 +3622,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ReportIcon"
     >
@@ -3635,7 +3635,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M22 11c0-.551-.448-1-1-1h-4c-.552 0-1 .449-1 1v9h-1v-4c0-.551-.448-1-1-1h-4c-.552 0-1 .449-1 1v4H8v-7c0-.551-.448-1-1-1H3c-.552 0-1 .449-1 1v7H0v2h24v-2h-2v-9zM4 20v-6h2v6H4zm7 0v-3h2v3h-2zm7 0v-8h2v8h-2zM5 9a2 2 0 1 1 1.999-2.008l4.002 2.286C11.296 9.106 11.635 9 12 9c.178 0 .347.031.511.074l4.563-4.562A1.997 1.997 0 0 1 17 4a2 2 0 1 1 2 2c-.178 0-.348-.029-.512-.073l-4.562 4.562c.043.165.074.333.074.511a2 2 0 0 1-3.999.01L5.999 8.724A1.976 1.976 0 0 1 5 9z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ReportIcon
     </div>
@@ -3649,7 +3649,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ScopeIcon"
     >
@@ -3662,7 +3662,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M12.839 11.456a1 1 0 0 1 1.165.543l3.804 8.157a1 1 0 1 1-1.813.845L13 14.577V21a1 1 0 1 1-2 0v-6.423l-2.995 6.424a1 1 0 0 1-1.813-.845l3.803-8.157a1 1 0 0 1 1.166-.543.999.999 0 0 1 1.678 0zM11 10h8V6h-8v4zm-1-6h10a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1zM8 9h1V7H8v2zM7 5h3a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zM5 6h1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ScopeIcon
     </div>
@@ -3676,7 +3676,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ScreenshareIcon"
     >
@@ -3691,7 +3691,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ScreenshareIcon
     </div>
@@ -3705,7 +3705,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SearchIcon"
     >
@@ -3720,7 +3720,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SearchIcon
     </div>
@@ -3734,7 +3734,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ServiceBoxIcon"
     >
@@ -3749,7 +3749,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ServiceBoxIcon
     </div>
@@ -3763,7 +3763,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ServiceDropboxIcon"
     >
@@ -3778,7 +3778,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ServiceDropboxIcon
     </div>
@@ -3792,7 +3792,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ServiceGoogleDriveIcon"
     >
@@ -3807,7 +3807,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ServiceGoogleDriveIcon
     </div>
@@ -3821,7 +3821,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ShareIcon"
     >
@@ -3834,7 +3834,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M17 16.08c-.76 0-1.44.3-1.96.77L7.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 1 0-3-3c0 .24.04.47.09.7L7.04 9.81C6.5 9.31 5.79 9 5 9a3 3 0 1 0 0 6c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91a2.915 2.915 0 1 0 0-5.83z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ShareIcon
     </div>
@@ -3848,7 +3848,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SignoutIcon"
     >
@@ -3863,7 +3863,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SignoutIcon
     </div>
@@ -3877,7 +3877,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SkipBackwardIcon"
     >
@@ -3892,7 +3892,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SkipBackwardIcon
     </div>
@@ -3906,7 +3906,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SkipForwardIcon"
     >
@@ -3921,7 +3921,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SkipForwardIcon
     </div>
@@ -3935,7 +3935,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SlackIcon"
     >
@@ -3948,7 +3948,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M6 15a2 2 0 1 1-2-2h2v2zm1 0a2 2 0 0 1 4 0v5a2 2 0 0 1-4 0v-5zm2-8a2 2 0 1 1 2-2v2H9zm0 1a2 2 0 0 1 0 4H4a2 2 0 1 1 0-4h5zm8 2a2 2 0 1 1 2 2h-2v-2zm-1 0a2 2 0 0 1-4 0V5a2 2 0 1 1 4 0v5zm-2 8a2 2 0 1 1-2 2v-2h2zm0-1a2 2 0 0 1 0-4h5a2 2 0 0 1 0 4h-5z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SlackIcon
     </div>
@@ -3962,7 +3962,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialDribbbleIcon"
     >
@@ -3977,7 +3977,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialDribbbleIcon
     </div>
@@ -3991,7 +3991,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialFacebookAltIcon"
     >
@@ -4004,7 +4004,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M3.831 20v-8.75H.656V7.625h3.175V4.862C3.831 1.725 5.694 0 8.556 0c1.363 0 2.788.237 2.788.237v3.088H9.769c-1.55 0-2.038.962-2.038 1.95v2.35h3.475l-.562 3.625H7.73V20h-3.9z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialFacebookAltIcon
     </div>
@@ -4018,7 +4018,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialFacebookIcon"
     >
@@ -4033,7 +4033,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialFacebookIcon
     </div>
@@ -4047,7 +4047,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialGithubIcon"
     >
@@ -4062,7 +4062,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialGithubIcon
     </div>
@@ -4076,7 +4076,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialGooglePlusIcon"
     >
@@ -4091,7 +4091,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialGooglePlusIcon
     </div>
@@ -4105,7 +4105,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialLinkedinAltIcon"
     >
@@ -4118,7 +4118,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M0 2.277a2.277 2.277 0 1 1 4.553 0 2.277 2.277 0 0 1-4.553 0zM18 18h-3.857v-6.667c0-1.042-.935-1.886-1.977-1.886a1.887 1.887 0 0 0-1.887 1.886V18H6.43V6.429h3.85v1.76c.63-1.057 2-1.761 3.145-1.761 2.431 0 4.576 1.97 4.576 4.402V18zM0 18h3.857V6.429H0z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialLinkedinAltIcon
     </div>
@@ -4132,7 +4132,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialLinkedinIcon"
     >
@@ -4147,7 +4147,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialLinkedinIcon
     </div>
@@ -4161,7 +4161,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialMediumAltIcon"
     >
@@ -4174,7 +4174,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M11.281 6c0 3.137-2.525 5.68-5.64 5.68S0 9.136 0 6 2.525.32 5.64.32c3.116 0 5.641 2.544 5.641 5.68zm6.189 0c0 2.952-1.264 5.347-2.821 5.347-1.558 0-2.82-2.395-2.82-5.347S13.091.653 14.649.653c1.557 0 2.82 2.394 2.82 5.347zM20 6c0 2.645-.444 4.79-.992 4.79s-.992-2.145-.992-4.79.444-4.79.992-4.79S20 3.355 20 6z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialMediumAltIcon
     </div>
@@ -4188,7 +4188,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialMediumIcon"
     >
@@ -4201,7 +4201,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M4.37 7.3a.75.75 0 0 0-.25-.65L2.25 4.4v-.34h5.8l4.48 9.83 3.94-9.83H22v.34l-1.6 1.53c-.13.1-.2.28-.17.45v11.24c-.03.17.04.35.17.45l1.56 1.53v.34h-7.84v-.34l1.61-1.57c.16-.15.16-.2.16-.44V8.5L11.4 19.9h-.6L5.57 8.5v7.64c-.07.32.06.64.29.86l2.1 2.57v.33H2v-.33L4.1 17a.94.94 0 0 0 .27-.86V7.3z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialMediumIcon
     </div>
@@ -4215,7 +4215,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialRssIcon"
     >
@@ -4230,7 +4230,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialRssIcon
     </div>
@@ -4244,7 +4244,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialStackoverflowIcon"
     >
@@ -4259,7 +4259,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialStackoverflowIcon
     </div>
@@ -4273,7 +4273,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SocialTwitterIcon"
     >
@@ -4288,7 +4288,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SocialTwitterIcon
     </div>
@@ -4302,7 +4302,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SortAscIcon"
     >
@@ -4315,7 +4315,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M11.646 5.354 7.354 9.646a.5.5 0 0 0 0 .707l.703.704a.5.5 0 0 0 .707 0L11 8.827V17.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V8.827l2.236 2.23a.5.5 0 0 0 .707 0l.704-.704a.5.5 0 0 0 0-.707l-4.293-4.292a.5.5 0 0 0-.707 0z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SortAscIcon
     </div>
@@ -4329,7 +4329,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SortDescIcon"
     >
@@ -4342,7 +4342,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="m11 15.173-2.236-2.23a.5.5 0 0 0-.707 0l-.703.703a.5.5 0 0 0 0 .708l4.292 4.292a.5.5 0 0 0 .707 0l4.293-4.292a.5.5 0 0 0 0-.708l-.703-.703a.5.5 0 0 0-.707 0L13 15.173V6.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v8.673z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SortDescIcon
     </div>
@@ -4356,7 +4356,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-SortIcon"
     >
@@ -4369,7 +4369,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M11.646 5.354a.5.5 0 0 1 .708 0l4.292 4.292a.5.5 0 0 1 0 .708l-.703.703a.5.5 0 0 1-.707 0L12 7.83l-3.236 3.227a.5.5 0 0 1-.707 0l-.703-.703a.5.5 0 0 1 0-.708l4.292-4.292zm0 13.292-4.292-4.292a.5.5 0 0 1 0-.708l.703-.703a.5.5 0 0 1 .707 0L12 16.17l3.236-3.227a.5.5 0 0 1 .707 0l.703.703a.5.5 0 0 1 0 .708l-4.292 4.292a.5.5 0 0 1-.708 0z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       SortIcon
     </div>
@@ -4383,7 +4383,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-StarFilledIcon"
     >
@@ -4396,7 +4396,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       StarFilledIcon
     </div>
@@ -4410,7 +4410,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-StarFillIcon"
     >
@@ -4423,7 +4423,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       StarFillIcon
     </div>
@@ -4437,7 +4437,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-StarIcon"
     >
@@ -4450,7 +4450,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M7.716 13.852 2.253 9.905A.5.5 0 0 1 2.546 9H9.33l2.196-6.58a.5.5 0 0 1 .948 0L14.672 9h6.782a.5.5 0 0 1 .293.905l-5.463 3.947 2.225 6.676a.5.5 0 0 1-.767.564l-5.74-4.146-5.745 4.146a.5.5 0 0 1-.767-.563l2.226-6.677zm2.244-.723-1.294 3.882 3.336-2.408 3.331 2.405-1.293-3.879 3.086-2.229h-3.822L12 7l-1.302 3.9H6.874l3.086 2.23z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       StarIcon
     </div>
@@ -4464,7 +4464,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-StopIcon"
     >
@@ -4479,7 +4479,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       StopIcon
     </div>
@@ -4493,7 +4493,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-TagAssignmentIcon"
     >
@@ -4521,7 +4521,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       TagAssignmentIcon
     </div>
@@ -4535,7 +4535,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-TagIcon"
     >
@@ -4548,7 +4548,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M9.602 5H5l.004 4.603L14 18.5l4.5-4.5-8.898-9zm11.094 9.822-5.874 5.874a1.038 1.038 0 0 1-1.469 0L3.31 10.653a1.038 1.038 0 0 1-.304-.733L3 4.04C3 3.465 3.465 3 4.038 3h5.88c.275 0 .54.11.734.304l10.044 10.05a1.038 1.038 0 0 1 0 1.468zM7.616 9.115a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       TagIcon
     </div>
@@ -4562,7 +4562,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-TagManagementIcon"
     >
@@ -4582,7 +4582,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       TagManagementIcon
     </div>
@@ -4596,7 +4596,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-TestIcon"
     >
@@ -4611,7 +4611,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       TestIcon
     </div>
@@ -4625,7 +4625,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ThemeIcon"
     >
@@ -4643,7 +4643,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ThemeIcon
     </div>
@@ -4657,7 +4657,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ThumbDownFilledIcon"
     >
@@ -4671,7 +4671,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ThumbDownFilledIcon
     </div>
@@ -4685,7 +4685,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ThumbDownFillIcon"
     >
@@ -4699,7 +4699,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ThumbDownFillIcon
     </div>
@@ -4713,7 +4713,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ThumbDownIcon"
     >
@@ -4727,7 +4727,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ThumbDownIcon
     </div>
@@ -4741,7 +4741,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ThumbUpFilledIcon"
     >
@@ -4755,7 +4755,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ThumbUpFilledIcon
     </div>
@@ -4769,7 +4769,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ThumbUpFillIcon"
     >
@@ -4783,7 +4783,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ThumbUpFillIcon
     </div>
@@ -4797,7 +4797,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ThumbUpIcon"
     >
@@ -4811,7 +4811,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       ThumbUpIcon
     </div>
@@ -4825,7 +4825,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-TranscriptIcon"
     >
@@ -4840,7 +4840,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       TranscriptIcon
     </div>
@@ -4854,7 +4854,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-TrashIcon"
     >
@@ -4869,7 +4869,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       TrashIcon
     </div>
@@ -4883,7 +4883,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-UndoIcon"
     >
@@ -4896,7 +4896,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M12 22a9.994 9.994 0 0 1-8.53-4.777.481.481 0 0 1 .189-.673l.878-.48a.525.525 0 0 1 .692.192 8 8 0 1 0 .203-8.83l1.714 1.714a.5.5 0 0 1-.353.854H2.5a.5.5 0 0 1-.5-.5V5.207a.5.5 0 0 1 .854-.353L4 6a9.985 9.985 0 0 1 8-4c5.523 0 10 4.477 10 10s-4.477 10-10 10z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       UndoIcon
     </div>
@@ -4910,7 +4910,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-UnionIcon"
     >
@@ -4931,7 +4931,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M20 4h2v18a1 1 0 0 1-1 1H7v-2h13V4z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       UnionIcon
     </div>
@@ -4945,7 +4945,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-UploadIcon"
     >
@@ -4961,7 +4961,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M3 15.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V19h14v-3.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       UploadIcon
     </div>
@@ -4975,7 +4975,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-UserAddIcon"
     >
@@ -4990,7 +4990,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       UserAddIcon
     </div>
@@ -5004,7 +5004,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-UserIcon"
     >
@@ -5019,7 +5019,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       UserIcon
     </div>
@@ -5033,7 +5033,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-VideoIcon"
     >
@@ -5048,7 +5048,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       VideoIcon
     </div>
@@ -5062,7 +5062,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-VolumeHighIcon"
     >
@@ -5077,7 +5077,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       VolumeHighIcon
     </div>
@@ -5091,7 +5091,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-VolumeLowIcon"
     >
@@ -5106,7 +5106,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       VolumeLowIcon
     </div>
@@ -5120,7 +5120,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-VolumeMediumIcon"
     >
@@ -5135,7 +5135,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       VolumeMediumIcon
     </div>
@@ -5149,7 +5149,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-VolumeOffIcon"
     >
@@ -5164,7 +5164,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       VolumeOffIcon
     </div>
@@ -5178,7 +5178,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-WarningFilledIcon"
     >
@@ -5193,7 +5193,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       WarningFilledIcon
     </div>
@@ -5207,7 +5207,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-WarningIcon"
     >
@@ -5222,7 +5222,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       WarningIcon
     </div>
@@ -5236,7 +5236,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-WarningTriangleFilledIcon"
     >
@@ -5249,7 +5249,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           d="M12 12.5a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5zm0 3a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5zM.434 18.25a.5.5 0 0 0 .433.75h20.266a.5.5 0 0 0 .433-.75L11.433.747a.5.5 0 0 0-.866 0z"
         />
       </svg>
-    </div>
+    </span>
     <div>
       WarningTriangleFilledIcon
     </div>
@@ -5263,7 +5263,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-WarningTriangleIcon"
     >
@@ -5281,7 +5281,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       WarningTriangleIcon
     </div>
@@ -5295,7 +5295,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-WindowIcon"
     >
@@ -5310,7 +5310,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       WindowIcon
     </div>
@@ -5324,7 +5324,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-XCircleFilledIcon"
     >
@@ -5339,7 +5339,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       XCircleFilledIcon
     </div>
@@ -5353,7 +5353,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-XCircleFillIcon"
     >
@@ -5368,7 +5368,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       XCircleFillIcon
     </div>
@@ -5382,7 +5382,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-XCircleIcon"
     >
@@ -5397,7 +5397,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div>
       XCircleIcon
     </div>
@@ -5407,7 +5407,7 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
 
 exports[`Storyshots Components/Icon Sizes 1`] = `
 <div>
-  <div
+  <span
     className="psds-icon psds-icon--size-xsmall"
   >
     <svg
@@ -5419,8 +5419,8 @@ exports[`Storyshots Components/Icon Sizes 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-small"
   >
     <svg
@@ -5432,8 +5432,8 @@ exports[`Storyshots Components/Icon Sizes 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-medium"
   >
     <svg
@@ -5445,8 +5445,8 @@ exports[`Storyshots Components/Icon Sizes 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
-  <div
+  </span>
+  <span
     className="psds-icon psds-icon--size-large"
   >
     <svg
@@ -5458,6 +5458,6 @@ exports[`Storyshots Components/Icon Sizes 1`] = `
         d="m9.59 14.58-2.818-2.818a.5.5 0 0 0-.706-.001l-.71.705a.5.5 0 0 0-.002.708l3.882 3.882a.5.5 0 0 0 .708 0l9.292-9.292a.5.5 0 0 0 0-.708l-.702-.702a.5.5 0 0 0-.708 0L9.59 14.58z"
       />
     </svg>
-  </div>
+  </span>
 </div>
 `;

@@ -30,7 +30,7 @@ Array [
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -42,7 +42,7 @@ Array [
                     d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -68,7 +68,7 @@ Array [
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -80,7 +80,7 @@ Array [
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -615,7 +615,7 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
       <div
         className="psds-text-input__icon psds-theme--dark psds-text-input__icon--icon-align-left psds-text-input__icon--appearance-default psds-text-input__icon"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium"
           onClick={[Function]}
           style={
@@ -633,7 +633,7 @@ exports[`Storyshots Components/DatePicker Calendar With Input 1`] = `
               d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
             />
           </svg>
-        </div>
+        </span>
       </div>
     </div>
   </label>
@@ -677,7 +677,7 @@ exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
           <div
             className="psds-field__prefix"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
               onClick={[Function]}
               style={
@@ -695,7 +695,7 @@ exports[`Storyshots Components/DatePicker Date Picker Change Value 1`] = `
                   d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <div
             className="psds-field__input__container"
@@ -747,7 +747,7 @@ exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -765,7 +765,7 @@ exports[`Storyshots Components/DatePicker Date Picker Disabled 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -817,7 +817,7 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -835,7 +835,7 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -852,7 +852,7 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
         <div
           className="psds-field__error-icon"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -866,7 +866,7 @@ exports[`Storyshots Components/DatePicker Date Picker Error 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -903,7 +903,7 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -921,7 +921,7 @@ exports[`Storyshots Components/DatePicker Date Picker Field Label 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -972,7 +972,7 @@ exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -990,7 +990,7 @@ exports[`Storyshots Components/DatePicker Date Picker Initial Value 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -1041,7 +1041,7 @@ exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -1055,7 +1055,7 @@ exports[`Storyshots Components/DatePicker Date Picker Prefix 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -1111,7 +1111,7 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -1129,7 +1129,7 @@ exports[`Storyshots Components/DatePicker Date Picker Render Container 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -1185,7 +1185,7 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -1199,7 +1199,7 @@ exports[`Storyshots Components/DatePicker Date Picker Render Tag 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -1250,7 +1250,7 @@ exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -1268,7 +1268,7 @@ exports[`Storyshots Components/DatePicker Date Picker Small Size 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -1319,7 +1319,7 @@ exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -1337,7 +1337,7 @@ exports[`Storyshots Components/DatePicker Date Picker String Label 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -1381,7 +1381,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -1399,7 +1399,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label Field 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -1448,7 +1448,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -1466,7 +1466,7 @@ exports[`Storyshots Components/DatePicker Date Picker Sub Label String 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -1522,7 +1522,7 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
         <div
           className="psds-field__prefix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
             onClick={[Function]}
             style={
@@ -1540,7 +1540,7 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
                 d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
               />
             </svg>
-          </div>
+          </span>
         </div>
         <div
           className="psds-field__input__container"
@@ -1557,7 +1557,7 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
         <div
           className="psds-field__suffix"
         >
-          <div
+          <span
             className="psds-icon psds-icon--size-medium"
           >
             <svg
@@ -1571,7 +1571,7 @@ exports[`Storyshots Components/DatePicker Date Picker Suffix 1`] = `
                 fillRule="evenodd"
               />
             </svg>
-          </div>
+          </span>
         </div>
       </div>
     </div>
@@ -1653,7 +1653,7 @@ exports[`Storyshots Components/DatePicker Example 1`] = `
             <div
               className="psds-field__prefix"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
                 onClick={[Function]}
                 style={
@@ -1671,7 +1671,7 @@ exports[`Storyshots Components/DatePicker Example 1`] = `
                     d="M8.5 10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zM20 3c.552 0 1 .444 1 .996v16.007A.997.997 0 0 1 20 21H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h8V1.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5V3h2zm-1 16V8H5v11h14zM8.5 14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1zm4 0a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h1z"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <div
               className="psds-field__input__container"
@@ -1718,7 +1718,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -1730,7 +1730,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -1756,7 +1756,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -1768,7 +1768,7 @@ exports[`Storyshots Components/DatePicker Multi Date 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -2292,7 +2292,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -2304,7 +2304,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -2330,7 +2330,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -2342,7 +2342,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -2905,7 +2905,7 @@ Array [
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2917,7 +2917,7 @@ Array [
                     d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -2943,7 +2943,7 @@ Array [
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -2955,7 +2955,7 @@ Array [
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -3568,7 +3568,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -3580,7 +3580,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
                     d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -3606,7 +3606,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -3618,7 +3618,7 @@ exports[`Storyshots Components/DatePicker Range Date Calendar With Input 1`] = `
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -4231,7 +4231,7 @@ Array [
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -4243,7 +4243,7 @@ Array [
                     d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -4326,7 +4326,7 @@ Array [
             <div
               className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
             >
-              <div
+              <span
                 className="psds-icon psds-icon--size-medium"
               >
                 <svg
@@ -4338,7 +4338,7 @@ Array [
                     d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                   />
                 </svg>
-              </div>
+              </span>
             </div>
             <span
               aria-hidden={false}
@@ -5334,7 +5334,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -5346,7 +5346,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -5372,7 +5372,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -5384,7 +5384,7 @@ exports[`Storyshots Components/DatePicker Single Date Previous Month 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -5878,7 +5878,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -5890,7 +5890,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
                   d="m8 12 5-5 1.41 1.41L10.83 12l3.58 3.59L13 17"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}
@@ -5916,7 +5916,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
           <div
             className="psds-button__icon psds-button__icon--icon-align-left psds-button__icon--size-medium psds-button__icon--icon-only"
           >
-            <div
+            <span
               className="psds-icon psds-icon--size-medium"
             >
               <svg
@@ -5928,7 +5928,7 @@ exports[`Storyshots Components/DatePicker Single Date Selected Date 1`] = `
                   d="m16 12-5-5-1.41 1.41L13.17 12l-3.58 3.59L11 17"
                 />
               </svg>
-            </div>
+            </span>
           </div>
           <span
             aria-hidden={false}

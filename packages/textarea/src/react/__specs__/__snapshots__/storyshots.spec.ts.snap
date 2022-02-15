@@ -201,7 +201,7 @@ Array [
       <div
         className="psds-text-area__error"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium"
         >
           <svg
@@ -215,7 +215,7 @@ Array [
               fillRule="evenodd"
             />
           </svg>
-        </div>
+        </span>
       </div>
     </div>
     <div
@@ -326,7 +326,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
       <div
         className="psds-text-area__error"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium"
         >
           <svg
@@ -340,7 +340,7 @@ exports[`Storyshots Components/TextArea Full Width Layout 1`] = `
               fillRule="evenodd"
             />
           </svg>
-        </div>
+        </span>
       </div>
     </div>
   </label>

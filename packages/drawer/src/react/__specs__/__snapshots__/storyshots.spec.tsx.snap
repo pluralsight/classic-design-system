@@ -34,7 +34,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
     <div
       className="psds-drawer__icon-slot"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
@@ -46,7 +46,7 @@ exports[`Storyshots Components/Row Controlled Button Only 1`] = `
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
       <div
         className="psds-screenreader-only"
       >
@@ -115,7 +115,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
     <div
       className="psds-drawer__icon-slot"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
@@ -127,7 +127,7 @@ exports[`Storyshots Components/Row Controlled External State 1`] = `
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
       <div
         className="psds-screenreader-only"
       >
@@ -186,7 +186,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
     <div
       className="psds-drawer__icon-slot"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark psds-drawer--is-open"
       >
         <svg
@@ -198,7 +198,7 @@ exports[`Storyshots Components/Row Controlled Start Open 1`] = `
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
       <div
         className="psds-screenreader-only"
       >
@@ -257,7 +257,7 @@ exports[`Storyshots Components/Row Default 1`] = `
     <div
       className="psds-drawer__icon-slot"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
@@ -269,7 +269,7 @@ exports[`Storyshots Components/Row Default 1`] = `
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
       <div
         className="psds-screenreader-only"
       >
@@ -329,7 +329,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
       <div
         className="psds-drawer__icon-slot"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
@@ -341,7 +341,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
               d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
-        </div>
+        </span>
         <div
           className="psds-screenreader-only"
         >
@@ -389,7 +389,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
       <div
         className="psds-drawer__icon-slot"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
@@ -401,7 +401,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
               d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
-        </div>
+        </span>
         <div
           className="psds-screenreader-only"
         >
@@ -449,7 +449,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
       <div
         className="psds-drawer__icon-slot"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
@@ -461,7 +461,7 @@ exports[`Storyshots Components/Row Stack Of Drawers 1`] = `
               d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
-        </div>
+        </span>
         <div
           className="psds-screenreader-only"
         >
@@ -522,7 +522,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
       <div
         className="psds-drawer__icon-slot"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
@@ -534,7 +534,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
               d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
-        </div>
+        </span>
         <div
           className="psds-screenreader-only"
         >
@@ -584,7 +584,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
       <div
         className="psds-drawer__icon-slot"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
@@ -596,7 +596,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
               d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
-        </div>
+        </span>
         <div
           className="psds-screenreader-only"
         >
@@ -646,7 +646,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
       <div
         className="psds-drawer__icon-slot"
       >
-        <div
+        <span
           className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
         >
           <svg
@@ -658,7 +658,7 @@ exports[`Storyshots Components/Row Stack Of Non Sibling Drawers 1`] = `
               d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
             />
           </svg>
-        </div>
+        </span>
         <div
           className="psds-screenreader-only"
         >
@@ -719,7 +719,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
     <div
       className="psds-drawer__icon-slot"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
@@ -731,7 +731,7 @@ exports[`Storyshots Components/Row Using Custom Aria Label 1`] = `
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
       <div
         className="psds-screenreader-only"
       >
@@ -830,7 +830,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
     <div
       className="psds-drawer__icon-slot"
     >
-      <div
+      <span
         className="psds-icon psds-icon--size-medium psds-drawer__rotatable psds-theme--dark"
       >
         <svg
@@ -842,7 +842,7 @@ exports[`Storyshots Components/Row With Row Component 1`] = `
             d="m12 15.41-5-5L8.41 9 12 12.58 15.59 9 17 10.41"
           />
         </svg>
-      </div>
+      </span>
       <div
         className="psds-screenreader-only"
       >

@@ -1095,7 +1095,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -1109,7 +1109,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div
       aria-live="polite"
       style={
@@ -1139,7 +1139,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -1153,7 +1153,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div
       aria-live="polite"
       style={
@@ -1183,7 +1183,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -1197,7 +1197,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div
       aria-live="polite"
       style={
@@ -1227,7 +1227,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -1241,7 +1241,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div
       aria-live="polite"
       style={
@@ -1271,7 +1271,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -1285,7 +1285,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div
       aria-live="polite"
       style={
@@ -1315,7 +1315,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -1329,7 +1329,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div
       aria-live="polite"
       style={
@@ -1359,7 +1359,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -1373,7 +1373,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div
       aria-live="polite"
       style={
@@ -1403,7 +1403,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
       }
     }
   >
-    <div
+    <span
       className="psds-icon psds-icon--size-medium"
     >
       <svg
@@ -1417,7 +1417,7 @@ exports[`Storyshots Components/Position Positions On Edge 1`] = `
           fillRule="evenodd"
         />
       </svg>
-    </div>
+    </span>
     <div
       aria-live="polite"
       style={
