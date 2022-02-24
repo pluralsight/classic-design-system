@@ -6,7 +6,7 @@ jobs:
     name: 💅 Check for JS errors
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3.0.0
       - run: rm -rf examples && rm -rf testbed-a11y
       - run: yarn install
       - run: yarn lint:ci
@@ -16,7 +16,7 @@ jobs:
     name: 🧐 Check for circular deps errors
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3.0.0
       - run: rm -rf examples && rm -rf testbed-a11y
       - run: yarn install
       - run: yarn deps:check:circular
