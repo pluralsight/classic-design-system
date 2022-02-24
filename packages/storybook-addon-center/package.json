@@ -15,7 +15,7 @@
     "build:watch": "yarn build --watch"
   },
   "types": "dist/index.d.ts",
-  "dependencies": {
+  "devDependencies": {
     "@storybook/addons": "^6.1.10"
   },
   "peerDependencies": {
