@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-dialog",
-  "version": "15.0.9",
+  "version": "15.0.10",
   "description": "Design System component for dialog ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -31,7 +31,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^10.0.3",
-    "@pluralsight/ps-design-system-focusmanager": "^8.0.7",
+    "@pluralsight/ps-design-system-focusmanager": "^8.0.8",
     "@pluralsight/ps-design-system-util": "^10.1.2"
   },
   "peerDependencies": {
@@ -41,9 +41,9 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-button": "^24.0.8",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.13",
-    "@pluralsight/ps-design-system-text": "^20.1.25",
+    "@pluralsight/ps-design-system-button": "^24.1.0",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.14",
+    "@pluralsight/ps-design-system-text": "^20.1.26",
     "@pluralsight/ps-design-system-theme": "^8.1.23"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"

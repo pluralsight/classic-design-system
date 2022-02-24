@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [9.1.26](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.25...@pluralsight/ps-design-system-switch@9.1.26) (2022-02-24)
+
+
+### Bug Fixes
+
+* **switch:** fix js lint errors ([6cf8660](https://github.com/pluralsight/design-system/commit/6cf866011ee5b739602568fc20865c2a947203e0))
+* **switch:** remove onChange from props/interface ([c3972f4](https://github.com/pluralsight/design-system/commit/c3972f46bc97004fddaee1c47323218f3a9304ea))
+* **switch:** remove readOnly attribute from input and add optional onChange handler ([7467f5c](https://github.com/pluralsight/design-system/commit/7467f5c31c9087ef8eaf07581e07c60621b857d7))
+* **switch:** resolve js lint error left over ([1372109](https://github.com/pluralsight/design-system/commit/1372109587dfe78c54ef98ecc5f8c434107e9cf3))
+
+
+
+
+
 ## [9.1.25](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-switch@9.1.24...@pluralsight/ps-design-system-switch@9.1.25) (2022-01-27)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-switch

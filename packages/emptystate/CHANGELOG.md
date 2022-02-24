@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [14.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@14.0.12...@pluralsight/ps-design-system-emptystate@14.1.0) (2022-02-24)
+
+
+### Features
+
+* **icon:** update snapshot tests with new icon element ([e31e75b](https://github.com/pluralsight/design-system/commit/e31e75beea9d1d886addfe0a876ae9cc590de4e6))
+
+
+
+
+
 ## [14.0.12](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-emptystate@14.0.11...@pluralsight/ps-design-system-emptystate@14.0.12) (2022-02-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-emptystate

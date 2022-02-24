@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [25.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@25.2.0...@pluralsight/ps-design-system-icon@25.3.0) (2022-02-24)
+
+
+### Features
+
+* **icon:** change icon wrapper to span ([b4f7631](https://github.com/pluralsight/design-system/commit/b4f7631cd8fae16ad4305b040a4083b24fc7c024))
+* **icon:** update snapshot tests with new icon element ([e31e75b](https://github.com/pluralsight/design-system/commit/e31e75beea9d1d886addfe0a876ae9cc590de4e6))
+
+
+
+
+
 # [25.2.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@25.1.3...@pluralsight/ps-design-system-icon@25.2.0) (2022-02-03)
 
 

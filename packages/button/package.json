@@ -1,6 +1,6 @@
 {
   "name": "@pluralsight/ps-design-system-button",
-  "version": "24.0.8",
+  "version": "24.1.0",
   "description": "Design System component for button ui",
   "license": "Apache-2.0",
   "repository": "pluralsight/design-system",
@@ -31,7 +31,7 @@
   "types": "dist/esm/index.d.ts",
   "dependencies": {
     "@pluralsight/ps-design-system-core": "^10.0.3",
-    "@pluralsight/ps-design-system-icon": "^25.2.0",
+    "@pluralsight/ps-design-system-icon": "^25.3.0",
     "@pluralsight/ps-design-system-util": "^10.1.2"
   },
   "peerDependencies": {
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@pluralsight/ps-design-system-build": "^4.0.0",
-    "@pluralsight/ps-design-system-storybook-preset": "^0.7.13",
+    "@pluralsight/ps-design-system-storybook-preset": "^0.7.14",
     "@pluralsight/ps-design-system-theme": "^8.1.23"
   },
   "gitHead": "0c5576456d80ae8d6dfb82da74320f3e8266c35a"

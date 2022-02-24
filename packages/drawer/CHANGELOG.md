@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [13.1.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@13.0.7...@pluralsight/ps-design-system-drawer@13.1.0) (2022-02-24)
+
+
+### Features
+
+* **icon:** update snapshot tests with new icon element ([e31e75b](https://github.com/pluralsight/design-system/commit/e31e75beea9d1d886addfe0a876ae9cc590de4e6))
+
+
+
+
+
 ## [13.0.7](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-drawer@13.0.6...@pluralsight/ps-design-system-drawer@13.0.7) (2022-02-03)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-drawer
