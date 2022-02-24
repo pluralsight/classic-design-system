@@ -14,7 +14,7 @@
     "build:watch": "yarn build --watch"
   },
   "types": "dist/index.d.ts",
-  "dependencies": {
+  "devDependencies": {
     "@pluralsight/ps-design-system-storybook-addon-center": "^5.1.7",
     "@pluralsight/ps-design-system-storybook-addon-theme": "^9.1.23",
     "@storybook/addon-a11y": "^6.0.21",
