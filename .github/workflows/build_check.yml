@@ -9,6 +9,6 @@ jobs:
     name: 🚀 Packages can successfully build
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
       - run: yarn install
       - run: yarn build
