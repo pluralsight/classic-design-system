@@ -20,7 +20,7 @@
     },
     "./package.json": "./package.json"
   },
-  "dependencies": {
+  "devDependencies": {
     "chalk": "^2.4.2",
     "clean-css": "^4.2.1",
     "commander": "^4.0.0",
