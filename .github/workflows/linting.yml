@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: 💅 Check for JS errors
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
       - run: rm -rf examples && rm -rf testbed-a11y
       - run: yarn install
@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: 🧐 Check for circular deps errors
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
       - run: rm -rf examples && rm -rf testbed-a11y
       - run: yarn install
