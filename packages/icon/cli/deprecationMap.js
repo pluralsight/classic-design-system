@@ -1,5 +1,4 @@
-const deprecationMap = {
-}
+const deprecationMap = {}
 
 module.exports = {
   deprecationMap
