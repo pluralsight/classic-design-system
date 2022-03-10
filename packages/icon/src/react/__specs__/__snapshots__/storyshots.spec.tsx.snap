@@ -727,6 +727,36 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-CapSecurityIcon"
+    >
+      <svg
+        aria-label="cap security icon"
+        role="img"
+        viewBox="0 0 16 18"
+      >
+        <path
+          d="m5.15 9.73 2.12 2.12a.49.49 0 0 0 .73.01l3.51-3.53a.501.501 0 0 0 0-.71l-.7-.72a.5.5 0 0 0-.71 0L7.56 9.32l-1-1a.5.5 0 0 0-.71 0l-.7.71a.48.48 0 0 0 0 .7z"
+        />
+        <path
+          d="M12 2A5.4 5.4 0 0 0 15.58.4a.25.25 0 0 1 .42.18V8c-.45 5.86-3.64 8.6-8 10C3.64 16.6.45 13.86 0 8V.58A.25.25 0 0 1 .42.4 5.4 5.4 0 0 0 4 2a5.78 5.78 0 0 0 4-2 5.78 5.78 0 0 0 4 2zM8 15.92c3.85-1.45 5.66-3.86 6-8V3.66A6 6 0 0 1 12 4a6.82 6.82 0 0 1-4-1.38A6.82 6.82 0 0 1 4 4a6 6 0 0 1-2-.34v4.26c.34 4.17 2.15 6.58 6 8z"
+        />
+      </svg>
+    </span>
+    <div>
+      CapSecurityIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <span
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-CaretAltDownIcon"
     >
       <svg
@@ -1211,6 +1241,33 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
   >
     <span
       className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-CircleIcon"
+    >
+      <svg
+        aria-label="circle icon"
+        role="img"
+        viewBox="0 0 20 20"
+      >
+        <path
+          d="M0 10C0 4.48 4.48 0 10 0s10 4.48 10 10-4.48 10-10 10S0 15.52 0 10zm2 0c0 4.41 3.59 8 8 8s8-3.59 8-8-3.59-8-8-8-8 3.59-8 8z"
+        />
+      </svg>
+    </span>
+    <div>
+      CircleIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <span
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
       id="icon-ClockIcon"
     >
       <svg
@@ -1448,6 +1505,33 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
     </span>
     <div>
       CodeIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <span
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-ConferenceIcon"
+    >
+      <svg
+        aria-label="conference icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M13 4a1 1 0 1 0-2 0v1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h5.4l-1.775 2.22a1 1 0 0 0 1.561 1.248L11 18.203V19a1 1 0 1 0 2 0v-.798l1.814 2.266a1 1 0 1 0 1.561-1.249L14.6 17H20a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-7V4zm-.999 3H5v8h14V7h-6.999z"
+        />
+      </svg>
+    </span>
+    <div>
+      ConferenceIcon
     </div>
   </div>
   <div
@@ -2295,6 +2379,33 @@ exports[`Storyshots Components/Icon Exported Icons 1`] = `
     </span>
     <div>
       LabsIcon
+    </div>
+  </div>
+  <div
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <span
+      className="psds-icon psds-icon--size-medium psds-icon--color-text-icon-high-on-dark"
+      id="icon-LibraryIcon"
+    >
+      <svg
+        aria-label="library icon"
+        role="img"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12.5 4a.5.5 0 0 0-.5.5v15a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-15a.5.5 0 0 0-.5-.5h-1zm-10 4a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-11a.5.5 0 0 0-.5-.5h-1zM7 12.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-7zm9.483-8.112a.5.5 0 0 0-.354.613l3.883 14.488a.5.5 0 0 0 .612.354l.966-.259a.5.5 0 0 0 .354-.612L18.06 4.482a.5.5 0 0 0-.612-.353l-.966.26z"
+        />
+      </svg>
+    </span>
+    <div>
+      LibraryIcon
     </div>
   </div>
   <div
