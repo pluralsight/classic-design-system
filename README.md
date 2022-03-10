@@ -4,6 +4,8 @@
 
 Light WIP -- 50% less fat!
 
+:warning: **Important: This library (Classic) is officially in Maintenance mode only. We will only fix bugs and will no longer add new features. For the latest library, please follow the [TVA project](https://pluralsight.github.io/tva/).**
+
 ## Check it out
 
 [design-system.pluralsight.com](http://design-system.pluralsight.com)
