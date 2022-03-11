@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     name: 🧪 Run unit tests
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
       # TODO: Uncomment after moving to Yarn 2, Yarn 1 does not cache deps
       # correctly, resulting in failing GH Action due to dep management
