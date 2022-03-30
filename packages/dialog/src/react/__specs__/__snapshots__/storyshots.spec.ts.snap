@@ -43,26 +43,26 @@ exports[`Storyshots Components/Dialog Focus On Heading 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal"
+      className="psds-dialog psds-theme--dark psds-dialog--modal"
       onKeyUp={[Function]}
     >
       <div
         className="psds-dialog__content"
       >
         <h2
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
           tabIndex={0}
         >
           Heading should receive focus
         </h2>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -82,7 +82,7 @@ exports[`Storyshots Components/Dialog Focus On Heading 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -100,7 +100,7 @@ exports[`Storyshots Components/Dialog Focus On Heading 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -113,8 +113,9 @@ exports[`Storyshots Components/Dialog Focus On Heading 1`] = `
         </div>
         <button
           aria-label="Close dialog"
-          className="psds-dialog__close"
+          className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
+          theme="dark"
         >
           <svg
             aria-label="close icon"
@@ -176,13 +177,13 @@ exports[`Storyshots Components/Dialog Focus On Hidden Heading 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal"
+      className="psds-dialog psds-theme--dark psds-dialog--modal"
       onKeyUp={[Function]}
     >
       <div
@@ -198,7 +199,7 @@ exports[`Storyshots Components/Dialog Focus On Hidden Heading 1`] = `
           </h2>
         </div>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -218,7 +219,7 @@ exports[`Storyshots Components/Dialog Focus On Hidden Heading 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -236,7 +237,7 @@ exports[`Storyshots Components/Dialog Focus On Hidden Heading 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -249,8 +250,9 @@ exports[`Storyshots Components/Dialog Focus On Hidden Heading 1`] = `
         </div>
         <button
           aria-label="Close dialog"
-          className="psds-dialog__close"
+          className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
+          theme="dark"
         >
           <svg
             aria-label="close icon"
@@ -312,25 +314,25 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal"
+      className="psds-dialog psds-theme--dark psds-dialog--modal"
       onKeyUp={[Function]}
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -346,7 +348,7 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -366,7 +368,7 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -384,7 +386,7 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -397,8 +399,9 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
         </div>
         <button
           aria-label="Close dialog"
-          className="psds-dialog__close"
+          className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
+          theme="dark"
         >
           <svg
             aria-label="close icon"
@@ -460,25 +463,25 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal"
+      className="psds-dialog psds-theme--dark psds-dialog--modal"
       onKeyUp={[Function]}
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -494,7 +497,7 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -514,7 +517,7 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -532,7 +535,7 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -545,8 +548,9 @@ exports[`Storyshots Components/Dialog Modal No Click Overlay 1`] = `
         </div>
         <button
           aria-label="Close dialog"
-          className="psds-dialog__close"
+          className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
+          theme="dark"
         >
           <svg
             aria-label="close icon"
@@ -608,25 +612,25 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal"
+      className="psds-dialog psds-theme--dark psds-dialog--modal"
       onKeyUp={[Function]}
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -642,7 +646,7 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -662,7 +666,7 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -680,7 +684,7 @@ exports[`Storyshots Components/Dialog Modal No Closebutton 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -740,24 +744,24 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal"
+      className="psds-dialog psds-theme--dark psds-dialog--modal"
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -773,7 +777,7 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -793,7 +797,7 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -811,7 +815,7 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -824,8 +828,9 @@ exports[`Storyshots Components/Dialog Modal No Escape Key 1`] = `
         </div>
         <button
           aria-label="Close dialog"
-          className="psds-dialog__close"
+          className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
+          theme="dark"
         >
           <svg
             aria-label="close icon"
@@ -887,25 +892,25 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal"
+      className="psds-dialog psds-theme--dark psds-dialog--modal"
       onKeyUp={[Function]}
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -921,7 +926,7 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -941,7 +946,7 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -959,7 +964,7 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -972,8 +977,9 @@ exports[`Storyshots Components/Dialog Modal No Focus On Mount 1`] = `
         </div>
         <button
           aria-label="Close dialog"
-          className="psds-dialog__close"
+          className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
+          theme="dark"
         >
           <svg
             aria-label="close icon"
@@ -1035,27 +1041,28 @@ exports[`Storyshots Components/Dialog Modal No Focusable Child Elements 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal"
+      className="psds-dialog psds-theme--dark psds-dialog--modal"
       onKeyUp={[Function]}
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <button
           aria-label="Close dialog"
-          className="psds-dialog__close"
+          className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
+          theme="dark"
         >
           <svg
             aria-label="close icon"
@@ -1117,20 +1124,20 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal psds-dialog--with-tail psds-dialog--tail-position-top-center"
+      className="psds-dialog psds-theme--dark psds-dialog--modal psds-dialog--with-tail psds-dialog--tail-position-top-center"
       onKeyUp={[Function]}
     >
       <div
         className="psds-dialog__content"
       >
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1147,7 +1154,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1164,7 +1171,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1181,7 +1188,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1198,7 +1205,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1215,7 +1222,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1232,7 +1239,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1249,7 +1256,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1266,7 +1273,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1283,7 +1290,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1300,7 +1307,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1317,7 +1324,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1334,7 +1341,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1351,7 +1358,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1368,7 +1375,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1385,7 +1392,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1402,7 +1409,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1419,7 +1426,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1436,7 +1443,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1453,7 +1460,7 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1471,8 +1478,9 @@ exports[`Storyshots Components/Dialog Modal Overflow Y With Tail 1`] = `
         </p>
         <button
           aria-label="Close dialog"
-          className="psds-dialog__close"
+          className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
+          theme="dark"
         >
           <svg
             aria-label="close icon"
@@ -1534,20 +1542,20 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
   </p>
   <div
     aria-label="Storybook Modal"
-    className="psds-dialog__overlay"
+    className="psds-dialog__overlay psds-theme--dark"
     id="psds-dialog__overlay"
     onClick={[Function]}
     role="region"
   >
     <div
-      className="psds-dialog psds-dialog--modal"
+      className="psds-dialog psds-theme--dark psds-dialog--modal"
       onKeyUp={[Function]}
     >
       <div
         className="psds-dialog__content"
       >
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1564,7 +1572,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1581,7 +1589,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1598,7 +1606,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1615,7 +1623,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1632,7 +1640,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1649,7 +1657,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1666,7 +1674,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1683,7 +1691,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1700,7 +1708,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1717,7 +1725,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1734,7 +1742,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1751,7 +1759,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1768,7 +1776,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1785,7 +1793,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1802,7 +1810,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1819,7 +1827,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1836,7 +1844,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1853,7 +1861,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1870,7 +1878,7 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -1888,8 +1896,9 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
         </p>
         <button
           aria-label="Close dialog"
-          className="psds-dialog__close"
+          className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
+          theme="dark"
         >
           <svg
             aria-label="close icon"
@@ -1910,19 +1919,19 @@ exports[`Storyshots Components/Dialog Modal Overlow Y 1`] = `
 
 exports[`Storyshots Components/Dialog On Close 1`] = `
 <div
-  className="psds-dialog"
+  className="psds-dialog psds-theme--dark"
   onKeyUp={[Function]}
 >
   <div
     className="psds-dialog__content"
   >
     <h1
-      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
     >
       Wowzers, a Dialog
     </h1>
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
     >
       <a
         href="#"
@@ -1938,7 +1947,7 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
        lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
     </p>
     <p
-      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+      className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
     >
       Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
        
@@ -1958,7 +1967,7 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
       }
     >
       <button
-        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
         disabled={false}
       >
         <span
@@ -1976,7 +1985,7 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
         }
       />
       <button
-        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+        className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
         disabled={false}
       >
         <span
@@ -1989,8 +1998,9 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
     </div>
     <button
       aria-label="Close dialog"
-      className="psds-dialog__close"
+      className="psds-dialog__close psds-theme--dark"
       onClick={[Function]}
+      theme="dark"
     >
       <svg
         aria-label="close icon"
@@ -2009,13 +2019,13 @@ exports[`Storyshots Components/Dialog On Close 1`] = `
 
 exports[`Storyshots Components/Dialog On Close Disable Closebutton 1`] = `
 <div
-  className="psds-dialog"
+  className="psds-dialog psds-theme--dark"
 >
   <div
     className="psds-dialog__content"
   >
     <h1
-      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
     >
       Wowzers, a Dialog
     </h1>
@@ -2046,18 +2056,18 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       none
     </div>
     <div
-      className="psds-dialog"
+      className="psds-dialog psds-theme--dark"
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -2073,7 +2083,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2093,7 +2103,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2111,7 +2121,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2128,18 +2138,18 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       topLeft
     </div>
     <div
-      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-top-left"
+      className="psds-dialog psds-theme--dark psds-dialog--with-tail psds-dialog--tail-position-top-left"
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -2155,7 +2165,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2175,7 +2185,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2193,7 +2203,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2210,18 +2220,18 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       topCenter
     </div>
     <div
-      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-top-center"
+      className="psds-dialog psds-theme--dark psds-dialog--with-tail psds-dialog--tail-position-top-center"
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -2237,7 +2247,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2257,7 +2267,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2275,7 +2285,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2292,18 +2302,18 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       topRight
     </div>
     <div
-      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-top-right"
+      className="psds-dialog psds-theme--dark psds-dialog--with-tail psds-dialog--tail-position-top-right"
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -2319,7 +2329,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2339,7 +2349,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2357,7 +2367,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2374,18 +2384,18 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       bottomLeft
     </div>
     <div
-      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-bottom-left"
+      className="psds-dialog psds-theme--dark psds-dialog--with-tail psds-dialog--tail-position-bottom-left"
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -2401,7 +2411,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2421,7 +2431,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2439,7 +2449,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2456,18 +2466,18 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       bottomCenter
     </div>
     <div
-      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-bottom-center"
+      className="psds-dialog psds-theme--dark psds-dialog--with-tail psds-dialog--tail-position-bottom-center"
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -2483,7 +2493,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2503,7 +2513,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2521,7 +2531,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2538,18 +2548,18 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
       bottomRight
     </div>
     <div
-      className="psds-dialog psds-dialog--with-tail psds-dialog--tail-position-bottom-right"
+      className="psds-dialog psds-theme--dark psds-dialog--with-tail psds-dialog--tail-position-bottom-right"
     >
       <div
         className="psds-dialog__content"
       >
         <h1
-          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--dark"
         >
           Wowzers, a Dialog
         </h1>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           <a
             href="#"
@@ -2565,7 +2575,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
            lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
         </p>
         <p
-          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--dark"
         >
           Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
            
@@ -2585,7 +2595,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
           }
         >
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--dark"
             disabled={false}
           >
             <span
@@ -2603,7 +2613,7 @@ exports[`Storyshots Components/Dialog Tail Positions 1`] = `
             }
           />
           <button
-            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--dark"
             disabled={false}
           >
             <span
