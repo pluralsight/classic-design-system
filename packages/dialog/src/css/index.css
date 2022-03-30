@@ -7,7 +7,6 @@
 .psds-dialog {
   animation: psds-dialog__keyframes__fade var(--ps-motion-speed-fast) ease-out
     forwards;
-  background: var(--ps-colors-white);
   border-radius: 2px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
   display: inline-flex;
@@ -15,11 +14,16 @@
   position: relative;
   transform: translateY(var(--ps-layout-spacing-xsmall));
 }
+.psds-dialog.psds-theme--light {
+  background: var(--ps-colors-white);
+}
+.psds-dialog.psds-theme--dark {
+  background: var(--ps-colors-background-dark-2);
+}
 .psds-dialog:focus {
   outline: 0;
 }
 .psds-dialog__content {
-  color: var(--ps-colors-text-icon-high-on-light);
   font-size: var(--ps-type-font-size-200);
   font-weight: var(--ps-type-font-weight-500);
   line-height: var(--ps-type-line-height-tight);
@@ -27,8 +31,13 @@
   flex: 1 1 auto;
   overflow-y: auto;
 }
+.psds-dialog__content.psds-theme--light {
+  color: var(--ps-colors-text-icon-high-on-light);
+}
+.psds-dialog__content.psds-theme--dark {
+  color: var(--ps-colors-text-icon-high-on-dark);
+}
 .psds-dialog--with-tail:after {
-  background-color: var(--ps-colors-white);
   content: ' ';
   display: block;
   height: 14px;
@@ -37,6 +46,12 @@
   transform: rotate(45deg);
   white-space: pre;
   width: 14px;
+}
+.psds-dialog--with-tail.psds-theme--light:after {
+  background-color: var(--ps-colors-white);
+}
+.psds-dialog--with-tail.psds-theme--dark:after {
+  background-color: var(--ps-colors-background-dark-2);
 }
 .psds-dialog--tail-position-top-left:after {
   left: 14px;
@@ -92,7 +107,6 @@
   width: 32px;
   border: none;
   background: 0 0;
-  color: var(--ps-colors-text-icon-low-on-light);
 }
 .psds-dialog__close:not([disabled]):focus,
 .psds-dialog__close:not([disabled]):hover {
@@ -111,13 +125,17 @@
   transform: scale(0.98);
 }
 .psds-dialog__close svg {
-  fill: var(--ps-colors-text-icon-low-on-light);
   height: 24px;
   width: 24px;
 }
+.psds-dialog__close.psds-theme--light svg {
+  fill: var(--ps-colors-text-icon-low-on-light);
+}
+.psds-dialog__close.psds-theme--dark svg {
+  fill: var(--ps-colors-text-icon-high-on-dark);
+}
 .psds-dialog__overlay {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   height: 100%;
   justify-content: center;
@@ -125,4 +143,10 @@
   position: fixed;
   top: 0;
   width: 100%;
+}
+.psds-dialog__overlay.psds-theme--light {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.psds-dialog__overlay.psds-theme--dark {
+  background-color: rgba(255, 255, 255, 0.5);
 }

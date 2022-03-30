@@ -1,5 +1,5 @@
 import FocusManager from '@pluralsight/ps-design-system-focusmanager'
-import Theme from '@pluralsight/ps-design-system-theme'
+import Theme, { useTheme } from '@pluralsight/ps-design-system-theme'
 import {
   RefForwardingComponent,
   ValueOf,
@@ -17,19 +17,24 @@ import * as vars from '../vars/index'
 /* eslint-disable-next-line camelcase */
 const MODAL_OVERLAY_ID = 'psds-dialog__overlay'
 
-const CloseButton: React.FC<React.HTMLAttributes<HTMLButtonElement>> =
-  props => (
-    <button {...props} className="psds-dialog__close" aria-label="Close dialog">
-      <svg
-        aria-label="close icon"
-        role="img"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12" />
-      </svg>
-    </button>
-  )
+const CloseButton: React.FC<
+  React.HTMLAttributes<HTMLButtonElement> & { theme: 'dark' | 'light' }
+> = props => (
+  <button
+    {...props}
+    className={classNames('psds-dialog__close', `psds-theme--${props.theme}`)}
+    aria-label="Close dialog"
+  >
+    <svg
+      aria-label="close icon"
+      role="img"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12" />
+    </svg>
+  </button>
+)
 
 interface OverlayProps extends React.HTMLAttributes<HTMLDivElement> {
   'aria-label'?: string
@@ -42,6 +47,8 @@ const Overlay: React.FC<OverlayProps> = ({
   onClose,
   ...props
 }) => {
+  const theme = useTheme()
+
   function handleOverlayClick(evt: React.MouseEvent) {
     if (disableCloseOnOverlayClick) return
     if ((evt.target as HTMLDivElement).id === MODAL_OVERLAY_ID)
@@ -51,7 +58,7 @@ const Overlay: React.FC<OverlayProps> = ({
   return (
     <div
       {...props}
-      className="psds-dialog__overlay"
+      className={classNames('psds-dialog__overlay', `psds-theme--${theme}`)}
       id={MODAL_OVERLAY_ID}
       onClick={handleOverlayClick}
       role="region"
@@ -96,6 +103,7 @@ const Dialog = React.forwardRef((props, ref) => {
   const trapped = !!modal || !!onClose
   const closeOnEscape = isFunction(onClose) && !disableCloseOnEscape
 
+  const theme = useTheme()
   const portal = usePortal() as React.MutableRefObject<HTMLDivElement>
 
   // TODO: combine fns
@@ -109,6 +117,7 @@ const Dialog = React.forwardRef((props, ref) => {
       {...rest}
       className={classNames(
         'psds-dialog',
+        `psds-theme--${theme}`,
         modal && 'psds-dialog--modal',
         typeof tailPosition !== 'undefined' &&
           `psds-dialog--with-tail psds-dialog--tail-position-${dashify(
@@ -123,12 +132,12 @@ const Dialog = React.forwardRef((props, ref) => {
       returnFocus={returnFocus}
       ref={ref}
     >
-      <Theme name={Theme.names.light}>
+      <Theme name={theme}>
         <div className="psds-dialog__content">
           {children}
           {!disableCloseButton && isFunction(onClose) && (
             // eslint-disable-next-line react/jsx-handler-names
-            <CloseButton onClick={onClose} />
+            <CloseButton onClick={onClose} theme={theme} />
           )}
         </div>
       </Theme>
