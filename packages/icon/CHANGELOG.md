@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [25.4.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@25.3.0...@pluralsight/ps-design-system-icon@25.4.0) (2022-03-31)
+
+
+### Features
+
+* **icon:** closes [#2131](https://github.com/pluralsight/design-system/issues/2131) - Add challenge icon for ILX player ([7d9fa92](https://github.com/pluralsight/design-system/commit/7d9fa927a14c33b617bf6e6b04d43aeea214686d))
+* **icon:** update snapshot test with new icon ([caa3665](https://github.com/pluralsight/design-system/commit/caa3665e420207896c0973fcd7738a8ee62b8f03))
+
+
+
+
+
 # [25.3.0](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-icon@25.2.0...@pluralsight/ps-design-system-icon@25.3.0) (2022-02-24)
 
 

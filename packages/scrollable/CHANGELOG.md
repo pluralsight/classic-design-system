@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [6.0.11](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@6.0.10...@pluralsight/ps-design-system-scrollable@6.0.11) (2022-03-31)
+
+**Note:** Version bump only for package @pluralsight/ps-design-system-scrollable
+
+
+
+
+
 ## [6.0.10](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-scrollable@6.0.9...@pluralsight/ps-design-system-scrollable@6.0.10) (2022-02-24)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-scrollable
