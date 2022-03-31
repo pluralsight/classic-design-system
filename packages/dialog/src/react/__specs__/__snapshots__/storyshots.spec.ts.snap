@@ -271,6 +271,619 @@ exports[`Storyshots Components/Dialog Focus On Hidden Heading 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Dialog Light Theme Dialog 1`] = `
+<div
+  className="psds-dialog psds-theme--light"
+>
+  <div
+    className="psds-dialog__content"
+  >
+    <h1
+      className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+    >
+      Wowzers, a Dialog
+    </h1>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dialog Light Theme With Tail 1`] = `
+<div
+  style={
+    Object {
+      "margin": "0 auto",
+      "maxWidth": "50%",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "grid",
+        "gap": "20px",
+        "gridTemplateColumns": "1fr 1fr",
+        "justifyItems": "left",
+      }
+    }
+  >
+    <div>
+      none
+    </div>
+    <div
+      className="psds-dialog psds-theme--light"
+    >
+      <div
+        className="psds-dialog__content"
+      >
+        <h1
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          <a
+            href="#"
+          >
+            Brownie bear claw
+          </a>
+           liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. 
+          <a
+            href="#"
+          >
+            Tart donut
+          </a>
+           lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+        </p>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
+           
+          <a
+            href="#"
+          >
+            cotton candy
+          </a>
+           muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Secondary CTA
+            </span>
+          </button>
+          <span
+            style={
+              Object {
+                "marginLeft": 10,
+              }
+            }
+          />
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      topLeft
+    </div>
+    <div
+      className="psds-dialog psds-theme--light psds-dialog--with-tail psds-dialog--tail-position-top-left"
+    >
+      <div
+        className="psds-dialog__content"
+      >
+        <h1
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          <a
+            href="#"
+          >
+            Brownie bear claw
+          </a>
+           liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. 
+          <a
+            href="#"
+          >
+            Tart donut
+          </a>
+           lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+        </p>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
+           
+          <a
+            href="#"
+          >
+            cotton candy
+          </a>
+           muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Secondary CTA
+            </span>
+          </button>
+          <span
+            style={
+              Object {
+                "marginLeft": 10,
+              }
+            }
+          />
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      topCenter
+    </div>
+    <div
+      className="psds-dialog psds-theme--light psds-dialog--with-tail psds-dialog--tail-position-top-center"
+    >
+      <div
+        className="psds-dialog__content"
+      >
+        <h1
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          <a
+            href="#"
+          >
+            Brownie bear claw
+          </a>
+           liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. 
+          <a
+            href="#"
+          >
+            Tart donut
+          </a>
+           lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+        </p>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
+           
+          <a
+            href="#"
+          >
+            cotton candy
+          </a>
+           muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Secondary CTA
+            </span>
+          </button>
+          <span
+            style={
+              Object {
+                "marginLeft": 10,
+              }
+            }
+          />
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      topRight
+    </div>
+    <div
+      className="psds-dialog psds-theme--light psds-dialog--with-tail psds-dialog--tail-position-top-right"
+    >
+      <div
+        className="psds-dialog__content"
+      >
+        <h1
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          <a
+            href="#"
+          >
+            Brownie bear claw
+          </a>
+           liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. 
+          <a
+            href="#"
+          >
+            Tart donut
+          </a>
+           lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+        </p>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
+           
+          <a
+            href="#"
+          >
+            cotton candy
+          </a>
+           muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Secondary CTA
+            </span>
+          </button>
+          <span
+            style={
+              Object {
+                "marginLeft": 10,
+              }
+            }
+          />
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      bottomLeft
+    </div>
+    <div
+      className="psds-dialog psds-theme--light psds-dialog--with-tail psds-dialog--tail-position-bottom-left"
+    >
+      <div
+        className="psds-dialog__content"
+      >
+        <h1
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          <a
+            href="#"
+          >
+            Brownie bear claw
+          </a>
+           liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. 
+          <a
+            href="#"
+          >
+            Tart donut
+          </a>
+           lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+        </p>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
+           
+          <a
+            href="#"
+          >
+            cotton candy
+          </a>
+           muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Secondary CTA
+            </span>
+          </button>
+          <span
+            style={
+              Object {
+                "marginLeft": 10,
+              }
+            }
+          />
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      bottomCenter
+    </div>
+    <div
+      className="psds-dialog psds-theme--light psds-dialog--with-tail psds-dialog--tail-position-bottom-center"
+    >
+      <div
+        className="psds-dialog__content"
+      >
+        <h1
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          <a
+            href="#"
+          >
+            Brownie bear claw
+          </a>
+           liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. 
+          <a
+            href="#"
+          >
+            Tart donut
+          </a>
+           lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+        </p>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
+           
+          <a
+            href="#"
+          >
+            cotton candy
+          </a>
+           muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Secondary CTA
+            </span>
+          </button>
+          <span
+            style={
+              Object {
+                "marginLeft": 10,
+              }
+            }
+          />
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div>
+      bottomRight
+    </div>
+    <div
+      className="psds-dialog psds-theme--light psds-dialog--with-tail psds-dialog--tail-position-bottom-right"
+    >
+      <div
+        className="psds-dialog__content"
+      >
+        <h1
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          <a
+            href="#"
+          >
+            Brownie bear claw
+          </a>
+           liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. 
+          <a
+            href="#"
+          >
+            Tart donut
+          </a>
+           lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+        </p>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
+           
+          <a
+            href="#"
+          >
+            cotton candy
+          </a>
+           muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Secondary CTA
+            </span>
+          </button>
+          <span
+            style={
+              Object {
+                "marginLeft": 10,
+              }
+            }
+          />
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Dialog Modal Default 1`] = `
 <div>
   <p
@@ -402,6 +1015,155 @@ exports[`Storyshots Components/Dialog Modal Default 1`] = `
           className="psds-dialog__close psds-theme--dark"
           onClick={[Function]}
           theme="dark"
+        >
+          <svg
+            aria-label="close icon"
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M18 7.41L16.59 6 12 10.59 7.41 6 6 7.41 10.59 12 6 16.59 7.41 18 12 13.41 16.59 18 18 16.59 13.41 12"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dialog Modal Light Theme 1`] = `
+<div>
+  <p
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+  >
+    Macaroon danish I love candy macaroon danish toffee muffin. Cotton candy chupa chups cupcake I love. Chocolate I love bonbon carrot cake cupcake cookie muffin liquorice. I love I love I love jelly-o fruitcake
+    <a
+      href="#"
+    >
+      I love chocolate cake
+    </a>
+     wafer chupa chups.
+  </p>
+  <p
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+  >
+    Sesame snaps cake pudding I love chupa chups I love. Cotton candy biscuit oat cake dessert donut I love lemon drops. Cookie croissant dragée tootsie roll marzipan I love. Apple pie cheesecake jelly-o cheesecake I love cheesecake.
+  </p>
+  <button
+    className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+    disabled={false}
+    onClick={[Function]}
+  >
+    <span
+      aria-hidden={false}
+      className="psds-button__text"
+    >
+      close modal
+    </span>
+  </button>
+  <p
+    className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+  >
+    Sweet soufflé 
+    <a
+      href="#"
+    >
+      apple pie
+    </a>
+    . Halvah icing pudding pastry ice cream gingerbread tart candy canes dragée. Pie gingerbread icing.
+  </p>
+  <div
+    aria-label="Storybook Modal"
+    className="psds-dialog__overlay psds-theme--light"
+    id="psds-dialog__overlay"
+    onClick={[Function]}
+    role="region"
+  >
+    <div
+      className="psds-dialog psds-theme--light psds-dialog--modal"
+      onKeyUp={[Function]}
+    >
+      <div
+        className="psds-dialog__content"
+      >
+        <h1
+          className="psds-text__heading psds-text__heading--size-large psds-text__heading--color-primary psds-theme--light"
+        >
+          Wowzers, a Dialog
+        </h1>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          <a
+            href="#"
+          >
+            Brownie bear claw
+          </a>
+           liquorice dragée candy canes pastry topping. Chocolate cake soufflé sweet roll jelly beans oat cake donut. Wafer chocolate cake pastry chocolate bar fruitcake. Cupcake jelly-o croissant lollipop liquorice. 
+          <a
+            href="#"
+          >
+            Tart donut
+          </a>
+           lollipop dragée tootsie roll wafer lemon drops cupcake chocolate bar.
+        </p>
+        <p
+          className="psds-text__p psds-text__p--size-medium psds-text__p--color-primary psds-theme--light"
+        >
+          Powder apple pie cookie lemon drops marzipan gummies. Chocolate lemon drops tiramisu. Cotton candy powder oat cake toffee
+           
+          <a
+            href="#"
+          >
+            cotton candy
+          </a>
+           muffin soufflé marshmallow biscuit.
+        </p>
+        <div
+          style={
+            Object {
+              "display": "flex",
+              "justifyContent": "flex-end",
+            }
+          }
+        >
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-stroke psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Secondary CTA
+            </span>
+          </button>
+          <span
+            style={
+              Object {
+                "marginLeft": 10,
+              }
+            }
+          />
+          <button
+            className="psds-button psds-button--layout-inline psds-button--size-medium psds-button--appearance-primary psds-theme--light"
+            disabled={false}
+          >
+            <span
+              aria-hidden={false}
+              className="psds-button__text"
+            >
+              Primary CTA
+            </span>
+          </button>
+        </div>
+        <button
+          aria-label="Close dialog"
+          className="psds-dialog__close psds-theme--light"
+          onClick={[Function]}
+          theme="light"
         >
           <svg
             aria-label="close icon"

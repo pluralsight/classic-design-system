@@ -6,6 +6,7 @@ import { Meta, Story } from '@storybook/react/types-6-0'
 import Button from '@pluralsight/ps-design-system-button'
 import ScreenReaderOnly from '@pluralsight/ps-design-system-screenreaderonly'
 import * as Text from '@pluralsight/ps-design-system-text'
+import Theme from '@pluralsight/ps-design-system-theme'
 
 import Dialog from '../../index'
 
@@ -49,6 +50,16 @@ export default {
   component: Dialog
 } as Meta
 
+export const LightThemeDialog: Story = () => (
+  <Theme name={Theme.names.light}>
+    <MockDialog>
+      <Text.Heading>
+        <h1>Wowzers, a Dialog</h1>
+      </Text.Heading>
+    </MockDialog>
+  </Theme>
+)
+
 export const OnClose: Story = () => <MockDialog onClose={closeAction} />
 
 export const OnCloseDisableClosebutton: Story = () => (
@@ -72,6 +83,23 @@ export const TailPositions: Story = () => (
       ))}
     </StoryGrid>
   </div>
+)
+
+export const LightThemeWithTail: Story = () => (
+  <Theme name={Theme.names.light}>
+    <div style={{ maxWidth: '50%', margin: '0 auto' }}>
+      <StoryGrid>
+        <div>none</div>
+        <MockDialog />
+        {Object.values(Dialog.tailPositions).map(position => (
+          <React.Fragment key={position}>
+            <div>{position}</div>
+            <MockDialog tailPosition={position} />
+          </React.Fragment>
+        ))}
+      </StoryGrid>
+    </div>
+  </Theme>
 )
 
 interface ModalStoryProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -132,6 +160,12 @@ const ModalStory: React.FC<ModalStoryProps> = ({ children }) => {
 
 export const ModalDefault: Story = () => (
   <ModalStory>{props => <MockDialog {...props} />}</ModalStory>
+)
+
+export const ModalLightTheme: Story = () => (
+  <Theme name={Theme.names.light}>
+    <ModalStory>{props => <MockDialog {...props} />}</ModalStory>
+  </Theme>
 )
 
 export const ModalNoClosebutton: Story = () => (
