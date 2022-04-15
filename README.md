@@ -1,14 +1,11 @@
 # Pluralsight Design System [![Build Status](https://travis-ci.org/pluralsight/design-system.svg?branch=master)](https://travis-ci.org/pluralsight/design-system)
 
-<a href="https://www.youtube.com/watch?v=aDh6eIodH-c"><img alt="The UI building blocks for creating a cohesive design across Pluralsight products." src="https://i.imgur.com/tf35gHt.jpg" /></a>
 
-Light WIP -- 50% less fat!
+## Important :warning:
 
-:warning: **Important: This library (Classic) is officially in Maintenance mode only. We will only fix bugs and will no longer add new features. For the latest library, please follow the [TVA project](https://pluralsight.github.io/tva/).**
+### This library (classic) is officially in maintenance mode only.
 
-## Check it out
-
-[design-system.pluralsight.com](http://design-system.pluralsight.com)
+**We will only fix bugs and will no longer add new features. For the latest library, please follow the [TVA project](https://pluralsight.github.io/tva/).**
 
 ## Get involved
 
