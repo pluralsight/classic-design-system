@@ -51,9 +51,10 @@ const NavCookieBanner = React.forwardRef<HTMLDivElement, NavCookieBannerProps>(
     function dismiss() {
       const oneYear = new Date()
       oneYear.setFullYear(oneYear.getFullYear() + 1)
+      const domain = '.' + document.domain.replace(/^[^.]+\.(.*\..*)$/, '$1')
 
       setCookie(DISMISS_COOKIE_NAME, Date.now(), {
-        domain: '.pluralsight.com',
+        domain,
         expires: oneYear,
         secure: true,
         sameSite: 'strict',
