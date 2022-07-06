@@ -51,6 +51,7 @@ const NavCookieBanner = React.forwardRef<HTMLDivElement, NavCookieBannerProps>(
     function dismiss() {
       const oneYear = new Date()
       oneYear.setFullYear(oneYear.getFullYear() + 1)
+      // Regex removes up to and including the first dot as long as there are at least 2
       const domain = '.' + document.domain.replace(/^[^.]+\.(.*\..*)$/, '$1')
 
       setCookie(DISMISS_COOKIE_NAME, Date.now(), {
