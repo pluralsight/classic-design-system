@@ -44,6 +44,7 @@
     "start:table": "yarn workspace @pluralsight/ps-design-system-table run storybook",
     "start:icon": "yarn workspace @pluralsight/ps-design-system-icon run storybook",
     "start:starrating": "yarn workspace @pluralsight/ps-design-system-starrating run storybook",
+    "start:navcookiebanner": "yarn workspace @pluralsight/ps-design-system-navcookiebanner run storybook",
     "test": "jest",
     "test:ci": "jest --ci"
   },
