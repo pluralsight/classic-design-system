@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@4.1.1...@pluralsight/ps-design-system-navcookiebanner@4.1.2) (2022-07-07)
+
+
+### Bug Fixes
+
+* **navcookiebanner:** dynamically set cookie domain ([fd7f1fc](https://github.com/pluralsight/design-system/commit/fd7f1fcb6f7c27adfdfedef322d9800235242be0))
+
+
+
+
+
 ## [4.1.1](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-navcookiebanner@4.1.0...@pluralsight/ps-design-system-navcookiebanner@4.1.1) (2022-03-31)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-navcookiebanner
