@@ -77,6 +77,12 @@ export const DatePicker: React.FC<DatePickerProps> = ({
   }
 
   React.useEffect(() => {
+    if (valueFromProps) {
+      setValue(format(valueFromProps, dateFormat))
+    }
+  }, [valueFromProps])
+
+  React.useEffect(() => {
     if (!canUseDOM()) return () => {}
 
     const handleClickOutsideMenu = (evt: MouseEvent) => {
