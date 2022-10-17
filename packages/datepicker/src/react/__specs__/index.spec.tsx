@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-unnecessary-type-assertion */
 import { convertStoriesToJestCases } from '@pluralsight/ps-design-system-util'
-import { render } from '@testing-library/react'
+import { fireEvent, screen, render } from '@testing-library/react'
 import { renderHook, act } from '@testing-library/react-hooks'
 import formatISO from 'date-fns/formatISO'
 import { DateObj, useDayzed } from 'dayzed'
@@ -11,6 +11,7 @@ import {
   Calendar,
   CalendarDay,
   CalendarDayProps,
+  DatePicker,
   useIsInRange,
   onRangeDateSelected,
   onMultiDateSelected,
@@ -603,4 +604,30 @@ test('useRangeSelectChange: custom date format', () => {
     formatISO(new Date('03/01/2021')),
     formatISO(new Date('03/11/2021'))
   ])
+})
+
+test('DatePicker: input value updates on prop change', () => {
+  const ValuePropTest = () => {
+    const [date, setDate] = React.useState(new Date(1999, 11, 31))
+    return (
+      <div>
+        <button
+          onClick={() => setDate(new Date(2000, 0, 1))}
+          data-testid="dateUpdateBtn"
+        >
+          Go Y2K!
+        </button>
+        <DatePicker
+          label="Controlled component, set to 31 Dec 1999"
+          value={date}
+        />
+      </div>
+    )
+  }
+  render(<ValuePropTest />)
+  const btn = screen.getByTestId('dateUpdateBtn')
+  const input = screen.getByRole('textbox')
+  expect(input).toHaveValue('12/31/1999')
+  fireEvent.click(btn)
+  expect(input).toHaveValue('01/01/2000')
 })
