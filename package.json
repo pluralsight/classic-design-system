@@ -45,6 +45,7 @@
     "start:icon": "yarn workspace @pluralsight/ps-design-system-icon run storybook",
     "start:starrating": "yarn workspace @pluralsight/ps-design-system-starrating run storybook",
     "start:navcookiebanner": "yarn workspace @pluralsight/ps-design-system-navcookiebanner run storybook",
+    "start:datepicker": "yarn workspace @pluralsight/ps-design-system-datepicker run storybook",
     "test": "jest",
     "test:ci": "jest --ci"
   },
