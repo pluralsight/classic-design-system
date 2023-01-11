@@ -9,10 +9,10 @@ interface LabelProps extends React.HTMLAttributes<HTMLLabelElement> {
   label?: React.ReactNode
 }
 
-export const Label: React.FC<LabelProps> = ({ className, ...rest }) => {
+export const Label: React.FC<LabelProps> = ({ className, id, ...rest }) => {
   const themeName = useTheme()
   return (
-    <label>
+    <label id={id}>
       {rest.label ? (
         <span
           className={classNames(
