@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [13.1.3](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.1.2...@pluralsight/ps-design-system-dropdown@13.1.3) (2023-01-19)
+
+
+### Bug Fixes
+
+* **dropdown:** map label ID to label element ([be603f5](https://github.com/pluralsight/design-system/commit/be603f5fd56a4c97f74ac6cdc47761c7423dbb1c))
+
+
+
+
+
 ## [13.1.2](https://github.com/pluralsight/design-system/compare/@pluralsight/ps-design-system-dropdown@13.1.1...@pluralsight/ps-design-system-dropdown@13.1.2) (2022-12-08)
 
 **Note:** Version bump only for package @pluralsight/ps-design-system-dropdown
