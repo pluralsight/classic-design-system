@@ -73,6 +73,8 @@
     "tsConfig": "tsconfig.json"
   },
   "resolutions": {
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.7",
     "node-fetch": "^2.6.1",
     "prismjs": "^1.21.0",
     "semver": "^7.3.4"
